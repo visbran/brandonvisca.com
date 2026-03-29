@@ -12,30 +12,29 @@ type Props = {
 
 const { variant: Heading = "h2", featured = false, id, data, filePath, collection } = Astro.props;
 
-const { title, description, ...props } = data;
+const { title, description, pubDatetime } = data;
+const modDatetime = "modDatetime" in data ? data.modDatetime : null;
 const href = getEntryPath({ collection, id, filePath });
+const isGallery = collection === "galleries";
+const headingId = `${collection}-${slugifyStr(String(id))}-title`;
+const descriptionId = `${collection}-${slugifyStr(String(id))}-description`;
+const viewTransitionName = slugifyStr(String(title).replaceAll(".", "-"));
 ---
 
 <li
   class:list={[
     "card-glow group/card relative my-3 rounded-2xl p-4 sm:p-5",
     "border border-border/25",
-    "transition-all duration-300 ease-out",
-    "hover:border-accent/40 hover:bg-accent/5",
-    "hover:-translate-y-0.5",
-    "hover:shadow-lg hover:shadow-accent/10",
+    "transition-[border-color,background-color,box-shadow,transform] duration-300 ease-out motion-reduce:transform-none motion-reduce:transition-none",
+    "hover:border-accent/40 hover:bg-accent/5 focus-within:border-accent/40 focus-within:bg-accent/5",
+    "hover:-translate-y-0.5 focus-within:-translate-y-0.5",
+    "hover:shadow-lg hover:shadow-accent/10 focus-within:shadow-lg focus-within:shadow-accent/10",
     featured && "border-accent/40 bg-accent/5 shadow-[0_0_20px_-5px_rgba(var(--accent),0.15)]",
   ]}
 >
   <!-- Cursor-following glow -->
   <div
-    class="card-glow-effect pointer-events-none absolute inset-0 z-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover/card:opacity-100"
-    aria-hidden="true"
-  >
-  </div>
-  <!-- Noise dithering -->
-  <div
-    class="card-noise pointer-events-none absolute inset-0 z-1 rounded-2xl opacity-0 transition-opacity duration-300 group-hover/card:opacity-100"
+    class="card-glow-effect pointer-events-none absolute inset-0 z-0 rounded-2xl opacity-0 transition-opacity duration-300 motion-reduce:transition-none group-hover/card:opacity-100 group-focus-within/card:opacity-100"
     aria-hidden="true"
   >
   </div>
@@ -44,40 +43,61 @@ const href = getEntryPath({ collection, id, filePath });
     <a
       href={href}
       class="text-lg font-semibold text-foreground transition-colors duration-200 group-hover/card:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
-      style={{ viewTransitionName: slugifyStr(String(title).replaceAll(".", "-")) }}
+      aria-labelledby={headingId}
+      aria-describedby={descriptionId}
+      style={{ viewTransitionName }}
     >
-      <Heading class="flex items-center gap-2">
-        {collection === "galleries" && (
-          <span title="Galería" class="inline-flex items-center justify-center p-1 rounded-md bg-accent/10 text-accent/80 ring-1 ring-accent/20">
+      <Heading id={headingId} class="flex items-center gap-2">
+        {isGallery && (
+          <span
+            aria-hidden="true"
+            class="inline-flex items-center justify-center rounded-md bg-accent/10 p-1 text-accent/80 ring-1 ring-accent/20"
+          >
             <IconGallery class="size-4" />
           </span>
         )}
+        {isGallery && <span class="sr-only">Galeria:</span>}
         {title}
       </Heading>
       <!-- Expand clickable area to whole card on top of everything, minus the description -->
       <span class="absolute -inset-4 sm:-inset-5 z-10" aria-hidden="true"></span>
     </a>
     
-    <Datetime pubDatetime={props.pubDatetime as string | Date} modDatetime={"modDatetime" in props ? props.modDatetime as string | Date | null | undefined : null} class="relative z-20 mt-1.5 pointer-events-none" />
+    <Datetime
+      pubDatetime={pubDatetime}
+      modDatetime={modDatetime}
+      showLabel={true}
+      class="relative z-20 mt-1.5 pointer-events-none"
+    />
     
-    <p class="relative z-20 mt-2 line-clamp-2 text-sm leading-relaxed opacity-65 pointer-events-auto select-text">
+    <p
+      id={descriptionId}
+      class="relative z-20 mt-2 line-clamp-2 text-sm leading-relaxed text-foreground/75 pointer-events-auto select-text"
+    >
       {description}
     </p>
   </div>
 </li>
 
 <style>
+  .card-glow {
+    contain: paint;
+  }
+
   .card-glow-effect {
     background: radial-gradient(
       350px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
       color-mix(in oklab, var(--accent) 8%, transparent) 0%,
-      color-mix(in oklab, var(--accent) 6%, transparent) 15%,
       color-mix(in oklab, var(--accent) 4%, transparent) 30%,
-      color-mix(in oklab, var(--accent) 2%, transparent) 45%,
       color-mix(in oklab, var(--accent) 0.8%, transparent) 60%,
       transparent 80%
     );
-    transform: translateZ(0);
-    will-change: transform;
+    will-change: opacity;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-glow-effect {
+      background: none;
+    }
   }
 </style>
