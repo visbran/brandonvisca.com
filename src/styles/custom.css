@@ -1,0 +1,9 @@
+/* brandonvisca.com — custom overrides
+ * Import order in global.css: this file is loaded LAST
+ * Use CSS custom properties to override theme tokens safely
+ */
+
+/* ── Typography ── */
+/* French punctuation spacing handled via content if needed */
+
+/* ── Placeholder for future overrides ── */

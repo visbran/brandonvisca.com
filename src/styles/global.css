@@ -198,3 +198,5 @@ i {
   background: color-mix(in srgb, var(--accent) 15%, transparent);
   box-shadow: 0 4px 15px color-mix(in srgb, var(--accent) 15%, transparent);
 }
+
+@import './custom.css';

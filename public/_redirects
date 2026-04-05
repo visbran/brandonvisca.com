@@ -1,0 +1,38 @@
+# Redirections 301 — brandonvisca.com
+# WordPress → Astro (conservation des URLs SEO)
+
+# Pagination principale WP → /blog/
+/page/2    /blog/2    301
+/page/3    /blog/3    301
+/page/4    /blog/4    301
+/page/5    /blog/5    301
+/page/6    /blog/6    301
+/page/7    /blog/7    301
+/page/8    /blog/8    301
+/page/9    /blog/9    301
+/page/10   /blog/10   301
+
+# Anciens slugs WP dupliqués → canonical
+/installation-configuration-iterm2/           /iterm2-guide-configuration-macos-2025/           301
+/installation-de-oh-my-zsh/                   /installation-oh-my-zsh-powerlevel10k-guide-complet/ 301
+/import-pst-outlook365/                       /import-pst-outlook-365-guide-complet/            301
+/migration-wordpress-all-in-one-wp-migration/ /migration-wordpress-all-in-one-guide-2025/       301
+/wordpress-2-solutions-pou-reparer-une-base-de-donnee-corrompu/ /wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/ 301
+/comment-ajouter-un-programme-au-path-windows/ /ajouter-un-programme-au-path-windows/           301
+
+# Pages de catégories WP → /blog/
+/auto-hebergement-homelab/       /blog/  301
+/auto-hebergement-homelab/page/* /blog/  301
+/administration-systeme/         /blog/  301
+/administration-systeme/page/*   /blog/  301
+/developpement-outils/           /blog/  301
+/developpement-outils/page/*     /blog/  301
+/categories/*                    /blog/  301
+
+# Page auteur WP → about
+/author/brandon/ /a-propos/ 301
+
+# WP-specific non-pages → home
+/blog/ /blog/ 200
+/feed/ /rss.xml 301
+/sitemap.xml /sitemap-index.xml 301
