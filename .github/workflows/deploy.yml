@@ -47,7 +47,7 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ steps.cf_token.outputs.access_token }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: pnpm wrangler pages deploy dist --project-name brandonvisca-com --branch main
+        run: npx wrangler@4 pages deploy dist --project-name brandonvisca-com --branch main
 
       # Rotate the refresh token so the next run has a fresh one
       - name: Rotate CF_REFRESH_TOKEN secret
