@@ -32,6 +32,8 @@ C’est là que **Raycast** débarque. Un launcher macOS gratuit, ultra-puissant
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Raycast, c’est quoi exactement ?](#raycast-cest-quoi-exactement)
 - [Installation et premiers pas (spoiler : c’est bête comme chou)](#installation-et-premiers-pas-spoiler-cest-bete-comme-chou)

@@ -68,7 +68,16 @@ Et encore, si tu réutilises ton serveur Nextcloud ou un vieux PC, c’est **qua
 
 ### Jellyfin vs Plex vs Emby : Le match
 
-Critère | Jellyfin | Plex | Emby | **Prix** | 🟢 Gratuit à vie | 🟡 Gratuit (limité) ou 5€/mois | 🟡 Gratuit (limité) ou 5€/mois | **Open source** | 🟢 100% | 🔴 Propriétaire | 🟡 Partiellement | **Vie privée** | 🟢 Aucune télémétrie | 🔴 Compte Plex obligatoire | 🟡 Compte optionnel | **Transcoding** | 🟢 Illimité | 🟡 Limité sans Plex Pass | 🟢 Illimité | **Apps mobiles** | 🟢 Gratuites | 🔴 5€ une fois | 🟡 Freemium | **Interface** | 🟡 Correcte | 🟢 Excellente | 🟢 Très bonne | **Plugins** | 🟢 Large choix | 🟡 Restreints | 🟡 Moyens | **Communauté FR** | 🟢 Active | 🟢 Très active | 🟡 Moyenne | 
+| Critère | Jellyfin | Plex | Emby |
+|---|---|---|---|
+| **Prix** | 🟢 Gratuit à vie | 🟡 Gratuit (limité) ou 5€/mois | 🟡 Gratuit (limité) ou 5€/mois |
+| **Open source** | 🟢 100% | 🔴 Propriétaire | 🟡 Partiellement |
+| **Vie privée** | 🟢 Aucune télémétrie | 🔴 Compte Plex obligatoire | 🟡 Compte optionnel |
+| **Transcoding** | 🟢 Illimité | 🟡 Limité sans Plex Pass | 🟢 Illimité |
+| **Apps mobiles** | 🟢 Gratuites | 🔴 5€ une fois | 🟡 Freemium |
+| **Interface** | 🟡 Correcte | 🟢 Excellente | 🟢 Très bonne |
+| **Plugins** | 🟢 Large choix | 🟡 Restreints | 🟡 Moyens |
+| **Communauté FR** | 🟢 Active | 🟢 Très active | 🟡 Moyenne |
 
 **Verdict :**
 
@@ -102,6 +111,8 @@ Jellyfin c’est quoi exactement ?
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Pourquoi Jellyfin > Netflix (et Plex, et Emby)](#pourquoi-jellyfin-netflix-et-plex-et-emby)
   - [Le calcul économique qui fait mal](#le-calcul-economique-qui-fait-mal)

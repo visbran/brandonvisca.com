@@ -36,6 +36,8 @@ Peu importe que tu utilises Spotify, YouTube Music, VLC, ou IINA. La touche Play
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Le problème : macOS force Apple Music comme lecteur par défaut](#le-probleme-mac-os-force-apple-music-comme-lecteur-par-defaut)
   - [Pourquoi c’est chiant ?](#pourquoi-cest-chiant)

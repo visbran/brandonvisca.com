@@ -10,6 +10,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [La Collaboration au Cœur de l’Innovation](#la-collaboration-au-coeur-de-l-innovation)
 - [À la Découverte de Nouveautés](#a-la-decouverte-de-nouveautes)

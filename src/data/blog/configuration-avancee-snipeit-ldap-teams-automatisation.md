@@ -15,6 +15,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
   - [Installation SnipeIT fonctionnelle](#installation-snipe-it-fonctionnelle)
   - [Accès Active Directory (pour LDAP)](#acces-active-directory-pour-ldap)

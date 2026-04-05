@@ -49,8 +49,8 @@ const isActive = (path: string) => {
           href="/"
           class="group relative z-20 flex items-center gap-2 text-xl font-bold tracking-tight sm:text-2xl shrink-0"
         >
-          <!-- <span class="nav-logo-text">{SITE.title}</span> -->
-          <Logo class="w-37.5 dark:invert" />
+          <span class="nav-logo-text">{SITE.title}</span>
+          <!-- <Logo class="w-37.5 dark:invert" /> -->
         </a>
 
         <!-- Center Audio Player -->
@@ -89,9 +89,9 @@ const isActive = (path: string) => {
           <ul class="hidden sm:flex sm:flex-row sm:items-center sm:gap-1">
             <li>
               <a
-                href="/posts"
-                class:list={["nav-link", { "nav-active": isActive("/posts") }]}
-                >Posts</a
+                href="/blog"
+                class:list={["nav-link", { "nav-active": isActive("/blog") }]}
+                >Articles</a
               >
             </li>
             <li>
@@ -105,14 +105,14 @@ const isActive = (path: string) => {
               <a
                 href="/about"
                 class:list={["nav-link", { "nav-active": isActive("/about") }]}
-                >About</a
+                >À propos</a
               >
             </li>
             <li class="flex items-center">
               <a
                 href="/search"
                 class:list={["nav-link", { "nav-active": isActive("/search") }]}
-                title="Go to Search">Search</a
+                title="Rechercher">Recherche</a
               >
             </li>
             {

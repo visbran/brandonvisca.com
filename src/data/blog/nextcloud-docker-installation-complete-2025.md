@@ -69,6 +69,8 @@ Et encore, si tu as déjà un serveur chez toi (Raspberry Pi, vieux PC…), c’
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Pourquoi Nextcloud > Google Drive (et les autres)](#pourquoi-nextcloud-google-drive-et-les-autres)
   - [Le calcul économique qui fâche](#le-calcul-economique-qui-fache)

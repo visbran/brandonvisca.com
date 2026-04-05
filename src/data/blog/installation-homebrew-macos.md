@@ -22,6 +22,8 @@ Homebrew est le gestionnaire de paquets le plus populaire pour macOS. Il simplif
 
 Sommaire
 -----------
+## Table des matières
+
 
 - [Prérequis système](#prerequis-systeme)
 - [Processus d’installation](#processus-dinstallation)

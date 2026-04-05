@@ -24,6 +24,8 @@ Cette optimisation s’inscrit dans une démarche plus globale de gestion des re
 
 Sommaire :
 -------------
+## Table des matières
+
 
 - [Durcissement de SSH – désactivation de la connexion en tant que root et changement de port](#durcissement-de-ssh-desactivation-de-la-connexion-en-tant-que-root-et-changement-de-port)
 - [Protéger su en limitant l’accès uniquement au groupe admin](#proteger-su-en-limitant-lacces-uniquement-au-groupe-admin)

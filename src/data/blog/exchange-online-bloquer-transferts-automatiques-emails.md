@@ -15,6 +15,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [Introduction](#introduction-1)
 - [Pourquoi c’est un problème majeur en 2025](#pourquoi-cest-un-probleme-majeur-en-2025)
@@ -153,7 +155,12 @@ New-TransportRule -Name "Block-Auto-Forwarding" `
 
 ### Paramètres expliqués
 
-Paramètre | Description | Pourquoi c’est important | `FromScope InOrganization` | Emails provenant de votre organisation | Évite de bloquer les emails légitimes entrants | `SentToScope NotInOrganization` | Destinataire externe | Cible uniquement les sorties vers l’extérieur | `MessageType AutoForward` | Messages transférés automatiquement | Distingue transfert auto vs transfert manuel | `ExceptIfFrom` | Liste blanche d’expéditeurs | Permet les transferts légitimes (comptes de service) | 
+| Paramètre | Description | Pourquoi c’est important |
+|---|---|---|
+| `FromScope InOrganization` | Emails provenant de votre organisation | Évite de bloquer les emails légitimes entrants |
+| `SentToScope NotInOrganization` | Destinataire externe | Cible uniquement les sorties vers l’extérieur |
+| `MessageType AutoForward` | Messages transférés automatiquement | Distingue transfert auto vs transfert manuel |
+| `ExceptIfFrom` | Liste blanche d’expéditeurs | Permet les transferts légitimes (comptes de service) |
 
 ### Version avancée avec logging
 

@@ -14,6 +14,8 @@ tags:
 ---
 
 --------
+## Table des matières
+
 
 - [1. Interdire l’accès aux fichiers sensibles](#1-interdire-lacces-aux-fichiers-sensibles)
   - [Configuration Nginx recommandée :](#configuration-nginx-recommandee)

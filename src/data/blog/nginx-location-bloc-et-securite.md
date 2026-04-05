@@ -14,6 +14,8 @@ tags:
 ---
 
 --------
+## Table des matières
+
 
 - [Qu’est-ce qu’un bloc location dans Nginx ?](#quest-ce-quun-bloc-location-dans-nginx)
 - [Les différents types de blocs location](#les-differents-types-de-blocs-location)

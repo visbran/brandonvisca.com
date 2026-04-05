@@ -13,6 +13,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [1. Installation du plugin All-in-One WP Migration](#1-installation-du-plugin-all-in-one-wp-migration)
   - [Étapes d’installation](#etapes-dinstallation)

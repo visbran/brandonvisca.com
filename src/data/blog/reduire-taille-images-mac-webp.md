@@ -15,6 +15,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [📊 Pourquoi vos images sont-elles si lourdes ?](#%F0%9F%93%8A-pourquoi-vos-images-sont-elles-si-lourdes)
   - [Le problème technique expliqué simplement](#le-probleme-technique-explique-simplement)

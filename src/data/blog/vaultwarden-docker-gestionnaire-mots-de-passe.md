@@ -41,6 +41,8 @@ Tu paies 1Password (36€/an), Dashlane (40€/an) ou LastPass (36€/an) pour g
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Pourquoi un gestionnaire de mots de passe, déjà ?](#pourquoi-un-gestionnaire-de-mots-de-passe-deja)
   - [La vraie question : T’utilises quoi actuellement ?](#la-vraie-question-tutilises-quoi-actuellement)

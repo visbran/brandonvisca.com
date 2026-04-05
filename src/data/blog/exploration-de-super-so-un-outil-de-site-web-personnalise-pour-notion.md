@@ -13,6 +13,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [Personnalisation avancée](#personnalisation-avancee)
 - [Fonctionnalités SEO intégrées](#fonctionnalites-seo-integrees)

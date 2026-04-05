@@ -42,6 +42,8 @@ Dans ce guide, je te montre comment installer LocalWP, créer ton lab perso, et 
 - - - - - -
 
 -----------
+## Table des matières
+
 
   - [🎯 Ce que tu vas apprendre :](#%F0%9F%8E%AF-ce-que-tu-vas-apprendre)
 - [Pourquoi LocalWP plutôt que XAMPP ou MAMP ?](#pourquoi-local-wp-plutot-que-xampp-ou-mamp)

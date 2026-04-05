@@ -32,10 +32,10 @@ export const SITE = {
   lang: "fr",
   timezone: "Europe/Paris",
   introAudio: {
-    enabled: false,
-    src: "",
-    isStream: false,
-    label: "",
-    duration: 0,
+    enabled: true,
+    src: "https://fluxfm.streamabc.net/flx-chillhop-mp3-128-8581707",
+    isStream: true,
+    label: "LOFI",
+    duration: 30,
   },
 } as const;

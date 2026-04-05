@@ -13,26 +13,8 @@ tags:
   - guide
 ---
 
-``-----------
 
-- [Pré-requis : Installer et configurer Raycast](#pre-requis-installer-et-configurer-raycast)
-- [Top 10 des extensions pour développeurs](#top-10-des-extensions-pour-developpeurs)
-  - [1. 🐙 GitHub : ton dépôt dans ta poche](#1-%F0%9F%90%99-git-hub-ton-depot-dans-ta-poche)
-  - [2. 🐳 Docker : gérer tes containers en 3 touches](#2-%F0%9F%90%B3-docker-gerer-tes-containers-en-3-touches)
-  - [3. 🍺 Brew : fini les brew install interminables](#3-%F0%9F%8D%BA-brew-fini-les-brew-install-interminables)
-  - [4. 🔌 Port Manager : killer de ports récalcitrants](#4-%F0%9F%94%8C-port-manager-killer-de-ports-recalcitrants)
-  - [5. 💻 VS Code Project Manager : switcher entre projets](#5-%F0%9F%92%BB-vs-code-project-manager-switcher-entre-projets)
-  - [6. 🎨 Tailwind CSS : la doc à portée de main](#6-%F0%9F%8E%A8-tailwind-css-la-doc-a-portee-de-main)
-  - [7. 🔐 SSH Manager : connexion serveur en 1 seconde](#7-%F0%9F%94%90-ssh-manager-connexion-serveur-en-1-seconde)
-  - [8. 📝 Hashnode : publier des articles techniques](#8-%F0%9F%93%9D-hashnode-publier-des-articles-techniques)
-  - [9. 🦊 GitLab : pour les rebelles anti-GitHub](#9-%F0%9F%A6%8A-git-lab-pour-les-rebelles-anti-git-hub)
-  - [10. 🎨 Color Picker : la pipette ultime](#10-%F0%9F%8E%A8-color-picker-la-pipette-ultime)
-- [Mentions honorables (extensions bonus)](#mentions-honorables-extensions-bonus)
-- [Comment installer et configurer une extension](#comment-installer-et-configurer-une-extension)
-- [Créer sa propre extension (pour les curieux)](#creer-sa-propre-extension-pour-les-curieux)
-- [Conclusion : Ton workflow va changer](#conclusion-ton-workflow-va-changer)
-- [🔗 Articles connexes qui pourraient t’intéresser](#%F0%9F%94%97-articles-connexes-qui-pourraient-tinteresser)
-- [💡 Ressources utiles](#%F0%9F%92%A1-ressources-utiles)
+## Table des matières
 
 -----------------------------------------------------
 

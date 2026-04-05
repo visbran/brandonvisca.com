@@ -18,6 +18,8 @@ tags:
 Spoiler : c’est le successeur non-officiel de Gravity Sync, et il est compatible avec Pi-hole v6.
 
 -----------
+## Table des matières
+
 
 - [Nebula-Sync vs Gravity Sync : le match](#nebula-sync-vs-gravity-sync-le-match)
 - [Installation : toutes les options](#installation-toutes-les-options)

@@ -53,6 +53,8 @@ Si tu fais juste de la compression basique, garde HandBrake. Si tu veux **plus d
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Pourquoi HandBrake ne suffit plus](#pourquoi-hand-brake-ne-suffit-plus)
 - [Shutter Encoder Mac vs HandBrake : comparaison complète](#shutter-encoder-mac-vs-hand-brake-comparaison-complete)

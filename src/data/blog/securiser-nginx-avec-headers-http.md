@@ -14,6 +14,8 @@ tags:
 ---
 
 --------
+## Table des matières
+
 
 - [Pourquoi les headers HTTP sont importants](#pourquoi-les-headers-http-sont-importants)
 - [Les headers de sécurité recommandés par l’OWASP](#les-headers-de-securite-recommandes-par-l-owasp)

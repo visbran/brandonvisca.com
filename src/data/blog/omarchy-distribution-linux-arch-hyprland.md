@@ -17,6 +17,8 @@ tags:
 
 Sommaire : 
 --------------
+## Table des matières
+
 
 - [Omarchy en résumé : Arch sans les larmes](#omarchy-en-resume-arch-sans-les-larmes)
 - [Installation : plus simple qu’un YAML bien indenté](#installation-plus-simple-quun-yaml-bien-indente)

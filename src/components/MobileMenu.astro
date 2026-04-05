@@ -29,12 +29,12 @@ const isActive = (path: string) => {
       <div class="mobile-menu-inner">
         <nav class="mobile-nav-links">
           <a
-            href="/posts"
-            class:list={["mobile-nav-link", { active: isActive("/posts") }]}
+            href="/blog"
+            class:list={["mobile-nav-link", { active: isActive("/blog") }]}
             style="--i:0"
           >
             <span class="mobile-nav-indicator"></span>
-            <span>Posts</span>
+            <span>Articles</span>
           </a>
           <a
             href="/tags"
@@ -50,7 +50,7 @@ const isActive = (path: string) => {
             style="--i:2"
           >
             <span class="mobile-nav-indicator"></span>
-            <span>About</span>
+            <span>À propos</span>
           </a>
           {
             SITE.showArchives && (

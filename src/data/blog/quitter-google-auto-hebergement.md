@@ -47,6 +47,8 @@ Voici comment.
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Introduction : Le jour où j’en ai eu marre](#introduction-le-jour-ou-jen-ai-eu-marre)
 - [Pourquoi quitter Google ? (Les vraies raisons)](#pourquoi-quitter-google-les-vraies-raisons)

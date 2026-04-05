@@ -17,6 +17,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [Prérequis : prépare ton environnement](#prerequis-prepare-ton-environnement)
   - [Côté serveur Snipe-IT](#cote-serveur-snipe-it)

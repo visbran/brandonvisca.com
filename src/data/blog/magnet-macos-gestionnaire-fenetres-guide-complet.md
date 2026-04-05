@@ -34,6 +34,8 @@ Dans cet article, on va décortiquer **Magnet** (l’outil que j’utilise depui
 - - - - - -
 
 ----------
+## Table des matières
+
 
 - [Magnet, c’est quoi exactement ?](#magnet-cest-quoi-exactement)
   - [Le concept (simple comme bonjour)](#le-concept-simple-comme-bonjour)
@@ -145,7 +147,17 @@ Magnet te propose un arsenal de dispositions prédéfinies :
 Les specs techniques (pour les curieux)
 ---------------------------------------
 
-Caractéristique | Détails | **Prix** | 4,99€ (licence perpétuelle) | **Poids** | 3,2 Mo (ridiculement léger) | **macOS minimum** | macOS 13 Ventura | **Optimisé pour** | macOS 15 Sequoia | **Développeur** | BOOTCODE A.S. | **Depuis** | 2012 (13 ans d’expérience !) | **Note App Store** | 4,7/5 (avec des milliers d’avis) | **Modèle** | Achat unique, pas d’abonnement | **Vie privée** | Aucune collecte de données | 
+| Caractéristique | Détails |
+|---|---|
+| **Prix** | 4,99€ (licence perpétuelle) |
+| **Poids** | 3,2 Mo (ridiculement léger) |
+| **macOS minimum** | macOS 13 Ventura |
+| **Optimisé pour** | macOS 15 Sequoia |
+| **Développeur** | BOOTCODE A.S. |
+| **Depuis** | 2012 (13 ans d’expérience !) |
+| **Note App Store** | 4,7/5 (avec des milliers d’avis) |
+| **Modèle** | Achat unique, pas d’abonnement |
+| **Vie privée** | Aucune collecte de données |
 
 ### Ce qui me plaît particulièrement
 
@@ -402,7 +414,16 @@ Si tu es un **addict du trackpad** (MacBook users, je vous vois), Swish est gén
 Le tableau comparatif ultime
 ----------------------------
 
-Outil | Prix | Open Source | Drag & Drop | Raccourcis | Layouts avancés | Multi-écrans | Courbe d’apprentissage | **Magnet** | 4,99€ | ❌ | ✅ Excellent | ✅ Prédéfinis | ✅ Tiers/sixièmes | ✅ 6 écrans | Facile | **Rectangle** | GRATUIT | ✅ | ✅ Correct | ✅ Customisables | ✅ Basiques | ✅ | Facile | **BetterSnapTool** | 2,99€ | ❌ | ✅ Excellent | ⚠️ À configurer | ✅✅ Très poussés | ✅ | Moyenne | **Moom** | 10€ | ❌ | ✅ | ✅ | ✅ + Snapshots | ✅ | Moyenne | **Divvy** | 14€ | ❌ | ❌ (grille) | ✅ | ✅ | ✅ | Facile | **Raycast** | GRATUIT | ❌ | ❌ | ✅ | ⚠️ Basiques | ✅ | Facile | **Loop** | GRATUIT | ✅ | ❌ (menu radial) | ✅ | ✅ | ✅ | Difficile | **Swish** | 16€ | ❌ | ❌ (gestes) | ❌ | ✅ | ✅ | Difficile | 
+| Outil | Prix | Open Source | Drag & Drop | Raccourcis | Layouts avancés | Multi-écrans | Courbe d’apprentissage |
+|---|---|---|---|---|---|---|---|
+| **Magnet** | 4,99€ | ❌ | ✅ Excellent | ✅ Prédéfinis | ✅ Tiers/sixièmes | ✅ 6 écrans | Facile |
+| **Rectangle** | GRATUIT | ✅ | ✅ Correct | ✅ Customisables | ✅ Basiques | ✅ | Facile |
+| **BetterSnapTool** | 2,99€ | ❌ | ✅ Excellent | ⚠️ À configurer | ✅✅ Très poussés | ✅ | Moyenne |
+| **Moom** | 10€ | ❌ | ✅ | ✅ | ✅ + Snapshots | ✅ | Moyenne |
+| **Divvy** | 14€ | ❌ | ❌ (grille) | ✅ | ✅ | ✅ | Facile |
+| **Raycast** | GRATUIT | ❌ | ❌ | ✅ | ⚠️ Basiques | ✅ | Facile |
+| **Loop** | GRATUIT | ✅ | ❌ (menu radial) | ✅ | ✅ | ✅ | Difficile |
+| **Swish** | 16€ | ❌ | ❌ (gestes) | ❌ | ✅ | ✅ | Difficile |
 
 - - - - - -
 

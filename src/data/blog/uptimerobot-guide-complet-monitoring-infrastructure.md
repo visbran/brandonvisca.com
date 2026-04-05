@@ -36,6 +36,8 @@ Contrairement à certains tutoriels qui te balancent juste « clique ici, clique
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [1. Qu’est-ce qu’UptimeRobot (et pourquoi tu devrais t’en servir)](#1-quest-ce-qu-uptime-robot-et-pourquoi-tu-devrais-ten-servir-1-quest-ce-que-uptimerobot)
   - [Pourquoi UptimeRobot plutôt qu’une autre solution ?](#pourquoi-uptime-robot-plutot-quune-autre-solution)

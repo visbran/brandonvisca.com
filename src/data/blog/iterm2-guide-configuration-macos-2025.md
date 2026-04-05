@@ -14,6 +14,8 @@ tags:
 ---
 
 --------
+## Table des matières
+
 
 - [Installation d’iTerm2 : Les bonnes méthodes](#installation-di-term-2-les-bonnes-methodes-installation-iterm-2)
   - [Méthode recommandée : Homebrew (pour les pros)](#methode-recommandee-homebrew-pour-les-pros)

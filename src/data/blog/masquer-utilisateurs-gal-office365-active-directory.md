@@ -23,6 +23,8 @@ Si tu gères un environnement hybride avec Active Directory local et Office 365,
 - - - - - -
 
 -----------
+## Table des matières
+
 
   - [💡 À savoir](#%F0%9F%92%A1-a-savoir)
 - [Pourquoi pas d’extension de schéma ?](#pourquoi-pas-dextension-de-schema)

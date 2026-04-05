@@ -41,6 +41,8 @@ Sur une installation standard, j’ai récupéré **18 Go** de fichiers orphelin
 - - - - - -
 
 ----------
+## Table des matières
+
 
 - [Pourquoi macOS ne sait pas désinstaller proprement](#pourquoi-mac-os-ne-sait-pas-desinstaller-proprement)
 - [AppCleaner Mac vs les alternatives](#app-cleaner-mac-vs-les-alternatives)
@@ -84,7 +86,13 @@ AppCleaner Mac vs les alternatives
 
 Voici un comparatif rapide pour situer AppCleaner face à ses concurrents :
 
-Fonctionnalité | AppCleaner | CleanMyMac | Hazel | Méthode manuelle | **Prix** | Gratuit | 40€/an | 42€ (one-time) | Gratuit | **Détection auto fichiers** | ✅ | ✅ | ✅ | ❌ | **SmartDelete** | ✅ | ✅ | ✅ (règles) | ❌ | **Interface** | Simple | Surchargée | Complexe | Terminal | **Taille** | 2 Mo | 85 Mo | 25 Mo | — | 
+| Fonctionnalité | AppCleaner | CleanMyMac | Hazel | Méthode manuelle |
+|---|---|---|---|---|
+| **Prix** | Gratuit | 40€/an | 42€ (one-time) | Gratuit |
+| **Détection auto fichiers** | ✅ | ✅ | ✅ | ❌ |
+| **SmartDelete** | ✅ | ✅ | ✅ (règles) | ❌ |
+| **Interface** | Simple | Surchargée | Complexe | Terminal |
+| **Taille** | 2 Mo | 85 Mo | 25 Mo | — |
 
 AppCleaner Mac se positionne comme la **solution minimaliste et efficace** : il fait une seule chose, mais il la fait bien.
 

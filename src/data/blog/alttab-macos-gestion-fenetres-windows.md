@@ -48,6 +48,8 @@ AltTab macOS ramène ce comportement sur Mac. Et en mieux.
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Le problème du ⌘+Tab natif sur macOS](#le-probleme-du-%E2%8C%98-tab-natif-sur-mac-os)
 - [AltTab macOS : ce qui change vraiment](#alt-tab-mac-os-ce-qui-change-vraiment)
@@ -102,7 +104,15 @@ AltTab macOS : ce qui change vraiment
 
 Voici ce que AltTab macOS apporte par rapport au switcher natif :
 
-Fonctionnalité | macOS natif (⌘+Tab) | AltTab macOS | **Preview fenêtres** | ❌ Icônes seulement | ✅ Thumbnails en live | **Switcher par fenêtre** | ❌ Par app uniquement | ✅ Chaque fenêtre séparée | **Fermer depuis switcher** | ❌ | ✅ Clic droit ou W | **Filtrer par workspace** | ❌ | ✅ Configurable | **Layouts personnalisés** | ❌ | ✅ Grid, list, thumbnails | **Raccourcis multiples** | ❌ | ✅ Illimités | **Thèmes** | ❌ | ✅ Light, dark, custom | 
+| Fonctionnalité | macOS natif (⌘+Tab) | AltTab macOS |
+|---|---|---|
+| **Preview fenêtres** | ❌ Icônes seulement | ✅ Thumbnails en live |
+| **Switcher par fenêtre** | ❌ Par app uniquement | ✅ Chaque fenêtre séparée |
+| **Fermer depuis switcher** | ❌ | ✅ Clic droit ou W |
+| **Filtrer par workspace** | ❌ | ✅ Configurable |
+| **Layouts personnalisés** | ❌ | ✅ Grid, list, thumbnails |
+| **Raccourcis multiples** | ❌ | ✅ Illimités |
+| **Thèmes** | ❌ | ✅ Light, dark, custom |
 
 Le vrai game changer, c’est la **preview en temps réel**. Tu vois exactement ce qui est dans chaque fenêtre avant de switcher. Fini les « c’était quelle fenêtre déjà ? » qui te font perdre 5 secondes à chaque fois.
 

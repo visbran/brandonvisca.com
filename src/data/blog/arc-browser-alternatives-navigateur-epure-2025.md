@@ -20,6 +20,8 @@ The Browser Company a lâché Arc Browser pour se concentrer sur Dia. Si tu éta
 - - - - - -
 
 ----------
+## Table des matières
+
 
 - [📜 Arc Browser : L’histoire d’un navigateur révolutionnaire (2022-2025)](#le-grand-abandon-d-arc-browser)
   - [Le phénomène Arc : Quand l’ambition rencontre le design](#le-phenomene-arc-quand-lambition-rencontre-le-design)

@@ -29,6 +29,8 @@ TL;DR : L’auto-hébergement en 3 points
 - **Budget ?** De 0€ (vieux PC) à 50€/mois (VPS pro)
 
 ----------
+## Table des matières
+
 
 - [L’auto-hébergement, c’est quoi exactement ?](#lauto-hebergement-cest-quoi-exactement)
   - [Pourquoi les gens s’y mettent en 2025 ?](#pourquoi-les-gens-sy-mettent-en-2025)
@@ -200,7 +202,12 @@ Un serveur virtuel loué chez un hébergeur, accessible 24/7 depuis Internet, av
 
 **Hébergeurs recommandés (testés personnellement) :**
 
-Hébergeur | Prix/mois | RAM | CPU | Stockage | Bande passante | Idéal pour | **Hostinger VPS** | 8,99€ | 4 Go | 2 vCPU | 100 Go NVMe | Illimitée | Débutants, support FR | **Contabo VPS S** | 5,99€ | 4 Go | 2 vCPU | 100 Go SSD | 32 To/mois | Meilleur rapport qualité/prix | **Hetzner CPX11** | 4,51€ | 2 Go | 2 vCPU | 40 Go NVMe | 20 To/mois | Minimaliste, datacenter DE | **OVH VPS Starter** | 6€ | 2 Go | 1 vCPU | 40 Go SSD | Illimitée | Support FR, datacenter FR | 
+| Hébergeur | Prix/mois | RAM | CPU | Stockage | Bande passante | Idéal pour |
+|---|---|---|---|---|---|---|
+| **Hostinger VPS** | 8,99€ | 4 Go | 2 vCPU | 100 Go NVMe | Illimitée | Débutants, support FR |
+| **Contabo VPS S** | 5,99€ | 4 Go | 2 vCPU | 100 Go SSD | 32 To/mois | Meilleur rapport qualité/prix |
+| **Hetzner CPX11** | 4,51€ | 2 Go | 2 vCPU | 40 Go NVMe | 20 To/mois | Minimaliste, datacenter DE |
+| **OVH VPS Starter** | 6€ | 2 Go | 1 vCPU | 40 Go SSD | Illimitée | Support FR, datacenter FR |
 
 **Mon choix perso :** Contabo pour le rapport qualité/prix, ou Hostinger si tu veux du support en français.
 

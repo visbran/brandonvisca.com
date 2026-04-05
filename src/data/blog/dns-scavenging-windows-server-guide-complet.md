@@ -14,6 +14,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [🧩 Comment fonctionne le DNS Scavenging ?](#%F0%9F%A7%A9-comment-fonctionne-le-dns-scavenging)
 - [🛡️ Les avantages du DNS Scavenging](#%F0%9F%9B%A1%EF%B8%8F-les-avantages-du-dns-scavenging)

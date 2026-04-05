@@ -34,6 +34,8 @@ Tu paies Google Drive (120€/an), Netflix (156€/an), 1Password (36€/an), et
 - - - - - -
 
 ----------
+## Table des matières
+
 
 - [Pourquoi l’indépendance numérique, maintenant ?](#pourquoi-lindependance-numerique-maintenant)
   - [La vraie question : Combien tu paies pour tes données ?](#la-vraie-question-combien-tu-paies-pour-tes-donnees)
@@ -87,7 +89,16 @@ Pourquoi l’indépendance numérique, maintenant ?
 
 **Fais le calcul annuel :**
 
-Service | Prix/an | Alternative auto-hébergée | Économie | Google Drive 100GB | 120€ | Nextcloud | 120€/an | iCloud 50GB | 12€ | Nextcloud | 12€/an | Netflix Standard | 156€ | Jellyfin | 156€/an | Disney+ | 120€ | Jellyfin | 120€/an | Prime Video | 70€ | Jellyfin | 70€/an | Spotify Famille | 180€ | Jellyfin | 180€/an | 1Password | 36€ | Vaultwarden | 36€/an | Dashlane | 40€ | Vaultwarden | 40€/an | 
+| Service | Prix/an | Alternative auto-hébergée | Économie |
+|---|---|---|---|
+| Google Drive 100GB | 120€ | Nextcloud | 120€/an |
+| iCloud 50GB | 12€ | Nextcloud | 12€/an |
+| Netflix Standard | 156€ | Jellyfin | 156€/an |
+| Disney+ | 120€ | Jellyfin | 120€/an |
+| Prime Video | 70€ | Jellyfin | 70€/an |
+| Spotify Famille | 180€ | Jellyfin | 180€/an |
+| 1Password | 36€ | Vaultwarden | 36€/an |
+| Dashlane | 40€ | Vaultwarden | 40€/an |
 
 💰 **Total typique : 534-734€/an**  
 💰 **Sur 10 ans : 5 340-7 340€**

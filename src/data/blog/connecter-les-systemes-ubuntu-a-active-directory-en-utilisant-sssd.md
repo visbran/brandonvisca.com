@@ -19,6 +19,8 @@ Introduction
 L’intégration des systèmes Ubuntu à Windows Active Directory (AD) peut simplifier l’authentification des utilisateurs et la gestion des identités sur un réseau. Ce guide détaille comment utiliser le System Security Services Daemon (SSSD) pour connecter efficacement les hôtes Linux à un domaine Active Directory.
 
 ----------
+## Table des matières
+
 
   - [Pourquoi intégrer Ubuntu avec Active Directory ?](#pourquoi-integrer-ubuntu-avec-active-directory)
   - [Préparer votre système Ubuntu](#preparer-votre-systeme-ubuntu)

@@ -14,6 +14,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [2. Installation du thème Catppuccin](#2-installation-du-theme-catppuccin)
 - [3. Configuration du thème](#3-configuration-du-theme)

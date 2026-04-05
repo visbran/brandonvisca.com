@@ -14,6 +14,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [Vérifier l’état actuel de ton swap](#verifier-letat-actuel-de-ton-swap)
 - [Méthode recommandée : créer un fichier swap (pas une partition)](#methode-recommandee-creer-un-fichier-swap-pas-une-partition)

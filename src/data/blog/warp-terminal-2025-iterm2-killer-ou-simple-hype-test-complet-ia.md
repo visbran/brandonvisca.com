@@ -35,6 +35,8 @@ Quand le terminal rencontre l’IA (et ça change tout)
 - - - - - -
 
 ----------
+## Table des matières
+
 
 - [Warp Terminal c’est quoi exactement ?](#warp-terminal-cest-quoi-exactement)
   - [L’évolution : du terminal au ADE (Agentic Development Environment)](#levolution-du-terminal-au-ade-agentic-development-environment)

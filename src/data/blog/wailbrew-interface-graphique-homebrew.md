@@ -28,6 +28,8 @@ Dans ce guide, je te montre comment installer WailBrew (prérequis : Homebrew d�
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Le problème : Homebrew est puissant mais intimidant](#le-probleme-homebrew-est-puissant-mais-intimidant)
   - [Ce que WailBrew résout](#ce-que-wail-brew-resout)

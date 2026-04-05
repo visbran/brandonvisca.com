@@ -3,8 +3,6 @@ import type { HTMLAttributes } from "astro/types";
 import { SOCIALS } from "@/constants";
 import LinkButton from "./LinkButton.astro";
 import { SITE } from "@/config";
-import Logo from "@/assets/logo/devosfera.svg";
-
 const currentYear = new Date().getFullYear();
 const socialHeadingId = "footer-social-heading";
 
@@ -43,13 +41,12 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
           aria-label={`Go to home of ${SITE.title}`}
           class="group footer-home-link relative flex items-center gap-2 rounded-md text-lg font-bold tracking-tight"
         >
-          <Logo class="footer-logo w-28 opacity-80 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105 dark:invert" />
-          <span class="sr-only">{SITE.title}</span>
+          <span class="footer-logo-text">{SITE.title}</span>
         </a>
         <p
           class="max-w-xs text-center font-cartograph text-[11px] leading-relaxed tracking-wide text-foreground/55 sm:text-start"
         >
-          A space where curiosity turns into code.
+          {SITE.desc}
         </p>
       </div>
 
@@ -58,7 +55,7 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
         <p
           id={socialHeadingId}
           class="font-cartograph text-[10px] tracking-wider text-foreground/55 uppercase select-none"
-          >Connect</p
+          >Liens</p
         >
         <ul class="flex items-center gap-2" role="list">
           {
@@ -95,7 +92,7 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
     >
       <p class="font-cartograph text-[11px] tracking-wide text-foreground/50">
         &copy; {currentYear}
-        {SITE.title}. All rights reserved.
+        {SITE.title}. Tous droits réservés.
       </p>
       <p class="font-cartograph text-[11px] tracking-wide text-foreground/45">
         Made with <span class="text-accent">&#9829;</span> and lots of coffee
@@ -125,6 +122,26 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
 
   .footer-home-link {
     outline-offset: 4px;
+  }
+
+  .footer-logo-text {
+    font-size: 1.125rem;
+    font-weight: 700;
+    background: linear-gradient(
+      135deg,
+      var(--foreground) 0%,
+      var(--foreground) 60%,
+      var(--accent) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+
+  .group:hover .footer-logo-text {
+    opacity: 1;
   }
 
   .footer-social-btn {

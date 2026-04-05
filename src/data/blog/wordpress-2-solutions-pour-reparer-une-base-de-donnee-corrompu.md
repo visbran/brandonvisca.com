@@ -14,6 +14,8 @@ tags:
 ---
 
 -----------
+## Table des matières
+
 
 - [Identifier les Symptômes d’une Base de Données Corrompue](#identifier-les-symptomes-dune-base-de-donnees-corrompue)
 - [Utiliser l’Option de Réparation Intégrée de WordPress](#utiliser-l-option-de-reparation-integree-de-word-press)

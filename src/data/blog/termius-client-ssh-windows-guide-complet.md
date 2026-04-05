@@ -42,6 +42,8 @@ Développé par Termius Corporation, l’outil existe en version gratuite (large
 - - - - - -
 
 -----------
+## Table des matières
+
 
 - [Termius en 30 secondes : Le pitch](#termius-en-30-secondes-le-pitch)
 - [Installation sur Windows : 3 minutes chrono](#installation-sur-windows-3-minutes-chrono)
