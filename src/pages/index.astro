@@ -93,21 +93,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !("featured" in data && dat
           {SITE.desc}
         </p>
         <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
-          <p class="text-sm opacity-50 flex-shrink-0">
-            Par
-            <LinkButton
-              class="font-medium underline decoration-dashed underline-offset-4 hover:text-accent"
-              href={SITE.profile}
-              target="_blank"
-            >
-              {SITE.author}
-            </LinkButton>
-          </p>
-
           {
-            // only display if at least one social link is enabled
             SOCIALS.length > 0 && (
-              <div class="sm:border-l border-border/40 sm:pl-4">
+              <div>
                 <Socials />
               </div>
             )

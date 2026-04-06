@@ -26,7 +26,7 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [
       [remarkToc, { heading: "Table des matières", maxDepth: 3 }],
-      [remarkCollapse, { test: "Table des matières" }],
+      [remarkCollapse, { test: "Table des matières", summary: (str: string) => str }],
     ],
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
