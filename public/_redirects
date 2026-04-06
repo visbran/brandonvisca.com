@@ -1,6 +1,9 @@
 # Redirections 301 — brandonvisca.com
 # WordPress → Astro (conservation des URLs SEO)
 
+# www → non-www (doit être en premier)
+https://www.brandonvisca.com/* https://brandonvisca.com/:splat 301
+
 # Pagination principale WP → /blog/
 /page/2    /blog/2    301
 /page/3    /blog/3    301
