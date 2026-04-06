@@ -23,18 +23,18 @@ const [blogPosts, galleryPosts] = await Promise.all([
 const posts = [...blogPosts, ...galleryPosts];
 
 const months = [
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
-  "Mayo",
-  "Junio",
-  "Julio",
-  "Agosto",
-  "Septiembre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre",
+  "Janvier",
+  "Février",
+  "Mars",
+  "Avril",
+  "Mai",
+  "Juin",
+  "Juillet",
+  "Août",
+  "Septembre",
+  "Octobre",
+  "Novembre",
+  "Décembre",
 ];
 
 const totalPosts = posts.length;
@@ -56,16 +56,16 @@ const yearGroups = Object.entries(
       <div class="aurora-mouse" data-archive-mouse></div>
       <div class="relative z-10">
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          <span class="glow-text">Archive</span>
+          <span class="glow-text">Archives</span>
         </h1>
         <p class="mt-3 max-w-lg text-foreground/70 italic">
-          A journey through everything I've published, organized over time.
+          Tout ce que j'ai publié, organisé dans le temps.
         </p>
         <div class="mt-4 flex flex-wrap items-center gap-2">
-          <span class="hero-badge">{totalPosts} posts</span>
+          <span class="hero-badge">{totalPosts} articles</span>
           <span class="hero-badge"
             >{yearGroups.length}
-            {yearGroups.length === 1 ? "año" : "años"}</span
+            {yearGroups.length === 1 ? "an" : "ans"}</span
           >
         </div>
       </div>
