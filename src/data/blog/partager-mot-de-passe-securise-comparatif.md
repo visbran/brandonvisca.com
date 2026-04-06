@@ -1,6 +1,6 @@
 ---
 title: "Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)"
-description: "Tu envoies des mots de passe par Slack ou email ? Mauvaise idée. J'ai comparé Password.link, OneTimeSecret et PrivateBin. Verdict clair selon ton profil."
+description: "Partager un mot de passe sécurisé : j'ai comparé Password.link, OneTimeSecret et PrivateBin. Verdict clair selon ton profil et tes contraintes."
 pubDatetime: "2026-03-14T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -11,7 +11,16 @@ tags:
   - debutant
 featured: false
 draft: false
-focusKeyword: partager mot de passe sécurisé
+focusKeyword: partager un mot de passe sécurisé
+faqs:
+  - question: "Mes mots de passe sont-ils stockés en clair sur ces services ?"
+    answer: "Non. Password.link et OneTimeSecret stockent un secret chiffré. PrivateBin va plus loin avec le chiffrement zero-knowledge côté client : le serveur ne voit jamais le contenu en clair."
+  - question: "Que se passe-t-il si le destinataire ne clique pas sur le lien ?"
+    answer: "Le secret expire automatiquement après la durée configurée (de 1h à 7 jours selon le service). Personne ne peut y accéder après expiration, même l'émetteur."
+  - question: "Ces services remplacent-ils un gestionnaire de mots de passe ?"
+    answer: "Non, ils sont complémentaires. Un gestionnaire (Bitwarden, 1Password) stocke tes mots de passe en permanence. Ces services permettent un partage ponctuel à usage unique."
+  - question: "Peut-on les auto-héberger ?"
+    answer: "PrivateBin est open-source et s'auto-héberge en 10 minutes via Docker. Password.link et OneTimeSecret proposent également des versions auto-hébergées pour les équipes."
 ---
 # Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)
 
@@ -22,6 +31,17 @@ Le problème : ces messages restent dans des historiques, des serveurs de messag
 La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s'efface dès qu'il est ouvert. Une lecture, et c'est mort. J'ai testé les trois principales options — **Password.link**, **OneTimeSecret** et **PrivateBin** (auto-hébergé) — pour te dire laquelle colle à ton usage.
 
 ---
+
+## 📑 Table des matières
+
+1. [TL;DR — Le comparatif en un coup d'œil](#tldr-le-comparatif-en-un-coup-dœil)
+2. [Pourquoi tu NE dois plus envoyer des credentials par email](#pourquoi-tu-ne-dois-plus-envoyer-des-credentials-par-email)
+3. [Password.link — Le plus complet pour les équipes](#passwordlink-le-plus-complet-pour-les-équipes)
+4. [OneTimeSecret — Le vétéran open source](#onetimesecret-le-vétéran-open-source)
+5. [PrivateBin — Le choix des self-hosters](#privatebin-le-choix-des-self-hosters)
+6. [Le verdict : qui doit utiliser quoi ?](#le-verdict-qui-doit-utiliser-quoi)
+7. [FAQ](#faq)
+8. [Conclusion](#conclusion)
 
 ## TL;DR — Le comparatif en un coup d'œil
 

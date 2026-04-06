@@ -1,6 +1,6 @@
 ---
 title: "VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)"
-description: Export-VM qui plante, VSS bloquées ? Reconstruis un VHDX OS sain via WinPE + robocopy + bcdboot, sans réinstaller Windows Server.
+description: "Restaurer une VM Hyper-V avec VHDX OS corrompu : reconstruis l'OS via WinPE + robocopy + bcdboot. Sans réinstaller Windows Server. 45 minutes."
 pubDatetime: "2026-03-10T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -12,7 +12,16 @@ tags:
   - avance
 featured: false
 draft: false
-focusKeyword: restaurer vm hyper-v vhdx corrompu
+focusKeyword: restaurer vm hyper-v vhdx os corrompu
+faqs:
+  - question: "Cette procédure fonctionne-t-elle si la VM ne démarre plus du tout ?"
+    answer: "C'est exactement le cas d'usage. On travaille sur les VHDX en mode offline depuis l'hôte Hyper-V avec WinPE. La VM n'a pas besoin de démarrer."
+  - question: "Faut-il une licence Windows Server pour le WinPE ?"
+    answer: "Non, n'importe quelle ISO Windows Server (ou Windows 10/11) suffit pour booter en WinPE. Les outils utilisés (DiskPart, robocopy, bcdboot) sont inclus nativement."
+  - question: "robocopy peut-il rater des fichiers système critiques ?"
+    answer: "Avec les flags /MIR /COPYALL /DCOPY:ALL, robocopy copie tout y compris les ACLs et attributs système. Seuls les fichiers verrouillés par le kernel (hiberfile.sys) sont ignorés — comportement normal."
+  - question: "Cette procédure fonctionne-t-elle pour Gen1 et Gen2 ?"
+    answer: "La partie WinPE + robocopy fonctionne pour les deux. La reconstruction du boot diffère : bcdboot pour Gen2 UEFI (couvert dans l'article), bootrec /fixmbr pour Gen1 BIOS."
 ---
 # VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)
 
@@ -23,6 +32,25 @@ Bonne nouvelle : c'est récupérable. Sans réinstaller Windows Server. Sans per
 La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline via WinPE, puis reconstruire le boot UEFI de zéro. Ça prend 45 minutes et une bonne tasse de café.
 
 ---
+
+## 📑 Table des matières
+
+1. [📋 Prérequis](#prérequis)
+2. [🧩 Ce qui se passe vraiment](#ce-qui-se-passe-vraiment)
+3. [1️⃣ Créer le nouveau disque OS (sur l'hôte Hyper-V)](#1-créer-le-nouveau-disque-os-sur-lhôte-hyper-v)
+4. [2️⃣ Reconfigurer la VM](#2-reconfigurer-la-vm)
+5. [3️⃣ Démarrer en WinPE](#3-démarrer-en-winpe)
+6. [4️⃣ Initialiser le nouveau disque (DiskPart)](#4-initialiser-le-nouveau-disque-diskpart)
+7. [5️⃣ Assigner une lettre à l'ancien disque OS](#5-assigner-une-lettre-à-lancien-disque-os)
+8. [6️⃣ Copier l'OS en offline (robocopy)](#6-copier-los-en-offline-robocopy)
+9. [7️⃣ Reconstruire le boot UEFI](#7-reconstruire-le-boot-uefi)
+10. [8️⃣ Préparer le redémarrage](#8-préparer-le-redémarrage)
+11. [9️⃣ Premier démarrage et vérifications](#9-premier-démarrage-et-vérifications)
+12. [✅ Validation finale](#validation-finale)
+13. [🧹 Nettoyage final](#nettoyage-final)
+14. [🚨 Problèmes courants](#problèmes-courants)
+15. [🎬 Conclusion](#conclusion)
+16. [❓ FAQ](#faq)
 
 ## 📋 Prérequis
 

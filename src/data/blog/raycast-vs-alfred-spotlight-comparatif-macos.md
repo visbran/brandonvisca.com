@@ -1,6 +1,6 @@
 ---
 title: "Raycast vs Alfred : Test après 30 jours (Verdict 2025)"
-description: "J'ai testé Raycast, Alfred et Spotlight pendant 30 jours. Tableaux comparatifs, prix détaillés, verdict par profil. Guide objectif 2025."
+description: "Raycast vs Alfred vs Spotlight : 30 jours de tests réels. Tableaux comparatifs, prix détaillés, verdict par profil. Quel launcher macOS choisir ?"
 pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -13,6 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: raycast vs alfred
+faqs:
+  - question: "Raycast est-il vraiment gratuit ?"
+    answer: "La version de base est 100% gratuite et très complète. Raycast Pro (8$/mois) ajoute l'IA intégrée, les snippets illimités et quelques fonctions avancées — mais la plupart des usages ne l'exigent pas."
+  - question: "Alfred est-il encore pertinent face à Raycast en 2025 ?"
+    answer: "Alfred reste excellent pour les workflows avancés et les utilisateurs avec des Powerpack payants. Raycast a rattrapé Alfred sur l'usage courant et le dépasse sur l'écosystème d'extensions."
+  - question: "Spotlight suffit-il pour un usage basique ?"
+    answer: "Oui pour lancer des apps et rechercher des fichiers. Spotlight montre vite ses limites sur les recherches web avancées, les calculs, les snippets et l'automatisation."
+  - question: "Peut-on migrer ses workflows Alfred vers Raycast ?"
+    answer: "Pas directement, les formats sont incompatibles. Mais la grande majorité des cas d'usage Alfred sont couverts par les extensions disponibles dans le store Raycast."
 ---
 # Raycast vs Alfred vs Spotlight : Le Comparatif Ultime 2025 (macOS)
 
@@ -20,6 +29,21 @@ focusKeyword: raycast vs alfred
 *Légende : Les 3 launchers macOS comparés*
 
 ---
+
+## 📑 Table des matières
+
+1. [Introduction : La Guerre des Launchers](#introduction-la-guerre-des-launchers)
+2. [Vue d'Ensemble : Les 3 Launchers en Bref](#vue-densemble-les-3-launchers-en-bref)
+3. [Tableau Comparatif Global](#tableau-comparatif-global)
+4. [Comparatif Détaillé : 12 Rounds](#comparatif-détaillé-12-rounds)
+5. [Prix Détaillé : Le Vrai Coût](#prix-détaillé-le-vrai-coût)
+6. [Verdict par Profil Utilisateur](#verdict-par-profil-utilisateur)
+7. [Migration : Comment Passer de X à Y](#migration-comment-passer-de-x-à-y)
+8. [Mon Verdict Personnel (Mac Mini M4)](#mon-verdict-personnel-mac-mini-m4)
+9. [FAQ : Questions Fréquentes](#faq-questions-fréquentes)
+10. [Conclusion : Le Verdict Final](#conclusion-le-verdict-final)
+11. [🔗 Articles Connexes](#articles-connexes)
+12. [💡 Ressources Utiles](#ressources-utiles)
 
 ## Introduction : La Guerre des Launchers
 

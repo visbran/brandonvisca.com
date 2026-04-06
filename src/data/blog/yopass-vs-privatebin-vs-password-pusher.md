@@ -1,6 +1,6 @@
 ---
 title: "Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)"
-description: "Tu envoies encore des mots de passe par Slack ou email ? Grosse erreur. J'ai testé Yopass, PrivateBin et Password Pusher. Voici lequel auto-héberger."
+description: "Partager un mot de passe sécurisé depuis ton homelab : Yopass, PrivateBin ou Password Pusher ? Comparatif complet pour choisir lequel auto-héberger."
 pubDatetime: 2026-03-14 00:00:00+01:00
 author: Brandon Visca
 tags:
@@ -11,7 +11,16 @@ tags:
   - intermediaire
 featured: false
 draft: false
-focusKeyword: partager mot de passe sécurisé
+focusKeyword: partager un mot de passe sécurisé
+faqs:
+  - question: "Quelle différence principale entre Yopass et PrivateBin ?"
+    answer: "Yopass est minimaliste : idéal pour les secrets courts (mots de passe, tokens). PrivateBin supporte de longs textes, du code, des fichiers joints et offre plus d'options d'expiration."
+  - question: "Password Pusher est-il adapté à un homelab ?"
+    answer: "Oui, il se déploie en Docker en 5 minutes avec une interface soignée. Son inconvénient : chiffrement côté serveur (moins sécurisé que Yopass/PrivateBin qui chiffrent côté client)."
+  - question: "Peut-on partager des fichiers avec ces outils ?"
+    answer: "Yopass et PrivateBin supportent les pièces jointes. Password Pusher est limité au texte uniquement."
+  - question: "Lequel choisir sans homelab ?"
+    answer: "Utilise yopass.se (instance publique officielle) ou onetimesecret.com directement depuis le navigateur. Aucune installation requise, fonctionnel en 30 secondes."
 ---
 # Yopass vs PrivateBin vs Password Pusher : lequel choisir? (2025)
 
@@ -24,6 +33,17 @@ Il existe des outils conçus exactement pour ça : partager un secret **une seul
 Spoiler : Yopass pour 80% des cas. Mais ça dépend de ton contexte.
 
 ---
+
+## 📑 Table des matières
+
+1. [TL;DR — Tableau comparatif](#tldr-tableau-comparatif)
+2. [Le vrai problème : pourquoi Slack et email c'est une mauvaise idée](#le-vrai-problème-pourquoi-slack-et-email-cest-une-mauvaise-idée)
+3. [Yopass : la solution minimaliste qui fait le job](#yopass-la-solution-minimaliste-qui-fait-le-job)
+4. [PrivateBin : le champion du zero-knowledge](#privatebin-le-champion-du-zero-knowledge)
+5. [Password Pusher : l'option pour les équipes](#password-pusher-loption-pour-les-équipes)
+6. [Le verdict : qui pour qui ?](#le-verdict-qui-pour-qui)
+7. [FAQ](#faq)
+8. [Conclusion](#conclusion)
 
 ## TL;DR — Tableau comparatif
 

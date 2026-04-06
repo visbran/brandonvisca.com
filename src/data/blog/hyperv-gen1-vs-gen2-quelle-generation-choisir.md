@@ -1,6 +1,6 @@
 ---
 title: "Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)"
-description: "Gen1 ou Gen2 pour ta VM Hyper-V ? UEFI, Secure Boot, PXE, performances : le comparatif complet pour faire le bon choix selon ton OS et ton contexte."
+description: "Hyper-V Gen1 vs Gen2 : UEFI, Secure Boot, PXE, performances — le comparatif complet pour choisir la bonne génération selon ton OS et ton contexte."
 pubDatetime: "2026-03-10T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -13,6 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: hyper-v gen1 vs gen2
+faqs:
+  - question: "Peut-on convertir une VM Hyper-V Gen1 en Gen2 ?"
+    answer: "Non, la génération est définie à la création et ne peut pas être changée. Pour migrer, il faut créer une nouvelle VM Gen2 et y transférer les données avec robocopy ou un outil de migration."
+  - question: "Quels OS ne supportent pas Gen2 ?"
+    answer: "Windows 32 bits, Windows Server 2003/2008 sans SP, et certains vieux Linux sans support UEFI ne fonctionnent qu'en Gen1. Pour tout OS moderne, Gen2 est le bon choix."
+  - question: "Gen2 est-elle toujours plus rapide que Gen1 ?"
+    answer: "Pour le démarrage et l'I/O disque, oui : Gen2 démarre 2-3x plus vite grâce à UEFI. Les performances CPU et réseau sont identiques entre les deux générations."
+  - question: "Le Secure Boot Gen2 bloque-t-il les Linux ?"
+    answer: "Par défaut oui, si ton Linux n'est pas signé par Microsoft. Solution : désactiver le Secure Boot dans les paramètres de la VM Gen2. Ubuntu et Debian sont signés et démarrent sans modification."
 ---
 # Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
 
@@ -23,6 +32,18 @@ Spoiler : dans 90% des cas, tu veux Gen2. Mais il y a des exceptions qui mérite
 Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environnement de production.
 
 ---
+
+## 📑 Table des matières
+
+1. [TL;DR](#tldr)
+2. [C'est quoi la différence concrète ?](#cest-quoi-la-différence-concrète)
+3. [Hyper-V Gen1 : test complet](#hyper-v-gen1-test-complet)
+4. [Hyper-V Gen2 : test complet](#hyper-v-gen2-test-complet)
+5. [Le verdict : qui pour qui ?](#le-verdict-qui-pour-qui)
+6. [Compatibilité OS par génération](#compatibilité-os-par-génération)
+7. [Un point sur Secure Boot en Gen2](#un-point-sur-secure-boot-en-gen2)
+8. [FAQ](#faq)
+9. [🎬 Conclusion](#conclusion)
 
 ## TL;DR
 

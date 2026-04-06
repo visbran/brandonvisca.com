@@ -1,6 +1,6 @@
 ---
 title: "Cling : Recherche fuzzy fichiers 10x plus rapide"
-description: "Cling : trouve fichiers macOS instantanément avec recherche fuzzy. Même avec fautes frappe. Alternative Spotlight. Gratuit, open source."
+description: "Recherche fichiers mac rapide avec Cling : fuzzy search instantané, tolérant aux fautes de frappe. Alternative Spotlight gratuite et open-source."
 pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -13,12 +13,39 @@ tags:
 featured: false
 draft: false
 focusKeyword: recherche fichiers mac rapide
+faqs:
+  - question: "Quelle différence entre Cling et Spotlight ?"
+    answer: "Spotlight indexe le contenu des fichiers (lent à démarrer, nécessite une indexation). Cling fait une recherche fuzzy sur les noms de fichiers : instantané, tolérant aux fautes de frappe, sans délai."
+  - question: "Cling fonctionne-t-il sur les dossiers réseau (NAS, SMB) ?"
+    answer: "Oui, si le dossier réseau est monté sur ton Mac, Cling peut le scanner. Les performances dépendent de ta connexion réseau et de la taille du NAS."
+  - question: "Cling remplace-t-il fzf ou fd en terminal ?"
+    answer: "Cling est une interface graphique au-dessus de ces outils. Si tu travailles uniquement en terminal, fzf reste plus flexible. Cling est idéal pour une recherche rapide sans quitter le contexte visuel."
+  - question: "Cling est-il gratuit ?"
+    answer: "Oui, Cling est gratuit et open-source, développé par Low-Tech Guys. Aucun abonnement ni version payante."
 ---
 # Cling : Recherche fuzzy fichiers 10x plus rapide
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
 
 ---
+
+## 📑 Table des matières
+
+1. [Introduction : Spotlight, c'est bien... pour 2010](#introduction-spotlight-cest-bien-pour-2010)
+2. [TL;DR : Cling en 30 secondes](#tldr-cling-en-30-secondes)
+3. [Qu'est-ce que Cling ?](#quest-ce-que-cling)
+4. [Fuzzy search, c'est quoi ? (Explication simple)](#fuzzy-search-cest-quoi-explication-simple)
+5. [Installation de Cling : 2 méthodes](#installation-de-cling-2-méthodes)
+6. [Configuration essentielle en 5 minutes](#configuration-essentielle-en-5-minutes)
+7. [Utilisation : 4 workflows puissants](#utilisation-4-workflows-puissants)
+8. [Fonctionnalités avancées](#fonctionnalités-avancées)
+9. [Cling vs les alternatives](#cling-vs-les-alternatives)
+10. [Cas d'usage concrets](#cas-dusage-concrets)
+11. [Troubleshooting : Les pièges à éviter](#troubleshooting-les-pièges-à-éviter)
+12. [Limitations à connaître](#limitations-à-connaître)
+13. [Conclusion : Faut-il installer Cling ?](#conclusion-faut-il-installer-cling)
+14. [🔗 Articles connexes qui pourraient t'intéresser](#articles-connexes-qui-pourraient-tintéresser)
+15. [💡 Ressources utiles](#ressources-utiles)
 
 ## Introduction : Spotlight, c'est bien... pour 2010
 

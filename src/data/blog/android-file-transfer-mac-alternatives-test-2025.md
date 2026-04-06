@@ -1,6 +1,6 @@
 ---
 title: "Android File Transfer Mac : 2 alternatives testées (2025)"
-description: "J'ai testé OpenMTP et MacDroid pendant 90 jours. Verdict : OpenMTP gratuit bat Android File Transfer. Comparatif complet avec benchmarks réels."
+description: "Android File Transfer Mac alternative : j'ai testé OpenMTP et MacDroid pendant 90 jours. OpenMTP gratuit gagne. Comparatif avec benchmarks réels."
 pubDatetime: "2025-02-16T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -13,10 +13,32 @@ tags:
 featured: false
 draft: false
 focusKeyword: android file transfer mac alternative
+faqs:
+  - question: "Android File Transfer est-il toujours maintenu par Google ?"
+    answer: "Non, Google a abandonné le développement. L'app crashe régulièrement sur macOS Ventura et ultérieur. OpenMTP est le remplaçant officieux recommandé par la communauté."
+  - question: "OpenMTP est-il vraiment gratuit ?"
+    answer: "Oui, OpenMTP est open-source et 100% gratuit, sans version Pro ni abonnement. Le code source est disponible sur GitHub."
+  - question: "OpenMTP ou MacDroid : lequel choisir ?"
+    answer: "OpenMTP pour l'usage quotidien (gratuit, stable, open-source). MacDroid si tu as besoin de monter l'Android en lecteur réseau SMB ou d'un accès sans-fil depuis ton Mac."
+  - question: "Ça fonctionne avec tous les appareils Android ?"
+    answer: "OpenMTP fonctionne avec tous les appareils Android via le protocole MTP. Active bien le mode MTP dans les options développeur de ton Android avant de connecter le câble."
 ---
 # Android File Transfer Mac : 2 alternatives testées 90 jours (2025)
 
 Tu en as marre qu'Android File Transfer plante toutes les 5 minutes ? J'ai testé OpenMTP et MacDroid pendant 90 jours sur mon MacBook M1. Spoiler : OpenMTP gratuit explose Android File Transfer sur tous les tableaux. Voici pourquoi.
+
+## 📑 Table des matières
+
+1. [🎯 TL;DR : Le verdict en 30 secondes](#tldr-le-verdict-en-30-secondes)
+2. [Mon contexte (pourquoi tu peux me croire)](#mon-contexte-pourquoi-tu-peux-me-croire)
+3. [Le problème avec Android File Transfer](#le-problème-avec-android-file-transfer)
+4. [Alternative 1 : OpenMTP (Le gagnant 🏆)](#alternative-1-openmtp-le-gagnant)
+5. [Alternative 2 : MacDroid (Le premium)](#alternative-2-macdroid-le-premium)
+6. [Le verdict final : Qui pour qui ?](#le-verdict-final-qui-pour-qui)
+7. [Installation OpenMTP en 5 minutes](#installation-openmtp-en-5-minutes)
+8. [🚨 Problèmes courants et solutions](#problèmes-courants-et-solutions)
+9. [FAQ : Les questions que tu te poses](#faq-les-questions-que-tu-te-poses)
+10. [🎬 Conclusion : Pourquoi OpenMTP est mon choix](#conclusion-pourquoi-openmtp-est-mon-choix)
 
 ## 🎯 TL;DR : Le verdict en 30 secondes
 

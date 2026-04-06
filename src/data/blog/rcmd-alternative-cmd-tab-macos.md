@@ -1,6 +1,6 @@
 ---
 title: "rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide"
-description: "rcmd : switch entre apps en 1 touche (Right Cmd + lettre). Alternative Cmd+Tab gratuite, 10x plus rapide. Installation 2 min + config complète."
+description: "rcmd, l'alternative Cmd+Tab mac gratuite : switche entre apps en 1 touche (Right Cmd + lettre). 10x plus rapide. Installation 2 min, config complète."
 pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -12,13 +12,39 @@ tags:
   - debutant
 featured: false
 draft: false
-focusKeyword: rcmd mac alternative
+focusKeyword: rcmd alternative cmd+tab mac
+faqs:
+  - question: "rcmd est-il gratuit ?"
+    answer: "Oui, rcmd est entièrement gratuit. Il n'y a pas de version Pro, pas d'abonnement, pas de fonctions cachées derrière un paywall."
+  - question: "Quelle différence entre rcmd et AltTab ?"
+    answer: "AltTab améliore Cmd+Tab pour naviguer entre toutes les fenêtres. rcmd utilise Right Command + une lettre pour sauter directement vers une app spécifique. Les deux sont complémentaires."
+  - question: "Que se passe-t-il si deux apps commencent par la même lettre ?"
+    answer: "rcmd bascule entre toutes les apps assignées à cette lettre à chaque pression. Tu peux aussi assigner des lettres manuellement dans les préférences pour éviter les collisions."
+  - question: "rcmd fonctionne-t-il avec plusieurs Spaces macOS ?"
+    answer: "Oui, rcmd bascule vers l'app même si elle est dans un autre Space macOS, ce que Cmd+Tab natif ne gère pas toujours correctement."
 ---
 # rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_1_ljjoew.webp)
 
 ---
+
+## 📑 Table des matières
+
+1. [Introduction : Cmd+Tab, c'est 2005](#introduction-cmdtab-cest-2005)
+2. [TL;DR : rcmd en 30 secondes](#tldr-rcmd-en-30-secondes)
+3. [Qu'est-ce que rcmd ?](#quest-ce-que-rcmd)
+4. [Installation de rcmd](#installation-de-rcmd)
+5. [Configuration essentielle en 5 minutes](#configuration-essentielle-en-5-minutes)
+6. [Utilisation : Les bases en 3 exemples](#utilisation-les-bases-en-3-exemples)
+7. [Fonctionnalités avancées (pour aller plus loin)](#fonctionnalités-avancées-pour-aller-plus-loin)
+8. [rcmd vs les alternatives : Le match sans pitié](#rcmd-vs-les-alternatives-le-match-sans-pitié)
+9. [Cas d'usage concrets (comment je gagne 10 min/jour)](#cas-dusage-concrets-comment-je-gagne-10-minjour)
+10. [Troubleshooting : Les pièges à éviter](#troubleshooting-les-pièges-à-éviter)
+11. [Alternatives et comparaisons](#alternatives-et-comparaisons)
+12. [Conclusion : Faut-il adopter rcmd ?](#conclusion-faut-il-adopter-rcmd)
+13. [🔗 Articles connexes qui pourraient t'intéresser](#articles-connexes-qui-pourraient-tintéresser)
+14. [💡 Ressources utiles](#ressources-utiles)
 
 ## Introduction : Cmd+Tab, c'est 2005
 

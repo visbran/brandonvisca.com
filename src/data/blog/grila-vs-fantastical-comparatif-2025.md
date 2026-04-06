@@ -1,6 +1,6 @@
 ---
 title: "Grila vs Fantastical : Comparatif honnête après 6 mois (2025)"
-description: "J'utilise Grila depuis 6 mois (6€). Fantastical coûte 70€/an. Est-ce que ça vaut 64€ de plus ? Comparatif complet pour t'aider à choisir."
+description: "Grila vs Fantastical : j'utilise Grila depuis 6 mois (6€ vs 70€/an). Est-ce que ça vaut 64€ de plus ? Comparatif honnête pour t'aider à choisir."
 pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -13,6 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: grila vs fantastical
+faqs:
+  - question: "Grila est-il vraiment moins cher que Fantastical ?"
+    answer: "Oui. Grila coûte environ 6€ (achat unique). Fantastical coûte 70€/an. Sur 3 ans, Grila revient 35 fois moins cher pour des fonctionnalités couvrant 90% des besoins courants."
+  - question: "Fantastical vaut-il vraiment 70€/an ?"
+    answer: "Pour les power users avec beaucoup de réunions, le natural language parsing et l'intégration Todoist/Jira justifient le prix. Pour un usage personnel standard, Grila fait largement le job."
+  - question: "Grila peut-il remplacer l'app Calendrier d'Apple ?"
+    answer: "Oui pour l'usage quotidien. Grila lit tes calendriers iCloud, Google et Exchange nativement. L'app Calendrier reste utile pour la gestion des abonnements."
+  - question: "Grila supporte-t-il les invitations Calendrier ?"
+    answer: "Oui, Grila affiche les invitations réunion et permet de les accepter ou refuser directement depuis son interface sans ouvrir Mail ou Calendrier."
 ---
 # Grila vs Fantastical : Comparatif honnête après 6 mois (2025)
 
@@ -20,6 +29,20 @@ focusKeyword: grila vs fantastical
 *Légende : Grila (gauche) vs Fantastical (droite) - Lequel choisir ?*
 
 ---
+
+## 📑 Table des matières
+
+1. [Introduction : Le dilemme du calendrier macOS](#introduction-le-dilemme-du-calendrier-macos)
+2. [TL;DR : Mon verdict après analyse](#tldr-mon-verdict-après-analyse)
+3. [Mon contexte : Pourquoi tu peux me croire](#mon-contexte-pourquoi-tu-peux-me-croire)
+4. [Grila : Test complet après 6 mois](#grila-test-complet-après-6-mois)
+5. [Fantastical : Analyse détaillée](#fantastical-analyse-détaillée)
+6. [Le verdict : Qui pour qui ?](#le-verdict-qui-pour-qui)
+7. [Bonus : 3e option (Raycast Calendar)](#bonus-3e-option-raycast-calendar)
+8. [Installation de Grila (si tu choisis cette option)](#installation-de-grila-si-tu-choisis-cette-option)
+9. [FAQ](#faq)
+10. [Ressources utiles](#ressources-utiles)
+11. [Conclusion : Mon verdict final](#conclusion-mon-verdict-final)
 
 ## Introduction : Le dilemme du calendrier macOS
 

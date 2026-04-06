@@ -1,6 +1,6 @@
 ---
 title: "10 Outils Low-Tech macOS gratuits que j'utilise (2025)"
-description: "10 outils Low-Tech macOS que j'utilise quotidiennement : gratuits, légers, efficaces. Brewfile inclus. Économise 453€/an vs alternatives."
+description: "Les meilleurs outils low-tech macos gratuits que j'utilise chaque jour. Légers, efficaces, open-source. Brewfile inclus. Économise 453€/an."
 pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -12,7 +12,16 @@ tags:
   - debutant
 featured: false
 draft: false
-focusKeyword: outils low tech macos
+focusKeyword: outils low-tech macos
+faqs:
+  - question: "Qu'est-ce que la philosophie Low-Tech Guys ?"
+    answer: "Low-Tech Guys crée des apps macOS gratuites et open-source qui font une seule chose très bien : pas d'abonnement, pas de bloatware, pas de tracking. Chaque app fait moins de 10 Mo."
+  - question: "Ces outils fonctionnent-ils sur Apple Silicon ?"
+    answer: "Oui, tous les outils Low-Tech Guys sont compilés nativement pour Apple Silicon (M1/M2/M3/M4) avec des performances optimales sur les Macs récents."
+  - question: "Comment installer tous ces outils d'un coup ?"
+    answer: "Via Homebrew avec le Brewfile inclus dans l'article. Une seule commande `brew bundle` installe tout en quelques minutes sans passer par le Mac App Store."
+  - question: "Dois-je payer pour les mises à jour ?"
+    answer: "Non, tous les outils sont gratuits et les mises à jour le restent. Certains développeurs acceptent les donations mais ce n'est jamais obligatoire."
 ---
 # 10 Outils Low-Tech Indispensables pour macOS (Guide Complet 2025)
 
@@ -20,6 +29,31 @@ focusKeyword: outils low tech macos
 
 
 ---
+
+## 📑 Table des matières
+
+1. [Introduction : La philosophie Low-Tech](#introduction-la-philosophie-low-tech)
+2. [Les 10 Outils Low-Tech (Vue d'ensemble)](#les-10-outils-low-tech-vue-densemble)
+3. [1. rcmd : Switch Apps à la Vitesse de l'Éclair](#1-rcmd-switch-apps-à-la-vitesse-de-léclair)
+4. [2. Clop : Compression Automatique Images/Vidéos](#2-clop-compression-automatique-imagesvidéos)
+5. [3. Lunar : Contrôle Luminosité Écrans Externes](#3-lunar-contrôle-luminosité-écrans-externes)
+6. [4. Cling : Recherche Fuzzy Ultra-Rapide](#4-cling-recherche-fuzzy-ultra-rapide)
+7. [5. Ice : Gestion Barre de Menu Propre](#5-ice-gestion-barre-de-menu-propre)
+8. [6. Grila : Calendrier Hotkey Instant](#6-grila-calendrier-hotkey-instant)
+9. [7. YellowDot : Cache le Point Jaune Encoche](#7-yellowdot-cache-le-point-jaune-encoche)
+10. [8. Music Decoy : Bloque Music.app Auto-Launch](#8-music-decoy-bloque-musicapp-auto-launch)
+11. [9. ZoomHider : Cache Contrôles Zoom en Partage Écran](#9-zoomhider-cache-contrôles-zoom-en-partage-écran)
+12. [10. Startup Folder : Lance Apps au Démarrage (Simple)](#10-startup-folder-lance-apps-au-démarrage-simple)
+13. [Installation Complète en 1 Commande (Brewfile)](#installation-complète-en-1-commande-brewfile)
+14. [Workflows Combinés (La Magie des 10 Outils)](#workflows-combinés-la-magie-des-10-outils)
+15. [Économies Calculées vs Alternatives Payantes](#économies-calculées-vs-alternatives-payantes)
+16. [Configuration Optimale par Profil](#configuration-optimale-par-profil)
+17. [Troubleshooting Global](#troubleshooting-global)
+18. [FAQ : Questions Fréquentes](#faq-questions-fréquentes)
+19. [Conclusion : La Stack Low-Tech Ultime](#conclusion-la-stack-low-tech-ultime)
+20. [🎁 Bonus : Brewfile Complet à Télécharger](#bonus-brewfile-complet-à-télécharger)
+21. [🔗 Guides Détaillés (Série Complète)](#guides-détaillés-série-complète)
+22. [💡 Ressources Utiles](#ressources-utiles)
 
 ## Introduction : La philosophie Low-Tech
 
