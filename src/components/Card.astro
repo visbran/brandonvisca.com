@@ -19,7 +19,7 @@ const href = getEntryPath({ collection, id, filePath });
 const isGallery = collection === "galleries";
 const headingId = `${collection}-${slugifyStr(String(id))}-title`;
 const descriptionId = `${collection}-${slugifyStr(String(id))}-description`;
-const viewTransitionName = slugifyStr(String(id));
+
 ---
 
 <li
@@ -81,7 +81,7 @@ const viewTransitionName = slugifyStr(String(id));
       ]}
       aria-labelledby={headingId}
       aria-describedby={descriptionId}
-      style={{ viewTransitionName }}
+
     >
       <Heading id={headingId} class="flex items-center gap-2">
         {isGallery && (

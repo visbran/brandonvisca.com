@@ -6,7 +6,6 @@ import Footer from "@/components/Footer.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import IconGallery from "@/assets/icons/IconGallery.svg";
 import { getEntryPath } from "@/utils/contentEntry";
-import { slugifyStr } from "@/utils/slugify";
 import getPostsByGroupCondition from "@/utils/getPostsByGroupCondition";
 import { SITE } from "@/config";
 
@@ -125,8 +124,7 @@ const yearGroups = Object.entries(
                                 <span
                                   class="post-title flex items-center gap-2"
                                   style={{
-                                    viewTransitionName: slugifyStr(post.id),
-                                  }}
+                                    }}
                                 >
                                   {post.collection === "galleries" && (
                                     <span title="Gallery" class="inline-flex items-center justify-center p-0.5 rounded-md text-accent/80 opacity-70">
