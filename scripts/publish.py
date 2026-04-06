@@ -40,9 +40,39 @@ ASTRO_FIELDS = {
     "faqs", "ogImage", "canonicalURL", "timezone",
 }
 
+# ── Constantes de validation ───────────────────────────────────────────────────
+
+PRIMARY_TAGS = {
+    "homelab", "auto-hebergement", "linux", "macos", "windows",
+    "docker", "securite", "reseau", "productivite", "sysadmin",
+    "developpement", "microsoft-365",
+}
+LEVEL_TAGS = {"debutant", "intermediaire", "avance"}
+
+EDITORIAL_SECTIONS_RE = re.compile(
+    r"^## (?:📊 Paramètres Rank Math|🔗 Maillage interne|📝 Articles complémentaires"
+    r"|🔄 Maillage inverse|Maillage inverse|Articles complémentaires suggérés)",
+    re.MULTILINE,
+)
+WIKI_LINK_RE = re.compile(r"\[\[[^\]]+\]\]")
+
+FAQ_PLACEHOLDERS = {"", "Question fréquente 1 ?", "Question fréquente 2 ?", "Réponse détaillée"}
+
+TOC_HEADING_RE = re.compile(
+    r"^##\s+(?:📑\s*)?(?:Table des matières|Sommaire|Table of contents)\s*$",
+    re.MULTILINE | re.IGNORECASE,
+)
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 DATE_PREFIX_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
+
+
+def _heading_anchor(text: str) -> str:
+    """Génère un ancre GitHub-style depuis un texte de titre."""
+    text = re.sub(r"[^\w\s-]", "", text.lower())
+    text = re.sub(r"[\s_]+", "-", text.strip())
+    return re.sub(r"-+", "-", text).strip("-")
 
 
 def slugify_title(title: str) -> str:
@@ -172,16 +202,16 @@ def serialize_astro_frontmatter(fm: dict) -> str:
 
 # ── Validation ────────────────────────────────────────────────────────────────
 
-def validate(fm: dict, slug: str) -> list[dict]:
+def validate(fm: dict, slug: str, body: str = "") -> list[dict]:
     """Retourne une liste d'issues {type, msg}."""
     issues = []
 
-    # Champs requis
+    # ── Champs requis ──────────────────────────────────────────────────────────
     for field in ("title", "description", "pubDatetime", "tags"):
         if not fm.get(field):
             issues.append({"type": "error", "msg": f"Champ requis manquant : `{field}`"})
 
-    # Description longueur
+    # ── Description longueur ──────────────────────────────────────────────────
     desc = fm.get("description", "")
     if desc:
         length = len(str(desc))
@@ -191,7 +221,7 @@ def validate(fm: dict, slug: str) -> list[dict]:
                 "msg": f"description : {length} chars (attendu 120-155)"
             })
 
-    # Slug conflit
+    # ── Slug conflit ──────────────────────────────────────────────────────────
     target = BLOG_DIR / f"{slug}.md"
     if target.exists():
         issues.append({
@@ -199,9 +229,58 @@ def validate(fm: dict, slug: str) -> list[dict]:
             "msg": f"Fichier existant dans blog : `{slug}.md` (sera écrasé)"
         })
 
-    # focusKeyword
+    # ── focusKeyword ──────────────────────────────────────────────────────────
     if not fm.get("focusKeyword"):
         issues.append({"type": "info", "msg": "Pas de focusKeyword — SEO non optimisé"})
+
+    # ── Tags ──────────────────────────────────────────────────────────────────
+    tags = fm.get("tags") or []
+    if tags:
+        if len(tags) > 6:
+            issues.append({"type": "warning", "msg": f"Trop de tags : {len(tags)} (max 6) — {tags}"})
+        if not any(t in PRIMARY_TAGS for t in tags):
+            issues.append({"type": "warning", "msg": f"Aucun tag primaire — choisir parmi : homelab, macos, linux, docker, securite…"})
+        if not any(t in LEVEL_TAGS for t in tags):
+            issues.append({"type": "warning", "msg": "Tag de niveau manquant — ajouter `debutant`, `intermediaire` ou `avance`"})
+
+    # ── FAQs ──────────────────────────────────────────────────────────────────
+    faqs = fm.get("faqs") or []
+    if faqs:
+        empty_q = [f for f in faqs if not str(f.get("question", "")).strip()
+                   or str(f.get("question", "")).strip() in FAQ_PLACEHOLDERS]
+        empty_a = [f for f in faqs if not str(f.get("answer", "")).strip()
+                   or str(f.get("answer", "")).strip() in FAQ_PLACEHOLDERS]
+        if empty_q:
+            issues.append({"type": "warning", "msg": f"{len(empty_q)} FAQ(s) avec question vide ou placeholder — à remplir"})
+        if empty_a:
+            issues.append({"type": "warning", "msg": f"{len(empty_a)} FAQ(s) avec réponse vide ou placeholder — à remplir"})
+        if len(faqs) > 6:
+            issues.append({"type": "info", "msg": f"{len(faqs)} FAQs — Google affiche généralement 3-4 max dans les résultats"})
+    else:
+        issues.append({"type": "info", "msg": "Pas de FAQs — ajouter pour le schema FAQPage JSON-LD (SEO)"})
+
+    # ── Corps : sections éditorielles ─────────────────────────────────────────
+    if body:
+        if EDITORIAL_SECTIONS_RE.search(body):
+            issues.append({"type": "error",
+                           "msg": "Section éditoriale détectée (Rank Math / Maillage interne) — supprimer avant publication"})
+
+        wiki_links = WIKI_LINK_RE.findall(body)
+        if wiki_links:
+            issues.append({"type": "error",
+                           "msg": f"{len(wiki_links)} wiki-link(s) [[...]] non convertis — liens cassés en production"})
+
+    # ── Table des matières ────────────────────────────────────────────────────
+    if body:
+        toc_match = TOC_HEADING_RE.search(body)
+        if toc_match:
+            toc_start = toc_match.end()
+            next_h = re.search(r"^##\s+", body[toc_start:], re.MULTILINE)
+            toc_body = body[toc_start: toc_start + next_h.start()] if next_h else body[toc_start:]
+            toc_anchors = re.findall(r"\(#[\w%.-]+\)", toc_body)
+            if not toc_anchors:
+                issues.append({"type": "warning",
+                               "msg": "Table des matières sans ancres `(#anchor)` — vérifier le format des liens"})
 
     return issues
 
@@ -229,7 +308,7 @@ def process_file(filepath: Path, confirm: bool, keep_draft: bool) -> bool:
     astro_fm = build_astro_frontmatter(vault_fm, slug, keep_draft=keep_draft)
 
     # Valider
-    issues = validate(astro_fm, slug)
+    issues = validate(astro_fm, slug, body=body)
     errors = [i for i in issues if i["type"] == "error"]
     warnings = [i for i in issues if i["type"] == "warning"]
     infos = [i for i in issues if i["type"] == "info"]

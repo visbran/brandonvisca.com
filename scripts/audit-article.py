@@ -30,6 +30,13 @@ PENDING_MERGE = {
     "office365": "microsoft-365",
     "tutoriel": "guide",
 }
+
+FAQ_PLACEHOLDERS = {"", "Question fréquente 1 ?", "Question fréquente 2 ?", "Réponse détaillée"}
+
+TOC_HEADING_RE = re.compile(
+    r"^##\s+(?:📑\s*)?(?:Table des matières|Sommaire|Table of contents)\s*$",
+    re.MULTILINE | re.IGNORECASE,
+)
 ACCENTED_TAGS = {
     "productivité": "productivite",
     "vidéos": "multimedia",
@@ -43,6 +50,13 @@ ACCENTED_TAGS = {
 }
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
+def _heading_anchor(text: str) -> str:
+    """Génère un ancre GitHub-style depuis un texte de titre."""
+    text = re.sub(r"[^\w\s-]", "", text.lower())
+    text = re.sub(r"[\s_]+", "-", text.strip())
+    return re.sub(r"-+", "-", text).strip("-")
+
 
 def get_all_slugs() -> set:
     return {f.stem for f in BLOG_DIR.glob("*.md")}
@@ -149,6 +163,72 @@ def audit_focus_keyword(fm_raw: str, body: str, issues: list):
                 "type": "warning", "cat": "seo",
                 "msg": f"Densité focusKeyword trop élevée : {density:.1f}% — risque de sur-optimisation (cible 1-2%)"
             })
+
+
+def audit_faqs(fm_raw: str, issues: list):
+    """Vérifie la présence et la qualité des FAQs (schema FAQPage JSON-LD)."""
+    if fm_raw is None:
+        return
+
+    has_faqs = re.search(r"^faqs:", fm_raw, re.MULTILINE)
+    if not has_faqs:
+        issues.append({"type": "info", "cat": "faq",
+                       "msg": "Pas de FAQs — ajouter pour le schema FAQPage JSON-LD (SEO)"})
+        return
+
+    questions = re.findall(r'^\s+(?:-\s+)?question:\s*["\']?(.*?)["\']?\s*$', fm_raw, re.MULTILINE)
+    answers   = re.findall(r'^\s+(?:-\s+)?answer:\s*["\']?(.*?)["\']?\s*$',   fm_raw, re.MULTILINE)
+
+    if not questions:
+        issues.append({"type": "warning", "cat": "faq",
+                       "msg": "Bloc faqs présent mais sans questions"})
+        return
+
+    empty_q = [q for q in questions if not q.strip() or q.strip() in FAQ_PLACEHOLDERS]
+    if empty_q:
+        issues.append({"type": "warning", "cat": "faq",
+                       "msg": f"{len(empty_q)} FAQ(s) avec question vide ou placeholder — à remplir"})
+
+    empty_a = [a for a in answers if not a.strip() or a.strip() in FAQ_PLACEHOLDERS]
+    if empty_a:
+        issues.append({"type": "warning", "cat": "faq",
+                       "msg": f"{len(empty_a)} FAQ(s) avec réponse vide ou placeholder — à remplir"})
+
+    short_a = [a for a in answers if a.strip() and a.strip() not in FAQ_PLACEHOLDERS and len(a.strip()) < 50]
+    if short_a:
+        issues.append({"type": "info", "cat": "faq",
+                       "msg": f"{len(short_a)} réponse(s) FAQ < 50 chars — développer pour plus de valeur SEO"})
+
+    count = len(questions)
+    if count == 1:
+        issues.append({"type": "info", "cat": "faq",
+                       "msg": "1 seule FAQ — ajouter 2-3 questions supplémentaires pour le schema FAQPage"})
+    elif count > 6:
+        issues.append({"type": "info", "cat": "faq",
+                       "msg": f"{count} FAQs — Google affiche généralement 3-4 max dans les résultats"})
+
+
+def audit_toc(body: str, issues: list):
+    """Vérifie la table des matières si présente."""
+    toc_match = TOC_HEADING_RE.search(body)
+    if not toc_match:
+        return
+
+    toc_start = toc_match.end()
+    next_h = re.search(r"^##\s+", body[toc_start:], re.MULTILINE)
+    toc_body = body[toc_start: toc_start + next_h.start()] if next_h else body[toc_start:]
+
+    # Wiki-links dans la TOC
+    wiki_in_toc = re.findall(r"\[\[[^\]]+\]\]", toc_body)
+    if wiki_in_toc:
+        issues.append({"type": "error", "cat": "toc",
+                       "msg": f"Table des matières : {len(wiki_in_toc)} wiki-link(s) non convertis"})
+        return
+
+    toc_anchors = re.findall(r"\(#[\w%.-]+\)", toc_body)
+    if not toc_anchors:
+        issues.append({"type": "warning", "cat": "toc",
+                       "msg": "Table des matières sans ancres `(#anchor)` — vérifier le format des liens"})
 
 
 def audit_tags(fm_raw: str, issues: list):
@@ -335,7 +415,9 @@ def audit_file(filepath: Path) -> dict:
         audit_frontmatter(fm_raw, issues)
         audit_tags(fm_raw, issues)
         audit_focus_keyword(fm_raw, body, issues)
+        audit_faqs(fm_raw, issues)
 
+    audit_toc(body, issues)
     audit_tables(body, issues)
     audit_code_blocks(body, issues)
     audit_hr_separators(body, issues)
