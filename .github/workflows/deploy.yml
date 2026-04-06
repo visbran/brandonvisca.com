@@ -45,6 +45,8 @@ jobs:
           ACCESS_TOKEN=$(echo "$RESPONSE" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['access_token'])")
           NEW_REFRESH=$(echo "$RESPONSE" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['refresh_token'])")
 
+          echo "::add-mask::$ACCESS_TOKEN"
+          echo "::add-mask::$NEW_REFRESH"
           echo "access_token=$ACCESS_TOKEN" >> "$GITHUB_OUTPUT"
           echo "new_refresh=$NEW_REFRESH" >> "$GITHUB_OUTPUT"
 
@@ -60,4 +62,4 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ steps.cf_token.outputs.access_token }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: npx wrangler@4 pages deploy dist --project-name brandonvisca-com --branch main
+        run: npx wrangler@4 pages deploy dist --project-name brandonvisca-com --branch main --commit-message "deploy $(git rev-parse --short HEAD)"
