@@ -125,9 +125,7 @@ const yearGroups = Object.entries(
                                 <span
                                   class="post-title flex items-center gap-2"
                                   style={{
-                                    viewTransitionName: slugifyStr(
-                                      post.data.title.replaceAll(".", "-")
-                                    ),
+                                    viewTransitionName: slugifyStr(post.id),
                                   }}
                                 >
                                   {post.collection === "galleries" && (

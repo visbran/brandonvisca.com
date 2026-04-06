@@ -35,6 +35,14 @@ secrets/
 # macOS-specific files
 .DS_Store
 
+# Root-level .md docs — internal, not relevant for the public fork
+CLAUDE.md
+GALLERIES.md
+THEME_CUSTOMIZATIONS.md
+AUDIT_REPORT.md
+TAGS_AUDIT.md
+.cloudflare-pages-config.md
+
 # jetbrains setting folder
 .idea/
 

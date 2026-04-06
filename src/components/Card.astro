@@ -19,7 +19,7 @@ const href = getEntryPath({ collection, id, filePath });
 const isGallery = collection === "galleries";
 const headingId = `${collection}-${slugifyStr(String(id))}-title`;
 const descriptionId = `${collection}-${slugifyStr(String(id))}-description`;
-const viewTransitionName = slugifyStr(String(title).replaceAll(".", "-"));
+const viewTransitionName = slugifyStr(String(id));
 ---
 
 <li
