@@ -15,7 +15,7 @@ export const SITE = {
   showBackButton: true,
   heroTerminalPrompt: {
     prefix: "~/homelab",
-    path: "/brandonvisca.com",
+    branch: "main",
     suffix: "$",
   },
   backdropEffects: {

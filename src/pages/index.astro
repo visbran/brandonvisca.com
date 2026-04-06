@@ -37,19 +37,20 @@ const recentPosts = sortedPosts.filter(({ data }) => !("featured" in data && dat
     >
       <div class="relative z-10">
         <!-- Terminal prompt badge -->
-        <div
-          class="mb-3 inline-flex items-center gap-2 rounded-full border border-border/40 bg-muted/20 px-3.5 py-1.5 font-cartograph text-xs sm:text-sm"
-        >
-          <span class="relative flex h-2 w-2">
+        <div class="terminal-badge mb-3">
+          <span class="relative flex h-2 w-2 flex-shrink-0">
             <span
               class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60"
             ></span>
             <span class="relative inline-flex h-2 w-2 rounded-full bg-accent"
             ></span>
           </span>
-            <span class="text-accent">{SITE.heroTerminalPrompt.prefix}</span>
-            {SITE.heroTerminalPrompt.path}
-            <span class="opacity-40">{SITE.heroTerminalPrompt.suffix}</span>
+          <span class="terminal-prefix">{SITE.heroTerminalPrompt.prefix}</span>
+          {SITE.heroTerminalPrompt.branch && (
+            <span class="terminal-branch">git:(<span class="terminal-branch-name">{SITE.heroTerminalPrompt.branch}</span>)</span>
+          )}
+          <span class="terminal-suffix">{SITE.heroTerminalPrompt.suffix}</span>
+          <span class="terminal-cursor" aria-hidden="true">▌</span>
         </div>
 
         <!-- Title -->
@@ -173,6 +174,60 @@ const recentPosts = sortedPosts.filter(({ data }) => !("featured" in data && dat
 </Layout>
 
 <style>
+  /* ── Terminal badge ── */
+  .terminal-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 1rem 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--border) 40%);
+    background: color-mix(in srgb, var(--accent) 4%, color-mix(in srgb, var(--foreground) 3%, var(--background)));
+    backdrop-filter: blur(8px);
+    font-family: var(--font-cartograph), monospace;
+    font-size: 0.75rem;
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--accent) 6%, transparent),
+      0 2px 12px -2px color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+
+  @media (min-width: 640px) {
+    .terminal-badge { font-size: 0.875rem; }
+  }
+
+  .terminal-prefix {
+    color: var(--accent);
+    font-weight: 600;
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 40%, transparent));
+  }
+
+  .terminal-branch {
+    opacity: 0.55;
+    font-size: 0.7em;
+  }
+
+  .terminal-branch-name {
+    color: var(--accent);
+    opacity: 0.9;
+  }
+
+  .terminal-suffix {
+    opacity: 0.35;
+  }
+
+  .terminal-cursor {
+    color: var(--accent);
+    opacity: 0.8;
+    animation: cursor-blink 1.1s step-end infinite;
+    line-height: 1;
+    margin-left: -0.1rem;
+  }
+
+  @keyframes cursor-blink {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0; }
+  }
+
   /* ── Hero title shimmer ── */
   .hero-title {
     background: linear-gradient(
