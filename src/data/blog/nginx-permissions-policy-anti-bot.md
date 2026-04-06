@@ -11,7 +11,7 @@ tags:
   - headers
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -36,10 +36,10 @@ Deux approches particulièrement utiles :
 
 Ces deux mesures combinées offrent un **contrôle plus précis du comportement client** et **protègent votre serveur contre les abus**.
 
-- - - - - -
+---
 
 1. Permissions-Policy : contrôle des capacités navigateur
----------------------------------------------------------
+---
 
 Anciennement connue sous le nom de Feature-Policy, cette en-tête HTTP permet de **restreindre ou autoriser l’accès aux fonctionnalités sensibles du navigateur**, comme la caméra, le micro, la géolocalisation, etc.
 
@@ -47,7 +47,7 @@ Anciennement connue sous le nom de Feature-Policy, cette en-tête HTTP permet de
 
 Empêcher les navigateurs d’accéder à des APIs si ce n’est pas nécessaire au bon fonctionnement du site.
 
-- - - - - -
+---
 
 ### Exemple de configuration :
 
@@ -59,7 +59,7 @@ add_header Permissions-Policy "geolocation=(), microphone=(), camera=(), fullscr
 camera=(self "https://appli.externe.com")
 
 
-- - - - - -
+---
 
 ### Pourquoi l’utiliser ?
 
@@ -68,14 +68,14 @@ camera=(self "https://appli.externe.com")
 - Compatible avec les navigateurs modernes (Chrome, Edge, Firefox)
 - Permet de **respecter les règles RGPD** en désactivant des fonctions sensibles
 
-- - - - - -
+---
 
 2. Rate limiting avec Nginx : la protection anti-bots native
-------------------------------------------------------------
+---
 
 Les attaques par force brute, les scans automatisés ou les abus de formulaire sont **des menaces constantes** pour les serveurs web. Heureusement, **Nginx dispose de modules intégrés** pour contrôler le débit par IP.
 
-- - - - - -
+---
 
 ### Étape 1 : définir une zone de limitation
 
@@ -111,10 +111,10 @@ Et si tu veux aller plus loin :
 - [fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page) pour bannir les IP
 - [ModSecurity](https://www.modsecurity.org/) pour un WAF plus complet
 
-- - - - - -
+---
 
 Exemple combiné : sécurité sur un endpoint de formulaire
---------------------------------------------------------
+---
 
 ```bash
 location /contact {

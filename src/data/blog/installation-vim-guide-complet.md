@@ -11,7 +11,7 @@ tags:
   - vim
 ---
 
---------
+---
 ## Table des matières
 
 
@@ -31,7 +31,7 @@ tags:
 
 
 1. Installation de Vim sur macOS
---------------------------------
+---
 
 ### Via Homebrew
 
@@ -52,7 +52,7 @@ make
 sudo make install
 
 2. Configuration de base
-------------------------
+---
 
 ### Création du fichier .vimrc
 
@@ -78,7 +78,7 @@ set shiftwidth=4
 set expandtab
 
 3. Personnalisation avancée
----------------------------
+---
 
 ### Installation d’un gestionnaire de plugins
 
@@ -143,7 +143,7 @@ En cas de conflits, vous pouvez :
 Cette configuration vous donnera une base solide pour utiliser Vim efficacement. N’hésitez pas à explorer davantage et à personnaliser votre configuration selon vos besoins.
 
 Sources et références
----------------------
+---
 
 - [Documentation officielle de Vim](https://www.vim.org/docs.php)
 - [Dépôt GitHub officiel de Vim](https://github.com/vim/vim)

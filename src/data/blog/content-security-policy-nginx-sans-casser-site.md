@@ -11,7 +11,7 @@ tags:
   - csp
 ---
 
---------
+---
 ## Table des matières
 
 
@@ -30,7 +30,7 @@ tags:
 - [En résumé](#en-resume)
 - [Ressources utiles](#ressources-utiles)
 
-------------
+---
 
 La **Content-Security-Policy** (CSP) est l’un des outils les plus puissants de la sécurité web moderne. Pourtant, elle est aussi l’une des plus redoutées. Mal configurée, elle peut casser des fonctionnalités critiques de votre site. Bien configurée, elle offre une **protection redoutable contre les attaques XSS, les injections de scripts et les chargements externes non maîtrisés**.
 
@@ -41,10 +41,10 @@ Dans cet article, nous allons explorer pas à pas :
 - Comment éviter de bloquer le bon fonctionnement du site
 - Et comment la tester et l’ajuster en toute sécurité
 
-- - - - - -
+---
 
 Qu’est-ce qu’une Content-Security-Policy (CSP) ?
-------------------------------------------------
+---
 
 La CSP est un **header HTTP** qui indique au navigateur **quelles ressources il est autorisé à charger** (scripts, styles, images, etc.) et depuis quelles sources.
 
@@ -62,10 +62,10 @@ Content-Security-Policy: default-src 'self'
 
 Sans CSP, le navigateur l’exécutera. Avec une bonne politique, il le bloquera purement et simplement.
 
-- - - - - -
+---
 
 Intégrer une CSP dans Nginx
----------------------------
+---
 
 Dans Nginx, la CSP se configure via une directive `add_header` dans votre bloc `server {}` ou `location {}`.
 
@@ -91,10 +91,10 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsaf
 
 💡 Tu peux **affiner chaque directive** selon les besoins de ton site.
 
-- - - - - -
+---
 
 CSP et environnement frontend moderne
--------------------------------------
+---
 
 Si tu utilises un framework comme Vue, React, Angular ou un CMS comme WordPress, il faut adapter la CSP :
 
@@ -117,19 +117,19 @@ Couple ça avec une plateforme de monitoring CSP comme :
 - [https://report-uri.com](https://report-uri.com/)
 - [https://csp-evaluator.withgoogle.com](https://csp-evaluator.withgoogle.com/)
 
-- - - - - -
+---
 
 Où ajouter la CSP dans Nginx ?
-------------------------------
+---
 
 Toujours dans le bloc `server {}` ou directement dans un `location` si tu veux l’appliquer uniquement sur des zones sensibles (`/admin`, `/login`, etc.)
 
 **Important :** ajoute `always` pour que le header soit appliqué même sur les pages 404/500.
 
-- - - - - -
+---
 
 Conseils pratiques
-------------------
+---
 
 - 🔁 Teste ta CSP sur un environnement de staging avant production
 - ✅ Utilise `report-only` pour analyser sans casse
@@ -138,10 +138,10 @@ Conseils pratiques
 - ❌ Évite `unsafe-inline` et `unsafe-eval` si ton frontend le permet
 - 🧩 Ne bloque jamais `img-src data:` si tu utilises des images en base64 (ex. avatars dans WordPress)
 
-- - - - - -
+---
 
 Tester votre configuration
---------------------------
+---
 
 Voici les meilleurs outils pour valider ta politique CSP :
 
@@ -151,10 +151,10 @@ Voici les meilleurs outils pour valider ta politique CSP :
 
 Avec une CSP bien configurée, ton site obtiendra facilement un score **A ou A+** sur ces plateformes.
 
-- - - - - -
+---
 
 Cas réel : CSP dans un contexte scolaire (site avec sous-répertoires)
----------------------------------------------------------------------
+---
 
 Si tu héberges des applications ou sites étudiants dans des sous-répertoires (`/tata`, `/toto`, etc.), tu peux appliquer une CSP globale dans un bloc avec regex :
 

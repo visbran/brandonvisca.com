@@ -18,13 +18,13 @@ Bienvenue dans le monde de l’**auto-hébergement**.
 Spoiler : c’est moins compliqué que tu le crois, et une fois que tu auras goûté à la liberté d’héberger tes propres services, tu ne pourras plus revenir en arrière.
 
 TL;DR : L’auto-hébergement en 3 points
---------------------------------------
+---
 
 - **C’est quoi ?** Héberger soi-même ses services (cloud, mail, sites…) au lieu de dépendre de Google/Microsoft
 - **Pour qui ?** Débutants curieux, passionnés de tech, admins qui veulent apprendre
 - **Budget ?** De 0€ (vieux PC) à 50€/mois (VPS pro)
 
-----------
+---
 ## Table des matières
 
 
@@ -97,7 +97,7 @@ TL;DR : L’auto-hébergement en 3 points
 
 
 L’auto-hébergement, c’est quoi exactement ?
--------------------------------------------
+---
 
 L’auto-hébergement (ou « self-hosting » pour les anglophones), c’est le fait d’**héberger ses propres services numériques** sur du matériel qu’on contrôle, plutôt que de passer par des plateformes tierces.
 
@@ -128,10 +128,10 @@ Oui, c’est geek, mais c’est satisfaisant de dire « J’ai mon propre cloud 
 > **À savoir :**  
 > L’auto-hébergement n’est pas une religion. Tu peux mélanger : garder Gmail pour les mails importants, mais héberger ton Nextcloud pour tes fichiers. L’important, c’est de choisir consciemment.
 
-- - - - - -
+---
 
 Les 3 façons de se lancer dans l’auto-hébergement
--------------------------------------------------
+---
 
 ### Option 1 : Le homelab physique (chez toi)
 
@@ -189,7 +189,7 @@ Un serveur ou mini-PC qui tourne 24/7 chez toi, dans un placard, sous ton bureau
 **Pour qui ?**  
 Les curieux qui veulent comprendre le matériel, ceux qui ont une bonne connexion fibre, les paranos de la vie privée, ceux qui aiment bidouiller.
 
-- - - - - -
+---
 
 ### Option 2 : Le VPS (serveur cloud)
 
@@ -226,7 +226,7 @@ Ceux qui veulent des services accessibles de partout, les débutants qui n’ont
 
 > **Important :** Si tu choisis un VPS, commence directement par sécuriser ton serveur. J’ai un guide complet sur [la sécurisation d’un serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) que tu devrais lire avant de faire quoi que ce soit d’autre.
 
-- - - - - -
+---
 
 ### Option 3 : Le combo gagnant (homelab + VPS)
 
@@ -265,10 +265,10 @@ Héberger chez toi les services « lourds » (fichiers, médias), et sur un VPS 
 **Pour qui ?**  
 Les utilisateurs confirmés qui veulent une vraie infrastructure, ceux qui autohébergent « sérieusement », les admins sys qui veulent reproduire une infra pro à la maison.
 
-- - - - - -
+---
 
 Les prérequis avant de commencer
---------------------------------
+---
 
 Avant de te lancer tête baissée, voici ce que tu dois avoir (ou apprendre).
 
@@ -298,7 +298,7 @@ Avant de te lancer tête baissée, voici ce que tu dois avoir (ou apprendre).
 **Si tu débutes :**  
 Pas de panique ! Chaque article que je publie est pensé pour les débutants. Tu apprendras au fur et à mesure. Rome ne s’est pas faite en un jour, et ton homelab non plus.
 
-- - - - - -
+---
 
 ### Matériel / Budget
 
@@ -341,7 +341,7 @@ Pas de panique ! Chaque article que je publie est pensé pour les débutants. Tu
 - Proxmox avec plusieurs VMs
 - Stockage confortable
 
-- - - - - -
+---
 
 ### Connexion Internet
 
@@ -359,10 +359,10 @@ Va sur [Fast.com](https://fast.com/) ou [nPerf](https://www.nperf.com/) et regar
 
 N’importe quelle connexion suffit. Même une 4G pourrie, car tu administres le serveur, tu ne l’héberges pas physiquement.
 
-- - - - - -
+---
 
 Les 5 premiers services à auto-héberger (par ordre de difficulté)
------------------------------------------------------------------
+---
 
 ### 1. Uptime Kuma — Monitoring ultra-simple 🟢
 
@@ -386,7 +386,7 @@ Un outil de monitoring pour vérifier que tes services sont bien en ligne. Inter
 - Accéder à une interface web
 - Configurer des checks HTTP/HTTPS
 
-- - - - - -
+---
 
 ### 2. Nextcloud — Ton cloud personnel 🟡
 
@@ -415,7 +415,7 @@ C’est LE service signature de l’auto-hébergement. Si tu n’héberges qu’
 - Calendar
 - Notes
 
-- - - - - -
+---
 
 ### 3. Vaultwarden — Gestionnaire de mots de passe 🟢
 
@@ -441,7 +441,7 @@ Fini les mots de passe « 123456 » réutilisés partout. Et contrairement à La
 - Apps mobiles (iOS, Android)
 - Apps desktop (Windows, Mac, Linux)
 
-- - - - - -
+---
 
 ### 4. Jellyfin — Ton Netflix maison 🟡
 
@@ -463,7 +463,7 @@ Parce que c’est satisfaisant d’avoir son propre Netflix avec sa bibliothèqu
 - Gérer les profils utilisateurs
 - Transcoder à la volée (si ton CPU le supporte)
 
-- - - - - -
+---
 
 ### 5. Immich — Alternative à Google Photos 🟡
 
@@ -487,10 +487,10 @@ Google Photos, c’est pratique, mais tes photos sont analysées par leurs algos
 **Apps mobiles :**  
 iOS et Android, avec synchronisation automatique en arrière-plan.
 
-- - - - - -
+---
 
 Erreurs fréquentes des débutants (et comment les éviter)
---------------------------------------------------------
+---
 
 ### ❌ Erreur 1 : Tout exposer sur Internet sans sécurité
 
@@ -513,7 +513,7 @@ Tu ouvres tous les ports sur ta box (22 pour SSH, 80/443 pour HTTP/HTTPS, et 15 
 
 **Important :** Lis absolument mon guide sur [comment sécuriser un serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) avant d’exposer quoi que ce soit sur Internet.
 
-- - - - - -
+---
 
 ### ❌ Erreur 2 : Pas de backups
 
@@ -546,7 +546,7 @@ Respecte la règle du **3-2-1** :
 - Photos/documents : Hebdomadaire
 - Médias (films/séries) : Pas besoin (tu peux les re-télécharger)
 
-- - - - - -
+---
 
 ### ❌ Erreur 3 : Vouloir tout faire d’un coup
 
@@ -573,7 +573,7 @@ Commence par **UN service** à la fois. Maîtrise-le complètement avant de pass
 
 **Philosophie :** Mieux vaut 3 services qui marchent bien qu’on comprend, que 15 services cassés qu’on ne maîtrise pas.
 
-- - - - - -
+---
 
 ### ❌ Erreur 4 : Négliger la documentation
 
@@ -604,7 +604,7 @@ Documente TOUT au fur et à mesure, même si ça te semble évident.
 - Les mots de passe (dans un gestionnaire chiffré, évidemment)
 - Les problèmes rencontrés et leurs solutions
 
-- - - - - -
+---
 
 ### ❌ Erreur 5 : Ignorer les logs
 

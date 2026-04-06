@@ -11,7 +11,7 @@ tags:
   - productivite
 ---
 
---------
+---
 ## Table des matières
 
 
@@ -40,7 +40,7 @@ tags:
   - [Et maintenant ?](#et-maintenant)
   - [Ressources utiles :](#ressources-utiles)
 
---------------------------------------
+---
 
 Soyons honnêtes : le **Terminal natif de macOS**, c’est un peu comme conduire une Twingo quand on pourrait avoir une Tesla. Ça fait le job, mais **iTerm2**, c’est le **meilleur terminal macOS 2025** qui comprend vos besoins de **développeur moderne**.
 
@@ -49,7 +49,7 @@ Au programme : **split-screen**, **recherche avancée**, **hotkey window**, **au
 > **Fun fact :** iTerm2 existe depuis 2009 et a survécu à tous les changements d’Apple. Autant dire que c’est du solide !
 
 Installation d’iTerm2 : Les bonnes méthodes
--------------------------------------------
+---
 
 ### Méthode recommandée : Homebrew (pour les pros)
 

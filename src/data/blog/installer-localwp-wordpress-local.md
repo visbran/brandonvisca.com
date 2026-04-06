@@ -12,7 +12,7 @@ tags:
 ---
 
 Introduction
-------------
+---
 
 T’es encore en train de développer direct en prod comme un cowboy ? Genre tu testes ton nouveau plugin sur ton site live avec 10 000 visiteurs/jour ?
 
@@ -22,7 +22,7 @@ Spoiler : un jour, tu vas tout péter. Et tu vas pleurer.
 
 Dans ce guide, je te montre comment installer LocalWP, créer ton lab perso, et surtout : **comment migrer proprement vers la prod sans tout péter**.
 
-- - - - - -
+---
 
 ### 🎯 Ce que tu vas apprendre :
 
@@ -35,9 +35,7 @@ Dans ce guide, je te montre comment installer LocalWP, créer ton lab perso, et 
 💡 **Besoin d’un hébergement fiable pour ta migration ?**  
 [O2Switch](https://www.o2switch.fr/) – Hébergeur français, support expert, migrations incluses. J’ai migré +20 sites dessus, jamais eu de soucis.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -89,7 +87,7 @@ Dans ce guide, je te montre comment installer LocalWP, créer ton lab perso, et 
 
 
 Pourquoi LocalWP plutôt que XAMPP ou MAMP ?
--------------------------------------------
+---
 
 ### Le match LocalWP VS les dinosaures
 
@@ -116,10 +114,10 @@ XAMPP, c’était bien. Mais là, franchement, passe à autre chose.
 
 Même si t’es débutant, LocalWP simplifie tellement le process que tu seras opérationnel en 10 minutes. Promis.
 
-- - - - - -
+---
 
 Installation de LocalWP (vraiment 5 minutes)
---------------------------------------------
+---
 
 ### Étape 1 : Téléchargement
 
@@ -228,10 +226,10 @@ wp db reset --yes
 
 Si tu pètes tout, tu rollback en 2 clics. Magique.
 
-- - - - - -
+---
 
 Les 5 galères LocalWP (et comment les buter)
---------------------------------------------
+---
 
 ### 🔴 Problème 1 : « Site Cannot Be Reached »
 
@@ -367,10 +365,10 @@ git push -u origin main
 - Git pour la gestion de version
 - Déploiement automatisé vers prod (via GitHub Actions ou Deployer)
 
-- - - - - -
+---
 
 FAQ : Questions fréquentes
---------------------------
+---
 
 ### LocalWP est-il gratuit ?
 
@@ -429,10 +427,10 @@ Beaucoup de freelances/agences utilisent LocalWP en production quotidienne.
 
 Avec ça, tu tournes fluide même avec 5-10 sites actifs.
 
-- - - - - -
+---
 
 Conclusion : LocalWP, c’est le début du voyage
-----------------------------------------------
+---
 
 LocalWP, c’est **l’outil parfait** pour arrêter de développer en mode cowboy et adopter un workflow propre :
 
@@ -476,6 +474,6 @@ Je prépare une formation **« Homelab Weekend »** pour apprendre à gérer tou
 - [Docker pour débutants : 10 services à auto-héberger](https://brandonvisca.com/docker-debutant-services-auto-heberger/)
 - [Configuration Nginx : blocs location et sécurité](https://brandonvisca.com/nginx-location-bloc-et-securite/)
 
-- - - - - -
+---
 
 *Article mis à jour en novembre 2025 – Testé sur LocalWP 8.0+ / WordPress 6.7+*

@@ -11,7 +11,7 @@ tags:
   - intermediaire
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -59,7 +59,7 @@ tags:
 
 
 Introduction : Pourquoi Oh My Zsh va changer votre vie
-------------------------------------------------------
+---
 
 **Spoiler alert :** Après avoir installé Oh My Zsh, vous ne pourrez plus jamais revenir au bash par défaut. C’est scientifiquement prouvé (bon, pas vraiment, mais presque).
 
@@ -74,10 +74,10 @@ Introduction : Pourquoi Oh My Zsh va changer votre vie
 
 **Pour qui ?** Développeurs, sysadmins, étudiants, ou quiconque passe plus de 5 minutes par jour dans un terminal (donc vous, probablement).
 
-- - - - - -
+---
 
 Prérequis : Ce qu’il vous faut avant de commencer
--------------------------------------------------
+---
 
 ### Installation de Zsh
 
@@ -128,10 +128,10 @@ source ~/.bashrc
 exec zsh  # Pour basculer vers zsh
 
 
-- - - - - -
+---
 
 Installation de Oh My Zsh : La méthode qui marche
--------------------------------------------------
+---
 
 ### Méthode recommandée (curl)
 
@@ -154,10 +154,10 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 L’installation vous demandera si vous voulez faire de zsh votre shell par défaut. **Répondez « Y »** (oui) sauf si vous avez une bonne raison de ne pas le faire.
 
-- - - - - -
+---
 
 Configuration de base : Les incontournables
--------------------------------------------
+---
 
 ### Le fichier de configuration
 
@@ -212,10 +212,10 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 source ~/.zshrc
 
 
-- - - - - -
+---
 
 Powerlevel10k : Le thème qui tue tout
--------------------------------------
+---
 
 Oubliez les thèmes basiques. **Powerlevel10k** (P10k pour les intimes) est **LE** thème qui va transformer votre terminal en vaisseau spatial.
 
@@ -306,10 +306,10 @@ nano ~/.p10k.zsh
 git config --global --add safe.directory /votre/repo
 
 
-- - - - - -
+---
 
 Plugins essentiels : Votre nouveau superpouvoir
------------------------------------------------
+---
 
 Oh My Zsh, c’est **300+ plugins** prêts à l’emploi. Voici ma sélection de ceux qui changent vraiment la vie.
 
@@ -526,10 +526,10 @@ uninstall_oh_my_zsh
 
 brew install --cask jordanbaird-ice
 
-- - - - - -
+---
 
 Conclusion
-----------
+---
 
 **Bravo !** Vous venez de transformer votre terminal en véritable **cockpit de développeur**. Avec Oh My Zsh et Powerlevel10k, vous avez maintenant :
 
@@ -550,10 +550,10 @@ Un bon terminal, c’est comme un bon café ☕ : ça rend tout le reste possibl
 
 **Questions ? Problèmes ?** La communauté Oh My Zsh est ultra-active. Et n’hésitez pas à partager vos configs et découvertes !
 
-- - - - - -
+---
 
 Liens utiles
-------------
+---
 
 - [Documentation officielle Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 - [Powerlevel10k GitHub](https://github.com/romkatv/powerlevel10k)

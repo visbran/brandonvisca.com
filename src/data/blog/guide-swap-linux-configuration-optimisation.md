@@ -11,7 +11,7 @@ tags:
   - swap
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -33,7 +33,7 @@ tags:
 Spoiler : on va éviter les manipulations de partition à la hache et privilégier des méthodes qui ne casseront pas ton système en prod.
 
 **Qu’est-ce que le swap et pourquoi tu en as (vraiment) besoin**
-----------------------------------------------------------------
+---
 
 Le swap, c’est un peu comme ton canapé d’appoint quand ta belle-mère débarque à l’improviste : pas idéal, mais ça dépanne. Quand ta RAM est pleine, Linux balance intelligemment les données les moins utilisées vers cet espace de stockage temporaire.
 
@@ -41,7 +41,7 @@ Le swap, c’est un peu comme ton canapé d’appoint quand ta belle-mère déba
 *Contrairement aux idées reçues, avoir du swap même avec beaucoup de RAM reste une bonne pratique. Linux s’en sert pour optimiser la gestion mémoire et éviter les crashs d’applications.*
 
 **Vérifier l’état actuel de ton swap**
---------------------------------------
+---
 
 Avant de jouer les apprentis sorciers, on regarde ce qu’on a sous le capot :
 
@@ -115,7 +115,7 @@ echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf
 - **Jamais 0** : ça désactive complètement le swap, pas malin
 
 **Gérer plusieurs fichiers swap (si tu as plusieurs disques)**
---------------------------------------------------------------
+---
 
 Tu peux avoir plusieurs fichiers swap et jouer avec les priorités :
 
@@ -152,7 +152,7 @@ sudo swapon /swapfile
 *Ne jamais faire ça sur un système en production sous charge. Privilégie les heures creuses ou une maintenance programmée.*
 
 **Supprimer proprement un swap**
---------------------------------
+---
 
 Si tu veux nettoyer :
 
@@ -179,7 +179,7 @@ iostat -x 1
 
 
 **Cas d’usage pratiques**
--------------------------
+---
 
 **Serveur web avec 2GB RAM :** 2-4GB de swap  
 **Base de données :** 1-2x la RAM si < 8GB, sinon 8-16GB max  
@@ -188,7 +188,7 @@ iostat -x 1
 Si tu utilises des conteneurs, pense à consulter mon guide sur [la sécurisation des serveurs Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) pour une approche globale de l’optimisation système.
 
 **En résumé**
--------------
+---
 
 ✅ **Privilégie les fichiers swap** aux partitions  
 ⚙️ **Ajuste la swappiness** selon ton usage  

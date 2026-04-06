@@ -14,7 +14,7 @@ tags:
 
 ## Table des matières
 
------------------------------------------------------
+---
 
 Si t’as lu [mon article précédent sur Raycast](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/), tu sais déjà que c’est **la bombe absolue** pour la productivité sur macOS.
 
@@ -26,10 +26,10 @@ Aujourd’hui, on va voir les **10 extensions que j’utilise tous les jours** e
 
 Que tu sois dev frontend, backend, DevOps ou admin système, il y a forcément un truc pour toi ici.
 
-- - - - - -
+---
 
 Pré-requis : Installer et configurer Raycast
---------------------------------------------
+---
 
 Avant de foncer tête baissée dans les extensions, assure-toi d’avoir :
 
@@ -39,10 +39,10 @@ Avant de foncer tête baissée dans les extensions, assure-toi d’avoir :
 
 > **À savoir :** Toutes les extensions listées ici sont **100% gratuites**. Pas de paywall, pas de surprise.
 
-- - - - - -
+---
 
 Top 10 des extensions pour développeurs
----------------------------------------
+---
 
 ### 1. 🐙 GitHub : ton dépôt dans ta poche
 
@@ -98,7 +98,7 @@ T’es en train de dev, ton container Postgres plante. Au lieu d’ouvrir Docker
 
 > **Pro tip :** Configure un alias `dk` pour l’extension Docker. Tu gagneras encore plus de temps.
 
-- - - - - -
+---
 
 ### 3. 🍺 Brew : fini les `brew install` interminables
 
@@ -166,7 +166,7 @@ Raycast ouvre iTerm/Terminal et lance la connexion.
 
 > **Bon à savoir :** Cette extension fonctionne avec iTerm2, Terminal, Warp, et Alacritty.
 
-- - - - - -
+---
 
 ### 8. 📝 Hashnode : publier des articles techniques
 
@@ -202,7 +202,7 @@ Tu viens de finir un article dans Notion/Obsidian. Au lieu d’aller sur Hashnod
 ⌘ + Espace → hashnode publish → Colle ton markdown → Publish
 
 
-- - - - - -
+---
 
 ### 9. 🦊 GitLab : pour les rebelles anti-GitHub
 
@@ -241,7 +241,7 @@ Je bosse sur un projet client hébergé sur GitLab. Chaque jour :
 
 Résultat : je suis **beaucoup plus réactif** sur les reviews.
 
-- - - - - -
+---
 
 ### 10. 🎨 Color Picker : la pipette ultime
 
@@ -281,10 +281,10 @@ Tu veux reproduire une couleur d’un site concurrent :
 ⌘ + Shift + C → Clique sur l'élément → Colle dans ton CSS
 
 
-- - - - - -
+---
 
 Mentions honorables (extensions bonus)
---------------------------------------
+---
 
 Voici d’autres extensions qui méritent le détour :
 
@@ -301,7 +301,7 @@ Voici d’autres extensions qui méritent le détour :
 
 
 Comment installer et configurer une extension
----------------------------------------------
+---
 
 **Processus universel :**
 
@@ -315,10 +315,10 @@ Comment installer et configurer une extension
 
 > **Erreur fréquente :** Si une extension ne marche pas, vérifie que l’app associée est bien installée (Docker Desktop, VS Code, etc.).
 
-- - - - - -
+---
 
 Créer sa propre extension (pour les curieux)
---------------------------------------------
+---
 
 Si tu veux aller plus loin, Raycast te permet de **créer tes propres extensions** en TypeScript + React.
 

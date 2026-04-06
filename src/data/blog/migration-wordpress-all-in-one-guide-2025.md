@@ -11,7 +11,7 @@ tags:
   - guide
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -52,7 +52,7 @@ tags:
   - [Faut-il sauvegarder avant migration ? TOUJOURS.](#faq-question-1752691669734)
   - [Comment migrer un multisite WordPress ?](#faq-question-1752691688150)
 
-------------
+---
 
 Alors, tu dois migrer ton site WordPress et tu te demandes comment faire ça proprement sans tout péter ? Parfait, tu es au bon endroit ! La migration WordPress, c’est un peu comme déménager : si tu t’y prends mal, tu risques de casser la vaisselle.
 
@@ -61,10 +61,10 @@ Alors, tu dois migrer ton site WordPress et tu te demandes comment faire ça pro
 💡 **Besoin d’un hébergement fiable pour ta migration ?**  
 [O2Switch](https://www.o2switch.fr/) – Hébergeur français, support expert, migrations incluses
 
-- - - - - -
+---
 
 1. Installation du plugin All-in-One WP Migration
--------------------------------------------------
+---
 
 Première étape : installer ce petit bijou sur ton **site de destination**. Ouais, pas sur l’ancien, sur le nouveau ! C’est logique mais on préfère le préciser.
 
@@ -85,10 +85,10 @@ Si tu veux la version 6.77 spécifiquement (celle qui importe encore gratuitemen
 2. **Téléverser une extension** → Sélectionne le fichier ZIP
 3. **Active** le plugin
 
-- - - - - -
+---
 
 2. Export de ton site source
-----------------------------
+---
 
 Maintenant, on s’occupe de l’**ancien site** (celui que tu veux migrer). C’est parti pour l’export !
 
@@ -110,10 +110,10 @@ Tu peux exclure certains éléments si besoin :
 - **Thèmes non utilisés**
 - **Plugins désactivés**
 
-- - - - - -
+---
 
 3. Import sur le nouveau site
------------------------------
+---
 
 On passe aux choses sérieuses : l’import sur ton nouveau serveur.
 
@@ -138,10 +138,10 @@ On passe aux choses sérieuses : l’import sur ton nouveau serveur.
 3. **Lance l’importation** et va boire un café ☕
 4. **Confirme l’import** quand le plugin te le demande
 
-- - - - - -
+---
 
 4. Restauration et vérifications
---------------------------------
+---
 
 Une fois l’import terminé, c’est pas fini ! Il faut restaurer et vérifier que tout fonctionne.
 
@@ -161,10 +161,10 @@ Une fois l’import terminé, c’est pas fini ! Il faut restaurer et vérifier 
 ✅ **Plugins** : Reactive les plugins désactivés  
 ✅ **Permaliens** : Va dans Réglages → Permaliens → Enregistrer
 
-- - - - - -
+---
 
 5. Augmenter la limite de taille d’importation
-----------------------------------------------
+---
 
 Ton site fait plus de 100MB ? (spoiler : c’est le cas de 99% des sites) Il va falloir bidouiller un peu.
 
@@ -187,10 +187,10 @@ define( 'AI1WM_MAX_FILE_SIZE', 2 << 40 );
 
 > 🚀 **Résultat :** Tu peux maintenant importer des fichiers jusqu’à **2 To** ! Largement de quoi voir venir.
 
-- - - - - -
+---
 
 6. Version 6.77 : La dernière qui importe gratuitement
-------------------------------------------------------
+---
 
 Petit point important : depuis la version 6.77, les développeurs ont retiré la fonction d’import gratuite des nouvelles versions.
 

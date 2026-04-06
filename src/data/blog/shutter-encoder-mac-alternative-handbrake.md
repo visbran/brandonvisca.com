@@ -12,7 +12,7 @@ tags:
 ---
 
 TL;DR
------
+---
 
 HandBrake c’est bien pour compresser des vidéos rapidement. Mais dès que tu veux faire du trimming, ajouter des sous-titres hardcodés, ou du color grading basique, t’es coincé. HandBrake fait **une chose** : la compression. Point.
 
@@ -20,10 +20,10 @@ HandBrake c’est bien pour compresser des vidéos rapidement. Mais dès que tu 
 
 Dans ce guide, je te montre comment installer Shutter Encoder Mac, l’utiliser en mode simple pour compresser rapidement, et exploiter ses fonctions avancées pour éditer, sous-titrer, et automatiser le traitement de dizaines de vidéos.
 
-- - - - - -
+---
 
 Pourquoi HandBrake ne suffit plus
----------------------------------
+---
 
 HandBrake est excellent pour **convertir et compresser**. Mais si tu veux :
 
@@ -37,10 +37,10 @@ HandBrake te dira : « Utilise un autre outil ».
 
 Shutter Encoder fait **tout ça**, gratuitement, avec FFmpeg intégré (pas besoin d’installer quoi que ce soit).
 
-- - - - - -
+---
 
 Shutter Encoder Mac vs HandBrake : comparaison complète
--------------------------------------------------------
+---
 
 | Fonctionnalité | HandBrake | Shutter Encoder Mac |
 |---|---|---|
@@ -57,9 +57,7 @@ Shutter Encoder Mac vs HandBrake : comparaison complète
 
 Si tu fais juste de la compression basique, garde HandBrake. Si tu veux **plus de contrôle**, Shutter Encoder devient indispensable.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -103,7 +101,7 @@ Si tu fais juste de la compression basique, garde HandBrake. Si tu veux **plus d
 
 
 Installation de Shutter Encoder Mac
------------------------------------
+---
 
 ### Téléchargement direct 
 
@@ -145,10 +143,10 @@ Shutter Encoder peut surveiller un dossier et encoder automatiquement tout ce qu
 
 Dès qu’un fichier vidéo entre dans ce dossier, Shutter Encoder l’encode automatiquement. Pratique pour des workflows automatisés (ex : récupération vidéos drone → compression auto).
 
-- - - - - -
+---
 
 Conclusion : Shutter Encoder Mac, l’outil qui remplace 5 logiciels
-------------------------------------------------------------------
+---
 
 Si je devais résumer Shutter Encoder en une phrase : **c’est l’outil qui fait ce que HandBrake, iMovie (pour le trim), Subtitle Edit, et FFmpeg en ligne de commande font séparément, mais dans une seule interface**.
 
@@ -160,10 +158,10 @@ Prochaine étape : si tu gères beaucoup de fichiers Mac, jette un œil à mon g
 
 Et toi, tu utilises quoi pour compresser/éditer tes vidéos ? HandBrake, Adobe Media Encoder, ou un autre outil ? Dis-moi en commentaire.
 
-- - - - - -
+---
 
 FAQ Shutter Encoder Mac
------------------------
+---
 
 ### **Shutter Encoder est-il vraiment gratuit ?**
 
@@ -185,10 +183,10 @@ Shutter Encoder est une interface graphique pour FFmpeg. Si tu maîtrises FFmpeg
 
 Ça dépend du codec. H.264 (MP4) est compatible partout. H.265 fonctionne sur les devices récents (2016+). Pour maximiser compatibilité, utilise H.264.
 
-- - - - - -
+---
 
 Liens utiles
-------------
+---
 
 - [Site officiel Shutter Encoder](https://www.shutterencoder.com/) (source de téléchargement)
 - [Guide d’installation Homebrew](https://brandonvisca.com/installation-homebrew-macos/) (pour outils en CLI)

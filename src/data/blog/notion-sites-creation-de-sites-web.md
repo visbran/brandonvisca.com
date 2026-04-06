@@ -11,7 +11,7 @@ tags:
   - guide
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -26,7 +26,7 @@ tags:
   - [Comment puis-je intégrer un domaine personnalisé à mon site Notion?](#faq-question-1719342521590)
   - [Est-ce que Notion Sites est adapté pour la création de blogs professionnels?](#faq-question-1719342532579)
 
----------------------------
+---
 
 [Notion](http://notion.so), célèbre pour ses capacités de gestion de tâches et de notes, étend ses fonctionnalités avec [Notion Sites](https://www.notion.so/fr-fr/help/guides/build-a-website-with-notion-in-seconds-no-coding-required), permettant aux utilisateurs de transformer facilement leurs pages en sites web complets. Cette nouvelle fonctionnalité vise à simplifier le processus de création et de gestion de sites web pour une variété d’applications, allant des portfolios personnels aux sites d’entreprise complexes.
 
@@ -39,7 +39,7 @@ Notion Sites offre une approche intuitive pour [créer des sites web à partir d
 Un guide détaillé accompagne les utilisateurs dans la [publication instantanée de leurs pages Notion en ligne](https://la-webeuse.com/creer-un-site-web-avec-notion/). Notion permet l’intégration facile de domaines personnalisés et la gestion efficace des sous-domaines notion.site. Les options tarifaires offertes sont comparées à celles d’autres plateformes de création de sites web, mettant en lumière la flexibilité et l’accessibilité des fonctionnalités proposées.
 
 Avantages de Notion Sites
--------------------------
+---
 
 ### Facilité d’utilisation et Rapidité de Publication
 
@@ -54,7 +54,7 @@ La plateforme offre des fonctionnalités CMS robustes, permettant la création a
 Notion facilite la [transformation de pages web statiques en collections CMS dynamiques](https://www.impli.fr/post/creer-son-site-avec-notion). Cette capacité permet aux utilisateurs de créer des vues de galerie attrayantes, personnalisables selon les besoins spécifiques du contenu. La flexibilité offerte dans la gestion des propriétés des modèles permet d’afficher des descriptions détaillées et des liens pertinents, offrant ainsi une expérience utilisateur enrichie.
 
 F.A.Q
------
+---
 
 ### Quelle est la différence principale entre Notion Sites et d’autres plateformes comme WordPress?
 

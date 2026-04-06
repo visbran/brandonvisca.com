@@ -18,10 +18,10 @@ Assurez-vous de dimensionner en fonction des ressources disponibles, du nombre d
 
 Cette optimisation s’inscrit dans une démarche plus globale de gestion des ressources système — au même titre que la [configuration du swap Linux](https://brandonvisca.com/guide-swap-linux-configuration-optimisation/) qui permet d’éviter les dysfonctionnements en cas de saturation mémoire.
 
-- - - - - -
+---
 
 Sommaire :
--------------
+---
 ## Table des matières
 
 
@@ -48,7 +48,7 @@ Sommaire :
 
 
 Sécurisation de la mémoire partagée
------------------------------------
+---
 
 - /dev/shm peut être utilisé dans une attaque contre un service en cours d’exécution, tel que httpd. Modifiez /etc/fstab pour le rendre plus sécurisé.
 - Ouvrez une fenêtre de terminal et entrez ce qui suit :
@@ -62,7 +62,7 @@ tmpfs     /dev/shm     tmpfs     defaults,noexec,nosuid     0     0
 
 
 Durcissement de SSH – désactivation de la connexion en tant que root et changement de port
-------------------------------------------------------------------------------------------
+---
 
 - Le moyen le plus simple de sécuriser SSH est de désactiver la connexion en tant que root et de changer le port SSH pour quelque chose de différent du port standard 22.
 - Avant de désactiver la connexion root, créez un nouvel utilisateur SSH et assurez-vous que l’utilisateur appartient au groupe admin (voir l’étape 4. ci-dessous concernant le groupe admin).
@@ -162,7 +162,7 @@ sudo /etc/init.d/bind9 restart
 
 
 Prévenir l’usurpation d’IP
---------------------------
+---
 
 - Ouvrez un terminal et entrez ce qui suit :
 
@@ -176,7 +176,7 @@ nospoof on
 
 
 Renforcez PHP pour la sécurité
-------------------------------
+---
 
 - Modifiez le fichier php.ini :
 
@@ -219,7 +219,7 @@ sudo /etc/init.d/apache2 restart
 
 
 Analysez les journaux et bannissez les hôtes suspects – DenyHosts et Fail2Ban
------------------------------------------------------------------------------
+---
 
 - [DenyHosts](http://denyhosts.sourceforge.net/) est un programme python qui bloque automatiquement les attaques SSH en ajoutant des entrées à /etc/hosts.deny. DenyHosts informera également les administrateurs Linux sur les hôtes offensants, les utilisateurs attaqués et les connexions suspectes.
 - Ouvrez un terminal et entrez ce qui suit :

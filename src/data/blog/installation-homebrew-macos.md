@@ -12,14 +12,14 @@ tags:
 ---
 
 HIntroduction à Homebrew
------------------------
+---
 
 Homebrew est le gestionnaire de paquets le plus populaire pour macOS. Il simplifie considérablement l’installation et la gestion des logiciels sur votre Mac.
 
-- - - - - -
+---
 
 Sommaire
------------
+---
 ## Table des matières
 
 
@@ -33,14 +33,14 @@ Sommaire
 
 
 Prérequis système
------------------
+---
 
 - MacOS 11 (Big Sur) ou plus récent
 - Xcode Command Line Tools
 - Terminal ou Autre (iTerm2)
 
 Processus d’installation
-------------------------
+---
 
 Pour installer Homebrew, ouvrez le Terminal et exécutez la commande suivante :
 
@@ -54,7 +54,7 @@ brew doctor
 > comme **iTerm2** 👉 [Guide complet iTerm2 macOS](/lien-iterm2)«
 
 Utilisation basique
--------------------
+---
 
 Voici les commandes de base pour utiliser Homebrew :
 
@@ -65,7 +65,7 @@ Voici les commandes de base pour utiliser Homebrew :
 - `brew upgrade` – Mettre à jour tous les paquets
 
 Les apps essentielles à installer immédiatement
------------------------------------------------
+---
 
 Maintenant que **Homebrew tourne comme une horloge suisse**, voici les premières applications à installer pour transformer votre Mac en machine de guerre :
 

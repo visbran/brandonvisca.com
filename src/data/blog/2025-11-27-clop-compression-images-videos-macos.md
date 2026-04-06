@@ -20,7 +20,9 @@ tags:
 
 ## Introduction : Le drame des fichiers trop lourds
 
-![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+<video controls autoplay loop muted playsinline>
+  <source src="https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4" type="video/mp4">
+</video>
 
 On connaît tous cette situation frustrante :
 
@@ -58,7 +60,9 @@ Let's go ! 🚀
 
 **Clop** (de "Clipboard Optimizer"), c'est un outil développé par [Low Tech Guys](https://lowtechguys.com/) qui optimise automatiquement **images, vidéos, PDFs et contenus clipboard** sur macOS.
 
-![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+<video controls autoplay loop muted playsinline>
+  <source src="https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4" type="video/mp4">
+</video>
 ### Le concept en une phrase
 
 **Copy large, paste small, send fast.**
@@ -191,7 +195,9 @@ Au premier lancement, Clop te demande :
 
 ### Workflow 3 : Drag & Drop intelligent
 
-![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+<video controls autoplay loop muted playsinline>
+  <source src="https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4" type="video/mp4">
+</video>
 
 **Le problème** : Tu as 10 images à compresser avant de les uploader sur ton site WordPress.
 
@@ -210,7 +216,9 @@ Au premier lancement, Clop te demande :
 
 ### 1. Downscaling intelligent
 
-![](https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4)
+<video controls autoplay loop muted playsinline>
+  <source src="https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4" type="video/mp4">
+</video>
 
 **Problème** : Ton screenshot fait 3840x2160 (4K) mais tu n'as besoin que de 1920x1080 pour un article de blog.
 

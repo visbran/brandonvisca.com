@@ -15,7 +15,7 @@ tags:
 ---
 
 La gestion de fenêtres sur macOS, c’était la galère
----------------------------------------------------
+---
 
 Tu connais cette sensation ?
 
@@ -31,9 +31,7 @@ Pendant ce temps, tes potes sur Windows snappent leurs fenêtres en **un clic** 
 
 Dans cet article, on va décortiquer **Magnet** (l’outil que j’utilise depuis 2 ans), le comparer avec ses concurrents, et te donner toutes les clés pour choisir LE gestionnaire de fenêtres qui va révolutionner ton workflow.
 
-- - - - - -
-
-----------
+---
 ## Table des matières
 
 
@@ -92,7 +90,7 @@ Dans cet article, on va décortiquer **Magnet** (l’outil que j’utilise depui
 
 
 Magnet, c’est quoi exactement ?
--------------------------------
+---
 
 **Magnet** est un utilitaire macOS qui fait **une seule chose, mais la fait parfaitement** : organiser tes fenêtres sans que tu aies à y penser.
 
@@ -142,10 +140,10 @@ Magnet te propose un arsenal de dispositions prédéfinies :
 - Déplacement vers l’écran suivant/précédent
 - Support jusqu’à **6 écrans externes**
 
-- - - - - -
+---
 
 Les specs techniques (pour les curieux)
----------------------------------------
+---
 
 | Caractéristique | Détails |
 |---|---|
@@ -170,10 +168,10 @@ Magnet gère **nativement** les écrans en mode portrait. Pratique pour les setu
 **Aucune collecte de données**  
 Zéro télémétrie, zéro tracking. L’app fait son taf et te fout la paix.
 
-- - - - - -
+---
 
 Mon expérience après 2 ans d’utilisation
-----------------------------------------
+---
 
 J’ai acheté Magnet en 2023, et c’est devenu aussi **indispensable que mon terminal**.
 
@@ -211,10 +209,10 @@ J’ai acheté Magnet en 2023, et c’est devenu aussi **indispensable que mon t
 - Preview du rendu + éditeur
 - Référence + travail en cours
 
-- - - - - -
+---
 
 Les alternatives à Magnet : Le comparatif complet
--------------------------------------------------
+---
 
 Magnet est excellent, mais il n’est pas seul sur le marché. Voici les alternatives que j’ai testées.
 
@@ -243,7 +241,7 @@ Si tu hésites à payer pour Magnet, commence par Rectangle. C’est gratuit, ç
 - Tu aimes l’open source
 - Tu veux une alternative solide et maintenue
 
-- - - - - -
+---
 
 ### 🏆 BetterSnapTool : Le couteau suisse pour power users
 
@@ -273,7 +271,7 @@ C’est l’outil le plus **puissant** de la liste, mais aussi le plus **complex
 **⚠️ Point d’attention :**  
 Contrairement à Magnet, BetterSnapTool n’a **pas de raccourcis par défaut**. Tu dois tout configurer manuellement.
 
-- - - - - -
+---
 
 ### 🎯 Moom : Le gestionnaire avec mémoire
 
@@ -303,7 +301,7 @@ Tu crées un « Mode Dev » avec 5 fenêtres positionnées exactement comme tu v
 - Tu veux sauvegarder des layouts complexes
 - Tu as plusieurs écrans externes
 
-- - - - - -
+---
 
 ### 🎮 Divvy : La grille personnalisable
 
@@ -329,7 +327,7 @@ Approche intéressante, mais **moins rapide** que le drag & drop de Magnet. L’
 - Tu veux des layouts très précis
 - L’interface grid te parle
 
-- - - - - -
+---
 
 ### 🚀 Raycast : Le couteau suisse qui fait aussi du window management
 
@@ -357,7 +355,7 @@ Si tu utilises déjà Raycast (et tu devrais), c’est top de ne pas avoir besoi
 
 👉 **Article connexe :** [Raycast macOS : Le launcher qui remplace Spotlight et 20 autres apps](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)
 
-- - - - - -
+---
 
 ### 🌀 Loop : Le menu radial qui change tout
 
@@ -374,7 +372,7 @@ Loop utilise un **menu radial** au lieu de zones de snapping. Tu appuies sur un 
 - Moderne et visuellement agréable
 - Gratuit et open source
 
-<video controls="" src="https://brandonvisca.com/wp-content/uploads/2025/11/Preview.mp4"></video>**Mon avis :**  
+**Mon avis :**  
 Concept original et UI magnifique. Par contre, ça demande un **temps d’adaptation**. Le menu radial est moins instinctif que le drag & drop.
 
 **Quand choisir Loop :**
@@ -383,7 +381,7 @@ Concept original et UI magnifique. Par contre, ça demande un **temps d’adapta
 - L’esthétique compte pour toi
 - Tu aimes expérimenter
 
-- - - - - -
+---
 
 ### 🎨 Swish : Les gestes trackpad
 
@@ -393,14 +391,14 @@ Concept original et UI magnifique. Par contre, ça demande un **temps d’adapta
 **Le pitch :**  
 Swish se contrôle **entièrement au trackpad** avec des gestes personnalisés.
 
-<video controls="" src="https://brandonvisca.com/wp-content/uploads/2025/11/swish.mp4"></video>**Fonctionnalités :**
+**Fonctionnalités :**
 
 - Plus de 30 gestes trackpad
 - Layouts pixel-perfect avec grille
 - Désactivation par app
 - Unique en son genre
 
-<video controls="" src="https://brandonvisca.com/wp-content/uploads/2025/11/screens.mp4"></video>**Mon avis :**  
+**Mon avis :**  
 Si tu es un **addict du trackpad** (MacBook users, je vous vois), Swish est génial. Mais ça ne remplace pas vraiment un gestionnaire classique.
 
 **Quand choisir Swish :**
@@ -409,10 +407,10 @@ Si tu es un **addict du trackpad** (MacBook users, je vous vois), Swish est gén
 - Tu détestes la souris
 - Tu aimes les gestures
 
-- - - - - -
+---
 
 Le tableau comparatif ultime
-----------------------------
+---
 
 | Outil | Prix | Open Source | Drag & Drop | Raccourcis | Layouts avancés | Multi-écrans | Courbe d’apprentissage |
 |---|---|---|---|---|---|---|---|
@@ -425,10 +423,10 @@ Le tableau comparatif ultime
 | **Loop** | GRATUIT | ✅ | ❌ (menu radial) | ✅ | ✅ | ✅ | Difficile |
 | **Swish** | 16€ | ❌ | ❌ (gestes) | ❌ | ✅ | ✅ | Difficile |
 
-- - - - - -
+---
 
 macOS Sequoia : Apple se réveille (enfin)
------------------------------------------
+---
 
 **Nouveauté 2024 :** macOS Sequoia (version 15) introduit le **window tiling natif**.
 
@@ -461,10 +459,10 @@ Survole le bouton vert (maximiser) d’une fenêtre → Un menu contextuel appar
 **Verdict :**  
 Le window tiling natif de macOS Sequoia convient aux **utilisateurs occasionnels**. Pour les power users, les outils tiers restent **indispensables**.
 
-- - - - - -
+---
 
 Mon choix personnel : Pourquoi j’ai craqué pour Magnet
-------------------------------------------------------
+---
 
 Après avoir testé tout ce qui existe, j’utilise **Magnet** au quotidien.
 
@@ -491,10 +489,10 @@ Si j’avais découvert Rectangle avant Magnet, j’aurais peut-être pas dépen
 
 Mais aujourd’hui ? **Pas de regrets**. Magnet me fait gagner tellement de temps que ces 5€ sont amortis depuis longtemps.
 
-- - - - - -
+---
 
 Guide d’installation et configuration de Magnet
------------------------------------------------
+---
 
 ### Étape 1 : Achat et installation
 
@@ -548,10 +546,10 @@ Ouvre deux apps (Safari + Notes par exemple).
 
 **Boom. T’es opérationnel.**
 
-- - - - - -
+---
 
 Tips avancés pour les power users
----------------------------------
+---
 
 ### 1. Combine Magnet avec des Spaces
 
@@ -601,10 +599,10 @@ Tu navigues entre les Spaces avec `⌃ + ←/→`, et chaque Space a son layout 
 
 Quand je débranche tout pour bosser en mobilité ? Mes raccourcis fonctionnent **exactement pareil** sur le MacBook seul.
 
-- - - - - -
+---
 
 L’écosystème de productivité macOS complet
-------------------------------------------
+---
 
 Magnet ne vit pas seul. Voici les outils qui se **combinent parfaitement** avec lui pour un workflow aux petits oignons.
 
@@ -648,10 +646,10 @@ Le window management de Raycast est basique, mais ses **autres features** en fon
 
 👉 **Article connexe :** [Raycast macOS : Le launcher qui remplace Spotlight et 20 autres apps](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)
 
-- - - - - -
+---
 
 FAQ : Les questions qu’on me pose tout le temps
------------------------------------------------
+---
 
 ### Magnet ralentit-il macOS ?
 
@@ -697,10 +695,10 @@ Si t’as déjà des raccourcis configurés (par exemple dans VS Code ou Intelli
 
 Sur un écran vertical, les tiers deviennent verticaux au lieu d’horizontaux.
 
-- - - - - -
+---
 
 Le verdict final : Faut-il acheter Magnet en 2025 ?
----------------------------------------------------
+---
 
 ### Si tu cherches le meilleur rapport qualité/prix : OUI
 
@@ -733,10 +731,10 @@ Ces deux outils vont plus loin que Magnet, mais demandent plus de configuration.
 
 C’est pas le meilleur gestionnaire de fenêtres, mais c’est le **meilleur launcher**.
 
-- - - - - -
+---
 
 Conclusion : Ne touche plus à ta souris pour organiser tes fenêtres
--------------------------------------------------------------------
+---
 
 Voilà, tu sais tout.
 
@@ -754,10 +752,10 @@ Les deux autres ? [iTerm2](https://brandonvisca.com/iterm2-guide-complet-termina
 
 Magnet est sur le Mac App Store. Rectangle est sur GitHub. Les deux sont à portée de clic.
 
-- - - - - -
+---
 
 Ressources utiles
------------------
+---
 
 **Magnet :**
 
@@ -770,7 +768,7 @@ Ressources utiles
 - Site officiel : [rectangleapp.com](https://rectangleapp.com/)
 - GitHub : [github.com/rxhanson/Rectangle](https://github.com/rxhanson/Rectangle)
 
-- - - - - -
+---
 
 **Tu utilises Magnet ou une alternative ? Partage ton setup dans les commentaires !**
 

@@ -11,7 +11,7 @@ tags:
   - guide
 ---
 
---------
+---
 ## Table des matières
 
 
@@ -48,7 +48,7 @@ tags:
   - [Quels matériels sont compatibles avec pfSense 2.8 ?](#faq-question-1748799839458)
   - [pfSense 2.8 est-il disponible pour pfSense Plus et CE ?](#faq-question-1748799850458)
 
-------------
+---
 
 Vous administrez un pare-feu pfSense CE et vous avez vu passer la mise à jour 2.8 ? Pas si vite.
 
@@ -99,7 +99,7 @@ Quelques ajouts intéressants :
 Mention spéciale pour le support natif de ZFS root, ce qui facilite la gestion des snapshots et la tolérance aux pannes.
 
 **Changements techniques importants**
--------------------------------------
+---
 
 ### **Mise à jour des paquets intégrés**
 
@@ -118,7 +118,7 @@ pkg info
 echo 'hw.ixl.allow_unsupported_sfp=1' >> /boot/loader.conf
 
 **Sécurité et correctifs**
---------------------------
+---
 
 ### **Correctifs de vulnérabilités**
 
@@ -157,7 +157,7 @@ WireGuard est désormais intégré et fonctionne parfaitement en tandem avec pfS
 pfBlockerNG fonctionne en version 3.2.4\_4, mais attention à la mise à jour des feeds GeoIP : pensez à forcer un reload après upgrade.
 
 **Procédure de mise à jour**
-----------------------------
+---
 
 ### **Prérequis et sauvegarde**
 
@@ -181,7 +181,7 @@ Bonus : créez un snapshot ZFS si vous êtes déjà sur ce système.
 - En HA, mettez à jour le secondary en premier, puis basculez les rôles
 
 **Retours de la communauté et recommandations**
------------------------------------------------
+---
 
 ### **Problèmes rencontrés post-mise à jour**
 
@@ -194,7 +194,7 @@ Certains utilisateurs signalent une perte de DNS Resolver ou des lenteurs en Web
 - Vérifiez l’état de vos interfaces virtuelles (notamment VLANs) après upgrade
 
 **Ressources et documentation complémentaire**
-----------------------------------------------
+---
 
 ### **Notes de version officielles**
 
@@ -207,7 +207,7 @@ Certains utilisateurs signalent une perte de DNS Resolver ou des lenteurs en Web
 
   
 Questions fréquemment posées (F.A.Q) : 
-------------------------------------------
+---
 
 ###   
   

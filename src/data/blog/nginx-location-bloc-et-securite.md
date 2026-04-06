@@ -11,7 +11,7 @@ tags:
   - configuration
 ---
 
---------
+---
 ## Table des matières
 
 
@@ -34,7 +34,7 @@ tags:
 - [En résumé](#en-resume)
 - [Ressources complémentaires](#ressources-complementaires)
 
-------------
+---
 
 Le serveur web **Nginx** est reconnu pour sa performance et sa flexibilité. L’une de ses fonctionnalités clés est la directive location, qui permet de définir le comportement à adopter pour une URL ou un ensemble d’URL.
 
@@ -48,10 +48,10 @@ Dans cet article, nous allons explorer :
 - Les erreurs fréquentes
 - Les bonnes pratiques à adopter
 
-- - - - - -
+---
 
 Qu’est-ce qu’un bloc location dans Nginx ?
-------------------------------------------
+---
 
 Un bloc location permet de définir un **comportement spécifique pour une requête HTTP en fonction de son URI**. Il est souvent utilisé pour :
 
@@ -111,10 +111,10 @@ location ~* \.(jpg|jpeg|png|gif|ico)$ {
 }
 
 
-- - - - - -
+---
 
 Priorité des blocs location
----------------------------
+---
 
 Voici **l’ordre d’évaluation** des blocs location :
 
@@ -127,10 +127,10 @@ Nginx applique le **premier bloc qui correspond** dans l’ordre ci-dessus.
 
 Cela signifie que si plusieurs location peuvent correspondre à une requête, **le bloc exact ou prioritaire sera appliqué** même si une regex plus spécifique pourrait convenir.
 
-- - - - - -
+---
 
 Exemples d’utilisation avancée
-------------------------------
+---
 
 ### Mutualiser plusieurs utilisateurs avec une regex
 
@@ -180,10 +180,10 @@ location /images/ {
 
 root, lui, **ajoute** le chemin après l’URI.
 
-- - - - - -
+---
 
 Bonnes pratiques
-----------------
+---
 
 - Préfère les **location ^~** pour les fichiers statiques
 - Utilise **try\_files** pour la gestion des erreurs 404
@@ -204,20 +204,20 @@ location /admin/ {
 }
 
 
-- - - - - -
+---
 
 En résumé
----------
+---
 
 - Les blocs location permettent de router et sécuriser les requêtes dans Nginx
 - Leur ordre d’évaluation est capital pour éviter les conflits
 - Les expressions régulières permettent de factoriser et gérer dynamiquement les chemins
 - Une bonne structuration évite les erreurs critiques et renforce la sécurité globale de l’application
 
-- - - - - -
+---
 
 Ressources complémentaires
---------------------------
+---
 
 - Documentation Nginx officielle : [https://nginx.org/en/docs/http/ngx\_http\_core\_module.html#location](https://nginx.org/en/docs/http/ngx_http_core_module.html#location)
 - OWASP Secure Headers Project : <https://owasp.org/www-project-secure-headers/>

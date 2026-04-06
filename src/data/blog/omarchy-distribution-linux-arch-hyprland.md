@@ -12,7 +12,7 @@ tags:
 ---
 
 Sommaire : 
---------------
+---
 ## Table des matières
 
 
@@ -30,7 +30,7 @@ Sommaire :
 - [Ressources complémentaires](#ressources-complementaires)
 - [Verdict : révolution ou simple évolution ?](#verdict-revolution-ou-simple-evolution)
 
-------------
+---
 
 *Tu cherches une distribution Linux qui allie la puissance d’Arch à l’esthétique d’un bureau moderne ? Spoiler : Omarchy pourrait bien révolutionner ta façon de bosser.*
 
@@ -38,10 +38,10 @@ Omarchy, c’est cette nouvelle distribution qui fait parler d’elle dans les c
 
 Autrement dit : fini de passer trois semaines à configurer ton environnement de travail. Ici, tout fonctionne out-of-the-box, et en beauté.
 
-- - - - - -
+---
 
 **Omarchy en résumé : Arch sans les larmes**
---------------------------------------------
+---
 
 Imagine Arch Linux, mais sans la galère de configuration habituelle. Omarchy embarque :
 
@@ -53,10 +53,10 @@ Imagine Arch Linux, mais sans la galère de configuration habituelle. Omarchy em
 
 Le principe ? Tu installes, tu choisis ton thème, et tu bosses. Point.
 
-- - - - - -
+---
 
 **Installation : plus simple qu’un YAML bien indenté**
-------------------------------------------------------
+---
 
 Contrairement à une installation Arch classique qui peut transformer même un sysadmin aguerri en zombie, Omarchy mise sur la simplicité.
 
@@ -84,10 +84,10 @@ Pour effectuer l’installation rien de bien compliquer :
 - Tu choisis ton fuseau horaire
 - Un résumé de la configuration s’affiche, tu peux procéder à l’installation si tout est correct.
 
-- - - - - -
+---
 
 **Premier démarrage : bienvenue dans le futur**
------------------------------------------------
+---
 
 Au premier lancement, tu tombes sur un bureau… vide. Normal ! Omarchy privilégie la navigation clavier.
 
@@ -103,10 +103,10 @@ Au premier lancement, tu tombes sur un bureau… vide. Normal ! Omarchy privilé
 
 Le menu Omarchy (`Super + Alt + Space`) est ton nouveau meilleur ami. Il permet d’installer des packages, configurer le système, changer de thème…
 
-- - - - - -
+---
 
 **Les thèmes : 11 façons de rendre tes collègues jaloux**
----------------------------------------------------------
+---
 
 L’un des atouts majeurs d’Omarchy, ce sont ses thèmes intégrés qui changent **tout** : fond d’écran, couleurs du terminal, Neovim, notifications, barre de tâches…
 
@@ -121,10 +121,10 @@ Pour changer de thème : `Super + Ctrl + Shift + Space`
 
 Tu peux même créer tes propres thèmes en copiant un thème existant dans `~/.config/omarchy/themes/` et en bidouillant les couleurs.
 
-- - - - - -
+---
 
 **Développement : l’environnement qui anticipe tes besoins**
-------------------------------------------------------------
+---
 
 Omarchy embarque un stack complet pour le développement :
 
@@ -149,10 +149,10 @@ Omarchy embarque un stack complet pour le développement :
 
 L’intégration est remarquable. Par exemple, dans Neovim, `Space Space` utilise fzf pour ouvrir rapidement n’importe quel fichier.
 
-- - - - - -
+---
 
 **Sécurité : Omarchy prend ça au sérieux**
-------------------------------------------
+---
 
 Contrairement à certaines distributions qui considèrent la sécurité comme optionnelle, Omarchy l’impose :
 
@@ -163,10 +163,10 @@ Contrairement à certaines distributions qui considèrent la sécurité comme op
 
 Cette approche rappelle celle que j’ai détaillée dans mon [guide de sécurisation des serveurs Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) : la sécurité doit être native, pas ajoutée après coup.
 
-- - - - - -
+---
 
 **Performance et monitoring**
------------------------------
+---
 
 Omarchy inclut des outils de monitoring intégrés :
 
@@ -192,10 +192,10 @@ env = GDK_SCALE,1  # Au lieu de 2 par défaut
 yay -S firefox spotify-launcher discord
 
 
-- - - - - -
+---
 
 **Troubleshooting courant**
----------------------------
+---
 
 **Applications trop grandes ?**  
 → Modifie `GDK_SCALE` dans `hyprland.conf`
@@ -208,20 +208,20 @@ yay -S firefox spotify-launcher discord
 
 Pour des problèmes plus complexes, la communauté sur GitHub est réactive et les développeurs accessibles.
 
-- - - - - -
+---
 
 **Ressources complémentaires**
-------------------------------
+---
 
 Pour approfondir tes connaissances système Linux, consulte aussi :
 
 - [Connecter Ubuntu à Active Directory avec SSSD](https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/) pour intégrer tes machines à un domaine
 - [Résolution des problèmes de montage RAID](https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/) si tu gères du stockage avancé
 
-- - - - - -
+---
 
 **Verdict : révolution ou simple évolution ?**
-----------------------------------------------
+---
 
 Omarchy représente exactement ce que beaucoup d’entre nous attendaient : la puissance d’Arch sans les nuits blanches de configuration.
 
@@ -243,6 +243,6 @@ Si tu cherches une distribution Linux qui combine productivité, sécurité et e
 
 Le concept « omakase » (laissez au chef) prend ici tout son sens : les développeurs ont fait les choix techniques à ta place, et franchement, ils ont plutôt bon goût.
 
-- - - - - -
+---
 
 **Et toi, ça te tente de tester Omarchy ? Partage ton expérience dans les commentaires !**

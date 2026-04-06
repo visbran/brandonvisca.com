@@ -13,9 +13,7 @@ tags:
 
 *Fini le chaos dans votre barre de menu ! Ice transforme votre interface macOS en espace de travail organisé et épuré.*
 
-- - - - - -
-
---------
+---
 ## Table des matières
 
 
@@ -55,7 +53,7 @@ tags:
 
 
 Pourquoi votre barre de menu mérite mieux 
-------------------------------------------
+---
 
 Soyons honnêtes : si votre **barre de menu macOS** ressemble à une rave party d’icônes, vous n’êtes pas seul. Entre les apps de monitoring, les outils de productivité et les utilitaires système, votre belle interface Apple se transforme rapidement en bazar numérique.
 
@@ -63,10 +61,10 @@ Le problème ? **Chaque pixel compte sur macOS**, surtout avec les MacBook Pro e
 
 > **Statistique choc :** L’utilisateur Mac moyen perd 47 secondes par jour à chercher des icônes dans sa barre de menu. Sur une année, ça fait 4h47 de temps perdu !
 
-- - - - - -
+---
 
 Ice : L’outsider qui détrône les géants 
-----------------------------------------
+---
 
 **Ice** débarque sur la scène macOS comme le David face au Goliath Bartender. Développé par Jordan Baird, cet **outil de gestion barre de menu gratuit** fait trembler les mastodontes payants du secteur.
 
@@ -82,10 +80,10 @@ Ice : L’outsider qui détrône les géants
 
 Contrairement aux concurrents, **Ice macOS** ne se contente pas de cacher vos icônes. Il repense complètement votre rapport à la barre de menu avec des features qu’on ne trouve nulle part ailleurs.
 
-- - - - - -
+---
 
 Installation rapide : 3 méthodes au choix 
-------------------------------------------
+---
 
 ### Méthode 1 : Homebrew (recommandée)
 
@@ -110,10 +108,10 @@ brew list --cask | grep ice
 
 ⚠️ **Attention Gatekeeper** : Au premier lancement, macOS va râler. Normal ! Allez dans `Réglages > Confidentialité et sécurité` pour autoriser Ice.
 
-- - - - - -
+---
 
 Configuration essentielle en 5 minutes
---------------------------------------
+---
 
 ### Première connexion
 
@@ -136,10 +134,10 @@ Lancez Ice. L’app va demander quelques **permissions système** :
   - Définissez un raccourci clavier (ex: `⌘ + Space + I`)
   - Recherche instantanée dans toutes vos apps
 
-- - - - - -
+---
 
 Fonctionnalités avancées qui changent tout 
--------------------------------------------
+---
 
 ### 1. Sections multiples
 
@@ -181,10 +179,10 @@ Combinez Ice avec l’app Raccourcis pour des **workflows automatisés** :
 
 Si vous utilisez [iTerm2](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) et [Oh My Zsh](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/), Ice complète parfaitement votre environnement de développement optimisé.
 
-- - - - - -
+---
 
 Troubleshooting : Les pièges à éviter
--------------------------------------
+---
 
 ### Problème : Ice ne démarre pas
 
@@ -202,10 +200,10 @@ Troubleshooting : Les pièges à éviter
 
 **Solution** : Réduisez le nombre d’apps en section « toujours visible »
 
-- - - - - -
+---
 
 Conclusion : Votre Mac ne sera plus jamais le même
---------------------------------------------------
+---
 
 **Ice** n’est pas qu’un simple gestionnaire de barre de menu : c’est une révolution silencieuse qui redéfinit l’expérience macOS. En 2025, avoir une barre de menu organisée n’est plus un luxe, c’est une nécessité.
 
@@ -226,10 +224,10 @@ Conclusion : Votre Mac ne sera plus jamais le même
 
 L’époque du chaos dans la barre de menu est révolue. Avec Ice, votre Mac retrouve enfin la sérénité qu’il mérite.
 
-- - - - - -
+---
 
 Ressources complémentaires
---------------------------
+---
 
 ### Articles liés sur le site :
 

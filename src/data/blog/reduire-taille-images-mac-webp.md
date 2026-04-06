@@ -11,7 +11,7 @@ tags:
   - images
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -50,7 +50,7 @@ tags:
   - [Les gains concrets](#les-gains-concrets)
   - [Utilisation optimale](#utilisation-optimale)
 
------------------------------------
+---
 
 ![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjA3MTRvY3J2ajVtbm1wdWd1OHo3d2lrMHh0OGMycjQzeHZjYjZlYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZwQ2fuoNI9baEhSh9O/giphy.gif)
 
@@ -62,10 +62,10 @@ tags:
 
 **Promesse de cet article :** En 10 minutes, vous automatiserez la compression d’images sur votre Mac. Plus jamais de galère avec des fichiers trop lourds.
 
-- - - - - -
+---
 
 📊 Pourquoi vos images sont-elles si lourdes ?
----------------------------------------------
+---
 
 ![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmd0Ymx0b2FvaHRoem9vZDR6eXdzaDg2ZHJvNGNiODRxeDhwNmlqZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2uwZ4xi75JhxZYeyQB/giphy.gif)
 
@@ -94,10 +94,10 @@ PNG optimisé | 1,8 Mo | 6 secondes |
 
 > **💡 Impact réel :** Sur un site de 50 images, vous passez de 120 Mo à 35 Mo. Vos visiteurs vous remercieront !
 
-- - - - - -
+---
 
 🛠️ La solution : automatiser la compression WebP
-------------------------------------------------
+---
 
 ![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29xZTFweDU2Zmd3dWpicGN5aXo3YjZwN2dmZXI3ZDMwcXlrbWtmMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5z0cCCGooBQUtejM4v/giphy.gif)
 
@@ -109,10 +109,10 @@ PNG optimisé | 1,8 Mo | 6 secondes |
 
 **Résultat final :** Sélection d’images → Clic droit → Magie ✨
 
-- - - - - -
+---
 
 🚀 Étape 1 : Installer le compresseur WebP (2 minutes)
------------------------------------------------------
+---
 
 ### **Prérequis : Homebrew**
 
@@ -134,10 +134,10 @@ cwebp -version
 
 > **🧠 Pourquoi cwebp ?** C’est l’outil **officiel de Google** pour WebP. Plus fiable et performant que les alternatives tierces ou les apps payantes.
 
-- - - - - -
+---
 
 ⚙️ Étape 2 : Créer l’action automatique (5 minutes)
----------------------------------------------------
+---
 
 ### **Lancement d’Automator**
 
@@ -200,10 +200,10 @@ brew install webp
 cwebp -info mon_image.webp
 
 
-- - - - - -
+---
 
 📈 Impact concret sur vos projets
---------------------------------
+---
 
 ### **Site web / Blog**
 
@@ -222,10 +222,10 @@ cwebp -info mon_image.webp
 **Avant :** 1 photo = pièce jointe refusée  
 **Après :** 5 photos = envoi instantané
 
-- - - - - -
+---
 
 🎯 Aller plus loin : workflow professionnel
-------------------------------------------
+---
 
 ### **Automatisation avancée**
 
@@ -239,10 +239,10 @@ find ~/Pictures -name "*.jpg" -exec cwebp -q 85 {} -o {}.webp \;
 du -sh ~/Pictures/**/*.{jpg,png} ~/Pictures/**/*.webp
 
 
-- - - - - -
+---
 
 💡 Ce qu’il faut retenir
------------------------
+---
 
 ### **Les gains concrets**
 

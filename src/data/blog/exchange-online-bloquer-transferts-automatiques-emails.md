@@ -11,7 +11,7 @@ tags:
   - guide
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -40,12 +40,12 @@ tags:
   - [Surveillance continue](#surveillance-continue)
 - [Conclusion](#conclusion-et-ouverture)
 
---------------------------------------------------------------------------------------
+---
 
 
 
 Introduction
-------------
+---
 
 Les **transferts automatiques d’emails vers l’extérieur** ? Un cauchemar pour tout admin système qui se respecte. Si vous gérez un tenant **Exchange Online**, vous avez probablement déjà eu cette sueur froide en découvrant qu’un utilisateur a configuré une **redirection email** vers sa boîte perso… avec toutes les données sensibles qui sortent en prime.
 
@@ -54,7 +54,7 @@ Microsoft n’a pas exactement facilité les choses avec ses multiples canaux de
 Dans ce guide, je vous montre comment **bloquer efficacement tous les transferts automatiques** dans Exchange Online, détecter ceux déjà en place, et mettre en place un monitoring automatisé. Du RBAC aux Transport Rules en passant par l’audit, on couvre tout avec **PowerShell Exchange Online sécurité**.
 
 Pourquoi c’est un problème majeur en 2025
------------------------------------------
+---
 
 Avant de foncer tête baissée dans les commandes, comprenons pourquoi Microsoft nous complique la vie avec ses transferts.
 
@@ -75,7 +75,7 @@ Un attaquant peut créer discrètement une règle de transfert pour siphonner vo
 > **💡 À savoir :** Les cyberattaquants utilisent de plus en plus les règles de transfert automatique pour exfiltrer des données après une intrusion. C’est discret et difficile à détecter.
 
 Les deux canaux de transfert à maîtriser
-----------------------------------------
+---
 
 Exchange Online propose deux mécanismes distincts pour rediriger automatiquement des emails :
 
@@ -101,7 +101,7 @@ New-InboxRule -Name "Forward Important" -SubjectContainsWords "Confidentiel" -Fo
 - Gérées via `Get-InboxRule`
 
 Méthode 1 : RBAC – Limiter l’accès aux interfaces
--------------------------------------------------
+---
 
 Le RBAC (Role-Based Access Control) permet de retirer les boutons de transfert des interfaces utilisateur. C’est un premier verrou, mais attention aux limitations.
 
@@ -232,7 +232,7 @@ Get-Mailbox -ResultSize Unlimited | ForEach-Object {
 
 
 Script de monitoring automatisé
--------------------------------
+---
 
 Créez un script PowerShell planifiable pour détecter quotidiennement les nouveaux transferts :
 
@@ -318,7 +318,7 @@ $WhitelistedAccounts = @(
 > **💡 Astuce pro :** Créez un groupe de sécurité « ForwardingExceptions » dans Azure AD pour gérer facilement la liste blanche via les groupes plutôt qu’en dur dans les scripts.
 
 Conclusion
-----------
+---
 
 Bloquer les transferts automatiques dans Exchange Online demande une approche méthodique combinant RBAC, Transport Rules et monitoring. C’est un incontournable de la sécurité email en 2025, surtout avec la multiplication des cyberattaques ciblant les messageries d’entreprise.
 
@@ -326,6 +326,6 @@ L’implémentation que je vous ai présentée vous donne un contrôle total sur
 
 Dans un prochain guide, nous verrons comment aller plus loin avec la **protection contre l’exfiltration de données via SharePoint et OneDrive**. Car spoiler alert : les transferts emails ne sont qu’une partie du problème…
 
-- - - - - -
+---
 
 **💬 Une question sur ce guide ?** N’hésitez pas à me contacter ou à laisser un commentaire. J’ai probablement déjà rencontré votre cas de figure !

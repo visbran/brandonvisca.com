@@ -12,13 +12,11 @@ tags:
 ---
 
 TL;DR :
--------
+---
 
 The Browser Company a lâché Arc Browser pour se concentrer sur Dia. Si tu étais accro au design épuré, aux split screens et aux raccourcis clavier d’Arc, voici les meilleures alternatives pour ne pas finir sur Chrome comme un sauvage.
 
-- - - - - -
-
-----------
+---
 ## Table des matières
 
 
@@ -42,7 +40,7 @@ The Browser Company a lâché Arc Browser pour se concentrer sur Dia. Si tu éta
 
 
 📜 Arc Browser : L’histoire d’un navigateur révolutionnaire (2022-2025)
-----------------------------------------------------------------------
+---
 
 ### Le phénomène Arc : Quand l’ambition rencontre le design
 
@@ -106,10 +104,10 @@ Mais l’échec commercial d’Arc rappelle aussi une vérité brutale : **avoir
 
 Heureusement, l’ADN d’Arc survit dans les alternatives qu’on va explorer juste après. Certaines reprennent ses concepts en mieux, d’autres les poussent encore plus loin.
 
-- - - - - -
+---
 
 Ce qu’on aimait tous dans Arc Browser
--------------------------------------
+---
 
 Avant de parler alternatives, rappelons ce qui rendait Arc Browser si addictif :
 
@@ -125,10 +123,10 @@ Avant de parler alternatives, rappelons ce qui rendait Arc Browser si addictif :
 
 Si tu cherches à retrouver ces sensations, voici tes meilleures options.
 
-- - - - - -
+---
 
 SigmaOS : L’alternative la plus directe
----------------------------------------
+---
 
 **Prix** : Freemium (14$/mois pour Pro)  
 **Plateforme** : macOS uniquement  
@@ -151,10 +149,10 @@ SigmaOS : L’alternative la plus directe
 
 > **Erreur fréquente** : Croire que SigmaOS est juste un « clone d’Arc ». L’équipe a poussé certains concepts plus loin, notamment sur la gestion des workspaces et l’intégration système.
 
-- - - - - -
+---
 
 Zen Browser : Firefox customisé comme un chef
----------------------------------------------
+---
 
 **Prix** : Gratuit et open source  
 **Plateforme** : Windows, macOS, Linux  
@@ -183,10 +181,10 @@ curl -L https://github.com/zen-browser/desktop/releases/latest
 - Configurer les raccourcis dans brave://settings/system
 
 
-- - - - - -
+---
 
 Firefox avec extensions minimalistes
-------------------------------------
+---
 
 **Prix** : Gratuit  
 **Plateforme** : Toutes  
@@ -216,10 +214,10 @@ https://addons.mozilla.org/firefox/addon/tree-style-tab/
 }
 
 
-- - - - - -
+---
 
 Comment choisir ta nouvelle arme ?
-----------------------------------
+---
 
 **Si tu veux le moins de changements :** SigmaOS (macOS) ou Zen Browser (multiplateforme)
 
@@ -233,10 +231,10 @@ Comment choisir ta nouvelle arme ?
 
 > **Bonnes pratiques** : Teste 2-3 alternatives en parallèle pendant une semaine avant de migrer définitivement. Chaque navigateur a ses petites habitudes qui peuvent surprendre.
 
-- - - - - -
+---
 
 Migration : récupérer tes données d’Arc
----------------------------------------
+---
 
 Malheureusement, Arc Browser n’exporte pas facilement ses données. Voici comment limiter les dégâts :
 

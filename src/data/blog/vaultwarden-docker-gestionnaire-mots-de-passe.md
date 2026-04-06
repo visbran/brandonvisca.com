@@ -12,7 +12,7 @@ tags:
 ---
 
 🎯 TL;DR
--------
+---
 
 Tu paies 1Password (36€/an), Dashlane (40€/an) ou LastPass (36€/an) pour gérer tes mots de passe ? Spoiler : tu peux héberger **Vaultwarden** (alternative Bitwarden) pour 0€ si tu as déjà un serveur.
 
@@ -33,9 +33,7 @@ Tu paies 1Password (36€/an), Dashlane (40€/an) ou LastPass (36€/an) pour g
 - Un nom de domaine (pour HTTPS, indispensable pour la sécurité)
 - 15 minutes de ton temps
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -96,7 +94,7 @@ Tu paies 1Password (36€/an), Dashlane (40€/an) ou LastPass (36€/an) pour g
 
 
 Pourquoi un gestionnaire de mots de passe, déjà ?
--------------------------------------------------
+---
 
 ### La vraie question : T’utilises quoi actuellement ?
 
@@ -137,10 +135,10 @@ Pourquoi un gestionnaire de mots de passe, déjà ?
 - ✅ **Gratuit** à vie
 - ✅ **Tes données chez toi**, pas aux USA
 
-- - - - - -
+---
 
 Vaultwarden vs Bitwarden : Quelle différence ?
-----------------------------------------------
+---
 
 ### Petite histoire technique
 
@@ -160,10 +158,10 @@ Vaultwarden vs Bitwarden : Quelle différence ?
 
 **Résultat :** Fonctionnalités Premium + contrôle total + gratuit.
 
-- - - - - -
+---
 
 Vaultwarden vs 1Password vs Dashlane vs LastPass
-------------------------------------------------
+---
 
 | Critère | Vaultwarden | 1Password | Dashlane | LastPass | Bitwarden Cloud |
 |---|---|---|---|---|---|
@@ -183,10 +181,10 @@ Vaultwarden vs 1Password vs Dashlane vs LastPass
 - **Tu veux pas héberger toi-même** → Bitwarden Cloud (10$/an)
 - **Tu veux gratuit + contrôle total + premium** → **Vaultwarden** ✅
 
-- - - - - -
+---
 
 Le calcul économique
---------------------
+---
 
 **Gestionnaires commerciaux :**
 
@@ -206,10 +204,10 @@ Le calcul économique
 
 Et surtout, **tes mots de passe ne sont JAMAIS chez un tiers**.
 
-- - - - - -
+---
 
 Avant de commencer : Comprendre la sécurité
--------------------------------------------
+---
 
 ### Comment ça marche, le chiffrement ?
 
@@ -231,7 +229,7 @@ Avant de commencer : Comprendre la sécurité
 
 💡 **Principe clé :** Le serveur est « zero-knowledge » = il ne connaît JAMAIS tes mots de passe en clair.
 
-- - - - - -
+---
 
 ### Le Master Password : TA responsabilité
 
@@ -259,10 +257,10 @@ Avant de commencer : Comprendre la sécurité
 - Mémorisable (tu vas le taper 10x/jour)
 - **Écris-le sur papier** et mets-le dans un coffre/tiroir fermé (backup physique)
 
-- - - - - -
+---
 
 Installation Vaultwarden avec Docker : Setup en 15 min
-------------------------------------------------------
+---
 
 ### Étape 1 : Préparer le serveur
 
@@ -354,7 +352,7 @@ $argon2id$v=19$m=19456,t=2,p=1$cXpKdUxHSWhlaUs1QVVsSStkbTRPQVFPSmdpamFCMHdvYjVkW
 
 **💡 À savoir :** La chaîne qui commence par `$argon2id$v=19$...` est ton hash. C’est cette valeur que tu vas utiliser dans ton fichier `.env`.
 
-- - - - - -
+---
 
 #### Configuration avec Fichier .env (RECOMMANDÉ)
 
@@ -393,7 +391,7 @@ WARNING: The v variable is not set. Defaulting to a blank string.
 
 **→ **Houston, on a un problème.** Tes guillemets sont mal configurés dans le `.env` ou le fichier n’est pas lu correctement.**
 
-- - - - - -
+---
 
 ### Étape 4 : Configurer les inscriptions
 
@@ -427,10 +425,10 @@ Si tu vois la page de connexion Vaultwarden, c’est bon ! 🎉
 ⚠️ **ATTENTION** : Pour l’instant c’est en HTTP.   
 **NE CRÉE PAS ENCORE DE COMPTE**. On configure HTTPS d’abord (sinon ton Master Password part en clair sur le réseau).
 
-- - - - - -
+---
 
 Configuration HTTPS avec Nginx Proxy Manager
---------------------------------------------
+---
 
 **Si tu as déjà NPM** (installé pour Nextcloud/Jellyfin), tu vas juste ajouter un nouveau proxy.
 
@@ -472,7 +470,7 @@ K8#mL2@pN9!qR4$tV7&wX1%yZ5^aC3*bD6
 
 Bon courage au hacker pour craquer ça. 😂
 
-- - - - - -
+---
 
 ### 5. Activer l’authentification à deux facteurs (2FA)
 
@@ -492,10 +490,10 @@ Bon courage au hacker pour craquer ça. 😂
 
 💡 **Plus besoin de Google Authenticator/Authy** → Vaultwarden fait tout.
 
-- - - - - -
+---
 
 Sécurité avancée
-----------------
+---
 
 ### Activer le 2FA sur ton compte Vaultwarden
 
@@ -520,7 +518,7 @@ Sécurité avancée
 
 🎉 **Ton compte Vaultwarden est maintenant ultra-sécurisé !**
 
-- - - - - -
+---
 
 ### Audit de sécurité de tes mots de passe
 
@@ -538,10 +536,10 @@ Sécurité avancée
 
 💡 **Fais cet audit 1x/an** pour maintenir une hygiène de sécurité parfaite.
 
-- - - - - -
+---
 
 Backup & Restauration
--------------------------
+---
 
 ### Exporter tes données (backup manuel)
 
@@ -588,10 +586,10 @@ docker compose up -d
 
 🎉 **Tous tes mots de passe sont de retour !**
 
-- - - - - -
+---
 
 Cas d’usage réels
------------------
+---
 
 ### Scénario 1 : Particulier solo
 
@@ -617,7 +615,7 @@ Cas d’usage réels
 - Génération automatique de mots de passe ultra-sécurisés
 - Remplissage automatique sur tous les appareils
 
-- - - - - -
+---
 
 ### Scénario 2 : Famille (4 personnes)
 
@@ -646,7 +644,7 @@ Cas d’usage réels
 - Après : **0€/an**
 - 💰 **Gain sur 10 ans : 600€**
 
-- - - - - -
+---
 
 ### Scénario 3 : Petite entreprise (8 employés)
 
@@ -675,10 +673,10 @@ Cas d’usage réels
 - Après : **48€/an**
 - 💰 **Gain : 432€/an → 4 320€ sur 10 ans**
 
-- - - - - -
+---
 
 Problèmes courants & Solutions
-----------------------------------
+---
 
 ### ❌ « Impossible de se connecter au serveur »
 
@@ -695,7 +693,7 @@ Problèmes courants & Solutions
   - DNS configuré ? `ping vault.ton-domaine.fr`
 3. **Check les logs** : `docker compose logs -f vaultwarden`
 
-- - - - - -
+---
 
 ### ❌ « Master Password oublié »
 
@@ -725,7 +723,7 @@ Problèmes courants & Solutions
   - Range-le dans un tiroir/coffre fermé
   - Ou utilise l’**indication de mot de passe** (indice sans révéler le mot de passe)
 
-- - - - - -
+---
 
 ### ❌ Apps mobiles : remplissage auto ne marche pas
 
@@ -748,7 +746,7 @@ Paramètres → Système → Langues et saisie
 → Sélectionne Bitwarden
 
 
-- - - - - -
+---
 
 ### ❌ Sync lente entre appareils
 
@@ -783,10 +781,10 @@ Paramètres → Système → Langues et saisie
 
 **⚠️ Ne touche PAS au `config.json` manuellement.** Ça peut tout casser. Passe toujours par l’interface ou les variables d’environnement.
 
-- - - - - -
+---
 
 🎊 Conclusion : Le dernier pilier de ton indépendance
-----------------------------------------------------
+---
 
 Félicitations ! Tu viens d’installer **le service le plus critique de ton infrastructure** : ton gestionnaire de mots de passe.
 

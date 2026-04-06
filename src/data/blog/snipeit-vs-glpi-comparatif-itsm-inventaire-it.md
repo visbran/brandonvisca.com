@@ -11,7 +11,7 @@ tags:
   - guide
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -45,10 +45,10 @@ Excellente question. GLPI, c’est un peu le couteau suisse de l’ITSM : il fai
 
 Spoiler alert : si tu cherches juste à **gérer ton inventaire IT efficacement**, SnipeIT va te faire gagner un temps fou. Si tu veux monter une usine à gaz ITIL complète, GLPI est ton ami. Mais on va détailler tout ça.
 
-- - - - - -
+---
 
 GLPI et SnipeIT : présentation des combattants
-----------------------------------------------
+---
 
 ### GLPI : le mastodonte français
 
@@ -80,10 +80,10 @@ GLPI et SnipeIT : présentation des combattants
 
 **À savoir :** Selon les avis G2 (plateforme d’évaluation logicielle), SnipeIT obtient un score de 9.5/10 en facilité d’utilisation contre 8.5/10 pour GLPI. Sur la gestion des actifs matériels, SnipeIT cartonne avec 9.8/10.
 
-- - - - - -
+---
 
 Round 1 : Installation et prise en main
----------------------------------------
+---
 
 ### GLPI : la piste d’obstacles
 
@@ -117,10 +117,10 @@ Si tu as suivi mon guide sur [la sécurisation de ton serveur Linux](https://bra
 
 **Verdict Round 1 :** SnipeIT gagne haut la main. Installation plus simple, moins de dépendances, moins de prise de tête.
 
-- - - - - -
+---
 
 Round 2 : Interface utilisateur
--------------------------------
+---
 
 ### GLPI : fonctionnel mais austère
 
@@ -158,10 +158,10 @@ SnipeIT, c’est Bootstrap et Laravel qui font l’amour. Interface propre, mode
 
 **Verdict Round 2 :** SnipeIT écrase GLPI. L’interface est tellement plus agréable à utiliser au quotidien que tes collègues vont peut-être même l’utiliser sans râler.
 
-- - - - - -
+---
 
 Round 3 : Gestion des actifs
-----------------------------
+---
 
 C’est LE round décisif. On parle de l’inventaire IT, le cœur du métier.
 
@@ -205,10 +205,10 @@ SnipeIT a été **conçu dès le départ** pour une chose : suivre tes actifs de
 
 **Verdict Round 3 :** Match nul, mais pour des raisons différentes. GLPI gagne si tu veux une CMDB complète avec auto-découverte. SnipeIT gagne si tu veux juste tracker tes assets efficacement.
 
-- - - - - -
+---
 
 Round 4 : Fonctionnalités avancées
-----------------------------------
+---
 
 ### GLPI : la machine de guerre
 
@@ -240,10 +240,10 @@ SnipeIT reste sur son domaine : l’asset management. Mais il le fait avec des f
 
 **Verdict Round 4 :** GLPI gagne si tu veux une suite complète. SnipeIT gagne si tu veux un outil qui s’intègre bien avec ton écosystème existant (Slack, Zabbix, ton helpdesk actuel…).
 
-- - - - - -
+---
 
 Round 5 : Performance et communauté
------------------------------------
+---
 
 ### GLPI : la communauté française
 
@@ -277,10 +277,10 @@ Round 5 : Performance et communauté
 
 **Verdict Round 5 :** Match nul. GLPI a la communauté FR, SnipeIT a la performance et la simplicité.
 
-- - - - - -
+---
 
 Le verdict : lequel choisir selon ton contexte
-----------------------------------------------
+---
 
 ### Choisis GLPI si :
 
@@ -304,10 +304,10 @@ Le verdict : lequel choisir selon ton contexte
 
 **Cas d’usage typique :** Startup, petite PME, association qui veut sortir de l’Excel et avoir un inventaire propre sans usine à gaz.
 
-- - - - - -
+---
 
 Tableau comparatif rapide
--------------------------
+---
 
 ## Tableau comparatif rapide
 
@@ -324,7 +324,7 @@ Tableau comparatif rapide
 | **Performance** | 🟡 Variable | 🟢 Excellente |
 | **Communauté FR** | 🟢 Énorme | 🟡 Limitée |
 Mon avis perso (après avoir testé les deux)
--------------------------------------------
+---
 
 J’ai utilisé GLPI pendant 2 ans en entreprise et SnipeIT depuis 1 an pour mon homelab et quelques clients.
 
@@ -336,10 +336,10 @@ Mon conseil ? Si tu débutes ou si tu as une petite structure, commence par **Sn
 
 Si tu as une grosse structure avec une vraie équipe IT, GLPI peut avoir du sens pour tout centraliser. Mais prépare-toi à y passer du temps.
 
-- - - - - -
+---
 
 Où héberger tout ça ?
----------------------
+---
 
 Que tu choisisses GLPI ou SnipeIT, tu vas avoir besoin d’un hébergement correct.
 
@@ -355,10 +355,10 @@ Que tu choisisses GLPI ou SnipeIT, tu vas avoir besoin d’un hébergement corre
 
 GLPI consomme plus de ressources, donc prévois un VPS un peu plus costaud.
 
-- - - - - -
+---
 
 Conclusion
-----------
+---
 
 **SnipeIT vs GLPI**, c’est pas un combat. Ce sont deux outils différents pour deux besoins différents.
 

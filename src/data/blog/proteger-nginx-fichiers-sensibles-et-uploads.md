@@ -11,7 +11,7 @@ tags:
   - protection
 ---
 
---------
+---
 ## Table des matières
 
 
@@ -30,7 +30,7 @@ tags:
 
 
 Introduction
-------------
+---
 
 La sécurité d’un site web ne repose pas uniquement sur des headers ou un pare-feu. Elle commence aussi par des **mesures préventives dans la configuration du serveur web**.
 
@@ -42,10 +42,10 @@ Dans cet article, nous allons aborder 3 axes cruciaux pour protéger votre appli
 
 Ces pratiques sont simples à mettre en place, mais trop souvent oubliées. Et pourtant, elles peuvent faire la différence entre un site sécurisé et un site compromis.
 
-- - - - - -
+---
 
 1. Interdire l’accès aux fichiers sensibles
--------------------------------------------
+---
 
 Certains fichiers générés par vos outils ou frameworks ne doivent **jamais être accessibles via le navigateur** :
 
@@ -110,7 +110,7 @@ curl -X DELETE https://monsite.com/
 
 Si tu reçois une réponse `405 Not Allowed`, c’est bon signe. Sinon… corrige vite !
 
-- - - - - -
+---
 
 ### Bonus : interdire les requêtes sur des chemins “pièges”
 

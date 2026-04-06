@@ -11,7 +11,7 @@ tags:
   - guide
 ---
 
-----------
+---
 ## Table des matières
 
 
@@ -47,10 +47,10 @@ Félicitations, tu viens de découvrir pourquoi l’**ITSM** existe. Et spoiler 
 
 Si tu passes encore tes journées à chercher où est passé ce serveur Dell, ou si tu découvres que votre « inventaire » ressemble à un bazar de brocante mal organisé, cet article va te sauver la vie. On va parler ITSM, de pourquoi Excel c’est l’enfer, et comment SnipeIT peut transformer ton quotidien d’admin.
 
-- - - - - -
+---
 
 L’ITSM c’est quoi (sans le jargon marketing)
---------------------------------------------
+---
 
 **ITSM** (IT Service Management), c’est l’art de ne plus perdre ses affaires dans le bureau. Sauf qu’au lieu de tes clés de voiture, c’est tes serveurs, tes licences logicielles et tes câbles réseau qui disparaissent dans la nature.
 
@@ -76,10 +76,10 @@ Concrètement, l’**inventaire IT** et la **gestion d’actifs** permettent de 
 
 **À savoir :** Dans une PME de 50 personnes, on estime qu’un admin passe **15-20% de son temps** juste à chercher des informations sur le matériel. Avec un bon système ITSM, ça tombe à moins de 5%.
 
-- - - - - -
+---
 
 Pourquoi Excel va te rendre dingue
-----------------------------------
+---
 
 ### Le problème des versions multiples
 
@@ -108,10 +108,10 @@ Qui peut modifier ton fichier Excel ? Tout le monde sur le réseau (si tu le par
 
 **Erreur fréquente :** Mettre l’inventaire Excel sur un partage réseau accessible à tous. Résultat garanti : corruption de fichier sous 6 mois.
 
-- - - - - -
+---
 
 SnipeIT : ton nouveau meilleur ami
-----------------------------------
+---
 
 [SnipeIT](https://snipeitapp.com/) est une solution open source de **gestion d’actifs IT** qui fait exactement ce qu’Excel ne sait pas faire : être un vrai outil d’inventaire.
 
@@ -156,10 +156,10 @@ Si tu as suivi mon guide sur [comment connecter Ubuntu à Active Directory avec 
 
 Plus besoin de saisir manuellement la liste des utilisateurs !
 
-- - - - - -
+---
 
 Les avantages concrets pour l’admin débutant
---------------------------------------------
+---
 
 ### Interface intuitive
 
@@ -175,10 +175,10 @@ Pas besoin de révolutionner ton infrastructure du jour au lendemain :
 
 **Bonnes pratiques :** Commence par inventorier un type d’équipement (par exemple : les PC) avant de tout faire d’un coup. Ça évite l’indigestion.
 
-- - - - - -
+---
 
 Où héberger tout ça (sans se ruiner)
-------------------------------------
+---
 
 ### Option 1 : Auto-hébergement sur VPS
 
@@ -199,10 +199,10 @@ Si tu veux juste que ça marche sans te préoccuper de l’installation :
 - Maintenance, sauvegardes et mises à jour incluses
 - Support technique direct de l’éditeur
 
-- - - - - -
+---
 
 Cas d’usage concrets
---------------------
+---
 
 ### PME de 30 personnes
 
@@ -221,10 +221,10 @@ Cas d’usage concrets
 - Traçabilité des prêts d’équipement
 - Gestion des dons de matériel informatique
 
-- - - - - -
+---
 
 Conclusion : Excel c’est fini
------------------------------
+---
 
 Si tu en as marre de jongler avec des fichiers Excel qui ressemblent à un inventaire de brocante, **SnipeIT** est LA solution pour débuter sereinement dans l’ITSM.
 

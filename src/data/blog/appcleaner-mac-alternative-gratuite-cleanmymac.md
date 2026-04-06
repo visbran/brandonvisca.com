@@ -12,7 +12,7 @@ tags:
 ---
 
 TL;DR
------
+---
 
 Tu viens de désinstaller une app sur ton Mac en la glissant dans la Corbeille ? Spoiler : elle a laissé des traces partout. Des fichiers de config dans `~/Library`, des caches dans `/tmp`, des préférences oubliées dans `Application Support`. Résultat ? Ton SSD se remplit de déchets invisibles.
 
@@ -20,10 +20,10 @@ Tu viens de désinstaller une app sur ton Mac en la glissant dans la Corbeille ?
 
 Dans ce guide, je te montre comment installer AppCleaner Mac, configurer SmartDelete pour automatiser le nettoyage, et récupérer plusieurs gigaoctets d’espace disque que tu croyais perdus.
 
-- - - - - -
+---
 
 Pourquoi macOS ne sait pas désinstaller proprement
---------------------------------------------------
+---
 
 Apple a conçu un système d’installation simple : tu glisses une app dans `/Applications`, tu la lances, ça marche. Mais à la désinstallation, macOS ne fait **que supprimer le bundle principal** de l’application.
 
@@ -37,9 +37,7 @@ Tous les fichiers associés restent en place :
 
 Sur une installation standard, j’ai récupéré **18 Go** de fichiers orphelins avec AppCleaner Mac après 2 ans d’utilisation. Pas mal pour un utilitaire gratuit.
 
-- - - - - -
-
-----------
+---
 ## Table des matières
 
 
@@ -81,7 +79,7 @@ Sur une installation standard, j’ai récupéré **18 Go** de fichiers orphelin
 
 
 AppCleaner Mac vs les alternatives
-----------------------------------
+---
 
 Voici un comparatif rapide pour situer AppCleaner face à ses concurrents :
 
@@ -95,10 +93,10 @@ Voici un comparatif rapide pour situer AppCleaner face à ses concurrents :
 
 AppCleaner Mac se positionne comme la **solution minimaliste et efficace** : il fait une seule chose, mais il la fait bien.
 
-- - - - - -
+---
 
 Installation d’AppCleaner Mac
------------------------------
+---
 
 ### Méthode 1 : Téléchargement direct
 
@@ -128,10 +126,10 @@ Perso, je l’utilise dans un script Bash qui nettoie mon Mac tous les mois.
 
 Avant de migrer vers un nouveau Mac avec **Migration Assistant**, utilise AppCleaner pour virer toutes les apps inutiles. Ça réduit la taille de la migration et t’évite de transférer des cochonneries.
 
-- - - - - -
+---
 
 Alternatives gratuites à AppCleaner Mac
----------------------------------------
+---
 
 Si AppCleaner ne te convient pas (ça m’étonnerait), voici d’autres options :
 

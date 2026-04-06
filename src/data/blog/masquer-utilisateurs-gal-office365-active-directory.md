@@ -17,9 +17,7 @@ Si tu gères un environnement hybride avec Active Directory local et Office 365,
 
 **Spoiler** : On va bidouiller Azure AD Connect avec style, sans tout casser.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -50,7 +48,7 @@ Si tu gères un environnement hybride avec Active Directory local et Office 365,
 
 
 Le problème qui fait mal aux cheveux
-------------------------------------
+---
 
 Dans un monde parfait, masquer un utilisateur de la GAL c’est simple comme bonjour quand tu as un compte cloud :
 
@@ -67,10 +65,10 @@ IIF(IsPresent([msDS-cloudExtensionAttribute1]),IIF([msDS-cloudExtensionAttribute
 
 Cette expression dit : « Si l’attribut `msDS-cloudExtensionAttribute1` est présent ET égal à `HideFromGAL`, alors retourne `True`, sinon `False`. S’il n’est pas présent, retourne `NULL`. »
 
-- - - - - -
+---
 
 Étape 3 : Synchronisation initiale 
------------------------------------
+---
 
 Maintenant qu’on a tout configuré, on lance la synchronisation pour appliquer notre nouvelle règle.
 

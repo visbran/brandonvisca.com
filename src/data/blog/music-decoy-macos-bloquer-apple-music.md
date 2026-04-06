@@ -12,7 +12,7 @@ tags:
 ---
 
 TL;DR
------
+---
 
 Tu appuies sur la touche Play de ton clavier Mac pour lancer Spotify. Et là, Apple Music se lance. Encore. Pour la 47ème fois cette semaine.
 
@@ -22,18 +22,16 @@ Tu l’as jamais ouvert Apple Music. Tu l’ouvriras jamais. T’as un abonnemen
 
 Dans ce guide ultra-rapide, je te montre comment installer Music Decoy macOS, le configurer pour qu’il démarre automatiquement, et les alternatives si ça te suffit pas.
 
-- - - - - -
+---
 
 Le problème : macOS force Apple Music comme lecteur par défaut
---------------------------------------------------------------
+---
 
 Apple a codé en dur dans macOS : **touche Play = ouvrir Apple Music**.
 
 Peu importe que tu utilises Spotify, YouTube Music, VLC, ou IINA. La touche Play du clavier (ou des AirPods, ou d’un clavier externe) lance **toujours** Apple Music en premier.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -83,10 +81,10 @@ Peu importe que tu utilises Spotify, YouTube Music, VLC, ou IINA. La touche Play
 
 C’est pas un bug, c’est un « feature » voulu par Apple pour pousser Apple Music. Sauf que si t’utilises pas leur service, c’est juste relou.
 
-- - - - - -
+---
 
 Music Decoy macOS : la solution minimaliste
--------------------------------------------
+---
 
 Music Decoy est une app ultra-simple qui fait **une seule chose** : elle se place entre la touche Play et Apple Music, et dit « non ».
 
@@ -107,10 +105,10 @@ C’est transparent. T’appuies sur Play, ta musique démarre. Pas d’Apple Mu
 
 C’est juste un **bloqueur Apple Music**. Pour contrôler Spotify avec les touches média, utilise [Raycast](../raycast-macos-outil-productivite-ultime/.md) (extension Spotify intégrée).
 
-- - - - - -
+---
 
 Installation de Music Decoy macOS
----------------------------------
+---
 
 ### Méthode 1 : Téléchargement direct
 

@@ -11,7 +11,7 @@ tags:
   - configuration
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -32,7 +32,7 @@ tags:
 
 
 Comment synchroniser l’heure avec NTP
--------------------------------------
+---
 
 La synchronisation de l’heure de votre serveur avec le NTP garantit que l’horloge de votre système est toujours précise. La plupart des distributions Linux sont équipées de `systemd-timesyncd`, un client NTP léger.
 
@@ -60,7 +60,7 @@ systemctl enable systemd-timesyncd
 Pour des étapes plus détaillées, consultez [Comment définir ou changer le fuseau horaire sous Linux](https://linuxize.com/post/how-to-set-or-change-timezone-in-linux/).
 
 Comment définir ou changer le fuseau horaire sous Linux
--------------------------------------------------------
+---
 
 ### Vérifier le fuseau horaire actuel
 
@@ -91,7 +91,7 @@ ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
 Pour des instructions plus détaillées, visitez [Comment changer le fuseau horaire sous Linux](https://www.baeldung.com/linux/change-timezone).
 
 Configurer le fuseau horaire sous Ubuntu
-----------------------------------------
+---
 
 ### Méthode 1 : Utiliser le terminal
 

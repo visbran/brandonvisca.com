@@ -11,7 +11,7 @@ tags:
   - guide
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -39,19 +39,19 @@ tags:
 - [Conclusion : DNS propre, admin heureux](#conclusion-dns-propre-admin-heureux)
 
 
-- - - - - -
+---
 
 Introduction : pourquoi ton DNS mérite un bon ménage
-----------------------------------------------------
+---
 
 Spoiler : si tu administres un réseau Windows avec DHCP, ton serveur DNS accumule probablement des enregistrements obsolètes. Résultat ? Des conflits de noms, des résolutions foireuses et des utilisateurs qui viennent te voir avec des mines d’enterrement.
 
 Le **DNS Scavenging** est cette fonctionnalité magique qui fait le ménage automatiquement. Et contrairement à ton bureau, ça marche vraiment.
 
-- - - - - -
+---
 
 🧩 Comment fonctionne le DNS Scavenging ?
-----------------------------------------
+---
 
 Le processus repose sur deux concepts principaux :
 
@@ -62,20 +62,20 @@ Une fois ces deux périodes écoulées, l’enregistrement devient éligible au 
 
 **En gros** : si un enregistrement n’a pas donné signe de vie pendant `No-Refresh + Refresh`, il dégage.
 
-- - - - - -
+---
 
 🛡️ Les avantages du DNS Scavenging
-----------------------------------
+---
 
 - ✅ **Nettoyage automatique** des anciens enregistrements
 - ✅ **Réduction des erreurs de résolution** dues aux enregistrements obsolètes
 - ✅ **Optimisation des performances** du serveur DNS
 - ✅ **Moins de galères** pour toi (et ça, c’est le plus important)
 
-- - - - - -
+---
 
 ⚙️ Configuration du DNS Scavenging
-----------------------------------
+---
 
 ### Prérequis avant de commencer
 
@@ -102,10 +102,10 @@ Set-DnsServerZoneAging -Name "tondomaine.local" -Aging $true
 Get-DnsServerZoneAging -Name "tondomaine.local"
 
 
-- - - - - -
+---
 
 🔧 Configuration avancée : les réglages fins
--------------------------------------------
+---
 
 Pour les environnements complexes avec plusieurs contrôleurs de domaine, assure-toi de bien maîtriser [la gestion des rôles FSMO](https://brandonvisca.com/activedirectory-transfere-des-roles-fsmo/) avant de déployer le scavenging.
 
@@ -130,10 +130,10 @@ Set-DnsServerDiagnostics -SaveLogsToPersistentStorage $true -EnableLogFileRollov
 Get-DnsServerResourceRecord -ZoneName "tondomaine.local" | Where-Object {$_.TimeStamp -lt (Get-Date).AddDays(-14)}
 
 
-- - - - - -
+---
 
 🚨 Pièges à éviter (ou comment ne pas tout casser)
--------------------------------------------------
+---
 
 ### ❌ Erreur n°1 : Activer sans tester
 

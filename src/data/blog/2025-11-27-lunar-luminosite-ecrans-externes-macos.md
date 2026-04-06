@@ -281,7 +281,9 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 ### Mode 2 : Sync (Pro, 23$)
 
-![](https://files.lunar.fyi/sync-all-displays-h264.mp4)
+<video controls autoplay loop muted playsinline>
+  <source src="https://files.lunar.fyi/sync-all-displays-h264.mp4" type="video/mp4">
+</video>
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282287/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_yuyr4p.jpg)
 
@@ -317,7 +319,9 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 ### Mode 3 : Location (Pro, 23$)
 
-![](https://lunar.fyi/static/video/location-demo-vp9.webm)
+<video controls autoplay loop muted playsinline>
+  <source src="https://lunar.fyi/static/video/location-demo-vp9.webm" type="video/webm">
+</video>
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282306/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_ntjpw1.jpg)
 

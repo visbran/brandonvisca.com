@@ -11,7 +11,7 @@ tags:
   - automatisation
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -43,10 +43,10 @@ tags:
 
 Dans ce guide, on va voir comment installer et déployer SnipeAgent pour automatiser l’inventaire de ton parc Windows. Que tu sois admin système junior ou que tu gères un homelab à la maison, ce tuto va te faire gagner un temps fou.
 
-- - - - - -
+---
 
 Pourquoi automatiser l’inventaire avec SnipeAgent ?
----------------------------------------------------
+---
 
 Si tu as déjà essayé de maintenir un inventaire IT à jour manuellement, tu connais la chanson : un PC qui change de bureau, une MAC address qui dérive, un numéro de série mal noté… Et ton Excel devient une fiction plus qu’un inventaire.
 
@@ -63,10 +63,10 @@ L’agent tourne en tâche planifiée, au démarrage ou à intervalle régulier.
 
 💡 **Bon à savoir** : SnipeAgent remplit automatiquement l’inventaire que tu auras déjà configuré dans ton installation Snipe-IT. Si tu n’as pas encore installé Snipe-IT, commence par lire mon [guide d’installation SnipeIT Ubuntu complet](https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/) avant de revenir ici.
 
-- - - - - -
+---
 
 Prérequis : prépare ton environnement
--------------------------------------
+---
 
 Avant d’installer SnipeAgent, assure-toi d’avoir :
 
@@ -86,10 +86,10 @@ Si ta configuration Snipe-IT est encore basique, jette un œil à mon article su
 
 ⚠️ **Erreur fréquente** : Si ton Snipe-IT n’est pas en HTTPS, l’agent peut avoir des problèmes de connexion selon la config réseau. Sécurise ton serveur avant de déployer en prod.
 
-- - - - - -
+---
 
 Installation de SnipeAgent sur Windows
---------------------------------------
+---
 
 SnipeAgent est distribué sous forme d’**installeur MSI**, donc c’est ultra simple à déployer, même en masse via GPO si tu bosses en environnement Active Directory.
 
@@ -157,10 +157,10 @@ Register-ScheduledTask -TaskName "SnipeAgent Inventory" -Action $action -Trigger
 SnipeAgent.exe /interactive
 
 
-- - - - - -
+---
 
 Dépannage : quand SnipeAgent ne veut pas coopérer
--------------------------------------------------
+---
 
 ### Erreur : « Unauthorized » ou « 403 Forbidden »
 
@@ -178,10 +178,10 @@ Dépannage : quand SnipeAgent ne veut pas coopérer
 
 → Vérifie que la tâche planifiée est bien créée et active. Regarde les logs dans l’Observateur d’événements Windows (`Journaux Windows > Application`) pour identifier l’erreur.
 
-- - - - - -
+---
 
 Alternatives et évolutions : comment aller plus loin
-----------------------------------------------------
+---
 
 SnipeAgent est parfait pour les parcs Windows, mais si tu as un environnement hétérogène (Linux, macOS, équipements réseau), tu vas devoir compléter avec d’autres outils :
 
@@ -193,10 +193,10 @@ Snipe-IT supporte l’import CSV, donc tu peux aussi scripter des collectes d’
 
 Si tu veux aller encore plus loin dans l’automatisation de ton infrastructure Windows, je te recommande de te pencher sur les **GPO avancées** et le scripting PowerShell. C’est le combo gagnant pour gérer un parc proprement.
 
-- - - - - -
+---
 
 Conclusion : un inventaire qui se gère tout seul
-------------------------------------------------
+---
 
 SnipeAgent, c’est la solution pour arrêter de courir après ton inventaire IT. Une fois configuré, l’agent tourne en silence, remplit ta base Snipe-IT, et tu peux enfin te concentrer sur des trucs plus intéressants que compter des numéros de série.
 
@@ -206,10 +206,10 @@ Si t’es admin système ou que tu gères un homelab, cet outil va te faire gagn
 
 Spoiler : c’est satisfaisant de voir son inventaire se remplir tout seul.
 
-- - - - - -
+---
 
 📌 Ressources complémentaires
-----------------------------
+---
 
 - [SnipeAgent sur GitHub](https://github.com/ReticentRobot/SnipeAgent) – Le repo officiel avec releases et doc
 - [Snipe-IT Documentation](https://snipe-it.readme.io/) – Pour configurer ton serveur d’inventaire

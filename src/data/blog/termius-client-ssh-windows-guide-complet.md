@@ -14,7 +14,7 @@ tags:
 Si vous utilisez encore **PuTTY** pour vous connecter en SSH à vos serveurs en 2025, cet article va vous faire gagner 30 minutes par jour. Non, ce n’est pas du clickbait. Termius, c’est ce qui se passe quand un client SSH rencontre le 21ème siècle : interface moderne, synchronisation cloud, gestion intelligente des clés… Bref, tout ce que PuTTY aurait dû devenir s’il n’était pas resté coincé en 1999.
 
 Pourquoi PuTTY mérite sa retraite (et vous méritez mieux)
----------------------------------------------------------
+---
 
 Soyons honnêtes : PuTTY a fait le job pendant 20 ans. Mais en 2025, **gérer vos serveurs ne devrait pas ressembler à une séance de torture médiévale**. Voici ce que PuTTY ne fait toujours pas :
 
@@ -27,7 +27,7 @@ Soyons honnêtes : PuTTY a fait le job pendant 20 ans. Mais en 2025, **gérer vo
 Termius, lui, fait tout ça. Et bien plus encore.
 
 Termius en 30 secondes : Le pitch
----------------------------------
+---
 
 Termius est un **client SSH moderne et cross-platform** (Windows, macOS, Linux, iOS, Android) qui transforme la gestion de vos serveurs en expérience fluide. Imaginez avoir accès à tous vos serveurs depuis n’importe quel appareil, avec vos clés SSH synchronisées, vos snippets de commandes prêts à l’emploi, et une interface qui ne pique pas les yeux.
 
@@ -35,9 +35,7 @@ Développé par Termius Corporation, l’outil existe en version gratuite (large
 
 **Le verdict rapide** : Si vous gérez plus de 3 serveurs régulièrement ou si vous travaillez depuis plusieurs machines, Termius va vous changer la vie. Point.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -98,7 +96,7 @@ Développé par Termius Corporation, l’outil existe en version gratuite (large
 
 
 Installation sur Windows : 3 minutes chrono
--------------------------------------------
+---
 
 ### Méthode 1 : Via le Microsoft Store (recommandé)
 
@@ -128,7 +126,7 @@ Au premier démarrage, Termius vous propose de créer un compte gratuit. **Crée
 L’inscription est gratuite et ne demande qu’une adresse email. Pas de carte bancaire, pas de période d’essai qui expire.
 
 Configuration : Ajouter votre premier serveur
----------------------------------------------
+---
 
 ### La méthode rapide (authentification par mot de passe)
 
@@ -167,7 +165,7 @@ Termius gère ça comme un chef :
 **Astuce de pro** : Termius peut même **pousser automatiquement** votre clé publique sur le serveur lors de la première connexion. Magique.
 
 Les fonctionnalités qui tuent (et pourquoi vous allez les adorer)
------------------------------------------------------------------
+---
 
 ### 1. Organisation intelligente avec groupes et tags
 
@@ -245,7 +243,7 @@ Même avec la sync cloud, **gardez une copie offline** de vos clés privées SSH
 **Règle d’or** : Si Termius disparaît demain, vous devez pouvoir accéder à vos serveurs.
 
 Les petits défauts (parce qu’il faut être honnête)
---------------------------------------------------
+---
 
 ### 1. Pas open-source
 
@@ -266,7 +264,7 @@ Sur des connexions SSH via 4G pourrie ou satellite, Termius peut être légèrem
 **Alternative** : Utilisez **Mosh** (Mobile Shell) à la place de SSH. Termius le supporte nativement et c’est fait exactement pour ça.
 
 Installation de Mosh sur votre serveur (bonus tip)
---------------------------------------------------
+---
 
 **Mosh**, c’est SSH en mieux pour les connexions instables. Ça résiste aux changements d’IP (utile si vous passez du Wi-Fi à la 4G), aux latences, et ça reste connecté même si votre laptop hiberne.
 
@@ -289,7 +287,7 @@ sudo ufw allow 60000:61000/udp
 **Résultat** : Une connexion qui survit à tout. Indispensable si vous administrez vos serveurs depuis un train ou un café.
 
 Sécurité : Termius est-il sûr ?
--------------------------------
+---
 
 **La vraie question** : Peut-on faire confiance à Termius avec nos clés SSH et credentials ?
 
@@ -322,7 +320,7 @@ Pour un **usage ultra-sensible** (production critique, données RGPD/HIPAA/finan
 **Mon avis personnel** : J’utilise Termius pour gérer mes serveurs perso, mes VPS clients, et mon homelab. Pour mes rares serveurs ultra-critiques, je garde les clés hors du cloud et je les gère manuellement. C’est un compromis pragmatique entre sécurité et productivité.
 
 FAQ : Les questions qu’on me pose tout le temps
------------------------------------------------
+---
 
 ### Termius fonctionne-t-il sur Linux ?
 
@@ -363,7 +361,7 @@ Termius, c’est **uniquement** pour vos connexions distantes (serveurs, VPS, NA
 **Honnêtement** : Si vous avez moins de 20 serveurs, autant recréer à la main. Ça prend 10 minutes et vous repartez sur des bases propres.
 
 Pour aller plus loin : Intégrations et workflows avancés
---------------------------------------------------------
+---
 
 ### Intégration avec AWS, Azure, DigitalOcean
 
@@ -397,7 +395,7 @@ Les plans Team et Business offrent une **API REST** pour automatiser :
 **Documentation** : [Termius API Docs](https://termius.com/documentation)
 
 Conclusion : Termius en vaut-il la peine en 2025 ?
---------------------------------------------------
+---
 
 **Réponse courte** : Oui, si vous gérez plus de 3 serveurs ou si vous travaillez depuis plusieurs appareils.
 
@@ -410,10 +408,10 @@ Conclusion : Termius en vaut-il la peine en 2025 ?
 
 Mais si vous êtes étudiant, débutant, ou que vous avez juste 2-3 serveurs perso, **la version gratuite fera le job**. Testez, vous verrez bien.
 
-- - - - - -
+---
 
 Pour aller encore plus loin
----------------------------
+---
 
 Maintenant que vous avez Termius bien configuré, il est temps de sécuriser sérieusement vos serveurs SSH. Parce qu’avoir un beau client SSH, c’est bien, mais si votre serveur se fait rooter en 10 minutes par un bot chinois, ça sert à rien.
 

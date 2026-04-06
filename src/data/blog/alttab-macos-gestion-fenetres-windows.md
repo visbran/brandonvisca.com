@@ -11,10 +11,10 @@ tags:
   - alttab
 ---
 
-- - - - - -
+---
 
 TL;DR
------
+---
 
 Tu viens de passer de Windows à Mac et le ⌘+Tab te rend fou ? Pas de preview des fenêtres, une organisation bizarre qui mélange les apps minimisées avec celles qui sont actives, et impossible de fermer une fenêtre directement depuis le switcher.
 
@@ -25,10 +25,10 @@ Bienvenue dans la frustration des switchers Windows → macOS.
 
 Dans ce guide complet, je te montre comment installer AltTab macOS, remplacer le ⌘+Tab natif, configurer les layouts (grid, thumbnails, list), et optimiser ton workflow de gestion de fenêtres comme un pro.
 
-- - - - - -
+---
 
 Le problème du ⌘+Tab natif sur macOS
-------------------------------------
+---
 
 Apple a conçu le ⌘+Tab pour switcher entre **applications**, pas entre **fenêtres**. Si t’as 5 fenêtres Chrome ouvertes, ⌘+Tab te montre juste l’icône Chrome une seule fois.
 
@@ -43,9 +43,7 @@ Pour quelqu’un qui vient de Windows, c’est un downgrade monumental. Le Alt+T
 
 AltTab macOS ramène ce comportement sur Mac. Et en mieux.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -98,7 +96,7 @@ AltTab macOS ramène ce comportement sur Mac. Et en mieux.
 
 
 AltTab macOS : ce qui change vraiment
--------------------------------------
+---
 
 Voici ce que AltTab macOS apporte par rapport au switcher natif :
 
@@ -114,10 +112,10 @@ Voici ce que AltTab macOS apporte par rapport au switcher natif :
 
 Le vrai game changer, c’est la **preview en temps réel**. Tu vois exactement ce qui est dans chaque fenêtre avant de switcher. Fini les « c’était quelle fenêtre déjà ? » qui te font perdre 5 secondes à chaque fois.
 
-- - - - - -
+---
 
 Installation d’AltTab macOS
----------------------------
+---
 
 ### Prérequis : Permission « Screen Recording »
 

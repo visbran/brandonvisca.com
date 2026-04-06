@@ -11,7 +11,7 @@ tags:
   - vim
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -23,7 +23,7 @@ tags:
 
 
 1. Prérequis
-------------
+---
 
 Avant de commencer l’installation d’un thème, nous devons d’abord installer un gestionnaire de plugins. Vim-plug est l’un des plus populaires et des plus simples à utiliser.
 
@@ -68,7 +68,7 @@ cp vim/colors/*.vim ~/.vim/colors/
 Cette méthode permet d’avoir un contrôle direct sur les fichiers de thème et peut être utile en cas de problème avec vim-plug.
 
 Sources
--------
+---
 
 - [Documentation officielle de vim-plug](https://github.com/junegunn/vim-plug)
 - [Documentation du thème Catppuccin pour Vim](https://github.com/catppuccin/vim)

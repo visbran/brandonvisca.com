@@ -19,18 +19,16 @@ Mais quand tu cherches des tutos, tu tombes sur des explications cryptiques avec
 
 Pas de théorie inutile. Que du concret.
 
-- - - - - -
+---
 
 TL;DR : Docker en 3 phrases
----------------------------
+---
 
 - **C’est quoi ?** Une façon de lancer des applications dans des « boîtes » isolées
 - **Pourquoi ?** Installation en 2 minutes, pas de conflit entre logiciels, facile à supprimer
 - **Comment ?** Un fichier `docker-compose.yml` + une commande = service opérationnel
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -103,7 +101,7 @@ TL;DR : Docker en 3 phrases
 
 
 Docker, c’est quoi (sans le jargon de dev)
-------------------------------------------
+---
 
 Imagine que tu veuilles installer Nextcloud sur ton serveur.
 
@@ -137,10 +135,10 @@ Tu peux créer 10 conteneurs à partir de la même image. Chaque conteneur est i
 **À savoir :**  
 Docker n’est pas de la virtualisation comme Proxmox ou VMware. C’est beaucoup plus léger : les conteneurs partagent le noyau Linux du système hôte. Résultat : c’est ultra-rapide.
 
-- - - - - -
+---
 
 Pourquoi Docker change tout pour l’auto-hébergement
----------------------------------------------------
+---
 
 Si tu as lu mon guide sur [l’auto-hébergement](https://brandonvisca.com/auto-hebergement-guide-complet-2025/), tu sais qu’on peut héberger plein de services. Mais Docker rend ça 10x plus facile.
 
@@ -198,10 +196,10 @@ Déconnecte-toi et reconnecte-toi pour que ça prenne effet. Ensuite, tu pourras
 **Sécurité :**  
 Ajouter ton user au groupe Docker lui donne des droits équivalents à root. Sur un serveur de prod, réfléchis-y à deux fois. Pour ton homelab perso, aucun souci.
 
-- - - - - -
+---
 
 Docker Compose : Le fichier magique
------------------------------------
+---
 
 Docker Compose, c’est ce qui rend Docker vraiment puissant pour l’auto-hébergement.
 
@@ -241,10 +239,10 @@ docker compose pull
 docker compose up -d
 
 
-- - - - - -
+---
 
 Organisation des fichiers (bonne pratique)
-------------------------------------------
+---
 
 Avant de déployer tes services, crée une structure propre :
 
@@ -284,7 +282,7 @@ docker compose up -d
 
 **Résultat :** Interface magnifique, création du compte admin, et tu peux commencer à monitorer tes services.
 
-- - - - - -
+---
 
 ### 2. Portainer — Interface de gestion Docker 🟢
 
@@ -355,7 +353,7 @@ docker compose up -d
 
 **Important :** Change immédiatement le mot de passe après la première connexion.
 
-- - - - - -
+---
 
 ### 4. Vaultwarden — Gestionnaire de mots de passe 🟢
 
@@ -447,7 +445,7 @@ docker compose up -d
 
 **Astuce :** Active la prévisualisation des fichiers et l’app Memories pour gérer tes photos comme sur Google Photos.
 
-- - - - - -
+---
 
 ### 6. Jellyfin — Serveur média (Netflix maison) 🟡
 
@@ -516,7 +514,7 @@ docker compose up -d
 
 **Configuration :** Édite le fichier `./assets/config.yml` pour ajouter tes services.
 
-- - - - - -
+---
 
 ### 8. Immich — Alternative Google Photos 🟡
 
@@ -544,7 +542,7 @@ docker compose up -d
 
 **Apps mobiles :** Disponibles sur iOS et Android pour synchroniser automatiquement tes photos.
 
-- - - - - -
+---
 
 ### 9. Paperless-ngx — GED personnelle 🟡
 
@@ -661,10 +659,10 @@ docker compose up -d
 3. Ajoute tes flux RSS préférés
 4. Active le thème sombre (évidemment)
 
-- - - - - -
+---
 
 Commandes Docker essentielles (antisèche)
------------------------------------------
+---
 
 ### Gestion des conteneurs
 
@@ -720,10 +718,10 @@ docker image prune
 docker system prune -a
 
 
-- - - - - -
+---
 
 Erreurs fréquentes et solutions
--------------------------------
+---
 
 ### ❌ Erreur : « Port already allocated »
 
@@ -745,7 +743,7 @@ ports:
 sudo chown -R $USER:$USER ~/docker/nom-service
 
 
-- - - - - -
+---
 
 ### ❌ Conteneur qui redémarre en boucle
 
@@ -771,10 +769,10 @@ sudo systemctl start docker
 sudo systemctl enable docker
 
 
-- - - - - -
+---
 
 Bonnes pratiques pour ton homelab Docker
-----------------------------------------
+---
 
 ### 1. Toujours utiliser des versions fixes
 
@@ -790,7 +788,7 @@ image: nextcloud:28
 
 **Pourquoi ?** `latest` peut casser tes services lors d’une mise à jour majeure. Avec une version fixe, tu contrôles quand tu updates.
 
-- - - - - -
+---
 
 ### 2. Utiliser des volumes nommés ou des bind mounts
 
@@ -807,7 +805,7 @@ restart: unless-stopped
 
 Ton serveur reboot ? Tes conteneurs redémarrent automatiquement.
 
-- - - - - -
+---
 
 ### 4. Un réseau Docker par « projet »
 
@@ -836,10 +834,10 @@ services:
       - "8081:80"
 
 
-- - - - - -
+---
 
 Sauvegarder tes services Docker
--------------------------------
+---
 
 Les conteneurs Docker sont éphémères. Si tu supprimes un conteneur, tu perds ses données… **sauf si tu as bien configuré les volumes**.
 
@@ -873,10 +871,10 @@ services:
 
 **Attention :** Teste bien avant d’activer ça en prod. Une mise à jour peut casser un service.
 
-- - - - - -
+---
 
 Ressources pour aller plus loin
--------------------------------
+---
 
 ### 📚 Articles complémentaires sur ce site
 
@@ -895,10 +893,10 @@ Ressources pour aller plus loin
 - TechnoTim (en anglais, très bon pour homelab)
 - Xavki (en français, DevOps et Docker)
 
-- - - - - -
+---
 
 Conclusion : Docker, ton meilleur allié homelab
------------------------------------------------
+---
 
 Si tu retiens une chose de cet article, c’est ça : **Docker simplifie tout**.
 
@@ -930,10 +928,10 @@ Dans le prochain article, on parlera de **Proxmox** pour virtualiser plusieurs V
 
 Tu galères sur un service ? Pose ta question en commentaires, je réponds à tout ! 👇
 
-- - - - - -
+---
 
 FAQ : Les questions Docker qui reviennent souvent
--------------------------------------------------
+---
 
 ### **Docker vs LXC vs VM, quelle différence ?**
 

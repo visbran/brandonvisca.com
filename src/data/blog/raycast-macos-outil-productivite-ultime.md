@@ -12,7 +12,7 @@ tags:
 ---
 
 HIntroduction : Pourquoi Spotlight ne suffit plus
-------------------------------------------------
+---
 
 Soyons honnêtes deux secondes : **Spotlight, c’était cool en 2010**. Mais en 2025, ouvrir une app ou chercher un fichier, c’est le strict minimum. Si tu bosses sur Mac et que tu passes encore 50% de ton temps à cliquer dans le Dock ou à fouiller dans le Finder, on a un problème.
 
@@ -27,9 +27,7 @@ Spoiler : **c’est beaucoup trop**.
 
 C’est là que **Raycast** débarque. Un launcher macOS gratuit, ultra-puissant, extensible à l’infini, qui transforme ton Mac en véritable **machine de guerre productive**. Et le meilleur ? Tu vas te demander comment t’as fait pour vivre sans.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -59,7 +57,7 @@ C’est là que **Raycast** débarque. Un launcher macOS gratuit, ultra-puissant
 
 
 Raycast, c’est quoi exactement ?
---------------------------------
+---
 
 Imagine Spotlight. Maintenant imagine qu’on lui donne des **stéroïdes**, une **API extensible**, un **store d’extensions**, de l’**IA intégrée**, et qu’on le rende **100x plus rapide**. Voilà Raycast.
 
@@ -75,10 +73,10 @@ Concrètement, c’est un **launcher** (comme Alfred ou Spotlight), mais qui va 
 
 Et tout ça, c’est **gratuit**. Oui, tu as bien lu.
 
-- - - - - -
+---
 
 Installation et premiers pas (spoiler : c’est bête comme chou)
---------------------------------------------------------------
+---
 
 ### Étape 1 : Télécharge Raycast
 
@@ -109,7 +107,7 @@ Tape `;mail` n’importe où → Le texte se remplace automatiquement.
 - Réponses support client
 - Signatures d’emails
 
-- - - - - -
+---
 
 ### 🔗 Quicklinks : vos URLs favorites à portée de doigts
 
@@ -131,7 +129,7 @@ Alias: gh
 
 Tape `gh raycast` → Recherche « raycast » sur GitHub.
 
-- - - - - -
+---
 
 ### 🔢 Calculator : le seul calculateur qui vous comprend
 
@@ -147,10 +145,10 @@ Appuie sur **Entrée** → Le résultat est copié dans ton clipboard.
 
 **Bonus :** L’historique de tes calculs est sauvegardé. Pratique pour retrouver un calcul d’il y a 2h.
 
-- - - - - -
+---
 
 Les extensions indispensables (même si vous débutez)
-----------------------------------------------------
+---
 
 Raycast a un **Store d’extensions** gratuit. Voici les must-have :
 
@@ -174,10 +172,10 @@ Pas de compte requis. Pas de paiement. **C’est ça qui est beau.**
 
 **Envie d’aller plus loin ?** 👉 J’ai rédigé un guide complet sur les [10 Extensions Raycast indispensables pour développeurs et sysadmins](https://brandonvisca.com/10-extensions-raycast-indispensables-pour-developpeurs-et-sysadmins/) avec installation détaillée, configuration, et cas d’usage concrets pour chaque extension. Docker, GitHub, SSH Manager… tout y est.
 
-- - - - - -
+---
 
 Raycast vs Spotlight vs Alfred : le match sans pitié
-----------------------------------------------------
+---
 
 | Feature | Spotlight | Alfred | Raycast |
 |---|---|---|---|
@@ -192,10 +190,10 @@ Raycast vs Spotlight vs Alfred : le match sans pitié
 
 **Verdict :** Si tu débutes, **Raycast écrase tout**. Si t’es un power user d’Alfred depuis 10 ans, tu peux rester sur Alfred (mais teste quand même Raycast, sérieux).
 
-- - - - - -
+---
 
 Version gratuite vs Pro : avez-vous vraiment besoin de payer ?
---------------------------------------------------------------
+---
 
 ### Version gratuite (0€) :
 
@@ -216,10 +214,10 @@ Version gratuite vs Pro : avez-vous vraiment besoin de payer ?
 
 **Mon avis :** La version gratuite est **largement suffisante** pour 90% des utilisateurs. Si tu bosses avec plusieurs Macs ou si tu veux de l’IA intégrée, le Pro peut valoir le coup. Mais ne paie pas si t’en as pas besoin.
 
-- - - - - -
+---
 
 Cas d’usage concrets (comment je gagne 2h par jour)
----------------------------------------------------
+---
 
 ### Cas 1 : Workflow dev
 
@@ -240,10 +238,10 @@ Cas d’usage concrets (comment je gagne 2h par jour)
 
 **Résultat :** J’estime gagner **~2h par jour** en éliminant les frictions inutiles.
 
-- - - - - -
+---
 
 Conclusion : Faut-il craquer ?
-------------------------------
+---
 
 Si t’es sur Mac et que tu veux **booster ta productivité sans effort**, installe Raycast. C’est gratuit, c’est rapide, et tu vas te demander comment t’as fait sans.
 
@@ -255,20 +253,20 @@ Si t’es sur Mac et que tu veux **booster ta productivité sans effort**, insta
 
 Alors oui, il y a une légère courbe d’apprentissage. Mais franchement, après 2-3 jours d’utilisation, tu ne reviendras jamais en arrière.
 
-- - - - - -
+---
 
 🔗 Articles connexes qui pourraient t’intéresser
------------------------------------------------
+---
 
 - **[Arc Browser : 7 alternatives après son abandon](https://brandonvisca.com/arc-browser-alternatives-apres-abandon/)** : Si tu cherches un navigateur productif comme Raycast pour le web
 - **[Arc Search : Redéfinir la navigation avec l’IA](https://brandonvisca.com/arc-search-redefinir-la-navigation-internet-avec-lia/)** : L’IA au service de la navigation, comme Raycast pour les apps
 - **[Notion Sites : Création de sites web révolutionnée](https://brandonvisca.com/notion-sites-creation-de-sites-web/)** : Notion s’intègre avec Raycast via une extension dédiée
 - Autre outil indispensable : [AppCleaner](/appcleaner-mac-alternative-gratuite-cleanmymac/) pour désinstaller proprement tes apps
 
-- - - - - -
+---
 
 💡 Ressources utiles
--------------------
+---
 
 - [Site officiel Raycast](https://raycast.com/)
 - [Store d’extensions](https://raycast.com/store)

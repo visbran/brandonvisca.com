@@ -11,7 +11,7 @@ tags:
   - snipeit
 ---
 
---------
+---
 ## Table des matières
 
 
@@ -30,7 +30,7 @@ tags:
   - [❌ Certains utilisateurs sont exclus alors qu’ils ne devraient pas l’être](#faq-question-1753108163800)
 - [7️⃣ Conclusion](#7-%EF%B8%8F-conclusion)
 
-------------
+---
 
 Le filtrage utilisateurs LDAP Snipe-IT est crucial lors de l’intégration avec Active Directory.
 
@@ -40,7 +40,7 @@ Pourquoi ? Parce qu’importer tous les comptes de votre annuaire, c’est la
 garantie de créer un beau bazar dans votre ITAM.
 
 1️⃣ Prérequis
--------------
+---
 
 Avant de commencer, assurez-vous d’avoir :
 
@@ -49,7 +49,7 @@ Avant de commencer, assurez-vous d’avoir :
 - Snipe-IT correctement configuré avec la connexion LDAP active.
 
 2️⃣ Objectif du filtre LDAP
----------------------------
+---
 
 Un bon filtrage utilisateurs LDAP Snipe-IT vous permettra de :
 
@@ -59,7 +59,7 @@ Un bon filtrage utilisateurs LDAP Snipe-IT vous permettra de :
 - **Exclure les utilisateurs** dont l’adresse `userPrincipalName` se termine par un domaine spécifique (ex. `@exemple.ad`).
 
 🔐 Bonnes pratiques de sécurité pour le filtrage LDAP
-----------------------------------------------------
+---
 
 Le filtrage utilisateurs LDAP Snipe-IT ne se limite pas à exclure des comptes. C’est aussi une question de sécurité cruciale pour votre infrastructure.
 
@@ -102,7 +102,7 @@ Voici des exemples concrets de filtrage utilisateurs LDAP Snipe-IT :
 - (|(memberof=CN=Groupe1,OU=GROUPS,DC=exemple,DC=ad)… ) : Ne synchronise que les utilisateurs appartenant à au moins un des groupes spécifiés.
 
 4️⃣ Tester le filtre LDAP
--------------------------
+---
 
 Avant d’ajouter le filtre dans Snipe-IT, testez-le avec **[ldapsearch](https://docs.ldap.com/ldap-sdk/docs/tool-usages/ldapsearch.html)** sous Linux ou via l’outil LDAP Admin sous Windows.
 

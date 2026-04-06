@@ -11,7 +11,7 @@ tags:
   - python
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -62,7 +62,7 @@ tags:
   - [Quelle est la différence entre PATH utilisateur et PATH système ?](#faq-question-1760465024443)
   - [Pourquoi ma commande n’est toujours pas reconnue après ajout au PATH ?](#faq-question-1760465040805)
 
-------------
+---
 
 
 
@@ -72,10 +72,10 @@ Tu viens de télécharger Python, Node.js ou Git, et là… surprise : impossibl
 
 Dans ce guide, je te montre **3 méthodes** pour ajouter un programme au PATH Windows : l’interface graphique (pour les prudents), PowerShell (pour les pros), et CMD (pour les nostalgiques). Avec en bonus : cas d’usage réels, troubleshooting, et tout ce qu’il faut pour ne plus jamais galérer.
 
-- - - - - -
+---
 
 C’est quoi le PATH Windows, concrètement ?
-------------------------------------------
+---
 
 Le **PATH** (ou `%PATH%` en langage Windows), c’est une variable d’environnement système qui contient une **liste de dossiers**. Quand tu tapes une commande dans PowerShell ou CMD, Windows cherche l’exécutable correspondant dans tous ces dossiers, dans l’ordre.
 
@@ -97,10 +97,10 @@ Chaque chemin est séparé par un `;`. Si tu tapes `python`, Windows va chercher
 
 💡 **À savoir :** Si le programme n’est dans aucun de ces dossiers, Windows te balance un `'commande' n'est pas reconnu...`. D’où l’intérêt d’ajouter le bon chemin au PATH.
 
-- - - - - -
+---
 
 Pourquoi ajouter un programme au PATH ?
----------------------------------------
+---
 
 Imagine que tu installes **Python** dans `C:\Python311`. Sans l’ajouter au PATH :
 
@@ -116,10 +116,10 @@ Imagine que tu installes **Python** dans `C:\Python311`. Sans l’ajouter au PAT
 
 C’est comme avoir un assistant qui sait exactement où chercher tes outils, sans que tu aies à lui donner l’adresse complète à chaque fois.
 
-- - - - - -
+---
 
 PATH utilisateur vs PATH système : quelle différence ?
-------------------------------------------------------
+---
 
 Windows propose **deux PATH** distincts :
 
@@ -137,10 +137,10 @@ Windows propose **deux PATH** distincts :
 
 ⚠️ **Erreur fréquente :** Ajouter au PATH utilisateur alors que tu veux que tous les comptes puissent utiliser le programme. Choisis en fonction de ton besoin.
 
-- - - - - -
+---
 
 Méthode 1 : Interface graphique (la méthode simple)
----------------------------------------------------
+---
 
 C’est la méthode classique, celle que ton formateur en école d’admin sys t’a montrée en 2015. Elle fonctionne toujours en 2025.
 
@@ -183,10 +183,10 @@ Tu vas voir deux sections :
 
 💡 **Astuce :** Pas besoin de redémarrer Windows, juste ton terminal.
 
-- - - - - -
+---
 
 Méthode 2 : PowerShell (la méthode de pro)
-------------------------------------------
+---
 
 Si tu bosses en ligne de commande, cette méthode est **10x plus rapide**. En plus, tu peux l’automatiser dans des scripts de déploiement.
 
@@ -259,10 +259,10 @@ setx PATH "%PATH%;C:\Program Files\Python311"
 
 ⚠️ **Attention avec `setx` :** Il y a une limite de 1024 caractères. Si ton PATH est déjà bien rempli, utilise plutôt PowerShell ou l’interface graphique.
 
-- - - - - -
+---
 
 Cas d’usage concrets : Python, Node, Git, VS Code
--------------------------------------------------
+---
 
 ### 🐍 Python
 
@@ -339,10 +339,10 @@ Get-Command python
 
 Ça affiche le chemin complet de `python.exe` utilisé.
 
-- - - - - -
+---
 
 Troubleshooting : quand ça ne marche pas
-----------------------------------------
+---
 
 ### ❌ Problème 1 : « La commande n’est toujours pas reconnue »
 
@@ -366,10 +366,10 @@ $env:PATH -split ';' | Select-String "Python"
 
 Supprime l’ancienne version du PATH si tu ne l’utilises plus.
 
-- - - - - -
+---
 
 Bonnes pratiques à connaître
-----------------------------
+---
 
 ### ✅ 1. Utilise des chemins sans espaces si possible
 

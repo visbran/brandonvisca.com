@@ -11,7 +11,7 @@ tags:
   - guide
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -62,10 +62,10 @@ Cette **installation SnipeIT Ubuntu** va couvrir Ubuntu 22.04 LTS et 24.04 LTS. 
 
 L’installation SnipeIT sur Ubuntu, c’est pas sorcier… si tu sais ce que tu fais. Sinon, tu vas te retrouver avec des erreurs 500, des permissions foireuses et l’envie de tout effacer. Dans ce guide installation SnipeIT Ubuntu, on va faire ça proprement.
 
-- - - - - -
+---
 
 Prérequis installation SnipeIT Ubuntu
--------------------------------------
+---
 
 Avant de foncer tête baissée dans cette **installation SnipeIT Ubuntu**, vérifie que tu as :
 
@@ -86,10 +86,10 @@ Genre `inventory.monentreprise.com`. Sinon tu peux utiliser l’IP du serveur, m
 
 **À savoir :** On va faire une **installation SnipeIT Ubuntu** « basique » avec Apache dans ce guide. Si tu veux un setup production avec Nginx + reverse proxy + SSL, ce sera dans un prochain article dédié.
 
-- - - - - -
+---
 
 Étape 1 : Préparer Ubuntu pour SnipeIT (stack LAMP)
----------------------------------------------------
+---
 
 LAMP, c’est l’acronyme pour **L**inux, **A**pache, **M**ySQL, **P**HP. C’est la stack requise pour cette **installation SnipeIT Ubuntu** (qui est une application Laravel PHP).
 
@@ -158,10 +158,10 @@ composer --version
 
 Tu dois voir `Composer version 2.x.x`.
 
-- - - - - -
+---
 
 Étape 2 : Configurer MySQL pour SnipeIT
----------------------------------------
+---
 
 On va créer une base de données dédiée pour notre **installation SnipeIT Ubuntu**. **Jamais** utiliser la base `root` pour une application.
 
@@ -189,10 +189,10 @@ EXIT;
 - `FLUSH PRIVILEGES` : recharge les permissions
 - `EXIT` : tu sors de MySQL
 
-- - - - - -
+---
 
 Étape 3 : Installer SnipeIT Ubuntu via Git
-------------------------------------------
+---
 
 Cette étape est cruciale pour ton **installation SnipeIT Ubuntu**. On va cloner le repo officiel dans `/var/www/snipe-it`, le répertoire standard pour les applications web sur Ubuntu.
 
@@ -210,10 +210,10 @@ sudo git pull
 
 Avec un zip, tu dois tout retélécharger, réextract, reconfigurer. Git = efficace.
 
-- - - - - -
+---
 
 Étape 4 : Configuration Laravel et permissions
-----------------------------------------------
+---
 
 ### Copie du fichier de configuration
 
@@ -259,10 +259,10 @@ sudo chmod -R 775 /var/www/snipe-it/public/uploads
 
 **Erreur fréquente :** Mettre `chmod 777` partout. NE FAIS JAMAIS ÇA. C’est un trou de sécurité béant. Si tu vois ça dans un tuto, ferme l’onglet.
 
-- - - - - -
+---
 
 Étape 5 : Installation des dépendances Composer
------------------------------------------------
+---
 
 Composer va télécharger toutes les bibliothèques PHP dont SnipeIT a besoin.
 
@@ -278,10 +278,10 @@ sudo -u www-data php artisan key:generate
 
 Tape `yes` quand il te demande si tu veux continuer. Cette commande va écrire une clé dans le fichier `.env` automatiquement.
 
-- - - - - -
+---
 
 Étape 6 : Configuration Apache pour SnipeIT
--------------------------------------------
+---
 
 On va créer un VirtualHost Apache pour servir notre **installation SnipeIT Ubuntu**.
 
@@ -339,10 +339,10 @@ sudo systemctl status apache2
 
 Si c’est rouge avec une erreur, y’a une faute de syntaxe dans ton fichier de config. Relis-le.
 
-- - - - - -
+---
 
 Étape 7 : Finaliser l’installation SnipeIT Ubuntu
--------------------------------------------------
+---
 
 ### Accès à l’interface web
 
@@ -393,10 +393,10 @@ Clique sur **« Save Settings »**.
 
 👉 La prochaine étape ? Automatiser le remplissage de ton inventaire avec [SnipeAgent pour Windows](https://brandonvisca.com/snipeagent-automatiser-inventaire-windows-snipeit/). Fini la saisie manuelle, l’agent remplit ta base tout seul.
 
-- - - - - -
+---
 
 Bonnes pratiques post-installation
-----------------------------------
+---
 
 ### 1. Sauvegardes automatiques
 
@@ -470,10 +470,10 @@ cd /var/www/snipe-it
 sudo -u www-data php artisan key:generate
 
 
-- - - - - -
+---
 
 Où héberger ton installation SnipeIT Ubuntu ?
----------------------------------------------
+---
 
 Tu n’as pas encore de serveur Ubuntu pour ton **installation SnipeIT** ? Voici mes recommandations testées :
 
@@ -509,10 +509,10 @@ Tu n’as pas encore de serveur Ubuntu pour ton **installation SnipeIT** ? Voici
 - API complète pour automatisation
 - Recommandé pour **installation SnipeIT Ubuntu** haute disponibilité
 
-- - - - - -
+---
 
 Conclusion : installation SnipeIT Ubuntu réussie
-------------------------------------------------
+---
 
 Voilà, tu as maintenant une **installation SnipeIT Ubuntu** fonctionnelle et propre. Pas de Docker, pas de magie noire, juste une installation native sur Ubuntu qui marche du premier coup.
 

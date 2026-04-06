@@ -13,10 +13,10 @@ tags:
 
 *Tu as déjà eu cette sueur froide en découvrant que ton site est down depuis 3 heures ? Ou pire, c’est un client qui te prévient ?*
 
-- - - - - -
+---
 
 Introduction
-------------
+---
 
 La surveillance d’infrastructure, c’est comme l’assurance auto : personne ne trouve ça sexy jusqu’au jour où tu en as vraiment besoin. Sauf que contrairement à l’assurance, **un bon système de monitoring peut t’épargner bien plus qu’une facture de carrosserie**.
 
@@ -30,9 +30,7 @@ Dans cet article, on va plonger dans **UptimeRobot**, une solution de monitoring
 
 Contrairement à certains tutoriels qui te balancent juste « clique ici, clique là », on va creuser : API, webhooks, alertes intelligentes, cas d’usage concrets, et même une comparaison honnête avec les alternatives self-hosted.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -81,7 +79,7 @@ Contrairement à certains tutoriels qui te balancent juste « clique ici, clique
 
 
 1. Qu’est-ce qu’UptimeRobot (et pourquoi tu devrais t’en servir)
-----------------------------------------------------------------
+---
 
 **UptimeRobot** est un service de surveillance de disponibilité (uptime monitoring) qui vérifie régulièrement que tes sites, serveurs et services sont bien vivants. Si quelque chose tombe, tu es alerté immédiatement par email, SMS, Slack, Discord ou n’importe quel webhook que tu configures.
 
@@ -113,10 +111,10 @@ Contrairement à certains tutoriels qui te balancent juste « clique ici, clique
 
 [**👉 Créer un compte UptimeRobot gratuitement**](https://uptimerobot.com/?red=brando5751b9)
 
-- - - - - -
+---
 
 2. Configuration initiale : les premières vérifications
--------------------------------------------------------
+---
 
 ### Créer ton premier monitor (en 2 minutes chrono)
 
@@ -138,10 +136,10 @@ Contrairement à certains tutoriels qui te balancent juste « clique ici, clique
 ✅ Période de maintenance planifiée (si t’as des maintenances régulières)  
 ✅ Page de statut publique activée (optionnel mais pro)
 
-- - - - - -
+---
 
 3. Types de monitoring disponibles
-----------------------------------
+---
 
 UptimeRobot ne fait pas que pinger ton site. Il supporte plusieurs protocoles et méthodes de vérification :
 
@@ -386,10 +384,10 @@ Si ton site tombe tous les jeudis à 14h, c’est pas UptimeRobot qui déconne, 
 
 > **⚠️ Erreur fréquente** : Configurer des alertes sans avoir de plan d’action. Être alerté c’est bien, savoir quoi faire après c’est mieux.
 
-- - - - - -
+---
 
 Optimisation : Surveiller plus intelligent
-------------------------------------------
+---
 
 ### Status Pages : Transparence avec tes clients/users
 
@@ -427,10 +425,10 @@ Si tu as déjà du Grafana/Prometheus pour les métriques internes, combine avec
 
 Résultat : Un dashboard unique qui montre à la fois la dispo externe ET les métriques serveur internes.
 
-- - - - - -
+---
 
 Cas pratique : Migrer de Pingdom à UptimeRobot
-----------------------------------------------
+---
 
 Tu payes 50$/mois Pingdom et tu veux économiser ? Voici comment migrer proprement.
 
@@ -454,10 +452,10 @@ Désactive Pingdom, ne garde qu’UptimeRobot.
 
 **Économie : 43$/mois → 0$/mois (plan gratuit) ou 7$/mois (plan pro)**
 
-- - - - - -
+---
 
 Pour aller plus loin : Architecture de monitoring complète
-----------------------------------------------------------
+---
 
 Un bon système de surveillance ne se limite pas à UptimeRobot. Voici une stack complète que je recommande :
 
@@ -485,10 +483,10 @@ Cette stack te donne une visibilité à 360° sur ton infra. Et UptimeRobot, en 
 
 Si tu veux approfondir la sécurité de ton serveur avant d’activer la surveillance, je te recommande vivement de lire mon guide sur [la sécurisation des serveurs Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/). Parce qu’un serveur bien surveillé mais pas sécurisé, c’est comme fermer la porte à clé mais laisser les fenêtres ouvertes.
 
-- - - - - -
+---
 
 Monitoring avancé : Détection d’anomalies
------------------------------------------
+---
 
 Plan payant uniquement, mais si tu gères des services critiques, ça vaut le coup :
 
@@ -503,10 +501,10 @@ Aujourd'hui : 2500ms (site très lent mais pas down)
 
 Tu peux anticiper les problèmes avant qu’ils deviennent critiques.
 
-- - - - - -
+---
 
 Ressources et outils complémentaires
-------------------------------------
+---
 
 ### Outils gratuits pour compléter UptimeRobot
 
@@ -520,10 +518,10 @@ Ressources et outils complémentaires
 - **API Docs** : https://uptimerobot.com/api
 - **Forum** : Communauté active qui partage des scripts/configs
 
-- - - - - -
+---
 
 Conclusion : La tranquillité d’esprit n’a pas de prix (mais elle coûte 0€)
---------------------------------------------------------------------------
+---
 
 Surveiller ton infrastructure, c’est pas du luxe. C’est du **basique obligatoire** en 2025.
 
@@ -543,10 +541,10 @@ Et si tu veux pousser plus loin, couple UptimeRobot avec un bon système de logs
 
 Dans un prochain article, on verra comment automatiser la création de monitors avec Terraform et intégrer UptimeRobot dans un pipeline CI/CD complet.
 
-- - - - - -
+---
 
 Articles connexes recommandés
------------------------------
+---
 
 Si cet article t’a plu, tu vas probablement aimer :
 
@@ -555,10 +553,10 @@ Si cet article t’a plu, tu vas probablement aimer :
 - **[Installation LocalWP WordPress Local](https://brandonvisca.com/installer-localwp-wordpress-local/)** : Développe en local, déploie en prod, surveille avec UptimeRobot. Le workflow complet.
 - **[SnipeIT Inventaire IT](https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/)** : Garde un inventaire de tes serveurs et lie chaque asset à son monitor UptimeRobot.
 
-- - - - - -
+---
 
 **Note éditoriale :** Cet article utilise des liens affiliés vers UptimeRobot. Si tu passes par ces liens, je touche une petite commission qui me permet de continuer à produire du contenu gratuit et de qualité. Ça ne change rien au prix pour toi, et je ne recommande que des outils que j’utilise personnellement.
 
-- - - - - -
+---
 
 **Dernière mise à jour :** Octobre 2025

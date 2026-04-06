@@ -16,7 +16,7 @@ tags:
 ---
 
 Quand le terminal rencontre l’IA (et ça change tout)
-----------------------------------------------------
+---
 
 **Soyons honnêtes** : pendant des années, on a bidouillé nos terminaux avec Oh My Zsh, iTerm2, et des thèmes à n’en plus finir. Ça fonctionne, c’est solide, mais… **et si on pouvait faire mieux ?**
 
@@ -32,9 +32,7 @@ Quand le terminal rencontre l’IA (et ça change tout)
 > ✅ Cas d’usage réels (Docker, SSH, debugging)  
 > ✅ Est-ce que ça vaut le coup en 2025 ?
 
-- - - - - -
-
-----------
+---
 ## Table des matières
 
 
@@ -94,7 +92,7 @@ Quand le terminal rencontre l’IA (et ça change tout)
 
 
 Warp Terminal c’est quoi exactement ?
--------------------------------------
+---
 
 ### L’évolution : du terminal au ADE (Agentic Development Environment)
 
@@ -112,10 +110,10 @@ Warp Terminal c’est quoi exactement ?
 
 > **Fun fact :** Warp utilise un mix de modèles (OpenAI, Anthropic Claude, Google Gemini) pour obtenir les meilleurs résultats. Intelligent.
 
-- - - - - -
+---
 
 Les features qui font la différence
------------------------------------
+---
 
 ### 1. **Agent Mode : Votre assistant DevOps personnel**
 
@@ -146,7 +144,7 @@ docker ps -a
 CONTAINER ID   IMAGE     STATUS    PORTS
 abc123def456   nginx     Up 2h     0.0.0.0:80->80/tcp
 
-- - - - - -
+---
 
 ### 3. **Warp Drive : Netflix pour vos commandes**
 
@@ -168,10 +166,10 @@ docker ps --f<TAB>
 
 Et ça s’adapte à votre historique. Plus vous l’utilisez, plus c’est pertinent.
 
-- - - - - -
+---
 
 Installation : Plus simple qu’iTerm2
-------------------------------------
+---
 
 ### macOS (la méthode propre)
 
@@ -206,10 +204,10 @@ winget install warp.warp
 
 > **Astuce :** Sur Windows, utilisez WSL2 pour avoir l’expérience complète.
 
-- - - - - -
+---
 
 Configuration : Ce qui change par rapport à iTerm2
---------------------------------------------------
+---
 
 ### Import de votre config existante
 
@@ -222,7 +220,7 @@ Configuration : Ce qui change par rapport à iTerm2
 
 **Rien à refaire.** Ça marche out of the box.
 
-- - - - - -
+---
 
 ### Personnalisation : Themes & Polices
 
@@ -300,7 +298,7 @@ Host prod-server
 
 Dans Warp, tapez `ssh` et tab → liste de vos hosts. Clean.
 
-- - - - - -
+---
 
 ### Warp + Git : Pas révolutionnaire (mais efficace)
 
@@ -309,10 +307,10 @@ Warp reconnaît Git, suggère les commandes courantes, mais **ne remplace pas** 
 **À utiliser pour :** commits rapides, pull, push, status.  
 **Pas pour :** rebase complexes, merge conflicts.
 
-- - - - - -
+---
 
 Migrer d’iTerm2 vers Warp (ou utiliser les deux)
-------------------------------------------------
+---
 
 ### Ma recommandation : **Cohabitation intelligente**
 
@@ -334,10 +332,10 @@ Migrer d’iTerm2 vers Warp (ou utiliser les deux)
 > - **Warp** = terminal principal (90% du temps)
 > - **iTerm2** = backup et scripts automatisés (10%)
 
-- - - - - -
+---
 
 Installation avancée : Tips de pro
-----------------------------------
+---
 
 ### 1. Sync Warp Drive avec Git
 
@@ -354,7 +352,7 @@ ln -s ~/warp-drive ~/.warp/workflows
 Trigger: "ssh prod"
 Action: "ssh -i ~/.ssh/prod_key admin@192.168.1.100"
 
-- - - - - -
+---
 
 ### 3. Intégration VS Code / Cursor
 

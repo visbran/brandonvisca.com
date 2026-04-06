@@ -13,7 +13,7 @@ tags:
 
 Spoiler : c’est le successeur non-officiel de Gravity Sync, et il est compatible avec Pi-hole v6.
 
------------
+---
 ## Table des matières
 
 
@@ -51,7 +51,7 @@ Spoiler : c’est le successeur non-officiel de Gravity Sync, et il est compatib
 
 
 Pourquoi synchroniser plusieurs Pi-hole ?
------------------------------------------
+---
 
 Tu te dis peut-être : « Pourquoi avoir plusieurs Pi-hole ? » Bonne question.
 
@@ -64,7 +64,7 @@ Tu te dis peut-être : « Pourquoi avoir plusieurs Pi-hole ? » Bonne question.
 Le problème ? Maintenir la même config sur 2, 3, voire 10 Pi-hole, c’est l’enfer. Tu ajoutes une liste noire sur l’un, tu dois la recopier sur les autres. Avec Nebula-Sync, tu configures **un seul Pi-hole primaire**, et tous les autres répliques se synchronisent automatiquement.
 
 Nebula-Sync vs Gravity Sync : le match
---------------------------------------
+---
 
 Si tu connais **Gravity Sync**, tu sais qu’il était LA solution pour synchroniser des Pi-hole. Problème : Gravity Sync n’est plus maintenu activement et n’est **pas compatible avec Pi-hole v6**.
 
@@ -80,7 +80,7 @@ Nebula-Sync reprend le concept, mais en mieux :
 Bref, si tu upgraes vers Pi-hole v6, Nebula-Sync est ton nouveau meilleur ami.
 
 Installation : toutes les options
----------------------------------
+---
 
 Nebula-Sync peut tourner en standalone (binaire Go) ou via Docker. Voyons les deux méthodes.
 
@@ -175,7 +175,7 @@ sudo systemctl restart pihole-FTL
 **Répète ça sur chaque réplique.** Oublie cette étape, et Nebula-Sync va se plaindre d’erreurs d’authentification.
 
 Configuration avancée : sync sélectif
--------------------------------------
+---
 
 Si tu ne veux pas tout synchroniser (par exemple, tu veux garder des listes DHCP différentes sur chaque Pi-hole), tu peux désactiver `FULL_SYNC` et choisir précisément ce que tu synchronises.
 
@@ -285,7 +285,7 @@ WEBHOOK_SYNC_FAILURE_HEADERS=Content-Type:application/json
 Bref, tu peux brancher n’importe quel système de monitoring.
 
 Erreurs fréquentes et comment les résoudre
-------------------------------------------
+---
 
 ### « Failed to initialize service: permission denied »
 
@@ -350,7 +350,7 @@ services:
 Résultat : je modifie les listes noires sur mon Pi-hole principal, et dans les 2 heures max, tous mes autres Pi-hole sont à jour. Si un sync plante, je reçois une notif push.
 
 Bonnes pratiques
-----------------
+---
 
 **Fais une sauvegarde Teleporter avant** : Avant d’activer Nebula-Sync pour la première fois, exporte ta config via Teleporter sur tous tes Pi-hole. Au cas où.
 

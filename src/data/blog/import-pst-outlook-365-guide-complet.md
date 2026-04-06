@@ -37,10 +37,10 @@ tags:
 > 
 > 
 
-- - - - - -
+---
 
 Le drame en 3 actes
--------------------
+---
 
 **Acte 1** : Tu lances Outlook 365 tout content  
 **Acte 2** : Tu cherches « Importer/Exporter » → Introuvable  
@@ -54,10 +54,10 @@ Résultat : tu te retrouves avec tes précieuses archives sur les bras et aucun 
 
 **Bonne nouvelle :** Il reste des solutions. On va voir ça.
 
-- - - - - -
+---
 
 Pourquoi Microsoft nous emmerde avec les PST ?
-----------------------------------------------
+---
 
 C’est simple : Microsoft gagne plus d’argent avec Exchange Online qu’avec du stockage local.
 
@@ -75,10 +75,10 @@ C’est simple : Microsoft gagne plus d’argent avec Exchange Online qu’avec 
 
 Pour nous, administrateurs système qui devons gérer ces conneries au quotidien, c’est aussi frustrant que de [sécuriser un serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) avec des utilisateurs qui utilisent « password123 ».
 
-- - - - - -
+---
 
 Solution 1 : La méthode « oldschool » (ancienne version Outlook)
-----------------------------------------------------------------
+---
 
 ### Ce qu’il te faut
 
@@ -117,10 +117,10 @@ Solution 1 : La méthode « oldschool » (ancienne version Outlook)
 
 Si tu bosses en environnement AD et que ton PST est sur un partage réseau, assure-toi que ton [intégration Ubuntu Active Directory avec SSSD](https://brandonvisca.com/integration-ubuntu-active-directory-sssd/) permet l’accès aux fichiers. Ça peut paraître con, mais j’ai vu des gens galérer 2h là-dessus.
 
-- - - - - -
+---
 
 Solution 2 : XstReader (le plan B qui sauve tout)
--------------------------------------------------
+---
 
 ### Pourquoi c’est génial
 

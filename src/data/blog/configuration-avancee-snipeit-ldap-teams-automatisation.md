@@ -11,7 +11,7 @@ tags:
   - automatisation
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -70,10 +70,10 @@ Dans ce guide de **configuration avancée SnipeIT**, on va couvrir tout ce qui f
 
 Cette **configuration SnipeIT avancée** est ce qui manque à 90% des installations que je vois. Allez, on transforme ton SnipeIT en Formule 1.
 
-- - - - - -
+---
 
 Prérequis configuration avancée SnipeIT
----------------------------------------
+---
 
 Avant d’attaquer cette **configuration SnipeIT avancée**, assure-toi d’avoir :
 
@@ -93,10 +93,10 @@ Si ton serveur ressemble encore à une passoire, va lire mon guide sur [la sécu
 
 **À savoir :** Cette **configuration avancée SnipeIT** va manipuler des comptes utilisateurs et des données sensibles. La sécurité, c’est pas une option.
 
-- - - - - -
+---
 
 Intégration Active Directory LDAP
----------------------------------
+---
 
 La **configuration SnipeIT LDAP** est probablement LA fonctionnalité la plus demandée en entreprise. Fini la saisie manuelle des utilisateurs, bonjour la synchronisation automatique avec ton Active Directory.
 
@@ -241,10 +241,10 @@ Si cette commande ne retourne rien, ton filtre ou ton Base DN est incorrect.
 - Vérifie que l’Auth Query est correct : `samaccountname=`
 - Vérifie que les utilisateurs existent bien dans SnipeIT après la sync
 
-- - - - - -
+---
 
 Scanner automatiquement le parc avec Nmap
------------------------------------------
+---
 
 SnipeIT n’a **pas de découverte réseau native**. C’est son plus gros point faible face à GLPI (je l’explique dans mon [comparatif SnipeIT vs GLPI](https://brandonvisca.com/snipeit-vs-glpi-comparatif-itsm-inventaire-it/)). Mais on va pallier ça avec des scripts maison.
 
@@ -564,10 +564,10 @@ Tu peux activer/désactiver chaque type de notification individuellement :
 - Pour Teams, limite aux événements importants (checkout/requests)
 - Pour Email, envoie les résumés quotidiens plutôt qu’en temps réel
 
-- - - - - -
+---
 
 Automatisation et API
----------------------
+---
 
 > 👉 Si tu gères un parc Windows, jette un œil à [SnipeAgent](https://brandonvisca.com/snipeagent-automatiser-inventaire-windows-snipeit/), un agent qui remplit automatiquement ton inventaire Snipe-IT à partir des machines Windows du réseau. Ça complète parfaitement l’automatisation via l’API.
 
@@ -640,10 +640,10 @@ with open('new-assets.csv', 'r') as f:
             print(f"❌ Failed: {row['name']} - {response.text}")
 
 
-- - - - - -
+---
 
 Conclusion : configuration avancée SnipeIT maîtrisée
-----------------------------------------------------
+---
 
 Voilà, tu as maintenant une **configuration SnipeIT avancée** de niveau professionnel. Plus besoin de saisir les utilisateurs à la main, plus besoin de scanner manuellement le réseau, et toute ton équipe est notifiée en temps réel via Teams.
 

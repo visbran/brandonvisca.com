@@ -11,7 +11,7 @@ tags:
   - backup
 ---
 
------------
+---
 ## Table des matières
 
 
@@ -43,12 +43,12 @@ tags:
 - [Verdict : Une Alternative Crédible ?](#verdict-une-alternative-credible)
 - [Pour Aller Plus Loin](#pour-aller-plus-loin)
 
-------------
+---
 
 Vous cherchez une solution fiable pour sauvegarder vos emails sans dépendre d’un service cloud ? Vanderplanki pourrait bien être la perle rare que vous attendiez. Développé par les créateurs de MailStore, cet outil gratuit et open source promet de révolutionner la sauvegarde d’emails personnels.
 
 Vanderplanki : Quand les Pros de l’Archivage se Remettent au Boulot
--------------------------------------------------------------------
+---
 
 L’histoire commence par une ironie savoureuse : les fondateurs de MailStore, **la** référence en matière d’archivage d’emails, ont vendu leur bébé à Carbonite (racheté depuis par OpenText). Résultat ? Ils se retrouvent avec une envie furieuse de recréer l’outil parfait, mais cette fois **vraiment** multi-plateforme et gratuit.
 
@@ -76,7 +76,7 @@ L’histoire commence par une ironie savoureuse : les fondateurs de MailStore, *
 - Médias optiques
 
 Installation et Configuration : Plus Simple qu’un Café du Matin 🍵
------------------------------------------------------------------
+---
 
 ### Prérequis Système
 
@@ -106,7 +106,7 @@ Mot de passe : [Mot de passe d'application si 2FA activé]
 <strong>💡 À savoir :</strong> Depuis juin 2024, Gmail active automatiquement l'accès IMAP. Plus besoin de bidouiller dans les paramètres !
 
 Version Gratuite vs Plus : Que Choisir ?
-----------------------------------------
+---
 
 ### Version Basic (Gratuite)
 
@@ -125,7 +125,7 @@ Version Gratuite vs Plus : Que Choisir ?
 <strong>🇫🇷 Statut France :</strong> Actuellement, Vanderplanki n'est officiellement disponible qu'en Allemagne, Autriche et Suisse. La version payante n'est donc pas accessible depuis la France, mais la version gratuite fonctionne parfaitement.
 
 Bonnes Pratiques pour un Archivage Réussi
------------------------------------------
+---
 
 ### Stratégie de Stockage 3-2-1
 
@@ -148,7 +148,7 @@ Appliquez la règle d’or de la sauvegarde :
 
 
 Cas d’Usage : Quand Vanderplanki Devient Indispensable
-------------------------------------------------------
+---
 
 ### Le Freelance Organisé
 
@@ -163,7 +163,7 @@ Cas d’Usage : Quand Vanderplanki Devient Indispensable
 *« Zero Knowledge + stockage local = mes emails restent vraiment privés. Même les développeurs ne peuvent pas y accéder. »*
 
 Limites et Points d’Attention
------------------------------
+---
 
 ### Ce qui Pourrait Vous Gêner
 
@@ -182,7 +182,7 @@ Limites et Points d’Attention
 | **Maturité** | ⚠️ Récent | ✅ 15+ ans |
 
 Dépannage : Les Galères Classiques
-----------------------------------
+---
 
 ### « Impossible de se connecter à IMAP »
 

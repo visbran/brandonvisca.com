@@ -15,7 +15,7 @@ tags:
 ---
 
 TL;DR
------
+---
 
 - ✅ J’ai viré Google Drive, Photos, Gmail et Calendar
 - ✅ Économie : 240€/an (après investissement 200€)
@@ -23,10 +23,10 @@ TL;DR
 - ✅ Temps d’installation : Un weekend
 - ✅ Résultat : 100% fonctionnel, contrôle total de mes données
 
-- - - - - -
+---
 
 Introduction : Le jour où j’en ai eu marre
-------------------------------------------
+---
 
 Février 2024. Je reçois mon énième notification « Google One : stockage bientôt plein, passez à 200 Go ».
 
@@ -44,9 +44,7 @@ Spoiler : j’ai viré Google. Ça m’a pris un weekend. Et depuis 18 mois, je 
 
 Voici comment.
 
-- - - - - -
-
------------
+---
 ## Table des matières
 
 
@@ -97,7 +95,7 @@ Voici comment.
 
 
 Pourquoi quitter Google ? (Les vraies raisons)
-----------------------------------------------
+---
 
 ### 1. L’argent (évidemment)
 
@@ -132,10 +130,10 @@ Tu fais quoi ? Tu râles et tu paies.
 
 **Moi je voulais reprendre le contrôle.**
 
-- - - - - -
+---
 
 Ma stack auto-hébergée (ce qui remplace Google)
------------------------------------------------
+---
 
 Voici mon setup actuel, 100% fonctionnel depuis 18 mois :
 
@@ -206,10 +204,10 @@ Google gérait mes mots de passe. Maintenant j’utilise **[Vaultwarden](https:/
 
 Gratuit, open source, chiffré. Parfait.
 
-- - - - - -
+---
 
 Le matériel : Ce dont tu as VRAIMENT besoin
--------------------------------------------
+---
 
 Pas besoin d’un serveur à 2000€. Voici mon setup actuel :
 
@@ -258,10 +256,10 @@ Tu as un vieux PC qui traîne ? Installe Ubuntu Server dessus. Gratuit, fonction
 
 👉 [Guide : Ton premier serveur avec un vieux PC](#)
 
-- - - - - -
+---
 
 L’installation : Un weekend suffit
-----------------------------------
+---
 
 Voici comment j’ai procédé (et toi aussi tu peux) :
 
@@ -299,10 +297,10 @@ C’est la fondation. Après ça, installer des services = copier-coller des Doc
 
 **Total : 6h de taf sur un weekend.**
 
-- - - - - -
+---
 
 Les résultats après 18 mois
----------------------------
+---
 
 ### Côté finances
 
@@ -339,10 +337,10 @@ C’est largement gérable, même en bossant à temps plein.
 
 La seule différence ? **C’est chez moi. Sous mon contrôle.**
 
-- - - - - -
+---
 
 Les galères (soyons honnêtes)
------------------------------
+---
 
 Pas tout est rose. Voici les vrais problèmes que j’ai rencontrés :
 
@@ -370,10 +368,10 @@ Pas de support Google pour te dépanner.
 
 En 18 mois, j’ai eu 2-3 bugs. À chaque fois, solution trouvée en 20 minutes sur Google (ironique, je sais).
 
-- - - - - -
+---
 
 Pourquoi ça vaut le coup (vraiment)
------------------------------------
+---
 
 Au-delà des économies et de la vie privée, voici ce qui change vraiment :
 
@@ -397,10 +395,10 @@ Avoir son propre serveur, c’est un peu comme avoir sa propre maison vs louer u
 
 C’est à toi. Tu fais ce que tu veux. C’est satisfaisant.
 
-- - - - - -
+---
 
 Par où commencer ? (Le plan d’action)
--------------------------------------
+---
 
 Tu es motivé ? Voici les étapes concrètes :
 
@@ -443,10 +441,10 @@ Je vais publier une série « Homelab pour débutants » sur ce blog :
 
 **Mois 2 :** Annule Google One.
 
-- - - - - -
+---
 
 FAQ : Les questions que tout le monde pose
-------------------------------------------
+---
 
 ### C’est compliqué ?
 
@@ -471,10 +469,10 @@ Héberger tes propres données = parfaitement légal.
 Streamer TES achats DVD sur Jellyfin = légal.  
 Ce qui est illégal : le piratage. Mais ça, c’est pareil partout.
 
-- - - - - -
+---
 
 Conclusion : Reprends le contrôle
----------------------------------
+---
 
 Ça fait 18 mois que j’ai viré Google.
 
@@ -497,7 +495,7 @@ Abonne-toi pour ne rien rater 👇
 <noscript> Remarque : JavaScript est requis pour ce contenu.</noscript>  <script>var formDisplay=1;var nfForms=nfForms||[];var form=[];form.id='3';form.settings={"objectType":"Form Setting","editActive":"1","title":"Newsletter Subscription","created_at":"2025-04-28 22:34:49","form_title":"Newsletter Subscription","default_label_pos":"above","show_title":"0","clear_complete":"1","hide_complete":"1","logged_in":"0","seq_num":"","wrapper_class":"","element_class":"","form_title_heading_level":"3","key":"","add_submit":"0","changeEmailErrorMsg":"Veuillez saisir une adresse de messagerie valide. Ex\u00a0: jean.dupont@gmail.com","changeDateErrorMsg":"Veuillez saisir une date valide\u00a0!","confirmFieldErrorMsg":"Ces champs doivent correspondre\u00a0!","fieldNumberNumMinError":"Erreur de nombre min.","fieldNumberNumMaxError":"Erreur de nombre max.","fieldNumberIncrementBy":"Veuillez incr\u00e9menter par ","formErrorsCorrectErrors":"Veuillez corriger les erreurs avant d\u2019envoyer ce formulaire.","validateRequiredField":"Ce champ est obligatoire.","honeypotHoneypotError":"Erreur Honeypot","fieldsMarkedRequired":"Les champs marqu\u00e9s d\u2019un *<\/span> sont obligatoires","currency":"","unique_field_error":"A form with this value has already been submitted.","not_logged_in_msg":"","sub_limit_msg":"The form has reached its submission limit.","calculations":[],"formContentData":["email_1742537865771","hcaptcha_1764087246501","envoyer_1760894781061"],"objectDomain":"display","drawerDisabled":"","allow_public_link":0,"embed_form":"","ninjaForms":"Ninja Forms","fieldTextareaRTEInsertLink":"Ins\u00e9rer un lien","fieldTextareaRTEInsertMedia":"Ins\u00e9rer un m\u00e9dia","fieldTextareaRTESelectAFile":"S\u00e9lectionnez un fichier","formHoneypot":"Si vous \u00eates un \u00eatre humain et que vous voyez ce champ, veuillez le laisser vide.","fileUploadOldCodeFileUploadInProgress":"T\u00e9l\u00e9versement du fichier en cours.","fileUploadOldCodeFileUpload":"T\u00c9L\u00c9VERSEMENT DE FICHIER","currencySymbol":"&euro;","thousands_sep":"\u00a0","decimal_point":",","siteLocale":"fr_FR","dateFormat":"d\/m\/Y","startOfWeek":"1","of":"sur","previousMonth":"Mois pr\u00e9c\u00e9dent","nextMonth":"Mois suivant","months":["Janvier","F\u00e9vrier","Mars","Avril","Mai","Juin","Juillet","Ao\u00fbt","Septembre","Octobre","Novembre","D\u00e9cembre"],"monthsShort":["Jan","F\u00e9v","Mar","Avr","Mai","Juin","Juil","Ao\u00fb","Sep","Oct","Nov","D\u00e9c"],"weekdays":["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],"weekdaysShort":["Dim","Lun","Mar","Mer","Jeu","Ven","Sam"],"weekdaysMin":["Di","Lu","Ma","Me","Je","Ve","Sa"],"recaptchaConsentMissing":"reCaptcha validation couldn't load.","recaptchaMissingCookie":"reCaptcha v3 validation couldn't load the cookie needed to submit the form.","recaptchaConsentEvent":"Accept reCaptcha cookies before sending the form.","currency_symbol":"","beforeForm":"","beforeFields":"","afterFields":"","afterForm":""};form.fields=[{"objectType":"Field","objectDomain":"fields","editActive":false,"order":1,"idAttribute":"id","type":"email","label":"","key":"email_1742537865771","label_pos":"above","required":1,"default":"","placeholder":"Ton email","container_class":"","element_class":"","admin_label":"","help_text":"","custom_name_attribute":"email","personally_identifiable":1,"value":"","drawerDisabled":false,"field_label":"","field_key":"email_1742537865771","id":7,"beforeField":"","afterField":"","parentType":"email","element_templates":["email","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":3,"idAttribute":"id","label":"","type":"hcaptcha","container_class":"","element_class":"","label_visibility":"invisible","size":"compact","theme":"dark","key":"hcaptcha_1764087246501","drawerDisabled":false,"id":21,"beforeField":"","afterField":"","value":"","label_pos":"above","parentType":"textbox","element_templates":["hcaptcha","input"],"old_classname":"","wrap_template":"wrap","site_key":"7b920900-edae-4336-a252-e6dcbfc82b20"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":4,"idAttribute":"id","type":"submit","label":"Envoyer","processing_label":"En cours de traitement","container_class":"","element_class":"","key":"envoyer_1760894781061","admin_label":"","drawerDisabled":false,"field_label":"Subscribe","field_key":"subscribe_1742537911109","id":8,"beforeField":"","afterField":"","value":"","label_pos":"above","parentType":"textbox","element_templates":["submit","button","input"],"old_classname":"","wrap_template":"wrap-no-label"}];nfForms.push(form);</script>- - - - - -
 
 🔗 Pour aller plus loin
-----------------------
+---
 
 **Ressources utiles :**
 
@@ -505,6 +503,6 @@ Abonne-toi pour ne rien rater 👇
 - [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : Liste de tous les services auto-hébergeables
 - [Documentation Docker](https://docs.docker.com) : Pour comprendre les bases
 
-- - - - - -
+---
 
 **💬 Et toi, tu as déjà essayé l’auto-hébergement ? Raconte en commentaire !**

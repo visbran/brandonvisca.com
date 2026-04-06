@@ -16,7 +16,7 @@ Introduction
 
 L’intégration des systèmes Ubuntu à Windows Active Directory (AD) peut simplifier l’authentification des utilisateurs et la gestion des identités sur un réseau. Ce guide détaille comment utiliser le System Security Services Daemon (SSSD) pour connecter efficacement les hôtes Linux à un domaine Active Directory.
 
-----------
+---
 ## Table des matières
 
 
@@ -41,12 +41,12 @@ L’intégration des systèmes Ubuntu à Windows Active Directory (AD) peut simp
       - [Comment assurer la création des répertoires personnels pour les utilisateurs AD ?](#faq-question-1754323741584)
   - [Conclusion](#conclusion)
 
-------------------------------------------------
+---
 
 L’intégration avec Active Directory fournit un fournisseur d’identité centralisé pour l’authentification réseau, rendant la gestion des utilisateurs plus sécurisée et efficace. Elle simplifie les connexions des utilisateurs et le contrôle d’accès sur plusieurs systèmes, réduisant ainsi la charge administrative.
 
 Préparer votre système Ubuntu
------------------------------
+---
 
 ### Installer les paquets nécessaires
 
@@ -138,7 +138,7 @@ sudo pam-auth-update --enable mkhomedir
 
 
 Tester notre configuration
---------------------------
+---
 
 Vous devriez maintenant être en mesure de récupérer des informations sur les utilisateurs de l’AD. Dans cet exemple, `John DOE` est un utilisateur de l’AD :
 
@@ -279,7 +279,7 @@ systemctl status sssd
 journalctl -u sssd
 
 Questions fréquemment posées
-----------------------------
+---
 
 ### Comment dépanner les problèmes de SSSD ?
 
@@ -299,7 +299,7 @@ Configurez `oddjob-mkhomedir` pour créer automatiquement les répertoires perso
 sudo pam-auth-update –enable mkhomedir
 
 Conclusion
-----------
+---
 
 L’intégration des systèmes Ubuntu avec Active Directory en utilisant SSSD améliore la sécurité et simplifie la gestion des utilisateurs.
 

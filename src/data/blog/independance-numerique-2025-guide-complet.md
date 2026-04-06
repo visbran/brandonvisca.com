@@ -16,7 +16,7 @@ tags:
 ---
 
 🎯 TL;DR
--------
+---
 
 Tu paies Google Drive (120€/an), Netflix (156€/an), 1Password (36€/an), et tu trouves ça normal ? Spoiler : **tu peux tout héberger toi-même pour 0€/an** (si tu as déjà un serveur) ou 30€/an (avec un VPS).
 
@@ -31,9 +31,7 @@ Tu paies Google Drive (120€/an), Netflix (156€/an), 1Password (36€/an), et
 
 💡 **Bonus** : Télécharge la **checklist gratuite « 30 jours pour l’indépendance numérique »** + script bash de backup automatisé en fin d’article.
 
-- - - - - -
-
-----------
+---
 ## Table des matières
 
 
@@ -83,7 +81,7 @@ Tu paies Google Drive (120€/an), Netflix (156€/an), 1Password (36€/an), et
 
 
 Pourquoi l’indépendance numérique, maintenant ?
------------------------------------------------
+---
 
 ### La vraie question : Combien tu paies pour tes données ?
 
@@ -133,10 +131,10 @@ Et c’est sans compter :
 - 2FA intégré (TOTP)
 - Extensions navigateur + apps mobiles
 
-- - - - - -
+---
 
 Le matériel nécessaire : Moins cher que tu penses
--------------------------------------------------
+---
 
 ### Option 1 : Tu as déjà un serveur/NAS ?
 
@@ -179,10 +177,10 @@ Le matériel nécessaire : Moins cher que tu penses
 
 **Économie : 534€ – 44€ = 490€/an**
 
-- - - - - -
+---
 
 Les 3 services à installer (dans l’ordre)
------------------------------------------
+---
 
 ### 🗄️ Service 1 : Nextcloud – Ton cloud personnel
 
@@ -226,7 +224,7 @@ Nextcloud, c’est **Google Drive + Google Photos + Google Calendar + Google Kee
 
 **Économie : 120-180€/an** (Google Drive + iCloud)
 
-- - - - - -
+---
 
 ### 🎬 Service 2 : Jellyfin – Ton Netflix personnel
 
@@ -271,7 +269,7 @@ Jellyfin, c’est **Netflix + Disney+ + Prime Video + Spotify** dans un logiciel
 
 **Économie : 346-526€/an** (Netflix + Disney+ + Prime + Spotify)
 
-- - - - - -
+---
 
 ### 🔐 Service 3 : Vaultwarden – Ton coffre-fort personnel
 
@@ -316,10 +314,10 @@ Vaultwarden, c’est **1Password + Dashlane + LastPass** dans un gestionnaire de
 
 **Économie : 36-60€/an** (1Password/Dashlane)
 
-- - - - - -
+---
 
 Le plan d’installation : Un weekend suffit
-------------------------------------------
+---
 
 ### Vendredi soir : Préparation (1h)
 
@@ -342,7 +340,7 @@ Le plan d’installation : Un weekend suffit
 
 - Disque externe branché (ou backup automatique VPS)
 
-- - - - - -
+---
 
 ### Samedi matin : Nextcloud (2-3h)
 
@@ -369,7 +367,7 @@ Le plan d’installation : Un weekend suffit
 
 **Pause déjeuner** 🍕
 
-- - - - - -
+---
 
 ### Samedi après-midi : Jellyfin (2h)
 
@@ -392,7 +390,7 @@ Le plan d’installation : Un weekend suffit
 - Créer compte famille
 - Tester streaming mobile
 
-- - - - - -
+---
 
 ### Dimanche matin : Vaultwarden (1h)
 
@@ -415,7 +413,7 @@ Le plan d’installation : Un weekend suffit
 - Organiser en dossiers
 - Tester remplissage automatique
 
-- - - - - -
+---
 
 ### Dimanche après-midi : Sécurité & Backups (2h)
 
@@ -439,10 +437,10 @@ Le plan d’installation : Un weekend suffit
 - Documenter procédure restauration
 - Partager accès famille si nécessaire
 
-- - - - - -
+---
 
 Les coûts réels : Le calcul complet
------------------------------------
+---
 
 ### Scénario 1 : Mini PC à domicile
 
@@ -470,7 +468,7 @@ Les coûts réels : Le calcul complet
 **💰 Années suivantes : 278€/an économisés**  
 **💰 Sur 5 ans : 1 376€ économisés**
 
-- - - - - -
+---
 
 ### Scénario 2 : VPS Cloud
 
@@ -487,7 +485,7 @@ Les coûts réels : Le calcul complet
 **💰 Économie immédiate : 258€/an**  
 **💰 Sur 5 ans : 1 290€ économisés**
 
-- - - - - -
+---
 
 ### Scénario 3 : Stack complète (+ streaming)
 
@@ -510,10 +508,10 @@ Les coûts réels : Le calcul complet
 **💰 Économie annuelle : 648€/an**  
 **💰 Sur 10 ans : 6 480€ économisés**
 
-- - - - - -
+---
 
 Les avantages cachés (au-delà de l’argent)
-------------------------------------------
+---
 
 ### 1. Vie privée & RGPD
 
@@ -572,10 +570,10 @@ Les avantages cachés (au-delà de l’argent)
 - 🌐 Compréhension réseaux/DNS/SSL
 - 💼 Expérience valorisable en CV (DevOps, SysAdmin)
 
-- - - - - -
+---
 
 Les inconvénients (soyons honnêtes)
------------------------------------
+---
 
 ### Ce que tu dois accepter
 
@@ -608,10 +606,10 @@ Les inconvénients (soyons honnêtes)
 - OK : Tes vidéos personnelles
 - KO : Téléchargements illégaux
 
-- - - - - -
+---
 
 FAQ : Questions fréquentes
---------------------------
+---
 
 ### C’est légal d’héberger mes propres services ?
 
@@ -677,10 +675,10 @@ Les guides sont conçus pour débutants motivés. Temps d’apprentissage : 1 we
 ❓ Failles de sécurité chez le fournisseur  
 **Règle d’or :** Backups 3-2-1 (3 copies, 2 supports, 1 hors site)
 
-- - - - - -
+---
 
 Aller plus loin : La stack complète
------------------------------------
+---
 
 ### Services complémentaires recommandés
 
@@ -708,10 +706,10 @@ Aller plus loin : La stack complète
 - 📞 **Jitsi Meet** → Visioconférence auto-hébergée
 - 📧 **Mail-in-a-Box** → Serveur email complet
 
-- - - - - -
+---
 
 🎁 BONUS : Ton pack de démarrage gratuit
----------------------------------------
+---
 
 ### Ce que tu reçois gratuitement
 
@@ -743,7 +741,7 @@ En téléchargeant le **Pack Indépendance Numérique 2025**, tu obtiens :
 - Commentaires détaillés
 - Configurations optimisées production
 
-- - - - - -
+---
 
 ### 👇 Télécharge maintenant (100% gratuit)
 
@@ -764,10 +762,10 @@ En téléchargeant le **Pack Indépendance Numérique 2025**, tu obtiens :
   <noscript> Remarque : JavaScript est requis pour ce contenu.</noscript>  <script>var formDisplay=1;var nfForms=nfForms||[];var form=[];form.id='4';form.settings={"objectType":"Form Setting","editActive":true,"title":"Lead Magnet - Ind\u00e9pendance Num\u00e9rique","show_title":0,"allow_public_link":0,"embed_form":"","clear_complete":1,"hide_complete":1,"default_label_pos":"above","wrapper_class":"","element_class":"","form_title_heading_level":"3","key":"","add_submit":0,"changeEmailErrorMsg":"Veuillez saisir une adresse de messagerie valide. Ex\u00a0: jean.dupont@gmail.com","changeDateErrorMsg":"Veuillez saisir une date valide\u00a0!","confirmFieldErrorMsg":"Ces champs doivent correspondre\u00a0!","fieldNumberNumMinError":"Erreur de nombre min.","fieldNumberNumMaxError":"Erreur de nombre max.","fieldNumberIncrementBy":"Veuillez incr\u00e9menter par ","formErrorsCorrectErrors":"Veuillez corriger les erreurs avant d\u2019envoyer ce formulaire.","validateRequiredField":"Ce champ est obligatoire.","honeypotHoneypotError":"Erreur Honeypot","fieldsMarkedRequired":"Les champs marqu\u00e9s d\u2019un *<\/span> sont obligatoires","currency":"","unique_field_error":"Un formulaire avec cette valeur a d\u00e9j\u00e0 \u00e9t\u00e9 envoy\u00e9.","logged_in":false,"not_logged_in_msg":"","sub_limit_msg":"Le formulaire a atteint sa limite d\u2019entr\u00e9es.","calculations":[],"formContentData":["ton_email_1762348114853","telecharger_gratuitement_1762348160863"],"objectDomain":"calculations","drawerDisabled":false,"ninjaForms":"Ninja Forms","fieldTextareaRTEInsertLink":"Ins\u00e9rer un lien","fieldTextareaRTEInsertMedia":"Ins\u00e9rer un m\u00e9dia","fieldTextareaRTESelectAFile":"S\u00e9lectionnez un fichier","formHoneypot":"Si vous \u00eates un \u00eatre humain et que vous voyez ce champ, veuillez le laisser vide.","fileUploadOldCodeFileUploadInProgress":"T\u00e9l\u00e9versement du fichier en cours.","fileUploadOldCodeFileUpload":"T\u00c9L\u00c9VERSEMENT DE FICHIER","currencySymbol":"&euro;","thousands_sep":"\u00a0","decimal_point":",","siteLocale":"fr_FR","dateFormat":"d\/m\/Y","startOfWeek":"1","of":"sur","previousMonth":"Mois pr\u00e9c\u00e9dent","nextMonth":"Mois suivant","months":["Janvier","F\u00e9vrier","Mars","Avril","Mai","Juin","Juillet","Ao\u00fbt","Septembre","Octobre","Novembre","D\u00e9cembre"],"monthsShort":["Jan","F\u00e9v","Mar","Avr","Mai","Juin","Juil","Ao\u00fb","Sep","Oct","Nov","D\u00e9c"],"weekdays":["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],"weekdaysShort":["Dim","Lun","Mar","Mer","Jeu","Ven","Sam"],"weekdaysMin":["Di","Lu","Ma","Me","Je","Ve","Sa"],"recaptchaConsentMissing":"reCaptcha validation couldn't load.","recaptchaMissingCookie":"reCaptcha v3 validation couldn't load the cookie needed to submit the form.","recaptchaConsentEvent":"Accept reCaptcha cookies before sending the form.","currency_symbol":"","beforeForm":"","beforeFields":"","afterFields":"","afterForm":""};form.fields=[{"objectType":"Field","objectDomain":"fields","editActive":false,"order":999,"idAttribute":"id","type":"email","label":"Ton email","key":"ton_email_1762348114853","label_pos":"above","required":1,"default":"","placeholder":"ton@email.fr","container_class":"","element_class":"","admin_label":"","help_text":"","custom_name_attribute":"email","personally_identifiable":1,"value":"","drawerDisabled":false,"id":16,"beforeField":"","afterField":"","parentType":"email","element_templates":["email","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":999,"idAttribute":"id","type":"submit","label":"\ud83d\udce5 T\u00e9l\u00e9charger gratuitement","processing_label":"En cours de traitement","container_class":"","element_class":"","key":"telecharger_gratuitement_1762348160863","admin_label":"","drawerDisabled":false,"id":17,"beforeField":"","afterField":"","value":"","label_pos":"above","parentType":"textbox","element_templates":["submit","button","input"],"old_classname":"","wrap_template":"wrap-no-label"}];nfForms.push(form);</script> 🔒 Zéro spam. Tu peux te désinscrire à tout moment.  
  On respecte ta vie privée (forcément, on prêche l’indépendance numérique 😉)
 
-- - - - - -
+---
 
 Conclusion : Et maintenant ?
-----------------------------
+---
 
 Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** tout en économisant **534€/an minimum**.
 
@@ -792,10 +790,10 @@ Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** t
 **La vraie question n’est plus « Pourquoi faire ça ? »**  
 **C’est « Pourquoi continuer à payer ? »**
 
-- - - - - -
+---
 
 📚 Ressources complémentaires
-----------------------------
+---
 
 ### Articles liés sur BrandonVisca.com
 
