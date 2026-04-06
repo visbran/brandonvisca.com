@@ -3,15 +3,12 @@ title: "Content-Security-Policy : Protéger votre site sans bloquer vos utilisat
 pubDatetime: "2025-04-15T20:03:49+02:00"
 description: "Découvrez comment configurer une Content-Security-Policy dans Nginx pour renforcer la sécurité de votre site contre les attaques XSS, tout en préservant..."
 tags:
-  - nginx
-  - securite
-  - csp
-  - content-security-policy
-  - xss
-  - headers
   - linux
-  - tutoriel
+  - securite
+  - nginx
   - avance
+  - guide
+  - csp
 ---
 
 --------

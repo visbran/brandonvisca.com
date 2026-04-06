@@ -3,14 +3,12 @@ title: "Raycast : L'outil qui transforme macOS en machine de productivité ultim
 pubDatetime: "2025-10-13T15:20:28+02:00"
 description: "Découvrez Raycast, le launcher macOS gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2025."
 tags:
-  - raycast
   - macos
-  - launcher
   - productivite
-  - spotlight-alternative
-  - outils-developpeur
-  - guide
   - debutant
+  - raycast
+  - guide
+  - launcher
 ---
 
 HIntroduction : Pourquoi Spotlight ne suffit plus
@@ -156,7 +154,15 @@ Les extensions indispensables (même si vous débutez)
 
 Raycast a un **Store d’extensions** gratuit. Voici les must-have :
 
-Extension | Utilité | Commande | **GitHub** | Voir tes repos, issues, PRs | `gh` | **Docker** | Gérer tes containers | `docker` | **Brew** | Installer/mettre à jour des apps | `brew search` | **Port Manager** | Voir les ports ouverts, kill un process | `port` | **Translator** | Traduction instantanée | `translate` | **Spotify** | Contrôler la lecture | `spotify` | **Color Picker** | Récupérer des couleurs à l’écran | `color` | 
+| Extension | Utilité | Commande |
+|---|---|---|
+| **GitHub** | Voir tes repos, issues, PRs | `gh` |
+| **Docker** | Gérer tes containers | `docker` |
+| **Brew** | Installer/mettre à jour des apps | `brew search` |
+| **Port Manager** | Voir les ports ouverts, kill un process | `port` |
+| **Translator** | Traduction instantanée | `translate` |
+| **Spotify** | Contrôler la lecture | `spotify` |
+| **Color Picker** | Récupérer des couleurs à l’écran | `color` |
 
 **Pour installer une extension :**
 
@@ -173,7 +179,16 @@ Pas de compte requis. Pas de paiement. **C’est ça qui est beau.**
 Raycast vs Spotlight vs Alfred : le match sans pitié
 ----------------------------------------------------
 
-Feature | Spotlight | Alfred | Raycast | **Prix** | Gratuit | £34 (Powerpack) | Gratuit | **Extensions** | ❌ | ✅ (payant) | ✅ (gratuit) | **Clipboard History** | ❌ | ✅ (payant) | ✅ (gratuit) | **Window Management** | ❌ | ❌ | ✅ | **IA intégrée** | ❌ | ❌ | ✅ (Pro) | **Snippets** | ❌ | ✅ (payant) | ✅ (gratuit) | **Interface** | Basique | Old school | Moderne | **Vitesse** | Correcte | Rapide | Ultra-rapide | 
+| Feature | Spotlight | Alfred | Raycast |
+|---|---|---|---|
+| **Prix** | Gratuit | £34 (Powerpack) | Gratuit |
+| **Extensions** | ❌ | ✅ (payant) | ✅ (gratuit) |
+| **Clipboard History** | ❌ | ✅ (payant) | ✅ (gratuit) |
+| **Window Management** | ❌ | ❌ | ✅ |
+| **IA intégrée** | ❌ | ❌ | ✅ (Pro) |
+| **Snippets** | ❌ | ✅ (payant) | ✅ (gratuit) |
+| **Interface** | Basique | Old school | Moderne |
+| **Vitesse** | Correcte | Rapide | Ultra-rapide | 
 
 **Verdict :** Si tu débutes, **Raycast écrase tout**. Si t’es un power user d’Alfred depuis 10 ans, tu peux rester sur Alfred (mais teste quand même Raycast, sérieux).
 

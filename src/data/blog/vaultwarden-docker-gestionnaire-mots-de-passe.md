@@ -3,15 +3,10 @@ title: "Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1
 pubDatetime: "2025-10-26T22:16:05+01:00"
 description: "Installe Vaultwarden avec Docker en 15 min. Alternative 1Password/Bitwarden gratuite, économise 36€/an. Guide 2025 complet + sécurité maximale."
 tags:
-  - vaultwarden
-  - bitwarden
   - docker
-  - docker-compose
-  - gestionnaire-mots-de-passe
   - securite
   - auto-hebergement
   - homelab
-  - 1password-alternative
   - guide
   - intermediaire
 ---
@@ -170,7 +165,17 @@ Vaultwarden vs Bitwarden : Quelle différence ?
 Vaultwarden vs 1Password vs Dashlane vs LastPass
 ------------------------------------------------
 
-Critère | Vaultwarden | 1Password | Dashlane | LastPass | Bitwarden Cloud | **Prix** | 🟢 Gratuit | 🔴 36€/an | 🔴 40€/an | 🟡 36€/an | 🟢 10$/an | **Open source** | 🟢 Oui | 🔴 Non | 🔴 Non | 🔴 Non | 🟢 Oui | **Auto-hébergé** | 🟢 Oui | 🔴 Non | 🔴 Non | 🔴 Non | 🟡 Possible | **Vie privée** | 🟢 100% toi | 🔴 Canada | 🔴 USA | 🔴 USA | 🟡 USA | **Apps mobiles** | 🟢 Gratuites | 🟢 Incluses | 🟢 Incluses | 🟢 Gratuites | 🟢 Gratuites | **Partage famille** | 🟢 Illimité | 🟡 5 pers. | 🟡 6 pers. | 🟡 6 pers. | 🟡 6 pers. | **2FA intégré** | 🟢 Oui (TOTP) | 🟢 Oui | 🟢 Oui | 🟡 Payant | 🟡 Premium | **Audit sécurité** | 🟡 Communauté | 🟢 Pro | 🟢 Pro | 🟡 Moyen | 🟢 Pro | **Facilité setup** | 🟡 Technique | 🟢 Facile | 🟢 Facile | 🟢 Facile | 🟢 Facile | 
+| Critère | Vaultwarden | 1Password | Dashlane | LastPass | Bitwarden Cloud |
+|---|---|---|---|---|---|
+| **Prix** | 🟢 Gratuit | 🔴 36€/an | 🔴 40€/an | 🟡 36€/an | 🟢 10$/an |
+| **Open source** | 🟢 Oui | 🔴 Non | 🔴 Non | 🔴 Non | 🟢 Oui |
+| **Auto-hébergé** | 🟢 Oui | 🔴 Non | 🔴 Non | 🔴 Non | 🟡 Possible |
+| **Vie privée** | 🟢 100% toi | 🔴 Canada | 🔴 USA | 🔴 USA | 🟡 USA |
+| **Apps mobiles** | 🟢 Gratuites | 🟢 Incluses | 🟢 Incluses | 🟢 Gratuites | 🟢 Gratuites |
+| **Partage famille** | 🟢 Illimité | 🟡 5 pers. | 🟡 6 pers. | 🟡 6 pers. | 🟡 6 pers. |
+| **2FA intégré** | 🟢 Oui (TOTP) | 🟢 Oui | 🟢 Oui | 🟡 Payant | 🟡 Premium |
+| **Audit sécurité** | 🟡 Communauté | 🟢 Pro | 🟢 Pro | 🟡 Moyen | 🟢 Pro |
+| **Facilité setup** | 🟡 Technique | 🟢 Facile | 🟢 Facile | 🟢 Facile | 🟢 Facile | 
 
 **Verdict :**
 

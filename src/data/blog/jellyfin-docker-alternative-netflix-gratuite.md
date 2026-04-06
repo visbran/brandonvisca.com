@@ -3,15 +3,10 @@ title: "Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/
 pubDatetime: "2025-10-26T20:59:01+01:00"
 description: "Installe Jellyfin avec Docker en 20 min. Alternative Netflix auto-hébergée, économise 378€/an. Guide 2025 complet + transcoding 4K."
 tags:
-  - jellyfin
   - docker
-  - docker-compose
-  - media-server
-  - streaming
   - auto-hebergement
   - homelab
-  - netflix-alternative
-  - plex-alternative
+  - linux
   - guide
   - intermediaire
 ---
@@ -176,7 +171,11 @@ Juridiquement en France :
 
 **VPS recommandés pour Jellyfin :**
 
-VPS | Prix/mois | Specs | Transcoding | Hetzner CPX21 | 8,21€ HT | 3 vCPU, 4 Go RAM | 1080p OK, 4K difficile | Scaleway DEV1-M | 0,02€/h | 3 vCPU, 4 Go RAM | 1080p OK | OVH VPS Value | 6€ HT | 2 vCPU, 4 Go RAM | 720p-1080p OK | 
+| VPS | Prix/mois | Specs | Transcoding |
+|---|---|---|---|
+| Hetzner CPX21 | 8,21€ HT | 3 vCPU, 4 Go RAM | 1080p OK, 4K difficile |
+| Scaleway DEV1-M | 0,02€/h | 3 vCPU, 4 Go RAM | 1080p OK |
+| OVH VPS Value | 6€ HT | 2 vCPU, 4 Go RAM | 720p-1080p OK |
 
 💡 **Astuce transcoding :** Le transcoding 4K nécessite un CPU costaud OU un GPU (pas dispo sur VPS classiques). Solution : **active Direct Play** = le client lit directement sans transcoder.
 

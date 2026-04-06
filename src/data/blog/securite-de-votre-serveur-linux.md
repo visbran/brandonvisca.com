@@ -5,12 +5,10 @@ description: "Dans ce guide pratique où nous allons renforcer ensemble la sécu
 tags:
   - linux
   - securite
-  - hardening
-  - ssh
-  - serveur
+  - avance
   - sysadmin
   - guide
-  - avance
+  - hardening
 ---
 
 Dans ce guide pratique où nous allons renforcer ensemble la sécurité de votre serveur Linux. De l’installation de votre système à l’application des dernières mesures de sécurité, nous allons passer par toutes les étapes nécessaires pour rendre votre serveur aussi sûr que possible.

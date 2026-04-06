@@ -3,14 +3,12 @@ title: "WordPress : 2 solutions pour réparer une base de donnée corrompu"
 pubDatetime: "2024-07-16T19:50:34+02:00"
 description: "Une base de données corrompue peut causer des erreurs critiques sur votre site web, le rendant inaccessible."
 tags:
+  - linux
+  - developpement
+  - avance
   - wordpress
   - mysql
-  - database
-  - repair
-  - troubleshooting
-  - php
-  - tutoriel
-  - avance
+  - guide
 ---
 
 -----------

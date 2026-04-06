@@ -4,13 +4,11 @@ pubDatetime: "2025-03-31T15:50:44+02:00"
 description: "Découvrez comment ajouter un programme au PATH Windows en 2025 :"
 tags:
   - windows
-  - powershell
-  - python
-  - nodejs
-  - git
-  - tutoriel
+  - developpement
   - debutant
-  - path
+  - powershell
+  - guide
+  - python
 ---
 
 -----------

@@ -3,15 +3,12 @@ title: "Gérer vos fichiers sur Amazon S3 avec S3cmd : Guide complet"
 pubDatetime: "2025-02-17T17:37:40+01:00"
 description: "Pourquoi utiliser S3cmd ?"
 tags:
-  - aws
-  - s3
-  - s3cmd
-  - stockage
-  - cloud
-  - cli
-  - backup
-  - tutoriel
+  - linux
+  - sysadmin
   - intermediaire
+  - aws
+  - backup
+  - guide
 ---
 
 --------

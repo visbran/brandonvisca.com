@@ -3,16 +3,12 @@ title: "Omarchy : la distribution Linux qui transforme Arch en station productiv
 pubDatetime: "2025-09-26T12:28:27+02:00"
 description: "Découvrez Omarchy, la distribution Linux basée sur Arch avec Hyprland. Installation simplifiée, thèmes magnifiques, sécurité renforcée et outils de déve..."
 tags:
-  - omarchy
-  - arch-linux
-  - hyprland
   - linux
-  - window-manager
-  - tiling-wm
   - productivite
-  - neovim
-  - guide
   - intermediaire
+  - hyprland
+  - arch-linux
+  - guide
 ---
 
 Sommaire : 
@@ -97,7 +93,13 @@ Au premier lancement, tu tombes sur un bureau… vide. Normal ! Omarchy privilé
 
 **Raccourcis essentiels à retenir :**
 
-Raccourci | Action | `Super + Space` | Lanceur d’applications | `Super + Alt + Space` | Menu Omarchy | `Super + Return` | Terminal | `Super + B` | Navigateur | `Super + K` | Aide raccourcis | 
+| Raccourci | Action |
+|---|---|
+| `Super + Space` | Lanceur d’applications |
+| `Super + Alt + Space` | Menu Omarchy |
+| `Super + Return` | Terminal |
+| `Super + B` | Navigateur |
+| `Super + K` | Aide raccourcis |
 
 Le menu Omarchy (`Super + Alt + Space`) est ton nouveau meilleur ami. Il permet d’installer des packages, configurer le système, changer de thème…
 

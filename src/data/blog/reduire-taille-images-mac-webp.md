@@ -3,15 +3,12 @@ title: Comment réduire la taille de vos images de 70% sur Mac (méthode automat
 pubDatetime: "2025-06-12T20:41:20+02:00"
 description: Réduisez vos images de 50 à 80% sans perte de qualité sur Mac. Méthode automatique avec WebP et Automator. Tutoriel gratuit étape par étape.
 tags:
-  - webp
-  - compression-images
   - macos
-  - automator
-  - homebrew
-  - cwebp
-  - optimisation
-  - guide
+  - productivite
   - debutant
+  - homebrew
+  - guide
+  - images
 ---
 
 -----------

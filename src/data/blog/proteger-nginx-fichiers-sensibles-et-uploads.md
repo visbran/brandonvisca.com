@@ -3,14 +3,12 @@ title: "Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes H
 pubDatetime: "2025-04-15T20:18:39+02:00"
 description: "Apprenez à renforcer la sécurité de vos serveurs Nginx en bloquant l’accès aux fichiers sensibles, en interdisant l’exécution de scripts dans les répert..."
 tags:
-  - nginx
-  - securite
-  - fichiers-sensibles
-  - uploads
-  - protection
   - linux
-  - tutoriel
+  - securite
   - avance
+  - nginx
+  - guide
+  - protection
 ---
 
 --------

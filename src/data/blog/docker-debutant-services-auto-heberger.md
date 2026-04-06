@@ -4,12 +4,8 @@ pubDatetime: "2025-10-22T16:12:41+02:00"
 description: "Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !"
 tags:
   - docker
-  - docker-compose
   - auto-hebergement
   - homelab
-  - portainer
-  - nextcloud
-  - vaultwarden
   - linux
   - guide
   - debutant

@@ -3,14 +3,12 @@ title: "iTerm2 sur macOS : Le guide complet pour dompter votre terminal (2025)"
 pubDatetime: "2025-03-31T15:19:31+02:00"
 description: "Transformez votre terminal macOS avec iTerm2 ! Installation, themes, Oh My Zsh, plugins indispensables - Le guide ultime pour booster votre productivité..."
 tags:
-  - iterm2
-  - terminal
   - macos
-  - oh-my-zsh
-  - productivite
   - developpement
-  - guide
   - intermediaire
+  - terminal
+  - guide
+  - productivite
 ---
 
 --------

@@ -6,7 +6,7 @@ tags:
   - active-directory
   - windows-server
   - fsmo
-  - tutoriel
+  - guide
   - sysadmin
   - avance
 ---

@@ -3,13 +3,11 @@ title: 10 Extensions Raycast indispensables pour développeurs et sysadmins
 pubDatetime: "2025-10-13T17:08:33+02:00"
 description: 10 Extensions Raycast indispensables pour devs et sysadmins (2025)
 tags:
-  - raycast
   - macos
   - productivite
+  - intermediaire
+  - raycast
   - devops
-  - docker
-  - github
-  - homebrew
   - guide
 ---
 

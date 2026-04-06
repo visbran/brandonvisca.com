@@ -3,15 +3,12 @@ title: "Importer fichiers PST dans Outlook 365 : Guide fiable et rapide (2025)"
 pubDatetime: "2025-02-21T10:14:37+01:00"
 description: Guide complet pour importer vos fichiers PST dans Outlook 365. 2 méthodes testées + alternative XstReader pour lire vos emails sans Outlook. Solutions g...
 tags:
-  - outlook
   - microsoft-365
-  - office365
-  - pst
-  - migration
-  - email
-  - backup
-  - tutoriel
+  - sysadmin
   - intermediaire
+  - outlook
+  - migration
+  - guide
 ---
 
 > **TL;DR** : Microsoft a viré la fonction import PST d’Outlook 365. Spoiler : t’es pas mort pour autant. Deux solutions qui marchent + une astuce gratuite pour lire tes vieux emails sans t’arracher les cheveux.

@@ -6,9 +6,6 @@ tags:
   - auto-hebergement
   - homelab
   - docker
-  - nextcloud
-  - vaultwarden
-  - jellyfin
   - linux
   - guide
   - debutant

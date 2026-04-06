@@ -3,12 +3,9 @@ title: "Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)"
 pubDatetime: "2025-10-26T20:58:49+01:00"
 description: "Installe Nextcloud avec Docker en 30 min. Alternative Google Drive auto-hébergée, économise 120€/an. Guide 2025 complet + HTTPS gratuit."
 tags:
-  - nextcloud
   - docker
-  - docker-compose
   - auto-hebergement
-  - cloud-storage
-  - google-drive-alternative
+  - homelab
   - linux
   - guide
   - intermediaire

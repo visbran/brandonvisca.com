@@ -3,14 +3,12 @@ title: "SnipeIT vs GLPI : David contre Goliath dans l'arène de l'ITSM"
 pubDatetime: "2025-10-03T12:14:07+02:00"
 description: "Comparatif SnipeIT vs GLPI 2025 : quel outil choisir pour votre inventaire IT ? Analyse détaillée, avantages, inconvénients et cas d''usage concrets pou..."
 tags:
-  - itsm
-  - snipeit
-  - glpi
-  - inventaire-it
-  - comparatif
-  - gestion-actifs
-  - guide
+  - linux
+  - sysadmin
   - intermediaire
+  - snipeit
+  - itsm
+  - guide
 ---
 
 -----------

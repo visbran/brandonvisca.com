@@ -4,12 +4,11 @@ pubDatetime: "2025-11-27T00:00:00+00:00"
 description: "Cling : trouve fichiers macOS instantanément avec recherche fuzzy. Même avec fautes frappe. Alternative Spotlight. Gratuit, open source."
 tags:
   - macos
+  - productivite
+  - debutant
   - recherche
-  - fichiers
+  - guide
   - fuzzy-search
-  - spotlight
-  - low-tech
-  - power-users
 draft: true
 ---
 

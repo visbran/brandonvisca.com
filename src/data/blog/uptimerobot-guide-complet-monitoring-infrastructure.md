@@ -3,15 +3,12 @@ title: "UptimeRobot : Le Guide Complet pour Surveiller Votre Infrastructure (202
 pubDatetime: "2025-10-22T15:42:22+02:00"
 description: "Guide complet UptimeRobot 2025 : Configuration, alertes, monitoring multi-sites, intégration API et comparaison avec alternatives self-hosted. Tutoriel ..."
 tags:
-  - uptimerobot
-  - monitoring
-  - supervision
-  - devops
-  - infrastructure
-  - alerting
-  - uptime
-  - guide
+  - linux
+  - sysadmin
   - intermediaire
+  - monitoring
+  - guide
+  - uptime
 ---
 
 *Tu as déjà eu cette sueur froide en découvrant que ton site est down depuis 3 heures ? Ou pire, c’est un client qui te prévient ?*

@@ -4,14 +4,11 @@ pubDatetime: "2025-08-01T21:17:07+02:00"
 description: "Découvrez comment masquer facilement des utilisateurs de la Liste d''Adresses Globale (GAL) Office 365 synchronisés depuis Active Directory local sans é..."
 tags:
   - microsoft-365
-  - office365
-  - exchange-online
-  - active-directory
-  - azure-ad-connect
-  - gal
-  - powershell
-  - tutoriel
+  - sysadmin
   - avance
+  - active-directory
+  - powershell
+  - guide
 ---
 
 Ah, la fameuse Liste d’Adresses Globale (GAL) d’Office 365… Tu sais, cette liste interminable où tous les utilisateurs de ton organisation s’affichent fièrement, même ceux que tu préférerais planquer dans un placard virtuel ?

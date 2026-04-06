@@ -4,12 +4,11 @@ pubDatetime: "2024-06-13T11:21:00+02:00"
 description: "Apprenez à changer le fuseau horaire, définir le fuseau horaire et synchroniser l'heure du serveur sous Linux en utilisant timedatectl et NTP."
 tags:
   - linux
-  - ubuntu
-  - ntp
-  - fuseau-horaire
-  - timedatectl
-  - tutoriel
+  - sysadmin
   - debutant
+  - ntp
+  - guide
+  - configuration
 ---
 
 -----------

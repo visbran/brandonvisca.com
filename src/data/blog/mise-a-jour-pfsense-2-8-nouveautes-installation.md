@@ -3,14 +3,12 @@ title: "pfsense CE 2.8.0 : Ce que vous devez savoir avant de cliquer sur “Mett
 pubDatetime: "2025-06-01T19:41:15+02:00"
 description: "Découvrez les nouveautés, correctifs et étapes clés pour mettre à jour pfSense vers la version 2.8 en toute sécurité."
 tags:
-  - pfsense
-  - firewall
-  - freebsd
-  - mise-a-jour
   - securite
   - reseau
-  - guide
   - intermediaire
+  - pfsense
+  - firewall
+  - guide
 ---
 
 --------

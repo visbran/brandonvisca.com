@@ -3,14 +3,10 @@ title: "Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement (le rempla�
 pubDatetime: "2025-10-23T20:55:40+02:00"
 description: "Découvrez Nebula-Sync, l''outil gratuit qui remplace Gravity Sync pour synchroniser plusieurs Pi-hole v6. Installation Docker + config complète."
 tags:
-  - nebula-sync
-  - pihole
-  - dns
   - docker
-  - docker-compose
   - homelab
-  - synchronisation
-  - high-availability
+  - reseau
+  - linux
   - guide
   - intermediaire
 ---

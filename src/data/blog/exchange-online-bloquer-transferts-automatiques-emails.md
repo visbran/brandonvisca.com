@@ -3,15 +3,12 @@ title: "Exchange Online : Bloquer les transferts automatiques d'emails (Guide 20
 pubDatetime: "2025-06-14T20:02:20+02:00"
 description: "Guide PowerShell Exchange Online sécurité : bloquer redirection email Office 365 et transferts automatiques. Transport Rules, RBAC, scripts d''audit et ..."
 tags:
-  - exchange-online
   - microsoft-365
-  - office365
-  - powershell
   - securite
-  - email
-  - transport-rules
-  - tutoriel
   - intermediaire
+  - exchange-online
+  - powershell
+  - guide
 ---
 
 -----------

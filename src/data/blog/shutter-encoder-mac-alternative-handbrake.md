@@ -3,16 +3,12 @@ title: "Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vid
 pubDatetime: "2025-11-19T11:56:47+01:00"
 description: "Shutter Encoder Mac : compression vidéo avancée, édition, sous-titres, color grading. Alternative gratuite à HandBrake. Guide complet installation + cas..."
 tags:
-  - shutter-encoder
-  - ffmpeg
-  - video-compression
-  - handbrake-alternative
   - macos
-  - video-editing
-  - multimedia
-  - batch-processing
-  - guide
+  - productivite
   - intermediaire
+  - multimedia
+  - guide
+  - ffmpeg
 ---
 
 TL;DR
@@ -46,7 +42,18 @@ Shutter Encoder fait **tout ça**, gratuitement, avec FFmpeg intégré (pas beso
 Shutter Encoder Mac vs HandBrake : comparaison complète
 -------------------------------------------------------
 
-Fonctionnalité | HandBrake | Shutter Encoder Mac | **Compression vidéo** | ✅ Excellent | ✅ Excellent | **Presets multiples** | ✅ Nombreux | ✅ + personnalisables | **Édition (trim, crop)** | ❌ | ✅ Non-destructif | **Sous-titres hardcoded** | ⚠️ Compliqué | ✅ Drag & drop | **Color grading** | ❌ | ✅ LUT + filtres | **Batch processing** | ⚠️ Limité | ✅ Illimité | **Extraction audio** | ❌ | ✅ MP3, FLAC, WAV… | **Interface** | Simple | Plus complexe (mode simple dispo) | **Encodeurs** | x264, x265, VP9 | Tous (FFmpeg) | **Prix** | Gratuit | Gratuit | 
+| Fonctionnalité | HandBrake | Shutter Encoder Mac |
+|---|---|---|
+| **Compression vidéo** | ✅ Excellent | ✅ Excellent |
+| **Presets multiples** | ✅ Nombreux | ✅ + personnalisables |
+| **Édition (trim, crop)** | ❌ | ✅ Non-destructif |
+| **Sous-titres hardcoded** | ⚠️ Compliqué | ✅ Drag & drop |
+| **Color grading** | ❌ | ✅ LUT + filtres |
+| **Batch processing** | ⚠️ Limité | ✅ Illimité |
+| **Extraction audio** | ❌ | ✅ MP3, FLAC, WAV… |
+| **Interface** | Simple | Plus complexe (mode simple dispo) |
+| **Encodeurs** | x264, x265, VP9 | Tous (FFmpeg) |
+| **Prix** | Gratuit | Gratuit |
 
 Si tu fais juste de la compression basique, garde HandBrake. Si tu veux **plus de contrôle**, Shutter Encoder devient indispensable.
 

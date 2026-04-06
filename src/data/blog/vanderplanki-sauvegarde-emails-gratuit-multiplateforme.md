@@ -3,16 +3,12 @@ title: "Vanderplanki : L'Outil Gratuit qui Va Révolutionner Vos Sauvegardes Ema
 pubDatetime: "2025-06-12T19:38:49+02:00"
 description: "Découvrez Vanderplanki, l''outil gratuit de sauvegarde d''emails créé par les fondateurs de MailStore. Multi-plateforme, chiffré, open source. Guide com..."
 tags:
-  - vanderplanki
-  - sauvegarde-email
-  - backup
-  - email
-  - open-source
   - macos
   - windows
   - linux
-  - guide
   - debutant
+  - guide
+  - backup
 ---
 
 -----------
@@ -178,7 +174,12 @@ Limites et Points d’Attention
 
 ### Comparaison avec MailStore Home
 
-Fonctionnalité | Vanderplanki | MailStore Home | **Multi-plateforme** | ✅ Win/Mac/Linux | ❌ Windows uniquement | **Format ouvert** | ✅ Documenté | ❌ Propriétaire | **Usage commercial** | ✅ Autorisé | ❌ Payant | **Maturité** | ⚠️ Récent | ✅ 15+ ans | 
+| Fonctionnalité | Vanderplanki | MailStore Home |
+|---|---|---|
+| **Multi-plateforme** | ✅ Win/Mac/Linux | ❌ Windows uniquement |
+| **Format ouvert** | ✅ Documenté | ❌ Propriétaire |
+| **Usage commercial** | ✅ Autorisé | ❌ Payant |
+| **Maturité** | ⚠️ Récent | ✅ 15+ ans |
 
 Dépannage : Les Galères Classiques
 ----------------------------------

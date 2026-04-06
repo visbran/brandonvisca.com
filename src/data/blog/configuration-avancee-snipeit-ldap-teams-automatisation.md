@@ -3,14 +3,11 @@ title: "Configuration avancée SnipeIT : LDAP, automatisation et notifications (
 pubDatetime: "2025-10-13T16:05:41+02:00"
 description: "Configuration avancée SnipeIT : intégration Active Directory LDAP, scan réseau automatique, libre-service, notifications Teams et sécurité. Guide comple..."
 tags:
-  - snipeit
-  - itsm
-  - active-directory
-  - ldap
-  - microsoft-teams
   - linux
-  - tutoriel
+  - sysadmin
   - avance
+  - snipeit
+  - ldap
   - automatisation
 ---
 

@@ -4,12 +4,11 @@ pubDatetime: "2025-11-27T00:00:00+00:00"
 description: "Découvre Clop, l'outil qui compresse automatiquement tes images et vidéos dès que tu les copies. Fini les fichiers trop lourds pour les emails et Slack...."
 tags:
   - macos
-  - compression
-  - images
+  - productivite
+  - debutant
   - multimedia
-  - clipboard
-  - low-tech
-  - optimisation
+  - guide
+  - compression
 ---
 
 # Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)

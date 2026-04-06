@@ -4,13 +4,11 @@ pubDatetime: "2025-03-13T11:37:18+01:00"
 description: "Guide pratique de dépannage d'un montage RAID en mode secours Linux. Solution à l'erreur \"wrong fs type\" en découvrant que l'array RAID contenait une ta..."
 tags:
   - linux
-  - raid
-  - mdadm
-  - depannage
-  - stockage
-  - tutoriel
+  - sysadmin
   - avance
-  - troubleshooting
+  - raid
+  - guide
+  - depannage
 ---
 
 --------

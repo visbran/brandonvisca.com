@@ -3,13 +3,12 @@ title: "AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)
 pubDatetime: "2025-11-18T17:39:28+01:00"
 description: AppCleaner Mac supprime complètement tes apps avec tous leurs fichiers
 tags:
-  - appcleaner
   - macos
-  - homebrew
-  - nettoyage
   - productivite
-  - guide
   - debutant
+  - homebrew
+  - guide
+  - appcleaner
 ---
 
 TL;DR

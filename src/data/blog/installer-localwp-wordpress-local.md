@@ -3,14 +3,10 @@ title: "LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration pro
 pubDatetime: "2025-02-24T19:12:37+01:00"
 description: "LocalWP, c''est ton lab WordPress en local sans se faire chier avec XAMPP. Installe, teste, pète tout, et déploie en prod quand c''est carré. Guide comp..."
 tags:
-  - wordpress
-  - localwp
-  - developpement-local
-  - php
-  - mysql
+  - developpement
+  - linux
   - macos
   - windows
-  - linux
   - guide
   - debutant
 ---

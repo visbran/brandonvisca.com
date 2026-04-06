@@ -3,12 +3,8 @@ title: "Oh My Zsh + Powerlevel10k : Transformez votre terminal en machine de gue
 pubDatetime: "2025-03-31T15:55:32+02:00"
 description: "Guide complet Oh My Zsh et Powerlevel10k : installation, configuration, plugins essentiels. Transformez votre terminal en machine de guerre productive !"
 tags:
-  - oh-my-zsh
-  - powerlevel10k
-  - zsh
-  - terminal
-  - macos
   - linux
+  - macos
   - productivite
   - developpement
   - guide

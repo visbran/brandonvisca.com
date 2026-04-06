@@ -4,13 +4,11 @@ pubDatetime: "2024-06-13T11:40:02+02:00"
 description: Apprenez à connecter les systèmes Ubuntu à Active Directory en utilisant SSSD pour une authentification centralisée et une gestion des utilisateurs. Sui...
 tags:
   - linux
-  - ubuntu
-  - active-directory
-  - sssd
-  - authentification
-  - tutoriel
-  - avance
   - sysadmin
+  - avance
+  - active-directory
+  - ubuntu
+  - guide
 ---
 
 Introduction

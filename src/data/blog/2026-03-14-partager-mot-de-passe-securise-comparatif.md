@@ -6,7 +6,7 @@ tags:
   - securite
   - password
   - outils
-  - self-hosting
+  - auto-hebergement
   - comparatif
 draft: true
 ---
