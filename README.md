@@ -2,7 +2,7 @@
 
 Source code of [brandonvisca.com](https://brandonvisca.com) — a French blog about self-hosting, homelab, and digital independence. Built with [Astro](https://astro.build) on top of the [astro-devosfera](https://github.com/0xdres/astro-devosfera) fork of [AstroPaper](https://github.com/satnaing/astro-paper).
 
-> **Note:** This repo contains the theme and tooling only. Article content is kept private and deployed via direct upload.
+> **Note:** This is a personal blog. Feel free to fork and adapt it for your own use — delete the articles in `src/data/blog/` and edit `src/config.ts` to get started.
 
 ---
 
