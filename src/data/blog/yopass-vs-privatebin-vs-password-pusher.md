@@ -8,7 +8,7 @@ tags:
   - homelab
   - docker
   - auto-hebergement
-  - debutant
+  - intermediaire
 featured: false
 draft: false
 focusKeyword: partager mot de passe sécurisé
@@ -305,59 +305,3 @@ Pour l'équipe : PrivateBin si la confidentialité prime, Password Pusher si l'e
 Et si tu veux aller plus loin dans la sécurisation de ton infrastructure, jette un œil à mon guide pour [durcir ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) — parce qu'un secret bien partagé sur un serveur mal sécurisé, c'est un peu comme une porte blindée sur une maison sans toit.
 
 ---
-
-## 📊 Paramètres Rank Math
-
-**Focus Keyphrase** : partager mot de passe sécurisé
-
-**Title** : Yopass vs PrivateBin vs Password Pusher : lequel choisir? (2025)
-(59 caractères)
-
-**Description** :
-Tu envoies encore des mots de passe par Slack ou email ? Grosse erreur. J'ai testé Yopass, PrivateBin et Password Pusher. Voici lequel auto-héberger.
-(152 caractères)
-
-**Analyse intention :**
-- Intention : Comparaison
-- CTR visé : 15-22%
-- Format : Test réel avec verdict + tableau comparatif
-
-**Mots-clés secondaires** :
-- yopass vs privatebin
-- partage secret chiffré
-- password pusher alternative
-- envoyer mot de passe sécurisé
-
-**Densité mot-clé** : 1,5% (cible 1-2%)
-
-**Slug** : yopass-vs-privatebin-vs-password-pusher-2025
-
----
-
-## 🔄 Maillage inverse suggéré
-
-Articles existants à mettre à jour avec un lien vers cet article :
-
-1. **[Vaultwarden Docker](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/)**
-   - Section : "Pour aller plus loin" ou "Partager un accès temporairement"
-   - Ancre : "partager un mot de passe de façon sécurisée"
-
-2. **[Docker pour les nuls](https://brandonvisca.com/docker-debutant-services-auto-heberger/)**
-   - Section : Services de sécurité
-   - Ancre : "partage de secrets auto-hébergé"
-
-3. **[Guide auto-hébergement 2025](https://brandonvisca.com/auto-hebergement-guide-complet-2025/)**
-   - Section : Sécurité / Outils recommandés
-   - Ancre : "partager des accès sans compromettre la sécurité"
-
-## 📝 Articles complémentaires suggérés
-
-**Haute priorité :**
-- Bitwarden Send vs Yopass : partage de secrets dans un gestionnaire de mots de passe
-  - Cluster : Sécurité & Réseaux
-  - Justification : Angle comparaison complémentaire, mêmes utilisateurs cibles
-
-**Moyenne priorité :**
-- Sécuriser ses secrets Docker avec Docker Secrets (vs variables d'environnement)
-  - Cluster : Docker
-  - Justification : Sujet connexe déjà mentionné dans d'autres articles

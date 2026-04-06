@@ -7,10 +7,9 @@ tags:
   - macos
   - launcher
   - raycast
-  - alfred
-  - spotlight
   - productivite
   - comparatif
+  - debutant
 featured: false
 draft: false
 focusKeyword: raycast vs alfred
@@ -219,7 +218,7 @@ Temps : 5 secondes
 
 **Gagnant** : **Alfred** (écrase la concurrence)
 
-**Note** : Pour recherche fichiers pure, utilise [[cling-recherche-fuzzy-fichiers-macos|Cling]] (spécialisé).
+**Note** : Pour recherche fichiers pure, utilise [Cling](/cling-recherche-fuzzy-fichiers-macos/) (spécialisé).
 
 ---
 
@@ -595,8 +594,8 @@ Temps : 2 min (si extension existe)
 **Setup dev typique** :
 ```
 Alfred Powerpack (78€ lifetime)
-+ rcmd (gratuit) → [[rcmd-alternative-cmd-tab-macos]]
-+ Cling (gratuit) → [[cling-recherche-fuzzy-fichiers-macos]]
++ rcmd (gratuit) → [rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide](/rcmd-alternative-cmd-tab-macos/)
++ Cling (gratuit) → [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
 + iTerm2 (gratuit)
 = Stack complète 78€ one-time
 ```
@@ -619,8 +618,8 @@ Alfred Powerpack (78€ lifetime)
 **Setup créateur** :
 ```
 Raycast Free (0€)
-+ Clop (gratuit) → [[clop-compression-images-videos-macos]]
-+ Lunar (gratuit) → [[lunar-luminosite-ecrans-externes-macos]]
++ Clop (gratuit) → [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/2025-11-27-clop-compression-images-videos-macos/)
++ Lunar (gratuit) → [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)
 = Stack complète gratuite
 ```
 
@@ -775,7 +774,7 @@ Raycast Free (0€)
 **Ce qui manque** :
 - ❌ Window management (j'utilise Rectangle à côté)
 - ❌ UI vieillissante (fonctionnelle mais pas sexy)
-- ❌ Pas de calendrier (j'utilise [[10-outils-low-tech-macos-guide-complet#6-grila--calendrier-hotkey-instant|Grila]])
+- ❌ Pas de calendrier (j'utilise [Grila](/10-outils-low-tech-macos-guide-complet/#6-grila-calendrier-hotkey-instant))
 
 **Conclusion** : **Excellent pour dev/sysadmin**. Worth 78€ si tu codes quotidiennement.
 
@@ -1004,14 +1003,14 @@ Cmd+Shift+Space : Raycast (secondary)
 ## 🔗 Articles Connexes
 
 **Productivité macOS** :
-- **[[rcmd-alternative-cmd-tab-macos|rcmd : Switch apps ultra-rapide]]** (complémentaire aux launchers)
-- **[[cling-recherche-fuzzy-fichiers-macos|Cling : Recherche fuzzy spécialisée]]** (si recherche fichiers critique)
-- **[[10-outils-low-tech-macos-guide-complet|10 Outils Low-Tech macOS]]** (stack complète productivité)
+- **[rcmd : Switch apps ultra-rapide](/rcmd-alternative-cmd-tab-macos/)** (complémentaire aux launchers)
+- **[Cling : Recherche fuzzy spécialisée](/cling-recherche-fuzzy-fichiers-macos/)** (si recherche fichiers critique)
+- **[10 Outils Low-Tech macOS](/10-outils-low-tech-macos-guide-complet/)** (stack complète productivité)
 
 **Outils complémentaires** :
-- [[clop-compression-images-videos-macos|Clop : Compression automatique]]
-- [[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité]]
-- [[installation-homebrew-macos|Homebrew : Installation]]
+- [Clop : Compression automatique](/2025-11-27-clop-compression-images-videos-macos/)
+- [Lunar : Contrôle luminosité](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)
+- [Homebrew : Installation](/installation-homebrew-macos/)
 
 ---
 
@@ -1031,104 +1030,5 @@ Cmd+Shift+Space : Raycast (secondary)
 **Comparatifs externes** :
 - [Raycast vs Alfred (officiel)](https://www.raycast.com/raycast-vs-alfred)
 - [Josh Collinsworth Blog](https://joshcollinsworth.com/blog/alfred-raycast)
-
----
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase** : raycast vs alfred
-
-**Title** : 
-Raycast vs Alfred vs Spotlight : Comparatif Ultime 2025 (macOS)
-(61 caractères) ⚠️ À réduire
-
-**Version optimisée Title** :
-Raycast vs Alfred vs Spotlight : Le Comparatif 2025
-(51 caractères) ✅
-
-**Description** : 
-Raycast, Alfred ou Spotlight : quel launcher choisir pour macOS en 2025 ? Comparatif complet avec tableaux, prix, features, et verdict pour chaque profil utilisateur.
-(168 caractères) ⚠️ À réduire
-
-**Version optimisée Description** :
-Raycast vs Alfred vs Spotlight : comparatif complet 2025. Tableaux features, prix détaillés, verdict par profil. Guide objectif pour choisir ton launcher macOS.
-(159 caractères) ⚠️ Encore à réduire
-
-**Version finale Description** :
-Raycast vs Alfred vs Spotlight : comparatif 2025. Features, prix, verdict par profil. Guide objectif pour choisir le meilleur launcher macOS.
-(145 caractères) ✅
-
-**Mots-clés secondaires** :
-- meilleur launcher mac
-- spotlight alternative macos
-- alfred ou raycast
-- launcher macOS 2025
-
-**Densité mot-clé principal** : ~1.3% (cible : 1-2%) ✅
-
-**Liens internes** : 6 ✅
-1. rcmd (complémentarité)
-2. Cling (recherche fichiers spécialisée)
-3. 10 Outils Low-Tech (guide complet)
-4. Clop, Lunar, Homebrew (contexte productivité)
-
-**Liens externes** : 8
-1. Alfred (site officiel)
-2. Raycast (site officiel)
-3. Spotlight (Apple support)
-4. Communautés (forums, Reddit)
-5. Comparatifs externes (crédibilité)
-
-**Longueur** : ~4200 mots ✅
-**Temps de lecture** : ~12 minutes ✅
-
-**Format** : Comparatif objectif avec tableaux
-**Objectif** : Référence francophone sur le sujet
-
----
-
-**Statut** : ✅ Article comparatif complet prêt
-**Prochaine étape** : Relecture + screenshots comparatifs + publication
-
-🎯 **LE comparatif de référence francophone Raycast vs Alfred vs Spotlight !**
-# Introduction : La Guerre des Launchers
-
-
-## 📋 TL;DR : Mon Verdict en 30 Secondes
-
-| Critère | Spotlight | Alfred | Raycast | Gagnant |
-|---------|-----------|--------|---------|---------|
-| **Prix** | Gratuit | 0-78€ | 0-96€/an | Spotlight |
-| **Recherche fichiers** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | **Alfred** 🏆 |
-| **UI moderne** | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | **Raycast** 🏆 |
-| **Clipboard gratuit** | ❌ | 45€ | ✅ Gratuit | **Raycast** 🏆 |
-| **Vitesse** | ⚡⚡⚡⚡ | ⚡⚡⚡⚡⚡ | ⚡⚡⚡ | **Alfred** 🏆 |
-| **Window management** | ❌ | ❌ | ✅ Gratuit | **Raycast** 🏆 |
-| **Workflows puissants** | ❌ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | **Alfred** 🏆 |
-
-### 🎯 Mon Choix Personnel (Mac Mini M4)
-
-**Alfred Powerpack** (primary) + **Raycast Free** (secondary) = **Best of both worlds**
-
-**Coût** : 78€ lifetime Alfred + 0€ Raycast Free = **78€ total**
-
-**Pourquoi :**
-- **Alfred** → Recherche fichiers ultra-rapide (critical pour dev)
-- **Raycast** → Window management + Calendrier gratuit
-
----
-
-## 🔍 Mon Contexte (Pourquoi Me Croire)
-
-Avant de plonger dans le comparatif, voici pourquoi tu peux me faire confiance :
-
-- ✅ **Mac Mini M4** (setup principal depuis 6 mois)
-- ✅ **6 ans d'admin système** (ECORIS, gestion infrastructure IT)
-- ✅ **Testé les 3 launchers pendant 30 jours complet** (10 jours chacun)
-- ✅ **Utilisateur Alfred depuis 3 ans** (Powerpack lifetime)
-- ✅ **Test Raycast Pro** (96€/an) pendant 2 semaines
-- ✅ **Workflow quotidien** : Dev, Docker, rédaction blog, self-hosting
-
-**Mon objectif** : Te dire VRAIMENT lequel choisir selon ton profil, sans bullshit marketing.
 
 ---

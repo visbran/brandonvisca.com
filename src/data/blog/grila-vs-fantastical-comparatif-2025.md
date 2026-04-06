@@ -6,12 +6,10 @@ author: Brandon Visca
 tags:
   - macos
   - calendrier
-  - hotkey
-  - grila
-  - fantastical
-  - comparison
-  - low-tech
   - productivite
+  - low-tech
+  - comparatif
+  - debutant
 featured: false
 draft: false
 focusKeyword: grila vs fantastical
@@ -96,7 +94,7 @@ J'ai découvert **Grila** (le calendrier hotkey par Low Tech Guys) à **6€ one
 - 15-20 meetings/semaine (clients, équipe, veille)
 - Consultation calendrier : **10-15x/jour** (entre sessions code)
 - Création events : 2-3/semaine (rare, je préfère async)
-- Stack productivité : [[rcmd-alternative-cmd-tab-macos|rcmd]], [[raycast-vs-alfred-spotlight-comparatif-macos|Raycast]], [[10-outils-low-tech-macos-guide-complet|Low-Tech suite]]
+- Stack productivité : [rcmd](/rcmd-alternative-cmd-tab-macos/), [Raycast](/raycast-vs-alfred-spotlight-comparatif-macos/), [Low-Tech suite](/10-outils-low-tech-macos-guide-complet/)
 
 **Ma méthodologie pour ce comparatif** :
 
@@ -131,7 +129,7 @@ J'ai découvert **Grila** (le calendrier hotkey par Low Tech Guys) à **6€ one
 
 ### 🎯 Qu'est-ce que Grila ?
 
-**Grila** = **Calendrier hotkey-driven** créé par [Low Tech Guys](https://lowtechguys.com/) (mêmes devs que [[lunar-luminosite-ecrans-externes-macos|Lunar]], [[clop-compression-images-videos-macos|Clop]]).
+**Grila** = **Calendrier hotkey-driven** créé par [Low Tech Guys](https://lowtechguys.com/) (mêmes devs que [Lunar](/2025-11-27-lunar-luminosite-ecrans-externes-macos/), [Clop](/2025-11-27-clop-compression-images-videos-macos/)).
 
 **Le pitch** : "A calendar that's always one hotkey away."
 
@@ -843,7 +841,7 @@ Création events (15%, rare) : Calendar.app
 Join meetings (5%, bonus) : Raycast Calendar
 → Extension gratuite
 → 1-click join Zoom/Meet
-→ Voir [[raycast-vs-alfred-spotlight-comparatif-macos|comparatif Raycast]]
+→ Voir [comparatif Raycast](/raycast-vs-alfred-spotlight-comparatif-macos/)
 ```
 
 **Pourquoi ce setup** :
@@ -879,7 +877,7 @@ Join meetings (5%, bonus) : Raycast Calendar
 
 ### Pourquoi considérer Raycast ?
 
-**Raycast Calendar** = Extension gratuite de [[raycast-vs-alfred-spotlight-comparatif-macos|Raycast]] (launcher macOS).
+**Raycast Calendar** = Extension gratuite de [Raycast](/raycast-vs-alfred-spotlight-comparatif-macos/) (launcher macOS).
 
 **Cas d'usage** :
 ```
@@ -918,7 +916,7 @@ Raycast Calendar (Cmd+Shift+C) : Join meetings
 Les deux ensemble = workflow optimal
 ```
 
-Voir [[raycast-vs-alfred-spotlight-comparatif-macos|guide complet Raycast]].
+Voir [guide complet Raycast](/raycast-vs-alfred-spotlight-comparatif-macos/).
 
 ---
 
@@ -1128,11 +1126,11 @@ Option-only hotkeys bugués sur Sequoia
 - [Pricing](https://flexibits.com/fantastical/pricing)
 
 **Articles connexes** :
-- **[[10-outils-low-tech-macos-guide-complet|Stack Low-Tech complète]]** (Grila + Lunar + Clop + rcmd)
-- **[[rcmd-alternative-cmd-tab-macos|rcmd]]** (hotkeys complémentaires)
-- **[[raycast-vs-alfred-spotlight-comparatif-macos|Raycast vs Alfred]]** (Raycast Calendar extension)
-- **[[lunar-luminosite-ecrans-externes-macos|Lunar]]** (setup multi-écrans)
-- **[[clop-compression-images-videos-macos|Clop]]** (compression fichiers)
+- **[Stack Low-Tech complète](/10-outils-low-tech-macos-guide-complet/)** (Grila + Lunar + Clop + rcmd)
+- **[rcmd](/rcmd-alternative-cmd-tab-macos/)** (hotkeys complémentaires)
+- **[Raycast vs Alfred](/raycast-vs-alfred-spotlight-comparatif-macos/)** (Raycast Calendar extension)
+- **[Lunar](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** (setup multi-écrans)
+- **[Clop](/2025-11-27-clop-compression-images-videos-macos/)** (compression fichiers)
 
 **Communautés** :
 - [Mac Power Users Forum - Grila](https://talk.macpowerusers.com/t/grila-a-calendar-for-keyboard-addicts/31581)
@@ -1189,74 +1187,3 @@ Alors, Grila ou Fantastical ? **Pour moi, Grila 100%**. 🚀
 **Et toi, qu'en penses-tu ?** Partage ton retour en commentaire ! 👇
 
 ---
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase** : grila vs fantastical
-
-**Title** : 
-Grila vs Fantastical : Comparatif honnête après 6 mois (2025)
-(56 caractères) ✅
-
-**Description** : 
-J'utilise Grila depuis 6 mois (6€). Fantastical coûte 70€/an. Est-ce que ça vaut 64€ de plus ? Comparatif complet pour t'aider à choisir.
-(145 caractères) ✅
-
-**🎯 Analyse intention** :
-- Intention : Comparaison 🏆
-- CTR visé : 15-20%
-- Format : Comparatif avec expérience réelle Grila + analyse Fantastical
-- Format dominant Google : Comparatifs, tests, alternatives
-
-**Mots-clés secondaires** :
-- grila alternative fantastical
-- fantastical vs grila
-- calendrier hotkey mac comparatif
-- alternative fantastical gratuite
-
-**Densité mot-clé principal** : ~1.5% (cible : 1-2%) ✅
-
-**Liens internes** : 8 ✅
-1. 10 Outils Low-Tech (guide complet)
-2. rcmd (hotkeys complémentaires)
-3. Raycast comparatif (Calendar extension + guide complet)
-4. Lunar (setup multi-écrans)
-5. Clop (compression)
-6. Articles Low-Tech connexes
-
-**Liens externes** : 6 ✅
-1. Grila site officiel
-2. Grila Mac App Store
-3. Fantastical site officiel
-4. Low Tech Guys
-5. Mac Power Users Forum
-6. Reddit r/macOS
-
-**Structure optimisée** :
-- ✅ TL;DR avec tableau comparatif (section 2)
-- ✅ Intro honnête (6 mois Grila + analyse Fantastical)
-- ✅ Format comparatif (expérience Grila + analyse Fantastical)
-- ✅ Verdict clair "Qui pour qui" (section dédiée)
-- ✅ FAQ (featured snippet potential)
-
-**Longueur** : ~4,800 mots ✅  
-**Temps de lecture** : ~10 minutes ✅
-
-**Featured snippet targets** :
-- Tableau comparatif (TL;DR)
-- FAQ (6 questions/réponses)
-- Prix réel (tableaux détaillés)
-
-**Slug** : grila-vs-fantastical-comparatif-2025
-
----
-
-**Statut** : ✅ Article Grila vs Fantastical AJUSTÉ (honnête + prix réel)  
-**Pivot effectué** : "calendrier hotkey mac" → "grila vs fantastical"  
-**Prix mis à jour** : 70€/an partout (au lieu de 52,99€)  
-**Économie** : 64€/an (au lieu de 46,99€)  
-**Date publication** : 26 décembre 2025  
-**CTR visé** : 15-20%  
-**Prochaine étape** : Screenshots → Publication
-
-🏆 **Format ROI : Comparaison honnête = Crédibilité + High CTR !**

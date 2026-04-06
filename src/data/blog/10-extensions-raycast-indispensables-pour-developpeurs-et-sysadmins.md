@@ -9,9 +9,7 @@ tags:
   - productivite
   - devops
   - docker
-  - github
-  - homebrew
-  - guide
+  - intermediaire
 featured: false
 draft: false
 focusKeyword: Extensions Raycast

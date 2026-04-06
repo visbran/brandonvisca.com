@@ -8,6 +8,7 @@ tags:
   - password
   - outils
   - comparatif
+  - debutant
 featured: false
 draft: false
 focusKeyword: partager mot de passe sécurisé
@@ -251,49 +252,3 @@ Je prépare une formation "Homelab Weekend" pour monter ton serveur auto-héberg
 [Rejoins la liste d'attente →](#)
 
 ---
-
-## 📊 Paramètres Rank Math
-
-**Focus Keyphrase :** partager mot de passe sécurisé
-
-**Title SEO (58 car) :**
-`Partager un mot de passe sécurisé : quel outil en 2025 ?`
-
-**Description (152 car) :**
-`Tu envoies des mots de passe par Slack ou email ? Mauvaise idée. J'ai comparé Password.link, OneTimeSecret et PrivateBin. Verdict clair selon ton profil.`
-
-**Slug :** partager-mot-de-passe-securise-outils-2025
-
-**Mots-clés secondaires :**
-- lien auto-destructeur
-- onetimesecret alternative
-- partage mot de passe équipe
-- password link vs onetimesecret
-- secret à usage unique
-
-**Densité mot-clé cible :** 1-2%
-
-**Liens internes :** 2 vers Vaultwarden (à compléter avec d'autres articles sécurité dès publication)
-**Liens externes :** password.link, onetimesecret.com, github.com/PrivateBin/PrivateBin
-
----
-
-## 🔄 Maillage inverse suggéré
-
-Articles existants à mettre à jour :
-
-1. **[Vaultwarden Docker](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/)**
-   - Section : "Pour aller plus loin" ou "Partage ponctuel"
-   - Ancre : "partager un mot de passe de manière sécurisée"
-
-## 📝 Articles complémentaires à créer
-
-**Haute priorité :**
-- Docker Secrets : gérer les credentials en production proprement
-  - Cluster : Docker / Sécurité
-  - Justification : Complémentaire direct (credentials côté Docker)
-
-**Moyenne priorité :**
-- Bitwarden Send vs Password.link : partage de fichiers chiffrés
-  - Cluster : Sécurité
-  - Justification : Extension naturelle du sujet

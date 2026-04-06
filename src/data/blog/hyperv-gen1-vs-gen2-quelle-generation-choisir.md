@@ -9,6 +9,7 @@ tags:
   - virtualisation
   - sysadmin
   - uefi
+  - intermediaire
 featured: false
 draft: false
 focusKeyword: hyper-v gen1 vs gen2
@@ -217,28 +218,3 @@ Si tu crées une nouvelle VM aujourd'hui pour Windows Server 2019/2022/2025 ou u
 Et si tu te retrouves avec une VM Gen2 corrompue, j'ai détaillé [la procédure complète de restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-corrompu-winpe/) — ça peut toujours servir.
 
 ---
-
-## 📊 Paramètres Rank Math
-
-**Focus Keyphrase** : hyper-v gen1 vs gen2
-
-**Title** : Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
-(58 caractères)
-
-**Description** :
-Gen1 ou Gen2 pour ta VM Hyper-V ? UEFI, Secure Boot, vTPM, compatibilité OS : le comparatif complet pour choisir la bonne génération dès le départ.
-(150 caractères)
-
-**Slug** : hyperv-gen1-vs-gen2-quelle-generation-choisir
-
----
-
-## 🔗 Maillage interne
-
-- [Restaurer une VM Hyper-V corrompue (VHDX + WinPE)](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-corrompu-winpe/) — cité dans FAQ + conclusion
-
-## 📝 Articles complémentaires suggérés
-
-- "VSS Hyper-V : pourquoi tes sauvegardes échouent (et comment réparer)"
-- "Export-VM Hyper-V automatisé : script PowerShell hebdomadaire"
-- "Hyper-V vs Proxmox : lequel pour ton homelab ?"

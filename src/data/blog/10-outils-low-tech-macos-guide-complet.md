@@ -7,9 +7,9 @@ tags:
   - macos
   - low-tech
   - productivite
-  - guide-complet
   - gratuit
   - open-source
+  - debutant
 featured: false
 draft: false
 focusKeyword: outils low tech macos
@@ -134,7 +134,7 @@ Mon setup Mac Mini M4 :
 | Raycast | Gratuit/96$/an | Complémentaire (pas concurrent) |
 | Alfred | 59€ | rcmd plus simple et gratuit |
 
-👉 **Guide complet** : [[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab sur macOS]]
+👉 **Guide complet** : [rcmd : Le raccourci qui tue Cmd+Tab sur macOS](/rcmd-alternative-cmd-tab-macos/)
 
 ---
 
@@ -194,7 +194,7 @@ Temps gagné : 5 min/article = 50 min/mois
 
 **Mon avis** : Version gratuite suffit pour la plupart. Si tu fais +20 screenshots/jour → Pro vaut le coup.
 
-👉 **Guide complet** : [[clop-compression-images-videos-macos|Clop : Compression automatique images/vidéos macOS]]
+👉 **Guide complet** : [Clop : Compression automatique images/vidéos macOS](/2025-11-27-clop-compression-images-videos-macos/)
 
 ---
 
@@ -268,7 +268,7 @@ Temps gagné : 5 min/jour = 30h/an
 
 **Mon avis** : Version gratuite = F1/F2 qui fonctionnent (déjà énorme). Pro = automatisation complète. **23$ lifetime pour 5 Macs = no-brainer si tu as un Mac Mini**.
 
-👉 **Guide complet** : [[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité écrans externes macOS]]
+👉 **Guide complet** : [Lunar : Contrôle luminosité écrans externes macOS](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)
 
 ---
 
@@ -341,7 +341,7 @@ Temps gagné : 20 recherches/jour × 30 sec = 10 min/jour = 60h/an
 - **Cling** : Fichiers code, config, dotfiles
 - **Spotlight** : Recherches générales, emails, docs
 
-👉 **Guide complet** : [[cling-recherche-fuzzy-fichiers-macos|Cling : Recherche fuzzy fichiers macOS]]
+👉 **Guide complet** : [Cling : Recherche fuzzy fichiers macOS](/cling-recherche-fuzzy-fichiers-macos/)
 
 ---
 
@@ -1113,16 +1113,16 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 
 **Approfondis chaque outil** :
 
-1. **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** (2800 mots)
-2. **[[clop-compression-images-videos-macos|Clop : Compression automatique]]** (3200 mots)
-3. **[[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité écrans]]** (3800 mots)
-4. **[[cling-recherche-fuzzy-fichiers-macos|Cling : Recherche fuzzy fichiers]]** (2800 mots)
+1. **[rcmd : Le raccourci qui tue Cmd+Tab](/rcmd-alternative-cmd-tab-macos/)** (2800 mots)
+2. **[Clop : Compression automatique](/2025-11-27-clop-compression-images-videos-macos/)** (3200 mots)
+3. **[Lunar : Contrôle luminosité écrans](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** (3800 mots)
+4. **[Cling : Recherche fuzzy fichiers](/cling-recherche-fuzzy-fichiers-macos/)** (2800 mots)
 
 **Autres articles macOS** :
-- [[raycast-macos-outil-productivite-ultime|Raycast : Launcher complet]]
-- [[ice-gestionnaire-barre-menu-macos|Ice : Gestionnaire barre menu détaillé]]
-- [[installation-homebrew-macos|Installation Homebrew sur macOS]]
-- [[iterm2-guide-configuration-macos-2025|iTerm2 : Terminal optimisé]]
+- [Raycast : Launcher complet](/raycast-macos-outil-productivite-ultime/)
+- Ice : Gestionnaire barre menu détaillé
+- [Installation Homebrew sur macOS](/installation-homebrew-macos/)
+- [iTerm2 : Terminal optimisé](/iterm2-guide-configuration-macos-2025/)
 
 ---
 
@@ -1146,98 +1146,5 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 - [r/macOS](https://reddit.com/r/macOS)
 - [r/MacApps](https://reddit.com/r/MacApps)
 - [r/opensource](https://reddit.com/r/opensource)
-
----
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase** : outils low tech macos
-
-**Title** : 
-10 Outils Low-Tech Indispensables macOS (Guide Complet 2025)
-(62 caractères) ⚠️ À réduire
-
-**Version optimisée Title** :
-10 Outils Low-Tech Indispensables pour macOS (2025)
-(51 caractères) ✅
-
-**Description** : 
-Découvre les 10 outils Low-Tech indispensables pour transformer ton Mac en machine de productivité. Gratuits, open source, légers. Brewfile inclus. Guide complet 2025.
-(170 caractères) ⚠️ À réduire
-
-**Version optimisée Description** :
-10 outils Low-Tech pour transformer ton Mac : gratuits, open source, efficaces. Installation 1 commande, Brewfile inclus. Guide complet 2025.
-(144 caractères) ✅
-
-**Mots-clés secondaires** :
-- logiciels gratuits mac productivité
-- apps open source macos
-- outils macOS 2025
-- low tech guys apps
-
-**Densité mot-clé principal** : ~1.2% (cible : 1-2%) ✅
-
-**Liens internes** : 8 ✅
-1. rcmd (guide détaillé)
-2. Clop (guide détaillé)
-3. Lunar (guide détaillé)
-4. Cling (guide détaillé)
-5. Homebrew (installation)
-6. Raycast (complémentarité)
-7. Ice (guide détaillé existant)
-8. iTerm2 (bonus)
-
-**Liens externes** : 11
-1. Low Tech Guys (site principal)
-2. Chaque outil (site officiel)
-3. GitHub (projets open source)
-4. Reddit communautés
-
-**Longueur** : ~4500 mots ✅
-**Temps de lecture** : ~15 minutes ✅
-
-**Format** : Article pilier (consolidation série)
-**Objectif** : Article viral + lead magnet newsletter
-
----
-
-**Statut** : ✅ Article pilier complet prêt
-**Prochaine étape** : Relecture + lead magnet Brewfile + publication
-
-🎉 **SÉRIE LOW-TECH GUYS 100% COMPLÈTE !**
-# Introduction : La philosophie Low-Tech
-
-
-## 📊 TL;DR : Les 10 Outils en Un Coup d'Œil
-
-| # | Outil | Fonction | Prix | Mon usage |
-|---|-------|----------|------|-----------|
-| 1 | **rcmd** | Switch apps instantané | Gratuit | ⭐⭐⭐⭐⭐ |
-| 2 | **Clop** | Compression auto | 0-15$ | ⭐⭐⭐⭐⭐ |
-| 3 | **Lunar** | Luminosité écrans | 0-23$ | ⭐⭐⭐⭐⭐ |
-| 4 | **Cling** | Recherche fuzzy | Gratuit | ⭐⭐⭐⭐⭐ |
-| 5 | **Ice** | Barre menu propre | Gratuit | ⭐⭐⭐⭐ |
-| 6 | **Grila** | Calendrier hotkey | 0-9$ | ⭐⭐⭐⭐ |
-| 7 | **YellowDot** | Cache point jaune | Gratuit | ⭐⭐⭐ |
-| 8 | **Music Decoy** | Bloque Music.app | Gratuit | ⭐⭐⭐⭐ |
-| 9 | **ZoomHider** | Cache Zoom UI | Gratuit | ⭐⭐⭐ |
-| 10 | **Startup Folder** | Apps au démarrage | Gratuit | ⭐⭐⭐⭐ |
-
-### 💰 Économies
-
-**Total économisé :** 453€/an vs alternatives payantes  
-**Temps gagné :** 35 min/jour = 210h/an  
-**Coût total :** 0-47$ (versions Pro optionnelles)
-
-### 🎯 Mon Verdict (Mac Mini M4)
-
-**Top 5 essentiels :**
-1. **Lunar** → F1/F2 qui fonctionnent enfin (Mac Mini must-have)
-2. **rcmd** → Switch apps 10x plus rapide que Cmd+Tab
-3. **Clop** → Fini "fichier trop lourd" (blog/content)
-4. **Cling** → Trouve n'importe quel fichier en <1s
-5. **Ice** → Barre menu clean et pro
-
-**Installation 1 commande :** Brewfile fourni ci-dessous ⬇️
 
 ---
