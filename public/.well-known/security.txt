@@ -1,0 +1,4 @@
+Contact: mailto:contact@brandonvisca.com
+Preferred-Languages: fr, en
+Canonical: https://brandonvisca.com/.well-known/security.txt
+Policy: Si vous découvrez une vulnérabilité sur brandonvisca.com, merci de la signaler par email. Aucune action légale ne sera engagée pour des rapports de bonne foi.

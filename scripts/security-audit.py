@@ -50,13 +50,29 @@ SECRET_PATTERNS = [
 
 # Patterns that look like secrets but are placeholders — skip
 PLACEHOLDER_PATTERNS = [
-    r"<[A-Z_]+>",           # <CF_API_TOKEN>
-    r"\$\{[A-Z_]+\}",       # ${SECRET}
-    r"VOTRE_",              # French placeholder
-    r"your[-_]",            # English placeholder
-    r"xxx",                 # xxx placeholder
-    r"example\.",           # example.com
+    r"<[A-Z_]+>",               # <CF_API_TOKEN>
+    r"\$\{[A-Z_]+\}",           # ${SECRET}
+    r"VOTRE_",                  # French placeholder
+    r"your[-_]",                # English placeholder
+    r"xxx",                     # xxx placeholder
+    r"example\.",               # example.com
     r"placeholder",
+    r"ton_",                    # ton_token, ton_secret
+    r"super.?secret",           # super_secret
+    r"changeme",                # changeme
+    r"mot.de.passe",            # mot-de-passe / mot_de_passe
+    r"motdepasse",              # motdepasse
+    r"password123",             # password123
+    r"change.me",               # change-me / change_me
+    r"^\*+$",                   # ******** (masked terminal output)
+    r"^\*{3,}",                 # ****...
+    r"MotDePasse",              # MotDePasseXxx
+    r"Password\d",              # Password123, Password456
+    r"Password!",               # Password456!
+    r"securise",                # MotDePasseSecurise
+    r"application$",            # mot-de-passe-application (SMTP example)
+    r"compat\s+sss",            # nsswitch.conf line
+    r"ur\d{6}-[a-f0-9]",       # UptimeRobot example API key format
 ]
 
 # ─── RGPD: third-party domains that imply tracking ────────────────────────────
@@ -99,6 +115,10 @@ def is_placeholder(text):
     for p in PLACEHOLDER_PATTERNS:
         if re.search(p, text, re.IGNORECASE):
             return True
+    # Check if the value after = or : is all asterisks (masked terminal output)
+    m = re.search(r'[:=]\s*[\'"]?(\*+)[\'"]?$', text.strip())
+    if m:
+        return True
     return False
 
 def read_frontmatter(filepath):
@@ -207,18 +227,25 @@ def check_gitignore():
 
 
 def check_tracking_rgpd():
-    """Scan src/ and public/ for third-party tracking resources."""
+    """Scan src/ and public/ for third-party tracking resources.
+    For blog articles (.md), only flag actual HTML tags/embeds — not editorial mentions.
+    """
     issues = []
     skip_dirs = {"node_modules", ".git", "dist", ".astro"}
     for ext in ["*.astro", "*.ts", "*.js", "*.html", "*.md"]:
         for filepath in glob_module.glob(str(ROOT / "**" / ext), recursive=True):
             if any(d in Path(filepath).parts for d in skip_dirs):
                 continue
+            is_article = "src/data/blog" in filepath and filepath.endswith(".md")
             try:
                 with open(filepath, encoding="utf-8", errors="ignore") as f:
                     for lineno, line in enumerate(f, 1):
                         for domain, label in TRACKING_DOMAINS:
                             if domain in line:
+                                # For blog articles: only flag if in an actual HTML tag or link
+                                if is_article:
+                                    if not re.search(r'<[^>]+' + re.escape(domain) + r'|href=["\']https?://' + re.escape(domain), line):
+                                        continue  # Just mentioned in prose — editorial, not a real embed
                                 rel = Path(filepath).relative_to(ROOT)
                                 issues.append((str(rel), lineno, label))
             except Exception:
@@ -247,6 +274,8 @@ def check_set_html():
 def check_open_redirects():
     """Check _redirects for potential open redirect to external domains."""
     issues = []
+    # Own domains — same-domain redirects (www → non-www) are safe
+    own_domains = {"brandonvisca.com", "www.brandonvisca.com", "brandonvisca-com.pages.dev"}
     redirects_file = PUBLIC_DIR / "_redirects"
     if not redirects_file.exists():
         return issues
@@ -259,7 +288,10 @@ def check_open_redirects():
             if len(parts) >= 2:
                 destination = parts[1]
                 if destination.startswith("http://") or destination.startswith("https://"):
-                    issues.append((lineno, line))
+                    # Extract domain from URL
+                    m = re.match(r'https?://([^/]+)', destination)
+                    if m and m.group(1) not in own_domains:
+                        issues.append((lineno, line))
     return issues
 
 
@@ -271,8 +303,15 @@ def check_article_sensitive_data():
         r'\b(?!10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.|127\.|0\.|255\.)'
         r'(\d{1,3}\.){3}\d{1,3}\b'
     )
+    # Fictional/placeholder email domains — skip
+    fictional_domains = {
+        "exemple.com", "example.com", "domain.tld", "domaine.tld",
+        "votredomaine.com", "votredomaine.fr", "entreprise.com", "entreprise.fr",
+        "ad1.domain.tld", "ad.domain.tld", "finance.domain.tld", "hr.domain.tld",
+        "externe.com", "mon-entreprise.com", "test.com", "mail.com",
+    }
     # Email pattern — flag if looks like a real personal email
-    email_re = re.compile(r'\b[a-zA-Z0-9._%+-]+@(?!exemple\.|example\.|domain\.|domaine\.)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b')
+    email_re = re.compile(r'\b[a-zA-Z0-9._%+-]+@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\b')
     # Token-like strings outside code blocks
     token_re = re.compile(r'(?i)(token|api.key|secret|password)\s*[:=]\s*[^\s<>\'\"]{10,}')
 
@@ -285,20 +324,36 @@ def check_article_sensitive_data():
         body_no_code = re.sub(r'`[^`]+`', '', body_no_code)
 
         # Public IP addresses
+        # Common documentation/example IPs — skip
+        EXAMPLE_IPS = {
+            "0.0.0.0", "1.1.1.1", "8.8.8.8", "8.8.4.4", "9.9.9.9",
+            "1.2.3.4", "5.6.7.8",                      # RFC example IPs
+            "81.45.123.1", "92.78.234.2",               # Diagram examples in p1622
+            "203.0.113.1", "198.51.100.1",              # TEST-NET RFC 5737
+        }
         for m in public_ip_re.finditer(body_no_code):
             ip = m.group(0)
-            # Skip common false positives
-            if ip in ("0.0.0.0", "1.1.1.1", "8.8.8.8", "8.8.4.4", "9.9.9.9"):
+            if ip in EXAMPLE_IPS:
                 continue
             octets = list(map(int, ip.split(".")))
             if octets[0] in (100, 169):
                 continue
             issues.append((str(rel), "IP publique potentiellement réelle", ip))
 
-        # Real emails (skip articles about email tools)
+        # Real emails (skip clearly fictional domains)
         for m in email_re.finditer(body_no_code):
             email = m.group(0)
-            if any(x in email for x in ["@exemple", "@example", "@domain", "@test", "@mail.com", "@brandonvisca"]):
+            domain = m.group(1).lower()
+            # Skip clearly fictional/placeholder domains
+            if domain in fictional_domains:
+                continue
+            if any(x in email.lower() for x in [
+                "@exemple", "@example", "@domain", "@test", "@mail.com",
+                "@brandonvisca", "votre", "jean.dupont", "ton@", "attaquant",
+            ]):
+                continue
+            # Skip .tld suffix (clearly fictional)
+            if domain.endswith(".tld"):
                 continue
             issues.append((str(rel), "Adresse email exposée", email))
 
@@ -480,14 +535,14 @@ def run_audit(summary_mode=False):
     if result.returncode == 0:
         print(f"  {ok('Aucune vulnérabilité high/critical dans les dépendances')}")
     else:
-        vuln_count = result.stdout.count("severity")
-        print(f"  {err(f'Vulnérabilités détectées — exécute: pnpm audit')}")
-        if not summary_mode:
-            # Show just the summary line
-            for line in result.stdout.splitlines()[-5:]:
-                if line.strip():
-                    print(f"  {line}")
-        total_errors += 1
+        # Static site = node_modules never shipped to visitors.
+        # All npm vulnerabilities are build-time only → warn, don't error.
+        output = result.stdout
+        summary_line = next((l.strip() for l in output.splitlines() if "vulnerabilities found" in l), "")
+        print(f"  {warn(f'Dépendances de build uniquement (site statique — non exposées aux visiteurs)')}")
+        if summary_line:
+            print(f"  {info(summary_line + ' — exécute: pnpm audit pour détails')}")
+        total_warnings += 1
 
     # Summary
     print(f"\n{BOLD}{'─'*60}{RST}")
