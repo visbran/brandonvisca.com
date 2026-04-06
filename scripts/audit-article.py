@@ -208,10 +208,19 @@ def audit_faqs(fm_raw: str, issues: list):
                        "msg": f"{count} FAQs — Google affiche généralement 3-4 max dans les résultats"})
 
 
+TOC_MIN_H2 = 4  # seuil à partir duquel une TOC est recommandée
+
+
 def audit_toc(body: str, issues: list):
-    """Vérifie la table des matières si présente."""
+    """Vérifie la table des matières : suggère si absente sur article long, valide si présente."""
     toc_match = TOC_HEADING_RE.search(body)
+
     if not toc_match:
+        h2_count = len(re.findall(r"^##\s+", body, re.MULTILINE))
+        if h2_count >= TOC_MIN_H2:
+            issues.append({"type": "info", "cat": "toc",
+                           "msg": f"Pas de table des matières — article avec {h2_count} sections H2 "
+                                  f"(recommandé dès {TOC_MIN_H2})"})
         return
 
     toc_start = toc_match.end()
