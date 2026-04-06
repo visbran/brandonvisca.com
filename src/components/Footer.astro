@@ -92,7 +92,8 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
     >
       <p class="font-cartograph text-[11px] tracking-wide text-foreground/50">
         &copy; {currentYear}
-        {SITE.title}. Tous droits réservés.
+        {SITE.title}. Tous droits réservés. &mdash;
+        <a href="/politique-confidentialite/" class="hover:text-accent transition-colors">Politique de confidentialité</a>
       </p>
       <p class="font-cartograph text-[11px] tracking-wide text-foreground/45">
         Thème <a href="https://github.com/0xdres/astro-devosfera" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">astro-devosfera</a> par <span class="text-accent/70">0xdres</span>
