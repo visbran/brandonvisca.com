@@ -5,9 +5,10 @@ import { buildBreadcrumbItems } from "@/utils/breadcrumbs";
 
 type Props = {
   withBackButton?: boolean;
+  currentLabel?: string;
 };
 
-const { withBackButton = false } = Astro.props as Props;
+const { withBackButton = false, currentLabel } = Astro.props as Props;
 
 const breadcrumbs = buildBreadcrumbItems(Astro.url.pathname, {
   locale: SITE.lang || undefined,
@@ -55,19 +56,23 @@ const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Home";
         </a>
       </li>
     {
-      breadcrumbs.map(item => (
-        <li class:list={["breadcrumb-item", { "is-current": !item.href }]}>
-          {item.href ? (
-            <a href={item.href} class="breadcrumb-link">
-              {item.label}
-            </a>
-          ) : (
-            <span class="breadcrumb-current" aria-current="page" title={item.label}>
-              {item.label}
-            </span>
-          )}
-        </li>
-      ))
+      breadcrumbs.map((item, index) => {
+        const isLast = index === breadcrumbs.length - 1;
+        const label = isLast && currentLabel ? currentLabel : item.label;
+        return (
+          <li class:list={["breadcrumb-item", { "is-current": !item.href }]}>
+            {item.href ? (
+              <a href={item.href} class="breadcrumb-link">
+                {label}
+              </a>
+            ) : (
+              <span class="breadcrumb-current" aria-current="page" title={label}>
+                {label}
+              </span>
+            )}
+          </li>
+        );
+      })
     }
     </ol>
   </div>
@@ -197,9 +202,9 @@ const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Home";
     max-width: min(34ch, 64vw);
     overflow: hidden;
     text-overflow: ellipsis;
-    color: color-mix(in srgb, var(--accent) 92%, var(--foreground));
-    background: color-mix(in srgb, var(--accent) 11%, transparent);
-    border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
+    color: var(--accent);
+    font-weight: 600;
+    padding: 0.35rem 0.3rem;
   }
 
   .visually-hidden {

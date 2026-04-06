@@ -82,7 +82,7 @@ const nextPost =
 
 <Layout {...layoutProps}>
   <Header />
-  {SITE.showBackButton && <Breadcrumb withBackButton />}
+  {SITE.showBackButton && <Breadcrumb withBackButton currentLabel={title} />}
   <main
     id="main-content"
     class:list={["relative app-layout pb-12", { "mt-8": !SITE.showBackButton }]}

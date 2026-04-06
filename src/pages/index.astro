@@ -198,12 +198,14 @@ const recentPosts = sortedPosts.filter(({ data }) => !("featured" in data && dat
   .terminal-prefix {
     color: var(--accent);
     font-weight: 600;
-    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 40%, transparent));
+    line-height: 1;
+    text-shadow: 0 0 8px color-mix(in srgb, var(--accent) 35%, transparent);
   }
 
   .terminal-branch {
     opacity: 0.55;
-    font-size: 0.7em;
+    font-size: 0.8em;
+    line-height: 1;
   }
 
   .terminal-branch-name {
