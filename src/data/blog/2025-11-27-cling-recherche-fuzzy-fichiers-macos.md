@@ -46,6 +46,8 @@ Bienvenue dans le monde de **Cling**, l'outil de recherche fuzzy qui va te faire
 
 Let's go ! 🚀
 
+## Table des matières
+
 ---
 
 ## TL;DR : Cling en 30 secondes
@@ -142,7 +144,7 @@ brew install --cask thelowtechguys-cling
 - Désinstallation propre
 - Gestion centralisée
 
-⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
+⚠️ **Pas encore Homebrew ?** → Guide installation Homebrew macOS
 
 ---
 
@@ -477,7 +479,7 @@ Cling supporte une syntaxe puissante (héritée de `fd` et `fzf`).
 - **Raycast** : Launcher + snippets + extensions + clipboard
 - **Alfred** : Workflows complexes + automation
 
-Tu peux utiliser [[raycast-macos-outil-productivite-ultime|Raycast]] pour les commandes ET Cling pour les fichiers. Pas de conflit.
+Tu peux utiliser Raycast pour les commandes ET Cling pour les fichiers. Pas de conflit.
 
 ---
 
@@ -772,7 +774,7 @@ Settings > Max results : 100
 - Pas de recherche par contenu (nom de fichier uniquement)
 - Courbe apprentissage (syntaxe avancée)
 
-**Mon verdict perso** : J'utilise Cling **depuis 6 mois** pour chercher mes fichiers de config, dotfiles, et scripts. Combiné avec [[rcmd-alternative-cmd-tab-macos|rcmd]], [[clop-compression-images-videos-macos|Clop]], et [[lunar-luminosite-ecrans-externes-macos|Lunar]], c'est le **quatuor Low-Tech Guys parfait**.
+**Mon verdict perso** : J'utilise Cling **depuis 6 mois** pour chercher mes fichiers de config, dotfiles, et scripts. Combiné avec rcmd, Clop, et Lunar, c'est le **quatuor Low-Tech Guys parfait**.
 
 **Pour qui c'est un must** :
 - ✅ Développeurs (configs, dotfiles, repos)
@@ -793,11 +795,11 @@ Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** : Switch entre apps ultra-rapidement
-- **[[clop-compression-images-videos-macos|Clop : Compression automatique]]** : Optimise tes fichiers en arrière-plan
-- **[[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité écrans externes]]** : DDC natif pour tes moniteurs
-- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Launcher complet (complémentaire à Cling)
-- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Cling
+- **[rcmd : Le raccourci qui tue Cmd+Tab](/2025-11-27-rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
+- **[Clop : Compression automatique](/2025-11-27-clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
+- **[Lunar : Contrôle luminosité écrans externes](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** : DDC natif pour tes moniteurs
+- **[Raycast : L'outil qui transforme macOS](/raycast-macos-outil-productivite-ultime/)** : Launcher complet (complémentaire à Cling)
+- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer Cling
 
 ---
 
@@ -809,71 +811,3 @@ Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 - [fzf (fuzzy finder)](https://github.com/junegunn/fzf)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 
----
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase** : recherche fichiers mac rapide
-
-**Title** : 
-Cling : Recherche fuzzy fichiers 10x plus rapide
-(52 caractères) ✅
-
-**Description** : 
-Cling : trouve fichiers macOS instantanément avec recherche fuzzy. Même avec fautes frappe. Alternative Spotlight. Gratuit, open source.
-(150 caractères) ✅
-
-**Mots-clés secondaires** :
-- cling mac
-- fuzzy search macos
-- alternative spotlight mac
-- recherche fuzzy fichiers
-
-**Densité mot-clé principal** : ~1.3% (cible : 1-2%) ✅
-
-**Liens internes** : 5 ✅
-1. Homebrew (installation)
-2. rcmd (série Low-Tech)
-3. Clop (série Low-Tech)
-4. Lunar (série Low-Tech)
-5. Raycast (complémentarité)
-
-**Liens externes** : 6
-1. Site officiel Cling
-2. GitHub Cling
-3. fd (Rust)
-4. fzf
-5. Low Tech Guys
-6. Everything Windows (comparaison)
-
-**Longueur** : ~2800 mots ✅
-**Temps de lecture** : ~8 minutes ✅
-
----
-
-## 🔄 Maillage inverse à effectuer
-
-### 1. [[rcmd-alternative-cmd-tab-macos|rcmd]]
-- Ajouter dans "Intégration avec votre setup"
-- Ancre : "Combine rcmd (switch apps) + Cling (trouve fichiers) pour un workflow ultra-rapide"
-
-### 2. [[clop-compression-images-videos-macos|Clop]]
-- Ajouter dans "Série Low-Tech Guys"
-- Ancre : "Après Clop pour optimiser tes fichiers, utilise Cling pour les retrouver instantanément"
-
-### 3. [[lunar-luminosite-ecrans-externes-macos|Lunar]]
-- Ajouter dans "Série Low-Tech Guys"
-- Ancre : "Lunar contrôle tes écrans, Cling trouve tes fichiers : le duo Low-Tech parfait"
-
-### 4. [[raycast-macos-outil-productivite-ultime|Raycast]]
-- Ajouter dans "Alternatives et comparaisons"
-- Ancre : "Raycast pour les commandes, Cling pour les fichiers : utilise les deux ensemble"
-
-### 5. [[installation-homebrew-macos|Homebrew]]
-- Ajouter dans "Apps essentielles"
-- Ancre : "Cling pour recherche fuzzy ultra-rapide de fichiers"
-
----
-
-**Statut** : ✅ Article Cling optimisé SEO Framework V4
-**Prochaine étape** : Optimiser Clop (30 min) puis Lunar (30 min)

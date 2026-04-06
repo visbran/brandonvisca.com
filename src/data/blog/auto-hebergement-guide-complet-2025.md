@@ -5,7 +5,6 @@ description: "Découvrez l'auto-hébergement en 2025 : guide complet pour début
 tags:
   - auto-hebergement
   - homelab
-  - self-hosting
   - docker
   - nextcloud
   - vaultwarden

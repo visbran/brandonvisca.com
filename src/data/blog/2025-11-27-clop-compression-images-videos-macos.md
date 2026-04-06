@@ -6,7 +6,7 @@ tags:
   - macos
   - compression
   - images
-  - vidéos
+  - multimedia
   - clipboard
   - low-tech
   - optimisation
@@ -50,6 +50,8 @@ Bienvenue dans le monde de **Clop**, l'optimiseur magique qui va te faire gagner
 - Alternatives et comparaisons (ImageOptim, TinyPNG, etc.)
 
 Let's go ! 🚀
+
+## Table des matières
 
 ---
 
@@ -102,7 +104,7 @@ brew install --cask clop
 - Désinstallation propre
 - Gestion centralisée
 
-⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
+⚠️ **Pas encore Homebrew ?** → Guide installation Homebrew macOS
 
 ---
 
@@ -306,7 +308,7 @@ Si tu utilises **CleanShot X** ou **Shottr** (apps screenshots premium), Clop s'
 
 **Résultat** : Tu gardes la qualité CleanShot, mais avec des fichiers 10x plus petits.
 
-Tu utilises déjà [[reduire-taille-images-mac-webp|WebP sur macOS]] ? Combine Clop + WebP pour des gains encore plus importants.
+Tu utilises déjà WebP sur macOS ? Combine Clop + WebP pour des gains encore plus importants.
 
 ---
 
@@ -375,7 +377,7 @@ Gain : Plus de message "fichier trop lourd"
 Temps gagné : 5 min par article = 50-75 min/mois
 ```
 
-Je combine Clop avec mon workflow [[reduire-taille-images-mac-webp|WebP macOS]] pour des images encore plus optimisées.
+Je combine Clop avec mon workflow WebP macOS pour des images encore plus optimisées.
 
 ---
 
@@ -627,7 +629,7 @@ open -a Clop
 - Aggressive mode peut dégrader la qualité photos artistiques
 - Pas de presets avancés comme HandBrake (mais c'est voulu, simplicité first)
 
-**Mon verdict perso** : J'utilise Clop **tous les jours depuis 8 mois**. Combiné avec [[rcmd-alternative-cmd-tab-macos|rcmd]] et [[reduire-taille-images-mac-webp|WebP]], c'est le trio gagnant productivité macOS.
+**Mon verdict perso** : J'utilise Clop **tous les jours depuis 8 mois**. Combiné avec rcmd et WebP, c'est le trio gagnant productivité macOS.
 
 **Temps d'adaptation** : 0 seconde. Tu installes, tu configures une fois, tu oublies. Ça tourne en arrière-plan.
 
@@ -639,10 +641,10 @@ Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[[reduire-taille-images-mac-webp|Réduire la taille des images Mac avec WebP]]** : Combine Clop + WebP pour une compression ultime
-- **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** : Switch entre apps ultra-rapidement
-- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Launcher complet pour automatiser tes workflows
-- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Clop et autres outils
+- **[Réduire la taille des images Mac avec WebP](/reduire-taille-images-mac-webp/)** : Combine Clop + WebP pour une compression ultime
+- **[rcmd : Le raccourci qui tue Cmd+Tab](/2025-11-27-rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
+- **[Raycast : L'outil qui transforme macOS](/raycast-macos-outil-productivite-ultime/)** : Launcher complet pour automatiser tes workflows
+- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer Clop et autres outils
 
 ---
 
@@ -654,100 +656,3 @@ Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 - [Clop SDK (pour devs)](https://github.com/FuzzyIdeas/ClopSDK)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 
----
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase** : compresser images mac automatiquement
-
-**Title** : 
-Clop : Compresse tes images et vidéos automatiquement sur macOS
-(62 caractères) ⚠️ À réduire à 60 max
-
-**Version optimisée Title** :
-Clop : Compression auto images/vidéos macOS (gratuit)
-(54 caractères) ✅
-
-**Description** : 
-Découvre Clop, l'outil qui compresse automatiquement tes images et vidéos dès que tu les copies. Fini les fichiers trop lourds. Gratuit, installation rapide.
-(157 caractères) ⚠️ À réduire à 155 max
-
-**Version optimisée Description** :
-Découvre Clop, l'outil qui compresse auto tes images et vidéos. Fini les fichiers trop lourds pour emails et Slack. Gratuit, installation 2 min.
-(148 caractères) ✅
-
-**Mots-clés secondaires** :
-- optimiser vidéos macos
-- clop mac gratuit
-- compression automatique clipboard
-- réduire taille fichiers mac
-
-**Densité mot-clé principal** : ~1.3% (cible : 1-2%) ✅
-
-**Liens internes** : 5 ✅
-1. Homebrew (installation)
-2. rcmd (combo productivité)
-3. Raycast (workflows)
-4. WebP images (compression complémentaire)
-5. Autres articles Low-Tech
-
-**Liens externes** : 6
-1. Site officiel Clop
-2. GitHub Clop
-3. Mac App Store
-4. Low Tech Guys
-5. Alternatives (ImageOptim, Squoosh, HandBrake, TinyPNG)
-
-**Longueur** : ~3200 mots ✅
-**Temps de lecture** : ~9 minutes ✅
-
----
-
-## 🔄 Maillage inverse à effectuer
-
-### 1. [[reduire-taille-images-mac-webp|Réduire la taille des images Mac avec WebP]]
-- Ajouter dans la section "Outils complémentaires"
-- Ancre suggérée : "Pour une automatisation complète, combine WebP avec Clop qui compresse automatiquement dès que tu copies une image"
-
-### 2. [[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]
-- Ajouter dans la section "Intégration avec votre setup"
-- Ancre suggérée : "Clop optimise tes fichiers en arrière-plan pendant que rcmd te fait switcher entre apps à la vitesse de l'éclair"
-
-### 3. [[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]
-- Ajouter dans la section "Extensions utiles" ou "Workflows"
-- Ancre suggérée : "Combine Raycast Shortcuts avec Clop pour automatiser complètement ton pipeline de compression d'images"
-
-### 4. [[installation-homebrew-macos|Installation Homebrew sur macOS]]
-- Ajouter dans la section "Apps à installer avec Homebrew"
-- Ancre suggérée : "Clop pour compresser automatiquement images et vidéos"
-
----
-
-## 📝 Articles complémentaires suggérés (série Low-Tech Guys)
-
-### Haute priorité - Semaines suivantes
-
-**1. Lunar : Contrôler la luminosité de tes écrans externes sur macOS** ⭐ PROCHAIN
-- Cluster : macOS-Productivite / Outils Système
-- Difficulté : Intermédiaire
-- Justification : Problème frustrant macOS, forte demande, compatible Mac Mini M4
-
-**2. Cling : La recherche de fichiers fuzzy qui enterre Spotlight**
-- Cluster : macOS-Productivite / Outils Système
-- Difficulté : Intermédiaire
-- Justification : Alternative Spotlight, workflow power user
-
-### Article pilier - Mois 2
-
-**3. 10 Outils Low-Tech Indispensables pour macOS (2025)** - GUIDE PILIER
-- Cluster : macOS-Productivite
-- Type : Guide exhaustif (article viral)
-- Justification : Consolide rcmd + Clop + Lunar + Cling + autres, lead magnet newsletter
-
----
-
-**Note Screenshots** : 5 placeholders marqués pour screenshots à ajouter
-**Temps estimé screenshots** : 20 min sur Mac Mini M4
-
-**Statut** : ✅ Brouillon complet prêt
-**Prochaine étape** : Relecture + screenshots + publication

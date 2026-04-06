@@ -8,7 +8,7 @@ tags:
   - vhdx
   - winpe
   - sysadmin
-  - récupération
+  - depannage
 draft: true
 ---
 
@@ -19,6 +19,8 @@ T'as une VM Hyper-V qui démarre encore, mais `Export-VM` plante, les sauvegarde
 Bonne nouvelle : c'est récupérable. Sans réinstaller Windows Server. Sans perdre tes données.
 
 La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline via WinPE, puis reconstruire le boot UEFI de zéro. Ça prend 45 minutes et une bonne tasse de café.
+
+## Table des matières
 
 ---
 
@@ -263,28 +265,3 @@ L'option "Réparer l'ordinateur" ne touche pas la corruption logique du système
 **Combien de temps ça prend ?**
 45 minutes à 1h30 selon la taille de l'OS. La copie robocopy représente 80% du temps.
 
----
-
-## 📊 Paramètres Rank Math
-
-**Focus Keyphrase** : restaurer vm hyper-v vhdx corrompu
-
-**Title** : VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)
-(58 caractères)
-
-**Description** :
-Export-VM qui plante, sauvegardes VSS bloquées ? Procédure complète pour reconstruire un VHDX OS sain via WinPE + robocopy + bcdboot, sans réinstaller.
-(153 caractères)
-
-**Slug** : restaurer-vm-hyperv-vhdx-corrompu-winpe
-
----
-
-## 🔗 Maillage interne
-
-- [[2026-03-10-hyperv-gen1-vs-gen2-quelle-generation-choisir]] — cité en conclusion
-
-## 📝 Articles complémentaires suggérés
-
-- "VSS Hyper-V : pourquoi tes sauvegardes échouent (et comment réparer)"
-- "Export-VM Hyper-V automatisé : script PowerShell hebdomadaire"

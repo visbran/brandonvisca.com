@@ -9,7 +9,7 @@ tags:
   - linux
   - window-manager
   - tiling-wm
-  - productivity
+  - productivite
   - neovim
   - guide
   - intermediaire

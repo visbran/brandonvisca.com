@@ -15,6 +15,8 @@ draft: true
 
 Tu en as marre qu'Android File Transfer plante toutes les 5 minutes ? J'ai testé OpenMTP et MacDroid pendant 90 jours sur mon MacBook M1. Spoiler : OpenMTP gratuit explose Android File Transfer sur tous les tableaux. Voici pourquoi.
 
+## Table des matières
+
 ## 🎯 TL;DR : Le verdict en 30 secondes
 
 | Critère | Android File Transfer | OpenMTP | MacDroid |
@@ -432,58 +434,6 @@ Il fait 90% de ce que j'ai besoin, gratuitement, et sans me faire chier.
 **Et toi, t'utilises quoi ?**
 
 Dis-moi en commentaire si tu as testé OpenMTP ou si tu galères encore avec Android File Transfer ! 👇
-
----
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase :** android file transfer mac alternative
-
-**Title :** Android File Transfer Mac : 2 alternatives testées (2025)  
-(59 caractères)
-
-**Meta Description :**  
-J'ai testé OpenMTP et MacDroid pendant 90 jours. Verdict : OpenMTP gratuit bat Android File Transfer. Comparatif complet avec benchmarks réels.  
-(148 caractères)
-
-**Analyse intention :**
-- Intention : Comparaison + Transactionnel
-- CTR visé : 15-20%
-- Format : Test réel longue durée avec benchmarks
-
-**Mots-clés secondaires :**
-- openmtp
-- macdroid alternative
-- transférer android mac
-- android file transfer mac
-
-**Densité mot-clé :** ~1.5% (cible : 1-2%)
-
-**Slug suggéré :** android-file-transfer-mac-alternatives-test-2025
-
-**Liens internes :** 1
-- [Installation Homebrew macOS](https://brandonvisca.com/installation-homebrew-macos/)
-
-**Liens externes :** 2
-- [OpenMTP officiel](https://openmtp.ganeshrvel.com/)
-- [MacDroid officiel](https://www.macdroid.app/)
-
-**Images suggérées :**
-1. Screenshot OpenMTP interface principale
-2. Tableau comparatif (créer infographie)
-3. Benchmark graphique (barres de vitesse)
-4. Setup macOS + Android (photo réelle si possible)
-
-**Catégories WordPress :**
-- Productivité (principal)
-- macOS (secondaire)
-
-**Tags WordPress :**
-- android
-- mac
-- file-transfer
-- openmtp
-- productivité
 
 ---
 

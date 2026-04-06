@@ -21,7 +21,6 @@ Tu viens de passer de Windows à Mac et le ⌘+Tab te rend fou ? Pas de preview 
 
 Bienvenue dans la frustration des switchers Windows → macOS.
 
-![[nhl-minnesota-wild-welcome-home-ae7si3lopyj8q.gif]]
 
 **AltTab macOS** résout ce problème en apportant le comportement du Alt+Tab de Windows sur ton Mac. Preview des fenêtres, organisation claire, raccourcis personnalisables, et tout ça gratuitement.
 

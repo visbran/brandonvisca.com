@@ -5,10 +5,7 @@ description: "Découvre Lunar, l'app qui résout le problème de luminosité des
 tags:
   - macos
   - lunar
-  - luminosité
   - low-tech
-  - ddc
-  - écrans-externes
 ---
 
 ---
@@ -51,6 +48,8 @@ Bienvenue dans le monde de **Lunar**, l'app qui devrait être intégrée à macO
 - Compatibilité Mac Mini, M1/M2/M3/M4, moniteurs DDC
 
 Let's go ! 🚀
+
+## Table des matières
 
 ---
 
@@ -124,7 +123,7 @@ brew install --cask lunar
 - Désinstallation propre
 - Gestion centralisée
 
-⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
+⚠️ **Pas encore Homebrew ?** → Guide installation Homebrew macOS
 
 ---
 
@@ -947,7 +946,7 @@ Lunar → Controls → Disable Software Dimming
 - Pro features encryptées dans le code source (pas 100% open)
 - Quelques bugs après wake-up (mais Auto Restart les résout)
 
-**Mon verdict perso** : J'utilise Lunar **depuis 2 ans** sur mon Mac Mini M4 + 2 écrans. C'est devenu **indispensable**. Combiné avec [[rcmd-alternative-cmd-tab-macos|rcmd]] et [[clop-compression-images-videos-macos|Clop]], c'est le trio parfait Low-Tech Guys.
+**Mon verdict perso** : J'utilise Lunar **depuis 2 ans** sur mon Mac Mini M4 + 2 écrans. C'est devenu **indispensable**. Combiné avec rcmd et Clop, c'est le trio parfait Low-Tech Guys.
 
 **Pour qui c'est un must** :
 - ✅ Mac Mini (aucune alternative viable)
@@ -967,10 +966,10 @@ Alors, prêt à contrôler tes écrans comme un humain civilisé ? 🚀
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** : Switch entre apps ultra-rapidement
-- **[[clop-compression-images-videos-macos|Clop : Compression automatique images/vidéos]]** : Optimise tes fichiers en arrière-plan
-- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Automatise tes workflows
-- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Lunar
+- **[rcmd : Le raccourci qui tue Cmd+Tab](/2025-11-27-rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
+- **[Clop : Compression automatique images/vidéos](/2025-11-27-clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
+- **[Raycast : L'outil qui transforme macOS](/raycast-macos-outil-productivite-ultime/)** : Automatise tes workflows
+- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer Lunar
 
 ---
 
@@ -983,94 +982,3 @@ Alors, prêt à contrôler tes écrans comme un humain civilisé ? 🚀
 - [Changelog](https://lunar.fyi/changelog)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 
----
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase** : contrôler luminosité écran externe mac
-
-**Title** : 
-Lunar : Contrôle luminosité écrans externes macOS (DDC natif)
-(60 caractères) ✅
-
-**Description** : 
-Découvre Lunar, l'app qui résout le problème de luminosité des écrans externes sur macOS. DDC natif, F1/F2 fonctionnent, sync auto. Indispensable Mac Mini.
-(159 caractères) ⚠️ À réduire
-
-**Version optimisée Description** :
-Lunar résout la luminosité des écrans externes macOS. DDC natif, touches F1/F2, sync automatique. Indispensable pour Mac Mini. Gratuit ou 23$ Pro.
-(151 caractères) ✅
-
-**Mots-clés secondaires** :
-- lunar mac mini
-- brightness externe macos
-- DDC macOS
-- écran externe mac luminosité
-
-**Densité mot-clé principal** : ~1.4% (cible : 1-2%) ✅
-
-**Liens internes** : 4 ✅
-1. Homebrew (installation)
-2. rcmd (combo productivité)
-3. Clop (série Low-Tech)
-4. Raycast (automatisation)
-
-**Liens externes** : 8
-1. Site officiel Lunar
-2. GitHub Lunar
-3. FAQ Lunar
-4. DIY Sensor
-5. Low Tech Guys
-6. Alternatives (MonitorControl, DisplayBuddy, BetterDisplay, QuickShade)
-
-**Longueur** : ~3800 mots ✅
-**Temps de lecture** : ~10 minutes ✅
-
----
-
-## 🔄 Maillage inverse à effectuer
-
-### 1. [[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]
-- Ajouter dans la section "Intégration avec votre setup"
-- Ancre suggérée : "Combine rcmd (switch apps) avec Lunar (contrôle luminosité) pour un workflow macOS optimal"
-
-### 2. [[clop-compression-images-videos-macos|Clop : Compression automatique]]
-- Ajouter dans la section "Série Low-Tech Guys"
-- Ancre suggérée : "Après Clop pour tes fichiers, installe Lunar pour tes écrans"
-
-### 3. [[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]
-- Ajouter dans la section "Shortcuts & Automation"
-- Ancre suggérée : "Lunar s'intègre avec Raycast Shortcuts pour automatiser tes presets de luminosité"
-
-### 4. [[installation-homebrew-macos|Installation Homebrew sur macOS]]
-- Ajouter dans la section "Apps essentielles à installer"
-- Ancre suggérée : "Lunar pour contrôler nativement la luminosité de tes écrans externes"
-
----
-
-## 📝 Articles complémentaires suggérés (série Low-Tech Guys)
-
-### Articles publiés ✅
-- **Semaine 1** : rcmd (switch apps)
-- **Semaine 2** : Clop (compression)
-- **Semaine 3** : Lunar (luminosité écrans)
-
-### À venir 🎯
-
-**Semaine 4 : Cling** (recherche fichiers fuzzy) ⭐ PROCHAIN
-- Cluster : macOS-Productivite / Outils Système
-- Difficulté : Intermédiaire
-- Justification : Alternative Spotlight, complète rcmd + Raycast
-
-**Mois 2 : Guide Pilier** (10 Outils Low-Tech macOS)
-- Cluster : macOS-Productivite
-- Type : Article viral (3000+ mots)
-- Justification : Consolide rcmd + Clop + Lunar + Cling, lead magnet newsletter
-
----
-
-**Note Screenshots** : 5 placeholders marqués pour screenshots à ajouter
-**Temps estimé screenshots** : 15 min sur Mac Mini M4
-
-**Statut** : ✅ Brouillon complet prêt
-**Prochaine étape** : Relecture + screenshots + publication

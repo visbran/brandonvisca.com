@@ -4,7 +4,7 @@ pubDatetime: "2025-11-27T00:00:00+00:00"
 description: "rcmd : switch entre apps en 1 touche (Right Cmd + lettre). Alternative Cmd+Tab gratuite, 10x plus rapide. Installation 2 min + config complète."
 tags:
   - macos
-  - productivité
+  - productivite
   - raccourcis
   - low-tech
   - outils-systeme
@@ -41,6 +41,8 @@ Bienvenue dans le monde de **rcmd**, l'outil qui va te faire oublier Cmd+Tab pou
 - Troubleshooting des problèmes courants
 
 Let's go ! 🚀
+
+## Table des matières
 
 ---
 
@@ -230,9 +232,9 @@ Maintenant Right Command + L = Launchpad.
 
 rcmd se combine parfaitement avec :
 
-- **[[raycast-macos-outil-productivite-ultime|Raycast]]** : Raycast pour les commandes, rcmd pour le switch d'apps
-- **[[ice-gestionnaire-barre-menu-macos|Ice]]** : Garde ta barre de menu propre pendant que rcmd tourne en arrière-plan
-- **[[iterm2-guide-configuration-macos-2025|iTerm2]]** : Right Command + I = iTerm2 instantané
+- **Raycast** : Raycast pour les commandes, rcmd pour le switch d'apps
+- **Ice** : Garde ta barre de menu propre pendant que rcmd tourne en arrière-plan
+- **iTerm2** : Right Command + I = iTerm2 instantané
 
 💡 **Mon workflow perso** :
 - Right Command + lettre = Switch apps (rcmd)
@@ -409,12 +411,12 @@ Puis réactive avec ta clé de licence.
 
 ### Si rcmd ne te convient pas, essaie :
 
-**1. [[raycast-macos-outil-productivite-ultime|Raycast]]** (launcher complet)
+**1. Raycast** (launcher complet)
 - Plus de features (snippets, extensions, AI)
 - Courbe d'apprentissage plus longue
 - Gratuit avec version Pro
 
-**2. [[alttab-macos-gestion-fenetres-windows]]** (Cmd+Tab amélioré)
+**2. AltTab** (Cmd+Tab amélioré)
 - Prévisualisation des fenêtres
 - Plus visuel que rcmd
 - Gratuit et open source
@@ -452,7 +454,7 @@ Puis réactive avec ta clé de licence.
 - Courbe d'apprentissage de 2-3 jours pour oublier Cmd+Tab
 - Pas de switch entre fenêtres d'une même app (utilise Cmd+` pour ça)
 
-**Mon verdict perso** : Je l'utilise **tous les jours depuis 6 mois**, et je ne reviendrais jamais en arrière. Combiné avec [[raycast-macos-outil-productivite-ultime|Raycast]] et [[ice-gestionnaire-barre-menu-macos|Ice]], c'est le trinity productivité macOS.
+**Mon verdict perso** : Je l'utilise **tous les jours depuis 6 mois**, et je ne reviendrais jamais en arrière. Combiné avec Raycast et Ice, c'est le trinity productivité macOS.
 
 **Temps d'adaptation** : 2-3 jours pour que tes doigts oublient Cmd+Tab. Après, c'est du velours.
 
@@ -462,10 +464,10 @@ Alors, prêt à switcher à la vitesse de la lumière ? 🚀
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS en machine de productivité]]** : Complémentaire à rcmd pour les commandes et snippets
-- **[[ice-gestionnaire-barre-menu-macos|Ice : Le gestionnaire de barre de menu gratuit pour macOS]]** : Garde ta barre de menu propre pendant que rcmd tourne
-- **[[iterm2-guide-configuration-macos-2025|iTerm2 : Guide complet configuration macOS]]** : Optimise ton terminal (que tu vas ouvrir avec Right Command + I)
-- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer rcmd et plein d'autres outils
+- **[Raycast : L'outil qui transforme macOS en machine de productivité](/raycast-macos-outil-productivite-ultime/)** : Complémentaire à rcmd pour les commandes et snippets
+- **[Ice : Le gestionnaire de barre de menu gratuit pour macOS](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)** : Garde ta barre de menu propre pendant que rcmd tourne
+- **[iTerm2 : Guide complet configuration macOS](/iterm2-guide-configuration-macos-2025/)** : Optimise ton terminal (que tu vas ouvrir avec Right Command + I)
+- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer rcmd et plein d'autres outils
 
 ---
 
@@ -476,95 +478,3 @@ Alors, prêt à switcher à la vitesse de la lumière ? 🚀
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 - [Download direct rcmd](https://lowtechguys.com/rcmd/#download)
 
----
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase** : rcmd mac alternative
-
-**Title** : 
-rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide
-(57 caractères)
-
-**Description** : 
-rcmd : switch entre apps en 1 touche (Right Cmd + lettre). Alternative Cmd+Tab gratuite, 10x plus rapide. Installation 2 min + config complète.
-(145 caractères) ✅
-
-**Mots-clés secondaires** :
-- alternative cmd tab mac
-- raccourci clavier macos
-- switch applications mac
-- rcmd installation
-
-**Densité mot-clé principal** : ~1.2% (cible : 1-2%) ✅
-
-**Liens internes** : 4 ✅
-1. Homebrew (installation)
-2. Raycast (comparaison)
-3. Ice (combo productivité)
-4. iTerm2 (workflow dev)
-
-**Liens externes** : 4
-1. Site officiel rcmd
-2. Low Tech Guys
-3. KeyCodes app
-4. Reddit annonce V3
-
-**Longueur** : ~2900 mots ✅
-**Temps de lecture** : ~8 minutes ✅
-
----
-
-## 🔄 Maillage inverse à effectuer
-
-### 1. [[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]
-- Ajouter dans la section "Alternatives et comparaisons"
-- Ancre suggérée : "Pour switcher entre apps ultra-rapidement, combine Raycast avec rcmd"
-
-### 2. [[ice-gestionnaire-barre-menu-macos|Ice : Le gestionnaire de barre de menu]]
-- Ajouter dans la section "Intégration avec votre setup"
-- Ancre suggérée : "rcmd pour switcher, Ice pour organiser : le combo productivité parfait"
-
-### 3. [[iterm2-guide-configuration-macos-2025|iTerm2 : Guide complet configuration macOS]]
-- Ajouter dans la section "Workflow développeur"
-- Ancre suggérée : "Ouvre iTerm2 instantanément avec rcmd (Right Command + I)"
-
-### 4. [[installation-homebrew-macos|Installation Homebrew sur macOS]]
-- Ajouter dans la section "Exemples d'apps à installer"
-- Ancre suggérée : "rcmd pour switcher entre apps d'une seule touche"
-
----
-
-## 📝 Articles complémentaires suggérés (série Low-Tech Guys)
-
-### Haute priorité - Semaines suivantes
-
-**1. Clop : Compresser images/vidéos automatiquement sur macOS**
-- Cluster : macOS-Productivite / Créativité
-- Difficulté : Débutant
-- Justification : Complément article WebP, besoin créateurs contenu
-
-**2. Lunar : Contrôler la luminosité de tes écrans externes sur macOS**
-- Cluster : macOS-Productivite / Outils Système
-- Difficulté : Intermédiaire
-- Justification : Problème frustrant, forte demande, compatible Mac Mini M4
-
-**3. Cling : La recherche de fichiers fuzzy qui enterre Spotlight**
-- Cluster : macOS-Productivite / Outils Système
-- Difficulté : Intermédiaire
-- Justification : Alternative Spotlight, workflow power user
-
-### Article pilier - Mois 2
-
-**4. 10 Outils Low-Tech Indispensables pour macOS (2025)**
-- Cluster : macOS-Productivite
-- Type : Guide exhaustif (article viral)
-- Justification : Consolide tous les articles Low-Tech, lead magnet newsletter
-
----
-
-**Note Screenshots** : 5 placeholders marqués pour screenshots à ajouter
-**Temps estimé screenshots** : 15 min sur Mac Mini M4
-
-**Statut** : ✅ Optimisé SEO Framework V4
-**Prochaine étape** : Relecture + screenshots + publication
