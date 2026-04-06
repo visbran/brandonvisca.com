@@ -9,6 +9,15 @@ tags:
   - linux
   - guide
   - debutant
+faqs:
+  - question: "Faut-il des compétences en Linux pour l'auto-hébergement ?"
+    answer: "Non. Chaque article est pensé pour débutants. Tu apprendras au fur et à mesure."
+  - question: "Ça coûte combien par mois ?"
+    answer: "Homelab : 0-30€/mois (électricité). VPS : 5-20€/mois. Combo : 15-25€/mois plus investissement matériel (~200-500€)."
+  - question: "C'est légal d'héberger ses propres services ?"
+    answer: "100% légal. Héberger tes données et streamer tes achats DVD légaux est parfaitement légal. Le piratage reste illégal."
+  - question: "Mes données sont-elles vraiment plus en sécurité chez moi ?"
+    answer: "Oui, plus qu'avec Google. Tes données ne sortent pas de chez toi, à condition de suivre les bonnes pratiques : firewall, backups, HTTPS."
 ---
 
 Tu en as marre de payer Google, Microsoft et Apple pour stocker tes photos de vacances ? Fatigué de voir tes données personnelles transformées en carburant publicitaire ? Envie de comprendre comment fonctionne vraiment un serveur ?

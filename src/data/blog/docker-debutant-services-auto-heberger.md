@@ -9,6 +9,15 @@ tags:
   - linux
   - guide
   - debutant
+faqs:
+  - question: "Docker vs LXC vs VM, quelle différence ?"
+    answer: "Docker : conteneurs applicatifs ultra-légers. LXC : conteneurs système (mini-VMs). VM : machine virtuelle complète avec OS, très lourd."
+  - question: "Mes conteneurs Docker utilisent beaucoup de RAM, c'est normal ?"
+    answer: "Docker alloue la RAM par conteneur. Solution : limiter la RAM par conteneur (mem_limit), utiliser des images alpine, ou fermer les services inutilisés."
+  - question: "Puis-je faire tourner Docker sur un Raspberry Pi ?"
+    answer: "Oui. Beaucoup d'images disponibles en architecture ARM. Services lourds (Jellyfin avec transcodage) limités, mais Nextcloud/Vaultwarden tournent parfaitement."
+  - question: "Comment migrer mes conteneurs Docker vers un autre serveur ?"
+    answer: "Arrêter les conteneurs (docker compose down), copier le dossier docker vers le nouveau serveur, relancer (docker compose up -d)."
 ---
 
 Tu as entendu parler de Docker partout. « C’est l’avenir », « Tous les devs l’utilisent », « Tu devrais apprendre Docker ».

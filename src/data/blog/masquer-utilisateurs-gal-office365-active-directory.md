@@ -9,6 +9,15 @@ tags:
   - active-directory
   - powershell
   - guide
+faqs:
+  - question: "Ma règle de synchronisation ne fonctionne pas !"
+    answer: "Vérifie que l'attribut msDS-cloudExtensionAttribute1 est bien configuré dans SSSD et que la formule IIF est correcte."
+  - question: "L'utilisateur apparaît toujours dans la GAL"
+    answer: "Attends que la synchro Delta soit complète (peut prendre plusieurs minutes). Teste aussi avec un autre utilisateur pour vérifier."
+  - question: "Je peux utiliser un autre attribut que msDS-cloudExtensionAttribute1 ?"
+    answer: "Oui, utilise msDS-cloudExtensionAttribute2 à 15, mais reste cohérent dans ta formule de synchronisation."
+  - question: "Ça marche avec les groupes aussi ?"
+    answer: "Oui, la même logique s'applique aux groupes Distribution avec l'attribut msExchHideFromAddressLists."
 ---
 
 Ah, la fameuse Liste d’Adresses Globale (GAL) d’Office 365… Tu sais, cette liste interminable où tous les utilisateurs de ton organisation s’affichent fièrement, même ceux que tu préférerais planquer dans un placard virtuel ?

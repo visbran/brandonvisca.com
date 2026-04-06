@@ -9,6 +9,15 @@ tags:
   - windows
   - guide
   - debutant
+faqs:
+  - question: "LocalWP est-il gratuit ?"
+    answer: "Oui, 100% gratuit sans version premium obligatoire ni limitations. Monétisé via intégrations avec hébergeurs."
+  - question: "LocalWP fonctionne-t-il sur Windows/Mac/Linux ?"
+    answer: "Oui, compatible Windows 10/11 (64-bit), macOS 10.15+ (Intel/Apple Silicon), et Linux (Debian/Ubuntu)."
+  - question: "Puis-je avoir plusieurs sites en parallèle ?"
+    answer: "Oui, autant que tu veux. Consommation ~200-300 Mo par site. La limite est la RAM de ton PC."
+  - question: "Comment migrer de LocalWP vers un hébergeur ?"
+    answer: "Utilise All-in-One WP Migration : export depuis LocalWP → fichier .wpress → import sur l'hébergement."
 ---
 
 Introduction

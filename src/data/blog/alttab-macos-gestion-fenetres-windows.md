@@ -9,6 +9,15 @@ tags:
   - guide
   - gestion-fenetres
   - alttab
+faqs:
+  - question: "AltTab est-il vraiment gratuit ?"
+    answer: "Oui, open-source, gratuit, sans version premium. Disponible sur GitHub releases ou via Homebrew."
+  - question: "AltTab fonctionne-t-il sur macOS Sequoia ?"
+    answer: "Oui, compatible avec toutes les versions macOS récentes. Test recommandé sur ta version spécifique."
+  - question: "La permission Screen Recording est-elle sûre à accorder ?"
+    answer: "Oui. AltTab est open-source (auditable sur GitHub), ne transmet rien en dehors de ton Mac."
+  - question: "AltTab ralentit-il mon Mac ?"
+    answer: "Non, très léger. Utilise peu de CPU/RAM sauf en mode grid avec beaucoup de fenêtres ouvertes."
 ---
 
 ---

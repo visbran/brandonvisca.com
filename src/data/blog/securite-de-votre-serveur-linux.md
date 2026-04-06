@@ -9,6 +9,15 @@ tags:
   - sysadmin
   - guide
   - hardening
+faqs:
+  - question: "Qu'est-ce que le durcissement d'un serveur sous Linux ?"
+    answer: "C'est l'ensemble des mesures de sécurité appliquées à un serveur pour minimiser les vulnérabilités : SSH durci, firewall, fail2ban, sysctl renforcés."
+  - question: "Comment désactiver la connexion SSH en tant que root et modifier le port ?"
+    answer: "Édite /etc/ssh/sshd_config : définis PermitRootLogin no et change le port 22 par un numéro personnalisé."
+  - question: "Comment limiter l'accès à su uniquement au groupe admin ?"
+    answer: "Crée un groupe admin et utilise dpkg-statoverride pour restreindre l'accès à /bin/su uniquement à ce groupe."
+  - question: "Qu'est-ce que DenyHosts et Fail2Ban ?"
+    answer: "DenyHosts et Fail2Ban sont des outils qui analysent les logs et bannissent automatiquement les IPs des attaques SSH et autres tentatives malveillantes."
 ---
 
 Dans ce guide pratique où nous allons renforcer ensemble la sécurité de votre serveur Linux. De l’installation de votre système à l’application des dernières mesures de sécurité, nous allons passer par toutes les étapes nécessaires pour rendre votre serveur aussi sûr que possible.

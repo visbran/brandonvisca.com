@@ -9,6 +9,15 @@ tags:
   - homebrew
   - guide
   - appcleaner
+faqs:
+  - question: "AppCleaner est-il vraiment gratuit ?"
+    answer: "Oui, 100% gratuit sans version premium. Le développeur accepte les donations mais l'app reste entièrement fonctionnelle."
+  - question: "AppCleaner supprime-t-il les malwares ?"
+    answer: "Non, AppCleaner est uniquement pour désinstaller les apps proprement. Utilise Malwarebytes pour les malwares."
+  - question: "AppCleaner fonctionne-t-il sur macOS Sequoia ?"
+    answer: "Oui, AppCleaner est compatible avec toutes les versions macOS récentes y compris Sequoia."
+  - question: "Quelle différence avec la suppression manuelle vers la corbeille ?"
+    answer: "La suppression manuelle laisse des traces dans Library. AppCleaner supprime tous les fichiers associés : préférences, caches, logs."
 ---
 
 TL;DR

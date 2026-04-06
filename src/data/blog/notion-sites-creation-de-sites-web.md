@@ -9,6 +9,13 @@ tags:
   - notion
   - no-code
   - guide
+faqs:
+  - question: "Quelle est la différence principale entre Notion Sites et WordPress ?"
+    answer: "Notion Sites se distingue par sa simplicité sans compétences techniques avancées, tandis que WordPress demande une courbe d'apprentissage plus longue."
+  - question: "Comment intégrer un domaine personnalisé à mon site Notion ?"
+    answer: "Tu peux associer ton domaine existant à ton site Notion depuis les paramètres Notion pour une présence web professionnelle."
+  - question: "Notion Sites est-il adapté pour la création de blogs professionnels ?"
+    answer: "Oui, Notion Sites offre des fonctionnalités CMS robustes pour créer et gérer des blogs professionnels avec aisance."
 ---
 
 ---

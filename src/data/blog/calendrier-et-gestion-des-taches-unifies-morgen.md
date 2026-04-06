@@ -9,6 +9,13 @@ tags:
   - morgen
   - guide
   - calendrier
+faqs:
+  - question: "Quelles sont les principales fonctionnalités de Morgen Calendar ?"
+    answer: "Intégration de calendriers, gestion de tâches, scheduling intelligent, gestion d'équipes, thèmes personnalisables."
+  - question: "Comment Morgen assure-t-il la sécurité des données ?"
+    answer: "Morgen applique une politique stricte de confidentialité et une protection avancée des données utilisateur."
+  - question: "Comment intégrer Morgen avec d'autres applications de gestion de tâches ?"
+    answer: "Morgen s'intègre avec Notion, Todoist, Google Calendar, Outlook, et Apple Calendar pour une synchronisation complète."
 ---
 
 ---

@@ -12,6 +12,15 @@ tags:
   - independance-numerique
   - guide
   - intermediaire
+faqs:
+  - question: "C'est compliqué de quitter Google ?"
+    answer: "Non, si tu sais ce qu'est un fichier ZIP, tu peux le faire. Les commandes Linux sont des copier-coller, aucun code à écrire."
+  - question: "C'est sécurisé d'auto-héberger ses données ?"
+    answer: "Plus que Google en fait. Tes données sont chez toi, pas dans un cloud scanné par des algos. Faut juste suivre les bonnes pratiques : firewall, backups, HTTPS."
+  - question: "Et si ça tombe en panne ?"
+    answer: "Tu restaures un backup. Ça prend 30 minutes. Avec une bonne configuration, c'est rare."
+  - question: "C'est légal d'auto-héberger ?"
+    answer: "100% légal. Héberger tes propres données est parfaitement légal. Streamer tes achats DVD sur Jellyfin est légal. Le piratage est illégal."
 ---
 
 TL;DR

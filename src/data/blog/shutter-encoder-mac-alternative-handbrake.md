@@ -9,6 +9,15 @@ tags:
   - multimedia
   - guide
   - ffmpeg
+faqs:
+  - question: "Shutter Encoder est-il vraiment gratuit ?"
+    answer: "Oui, 100% gratuit et open-source. Le développeur accepte les donations mais l'app reste entièrement fonctionnelle sans payer."
+  - question: "Shutter Encoder fonctionne-t-il sur M1/M2/M3 ?"
+    answer: "Oui, optimisé pour Apple Silicon avec hardware acceleration (VideoToolbox) et excellentes performances."
+  - question: "Puis-je encoder en AV1 avec Shutter Encoder ?"
+    answer: "Oui, Shutter Encoder supporte AV1 via FFmpeg. Attention : très lent à encoder, mais compression maximale, idéal pour l'archivage."
+  - question: "Quelle différence avec FFmpeg en ligne de commande ?"
+    answer: "Shutter Encoder est une interface graphique pour FFmpeg. Si tu maîtrises FFmpeg CLI, tu as plus de contrôle. Sinon, Shutter rend FFmpeg accessible."
 ---
 
 TL;DR

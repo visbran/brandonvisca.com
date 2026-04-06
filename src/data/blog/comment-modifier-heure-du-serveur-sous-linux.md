@@ -9,6 +9,13 @@ tags:
   - ntp
   - guide
   - configuration
+faqs:
+  - question: "Comment vérifier mon fuseau horaire actuel sous Linux ?"
+    answer: "Utilise timedatectl pour voir le fuseau horaire et l'état de la synchronisation NTP."
+  - question: "Comment lister tous les fuseaux horaires disponibles ?"
+    answer: "Tape timedatectl list-timezones ou explore le répertoire /usr/share/zoneinfo/"
+  - question: "Comment changer le fuseau horaire sous Ubuntu en utilisant le terminal ?"
+    answer: "Utilise timedatectl set-timezone Europe/Paris (remplace par ton fuseau horaire)."
 ---
 
 ---

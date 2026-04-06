@@ -9,6 +9,15 @@ tags:
   - homebrew
   - guide
   - wailbrew
+faqs:
+  - question: "WailBrew est-il gratuit ?"
+    answer: "Oui, 100% gratuit sans version premium."
+  - question: "WailBrew fonctionne-t-il sans Homebrew ?"
+    answer: "Non, WailBrew est juste une interface graphique pour Homebrew, qui doit déjà être installé."
+  - question: "Puis-je utiliser WailBrew ET Homebrew CLI ?"
+    answer: "Oui, ils fonctionnent parfaitement ensemble. WailBrew pour l'usage quotidien, Terminal pour les cas avancés."
+  - question: "WailBrew fonctionne-t-il sur Apple Silicon (M1/M2/M3) ?"
+    answer: "Oui, WailBrew est optimisé nativement pour Apple Silicon."
 ---
 
 TL;DR

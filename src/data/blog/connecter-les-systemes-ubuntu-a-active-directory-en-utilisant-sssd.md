@@ -9,6 +9,13 @@ tags:
   - active-directory
   - ubuntu
   - guide
+faqs:
+  - question: "Comment dépanner les problèmes de SSSD ?"
+    answer: "Vérifie systemctl status sssd et journalctl -u sssd pour les erreurs. Les problèmes courants : DNS mal configuré, certificats Kerberos, ou permissions."
+  - question: "Puis-je utiliser SSSD avec d'autres distributions Linux ?"
+    answer: "Oui, SSSD est compatible avec Debian, RedHat, CentOS. Les commandes d'installation diffèrent légèrement."
+  - question: "Comment assurer la création des répertoires personnels pour les utilisateurs AD ?"
+    answer: "Configure oddjob-mkhomedir avec pam-auth-update --enable mkhomedir pour créer automatiquement les home dirs à la première connexion."
 ---
 
 Introduction

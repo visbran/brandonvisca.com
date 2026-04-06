@@ -147,6 +147,9 @@ const showGrain = SITE.backdropEffects.grain;
       )
     }
 
+    <!-- Named slot for per-page extra <head> content (e.g. FAQPage JSON-LD) -->
+    <slot name="head" />
+
     <ClientRouter />
 
     <!-- Minimal inline script to prevent FOUC - sets theme immediately -->

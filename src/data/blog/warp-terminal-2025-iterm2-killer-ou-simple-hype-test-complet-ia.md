@@ -13,6 +13,15 @@ tags:
   - productivite
   - test
   - intermediaire
+faqs:
+  - question: "Warp remplace-t-il iTerm2 ?"
+    answer: "Warp est une excellente alternative à iTerm2 avec des features IA avancées, mais tu peux garder iTerm2 pour SSH prod et scripts automatisés."
+  - question: "Est-ce que mes données sont envoyées à OpenAI/Anthropic ?"
+    answer: "Warp utilise un mix de modèles (OpenAI, Anthropic Claude, Google Gemini), mais tu contrôles ce qui est envoyé via les paramètres de confidentialité."
+  - question: "Ça fonctionne offline ?"
+    answer: "L'Agent Mode requiert internet, mais le terminal fonctionne normalement sans connexion."
+  - question: "Compatibilité avec Oh My Zsh ?"
+    answer: "Warp détecte automatiquement ta config Oh My Zsh et l'importe, aucune reconfiguration nécessaire."
 ---
 
 Quand le terminal rencontre l’IA (et ça change tout)

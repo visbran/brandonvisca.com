@@ -31,6 +31,7 @@ const {
   timezone,
   tags,
   hideEditPost,
+  faqs,
 } = post.data;
 
 const { Content } = await render(post);
@@ -81,6 +82,25 @@ const nextPost =
 ---
 
 <Layout {...layoutProps}>
+  {faqs && faqs.length > 0 && (
+    <script
+      slot="head"
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map((faq: { question: string; answer: string }) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer,
+          },
+        })),
+      })}
+    />
+  )}
   <Header />
   {SITE.showBackButton && <Breadcrumb withBackButton currentLabel={title} />}
   <main

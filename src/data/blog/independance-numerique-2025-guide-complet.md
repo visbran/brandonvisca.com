@@ -13,6 +13,15 @@ tags:
   - vaultwarden
   - guide
   - debutant
+faqs:
+  - question: "Faut-il des compétences en Linux pour l'indépendance numérique ?"
+    answer: "Non, ça aide mais ce n'est pas obligatoire. Chaque guide est pensé pour débutants. Tu apprendras au fur et à mesure."
+  - question: "Ça coûte combien par mois ?"
+    answer: "Homelab physique : 0-30€/mois (électricité). VPS : 5-20€/mois. Combo : 15-25€/mois plus investissement initial matériel."
+  - question: "C'est légal d'héberger ses propres services ?"
+    answer: "100% légal. Héberger ses données et streamer ses achats DVD légaux est parfaitement légal. Le piratage reste illégal."
+  - question: "Mes données sont-elles vraiment plus en sécurité chez moi ?"
+    answer: "Plus qu'avec Google, oui. Tes données ne sortent pas de chez toi, à condition de suivre les bonnes pratiques : firewall, backups, HTTPS, mots de passe forts."
 ---
 
 🎯 TL;DR

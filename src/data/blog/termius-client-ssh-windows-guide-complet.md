@@ -9,6 +9,17 @@ tags:
   - ssh
   - guide
   - terminal
+faqs:
+  - question: "Termius fonctionne-t-il sur Linux ?"
+    answer: "Oui. Disponible en .deb (Ubuntu/Debian), .rpm (Fedora/Red Hat), Snap, et AppImage. L'intérêt est surtout si vous avez plusieurs OS et que vous voulez la synchronisation."
+  - question: "Peut-on utiliser Termius sans connexion Internet ?"
+    answer: "Oui pour les connexions SSH locales. Non pour la sync cloud et certaines features comme l'autocomplete avancé. Une fois vos serveurs configurés, vous pouvez bosser offline sans souci."
+  - question: "Termius remplace-t-il complètement un terminal classique ?"
+    answer: "Non. Termius est un client SSH, pas un terminal système local. Pour du dev local (compilation, git, scripts), vous utiliserez toujours PowerShell, CMD, ou Windows Terminal."
+  - question: "Y a-t-il une réduction étudiante ou open-source ?"
+    answer: "Oui pour les étudiants via le GitHub Student Developer Pack (accès gratuit à Termius Pro). Les projets open-source peuvent aussi bénéficier du programme 'Termius for Open Source'."
+  - question: "Puis-je importer mes sessions PuTTY dans Termius ?"
+    answer: "Pas directement, mais vous pouvez exporter vos sessions PuTTY depuis le registre Windows et utiliser un script de conversion, ou recréer vos connexions manuellement."
 ---
 
 Si vous utilisez encore **PuTTY** pour vous connecter en SSH à vos serveurs en 2025, cet article va vous faire gagner 30 minutes par jour. Non, ce n’est pas du clickbait. Termius, c’est ce qui se passe quand un client SSH rencontre le 21ème siècle : interface moderne, synchronisation cloud, gestion intelligente des clés… Bref, tout ce que PuTTY aurait dû devenir s’il n’était pas resté coincé en 1999.
