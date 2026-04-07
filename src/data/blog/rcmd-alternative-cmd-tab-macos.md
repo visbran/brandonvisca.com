@@ -29,22 +29,7 @@ faqs:
 
 ---
 
-## 📑 Table des matières
-
-1. [Introduction : Cmd+Tab, c'est 2005](#introduction-cmdtab-cest-2005)
-2. [TL;DR : rcmd en 30 secondes](#tldr-rcmd-en-30-secondes)
-3. [Qu'est-ce que rcmd ?](#quest-ce-que-rcmd)
-4. [Installation de rcmd](#installation-de-rcmd)
-5. [Configuration essentielle en 5 minutes](#configuration-essentielle-en-5-minutes)
-6. [Utilisation : Les bases en 3 exemples](#utilisation-les-bases-en-3-exemples)
-7. [Fonctionnalités avancées (pour aller plus loin)](#fonctionnalités-avancées-pour-aller-plus-loin)
-8. [rcmd vs les alternatives : Le match sans pitié](#rcmd-vs-les-alternatives-le-match-sans-pitié)
-9. [Cas d'usage concrets (comment je gagne 10 min/jour)](#cas-dusage-concrets-comment-je-gagne-10-minjour)
-10. [Troubleshooting : Les pièges à éviter](#troubleshooting-les-pièges-à-éviter)
-11. [Alternatives et comparaisons](#alternatives-et-comparaisons)
-12. [Conclusion : Faut-il adopter rcmd ?](#conclusion-faut-il-adopter-rcmd)
-13. [🔗 Articles connexes qui pourraient t'intéresser](#articles-connexes-qui-pourraient-tintéresser)
-14. [💡 Ressources utiles](#ressources-utiles)
+## Table des matières
 
 ## Introduction : Cmd+Tab, c'est 2005
 

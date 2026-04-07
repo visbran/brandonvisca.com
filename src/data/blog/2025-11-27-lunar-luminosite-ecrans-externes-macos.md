@@ -20,6 +20,8 @@ tags:
 
 ---
 
+## Table des matières
+
 ## Introduction : Le problème que macOS refuse de résoudre
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137439/brandonviscacom/42856_fftbdr.webp)
@@ -48,10 +50,6 @@ Bienvenue dans le monde de **Lunar**, l'app qui devrait être intégrée à macO
 - Compatibilité Mac Mini, M1/M2/M3/M4, moniteurs DDC
 
 Let's go ! 🚀
-
-## Table des matières
-
----
 
 ## Qu'est-ce que Lunar ?
 

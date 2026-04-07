@@ -32,16 +32,7 @@ La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s
 
 ---
 
-## 📑 Table des matières
-
-1. [TL;DR — Le comparatif en un coup d'œil](#tldr-le-comparatif-en-un-coup-dœil)
-2. [Pourquoi tu NE dois plus envoyer des credentials par email](#pourquoi-tu-ne-dois-plus-envoyer-des-credentials-par-email)
-3. [Password.link — Le plus complet pour les équipes](#passwordlink-le-plus-complet-pour-les-équipes)
-4. [OneTimeSecret — Le vétéran open source](#onetimesecret-le-vétéran-open-source)
-5. [PrivateBin — Le choix des self-hosters](#privatebin-le-choix-des-self-hosters)
-6. [Le verdict : qui doit utiliser quoi ?](#le-verdict-qui-doit-utiliser-quoi)
-7. [FAQ](#faq)
-8. [Conclusion](#conclusion)
+## Table des matières
 
 ## TL;DR — Le comparatif en un coup d'œil
 

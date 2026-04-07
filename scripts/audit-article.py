@@ -33,10 +33,8 @@ PENDING_MERGE = {
 
 FAQ_PLACEHOLDERS = {"", "Question fréquente 1 ?", "Question fréquente 2 ?", "Réponse détaillée"}
 
-TOC_HEADING_RE = re.compile(
-    r"^##\s+(?:📑\s*)?(?:Table des matières|Sommaire|Table of contents)\s*$",
-    re.MULTILINE | re.IGNORECASE,
-)
+# Correspondance exacte avec la config remark-toc (astro.config.ts : heading: "Table des matières")
+TOC_HEADING_RE = re.compile(r"^##\s+Table des matières\s*$", re.MULTILINE)
 ACCENTED_TAGS = {
     "productivité": "productivite",
     "vidéos": "multimedia",
@@ -212,32 +210,46 @@ TOC_MIN_H2 = 4  # seuil à partir duquel une TOC est recommandée
 
 
 def audit_toc(body: str, issues: list):
-    """Vérifie la table des matières : suggère si absente sur article long, valide si présente."""
+    """
+    Vérifie la table des matières.
+
+    Format attendu (remark-toc + remark-collapse, astro.config.ts) :
+      ## Table des matières
+    Le plugin génère automatiquement le contenu — pas d'items manuels.
+    """
     toc_match = TOC_HEADING_RE.search(body)
+
+    # Détecter les TOC non conformes (emoji, autre titre)
+    nonconform_re = re.compile(
+        r"^##\s+(?:📑\s*)?(?:Table des matières|Sommaire|Table of contents)\s*$",
+        re.MULTILINE | re.IGNORECASE,
+    )
+    nonconform_match = nonconform_re.search(body)
+
+    if nonconform_match and not toc_match:
+        issues.append({"type": "error", "cat": "toc",
+                       "msg": "Table des matières non conforme (emoji ou titre alternatif) — "
+                              "utiliser exactement `## Table des matières` (sans emoji) pour que remark-toc fonctionne"})
+        return
 
     if not toc_match:
         h2_count = len(re.findall(r"^##\s+", body, re.MULTILINE))
         if h2_count >= TOC_MIN_H2:
             issues.append({"type": "info", "cat": "toc",
                            "msg": f"Pas de table des matières — article avec {h2_count} sections H2 "
-                                  f"(recommandé dès {TOC_MIN_H2})"})
+                                  f"(recommandé dès {TOC_MIN_H2}) — ajouter `## Table des matières`"})
         return
 
+    # TOC conforme trouvée — vérifier qu'il n'y a pas d'items manuels (remark-toc les génère)
     toc_start = toc_match.end()
     next_h = re.search(r"^##\s+", body[toc_start:], re.MULTILINE)
     toc_body = body[toc_start: toc_start + next_h.start()] if next_h else body[toc_start:]
 
-    # Wiki-links dans la TOC
-    wiki_in_toc = re.findall(r"\[\[[^\]]+\]\]", toc_body)
-    if wiki_in_toc:
-        issues.append({"type": "error", "cat": "toc",
-                       "msg": f"Table des matières : {len(wiki_in_toc)} wiki-link(s) non convertis"})
-        return
-
-    toc_anchors = re.findall(r"\(#[\w%.-]+\)", toc_body)
-    if not toc_anchors:
+    manual_items = re.findall(r"^\s*[\d*-]+\.?\s+\[", toc_body, re.MULTILINE)
+    if manual_items:
         issues.append({"type": "warning", "cat": "toc",
-                       "msg": "Table des matières sans ancres `(#anchor)` — vérifier le format des liens"})
+                       "msg": f"Table des matières avec {len(manual_items)} item(s) manuels — "
+                              "supprimer : remark-toc génère le contenu automatiquement"})
 
 
 def audit_tags(fm_raw: str, issues: list):

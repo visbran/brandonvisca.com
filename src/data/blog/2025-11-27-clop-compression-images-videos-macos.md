@@ -18,6 +18,8 @@ tags:
 
 ---
 
+## Table des matières
+
 ## Introduction : Le drame des fichiers trop lourds
 
 <video controls autoplay loop muted playsinline>
@@ -51,10 +53,6 @@ Bienvenue dans le monde de **Clop**, l'optimiseur magique qui va te faire gagner
 - Alternatives et comparaisons (ImageOptim, TinyPNG, etc.)
 
 Let's go ! 🚀
-
-## Table des matières
-
----
 
 ## Qu'est-ce que Clop ?
 

@@ -21,8 +21,6 @@ Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environn
 
 ## Table des matières
 
----
-
 ## TL;DR
 
 | Critère | Gen1 (BIOS) | Gen2 (UEFI) | Gagnant |

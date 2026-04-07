@@ -34,16 +34,7 @@ Spoiler : Yopass pour 80% des cas. Mais ça dépend de ton contexte.
 
 ---
 
-## 📑 Table des matières
-
-1. [TL;DR — Tableau comparatif](#tldr-tableau-comparatif)
-2. [Le vrai problème : pourquoi Slack et email c'est une mauvaise idée](#le-vrai-problème-pourquoi-slack-et-email-cest-une-mauvaise-idée)
-3. [Yopass : la solution minimaliste qui fait le job](#yopass-la-solution-minimaliste-qui-fait-le-job)
-4. [PrivateBin : le champion du zero-knowledge](#privatebin-le-champion-du-zero-knowledge)
-5. [Password Pusher : l'option pour les équipes](#password-pusher-loption-pour-les-équipes)
-6. [Le verdict : qui pour qui ?](#le-verdict-qui-pour-qui)
-7. [FAQ](#faq)
-8. [Conclusion](#conclusion)
+## Table des matières
 
 ## TL;DR — Tableau comparatif
 

@@ -30,20 +30,7 @@ faqs:
 
 ---
 
-## 📑 Table des matières
-
-1. [Introduction : La Guerre des Launchers](#introduction-la-guerre-des-launchers)
-2. [Vue d'Ensemble : Les 3 Launchers en Bref](#vue-densemble-les-3-launchers-en-bref)
-3. [Tableau Comparatif Global](#tableau-comparatif-global)
-4. [Comparatif Détaillé : 12 Rounds](#comparatif-détaillé-12-rounds)
-5. [Prix Détaillé : Le Vrai Coût](#prix-détaillé-le-vrai-coût)
-6. [Verdict par Profil Utilisateur](#verdict-par-profil-utilisateur)
-7. [Migration : Comment Passer de X à Y](#migration-comment-passer-de-x-à-y)
-8. [Mon Verdict Personnel (Mac Mini M4)](#mon-verdict-personnel-mac-mini-m4)
-9. [FAQ : Questions Fréquentes](#faq-questions-fréquentes)
-10. [Conclusion : Le Verdict Final](#conclusion-le-verdict-final)
-11. [🔗 Articles Connexes](#articles-connexes)
-12. [💡 Ressources Utiles](#ressources-utiles)
+## Table des matières
 
 ## Introduction : La Guerre des Launchers
 

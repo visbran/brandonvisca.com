@@ -27,18 +27,7 @@ faqs:
 
 Tu en as marre qu'Android File Transfer plante toutes les 5 minutes ? J'ai testé OpenMTP et MacDroid pendant 90 jours sur mon MacBook M1. Spoiler : OpenMTP gratuit explose Android File Transfer sur tous les tableaux. Voici pourquoi.
 
-## 📑 Table des matières
-
-1. [🎯 TL;DR : Le verdict en 30 secondes](#tldr-le-verdict-en-30-secondes)
-2. [Mon contexte (pourquoi tu peux me croire)](#mon-contexte-pourquoi-tu-peux-me-croire)
-3. [Le problème avec Android File Transfer](#le-problème-avec-android-file-transfer)
-4. [Alternative 1 : OpenMTP (Le gagnant 🏆)](#alternative-1-openmtp-le-gagnant)
-5. [Alternative 2 : MacDroid (Le premium)](#alternative-2-macdroid-le-premium)
-6. [Le verdict final : Qui pour qui ?](#le-verdict-final-qui-pour-qui)
-7. [Installation OpenMTP en 5 minutes](#installation-openmtp-en-5-minutes)
-8. [🚨 Problèmes courants et solutions](#problèmes-courants-et-solutions)
-9. [FAQ : Les questions que tu te poses](#faq-les-questions-que-tu-te-poses)
-10. [🎬 Conclusion : Pourquoi OpenMTP est mon choix](#conclusion-pourquoi-openmtp-est-mon-choix)
+## Table des matières
 
 ## 🎯 TL;DR : Le verdict en 30 secondes
 

@@ -22,8 +22,6 @@ La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline v
 
 ## Table des matières
 
----
-
 ## 📋 Prérequis
 
 - **VM arrêtée** (pas en veille, arrêtée proprement)

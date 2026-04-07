@@ -33,24 +33,7 @@ La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline v
 
 ---
 
-## 📑 Table des matières
-
-1. [📋 Prérequis](#prérequis)
-2. [🧩 Ce qui se passe vraiment](#ce-qui-se-passe-vraiment)
-3. [1️⃣ Créer le nouveau disque OS (sur l'hôte Hyper-V)](#1-créer-le-nouveau-disque-os-sur-lhôte-hyper-v)
-4. [2️⃣ Reconfigurer la VM](#2-reconfigurer-la-vm)
-5. [3️⃣ Démarrer en WinPE](#3-démarrer-en-winpe)
-6. [4️⃣ Initialiser le nouveau disque (DiskPart)](#4-initialiser-le-nouveau-disque-diskpart)
-7. [5️⃣ Assigner une lettre à l'ancien disque OS](#5-assigner-une-lettre-à-lancien-disque-os)
-8. [6️⃣ Copier l'OS en offline (robocopy)](#6-copier-los-en-offline-robocopy)
-9. [7️⃣ Reconstruire le boot UEFI](#7-reconstruire-le-boot-uefi)
-10. [8️⃣ Préparer le redémarrage](#8-préparer-le-redémarrage)
-11. [9️⃣ Premier démarrage et vérifications](#9-premier-démarrage-et-vérifications)
-12. [✅ Validation finale](#validation-finale)
-13. [🧹 Nettoyage final](#nettoyage-final)
-14. [🚨 Problèmes courants](#problèmes-courants)
-15. [🎬 Conclusion](#conclusion)
-16. [❓ FAQ](#faq)
+## Table des matières
 
 ## 📋 Prérequis
 

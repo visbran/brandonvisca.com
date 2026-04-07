@@ -21,8 +21,6 @@ La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s
 
 ## Table des matières
 
----
-
 ## TL;DR — Le comparatif en un coup d'œil
 
 | Critère | Password.link | OneTimeSecret | PrivateBin |

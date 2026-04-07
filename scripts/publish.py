@@ -60,10 +60,8 @@ FAQ_PLACEHOLDERS = {"", "Question fréquente 1 ?", "Question fréquente 2 ?", "R
 
 TOC_MIN_H2 = 4  # seuil à partir duquel une TOC est recommandée
 
-TOC_HEADING_RE = re.compile(
-    r"^##\s+(?:📑\s*)?(?:Table des matières|Sommaire|Table of contents)\s*$",
-    re.MULTILINE | re.IGNORECASE,
-)
+# Correspondance exacte avec la config remark-toc (astro.config.ts : heading: "Table des matières")
+TOC_HEADING_RE = re.compile(r"^##\s+Table des matières\s*$", re.MULTILINE)
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -274,21 +272,24 @@ def validate(fm: dict, slug: str, body: str = "") -> list[dict]:
 
     # ── Table des matières ────────────────────────────────────────────────────
     if body:
+        # TOC : remark-toc attend exactement "## Table des matières" (sans emoji, sans items)
+        nonconform_toc_re = re.compile(
+            r"^##\s+(?:📑\s*)?(?:Table des matières|Sommaire|Table of contents)\s*$",
+            re.MULTILINE | re.IGNORECASE,
+        )
         toc_match = TOC_HEADING_RE.search(body)
-        if not toc_match:
+        nonconform_toc = nonconform_toc_re.search(body) if not toc_match else None
+
+        if nonconform_toc:
+            issues.append({"type": "error",
+                           "msg": "Table des matières non conforme (emoji/titre alternatif) — "
+                                  "utiliser `## Table des matières` exact pour que remark-toc fonctionne"})
+        elif not toc_match:
             h2_count = len(re.findall(r"^##\s+", body, re.MULTILINE))
             if h2_count >= TOC_MIN_H2:
                 issues.append({"type": "info",
                                "msg": f"Pas de table des matières — article avec {h2_count} sections H2 "
-                                      f"(recommandé dès {TOC_MIN_H2})"})
-        if toc_match:
-            toc_start = toc_match.end()
-            next_h = re.search(r"^##\s+", body[toc_start:], re.MULTILINE)
-            toc_body = body[toc_start: toc_start + next_h.start()] if next_h else body[toc_start:]
-            toc_anchors = re.findall(r"\(#[\w%.-]+\)", toc_body)
-            if not toc_anchors:
-                issues.append({"type": "warning",
-                               "msg": "Table des matières sans ancres `(#anchor)` — vérifier le format des liens"})
+                                      f"(recommandé dès {TOC_MIN_H2}) — ajouter `## Table des matières`"})
 
     return issues
 

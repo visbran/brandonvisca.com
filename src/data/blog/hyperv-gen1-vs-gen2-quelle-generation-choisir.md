@@ -33,17 +33,7 @@ Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environn
 
 ---
 
-## 📑 Table des matières
-
-1. [TL;DR](#tldr)
-2. [C'est quoi la différence concrète ?](#cest-quoi-la-différence-concrète)
-3. [Hyper-V Gen1 : test complet](#hyper-v-gen1-test-complet)
-4. [Hyper-V Gen2 : test complet](#hyper-v-gen2-test-complet)
-5. [Le verdict : qui pour qui ?](#le-verdict-qui-pour-qui)
-6. [Compatibilité OS par génération](#compatibilité-os-par-génération)
-7. [Un point sur Secure Boot en Gen2](#un-point-sur-secure-boot-en-gen2)
-8. [FAQ](#faq)
-9. [🎬 Conclusion](#conclusion)
+## Table des matières
 
 ## TL;DR
 

@@ -18,6 +18,8 @@ draft: true
 
 ---
 
+## Table des matières
+
 ## Introduction : Spotlight, c'est bien... pour 2010
 
 **Le problème** : Tu cherches ce fichier `docker-compose.yaml` que tu as modifié hier. Tu tapes "docker compose" dans Spotlight.
@@ -44,10 +46,6 @@ Bienvenue dans le monde de **Cling**, l'outil de recherche fuzzy qui va te faire
 - Différences avec Spotlight, Raycast, Alfred, Find Any File
 
 Let's go ! 🚀
-
-## Table des matières
-
----
 
 ## TL;DR : Cling en 30 secondes
 

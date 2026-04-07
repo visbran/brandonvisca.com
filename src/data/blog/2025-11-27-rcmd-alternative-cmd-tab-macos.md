@@ -17,6 +17,8 @@ draft: true
 
 ---
 
+## Table des matières
+
 ## Introduction : Cmd+Tab, c'est 2005
 
 Soyons honnêtes deux secondes : **Cmd+Tab sur macOS, c'est pratique, mais c'est lent**. 
@@ -41,10 +43,6 @@ Bienvenue dans le monde de **rcmd**, l'outil qui va te faire oublier Cmd+Tab pou
 - Troubleshooting des problèmes courants
 
 Let's go ! 🚀
-
-## Table des matières
-
----
 
 ## TL;DR : rcmd en 30 secondes
 

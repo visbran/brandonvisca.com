@@ -12,38 +12,8 @@ tags:
 ---
 
 ---
+
 ## Table des matières
-
-
-- [Installation d’iTerm2 : Les bonnes méthodes](#installation-di-term-2-les-bonnes-methodes-installation-iterm-2)
-  - [Méthode recommandée : Homebrew (pour les pros)](#methode-recommandee-homebrew-pour-les-pros)
-  - [Méthode manuelle : Old school mais efficace](#methode-manuelle-old-school-mais-efficace)
-- [Configuration de base : Les indispensables](#configuration-de-base-les-indispensables-configuration-base)
-  - [Thèmes et couleurs qui claquent](#themes-et-couleurs-qui-claquent-themes-couleurs)
-  - [Polices : Fini les caractères illisibles](#polices-fini-les-caracteres-illisibles-polices-lisibles)
-  - [Raccourcis clavier : Votre nouvelle routine](#raccourcis-clavier-votre-nouvelle-routine-raccourcis-clavier)
-- [Personnalisation avancée : On passe au niveau supérieur](#personnalisation-avancee-on-passe-au-niveau-superieur-personnalisation-avancee)
-  - [Oh My Zsh : Le couteau suisse du terminal](#oh-my-zsh-le-couteau-suisse-du-terminal-oh-my-zsh)
-  - [Plugins qui changent la vie](#plugins-qui-changent-la-vie-plugins-utiles)
-      - [Les essentiels](#les-essentiels)
-      - [Installation des plugins communautaires](#installation-des-plugins-communautaires)
-      - [Les plugins de niche (mais utiles)](#les-plugins-de-niche-mais-utiles)
-  - [Prompt personnalisé : Votre signature](#prompt-personnalise-votre-signature-prompt-personnalise)
-- [Tips de pro et configuration ultime](#tips-de-pro-et-configuration-ultime-tips-pro)
-  - [Le hotkey window : Votre terminal toujours accessible](#le-hotkey-window-votre-terminal-toujours-accessible)
-  - [Profils multiples : Un terminal pour chaque contexte](#profils-multiples-un-terminal-pour-chaque-contexte)
-  - [Synchronisation cloud](#synchronisation-cloud)
-  - [Sessions et restauration](#sessions-et-restauration)
-- [Un terminal propre mérite une barre de menu organisée](#un-terminal-propre-merite-une-barre-de-menu-organisee)
-- [Conclusion : Votre terminal de guerre est prêt](#conclusion-votre-terminal-de-guerre-est-pret-conclusion)
-  - [Le récap des indispensables :](#le-recap-des-indispensables)
-  - [Et maintenant ?](#et-maintenant)
-  - [Ressources utiles :](#ressources-utiles)
-
----
-Term2 sur macOS : Le Guide Complet d'Installation et Configuration (2025)
-
-Vous en avez marre du Terminal par défaut de macOS qui manque de fonctionnalités ? iTerm2 est LA solution qui va transformer votre expérience en ligne de commande. Dans ce guide, nous allons voir ensemble comment installer, configurer et optimiser iTerm2 pour booster votre productivité de développeur.
 
 ## Qu'est-ce qu'iTerm2 et pourquoi l'adopter ?
 

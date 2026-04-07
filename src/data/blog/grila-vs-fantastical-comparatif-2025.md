@@ -30,19 +30,7 @@ faqs:
 
 ---
 
-## 📑 Table des matières
-
-1. [Introduction : Le dilemme du calendrier macOS](#introduction-le-dilemme-du-calendrier-macos)
-2. [TL;DR : Mon verdict après analyse](#tldr-mon-verdict-après-analyse)
-3. [Mon contexte : Pourquoi tu peux me croire](#mon-contexte-pourquoi-tu-peux-me-croire)
-4. [Grila : Test complet après 6 mois](#grila-test-complet-après-6-mois)
-5. [Fantastical : Analyse détaillée](#fantastical-analyse-détaillée)
-6. [Le verdict : Qui pour qui ?](#le-verdict-qui-pour-qui)
-7. [Bonus : 3e option (Raycast Calendar)](#bonus-3e-option-raycast-calendar)
-8. [Installation de Grila (si tu choisis cette option)](#installation-de-grila-si-tu-choisis-cette-option)
-9. [FAQ](#faq)
-10. [Ressources utiles](#ressources-utiles)
-11. [Conclusion : Mon verdict final](#conclusion-mon-verdict-final)
+## Table des matières
 
 ## Introduction : Le dilemme du calendrier macOS
 
