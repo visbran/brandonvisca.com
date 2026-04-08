@@ -7,113 +7,92 @@ tags:
   - lunar
   - low-tech
 ---
+# Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)
+
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
+*Légende : Interface Clop - compression automatique en arrière-plan*
 
 ---
 
-# Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)
+## Introduction : Le drame des fichiers trop lourds
 
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 
+On connaît tous cette situation frustrante :
 
+Tu prends un screenshot sur ton Mac. 3840x2160 pixels, **8 Mo**. Tu veux l'envoyer par email ou Slack.
 
+**"Fichier trop volumineux."**
 
+Alors tu ouvres Photoshop, ou Preview, tu exportes en qualité réduite, tu attends, tu re-testes... **5 minutes perdues** pour un simple screenshot.
 
+Et si je te disais qu'il existe un outil qui **compresse automatiquement** tout ce que tu copies dans ton clipboard, **sans que tu aies à faire quoi que ce soit** ?
 
----
+**Le pitch** :
+- Tu fais un screenshot → Clop le compresse instantanément
+- Tu copies une image → Clop l'optimise en arrière-plan
+- Tu enregistres un screencast → Clop réduit la vidéo de 90% automatiquement
 
-## Table des matières
+**Résultat** : Tes fichiers passent de 8 Mo à 800 Ko. **Qualité visuelle identique**. Zéro effort de ta part.
 
-## Introduction : Le problème que macOS refuse de résoudre
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137439/brandonviscacom/42856_fftbdr.webp)
-
-**La situation** : Tu as un Mac Mini, ou un MacBook connecté à un écran externe. Il fait nuit. Ton écran te brûle les yeux avec ses 100% de luminosité.
-
-**Ce que tu veux faire** : Baisser la luminosité avec les touches F1/F2, comme sur ton MacBook.
-
-**Ce qui se passe** : Rien. Absolument rien. Les touches brightness ne font rien sur un écran externe.
-
-**Ta seule option** : Te lever, fouiller dans le menu OSD de ton écran (ce joystick pourri au dos du moniteur), naviguer dans 3 sous-menus, ajuster la luminosité, refaire ça 5 fois par jour quand la lumière change.
-
-**Résultat** : Tu finis par ne plus jamais ajuster la luminosité. Tes yeux souffrent. Ta productivité chute.
-
-**Le drame** : Apple vend le Mac Mini sans écran, mais refuse d'implémenter un contrôle basique de la luminosité externe. C'est absurde.
-
-Et si je te disais qu'il existe **une app qui résout ce problème** de façon native, en utilisant le **protocole DDC** pour communiquer directement avec ton écran ?
-
-Bienvenue dans le monde de **Lunar**, l'app qui devrait être intégrée à macOS mais ne le sera jamais.
+Bienvenue dans le monde de **Clop**, l'optimiseur magique qui va te faire gagner des heures (et des gigas de stockage).
 
 💡 **Ce que tu vas apprendre dans ce guide** :
-- Installer Lunar en 5 minutes (gratuit pour les features essentielles)
-- Contrôler la luminosité avec F1/F2 comme un MacBook
-- Synchroniser la luminosité de tous tes écrans automatiquement
-- Modes avancés : Location, Sensor, Clock, BlackOut
-- Compatibilité Mac Mini, M1/M2/M3/M4, moniteurs DDC
+- Installer Clop en 2 minutes (gratuit jusqu'à 5 fichiers/session)
+- Configuration pour compression automatique clipboard
+- Optimiser images, vidéos, PDFs et GIFs
+- Intégration avec CleanShot X, Shottr, Dropzone
+- Alternatives et comparaisons (ImageOptim, TinyPNG, etc.)
 
 Let's go ! 🚀
 
-## Qu'est-ce que Lunar ?
+## Table of content
 
-**Lunar**, c'est l'app macOS développée par [Low Tech Guys](https://lowtechguys.com/) qui contrôle **nativement** la luminosité, le contraste, le volume et les inputs de tes écrans externes.
 
+---
+
+## Qu'est-ce que Clop ?
+
+**Clop** (de "Clipboard Optimizer"), c'est un outil développé par [Low Tech Guys](https://lowtechguys.com/) qui optimise automatiquement **images, vidéos, PDFs et contenus clipboard** sur macOS.
+
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 ### Le concept en une phrase
 
-**Control the real brightness of any monitor, even on Apple Silicon.**
+**Copy large, paste small, send fast.**
 
-Contrairement aux apps qui ajoutent un overlay noir semi-transparent (fake dimming), Lunar utilise le **protocole DDC** (Display Data Channel) pour envoyer des commandes directement au moniteur. C'est le vrai contrôle hardware.
+Dès que tu copies une image ou fais un screenshot, Clop la compresse en arrière-plan. Quand tu colles, c'est la version optimisée qui arrive. Transparent. Automatique. Magique.
 
-### Pourquoi c'est révolutionnaire ?
+### Pourquoi c'est génial ?
 
-✅ **Contrôle hardware natif** : Ajuste la vraie luminosité du moniteur (pas un overlay software)
-✅ **Touches F1/F2 fonctionnent** : Comme sur un MacBook, enfin !
-✅ **Synchronisation multi-écrans** : Tous tes écrans s'adaptent ensemble
-✅ **Compatible Apple Silicon** : M1/M2/M3/M4 fully supporté (DDC via GPU)
-✅ **Modes adaptatifs** : Luminosité automatique selon l'heure, le soleil, ou un capteur
+✅ **Compression automatique** : Tu ne touches à rien, Clop bosse en arrière-plan
+✅ **Qualité préservée** : Algorithmes intelligents (pngquant, mozjpeg, etc.)
+✅ **Multi-formats** : PNG, JPEG, HEIC, GIF, MP4, MOV, PDF
+✅ **Apple Silicon optimisé** : Utilise le Media Engine chip (M1/M2/M3/M4)
+✅ **Gratuit** : Jusqu'à 5 fichiers/session (largement suffisant pour la plupart)
 
 ### Les chiffres qui parlent
 
-- **+100 000 téléchargements** depuis 2018
-- **Note 4.7/5** sur Product Hunt
-- **Compatible** : macOS 11+ (Big Sur → Sequoia)
-- **Open source partiel** : Features gratuites open sur GitHub
-- **Développement actif** : Updates mensuelles
+**Réductions moyennes constatées** :
+- **Screenshots PNG** : 8 Mo → 800 Ko (90% de réduction)
+- **Screencasts MOV** : 50 Mo → 5 Mo (90% de réduction)
+- **Photos JPEG** : 5 Mo → 1 Mo (80% de réduction)
+- **PDFs** : 10 Mo → 2 Mo (80% de réduction)
+
+**Qualité** : Perte visuelle imperceptible à l'œil nu dans 95% des cas.
 
 ---
 
-## DDC, c'est quoi ? (Explication simple)
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136577/brandonviscacom/CleanShot_2025-12-07_at_20.42.27_2x_ghmfgm.webp)
-
-**DDC** = Display Data Channel
-
-C'est un protocole qui permet à ton Mac de **communiquer avec ton moniteur** via le câble HDMI/DisplayPort/USB-C.
-
-**Analogie** : C'est comme une ligne téléphonique entre ton Mac et ton écran.
-
-**Ce que ça permet** :
-- `set brightness to 30%` → Le moniteur ajuste sa luminosité à 30%
-- `set volume to 50%` → Le moniteur ajuste son volume à 50%
-- `switch input to HDMI 2` → Le moniteur switch vers HDMI 2
-
-**Pourquoi Apple ne le supporte pas nativement** : Mystère complet. Windows le fait depuis 15 ans. macOS refuse.
-
-**La bonne nouvelle** : Lunar contourne ça en utilisant des APIs privées macOS + communication I²C avec le GPU.
-
-💡 **Note technique** : Sur Apple Silicon (M1+), Lunar utilise le GPU pour communiquer via I²C. Sur Intel, c'est via IOFramebuffer. Les deux fonctionnent parfaitement.
-
----
-
-## Installation de Lunar : 3 méthodes
+## Installation de Clop : 3 méthodes
 
 ### Méthode 1 : Homebrew (recommandée)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136361/brandonviscacom/CleanShot_2025-12-07_at_20.38.58_2x_v83vu2.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131079/brandonviscacom/CleanShot_2025-12-07_at_19.08.07_2x_ylt3yj.webp)
 
-
-Si tu as Homebrew ([sinon, installe-le ici](https://brandonvisca.com/installation-homebrew-macos/)) :
+Si tu as Homebrew installé ([sinon, va lire mon guide Homebrew](https://brandonvisca.com/installation-homebrew-macos/)) :
 
 ```bash
 # Installation en une ligne
-brew install --cask lunar
+brew install --cask clop
 ```
 
 **Avantages** :
@@ -121,866 +100,555 @@ brew install --cask lunar
 - Désinstallation propre
 - Gestion centralisée
 
-⚠️ **Pas encore Homebrew ?** → Guide installation Homebrew macOS
+⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
 
 ---
 
-### Méthode 2 : Download direct
+### Méthode 3 : Installation manuelle
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136623/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_pvjsgm.jpg)
-
-1. **Télécharge Lunar** : [lunar.fyi](https://lunar.fyi/)
-2. **Glisse `Lunar.app` dans `/Applications`**
+1. **Télécharge Clop** : [lowtechguys.com/clop](https://lowtechguys.com/clop/)
+2. **Glisse `Clop.app` dans `/Applications`**
 3. **Premier lancement** : Clic droit > Ouvrir
-4. **Autorise les permissions** : Accessibilité
+4. **Autorise les permissions** : Accessibilité + Enregistrement écran (si vidéos)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282044/brandonviscacom/CleanShot_2025-12-09_at_12.55.15_2x_oy3b3j.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131528/brandonviscacom/CleanShot_2025-12-07_at_19.17.08_2x_ljkmyp.webp)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282051/brandonviscacom/CleanShot_2025-12-09_at_12.55.29_2x_zmeuvp.webp)
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282062/brandonviscacom/CleanShot_2025-12-09_at_12.57.22_2x_tyz6d5.jpg)
-
+💡 **Astuce** : Active "Lancer au démarrage" dans les préférences. Clop doit tourner en permanence pour être efficace.
 
 ---
 
-### Méthode 3 : Compilation source (devs uniquement)
+## Configuration essentielle en 5 minutes
 
-```bash
-# Clone le repo GitHub
-git clone https://github.com/alin23/Lunar.git
-cd Lunar
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131553/brandonviscacom/CleanShot_2025-12-07_at_19.17.25_2x_nl8u7q.jpg)
 
-# Compile avec Xcode
-xcodebuild -project Lunar.xcodeproj -scheme Lunar
-```
+### Première utilisation : Setup de base
 
-⚠️ **Note** : Les features Pro sont encryptées dans le code source. Tu auras la version gratuite.
+Au premier lancement, Clop te demande :
 
----
+1. **Accessibilité** : Autoriser pour surveiller le clipboard
+2. **Enregistrement écran** (optionnel) : Pour optimiser les screencasts automatiquement
+3. **Mode d'optimisation** : Automatique (recommandé) vs Manuel
 
-## Configuration essentielle en 10 minutes
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131983/brandonviscacom/CleanShot_2025-12-07_at_19.24.17_2x_wvwlkl.webp)
 
-### Première utilisation : Setup guidé
-
-Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
-
-1. **Test DDC** : Lunar vérifie si tes écrans supportent DDC
-2. **Mode recommandé** : Manual (le plus simple pour commencer)
-3. **Raccourcis clavier** : F1/F2 pour brightness, F10/F11/F12 pour volume
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282127/brandonviscacom/CleanShot_2025-12-09_at_12.55.34_2x_tjzhud.webp)
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282136/brandonviscacom/CleanShot_2025-12-09_at_12.56.05_2x_ws1icd.webp)
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282142/brandonviscacom/CleanShot_2025-12-09_at_12.57.10_2x_pq2j2c.webp)
-
-
-### Vérifier que DDC fonctionne
-
-**Indicateur clé** : Si tu vois **"Hardware (DDC)"** sous le nom de ton moniteur dans Lunar → DDC fonctionne ✅
-
-**Si tu vois "Software Dimming"** → DDC ne fonctionne pas sur ce moniteur → Voir section Troubleshooting
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282202/brandonviscacom/CleanShot_2025-12-09_at_13.09.51_2x_kqfsip.jpg)
-
-### Réglages de base recommandés
+### Réglages recommandés pour débutants
 
 ```
-✅ Mode : Manual (pour commencer)
-✅ Control Method : Hardware (DDC)
-✅ Brightness Keys : Enabled
-✅ Volume Keys : Enabled
-✅ Hotkey for cursor screen : Enabled (Ctrl+Brightness)
+✅ Automatic optimization : Enabled
 ✅ Launch at login : Enabled
+✅ Optimize clipboard images : Enabled
+✅ Optimize videos : Enabled (si tu fais des screencasts)
+✅ Show floating preview : Enabled (pour voir le résultat)
+✅ Aggressive optimization : Disabled (pour commencer)
 ```
 
-**Pourquoi Manual mode ?**
-- Le plus simple et prévisible
-- Tu contrôles tout manuellement
-- Parfait pour débuter
+**Pourquoi ces réglages ?**
+- Optimisation automatique = zéro friction
+- Floating preview = tu vois ce que Clop fait (rassurant)
+- Aggressive OFF = tu gardes une qualité maximale
 
-💡 **Plus tard**, tu pourras passer en mode Sync, Location, ou Sensor (voir section Modes avancés).
+💡 **Pour les power users** : Active "Aggressive optimization" si tu veux des fichiers encore plus petits (perte qualité légèrement perceptible).
 
 ---
 
-## Utilisation : Les bases en 3 exemples
+## Utilisation : 3 workflows magiques
 
-### Exemple 1 : Contrôler la luminosité avec F1/F2
+### Workflow 1 : Screenshots automatiques
 
-**Setup Mac Mini** : Tu as un Mac Mini + 1 écran externe.
+**Le problème** : Tu fais 20 screenshots par jour pour ton blog/docs/emails. Chacun fait 5-8 Mo.
 
-**Avant Lunar** :
-- F1/F2 ne font rien
-- Tu utilises le joystick OSD du moniteur
-- 30 secondes à chaque ajustement
+**Avec Clop** :
 
-**Avec Lunar** :
-```
-1. Lance Lunar
-2. Presse F1 → Luminosité baisse instantanément
-3. Presse F2 → Luminosité monte instantanément
-```
+1. Tu fais ton screenshot (Cmd+Shift+4)
+2. Clop détecte l'image dans le clipboard
+3. Compression automatique en 0.5 seconde
+4. Tu colles (Cmd+V) → Version optimisée !
 
-**Résultat** : Comportement identique à un MacBook. Enfin ! 🎉
+**Résultat** : Screenshot qui passerait pas dans un email ? Maintenant il passe. Simple.
 
 ---
 
-### Exemple 2 : Multi-écrans (contrôler l'écran actif)
+### Workflow 2 : Screencasts (enregistrements écran)
 
-**Setup** : MacBook + 2 écrans externes.
+**Le problème** : Tu enregistres une démo de 2 minutes. Fichier MOV de 80 Mo. Impossible à envoyer.
 
-**Problème** : F1/F2 ajustent tous les écrans en même temps. Tu veux contrôler seulement l'écran où est ta souris.
+**Avec Clop** :
 
-**Solution Lunar** :
+1. Tu fais ton screencast (Cmd+Shift+5)
+2. Tu arrêtes l'enregistrement
+3. **Clop l'optimise automatiquement** pendant que tu continues à bosser
+4. Une miniature flottante apparaît avec le fichier optimisé (8 Mo)
+5. Tu glisses-déposes dans Slack/email/Notion
 
-1. Active **"Hotkey for cursor screen"** dans les settings
-2. Déplace ta souris vers l'écran à ajuster
-3. Presse **Ctrl + F1/F2** → Seul cet écran s'ajuste
+**Gain** : 80 Mo → 8 Mo. **90% de réduction**. Qualité visuelle identique.
 
-**Alternative** : Dans Lunar menu bar, chaque écran a son propre slider.
-
+**Bonus** : Clop utilise le **Media Engine** de ton Mac (M1/M2/M3/M4) pour encoder sans bouffer le CPU. Batterie préservée.
 
 ---
 
-### Exemple 3 : Ajuster le volume du moniteur
+### Workflow 3 : Drag & Drop intelligent
 
-**Problème** : Ton écran externe a des enceintes intégrées. Pas moyen de contrôler le volume depuis macOS.
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 
-**Solution Lunar** :
+**Le problème** : Tu as 10 images à compresser avant de les uploader sur ton site WordPress.
 
+**Avec Clop** :
+
+1. Ouvre la **Drop Zone** de Clop (icône menu bar)
+2. Glisse tes 10 images dans la zone
+3. Clop les compresse en batch
+4. Tu récupères les versions optimisées prêtes à uploader
+
+**Alternative** : Configure Clop pour surveiller un dossier (ex: `~/Downloads`). Tout ce qui y tombe est automatiquement optimisé.
+
+---
+
+## Fonctionnalités avancées
+
+### 1. Downscaling intelligent
+
+![](https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4)
+
+**Problème** : Ton screenshot fait 3840x2160 (4K) mais tu n'as besoin que de 1920x1080 pour un article de blog.
+
+**Solution Clop** :
+
+1. Après compression, un **bouton flottant** apparaît
+2. Clique dessus → Options de downscaling
+3. Choisis : 90%, 75%, 50%, 25% ou résolution custom
+4. Clop redimensionne + re-compresse
+
+**Résultat** : Screenshot 4K de 8 Mo → Image 1080p de 200 Ko. **96% de réduction**.
+
+---
+
+### 2. Conversion de formats
+
+Clop convertit automatiquement les formats moins compatibles :
+
+- **HEIC** (iPhone) → **JPEG** (universel)
+- **TIFF** → **PNG**
+- **MOV** → **MP4** (plus compatible web)
+
+**Cas d'usage** : Tu reçois des photos iPhone en HEIC. Tu les copies. Clop les convertit en JPEG automatiquement. Tu colles dans Gmail. Ça marche.
+
+---
+
+### 3. Crop et aspect ratio
+
+Tu peux **cropper** images et vidéos directement depuis le floating preview :
+
+1. Clique sur le thumbnail flottant
+2. Choisis "Crop"
+3. Sélectionne une zone ou un aspect ratio (16:9, 4:3, 1:1, custom)
+4. Clop crop + re-optimise
+
+**Gain de temps** : Plus besoin d'ouvrir un éditeur séparé.
+
+---
+
+### 4. Intégration macOS Shortcuts
+
+**Pour les power users** : Clop s'intègre avec **Shortcuts.app**.
+
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765132833/brandonviscacom/CleanShot_2025-12-07_at_19.39.51_2x_eo4rbc.jpg)
+
+**Exemples de workflows** :
+
+**A. Optimisation automatique des photos avant email**
 ```
-1. Active "Volume Keys" dans Lunar
-2. Presse F11 (volume down) → Volume moniteur baisse
-3. Presse F12 (volume up) → Volume moniteur monte
+1. Sélectionne photos dans Finder
+2. Raccourci Shortcuts : "Optimize and Email"
+3. Clop optimise → Ouvre Mail avec photos attachées
 ```
 
-**Bonus** : Lunar affiche un OSD natif macOS (comme pour le volume Mac).
+**B. Pipeline YouTube**
+```
+1. Enregistre screencast
+2. Clop optimise vidéo
+3. Shortcuts upload sur Google Drive automatiquement
+```
 
-⚠️ **Note** : Ton moniteur doit supporter DDC volume control. Pas tous les moniteurs le font.
-
----
-
-## Modes avancés : Automatisation de la luminosité
-
-Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les plus utiles.
-
-### Mode 1 : Manual (par défaut)
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282265/brandonviscacom/CleanShot_2025-12-09_at_13.10.59_2x_h9yuky.jpg)
-
-
-**Concept** : Tu contrôles tout manuellement avec F1/F2 ou les sliders.
-
-**Pour qui** : Débutants, setups simples, ceux qui veulent le contrôle total.
-
-**Avantage** : Simple, prévisible, zéro surprise.
+**C. Batch processing dossier complet**
+```
+1. Sélectionne dossier avec 100 images
+2. Shortcuts appelle Clop SDK
+3. Toutes les images optimisées en 30 secondes
+```
 
 ---
 
-### Mode 2 : Sync (Pro, 23$)
+### 5. Folders watching (surveillance de dossiers)
 
-<video controls autoplay loop muted playsinline>
-  <source src="https://files.lunar.fyi/sync-all-displays-h264.mp4" type="video/mp4">
-</video>
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765133052/brandonviscacom/CleanShot_2025-12-07_at_19.42.54_2x_cfmbrq.webp)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282287/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_yuyr4p.jpg)
-
-
-**Concept** : La luminosité de tes écrans externes **suit** celle de ton MacBook.
-
-**Comment ça marche** :
-1. macOS ajuste ton MacBook avec le capteur de lumière ambiante (ALS)
-2. Lunar détecte le changement
-3. Lunar ajuste tous tes écrans externes proportionnellement
-
-**Pour qui** : 
-- MacBook + écrans externes
-- iMac + écrans externes
-- Tu veux que tout soit synchronisé automatiquement
+Configure Clop pour **surveiller des dossiers spécifiques** :
 
 **Setup** :
-```
-1. Mode : Sync
-2. Source : Built-in Display (MacBook)
-3. Targets : External monitors
-4. Lunar va apprendre ta préférence en quelques jours
-```
+1. Préférences Clop > Folders
+2. Ajoute un dossier (ex: `~/Screenshots`)
+3. Choisis l'action : Optimiser + remplacer OU Optimiser + copier ailleurs
 
-**Exemple concret** :
-- MacBook à 50% → Écran externe 1 à 60%, Écran 2 à 55%
-- MacBook monte à 80% → Écrans externes suivent proportionnellement
-- MacBook descend à 20% → Écrans externes descendent aussi
-
-💡 **Machine learning** : Lunar apprend tes ajustements manuels et affine la courbe automatiquement.
+**Cas d'usage** : Tu sauvegardes tous tes screenshots dans un dossier. Clop les optimise automatiquement dès qu'ils apparaissent. Zéro manipulation manuelle.
 
 ---
 
-### Mode 3 : Location (Pro, 23$)
+### 6. Intégration CleanShot X / Shottr
 
-<video controls autoplay loop muted playsinline>
-  <source src="https://lunar.fyi/static/video/location-demo-vp9.webm" type="video/webm">
-</video>
+Si tu utilises **CleanShot X** ou **Shottr** (apps screenshots premium), Clop s'intègre nativement :
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282306/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_ntjpw1.jpg)
+**Configuration** :
+1. Dans CleanShot X : Active "Copy to clipboard after capture"
+2. Clop détecte les screenshots CleanShot
+3. Optimisation automatique avant que tu colles
 
+**Résultat** : Tu gardes la qualité CleanShot, mais avec des fichiers 10x plus petits.
 
-**Concept** : La luminosité s'adapte selon **l'heure du lever/coucher du soleil** dans ta localisation.
-
-**Pour qui** :
-- Mac Mini (pas de capteur de lumière)
-- Bureau avec lumière naturelle
-- Tu veux une luminosité qui suit le cycle du soleil
-
-**Setup** :
-```
-1. Mode : Location
-2. Lunar détecte ta localisation (ChambĂ©ry, FR)
-3. Configure les niveaux :
-   - Lever du soleil : 80%
-   - Midi : 100%
-   - Coucher du soleil : 40%
-   - Minuit : 10%
-```
-
-**Avantage** : Zéro capteur nécessaire. Utilise simplement ta géolocalisation + algorithme astronomique.
+Tu utilises déjà [[reduire-taille-images-mac-webp|WebP sur macOS]] ? Combine Clop + WebP pour des gains encore plus importants.
 
 ---
 
-### Mode 4 : Sensor (Pro, 23$)
+## Clop vs les alternatives : Le match
 
-**Concept** : Utilise un **capteur de lumière externe** pour adapter la luminosité automatiquement.
+### Clop vs ImageOptim
 
-**3 options de capteur** :
+| Critère | Clop | ImageOptim |
+|---------|------|------------|
+| **Automatisation** | ✅ Clipboard + folders | ❌ Drag & drop manuel |
+| **Vidéos** | ✅ MP4, MOV, GIF | ❌ Images uniquement |
+| **PDFs** | ✅ Optimisation PDF | ❌ Non supporté |
+| **Prix** | 💰 Gratuit (5 fichiers/session) ou 15$ lifetime | 💰 Gratuit complet |
+| **Interface** | 🎯 Floating preview + drop zone | 🗂️ Fenêtre classique |
 
-**A. Capteur intégré Mac (Apple Silicon uniquement)**
-- MacBook avec écran fermé → Lunar utilise le capteur du MacBook
-- iMac → Lunar utilise le capteur de l'iMac
-- Gratuit, déjà présent
+**Verdict** : ImageOptim est excellent pour du batch processing manuel, mais Clop gagne sur l'**automatisation** et le **support multi-formats**.
 
-**B. Webcam comme capteur**
-- Lunar analyse la luminosité capturée par ta webcam
-- Hack clever mais pas ultra-précis
-
-**C. Capteur externe DIY (Raspberry Pi + capteur)**
-- [Guide officiel](https://lunar.fyi/sensor)
-- Raspberry Pi Zero W + capteur BH1750
-- Coût : ~20€
-- Setup : 30 minutes
-
-**Pour qui** : Mac Mini + setup fixe + tu veux l'automatisation ultime.
+**Usage idéal** : Utilise Clop au quotidien (clipboard automatique) + ImageOptim pour optimiser un dossier entier de 500 images ponctuellement.
 
 ---
 
-### Mode 5 : Clock (Pro, 23$)
+### Clop vs TinyPNG / Squoosh
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282340/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_xdvq0f.jpg)
+| Critère | Clop | TinyPNG | Squoosh |
+|---------|------|---------|---------|
+| **Localisation** | 🖥️ App native macOS | ☁️ Service web | ☁️ Service web |
+| **Formats** | PNG, JPEG, HEIC, GIF, MP4, MOV, PDF | PNG, JPEG | Tous formats images |
+| **Automatisation** | ✅ Clipboard + folders | ❌ Upload manuel | ❌ Upload manuel |
+| **Batch processing** | ✅ Drag & drop | ✅ Jusqu'à 20 fichiers | ❌ Un par un |
+| **Prix** | Gratuit (limité) ou 15$ | Gratuit (limité) ou 25$/an | Gratuit complet |
 
-
-**Concept** : Programme des **horaires fixes** pour la luminosité.
-
-**Exemple** :
-```
-9h00 : 80% (arrivée au bureau)
-12h00 : 100% (midi, soleil)
-18h00 : 60% (fin journée)
-22h00 : 20% (late night coding)
-```
-
-**Pour qui** : Horaires très réguliers, bureau sans fenêtre, lumière artificielle constante.
+**Verdict** : TinyPNG et Squoosh sont pratiques pour un usage ponctuel, mais **Clop gagne sur la productivité** (pas besoin d'ouvrir un navigateur, tout est automatique).
 
 ---
 
-## Fonctionnalités avancées (Pro)
-
-### 1. XDR Brightness (débloquer 1600 nits)
-
-**Problème** : MacBook Pro M1+ et Pro Display XDR peuvent aller jusqu'à **1600 nits**, mais macOS les limite à **500 nits**.
-
-**Solution Lunar** :
-
-1. Active "XDR Brightness" dans les settings
-2. Ton slider brightness va maintenant de 0% à **1600 nits**
-3. Tu peux travailler en plein soleil sans squinter
-
-**Pour qui** : 
-- MacBook Pro 14"/16" (2021+)
-- Pro Display XDR
-- Tu travailles dehors (terrasse, plage, jardin)
-
-💡 **Attention** : 1600 nits consomme BEAUCOUP de batterie. À utiliser ponctuellement.
-
----
-
-### 2. Sub-zero Dimming (gratuit)
-
-**Problème** : Même à 0%, ton écran est trop lumineux la nuit pour coder.
-
-**Solution Lunar** :
-
-1. Active "Sub-zero Dimming"
-2. Descends la luminosité à 0% normalement
-3. Continue d'appuyer sur F1 → Lunar ajoute un overlay sombre
-4. Tu peux descendre jusqu'à -100% (quasi noir)
-
-**Pour qui** : Night owls, devs qui codent à 2h du matin.
-
-**Différence avec un overlay classique** : Lunar utilise **Gamma** (pas un overlay noir), donc les couleurs restent plus fidèles.
-
----
-
-### 3. BlackOut (éteindre des écrans)
-
-**Concept** : Éteindre des écrans sans les débrancher.
-
-**3 modes BlackOut** :
-
-**A. Auto BlackOut** (MacBook)
-```
-MacBook + écran externe connecté
-→ Lunar éteint automatiquement l'écran MacBook
-→ Tu gardes trackpad, clavier, webcam, Touch ID actifs
-→ Moins de chaleur CPU sur l'écran
-```
-
-**B. Manual BlackOut**
-```
-Hotkey : Ctrl+Cmd+6
-→ Éteint l'écran où est ta souris
-→ Re-appuie pour rallumer
-```
-
-**C. Selective BlackOut**
-```
-Setup : 3 écrans
-→ Tu veux focus sur l'écran central
-→ BlackOut les deux écrans latéraux
-→ USB et charge restent actifs
-```
-
-**Pour qui** : 
-- Setup multi-écrans
-- Besoin de focus intense
-- Économie d'énergie
-
----
-
-### 4. FaceLight (éclairage pour visio)
-
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137357/brandonviscacom/4907_gmbyui.webp)
-
-**Problème** : Visio dans une pièce sombre. Ta face est sous-exposée.
-
-**Solution Lunar** :
-
-1. Hotkey : **Ctrl+Cmd+5**
-2. Lunar met ton écran à **100% luminosité + overlay blanc chaud**
-3. Ton écran devient un **panneau LED** géant qui éclaire ton visage
-4. Désactive après la visio
-
-**Pour qui** : Remote workers, YouTubers, meetings Zoom/Teams.
-
-💡 **Astuce** : Combine avec un Ring Light physique pour un éclairage pro.
-
----
-
-### 5. Input Switching (changer d'entrée HDMI)
-
-**Problème** : Tu as ton Mac + PC + console sur le même écran. Changer d'input = naviguer dans le menu OSD.
-
-**Solution Lunar** :
-
-1. Configure 3 hotkeys dans Lunar :
-   - **Cmd+1** : Switch vers HDMI 1 (Mac)
-   - **Cmd+2** : Switch vers HDMI 2 (PC)
-   - **Cmd+3** : Switch vers DisplayPort (Console)
-
-2. Tu appuies sur le hotkey → L'écran switch instantanément
-
-**Résultat** : Plus besoin de KVM switch. Lunar fait tout.
-
----
-
-## Compatibilité : Ça marche avec quoi ?
-
-### Moniteurs compatibles DDC
-
-**99% des moniteurs modernes** (2015+) supportent DDC :
-
-✅ **Dell** : UltraSharp, P-series, S-series
-✅ **LG** : UltraFine, UltraGear, 27UK850, 34WK95U
-✅ **BenQ** : PD, SW series (pro photo)
-✅ **Samsung** : Odyssey, ViewFinity
-✅ **ASUS** : ProArt, ROG
-✅ **HP** : Z, E-series
-✅ **Philips** : Brilliance
-✅ **AOC**, **Acer**, **ViewSonic** : La plupart des modèles
-
-❌ **Exceptions** :
-- Très vieux écrans (<2010)
-- Certains écrans "budget" no-name
-- Écrans via **DisplayLink** (nécessite Raspberry Pi)
-
-💡 **Test rapide** : Installe Lunar (gratuit) et regarde si DDC est détecté. Si oui → compatible.
-
----
-
-### Macs compatibles
-
-**Tous les Macs depuis 2018** :
-
-✅ **Apple Silicon** :
-- Mac Mini M1/M2/M4
-- MacBook Air M1/M2/M3
-- MacBook Pro M1/M2/M3/M4
-- iMac M1/M3/M4
-- Mac Studio M1 Max/M2 Max/M2 Ultra
-
-✅ **Intel** :
-- MacBook Pro 2018-2020
-- Mac Mini 2018-2020
-- iMac 2019-2020
-- Mac Pro 2019
-
-**macOS requis** : Big Sur 11.0 minimum (idéalement Ventura 13+ ou Sequoia 15+)
-
----
-
-### Câbles et connexions
-
-**DDC fonctionne via** :
-
-✅ **USB-C vers DisplayPort** (recommandé, meilleure compatibilité)
-✅ **USB-C vers USB-C** (si écran USB-C natif)
-✅ **Thunderbolt 3/4**
-✅ **DisplayPort natif**
-
-⚠️ **HDMI** :
-- Sur **Intel Macs** : DDC fonctionne ✅
-- Sur **Apple Silicon M1/M2** : DDC ne fonctionne **PAS** via HDMI ❌ (limitation Apple)
-- **Workaround** : Utilise USB-C to DisplayPort
-
-💡 **Mon setup (Mac Mini M4)** : USB-C vers DisplayPort → DDC fonctionne parfaitement.
-
----
-
-## Lunar vs les alternatives
-
-### Lunar vs MonitorControl (gratuit)
-
-| Critère | Lunar | MonitorControl |
-|---------|-------|----------------|
-| **DDC support** | ✅ Natif + fallback | ✅ Basique |
-| **Brightness keys** | ✅ F1/F2 + OSD natif | ✅ F1/F2 |
-| **Modes adaptatifs** | ✅ 5 modes (Sync, Location, Sensor, Clock, Manual) | ❌ Manual uniquement |
-| **Sub-zero dimming** | ✅ Gratuit | ❌ |
-| **Input switching** | ✅ Hotkeys custom | ❌ |
-| **XDR brightness** | ✅ Pro feature | ❌ |
-| **BlackOut** | ✅ Pro feature | ❌ |
-| **Prix** | 23$ Pro (features essentielles gratuites) | Gratuit complet |
-| **Interface** | 🎨 Native, polie | 🗂️ Fonctionnelle mais basique |
-
-**Verdict** : MonitorControl est excellent pour un besoin basique (F1/F2 qui fonctionnent). Lunar va **beaucoup plus loin** avec l'automatisation, les modes, BlackOut, input switching, etc.
-
-**Mon avis** : Si tu as juste 1 écran et que tu veux F1/F2 → MonitorControl suffit. Si tu as un setup multi-écrans ou Mac Mini → Lunar vaut largement les 23$.
-
----
-
-### Lunar vs DisplayBuddy (30$)
-
-| Critère | Lunar | DisplayBuddy |
-|---------|-------|--------------|
-| **DDC support** | ✅ | ✅ |
-| **Modes adaptatifs** | ✅ 5 modes | ⚠️ Limité |
-| **Built-in sensor (M1)** | ✅ Gratuit | ❌ |
-| **External sensor** | ✅ Raspberry Pi | ❌ |
-| **XDR brightness** | ✅ | ❌ |
-| **BlackOut** | ✅ | ❌ |
-| **Open source** | ⚠️ Partial (free features) | ❌ |
-| **Prix** | 23$ (5 Macs) | 30$ (5 Macs) |
-
-**Verdict** : Lunar offre plus de features pour moins cher. DisplayBuddy a une UI légèrement différente mais moins de fonctionnalités.
-
----
-
-### Lunar vs Gamma/Overlay apps (f.lux, Shifty, etc.)
-
-| Critère | Lunar | f.lux / Shifty |
-|---------|-------|----------------|
-| **Méthode** | DDC (vrai contrôle hardware) | Gamma overlay (logiciel) |
-| **Qualité couleur** | ✅ Préservée | ⚠️ Dégradée (teinte) |
-| **Consommation batterie** | ✅ Réduite (écran moins lumineux) | ❌ Identique (backlight reste allumé) |
-| **Compatibilité** | Écrans DDC uniquement | Tous écrans |
-
-**Verdict** : Lunar (DDC) est **supérieur** en tout point si ton écran supporte DDC. Gamma/Overlay sont des fallbacks pour écrans non-DDC.
+### Clop vs Compressor / HandBrake (vidéos)
+
+| Critère | Clop | Compressor | HandBrake |
+|---------|------|-----------|-----------|
+| **Simplicité** | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
+| **Automatisation** | ✅ Compression auto screencasts | ❌ Manuel | ❌ Manuel |
+| **Vitesse** | ⚡ Utilise Media Engine (M1+) | 🐌 CPU intensif | 🐌 CPU/GPU |
+| **Presets vidéo** | 🎯 1 preset optimisé | 🎛️ 50+ presets | 🎛️ 100+ presets |
+| **Prix** | 15$ lifetime | 50$ (part Logic Pro) | Gratuit open source |
+
+**Verdict** : Pour des **screencasts rapides**, Clop est imbattable. Pour de l'**encodage vidéo pro** avec contrôle total, HandBrake reste le roi.
 
 ---
 
 ## Cas d'usage concrets
 
-### Cas 1 : Mac Mini homelab (mon setup)
+### Cas 1 : Blogueur / Créateur de contenu (mon cas)
 
-**Config** : Mac Mini M4 + 2 écrans 27" (Dell UltraSharp).
+**Problème** : J'écris 10-15 articles par mois avec 15-20 screenshots chacun. Fichiers trop lourds pour WordPress (limite 10 Mo/fichier).
 
-**Problème avant Lunar** :
-- F1/F2 ne fonctionnent pas
-- Ajustement manuel via joystick OSD : 30 sec par écran
-- Je n'ajustais jamais → yeux fatigués en soirée
+**Avec Clop** :
 
-**Avec Lunar** :
 ```
-Setup :
-- Mode : Location (lever/coucher soleil ChambĂ©ry)
-- 8h : 80% (démarrage journée)
-- 12h : 100% (midi, max lumière naturelle)
-- 18h : 50% (soirée)
-- 22h : 15% (late night coding)
+Workflow quotidien :
+1. Screenshot d'un terminal (Cmd+Shift+4)
+2. Clop compresse : 6 Mo → 600 Ko
+3. Je colle dans Obsidian
+4. Upload vers WordPress : aucun problème
 
-Résultat :
-- Luminosité ajustée automatiquement
-- F1/F2 fonctionnent pour ajustements manuels
-- Zéro friction, je n'y pense plus
+Gain : Plus de message "fichier trop lourd"
+Temps gagné : 5 min par article = 50-75 min/mois
 ```
 
-**Temps gagné** : 5 min/jour = 30h/an
+Je combine Clop avec mon workflow [[reduire-taille-images-mac-webp|WebP macOS]] pour des images encore plus optimisées.
 
 ---
 
-### Cas 2 : MacBook + écran externe (remote work)
+### Cas 2 : Support technique / Documentation
 
-**Config** : MacBook Pro M2 + écran 4K.
+**Problème** : Tu envoies 20-30 screenshots par jour à tes collègues/clients par email ou Slack. Les pièces jointes font exploser les boîtes mail.
 
-**Setup Lunar** :
+**Avec Clop** :
+
 ```
-- Mode : Sync
-- Source : MacBook built-in display
-- Target : Écran externe 4K
+Avant Clop :
+- Screenshot : 8 Mo
+- Email bloqué : "Fichier trop volumineux"
+- Export manuel Preview : 2 minutes
+- Re-test : 1 minute
+Total : 3 minutes par screenshot
 
-Comportement :
-- MacBook ajuste sa luminosité (ALS intégré)
-- Lunar sync l'écran externe automatiquement
-- Tout s'adapte ensemble, naturellement
+Avec Clop :
+- Screenshot : 8 Mo → 800 Ko (auto)
+- Colle dans email : 0 secondes
+Total : 0 secondes supplémentaires
+
+Gain sur 20 screenshots/jour : 1 heure par jour
 ```
-
-**Bonus** : Auto BlackOut → Écran MacBook s'éteint quand externe connecté (mais trackpad/clavier/webcam restent actifs).
 
 ---
 
-### Cas 3 : Setup gaming/streaming
+### Cas 3 : Créateur YouTube / Vidéaste
 
-**Config** : Mac Studio + 3 écrans (1 principal, 2 secondaires).
+**Problème** : Tu enregistres des screencasts pour tes tutos. Fichiers MOV de 500 Mo - 2 Go. Upload YouTube interminable.
 
-**Setup Lunar** :
+**Avec Clop** :
+
 ```
-- Écran 1 (principal) : Mode Manual, Hotkeys
-- Écrans 2+3 : BlackOut quand gaming
-- Input switching : Cmd+1/2/3 pour Mac/PC/Console
+Screencast 10 min :
+- MOV original : 1.5 Go
+- Clop optimise : 150 Mo (90% réduc)
+- Upload YouTube : 15 min au lieu de 2h
 
-Workflow :
-1. Gaming sur PC : Cmd+2 → Écran switch vers HDMI 2
-2. Streaming : FaceLight activé pour éclairage visage
-3. Montage vidéo : Les 3 écrans actifs
-4. Focus code : BlackOut écrans 2+3
+Bonus :
+- Utilise Media Engine (M1/M2)
+- Batterie non impactée
+- Qualité 1080p préservée
 ```
-
-**Gain** : Plus de manipulation physique des écrans.
 
 ---
 
-### Cas 4 : Design/Photo (précision couleur)
+### Cas 4 : Designer / Graphiste
 
-**Config** : iMac M3 + écran BenQ SW270C (calibré).
+**Problème** : Tu partages des mockups et wireframes avec clients. Fichiers PNG énormes. Clients ouvrent sur téléphone = galère.
 
-**Setup Lunar** :
+**Avec Clop** :
+
 ```
-- Mode : Manual (contrôle total)
-- Sub-zero dimming : Désactivé (préserver gamma)
-- Presets sauvegardés :
-  * "Photo editing" : 120 cd/m² (standard)
-  * "Video" : 80 cd/m² (réduit eye strain)
-  * "Night" : 40 cd/m² (late night retouches)
+Workflow client :
+1. Export Figma : PNG 4K, 12 Mo
+2. Copie dans clipboard
+3. Clop compresse + downscale à 1080p
+4. Colle dans email : 1.2 Mo
+5. Client ouvre sur iPhone : instantané
+
+Alternative sans Clop :
+1. Export Figma
+2. Ouvre Photoshop
+3. "Save for Web"
+4. Ajuste qualité manuellement
+5. Export
+Total : 5 minutes par fichier
 ```
-
-**Hotkeys** : Cmd+Opt+1/2/3 pour switcher entre presets.
-
-**Pourquoi pas Sync mode** : En photo pro, tu veux un contrôle total et une luminosité constante.
 
 ---
 
 ## Troubleshooting : Les pièges à éviter
 
-### Problème 1 : DDC ne fonctionne pas
+### Problème 1 : Clop ne détecte pas mes screenshots
 
-**Symptôme** : Lunar affiche "Software Dimming" sous ton écran.
+**Symptôme** : Tu fais un screenshot, rien ne se passe.
 
 **Causes possibles** :
-1. **Câble HDMI sur Mac M1/M2** → DDC ne fonctionne pas via HDMI sur Apple Silicon
-2. **Hub USB-C de mauvaise qualité** → Signal DDC perdu
-3. **Moniteur très ancien** (<2010)
-4. **DisplayLink** → Nécessite Raspberry Pi
+1. Clop n'est pas lancé
+2. Permissions Accessibilité non accordées
+3. App de screenshot tierce (CleanShot X) configurée pour ne pas copier dans clipboard
 
 **Solutions** :
 
-**A. Change de câble**
-```
-❌ HDMI (si M1/M2)
-✅ USB-C vers DisplayPort
-✅ Thunderbolt 3/4
-```
-
-**B. Branchement direct**
-```
-❌ Mac → Hub USB-C → Écran
-✅ Mac → Écran (direct)
-```
-
-**C. Test sur port différent**
-- Certains ports USB-C sont Thunderbolt, d'autres non
-- Teste tous les ports de ton Mac
-
-**D. Fallback : Gamma dimming**
-```
-Si DDC impossible :
-1. Lunar → Controls → Disable Hardware (DDC)
-2. Lunar utilisera Gamma (moins bien mais fonctionne)
-3. Monte la luminosité de l'écran à 100% physiquement
-4. Lunar la réduit en software
-```
+1. **Vérifie que Clop tourne** : Icône dans menu bar visible ?
+2. **Permissions** : Réglages Système > Confidentialité > Accessibilité → Coche Clop
+3. **CleanShot X** : Active "Copy to clipboard after capture"
 
 ---
 
-### Problème 2 : Brightness keys verrouillées après réveil
+### Problème 2 : Qualité dégradée visible
 
-**Symptôme** : Après mise en veille du Mac, F1/F2 affichent un cadenas 🔒. Lunar ne contrôle plus rien.
-
-**Cause** : Bug macOS ou moniteur. Le port DDC disparaît de l'I/O Registry après le réveil.
-
-**Solution** :
-
-**Option A : Auto Restart (recommandé)**
-```
-1. Lunar → Settings → General
-2. Active "Automatically restart on wake"
-3. Lunar redémarre automatiquement après réveil
-```
-
-**Option B : Restart manuel**
-```
-1. Menu bar Lunar → Quit
-2. Relance Lunar
-3. DDC fonctionne à nouveau
-```
-
-**Option C : Désactive clamshell detection**
-```
-Si le problème persiste :
-Lunar → Settings → Advanced
-→ Disable "Clamshell mode detection"
-```
-
----
-
-### Problème 3 : Conflit avec f.lux ou Night Shift
-
-**Symptôme** : Couleurs bizarres, f.lux et Lunar se marchent dessus.
-
-**Cause** : f.lux et Lunar utilisent tous deux l'API Gamma.
+**Symptôme** : Tes images compressées ont des artefacts visibles (pixellisation, banding).
 
 **Solutions** :
 
-**Option A : Utilise Night Shift (recommandé)**
-```
-1. Désactive f.lux
-2. Active Night Shift dans macOS
-3. Lunar + Night Shift fonctionnent ensemble
-(Night Shift n'utilise pas Gamma)
-```
+1. **Désactive "Aggressive optimization"** dans les préférences
+2. **Augmente la qualité** : Préférences > Quality slider à 90%
+3. **Pour photos** : Utilise JPEG quality 85% minimum
 
-**Option B : Désactive Gamma dans Lunar**
-```
-Lunar → Controls → Disable Software Dimming
-→ Lunar n'utilisera QUE DDC (pas de conflit)
-```
+💡 **Astuce** : Pour des photos artistiques où chaque détail compte, désactive Clop temporairement (icône menu bar > Pause).
 
 ---
 
-### Problème 4 : Écran MacBook s'allume en clamshell
+### Problème 3 : Clop ralentit mon Mac
 
-**Symptôme** : Tu ouvres Lunar sur MacBook en clamshell mode. L'écran MacBook s'allume, tes fenêtres disparaissent.
+**Symptôme** : Ventilateurs qui tournent, Mac qui lag pendant la compression.
 
-**Cause** : Bug macOS. Lunar ouvre une fenêtre → macOS croit que le MacBook est ouvert.
+**Causes** :
+- Compression de vidéos 4K massives
+- Aggressive optimization activé sur de très gros fichiers
 
-**Solution** :
+**Solutions** :
 
-```
-1. Ouvre/ferme physiquement le MacBook une fois
-2. macOS détecte le clamshell mode correctement
-3. Problème résolu
-```
+1. **Désactive l'optimisation vidéo** si tu ne fais pas de screencasts
+2. **Limite la résolution** : Préférences > Max resolution 1080p
+3. **Sur Mac Intel** : Réduis le nombre de fichiers traités simultanément
 
-**Alternative** : Active Auto BlackOut pour éteindre automatiquement l'écran MacBook quand externe connecté.
+💡 **Note** : Sur Apple Silicon (M1+), le Media Engine encode les vidéos sans CPU → aucun ralentissement.
 
 ---
 
-## Version gratuite vs Pro : Faut-il payer 23$ ?
+### Problème 4 : Licence ne reste pas activée (version payante)
+
+**Symptôme** : Clop redemande la licence à chaque redémarrage.
+
+**Solution officielle** :
+
+```bash
+# Supprimer les fichiers de licence corrompus
+rm -rf "$HOME/Library/Application Support/Clop/"*
+killall Clop
+open -a Clop
+
+# Puis réactive avec ta clé
+```
+
+**Vérifier que Paddle n'est pas bloqué** :
+- Ouvre Safari : [v3.paddleapi.com/3.2/license/verify](https://v3.paddleapi.com/3.2/license/verify)
+- Si ça charge → OK
+- Si erreur → Ton firewall (Little Snitch, LuLu) bloque Paddle
+
+⚠️ **Note** : Ce problème ne concerne que la version payante. La version gratuite n'a pas de licence.
+
+---
+
+## Version gratuite vs Pro : Faut-il payer ?
 
 ### Version gratuite (0€)
 
-**Features incluses** :
-✅ DDC brightness/contrast/volume control
-✅ F1/F2/F10-F12 hotkeys
-✅ Sub-zero dimming
-✅ Manual mode
-✅ Input switching
-✅ Hotkeys custom
-
 **Limitations** :
-❌ Pas de modes adaptatifs (Sync, Location, Sensor, Clock)
-❌ Pas de BlackOut
-❌ Pas de XDR brightness
-❌ Pas de FaceLight
+- ✅ Optimisation clipboard automatique
+- ✅ Images, vidéos, PDFs
+- ✅ Downscaling et crop
+- ❌ **Limite : 5 fichiers par session**
 
 **C'est suffisant si** :
-- Tu veux juste F1/F2 qui fonctionnent
-- 1-2 écrans max
-- Ajustements manuels OK pour toi
-- Mac Mini basique
+- Tu fais 5-10 screenshots par jour max
+- Usage occasionnel
+- Tu veux tester avant d'acheter
 
 ---
 
-### Version Pro (23$ lifetime)
+### Version Pro (15$ lifetime)
 
 **Ce que tu gagnes** :
-✅ **Sync mode** : Synchronisation automatique
-✅ **Location mode** : Adaptation lever/coucher soleil
-✅ **Sensor mode** : Capteur externe ou intégré
-✅ **Clock mode** : Horaires programmés
-✅ **BlackOut** : Éteindre écrans sélectivement
-✅ **Auto BlackOut** : MacBook display auto-off
-✅ **XDR brightness** : Débloquer 1600 nits
-✅ **FaceLight** : Éclairage visio
-✅ **App Presets** : Luminosité par app
-✅ **CLI integration** : Scripting Terminal
-✅ **5 Macs** : Licence valide sur 5 Macs
+- ✅ **Optimisations illimitées**
+- ✅ Folders watching (surveillance dossiers)
+- ✅ Batch processing sans limite
+- ✅ Priority support
 
 **Ça vaut le coup si** :
-- Setup multi-écrans complexe
-- Mac Mini (tu veux l'automatisation)
-- MacBook + externes (Sync mode = killer feature)
-- Pro Display XDR ou MacBook Pro M1+ (XDR brightness)
-- Tu veux BlackOut ou FaceLight
+- Tu fais +20 screenshots par jour
+- Tu crées du contenu régulièrement (blog, YouTube, docs)
+- Tu veux automatiser complètement ton workflow
 
-**Mon avis perso** : 23$ lifetime pour **5 Macs**, c'est cadeau. Le Sync mode seul vaut le prix. Si tu as un Mac Mini, c'est un **no-brainer**.
+**Mon avis perso** : 15$ lifetime pour une app que j'utilise 50 fois par jour ? **No brainer**. C'est le prix de 2 cafés Starbucks.
 
-**Comparaison** :
-- MonitorControl : 0€ mais basique
-- DisplayBuddy : 30$ pour moins de features
-- Lunar Pro : 23$ pour TOUT
+**Alternative** : Clop est aussi disponible sur **Setapp** (abonnement 10$/mois pour 240+ apps). Si tu utilises déjà Setapp, c'est inclus.
 
 ---
 
-## Alternatives si Lunar ne te convient pas
+## Alternatives si Clop ne te convient pas
 
-### 1. MonitorControl (gratuit, basique)
+### 1. ImageOptim (gratuit, images uniquement)
 
-**Pour qui** : Tu veux juste F1/F2 qui fonctionnent, rien d'autre.
+**Pour qui** : Batch processing d'images, pas besoin d'automatisation
 
-- [GitHub MonitorControl](https://github.com/MonitorControl/MonitorControl)
-- Gratuit, open source complet
-- DDC basic
-- Pas de modes adaptatifs
-
----
-
-### 2. DisplayBuddy (30$, plus cher, moins features)
-
-**Pour qui** : Tu préfères une UI différente (question de goût).
-
-- [displaybuddy.app](https://displaybuddy.app/)
-- DDC support
-- Quelques features exclusives (color calibration UI)
-- Mais moins de modes et features que Lunar
+- [Site officiel ImageOptim](https://imageoptim.com/)
+- Gratuit, open source
+- Excellents algos de compression
+- Mais : Drag & drop manuel, pas de vidéos
 
 ---
 
-### 3. BetterDisplay (gratuit/paid, focus résolutions)
+### 2. Squoosh (gratuit, web)
 
-**Pour qui** : Tu veux surtout des résolutions HiDPI custom.
+**Pour qui** : Usage ponctuel, pas d'installation
 
-- [BetterDisplay](https://github.com/waydabber/BetterDisplay)
-- Brightness control DDC
-- Mais focus principal = résolutions custom
-- Interface plus complexe
-
----
-
-### 4. QuickShade (overlay simple)
-
-**Pour qui** : Ton écran ne supporte pas DDC, tu veux un fallback simple.
-
-- Overlay noir semi-transparent
-- Gratuit
-- Mais dégradation qualité couleurs
+- [squoosh.app](https://squoosh.app/)
+- Tous formats images
+- Comparaison avant/après visuelle
+- Mais : Web only, pas d'automatisation
 
 ---
 
-## Conclusion : Faut-il installer Lunar ?
+### 3. HandBrake (gratuit, vidéos pro)
 
-**La réponse courte : OUI**, surtout si tu as un **Mac Mini** ou un **MacBook + écrans externes**.
+**Pour qui** : Encodage vidéo avancé avec contrôle total
 
-**Les 3 raisons d'installer Lunar maintenant** :
+- [handbrake.fr](https://handbrake.fr/)
+- 100+ presets vidéo
+- Open source
+- Mais : Complexe, pas d'automatisation screencasts
 
-1. ✅ **Résout un problème Apple refuse de régler** : Contrôle natif brightness externes
-2. ✅ **Version gratuite déjà excellente** : F1/F2, sub-zero dimming, input switching
-3. ✅ **Pro vaut ses 23$** : Modes adaptatifs, BlackOut, XDR brightness
+---
+
+### 4. TinyPNG (freemium, web)
+
+**Pour qui** : Compression PNG/JPEG simple
+
+- [tinypng.com](https://tinypng.com/)
+- Excellent ratio compression/qualité
+- API disponible
+- Mais : 20 fichiers max gratuit, web only
+
+---
+
+## Conclusion : Faut-il installer Clop ?
+
+**La réponse courte : OUI**, si tu manipules images/vidéos régulièrement sur macOS.
+
+**Les 3 raisons d'installer Clop maintenant** :
+
+1. ✅ **C'est automatique** : Tu copies, Clop compresse, tu colles. Zéro friction.
+2. ✅ **C'est gratuit** : Version free largement suffisante pour débuter (5 fichiers/session)
+3. ✅ **Gain de temps massif** : 1-2 heures économisées par semaine
 
 **Ce que j'aime** :
-- DDC natif (pas de fake overlay)
-- F1/F2 fonctionnent enfin
-- Sync mode (MacBook + externes) = magic
-- Sub-zero dimming gratuit
-- Compatible M1/M2/M3/M4
-- Open source partiel (features gratuites)
-- Développeur ultra-réactif (updates régulières)
+- Automatisation totale (clipboard + folders)
+- Compression intelligente (perte qualité imperceptible)
+- Support multi-formats (images, vidéos, PDFs)
+- Utilise le Media Engine (Apple Silicon) → batterie préservée
+- Interface minimaliste (floating preview discret)
 
 **Ce qui pourrait être mieux** :
-- HDMI ne fonctionne pas sur M1/M2 (limitation Apple, pas Lunar)
-- Interface peut intimider au début (beaucoup d'options)
-- Pro features encryptées dans le code source (pas 100% open)
-- Quelques bugs après wake-up (mais Auto Restart les résout)
+- Version gratuite limitée à 5 fichiers/session (mais 15$ lifetime = bon deal)
+- Aggressive mode peut dégrader la qualité photos artistiques
+- Pas de presets avancés comme HandBrake (mais c'est voulu, simplicité first)
 
-**Mon verdict perso** : J'utilise Lunar **depuis 2 ans** sur mon Mac Mini M4 + 2 écrans. C'est devenu **indispensable**. Combiné avec rcmd et Clop, c'est le trio parfait Low-Tech Guys.
+**Mon verdict perso** : J'utilise Clop **tous les jours depuis 8 mois**. Combiné avec [[rcmd-alternative-cmd-tab-macos|rcmd]] et [[reduire-taille-images-mac-webp|WebP]], c'est le trio gagnant productivité macOS.
 
-**Pour qui c'est un must** :
-- ✅ Mac Mini (aucune alternative viable)
-- ✅ MacBook + écrans externes (Sync mode = killer)
-- ✅ Setup multi-écrans (BlackOut, input switching)
-- ✅ Remote workers (FaceLight)
+**Temps d'adaptation** : 0 seconde. Tu installes, tu configures une fois, tu oublies. Ça tourne en arrière-plan.
 
-**Pour qui c'est optionnel** :
-- ⚠️ MacBook seul (mais sub-zero dimming est cool)
-- ⚠️ 1 écran + ajustements rares (MonitorControl suffit)
+**ROI** : Si tu fais 20 screenshots par jour et que Clop te fait gagner 30 secondes par screenshot, ça fait **10 minutes par jour** = **60 heures par an**. Pour 0€ (ou 15$ si version Pro).
 
-**ROI** : Si tu ajustes ta luminosité 5 fois par jour et que ça te prend 30 sec avec l'OSD, Lunar te fait gagner **2.5 min/jour** = **15h/an**. Pour 0€ (gratuit) ou 23$ (Pro).
-
-Alors, prêt à contrôler tes écrans comme un humain civilisé ? 🚀
+Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 
 ---
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[rcmd : Le raccourci qui tue Cmd+Tab](/2025-11-27-rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
-- **[Clop : Compression automatique images/vidéos](/2025-11-27-clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
-- **[Raycast : L'outil qui transforme macOS](/raycast-macos-outil-productivite-ultime/)** : Automatise tes workflows
-- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer Lunar
+- **[[reduire-taille-images-mac-webp|Réduire la taille des images Mac avec WebP]]** : Combine Clop + WebP pour une compression ultime
+- **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** : Switch entre apps ultra-rapidement
+- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Launcher complet pour automatiser tes workflows
+- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Clop et autres outils
 
 ---
 
 ## 💡 Ressources utiles
 
-- [Site officiel Lunar](https://lunar.fyi/)
-- [GitHub Lunar (open source partiel)](https://github.com/alin23/Lunar)
-- [FAQ officielle](https://lunar.fyi/faq)
-- [DIY Sensor guide](https://lunar.fyi/sensor)
-- [Changelog](https://lunar.fyi/changelog)
+- [Site officiel Clop](https://lowtechguys.com/clop/)
+- [GitHub Clop (open source)](https://github.com/FuzzyIdeas/Clop)
+- [Clop sur Mac App Store](https://apps.apple.com/app/clop/id1611554949)
+- [Clop SDK (pour devs)](https://github.com/FuzzyIdeas/ClopSDK)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 

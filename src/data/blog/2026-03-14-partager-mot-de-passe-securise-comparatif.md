@@ -8,7 +8,7 @@ tags:
   - outils
   - auto-hebergement
   - comparatif
-draft: true
+draft: false
 ---
 
 # Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)
@@ -19,7 +19,7 @@ Le problème : ces messages restent dans des historiques, des serveurs de messag
 
 La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s'efface dès qu'il est ouvert. Une lecture, et c'est mort. J'ai testé les trois principales options — **Password.link**, **OneTimeSecret** et **PrivateBin** (auto-hébergé) — pour te dire laquelle colle à ton usage.
 
-## Table des matières
+---
 
 ## TL;DR — Le comparatif en un coup d'œil
 
@@ -38,6 +38,9 @@ La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s
 - **Usage ponctuel, solo** → OneTimeSecret (gratuit illimité)
 - **Équipe IT qui veut des notifs** → Password.link
 - **Tu veux tout contrôler** → PrivateBin en self-hosted
+
+## Table of content
+
 
 ---
 
@@ -242,10 +245,3 @@ Les trois outils présentés ici règlent le problème proprement :
 - **PrivateBin** pour les homelabbers qui veulent tout contrôler
 
 Et si tu veux aller plus loin dans la sécurisation de tes mots de passe au quotidien, l'étape suivante c'est un gestionnaire dédié. Mon article sur [Vaultwarden Docker](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/) te montre comment déployer ta propre instance en moins d'une heure.
-
-💡 **Tu veux aller plus loin ?**
-
-Je prépare une formation "Homelab Weekend" pour monter ton serveur auto-hébergé complet en un week-end — sécurité incluse.
-
-[Rejoins la liste d'attente →](#)
-

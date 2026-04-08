@@ -8,16 +8,13 @@ tags:
   - raccourcis
   - low-tech
   - outils-systeme
-draft: true
+draft: false
 ---
-
 # rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_1_ljjoew.webp)
 
 ---
-
-## Table des matières
 
 ## Introduction : Cmd+Tab, c'est 2005
 
@@ -44,6 +41,8 @@ Bienvenue dans le monde de **rcmd**, l'outil qui va te faire oublier Cmd+Tab pou
 
 Let's go ! 🚀
 
+---
+
 ## TL;DR : rcmd en 30 secondes
 
 **Le problème** : Cmd+Tab = lent (3-4 Tab minimum à chaque fois)
@@ -62,13 +61,13 @@ Let's go ! 🚀
 
 **Prix** : 100% gratuit (V2 actuelle)
 
+## Table of content
+
 ---
 
 ## Qu'est-ce que rcmd ?
 
-<video controls autoplay loop muted playsinline>
-  <source src="https://lowtechguys.com/static/video/rcmd-stage-manager-h264.mp4" type="video/mp4">
-</video>
+<iframe src="https://lowtechguys.com/static/video/rcmd-stage-manager-h264.mp4"></iframe>
 
 **rcmd** (prononcé "are-command"), c'est un launcher minimaliste développé par [Low Tech Guys](https://lowtechguys.com/) qui repense complètement la façon de switcher entre applications sur macOS.
 
@@ -232,9 +231,9 @@ Maintenant Right Command + L = Launchpad.
 
 rcmd se combine parfaitement avec :
 
-- **Raycast** : Raycast pour les commandes, rcmd pour le switch d'apps
-- **Ice** : Garde ta barre de menu propre pendant que rcmd tourne en arrière-plan
-- **iTerm2** : Right Command + I = iTerm2 instantané
+- **[[raycast-macos-outil-productivite-ultime|Raycast]]** : Raycast pour les commandes, rcmd pour le switch d'apps
+- **[[ice-gestionnaire-barre-menu-macos|Ice]]** : Garde ta barre de menu propre pendant que rcmd tourne en arrière-plan
+- **[[iterm2-guide-configuration-macos-2025|iTerm2]]** : Right Command + I = iTerm2 instantané
 
 💡 **Mon workflow perso** :
 - Right Command + lettre = Switch apps (rcmd)
@@ -411,12 +410,12 @@ Puis réactive avec ta clé de licence.
 
 ### Si rcmd ne te convient pas, essaie :
 
-**1. Raycast** (launcher complet)
+**1. [[raycast-macos-outil-productivite-ultime|Raycast]]** (launcher complet)
 - Plus de features (snippets, extensions, AI)
 - Courbe d'apprentissage plus longue
 - Gratuit avec version Pro
 
-**2. AltTab** (Cmd+Tab amélioré)
+**2. [[alttab-macos-gestion-fenetres-windows]]** (Cmd+Tab amélioré)
 - Prévisualisation des fenêtres
 - Plus visuel que rcmd
 - Gratuit et open source
@@ -454,7 +453,7 @@ Puis réactive avec ta clé de licence.
 - Courbe d'apprentissage de 2-3 jours pour oublier Cmd+Tab
 - Pas de switch entre fenêtres d'une même app (utilise Cmd+` pour ça)
 
-**Mon verdict perso** : Je l'utilise **tous les jours depuis 6 mois**, et je ne reviendrais jamais en arrière. Combiné avec Raycast et Ice, c'est le trinity productivité macOS.
+**Mon verdict perso** : Je l'utilise **tous les jours depuis 6 mois**, et je ne reviendrais jamais en arrière. Combiné avec [[raycast-macos-outil-productivite-ultime|Raycast]] et [[ice-gestionnaire-barre-menu-macos|Ice]], c'est le trinity productivité macOS.
 
 **Temps d'adaptation** : 2-3 jours pour que tes doigts oublient Cmd+Tab. Après, c'est du velours.
 
@@ -464,10 +463,10 @@ Alors, prêt à switcher à la vitesse de la lumière ? 🚀
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[Raycast : L'outil qui transforme macOS en machine de productivité](/raycast-macos-outil-productivite-ultime/)** : Complémentaire à rcmd pour les commandes et snippets
-- **[Ice : Le gestionnaire de barre de menu gratuit pour macOS](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)** : Garde ta barre de menu propre pendant que rcmd tourne
-- **[iTerm2 : Guide complet configuration macOS](/iterm2-guide-configuration-macos-2025/)** : Optimise ton terminal (que tu vas ouvrir avec Right Command + I)
-- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer rcmd et plein d'autres outils
+- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS en machine de productivité]]** : Complémentaire à rcmd pour les commandes et snippets
+- **[[ice-gestionnaire-barre-menu-macos|Ice : Le gestionnaire de barre de menu gratuit pour macOS]]** : Garde ta barre de menu propre pendant que rcmd tourne
+- **[[iterm2-guide-configuration-macos-2025|iTerm2 : Guide complet configuration macOS]]** : Optimise ton terminal (que tu vas ouvrir avec Right Command + I)
+- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer rcmd et plein d'autres outils
 
 ---
 
@@ -477,4 +476,3 @@ Alors, prêt à switcher à la vitesse de la lumière ? 🚀
 - [FAQ officielle rcmd](https://lowtechguys.com/rcmd/#faq)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 - [Download direct rcmd](https://lowtechguys.com/rcmd/#download)
-

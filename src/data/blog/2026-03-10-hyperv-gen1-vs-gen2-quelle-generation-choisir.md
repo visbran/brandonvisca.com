@@ -8,9 +8,8 @@ tags:
   - virtualisation
   - sysadmin
   - uefi
-draft: true
+draft: false
 ---
-
 # Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
 
 Gen1 ou Gen2 pour ta prochaine VM Hyper-V ? La question revient à chaque création de VM, et la réponse n'est pas toujours évidente — surtout quand on voit que certains OS ne supportent tout simplement pas Gen2.
@@ -19,7 +18,7 @@ Spoiler : dans 90% des cas, tu veux Gen2. Mais il y a des exceptions qui mérite
 
 Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environnement de production.
 
-## Table des matières
+---
 
 ## TL;DR
 
@@ -36,6 +35,8 @@ Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environn
 | Conversion possible | ❌ Non | ❌ Non | — |
 
 **Mon choix par défaut : Gen2** pour tout OS moderne (Windows Server 2012+, Ubuntu 14.04+, Debian 8+).
+
+## Table of content
 
 ---
 

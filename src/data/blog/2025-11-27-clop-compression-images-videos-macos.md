@@ -10,7 +10,6 @@ tags:
   - guide
   - compression
 ---
-
 # Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
@@ -18,13 +17,9 @@ tags:
 
 ---
 
-## Table des matières
-
 ## Introduction : Le drame des fichiers trop lourds
 
-<video controls autoplay loop muted playsinline>
-  <source src="https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4" type="video/mp4">
-</video>
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 
 On connaît tous cette situation frustrante :
 
@@ -54,13 +49,16 @@ Bienvenue dans le monde de **Clop**, l'optimiseur magique qui va te faire gagner
 
 Let's go ! 🚀
 
+## Table of content
+
+
+---
+
 ## Qu'est-ce que Clop ?
 
 **Clop** (de "Clipboard Optimizer"), c'est un outil développé par [Low Tech Guys](https://lowtechguys.com/) qui optimise automatiquement **images, vidéos, PDFs et contenus clipboard** sur macOS.
 
-<video controls autoplay loop muted playsinline>
-  <source src="https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4" type="video/mp4">
-</video>
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 ### Le concept en une phrase
 
 **Copy large, paste small, send fast.**
@@ -105,7 +103,7 @@ brew install --cask clop
 - Désinstallation propre
 - Gestion centralisée
 
-⚠️ **Pas encore Homebrew ?** → Guide installation Homebrew macOS
+⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
 
 ---
 
@@ -193,9 +191,7 @@ Au premier lancement, Clop te demande :
 
 ### Workflow 3 : Drag & Drop intelligent
 
-<video controls autoplay loop muted playsinline>
-  <source src="https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4" type="video/mp4">
-</video>
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 
 **Le problème** : Tu as 10 images à compresser avant de les uploader sur ton site WordPress.
 
@@ -214,9 +210,7 @@ Au premier lancement, Clop te demande :
 
 ### 1. Downscaling intelligent
 
-<video controls autoplay loop muted playsinline>
-  <source src="https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4" type="video/mp4">
-</video>
+![](https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4)
 
 **Problème** : Ton screenshot fait 3840x2160 (4K) mais tu n'as besoin que de 1920x1080 pour un article de blog.
 
@@ -313,7 +307,7 @@ Si tu utilises **CleanShot X** ou **Shottr** (apps screenshots premium), Clop s'
 
 **Résultat** : Tu gardes la qualité CleanShot, mais avec des fichiers 10x plus petits.
 
-Tu utilises déjà WebP sur macOS ? Combine Clop + WebP pour des gains encore plus importants.
+Tu utilises déjà [[reduire-taille-images-mac-webp|WebP sur macOS]] ? Combine Clop + WebP pour des gains encore plus importants.
 
 ---
 
@@ -382,7 +376,7 @@ Gain : Plus de message "fichier trop lourd"
 Temps gagné : 5 min par article = 50-75 min/mois
 ```
 
-Je combine Clop avec mon workflow WebP macOS pour des images encore plus optimisées.
+Je combine Clop avec mon workflow [[reduire-taille-images-mac-webp|WebP macOS]] pour des images encore plus optimisées.
 
 ---
 
@@ -634,7 +628,7 @@ open -a Clop
 - Aggressive mode peut dégrader la qualité photos artistiques
 - Pas de presets avancés comme HandBrake (mais c'est voulu, simplicité first)
 
-**Mon verdict perso** : J'utilise Clop **tous les jours depuis 8 mois**. Combiné avec rcmd et WebP, c'est le trio gagnant productivité macOS.
+**Mon verdict perso** : J'utilise Clop **tous les jours depuis 8 mois**. Combiné avec [[rcmd-alternative-cmd-tab-macos|rcmd]] et [[reduire-taille-images-mac-webp|WebP]], c'est le trio gagnant productivité macOS.
 
 **Temps d'adaptation** : 0 seconde. Tu installes, tu configures une fois, tu oublies. Ça tourne en arrière-plan.
 
@@ -646,10 +640,10 @@ Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[Réduire la taille des images Mac avec WebP](/reduire-taille-images-mac-webp/)** : Combine Clop + WebP pour une compression ultime
-- **[rcmd : Le raccourci qui tue Cmd+Tab](/2025-11-27-rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
-- **[Raycast : L'outil qui transforme macOS](/raycast-macos-outil-productivite-ultime/)** : Launcher complet pour automatiser tes workflows
-- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer Clop et autres outils
+- **[[reduire-taille-images-mac-webp|Réduire la taille des images Mac avec WebP]]** : Combine Clop + WebP pour une compression ultime
+- **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** : Switch entre apps ultra-rapidement
+- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Launcher complet pour automatiser tes workflows
+- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Clop et autres outils
 
 ---
 

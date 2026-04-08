@@ -9,7 +9,7 @@ tags:
   - winpe
   - sysadmin
   - depannage
-draft: true
+draft: false
 ---
 
 # VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)
@@ -20,7 +20,7 @@ Bonne nouvelle : c'est récupérable. Sans réinstaller Windows Server. Sans per
 
 La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline via WinPE, puis reconstruire le boot UEFI de zéro. Ça prend 45 minutes et une bonne tasse de café.
 
-## Table des matières
+---
 
 ## 📋 Prérequis
 
@@ -31,6 +31,8 @@ La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline v
 - VM en **Génération 2 (UEFI)** — cette procédure est spécifique Gen2
 
 > ⚠️ **Attention** : La corruption est *logique*, pas physique. Le VHDX démarre, mais l'intégrité du système de fichiers Windows est compromise. Cette procédure ne convient pas si le disque physique sous-jacent est mort.
+
+## Table of content
 
 ---
 
@@ -262,4 +264,3 @@ L'option "Réparer l'ordinateur" ne touche pas la corruption logique du système
 
 **Combien de temps ça prend ?**
 45 minutes à 1h30 selon la taille de l'OS. La copie robocopy représente 80% du temps.
-
