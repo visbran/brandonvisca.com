@@ -1,5 +1,6 @@
 ---
-title: Uptime Kuma 2.0 débarque avec MariaDB, Docker rootless et notifications Home Assistant. Le monitoring auto-hébergé devient enfin une vraie alternative pro.
+title: "Uptime Kuma 2.0 : Le Monitoring Auto-Hébergé qui Fait Trembler les Services Payants"
+description: "Uptime Kuma 2.0 débarque avec MariaDB, Docker rootless et notifications Home Assistant. Le monitoring auto-hébergé devient enfin une vraie alternative pro."
 pubDatetime: 2025-10-13T17:08:33+02:00
 author: Brandon Visca
 tags:
@@ -10,8 +11,6 @@ featured: true
 draft: false
 focusKeyword: monitoring
 ---
-# Uptime Kuma 2.0 : Le Monitoring Auto-Hébergé qui Fait Trembler les Services Payants
-
 
 ## Introduction : Quand un outil gratuit met la pression aux pros
 
