@@ -23,14 +23,12 @@ faqs:
   - question: "Dois-je payer pour les mises à jour ?"
     answer: "Non, tous les outils sont gratuits et les mises à jour le restent. Certains développeurs acceptent les donations mais ce n'est jamais obligatoire."
 ---
-# 10 Outils Low-Tech Indispensables pour macOS (Guide Complet 2025)
+# 10 Outils Indispensables pour macOS (Guide Complet 2026)
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
 
 
 ---
-
-## Table des matières
 
 ## Introduction : La philosophie Low-Tech
 
@@ -63,6 +61,10 @@ Pas d'IA inutile, pas de features bloated, pas d'abonnements SaaS. Juste des **o
 **Objectif** : Transformer ton Mac en **machine de productivité ultime** sans dépenser 1€.
 
 Let's go ! 🚀
+
+---
+
+## Table of content
 
 ---
 
@@ -145,7 +147,7 @@ Mon setup Mac Mini M4 :
 | Raycast | Gratuit/96$/an | Complémentaire (pas concurrent) |
 | Alfred | 59€ | rcmd plus simple et gratuit |
 
-👉 **Guide complet** : [rcmd : Le raccourci qui tue Cmd+Tab sur macOS](/rcmd-alternative-cmd-tab-macos/)
+👉 **Guide complet** : [[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab sur macOS]]
 
 ---
 
@@ -205,7 +207,7 @@ Temps gagné : 5 min/article = 50 min/mois
 
 **Mon avis** : Version gratuite suffit pour la plupart. Si tu fais +20 screenshots/jour → Pro vaut le coup.
 
-👉 **Guide complet** : [Clop : Compression automatique images/vidéos macOS](/2025-11-27-clop-compression-images-videos-macos/)
+👉 **Guide complet** : [[clop-compression-images-videos-macos|Clop : Compression automatique images/vidéos macOS]]
 
 ---
 
@@ -279,7 +281,7 @@ Temps gagné : 5 min/jour = 30h/an
 
 **Mon avis** : Version gratuite = F1/F2 qui fonctionnent (déjà énorme). Pro = automatisation complète. **23$ lifetime pour 5 Macs = no-brainer si tu as un Mac Mini**.
 
-👉 **Guide complet** : [Lunar : Contrôle luminosité écrans externes macOS](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)
+👉 **Guide complet** : [[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité écrans externes macOS]]
 
 ---
 
@@ -352,7 +354,7 @@ Temps gagné : 20 recherches/jour × 30 sec = 10 min/jour = 60h/an
 - **Cling** : Fichiers code, config, dotfiles
 - **Spotlight** : Recherches générales, emails, docs
 
-👉 **Guide complet** : [Cling : Recherche fuzzy fichiers macOS](/cling-recherche-fuzzy-fichiers-macos/)
+👉 **Guide complet** : [[cling-recherche-fuzzy-fichiers-macos|Cling : Recherche fuzzy fichiers macOS]]
 
 ---
 
@@ -1107,33 +1109,20 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 
 ---
 
-## 🎁 Bonus : Brewfile Complet à Télécharger
-
-**Lead magnet newsletter** : Inscris-toi pour recevoir le **Brewfile complet optimisé** avec :
-
-✅ Les 10 outils Low-Tech
-✅ Bonus : iTerm2, Raycast, Stats
-✅ Config post-installation automatisée
-✅ Script setup complet (1 commande = tout installé)
-
-👉 **[Télécharger le Brewfile Low-Tech](mailto:hello@brandonvisca.com?subject=Brewfile%20Low-Tech)** (lien newsletter)
-
----
-
 ## 🔗 Guides Détaillés (Série Complète)
 
 **Approfondis chaque outil** :
 
-1. **[rcmd : Le raccourci qui tue Cmd+Tab](/rcmd-alternative-cmd-tab-macos/)** (2800 mots)
-2. **[Clop : Compression automatique](/2025-11-27-clop-compression-images-videos-macos/)** (3200 mots)
-3. **[Lunar : Contrôle luminosité écrans](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** (3800 mots)
-4. **[Cling : Recherche fuzzy fichiers](/cling-recherche-fuzzy-fichiers-macos/)** (2800 mots)
+1. **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** (2800 mots)
+2. **[[clop-compression-images-videos-macos|Clop : Compression automatique]]** (3200 mots)
+3. **[[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité écrans]]** (3800 mots)
+4. **[[cling-recherche-fuzzy-fichiers-macos|Cling : Recherche fuzzy fichiers]]** (2800 mots)
 
 **Autres articles macOS** :
-- [Raycast : Launcher complet](/raycast-macos-outil-productivite-ultime/)
-- Ice : Gestionnaire barre menu détaillé
-- [Installation Homebrew sur macOS](/installation-homebrew-macos/)
-- [iTerm2 : Terminal optimisé](/iterm2-guide-configuration-macos-2025/)
+- [[raycast-macos-outil-productivite-ultime|Raycast : Launcher complet]]
+- [[ice-gestionnaire-barre-menu-macos|Ice : Gestionnaire barre menu détaillé]]
+- [[installation-homebrew-macos|Installation Homebrew sur macOS]]
+- [[iterm2-guide-configuration-macos-2025|iTerm2 : Terminal optimisé]]
 
 ---
 
@@ -1157,5 +1146,3 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 - [r/macOS](https://reddit.com/r/macOS)
 - [r/MacApps](https://reddit.com/r/MacApps)
 - [r/opensource](https://reddit.com/r/opensource)
-
----
