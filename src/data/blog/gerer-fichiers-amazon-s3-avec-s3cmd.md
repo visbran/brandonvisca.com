@@ -11,9 +11,6 @@ tags:
   - guide
 ---
 
----
-## Table des matières
-
 
 - [Pourquoi utiliser S3cmd ?](#pourquoi-utiliser-s-3-cmd)
 - [Installation de S3cmd](#installation-de-s-3-cmd)
@@ -30,7 +27,7 @@ Si vous cherchez un moyen rapide et efficace de gérer vos fichiers sur Amazon S
 
 ### Pourquoi utiliser S3cmd ?
 
-- **Simplicité d’utilisation** : Facile à configurer et à utiliser.
+![Gérer vos fichiers sur Amazon S3 avec S3cmd](friends-episode-15-friends-tv-the-one-where-estelle-dies-w3a0zo282fubpsqqyd.gif)- **Simplicité d’utilisation** : Facile à configurer et à utiliser.
 - **Flexibilité** : Compatible avec toutes les solutions de stockage compatibles S3.
 - **Automatisation** : Idéal pour les sauvegardes programmées et les transferts de gros volumes.
 - **Open Source** : Gratuit et personnalisable.

@@ -41,7 +41,6 @@ Si ton serveur ressemble encore à une passoire, va lire mon guide sur [la sécu
 
 **À savoir :** Cette **configuration avancée SnipeIT** va manipuler des comptes utilisateurs et des données sensibles. La sécurité, c'est pas une option.
 
----
 
 ## Intégration Active Directory LDAP
 
@@ -221,7 +220,6 @@ Si cette commande ne retourne rien, ton filtre ou ton Base DN est incorrect.
 - Vérifie que l'Auth Query est correct : `samaccountname=`
 - Vérifie que les utilisateurs existent bien dans SnipeIT après la sync
 
----
 
 ## Scanner automatiquement le parc avec Nmap
 
@@ -479,7 +477,6 @@ sudo crontab -e
 - Surveille les logs pour détecter les anomalies
 - Ne scanne QUE ton réseau interne (pas Internet, évidemment)
 
----
 
 ## Configuration du portail libre-service
 
@@ -529,7 +526,6 @@ Les utilisateurs peuvent maintenant demander du matériel depuis leur interface.
 3. Admin approuve → asset assigné
 4. User reçoit une notification email
 
----
 
 ## Sécurité avancée SnipeIT
 
@@ -618,7 +614,6 @@ Si tu utilises LDAP, désactive la création manuelle de comptes :
 
 Tous les comptes doivent venir de l'AD.
 
----
 
 ## Notifications Teams et Email
 
@@ -728,7 +723,6 @@ Tu peux activer/désactiver chaque type de notification individuellement :
 - Pour Teams, limite aux événements importants (checkout/requests)
 - Pour Email, envoie les résumés quotidiens plutôt qu'en temps réel
 
----
 
 ## Automatisation et API
 
@@ -807,7 +801,6 @@ with open('new-assets.csv', 'r') as f:
             print(f"❌ Failed: {row['name']} - {response.text}")
 ```
 
----
 
 ## Conclusion : configuration avancée SnipeIT maîtrisée
 

@@ -11,18 +11,14 @@ tags:
   - depannage
 ---
 
----
-## Table des matières
-
 
 - [Enquête initiale](#enquete-initiale)
 - [L’aperçu critique](#lapercu-critique)
 - [La solution](#la-solution)
 - [Leçons apprises](#lecons-apprises)
 
----
 
-
+![](no-nope-tracy-morgan-spfi6nabvuq5y.gif)
 
 Aujourd’hui, je me suis retrouvé dans une situation stressante lorsque je n’ai pas pu accéder à ma matrice RAID en mode de secours. J’avais besoin de modifier un fichier critique situé dans `/etc/sudoers.d/`, mais je me heurtais constamment à des erreurs de montage :
 
@@ -38,7 +34,6 @@ mdadm --detail /dev/md127
 Les résultats ont montré que les deux matrices étaient en bon état – « State: clean » avec tous les périphériques « active sync ». Cela m’a indiqué que la configuration RAID elle-même n’était pas la source du problème.
 
 L’aperçu critique
----
 
 Après avoir tenté plusieurs commandes de montage de base sans succès, j’ai décidé de vérifier ce qui se trouvait réellement sur le périphérique RAID à l’aide de la commande `file` :
 
@@ -53,7 +48,6 @@ file -s /dev/md126
 La matrice RAID n’était pas formatée directement comme un système de fichiers. Au lieu de cela, elle contenait une table de partition, ce qui signifiait que je devais monter l’une des partitions à l’intérieur de la matrice RAID, et non la matrice elle-même.
 
 La solution
----
 
 La solution consistait à lister les partitions sur la matrice RAID :
 
@@ -71,4 +65,3 @@ Après avoir trouvé la partition contenant mon système de fichiers racine, j�
 nano /mnt/recovery/etc/sudoers.d/gardeners
 
 ```
-

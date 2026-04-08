@@ -19,6 +19,7 @@ faqs:
   - question: "Mes données sont-elles vraiment plus en sécurité chez moi ?"
     answer: "Oui, plus qu'avec Google. Tes données ne sortent pas de chez toi, à condition de suivre les bonnes pratiques : firewall, backups, HTTPS."
 ---
+
 Tu en as marre de payer Google, Microsoft et Apple pour stocker tes photos de vacances ? Fatigué de voir tes données personnelles transformées en carburant publicitaire ? Envie de comprendre comment fonctionne vraiment un serveur ?
 
 Bienvenue dans le monde de l’**auto-hébergement**.
@@ -26,7 +27,6 @@ Bienvenue dans le monde de l’**auto-hébergement**.
 Spoiler : c’est moins compliqué que tu le crois, et une fois que tu auras goûté à la liberté d’héberger tes propres services, tu ne pourras plus revenir en arrière.
 
 TL;DR : L’auto-hébergement en 3 points
---------------------------------------
 
 - **C’est quoi ?** Héberger soi-même ses services (cloud, mail, sites…) au lieu de dépendre de Google/Microsoft
 - **Pour qui ?** Débutants curieux, passionnés de tech, admins qui veulent apprendre
@@ -36,7 +36,6 @@ TL;DR : L’auto-hébergement en 3 points
 
 
 L’auto-hébergement, c’est quoi exactement ?
--------------------------------------------
 
 L’auto-hébergement (ou « self-hosting » pour les anglophones), c’est le fait d’**héberger ses propres services numériques** sur du matériel qu’on contrôle, plutôt que de passer par des plateformes tierces.
 
@@ -295,7 +294,6 @@ N’importe quelle connexion suffit. Même une 4G pourrie, car tu administres le
 - - - - - -
 
 Les 5 premiers services à auto-héberger (par ordre de difficulté)
------------------------------------------------------------------
 
 ### 1. Uptime Kuma — Monitoring ultra-simple 🟢
 
@@ -423,7 +421,6 @@ iOS et Android, avec synchronisation automatique en arrière-plan.
 - - - - - -
 
 Erreurs fréquentes des débutants (et comment les éviter)
---------------------------------------------------------
 
 ### ❌ Erreur 1 : Tout exposer sur Internet sans sécurité
 

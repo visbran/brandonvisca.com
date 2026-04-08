@@ -346,5 +346,3 @@ Moins de risques de casser quelque chose pour les autres utilisateurs.
 $env:PATH > C:\Backup\PATH_backup.txt
 
 ```
-
-

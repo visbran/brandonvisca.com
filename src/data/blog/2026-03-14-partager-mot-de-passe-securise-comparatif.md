@@ -19,7 +19,6 @@ Le problème : ces messages restent dans des historiques, des serveurs de messag
 
 La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s'efface dès qu'il est ouvert. Une lecture, et c'est mort. J'ai testé les trois principales options — **Password.link**, **OneTimeSecret** et **PrivateBin** (auto-hébergé) — pour te dire laquelle colle à ton usage.
 
----
 
 ## TL;DR — Le comparatif en un coup d'œil
 
@@ -42,7 +41,6 @@ La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s
 ## Table of content
 
 
----
 
 ## Pourquoi tu NE dois plus envoyer des credentials par email
 
@@ -58,7 +56,6 @@ Un lien auto-destructeur règle tout ça : **une seule lecture, puis effacement 
 
 Si tu gères des mots de passe au quotidien, jette aussi un œil à mon article sur [Vaultwarden, le gestionnaire de mots de passe auto-hébergé](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/). C'est complémentaire : Vaultwarden pour le stockage long terme, un lien auto-destructeur pour le partage ponctuel.
 
----
 
 
 ## Password.link — Le plus complet pour les équipes
@@ -98,7 +95,6 @@ Password.link existe depuis 2016. C'est l'un des rares services du genre à prop
 
 Les équipes IT qui ont besoin de traçabilité : savoir *qui* a ouvert *quoi* et *quand*. Aussi parfait pour les freelances et prestataires qui gèrent des credentials clients.
 
----
 
 ## OneTimeSecret — Le vétéran open source
 
@@ -138,7 +134,6 @@ OneTimeSecret c'est la référence historique du secteur. Open source depuis le 
 
 Les devs et sysadmins solo qui veulent un outil gratuit, fiable et sans prise de tête. Aussi excellent pour les entreprises qui ont besoin d'un hébergement EU et d'un audit de code possible.
 
----
 
 ## PrivateBin — Le choix des self-hosters
 
@@ -186,7 +181,6 @@ Les homelabbers et les admins qui veulent contrôle total et confidentialité ma
 
 ⚠️ **Attention :** Si tu déploies PrivateBin en self-hosted, assure-toi de configurer HTTPS correctement. Un lien auto-destructeur sur HTTP, c'est un peu comme une porte blindée avec une fenêtre ouverte à côté.
 
----
 
 ## Le verdict : qui doit utiliser quoi ?
 
@@ -209,7 +203,6 @@ Les homelabbers et les admins qui veulent contrôle total et confidentialité ma
 - Ta politique interne interdit les SaaS tiers pour les credentials
 - Tu as besoin de partager des fichiers chiffrés
 
----
 
 ## FAQ
 
@@ -233,7 +226,6 @@ Oui, le plan Basic d'OneTimeSecret est gratuit sans restriction de volume. Tu pe
 
 Pour Password.link et OneTimeSecret, tu peux créer des secrets sans compte (avec des limitations). PrivateBin ne nécessite aucun compte par design.
 
----
 
 ## Conclusion
 

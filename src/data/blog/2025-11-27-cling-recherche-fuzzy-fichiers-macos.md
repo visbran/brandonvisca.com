@@ -11,11 +11,11 @@ tags:
   - fuzzy-search
 draft: false
 ---
+
 # Cling : Recherche fuzzy fichiers 10x plus rapide
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
 
----
 
 ## Introduction : Spotlight, c'est bien... pour 2010
 
@@ -44,7 +44,6 @@ Bienvenue dans le monde de **Cling**, l'outil de recherche fuzzy qui va te faire
 
 Let's go ! 🚀
 
----
 
 ## TL;DR : Cling en 30 secondes
 
@@ -65,9 +64,6 @@ Let's go ! 🚀
 
 **Prix** : 100% gratuit et open source
 
----
-
-## Table of content
 
 ## Qu'est-ce que Cling ?
 
@@ -98,7 +94,6 @@ Cling indexe **tout ton système de fichiers** en mémoire (y compris fichiers s
 - **Compatibilité** : macOS 14+ (Sonoma, Sequoia)
 - **Open source** : [GitHub](https://github.com/FuzzyIdeas/Cling)
 
----
 
 ## Fuzzy search, c'est quoi ? (Explication simple)
 
@@ -122,7 +117,6 @@ Cling indexe **tout ton système de fichiers** en mémoire (y compris fichiers s
 
 💡 **Différence avec Spotlight** : Spotlight nécessite une correspondance exacte. Cling est tolérant.
 
----
 
 ## Installation de Cling : 2 méthodes
 
@@ -144,7 +138,6 @@ brew install --cask thelowtechguys-cling
 
 ⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
 
----
 
 ### Méthode 2 : Download direct
 
@@ -157,7 +150,6 @@ brew install --cask thelowtechguys-cling
 
 💡 **Important** : Cling **nécessite Full Disk Access** pour indexer les fichiers système, dotfiles, etc. Sans ça, il sera limité comme Spotlight.
 
----
 
 ## Configuration essentielle en 5 minutes
 
@@ -175,7 +167,6 @@ Au premier lancement :
 
 **Consommation RAM** : 300 Mo à 2 Go selon ton nombre de fichiers. Cling libère la RAM quand la fenêtre est en arrière-plan (swap vers disque).
 
----
 
 ### Réglages de base recommandés
 
@@ -202,7 +193,6 @@ Library/Caches/
 
 💡 **Pourquoi exclure** : Réduire la taille de l'index + accélérer les recherches.
 
----
 
 ### Interface : Navigation clavier uniquement
 
@@ -223,7 +213,6 @@ Cling est **100% clavier-centric**. Pas besoin de souris.
 | `Cmd+D`       | Delete (avec confirmation)   |
 | `Esc`         | Fermer Cling                 |
 
----
 
 ## Utilisation : 4 workflows puissants
 
@@ -250,7 +239,6 @@ Temps : 3 secondes
 
 **Résultat** : `docker-compose.yaml` s'ouvre dans VS Code (ou ton éditeur par défaut).
 
----
 
 ### Workflow 2 : Fichiers système et dotfiles
 
@@ -275,7 +263,6 @@ Temps : 2 secondes
 
 **Bonus** : Cling trouve **tous** les `.zshrc` sur ton système (y compris ceux dans `~/Documents/dotfiles/` pour backup).
 
----
 
 ### Workflow 3 : Actions rapides
 
@@ -309,7 +296,6 @@ Temps : 3 secondes
 | `Space` | QuickLook (preview sans ouvrir) |
 | `Cmd+O` | Ouvrir avec... (choix app) |
 
----
 
 ### Workflow 4 : Scripts custom
 
@@ -346,7 +332,6 @@ notify "Compression terminée"
 
 💡 **Langage** : Bash, Python, Ruby, Node, Go... ce que tu veux.
 
----
 
 ## Fonctionnalités avancées
 
@@ -372,7 +357,6 @@ docker .yml modified:1d
 → Fichiers YAML contenant "docker" modifiés aujourd'hui
 ```
 
----
 
 ### 2. Recherche dans volumes externes
 
@@ -390,7 +374,6 @@ docker .yml modified:1d
 
 💡 **Bonus** : Cling garde l'index en cache. Si tu rebranches le disque, pas besoin de réindexer.
 
----
 
 ### 3. Batch operations (opérations groupées)
 
@@ -413,7 +396,6 @@ docker .yml modified:1d
 - Déplacer vers dossier
 - Change permissions
 
----
 
 ### 4. Syntaxe de recherche avancée
 
@@ -435,7 +417,6 @@ Cling supporte une syntaxe puissante (héritée de `fd` et `fzf`).
 → Fichiers README.md excluant node_modules
 ```
 
----
 
 ## Cling vs les alternatives
 
@@ -457,7 +438,6 @@ Cling supporte une syntaxe puissante (héritée de `fd` et `fzf`).
 - **Spotlight** : Recherches générales, docs, emails
 - **Cling** : Fichiers code, config, dotfiles, power users
 
----
 
 ### Cling vs Raycast / Alfred
 
@@ -479,7 +459,6 @@ Cling supporte une syntaxe puissante (héritée de `fd` et `fzf`).
 
 Tu peux utiliser [[raycast-macos-outil-productivite-ultime|Raycast]] pour les commandes ET Cling pour les fichiers. Pas de conflit.
 
----
 
 ### Cling vs Find Any File / EasyFind
 
@@ -498,7 +477,6 @@ Tu peux utiliser [[raycast-macos-outil-productivite-ultime|Raycast]] pour les co
 - **Cling** : "Je cherche CE fichier docker-compose.yaml"
 - **Find Any File** : "Montre-moi TOUS les fichiers .log > 10Mo modifiés cette semaine"
 
----
 
 ### Cling vs Everything (Windows)
 
@@ -512,7 +490,6 @@ Tu peux utiliser [[raycast-macos-outil-productivite-ultime|Raycast]] pour les co
 
 **Verdict** : Everything reste **le roi absolu** sur Windows (utilise la MFT NTFS = instantané). Cling est la **meilleure approximation sur macOS**.
 
----
 
 ## Cas d'usage concrets
 
@@ -540,7 +517,6 @@ Temps : 3 secondes
 
 **Gain quotidien** : 20 recherches/jour × 57 sec = **19 min/jour** = **115h/an**
 
----
 
 ### Cas 2 : Admin système (dotfiles & configs)
 
@@ -567,7 +543,6 @@ Temps : 2 secondes
 
 **Bonus** : Cling trouve aussi les backups dans `~/dotfiles/` ou Time Machine.
 
----
 
 ### Cas 3 : Créateur de contenu (screenshots & assets)
 
@@ -594,7 +569,6 @@ Temps : 5 secondes
 
 **Workflow batch** : Sélectionne 10 screenshots → Cmd+Shift+Z → Script compresse en ZIP.
 
----
 
 ### Cas 4 : Data analyst (CSV, logs, datasets)
 
@@ -612,7 +586,6 @@ Cmd+k > "sales 2024 .csv"
 → Enter
 ```
 
----
 
 ## Troubleshooting : Les pièges à éviter
 
@@ -648,7 +621,6 @@ Cling > Settings > Re-index now
 → Attends 1-5 min
 ```
 
----
 
 ### Problème 2 : Cling consomme trop de RAM
 
@@ -675,7 +647,6 @@ Library/Logs/
 
 💡 **Note** : Quand Cling est en arrière-plan, macOS swap l'index vers disque (libère RAM).
 
----
 
 ### Problème 3 : Recherche ne fonctionne pas (PTY leak)
 
@@ -693,7 +664,6 @@ Settings > Auto-restart every 12 hours
 
 💡 **Statut** : Les devs travaillent sur un fix définitif.
 
----
 
 ### Problème 4 : Trop de résultats, impossible de trouver
 
@@ -720,7 +690,6 @@ Settings > Max results : 100
 (par défaut 30)
 ```
 
----
 
 ## Limitations à connaître
 
@@ -745,7 +714,6 @@ Settings > Max results : 100
 ✅ Excellent pour **fichiers système, dotfiles, configs**
 ✅ Génial pour **workflows clavier uniquement**
 
----
 
 ## Conclusion : Faut-il installer Cling ?
 
@@ -789,7 +757,6 @@ Settings > Max results : 100
 
 Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 
----
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
@@ -799,7 +766,6 @@ Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 - **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Launcher complet (complémentaire à Cling)
 - **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Cling
 
----
 
 ## 💡 Ressources utiles
 
@@ -808,4 +774,3 @@ Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 - [fd (outil Rust sous-jacent)](https://github.com/sharkdp/fd)
 - [fzf (fuzzy finder)](https://github.com/junegunn/fzf)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
-

@@ -20,7 +20,6 @@ Bonne nouvelle : c'est récupérable. Sans réinstaller Windows Server. Sans per
 
 La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline via WinPE, puis reconstruire le boot UEFI de zéro. Ça prend 45 minutes et une bonne tasse de café.
 
----
 
 ## 📋 Prérequis
 
@@ -34,7 +33,6 @@ La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline v
 
 ## Table of content
 
----
 
 ## 🧩 Ce qui se passe vraiment
 
@@ -50,7 +48,6 @@ Le plan d'attaque :
 
 Le disque DATA n'est pas touché. Il reste connecté pendant toute l'opération.
 
----
 
 ## 1️⃣ Créer le nouveau disque OS (sur l'hôte Hyper-V)
 
@@ -60,7 +57,6 @@ New-VHD -Path "F:\Hyper-V\Disks\SRV-XXX_OS_NEW.vhdx" -SizeBytes 80GB -Dynamic
 
 > 💡 **Astuce** : Utilise `_OS_NEW` dans le nom pour te souvenir que c'est le nouveau. Tu le renommeras à la fin une fois que tout fonctionne.
 
----
 
 ## 2️⃣ Reconfigurer la VM
 
@@ -75,7 +71,6 @@ New-VHD -Path "F:\Hyper-V\Disks\SRV-XXX_OS_NEW.vhdx" -SizeBytes 80GB -Dynamic
 
 > ⚠️ **Attention** : Secure Boot doit rester sur **"Microsoft Windows"** pour une VM Gen2 Windows Server.
 
----
 
 ## 3️⃣ Démarrer en WinPE
 
@@ -87,7 +82,6 @@ Réparer l'ordinateur → Dépannage → Options avancées → Invite de command
 
 Tu es maintenant dans **WinPE**.
 
----
 
 ## 4️⃣ Initialiser le nouveau disque (DiskPart)
 
@@ -113,7 +107,6 @@ exit
 
 > 🔍 **À savoir** : Identifie le bon disque avec `list disk` — le nouveau est celui qui affiche 0 Mo utilisés.
 
----
 
 ## 5️⃣ Assigner une lettre à l'ancien disque OS
 
@@ -137,7 +130,6 @@ Tu dois voir : `Windows`, `Program Files`, `Users`. Si t'as ça, t'es sur le bon
 
 > ⚠️ **Attention** : Si `dir D:\` affiche du vide ou une erreur, recommence avec une autre partition.
 
----
 
 ## 6️⃣ Copier l'OS en offline (robocopy)
 
@@ -158,7 +150,6 @@ robocopy D:\ F:\ /MIR /COPYALL /XJ /R:0 /W:0
 
 > 💡 **Astuce** : La copie prend 10-30 minutes selon la taille de l'OS.
 
----
 
 ## 7️⃣ Reconstruire le boot UEFI
 
@@ -173,7 +164,6 @@ Les fichiers de démarrage ont bien été créés.
 
 > ⚠️ **Attention** : Si la commande échoue sur la partition EFI, vérifie que `S:` est bien formatée en FAT32.
 
----
 
 ## 8️⃣ Préparer le redémarrage
 
@@ -186,7 +176,6 @@ Puis dans Hyper-V **avant de démarrer** :
 2. Retirer l'ISO du lecteur DVD
 3. Remettre le disque dur en premier dans l'ordre de boot
 
----
 
 ## 9️⃣ Premier démarrage et vérifications
 
@@ -202,7 +191,6 @@ Résultat attendu pour DISM :
 Aucun endommagement du magasin de composants n'a été détecté.
 ```
 
----
 
 ## ✅ Validation finale
 
@@ -214,7 +202,6 @@ Export-VM -Name "SRV-XXX" -Path "F:\Hyper-V\EXPORT_TEST"
 **Test sauvegarde VSS :**
 Lance une sauvegarde manuelle. Elle doit passer sans checkpoint bloquant.
 
----
 
 ## 🧹 Nettoyage final
 
@@ -226,7 +213,6 @@ Lance une sauvegarde manuelle. Elle doit passer sans checkpoint bloquant.
 Rename-Item "F:\Hyper-V\Disks\SRV-XXX_OS_NEW.vhdx" "SRV-XXX_OS.vhdx"
 ```
 
----
 
 ## 🚨 Problèmes courants
 
@@ -239,7 +225,6 @@ Rename-Item "F:\Hyper-V\Disks\SRV-XXX_OS_NEW.vhdx" "SRV-XXX_OS.vhdx"
 **`sfc /scannow` remonte des erreurs non réparées**
 → Lance `dism /online /cleanup-image /restorehealth` puis relance sfc.
 
----
 
 ## 🎬 Conclusion
 
@@ -249,7 +234,6 @@ Pas de réinstallation, pas de migration de rôles, pas de reconfiguration. Le d
 
 Si tu te demandes quelle génération de VM Hyper-V choisir pour éviter ce genre de situation dès le départ, consulte [Hyper-V Gen1 vs Gen2 : laquelle choisir ?](https://brandonvisca.com/hyperv-gen1-vs-gen2-quelle-generation-choisir/).
 
----
 
 ## ❓ FAQ
 

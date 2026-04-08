@@ -10,11 +10,11 @@ tags:
   - outils-systeme
 draft: false
 ---
+
 # rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide
 
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_1_ljjoew.webp)
 
----
 
 ## Introduction : Cmd+Tab, c'est 2005
 
@@ -41,7 +41,6 @@ Bienvenue dans le monde de **rcmd**, l'outil qui va te faire oublier Cmd+Tab pou
 
 Let's go ! 🚀
 
----
 
 ## TL;DR : rcmd en 30 secondes
 
@@ -63,7 +62,6 @@ Let's go ! 🚀
 
 ## Table of content
 
----
 
 ## Qu'est-ce que rcmd ?
 
@@ -92,7 +90,6 @@ C'est tout. Pas de menu. Pas d'interface. Juste tes doigts, ton clavier, et la v
 - **Note 5/5** 
 - **Développement actif** (dernière update : novembre 2024)
 
----
 
 ## Installation de rcmd
 
@@ -109,7 +106,6 @@ rcmd est actuellement **gratuit en version 2** via le Mac App Store. Bonne nouve
 
 ⚠️ **Timing** : La V2 reste **gratuite jusqu'à la V3**, donc c'est le moment idéal pour tester sans pression.
 
----
 
 ### Installation (V2 actuelle - gratuite)
 
@@ -121,7 +117,6 @@ rcmd est actuellement **gratuit en version 2** via le Mac App Store. Bonne nouve
 
 💡 **Astuce** : Épingle rcmd dans la barre de menu ou configure-le pour démarrer automatiquement au login (dans les préférences).
 
----
 
 ## Configuration essentielle en 5 minutes
 
@@ -152,7 +147,6 @@ Au premier lancement, rcmd te demande :
 
 💡 **Claviers externes ?** Si ton clavier n'a pas de Right Command distinct, tu peux changer la trigger key dans les settings (Control, Option, etc.)
 
----
 
 ## Utilisation : Les bases en 3 exemples
 
@@ -185,7 +179,6 @@ Tu veux que **Music.app** s'ouvre avec Right Command + U au lieu de M ?
 3. C'est fait ! Désormais, Right Command + U = Music
 
 
----
 
 ## Fonctionnalités avancées (pour aller plus loin)
 
@@ -240,7 +233,6 @@ rcmd se combine parfaitement avec :
 - Cmd + Space = Lancer des actions (Raycast)
 - Cmd + ` = Switch fenêtres même app
 
----
 
 ## rcmd vs les alternatives : Le match sans pitié
 
@@ -256,7 +248,6 @@ rcmd se combine parfaitement avec :
 
 **Verdict** : rcmd gagne haut la main sur la vitesse et la prévisibilité.
 
----
 
 ### rcmd vs Raycast / Alfred
 
@@ -276,7 +267,6 @@ rcmd se combine parfaitement avec :
 
 Perso, j'utilise les deux en parallèle. Chacun excelle dans son domaine.
 
----
 
 ### rcmd vs AltTab
 
@@ -291,7 +281,6 @@ Perso, j'utilise les deux en parallèle. Chacun excelle dans son domaine.
 
 **Verdict** : Si tu veux juste **switcher vite**, prends rcmd. Si tu veux **voir** tes fenêtres avant de switcher, prends AltTab.
 
----
 
 ## Cas d'usage concrets (comment je gagne 10 min/jour)
 
@@ -310,7 +299,6 @@ Right Command + P = Postman (API testing)
 
 **Gain sur 8h de dev** : ~10 minutes/jour
 
----
 
 ### Workflow 2 : Rédaction d'articles (mon cas)
 
@@ -324,7 +312,6 @@ Right Command + M = Music (concentration)
 
 **Résultat** : Je ne quitte plus mon clavier. Zéro friction cognitive.
 
----
 
 ### Workflow 3 : Admin système
 
@@ -338,7 +325,6 @@ Right Command + U = Uptime Kuma (monitoring)
 
 **Effet** : Réactivité accrue pour les incidents. Pas de temps perdu à chercher la bonne app.
 
----
 
 ## Troubleshooting : Les pièges à éviter
 
@@ -358,7 +344,6 @@ Right Command + U = Uptime Kuma (monitoring)
 ![Vérification keycodes - PLACEHOLDER SCREENSHOT]
 *Légende : App KeyCodes pour diagnostiquer le problème*
 
----
 
 ### Problème 2 : Conflit avec Raycast/Alfred
 
@@ -370,7 +355,6 @@ Right Command + U = Uptime Kuma (monitoring)
 2. Dans rcmd : Utilise Right Command uniquement
 3. **Aucun conflit** = usage complémentaire optimal
 
----
 
 ### Problème 3 : Une app ne se lance pas
 
@@ -385,7 +369,6 @@ Right Command + U = Uptime Kuma (monitoring)
 1. Vérifie que l'app est bien dans `/Applications`
 2. Assigne manuellement la touche : Ouvre Safari, puis Right Command + Right Option + S
 
----
 
 ### Problème 4 : Licence ne reste pas activée
 
@@ -404,7 +387,6 @@ Puis réactive avec ta clé de licence.
 
 ⚠️ **Note** : La version gratuite n'a pas ce problème (pas de licence).
 
----
 
 ## Alternatives et comparaisons
 
@@ -430,7 +412,6 @@ Puis réactive avec ta clé de licence.
 - Lourd en features
 - Overkill pour la plupart
 
----
 
 ## Conclusion : Faut-il adopter rcmd ?
 
@@ -459,7 +440,6 @@ Puis réactive avec ta clé de licence.
 
 Alors, prêt à switcher à la vitesse de la lumière ? 🚀
 
----
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
@@ -468,7 +448,6 @@ Alors, prêt à switcher à la vitesse de la lumière ? 🚀
 - **[[iterm2-guide-configuration-macos-2025|iTerm2 : Guide complet configuration macOS]]** : Optimise ton terminal (que tu vas ouvrir avec Right Command + I)
 - **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer rcmd et plein d'autres outils
 
----
 
 ## 💡 Ressources utiles
 

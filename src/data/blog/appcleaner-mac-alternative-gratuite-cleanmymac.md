@@ -19,8 +19,8 @@ faqs:
   - question: "Quelle différence avec la suppression manuelle vers la corbeille ?"
     answer: "La suppression manuelle laisse des traces dans Library. AppCleaner supprime tous les fichiers associés : préférences, caches, logs."
 ---
+
 TL;DR
------
 
 Tu viens de désinstaller une app sur ton Mac en la glissant dans la Corbeille ? Spoiler : elle a laissé des traces partout. Des fichiers de config dans `~/Library`, des caches dans `/tmp`, des préférences oubliées dans `Application Support`. Résultat ? Ton SSD se remplit de déchets invisibles.
 
@@ -111,5 +111,3 @@ sudo find /Library ~/Library -iname "*NomApp*" 2>/dev/null
 sudo rm -rf /path/to/files
 
 ```
-
-

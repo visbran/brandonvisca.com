@@ -10,6 +10,7 @@ tags:
   - uefi
 draft: false
 ---
+
 # Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
 
 Gen1 ou Gen2 pour ta prochaine VM Hyper-V ? La question revient à chaque création de VM, et la réponse n'est pas toujours évidente — surtout quand on voit que certains OS ne supportent tout simplement pas Gen2.
@@ -18,7 +19,6 @@ Spoiler : dans 90% des cas, tu veux Gen2. Mais il y a des exceptions qui mérite
 
 Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environnement de production.
 
----
 
 ## TL;DR
 
@@ -38,7 +38,6 @@ Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environn
 
 ## Table of content
 
----
 
 ## C'est quoi la différence concrète ?
 
@@ -48,7 +47,6 @@ Gen1 est là depuis Hyper-V 2012. Gen2 est arrivé avec Hyper-V 2012 R2. Les deu
 
 > ⚠️ **Attention** : impossible de convertir une VM Gen1 en Gen2 (et vice-versa) sans recréer la VM. Si tu choisis mal, tu recommences.
 
----
 
 ## Hyper-V Gen1 : test complet
 
@@ -78,7 +76,6 @@ Aucun coût direct, mais le coût caché c'est le temps : si ton WSUS ou ton sys
 - Migration P2V depuis une machine BIOS
 - FreeBSD, Solaris, OS non-mainstream
 
----
 
 ## Hyper-V Gen2 : test complet
 
@@ -114,7 +111,6 @@ Le seul "coût" : s'assurer que ton OS est compatible et que ton infrastructure 
 - Environnements avec Secure Boot obligatoire
 - VMs nécessitant un vTPM (BitLocker, Windows 11)
 
----
 
 ## Le verdict : qui pour qui ?
 
@@ -135,7 +131,6 @@ Le seul "coût" : s'assurer que ton OS est compatible et que ton infrastructure 
 
 > 🔍 **À savoir** : Microsoft recommande officiellement Gen2 pour tous les OS supportés. Gen1 existe pour la compatibilité descendante, pas pour les nouvelles VMs.
 
----
 
 ## Compatibilité OS par génération
 
@@ -160,7 +155,6 @@ Le seul "coût" : s'assurer que ton OS est compatible et que ton infrastructure 
 
 > 💡 **Astuce** : Si tu as un doute sur la compatibilité Gen2 de ton Linux, démarre en Gen2 sans Secure Boot dans un premier temps. Tu pourras l'activer ensuite une fois l'OS installé et les drivers en place.
 
----
 
 ## Un point sur Secure Boot en Gen2
 
@@ -181,7 +175,6 @@ Set-VMFirmware -VMName "SRV-XXX" -EnableSecureBoot Off
 
 > ⚠️ **Attention** : Sur une VM Linux Gen2, utilise toujours le template `MicrosoftUEFICertificateAuthority`. Le template Windows bloquera le démarrage de ton Linux.
 
----
 
 ## FAQ
 
@@ -203,7 +196,6 @@ Obligatoirement Gen2. Windows 11 nécessite TPM 2.0, et seul le vTPM disponible 
 **Gen1 sera-t-elle dépréciée un jour ?**
 Aucune annonce officielle de Microsoft, mais la tendance est clairement vers Gen2. Tous les nouveaux OS et fonctionnalités (vTPM, Shielded VMs) sont Gen2 uniquement. Partir sur du neuf en Gen1 aujourd'hui, c'est s'assurer du travail de migration dans quelques années.
 
----
 
 ## 🎬 Conclusion
 
@@ -214,4 +206,3 @@ Gen1 reste pertinente pour deux cas précis : les OS anciens (32 bits, Windows 2
 Si tu crées une nouvelle VM aujourd'hui pour Windows Server 2019/2022/2025 ou un Linux récent : **Gen2, sans hésitation**.
 
 Et si tu te retrouves avec une VM Gen2 corrompue, j'ai détaillé [la procédure complète de restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-corrompu-winpe/) — ça peut toujours servir.
-

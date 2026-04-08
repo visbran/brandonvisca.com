@@ -10,8 +10,8 @@ tags:
   - comparatif
   - guide
 ---
+
 TL;DR :
--------
 
 The Browser Company a lâché Arc Browser pour se concentrer sur Dia. Si tu étais accro au design épuré, aux split screens et aux raccourcis clavier d’Arc, voici les meilleures alternatives pour ne pas finir sur Chrome comme un sauvage.
 
@@ -99,7 +99,6 @@ Avant de parler alternatives, rappelons ce qui rendait Arc Browser si addictif :
 Si tu cherches à retrouver ces sensations, voici tes meilleures options.
 
 ## SigmaOS : L’alternative la plus directe
----------------------------------------
 
 ![Interface SigmaOS alternative Arc Browser avec split screen et workspaces](sigmaos.webp)**Prix** : Freemium (14$/mois pour Pro)  
 **Plateforme** : macOS uniquement  
@@ -154,7 +153,6 @@ Dans brave://settings/
 - - - - - -
 
 ## Firefox avec extensions minimalistes
-------------------------------------
 
 ![Navigateur Firefox, contrôle en ligne.](firefox.webp)**Prix** : Gratuit  
 **Plateforme** : Toutes  

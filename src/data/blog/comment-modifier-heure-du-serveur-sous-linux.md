@@ -142,6 +142,5 @@ Pour changer le fuseau horaire sous Ubuntu, vous pouvez utiliser la commande `ti
 
 Gérer les paramètres d'heure et de fuseau horaire de votre système est essentiel pour maintenir des journaux précis et le bon fonctionnement du système. En utilisant des outils comme `timedatectl` et NTP, vous pouvez vous assurer que l'horloge de votre système Linux est toujours précise. Pour des guides plus complets, consultez des sources comme le [guide de Rackspace sur la configuration de la date, de l'heure et du fuseau horaire sur un serveur Linux](https://docs.rackspace.com/docs/set-the-date-and-time-timezone-on-a-linux-server) ou le [guide de wikiHow sur le changement de fuseau horaire sous Linux](https://www.wikihow.com/Change-the-Timezone-in-Linux).
 
----
 
 **Meta Description:** Apprenez à changer le fuseau horaire, définir le fuseau horaire et synchroniser l'heure du serveur sous Linux en utilisant `timedatectl` et NTP. Suivez notre guide détaillé pour garder vos systèmes Linux précis.
