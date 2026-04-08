@@ -11,7 +11,3 @@ tags:
   - automatisation
 ---
 
----
-
-## Table des matières
-
