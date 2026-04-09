@@ -1,6 +1,7 @@
 ---
 title: "Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)"
 pubDatetime: "2025-11-16T22:52:46+01:00"
+author: Brandon Visca
 description: "Warp Terminal révolutionne le terminal avec IA, agents autonomes et collaboration en temps réel. Test complet vs iTerm2 + installation macOS/Linux/Windows."
 tags:
   - warp-terminal

@@ -1,6 +1,7 @@
 ---
 title: "Active Directory : Transfère des rôles FSMO"
 pubDatetime: "2025-03-31T17:34:29+02:00"
+author: Brandon Visca
 description: Les rôles FSMO sont 5 fonctions importantes dans un réseau Windows. Un seul contrôleur de domaine peut avoir un ou plusieurs de ces rôles.
 tags:
   - active-directory

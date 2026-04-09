@@ -1,6 +1,7 @@
 ---
 title: "Cling : Recherche fuzzy fichiers 10x plus rapide"
 pubDatetime: "2025-11-27T00:00:00+00:00"
+author: Brandon Visca
 description: "Cling : trouve fichiers macOS instantanément avec recherche fuzzy. Même avec fautes frappe. Alternative Spotlight. Gratuit, open source."
 tags:
   - macos

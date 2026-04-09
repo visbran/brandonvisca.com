@@ -1,7 +1,8 @@
 ---
 title: "Gérer vos fichiers sur Amazon S3 avec S3cmd : Guide complet"
 pubDatetime: "2025-02-17T17:37:40+01:00"
-description: "Pourquoi utiliser S3cmd ?"
+author: Brandon Visca
+description: "S3cmd guide complet : installez et configurez ce client CLI open source pour gérer vos fichiers Amazon S3, synchroniser et sauvegarder vos données."
 tags:
   - linux
   - sysadmin

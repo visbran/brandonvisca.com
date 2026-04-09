@@ -1,6 +1,7 @@
 ---
 title: "Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)"
 pubDatetime: "2026-03-10T00:00:00+00:00"
+author: Brandon Visca
 description: "Gen1 ou Gen2 pour ta VM Hyper-V ? UEFI, Secure Boot, PXE, performances : le comparatif complet pour faire le bon choix selon ton OS et ton contexte."
 tags:
   - hyper-v

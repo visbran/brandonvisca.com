@@ -1,7 +1,8 @@
 ---
 title: "Ajouter un programme au PATH Windows : Le guide ultime 2025 (3 méthodes"
 pubDatetime: "2025-03-31T15:50:44+02:00"
-description: "Découvrez comment ajouter un programme au PATH Windows en 2025 :"
+author: Brandon Visca
+description: "Ajoutez un programme au PATH Windows en 2025 : 3 méthodes (interface graphique, PowerShell, CMD) avec troubleshooting et exemples pratiques."
 tags:
   - windows
   - developpement

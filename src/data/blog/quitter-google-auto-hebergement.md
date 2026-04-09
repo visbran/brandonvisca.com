@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi j'ai quitté Google (et comment tu peux faire pareil en 2025)"
 pubDatetime: "2025-10-26T15:09:10+01:00"
+author: Brandon Visca
 description: "Découvre pourquoi et comment j'ai remplacé tous mes services Google par des alternatives auto-hébergées. Guide complet, 0€/mois, 100% fonctionnel."
 tags:
   - auto-hebergement

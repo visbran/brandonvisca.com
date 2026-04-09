@@ -1,6 +1,7 @@
 ---
 title: "Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)"
 pubDatetime: "2025-10-26T20:59:01+01:00"
+author: Brandon Visca
 description: "Installe Jellyfin avec Docker en 20 min. Alternative Netflix auto-hébergée, économise 378€/an. Guide 2025 complet + transcoding 4K."
 tags:
   - docker

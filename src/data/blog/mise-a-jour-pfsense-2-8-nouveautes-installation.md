@@ -1,7 +1,8 @@
 ---
 title: "pfsense CE 2.8.0 : Ce que vous devez savoir avant de cliquer sur “Mettre à jour”"
 pubDatetime: "2025-06-01T19:41:15+02:00"
-description: "Découvrez les nouveautés, correctifs et étapes clés pour mettre à jour pfSense vers la version 2.8 en toute sécurité."
+author: Brandon Visca
+description: "Mettez à jour pfSense CE 2.8 en toute sécurité : nouveautés FreeBSD 14, correctifs de sécurité et étapes de migration détaillées pour éviter les erreurs."
 tags:
   - securite
   - reseau

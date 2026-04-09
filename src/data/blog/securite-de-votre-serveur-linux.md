@@ -1,6 +1,7 @@
 ---
 title: "Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?"
 pubDatetime: "2024-06-10T19:29:00+02:00"
+author: Brandon Visca
 description: "Dans ce guide pratique où nous allons renforcer ensemble la sécurité de votre serveur Linux. De l'installation de votre système à l'application des dern..."
 tags:
   - linux

@@ -1,6 +1,7 @@
 ---
 title: "Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)"
 pubDatetime: "2025-10-26T22:16:05+01:00"
+author: Brandon Visca
 description: "Installe Vaultwarden avec Docker en 15 min. Alternative 1Password/Bitwarden gratuite, économise 36€/an. Guide 2025 complet + sécurité maximale."
 tags:
   - docker

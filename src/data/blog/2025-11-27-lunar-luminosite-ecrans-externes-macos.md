@@ -1,6 +1,7 @@
 ---
 title: "Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)"
 pubDatetime: "2025-11-27T00:00:00+00:00"
+author: Brandon Visca
 description: "Découvre Lunar, l'app qui résout le problème de luminosité des écrans externes sur macOS. DDC natif, F1/F2 fonctionnent, sync auto. Indispensable Mac Mini."
 tags:
   - macos

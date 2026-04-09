@@ -1,6 +1,7 @@
 ---
 title: "Arc Browser abandonné : 7 alternatives épurées pour retrouver ton workflow de rêve"
 pubDatetime: "2025-08-09T19:57:34+02:00"
+author: Brandon Visca
 description: "Arc Browser est abandonné ? Découvre 7 alternatives épurées avec split screen, raccourcis clavier et design minimaliste. SigmaOS, Zen Browser et plus."
 tags:
   - macos

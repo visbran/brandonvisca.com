@@ -1,6 +1,7 @@
 ---
 title: "Filtrage utilisateurs LDAP Snipe-IT : Guide pratique Active Directory 2025"
 pubDatetime: "2025-03-02T21:06:25+01:00"
+author: Brandon Visca
 description: "Guide avancé pour filtrer les utilisateurs LDAP dans Snipe-IT connecté à Active Directory. Filtres sécurisés, exclusions par OU, bonnes pratiques 2025."
 tags:
   - sysadmin

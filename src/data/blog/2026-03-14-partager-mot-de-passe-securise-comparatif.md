@@ -1,6 +1,7 @@
 ---
 title: "Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)"
 pubDatetime: "2026-03-14T00:00:00+00:00"
+author: Brandon Visca
 description: "Tu envoies encore des mots de passe par Slack ou email ? Mauvaise idée. J'ai comparé Password.link, OneTimeSecret et PrivateBin pour trouver la meilleur..."
 tags:
   - securite

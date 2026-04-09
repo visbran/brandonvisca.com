@@ -1,7 +1,8 @@
 ---
 title: "AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2025)"
 pubDatetime: "2025-11-18T18:55:54+01:00"
-description: AltTab macOS transforme le ⌘+Tab natif avec prévisualisations style
+author: Brandon Visca
+description: "AltTab macOS transforme le ⌘+Tab natif avec prévisualisations Windows. Switchez entre apps et fenêtres, gratuit et open-source. Guide complet 2025."
 tags:
   - macos
   - productivite

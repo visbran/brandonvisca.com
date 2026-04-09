@@ -1,6 +1,7 @@
 ---
 title: "WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2025)"
 pubDatetime: "2025-11-24T22:03:21+01:00"
+author: Brandon Visca
 description: "WailBrew macOS : interface graphique pour Homebrew. Installe, met à jour et gère tes apps sans toucher au Terminal. Guide complet + comparaison alternat..."
 tags:
   - macos

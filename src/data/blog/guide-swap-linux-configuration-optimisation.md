@@ -1,6 +1,7 @@
 ---
 title: "Swap Linux : comment ne pas transformer ton serveur en escargot asthmatique"
 pubDatetime: "2025-07-13T22:16:30+02:00"
+author: Brandon Visca
 description: "Guide pratique pour configurer, optimiser et gérer le swap sous Linux. Fichiers swap, swappiness, redimensionnement et monitoring avancé."
 tags:
   - linux

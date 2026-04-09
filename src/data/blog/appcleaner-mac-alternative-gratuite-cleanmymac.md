@@ -1,7 +1,8 @@
 ---
 title: "AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)"
 pubDatetime: "2025-11-18T17:39:28+01:00"
-description: AppCleaner Mac supprime complètement tes apps avec tous leurs fichiers
+author: Brandon Visca
+description: "AppCleaner Mac supprime complètement tes apps avec tous leurs fichiers associés (caches, préférences). Alternative gratuite à CleanMyMac. Guide 2025."
 tags:
   - macos
   - productivite

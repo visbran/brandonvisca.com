@@ -1,6 +1,7 @@
 ---
 title: "Music Decoy macOS : Bloquer Apple Music au Démarrage (Solution Gratuite 2025)"
 pubDatetime: "2025-11-26T22:15:32+01:00"
+author: Brandon Visca
 description: Music Decoy macOS empêche Apple Music de se lancer avec la touche Play. Solution minimaliste gratuite pour utilisateurs Spotify/YouTube Music. Guide ins...
 tags:
   - macos

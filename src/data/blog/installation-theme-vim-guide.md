@@ -1,6 +1,7 @@
 ---
 title: "Installation d'un thème sous Vim : Guide complet"
 pubDatetime: "2025-03-31T15:43:24+02:00"
+author: Brandon Visca
 description: "Nous allons voir comment installer et configurer un thème dans vim, en prenant comme exemple le populaire thème Catppuccin."
 tags:
   - linux

@@ -1,6 +1,7 @@
 ---
 title: "Android File Transfer Mac : 2 alternatives testées (2025)"
 pubDatetime: "2025-02-16T00:00:00+00:00"
+author: Brandon Visca
 description: "J'ai testé OpenMTP et MacDroid pendant 90 jours. Verdict : OpenMTP gratuit bat Android File Transfer. Comparatif complet avec benchmarks réels."
 tags:
   - macos

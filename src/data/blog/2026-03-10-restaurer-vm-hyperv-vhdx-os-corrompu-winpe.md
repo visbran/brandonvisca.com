@@ -1,6 +1,7 @@
 ---
 title: "VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)"
 pubDatetime: "2026-03-10T00:00:00+00:00"
+author: Brandon Visca
 description: "Export-VM qui échoue, sauvegardes VSS bloquées, DISM instable : ta VM Hyper-V est logiquement corrompue. Voici la procédure complète pour reconstruire u..."
 tags:
   - hyper-v

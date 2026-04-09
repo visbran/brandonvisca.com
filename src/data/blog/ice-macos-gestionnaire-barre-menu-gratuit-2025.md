@@ -1,6 +1,7 @@
 ---
 title: "Ice : L'alternative gratuite à Bartender qui révolutionne votre barre de menu macOS (2025)"
 pubDatetime: "2025-09-22T22:25:45+02:00"
+author: Brandon Visca
 description: "Découvrez Ice, l''outil gratuit et open-source pour organiser votre barre de menu macOS. Alternative parfaite à Bartender avec fonctionnalités avancées."
 tags:
   - macos

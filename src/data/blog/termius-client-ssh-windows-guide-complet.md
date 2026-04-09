@@ -1,6 +1,7 @@
 ---
 title: "Termius : Le Client SSH Moderne qui Envoie PuTTY à la Retraite (Guide 2025)"
 pubDatetime: "2025-11-22T19:10:57+01:00"
+author: Brandon Visca
 description: "Termius révolutionne la gestion SSH sur Windows. Alternative moderne à PuTTY avec sync cloud, SFTP intégré et interface intuitive. Guide complet 2025."
 tags:
   - windows

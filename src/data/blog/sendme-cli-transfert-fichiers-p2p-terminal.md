@@ -1,6 +1,6 @@
 ---
 title: "Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)"
-description: "Sendme CLI : l'outil qui transforme le transfert de fichiers en ligne de commande. P2P sécurisé, NAT traversal automatique, aucun serveur. Guide complet 2025."
+description: "Sendme CLI : transfert P2P sécurisé en 2 commandes. NAT traversal automatique, aucun serveur requis. Alternative moderne à scp. Guide complet 2025."
 pubDatetime: "2025-12-09T21:14:00+01:00"
 author: Brandon Visca
 tags:

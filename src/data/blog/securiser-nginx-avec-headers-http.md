@@ -1,6 +1,7 @@
 ---
 title: Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels
 pubDatetime: "2025-04-06T11:33:55+02:00"
+author: Brandon Visca
 description: "Apprenez à sécuriser efficacement votre serveur Nginx en configurant les headers HTTP recommandés par l’OWASP. Un guide complet avec exemples pratiques,..."
 tags:
   - linux

@@ -1,6 +1,7 @@
 ---
 title: "Importer fichiers PST dans Outlook 365 : Guide fiable et rapide (2025)"
 pubDatetime: "2025-02-21T10:14:37+01:00"
+author: Brandon Visca
 description: Guide complet pour importer vos fichiers PST dans Outlook 365. 2 méthodes testées + alternative XstReader pour lire vos emails sans Outlook. Solutions g...
 tags:
   - microsoft-365

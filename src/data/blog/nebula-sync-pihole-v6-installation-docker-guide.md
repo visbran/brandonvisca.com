@@ -1,6 +1,7 @@
 ---
 title: "Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement (le remplaçant de Gravity Sync)"
 pubDatetime: "2025-10-23T20:55:40+02:00"
+author: Brandon Visca
 description: "Découvrez Nebula-Sync, l''outil gratuit qui remplace Gravity Sync pour synchroniser plusieurs Pi-hole v6. Installation Docker + config complète."
 tags:
   - docker

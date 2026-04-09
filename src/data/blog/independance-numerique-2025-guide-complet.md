@@ -1,6 +1,7 @@
 ---
 title: "Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle"
 pubDatetime: "2025-11-06T10:17:04+01:00"
+author: Brandon Visca
 description: "Guide complet auto-hébergement 2025 : Nextcloud + Jellyfin + Vaultwarden. Remplace Google/Netflix/1Password, économise 534€/an. Installation weekend."
 tags:
   - auto-hebergement

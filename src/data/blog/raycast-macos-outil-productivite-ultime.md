@@ -1,6 +1,7 @@
 ---
 title: "Raycast : L'outil qui transforme macOS en machine de productivité ultime"
 pubDatetime: "2025-10-13T15:20:28+02:00"
+author: Brandon Visca
 description: "Découvrez Raycast, le launcher macOS gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2025."
 tags:
   - macos

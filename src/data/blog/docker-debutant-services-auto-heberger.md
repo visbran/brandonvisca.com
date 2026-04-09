@@ -1,6 +1,7 @@
 ---
 title: "Docker pour les débutants : 10 services essentiels à auto-héberger en 2025"
 pubDatetime: "2025-10-22T16:12:41+02:00"
+author: Brandon Visca
 description: "Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !"
 tags:
   - docker

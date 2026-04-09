@@ -1,6 +1,7 @@
 ---
 title: "Notion Sites: Révolution dans la Création de Sites Web"
 pubDatetime: "2024-06-25T20:59:29+02:00"
+author: Brandon Visca
 description: "Découvrez comment Notion Sites révolutionne la création de sites web avec ses fonctionnalités avancées de CMS, de personnalisation facile et de gestion ..."
 tags:
   - developpement

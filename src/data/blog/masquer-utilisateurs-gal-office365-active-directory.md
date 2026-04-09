@@ -1,6 +1,7 @@
 ---
 title: "Masquer des utilisateurs de la GAL Office 365 + Active Directory : Guide complet"
 pubDatetime: "2025-08-01T21:17:07+02:00"
+author: Brandon Visca
 description: "Découvrez comment masquer facilement des utilisateurs de la Liste d''Adresses Globale (GAL) Office 365 synchronisés depuis Active Directory local sans é..."
 tags:
   - microsoft-365

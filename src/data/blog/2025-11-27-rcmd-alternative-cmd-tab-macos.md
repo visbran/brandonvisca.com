@@ -1,6 +1,7 @@
 ---
 title: "rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide"
 pubDatetime: "2025-11-27T00:00:00+00:00"
+author: Brandon Visca
 description: "rcmd : switch entre apps en 1 touche (Right Cmd + lettre). Alternative Cmd+Tab gratuite, 10x plus rapide. Installation 2 min + config complète."
 tags:
   - macos

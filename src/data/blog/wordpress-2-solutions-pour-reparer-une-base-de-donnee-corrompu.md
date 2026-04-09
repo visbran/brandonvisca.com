@@ -1,7 +1,8 @@
 ---
 title: "WordPress : 2 solutions pour réparer une base de donnée corrompu"
 pubDatetime: "2024-07-16T19:50:34+02:00"
-description: "Une base de données corrompue peut causer des erreurs critiques sur votre site web, le rendant inaccessible."
+author: Brandon Visca
+description: "Réparez une base de données WordPress corrompue : 2 méthodes éprouvées (outil intégré et phpMyAdmin) pour restaurer votre site en moins de 10 minutes."
 tags:
   - linux
   - developpement
