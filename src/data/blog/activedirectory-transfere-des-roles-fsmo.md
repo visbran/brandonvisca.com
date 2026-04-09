@@ -13,8 +13,6 @@ tags:
 ---
 
 
-# FSMO c'est quoi ??
-
 Les rôles FSMO sont 5 fonctions importantes dans un réseau Windows. Un seul contrôleur de domaine peut avoir un ou plusieurs de ces rôles. On peut déplacer ces rôles entre les contrôleurs de domaine de deux façons :
 
 1. Avec l’interface graphique de Windows Server

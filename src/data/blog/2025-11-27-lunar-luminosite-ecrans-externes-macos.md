@@ -10,8 +10,6 @@ tags:
 ---
 
 
-# Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)
-
 
 
 

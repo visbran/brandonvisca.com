@@ -23,8 +23,6 @@ faqs:
   - question: "Ça fonctionne avec tous les appareils Android ?"
     answer: "OpenMTP fonctionne avec tous les appareils Android via le protocole MTP. Active bien le mode MTP dans les options développeur de ton Android avant de connecter le câble."
 ---
-# Android File Transfer Mac : 2 alternatives testées 90 jours (2025)
-
 Tu en as marre qu'Android File Transfer plante toutes les 5 minutes ? J'ai testé OpenMTP et MacDroid pendant 90 jours sur mon MacBook M1. Spoiler : OpenMTP gratuit explose Android File Transfer sur tous les tableaux. Voici pourquoi.
 
 ## Table des matières

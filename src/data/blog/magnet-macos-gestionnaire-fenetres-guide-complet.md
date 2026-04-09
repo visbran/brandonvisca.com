@@ -17,8 +17,6 @@ featured: true
 draft: false
 focusKeyword: magnet macos
 ---
-# Magnet macOS : Le gestionnaire de fenêtres qui va transformer ton workflow (+ alternatives gratuites)
-
 
 ## Introduction : La gestion de fenêtres sur macOS, c'était la galère
 

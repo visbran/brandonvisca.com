@@ -82,6 +82,31 @@ const nextPost =
 ---
 
 <Layout {...layoutProps}>
+  <script
+    slot="head"
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "datePublished": pubDatetime,
+      ...(modDatetime ? { "dateModified": modDatetime } : {}),
+      "author": {
+        "@type": "Person",
+        "name": author || "Brandon Visca",
+        "url": `${Astro.url.origin}/about/`,
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Brandon Visca",
+        "url": `${Astro.url.origin}/about/`,
+      },
+      "url": canonicalURL || Astro.url.href,
+      ...(ogImage ? { "image": ogImage } : {}),
+    })}
+  />
   {faqs && faqs.length > 0 && (
     <script
       slot="head"

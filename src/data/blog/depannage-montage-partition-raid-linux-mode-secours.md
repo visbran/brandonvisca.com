@@ -2,7 +2,7 @@
 title: Dépannage des problèmes de montage de matrices RAID (mdadm) en mode de secours Linux
 pubDatetime: "2025-03-13T11:37:18+01:00"
 author: Brandon Visca
-description: "Dépannez un montage RAID mdadm en mode secours Linux : diagnostic de l'erreur wrong fs type, découverte d'une partition cachée et solution complète."wrong fs type\" en découvrant que l'array RAID contenait une ta..."
+description: "Dépannez un montage RAID mdadm en mode secours Linux : diagnostic de l'erreur wrong fs type, découverte d'une partition cachée et solution complète."
 tags:
   - linux
   - sysadmin

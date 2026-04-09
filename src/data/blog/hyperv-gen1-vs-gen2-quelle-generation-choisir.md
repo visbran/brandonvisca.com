@@ -23,8 +23,6 @@ faqs:
   - question: "Le Secure Boot Gen2 bloque-t-il les Linux ?"
     answer: "Par défaut oui, si ton Linux n'est pas signé par Microsoft. Solution : désactiver le Secure Boot dans les paramètres de la VM Gen2. Ubuntu et Debian sont signés et démarrent sans modification."
 ---
-# Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
-
 Gen1 ou Gen2 pour ta prochaine VM Hyper-V ? La question revient à chaque création de VM, et la réponse n'est pas toujours évidente — surtout quand on voit que certains OS ne supportent tout simplement pas Gen2.
 
 Spoiler : dans 90% des cas, tu veux Gen2. Mais il y a des exceptions qui méritent qu'on s'y arrête.

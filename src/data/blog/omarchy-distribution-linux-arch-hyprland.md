@@ -161,10 +161,11 @@ btop
 
 ```
 
+```ini
 # Éditer ~/.config/hypr/input.conf
 kb_layout = us,fr  
 kb_options = compose:caps,grp:alts_toggle
-
+```
 
 **2. Ajuster l’échelle d’affichage** Pour les écrans non-4K, modifier `~/.config/hypr/hyprland.conf` :
 

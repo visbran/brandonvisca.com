@@ -23,8 +23,6 @@ faqs:
   - question: "rcmd fonctionne-t-il avec plusieurs Spaces macOS ?"
     answer: "Oui, rcmd bascule vers l'app même si elle est dans un autre Space macOS, ce que Cmd+Tab natif ne gère pas toujours correctement."
 ---
-# rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide
-
 ![Illustration 1 — rcmd](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_1_ljjoew.webp)
 
 ---

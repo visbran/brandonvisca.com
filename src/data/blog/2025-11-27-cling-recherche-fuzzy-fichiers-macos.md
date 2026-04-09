@@ -13,8 +13,6 @@ tags:
 draft: false
 ---
 
-# Cling : Recherche fuzzy fichiers 10x plus rapide
-
 ![Illustration 1 — Cling](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
 
 

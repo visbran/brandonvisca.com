@@ -12,8 +12,6 @@ tags:
 draft: false
 ---
 
-# rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide
-
 ![Illustration 1 — rcmd](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_1_ljjoew.webp)
 
 

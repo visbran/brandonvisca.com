@@ -12,8 +12,6 @@ tags:
 draft: false
 ---
 
-# Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)
-
 T'as déjà envoyé un mot de passe par Slack ou par email ? On l'a tous fait. Et on l'a tous regretté — ou on devrait.
 
 Le problème : ces messages restent dans des historiques, des serveurs de messagerie, des logs. Quelqu'un qui accède à la boîte mail de ton collègue six mois plus tard peut toujours lire le mot de passe root de ton serveur. Sympa.

@@ -12,8 +12,6 @@ tags:
   - guide
 ---
 
-# Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)
-
 **Méta description :** Installation SnipeIT Ubuntu 22.04/24.04 complète : guide LAMP, MySQL, Git, permissions et sécurité. Tuto installation SnipeIT Ubuntu étape par étape pour débutants.
 
 ---

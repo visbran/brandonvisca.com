@@ -12,8 +12,6 @@ tags:
 draft: false
 ---
 
-# Android File Transfer Mac : 2 alternatives testées 90 jours (2025)
-
 Tu en as marre qu'Android File Transfer plante toutes les 5 minutes ? J'ai testé OpenMTP et MacDroid pendant 90 jours sur mon MacBook M1. Spoiler : OpenMTP gratuit explose Android File Transfer sur tous les tableaux. Voici pourquoi.
 
 ## 🎯 TL;DR : Le verdict en 30 secondes

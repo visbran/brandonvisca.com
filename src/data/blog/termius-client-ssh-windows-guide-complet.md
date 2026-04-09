@@ -23,8 +23,6 @@ faqs:
     answer: "Pas directement, mais vous pouvez exporter vos sessions PuTTY depuis le registre Windows et utiliser un script de conversion, ou recréer vos connexions manuellement."
 ---
 
-# Termius : Le Client SSH Moderne qui Envoie PuTTY à la Retraite (Guide 2025)
-
 Si tu utilises encore **PuTTY** pour te connecter en SSH à tes serveurs en 2025, cet article va te faire gagner 30 minutes par jour. Non, ce n'est pas du clickbait. Termius, c'est ce qui se passe quand un client SSH rencontre le 21ème siècle : interface moderne, synchronisation cloud, gestion intelligente des clés... Bref, tout ce que PuTTY aurait dû devenir s'il n'était pas resté coincé en 1999.
 
 ## Table of content

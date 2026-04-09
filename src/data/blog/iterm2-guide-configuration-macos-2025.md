@@ -12,8 +12,6 @@ tags:
   - productivite
 ---
 
-# iTerm2 sur macOS : Le Guide Complet d'Installation et Configuration (2025)
-
 Vous en avez marre du Terminal par défaut de macOS qui manque de fonctionnalités ? iTerm2 est LA solution qui va transformer votre expérience en ligne de commande. Dans ce guide, nous allons voir ensemble comment installer, configurer et optimiser iTerm2 pour booster votre productivité de développeur.
 
 ## Qu'est-ce qu'iTerm2 et pourquoi l'adopter ?

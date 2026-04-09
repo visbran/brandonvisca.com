@@ -23,8 +23,6 @@ faqs:
   - question: "Grila supporte-t-il les invitations Calendrier ?"
     answer: "Oui, Grila affiche les invitations réunion et permet de les accepter ou refuser directement depuis son interface sans ouvrir Mail ou Calendrier."
 ---
-# Grila vs Fantastical : Comparatif honnête après 6 mois (2025)
-
 ![Grila vs Fantastical hero - PLACEHOLDER SCREENSHOT]
 *Légende : Grila (gauche) vs Fantastical (droite) - Lequel choisir ?*
 

@@ -22,8 +22,6 @@ faqs:
   - question: "Lequel choisir sans homelab ?"
     answer: "Utilise yopass.se (instance publique officielle) ou onetimesecret.com directement depuis le navigateur. Aucune installation requise, fonctionnel en 30 secondes."
 ---
-# Yopass vs PrivateBin vs Password Pusher : lequel choisir? (2025)
-
 Tu envoies encore des mots de passe par Slack ou par email ? Vas-y, continue. Et pendant que tu lis ce message, quelqu'un d'autre lit peut-être aussi ton historique de messages.
 
 Le problème, c'est que tout le monde le fait. Le stagiaire qui arrive lundi, le client à qui tu livres un accès serveur, le collègue qui a besoin du compte admin en urgence. Et la réponse par défaut c'est toujours la même : un message Slack avec le mot de passe en clair, un email, ou pire — un Google Doc "partagé en privé".

@@ -12,8 +12,6 @@ tags:
 draft: false
 ---
 
-# Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
-
 Gen1 ou Gen2 pour ta prochaine VM Hyper-V ? La question revient à chaque création de VM, et la réponse n'est pas toujours évidente — surtout quand on voit que certains OS ne supportent tout simplement pas Gen2.
 
 Spoiler : dans 90% des cas, tu veux Gen2. Mais il y a des exceptions qui méritent qu'on s'y arrête.

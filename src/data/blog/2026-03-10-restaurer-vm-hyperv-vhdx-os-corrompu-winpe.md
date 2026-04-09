@@ -13,8 +13,6 @@ tags:
 draft: false
 ---
 
-# VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)
-
 T'as une VM Hyper-V qui démarre encore, mais `Export-VM` plante, les sauvegardes VSS refusent de partir et DISM te regarde avec des yeux vides. La VM tourne, mais elle est cassée de l'intérieur.
 
 Bonne nouvelle : c'est récupérable. Sans réinstaller Windows Server. Sans perdre tes données.

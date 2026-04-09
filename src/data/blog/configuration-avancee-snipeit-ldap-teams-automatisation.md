@@ -12,8 +12,6 @@ tags:
   - automatisation
 ---
 
-# Configuration avancée SnipeIT : LDAP, automatisation et notifications (guide ninja 2025)
-
 Tu as réussi ton [installation SnipeIT Ubuntu](https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/), tu as un inventaire qui fonctionne, mais maintenant tu veux passer au **niveau ninja**. La **configuration avancée SnipeIT** va transformer ton installation basique en machine de guerre IT.
 
 Dans ce guide de **configuration avancée SnipeIT**, on va couvrir tout ce qui fait la différence entre "j'ai installé un outil" et "j'ai un système ITSM professionnel". Intégration Active Directory pour ne plus saisir les utilisateurs à la main, scan automatique du réseau pour découvrir les assets, notifications Teams pour que toute l'équipe soit au courant, et sécurité béton pour dormir tranquille.

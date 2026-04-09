@@ -105,9 +105,11 @@ Renforcer le réseau avec les paramètres sysctl
 
 ```bash
 sudo vi /etc/sysctl.conf
-
 ```
 
+Ajoutez ensuite les lignes suivantes dans le fichier :
+
+```ini
 # Protection contre l'usurpation d'IP
 net.ipv4.conf.all.rp_filter = 1
 net.ipv4.conf.default.rp_filter = 1
@@ -143,7 +145,7 @@ net.ipv6.conf.default.accept_redirects = 0
 
 # Ignorer les pings dirigés
 net.ipv4.icmp_echo_ignore_all = 1
-
+```
 
 - Pour recharger sysctl avec les derniers changements, entrez :
 

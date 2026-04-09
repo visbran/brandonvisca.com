@@ -23,8 +23,6 @@ faqs:
   - question: "Cette procédure fonctionne-t-elle pour Gen1 et Gen2 ?"
     answer: "La partie WinPE + robocopy fonctionne pour les deux. La reconstruction du boot diffère : bcdboot pour Gen2 UEFI (couvert dans l'article), bootrec /fixmbr pour Gen1 BIOS."
 ---
-# VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)
-
 T'as une VM Hyper-V qui démarre encore, mais `Export-VM` plante, les sauvegardes VSS refusent de partir et DISM te regarde avec des yeux vides. La VM tourne, mais elle est cassée de l'intérieur.
 
 Bonne nouvelle : c'est récupérable. Sans réinstaller Windows Server. Sans perdre tes données.

@@ -55,12 +55,13 @@ lsblk
 
 ```
 
+```bash
 # Créer un fichier de 2Go (ajuste selon tes besoins)
 sudo fallocate -l 2G /swapfile
 
 # Ou si fallocate n'est pas dispo :
 sudo dd if=/dev/zero of=/swapfile bs=1024 count=2097152
-
+```
 
 ### **Étape 2 : Sécuriser les permissions**
 
@@ -73,6 +74,7 @@ ls -lh /swapfile
 
 ```
 
+```bash
 # Transformer le fichier en swap
 sudo mkswap /swapfile
 
@@ -81,7 +83,7 @@ sudo swapon /swapfile
 
 # Vérifier que ça marche
 sudo swapon --show
-
+```
 
 ### **Étape 4 : Rendre permanent**
 
@@ -96,6 +98,7 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 ```
 
+```bash
 # Voir la valeur actuelle
 cat /proc/sys/vm/swappiness
 
@@ -104,7 +107,7 @@ sudo sysctl vm.swappiness=10
 
 # Permanent : éditer /etc/sysctl.conf
 echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf
-
+```
 
 **💡 Bonnes pratiques :**
 
@@ -132,6 +135,7 @@ sudo swapon --priority=1 /swapfile
 
 ```
 
+```bash
 # Désactiver le swap temporairement
 sudo swapoff /swapfile
 
@@ -143,7 +147,7 @@ sudo mkswap /swapfile
 
 # Réactiver
 sudo swapon /swapfile
-
+```
 
 **⚠️ Attention :**  
 *Ne jamais faire ça sur un système en production sous charge. Privilégie les heures creuses ou une maintenance programmée.*
@@ -164,15 +168,16 @@ sudo rm /swapfile
 
 ```
 
+```bash
 # Utilisation en temps réel
-watch -n 1 'free -h && echo "---" && sudo swapon --show'
+watch -n 1 ‘free -h && echo "---" && sudo swapon --show’
 
 # Processus qui utilisent le plus de swap
-for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | head -10
+for file in /proc/*/status ; do awk ‘/VmSwap|Name/{printf $2 " " $3}END{ print ""}’ $file; done | sort -k 2 -n -r | head -10
 
 # I/O du swap
 iostat -x 1
-
+```
 
 **Cas d’usage pratiques**
 

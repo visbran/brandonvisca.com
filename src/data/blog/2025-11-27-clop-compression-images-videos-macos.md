@@ -12,8 +12,6 @@ tags:
   - compression
 ---
 
-# Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)
-
 ![Illustration 1 — Clop](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
 *Légende : Interface Clop - compression automatique en arrière-plan*
 
