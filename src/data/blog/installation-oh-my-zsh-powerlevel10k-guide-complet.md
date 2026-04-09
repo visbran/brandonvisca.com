@@ -549,3 +549,8 @@ Liens utiles
 - [Powerlevel10k GitHub](https://github.com/romkatv/powerlevel10k)
 - [Liste complète des plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
 - [Awesome Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins)
+
+## Articles connexes
+
+- [iTerm2 sur macOS : Le guide complet](/iterm2-guide-configuration-macos-2025/)
+- [Installation et configuration de Vim : Guide complet](/installation-vim-guide-complet/)

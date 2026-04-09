@@ -731,3 +731,9 @@ Tu viens de monter **ton propre service de streaming** en 30 minutes. Jellyfin a
 Et surtout, profite de **378€/an** dans ta poche au lieu de les filer à Netflix. 🎉
 
 💬 **Questions, problèmes, ou succès ?** Balance tout en commentaire !
+
+## Articles connexes
+
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h](/nextcloud-docker-installation-complete-2025/)
+- [Docker pour les débutants : 10 services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/)
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe](/vaultwarden-docker-gestionnaire-mots-de-passe/)

@@ -310,3 +310,9 @@ Pour des étapes plus détaillées sur [comment joindre des hôtes Linux à un d
 Pour ceux utilisant des systèmes Ubuntu, des guides spécifiques tels que [Comment connecter Ubuntu à AD en utilisant SSSD](https://help.ubuntu.com/community/ActiveDirectoryWinbindHowto) offrent des instructions ciblées.
 
 Pour plus de détails techniques et d’exemples, consultez [Comment utiliser Active Directory comme fournisseur d’identité pour SSSD](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/windows_integration_guide/sssd-ad) et [Joindre une VM Linux à Active Directory](https://www.starwindsoftware.com/blog/join-a-linux-vm-to-active-directory-using-sssd).
+
+## Articles connexes
+
+- [Sécurité de votre serveur Linux : Comment durcir un VPS](/securite-de-votre-serveur-linux/)
+- [Masquer des utilisateurs de la GAL Office 365 + Active Directory](/masquer-utilisateurs-gal-office365-active-directory/)
+- [Filtrage utilisateurs LDAP Snipe-IT](/ldap-filtrage-utilisateurs-snipeit/)

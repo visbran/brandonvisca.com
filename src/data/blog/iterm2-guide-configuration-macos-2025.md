@@ -246,3 +246,8 @@ Les points clés à retenir :
 **Prêt à franchir le cap ?** Téléchargez iTerm2 dès maintenant et découvrez pourquoi des millions de développeurs ont abandonné le Terminal par défaut. Votre productivité vous remerciera !
 
 _Vous avez des questions sur iTerm2 ou des configurations spécifiques ? Partagez votre expérience en commentaires ci-dessous._
+
+## Articles connexes
+
+- [Oh My Zsh + Powerlevel10k : Transformez votre terminal macOS](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [Warp Terminal 2025 : iTerm2 Killer ou simple hype ?](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/)

@@ -250,3 +250,8 @@ pfSense 2.8 est-il disponible pour pfSense Plus et CE ?
 **pfSense CE 2.8** est disponible gratuitement.  
 **pfSense Plus 24.03** (équivalent à CE 2.8) est disponible pour les appliances Netgate.  
 Les deux partagent une base commune, mais pfSense Plus a des fonctionnalités exclusives Netgate.
+
+## Articles connexes
+
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe auto-hébergé](/vaultwarden-docker-gestionnaire-mots-de-passe/)
+- [Nebula-Sync : synchroniser plusieurs Pi-hole v6](/nebula-sync-pihole-v6-installation-docker-guide/)

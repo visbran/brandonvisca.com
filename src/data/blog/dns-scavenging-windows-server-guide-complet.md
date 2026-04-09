@@ -169,3 +169,8 @@ if ($StaleRecords.Count -gt 100) {
 }
 
 ```
+
+## Articles connexes
+
+- [Termius : Le Client SSH Moderne qui Envoie PuTTY à la retraite](/termius-client-ssh-windows-guide-complet/)
+- [SnipeIT vs GLPI : comparatif ITSM](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/)

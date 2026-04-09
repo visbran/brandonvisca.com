@@ -357,3 +357,8 @@ Mon pick pour **90% des cas** ? **SnipeIT**. Plus simple, plus rapide, plus agr�
 Tu es convaincu par SnipeIT ? Dans le prochain article de cette série, je te montre comment l’installer proprement sur Ubuntu sans casser ton serveur. Installation native via Git pour faciliter les mises à jour, configuration optimale, bonnes pratiques de sécurité… tout y passe.
 
 En attendant, si tu veux préparer ton serveur, fais un tour sur mon guide [installation d’Oh My Zsh avec Powerlevel10k](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/). Parce qu’un bon admin, ça commence par un terminal qui envoie du lourd.
+
+## Articles connexes
+
+- [ITSM : pourquoi votre Excel va vous rendre fou](/itsm-snipeit-alternative-excel-inventaire-it/)
+- [Installation SnipeIT Ubuntu : guide complet](/installation-snipeit-ubuntu-guide-complet/)

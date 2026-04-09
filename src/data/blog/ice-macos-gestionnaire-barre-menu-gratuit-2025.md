@@ -234,3 +234,8 @@ Ressources complémentaires
 - [Repository GitHub officiel](https://github.com/jordanbaird/Ice)
 - [Site officiel Ice](https://icemenubar.app/)
 - [Formule Homebrew](https://formulae.brew.sh/cask/jordanbaird-ice)
+
+## Articles connexes
+
+- [WailBrew : Interface Graphique Homebrew pour macOS](/wailbrew-interface-graphique-homebrew/)
+- [AppCleaner Mac : Alternative Gratuite à CleanMyMac](/appcleaner-mac-alternative-gratuite-cleanmymac/)

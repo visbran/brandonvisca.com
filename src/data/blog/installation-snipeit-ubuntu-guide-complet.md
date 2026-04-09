@@ -580,3 +580,8 @@ Et si ton terminal ressemble encore à celui de Windows XP, fais un tour sur mon
 - https://snipe-it.readme.io/docs/installation
 - https://github.com/snipe/snipe-it
 
+## Articles connexes
+
+- [ITSM : pourquoi votre Excel va vous rendre fou](/itsm-snipeit-alternative-excel-inventaire-it/)
+- [SnipeIT vs GLPI : David contre Goliath dans l'arène de l'ITSM](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/)
+- [Auto-hébergement : Le guide ultime 2025](/auto-hebergement-guide-complet-2025/)

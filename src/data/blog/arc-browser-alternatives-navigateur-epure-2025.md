@@ -201,3 +201,8 @@ https://addons.mozilla.org/firefox/addon/tree-style-tab/
 **Si tu débutes et veux simple :** Brave avec Sidewise
 
 > **Bonnes pratiques** : Teste 2-3 alternatives en parallèle pendant une semaine avant de migrer définitivement. Chaque navigateur a ses petites habitudes qui peuvent surprendre.
+
+## Articles connexes
+
+- [Magnet macOS : Le gestionnaire de fenêtres](/magnet-macos-gestionnaire-fenetres-guide-complet/)
+- [AltTab macOS : Gestion Fenêtres Style Windows](/alttab-macos-gestion-fenetres-windows/)
