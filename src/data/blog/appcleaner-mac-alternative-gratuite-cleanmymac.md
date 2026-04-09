@@ -35,7 +35,7 @@ Dans ce guide, je te montre comment installer AppCleaner Mac, configurer SmartDe
 
 ## Pourquoi macOS ne sait pas désinstaller proprement
 
-![](climate-crisis-greta-thunberg-un-action-summit-u1an4htfj2smgb2bbk.gif)
+![Capture d'écran — Pourquoi macOS ne sait pas désinstaller proprement](climate-crisis-greta-thunberg-un-action-summit-u1an4htfj2smgb2bbk.gif)
 Apple a conçu un système d’installation simple : tu glisses une app dans `/Applications`, tu la lances, ça marche. Mais à la désinstallation, macOS ne fait **que supprimer le bundle principal** de l’application.
 
 Tous les fichiers associés restent en place :

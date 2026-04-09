@@ -25,7 +25,7 @@ faqs:
 ---
 # 10 Outils Indispensables pour macOS (Guide Complet 2026)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
+![Illustration 1 — 10 Outils Low-Tech macOS gratuits que j'utilise (2025)](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
 
 
 ---
@@ -97,7 +97,7 @@ Let's go ! 🚀
 ---
 
 ## 1. rcmd : Switch Apps à la Vitesse de l'Éclair
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400635/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_v19dfv.webp)
+![Capture d'écran — 1 rcmd Switch Apps à la Vitesse de lÉclair](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400635/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_v19dfv.webp)
 
 ### Le problème
 
@@ -153,7 +153,7 @@ Mon setup Mac Mini M4 :
 
 ## 2. Clop : Compression Automatique Images/Vidéos
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400843/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs_kk7ded.webp)
+![Capture d'écran — 2 Clop Compression Automatique ImagesVidéos](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400843/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs_kk7ded.webp)
 
 ### Le problème
 
@@ -213,7 +213,7 @@ Temps gagné : 5 min/article = 50 min/mois
 
 ## 3. Lunar : Contrôle Luminosité Écrans Externes
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400887/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_ftlgn2.webp)
+![Capture d'écran — 3 Lunar Contrôle Luminosité Écrans Externes](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400887/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_ftlgn2.webp)
 
 ### Le problème
 
@@ -287,7 +287,7 @@ Temps gagné : 5 min/jour = 30h/an
 
 ## 4. Cling : Recherche Fuzzy Ultra-Rapide
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400908/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_mg2ssk.jpg)
+![Capture d'écran — 4 Cling Recherche Fuzzy Ultra-Rapide](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400908/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_mg2ssk.jpg)
 
 ### Le problème
 
@@ -360,7 +360,7 @@ Temps gagné : 20 recherches/jour × 30 sec = 10 min/jour = 60h/an
 
 ## 5. Ice : Gestion Barre de Menu Propre
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400958/brandonviscacom/CleanShot_2025-12-10_at_22.09.07_2x_ir7xrv.jpg)
+![Capture d'écran — 5 Ice Gestion Barre de Menu Propre](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400958/brandonviscacom/CleanShot_2025-12-10_at_22.09.07_2x_ir7xrv.jpg)
 
 ### Le problème
 
@@ -422,7 +422,7 @@ Always hidden :
 
 ## 6. Grila : Calendrier Hotkey Instant
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401024/brandonviscacom/CleanShot_2025-12-10_at_22.10.13_2x_v4rx2n.jpg)
+![Capture d'écran — 6 Grila Calendrier Hotkey Instant](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401024/brandonviscacom/CleanShot_2025-12-10_at_22.10.13_2x_v4rx2n.jpg)
 ### Le problème
 
 Tu veux voir ton planning : Ouvre Calendrier.app, attends chargement, clique sur date...
@@ -479,7 +479,7 @@ Temps gagné : 2 min/jour = 12h/an
 
 ## 7. YellowDot : Cache le Point Jaune Encoche
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401076/brandonviscacom/CleanShot_2025-12-10_at_22.11.06_2x_vyrjxw.jpg)
+![Capture d'écran — 7 YellowDot Cache le Point Jaune Encoche](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401076/brandonviscacom/CleanShot_2025-12-10_at_22.11.06_2x_vyrjxw.jpg)
 
 ### Le problème
 
@@ -506,7 +506,7 @@ brew install --cask yellowdot
 
 ## 8. Music Decoy : Bloque Music.app Auto-Launch
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401112/brandonviscacom/CleanShot_2025-12-10_at_22.11.38_2x_om4cg7.jpg)
+![Capture d'écran — 8 Music Decoy Bloque Musicapp Auto-Launch](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401112/brandonviscacom/CleanShot_2025-12-10_at_22.11.38_2x_om4cg7.jpg)
 
 ### Le problème
 
@@ -533,7 +533,7 @@ brew install --cask musicdecoy
 
 ## 9. ZoomHider : Cache Contrôles Zoom en Partage Écran
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401518/brandonviscacom/CleanShot_2025-12-10_at_22.18.28_2x_w1yrxt.jpg)
+![Capture d'écran — 9 ZoomHider Cache Contrôles Zoom en Partage Écran](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401518/brandonviscacom/CleanShot_2025-12-10_at_22.18.28_2x_w1yrxt.jpg)
 
 ### Le problème
 
@@ -562,7 +562,7 @@ brew install --cask zoomhider
 
 ## 10. Startup Folder : Lance Apps au Démarrage (Simple)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401542/brandonviscacom/CleanShot_2025-12-10_at_22.18.51_2x_h4d0o8.jpg)
+![Capture d'écran — 10 Startup Folder Lance Apps au Démarrage Simple](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401542/brandonviscacom/CleanShot_2025-12-10_at_22.18.51_2x_h4d0o8.jpg)
 
 ### Le problème
 

@@ -224,7 +224,7 @@ Nextcloud, c’est **Google Drive + Google Photos + Google Calendar + Google Kee
 
 ### 🎬 Service 2 : Jellyfin – Ton Netflix personnel
 
-![](bfbdcf5f-f600-4a4d-b14d-105b0953de6d.png)**C’est quoi ?**  
+![Capture d'écran — Service 2 Jellyfin Ton Netflix personnel](bfbdcf5f-f600-4a4d-b14d-105b0953de6d.png)**C’est quoi ?**  
 Jellyfin, c’est **Netflix + Disney+ + Prime Video + Spotify** dans un logiciel gratuit, open source, sans pub, sans télémétrie.
 
 **Pourquoi c’est mieux que les plateformes commerciales ?**

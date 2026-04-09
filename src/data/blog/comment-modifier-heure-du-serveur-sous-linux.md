@@ -23,7 +23,7 @@ faqs:
 
 Garder la date et l'heure de votre système précises est crucial pour diverses opérations, allant de la journalisation aux tâches d'automatisation. Cet article couvre comment définir ou changer le fuseau horaire sous Linux, synchroniser l'heure de votre serveur avec le NTP (Network Time Protocol), et d'autres tâches connexes.
 
-![](https://media4.giphy.com/media/26Do6la9cIiHvIwMM/giphy.gif?cid=7941fdc6pnk6cs7qnembjdx4x1mxp0ll1p00n5uszui5sssz&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+![Illustration — Comment définir le fuseau horaire et synchroniser l'heure du](https://media4.giphy.com/media/26Do6la9cIiHvIwMM/giphy.gif?cid=7941fdc6pnk6cs7qnembjdx4x1mxp0ll1p00n5uszui5sssz&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 ## Table of content
 

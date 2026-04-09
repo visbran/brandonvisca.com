@@ -66,7 +66,7 @@ J’ai moi-même migré deux firewalls, l’un sous Proxmox, l’autre bare-meta
 
 Vous êtes prêts ? On entre dans le détail.
 
-![](snl-saturday-night-live-season-47-fn7eouktflhxhwkgfi.gif)### ✅ Points clés à retenir
+![Illustration — pfsense CE 2.8.0](snl-saturday-night-live-season-47-fn7eouktflhxhwkgfi.gif)### ✅ Points clés à retenir
 
 ⚙️ **Mise à niveau vers FreeBSD 15-CURRENT** et PHP 8.3.x : du lourd sous le capot.
 

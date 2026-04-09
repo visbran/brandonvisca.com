@@ -37,7 +37,7 @@ TL;DR : Docker en 3 phrases
 - **Pourquoi ?** Installation en 2 minutes, pas de conflit entre logiciels, facile à supprimer
 - **Comment ?** Un fichier `docker-compose.yml` + une commande = service opérationnel
 
-![](perspectief-camas-perspectief-it-5qzez0rtln9581k7q5.gif)- - - - - -
+![Illustration 1 — Docker pour les débutants](perspectief-camas-perspectief-it-5qzez0rtln9581k7q5.gif)- - - - - -
 
 
 - [Docker, c’est quoi (sans le jargon de dev)](#docker-cest-quoi-sans-le-jargon-de-dev)
@@ -290,7 +290,7 @@ docker compose up -d
 
 ### 2. Portainer — Interface de gestion Docker 🟢
 
-![](portainer-github-banner.webp)**C’est quoi ?**  
+![Capture d'écran — 2 Portainer Interface de gestion Docker](portainer-github-banner.webp)**C’est quoi ?**  
 Une interface web pour gérer tous tes conteneurs Docker sans ligne de commande.
 
 **Pourquoi ?**  
@@ -361,7 +361,7 @@ docker compose up -d
 
 ### 4. Vaultwarden — Gestionnaire de mots de passe 🟢
 
-![](vaultwarden.webp)**C’est quoi ?**  
+![Capture d'écran — 4 Vaultwarden Gestionnaire de mots de passe](vaultwarden.webp)**C’est quoi ?**  
 Une version allégée et auto-hébergée de Bitwarden (compatible avec toutes les apps officielles).
 
 **Pourquoi ?**  
@@ -453,7 +453,7 @@ docker compose up -d
 
 ### 6. Jellyfin — Serveur média (Netflix maison) 🟡
 
-![](jellyfin.webp)**C’est quoi ?**  
+![Capture d'écran — 6 Jellyfin Serveur média Netflix maison](jellyfin.webp)**C’est quoi ?**  
 Un serveur de streaming pour tes films, séries, musique. Open source, sans télémétrie, sans pub.
 
 **Pourquoi ?**  
@@ -522,7 +522,7 @@ docker compose up -d
 
 ### 8. Immich — Alternative Google Photos 🟡
 
-![](immich.webp)**C’est quoi ?**  
+![Capture d'écran — 8 Immich Alternative Google Photos](immich.webp)**C’est quoi ?**  
 Une app de backup et d’organisation de photos avec reconnaissance faciale, géolocalisation, et recherche intelligente.
 
 **Pourquoi ?**  
@@ -550,7 +550,7 @@ docker compose up -d
 
 ### 9. Paperless-ngx — GED personnelle 🟡
 
-![](paperless-ngx.webp)**C’est quoi ?**  
+![Capture d'écran — 9 Paperless-ngx GED personnelle](paperless-ngx.webp)**C’est quoi ?**  
 Un système de gestion documentaire qui scanne, indexe et organise tous tes documents (factures, contrats, etc.).
 
 **Pourquoi ?**  

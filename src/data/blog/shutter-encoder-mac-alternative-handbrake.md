@@ -108,7 +108,7 @@ Installation de Shutter Encoder Mac
 
 ### Via Homebrew
 
-![](install-shutter-via-brew.webp)Si t’utilises [Homebrew](../installation-homebrew-macos/.md), tu peux installer avec :
+![Capture d'écran — Via Homebrew](install-shutter-via-brew.webp)Si t’utilises [Homebrew](../installation-homebrew-macos/.md), tu peux installer avec :
 
 ```bash
 brew install --cask shutter-encoder

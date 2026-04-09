@@ -54,7 +54,7 @@ tags:
 
 Pourquoi votre barre de menu mérite mieux 
 
-![](bounce-tv-reaction-know-your-worth-king-jbxjgiavpumds3tbqe.gif)Soyons honnêtes : si votre **barre de menu macOS** ressemble à une rave party d’icônes, vous n’êtes pas seul. Entre les apps de monitoring, les outils de productivité et les utilitaires système, votre belle interface Apple se transforme rapidement en bazar numérique.
+![Illustration 1 — Ice](bounce-tv-reaction-know-your-worth-king-jbxjgiavpumds3tbqe.gif)Soyons honnêtes : si votre **barre de menu macOS** ressemble à une rave party d’icônes, vous n’êtes pas seul. Entre les apps de monitoring, les outils de productivité et les utilitaires système, votre belle interface Apple se transforme rapidement en bazar numérique.
 
 Le problème ? **Chaque pixel compte sur macOS**, surtout avec les MacBook Pro et leur encoche. Et quand votre barre de menu déborde, c’est votre productivité qui trinque.
 
@@ -64,7 +64,7 @@ Le problème ? **Chaque pixel compte sur macOS**, surtout avec les MacBook Pro e
 
 Ice : L’outsider qui détrône les géants 
 
-![](before_after.webp)**Ice** débarque sur la scène macOS comme le David face au Goliath Bartender. Développé par Jordan Baird, cet **outil de gestion barre de menu gratuit** fait trembler les mastodontes payants du secteur.
+![Illustration 2 — Ice](before_after.webp)**Ice** débarque sur la scène macOS comme le David face au Goliath Bartender. Développé par Jordan Baird, cet **outil de gestion barre de menu gratuit** fait trembler les mastodontes payants du secteur.
 
 ### Pourquoi Ice cartonne ?
 
@@ -119,7 +119,7 @@ Lancez Ice. L’app va demander quelques **permissions système** :
 
 ### Configuration de base
 
-![](settings.webp)1. **Créez votre première section cachée**
+![Capture d'écran — Configuration de base](settings.webp)1. **Créez votre première section cachée**
   - Clic droit sur une icône → `Move to Hidden Section`
   - Ou drag &amp; drop vers la zone de droite
 2. **Configurez l’affichage**

@@ -37,7 +37,7 @@ tags:
 - [Conclusion : DNS propre, admin heureux](#conclusion-dns-propre-admin-heureux)
 
 
-![](sammhenshaw-broke-samm-henshaw-oqrx03s8vwol7xmfiz.gif)- - - - - -
+![Illustration — DNS Scavenging Windows Server](sammhenshaw-broke-samm-henshaw-oqrx03s8vwol7xmfiz.gif)- - - - - -
 
 Introduction : pourquoi ton DNS mérite un bon ménage
 

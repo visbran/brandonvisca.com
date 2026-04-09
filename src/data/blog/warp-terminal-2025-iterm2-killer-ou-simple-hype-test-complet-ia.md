@@ -27,7 +27,7 @@ faqs:
 
 Quand le terminal rencontre l’IA (et ça change tout)
 
-![](timanderic-tim-and-eric-wareheim-lxu72d4ikwqek.gif)**Soyons honnêtes** : pendant des années, on a bidouillé nos terminaux avec Oh My Zsh, iTerm2, et des thèmes à n’en plus finir. Ça fonctionne, c’est solide, mais… **et si on pouvait faire mieux ?**
+![Illustration 1 — Warp Terminal 2025](timanderic-tim-and-eric-wareheim-lxu72d4ikwqek.gif)**Soyons honnêtes** : pendant des années, on a bidouillé nos terminaux avec Oh My Zsh, iTerm2, et des thèmes à n’en plus finir. Ça fonctionne, c’est solide, mais… **et si on pouvait faire mieux ?**
 
 [Warp Terminal](https://www.warp.dev/) débarque en 2025 avec une promesse osée : **transformer le terminal en environnement de développement agentique**. Comprenez : un terminal qui **comprend ce que vous voulez faire**, qui **génère du code**, qui **détecte les erreurs**, et qui **peut même déployer en prod**.
 
@@ -176,7 +176,7 @@ Et ça s’adapte à votre historique. Plus vous l’utilisez, plus c’est pert
 
 Installation : Plus simple qu’iTerm2
 
-![](Warp-Download.webp)### macOS (la méthode propre)
+![Capture d'écran — 3 Warp Drive Netflix pour vos commandes](Warp-Download.webp)### macOS (la méthode propre)
 
 ```bash
 # Avec Homebrew

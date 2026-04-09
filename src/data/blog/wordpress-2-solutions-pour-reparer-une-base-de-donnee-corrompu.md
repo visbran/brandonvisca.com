@@ -23,7 +23,7 @@ tags:
 
 Dans cet article, nous allons explorer les étapes essentielles pour réparer une base de données corrompue dans WordPress. Une base de données corrompue peut causer des erreurs critiques sur votre site web, le rendant inaccessible. Heureusement, il existe plusieurs méthodes pour résoudre ce problème et restaurer votre site à son état normal. Nous couvrirons des solutions allant de l’utilisation des outils intégrés à WordPress à des interventions plus techniques via phpMyAdmin.
 
-![](image.gif)Identifier les Symptômes d’une Base de Données Corrompue
+![Illustration — WordPress](image.gif)Identifier les Symptômes d’une Base de Données Corrompue
 
 Avant de pouvoir réparer une base de données corrompue, il est crucial d’identifier les symptômes. Les signes courants incluent des messages d’erreur tels que « Erreur lors de la connexion à la base de données » ou des pages blanches sur votre site. Vous pouvez également rencontrer des problèmes de performances, des erreurs lors de la publication de contenu, ou des anomalies dans l’administration de WordPress.
 

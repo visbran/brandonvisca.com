@@ -146,7 +146,7 @@ Appuie sur **Entrée** → Le résultat est copié dans ton clipboard.
 
 Les extensions indispensables (même si vous débutez)
 
-![](CleanShot-2025-10-13-at-15.12.07@2x.webp)Raycast a un **Store d’extensions** gratuit. Voici les must-have :
+![Capture d'écran — Calculator le seul calculateur qui vous comprend](CleanShot-2025-10-13-at-15.12.07@2x.webp)Raycast a un **Store d’extensions** gratuit. Voici les must-have :
 
 Extension | Utilité | Commande | **GitHub** | Voir tes repos, issues, PRs | `gh` | **Docker** | Gérer tes containers | `docker` | **Brew** | Installer/mettre à jour des apps | `brew search` | **Port Manager** | Voir les ports ouverts, kill un process | `port` | **Translator** | Traduction instantanée | `translate` | **Spotify** | Contrôler la lecture | `spotify` | **Color Picker** | Récupérer des couleurs à l’écran | `color` | 
 

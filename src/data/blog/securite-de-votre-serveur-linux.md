@@ -23,7 +23,7 @@ faqs:
 
 Dans ce guide pratique où nous allons renforcer ensemble la sécurité de votre serveur Linux. De l’installation de votre système à l’application des dernières mesures de sécurité, nous allons passer par toutes les étapes nécessaires pour rendre votre serveur aussi sûr que possible.
 
-![](image.gif)  
+![Illustration — Sécurité de votre serveur linux](image.gif)  
 Assurez-vous de dimensionner en fonction des ressources disponibles, du nombre d’utilisateurs susceptibles de se connecter et de la taille des adhésions aux groupes.
 
 Cette optimisation s’inscrit dans une démarche plus globale de gestion des ressources système — au même titre que la [configuration du swap Linux](https://brandonvisca.com/guide-swap-linux-configuration-optimisation/) qui permet d’éviter les dysfonctionnements en cas de saturation mémoire.

@@ -50,7 +50,7 @@ Spoiler : c’est le successeur non-officiel de Gravity Sync, et il est compatib
 
 Pourquoi synchroniser plusieurs Pi-hole ?
 
-![](bounce-tv-confused-say-what-baffled-uvtau2ekhrsgifowfb.gif)Tu te dis peut-être : « Pourquoi avoir plusieurs Pi-hole ? » Bonne question.
+![Illustration 1 — Nebula-Sync](bounce-tv-confused-say-what-baffled-uvtau2ekhrsgifowfb.gif)Tu te dis peut-être : « Pourquoi avoir plusieurs Pi-hole ? » Bonne question.
 
 **Haute disponibilité** : Si ton unique Pi-hole plante, tous tes appareils se retrouvent sans résolution DNS. Pas cool quand tu veux juste regarder Netflix un dimanche soir.
 
@@ -62,7 +62,7 @@ Le problème ? Maintenir la même config sur 2, 3, voire 10 Pi-hole, c’est l�
 
 Nebula-Sync vs Gravity Sync : le match
 
-![](seinfeld-fight-george-costanza-6hfudkwlwcabc.gif)Si tu connais **Gravity Sync**, tu sais qu’il était LA solution pour synchroniser des Pi-hole. Problème : Gravity Sync n’est plus maintenu activement et n’est **pas compatible avec Pi-hole v6**.
+![Illustration 2 — Nebula-Sync](seinfeld-fight-george-costanza-6hfudkwlwcabc.gif)Si tu connais **Gravity Sync**, tu sais qu’il était LA solution pour synchroniser des Pi-hole. Problème : Gravity Sync n’est plus maintenu activement et n’est **pas compatible avec Pi-hole v6**.
 
 Nebula-Sync reprend le concept, mais en mieux :
 

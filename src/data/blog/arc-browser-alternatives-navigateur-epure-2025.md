@@ -21,7 +21,7 @@ The Browser Company a lâché Arc Browser pour se concentrer sur Dia. Si tu éta
 
 ## 📜 Arc Browser : L’histoire d’un navigateur révolutionnaire (2022-2025)
 
-![](sad-crying-the-office-ylgiomtimuacy.gif)### Le Phénomène Arc : Quand l’ambition rencontre le design
+![Capture d'écran — Arc Browser Lhistoire dun navigateur révolutionnaire 2022-2025](sad-crying-the-office-ylgiomtimuacy.gif)### Le Phénomène Arc : Quand l’ambition rencontre le design
 
 En 2022, The Browser Company débarque avec un pari audacieux : réinventer complètement l’expérience de navigation web. Pas question de faire un énième clone de Chrome avec une interface redessinée. Arc Browser voulait tout casser et repartir de zéro sur les fondamentaux.
 
@@ -188,7 +188,7 @@ https://addons.mozilla.org/firefox/addon/tree-style-tab/
 
 ## Comment choisir ta nouvelle arme ?
 
-![](hyperrpg-question-choose-kollok-1991-fvmxv7xuhai8xhcbfv.gif)
+![Capture d'écran — Comment choisir ta nouvelle arme](hyperrpg-question-choose-kollok-1991-fvmxv7xuhai8xhcbfv.gif)
 
 **Si tu veux le moins de changements :** SigmaOS (macOS) ou Zen Browser (multiplateforme)
 

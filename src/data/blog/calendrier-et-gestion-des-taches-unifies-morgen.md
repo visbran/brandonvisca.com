@@ -22,7 +22,7 @@ faqs:
 
 Morgen est une application tout-en-un qui révolutionne la gestion du temps et des tâches. Intégrant des fonctionnalités avancées de [calendrier et de gestion des tâches](https://www.morgen.so/), elle permet aux utilisateurs de planifier efficacement leurs journées et leurs projets.
 
-![](image-2.gif)
+![Illustration 1 — Calendrier et gestion des tâches unifiés\\_](image-2.gif)
 
 Choisir Morgen signifie opter pour une solution intégrée qui simplifie la gestion de multiples calendriers et tâches. Cette application est conçue pour améliorer la productivité individuelle et d’équipe, en offrant des outils puissants pour la planification et l’organisation.
 
@@ -85,6 +85,6 @@ Utilisation et Accessibilité
 
 Conclusion
 
-![](image-3.gif)
+![Capture d'écran — Ressources Supplémentaires](image-3.gif)
 
 Morgen se distingue comme une solution indispensable pour ceux qui cherchent à optimiser leur gestion du temps et des tâches. En consolidant tous les aspects de la planification dans une seule application, Morgen simplifie la vie quotidienne et professionnelle. Essayez Morgen dès aujourd’hui pour découvrir comment il peut booster votre productivité et améliorer votre organisation, que vous soyez un individu ou une équipe.

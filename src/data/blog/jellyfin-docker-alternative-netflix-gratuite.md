@@ -62,7 +62,7 @@ Et encore, si tu réutilises ton serveur Nextcloud ou un vieux PC, c’est **qua
 
 ### Jellyfin vs Plex vs Emby : Le match
 
-![](seinfeld-fight-george-costanza-6hfudkwlwcabc.gif)Critère | Jellyfin | Plex | Emby | **Prix** | 🟢 Gratuit à vie | 🟡 Gratuit (limité) ou 5€/mois | 🟡 Gratuit (limité) ou 5€/mois | **Open source** | 🟢 100% | 🔴 Propriétaire | 🟡 Partiellement | **Vie privée** | 🟢 Aucune télémétrie | 🔴 Compte Plex obligatoire | 🟡 Compte optionnel | **Transcoding** | 🟢 Illimité | 🟡 Limité sans Plex Pass | 🟢 Illimité | **Apps mobiles** | 🟢 Gratuites | 🔴 5€ une fois | 🟡 Freemium | **Interface** | 🟡 Correcte | 🟢 Excellente | 🟢 Très bonne | **Plugins** | 🟢 Large choix | 🟡 Restreints | 🟡 Moyens | **Communauté FR** | 🟢 Active | 🟢 Très active | 🟡 Moyenne | 
+![Capture d'écran — Jellyfin vs Plex vs Emby Le match](seinfeld-fight-george-costanza-6hfudkwlwcabc.gif)Critère | Jellyfin | Plex | Emby | **Prix** | 🟢 Gratuit à vie | 🟡 Gratuit (limité) ou 5€/mois | 🟡 Gratuit (limité) ou 5€/mois | **Open source** | 🟢 100% | 🔴 Propriétaire | 🟡 Partiellement | **Vie privée** | 🟢 Aucune télémétrie | 🔴 Compte Plex obligatoire | 🟡 Compte optionnel | **Transcoding** | 🟢 Illimité | 🟡 Limité sans Plex Pass | 🟢 Illimité | **Apps mobiles** | 🟢 Gratuites | 🔴 5€ une fois | 🟡 Freemium | **Interface** | 🟡 Correcte | 🟢 Excellente | 🟢 Très bonne | **Plugins** | 🟢 Large choix | 🟡 Restreints | 🟡 Moyens | **Communauté FR** | 🟢 Active | 🟢 Très active | 🟡 Moyenne | 
 
 **Verdict :**
 
@@ -76,7 +76,7 @@ Et encore, si tu réutilises ton serveur Nextcloud ou un vieux PC, c’est **qua
 
 Jellyfin c’est quoi exactement ?
 
-![](Jellyfin12.16.32@2x.webp)**En une phrase :** Un serveur multimédia qui transforme ta collection de films/séries en **Netflix personnel**.
+![Capture d'écran — Jellyfin vs Plex vs Emby Le match](Jellyfin12.16.32@2x.webp)**En une phrase :** Un serveur multimédia qui transforme ta collection de films/séries en **Netflix personnel**.
 
 **Ce que ça fait :**  
 ✅ Récupère automatiquement les **posters, synopsis, notes** (via TMDB/TVDB)  

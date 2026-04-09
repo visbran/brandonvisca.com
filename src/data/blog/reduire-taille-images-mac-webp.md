@@ -49,7 +49,7 @@ tags:
   - [Utilisation optimale](#utilisation-optimale)
 
 
-![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjA3MTRvY3J2ajVtbm1wdWd1OHo3d2lrMHh0OGMycjQzeHZjYjZlYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZwQ2fuoNI9baEhSh9O/giphy.gif)
+![Illustration 1 — Comment réduire la taille de vos images de 70% sur Mac (méth](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjA3MTRvY3J2ajVtbm1wdWd1OHo3d2lrMHh0OGMycjQzeHZjYjZlYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZwQ2fuoNI9baEhSh9O/giphy.gif)
 
 **Le scénario classique :** Vous avez 200 photos de vacances à 8 Mo chacune. Résultat ? 1,6 Go d’espace bouffé, des temps de chargement interminables et un iCloud qui sature.
 
@@ -63,7 +63,7 @@ tags:
 
 📊 Pourquoi vos images sont-elles si lourdes ?
 
-![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmd0Ymx0b2FvaHRoem9vZDR6eXdzaDg2ZHJvNGNiODRxeDhwNmlqZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2uwZ4xi75JhxZYeyQB/giphy.gif)
+![Illustration 2 — Comment réduire la taille de vos images de 70% sur Mac (méth](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmd0Ymx0b2FvaHRoem9vZDR6eXdzaDg2ZHJvNGNiODRxeDhwNmlqZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2uwZ4xi75JhxZYeyQB/giphy.gif)
 
 ### **Le problème technique expliqué simplement**
 
@@ -94,7 +94,7 @@ PNG optimisé | 1,8 Mo | 6 secondes |
 
 🛠️ La solution : automatiser la compression WebP
 
-![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29xZTFweDU2Zmd3dWpicGN5aXo3YjZwN2dmZXI3ZDMwcXlrbWtmMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5z0cCCGooBQUtejM4v/giphy.gif)
+![Capture d'écran — Comparaison concrète](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29xZTFweDU2Zmd3dWpicGN5aXo3YjZwN2dmZXI3ZDMwcXlrbWtmMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5z0cCCGooBQUtejM4v/giphy.gif)
 
 ### **Ce qu’on va construire ensemble**
 
@@ -139,7 +139,7 @@ cwebp -version
   - Le flux reçoit : **fichiers image**
   - Dans : **Finder**
 
-![](nouvelle_action_rapide_automator.webp)![](reglage_automatisation_convertion_image_webp.webp)### **Le script (votre version) :**
+![Capture d'écran — Lancement dAutomator](nouvelle_action_rapide_automator.webp)![Capture d'écran — Lancement dAutomator](reglage_automatisation_convertion_image_webp.webp)### **Le script (votre version) :**
 
 Glissez **« Exécuter un script Shell »** et collez ce code :
 

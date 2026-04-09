@@ -19,7 +19,7 @@ tags:
 - [Leçons apprises](#lecons-apprises)
 
 
-![](no-nope-tracy-morgan-spfi6nabvuq5y.gif)
+![Illustration — Dépannage des problèmes de montage de matrices RAID (mdadm) ](no-nope-tracy-morgan-spfi6nabvuq5y.gif)
 
 Aujourd’hui, je me suis retrouvé dans une situation stressante lorsque je n’ai pas pu accéder à ma matrice RAID en mode de secours. J’avais besoin de modifier un fichier critique situé dans `/etc/sudoers.d/`, mais je me heurtais constamment à des erreurs de montage :
 

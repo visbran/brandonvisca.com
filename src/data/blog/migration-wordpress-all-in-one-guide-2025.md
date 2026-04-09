@@ -60,7 +60,7 @@ faqs:
   - [Comment migrer un multisite WordPress ?](#faq-question-1752691688150)
 
 
-![](fusion-vid-ppap-bhecjdygjck6c-1.gif)Alors, tu dois migrer ton site WordPress et tu te demandes comment faire ça proprement sans tout péter ? Parfait, tu es au bon endroit ! La migration WordPress, c’est un peu comme déménager : si tu t’y prends mal, tu risques de casser la vaisselle.
+![Illustration — Migrer WordPress en 2025](fusion-vid-ppap-bhecjdygjck6c-1.gif)Alors, tu dois migrer ton site WordPress et tu te demandes comment faire ça proprement sans tout péter ? Parfait, tu es au bon endroit ! La migration WordPress, c’est un peu comme déménager : si tu t’y prends mal, tu risques de casser la vaisselle.
 
 **[All-in-One WP Migration](https://brandonvisca.com/wp-content/uploads/2025/10/all-in-one-wp-migration.6.77.zip)** est probablement le plugin le plus populaire pour cette mission. Et on va voir pourquoi : interface simple, processus quasi-automatique, et surtout… ça marche ! Dans ce guide, on va couvrir l’installation, l’export, l’import, et quelques astuces de baroudeur pour éviter les galères classiques.
 

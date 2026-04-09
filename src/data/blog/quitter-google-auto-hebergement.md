@@ -38,7 +38,7 @@ Introduction : Le jour où j’en ai eu marre
 
 Février 2024. Je reçois mon énième notification « Google One : stockage bientôt plein, passez à 200 Go ».
 
-![](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)20€/mois pour du stockage.  
+![Illustration 1 — Pourquoi j'ai quitté Google (et comment tu peux faire pareil](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)20€/mois pour du stockage.  
 240€/an.  
 1200€ sur 5 ans.
 
@@ -215,7 +215,7 @@ Gratuit, open source, chiffré. Parfait.
 
 Le matériel : Ce dont tu as VRAIMENT besoin
 
-![](thedemocrats-democrats-dnc-dncgif-sl6nxplptffjoygeqq.gif)Pas besoin d’un serveur à 2000€. Voici mon setup actuel :
+![Capture d'écran — Bonus Bitwarden Passwords](thedemocrats-democrats-dnc-dncgif-sl6nxplptffjoygeqq.gif)Pas besoin d’un serveur à 2000€. Voici mon setup actuel :
 
 ### Option #1 : Le mini PC (mon choix)
 
@@ -266,7 +266,7 @@ Le matériel : Ce dont tu as VRAIMENT besoin
 
 L’installation : Un weekend suffit
 
-![](time-mr-bean-look-at-the-qbd2klb5qdmysexre9.gif)Voici comment j’ai procédé (et toi aussi tu peux) :
+![Capture d'écran — Option 3 Le vieux PC 0](time-mr-bean-look-at-the-qbd2klb5qdmysexre9.gif)Voici comment j’ai procédé (et toi aussi tu peux) :
 
 ### Samedi matin : Setup de base (2h)
 
@@ -345,7 +345,7 @@ La seule différence ? **C’est chez moi. Sous mon contrôle.**
 
 Les galères (soyons honnêtes)
 
-![](latenightseth-seth-meyers-lnsm-5hkf0wxklqdw4goejj.gif)Pas tout est rose. Voici les vrais problèmes que j’ai rencontrés :
+![Capture d'écran — Côté confort](latenightseth-seth-meyers-lnsm-5hkf0wxklqdw4goejj.gif)Pas tout est rose. Voici les vrais problèmes que j’ai rencontrés :
 
 ### 1. Le premier setup est intimidant
 

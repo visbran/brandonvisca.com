@@ -47,11 +47,11 @@ Spoiler alert : si tu cherches juste à **gérer ton inventaire IT efficacement*
 
 GLPI et SnipeIT : présentation des combattants
 
-![](fight-wkdwa04krn58a.gif)### GLPI : le mastodonte français
+![Illustration 1 — SnipeIT vs GLPI](fight-wkdwa04krn58a.gif)### GLPI : le mastodonte français
 
-![](c230c830-02bf-46d1-b368-c36f5a8fa824.webp)**GLPI** (Gestion Libre de Parc Informatique) est une solution française open source créée en 2003. C’est la Ferrari de l’ITSM gratuit : helpdesk, inventaire, gestion des changements, base de connaissances, suivi financier… GLPI fait **tout**.
+![Illustration 2 — SnipeIT vs GLPI](c230c830-02bf-46d1-b368-c36f5a8fa824.webp)**GLPI** (Gestion Libre de Parc Informatique) est une solution française open source créée en 2003. C’est la Ferrari de l’ITSM gratuit : helpdesk, inventaire, gestion des changements, base de connaissances, suivi financier… GLPI fait **tout**.
 
-![](upload_74793f0d9d89da1ade280cb84c660a7f.gif)**Points clés :**
+![Illustration 3 — SnipeIT vs GLPI](upload_74793f0d9d89da1ade280cb84c660a7f.gif)**Points clés :**
 
 - Suite ITSM complète (ticketing + inventaire + CMDB)
 - Auto-découverte réseau avec agents OCS Inventory
@@ -63,9 +63,9 @@ GLPI et SnipeIT : présentation des combattants
 
 ### SnipeIT : le spécialiste américain
 
-![](header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour.
+![Capture d'écran — SnipeIT le spécialiste américain](header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour.
 
-![](dashboard.webp)**Points clés :**
+![Capture d'écran — SnipeIT le spécialiste américain](dashboard.webp)**Points clés :**
 
 - 100% focalisé sur la gestion d’actifs
 - Interface moderne et intuitive

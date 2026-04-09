@@ -49,7 +49,7 @@ L’intégration des systèmes Ubuntu à Windows Active Directory (AD) peut simp
 
 L’intégration avec Active Directory fournit un fournisseur d’identité centralisé pour l’authentification réseau, rendant la gestion des utilisateurs plus sécurisée et efficace. Elle simplifie les connexions des utilisateurs et le contrôle d’accès sur plusieurs systèmes, réduisant ainsi la charge administrative.
 
-![](image-1.gif)Préparer votre système Ubuntu
+![Illustration — Connecter les systèmes Ubuntu à Active Directory en utilisan](image-1.gif)Préparer votre système Ubuntu
 
 ### Installer les paquets nécessaires
 

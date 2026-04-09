@@ -49,7 +49,7 @@ Imagine Arch Linux, mais sans la galère de configuration habituelle. Omarchy em
 
 Le principe ? Tu installes, tu choisis ton thème, et tu bosses. Point.
 
-![](fourway-tiling.webp)- - - - - -
+![Illustration 1 — Omarchy](fourway-tiling.webp)- - - - - -
 
 **Installation : plus simple qu’un YAML bien indenté**
 
@@ -79,7 +79,7 @@ Pour effectuer l’installation rien de bien compliquer :
 - Tu choisis ton fuseau horaire
 - Un résumé de la configuration s’affiche, tu peux procéder à l’installation si tout est correct.
 
-![Interface de configuration de clavier](Omarchy-2025-10-14-at-20.31.31@2x.webp)![Écran de connexion avec nom d'utilisateur](Omarchy-2025-10-14-at-20.32.03@2x.webp)![Écran de configuration de compte utilisateur](Omarchy-2025-10-14-at-20.32.25@2x.webp)![](Omarchy-2025-10-14-at-20.33.01@2x.webp)![](Omarchy-2025-10-14-at-20.33.32@2x.webp)![](Omarchy-2025-10-14-at-20.33.44@2x.webp)![](Omarchy-2025-10-14-at-20.34.45@2x.webp)- - - - - -
+![Interface de configuration de clavier](Omarchy-2025-10-14-at-20.31.31@2x.webp)![Écran de connexion avec nom d'utilisateur](Omarchy-2025-10-14-at-20.32.03@2x.webp)![Écran de configuration de compte utilisateur](Omarchy-2025-10-14-at-20.32.25@2x.webp)![Illustration 2 — Omarchy](Omarchy-2025-10-14-at-20.33.01@2x.webp)![Illustration 3 — Omarchy](Omarchy-2025-10-14-at-20.33.32@2x.webp)![Illustration 4 — Omarchy](Omarchy-2025-10-14-at-20.33.44@2x.webp)![Illustration 5 — Omarchy](Omarchy-2025-10-14-at-20.34.45@2x.webp)- - - - - -
 
 **Premier démarrage : bienvenue dans le futur**
 
@@ -104,7 +104,7 @@ L’un des atouts majeurs d’Omarchy, ce sont ses thèmes intégrés qui change
 - **Gruvbox** : le classique qui ne vieillit pas
 - **Nord** : minimaliste et classe
 
-![](catppuccin.webp)![](kanagawa.webp)Pour changer de thème : `Super + Ctrl + Shift + Space`
+![Illustration 6 — Omarchy](catppuccin.webp)![Illustration 7 — Omarchy](kanagawa.webp)Pour changer de thème : `Super + Ctrl + Shift + Space`
 
 Tu peux même créer tes propres thèmes en copiant un thème existant dans `~/.config/omarchy/themes/` et en bidouillant les couleurs.
 

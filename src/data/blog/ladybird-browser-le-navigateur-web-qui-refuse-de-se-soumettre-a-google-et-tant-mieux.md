@@ -29,7 +29,7 @@ Andreas Kling et son équipe ont eu une idée assez folle : repartir de zéro. C
 
 Un navigateur né d’un hobby qui a mal tourné
 
-![](baseline_ladybird.webp)L’histoire commence en 2018 avec SerenityOS, le projet « thérapie » d’Andreas Kling après sa sortie de cure de désintoxication. Ce qui devait être un simple OS personnel s’est transformé en écosystème complet avec son propre navigateur web. Sauf qu’à un moment, Andreas s’est dit : « Et si on sortait ce navigateur de SerenityOS pour en faire quelque chose de vraiment cross-platform ? »
+![Illustration — Ladybird Browser](baseline_ladybird.webp)L’histoire commence en 2018 avec SerenityOS, le projet « thérapie » d’Andreas Kling après sa sortie de cure de désintoxication. Ce qui devait être un simple OS personnel s’est transformé en écosystème complet avec son propre navigateur web. Sauf qu’à un moment, Andreas s’est dit : « Et si on sortait ce navigateur de SerenityOS pour en faire quelque chose de vraiment cross-platform ? »
 
 Le 4 juillet 2022, première démo publique de Ladybird avec une interface Qt basique. Deux ans plus tard, en juillet 2024, le projet annonce son indépendance totale avec la création de la **Ladybird Browser Initiative**, une 501(c)(3) non-profit financée par Chris Wanstrath (co-fondateur de GitHub) et d’autres sponsors comme Shopify et Proton VPN.
 

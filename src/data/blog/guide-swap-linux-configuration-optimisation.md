@@ -30,7 +30,7 @@ tags:
 
 Spoiler : on va éviter les manipulations de partition à la hache et privilégier des méthodes qui ne casseront pas ton système en prod.
 
-![](cat-memory-nusoh30j7qijy.gif)
+![Illustration 1 — Swap Linux](cat-memory-nusoh30j7qijy.gif)
 
 **Qu’est-ce que le swap et pourquoi tu en as (vraiment) besoin**
 
@@ -192,4 +192,4 @@ Si tu utilises des conteneurs, pense à consulter mon guide sur [la sécurisatio
 
 Le swap n’est pas l’ennemi, c’est ton assurance-vie système. Bien configuré, il te sauvera la mise quand ta webapp Java décidera de bouffer toute la RAM d’un coup.
 
-![](nbc-season-2-kenan-vnr3draqtz6mwyfxv0.gif)Pour aller plus loin dans l’optimisation système, mon article sur [la modification de l’heure serveur Linux](https://brandonvisca.com/comment-modifier-heure-du-serveur-sous-linux/) couvre d’autres aspects essentiels de l’administration.
+![Capture d'écran — Étape 4 Rendre permanent](nbc-season-2-kenan-vnr3draqtz6mwyfxv0.gif)Pour aller plus loin dans l’optimisation système, mon article sur [la modification de l’heure serveur Linux](https://brandonvisca.com/comment-modifier-heure-du-serveur-sous-linux/) couvre d’autres aspects essentiels de l’administration.

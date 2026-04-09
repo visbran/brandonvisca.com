@@ -39,7 +39,7 @@ tags:
 - [Conclusion](#conclusion-et-ouverture)
 
 
-![](great-job-al0xsyu0pkftq.gif)
+![Illustration 1 — Exchange Online](great-job-al0xsyu0pkftq.gif)
 
 Introduction
 
@@ -96,7 +96,7 @@ New-InboxRule -Name "Forward Important" -SubjectContainsWords "Confidentiel" -Fo
 
 Méthode 1 : RBAC – Limiter l’accès aux interfaces
 
-![](theoffice-zcpyqh5yvhdi1rvype.gif)Le RBAC (Role-Based Access Control) permet de retirer les boutons de transfert des interfaces utilisateur. C’est un premier verrou, mais attention aux limitations.
+![Capture d'écran — 1 Redirection globale de boîte ForwardingAddress](theoffice-zcpyqh5yvhdi1rvype.gif)Le RBAC (Role-Based Access Control) permet de retirer les boutons de transfert des interfaces utilisateur. C’est un premier verrou, mais attention aux limitations.
 
 ### Créer un rôle personnalisé
 

@@ -34,13 +34,13 @@ faqs:
 
 [Notion](http://notion.so), célèbre pour ses capacités de gestion de tâches et de notes, étend ses fonctionnalités avec [Notion Sites](https://www.notion.so/fr-fr/help/guides/build-a-website-with-notion-in-seconds-no-coding-required), permettant aux utilisateurs de transformer facilement leurs pages en sites web complets. Cette nouvelle fonctionnalité vise à simplifier le processus de création et de gestion de sites web pour une variété d’applications, allant des portfolios personnels aux sites d’entreprise complexes.
 
-![](https://media0.giphy.com/media/QrdXWoMFhnzl2Nl7v6/giphy.gif?cid=7ee8af483ltsvuhg6uya9yt66d8hmc42mrlvw3rt4doejtwv&ep=v1_gifs_search&rid=giphy.gif&ct=g)### Création et Personnalisation des Pages avec Notion
+![Illustration 1 — Notion Sites](https://media0.giphy.com/media/QrdXWoMFhnzl2Nl7v6/giphy.gif?cid=7ee8af483ltsvuhg6uya9yt66d8hmc42mrlvw3rt4doejtwv&ep=v1_gifs_search&rid=giphy.gif&ct=g)### Création et Personnalisation des Pages avec Notion
 
 Notion Sites offre une approche intuitive pour [créer des sites web à partir de zéro](https://blog.imaginotion.fr/creer-site-web-notion). Les utilisateurs peuvent tirer parti de mises en page multi-colonnes, intégrer des boutons interactifs, et organiser leur contenu avec des vues de base de données. La personnalisation avancée inclut la possibilité de choisir des thèmes, d’ajouter des favicons distinctifs, et d’intégrer des outils d’analyse comme Google Analytics pour un suivi détaillé des performances.
 
 ### Publication et Gestion des Domaines Personnalisés
 
-![](abonnement_notion.webp)Un guide détaillé accompagne les utilisateurs dans la [publication instantanée de leurs pages Notion en ligne](https://la-webeuse.com/creer-un-site-web-avec-notion/). Notion permet l’intégration facile de domaines personnalisés et la gestion efficace des sous-domaines notion.site. Les options tarifaires offertes sont comparées à celles d’autres plateformes de création de sites web, mettant en lumière la flexibilité et l’accessibilité des fonctionnalités proposées.
+![Capture d'écran — Publication et Gestion des Domaines Personnalisés](abonnement_notion.webp)Un guide détaillé accompagne les utilisateurs dans la [publication instantanée de leurs pages Notion en ligne](https://la-webeuse.com/creer-un-site-web-avec-notion/). Notion permet l’intégration facile de domaines personnalisés et la gestion efficace des sous-domaines notion.site. Les options tarifaires offertes sont comparées à celles d’autres plateformes de création de sites web, mettant en lumière la flexibilité et l’accessibilité des fonctionnalités proposées.
 
 Avantages de Notion Sites
 

@@ -41,7 +41,7 @@ tags:
 - [Conclusion : Excel c’est fini](#conclusion-excel-cest-fini)
 
 
-![](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)Félicitations, tu viens de découvrir pourquoi l’**ITSM** existe. Et spoiler : c’est pas pour faire joli dans ton CV.
+![Illustration 1 — ITSM](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)Félicitations, tu viens de découvrir pourquoi l’**ITSM** existe. Et spoiler : c’est pas pour faire joli dans ton CV.
 
 Si tu passes encore tes journées à chercher où est passé ce serveur Dell, ou si tu découvres que votre « inventaire » ressemble à un bazar de brocante mal organisé, cet article va te sauver la vie. On va parler ITSM, de pourquoi Excel c’est l’enfer, et comment SnipeIT peut transformer ton quotidien d’admin.
 
@@ -110,7 +110,7 @@ SnipeIT : ton nouveau meilleur ami
 
 [SnipeIT](https://snipeitapp.com/) est une solution open source de **gestion d’actifs IT** qui fait exactement ce qu’Excel ne sait pas faire : être un vrai outil d’inventaire.
 
-![](friends-friends-episode-16-tv-vbawwigntkywofxf7u.gif)### Pourquoi SnipeIT et pas autre chose ?
+![Capture d'écran — Sécurité et accès catastrophiques](friends-friends-episode-16-tv-vbawwigntkywofxf7u.gif)### Pourquoi SnipeIT et pas autre chose ?
 
 - **100% gratuit** (si tu l’héberges toi-même)
 - **Interface moderne** qui ne ressemble pas à Windows 95
@@ -129,7 +129,7 @@ Contrairement à Excel, SnipeIT suit tes équipements de A à Z :
 - **Maintenance** → en réparation chez le prestataire
 - **Fin de vie** → recyclage ou revente
 
-![](gestion_des_actifs.webp)![](gestion_des_licences.webp)#### 2. Notifications automatiques
+![Capture d'écran — Les fonctionnalités qui changent la vie](gestion_des_actifs.webp)![Capture d'écran — Les fonctionnalités qui changent la vie](gestion_des_licences.webp)#### 2. Notifications automatiques
 
 Fini les « Oups, la garantie était expirée depuis 6 mois » :
 
@@ -159,7 +159,7 @@ Les avantages concrets pour l’admin débutant
 
 Tu sais utiliser un smartphone ? Tu sais utiliser SnipeIT. L’interface est claire, les boutons font ce qu’on attend d’eux, et pas besoin d’un master en ergonomie pour s’y retrouver.
 
-![](dashboard.webp)### Déploiement pas-à-pas
+![Capture d'écran — Interface intuitive](dashboard.webp)### Déploiement pas-à-pas
 
 Pas besoin de révolutionner ton infrastructure du jour au lendemain :
 

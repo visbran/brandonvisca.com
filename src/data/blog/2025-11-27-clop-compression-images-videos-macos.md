@@ -14,13 +14,13 @@ tags:
 
 # Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
+![Illustration 1 — Clop](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
 *Légende : Interface Clop - compression automatique en arrière-plan*
 
 
 ## Introduction : Le drame des fichiers trop lourds
 
-![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+![Capture d'écran — Introduction Le drame des fichiers trop lourds](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 
 On connaît tous cette situation frustrante :
 
@@ -58,7 +58,7 @@ Let's go ! 🚀
 
 **Clop** (de "Clipboard Optimizer"), c'est un outil développé par [Low Tech Guys](https://lowtechguys.com/) qui optimise automatiquement **images, vidéos, PDFs et contenus clipboard** sur macOS.
 
-![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+![Capture d'écran — Quest-ce que Clop](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 ### Le concept en une phrase
 
 **Copy large, paste small, send fast.**
@@ -88,7 +88,7 @@ Dès que tu copies une image ou fais un screenshot, Clop la compresse en arrièr
 
 ### Méthode 1 : Homebrew (recommandée)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131079/brandonviscacom/CleanShot_2025-12-07_at_19.08.07_2x_ylt3yj.webp)
+![Capture d'écran — Méthode 1 Homebrew recommandée](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131079/brandonviscacom/CleanShot_2025-12-07_at_19.08.07_2x_ylt3yj.webp)
 
 Si tu as Homebrew installé ([sinon, va lire mon guide Homebrew](https://brandonvisca.com/installation-homebrew-macos/)) :
 
@@ -112,14 +112,14 @@ brew install --cask clop
 3. **Premier lancement** : Clic droit > Ouvrir
 4. **Autorise les permissions** : Accessibilité + Enregistrement écran (si vidéos)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131528/brandonviscacom/CleanShot_2025-12-07_at_19.17.08_2x_ljkmyp.webp)
+![Capture d'écran — Méthode 3 Installation manuelle](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131528/brandonviscacom/CleanShot_2025-12-07_at_19.17.08_2x_ljkmyp.webp)
 
 💡 **Astuce** : Active "Lancer au démarrage" dans les préférences. Clop doit tourner en permanence pour être efficace.
 
 
 ## Configuration essentielle en 5 minutes
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131553/brandonviscacom/CleanShot_2025-12-07_at_19.17.25_2x_nl8u7q.jpg)
+![Capture d'écran — Configuration essentielle en 5 minutes](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131553/brandonviscacom/CleanShot_2025-12-07_at_19.17.25_2x_nl8u7q.jpg)
 
 ### Première utilisation : Setup de base
 
@@ -129,7 +129,7 @@ Au premier lancement, Clop te demande :
 2. **Enregistrement écran** (optionnel) : Pour optimiser les screencasts automatiquement
 3. **Mode d'optimisation** : Automatique (recommandé) vs Manuel
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131983/brandonviscacom/CleanShot_2025-12-07_at_19.24.17_2x_wvwlkl.webp)
+![Capture d'écran — Première utilisation Setup de base](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131983/brandonviscacom/CleanShot_2025-12-07_at_19.24.17_2x_wvwlkl.webp)
 
 ### Réglages recommandés pour débutants
 
@@ -185,7 +185,7 @@ Au premier lancement, Clop te demande :
 
 ### Workflow 3 : Drag & Drop intelligent
 
-![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+![Capture d'écran — Workflow 3 Drag Drop intelligent](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 
 **Le problème** : Tu as 10 images à compresser avant de les uploader sur ton site WordPress.
 
@@ -203,7 +203,7 @@ Au premier lancement, Clop te demande :
 
 ### 1. Downscaling intelligent
 
-![](https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4)
+![Capture d'écran — 1 Downscaling intelligent](https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4)
 
 **Problème** : Ton screenshot fait 3840x2160 (4K) mais tu n'as besoin que de 1920x1080 pour un article de blog.
 
@@ -244,7 +244,7 @@ Tu peux **cropper** images et vidéos directement depuis le floating preview :
 
 **Pour les power users** : Clop s'intègre avec **Shortcuts.app**.
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765132833/brandonviscacom/CleanShot_2025-12-07_at_19.39.51_2x_eo4rbc.jpg)
+![Capture d'écran — 4 Intégration macOS Shortcuts](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765132833/brandonviscacom/CleanShot_2025-12-07_at_19.39.51_2x_eo4rbc.jpg)
 
 **Exemples de workflows** :
 
@@ -272,7 +272,7 @@ Tu peux **cropper** images et vidéos directement depuis le floating preview :
 
 ### 5. Folders watching (surveillance de dossiers)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765133052/brandonviscacom/CleanShot_2025-12-07_at_19.42.54_2x_cfmbrq.webp)
+![Capture d'écran — 5 Folders watching surveillance de dossiers](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765133052/brandonviscacom/CleanShot_2025-12-07_at_19.42.54_2x_cfmbrq.webp)
 
 Configure Clop pour **surveiller des dossiers spécifiques** :
 

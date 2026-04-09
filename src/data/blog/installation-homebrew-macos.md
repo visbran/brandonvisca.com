@@ -12,7 +12,7 @@ tags:
   - cli
 ---
 
-![](norwalkbrewhouse-cerveza-smooth-craft-beer-2xloq6w2wweu0fgdpi.gif)
+![Illustration — Installation d'homebrew sur MacOS](norwalkbrewhouse-cerveza-smooth-craft-beer-2xloq6w2wweu0fgdpi.gif)
 
 Introduction à Homebrew
 
