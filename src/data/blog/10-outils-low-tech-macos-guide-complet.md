@@ -1146,3 +1146,8 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 - [r/macOS](https://reddit.com/r/macOS)
 - [r/MacApps](https://reddit.com/r/MacApps)
 - [r/opensource](https://reddit.com/r/opensource)
+
+## Articles connexes
+
+- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
+- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025](/grila-vs-fantastical-comparatif-2025/)

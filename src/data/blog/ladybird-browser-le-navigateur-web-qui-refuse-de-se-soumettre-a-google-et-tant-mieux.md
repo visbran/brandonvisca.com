@@ -74,3 +74,8 @@ sudo apt install build-essential cmake ninja-build qt6-base-dev
 ./Build/ladybird
 
 ```
+
+## Articles connexes
+
+- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [Installation et configuration de Vim : Guide complet](/installation-vim-guide-complet/)

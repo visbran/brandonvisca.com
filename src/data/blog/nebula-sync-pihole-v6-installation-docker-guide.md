@@ -354,3 +354,8 @@ Bonnes pratiques
 docker logs -f nebula-sync
 
 ```
+
+## Articles connexes
+
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économ](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google ](/nextcloud-docker-installation-complete-2025/)

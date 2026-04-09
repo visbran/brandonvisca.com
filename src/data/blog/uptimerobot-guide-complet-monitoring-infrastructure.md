@@ -549,3 +549,8 @@ Si cet article t’a plu, tu vas probablement aimer :
 - - - - - -
 
 **Dernière mise à jour :** Octobre 2025
+
+## Articles connexes
+
+- [Swap Linux : comment ne pas transformer ton serveur en escar](/guide-swap-linux-configuration-optimisation/)
+- [SnipeIT vs GLPI : David contre Goliath dans l'arène de l'ITS](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/)

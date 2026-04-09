@@ -448,3 +448,8 @@ Il fait 90% de ce que j'ai besoin, gratuitement, et sans me faire chier.
 Dis-moi en commentaire si tu as testé OpenMTP ou si tu galères encore avec Android File Transfer ! 👇
 
 ---
+
+## Articles connexes
+
+- [Android File Transfer Mac : 2 alternatives testées (2025)](/android-file-transfer-mac-alternatives-test-2025/)
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)

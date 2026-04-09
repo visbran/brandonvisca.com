@@ -775,3 +775,8 @@ Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 - [fd (outil Rust sous-jacent)](https://github.com/sharkdp/fd)
 - [fzf (fuzzy finder)](https://github.com/junegunn/fzf)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
+
+## Articles connexes
+
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
+- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)

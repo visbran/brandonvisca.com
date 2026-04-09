@@ -245,3 +245,8 @@ Alors oui, il y a une légère courbe d’apprentissage. Mais franchement, aprè
 - [Store d’extensions](https://raycast.com/store)
 - [Documentation Raycast](https://manual.raycast.com/)
 - [Raycast vs Alfred (comparatif officiel)](https://www.raycast.com/raycast-vs-alfred)
+
+## Articles connexes
+
+- [Raycast vs Alfred : Test après 30 jours (Verdict 2025)](/raycast-vs-alfred-spotlight-comparatif-macos/)
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)

@@ -504,3 +504,8 @@ Abonne-toi pour ne rien rater 👇
 - - - - - -
 
 **💬 Et toi, tu as déjà essayé l’auto-hébergement ? Raconte en commentaire !**
+
+## Articles connexes
+
+- [Indépendance Numérique 2025 : Le Guide Complet pour Reprendr](/independance-numerique-2025-guide-complet/)
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Grat](/vaultwarden-docker-gestionnaire-mots-de-passe/)

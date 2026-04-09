@@ -113,3 +113,8 @@ ldapsearch -x -h AD_SERVER -D "cn=Utilisateur,dc=exemple,dc=ad" -W -b "dc=exempl
   "(&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(!(userPrincipalName=*@exemple.ad)))"
 
 ```
+
+## Articles connexes
+
+- [Configuration avancée SnipeIT : LDAP, automatisation et noti](/configuration-avancee-snipeit-ldap-teams-automatisation/)
+- [Connecter les systèmes Ubuntu à Active Directory en utilisan](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)

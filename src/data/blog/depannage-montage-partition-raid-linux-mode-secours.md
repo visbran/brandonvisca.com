@@ -66,3 +66,8 @@ Après avoir trouvé la partition contenant mon système de fichiers racine, j�
 nano /mnt/recovery/etc/sudoers.d/gardeners
 
 ```
+
+## Articles connexes
+
+- [Sécurité de votre serveur linux : Comment durcir un serveur ](/securite-de-votre-serveur-linux/)
+- [Connecter les systèmes Ubuntu à Active Directory en utilisan](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)

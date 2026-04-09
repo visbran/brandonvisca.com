@@ -118,3 +118,8 @@ location ~* /(composer\.json|composer\.lock|package\.json|wp-config\.php|php\.in
 }
 
 ```
+
+## Articles connexes
+
+- [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)
+- [Comment renforcer la sécurité de Nginx avec les headers HTTP](/securiser-nginx-avec-headers-http/)

@@ -182,3 +182,8 @@ Liens utiles
 - [Site officiel Shutter Encoder](https://www.shutterencoder.com/) (source de téléchargement)
 - [Guide d’installation Homebrew](https://brandonvisca.com/installation-homebrew-macos/) (pour outils en CLI)
 - [Documentation FFmpeg](https://ffmpeg.org/documentation.html) (sous le capot de Shutter Encoder)
+
+## Articles connexes
+
+- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [Clop : Compresse tes images et vidéos automatiquement sur ma](/clop-compression-images-videos-macos/)

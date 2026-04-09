@@ -126,3 +126,8 @@ En suivant ce guide, vous pouvez :
 - Protéger les utilisateurs finaux sans nuire à l’expérience
 
 Dans le prochain article, nous verrons comment configurer une **[Content-Security-Policy (CSP)](https://brandonvisca.com/content-security-policy-nginx-sans-casser-site/)** efficace sans casser votre frontend.
+
+## Articles connexes
+
+- [Aller plus loin : Permissions-Policy et protection anti-bots](/nginx-permissions-policy-anti-bot/)
+- [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)

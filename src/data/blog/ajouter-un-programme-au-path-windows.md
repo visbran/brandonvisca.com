@@ -347,3 +347,8 @@ Moins de risques de casser quelque chose pour les autres utilisateurs.
 $env:PATH > C:\Backup\PATH_backup.txt
 
 ```
+
+## Articles connexes
+
+- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + m](/installer-localwp-wordpress-local/)
+- [Vanderplanki : L'Outil Gratuit qui Va Révolutionner Vos Sauv](/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/)

@@ -145,3 +145,8 @@ Gérer les paramètres d'heure et de fuseau horaire de votre système est essent
 
 
 **Meta Description:** Apprenez à changer le fuseau horaire, définir le fuseau horaire et synchroniser l'heure du serveur sous Linux en utilisant `timedatectl` et NTP. Suivez notre guide détaillé pour garder vos systèmes Linux précis.
+
+## Articles connexes
+
+- [Installation SnipeIT Ubuntu : guide complet pour ne rien cas](/installation-snipeit-ubuntu-guide-complet/)
+- [ITSM : pourquoi votre Excel va finalement vous rendre fou (g](/itsm-snipeit-alternative-excel-inventaire-it/)

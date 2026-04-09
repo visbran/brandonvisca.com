@@ -67,3 +67,8 @@ Pour vérifier que AD2 a bien tous les rôles, utilisez cette commande dans l’
 ```bash
 netdom query /domain:brandonvisca.local fsmo
 ```
+
+## Articles connexes
+
+- [Masquer des utilisateurs de la GAL Office 365 + Active Direc](/masquer-utilisateurs-gal-office365-active-directory/)
+- [Connecter les systèmes Ubuntu à Active Directory en utilisan](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)

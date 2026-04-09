@@ -207,3 +207,8 @@ Spoiler : c’est satisfaisant de voir son inventaire se remplir tout seul.
 - [Installation SnipeIT Ubuntu – Guide Complet](https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/) – Si tu n’as pas encore de serveur Snipe-IT
 - [Configuration avancée SnipeIT](https://brandonvisca.com/configuration-avancee-snipeit-ldap-teams-automatisation/) – LDAP, Teams, API et sécurité
 - [Comment ajouter un programme au PATH Windows](https://brandonvisca.com/ajouter-un-programme-au-path-windows/) – Bonnes pratiques Windows
+
+## Articles connexes
+
+- [Configuration avancée SnipeIT : LDAP, automatisation et noti](/configuration-avancee-snipeit-ldap-teams-automatisation/)
+- [Masquer des utilisateurs de la GAL Office 365 + Active Direc](/masquer-utilisateurs-gal-office365-active-directory/)

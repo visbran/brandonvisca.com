@@ -263,3 +263,8 @@ Je prépare une formation "Homelab Weekend" pour monter ton serveur auto-héberg
 [Rejoins la liste d'attente →](#)
 
 ---
+
+## Articles connexes
+
+- [Partager un mot de passe en toute sécurité : Password.link v](/partager-mot-de-passe-securise-comparatif/)
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)

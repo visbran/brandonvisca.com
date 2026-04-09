@@ -456,3 +456,8 @@ Alors, prêt à switcher à la vitesse de la lumière ? 🚀
 - [FAQ officielle rcmd](https://lowtechguys.com/rcmd/#faq)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 - [Download direct rcmd](https://lowtechguys.com/rcmd/#download)
+
+## Articles connexes
+
+- [rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide](/rcmd-alternative-cmd-tab-macos/)
+- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025](/grila-vs-fantastical-comparatif-2025/)

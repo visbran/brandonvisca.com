@@ -669,3 +669,8 @@ Je te recommande de lire mon [guide complet sur la sécurisation d'un serveur Li
 Et si tu comptes auto-héberger des services sur tes serveurs (Nextcloud, Jellyfin, Pi-hole...), jette un œil à mon [guide ultime de l'auto-hébergement 2025](https://brandonvisca.com/auto-hebergement-guide-complet-2025/). Tu y trouveras tout pour monter une infrastructure perso solide, sécurisée, et qui te fera économiser 500€/an en abonnements cloud.
 
 **Bon SSH, et que le ping soit avec toi. 🚀**
+
+## Articles connexes
+
+- [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
+- [Swap Linux : comment ne pas transformer ton serveur en escar](/guide-swap-linux-configuration-optimisation/)

@@ -366,3 +366,8 @@ Ouvrir un fichier depuis Warp directement dans VS Code :
 warp open file.txt
 # → VS Code s'ouvre avec le fichier
 ```
+
+## Articles connexes
+
+- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [iTerm2 sur macOS : Le guide complet pour dompter votre termi](/iterm2-guide-configuration-macos-2025/)

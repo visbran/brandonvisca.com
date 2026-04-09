@@ -569,3 +569,7 @@ C'est la prochaine étape logique : dev local avec LocalWP → déploiement sur 
 - [Docker pour débutants : 10 services à auto-héberger](https://brandonvisca.com/docker-debutant-services-auto-heberger/)
 - [Configuration Nginx : blocs location et sécurité](https://brandonvisca.com/nginx-location-bloc-et-securite/)
 
+## Articles connexes
+
+- [Vanderplanki : L'Outil Gratuit qui Va Révolutionner Vos Sauv](/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/)
+- [Installation d'un thème sous Vim : Guide complet](/installation-theme-vim-guide/)

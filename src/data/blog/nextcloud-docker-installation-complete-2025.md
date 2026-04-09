@@ -724,3 +724,8 @@ Tu viens de mettre en place **ton propre cloud perso** en moins d’1h. Nextclou
 Et surtout, dis adieu aux 10-20€/mois de Google Drive. 🎉
 
 💬 **Questions, galères, ou réussites ?** Balance tout en commentaire, je réponds à tout le monde !
+
+## Articles connexes
+
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économ](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement](/nebula-sync-pihole-v6-installation-docker-guide/)

@@ -227,3 +227,8 @@ Le concept « omakase » (laissez au chef) prend ici tout son sens : les dévelo
 - - - - - -
 
 **Et toi, ça te tente de tester Omarchy ? Partage ton expérience dans les commentaires !**
+
+## Articles connexes
+
+- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement](/nebula-sync-pihole-v6-installation-docker-guide/)

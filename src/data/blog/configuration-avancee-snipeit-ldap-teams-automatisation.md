@@ -833,3 +833,8 @@ En attendant, si ton terminal ressemble encore à celui de Windows 95, fais un t
 - https://snipe-it.readme.io/docs/webhook-integration
 - https://snipe-it.readme.io/docs/api
 - https://nmap.org/
+
+## Articles connexes
+
+- [Filtrage utilisateurs LDAP Snipe-IT : Guide pratique Active ](/ldap-filtrage-utilisateurs-snipeit/)
+- [SnipeAgent : Automatiser l'inventaire Windows sans Excel ni ](/snipeagent-automatiser-inventaire-windows-snipeit/)

@@ -177,3 +177,8 @@ telnet imap.gmail.com 993
 # Si ça fonctionne, c'est un problème d'authentification
 
 ```
+
+## Articles connexes
+
+- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + m](/installer-localwp-wordpress-local/)
+- [Arc Browser abandonné : 7 alternatives épurées pour retrouve](/arc-browser-alternatives-navigateur-epure-2025/)

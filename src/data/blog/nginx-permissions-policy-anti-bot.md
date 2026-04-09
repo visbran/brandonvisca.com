@@ -121,3 +121,8 @@ location /contact {
 }
 
 ```
+
+## Articles connexes
+
+- [Comment renforcer la sécurité de Nginx avec les headers HTTP](/securiser-nginx-avec-headers-http/)
+- [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)

@@ -123,3 +123,8 @@ Invoke-Command -ComputerName "SERVEUR-AZUREAD" -ScriptBlock {
 }
 
 ```
+
+## Articles connexes
+
+- [Connecter les systèmes Ubuntu à Active Directory en utilisan](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
+- [Active Directory : Transfère des rôles FSMO](/activedirectory-transfere-des-roles-fsmo/)

@@ -965,3 +965,8 @@ C’est tout. C’est ça, la magie de Docker.
 ### **Docker consomme-t-il beaucoup de ressources ?**
 
 Docker lui-même est très léger. Ce sont les **services** que tu fais tourner qui consomment. Un serveur avec 4 Go de RAM peut faire tourner 5-10 services légers sans problème.
+
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contr](/auto-hebergement-guide-complet-2025/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économ](/jellyfin-docker-alternative-netflix-gratuite/)

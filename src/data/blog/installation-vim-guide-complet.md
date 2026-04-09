@@ -144,3 +144,8 @@ Sources et références
 - [Site officiel de Homebrew](https://brew.sh/)
 - [Documentation vim-plug](https://github.com/junegunn/vim-plug)
 - [TupperVim](https://tuppervim.org/)
+
+## Articles connexes
+
+- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [Installation d'un thème sous Vim : Guide complet](/installation-theme-vim-guide/)

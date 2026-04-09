@@ -277,3 +277,8 @@ L'option "Réparer l'ordinateur" ne touche pas la corruption logique du système
 45 minutes à 1h30 selon la taille de l'OS. La copie robocopy représente 80% du temps.
 
 ---
+
+## Articles connexes
+
+- [VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2](/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/)
+- [Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)](/hyperv-gen1-vs-gen2-quelle-generation-choisir/)

@@ -427,3 +427,8 @@ Sendme CLI devrait être installé par défaut sur toutes les machines Linux/mac
 Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace vos pratiques "on s'envoie ça sur Google Drive" par un simple ticket Sendme.
 
 Et si le terminal te fait peur, essaye [Alt-SendMe](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) pour avoir la même puissance avec une interface graphique.
+
+## Articles connexes
+
+- [Vanderplanki : L'Outil Gratuit qui Va Révolutionner Vos Sauv](/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/)
+- [Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement](/nebula-sync-pihole-v6-installation-docker-guide/)

@@ -386,3 +386,8 @@ brew cleanup                  # Supprimer anciennes versions
 brew doctor                   # Vérifier que Homebrew va bien
 
 ```
+
+## Articles connexes
+
+- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
+- [Comment réduire la taille de vos images de 70% sur Mac (méth](/reduire-taille-images-mac-webp/)

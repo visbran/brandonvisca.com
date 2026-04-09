@@ -207,3 +207,8 @@ Gen1 reste pertinente pour deux cas précis : les OS anciens (32 bits, Windows 2
 Si tu crées une nouvelle VM aujourd'hui pour Windows Server 2019/2022/2025 ou un Linux récent : **Gen2, sans hésitation**.
 
 Et si tu te retrouves avec une VM Gen2 corrompue, j'ai détaillé [la procédure complète de restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-corrompu-winpe/) — ça peut toujours servir.
+
+## Articles connexes
+
+- [Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)](/hyperv-gen1-vs-gen2-quelle-generation-choisir/)
+- [VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2](/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/)

@@ -224,3 +224,8 @@ L’outil est gratuit, les concepts sont simples, et tu peux commencer petit ava
 Dans le prochain guide, on verra comment SnipeIT se positionne face à GLPI (spoiler : chacun a ses avantages selon ton contexte). En attendant, si tu veux préparer le terrain côté infrastructure, jette un œil à mon guide sur l’[installation d’Oh My Zsh avec Powerlevel10k](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/) – parce qu’un bon admin, ça commence par un terminal qui claque.
 
 **💡 Une question sur la gestion d’actifs IT ?** N’hésite pas à me contacter ou à laisser un commentaire. J’ai probablement déjà galéré avec le même problème que toi !
+
+## Articles connexes
+
+- [Installation SnipeIT Ubuntu : guide complet pour ne rien cas](/installation-snipeit-ubuntu-guide-complet/)
+- [SnipeIT vs GLPI : David contre Goliath dans l'arène de l'ITS](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/)

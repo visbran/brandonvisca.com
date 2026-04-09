@@ -513,3 +513,8 @@ Dans mon homelab, Uptime Kuma tourne H24 depuis 2 ans et surveille 47 endpoints 
 **Mon conseil final :** Teste d'abord en parallèle avec ton monitoring existant pendant 2 semaines. Tu verras vite si ça tient la charge et si les alertes sont pertinentes. Et si t'as des doutes sur la sécu, relis mon [guide complet sur la sécurisation Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/).
 
 Allez, au boulot, et que tes dashboards restent en vert ! 🟢
+
+## Articles connexes
+
+- [Vanderplanki : L'Outil Gratuit qui Va Révolutionner Vos Sauv](/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/)
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)

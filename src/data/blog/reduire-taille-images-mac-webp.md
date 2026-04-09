@@ -247,3 +247,8 @@ du -sh ~/Pictures/**/*.{jpg,png} ~/Pictures/**/*.webp
 - **Photos réseaux sociaux :** -q 60 (gain max)
 - **Images e-commerce :** -q 85 (équilibre parfait)
 - **Portfolio pro :** -q 95 (qualité premium)
+
+## Articles connexes
+
+- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
+- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Co](/appcleaner-mac-alternative-gratuite-cleanmymac/)

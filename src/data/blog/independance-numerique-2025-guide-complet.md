@@ -819,3 +819,8 @@ Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** t
 | Spotify Famille | 180€ | Jellyfin | 180€/an |
 | 1Password | 36€ | Vaultwarden | 36€/an |
 | Dashlane | 40€ | Vaultwarden | 40€/an |
+
+## Articles connexes
+
+- [Pourquoi j'ai quitté Google (et comment tu peux faire pareil](/quitter-google-auto-hebergement/)
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contr](/auto-hebergement-guide-complet-2025/)

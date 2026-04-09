@@ -213,3 +213,8 @@ Tu peux aussi définir la limite directement dans `constants.php` :
 define( 'AI1WM_MAX_FILE_SIZE', 34359738368 ); // 32 Go
 
 ```
+
+## Articles connexes
+
+- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [WordPress : 2 solutions pour réparer une base de donnée corr](/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/)

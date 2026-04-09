@@ -123,3 +123,8 @@ Si t’utilises [Homebrew](https://brandonvisca.com/installation-homebrew-macos/
 brew install --cask music-decoy
 
 ```
+
+## Articles connexes
+
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
+- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)

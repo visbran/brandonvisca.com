@@ -88,3 +88,8 @@ Conclusion
 ![Capture d'écran — Ressources Supplémentaires](image-3.gif)
 
 Morgen se distingue comme une solution indispensable pour ceux qui cherchent à optimiser leur gestion du temps et des tâches. En consolidant tous les aspects de la planification dans une seule application, Morgen simplifie la vie quotidienne et professionnelle. Essayez Morgen dès aujourd’hui pour découvrir comment il peut booster votre productivité et améliorer votre organisation, que vous soyez un individu ou une équipe.
+
+## Articles connexes
+
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
+- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)

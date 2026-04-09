@@ -1024,3 +1024,8 @@ Lunar résout la luminosité des écrans externes macOS. DDC natif, touches F1/F
 
 **Statut** : ✅ Brouillon complet prêt
 **Prochaine étape** : Relecture + screenshots + publication
+
+## Articles connexes
+
+- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025](/grila-vs-fantastical-comparatif-2025/)
+- [10 Outils Low-Tech macOS gratuits que j'utilise (2025)](/10-outils-low-tech-macos-guide-complet/)

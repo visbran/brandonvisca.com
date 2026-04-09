@@ -92,3 +92,8 @@ s3cmd del s3://mon-bucket/fichier.txt
 ### Conclusion
 
 **S3cmd** est un outil puissant, flexible et indispensable pour gérer vos fichiers sur Amazon S3. Que ce soit pour des sauvegardes, des synchronisations ou des transferts automatisés, il s’intègre parfaitement dans vos workflows.
+
+## Articles connexes
+
+- [Swap Linux : comment ne pas transformer ton serveur en escar](/guide-swap-linux-configuration-optimisation/)
+- [UptimeRobot : Le Guide Complet pour Surveiller Votre Infrast](/uptimerobot-guide-complet-monitoring-infrastructure/)

@@ -316,3 +316,8 @@ Pour l'équipe : PrivateBin si la confidentialité prime, Password Pusher si l'e
 Et si tu veux aller plus loin dans la sécurisation de ton infrastructure, jette un œil à mon guide pour [durcir ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) — parce qu'un secret bien partagé sur un serveur mal sécurisé, c'est un peu comme une porte blindée sur une maison sans toit.
 
 ---
+
+## Articles connexes
+
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Grat](/vaultwarden-docker-gestionnaire-mots-de-passe/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économ](/jellyfin-docker-alternative-netflix-gratuite/)

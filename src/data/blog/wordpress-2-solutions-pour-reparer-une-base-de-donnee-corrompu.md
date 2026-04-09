@@ -34,3 +34,8 @@ WordPress propose une option de réparation intégrée qui peut être activée e
 ```bash
 define('WP_ALLOW_REPAIR', true);
 ```
+
+## Articles connexes
+
+- [Migrer WordPress en 2025 : All-in-One WP Migration guide com](/migration-wordpress-all-in-one-guide-2025/)
+- [Dépannage des problèmes de montage de matrices RAID (mdadm) ](/depannage-montage-partition-raid-linux-mode-secours/)

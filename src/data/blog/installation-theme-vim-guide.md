@@ -69,3 +69,8 @@ Sources
 - [Documentation officielle de vim-plug](https://github.com/junegunn/vim-plug)
 - [Documentation du thème Catppuccin pour Vim](https://github.com/catppuccin/vim)
 - [Documentation officielle de Vim](https://www.vim.org/docs.php)
+
+## Articles connexes
+
+- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + m](/installer-localwp-wordpress-local/)
+- [Installation et configuration de Vim : Guide complet](/installation-vim-guide-complet/)

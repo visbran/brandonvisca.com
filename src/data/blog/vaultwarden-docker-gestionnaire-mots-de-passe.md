@@ -793,3 +793,8 @@ Tu y trouveras :
 - La stratégie de sécurisation globale
 
 *Spoiler : Ce n’est que le début. Il reste Prometheus+Grafana pour le monitoring, Uptime Kuma pour les alertes, et plein d’autres services à découvrir.*
+
+## Articles connexes
+
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économ](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google ](/nextcloud-docker-installation-complete-2025/)

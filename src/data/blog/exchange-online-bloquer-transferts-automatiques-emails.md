@@ -315,3 +315,8 @@ Dans un prochain guide, nous verrons comment aller plus loin avec la **protectio
 - - - - - -
 
 **💬 Une question sur ce guide ?** N’hésitez pas à me contacter ou à laisser un commentaire. J’ai probablement déjà rencontré votre cas de figure !
+
+## Articles connexes
+
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Grat](/vaultwarden-docker-gestionnaire-mots-de-passe/)
+- [Masquer des utilisateurs de la GAL Office 365 + Active Direc](/masquer-utilisateurs-gal-office365-active-directory/)

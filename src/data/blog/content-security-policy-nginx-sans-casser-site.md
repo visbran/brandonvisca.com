@@ -157,3 +157,8 @@ location ~ ^/([a-z0-9-]+)(/.*)?$ {
 }
 
 ```
+
+## Articles connexes
+
+- [Limiter les risques sur Nginx : fichiers sensibles, uploads,](/proteger-nginx-fichiers-sensibles-et-uploads/)
+- [Comment renforcer la sécurité de Nginx avec les headers HTTP](/securiser-nginx-avec-headers-http/)

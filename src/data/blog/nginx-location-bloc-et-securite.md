@@ -213,3 +213,8 @@ Ressources complémentaires
 - Documentation Nginx officielle : [https://nginx.org/en/docs/http/ngx\_http\_core\_module.html#location](https://nginx.org/en/docs/http/ngx_http_core_module.html#location)
 - OWASP Secure Headers Project : <https://owasp.org/www-project-secure-headers/>
 - Tutoriel Nginx regex et `location` : <https://www.digitalocean.com/community/tutorials/understanding-nginx-location-blocks>
+
+## Articles connexes
+
+- [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)
+- [Limiter les risques sur Nginx : fichiers sensibles, uploads,](/proteger-nginx-fichiers-sensibles-et-uploads/)

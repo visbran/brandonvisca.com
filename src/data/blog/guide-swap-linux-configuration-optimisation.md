@@ -193,3 +193,8 @@ Si tu utilises des conteneurs, pense à consulter mon guide sur [la sécurisatio
 Le swap n’est pas l’ennemi, c’est ton assurance-vie système. Bien configuré, il te sauvera la mise quand ta webapp Java décidera de bouffer toute la RAM d’un coup.
 
 ![Capture d'écran — Étape 4 Rendre permanent](nbc-season-2-kenan-vnr3draqtz6mwyfxv0.gif)Pour aller plus loin dans l’optimisation système, mon article sur [la modification de l’heure serveur Linux](https://brandonvisca.com/comment-modifier-heure-du-serveur-sous-linux/) couvre d’autres aspects essentiels de l’administration.
+
+## Articles connexes
+
+- [UptimeRobot : Le Guide Complet pour Surveiller Votre Infrast](/uptimerobot-guide-complet-monitoring-infrastructure/)
+- [SnipeIT vs GLPI : David contre Goliath dans l'arène de l'ITS](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/)

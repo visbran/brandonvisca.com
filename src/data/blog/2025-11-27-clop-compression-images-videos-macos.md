@@ -622,3 +622,8 @@ Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 - [Clop sur Mac App Store](https://apps.apple.com/app/clop/id1611554949)
 - [Clop SDK (pour devs)](https://github.com/FuzzyIdeas/ClopSDK)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
+
+## Articles connexes
+
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
+- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)

@@ -238,3 +238,8 @@ Les trois outils présentés ici règlent le problème proprement :
 - **PrivateBin** pour les homelabbers qui veulent tout contrôler
 
 Et si tu veux aller plus loin dans la sécurisation de tes mots de passe au quotidien, l'étape suivante c'est un gestionnaire dédié. Mon article sur [Vaultwarden Docker](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/) te montre comment déployer ta propre instance en moins d'une heure.
+
+## Articles connexes
+
+- [Partager un mot de passe en toute sécurité : Password.link v](/partager-mot-de-passe-securise-comparatif/)
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Grat](/vaultwarden-docker-gestionnaire-mots-de-passe/)

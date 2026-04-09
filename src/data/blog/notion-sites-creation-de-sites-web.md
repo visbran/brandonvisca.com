@@ -69,3 +69,8 @@ La [gestion des domaines personnalisés avec Notion](https://www.notion.so/fr-fr
 ### Est-ce que Notion Sites est adapté pour la création de blogs professionnels?
 
 Oui, Notion Sites offre des fonctionnalités CMS robustes qui permettent la création et la gestion de [blogs professionnels avec facilité](https://apprendre-notion.com/6-outils-gratuits-pour-creer-son-site-avec-notion/). Les utilisateurs peuvent publier du contenu, gérer des commentaires et personnaliser l’apparence de leur blog selon leurs besoins spécifiques.
+
+## Articles connexes
+
+- [Exploration de Super.so : un outil de site web personnalisé ](/exploration-de-super-so-un-outil-de-site-web-personnalise-pour-notion/)
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
