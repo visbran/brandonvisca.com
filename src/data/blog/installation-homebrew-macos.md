@@ -48,7 +48,7 @@ Pour installer Homebrew, ouvrez le Terminal et exécutez la commande suivante :
 brew doctor
 
 > Une fois Homebrew installé, vous pouvez installer des outils  
-> comme **iTerm2** 👉 [Guide complet iTerm2 macOS](/lien-iterm2)«
+> comme **iTerm2** 👉 [Guide complet iTerm2 macOS](/iterm2-guide-configuration-macos-2025/)«
 
 Utilisation basique
 

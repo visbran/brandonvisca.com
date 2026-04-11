@@ -186,4 +186,4 @@ Liens utiles
 ## Articles connexes
 
 - [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
-- [Clop : Compresse tes images et vidéos automatiquement sur ma](/clop-compression-images-videos-macos/)
+- [Clop : Compresse tes images et vidéos automatiquement sur ma](/2025-11-27-clop-compression-images-videos-macos/)
