@@ -42,3 +42,10 @@ https://brandonvisca-com.pages.dev/* https://brandonvisca.com/:splat 301
 /blog/ /blog/ 200
 /feed/ /rss.xml 301
 /sitemap.xml /sitemap-index.xml 301
+
+# Doublons date-préfixés → slug canonique
+/2025-02-16-android-file-transfer-mac-alternatives-test-2025/ /android-file-transfer-mac-alternatives-test-2025/ 301
+/2025-11-27-rcmd-alternative-cmd-tab-macos/                   /rcmd-alternative-cmd-tab-macos/                   301
+/2026-03-10-hyperv-gen1-vs-gen2-quelle-generation-choisir/    /hyperv-gen1-vs-gen2-quelle-generation-choisir/    301
+/2026-03-10-restaurer-vm-hyperv-vhdx-os-corrompu-winpe/       /restaurer-vm-hyperv-vhdx-os-corrompu-winpe/       301
+/2026-03-14-partager-mot-de-passe-securise-comparatif/        /partager-mot-de-passe-securise-comparatif/        301
