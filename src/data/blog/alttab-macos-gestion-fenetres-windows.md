@@ -1,35 +1,27 @@
 ---
 title: "AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2025)"
+description: "AltTab macOS transforme le ⌘+Tab natif avec prévisualisations style Windows. Alternative 100% gratuite. Guide installation + configuration avancée pour switchers."
 pubDatetime: "2025-11-18T18:55:54+01:00"
 author: Brandon Visca
-description: "AltTab macOS transforme le ⌘+Tab natif avec prévisualisations Windows. Switchez entre apps et fenêtres, gratuit et open-source. Guide complet 2025."
 tags:
   - macos
   - productivite
-  - debutant
-  - guide
   - gestion-fenetres
-  - alttab
-faqs:
-  - question: "AltTab est-il vraiment gratuit ?"
-    answer: "Oui, open-source, gratuit, sans version premium. Disponible sur GitHub releases ou via Homebrew."
-  - question: "AltTab fonctionne-t-il sur macOS Sequoia ?"
-    answer: "Oui, compatible avec toutes les versions macOS récentes. Test recommandé sur ta version spécifique."
-  - question: "La permission Screen Recording est-elle sûre à accorder ?"
-    answer: "Oui. AltTab est open-source (auditable sur GitHub), ne transmet rien en dehors de ton Mac."
-  - question: "AltTab ralentit-il mon Mac ?"
-    answer: "Non, très léger. Utilise peu de CPU/RAM sauf en mode grid avec beaucoup de fenêtres ouvertes."
+  - guide
+  - debutant
+featured: false
+draft: false
+focusKeyword: AltTab macOS
 ---
-
 - - - - - -
 
 TL;DR
+-----
 
 Tu viens de passer de Windows à Mac et le ⌘+Tab te rend fou ? Pas de preview des fenêtres, une organisation bizarre qui mélange les apps minimisées avec celles qui sont actives, et impossible de fermer une fenêtre directement depuis le switcher.
 
 Bienvenue dans la frustration des switchers Windows → macOS.
 
-![[nhl-minnesota-wild-welcome-home-ae7si3lopyj8q.gif]]
 
 **AltTab macOS** résout ce problème en apportant le comportement du Alt+Tab de Windows sur ton Mac. Preview des fenêtres, organisation claire, raccourcis personnalisables, et tout ça gratuitement.
 
@@ -38,6 +30,7 @@ Dans ce guide complet, je te montre comment installer AltTab macOS, remplacer le
 - - - - - -
 
 Le problème du ⌘+Tab natif sur macOS
+------------------------------------
 
 Apple a conçu le ⌘+Tab pour switcher entre **applications**, pas entre **fenêtres**. Si t’as 5 fenêtres Chrome ouvertes, ⌘+Tab te montre juste l’icône Chrome une seule fois.
 
@@ -54,6 +47,7 @@ AltTab macOS ramène ce comportement sur Mac. Et en mieux.
 
 - - - - - -
 
+-----------
 
 - [Le problème du ⌘+Tab natif sur macOS](#le-probleme-du-%E2%8C%98-tab-natif-sur-mac-os)
 - [AltTab macOS : ce qui change vraiment](#alt-tab-mac-os-ce-qui-change-vraiment)
@@ -104,16 +98,27 @@ AltTab macOS ramène ce comportement sur Mac. Et en mieux.
 
 
 AltTab macOS : ce qui change vraiment
+-------------------------------------
 
 Voici ce que AltTab macOS apporte par rapport au switcher natif :
 
-Fonctionnalité | macOS natif (⌘+Tab) | AltTab macOS | **Preview fenêtres** | ❌ Icônes seulement | ✅ Thumbnails en live | **Switcher par fenêtre** | ❌ Par app uniquement | ✅ Chaque fenêtre séparée | **Fermer depuis switcher** | ❌ | ✅ Clic droit ou W | **Filtrer par workspace** | ❌ | ✅ Configurable | **Layouts personnalisés** | ❌ | ✅ Grid, list, thumbnails | **Raccourcis multiples** | ❌ | ✅ Illimités | **Thèmes** | ❌ | ✅ Light, dark, custom | 
+| Fonctionnalité | macOS natif (⌘+Tab) | AltTab macOS |
+|---|---|---|
+| **Preview fenêtres** | ❌ Icônes seulement | ✅ Thumbnails en live |
+| **Switcher par fenêtre** | ❌ Par app uniquement | ✅ Chaque fenêtre séparée |
+| **Fermer depuis switcher** | ❌ | ✅ Clic droit ou W |
+| **Filtrer par workspace** | ❌ | ✅ Configurable |
+| **Layouts personnalisés** | ❌ | ✅ Grid, list, thumbnails |
+| **Raccourcis multiples** | ❌ | ✅ Illimités |
+| **Thèmes** | ❌ | ✅ Light, dark, custom |
+
 
 Le vrai game changer, c’est la **preview en temps réel**. Tu vois exactement ce qui est dans chaque fenêtre avant de switcher. Fini les « c’était quelle fenêtre déjà ? » qui te font perdre 5 secondes à chaque fois.
 
 - - - - - -
 
 Installation d’AltTab macOS
+---------------------------
 
 ### Prérequis : Permission « Screen Recording »
 
@@ -143,7 +148,3 @@ Si t’utilises déjà [Homebrew](../installation-homebrew-macos/.md), c’est i
 brew install --cask alt-tab
 ```
 
-## Articles connexes
-
-- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
-- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)

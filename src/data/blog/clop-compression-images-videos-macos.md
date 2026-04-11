@@ -1,24 +1,28 @@
 ---
 title: "Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)"
-pubDatetime: "2025-11-27T00:00:00+00:00"
+description: "Découvre Clop, l'outil qui compresse automatiquement tes images et vidéos dès que tu les copies. Fini les fichiers trop lourds pour les emails et Slack. Installation et config complète."
+pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca
-description: "Découvre Clop, l'outil macOS qui compresse automatiquement images et vidéos dès que tu les copies. Gratuit, open source, zéro configuration requise."
 tags:
   - macos
   - productivite
-  - debutant
   - multimedia
+  - debutant
   - guide
-  - compression
+featured: false
+draft: false
+focusKeyword: compresser images mac automatiquement
 ---
+# Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)
 
-![Illustration 1 — Clop](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
 *Légende : Interface Clop - compression automatique en arrière-plan*
 
+---
 
 ## Introduction : Le drame des fichiers trop lourds
 
-![Capture d'écran — Introduction Le drame des fichiers trop lourds](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 
 On connaît tous cette situation frustrante :
 
@@ -51,12 +55,13 @@ Let's go ! 🚀
 ## Table of content
 
 
+---
 
 ## Qu'est-ce que Clop ?
 
 **Clop** (de "Clipboard Optimizer"), c'est un outil développé par [Low Tech Guys](https://lowtechguys.com/) qui optimise automatiquement **images, vidéos, PDFs et contenus clipboard** sur macOS.
 
-![Capture d'écran — Quest-ce que Clop](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 ### Le concept en une phrase
 
 **Copy large, paste small, send fast.**
@@ -81,12 +86,13 @@ Dès que tu copies une image ou fais un screenshot, Clop la compresse en arrièr
 
 **Qualité** : Perte visuelle imperceptible à l'œil nu dans 95% des cas.
 
+---
 
 ## Installation de Clop : 3 méthodes
 
 ### Méthode 1 : Homebrew (recommandée)
 
-![Capture d'écran — Méthode 1 Homebrew recommandée](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131079/brandonviscacom/CleanShot_2025-12-07_at_19.08.07_2x_ylt3yj.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131079/brandonviscacom/CleanShot_2025-12-07_at_19.08.07_2x_ylt3yj.webp)
 
 Si tu as Homebrew installé ([sinon, va lire mon guide Homebrew](https://brandonvisca.com/installation-homebrew-macos/)) :
 
@@ -100,8 +106,9 @@ brew install --cask clop
 - Désinstallation propre
 - Gestion centralisée
 
-⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
+⚠️ **Pas encore Homebrew ?** → [Guide installation Homebrew macOS](https://brandonvisca.com/installation-homebrew-macos/)
 
+---
 
 ### Méthode 3 : Installation manuelle
 
@@ -110,14 +117,15 @@ brew install --cask clop
 3. **Premier lancement** : Clic droit > Ouvrir
 4. **Autorise les permissions** : Accessibilité + Enregistrement écran (si vidéos)
 
-![Capture d'écran — Méthode 3 Installation manuelle](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131528/brandonviscacom/CleanShot_2025-12-07_at_19.17.08_2x_ljkmyp.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131528/brandonviscacom/CleanShot_2025-12-07_at_19.17.08_2x_ljkmyp.webp)
 
 💡 **Astuce** : Active "Lancer au démarrage" dans les préférences. Clop doit tourner en permanence pour être efficace.
 
+---
 
 ## Configuration essentielle en 5 minutes
 
-![Capture d'écran — Configuration essentielle en 5 minutes](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131553/brandonviscacom/CleanShot_2025-12-07_at_19.17.25_2x_nl8u7q.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131553/brandonviscacom/CleanShot_2025-12-07_at_19.17.25_2x_nl8u7q.jpg)
 
 ### Première utilisation : Setup de base
 
@@ -127,7 +135,7 @@ Au premier lancement, Clop te demande :
 2. **Enregistrement écran** (optionnel) : Pour optimiser les screencasts automatiquement
 3. **Mode d'optimisation** : Automatique (recommandé) vs Manuel
 
-![Capture d'écran — Première utilisation Setup de base](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131983/brandonviscacom/CleanShot_2025-12-07_at_19.24.17_2x_wvwlkl.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765131983/brandonviscacom/CleanShot_2025-12-07_at_19.24.17_2x_wvwlkl.webp)
 
 ### Réglages recommandés pour débutants
 
@@ -147,6 +155,7 @@ Au premier lancement, Clop te demande :
 
 💡 **Pour les power users** : Active "Aggressive optimization" si tu veux des fichiers encore plus petits (perte qualité légèrement perceptible).
 
+---
 
 ## Utilisation : 3 workflows magiques
 
@@ -163,6 +172,7 @@ Au premier lancement, Clop te demande :
 
 **Résultat** : Screenshot qui passerait pas dans un email ? Maintenant il passe. Simple.
 
+---
 
 ### Workflow 2 : Screencasts (enregistrements écran)
 
@@ -180,10 +190,11 @@ Au premier lancement, Clop te demande :
 
 **Bonus** : Clop utilise le **Media Engine** de ton Mac (M1/M2/M3/M4) pour encoder sans bouffer le CPU. Batterie préservée.
 
+---
 
 ### Workflow 3 : Drag & Drop intelligent
 
-![Capture d'écran — Workflow 3 Drag Drop intelligent](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
+![](https://lowtechguys.com/static/video/screenshot-copy-optimise-paste-in-email.mp4)
 
 **Le problème** : Tu as 10 images à compresser avant de les uploader sur ton site WordPress.
 
@@ -196,12 +207,13 @@ Au premier lancement, Clop te demande :
 
 **Alternative** : Configure Clop pour surveiller un dossier (ex: `~/Downloads`). Tout ce qui y tombe est automatiquement optimisé.
 
+---
 
 ## Fonctionnalités avancées
 
 ### 1. Downscaling intelligent
 
-![Capture d'écran — 1 Downscaling intelligent](https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4)
+![](https://lowtechguys.com/static/video/screenshot-downscale-in-email.mp4)
 
 **Problème** : Ton screenshot fait 3840x2160 (4K) mais tu n'as besoin que de 1920x1080 pour un article de blog.
 
@@ -214,6 +226,7 @@ Au premier lancement, Clop te demande :
 
 **Résultat** : Screenshot 4K de 8 Mo → Image 1080p de 200 Ko. **96% de réduction**.
 
+---
 
 ### 2. Conversion de formats
 
@@ -225,6 +238,7 @@ Clop convertit automatiquement les formats moins compatibles :
 
 **Cas d'usage** : Tu reçois des photos iPhone en HEIC. Tu les copies. Clop les convertit en JPEG automatiquement. Tu colles dans Gmail. Ça marche.
 
+---
 
 ### 3. Crop et aspect ratio
 
@@ -237,12 +251,13 @@ Tu peux **cropper** images et vidéos directement depuis le floating preview :
 
 **Gain de temps** : Plus besoin d'ouvrir un éditeur séparé.
 
+---
 
 ### 4. Intégration macOS Shortcuts
 
 **Pour les power users** : Clop s'intègre avec **Shortcuts.app**.
 
-![Capture d'écran — 4 Intégration macOS Shortcuts](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765132833/brandonviscacom/CleanShot_2025-12-07_at_19.39.51_2x_eo4rbc.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765132833/brandonviscacom/CleanShot_2025-12-07_at_19.39.51_2x_eo4rbc.jpg)
 
 **Exemples de workflows** :
 
@@ -267,10 +282,11 @@ Tu peux **cropper** images et vidéos directement depuis le floating preview :
 3. Toutes les images optimisées en 30 secondes
 ```
 
+---
 
 ### 5. Folders watching (surveillance de dossiers)
 
-![Capture d'écran — 5 Folders watching surveillance de dossiers](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765133052/brandonviscacom/CleanShot_2025-12-07_at_19.42.54_2x_cfmbrq.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765133052/brandonviscacom/CleanShot_2025-12-07_at_19.42.54_2x_cfmbrq.webp)
 
 Configure Clop pour **surveiller des dossiers spécifiques** :
 
@@ -281,6 +297,7 @@ Configure Clop pour **surveiller des dossiers spécifiques** :
 
 **Cas d'usage** : Tu sauvegardes tous tes screenshots dans un dossier. Clop les optimise automatiquement dès qu'ils apparaissent. Zéro manipulation manuelle.
 
+---
 
 ### 6. Intégration CleanShot X / Shottr
 
@@ -293,8 +310,9 @@ Si tu utilises **CleanShot X** ou **Shottr** (apps screenshots premium), Clop s'
 
 **Résultat** : Tu gardes la qualité CleanShot, mais avec des fichiers 10x plus petits.
 
-Tu utilises déjà [[reduire-taille-images-mac-webp|WebP sur macOS]] ? Combine Clop + WebP pour des gains encore plus importants.
+Tu utilises déjà [WebP sur macOS](https://brandonvisca.com/reduire-taille-images-mac-webp/) ? Combine Clop + WebP pour des gains encore plus importants.
 
+---
 
 ## Clop vs les alternatives : Le match
 
@@ -312,6 +330,7 @@ Tu utilises déjà [[reduire-taille-images-mac-webp|WebP sur macOS]] ? Combine C
 
 **Usage idéal** : Utilise Clop au quotidien (clipboard automatique) + ImageOptim pour optimiser un dossier entier de 500 images ponctuellement.
 
+---
 
 ### Clop vs TinyPNG / Squoosh
 
@@ -325,6 +344,7 @@ Tu utilises déjà [[reduire-taille-images-mac-webp|WebP sur macOS]] ? Combine C
 
 **Verdict** : TinyPNG et Squoosh sont pratiques pour un usage ponctuel, mais **Clop gagne sur la productivité** (pas besoin d'ouvrir un navigateur, tout est automatique).
 
+---
 
 ### Clop vs Compressor / HandBrake (vidéos)
 
@@ -338,6 +358,7 @@ Tu utilises déjà [[reduire-taille-images-mac-webp|WebP sur macOS]] ? Combine C
 
 **Verdict** : Pour des **screencasts rapides**, Clop est imbattable. Pour de l'**encodage vidéo pro** avec contrôle total, HandBrake reste le roi.
 
+---
 
 ## Cas d'usage concrets
 
@@ -358,8 +379,9 @@ Gain : Plus de message "fichier trop lourd"
 Temps gagné : 5 min par article = 50-75 min/mois
 ```
 
-Je combine Clop avec mon workflow [[reduire-taille-images-mac-webp|WebP macOS]] pour des images encore plus optimisées.
+Je combine Clop avec mon workflow [WebP macOS](https://brandonvisca.com/reduire-taille-images-mac-webp/) pour des images encore plus optimisées.
 
+---
 
 ### Cas 2 : Support technique / Documentation
 
@@ -383,6 +405,7 @@ Total : 0 secondes supplémentaires
 Gain sur 20 screenshots/jour : 1 heure par jour
 ```
 
+---
 
 ### Cas 3 : Créateur YouTube / Vidéaste
 
@@ -402,6 +425,7 @@ Bonus :
 - Qualité 1080p préservée
 ```
 
+---
 
 ### Cas 4 : Designer / Graphiste
 
@@ -426,6 +450,7 @@ Alternative sans Clop :
 Total : 5 minutes par fichier
 ```
 
+---
 
 ## Troubleshooting : Les pièges à éviter
 
@@ -444,6 +469,7 @@ Total : 5 minutes par fichier
 2. **Permissions** : Réglages Système > Confidentialité > Accessibilité → Coche Clop
 3. **CleanShot X** : Active "Copy to clipboard after capture"
 
+---
 
 ### Problème 2 : Qualité dégradée visible
 
@@ -457,6 +483,7 @@ Total : 5 minutes par fichier
 
 💡 **Astuce** : Pour des photos artistiques où chaque détail compte, désactive Clop temporairement (icône menu bar > Pause).
 
+---
 
 ### Problème 3 : Clop ralentit mon Mac
 
@@ -474,6 +501,7 @@ Total : 5 minutes par fichier
 
 💡 **Note** : Sur Apple Silicon (M1+), le Media Engine encode les vidéos sans CPU → aucun ralentissement.
 
+---
 
 ### Problème 4 : Licence ne reste pas activée (version payante)
 
@@ -497,6 +525,7 @@ open -a Clop
 
 ⚠️ **Note** : Ce problème ne concerne que la version payante. La version gratuite n'a pas de licence.
 
+---
 
 ## Version gratuite vs Pro : Faut-il payer ?
 
@@ -513,6 +542,7 @@ open -a Clop
 - Usage occasionnel
 - Tu veux tester avant d'acheter
 
+---
 
 ### Version Pro (15$ lifetime)
 
@@ -531,6 +561,7 @@ open -a Clop
 
 **Alternative** : Clop est aussi disponible sur **Setapp** (abonnement 10$/mois pour 240+ apps). Si tu utilises déjà Setapp, c'est inclus.
 
+---
 
 ## Alternatives si Clop ne te convient pas
 
@@ -543,6 +574,7 @@ open -a Clop
 - Excellents algos de compression
 - Mais : Drag & drop manuel, pas de vidéos
 
+---
 
 ### 2. Squoosh (gratuit, web)
 
@@ -553,6 +585,7 @@ open -a Clop
 - Comparaison avant/après visuelle
 - Mais : Web only, pas d'automatisation
 
+---
 
 ### 3. HandBrake (gratuit, vidéos pro)
 
@@ -563,6 +596,7 @@ open -a Clop
 - Open source
 - Mais : Complexe, pas d'automatisation screencasts
 
+---
 
 ### 4. TinyPNG (freemium, web)
 
@@ -573,6 +607,7 @@ open -a Clop
 - API disponible
 - Mais : 20 fichiers max gratuit, web only
 
+---
 
 ## Conclusion : Faut-il installer Clop ?
 
@@ -596,7 +631,7 @@ open -a Clop
 - Aggressive mode peut dégrader la qualité photos artistiques
 - Pas de presets avancés comme HandBrake (mais c'est voulu, simplicité first)
 
-**Mon verdict perso** : J'utilise Clop **tous les jours depuis 8 mois**. Combiné avec [[rcmd-alternative-cmd-tab-macos|rcmd]] et [[reduire-taille-images-mac-webp|WebP]], c'est le trio gagnant productivité macOS.
+**Mon verdict perso** : J'utilise Clop **tous les jours depuis 8 mois**. Combiné avec [rcmd](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/) et [WebP](https://brandonvisca.com/reduire-taille-images-mac-webp/), c'est le trio gagnant productivité macOS.
 
 **Temps d'adaptation** : 0 seconde. Tu installes, tu configures une fois, tu oublies. Ça tourne en arrière-plan.
 
@@ -604,14 +639,16 @@ open -a Clop
 
 Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 
+---
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[[reduire-taille-images-mac-webp|Réduire la taille des images Mac avec WebP]]** : Combine Clop + WebP pour une compression ultime
-- **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** : Switch entre apps ultra-rapidement
-- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Launcher complet pour automatiser tes workflows
-- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Clop et autres outils
+- **[Réduire la taille des images Mac avec WebP](https://brandonvisca.com/reduire-taille-images-mac-webp/)** : Combine Clop + WebP pour une compression ultime
+- **[rcmd : Le raccourci qui tue Cmd+Tab](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
+- **[Raycast : L'outil qui transforme macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)** : Launcher complet pour automatiser tes workflows
+- **[Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)** : Indispensable pour installer Clop et autres outils
 
+---
 
 ## 💡 Ressources utiles
 
@@ -620,8 +657,3 @@ Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 - [Clop sur Mac App Store](https://apps.apple.com/app/clop/id1611554949)
 - [Clop SDK (pour devs)](https://github.com/FuzzyIdeas/ClopSDK)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
-
-## Articles connexes
-
-- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
-- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)

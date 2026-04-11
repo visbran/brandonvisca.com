@@ -1,14 +1,21 @@
 ---
 title: "Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)"
-pubDatetime: "2025-11-27T00:00:00+00:00"
-author: Brandon Visca
 description: "Découvre Lunar, l'app qui résout le problème de luminosité des écrans externes sur macOS. DDC natif, F1/F2 fonctionnent, sync auto. Indispensable Mac Mini."
+pubDatetime: "2025-11-27T00:00:00+01:00"
+author: Brandon Visca
 tags:
   - macos
-  - lunar
+  - productivite
   - low-tech
+  - debutant
+  - guide
+featured: false
+draft: false
+focusKeyword: contrôler luminosité écran externe mac
+---
 ---
 
+# Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)
 
 
 
@@ -16,10 +23,11 @@ tags:
 
 
 
+---
 
 ## Introduction : Le problème que macOS refuse de résoudre
 
-![Capture d'écran — Introduction Le problème que macOS refuse de résoudre](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137439/brandonviscacom/42856_fftbdr.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137439/brandonviscacom/42856_fftbdr.webp)
 
 **La situation** : Tu as un Mac Mini, ou un MacBook connecté à un écran externe. Il fait nuit. Ton écran te brûle les yeux avec ses 100% de luminosité.
 
@@ -46,6 +54,7 @@ Bienvenue dans le monde de **Lunar**, l'app qui devrait être intégrée à macO
 
 Let's go ! 🚀
 
+---
 
 ## Qu'est-ce que Lunar ?
 
@@ -73,10 +82,11 @@ Contrairement aux apps qui ajoutent un overlay noir semi-transparent (fake dimmi
 - **Open source partiel** : Features gratuites open sur GitHub
 - **Développement actif** : Updates mensuelles
 
+---
 
 ## DDC, c'est quoi ? (Explication simple)
 
-![Capture d'écran — DDC cest quoi Explication simple](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136577/brandonviscacom/CleanShot_2025-12-07_at_20.42.27_2x_ghmfgm.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136577/brandonviscacom/CleanShot_2025-12-07_at_20.42.27_2x_ghmfgm.webp)
 
 **DDC** = Display Data Channel
 
@@ -95,12 +105,13 @@ C'est un protocole qui permet à ton Mac de **communiquer avec ton moniteur** vi
 
 💡 **Note technique** : Sur Apple Silicon (M1+), Lunar utilise le GPU pour communiquer via I²C. Sur Intel, c'est via IOFramebuffer. Les deux fonctionnent parfaitement.
 
+---
 
 ## Installation de Lunar : 3 méthodes
 
 ### Méthode 1 : Homebrew (recommandée)
 
-![Capture d'écran — Méthode 1 Homebrew recommandée](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136361/brandonviscacom/CleanShot_2025-12-07_at_20.38.58_2x_v83vu2.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136361/brandonviscacom/CleanShot_2025-12-07_at_20.38.58_2x_v83vu2.webp)
 
 
 Si tu as Homebrew ([sinon, installe-le ici](https://brandonvisca.com/installation-homebrew-macos/)) :
@@ -115,25 +126,27 @@ brew install --cask lunar
 - Désinstallation propre
 - Gestion centralisée
 
-⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
+⚠️ **Pas encore Homebrew ?** → [Guide installation Homebrew macOS](https://brandonvisca.com/installation-homebrew-macos/)
 
+---
 
 ### Méthode 2 : Download direct
 
-![Capture d'écran — Méthode 2 Download direct](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136623/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_pvjsgm.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136623/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_pvjsgm.jpg)
 
 1. **Télécharge Lunar** : [lunar.fyi](https://lunar.fyi/)
 2. **Glisse `Lunar.app` dans `/Applications`**
 3. **Premier lancement** : Clic droit > Ouvrir
 4. **Autorise les permissions** : Accessibilité
 
-![Capture d'écran — Méthode 2 Download direct](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282044/brandonviscacom/CleanShot_2025-12-09_at_12.55.15_2x_oy3b3j.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282044/brandonviscacom/CleanShot_2025-12-09_at_12.55.15_2x_oy3b3j.webp)
 
-![Capture d'écran — Méthode 2 Download direct](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282051/brandonviscacom/CleanShot_2025-12-09_at_12.55.29_2x_zmeuvp.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282051/brandonviscacom/CleanShot_2025-12-09_at_12.55.29_2x_zmeuvp.webp)
 
-![Capture d'écran — Méthode 2 Download direct](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282062/brandonviscacom/CleanShot_2025-12-09_at_12.57.22_2x_tyz6d5.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282062/brandonviscacom/CleanShot_2025-12-09_at_12.57.22_2x_tyz6d5.jpg)
 
 
+---
 
 ### Méthode 3 : Compilation source (devs uniquement)
 
@@ -148,6 +161,7 @@ xcodebuild -project Lunar.xcodeproj -scheme Lunar
 
 ⚠️ **Note** : Les features Pro sont encryptées dans le code source. Tu auras la version gratuite.
 
+---
 
 ## Configuration essentielle en 10 minutes
 
@@ -159,11 +173,11 @@ Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
 2. **Mode recommandé** : Manual (le plus simple pour commencer)
 3. **Raccourcis clavier** : F1/F2 pour brightness, F10/F11/F12 pour volume
 
-![Capture d'écran — Première utilisation Setup guidé](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282127/brandonviscacom/CleanShot_2025-12-09_at_12.55.34_2x_tjzhud.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282127/brandonviscacom/CleanShot_2025-12-09_at_12.55.34_2x_tjzhud.webp)
 
-![Capture d'écran — Première utilisation Setup guidé](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282136/brandonviscacom/CleanShot_2025-12-09_at_12.56.05_2x_ws1icd.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282136/brandonviscacom/CleanShot_2025-12-09_at_12.56.05_2x_ws1icd.webp)
 
-![Capture d'écran — Première utilisation Setup guidé](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282142/brandonviscacom/CleanShot_2025-12-09_at_12.57.10_2x_pq2j2c.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282142/brandonviscacom/CleanShot_2025-12-09_at_12.57.10_2x_pq2j2c.webp)
 
 
 ### Vérifier que DDC fonctionne
@@ -172,7 +186,7 @@ Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
 
 **Si tu vois "Software Dimming"** → DDC ne fonctionne pas sur ce moniteur → Voir section Troubleshooting
 
-![Capture d'écran — Vérifier que DDC fonctionne](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282202/brandonviscacom/CleanShot_2025-12-09_at_13.09.51_2x_kqfsip.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282202/brandonviscacom/CleanShot_2025-12-09_at_13.09.51_2x_kqfsip.jpg)
 
 ### Réglages de base recommandés
 
@@ -192,6 +206,7 @@ Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
 
 💡 **Plus tard**, tu pourras passer en mode Sync, Location, ou Sensor (voir section Modes avancés).
 
+---
 
 ## Utilisation : Les bases en 3 exemples
 
@@ -213,6 +228,7 @@ Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
 
 **Résultat** : Comportement identique à un MacBook. Enfin ! 🎉
 
+---
 
 ### Exemple 2 : Multi-écrans (contrôler l'écran actif)
 
@@ -229,6 +245,7 @@ Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
 **Alternative** : Dans Lunar menu bar, chaque écran a son propre slider.
 
 
+---
 
 ### Exemple 3 : Ajuster le volume du moniteur
 
@@ -246,6 +263,7 @@ Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
 
 ⚠️ **Note** : Ton moniteur doit supporter DDC volume control. Pas tous les moniteurs le font.
 
+---
 
 ## Modes avancés : Automatisation de la luminosité
 
@@ -253,7 +271,7 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 ### Mode 1 : Manual (par défaut)
 
-![Capture d'écran — Mode 1 Manual par défaut](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282265/brandonviscacom/CleanShot_2025-12-09_at_13.10.59_2x_h9yuky.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282265/brandonviscacom/CleanShot_2025-12-09_at_13.10.59_2x_h9yuky.jpg)
 
 
 **Concept** : Tu contrôles tout manuellement avec F1/F2 ou les sliders.
@@ -262,12 +280,13 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 **Avantage** : Simple, prévisible, zéro surprise.
 
+---
 
 ### Mode 2 : Sync (Pro, 23$)
 
-![Capture d'écran — Mode 2 Sync Pro 23](https://files.lunar.fyi/sync-all-displays-h264.mp4)
+![](https://files.lunar.fyi/sync-all-displays-h264.mp4)
 
-![Capture d'écran — Mode 2 Sync Pro 23](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282287/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_yuyr4p.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282287/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_yuyr4p.jpg)
 
 
 **Concept** : La luminosité de tes écrans externes **suit** celle de ton MacBook.
@@ -297,12 +316,13 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 💡 **Machine learning** : Lunar apprend tes ajustements manuels et affine la courbe automatiquement.
 
+---
 
 ### Mode 3 : Location (Pro, 23$)
 
-![Capture d'écran — Mode 3 Location Pro 23](https://lunar.fyi/static/video/location-demo-vp9.webm)
+![](https://lunar.fyi/static/video/location-demo-vp9.webm)
 
-![Capture d'écran — Mode 3 Location Pro 23](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282306/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_ntjpw1.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282306/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_ntjpw1.jpg)
 
 
 **Concept** : La luminosité s'adapte selon **l'heure du lever/coucher du soleil** dans ta localisation.
@@ -325,6 +345,7 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 **Avantage** : Zéro capteur nécessaire. Utilise simplement ta géolocalisation + algorithme astronomique.
 
+---
 
 ### Mode 4 : Sensor (Pro, 23$)
 
@@ -349,10 +370,11 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 **Pour qui** : Mac Mini + setup fixe + tu veux l'automatisation ultime.
 
+---
 
 ### Mode 5 : Clock (Pro, 23$)
 
-![Capture d'écran — Mode 5 Clock Pro 23](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282340/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_xdvq0f.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282340/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_xdvq0f.jpg)
 
 
 **Concept** : Programme des **horaires fixes** pour la luminosité.
@@ -367,6 +389,7 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 **Pour qui** : Horaires très réguliers, bureau sans fenêtre, lumière artificielle constante.
 
+---
 
 ## Fonctionnalités avancées (Pro)
 
@@ -387,6 +410,7 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 💡 **Attention** : 1600 nits consomme BEAUCOUP de batterie. À utiliser ponctuellement.
 
+---
 
 ### 2. Sub-zero Dimming (gratuit)
 
@@ -403,6 +427,7 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 **Différence avec un overlay classique** : Lunar utilise **Gamma** (pas un overlay noir), donc les couleurs restent plus fidèles.
 
+---
 
 ### 3. BlackOut (éteindre des écrans)
 
@@ -438,10 +463,11 @@ Setup : 3 écrans
 - Besoin de focus intense
 - Économie d'énergie
 
+---
 
 ### 4. FaceLight (éclairage pour visio)
 
-![Capture d'écran — 4 FaceLight éclairage pour visio](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137357/brandonviscacom/4907_gmbyui.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137357/brandonviscacom/4907_gmbyui.webp)
 
 **Problème** : Visio dans une pièce sombre. Ta face est sous-exposée.
 
@@ -456,6 +482,7 @@ Setup : 3 écrans
 
 💡 **Astuce** : Combine avec un Ring Light physique pour un éclairage pro.
 
+---
 
 ### 5. Input Switching (changer d'entrée HDMI)
 
@@ -472,6 +499,7 @@ Setup : 3 écrans
 
 **Résultat** : Plus besoin de KVM switch. Lunar fait tout.
 
+---
 
 ## Compatibilité : Ça marche avec quoi ?
 
@@ -495,6 +523,7 @@ Setup : 3 écrans
 
 💡 **Test rapide** : Installe Lunar (gratuit) et regarde si DDC est détecté. Si oui → compatible.
 
+---
 
 ### Macs compatibles
 
@@ -515,6 +544,7 @@ Setup : 3 écrans
 
 **macOS requis** : Big Sur 11.0 minimum (idéalement Ventura 13+ ou Sequoia 15+)
 
+---
 
 ### Câbles et connexions
 
@@ -532,6 +562,7 @@ Setup : 3 écrans
 
 💡 **Mon setup (Mac Mini M4)** : USB-C vers DisplayPort → DDC fonctionne parfaitement.
 
+---
 
 ## Lunar vs les alternatives
 
@@ -553,6 +584,7 @@ Setup : 3 écrans
 
 **Mon avis** : Si tu as juste 1 écran et que tu veux F1/F2 → MonitorControl suffit. Si tu as un setup multi-écrans ou Mac Mini → Lunar vaut largement les 23$.
 
+---
 
 ### Lunar vs DisplayBuddy (30$)
 
@@ -569,6 +601,7 @@ Setup : 3 écrans
 
 **Verdict** : Lunar offre plus de features pour moins cher. DisplayBuddy a une UI légèrement différente mais moins de fonctionnalités.
 
+---
 
 ### Lunar vs Gamma/Overlay apps (f.lux, Shifty, etc.)
 
@@ -581,6 +614,7 @@ Setup : 3 écrans
 
 **Verdict** : Lunar (DDC) est **supérieur** en tout point si ton écran supporte DDC. Gamma/Overlay sont des fallbacks pour écrans non-DDC.
 
+---
 
 ## Cas d'usage concrets
 
@@ -610,6 +644,7 @@ Résultat :
 
 **Temps gagné** : 5 min/jour = 30h/an
 
+---
 
 ### Cas 2 : MacBook + écran externe (remote work)
 
@@ -629,6 +664,7 @@ Comportement :
 
 **Bonus** : Auto BlackOut → Écran MacBook s'éteint quand externe connecté (mais trackpad/clavier/webcam restent actifs).
 
+---
 
 ### Cas 3 : Setup gaming/streaming
 
@@ -649,6 +685,7 @@ Workflow :
 
 **Gain** : Plus de manipulation physique des écrans.
 
+---
 
 ### Cas 4 : Design/Photo (précision couleur)
 
@@ -668,6 +705,7 @@ Workflow :
 
 **Pourquoi pas Sync mode** : En photo pro, tu veux un contrôle total et une luminosité constante.
 
+---
 
 ## Troubleshooting : Les pièges à éviter
 
@@ -709,6 +747,7 @@ Si DDC impossible :
 4. Lunar la réduit en software
 ```
 
+---
 
 ### Problème 2 : Brightness keys verrouillées après réveil
 
@@ -739,6 +778,7 @@ Lunar → Settings → Advanced
 → Disable "Clamshell mode detection"
 ```
 
+---
 
 ### Problème 3 : Conflit avec f.lux ou Night Shift
 
@@ -762,6 +802,7 @@ Lunar → Controls → Disable Software Dimming
 → Lunar n'utilisera QUE DDC (pas de conflit)
 ```
 
+---
 
 ### Problème 4 : Écran MacBook s'allume en clamshell
 
@@ -779,6 +820,7 @@ Lunar → Controls → Disable Software Dimming
 
 **Alternative** : Active Auto BlackOut pour éteindre automatiquement l'écran MacBook quand externe connecté.
 
+---
 
 ## Version gratuite vs Pro : Faut-il payer 23$ ?
 
@@ -804,6 +846,7 @@ Lunar → Controls → Disable Software Dimming
 - Ajustements manuels OK pour toi
 - Mac Mini basique
 
+---
 
 ### Version Pro (23$ lifetime)
 
@@ -834,6 +877,7 @@ Lunar → Controls → Disable Software Dimming
 - DisplayBuddy : 30$ pour moins de features
 - Lunar Pro : 23$ pour TOUT
 
+---
 
 ## Alternatives si Lunar ne te convient pas
 
@@ -846,6 +890,7 @@ Lunar → Controls → Disable Software Dimming
 - DDC basic
 - Pas de modes adaptatifs
 
+---
 
 ### 2. DisplayBuddy (30$, plus cher, moins features)
 
@@ -856,6 +901,7 @@ Lunar → Controls → Disable Software Dimming
 - Quelques features exclusives (color calibration UI)
 - Mais moins de modes et features que Lunar
 
+---
 
 ### 3. BetterDisplay (gratuit/paid, focus résolutions)
 
@@ -866,6 +912,7 @@ Lunar → Controls → Disable Software Dimming
 - Mais focus principal = résolutions custom
 - Interface plus complexe
 
+---
 
 ### 4. QuickShade (overlay simple)
 
@@ -875,6 +922,7 @@ Lunar → Controls → Disable Software Dimming
 - Gratuit
 - Mais dégradation qualité couleurs
 
+---
 
 ## Conclusion : Faut-il installer Lunar ?
 
@@ -901,7 +949,7 @@ Lunar → Controls → Disable Software Dimming
 - Pro features encryptées dans le code source (pas 100% open)
 - Quelques bugs après wake-up (mais Auto Restart les résout)
 
-**Mon verdict perso** : J'utilise Lunar **depuis 2 ans** sur mon Mac Mini M4 + 2 écrans. C'est devenu **indispensable**. Combiné avec [[rcmd-alternative-cmd-tab-macos|rcmd]] et [[clop-compression-images-videos-macos|Clop]], c'est le trio parfait Low-Tech Guys.
+**Mon verdict perso** : J'utilise Lunar **depuis 2 ans** sur mon Mac Mini M4 + 2 écrans. C'est devenu **indispensable**. Combiné avec [rcmd](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/) et [Clop](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/), c'est le trio parfait Low-Tech Guys.
 
 **Pour qui c'est un must** :
 - ✅ Mac Mini (aucune alternative viable)
@@ -917,14 +965,16 @@ Lunar → Controls → Disable Software Dimming
 
 Alors, prêt à contrôler tes écrans comme un humain civilisé ? 🚀
 
+---
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** : Switch entre apps ultra-rapidement
-- **[[clop-compression-images-videos-macos|Clop : Compression automatique images/vidéos]]** : Optimise tes fichiers en arrière-plan
-- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Automatise tes workflows
-- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Lunar
+- **[rcmd : Le raccourci qui tue Cmd+Tab](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
+- **[Clop : Compression automatique images/vidéos](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
+- **[Raycast : L'outil qui transforme macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)** : Automatise tes workflows
+- **[Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)** : Indispensable pour installer Lunar
 
+---
 
 ## 💡 Ressources utiles
 
@@ -935,95 +985,3 @@ Alors, prêt à contrôler tes écrans comme un humain civilisé ? 🚀
 - [Changelog](https://lunar.fyi/changelog)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 
-
-## 📊 Paramètres Rank Math SEO
-
-**Focus Keyphrase** : contrôler luminosité écran externe mac
-
-**Title** : 
-Lunar : Contrôle luminosité écrans externes macOS (DDC natif)
-(60 caractères) ✅
-
-**Description** : 
-Découvre Lunar, l'app qui résout le problème de luminosité des écrans externes sur macOS. DDC natif, F1/F2 fonctionnent, sync auto. Indispensable Mac Mini.
-(159 caractères) ⚠️ À réduire
-
-**Version optimisée Description** :
-Lunar résout la luminosité des écrans externes macOS. DDC natif, touches F1/F2, sync automatique. Indispensable pour Mac Mini. Gratuit ou 23$ Pro.
-(151 caractères) ✅
-
-**Mots-clés secondaires** :
-- lunar mac mini
-- brightness externe macos
-- DDC macOS
-- écran externe mac luminosité
-
-**Densité mot-clé principal** : ~1.4% (cible : 1-2%) ✅
-
-**Liens internes** : 4 ✅
-1. Homebrew (installation)
-2. rcmd (combo productivité)
-3. Clop (série Low-Tech)
-4. Raycast (automatisation)
-
-**Liens externes** : 8
-1. Site officiel Lunar
-2. GitHub Lunar
-3. FAQ Lunar
-4. DIY Sensor
-5. Low Tech Guys
-6. Alternatives (MonitorControl, DisplayBuddy, BetterDisplay, QuickShade)
-
-**Longueur** : ~3800 mots ✅
-**Temps de lecture** : ~10 minutes ✅
-
-
-## 🔄 Maillage inverse à effectuer
-
-### 1. [[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]
-- Ajouter dans la section "Intégration avec votre setup"
-- Ancre suggérée : "Combine rcmd (switch apps) avec Lunar (contrôle luminosité) pour un workflow macOS optimal"
-
-### 2. [[clop-compression-images-videos-macos|Clop : Compression automatique]]
-- Ajouter dans la section "Série Low-Tech Guys"
-- Ancre suggérée : "Après Clop pour tes fichiers, installe Lunar pour tes écrans"
-
-### 3. [[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]
-- Ajouter dans la section "Shortcuts & Automation"
-- Ancre suggérée : "Lunar s'intègre avec Raycast Shortcuts pour automatiser tes presets de luminosité"
-
-### 4. [[installation-homebrew-macos|Installation Homebrew sur macOS]]
-- Ajouter dans la section "Apps essentielles à installer"
-- Ancre suggérée : "Lunar pour contrôler nativement la luminosité de tes écrans externes"
-
-
-## 📝 Articles complémentaires suggérés (série Low-Tech Guys)
-
-### Articles publiés ✅
-- **Semaine 1** : rcmd (switch apps)
-- **Semaine 2** : Clop (compression)
-- **Semaine 3** : Lunar (luminosité écrans)
-
-### À venir 🎯
-
-**Semaine 4 : Cling** (recherche fichiers fuzzy) ⭐ PROCHAIN
-- Cluster : macOS-Productivite / Outils Système
-- Difficulté : Intermédiaire
-- Justification : Alternative Spotlight, complète rcmd + Raycast
-
-**Mois 2 : Guide Pilier** (10 Outils Low-Tech macOS)
-- Cluster : macOS-Productivite
-- Type : Article viral (3000+ mots)
-- Justification : Consolide rcmd + Clop + Lunar + Cling, lead magnet newsletter
-
-
-**Note Screenshots** : 5 placeholders marqués pour screenshots à ajouter
-**Temps estimé screenshots** : 15 min sur Mac Mini M4
-
-**Statut** : ✅ Brouillon complet prêt
-**Prochaine étape** : Relecture + screenshots + publication
-
-## Articles connexes
-
-- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025](/grila-vs-fantastical-comparatif-2025/)
-- [10 Outils Low-Tech macOS gratuits que j'utilise (2025)](/10-outils-low-tech-macos-guide-complet/)

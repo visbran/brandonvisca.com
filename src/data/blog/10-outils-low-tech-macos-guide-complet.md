@@ -1,29 +1,22 @@
 ---
-title: "10 Outils Low-Tech macOS gratuits que j'utilise (2025)"
-description: "Les meilleurs outils low-tech macos gratuits que j'utilise chaque jour. Légers, efficaces, open-source. Brewfile inclus. Économise 453€/an."
-pubDatetime: "2025-11-27T00:00:00+01:00"
+title: "10 Outils macOS gratuits que j'utilise (2026)"
+description: "10 outils macOS que j'utilise quotidiennement : gratuits, légers, efficaces. Brewfile inclus. Économise 453€/an vs alternatives."
+pubDatetime: 2025-11-27 00:00:00+01:00
 author: Brandon Visca
 tags:
   - macos
   - low-tech
   - productivite
+  - guide-complet
   - gratuit
   - open-source
-  - debutant
 featured: false
 draft: false
-focusKeyword: outils low-tech macos
-faqs:
-  - question: "Qu'est-ce que la philosophie Low-Tech Guys ?"
-    answer: "Low-Tech Guys crée des apps macOS gratuites et open-source qui font une seule chose très bien : pas d'abonnement, pas de bloatware, pas de tracking. Chaque app fait moins de 10 Mo."
-  - question: "Ces outils fonctionnent-ils sur Apple Silicon ?"
-    answer: "Oui, tous les outils Low-Tech Guys sont compilés nativement pour Apple Silicon (M1/M2/M3/M4) avec des performances optimales sur les Macs récents."
-  - question: "Comment installer tous ces outils d'un coup ?"
-    answer: "Via Homebrew avec le Brewfile inclus dans l'article. Une seule commande `brew bundle` installe tout en quelques minutes sans passer par le Mac App Store."
-  - question: "Dois-je payer pour les mises à jour ?"
-    answer: "Non, tous les outils sont gratuits et les mises à jour le restent. Certains développeurs acceptent les donations mais ce n'est jamais obligatoire."
+focusKeyword: outils low tech macos
 ---
-![Illustration 1 — 10 Outils Low-Tech macOS gratuits que j'utilise (2025)](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
+# 10 Outils Indispensables pour macOS (Guide Complet 2026)
+
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
 
 
 ---
@@ -62,10 +55,6 @@ Let's go ! 🚀
 
 ---
 
-## Table of content
-
----
-
 ## Les 10 Outils Low-Tech (Vue d'ensemble)
 
 | # | Outil | Fonction | Prix | Difficulté |
@@ -95,7 +84,7 @@ Let's go ! 🚀
 ---
 
 ## 1. rcmd : Switch Apps à la Vitesse de l'Éclair
-![Capture d'écran — 1 rcmd Switch Apps à la Vitesse de lÉclair](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400635/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_v19dfv.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400635/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_v19dfv.webp)
 
 ### Le problème
 
@@ -145,13 +134,13 @@ Mon setup Mac Mini M4 :
 | Raycast | Gratuit/96$/an | Complémentaire (pas concurrent) |
 | Alfred | 59€ | rcmd plus simple et gratuit |
 
-👉 **Guide complet** : [[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab sur macOS]]
+👉 **Guide complet** : [rcmd : Le raccourci qui tue Cmd+Tab sur macOS](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)
 
 ---
 
 ## 2. Clop : Compression Automatique Images/Vidéos
 
-![Capture d'écran — 2 Clop Compression Automatique ImagesVidéos](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400843/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs_kk7ded.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400843/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs_kk7ded.webp)
 
 ### Le problème
 
@@ -205,13 +194,13 @@ Temps gagné : 5 min/article = 50 min/mois
 
 **Mon avis** : Version gratuite suffit pour la plupart. Si tu fais +20 screenshots/jour → Pro vaut le coup.
 
-👉 **Guide complet** : [[clop-compression-images-videos-macos|Clop : Compression automatique images/vidéos macOS]]
+👉 **Guide complet** : [Clop : Compression automatique images/vidéos macOS](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/)
 
 ---
 
 ## 3. Lunar : Contrôle Luminosité Écrans Externes
 
-![Capture d'écran — 3 Lunar Contrôle Luminosité Écrans Externes](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400887/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_ftlgn2.webp)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400887/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_ftlgn2.webp)
 
 ### Le problème
 
@@ -279,13 +268,13 @@ Temps gagné : 5 min/jour = 30h/an
 
 **Mon avis** : Version gratuite = F1/F2 qui fonctionnent (déjà énorme). Pro = automatisation complète. **23$ lifetime pour 5 Macs = no-brainer si tu as un Mac Mini**.
 
-👉 **Guide complet** : [[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité écrans externes macOS]]
+👉 **Guide complet** : [Lunar : Contrôle luminosité écrans externes macOS](https://brandonvisca.com/2025-11-27-lunar-luminosite-ecrans-externes-macos/)
 
 ---
 
 ## 4. Cling : Recherche Fuzzy Ultra-Rapide
 
-![Capture d'écran — 4 Cling Recherche Fuzzy Ultra-Rapide](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400908/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_mg2ssk.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400908/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_mg2ssk.jpg)
 
 ### Le problème
 
@@ -352,13 +341,13 @@ Temps gagné : 20 recherches/jour × 30 sec = 10 min/jour = 60h/an
 - **Cling** : Fichiers code, config, dotfiles
 - **Spotlight** : Recherches générales, emails, docs
 
-👉 **Guide complet** : [[cling-recherche-fuzzy-fichiers-macos|Cling : Recherche fuzzy fichiers macOS]]
+👉 **Guide complet** : [Cling : Recherche fuzzy fichiers macOS](https://brandonvisca.com/2025-11-27-cling-recherche-fuzzy-fichiers-macos/)
 
 ---
 
 ## 5. Ice : Gestion Barre de Menu Propre
 
-![Capture d'écran — 5 Ice Gestion Barre de Menu Propre](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400958/brandonviscacom/CleanShot_2025-12-10_at_22.09.07_2x_ir7xrv.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400958/brandonviscacom/CleanShot_2025-12-10_at_22.09.07_2x_ir7xrv.jpg)
 
 ### Le problème
 
@@ -420,7 +409,7 @@ Always hidden :
 
 ## 6. Grila : Calendrier Hotkey Instant
 
-![Capture d'écran — 6 Grila Calendrier Hotkey Instant](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401024/brandonviscacom/CleanShot_2025-12-10_at_22.10.13_2x_v4rx2n.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401024/brandonviscacom/CleanShot_2025-12-10_at_22.10.13_2x_v4rx2n.jpg)
 ### Le problème
 
 Tu veux voir ton planning : Ouvre Calendrier.app, attends chargement, clique sur date...
@@ -477,7 +466,7 @@ Temps gagné : 2 min/jour = 12h/an
 
 ## 7. YellowDot : Cache le Point Jaune Encoche
 
-![Capture d'écran — 7 YellowDot Cache le Point Jaune Encoche](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401076/brandonviscacom/CleanShot_2025-12-10_at_22.11.06_2x_vyrjxw.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401076/brandonviscacom/CleanShot_2025-12-10_at_22.11.06_2x_vyrjxw.jpg)
 
 ### Le problème
 
@@ -504,7 +493,7 @@ brew install --cask yellowdot
 
 ## 8. Music Decoy : Bloque Music.app Auto-Launch
 
-![Capture d'écran — 8 Music Decoy Bloque Musicapp Auto-Launch](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401112/brandonviscacom/CleanShot_2025-12-10_at_22.11.38_2x_om4cg7.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401112/brandonviscacom/CleanShot_2025-12-10_at_22.11.38_2x_om4cg7.jpg)
 
 ### Le problème
 
@@ -531,7 +520,7 @@ brew install --cask musicdecoy
 
 ## 9. ZoomHider : Cache Contrôles Zoom en Partage Écran
 
-![Capture d'écran — 9 ZoomHider Cache Contrôles Zoom en Partage Écran](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401518/brandonviscacom/CleanShot_2025-12-10_at_22.18.28_2x_w1yrxt.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401518/brandonviscacom/CleanShot_2025-12-10_at_22.18.28_2x_w1yrxt.jpg)
 
 ### Le problème
 
@@ -560,7 +549,7 @@ brew install --cask zoomhider
 
 ## 10. Startup Folder : Lance Apps au Démarrage (Simple)
 
-![Capture d'écran — 10 Startup Folder Lance Apps au Démarrage Simple](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401542/brandonviscacom/CleanShot_2025-12-10_at_22.18.51_2x_h4d0o8.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401542/brandonviscacom/CleanShot_2025-12-10_at_22.18.51_2x_h4d0o8.jpg)
 
 ### Le problème
 
@@ -1111,16 +1100,16 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 
 **Approfondis chaque outil** :
 
-1. **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** (2800 mots)
-2. **[[clop-compression-images-videos-macos|Clop : Compression automatique]]** (3200 mots)
-3. **[[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité écrans]]** (3800 mots)
-4. **[[cling-recherche-fuzzy-fichiers-macos|Cling : Recherche fuzzy fichiers]]** (2800 mots)
+1. **[rcmd : Le raccourci qui tue Cmd+Tab](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)** (2800 mots)
+2. **[Clop : Compression automatique](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/)** (3200 mots)
+3. **[Lunar : Contrôle luminosité écrans](https://brandonvisca.com/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** (3800 mots)
+4. **[Cling : Recherche fuzzy fichiers](https://brandonvisca.com/2025-11-27-cling-recherche-fuzzy-fichiers-macos/)** (2800 mots)
 
 **Autres articles macOS** :
-- [[raycast-macos-outil-productivite-ultime|Raycast : Launcher complet]]
-- [[ice-gestionnaire-barre-menu-macos|Ice : Gestionnaire barre menu détaillé]]
-- [[installation-homebrew-macos|Installation Homebrew sur macOS]]
-- [[iterm2-guide-configuration-macos-2025|iTerm2 : Terminal optimisé]]
+- [Raycast : Launcher complet](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)
+- [Ice : Gestionnaire barre menu détaillé](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
+- [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)
+- [iTerm2 : Terminal optimisé](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/)
 
 ---
 
@@ -1144,8 +1133,3 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 - [r/macOS](https://reddit.com/r/macOS)
 - [r/MacApps](https://reddit.com/r/MacApps)
 - [r/opensource](https://reddit.com/r/opensource)
-
-## Articles connexes
-
-- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
-- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025](/grila-vs-fantastical-comparatif-2025/)

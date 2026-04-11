@@ -1,20 +1,23 @@
 ---
 title: "Cling : Recherche fuzzy fichiers 10x plus rapide"
-pubDatetime: "2025-11-27T00:00:00+00:00"
-author: Brandon Visca
 description: "Cling : trouve fichiers macOS instantanément avec recherche fuzzy. Même avec fautes frappe. Alternative Spotlight. Gratuit, open source."
+pubDatetime: "2025-11-27T00:00:00+01:00"
+author: Brandon Visca
 tags:
   - macos
   - productivite
+  - low-tech
   - debutant
-  - recherche
   - guide
-  - fuzzy-search
+featured: false
 draft: false
+focusKeyword: recherche fichiers mac rapide
 ---
+# Cling : Recherche fuzzy fichiers 10x plus rapide
 
-![Illustration 1 — Cling](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
 
+---
 
 ## Introduction : Spotlight, c'est bien... pour 2010
 
@@ -43,6 +46,7 @@ Bienvenue dans le monde de **Cling**, l'outil de recherche fuzzy qui va te faire
 
 Let's go ! 🚀
 
+---
 
 ## TL;DR : Cling en 30 secondes
 
@@ -63,12 +67,13 @@ Let's go ! 🚀
 
 **Prix** : 100% gratuit et open source
 
+---
 
 ## Qu'est-ce que Cling ?
 
 **Cling**, c'est l'alternative macOS à [Everything](https://www.voidtools.com/) (légendaire outil Windows), développée par [Low Tech Guys](https://lowtechguys.com/).
 
-![Capture d'écran — Quest-ce que Cling](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283430/brandonviscacom/CleanShot_2025-12-09_at_13.30.14_2x_dtrfzm.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283430/brandonviscacom/CleanShot_2025-12-09_at_13.30.14_2x_dtrfzm.jpg)
 
 ### Le concept en une phrase
 
@@ -93,6 +98,7 @@ Cling indexe **tout ton système de fichiers** en mémoire (y compris fichiers s
 - **Compatibilité** : macOS 14+ (Sonoma, Sequoia)
 - **Open source** : [GitHub](https://github.com/FuzzyIdeas/Cling)
 
+---
 
 ## Fuzzy search, c'est quoi ? (Explication simple)
 
@@ -116,6 +122,7 @@ Cling indexe **tout ton système de fichiers** en mémoire (y compris fichiers s
 
 💡 **Différence avec Spotlight** : Spotlight nécessite une correspondance exacte. Cling est tolérant.
 
+---
 
 ## Installation de Cling : 2 méthodes
 
@@ -128,15 +135,16 @@ Si tu as Homebrew ([sinon, installe-le](https://brandonvisca.com/installation-ho
 brew install --cask thelowtechguys-cling
 ```
 
-![Capture d'écran — Méthode 1 Homebrew recommandée](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283084/brandonviscacom/CleanShot_2025-12-09_at_13.15.30_2x_e6a81v.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283084/brandonviscacom/CleanShot_2025-12-09_at_13.15.30_2x_e6a81v.jpg)
 
 **Avantages** :
 - Mises à jour automatiques
 - Désinstallation propre
 - Gestion centralisée
 
-⚠️ **Pas encore Homebrew ?** → [[installation-homebrew-macos|Guide installation Homebrew macOS]]
+⚠️ **Pas encore Homebrew ?** → [Guide installation Homebrew macOS](https://brandonvisca.com/installation-homebrew-macos/)
 
+---
 
 ### Méthode 2 : Download direct
 
@@ -145,10 +153,11 @@ brew install --cask thelowtechguys-cling
 3. **Premier lancement** : Clic droit > Ouvrir
 4. **Autorise les permissions** : Full Disk Access (pour indexer tout)
 
-![Capture d'écran — Méthode 2 Download direct](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283469/brandonviscacom/CleanShot_2025-12-09_at_13.17.34_2x_la0t47.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283469/brandonviscacom/CleanShot_2025-12-09_at_13.17.34_2x_la0t47.jpg)
 
 💡 **Important** : Cling **nécessite Full Disk Access** pour indexer les fichiers système, dotfiles, etc. Sans ça, il sera limité comme Spotlight.
 
+---
 
 ## Configuration essentielle en 5 minutes
 
@@ -160,12 +169,13 @@ Au premier lancement :
 2. **Tu peux utiliser l'app pendant** : Indexation en arrière-plan
 3. **Barre de progression** : Visible en haut de la fenêtre Cling
 
-![Capture d'écran — Première utilisation Indexation initiale](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283470/brandonviscacom/CleanShot_2025-12-09_at_13.17.41_2x_cnowb3.jpg)
+![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283470/brandonviscacom/CleanShot_2025-12-09_at_13.17.41_2x_cnowb3.jpg)
 
 **Consommation CPU** : 100% sur plusieurs cores pendant 1-5 min. **C'est normal**. Après, CPU à 0% en arrière-plan.
 
 **Consommation RAM** : 300 Mo à 2 Go selon ton nombre de fichiers. Cling libère la RAM quand la fenêtre est en arrière-plan (swap vers disque).
 
+---
 
 ### Réglages de base recommandés
 
@@ -192,6 +202,7 @@ Library/Caches/
 
 💡 **Pourquoi exclure** : Réduire la taille de l'index + accélérer les recherches.
 
+---
 
 ### Interface : Navigation clavier uniquement
 
@@ -212,6 +223,7 @@ Cling est **100% clavier-centric**. Pas besoin de souris.
 | `Cmd+D`       | Delete (avec confirmation)   |
 | `Esc`         | Fermer Cling                 |
 
+---
 
 ## Utilisation : 4 workflows puissants
 
@@ -238,6 +250,7 @@ Temps : 3 secondes
 
 **Résultat** : `docker-compose.yaml` s'ouvre dans VS Code (ou ton éditeur par défaut).
 
+---
 
 ### Workflow 2 : Fichiers système et dotfiles
 
@@ -262,6 +275,7 @@ Temps : 2 secondes
 
 **Bonus** : Cling trouve **tous** les `.zshrc` sur ton système (y compris ceux dans `~/Documents/dotfiles/` pour backup).
 
+---
 
 ### Workflow 3 : Actions rapides
 
@@ -295,6 +309,7 @@ Temps : 3 secondes
 | `Space` | QuickLook (preview sans ouvrir) |
 | `Cmd+O` | Ouvrir avec... (choix app) |
 
+---
 
 ### Workflow 4 : Scripts custom
 
@@ -331,6 +346,7 @@ notify "Compression terminée"
 
 💡 **Langage** : Bash, Python, Ruby, Node, Go... ce que tu veux.
 
+---
 
 ## Fonctionnalités avancées
 
@@ -356,6 +372,7 @@ docker .yml modified:1d
 → Fichiers YAML contenant "docker" modifiés aujourd'hui
 ```
 
+---
 
 ### 2. Recherche dans volumes externes
 
@@ -373,6 +390,7 @@ docker .yml modified:1d
 
 💡 **Bonus** : Cling garde l'index en cache. Si tu rebranches le disque, pas besoin de réindexer.
 
+---
 
 ### 3. Batch operations (opérations groupées)
 
@@ -395,6 +413,7 @@ docker .yml modified:1d
 - Déplacer vers dossier
 - Change permissions
 
+---
 
 ### 4. Syntaxe de recherche avancée
 
@@ -416,6 +435,7 @@ Cling supporte une syntaxe puissante (héritée de `fd` et `fzf`).
 → Fichiers README.md excluant node_modules
 ```
 
+---
 
 ## Cling vs les alternatives
 
@@ -437,6 +457,7 @@ Cling supporte une syntaxe puissante (héritée de `fd` et `fzf`).
 - **Spotlight** : Recherches générales, docs, emails
 - **Cling** : Fichiers code, config, dotfiles, power users
 
+---
 
 ### Cling vs Raycast / Alfred
 
@@ -456,8 +477,9 @@ Cling supporte une syntaxe puissante (héritée de `fd` et `fzf`).
 - **Raycast** : Launcher + snippets + extensions + clipboard
 - **Alfred** : Workflows complexes + automation
 
-Tu peux utiliser [[raycast-macos-outil-productivite-ultime|Raycast]] pour les commandes ET Cling pour les fichiers. Pas de conflit.
+Tu peux utiliser [Raycast](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/) pour les commandes ET Cling pour les fichiers. Pas de conflit.
 
+---
 
 ### Cling vs Find Any File / EasyFind
 
@@ -476,6 +498,7 @@ Tu peux utiliser [[raycast-macos-outil-productivite-ultime|Raycast]] pour les co
 - **Cling** : "Je cherche CE fichier docker-compose.yaml"
 - **Find Any File** : "Montre-moi TOUS les fichiers .log > 10Mo modifiés cette semaine"
 
+---
 
 ### Cling vs Everything (Windows)
 
@@ -489,6 +512,7 @@ Tu peux utiliser [[raycast-macos-outil-productivite-ultime|Raycast]] pour les co
 
 **Verdict** : Everything reste **le roi absolu** sur Windows (utilise la MFT NTFS = instantané). Cling est la **meilleure approximation sur macOS**.
 
+---
 
 ## Cas d'usage concrets
 
@@ -516,6 +540,7 @@ Temps : 3 secondes
 
 **Gain quotidien** : 20 recherches/jour × 57 sec = **19 min/jour** = **115h/an**
 
+---
 
 ### Cas 2 : Admin système (dotfiles & configs)
 
@@ -542,6 +567,7 @@ Temps : 2 secondes
 
 **Bonus** : Cling trouve aussi les backups dans `~/dotfiles/` ou Time Machine.
 
+---
 
 ### Cas 3 : Créateur de contenu (screenshots & assets)
 
@@ -568,6 +594,7 @@ Temps : 5 secondes
 
 **Workflow batch** : Sélectionne 10 screenshots → Cmd+Shift+Z → Script compresse en ZIP.
 
+---
 
 ### Cas 4 : Data analyst (CSV, logs, datasets)
 
@@ -585,6 +612,7 @@ Cmd+k > "sales 2024 .csv"
 → Enter
 ```
 
+---
 
 ## Troubleshooting : Les pièges à éviter
 
@@ -620,6 +648,7 @@ Cling > Settings > Re-index now
 → Attends 1-5 min
 ```
 
+---
 
 ### Problème 2 : Cling consomme trop de RAM
 
@@ -646,6 +675,7 @@ Library/Logs/
 
 💡 **Note** : Quand Cling est en arrière-plan, macOS swap l'index vers disque (libère RAM).
 
+---
 
 ### Problème 3 : Recherche ne fonctionne pas (PTY leak)
 
@@ -663,6 +693,7 @@ Settings > Auto-restart every 12 hours
 
 💡 **Statut** : Les devs travaillent sur un fix définitif.
 
+---
 
 ### Problème 4 : Trop de résultats, impossible de trouver
 
@@ -689,6 +720,7 @@ Settings > Max results : 100
 (par défaut 30)
 ```
 
+---
 
 ## Limitations à connaître
 
@@ -713,6 +745,7 @@ Settings > Max results : 100
 ✅ Excellent pour **fichiers système, dotfiles, configs**
 ✅ Génial pour **workflows clavier uniquement**
 
+---
 
 ## Conclusion : Faut-il installer Cling ?
 
@@ -739,7 +772,7 @@ Settings > Max results : 100
 - Pas de recherche par contenu (nom de fichier uniquement)
 - Courbe apprentissage (syntaxe avancée)
 
-**Mon verdict perso** : J'utilise Cling **depuis 6 mois** pour chercher mes fichiers de config, dotfiles, et scripts. Combiné avec [[rcmd-alternative-cmd-tab-macos|rcmd]], [[clop-compression-images-videos-macos|Clop]], et [[lunar-luminosite-ecrans-externes-macos|Lunar]], c'est le **quatuor Low-Tech Guys parfait**.
+**Mon verdict perso** : J'utilise Cling **depuis 6 mois** pour chercher mes fichiers de config, dotfiles, et scripts. Combiné avec [rcmd](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/), [Clop](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/), et [Lunar](https://brandonvisca.com/2025-11-27-lunar-luminosite-ecrans-externes-macos/), c'est le **quatuor Low-Tech Guys parfait**.
 
 **Pour qui c'est un must** :
 - ✅ Développeurs (configs, dotfiles, repos)
@@ -756,15 +789,17 @@ Settings > Max results : 100
 
 Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 
+---
 
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
-- **[[rcmd-alternative-cmd-tab-macos|rcmd : Le raccourci qui tue Cmd+Tab]]** : Switch entre apps ultra-rapidement
-- **[[clop-compression-images-videos-macos|Clop : Compression automatique]]** : Optimise tes fichiers en arrière-plan
-- **[[lunar-luminosite-ecrans-externes-macos|Lunar : Contrôle luminosité écrans externes]]** : DDC natif pour tes moniteurs
-- **[[raycast-macos-outil-productivite-ultime|Raycast : L'outil qui transforme macOS]]** : Launcher complet (complémentaire à Cling)
-- **[[installation-homebrew-macos|Installation Homebrew sur macOS]]** : Indispensable pour installer Cling
+- **[rcmd : Le raccourci qui tue Cmd+Tab](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
+- **[Clop : Compression automatique](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
+- **[Lunar : Contrôle luminosité écrans externes](https://brandonvisca.com/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** : DDC natif pour tes moniteurs
+- **[Raycast : L'outil qui transforme macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)** : Launcher complet (complémentaire à Cling)
+- **[Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)** : Indispensable pour installer Cling
 
+---
 
 ## 💡 Ressources utiles
 
@@ -773,8 +808,3 @@ Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 - [fd (outil Rust sous-jacent)](https://github.com/sharkdp/fd)
 - [fzf (fuzzy finder)](https://github.com/junegunn/fzf)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
-
-## Articles connexes
-
-- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
-- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
