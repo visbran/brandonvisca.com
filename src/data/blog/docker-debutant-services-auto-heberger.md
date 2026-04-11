@@ -167,22 +167,22 @@ docker compose up -d  # Redémarrer avec la nouvelle version
 
 ```
 
-# Mise à jour du système
+## Mise à jour du système
 sudo apt update && sudo apt upgrade -y
 
-# Installation des prérequis
+## Installation des prérequis
 sudo apt install -y ca-certificates curl gnupg lsb-release
 
-# Ajout de la clé GPG officielle Docker
+## Ajout de la clé GPG officielle Docker
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
-# Ajout du dépôt Docker
+## Ajout du dépôt Docker
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# Installation de Docker
+## Installation de Docker
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
@@ -227,19 +227,19 @@ services:
 
 ```
 
-# Démarrer tous les services
+## Démarrer tous les services
 docker compose up -d
 
-# Voir les conteneurs en cours
+## Voir les conteneurs en cours
 docker compose ps
 
-# Voir les logs
+## Voir les logs
 docker compose logs -f nom-du-service
 
-# Arrêter tout
+## Arrêter tout
 docker compose down
 
-# Mettre à jour
+## Mettre à jour
 docker compose pull
 docker compose up -d
 
@@ -687,13 +687,13 @@ docker rm nom-conteneur
 
 ```
 
-# Lister les images téléchargées
+## Lister les images téléchargées
 docker images
 
-# Supprimer une image
+## Supprimer une image
 docker rmi nom-image:tag
 
-# Télécharger une image
+## Télécharger une image
 docker pull nom-image:tag
 
 
@@ -711,13 +711,13 @@ docker exec -it nom-conteneur /bin/bash
 
 ```
 
-# Supprimer tous les conteneurs arrêtés
+## Supprimer tous les conteneurs arrêtés
 docker container prune
 
-# Supprimer toutes les images non utilisées
+## Supprimer toutes les images non utilisées
 docker image prune
 
-# Nettoyage complet (ATTENTION : supprime tout ce qui n'est pas utilisé)
+## Nettoyage complet (ATTENTION : supprime tout ce qui n'est pas utilisé)
 docker system prune -a
 
 
@@ -741,7 +741,7 @@ ports:
 
 ```
 
-# Donner les permissions au dossier
+## Donner les permissions au dossier
 sudo chown -R $USER:$USER ~/docker/nom-service
 
 
@@ -764,10 +764,10 @@ docker logs nom-conteneur
 
 ```
 
-# Démarrer Docker
+## Démarrer Docker
 sudo systemctl start docker
 
-# Activer au démarrage
+## Activer au démarrage
 sudo systemctl enable docker
 
 

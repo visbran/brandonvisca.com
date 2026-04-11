@@ -233,7 +233,7 @@ systemctl enable nebula-sync.timer
 systemctl enable nebula-sync.service
 systemctl start nebula-sync.timer
 
-# Vérifier
+## Vérifier
 systemctl status nebula-sync.timer
 systemctl list-timers
 

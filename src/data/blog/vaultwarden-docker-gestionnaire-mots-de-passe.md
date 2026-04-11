@@ -393,10 +393,10 @@ SIGNUPS_ALLOWED=true
 
 ```
 
-# Démarrer
+## Démarrer
 docker compose up -d
 
-# Vérifier
+## Vérifier
 docker ps
 docker compose logs -f vaultwarden
 
@@ -549,18 +549,18 @@ scp vaultwarden-backup-*.tar.gz user@nas:/backups/vaultwarden/
 
 ```
 
-# Réinstaller Docker
+## Réinstaller Docker
 curl -fsSL https://get.docker.com | sh
 
-# Recréer la structure
+## Recréer la structure
 mkdir -p ~/vaultwarden && cd ~/vaultwarden
 
-# Copier le docker-compose.yml (tu l'as sauvegardé à part, hein ?)
+## Copier le docker-compose.yml (tu l'as sauvegardé à part, hein ?)
 
-# Extraire le backup
+## Extraire le backup
 tar -xzf vaultwarden-backup-2025-XX-XX.tar.gz
 
-# Lancer Vaultwarden
+## Lancer Vaultwarden
 docker compose up -d
 
 

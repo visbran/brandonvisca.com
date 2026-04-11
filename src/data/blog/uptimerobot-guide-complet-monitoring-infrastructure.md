@@ -428,7 +428,7 @@ Tu payes 50$/mois Pingdom et tu veux économiser ? Voici comment migrer propreme
 
 **Étape 1 : Export depuis Pingdom**
 
-# Pingdom n'a pas d'export facile, script manuel :
+## Pingdom n'a pas d'export facile, script manuel :
 curl -u email:password https://api.pingdom.com/api/3.1/checks
 
 

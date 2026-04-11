@@ -128,12 +128,12 @@ brew install --cask wailbrew
 
 ```
 
-# Homebrew CLI
+## Homebrew CLI
 brew search firefox
 brew install --cask firefox
 
-# WailBrew GUI
-# Tape "firefox" > Clique Install
+## WailBrew GUI
+## Tape "firefox" > Clique Install
 
 
 C’est plus rapide pour découvrir de nouvelles apps.

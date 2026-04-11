@@ -119,11 +119,11 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 ```
 
-# Vérifier les permissions
+## Vérifier les permissions
 ls -la ~/.vim
 ls -la ~/.vimrc
 
-# Corriger les permissions si nécessaire
+## Corriger les permissions si nécessaire
 chmod 644 ~/.vimrc
 chmod -R u+rw ~/.vim
 

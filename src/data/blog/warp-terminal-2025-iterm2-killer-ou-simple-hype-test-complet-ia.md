@@ -143,10 +143,10 @@ L’Agent Mode, c’est le game changer. Vous décrivez ce que vous voulez faire
 - Exécution : docker-compose up -d
 ```
 
-# Bloc 1 : Commande
+## Bloc 1 : Commande
 docker ps -a
 
-# Bloc 2 : Output (cliquable, copiable, partageable)
+## Bloc 2 : Output (cliquable, copiable, partageable)
 CONTAINER ID   IMAGE     STATUS    PORTS
 abc123def456   nginx     Up 2h     0.0.0.0:80->80/tcp
 
@@ -186,12 +186,12 @@ brew install --cask warp
 # https://www.warp.dev/
 ```
 
-# Ajout du repo
+## Ajout du repo
 wget -qO- https://releases.warp.dev/linux/keys/warp.asc | gpg --dearmor > warp.gpg
 sudo install -o root -g root -m 644 warp.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64] https://releases.warp.dev/linux/deb stable main" > /etc/apt/sources.list.d/warp.list'
 
-# Installation
+## Installation
 sudo apt update
 sudo apt install warp-terminal
 
@@ -201,11 +201,11 @@ sudo apt install warp-terminal
 sudo dnf install warp-terminal
 ```
 
-# Via winget
+## Via winget
 winget install warp.warp
 
-# Ou téléchargement .exe
-# https://www.warp.dev/windows-terminal
+## Ou téléchargement .exe
+## https://www.warp.dev/windows-terminal
 
 > **Astuce :** Sur Windows, utilisez WSL2 pour avoir l’expérience complète.
 
@@ -250,9 +250,9 @@ brew install font-fira-code
 
 docker ps -a
 docker logs abc123def456
-# [scrolling infernal pour trouver l'erreur]
+## [scrolling infernal pour trouver l'erreur]
 docker inspect abc123def456 | grep -A 10 "Config"
-# [plus de scrolling]
+## [plus de scrolling]
 
 **Avec Warp + Agent Mode :**
 
@@ -294,7 +294,7 @@ server {
 }
 ```
 
-# ~/.ssh/config détecté
+## ~/.ssh/config détecté
 Host prod-server
     HostName 192.168.1.100
     User admin

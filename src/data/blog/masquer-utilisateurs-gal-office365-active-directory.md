@@ -86,8 +86,8 @@ Start-ADSyncSyncCycle -PolicyType Initial
 
 ```
 
-# Script pour masquer plusieurs utilisateurs de la GAL
-# À exécuter sur un contrôleur de domaine
+## Script pour masquer plusieurs utilisateurs de la GAL
+## À exécuter sur un contrôleur de domaine
 
 $UsersToHide = @(
     "user1@domain.com",

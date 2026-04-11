@@ -283,13 +283,13 @@ docker compose up -d
 docker ps
 ```
 
-# Voir les logs
+## Voir les logs
 docker compose logs -f nextcloud
 
-# Erreur classique "Connection refused" = la DB n'est pas prête
-# Solution : attends 30 secondes et recharge la page
+## Erreur classique "Connection refused" = la DB n'est pas prête
+## Solution : attends 30 secondes et recharge la page
 
-# Erreur "Permission denied" dans les logs
+## Erreur "Permission denied" dans les logs
 sudo chown -R www-data:www-data ./nextcloud ./data
 
 - - - - - -
@@ -340,18 +340,18 @@ docker network create nextcloud_nextcloud-network
 docker compose up -d
 ```
 
-# Headers de sécurité
+## Headers de sécurité
 add_header X-Content-Type-Options "nosniff" always;
 add_header X-XSS-Protection "1; mode=block" always;
 add_header X-Frame-Options "SAMEORIGIN" always;
 add_header X-Robots-Tag "noindex, nofollow" always;
 add_header Referrer-Policy "no-referrer" always;
 
-# Headers pour Nextcloud
+## Headers pour Nextcloud
 proxy_set_header X-Forwarded-Proto $scheme;
 proxy_set_header X-Forwarded-Host $host;
 
-# Configuration .well-known pour CalDAV/CardDAV
+## Configuration .well-known pour CalDAV/CardDAV
 location = /.well-known/carddav {
     return 301 $scheme://$host/remote.php/dav;
 }
@@ -368,7 +368,7 @@ location = /.well-known/nodeinfo {
     return 301 $scheme://$host/index.php/.well-known/nodeinfo;
 }
 
-# Augmenter les timeouts pour les gros fichiers
+## Augmenter les timeouts pour les gros fichiers
 client_max_body_size 10G;
 client_body_timeout 300s;
 fastcgi_buffers 64 4K;
@@ -440,7 +440,7 @@ Sauvegarde (Ctrl+O, Enter, Ctrl+X) et quitte le container (`exit`).
 docker restart nextcloud-app
 ```
 
-# Créer un fichier de config PHP custom
+## Créer un fichier de config PHP custom
 nano ~/nextcloud/nextcloud/uploads.ini
 
 ```bash
@@ -451,7 +451,7 @@ max_input_time = 3600
 memory_limit = 512M
 ```
 
-# Modifier le docker-compose pour monter ce fichier
+## Modifier le docker-compose pour monter ce fichier
 cd ~/nextcloud
 nano docker-compose.yml
 
@@ -464,7 +464,7 @@ Dans la section `nextcloud` → `volumes`, ajoute :
       - ./nextcloud/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 ```
 
-# Relancer
+## Relancer
 docker compose down
 docker compose up -d
 
@@ -515,29 +515,29 @@ sudo fail2ban-client status nextcloud
 ```
 
 #!/bin/bash
-# Script de backup Nextcloud
-# À placer dans ~/backup-nextcloud.sh
+## Script de backup Nextcloud
+## À placer dans ~/backup-nextcloud.sh
 
 BACKUP_DIR="/home/backups/nextcloud"
 DATE=$(date +%Y-%m-%d_%H-%M)
 
-# Créer dossier backup
+## Créer dossier backup
 mkdir -p $BACKUP_DIR
 
-# Mettre Nextcloud en mode maintenance
+## Mettre Nextcloud en mode maintenance
 docker exec nextcloud-app php occ maintenance:mode --on
 
-# Backup base de données
+## Backup base de données
 docker exec nextcloud-db mysqldump -u nextcloud -pNextcloudPassword456! nextcloud > $BACKUP_DIR/nextcloud-db-$DATE.sql
 
-# Backup fichiers (compression)
+## Backup fichiers (compression)
 tar -czf $BACKUP_DIR/nextcloud-data-$DATE.tar.gz ~/nextcloud/data
 tar -czf $BACKUP_DIR/nextcloud-config-$DATE.tar.gz ~/nextcloud/nextcloud/config
 
-# Désactiver mode maintenance
+## Désactiver mode maintenance
 docker exec nextcloud-app php occ maintenance:mode --off
 
-# Garder seulement les 7 derniers backups
+## Garder seulement les 7 derniers backups
 find $BACKUP_DIR -type f -mtime +7 -delete
 
 echo "✅ Backup terminé : $DATE"
@@ -569,28 +569,28 @@ rclone config
 rclone sync /home/backups/nextcloud remote-b2:nextcloud-backups
 ```
 
-# 1. Réinstaller Docker + Docker Compose
+## 1. Réinstaller Docker + Docker Compose
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
-# 2. Recréer la structure
+## 2. Recréer la structure
 mkdir -p ~/nextcloud && cd ~/nextcloud
 
-# 3. Copier le docker-compose.yml (tu l'as sauvegardé à part, hein ?)
+## 3. Copier le docker-compose.yml (tu l'as sauvegardé à part, hein ?)
 
-# 4. Extraire les backups
+## 4. Extraire les backups
 tar -xzf nextcloud-data-XXXX.tar.gz -C ~/
 tar -xzf nextcloud-config-XXXX.tar.gz -C ~/nextcloud/nextcloud/
 
-# 5. Restaurer la base de données
+## 5. Restaurer la base de données
 docker compose up -d db  # Lancer juste la DB d'abord
 sleep 10
 docker exec -i nextcloud-db mysql -u nextcloud -pNextcloudPassword456! nextcloud < nextcloud-db-XXXX.sql
 
-# 6. Lancer Nextcloud
+## 6. Lancer Nextcloud
 docker compose up -d
 
-# 7. Réparer les permissions si nécessaire
+## 7. Réparer les permissions si nécessaire
 docker exec nextcloud-app chown -R www-data:www-data /var/www/html
 
 🎉 **Tu as récupéré toutes tes données !**
@@ -646,9 +646,9 @@ memory_limit = 1G
 docker compose restart nextcloud
 ```
 
-# Attends 30-60 secondes (MariaDB est lente à démarrer)
+## Attends 30-60 secondes (MariaDB est lente à démarrer)
 
-# Si ça persiste, check les logs
+## Si ça persiste, check les logs
 docker compose logs -f nextcloud
 docker compose logs -f db
 
@@ -658,19 +658,19 @@ Souvent c’est juste que la DB n’était pas prête. Relance :
 docker compose restart nextcloud
 ```
 
-# Vérifier l'espace
+## Vérifier l'espace
 df -h
 
-# Nettoyer les anciennes images Docker
+## Nettoyer les anciennes images Docker
 docker system prune -a
 
-# Nettoyer les versions de fichiers Nextcloud (garde 5 versions)
+## Nettoyer les versions de fichiers Nextcloud (garde 5 versions)
 docker exec nextcloud-app php occ versions:cleanup
 
-# Supprimer les fichiers en corbeille
+## Supprimer les fichiers en corbeille
 docker exec nextcloud-app php occ trashbin:cleanup --all-users
 
-# Dernière option : augmenter le VPS ou ajouter un volume
+## Dernière option : augmenter le VPS ou ajouter un volume
 
 - - - - - -
 

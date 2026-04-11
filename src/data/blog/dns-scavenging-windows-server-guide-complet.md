@@ -89,10 +89,10 @@ Start-DnsServerScavenging
 
 ```
 
-# Pour activer le scavenging sur une zone spécifique
+## Pour activer le scavenging sur une zone spécifique
 Set-DnsServerZoneAging -Name "tondomaine.local" -Aging $true
 
-# Vérifier la configuration
+## Vérifier la configuration
 Get-DnsServerZoneAging -Name "tondomaine.local"
 
 
@@ -116,10 +116,10 @@ Set-DnsServerZoneAging -Name "tondomaine.local" -NoRefreshInterval 7.00:00:00 -R
 
 ```
 
-# Activer les logs détaillés
+## Activer les logs détaillés
 Set-DnsServerDiagnostics -SaveLogsToPersistentStorage $true -EnableLogFileRollover $true
 
-# Vérifier les enregistrements éligibles au scavenging
+## Vérifier les enregistrements éligibles au scavenging
 Get-DnsServerResourceRecord -ZoneName "tondomaine.local" | Where-Object {$_.TimeStamp -lt (Get-Date).AddDays(-14)}
 
 
@@ -145,13 +145,13 @@ dnscmd /zoneexport tondomaine.local tondomaine_backup.txt
 
 ```
 
-# Vérifier l'état du scavenging
+## Vérifier l'état du scavenging
 Get-DnsServerScavenging
 
-# Voir les dernières suppressions
+## Voir les dernières suppressions
 Get-WinEvent -FilterHashtable @{LogName='DNS Server'; ID=1541}
 
-# Statistiques de la zone
+## Statistiques de la zone
 Get-DnsServerStatistics
 
 

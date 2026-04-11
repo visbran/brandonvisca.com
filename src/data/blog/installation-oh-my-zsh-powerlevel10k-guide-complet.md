@@ -100,7 +100,7 @@ sudo dnf install zsh
 ```
 
 zsh --version
-# Devrait afficher quelque chose comme : zsh 5.8.1
+## Devrait afficher quelque chose comme : zsh 5.8.1
 
 
 ### Installation de Git
@@ -166,19 +166,19 @@ code ~/.zshrc  # VS Code
 
 ```
 
-# Chemin vers Oh My Zsh
+## Chemin vers Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
 
-# Thème (on va changer ça bientôt 😉)
+## Thème (on va changer ça bientôt 😉)
 ZSH_THEME="robbyrussell"
 
-# Plugins activés
+## Plugins activés
 plugins=(git)
 
-# Source Oh My Zsh
+## Source Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
-# Vos alias et configurations perso ici
+## Vos alias et configurations perso ici
 
 
 ### Premiers réglages sympas
@@ -226,10 +226,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 ```
 
-# Changez cette ligne :
+## Changez cette ligne :
 ZSH_THEME="robbyrussell"
 
-# Par celle-ci :
+## Par celle-ci :
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
@@ -282,9 +282,9 @@ fc-cache -fv
 
 ```
 
-# Relancez la config
+## Relancez la config
 p10k configure
-# Étape 1 : installez les polices recommandées
+## Étape 1 : installez les polices recommandées
 
 
 **Prompt lent :** Trop de segments activés
@@ -367,28 +367,28 @@ plugins=(git python pip virtualenv)
 
 ```
 
-# Navigation rapide
+## Navigation rapide
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ..='cd ..'
 alias ...='cd ../..'
 
-# Git shortcuts
+## Git shortcuts
 alias gs='git status'
 alias gd='git diff'
 alias gl='git log --oneline --graph'
 
-# Docker shortcuts
+## Docker shortcuts
 alias dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
 alias dlog='docker logs -f'
 
-# Système
+## Système
 alias h='history'
 alias c='clear'
 alias reload='source ~/.zshrc'
 
-# Recherche rapide
+## Recherche rapide
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -419,14 +419,14 @@ myip() {
 
 ```
 
-# Éditeur par défaut
+## Éditeur par défaut
 export EDITOR='nano'  # ou vim, code...
 
-# Langues
+## Langues
 export LANG=fr_FR.UTF-8
 export LC_ALL=fr_FR.UTF-8
 
-# Paths personnalisés
+## Paths personnalisés
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
@@ -466,7 +466,7 @@ git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull
 
 ```
 
-# Exemple pour zsh-autosuggestions
+## Exemple pour zsh-autosuggestions
 git -C ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions pull
 
 
@@ -502,10 +502,10 @@ zsh -x ~/.zshrc
 
 ```
 
-# Backup de votre setup
+## Backup de votre setup
 tar -czf oh-my-zsh-backup.tar.gz ~/.zshrc ~/.p10k.zsh ~/.oh-my-zsh/custom/
 
-# Restauration
+## Restauration
 tar -xzf oh-my-zsh-backup.tar.gz -C ~/
 
 

@@ -136,7 +136,7 @@ Appliquez la règle d’or de la sauvegarde :
 
 ```
 
-# Synchronisation quotidienne à 2h du matin
+## Synchronisation quotidienne à 2h du matin
 0 2 * * * /home/user/vanderplanki-desktop.AppImage --sync-all --headless
 
 

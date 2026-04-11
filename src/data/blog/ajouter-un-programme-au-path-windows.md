@@ -33,7 +33,7 @@ Dans ce guide, je te montre **3 méthodes** pour ajouter un programme au PATH Wi
 
 - - - - - -
 
-# C’est quoi le PATH Windows, concrètement ?
+## C’est quoi le PATH Windows, concrètement ?
 
 Le **PATH** (ou `%PATH%` en langage Windows), c’est une variable d’environnement système qui contient une **liste de dossiers**. Quand tu tapes une commande dans PowerShell ou CMD, Windows cherche l’exécutable correspondant dans tous ces dossiers, dans l’ordre.
 
@@ -162,7 +162,7 @@ $env:PATH += ";C:\Program Files\Python311"
 
 ```
 
-# À exécuter en tant qu'administrateur
+## À exécuter en tant qu'administrateur
 
 ```powershell
 [Environment]::SetEnvironmentVariable(
@@ -316,7 +316,7 @@ Test-Path "C:\Program Files\Python311\python.exe"
 
 ```
 
-# Voir tous les chemins Python
+## Voir tous les chemins Python
 
 ```
 $env:PATH -split ';' | Select-String "Python"

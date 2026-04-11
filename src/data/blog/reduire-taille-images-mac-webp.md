@@ -123,7 +123,7 @@ brew install webp
 ```
 
 cwebp -version
-# Devrait afficher : 1.3.2 (ou plus récent)
+## Devrait afficher : 1.3.2 (ou plus récent)
 
 
 > **🧠 Pourquoi cwebp ?** C’est l’outil **officiel de Google** pour WebP. Plus fiable et performant que les alternatives tierces ou les apps payantes.
@@ -151,13 +151,13 @@ done
 
 ```
 
-# Photos réseaux sociaux (compression agressive)
+## Photos réseaux sociaux (compression agressive)
 -q 60    # Gain: ~80%, qualité acceptable
 
-# Images de blog/e-commerce (équilibré)  
+## Images de blog/e-commerce (équilibré)  
 -q 85    # Gain: ~70%, qualité excellente
 
-# Portfolio/galerie pro (compression légère)
+## Portfolio/galerie pro (compression légère)
 -q 95    # Gain: ~40%, qualité maximale
 
 
@@ -189,7 +189,7 @@ brew install webp
 
 ```
 
-# Vérifier une image WebP
+## Vérifier une image WebP
 cwebp -info mon_image.webp
 
 
@@ -226,7 +226,7 @@ find ~/Pictures -name "*.jpg" -exec cwebp -q 85 {} -o {}.webp \;
 
 ```
 
-# Script pour calculer l'espace économisé total
+## Script pour calculer l'espace économisé total
 du -sh ~/Pictures/**/*.{jpg,png} ~/Pictures/**/*.webp
 
 

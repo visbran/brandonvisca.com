@@ -806,7 +806,6 @@ Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** t
 - **Reddit** : r/france, r/selfhosted
 - **Forums** : HardwareFR, Homelab France
 - **Discord** : Homelab FR, Docker FR
-# **Fais le calcul annuel :**
 **Fais le calcul annuel :**
 
 | Service | Prix/an | Alternative auto-hébergée | Économie |

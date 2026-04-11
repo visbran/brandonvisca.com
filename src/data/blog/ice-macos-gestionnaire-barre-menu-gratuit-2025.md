@@ -155,7 +155,7 @@ Réglages Ice > Menu Bar Appearance
 
 ```
 
-# Configuration recommandée
+## Configuration recommandée
 ⌘ + ` : Toggle section principale
 ⌃ + ⌘ + I : Recherche Ice
 ⌥ + Clic : Réorganisation rapide
