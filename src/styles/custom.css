@@ -4,6 +4,17 @@
  */
 
 /* ── Typography ── */
-/* French punctuation spacing handled via content if needed */
 
-/* ── Placeholder for future overrides ── */
+/* Paragraphes justifiés avec césure automatique (lang="fr" défini dans config.ts) */
+.app-prose p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Mobile : retour au left pour éviter les rivières sur écrans étroits */
+@media (max-width: 640px) {
+  .app-prose p {
+    text-align: left;
+  }
+}
