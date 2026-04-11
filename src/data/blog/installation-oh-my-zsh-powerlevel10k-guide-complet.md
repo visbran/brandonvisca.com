@@ -13,14 +13,15 @@ tags:
   - guide
   - intermediaire
 ---
-
 ## Table des matières
 
-Introduction : Pourquoi Oh My Zsh va changer votre vie
+
+Introduction : Pourquoi Oh My Zsh va changer votre vie ?
 
 ![Oh My Zsh Logo](ohmyzsh-logo-ansi.png)**Spoiler alert :** Après avoir installé Oh My Zsh, vous ne pourrez plus jamais revenir au bash par défaut. C’est scientifiquement prouvé (bon, pas vraiment, mais presque).
 
 [Oh My Zsh](https://ohmyz.sh/) est **LE** framework open-source qui transforme votre terminal terne en véritable cockpit de développeur. Imaginez Git qui vous dit où vous en êtes d’un coup d’œil, l’autocomplétion qui lit dans vos pensées, et un prompt qui fait baver d’envie vos collègues.
+
 
 **Ce que vous allez gagner :**
 
@@ -31,7 +32,6 @@ Introduction : Pourquoi Oh My Zsh va changer votre vie
 
 **Pour qui ?** Développeurs, sysadmins, étudiants, ou quiconque passe plus de 5 minutes par jour dans un terminal (donc vous, probablement).
 
-- - - - - -
 
 Prérequis : Ce qu’il vous faut avant de commencer
 
@@ -60,8 +60,7 @@ sudo dnf install zsh
 ```bash
 zsh --version
 ```
-
-## Devrait afficher quelque chose comme : zsh 5.8.1
+Devrait afficher quelque chose comme : zsh 5.9
 
 
 ### Installation de Git
@@ -86,9 +85,8 @@ source ~/.bashrc
 exec zsh  # Pour basculer vers zsh
 ```
 
-- - - - - -
 
-Installation de Oh My Zsh : La méthode qui marche
+## Installation de Oh My Zsh : La méthode qui marche
 
 ### Méthode recommandée (curl)
 
@@ -108,9 +106,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 L’installation vous demandera si vous voulez faire de zsh votre shell par défaut. **Répondez « Y »** (oui) sauf si vous avez une bonne raison de ne pas le faire.
 
-- - - - - -
 
-Configuration de base : Les incontournables
+## Configuration de base : Les incontournables
 
 ### Le fichier de configuration
 
@@ -164,10 +161,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 source ~/.zshrc
 
-
-- - - - - -
-
-Powerlevel10k : Le thème qui tue tout
+## Powerlevel10k : Le thème qui tue tout
 
 Oubliez les thèmes basiques. **Powerlevel10k** (P10k pour les intimes) est **LE** thème qui va transformer votre terminal en vaisseau spatial.
 
@@ -255,12 +249,11 @@ nano ~/.p10k.zsh
 
 ```
 
+```bash
 git config --global --add safe.directory /votre/repo
+```
 
-
-- - - - - -
-
-Plugins essentiels : Votre nouveau superpouvoir
+## Plugins essentiels : Votre nouveau superpouvoir
 
 Oh My Zsh, c’est **300+ plugins** prêts à l’emploi. Voici ma sélection de ceux qui changent vraiment la vie.
 
