@@ -1,8 +1,10 @@
 ---
-title: "Oh My Zsh + Powerlevel10k : Transformez votre terminal en machine de guerre !"
+title: "Oh My Zsh + Powerlevel10k : Guide d'installation complet"
 pubDatetime: "2025-03-31T15:55:32+02:00"
+modDatetime: "2026-04-11T00:00:00+02:00"
 author: Brandon Visca
-description: "Guide complet Oh My Zsh et Powerlevel10k : installation, configuration, plugins essentiels. Transformez votre terminal en machine de guerre productive !"
+description: "Installer Oh My Zsh et Powerlevel10k : guide étape par étape, plugins essentiels (autosuggestions, syntax-highlighting) et configuration du thème."
+focusKeyword: "oh my zsh powerlevel10k"
 tags:
   - linux
   - macos

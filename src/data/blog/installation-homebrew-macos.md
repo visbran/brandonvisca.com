@@ -1,8 +1,10 @@
 ---
-title: "Installation d'homebrew sur MacOS"
+title: "Homebrew sur macOS : installation et guide des commandes"
 pubDatetime: "2025-03-31T15:28:09+02:00"
+modDatetime: "2026-04-11T00:00:00+02:00"
 author: Brandon Visca
-description: "Homebrew est le gestionnaire de paquets incontournable sur macOS. Guide complet : installation, commandes essentielles, formulas et casks expliqués."
+description: "Homebrew, le gestionnaire de paquets macOS incontournable : installer brew en une commande, gérer formulas et casks, et mettre à jour vos outils."
+focusKeyword: "homebrew macos"
 tags:
   - macos
   - developpement
