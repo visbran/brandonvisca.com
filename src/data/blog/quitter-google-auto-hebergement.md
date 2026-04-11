@@ -85,8 +85,7 @@ Tu fais quoi ? Tu râles et tu paies.
 Ma stack auto-hébergée (ce qui remplace Google)
 -----------------------------------------------
 
-![Auto-Hébergement
-](../uploads/2025/11/urtxbx5i5se.jpg)Voici mon setup actuel, 100% fonctionnel depuis 18 mois :
+Voici mon setup actuel, 100% fonctionnel depuis 18 mois :
 
 ### Google Drive → Nextcloud
 
