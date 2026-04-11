@@ -14,49 +14,7 @@ tags:
   - intermediaire
 ---
 
-
-- [Prérequis : Ce qu’il vous faut avant de commencer](#prerequis-ce-quil-vous-faut-avant-de-commencer)
-  - [Installation de Zsh](#installation-de-zsh)
-  - [Installation de Git](#installation-de-git)
-  - [🚨 Erreur fréquente](#%F0%9F%9A%A8-erreur-frequente)
-- [Installation de Oh My Zsh : La méthode qui marche](#installation-de-oh-my-zsh-la-methode-qui-marche)
-  - [Méthode recommandée (curl)](#methode-recommandee-curl)
-  - [Méthode alternative (wget)](#methode-alternative-wget)
-  - [✅ À savoir](#%E2%9C%85-a-savoir)
-- [Configuration de base : Les incontournables](#configuration-de-base-les-incontournables)
-  - [Le fichier de configuration](#le-fichier-de-configuration)
-  - [Structure du .zshrc](#structure-du-zshrc)
-  - [Premiers réglages sympas](#premiers-reglages-sympas)
-- [Powerlevel10k : Le thème qui tue tout](#powerlevel-10-k-le-theme-qui-tue-tout)
-  - [Pourquoi Powerlevel10k ?](#pourquoi-powerlevel-10-k)
-  - [Installation de Powerlevel10k](#installation-de-powerlevel-10-k)
-  - [Activation du thème](#activation-du-theme)
-  - [🎯 Configuration wizard](#%F0%9F%8E%AF-configuration-wizard)
-  - [Installation des polices Nerd Font (crucial !)](#installation-des-polices-nerd-font-crucial)
-  - [🚨 Problèmes fréquents avec Powerlevel10k](#%F0%9F%9A%A8-problemes-frequents-avec-powerlevel-10-k)
-- [Plugins essentiels : Votre nouveau superpouvoir](#plugins-essentiels-votre-nouveau-superpouvoir)
-  - [Ma config plugins de base](#ma-config-plugins-de-base)
-  - [Plugins communautaires indispensables](#plugins-communautaires-indispensables)
-  - [⚡ Plugins par cas d’usage](#%E2%9A%A1-plugins-par-cas-dusage)
-  - [🎯 Alias magiques](#%F0%9F%8E%AF-alias-magiques)
-- [Configuration avancée : Pour les ninjas 🥷](#configuration-avancee-pour-les-ninjas-%F0%9F%A5%B7)
-  - [Alias personnalisés](#alias-personnalises)
-  - [Fonctions utiles](#fonctions-utiles)
-  - [Variables d’environnement](#variables-denvironnement)
-  - [🔧 Configuration Powerlevel10k avancée](#%F0%9F%94%A7-configuration-powerlevel-10-k-avancee)
-- [Maintenance et troubleshooting](#maintenance-et-troubleshooting)
-  - [Mise à jour](#mise-a-jour)
-  - [Problèmes courants](#problemes-courants)
-  - [Sauvegarde de votre config](#sauvegarde-de-votre-config)
-  - [Désinstallation (si vraiment nécessaire)](#desinstallation-si-vraiment-necessaire)
-- [La stack productivité complète : Terminal + Interface](#la-stack-productivite-complete-terminal-interface)
-  - [L’écosystème parfait](#lecosysteme-parfait)
-  - [Pourquoi cette combinaison cartonne ?](#pourquoi-cette-combinaison-cartonne)
-- [Conclusion](#conclusion)
-  - [Et maintenant ?](#et-maintenant)
-  - [Le mot de la fin](#le-mot-de-la-fin)
-- [Liens utiles](#liens-utiles)
-
+## Table des matières
 
 Introduction : Pourquoi Oh My Zsh va changer votre vie
 
