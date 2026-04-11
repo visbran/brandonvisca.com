@@ -1,8 +1,10 @@
 ---
-title: "iTerm2 sur macOS : Le guide complet pour dompter votre terminal (2025)"
+title: "Guide iTerm2 macOS : Installation et configuration complète"
 pubDatetime: "2025-03-31T15:19:31+02:00"
+modDatetime: "2026-04-11T00:00:00+02:00"
 author: Brandon Visca
 description: "Transformez votre terminal macOS avec iTerm2 : installation, thèmes, Oh My Zsh et plugins indispensables. Guide complet pour booster votre productivité."
+focusKeyword: "iTerm2 macOS"
 tags:
   - macos
   - developpement
@@ -41,7 +43,7 @@ La méthode la plus simple pour installer iTerm2 :
 
 ### Méthode 2 : Installation via Homebrew
 
-Pour les adeptes de Homebrew (gestionnaire de paquets pour macOS), voici la commande :
+Pour les adeptes de [Homebrew](/installation-homebrew-macos/) (gestionnaire de paquets pour macOS), voici la commande :
 
 ```bash
 # Installation de iTerm2 via Homebrew Cask
@@ -161,7 +163,7 @@ Maîtrisez ces raccourcis pour une efficacité maximale :
 
 ### Oh My Zsh : Sublimez votre shell
 
-Oh My Zsh est un framework qui améliore considérablement l'expérience Zsh :
+Oh My Zsh est un framework qui améliore considérablement l'expérience Zsh (voir le [guide Oh My Zsh + Powerlevel10k](/installation-oh-my-zsh-powerlevel10k-guide-complet/)) :
 
 ```bash
 # Installation d'Oh My Zsh
