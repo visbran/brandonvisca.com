@@ -5,12 +5,10 @@ pubDatetime: "2025-12-09T21:14:00+01:00"
 author: Brandon Visca
 tags:
   - homelab
-  - iroh
-  - ligne de commande
   - linux
   - macos
-  - p2p
-  - transfert fichiers
+  - intermediaire
+  - guide
 featured: true
 draft: false
 focusKeyword: sendme cli

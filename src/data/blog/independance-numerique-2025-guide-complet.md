@@ -1,31 +1,21 @@
 ---
 title: "Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle"
+description: "Guide complet auto-hébergement 2025 : Nextcloud + Jellyfin + Vaultwarden. Remplace Google/Netflix/1Password, économise 534€/an. Installation weekend."
 pubDatetime: "2025-11-06T10:17:04+01:00"
 author: Brandon Visca
-description: "Guide complet auto-hébergement 2025 : Nextcloud + Jellyfin + Vaultwarden. Remplace Google/Netflix/1Password, économise 534€/an. Installation weekend."
 tags:
   - auto-hebergement
-  - degooglisation
-  - independance-numerique
-  - vie-privee
   - docker
+  - homelab
   - nextcloud
-  - jellyfin
-  - vaultwarden
-  - guide
   - debutant
-faqs:
-  - question: "Faut-il des compétences en Linux pour l'indépendance numérique ?"
-    answer: "Non, ça aide mais ce n'est pas obligatoire. Chaque guide est pensé pour débutants. Tu apprendras au fur et à mesure."
-  - question: "Ça coûte combien par mois ?"
-    answer: "Homelab physique : 0-30€/mois (électricité). VPS : 5-20€/mois. Combo : 15-25€/mois plus investissement initial matériel."
-  - question: "C'est légal d'héberger ses propres services ?"
-    answer: "100% légal. Héberger ses données et streamer ses achats DVD légaux est parfaitement légal. Le piratage reste illégal."
-  - question: "Mes données sont-elles vraiment plus en sécurité chez moi ?"
-    answer: "Plus qu'avec Google, oui. Tes données ne sortent pas de chez toi, à condition de suivre les bonnes pratiques : firewall, backups, HTTPS, mots de passe forts."
+  - guide
+featured: false
+draft: false
+focusKeyword: Indépendance numérique 2025
 ---
-
 🎯 TL;DR
+-------
 
 Tu paies Google Drive (120€/an), Netflix (156€/an), 1Password (36€/an), et tu trouves ça normal ? Spoiler : **tu peux tout héberger toi-même pour 0€/an** (si tu as déjà un serveur) ou 30€/an (avec un VPS).
 
@@ -40,61 +30,24 @@ Tu paies Google Drive (120€/an), Netflix (156€/an), 1Password (36€/an), et
 
 💡 **Bonus** : Télécharge la **checklist gratuite « 30 jours pour l’indépendance numérique »** + script bash de backup automatisé en fin d’article.
 
-- - - - - -
-
-
-- [Pourquoi l’indépendance numérique, maintenant ?](#pourquoi-lindependance-numerique-maintenant)
-  - [La vraie question : Combien tu paies pour tes données ?](#la-vraie-question-combien-tu-paies-pour-tes-donnees)
-  - [Les 3 piliers de ton indépendance](#les-3-piliers-de-ton-independance)
-- [Le matériel nécessaire : Moins cher que tu penses](#le-materiel-necessaire-moins-cher-que-tu-penses)
-  - [Option 1 : Tu as déjà un serveur/NAS ?](#option-1-tu-as-deja-un-serveur-nas)
-  - [Option 2 : Partir de zéro avec un Mini PC](#option-2-partir-de-zero-avec-un-mini-pc)
-  - [Option 3 : VPS Cloud (si pas de matériel)](#option-3-vps-cloud-si-pas-de-materiel)
-- [Les 3 services à installer (dans l’ordre)](#les-3-services-a-installer-dans-lordre)
-  - [🗄️ Service 1 : Nextcloud – Ton cloud personnel](#%F0%9F%97%84%EF%B8%8F-service-1-nextcloud-ton-cloud-personnel)
-  - [🎬 Service 2 : Jellyfin – Ton Netflix personnel](#%F0%9F%8E%AC-service-2-jellyfin-ton-netflix-personnel)
-  - [🔐 Service 3 : Vaultwarden – Ton coffre-fort personnel](#%F0%9F%94%90-service-3-vaultwarden-ton-coffre-fort-personnel)
-- [Le plan d’installation : Un weekend suffit](#le-plan-dinstallation-un-weekend-suffit)
-  - [Vendredi soir : Préparation (1h)](#vendredi-soir-preparation-1-h)
-  - [Samedi matin : Nextcloud (2-3h)](#samedi-matin-nextcloud-2-3-h)
-  - [Samedi après-midi : Jellyfin (2h)](#samedi-apres-midi-jellyfin-2-h)
-  - [Dimanche matin : Vaultwarden (1h)](#dimanche-matin-vaultwarden-1-h)
-  - [Dimanche après-midi : Sécurité &amp; Backups (2h)](#dimanche-apres-midi-securite-backups-2-h)
-- [Les coûts réels : Le calcul complet](#les-couts-reels-le-calcul-complet)
-  - [Scénario 1 : Mini PC à domicile](#scenario-1-mini-pc-a-domicile)
-  - [Scénario 2 : VPS Cloud](#scenario-2-vps-cloud)
-  - [Scénario 3 : Stack complète (+ streaming)](#scenario-3-stack-complete-streaming)
-- [Les avantages cachés (au-delà de l’argent)](#les-avantages-caches-au-dela-de-largent)
-  - [1. Vie privée &amp; RGPD](#1-vie-privee-rgpd)
-  - [2. Pérennité &amp; Contrôle](#2-perennite-controle)
-  - [3. Performances](#3-performances)
-  - [4. Apprentissage](#4-apprentissage)
-- [Les inconvénients (soyons honnêtes)](#les-inconvenients-soyons-honnetes)
-  - [Ce que tu dois accepter](#ce-que-tu-dois-accepter)
-- [FAQ : Questions fréquentes](#faq-questions-frequentes)
-  - [C’est légal d’héberger mes propres services ?](#faq-question-1762338738055)
-  - [Et si je pars en vacances 2 semaines ?](#faq-question-1762338758596)
-  - [Mon FAI bride l’upload, ça marche quand même ?](#faq-question-1762338846419)
-  - [Je suis pas dev, c’est trop compliqué pour moi ?](#faq-question-1762338871068)
-  - [Mes données sont-elles vraiment en sécurité ?](#faq-question-1762338932762)
-- [Aller plus loin : La stack complète](#aller-plus-loin-la-stack-complete)
-  - [Services complémentaires recommandés](#services-complementaires-recommandes)
-- [🎁 BONUS : Ton pack de démarrage gratuit](#%F0%9F%8E%81-bonus-ton-pack-de-demarrage-gratuit)
-  - [Ce que tu reçois gratuitement](#ce-que-tu-recois-gratuitement)
-  - [👇 Télécharge maintenant (100% gratuit)](#%F0%9F%91%87-telecharge-maintenant-100-gratuit)
-- [Conclusion : Et maintenant ?](#conclusion-et-maintenant)
-- [📚 Ressources complémentaires](#%F0%9F%93%9A-ressources-complementaires)
-  - [Articles liés sur BrandonVisca.com](#articles-lies-sur-brandon-visca-com)
-  - [Communautés francophones](#communautes-francophones)
-
 
 Pourquoi l’indépendance numérique, maintenant ?
+-----------------------------------------------
 
 ### La vraie question : Combien tu paies pour tes données ?
 
 **Fais le calcul annuel :**
 
-Service | Prix/an | Alternative auto-hébergée | Économie | Google Drive 100GB | 120€ | Nextcloud | 120€/an | iCloud 50GB | 12€ | Nextcloud | 12€/an | Netflix Standard | 156€ | Jellyfin | 156€/an | Disney+ | 120€ | Jellyfin | 120€/an | Prime Video | 70€ | Jellyfin | 70€/an | Spotify Famille | 180€ | Jellyfin | 180€/an | 1Password | 36€ | Vaultwarden | 36€/an | Dashlane | 40€ | Vaultwarden | 40€/an | 
+| Service | Prix/an | Alternative auto-hébergée | Économie |
+|---|---|---|---|
+| Google Drive 100GB | 120€ | Nextcloud | 120€/an |
+| iCloud 50GB | 12€ | Nextcloud | 12€/an |
+| Netflix Standard | 156€ | Jellyfin | 156€/an |
+| Disney+ | 120€ | Jellyfin | 120€/an |
+| Prime Video | 70€ | Jellyfin | 70€/an |
+| Spotify Famille | 180€ | Jellyfin | 180€/an |
+| 1Password | 36€ | Vaultwarden | 36€/an |
+| Dashlane | 40€ | Vaultwarden | 40€/an |
 
 💰 **Total typique : 534-734€/an**  
 💰 **Sur 10 ans : 5 340-7 340€**
@@ -132,6 +85,7 @@ Et c’est sans compter :
 - - - - - -
 
 Le matériel nécessaire : Moins cher que tu penses
+-------------------------------------------------
 
 ### Option 1 : Tu as déjà un serveur/NAS ?
 
@@ -177,6 +131,7 @@ Le matériel nécessaire : Moins cher que tu penses
 - - - - - -
 
 Les 3 services à installer (dans l’ordre)
+-----------------------------------------
 
 ### 🗄️ Service 1 : Nextcloud – Ton cloud personnel
 
@@ -224,7 +179,7 @@ Nextcloud, c’est **Google Drive + Google Photos + Google Calendar + Google Kee
 
 ### 🎬 Service 2 : Jellyfin – Ton Netflix personnel
 
-![Capture d'écran — Service 2 Jellyfin Ton Netflix personnel](bfbdcf5f-f600-4a4d-b14d-105b0953de6d.png)**C’est quoi ?**  
+![](bfbdcf5f-f600-4a4d-b14d-105b0953de6d.png)**C’est quoi ?**  
 Jellyfin, c’est **Netflix + Disney+ + Prime Video + Spotify** dans un logiciel gratuit, open source, sans pub, sans télémétrie.
 
 **Pourquoi c’est mieux que les plateformes commerciales ?**
@@ -313,6 +268,7 @@ Vaultwarden, c’est **1Password + Dashlane + LastPass** dans un gestionnaire de
 - - - - - -
 
 Le plan d’installation : Un weekend suffit
+------------------------------------------
 
 ### Vendredi soir : Préparation (1h)
 
@@ -435,6 +391,7 @@ Le plan d’installation : Un weekend suffit
 - - - - - -
 
 Les coûts réels : Le calcul complet
+-----------------------------------
 
 ### Scénario 1 : Mini PC à domicile
 
@@ -505,6 +462,7 @@ Les coûts réels : Le calcul complet
 - - - - - -
 
 Les avantages cachés (au-delà de l’argent)
+------------------------------------------
 
 ### 1. Vie privée &amp; RGPD
 
@@ -566,6 +524,7 @@ Les avantages cachés (au-delà de l’argent)
 - - - - - -
 
 Les inconvénients (soyons honnêtes)
+-----------------------------------
 
 ### Ce que tu dois accepter
 
@@ -601,6 +560,7 @@ Les inconvénients (soyons honnêtes)
 - - - - - -
 
 FAQ : Questions fréquentes
+--------------------------
 
 ### C’est légal d’héberger mes propres services ?
 
@@ -669,6 +629,7 @@ Les guides sont conçus pour débutants motivés. Temps d’apprentissage : 1 we
 - - - - - -
 
 Aller plus loin : La stack complète
+-----------------------------------
 
 ### Services complémentaires recommandés
 
@@ -699,6 +660,7 @@ Aller plus loin : La stack complète
 - - - - - -
 
 🎁 BONUS : Ton pack de démarrage gratuit
+---------------------------------------
 
 ### Ce que tu reçois gratuitement
 
@@ -754,6 +716,7 @@ En téléchargeant le **Pack Indépendance Numérique 2025**, tu obtiens :
 - - - - - -
 
 Conclusion : Et maintenant ?
+----------------------------
 
 Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** tout en économisant **534€/an minimum**.
 
@@ -781,6 +744,7 @@ Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** t
 - - - - - -
 
 📚 Ressources complémentaires
+----------------------------
 
 ### Articles liés sur BrandonVisca.com
 
@@ -806,20 +770,3 @@ Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** t
 - **Reddit** : r/france, r/selfhosted
 - **Forums** : HardwareFR, Homelab France
 - **Discord** : Homelab FR, Docker FR
-**Fais le calcul annuel :**
-
-| Service | Prix/an | Alternative auto-hébergée | Économie |
-|---|---|---|---|
-| Google Drive 100GB | 120€ | Nextcloud | 120€/an |
-| iCloud 50GB | 12€ | Nextcloud | 12€/an |
-| Netflix Standard | 156€ | Jellyfin | 156€/an |
-| Disney+ | 120€ | Jellyfin | 120€/an |
-| Prime Video | 70€ | Jellyfin | 70€/an |
-| Spotify Famille | 180€ | Jellyfin | 180€/an |
-| 1Password | 36€ | Vaultwarden | 36€/an |
-| Dashlane | 40€ | Vaultwarden | 40€/an |
-
-## Articles connexes
-
-- [Pourquoi j'ai quitté Google (et comment tu peux faire pareil](/quitter-google-auto-hebergement/)
-- [Auto-hébergement : Le guide ultime 2025 pour reprendre contr](/auto-hebergement-guide-complet-2025/)

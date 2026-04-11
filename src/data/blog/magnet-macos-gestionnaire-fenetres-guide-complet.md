@@ -4,19 +4,18 @@ description: "Découvre Magnet macOS, le gestionnaire de fenêtres n°1. Compara
 pubDatetime: "2025-11-19T22:43:10+01:00"
 author: Brandon Visca
 tags:
-  - magnet
   - macos
-  - gestion-fenetres
-  - window-management
   - productivite
-  - rectangle
-  - comparatif
-  - guide
+  - magnet
+  - gestion-fenetres
   - debutant
+  - guide
 featured: true
 draft: false
 focusKeyword: magnet macos
 ---
+# Magnet macOS : Le gestionnaire de fenêtres qui va transformer ton workflow (+ alternatives gratuites)
+
 
 ## Introduction : La gestion de fenêtres sur macOS, c'était la galère
 
@@ -711,8 +710,3 @@ Magnet est sur le Mac App Store. Rectangle est sur GitHub. Les deux sont à port
 - [Raycast macOS : Le launcher qui remplace Spotlight et 20 autres apps](https://brandonvisca.com/raycast-macos-launcher-productivite-2025/)
 - [iTerm2 : Le guide complet pour un terminal macOS de pro](https://brandonvisca.com/iterm2-guide-complet-terminal-macos-2025/)
 - [Ice macOS : Le gestionnaire de barre de menu gratuit](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
-
-## Articles connexes
-
-- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative G](/alttab-macos-gestion-fenetres-windows/)
-- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
