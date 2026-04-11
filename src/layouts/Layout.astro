@@ -32,21 +32,20 @@ const {
 
 const socialImageURL = new URL(ogImage, Astro.url);
 
-const structuredData = pubDatetime
+// JSON-LD for article pages is emitted by PostDetails.astro (Article schema, more complete).
+// Layout.astro only emits WebSite schema for non-article pages.
+const structuredData = !pubDatetime
   ? {
       "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: `${title}`,
-      image: `${socialImageURL}`,
-      datePublished: pubDatetime.toISOString(),
-      ...(modDatetime && { dateModified: modDatetime.toISOString() }),
-      author: [
-        {
-          "@type": "Person",
-          name: `${author}`,
-          ...(profile && { url: profile }),
-        },
-      ],
+      "@type": "WebSite",
+      name: SITE.title,
+      url: SITE.website,
+      description: SITE.desc,
+      author: {
+        "@type": "Person",
+        name: SITE.author,
+        ...(SITE.profile && { url: SITE.profile }),
+      },
     }
   : null;
 
@@ -84,6 +83,8 @@ const showGrain = SITE.backdropEffects.grain;
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={pubDatetime ? "article" : "website"} />
+    <meta property="og:locale" content="fr_FR" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
@@ -114,9 +115,9 @@ const showGrain = SITE.backdropEffects.grain;
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={socialImageURL} />
 
-    <!-- Google JSON-LD Structured data (only on blog posts) -->
+    <!-- JSON-LD Structured data (WebSite on non-article pages; Article schema on posts is in PostDetails.astro) -->
     {
-      pubDatetime && (
+      structuredData && (
         <script
           type="application/ld+json"
           is:inline
