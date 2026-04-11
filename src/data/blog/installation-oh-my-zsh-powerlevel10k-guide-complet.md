@@ -43,11 +43,11 @@ Avant de plonger dans Oh My Zsh, assurez-vous d’avoir Zsh installé :
 
 ```bash
 sudo apt update && sudo apt install zsh
-
 ```
 
+```bash
 brew install zsh
-
+```
 
 **CentOS/RHEL/Fedora :**
 
@@ -56,10 +56,11 @@ brew install zsh
 sudo yum install zsh
 # Fedora
 sudo dnf install zsh
-
+```
+```bash
+zsh --version
 ```
 
-zsh --version
 ## Devrait afficher quelque chose comme : zsh 5.8.1
 
 
@@ -80,9 +81,10 @@ sudo yum install git
 
 ```
 
+```bash
 source ~/.bashrc
 exec zsh  # Pour basculer vers zsh
-
+```
 
 - - - - - -
 
@@ -94,9 +96,6 @@ Installation de Oh My Zsh : La méthode qui marche
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ```
-
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 
 **Ce qui se passe :**
 
