@@ -2,7 +2,7 @@
 title: "Omarchy : la distribution Linux qui transforme Arch en station productive"
 pubDatetime: "2025-09-26T12:28:27+02:00"
 author: Brandon Visca
-description: "Découvrez Omarchy, la distribution Linux basée sur Arch avec Hyprland. Installation simplifiée, thèmes magnifiques, sécurité renforcée et outils de déve..."
+description: "Découvrez Omarchy, la distro Arch Linux avec Hyprland préconfigurée. Installation simplifiée, 11 thèmes, sécurité renforcée et outils dev inclus d'emblée."
 tags:
   - linux
   - productivite

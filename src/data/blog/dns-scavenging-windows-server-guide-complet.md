@@ -2,7 +2,7 @@
 title: "DNS Scavenging Windows Server : automatiser le nettoyage DNS"
 pubDatetime: "2025-07-13T22:45:43+02:00"
 author: Brandon Visca
-description: Découvre comment configurer le DNS Scavenging sous Windows Server pour automatiser le nettoyage des enregistrements obsolètes. Guide complet avec PowerS...
+description: "Configurez le DNS Scavenging sous Windows Server pour nettoyer les enregistrements obsolètes. Guide complet avec PowerShell et meilleures pratiques."
 tags:
   - windows
   - sysadmin

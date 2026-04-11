@@ -2,7 +2,7 @@
 title: "UptimeRobot : Le Guide Complet pour Surveiller Votre Infrastructure (2025)"
 pubDatetime: "2025-10-22T15:42:22+02:00"
 author: Brandon Visca
-description: "Guide complet UptimeRobot 2025 : Configuration, alertes, monitoring multi-sites, intégration API et comparaison avec alternatives self-hosted. Tutoriel ..."
+description: "Guide UptimeRobot 2025 : configuration, alertes, monitoring multi-sites et intégration API. Comparaison avec alternatives self-hosted comme Uptime Kuma."
 tags:
   - linux
   - sysadmin

@@ -2,7 +2,7 @@
 title: "Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025)"
 pubDatetime: "2025-11-19T11:56:47+01:00"
 author: Brandon Visca
-description: "Shutter Encoder Mac : compression vidéo avancée, édition, sous-titres, color grading. Alternative gratuite à HandBrake. Guide complet installation + cas..."
+description: "Shutter Encoder Mac : alternative gratuite à HandBrake pour la compression vidéo avancée, l'édition, les sous-titres et le color grading. Guide complet."
 tags:
   - macos
   - productivite

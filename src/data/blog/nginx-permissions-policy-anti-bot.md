@@ -2,7 +2,7 @@
 title: "Aller plus loin : Permissions-Policy et protection anti-bots sur Nginx"
 pubDatetime: "2025-04-27T17:12:59+02:00"
 author: Brandon Visca
-description: "Découvrez comment renforcer la sécurité de vos applications web grâce aux politiques Permissions-Policy pour restreindre les API navigateur, et comment ..."
+description: "Renforcez la sécurité de vos apps web avec Permissions-Policy Nginx pour restreindre les API navigateur et bloquer les bots malveillants. Guide complet."
 tags:
   - linux
   - securite

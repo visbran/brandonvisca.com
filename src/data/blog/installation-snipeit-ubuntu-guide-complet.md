@@ -2,7 +2,7 @@
 title: "Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)"
 pubDatetime: "2025-10-03T12:38:51+02:00"
 author: Brandon Visca
-description: "nstallation SnipeIT Ubuntu 22.04/24.04 complète : guide LAMP, MySQL, Git, permissions et sécurité. Tuto installation SnipeIT Ubuntu étape par étape pour..."
+description: "Installez SnipeIT sur Ubuntu 22.04/24.04 : guide LAMP, MySQL, Git et permissions. Déployez votre ITSM d'inventaire IT en moins d'une heure, pas à pas."
 tags:
   - linux
   - sysadmin

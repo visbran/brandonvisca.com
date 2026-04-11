@@ -2,7 +2,7 @@
 title: Connecter les systèmes Ubuntu à Active Directory en utilisant SSSD
 pubDatetime: "2024-06-13T11:40:02+02:00"
 author: Brandon Visca
-description: Apprenez à connecter les systèmes Ubuntu à Active Directory en utilisant SSSD pour une authentification centralisée et une gestion des utilisateurs. Sui...
+description: "Connectez Ubuntu à Active Directory via SSSD pour une authentification centralisée. Guide complet : installation, configuration Kerberos et dépannage."
 tags:
   - linux
   - sysadmin

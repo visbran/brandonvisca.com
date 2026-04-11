@@ -2,7 +2,7 @@
 title: "iTerm2 sur macOS : Le guide complet pour dompter votre terminal (2025)"
 pubDatetime: "2025-03-31T15:19:31+02:00"
 author: Brandon Visca
-description: "Transformez votre terminal macOS avec iTerm2 ! Installation, themes, Oh My Zsh, plugins indispensables - Le guide ultime pour booster votre productivité..."
+description: "Transformez votre terminal macOS avec iTerm2 : installation, thèmes, Oh My Zsh et plugins indispensables. Guide complet pour booster votre productivité."
 tags:
   - macos
   - developpement

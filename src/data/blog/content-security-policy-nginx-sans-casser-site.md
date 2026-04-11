@@ -2,7 +2,7 @@
 title: "Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs"
 pubDatetime: "2025-04-15T20:03:49+02:00"
 author: Brandon Visca
-description: "Découvrez comment configurer une Content-Security-Policy dans Nginx pour renforcer la sécurité de votre site contre les attaques XSS, tout en préservant..."
+description: "Configurez une Content-Security-Policy Nginx pour bloquer les attaques XSS sans casser votre site. Guide complet directive par directive avec exemples."
 tags:
   - linux
   - securite

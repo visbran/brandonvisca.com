@@ -2,7 +2,7 @@
 title: "Installation d'homebrew sur MacOS"
 pubDatetime: "2025-03-31T15:28:09+02:00"
 author: Brandon Visca
-description: "Homebrew est le gestionnaire de paquets le plus populaire pour macOS. Il simplifie considérablement l''installation et la gestion des logiciels sur votr..."
+description: "Homebrew est le gestionnaire de paquets incontournable sur macOS. Guide complet : installation, commandes essentielles, formulas et casks expliqués."
 tags:
   - macos
   - developpement
