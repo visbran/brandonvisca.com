@@ -1,15 +1,19 @@
 ---
 title: "Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?"
-pubDatetime: "2024-06-10T19:29:00+02:00"
-author: Brandon Visca
 description: "Guide complet pour renforcer la sécurité de votre serveur Linux : SSH, pare-feu ufw, fail2ban, mises à jour auto et surveillance des logs. Testé en prod."
+pubDatetime: "2024-06-10T19:29:00+02:00"
+modDatetime: "2026-04-12T00:00:00+01:00"
+author: Brandon Visca
 tags:
   - linux
   - securite
-  - avance
+  - hardening
   - sysadmin
   - guide
-  - hardening
+  - avance
+featured: false
+draft: false
+focusKeyword: sécurité de votre serveur linux
 faqs:
   - question: "Qu'est-ce que le durcissement d'un serveur sous Linux ?"
     answer: "C'est l'ensemble des mesures de sécurité appliquées à un serveur pour minimiser les vulnérabilités : SSH durci, firewall, fail2ban, sysctl renforcés."
@@ -17,97 +21,90 @@ faqs:
     answer: "Édite /etc/ssh/sshd_config : définis PermitRootLogin no et change le port 22 par un numéro personnalisé."
   - question: "Comment limiter l'accès à su uniquement au groupe admin ?"
     answer: "Crée un groupe admin et utilise dpkg-statoverride pour restreindre l'accès à /bin/su uniquement à ce groupe."
-  - question: "Qu'est-ce que DenyHosts et Fail2Ban ?"
-    answer: "DenyHosts et Fail2Ban sont des outils qui analysent les logs et bannissent automatiquement les IPs des attaques SSH et autres tentatives malveillantes."
+  - question: "Qu'est-ce que Fail2Ban ?"
+    answer: "Fail2Ban analyse les logs et bannit automatiquement les IPs responsables d'attaques SSH et autres tentatives malveillantes."
 ---
+Dans ce guide pratique, on va renforcer ensemble la sécurité de votre serveur Linux. De la configuration SSH au pare-feu en passant par les paramètres sysctl, on couvre toutes les mesures essentielles pour rendre ton serveur aussi résistant que possible.
 
-Dans ce guide pratique où nous allons renforcer ensemble la sécurité de votre serveur Linux. De l’installation de votre système à l’application des dernières mesures de sécurité, nous allons passer par toutes les étapes nécessaires pour rendre votre serveur aussi sûr que possible.
+![Illustration — Sécurité de votre serveur linux](image.gif)
 
-![Illustration — Sécurité de votre serveur linux](image.gif)  
-Assurez-vous de dimensionner en fonction des ressources disponibles, du nombre d’utilisateurs susceptibles de se connecter et de la taille des adhésions aux groupes.
+Cette optimisation s'inscrit dans une démarche plus globale de gestion des ressources système — au même titre que la [configuration du swap Linux](https://brandonvisca.com/guide-swap-linux-configuration-optimisation/) qui permet d'éviter les dysfonctionnements en cas de saturation mémoire.
 
-Cette optimisation s’inscrit dans une démarche plus globale de gestion des ressources système — au même titre que la [configuration du swap Linux](https://brandonvisca.com/guide-swap-linux-configuration-optimisation/) qui permet d’éviter les dysfonctionnements en cas de saturation mémoire.
+## Table des matières
 
-- - - - - -
+## Sécurisation de la mémoire partagée
 
-Sommaire :
+`/dev/shm` peut être utilisé dans une attaque contre un service en cours d'exécution, comme Apache ou Nginx. On va le monter avec des options restrictives.
 
-- [Durcissement de SSH – désactivation de la connexion en tant que root et changement de port](#durcissement-de-ssh-desactivation-de-la-connexion-en-tant-que-root-et-changement-de-port)
-- [Protéger su en limitant l’accès uniquement au groupe admin](#proteger-su-en-limitant-lacces-uniquement-au-groupe-admin)
-- [Désactivez la récursion DNS ouverte et supprimez les informations de version – Serveur DNS BIND](#desactivez-la-recursion-dns-ouverte-et-supprimez-les-informations-de-version-serveur-dns-bind)
-- [Prévenir l’usurpation d’IP](#prevenir-lusurpation-d-ip)
-- [Renforcez PHP pour la sécurité](#renforcez-php-pour-la-securite)
-- [Limitez la fuite d’informations Apache](#limitez-la-fuite-dinformations-apache)
-- [Analysez les journaux et bannissez les hôtes suspects – DenyHosts et Fail2Ban](#analysez-les-journaux-et-bannissez-les-hotes-suspects-deny-hosts-et-fail-2-ban)
-- [Conclusion](#%F0%9F%8E%AF-cas-pratique-securiser-une-stack-dauto-hebergement)
-  - [Le scénario : Tu auto-héberges tes services](#le-scenario-tu-auto-heberges-tes-services)
-  - [Le problème ? Sans les bonnes pratiques qu’on vient de voir, ton serveur devient une passoire](#le-probleme-sans-les-bonnes-pratiques-quon-vient-de-voir-ton-serveur-devient-une-passoire)
-  - [Application directe des sections précédentes](#application-directe-des-sections-precedentes)
-  - [Tu veux appliquer tout ça sur une vraie stack ?](#tu-veux-appliquer-tout-ca-sur-une-vraie-stack)
-  - [💡 Pourquoi ce cas pratique est important ?](#%F0%9F%92%A1-pourquoi-ce-cas-pratique-est-important)
-- [Conclusion](#conclusion)
-- [FAQ](#faq)
-  - [1. Qu’est-ce que le durcissement d’un serveur sous Linux?](#faq-question-1752438381428)
-  - [2. Comment sécuriser la mémoire partagée?](#faq-question-1752438401696)
-  - [3. Comment puis-je désactiver la connexion SSH en tant que root et modifier le port?](#faq-question-1752438453510)
-  - [4. Comment puis-je limiter l’accès à su uniquement au groupe admin?](#faq-question-1752438501119)
-  - [5. Qu’est-ce que DenyHosts et Fail2Ban?](#faq-question-1752438518488)
-
-
-Sécurisation de la mémoire partagée
-
-- /dev/shm peut être utilisé dans une attaque contre un service en cours d’exécution, tel que httpd. Modifiez /etc/fstab pour le rendre plus sécurisé.
-- Ouvrez une fenêtre de terminal et entrez ce qui suit :
+Ouvre `/etc/fstab` :
 
 ```bash
-sudo vi /etc/fstab
-
+sudo nano /etc/fstab
 ```
 
-tmpfs     /dev/shm     tmpfs     defaults,noexec,nosuid     0     0
+Ajoute ou modifie la ligne suivante :
 
+```text
+tmpfs     /dev/shm     tmpfs     defaults,noexec,nosuid,nodev     0     0
+```
 
-Durcissement de SSH – désactivation de la connexion en tant que root et changement de port
-
-- Le moyen le plus simple de sécuriser SSH est de désactiver la connexion en tant que root et de changer le port SSH pour quelque chose de différent du port standard 22.
-- Avant de désactiver la connexion root, créez un nouvel utilisateur SSH et assurez-vous que l’utilisateur appartient au groupe admin (voir l’étape 4. ci-dessous concernant le groupe admin).
-- Si vous changez le port SSH, ouvrez également le nouveau port que vous avez choisi sur le pare-feu et fermez le port 22.
-- Ouvrez une fenêtre de terminal et entrez :
+Recharge sans redémarrer :
 
 ```bash
-sudo vi /etc/ssh/sshd_config
-
+sudo mount -o remount /dev/shm
 ```
 
-Port <ENTREZ VOTRE PORT>
-Protocol 2
+## Durcissement de SSH – désactivation de la connexion en tant que root et changement de port
+
+Le moyen le plus efficace de sécuriser SSH : désactiver la connexion root, désactiver l'authentification par mot de passe (clés uniquement), et changer le port par défaut.
+
+> **Avant tout** : crée un utilisateur non-root avec accès sudo et configure ta clé SSH. Si tu perds l'accès SSH après modification, tu te retrouves bloqué.
+
+Édite la configuration SSH :
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+Modifie ou ajoute ces lignes :
+
+```text
+Port <TON_PORT>
 PermitRootLogin no
-DebianBanner no
-
-
-- Redémarrez le serveur SSH, ouvrez une fenêtre de terminal et entrez :
-
-```bash
-sudo /etc/init.d/ssh restart
-
+PasswordAuthentication no
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh/authorized_keys
+X11Forwarding no
+AllowUsers <TON_UTILISATEUR>
 ```
 
+> `Protocol 2` est désormais le seul protocole supporté depuis OpenSSH 7.0 (2015) — inutile de le spécifier.
+
+Applique les changements :
+
+```bash
+sudo systemctl restart ssh
+```
+
+### Protéger su en limitant l'accès uniquement au groupe admin
+
+```bash
 sudo groupadd admin
-sudo usermod -a -G admin <VOTRE NOM D'UTILISATEUR ADMIN>
+sudo usermod -a -G admin <TON_UTILISATEUR>
 sudo dpkg-statoverride --update --add root admin 4750 /bin/su
-
-
-Renforcer le réseau avec les paramètres sysctl
-==============================================
-
-- Le fichier /etc/sysctl.conf contient tous les paramètres sysctl.
-- Pour empêcher le routage source des paquets entrants et enregistrer les IP mal formées, entrez ce qui suit dans une fenêtre de terminal :
-
-```bash
-sudo vi /etc/sysctl.conf
 ```
 
-Ajoutez ensuite les lignes suivantes dans le fichier :
+## Renforcer le réseau avec les paramètres sysctl
+
+`/etc/sysctl.conf` contrôle les paramètres noyau. Ces réglages protègent contre l'usurpation d'IP, les attaques SYN flood et les redirections malveillantes.
+
+Ouvre le fichier :
+
+```bash
+sudo nano /etc/sysctl.conf
+```
+
+Ajoute les lignes suivantes :
 
 ```ini
 # Protection contre l'usurpation d'IP
@@ -123,7 +120,7 @@ net.ipv6.conf.all.accept_source_route = 0
 net.ipv4.conf.default.accept_source_route = 0
 net.ipv6.conf.default.accept_source_route = 0
 
-# Ignore send redirects
+# Ignorer les redirections envoyées
 net.ipv4.conf.all.send_redirects = 0
 net.ipv4.conf.default.send_redirects = 0
 
@@ -133,7 +130,7 @@ net.ipv4.tcp_max_syn_backlog = 2048
 net.ipv4.tcp_synack_retries = 2
 net.ipv4.tcp_syn_retries = 5
 
-# Enregistrer les Martiens
+# Enregistrer les paquets « martiens »
 net.ipv4.conf.all.log_martians = 1
 net.ipv4.icmp_ignore_bogus_error_responses = 1
 
@@ -142,177 +139,161 @@ net.ipv4.conf.all.accept_redirects = 0
 net.ipv6.conf.all.accept_redirects = 0
 net.ipv4.conf.default.accept_redirects = 0
 net.ipv6.conf.default.accept_redirects = 0
-
-# Ignorer les pings dirigés
-net.ipv4.icmp_echo_ignore_all = 1
 ```
 
-- Pour recharger sysctl avec les derniers changements, entrez :
+Applique sans redémarrer :
 
 ```bash
 sudo sysctl -p
-
 ```
 
-sudo vi /etc/bind/named.conf.options
+> `net.ipv4.icmp_echo_ignore_all = 1` (bloquer tous les pings) est intentionnellement omis : ça casse les diagnostics réseau sans apporter de sécurité réelle sur un serveur bien configuré avec un pare-feu.
 
+## Désactivez la récursion DNS ouverte et supprimez les informations de version – Serveur DNS BIND
 
-- Ajoutez ce qui suit à la section Options :
+Si tu fais tourner BIND9, désactive la récursion ouverte pour éviter d'être utilisé dans une attaque par amplification DNS.
 
 ```bash
+sudo nano /etc/bind/named.conf.options
+```
+
+Dans la section `options { ... }` :
+
+```text
 recursion no;
 version "Not Disclosed";
-
 ```
 
-sudo /etc/init.d/bind9 restart
-
-
-Prévenir l’usurpation d’IP
-
-- Ouvrez un terminal et entrez ce qui suit :
+Redémarre BIND :
 
 ```bash
-sudo vi /etc/host.conf
-
+sudo systemctl restart bind9
 ```
 
+## Prévenir l'usurpation d'IP
+
+```bash
+sudo nano /etc/host.conf
+```
+
+Ajoute :
+
+```text
 order bind,hosts
 nospoof on
-
-
-Renforcez PHP pour la sécurité
-
-- Modifiez le fichier php.ini :
-
-```bash
-sudo vi /etc/php5/apache2/php.ini
-
 ```
 
+## Renforcez PHP pour la sécurité
+
+> **Note :** le chemin varie selon la version PHP installée. Remplace `8.x` par ta version (`php -v`).
+
+```bash
+sudo nano /etc/php/8.x/apache2/php.ini
+```
+
+Modifie ou ajoute :
+
+```ini
 disable_functions = exec,system,shell_exec,passthru
-register_globals = Off
 expose_php = Off
 display_errors = Off
-track_errors = Off
 html_errors = Off
-magic_quotes_gpc = Off
-
-
-- Redémarrez le serveur Apache. Ouvrez un terminal et entrez ce qui suit :
-
-```bash
-sudo /etc/init.d/apache2 restart
-
 ```
 
-sudo vi /etc/apache2/conf.d/security
+> `register_globals`, `magic_quotes_gpc` et `track_errors` ont été supprimés respectivement en PHP 5.4, 5.4 et 8.0 — inutile de les définir sur une installation moderne.
 
-
-- Ajoutez ou modifiez les lignes suivantes et sauvegardez :
+Redémarre Apache :
 
 ```bash
+sudo systemctl restart apache2
+```
+
+## Limitez la fuite d'informations Apache
+
+```bash
+sudo nano /etc/apache2/conf-available/security.conf
+```
+
+Modifie ou ajoute :
+
+```apache
 ServerTokens Prod
 ServerSignature Off
 TraceEnable Off
 Header unset ETag
 FileETag None
-
 ```
 
-sudo /etc/init.d/apache2 restart
-
-
-Analysez les journaux et bannissez les hôtes suspects – DenyHosts et Fail2Ban
-
-- [DenyHosts](http://denyhosts.sourceforge.net/) est un programme python qui bloque automatiquement les attaques SSH en ajoutant des entrées à /etc/hosts.deny. DenyHosts informera également les administrateurs Linux sur les hôtes offensants, les utilisateurs attaqués et les connexions suspectes.
-- Ouvrez un terminal et entrez ce qui suit :
+Active la configuration si besoin et redémarre :
 
 ```bash
-sudo apt-get install denyhosts
-
+sudo a2enconf security
+sudo systemctl restart apache2
 ```
 
-sudo vi /etc/denyhosts.conf
+## Analysez les journaux et bannissez les hôtes suspects – Fail2Ban
 
+> **DenyHosts est obsolète** : plus maintenu depuis 2014 et incompatible avec systemd. Utilise uniquement **Fail2Ban**, qui remplit le même rôle avec une bien meilleure intégration système.
 
-- Changez les valeurs suivantes selon les besoins sur votre serveur :
+Installation :
 
 ```bash
-ADMIN_EMAIL = root@localhost
-SMTP_HOST = localhost
-SMTP_PORT = 25
-#SMTP_USERNAME=foo
-#SMTP_PASSWORD=bar
-SMTP_FROM = DenyHosts nobody@localhost
-#SYSLOG_REPORT=YES
-
+sudo apt install fail2ban
 ```
 
-sudo apt-get install fail2ban
-
-
-- Après l’installation, modifiez le fichier de configuration /etc/fail2ban/jail.local et créez les règles de filtre selon les besoins.
-- Pour modifier les paramètres, ouvrez une fenêtre de terminal et entrez :
+Crée une configuration locale — ne jamais modifier `jail.conf` directement, il est écrasé lors des mises à jour :
 
 ```bash
-sudo vi /etc/fail2ban/jail.conf
-
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+sudo nano /etc/fail2ban/jail.local
 ```
 
-[ssh]
+Configure la jail SSH (adapte le port si tu l'as changé) :
 
+```ini
+[sshd]
 enabled  = true
-port     = ssh
+port     = <TON_PORT_SSH>
 filter   = sshd
 logpath  = /var/log/auth.log
 maxretry = 3
-
-
-- Si vous avez choisi un port SSH non standard à l’étape 3, vous devez alors changer le paramètre de port dans fail2ban de ssh qui par défaut est le port 22, à votre nouveau numéro de port, par exemple si vous avez choisi 1234 alors port = 1234
-
-```bash
-[ssh]
-
-enabled  = true
-port     = <ENTREZ VOTRE NUMÉRO DE PORT SSH ICI>
-filter   = sshd
-logpath  = /var/log/auth.log
-maxretry = 3
-
+bantime  = 3600
+findtime = 600
 ```
 
-destemail = root@localhost
+Pour recevoir des alertes email en cas de bannissement :
 
-
-- et changez la ligne suivante de :
-
-```bash
-action = %(action_)s
-
-```
-
+```ini
+[DEFAULT]
+destemail = ton@email.com
 action = %(action_mwl)s
-
-
-- Vous pouvez également créer des filtres de règles pour les différents services que vous souhaiteriez que fail2ban surveille qui n’est pas fourni par défaut.
-
-```bash
-sudo vi /etc/fail2ban/jail.local
-
 ```
 
-sudo /etc/init.d/fail2ban restart
+Démarre et active au démarrage :
 
+```bash
+sudo systemctl enable --now fail2ban
+```
 
-- Vous pouvez également vérifier l’état avec.
+Vérifie l'état :
 
 ```bash
 sudo fail2ban-client status
-
+sudo fail2ban-client status sshd
 ```
+
+## Conclusion — sécurité de votre serveur Linux en pratique
+
+Ces mesures constituent une base solide pour tout serveur Linux exposé sur internet. L'ordre d'application compte : commence par SSH (tu ne veux pas te bloquer toi-même), puis sysctl, puis fail2ban.
+
+Quelques rappels essentiels :
+
+- Teste chaque changement SSH dans une **seconde session** avant de fermer la première
+- Configure un pare-feu (`ufw` ou `iptables`) en complément — ce guide ne le couvre pas
+- Mets à jour régulièrement : `sudo apt update && sudo apt upgrade`
+- Surveille les logs : `journalctl -u ssh`, `sudo fail2ban-client status sshd`
 
 ## Articles connexes
 
-- [Dépannage des problèmes de montage de matrices RAID (mdadm) ](/depannage-montage-partition-raid-linux-mode-secours/)
-- [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)
+- [Dépannage des problèmes de montage de matrices RAID (mdadm)](/depannage-montage-partition-raid-linux-mode-secours/)
+- [Content-Security-Policy : Protéger votre site sans bloquer vos scripts](/content-security-policy-nginx-sans-casser-site/)
