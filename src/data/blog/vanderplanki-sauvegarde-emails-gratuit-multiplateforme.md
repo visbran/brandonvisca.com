@@ -1,58 +1,38 @@
 ---
-title: "Vanderplanki : L'Outil Gratuit qui Va Révolutionner Vos Sauvegardes Email (Enfin du Multi-plateforme !)"
+title: "Vanderplanki : sauvegarde email gratuite et multi-plateforme (guide 2026)"
+description: Sauvegarde tes emails gratuitement avec Vanderplanki — chiffré, multi-plateforme, open source. Par les créateurs de MailStore. Guide 2026.
 pubDatetime: "2025-06-12T19:38:49+02:00"
+modDatetime: "2026-04-14T00:00:00+01:00"
 author: Brandon Visca
-description: "Vanderplanki : outil gratuit de sauvegarde d'emails multiplateforme par les créateurs de MailStore. Chiffré, open source. Guide complet d'installation."
 tags:
-  - macos
-  - windows
+  - vanderplanki
+  - sauvegarde-email
+  - backup
+  - open-source
   - linux
   - debutant
-  - guide
-  - backup
+featured: false
+draft: false
+focusKeyword: Vanderplanki
 ---
+> 💡 **TL;DR**
+> - Vanderplanki est un outil gratuit de sauvegarde d'emails, développé par les fondateurs de MailStore — contrairement à son prédécesseur, il tourne sur Windows, macOS **et** Linux
+> - Chiffrement Zero Knowledge, format d'archive ouvert, stockage local ou NAS : tes emails restent sous ton contrôle
+> - La version gratuite couvre 5 comptes email ; la version payante n'est pour l'instant disponible qu'en zone DACH (Allemagne, Autriche, Suisse)
 
+## Table des matières
 
-- [Vanderplanki : Quand les Pros de l’Archivage se Remettent au Boulot](#vanderplanki-quand-les-pros-de-l-archivage-se-remettent-au-boulot)
-  - [🔧 Les Fonctionnalités qui Font la Différence](#%F0%9F%94%A7-les-fonctionnalites-qui-font-la-difference)
-- [Installation et Configuration : Plus Simple qu’un Café du Matin 🍵](#installation-et-configuration-plus-simple-quun-cafe-du-matin)
-  - [Prérequis Système](#prerequis-systeme)
-  - [Étapes d’Installation](#etapes-d-installation)
-  - [Configuration Initiale](#configuration-initiale)
-  - [Configuration IMAP : L’Example Gmail](#configuration-imap-l-example-gmail)
-- [Version Gratuite vs Plus : Que Choisir ?](#version-gratuite-vs-plus-que-choisir)
-  - [Version Basic (Gratuite)](#version-basic-gratuite)
-  - [Version Plus (Payante – Non disponible en France)](#version-plus-payante-non-disponible-en-france)
-- [Bonnes Pratiques pour un Archivage Réussi](#bonnes-pratiques-pour-un-archivage-reussi)
-  - [Stratégie de Stockage 3-2-1](#strategie-de-stockage-3-2-1)
-  - [Optimisation des Performances](#optimisation-des-performances)
-  - [Automatisation avec Cron](#automatisation-avec-cron)
-- [Cas d’Usage : Quand Vanderplanki Devient Indispensable](#cas-d-usage-quand-vanderplanki-devient-indispensable)
-  - [Le Freelance Organisé](#le-freelance-organise)
-  - [L’Admin Système Prévoyant](#l-admin-systeme-prevoyant)
-  - [Le Paranoïaque de la Vie Privée (à Juste Titre)](#le-paranoiaque-de-la-vie-privee-a-juste-titre)
-- [Limites et Points d’Attention](#limites-et-points-d-attention)
-  - [Ce qui Pourrait Vous Gêner](#ce-qui-pourrait-vous-gener)
-  - [Comparaison avec MailStore Home](#comparaison-avec-mail-store-home)
-- [Dépannage : Les Galères Classiques](#depannage-les-galeres-classiques)
-  - [« Impossible de se connecter à IMAP »](#impossible-de-se-connecter-a-imap)
-  - [« Archive corrompu »](#archive-corrompu)
-  - [« Synchronisation lente »](#synchronisation-lente)
-- [Verdict : Une Alternative Crédible ?](#verdict-une-alternative-credible)
-- [Pour Aller Plus Loin](#pour-aller-plus-loin)
+Sauvegarder ses emails sans dépendre d'un cloud tiers, c'est le genre de truc qu'on remet à plus tard jusqu'au jour où ça foire. Vanderplanki règle le problème proprement : gratuit, multi-plateforme, chiffré. Et derrière, c'est les créateurs de MailStore qui ont remis le couvert.
 
+## Vanderplanki : quand les pros de l'archivage se remettent au boulot
 
-Vous cherchez une solution fiable pour sauvegarder vos emails sans dépendre d’un service cloud ? Vanderplanki pourrait bien être la perle rare que vous attendiez. Développé par les créateurs de MailStore, cet outil gratuit et open source promet de révolutionner la sauvegarde d’emails personnels.
+L'histoire commence par une ironie savoureuse : les fondateurs de MailStore, **la** référence en matière d'archivage d'emails, ont vendu leur bébé à Carbonite (racheté depuis par OpenText). Résultat ? Ils se retrouvent avec une envie furieuse de recréer l'outil parfait, mais cette fois **vraiment** multi-plateforme et gratuit.
 
-Vanderplanki : Quand les Pros de l’Archivage se Remettent au Boulot
+**Vanderplanki** (oui, ça sonne comme un village perdu au fin fond de la Scandinavie) est né de cette frustration créative. Et autant le dire tout de suite : c'est du sérieux.
 
-![Illustration 1 — Vanderplanki](mail-ijx5h0iafcbym.gif)L’histoire commence par une ironie savoureuse : les fondateurs de MailStore, **la** référence en matière d’archivage d’emails, ont vendu leur bébé à Carbonite (racheté depuis par OpenText). Résultat ? Ils se retrouvent avec une envie furieuse de recréer l’outil parfait, mais cette fois **vraiment** multi-plateforme et gratuit.
+### Les fonctionnalités qui font la différence
 
-**Vanderplanki** (oui, ça sonne comme un village perdu au fin fond de la Scandinavie) est né de cette frustration créative. Et autant le dire tout de suite : c’est du sérieux.
-
-### 🔧 **Les Fonctionnalités qui Font la Différence**
-
-**Sources d’emails supportées :**
+**Sources d'emails supportées :**
 
 - Comptes IMAP (Gmail, Yahoo, etc.)
 - Fichiers EML et MSG
@@ -61,8 +41,8 @@ Vanderplanki : Quand les Pros de l’Archivage se Remettent au Boulot
 **Sécurité de niveau enterprise :**
 
 - Chiffrement end-to-end avec principe Zero Knowledge
-- Hachage SHA-256 pour l’intégrité des données
-- Format d’archive ouvert et documenté
+- Hachage SHA-256 pour l'intégrité des données
+- Format d'archive ouvert et documenté
 
 **Stockage flexible :**
 
@@ -71,16 +51,14 @@ Vanderplanki : Quand les Pros de l’Archivage se Remettent au Boulot
 - Stockage cloud
 - Médias optiques
 
-Installation et Configuration : Plus Simple qu’un Café du Matin 🍵
+## Installation et configuration
 
-![Capture d'écran — Les Fonctionnalités qui Font la Différence](excited-yes-nicolas-cage-rrvzuoxldfe8m.gif)### Prérequis Système
+Vanderplanki tourne sur **Windows, macOS et Linux**. Pour Linux, il est distribué sous forme d'AppImage, ce qui simplifie grandement l'installation.
 
-Vanderplanki tourne sur **Windows, macOS et Linux**. Pour Linux, il est distribué sous forme d’AppImage, ce qui simplifie grandement l’installation.
-
-### Étapes d’Installation
+### Étapes d'installation (Linux)
 
 ```bash
-# Téléchargement (remplacez par la version actuelle)
+# Téléchargement (remplace par la version actuelle depuis le site officiel)
 wget https://releases.vanderplanki.com/vanderplanki-desktop-1.0.0.AppImage
 
 # Rendre exécutable
@@ -88,86 +66,87 @@ chmod +x vanderplanki-desktop-1.0.0.AppImage
 
 # Lancement
 ./vanderplanki-desktop-1.0.0.AppImage
-
 ```
 
+### Configuration IMAP — exemple Gmail
+
+```text
 Serveur IMAP : imap.gmail.com
-Port : 993
-Sécurité : SSL/TLS
-Nom d'utilisateur : votre.email@gmail.com
-Mot de passe : [Mot de passe d'application si 2FA activé]
+Port         : 993
+Sécurité     : SSL/TLS
+Identifiant  : ton.email@gmail.com
+Mot de passe : [mot de passe d'application si 2FA activé]
+```
 
+> 💡 **Astuce :** depuis juin 2024, Gmail active automatiquement l'accès IMAP. Plus besoin de bidouiller dans les paramètres.
 
-<strong>💡 À savoir :</strong> Depuis juin 2024, Gmail active automatiquement l'accès IMAP. Plus besoin de bidouiller dans les paramètres !
+## Version gratuite vs Plus : que choisir ?
 
-Version Gratuite vs Plus : Que Choisir ?
+### Version Basic (gratuite)
 
-### Version Basic (Gratuite)
-
-- Jusqu’à **5 comptes email**
+- Jusqu'à **5 comptes email**
 - Archivage de fichiers illimité
 - Tous les emplacements de stockage
 - Support communautaire
 
-### Version Plus (Payante – Non disponible en France)
+### Version Plus (payante — non disponible en France)
 
 - Comptes email illimités
 - Archives multiples
 - Connexions cloud étendues
 - Support prioritaire
 
-<strong>🇫🇷 Statut France :</strong> Actuellement, Vanderplanki n'est officiellement disponible qu'en Allemagne, Autriche et Suisse. La version payante n'est donc pas accessible depuis la France, mais la version gratuite fonctionne parfaitement.
+> ⚠️ **Attention :** Vanderplanki n'est officiellement disponible qu'en Allemagne, Autriche et Suisse. La version payante n'est donc pas accessible depuis la France, mais la version gratuite fonctionne parfaitement.
 
-Bonnes Pratiques pour un Archivage Réussi
+## Bonnes pratiques pour un archivage réussi
 
-### Stratégie de Stockage 3-2-1
+### Stratégie 3-2-1
 
-Appliquez la règle d’or de la sauvegarde :
+Applique la règle d'or de la sauvegarde :
 
-- **3** copies de vos données
+- **3** copies de tes données
 - **2** supports différents
 - **1** copie hors site
 
 ```bash
-# Example de configuration multi-emplacements
-/home/user/vanderplanki-archive/     # Local SSD
+# Exemple de configuration multi-emplacements
+/home/user/vanderplanki-archive/     # SSD local
 /mnt/nas/email-backup/               # NAS local
-/mnt/cloud/vanderplanki/             # Cloud mount
-
+/mnt/cloud/vanderplanki/             # Cloud monté localement
 ```
 
-## Synchronisation quotidienne à 2h du matin
+### Automatisation avec cron
+
+```bash
+# Synchronisation quotidienne à 2h du matin
 0 2 * * * /home/user/vanderplanki-desktop.AppImage --sync-all --headless
+```
 
+## Cas d'usage : quand Vanderplanki devient indispensable
 
-Cas d’Usage : Quand Vanderplanki Devient Indispensable
+**Le freelance organisé :** 15 ans d'emails clients éparpillés sur 4 comptes différents. Vanderplanki centralise tout avec une recherche rapide.
 
-### Le Freelance Organisé
+**L'admin système prévoyant :** avec la version gratuite, tu sauvegardes les comptes email critiques d'une PME. Le format ouvert garantit la pérennité.
 
-*« J’ai 15 ans d’emails clients éparpillés sur 4 comptes différents. Vanderplanki m’a permis de tout centraliser avec une recherche ultra-rapide. »*
+**Le paranoïaque de la vie privée (à juste titre) :** Zero Knowledge + stockage local = tes emails restent vraiment privés. Même les développeurs ne peuvent pas y accéder.
 
-### L’Admin Système Prévoyant
+## Limites et points d'attention
 
-*« Avec la version gratuite, je sauvegarde les comptes email critiques de notre PME. Le format ouvert me rassure pour la pérennité. »*
-
-### Le Paranoïaque de la Vie Privée (à Juste Titre)
-
-*« Zero Knowledge + stockage local = mes emails restent vraiment privés. Même les développeurs ne peuvent pas y accéder. »*
-
-Limites et Points d’Attention
-
-### Ce qui Pourrait Vous Gêner
-
-❌ **Pas de support Exchange direct** (contournement via IMAP possible)  
-❌ **Interface en anglais/allemand uniquement**  
-❌ **Pas de version web** (desktop only)  
+❌ **Pas de support Exchange direct** (contournement via IMAP possible)
+❌ **Interface en anglais/allemand uniquement**
+❌ **Pas de version web** (desktop only)
 ❌ **Géolocalisation limitée** (officiellement DACH uniquement)
 
-### Comparaison avec MailStore Home
+### Vanderplanki vs MailStore Home
 
-Fonctionnalité | Vanderplanki | MailStore Home | **Multi-plateforme** | ✅ Win/Mac/Linux | ❌ Windows uniquement | **Format ouvert** | ✅ Documenté | ❌ Propriétaire | **Usage commercial** | ✅ Autorisé | ❌ Payant | **Maturité** | ⚠️ Récent | ✅ 15+ ans | 
+| Fonctionnalité | Vanderplanki | MailStore Home |
+|---|---|---|
+| Multi-plateforme | ✅ Win/Mac/Linux | ❌ Windows uniquement |
+| Format ouvert | ✅ Documenté | ❌ Propriétaire |
+| Usage commercial | ✅ Autorisé | ❌ Payant |
+| Maturité | ⚠️ Récent | ✅ 15+ ans |
 
-Dépannage : Les Galères Classiques
+## Dépannage : les galères classiques
 
 ### « Impossible de se connecter à IMAP »
 
@@ -175,10 +154,28 @@ Dépannage : Les Galères Classiques
 # Vérification des ports
 telnet imap.gmail.com 993
 # Si ça fonctionne, c'est un problème d'authentification
-
 ```
 
-## Articles connexes
+Pour Gmail avec 2FA activé, génère un [mot de passe d'application](https://myaccount.google.com/apppasswords) dédié — le mot de passe principal ne fonctionnera pas.
 
-- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + m](/installer-localwp-wordpress-local/)
-- [Arc Browser abandonné : 7 alternatives épurées pour retrouve](/arc-browser-alternatives-navigateur-epure-2025/)
+### « Archive corrompue »
+
+Si Vanderplanki signale une archive corrompue, utilise l'outil de vérification intégré (menu `Archive > Vérifier l'intégrité`). Les hachages SHA-256 permettent de détecter toute altération.
+
+### « Synchronisation lente »
+
+Divise par compte email et réduis la plage de dates initiale. Une première synchronisation de 10 ans d'emails prend du temps. C'est normal.
+
+## Conclusion
+
+Vanderplanki est une alternative sérieuse à MailStore Home pour quiconque tourne sur macOS ou Linux. Le format d'archive ouvert et le chiffrement Zero Knowledge en font un choix défendable pour les paranoïaques de la souveraineté des données.
+
+L'outil est encore jeune, l'interface reste en anglais/allemand, et la disponibilité géographique est limitée. Mais ça fonctionne. Si tu jonglais jusqu'ici avec des scripts `mbsync` bricolés ou des exports MBOX à la main, c'est clairement un upgrade.
+
+Télécharge Vanderplanki sur [vanderplanki.com](https://vanderplanki.com) et commence avec tes 5 comptes gratuits.
+
+## Pour aller plus loin
+
+- [Import PST / Outlook 365 — guide complet](/import-pst-outlook-365-guide-complet/)
+- [Site officiel Vanderplanki](https://vanderplanki.com) — téléchargement et documentation
+- [Dépôt GitHub MailStore](https://github.com/mailstore) — contexte historique du projet
