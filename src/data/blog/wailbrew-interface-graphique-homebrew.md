@@ -88,7 +88,7 @@ WailBrew propose trois méthodes d'installation. Pour la plupart des gens : tél
 
 ### Téléchargement direct
 
-1. Va sur [wailbrew.com](https://wailbrew.com/)
+1. Va sur [wailbrew.app](https://wailbrew.app/)
 2. Clique sur **Download for macOS** (version Latest, ~15 Mo, macOS 11.0+)
 3. Ouvre le `.dmg` et glisse WailBrew dans `/Applications`
 4. Lance WailBrew
