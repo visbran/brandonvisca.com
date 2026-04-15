@@ -159,7 +159,9 @@ Les avantages concrets pour l’admin débutant
 
 Tu sais utiliser un smartphone ? Tu sais utiliser SnipeIT. L’interface est claire, les boutons font ce qu’on attend d’eux, et pas besoin d’un master en ergonomie pour s’y retrouver.
 
-![Capture d'écran — Interface intuitive](dashboard.webp)### Déploiement pas-à-pas
+![Capture d'écran — Interface intuitive](/images/dashboard.webp)
+
+### Déploiement pas-à-pas
 
 Pas besoin de révolutionner ton infrastructure du jour au lendemain :
 

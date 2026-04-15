@@ -34,12 +34,12 @@ Spoiler alert : si tu cherches juste à **gérer ton inventaire IT efficacement*
 
 ## GLPI et SnipeIT : présentation des combattants
 
-![](fight-wkdwa04krn58a.gif)
+![SnipeIT vs GLPI — le match](/images/fight-wkdwa04krn58a.gif)
 ### GLPI : le mastodonte français
 
-![](c230c830-02bf-46d1-b368-c36f5a8fa824.webp)**GLPI** (Gestion Libre de Parc Informatique) est une solution française open source créée en 2003. C’est la Ferrari de l’ITSM gratuit : helpdesk, inventaire, gestion des changements, base de connaissances, suivi financier… GLPI fait **tout**.
+![Interface GLPI](/images/c230c830-02bf-46d1-b368-c36f5a8fa824.webp)**GLPI** (Gestion Libre de Parc Informatique) est une solution française open source créée en 2003. C’est la Ferrari de l’ITSM gratuit : helpdesk, inventaire, gestion des changements, base de connaissances, suivi financier… GLPI fait **tout**.
 
-![](upload_74793f0d9d89da1ade280cb84c660a7f.gif)**Points clés :**
+![Points clés GLPI](/images/upload_74793f0d9d89da1ade280cb84c660a7f.gif)**Points clés :**
 
 - Suite ITSM complète (ticketing + inventaire + CMDB)
 - Auto-découverte réseau avec agents glpi
@@ -51,9 +51,9 @@ Spoiler alert : si tu cherches juste à **gérer ton inventaire IT efficacement*
 
 ### SnipeIT : le spécialiste américain
 
-![](header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour. ([GitHub officiel](https://github.com/snipe/snipe-it))
+![Interface SnipeIT](/images/header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour. ([GitHub officiel](https://github.com/snipe/snipe-it))
 
-![](dashboard.webp)**Points clés :**
+![Dashboard SnipeIT](/images/dashboard.webp)**Points clés :**
 
 - 100% focalisé sur la gestion d’actifs
 - Interface moderne et intuitive
