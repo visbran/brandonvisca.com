@@ -1,60 +1,48 @@
 ---
-title: "SnipeIT vs GLPI : David contre Goliath dans l'arène de l'ITSM"
+title: "SnipeIT vs GLPI : mon comparatif après 3 ans sur les deux outils"
+description: "SnipeIT vs GLPI 2026 : mon retour d'expérience sur 3 ans. Quel outil ITSM choisir pour ton inventaire IT ? Tableau comparatif inclus."
 pubDatetime: "2025-10-03T12:14:07+02:00"
+modDatetime: 2026-04-15 00:00:00+01:00
 author: Brandon Visca
-description: "Comparatif SnipeIT vs GLPI 2025 : quel ITSM choisir pour votre inventaire IT ? Analyse fonctionnalités, déploiement, courbe d'apprentissage et cas d'usage."
 tags:
-  - linux
   - sysadmin
-  - intermediaire
-  - snipeit
   - itsm
-  - guide
+  - snipeit
+  - comparatif
+  - inventaire-it
+  - intermediaire
+featured: false
+draft: false
+focusKeyword: snipeit vs glpi
+faqs:
+  - question: "Quelle est la différence entre SnipeIT et GLPI ?"
+    answer: "SnipeIT est un spécialiste de l'asset management (inventaire IT). GLPI est une suite ITSM complète avec helpdesk, ticketing et gestion de parc. SnipeIT est plus simple et rapide à déployer."
+  - question: "SnipeIT est-il vraiment gratuit ?"
+    answer: "Oui, SnipeIT est open source et gratuit à auto-héberger. Un plan cloud payant existe si tu ne veux pas gérer le serveur toi-même. J'ai le mien sur un VPS à 8€/mois."
+  - question: "Peut-on utiliser SnipeIT et GLPI ensemble ?"
+    answer: "Oui, c'est une configuration courante : SnipeIT pour l'inventaire matériel, GLPI ou un helpdesk dédié pour les tickets. L'API REST de SnipeIT facilite les intégrations."
+  - question: "GLPI peut-il remplacer complètement SnipeIT ?"
+    answer: "Techniquement oui, mais GLPI est surdimensionné pour du simple inventaire. Pour un suivi d'actifs précis avec codes QR et check-in/check-out fluide, SnipeIT est clairement supérieur."
 ---
+> 💡 **TL;DR** — SnipeIT gagne pour 90% des cas : installation en 45 min, interface moderne, codes QR natifs. GLPI vaut le coup uniquement si tu as besoin d’un helpdesk intégré et d’une CMDB complète. J’ai utilisé les deux pendant 3 ans — SnipeIT reste mon choix par défaut.
 
-
-  - [GLPI : le mastodonte français](#glpi-le-mastodonte-francais)
-  - [SnipeIT : le spécialiste américain](#snipe-it-le-specialiste-americain)
-- [Round 1 : Installation et prise en main](#round-1-installation-et-prise-en-main)
-  - [GLPI : la piste d’obstacles](#glpi-la-piste-dobstacles)
-  - [SnipeIT : en douceur](#snipe-it-en-douceur)
-- [Round 2 : Interface utilisateur](#round-2-interface-utilisateur)
-  - [GLPI : fonctionnel mais austère](#glpi-fonctionnel-mais-austere)
-  - [SnipeIT : la claque visuelle](#snipe-it-la-claque-visuelle)
-- [Round 3 : Gestion des actifs](#round-3-gestion-des-actifs)
-  - [GLPI : complet mais complexe](#glpi-complet-mais-complexe)
-  - [SnipeIT : le roi de l’asset tracking](#snipe-it-le-roi-de-lasset-tracking)
-- [Round 4 : Fonctionnalités avancées](#round-4-fonctionnalites-avancees)
-  - [GLPI : la machine de guerre](#glpi-la-machine-de-guerre)
-  - [SnipeIT : focus et efficacité](#snipe-it-focus-et-efficacite)
-- [Round 5 : Performance et communauté](#round-5-performance-et-communaute)
-  - [GLPI : la communauté française](#glpi-la-communaute-francaise)
-  - [SnipeIT : la simplicité américaine](#snipe-it-la-simplicite-americaine)
-- [Le verdict : lequel choisir selon ton contexte](#le-verdict-lequel-choisir-selon-ton-contexte)
-  - [Choisis GLPI si :](#choisis-glpi-si)
-  - [Choisis SnipeIT si :](#choisis-snipe-it-si)
-- [Tableau comparatif rapide](#tableau-comparatif-rapide)
-- [Mon avis perso (après avoir testé les deux)](#mon-avis-perso-apres-avoir-teste-les-deux)
-- [Où héberger tout ça ?](#ou-heberger-tout-ca)
-- [Conclusion](#conclusion)
-
+## Table des matières
 
 Excellente question. GLPI, c’est un peu le couteau suisse de l’ITSM : il fait tout, de l’inventaire au helpdesk en passant par la gestion des changements. SnipeIT, c’est plutôt le scalpel chirurgical : il fait une chose (l’asset management) mais il la fait parfaitement.
 
 Spoiler alert : si tu cherches juste à **gérer ton inventaire IT efficacement**, SnipeIT va te faire gagner un temps fou. Si tu veux monter une usine à gaz ITIL complète, GLPI est ton ami. Mais on va détailler tout ça.
 
-- - - - - -
+## GLPI et SnipeIT : présentation des combattants
 
-GLPI et SnipeIT : présentation des combattants
+![](fight-wkdwa04krn58a.gif)
+### GLPI : le mastodonte français
 
-![Illustration 1 — SnipeIT vs GLPI](fight-wkdwa04krn58a.gif)### GLPI : le mastodonte français
+![](c230c830-02bf-46d1-b368-c36f5a8fa824.webp)**GLPI** (Gestion Libre de Parc Informatique) est une solution française open source créée en 2003. C’est la Ferrari de l’ITSM gratuit : helpdesk, inventaire, gestion des changements, base de connaissances, suivi financier… GLPI fait **tout**.
 
-![Illustration 2 — SnipeIT vs GLPI](c230c830-02bf-46d1-b368-c36f5a8fa824.webp)**GLPI** (Gestion Libre de Parc Informatique) est une solution française open source créée en 2003. C’est la Ferrari de l’ITSM gratuit : helpdesk, inventaire, gestion des changements, base de connaissances, suivi financier… GLPI fait **tout**.
-
-![Illustration 3 — SnipeIT vs GLPI](upload_74793f0d9d89da1ade280cb84c660a7f.gif)**Points clés :**
+![](upload_74793f0d9d89da1ade280cb84c660a7f.gif)**Points clés :**
 
 - Suite ITSM complète (ticketing + inventaire + CMDB)
-- Auto-découverte réseau avec agents OCS Inventory
+- Auto-découverte réseau avec agents glpi
 - Base de connaissances intégrée
 - Gestion des SLA et des contrats
 - Communauté française massive
@@ -63,9 +51,9 @@ GLPI et SnipeIT : présentation des combattants
 
 ### SnipeIT : le spécialiste américain
 
-![Capture d'écran — SnipeIT le spécialiste américain](header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour.
+![](header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour. ([GitHub officiel](https://github.com/snipe/snipe-it))
 
-![Capture d'écran — SnipeIT le spécialiste américain](dashboard.webp)**Points clés :**
+![](dashboard.webp)**Points clés :**
 
 - 100% focalisé sur la gestion d’actifs
 - Interface moderne et intuitive
@@ -79,7 +67,7 @@ GLPI et SnipeIT : présentation des combattants
 
 - - - - - -
 
-Round 1 : Installation et prise en main
+## Round 1 : Installation et prise en main
 
 ### GLPI : la piste d’obstacles
 
@@ -95,7 +83,7 @@ L’installation de GLPI, c’est un peu comme monter un meuble IKEA sans notice
 
 **Difficulté :** 🔴🔴🔴 (Niveau intermédiaire-avancé)
 
-**Erreur fréquente :** Oublier de configurer les droits PHP correctement. Résultat : pages blanches et messages d’erreur cryptiques qui te font douter de ta vocation d’admin.
+⚠️ **Erreur classique** : Oublier de configurer les droits PHP correctement. Résultat : pages blanches et messages d’erreur cryptiques qui te font douter de ta vocation d’admin.
 
 ### SnipeIT : en douceur
 
@@ -115,7 +103,7 @@ Si tu as suivi mon guide sur [la sécurisation de ton serveur Linux](https://bra
 
 - - - - - -
 
-Round 2 : Interface utilisateur
+## Round 2 : Interface utilisateur
 
 ### GLPI : fonctionnel mais austère
 
@@ -155,7 +143,7 @@ SnipeIT, c’est Bootstrap et Laravel qui font l’amour. Interface propre, mode
 
 - - - - - -
 
-Round 3 : Gestion des actifs
+## Round 3 : Gestion des actifs
 
 C’est LE round décisif. On parle de l’inventaire IT, le cœur du métier.
 
@@ -195,13 +183,13 @@ SnipeIT a été **conçu dès le départ** pour une chose : suivre tes actifs de
 - Relations entre assets moins développées
 - Pas de gestion de contrats intégrée
 
-**À savoir :** L’absence de découverte réseau dans SnipeIT peut être compensée avec des scripts Nmap + imports CSV. C’est pas automatique, mais ça marche. Je te montrerai comment dans l’article 4 de cette série.
+💡 **Contournement** : L’absence de découverte réseau dans SnipeIT se compense avec des scripts Nmap + imports CSV. Pas automatique, mais ça marche. Je te montrerai comment dans l’article 4 de cette série.
 
 **Verdict Round 3 :** Match nul, mais pour des raisons différentes. GLPI gagne si tu veux une CMDB complète avec auto-découverte. SnipeIT gagne si tu veux juste tracker tes assets efficacement.
 
 - - - - - -
 
-Round 4 : Fonctionnalités avancées
+## Round 4 : Fonctionnalités avancées
 
 ### GLPI : la machine de guerre
 
@@ -235,7 +223,7 @@ SnipeIT reste sur son domaine : l’asset management. Mais il le fait avec des f
 
 - - - - - -
 
-Round 5 : Performance et communauté
+## Round 5 : Performance et communauté
 
 ### GLPI : la communauté française
 
@@ -271,7 +259,7 @@ Round 5 : Performance et communauté
 
 - - - - - -
 
-Le verdict : lequel choisir selon ton contexte
+## Le verdict : lequel choisir selon ton contexte
 
 ### Choisis GLPI si :
 
@@ -297,8 +285,6 @@ Le verdict : lequel choisir selon ton contexte
 
 - - - - - -
 
-Tableau comparatif rapide
-
 ## Tableau comparatif rapide
 
 | Critère | GLPI | SnipeIT |
@@ -313,7 +299,7 @@ Tableau comparatif rapide
 | **Courbe d'apprentissage** | 🔴 Raide | 🟢 Douce |
 | **Performance** | 🟡 Variable | 🟢 Excellente |
 | **Communauté FR** | 🟢 Énorme | 🟡 Limitée |
-Mon avis perso (après avoir testé les deux)
+## Mon avis perso (après avoir testé les deux)
 
 J’ai utilisé GLPI pendant 2 ans en entreprise et SnipeIT depuis 1 an pour mon homelab et quelques clients.
 
@@ -327,7 +313,7 @@ Si tu as une grosse structure avec une vraie équipe IT, GLPI peut avoir du sens
 
 - - - - - -
 
-Où héberger tout ça ?
+## Où héberger tout ça ?
 
 Que tu choisisses GLPI ou SnipeIT, tu vas avoir besoin d’un hébergement correct.
 
@@ -345,7 +331,7 @@ GLPI consomme plus de ressources, donc prévois un VPS un peu plus costaud.
 
 - - - - - -
 
-Conclusion
+## Conclusion
 
 **SnipeIT vs GLPI**, c’est pas un combat. Ce sont deux outils différents pour deux besoins différents.
 
@@ -358,7 +344,8 @@ Tu es convaincu par SnipeIT ? Dans le prochain article de cette série, je te mo
 
 En attendant, si tu veux préparer ton serveur, fais un tour sur mon guide [installation d’Oh My Zsh avec Powerlevel10k](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/). Parce qu’un bon admin, ça commence par un terminal qui envoie du lourd.
 
-## Articles connexes
+## Pour aller plus loin
 
-- [ITSM : pourquoi votre Excel va vous rendre fou](/itsm-snipeit-alternative-excel-inventaire-it/)
-- [Installation SnipeIT Ubuntu : guide complet](/installation-snipeit-ubuntu-guide-complet/)
+- [SnipeIT vs Excel : pourquoi migrer ton inventaire IT](/itsm-snipeit-alternative-excel-inventaire-it/)
+- [Installation SnipeIT sur Ubuntu : guide complet](/installation-snipeit-ubuntu-guide-complet/)
+- [Automatiser l’inventaire Windows avec SnipeAgent](/snipeagent-automatiser-inventaire-windows-snipeit/)
