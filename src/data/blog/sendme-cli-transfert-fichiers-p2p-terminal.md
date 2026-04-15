@@ -1,7 +1,8 @@
 ---
 title: "Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)"
-description: "Sendme CLI : transfert P2P sécurisé en 2 commandes. NAT traversal automatique, aucun serveur requis. Alternative moderne à scp. Guide complet 2025."
+description: "Sendme CLI : transfert P2P sécurisé en 2 commandes. NAT traversal automatique, aucun serveur requis. Alternative moderne à scp. Guide complet 2026."
 pubDatetime: "2025-12-09T21:14:00+01:00"
+modDatetime: "2026-04-15T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - homelab
@@ -13,21 +14,22 @@ featured: true
 draft: false
 focusKeyword: sendme cli
 ---
-## TL:DR;
+> 💡 **TL;DR**
+> - Sendme CLI envoie des fichiers P2P en 2 commandes, sans IP, sans config SSH, sans serveur
+> - NAT traversal automatique via la stack Iroh (QUIC + TLS 1.3 + Blake3) : ça marche même derrière un firewall d'entreprise
+> - Compatible Linux, macOS, Windows, interopérable avec Alt-SendMe GUI
 
-Tu galères avec `scp` qui te demande des IP que tu ne connais pas ? Tu es obligé de passer par WeTransfer même pour un fichier de 10 Mo ? **Sendme CLI** va devenir ton meilleur ami.
+Tu galères avec `scp` qui te demande des IP que tu ne connais pas ? Tu es obligé de passer par WeTransfer même pour un fichier de 10 Mo ? **Sendme CLI** va changer ça.
 
-Cet outil développé par l'équipe **Iroh** (n0-computer) transforme le transfert de fichiers en ligne de commande en quelque chose d'aussi simple qu'un copier-coller. Pas de config réseau, pas d'IP à retenir, pas de serveur à monter. Juste deux commandes, et hop, tes fichiers passent de machine à machine.
+Juste deux commandes, et tes fichiers passent de machine à machine. Pas de config réseau, pas d'IP à retenir, pas de serveur à monter.
 
-Spoiler : ça marche même derrière un NAT strict ou un firewall d'entreprise.
-
-## Table of content
+## Table des matières
 
 ---
 
 ## 🎯 C'est Quoi Sendme CLI ?
 
-**Sendme CLI** est un outil en ligne de commande qui permet d'envoyer et recevoir des fichiers directement entre deux machines, sans intermédiaire. Il utilise la technologie **Iroh** (QUIC + TLS 1.3 + Blake3) pour créer des connexions peer-to-peer sécurisées avec traversée NAT automatique.
+**Sendme CLI** envoie et reçoit des fichiers directement entre deux machines, sans intermédiaire. Sous le capot, la technologie **Iroh** (QUIC + TLS 1.3 + Blake3) s'occupe des connexions peer-to-peer sécurisées avec traversée NAT automatique.
 
 **En une phrase :**  
 C'est comme `scp`, mais sans avoir besoin de connaître l'IP de destination, de configurer SSH, ou de passer par un serveur intermédiaire.
@@ -52,6 +54,8 @@ Sendme est développé par **n0-computer**, l'équipe derrière la stack **Iroh*
 ## 🚀 Installation de Sendme CLI
 
 ### Option 1 : Script d'installation rapide (Linux/macOS)
+
+⚠️ **Avant de piper curl dans bash** : inspecte le script sur [iroh.computer/sendme.sh](https://iroh.computer/sendme.sh) si tu es en prod. En homelab ou sur ta machine perso, tu peux y aller.
 
 ```bash
 curl -fsSL https://iroh.computer/sendme.sh | bash
@@ -108,7 +112,7 @@ sendme send ~/Documents/rapport.pdf
 
 **Résultat :**
 
-```
+```text
 content added
 run sendme receive blobQmXYZ...abc123
 ```
@@ -127,7 +131,7 @@ sendme receive blobQmXYZ...abc123
 
 **Résultat :**
 
-```
+```text
 fetched to rapport.pdf
 ```
 
@@ -251,7 +255,7 @@ sendme send fichier.zip --relay https://mon-relay.example.com
 
 **Comparaison avec rsync :**
 
-```
+```bash
 rsync -avz fichier.tar.gz user@1.2.3.4:/tmp/
 # Nécessite : config SSH, IP publique, port forwarding
 
@@ -346,7 +350,7 @@ sendme receive blobQmXYZ... | gunzip | docker load
 
 ### Exemple : Backup homelab
 
-Tu veux sauvegarder tes configs Docker Compose vers une machine externe ? Sendme CLI s'intègre parfaitement dans tes scripts d'automatisation.
+Dans mon homelab, j'utilise exactement ce pattern pour envoyer des archives de config vers un VPS Oracle. Ça tourne dans un cron, zéro intervention manuelle.
 
 ```bash
 #!/bin/bash
@@ -381,52 +385,19 @@ curl -X POST https://ntfy.sh/homelab-backup \
 
 ---
 
-## 📚 Pour Aller Plus Loin
-
-### Articles liés sur brandonvisca.com
-
-1. **[Alt-SendMe : Interface graphique pour Iroh](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/)**  
-    Si tu préfères une GUI desktop, Alt-SendMe utilise la même technologie Iroh.
-    
-2. **[Auto-hébergement : Guide complet 2025](https://brandonvisca.com/auto-hebergement-guide-complet-2025/)**  
-    Sendme CLI s'intègre parfaitement dans un setup homelab pour les backups.
-    
-3. **[Indépendance numérique : Le guide ultime](https://brandonvisca.com/independance-numerique-2025-guide-complet/)**  
-    Sendme CLI fait partie des outils pour se passer de WeTransfer et Google Drive.
-    
-4. **[Docker pour les nuls : 10 services essentiels](https://brandonvisca.com/docker-debutant-services-auto-heberger/)**  
-    Utilise Sendme CLI pour transférer des images Docker entre machines.
-    
-
-### Ressources officielles
-
-- **Documentation Iroh** : [iroh.computer/docs](https://iroh.computer/docs)
-- **GitHub Sendme** : [github.com/n0-computer/sendme](https://github.com/n0-computer/sendme)
-- **Discord Iroh** : Communauté active pour support technique
-
----
-
 ## 🎯 Conclusion : Sendme CLI, Le scp du Futur
 
 **Sendme CLI** résout un vrai problème : transférer des fichiers rapidement en ligne de commande sans se prendre la tête avec des configs réseau ou des serveurs intermédiaires.
 
-**Ce qu'on retient :**
-
-- ✅ Installation en une commande
-- ✅ Transfert P2P automatique (même derrière NAT)
-- ✅ Chiffrement TLS 1.3 et vérification Blake3
-- ✅ Reprise automatique et streaming
-- ✅ Compatible avec Alt-SendMe GUI
-
-**Mon avis perso :**  
 Sendme CLI devrait être installé par défaut sur toutes les machines Linux/macOS. C'est tellement plus simple que `scp` pour les transferts ponctuels, et tellement plus rapide que passer par WeTransfer ou un serveur FTP.
 
 **Prochaine étape :**  
-Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace vos pratiques "on s'envoie ça sur Google Drive" par un simple ticket Sendme.
+Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, essaye [Alt-SendMe](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) pour avoir la même puissance avec une interface graphique.
 
-Et si le terminal te fait peur, essaye [Alt-SendMe](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) pour avoir la même puissance avec une interface graphique.
+---
 
-## Articles connexes
+## Pour aller plus loin
 
-- [Vanderplanki : L'Outil Gratuit qui Va Révolutionner Vos Sauv](/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/)
-- [Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement](/nebula-sync-pihole-v6-installation-docker-guide/)
+- [Alt-SendMe : interface graphique pour Iroh](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) – même techno, pour ceux qui fuient le terminal
+- [Documentation Iroh](https://iroh.computer/docs) – la stack sous Sendme CLI
+- [GitHub Sendme](https://github.com/n0-computer/sendme) – releases, issues, code source
