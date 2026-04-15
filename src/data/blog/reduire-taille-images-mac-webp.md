@@ -101,6 +101,10 @@ cwebp -version
    - Le flux reçoit : **fichiers image**
    - Dans : **Finder**
 
+![Nouvelle action rapide dans Automator](nouvelle_action_rapide_automator.webp)
+
+![Réglage du flux de travail pour la conversion WebP](reglage_automatisation_convertion_image_webp.webp)
+
 ### Le script à coller
 
 Glisse **« Exécuter un script Shell »** et colle ce code :
