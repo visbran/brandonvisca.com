@@ -1,71 +1,36 @@
 ---
-title: Comment réduire la taille de vos images de 70% sur Mac (méthode automatique)
+title: "Compresser images Mac en WebP : méthode qui économise 70% d'espace"
+description: "Compresser images Mac en WebP avec cwebp et Automator. Méthode gratuite, clic droit dans le Finder, gain 50 à 80% de taille. Tuto étape par étape."
 pubDatetime: "2025-06-12T20:41:20+02:00"
+modDatetime: "2026-04-15T00:00:00+01:00"
 author: Brandon Visca
-description: Réduisez vos images de 50 à 80% sans perte de qualité sur Mac. Méthode automatique avec WebP et Automator. Tutoriel gratuit étape par étape.
 tags:
+  - webp
   - macos
-  - productivite
-  - debutant
   - homebrew
+  - automator
   - guide
-  - images
+  - debutant
+featured: false
+draft: false
+focusKeyword: compresser images mac
 ---
+> 💡 **TL;DR**
+> - `cwebp` via Homebrew + une action Automator = compression WebP en clic droit dans le Finder
+> - Gain moyen de 50 à 80% sur JPEG et PNG, sans perte de qualité visible
+> - Installation en 10 minutes, zéro logiciel payant
 
+Tu as 200 photos de vacances à 8 Mo chacune. Résultat : 1,6 Go d'espace bouffé, des temps de chargement interminables et un iCloud qui sature.
 
-- [📊 Pourquoi vos images sont-elles si lourdes ?](#%F0%9F%93%8A-pourquoi-vos-images-sont-elles-si-lourdes)
-  - [Le problème technique expliqué simplement](#le-probleme-technique-explique-simplement)
-  - [Comparaison concrète](#comparaison-concrete)
-- [🛠️ La solution : automatiser la compression WebP](#%F0%9F%9B%A0%EF%B8%8F-la-solution-automatiser-la-compression-web-p)
-  - [Ce qu’on va construire ensemble](#ce-quon-va-construire-ensemble)
-- [🚀 Étape 1 : Installer le compresseur WebP (2 minutes)](#%F0%9F%9A%80-etape-1-installer-le-compresseur-web-p-2-minutes)
-  - [Prérequis : Homebrew](#prerequis-homebrew)
-  - [Installation de l’outil de compression](#installation-de-loutil-de-compression)
-  - [Vérification](#verification)
-- [⚙️ Étape 2 : Créer l’action automatique (5 minutes)](#%E2%9A%99%EF%B8%8F-etape-2-creer-laction-automatique-5-minutes-1)
-  - [Lancement d’Automator](#lancement-d-automator)
-  - [Le script (votre version) :](#le-script-votre-version)
-  - [Sauvegarde](#sauvegarde)
-  - [Sauvegarde](#sauvegarde-1)
-- [📁 Étape 3 : Test en conditions réelles (2 minutes)](#%F0%9F%93%81-etape-3-test-en-conditions-reelles-2-minutes)
-  - [Premier test](#premier-test)
-- [🎛️ Optimisations selon vos besoins](#%F0%9F%8E%9B%EF%B8%8F-optimisations-selon-vos-besoins)
-  - [Ajuster la compression par usage](#ajuster-la-compression-par-usage)
-  - [Mode « compression extrême »](#mode-compression-extreme)
-- [🚨 Troubleshooting : problèmes courants](#%F0%9F%9A%A8-troubleshooting-problemes-courants)
-  - [❌ « cwebp non trouvé »](#%E2%9D%8C-cwebp-non-trouve)
-  - [❌ « Permission denied »](#%E2%9D%8C-permission-denied)
-  - [❌ Images corrompues/inutilisables](#%E2%9D%8C-images-corrompues-inutilisables)
-- [📈 Impact concret sur vos projets](#%F0%9F%93%88-impact-concret-sur-vos-projets)
-  - [Site web / Blog](#site-web-blog)
-  - [Stockage iCloud/Google](#stockage-i-cloud-google)
-  - [Envoi par email](#envoi-par-email)
-- [🎯 Aller plus loin : workflow professionnel](#%F0%9F%8E%AF-aller-plus-loin-workflow-professionnel)
-  - [Automatisation avancée](#automatisation-avancee)
-  - [Intégration avec vos outils](#integration-avec-vos-outils)
-  - [Monitoring des gains](#monitoring-des-gains)
-- [💡 Ce qu’il faut retenir](#%F0%9F%92%A1-ce-quil-faut-retenir)
-  - [Les gains concrets](#les-gains-concrets)
-  - [Utilisation optimale](#utilisation-optimale)
+La réalité : 90% de tes images sont **sur-dimensionnées** pour leur usage réel. Une photo Instagram n'a pas besoin de peser 5 Mo, une image de blog peut faire 200 Ko au lieu de 2 Mo.
 
+**La solution :** le format WebP divise le poids de tes images par 2 à 5 sans aucune différence visible à l'œil nu. macOS ne sait pas le faire nativement, mais `cwebp` + Automator, si.
 
-![Illustration 1 — Comment réduire la taille de vos images de 70% sur Mac (méth](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjA3MTRvY3J2ajVtbm1wdWd1OHo3d2lrMHh0OGMycjQzeHZjYjZlYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZwQ2fuoNI9baEhSh9O/giphy.gif)
+## Table des matières
 
-**Le scénario classique :** Vous avez 200 photos de vacances à 8 Mo chacune. Résultat ? 1,6 Go d’espace bouffé, des temps de chargement interminables et un iCloud qui sature.
+## Pourquoi tes images sont-elles si lourdes ?
 
-**La réalité :** 90% de vos images sont **sur-dimensionnées** pour leur usage réel. Une photo Instagram n’a pas besoin de peser 5 Mo, une image de blog peut faire 200 Ko au lieu de 2 Mo.
-
-**La solution :** Le format WebP peut **diviser le poids de vos images par 2 à 5** sans aucune différence visible à l’œil nu. Le problème ? macOS ne sait pas le faire nativement.
-
-**Promesse de cet article :** En 10 minutes, vous automatiserez la compression d’images sur votre Mac. Plus jamais de galère avec des fichiers trop lourds.
-
-- - - - - -
-
-📊 Pourquoi vos images sont-elles si lourdes ?
-
-![Illustration 2 — Comment réduire la taille de vos images de 70% sur Mac (méth](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmd0Ymx0b2FvaHRoem9vZDR6eXdzaDg2ZHJvNGNiODRxeDhwNmlqZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2uwZ4xi75JhxZYeyQB/giphy.gif)
-
-### **Le problème technique expliqué simplement**
+### Le problème technique expliqué simplement
 
 **JPEG/PNG = formats anciens :**
 
@@ -80,175 +45,176 @@ tags:
 - Supporté par tous les navigateurs modernes
 - **Même qualité visuelle**
 
-### **Comparaison concrète**
+### Comparaison concrète
 
-Format | Taille fichier | Temps de chargement | 
-:--: | :--: | :--: 
-JPEG original | 2,4 Mo | 8 secondes | 
-PNG optimisé | 1,8 Mo | 6 secondes | 
-**WebP** | **0,7 Mo** | **2 secondes** | 
+| Format | Taille fichier | Temps de chargement |
+|:--:|:--:|:--:|
+| JPEG original | 2,4 Mo | 8 secondes |
+| PNG optimisé | 1,8 Mo | 6 secondes |
+| **WebP** | **0,7 Mo** | **2 secondes** |
 
-> **💡 Impact réel :** Sur un site de 50 images, vous passez de 120 Mo à 35 Mo. Vos visiteurs vous remercieront !
+> 💡 **Impact réel :** Sur un site de 50 images, tu passes de 120 Mo à 35 Mo. Tes visiteurs te remercieront.
 
-- - - - - -
+---
 
-🛠️ La solution : automatiser la compression WebP
+## Compresser images Mac en WebP : la méthode automatique
 
-![Capture d'écran — Comparaison concrète](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29xZTFweDU2Zmd3dWpicGN5aXo3YjZwN2dmZXI3ZDMwcXlrbWtmMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5z0cCCGooBQUtejM4v/giphy.gif)
+Voici ce qu'on va construire :
 
-### **Ce qu’on va construire ensemble**
+1. **Installation de `cwebp`** (2 minutes)
+2. **Création d'une action « clic droit »** dans le Finder via Automator (5 minutes)
+3. **Test sur tes vraies images** (2 minutes)
 
-1. **Installation d’un compresseur professionnel** (2 minutes)
-2. **Création d’une action « clic droit »** dans le Finder (5 minutes)
-3. **Test sur vos vraies images** (2 minutes)
+**Résultat final :** tu sélectionnes des images → clic droit → conversion WebP automatique.
 
-**Résultat final :** Sélection d’images → Clic droit → Magie ✨
+---
 
-- - - - - -
+## Étape 1 : Installer cwebp via Homebrew
 
-🚀 Étape 1 : Installer le compresseur WebP (2 minutes)
+### Prérequis : Homebrew
 
-### **Prérequis : Homebrew**
+Si tu n'as pas encore Homebrew sur ton Mac, commence par 👉 **[ce guide complet d'installation d'Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)**.
 
-Si vous n’avez pas encore Homebrew installé sur votre Mac, suivez d’abord 👉 **[ce guide complet d’installation d’Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)**.
-
-Une fois Homebrew en place, revenez ici et continuez.
-
-### **Installation de l’outil de compression**
+### Installation
 
 ```bash
-# Dans le Terminal
 brew install webp
-
 ```
 
+Vérifie que ça s'est bien passé :
+
+```bash
 cwebp -version
-## Devrait afficher : 1.3.2 (ou plus récent)
+# Devrait afficher : 1.3.2 (ou plus récent)
+```
 
+> 🧠 **Pourquoi `cwebp` ?** C'est l'outil **officiel de Google** pour WebP. Plus fiable et performant que les alternatives tierces ou les apps payantes.
 
-> **🧠 Pourquoi cwebp ?** C’est l’outil **officiel de Google** pour WebP. Plus fiable et performant que les alternatives tierces ou les apps payantes.
+---
 
-- - - - - -
+## Étape 2 : Créer l'action Automator
 
-⚙️ Étape 2 : Créer l’action automatique (5 minutes)
-
-### **Lancement d’Automator**
+### Lancement d'Automator
 
 1. **Applications** → **Automator** → **Nouvelle action rapide**
-2. **Configuration en haut à droite *« Le processus reçoit l’élément actuel »* :**
-  - Le flux reçoit : **fichiers image**
-  - Dans : **Finder**
+2. **Configuration** (en haut à droite) :
+   - Le flux reçoit : **fichiers image**
+   - Dans : **Finder**
 
-![Capture d'écran — Lancement dAutomator](nouvelle_action_rapide_automator.webp)![Capture d'écran — Lancement dAutomator](reglage_automatisation_convertion_image_webp.webp)### **Le script (votre version) :**
+### Le script à coller
 
-Glissez **« Exécuter un script Shell »** et collez ce code :
+Glisse **« Exécuter un script Shell »** et colle ce code :
 
 ```bash
 for FILE in "$@"
 do
   /opt/homebrew/bin/cwebp -q 85 "$FILE" -o "${FILE%.*}.webp"
 done
-
 ```
 
-## Photos réseaux sociaux (compression agressive)
+⚠️ **Si ton Mac est Intel** (pas Apple Silicon), le chemin de `cwebp` est différent : remplace `/opt/homebrew/bin/cwebp` par `/usr/local/bin/cwebp`. Vérifie avec `which cwebp` dans le Terminal.
+
+### Sauvegarde
+
+Sauvegarde l'action avec un nom parlant, par exemple **"Convertir en WebP"**. Elle apparaîtra dans le menu clic droit du Finder sur toutes tes images.
+
+---
+
+## Étape 3 : Tester sur tes images
+
+Sélectionne une ou plusieurs images dans le Finder → clic droit → **Actions rapides** → **Convertir en WebP**.
+
+Les fichiers `.webp` sont créés dans le même dossier, les originaux sont conservés. À toi de supprimer les originaux une fois satisfait du résultat.
+
+---
+
+## Ajuster la qualité selon l'usage
+
+Le paramètre `-q` contrôle le compromis qualité/poids :
+
+```bash
+# Photos réseaux sociaux (compression agressive)
 -q 60    # Gain: ~80%, qualité acceptable
 
-## Images de blog/e-commerce (équilibré)  
+# Images de blog/e-commerce (équilibré)
 -q 85    # Gain: ~70%, qualité excellente
 
-## Portfolio/galerie pro (compression légère)
+# Portfolio/galerie pro (compression légère)
 -q 95    # Gain: ~40%, qualité maximale
-
-
-### **Mode « compression extrême »**
-
-Pour maximiser les gains, ajoutez ces options :
-
-```bash
-# Remplacez la ligne de compression par :
-"$CWEBP_PATH" -q 75 -m 6 -sharp_yuv -af "$FILE" -o "$OUTPUT"
-
-# -m 6 : méthode de compression max
-# -sharp_yuv : améliore les détails  
-# -af : filtre anti-aliasing
-
-which cwebp
-# Si rien → pas installé
-# Si chemin → modifiez le script
-
 ```
 
+### Mode compression extrême
 
-**Solution :**
+Pour maximiser les gains, remplace la ligne de compression dans le script par :
 
 ```bash
-# Réinstallation propre
+/opt/homebrew/bin/cwebp -q 75 -m 6 -sharp_yuv -af "$FILE" -o "${FILE%.*}.webp"
+# -m 6 : méthode de compression maximale
+# -sharp_yuv : améliore les détails fins
+# -af : filtre anti-aliasing
+```
+
+---
+
+## Dépannage
+
+### `cwebp` non trouvé dans Automator
+
+Automator n'hérite pas du PATH du Terminal. Utilise le chemin absolu :
+
+```bash
+which cwebp
+# Copie le chemin affiché et remplace dans le script
+```
+
+### Réinstallation propre
+
+```bash
 brew uninstall webp
 brew install webp
-
 ```
 
-## Vérifier une image WebP
-cwebp -info mon_image.webp
+---
 
+## Impact concret sur tes projets
 
-- - - - - -
-
-📈 Impact concret sur vos projets
-
-### **Site web / Blog**
+### Site web / Blog
 
 **Avant :** 50 images × 2 Mo = 100 Mo  
 **Après :** 50 images × 0,6 Mo = 30 Mo  
-**Gain :** Site 3× plus rapide, meilleur SEO Google
+**Gain :** site 3× plus rapide, meilleur score Google PageSpeed
 
-### **Stockage iCloud/Google**
+### Stockage iCloud/Google
 
 **Avant :** 1000 photos = 8 Go  
 **Après :** 1000 photos = 2,4 Go  
-**Gain :** 5,6 Go récupérés = 2 mois d’iCloud gratuits
+**Gain :** 5,6 Go récupérés
 
-### **Envoi par email**
+### Envoi par email
 
 **Avant :** 1 photo = pièce jointe refusée  
 **Après :** 5 photos = envoi instantané
 
-- - - - - -
-
-🎯 Aller plus loin : workflow professionnel
-
-### **Automatisation avancée**
+### Batch processing d'un dossier entier
 
 ```bash
-# Script de batch processing d'un dossier entier
-find ~/Pictures -name "*.jpg" -exec cwebp -q 85 {} -o {}.webp \;
-
+find ~/Pictures -name "*.jpg" -exec /opt/homebrew/bin/cwebp -q 85 {} -o {}.webp \;
 ```
 
-## Script pour calculer l'espace économisé total
-du -sh ~/Pictures/**/*.{jpg,png} ~/Pictures/**/*.webp
+---
 
+## Conclusion
 
-- - - - - -
+`cwebp` + Automator, c'est la combinaison la plus simple pour arrêter de subir des images trop lourdes sur Mac. Zéro abonnement, zéro interface complexe. Juste un clic droit et c'est réglé.
 
-💡 Ce qu’il faut retenir
+Dans mon workflow, j'applique ce script sur toutes les captures d'écran avant de les publier sur le blog. Ça prend deux secondes et ça fait souvent passer des fichiers de 800 Ko à 150 Ko.
 
-### **Les gains concrets**
+**Prochaine étape :** si tu veux aller plus loin dans l'automatisation macOS, jette un œil à Raycast. Les workflows s'enchaînent naturellement avec ce genre d'outil.
 
-✅ **70% d’espace disque économisé** en moyenne  
-✅ **Sites web 3× plus rapides** (chargement images)  
-✅ **Processus 100% automatisé** (plus de manipulation manuelle)  
-✅ **Qualité visuelle identique** (imperceptible à l’œil nu)  
-✅ **Compatible tous navigateurs** modernes
+---
 
-### **Utilisation optimale**
+## Pour aller plus loin
 
-- **Photos réseaux sociaux :** -q 60 (gain max)
-- **Images e-commerce :** -q 85 (équilibre parfait)
-- **Portfolio pro :** -q 95 (qualité premium)
-
-## Articles connexes
-
-- [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
-- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Co](/appcleaner-mac-alternative-gratuite-cleanmymac/)
+- [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) – prérequis de ce tuto
+- [Documentation officielle cwebp](https://developers.google.com/speed/webp/docs/cwebp) – toutes les options de compression
+- [Raycast : outil de productivité ultime sur macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/) – pour aller encore plus loin dans l'automatisation
