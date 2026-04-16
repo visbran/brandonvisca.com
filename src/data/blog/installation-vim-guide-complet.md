@@ -1,38 +1,33 @@
 ---
-title: "Installation et configuration de Vim : Guide complet"
+title: "Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes"
+description: "Installe Vim sur macOS ou Linux en 30 min : .vimrc de base commenté, vim-plug, NERDTree et FZF. Tout ce qu'il faut pour débuter sérieusement."
 pubDatetime: "2025-03-31T15:11:44+02:00"
+modDatetime: 2026-04-16 00:00:00+01:00
 author: Brandon Visca
-description: "Vim est l'un des éditeurs les plus puissants pour développeurs. Guide complet : installation sur macOS/Linux, configuration de base et premiers pas."
 tags:
+  - vim
   - linux
   - macos
-  - developpement
+  - cli
   - guide
   - intermediaire
-  - vim
+featured: false
+draft: false
+focusKeyword: vim
 ---
+> 💡 **TL;DR** — Vim est disponible sur macOS via Homebrew (`brew install vim`) et sur Linux via le gestionnaire de paquets natif. Un `.vimrc` de 15 lignes suffit pour un éditeur fonctionnel. Ajoute vim-plug pour les plugins, NERDTree pour l'arbre de fichiers, FZF pour la recherche.
 
+Vim intimide au premier abord. Mais une fois qu'on comprend la logique modale, c'est l'un des éditeurs les plus rapides qui soit. Je l'utilise quotidiennement sur mes serveurs Linux, et le `.vimrc` que je vais te montrer est exactement celui que je déploie partout.
 
-  - [Via Homebrew](#via-homebrew)
-  - [Installation manuelle depuis les sources](#installation-manuelle-depuis-les-sources)
-- [2. Configuration de base](#2-configuration-de-base)
-  - [Création du fichier .vimrc](#creation-du-fichier-vimrc)
-  - [Configuration des paramètres essentiels](#configuration-des-parametres-essentiels)
-- [3. Personnalisation avancée](#3-personnalisation-avancee)
-  - [Installation d’un gestionnaire de plugins](#installation-dun-gestionnaire-de-plugins)
-  - [Plugins recommandés](#plugins-recommandes)
-  - [Raccourcis clavier personnalisés](#raccourcis-clavier-personnalises)
-- [4. Dépannage courant](#4-depannage-courant)
-  - [Problèmes de permissions](#problemes-de-permissions)
-  - [Conflits de configuration](#conflits-de-configuration)
-- [Sources et références](#sources-et-references)
+## Table des matières
 
+## Installation de Vim sur macOS
 
-1. Installation de Vim sur macOS
+![vim, éditeur de texte|460](61d13605-e6bf-4767-a046-14fd78358c39.jpg)
 
-![vim, éditeur de texte](61d13605-e6bf-4767-a046-14fd78358c39.jpg)### Via Homebrew
+### Via Homebrew
 
-Homebrew est le gestionnaire de paquets le plus populaire pour macOS. Pour installer Vim via Homebrew, suivez ces étapes :
+Homebrew est le gestionnaire de paquets de référence sur macOS. Si tu ne l'as pas encore, installe-le d'abord :
 
 ```bash
 # Installation de Homebrew
@@ -42,110 +37,200 @@ Homebrew est le gestionnaire de paquets le plus populaire pour macOS. Pour insta
 brew install vim
 ```
 
+Le `brew install vim` installe la v9.x, plus récente que la v8.x préinstallée sur macOS. Vérifie la version :
+
+```bash
+vim --version | head -1
+```
+
+### Installation depuis les sources
+
+Si tu veux la toute dernière version ou des options de compilation personnalisées :
+
+```bash
 git clone https://github.com/vim/vim.git
 cd vim
-./configure
+./configure --with-features=huge --enable-python3interp
 make
 sudo make install
+```
 
-2. Configuration de base
+> ⚠️ **Attention** — La compilation depuis les sources nécessite `gcc`, `make` et les headers Python3. Sur macOS : `xcode-select --install`. Sur Debian/Ubuntu : `sudo apt install build-essential python3-dev`.
 
-### Création du fichier .vimrc
+## Installation de Vim sur Linux
 
-Le fichier .vimrc est le fichier de configuration principal de Vim. Créez-le dans votre répertoire personnel :
+Sur les distributions les plus courantes, Vim est dans les dépôts officiels :
+
+```bash
+# Debian / Ubuntu
+sudo apt update && sudo apt install vim
+
+# Fedora / RHEL
+sudo dnf install vim
+
+# Arch Linux
+sudo pacman -S vim
+```
+
+Pour la version complète avec toutes les fonctionnalités (clipboard système, Python, etc.) :
+
+```bash
+# Ubuntu/Debian
+sudo apt install vim-gtk3
+```
+
+## Configuration de base avec .vimrc
+
+### Créer le fichier .vimrc
+
+Le `.vimrc` est le fichier de config principal de l'éditeur. Il se charge à chaque démarrage :
 
 ```bash
 touch ~/.vimrc
+vim ~/.vimrc
 ```
 
-" Activation de la numérotation des lignes
+### Paramètres essentiels commentés
+
+Voici la config minimale que j'utilise sur tous mes serveurs :
+
+```vim
+" Numérotation des lignes
 set number
 set relativenumber
 
-" Activation de la coloration syntaxique
+" Coloration syntaxique
 syntax enable
 syntax on
 
-" Configuration de l'indentation
+" Indentation intelligente
 set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set expandtab          " Espaces au lieu de tabulations
 
-3. Personnalisation avancée
+" Encodage et affichage
+set encoding=utf-8
+set cursorline          " Surligne la ligne courante
+set showmatch           " Montre les parenthèses correspondantes
+set hlsearch            " Surligne les résultats de recherche
+set incsearch           " Recherche incrémentale en temps réel
 
-### Installation d’un gestionnaire de plugins
+" Performance
+set lazyredraw          " Accélère le rendu lors des macros
+```
 
-vim-plug est l’un des gestionnaires de plugins les plus populaires. Pour l’installer :
+Enregistre et recharge sans quitter Vim :
+
+```vim
+:source ~/.vimrc
+```
+
+> 💡 **Astuce** — Ajoute `set clipboard=unnamedplus` à ton `.vimrc` pour synchroniser le presse-papiers Vim avec le presse-papiers système. Plus de `Ctrl+C` / `Ctrl+V` manqués.
+
+## Personnalisation avancée avec vim-plug
+
+### Installation de vim-plug
+
+[vim-plug](https://github.com/junegunn/vim-plug) est le gestionnaire de plugins le plus simple et fiable :
 
 ```bash
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
+### Plugins recommandés
+
+Ajoute ce bloc dans ton `.vimrc` **avant** les autres paramètres :
+
+```vim
 call plug#begin('~/.vim/plugged')
 
-" NERDTree pour l'explorateur de fichiers
+" NERDTree — explorateur de fichiers latéral
 Plug 'preservim/nerdtree'
 
-" Airline pour une barre de statut améliorée
+" Airline — barre de statut améliorée
 Plug 'vim-airline/vim-airline'
 
-" Auto-pairs pour la complétion automatique des parenthèses
+" Auto-pairs — fermeture automatique des parenthèses/guillemets
 Plug 'jiangmiao/auto-pairs'
 
-" FZF pour la recherche floue
+" FZF — recherche floue ultra-rapide
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
+```
+
+Puis installe les plugins depuis Vim :
+
+```vim
+:PlugInstall
+```
 
 ### Raccourcis clavier personnalisés
 
-Personnalisez vos raccourcis clavier dans le .vimrc :
-
-```bash
-" Mappage de la touche leader
+```vim
+" Touche leader = virgule (plus accessible que la barre oblique)
 let mapleader = ","
 
-" Raccourci pour NERDTree
+" Ouvrir/fermer NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
 
-" Raccourcis pour la navigation entre les fenêtres
+" Navigation entre fenêtres splitées avec Ctrl+hjkl
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Sauvegarder avec Ctrl+S (comme les autres éditeurs)
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>a
 ```
 
-## Vérifier les permissions
+Pour personnaliser le thème visuel, jette un œil à [mon guide d'installation de thèmes Vim](/installation-theme-vim-guide/). Ça change vraiment l'expérience.
+
+## Dépannage courant
+
+### Problèmes de permissions
+
+Si l'éditeur se plaint de droits manquants sur `.vim/` ou `.vimrc` :
+
+```bash
+# Vérifier les permissions actuelles
 ls -la ~/.vim
 ls -la ~/.vimrc
 
-## Corriger les permissions si nécessaire
+# Corriger si nécessaire
 chmod 644 ~/.vimrc
 chmod -R u+rw ~/.vim
+```
 
 ### Conflits de configuration
 
-En cas de conflits, vous pouvez :
+Si un plugin casse l'éditeur au démarrage, lance-le sans config pour isoler le problème :
 
-- Sauvegarder votre .vimrc actuel et recommencer depuis zéro
-- Commenter progressivement les lignes pour identifier la source du problème
-- Vérifier la compatibilité des plugins entre eux
+```bash
+vim -u NONE    # Vim sans .vimrc ni plugins
+vim -u ~/.vimrc --noplugin   # .vimrc mais sans plugins
+```
 
-Cette configuration vous donnera une base solide pour utiliser Vim efficacement. N’hésitez pas à explorer davantage et à personnaliser votre configuration selon vos besoins.
+Ensuite :
+- Commente progressivement les `Plug '...'` dans ton `.vimrc` pour identifier le plugin fautif
+- Vérifie la compatibilité des plugins entre eux (certains entrent en conflit sur les mappings)
+- Consulte les issues GitHub du plugin concerné
 
-Sources et références
+Si tu veux aller plus loin dans l'optimisation de ton terminal, regarde aussi [Oh My Zsh + Powerlevel10k](/installation-oh-my-zsh-powerlevel10k-guide-complet/). Vim + un shell propre, c'est imbattable.
 
-- [Documentation officielle de Vim](https://www.vim.org/docs.php)
-- [Dépôt GitHub officiel de Vim](https://github.com/vim/vim)
-- [Site officiel de Homebrew](https://brew.sh/)
-- [Documentation vim-plug](https://github.com/junegunn/vim-plug)
-- [TupperVim](https://tuppervim.org/)
+## Conclusion
 
-## Articles connexes
+Vim a une courbe d'apprentissage abrupte les premiers jours. Mais une fois que tu as ton `.vimrc` calibré et tes plugins installés, tu réalises pourquoi les sysadmins y reviennent toujours : il est disponible partout, démarre en une seconde, et ne t'impose rien.
 
-- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
-- [Installation d'un thème sous Vim : Guide complet](/installation-theme-vim-guide/)
+Commence par les bases : `hjkl` pour naviguer, `i` pour insérer, `:w` pour sauvegarder, `:q` pour quitter. Le reste vient naturellement. Et si tu veux pousser la personnalisation visuelle, le [guide thèmes dédié](/installation-theme-vim-guide/) est l'étape suivante logique.
+
+## Pour aller plus loin
+
+- [Installer un thème sous Vim : guide complet](/installation-theme-vim-guide/)
+- [Oh My Zsh + Powerlevel10k : transforme ton terminal](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [Termius : client SSH moderne pour Windows et macOS](/termius-client-ssh-windows-guide-complet/)
