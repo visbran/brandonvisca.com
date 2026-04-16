@@ -28,7 +28,7 @@ faqs:
 
 Configurer le swap Linux correctement, ça fait la différence entre un serveur qui tient la charge et un qui freeze au mauvais moment. Spoiler : on va éviter les manipulations de partition à la hache et privilégier des méthodes qui ne casseront pas ton système en prod.
 
-![](cat-memory-nusoh30j7qijy.gif)
+![](/images/cat-memory-nusoh30j7qijy.gif)
 
 ## Swap Linux : pourquoi tu en as (vraiment) besoin
 
@@ -202,7 +202,7 @@ Le swap n'est pas l'ennemi, c'est ton assurance-vie système. Bien configuré, i
 
 Retiens les essentiels : fichier swap plutôt que partition, swappiness à 10 sur serveur, permissions 600, et une entrée dans `/etc/fstab` pour la persistance. Pour le reste, `free -h` et `swapon --show` sont tes meilleurs amis au quotidien.
 
-![](nbc-season-2-kenan-vnr3draqtz6mwyfxv0.gif)
+![](/images/nbc-season-2-kenan-vnr3draqtz6mwyfxv0.gif)
 
 ## FAQ — Swap Linux
 
