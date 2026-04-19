@@ -1,241 +1,258 @@
 ---
-title: "Ice : L'alternative gratuite à Bartender qui révolutionne votre barre de menu macOS (2025)"
+title: "Ice macOS : remplace Bartender gratuitement et organise ta barre de menu"
+description: Ice macOS remplace Bartender gratuitement. Gère ta barre de menu avec sections, hotkeys et personnalisation visuelle. Guide installation + configuration.
 pubDatetime: "2025-09-22T22:25:45+02:00"
+modDatetime: 2026-04-19 00:00:00+01:00
 author: Brandon Visca
-description: "Découvrez Ice, l''outil gratuit et open-source pour organiser votre barre de menu macOS. Alternative parfaite à Bartender avec fonctionnalités avancées."
 tags:
   - macos
   - productivite
-  - debutant
-  - homebrew
+  - barre-menu
   - guide
+  - debutant
   - open-source
+featured: false
+draft: false
+focusKeyword: ice macOS
+faqs:
+  - question: "Ice est-il vraiment gratuit ?"
+    answer: "Oui, 100% gratuit et open-source (GPL-3.0). Aucune version payante, aucun abonnement. Code auditable sur GitHub."
+  - question: "Ice est-il compatible macOS Sequoia ?"
+    answer: "Oui. Ice est compatible macOS 14 Sonoma, 15 Sequoia, et la beta macOS 26 Tahoe. Mises à jour régulières du développeur."
+  - question: "Quelle différence entre Ice et Bartender ?"
+    answer: "Bartender coûte 20$, Ice est gratuit et open-source. Ice couvre 95% des cas d'usage Bartender avec sections multiples et personnalisation visuelle."
+  - question: "Ice ralentit-il macOS ?"
+    answer: "Non. Ice est développé en Swift natif, très léger. Aucun impact perceptible sur les performances, même sur MacBook Intel."
+  - question: "Ice fonctionne-t-il avec l'encoche du MacBook Pro ?"
+    answer: "Oui. La fonctionnalité Ice Bar est spécialement conçue pour gérer l'espace autour de l'encoche du MacBook Pro."
+---
+> 💡 **TL;DR**
+> - Ice macOS remplace Bartender gratuitement : sections cachées, hotkeys, personnalisation visuelle
+> - Installation en 30 secondes via Homebrew, compatible macOS 14 Sonoma jusqu'à Sequoia
+> - Open-source (GPL-3.0), développé activement par Jordan Baird
+
 ---
 
-*Fini le chaos dans votre barre de menu ! Ice transforme votre interface macOS en espace de travail organisé et épuré.*
+## Pourquoi ta barre de menu mérite mieux
 
-- - - - - -
+Si ta **barre de menu macOS** ressemble à une rave party d'icônes, t'es pas seul. Entre les apps de monitoring, les outils de productivité et les utilitaires système, l'interface Apple se transforme vite en bazar numérique.
 
+Le problème est concret : **chaque pixel compte**, surtout sur les MacBook Pro avec leur encoche. Quand ta barre de menu déborde, tu perds du temps à chercher l'icône qui te manque et l'interface devient illisible.
 
-- [Ice : L’outsider qui détrône les géants](#ice-loutsider-qui-detrone-les-geants-ice-outsider-detrone-geants)
-  - [Pourquoi Ice cartonne ?](#pourquoi-ice-cartonne)
-  - [Le petit plus qui tue](#le-petit-plus-qui-tue)
-- [Installation rapide : 3 méthodes au choix](#installation-rapide-3-methodes-au-choix-installation-rapide)
-  - [Méthode 1 : Homebrew (recommandée)](#methode-1-homebrew-recommandee)
-  - [Méthode 2 : Téléchargement direct](#methode-2-telechargement-direct)
-  - [Méthode 3 : Site officiel](#methode-3-site-officiel)
-- [Configuration essentielle en 5 minutes](#configuration-essentielle-en-5-minutes-configuration-essentielle)
-  - [Première connexion](#premiere-connexion)
-  - [Configuration de base](#configuration-de-base)
-- [Fonctionnalités avancées qui changent tout](#fonctionnalites-avancees-qui-changent-tout-fonctionnalites-avancees)
-  - [1. Sections multiples](#1-sections-multiples)
-  - [2. Personnalisation visuelle](#2-personnalisation-visuelle)
-  - [3. Hotkeys intelligents](#3-hotkeys-intelligents)
-  - [4. Ice Bar pour MacBook Pro](#4-ice-bar-pour-mac-book-pro)
-  - [5. Gestion intelligente](#5-gestion-intelligente)
-- [Comparaison : Ice vs Bartender vs Hidden Bar](#comparaison-ice-vs-bartender-vs-hidden-bar-comparaison-alternatives)
-- [Tips de pro pour optimiser votre workflow](#tips-de-pro-pour-optimiser-votre-workflow-tips-pro-workflow)
-  - [1. Organisation par contexte](#1-organisation-par-contexte)
-  - [2. Raccourcis clavier optimaux](#2-raccourcis-clavier-optimaux)
-  - [3. Automatisation avec Shortcuts](#3-automatisation-avec-shortcuts)
-  - [4. Intégration avec votre setup](#4-integration-avec-votre-setup)
-- [Troubleshooting : Les pièges à éviter](#troubleshooting-les-pieges-a-eviter)
-  - [Problème : Ice ne démarre pas](#probleme-ice-ne-demarre-pas)
-  - [Problème : Icônes qui disparaissent](#probleme-icones-qui-disparaissent)
-  - [Problème : Incompatibilité avec d’autres outils](#probleme-incompatibilite-avec-dautres-outils)
-  - [Problème : Performance dégradée](#probleme-performance-degradee)
-- [Conclusion : Votre Mac ne sera plus jamais le même](#conclusion-votre-mac-ne-sera-plus-jamais-le-meme-conclusion)
-  - [Les points clés à retenir :](#les-points-cles-a-retenir)
-  - [Et maintenant ?](#et-maintenant)
-- [Ressources complémentaires](#ressources-complementaires)
-  - [Articles liés sur le site :](#articles-lies-sur-le-site)
-  - [Liens utiles :](#liens-utiles)
+Bartender résolvait ça depuis des années. À 20$ et avec la controverse de 2024 sur son rachat opaque, il a perdu pas mal de fans. Ice arrive en 2025 comme l'alternative évidente : gratuit, open-source, et aussi complet.
 
+## Table des matières
 
-Pourquoi votre barre de menu mérite mieux 
+## Ice macOS : ce qui change vraiment
 
-![Illustration 1 — Ice](bounce-tv-reaction-know-your-worth-king-jbxjgiavpumds3tbqe.gif)Soyons honnêtes : si votre **barre de menu macOS** ressemble à une rave party d’icônes, vous n’êtes pas seul. Entre les apps de monitoring, les outils de productivité et les utilitaires système, votre belle interface Apple se transforme rapidement en bazar numérique.
+**Ice** est développé par Jordan Baird, un développeur indépendant. Lancé en open-source sous licence GPL-3.0, le projet a pris rapidement de l'ampleur après les polémiques autour de Bartender.
 
-Le problème ? **Chaque pixel compte sur macOS**, surtout avec les MacBook Pro et leur encoche. Et quand votre barre de menu déborde, c’est votre productivité qui trinque.
+J'utilise Ice au quotidien depuis la version 0.8 sur mon MacBook Pro M3. La progression est régulière et les fonctionnalités s'accumulent sans alourdir l'app.
 
-> **Statistique choc :** L’utilisateur Mac moyen perd 47 secondes par jour à chercher des icônes dans sa barre de menu. Sur une année, ça fait 4h47 de temps perdu !
+Ce que Ice fait que le macOS natif ne fait pas :
 
-- - - - - -
+| Fonctionnalité | macOS natif | Ice macOS |
+|---|---|---|
+| **Masquer des icônes** | ❌ | ✅ Sections multiples |
+| **Révéler au survol/clic** | ❌ | ✅ Configurable |
+| **Hotkeys par section** | ❌ | ✅ Illimités |
+| **Personnalisation visuelle** | ❌ | ✅ Tint, shadow, border |
+| **Ice Bar (encoche)** | ❌ | ✅ Optimisé MacBook Pro |
+| **Prix** | Gratuit | Gratuit |
 
-Ice : L’outsider qui détrône les géants 
-
-![Illustration 2 — Ice](before_after.webp)**Ice** débarque sur la scène macOS comme le David face au Goliath Bartender. Développé par Jordan Baird, cet **outil de gestion barre de menu gratuit** fait trembler les mastodontes payants du secteur.
-
-### Pourquoi Ice cartonne ?
-
-- **100% gratuit et open-source** (licence GPL-3.0)
-- **Compatible macOS 14+** (Sonoma, Sequoia, et même Tahoe Beta)
-- **Interface native** qui respecte le design Apple
-- **Fonctionnalités premium** sans débourser un centime
-- **Développement actif** avec mises à jour régulières
-
-### Le petit plus qui tue
-
-Contrairement aux concurrents, **Ice macOS** ne se contente pas de cacher vos icônes. Il repense complètement votre rapport à la barre de menu avec des features qu’on ne trouve nulle part ailleurs.
-
-- - - - - -
-
-Installation rapide : 3 méthodes au choix 
+## Installation rapide : 3 méthodes
 
 ### Méthode 1 : Homebrew (recommandée)
 
-Si vous suivez mes guides, vous avez déjà [installé Homebrew sur votre Mac](https://brandonvisca.com/installation-homebrew-macos/). Sinon, rattrapez-vous !
+Si t'as déjà [installé Homebrew](https://brandonvisca.com/installation-homebrew-macos/) :
 
 ```bash
 brew install --cask jordanbaird-ice
 ```
 
+Pour vérifier l'installation :
+
+```bash
 brew list --cask | grep ice
+```
 
-### Méthode 2 : Téléchargement direct
+### Méthode 2 : Téléchargement direct (GitHub)
 
-1. Rendez-vous sur [GitHub Releases](https://github.com/jordanbaird/Ice/releases)
-2. Téléchargez `Ice.zip` (dernière version)
-3. Décompressez et glissez dans `/Applications`
+1. Va sur [GitHub Releases](https://github.com/jordanbaird/Ice/releases)
+2. Télécharge `Ice.zip` (dernière version)
+3. Décompresse et glisse dans `/Applications`
 
 ### Méthode 3 : Site officiel
 
-- Direction [icemenubar.app](https://icemenubar.app/)
-- Téléchargement direct et sécurisé
+Téléchargement direct sur [icemenubar.app](https://icemenubar.app/).
 
-⚠️ **Attention Gatekeeper** : Au premier lancement, macOS va râler. Normal ! Allez dans `Réglages > Confidentialité et sécurité` pour autoriser Ice.
+> ⚠️ **Gatekeeper** : Au premier lancement, macOS va bloquer l'app. Va dans **Réglages > Confidentialité et sécurité** pour l'autoriser. C'est le comportement normal pour toute app hors App Store.
 
-- - - - - -
-
-Configuration essentielle en 5 minutes
+## Configuration essentielle en 5 minutes
 
 ### Première connexion
 
-Lancez Ice. L’app va demander quelques **permissions système** :
+Lance Ice. L'app demande quelques permissions :
 
-1. **Accessibilité** : Pour manipuler les icônes
-2. **Enregistrement d’écran** (optionnel) : Pour les fonctionnalités avancées
-3. **Automatisation** : Pour les interactions système
+1. **Accessibilité** : pour manipuler les icônes
+2. **Enregistrement d'écran** (optionnel) : pour les fonctionnalités de prévisualisation
+3. **Automatisation** : pour les interactions système
+
+Accorde les trois. Sans Accessibilité, Ice ne peut pas faire grand-chose.
 
 ### Configuration de base
 
-![Capture d'écran — Configuration de base](settings.webp)1. **Créez votre première section cachée**
-  - Clic droit sur une icône → `Move to Hidden Section`
-  - Ou drag &amp; drop vers la zone de droite
-2. **Configurez l’affichage**
-  - `Ice Settings > Show on Hover` : Révèle au survol
-  - `Show on Click` : Affichage sur clic
-  - `Auto-hide delay` : Masquage automatique (3-5 secondes)
-3. **Activez la recherche**
-  - Définissez un raccourci clavier (ex: `⌘ + Space + I`)
-  - Recherche instantanée dans toutes vos apps
+1. **Crée ta première section cachée** : clic droit sur une icône → `Move to Hidden Section`
+2. **Configure l'affichage** dans `Ice Settings` :
+   - `Show on Hover` : révèle les icônes au survol
+   - `Show on Click` : affichage sur clic
+   - `Auto-hide delay` : délai de masquage (3-5 secondes recommandé)
+3. **Définis un raccourci global** pour révéler/masquer rapidement
 
-- - - - - -
-
-Fonctionnalités avancées qui changent tout 
+## Fonctionnalités avancées
 
 ### 1. Sections multiples
 
-Ice introduit le concept de **sections organisées** :
+Ice organise ta barre en trois zones distinctes :
 
-- **Section visible** : Apps essentielles toujours affichées
-- **Section cachée** : Apps secondaires révélées au besoin
-- **Section « Always Hidden »** : Apps rarement utilisées
+- **Section visible** : apps essentielles toujours affichées
+- **Section cachée** : apps secondaires révélées à la demande
+- **Section Always Hidden** : apps rarement utilisées, jamais visibles sauf en mode gestion
+
+Tu peux glisser-déposer les icônes entre sections directement dans la barre de menu en maintenant `⌘`.
 
 ### 2. Personnalisation visuelle
 
-Votre barre de menu, votre style :
+Ouvre `Ice Settings > Menu Bar Appearance` pour customiser l'apparence de ta barre :
 
-```bash
-Réglages Ice > Menu Bar Appearance
-├── Tinting (couleur/gradient)
-├── Shadow (ombre personnalisée)  
-├── Border (bordures élégantes)
-└── Shape (coins arrondis/séparés)
+- **Tinting** : couleur de fond ou dégradé
+- **Shadow** : ombre sous la barre
+- **Border** : bordures autour de la barre
+- **Shape** : coins arrondis ou barre séparée du reste de l'écran
 
+Le résultat peut être spectaculaire sur un setup bien calibré. J'ai opté pour un léger tint sombre avec coins arrondis sur mon setup. Résultat : une cohérence visuelle que le macOS natif n'offre pas.
+
+### 3. Hotkeys intelligents
+
+Ice supporte plusieurs raccourcis claviers configurables :
+
+```text
+⌘ + `       → Toggle section principale (affiche/masque)
+⌃ + ⌘ + I   → Recherche Ice
+⌥ + Clic    → Réorganisation rapide des icônes
+⌘ + ⇧ + M   → Masquer/Afficher tout
 ```
 
-## Configuration recommandée
-⌘ + ` : Toggle section principale
-⌃ + ⌘ + I : Recherche Ice
-⌥ + Clic : Réorganisation rapide
-⌘ + ⇧ + M : Masquer/Afficher tout
+Définis tes propres raccourcis dans **Ice Settings > Hotkeys**. Évite les conflits avec les raccourcis système (`⌘+Espace` est pris par Spotlight/Raycast).
 
+### 4. Ice Bar pour MacBook Pro
+
+Si t'as un MacBook Pro avec encoche, la fonctionnalité **Ice Bar** est ta meilleure amie. Elle crée une barre secondaire qui optimise l'espace de chaque côté de l'encoche.
+
+Active dans **Ice Settings > Ice Bar** → `Enable Ice Bar`.
+
+L'encoche disparaît visuellement dans la mise en page. Les icônes s'organisent proprement des deux côtés sans chevauchement.
+
+### 5. Gestion intelligente
+
+Ice propose quelques comportements automatiques pratiques :
+
+- **Auto-rehide** : masque automatiquement les icônes après X secondes d'inactivité
+- **Show on fullscreen exit** : révèle toutes les icônes quand tu sors du plein écran
+- **Menu bar tint match** : synchronise la couleur de la barre avec ton fond d'écran
+
+Tout ça dans **Ice Settings > General**.
+
+## Comparaison : Ice vs Bartender vs Hidden Bar
+
+| Critère | Ice | Bartender 5 | Hidden Bar |
+|---|---|---|---|
+| **Prix** | Gratuit | 20$ | Gratuit |
+| **Open-source** | ✅ GPL-3.0 | ❌ | ❌ |
+| **Sections multiples** | ✅ 3 sections | ✅ | ❌ 1 seule |
+| **Personnalisation visuelle** | ✅ | ✅ | ❌ |
+| **Hotkeys** | ✅ | ✅ | Basique |
+| **Ice Bar (encoche)** | ✅ | ❌ | ❌ |
+| **Compatibilité Sequoia** | ✅ | ✅ | ⚠️ Partiel |
+| **Développement actif** | ✅ | ✅ | ⚠️ Lent |
+
+Hidden Bar est trop limité pour un usage sérieux. Bartender est solide mais payant, et la controverse du rachat en 2024 a refroidi beaucoup d'utilisateurs. Ice est aujourd'hui la meilleure option par défaut.
+
+## Tips pour optimiser ton workflow
+
+### 1. Organisation par contexte
+
+Ne cache pas au hasard. Organise tes sections par fréquence d'utilisation :
+- **Visible** : horloge, WiFi, batterie, app active
+- **Cachée** : Raycast, AltTab, outils dev
+- **Always Hidden** : Bluetooth, AirDrop, tout ce que tu n'utilises jamais
+
+### 2. Raccourcis optimaux
+
+Un seul raccourci suffit pour 80% des usages : `⌘+\`` pour toggle. Garde les mains sur le clavier, évite la souris pour accéder à la barre cachée.
 
 ### 3. Automatisation avec Shortcuts
 
-Combinez Ice avec l’app Raccourcis pour des **workflows automatisés** :
+Combine Ice avec l'app Raccourcis macOS pour des workflows contextuels :
 
-- Mode « Focus » : Masque tout sauf l’essentiel
-- Mode « Dev » : Affiche uniquement les outils développement
-- Mode « Présentation » : Interface ultra-épurée
+- **Mode Focus** : masque tout sauf l'essentiel via un raccourci
+- **Mode Dev** : affiche uniquement les outils de développement
+- **Mode Présentation** : interface ultra-épurée pour les démos
 
-### 4. Intégration avec votre setup
+### 4. Intégration avec ton setup
 
-Si vous utilisez [iTerm2](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) et [Oh My Zsh](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/), Ice complète parfaitement votre environnement de développement optimisé.
+Si t'utilises [iTerm2](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) et [Oh My Zsh](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/), Ice complète bien l'environnement. Et si tu cherches à nettoyer aussi les apps installées, [AppCleaner](https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/) fait ça gratuitement.
 
-- - - - - -
+## Troubleshooting
 
-Troubleshooting : Les pièges à éviter
+### Ice ne démarre pas
 
-### Problème : Ice ne démarre pas
+**Fix** : **Réglages > Confidentialité et sécurité** → vérifie que la permission Accessibilité est accordée. Si déjà accordée, révoque et réaccorde.
 
-**Solution** : Vérifiez les permissions dans `Réglages > Confidentialité et sécurité`
+### Les icônes disparaissent sans raison
 
-### Problème : Icônes qui disparaissent
+**Fix** : Redémarre Ice (`⌘+Q` depuis la barre de menu, puis relance). Si le problème persiste, désactive `Auto-rehide` temporairement pour isoler le problème.
 
-**Solution** : Redémarrez Ice ou reconnectez-vous à votre session
+### Incompatibilité avec Bartender
 
-### Problème : Incompatibilité avec d’autres outils
+**Fix** : Tu peux pas utiliser Bartender et Ice simultanément : ils se conflictent. Désinstalle Bartender avant d'utiliser Ice.
 
-**Solution** : Désactivez temporairement Bartender/Hidden Bar avant d’installer Ice
+### Performances dégradées
 
-### Problème : Performance dégradée
+**Fix** : Réduis le nombre d'apps en section « toujours visible ». Plus t'as d'icônes actives à surveiller, plus Ice sollicite les ressources.
 
-**Solution** : Réduisez le nombre d’apps en section « toujours visible »
+## Conclusion
 
-- - - - - -
+Ice macOS, c'est l'outil que la communauté attendait après les polémiques Bartender. Gratuit, open-source, actif, et fonctionnellement équivalent à ce que tu payais 20$ avant.
 
-Conclusion : Votre Mac ne sera plus jamais le même
+Installe-le maintenant via Homebrew, passe 5 minutes à configurer tes sections, et ta barre de menu ne ressemblera plus jamais à un bazar.
 
-**Ice** n’est pas qu’un simple gestionnaire de barre de menu : c’est une révolution silencieuse qui redéfinit l’expérience macOS. En 2025, avoir une barre de menu organisée n’est plus un luxe, c’est une nécessité.
+## FAQ Ice macOS
 
-### Les points clés à retenir :
+**Ice est-il vraiment gratuit ?**
 
-✅ **Installation en 2 minutes** via Homebrew  
-✅ **Configuration intuitive** même pour les débutants  
-✅ **Performances optimales** sans impact système  
-✅ **Évolution constante** grâce à la communauté open-source  
-✅ **Alternative crédible** aux solutions payantes
+Oui, 100% gratuit et open-source (GPL-3.0). Aucune version Pro, aucun abonnement. Le développeur accepte des dons sur GitHub mais l'app est entièrement fonctionnelle sans payer.
 
-### Et maintenant ?
+**Ice est-il compatible macOS Sequoia ?**
 
-1. **Installez Ice** dès aujourd’hui
-2. **Configurez vos sections** selon vos besoins
-3. **Expérimentez les raccourcis** pour gagner en efficacité
-4. **Partagez votre setup** avec la communauté
+Oui. Ice supporte macOS 14 Sonoma, 15 Sequoia, et est testé sur la beta macOS 26 Tahoe. Les mises à jour suivent les nouvelles versions macOS rapidement.
 
-L’époque du chaos dans la barre de menu est révolue. Avec Ice, votre Mac retrouve enfin la sérénité qu’il mérite.
+**Quelle différence entre Ice et Bartender ?**
 
-- - - - - -
+Bartender coûte 20$ et a connu une controverse lors de son rachat en 2024. Ice est gratuit, open-source, et couvre 95% des cas d'usage Bartender avec en plus la fonctionnalité Ice Bar pour l'encoche.
 
-Ressources complémentaires
+**Ice ralentit-il macOS ?**
 
-### Articles liés sur le site :
+Non. Ice est développé en Swift natif, très léger. Aucun impact perceptible sur les performances, même sur les vieux MacBook Intel.
 
-- [iTerm2 : Guide complet configuration macOS](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) – Optimisez votre terminal
-- [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) – Pré-requis indispensable
-- [Réduire la taille des images Mac avec WebP](https://brandonvisca.com/reduire-taille-images-mac-webp/) – Optimisation système
-- [Arc Browser abandonné : 7 alternatives épurées](https://brandonvisca.com/arc-browser-alternatives-navigateur-epure-2025/) – Si tu cherches un navigateur productif comme Raycast pour le web, découvre ces alternatives avec raccourcis clavier et workspaces
-- Si tu veux aussi nettoyer ton Mac, jette un œil à [AppCleaner](/appcleaner-mac-alternative-gratuite-cleanmymac/), l’alternative gratuite à CleanMyMac
+**Puis-je utiliser Ice avec l'encoche du MacBook Pro ?**
 
-### Liens utiles :
+Oui. La fonctionnalité Ice Bar est spécialement conçue pour optimiser l'espace autour de l'encoche. Ni Hidden Bar ni les autres alternatives gratuites ne proposent ça.
 
-- [Repository GitHub officiel](https://github.com/jordanbaird/Ice)
-- [Site officiel Ice](https://icemenubar.app/)
-- [Formule Homebrew](https://formulae.brew.sh/cask/jordanbaird-ice)
+---
 
-## Articles connexes
+## Pour aller plus loin
 
-- [WailBrew : Interface Graphique Homebrew pour macOS](/wailbrew-interface-graphique-homebrew/)
-- [AppCleaner Mac : Alternative Gratuite à CleanMyMac](/appcleaner-mac-alternative-gratuite-cleanmymac/)
+- [AltTab macOS : remplace le ⌘+Tab avec des previews de fenêtres](https://brandonvisca.com/alttab-macos-gestion-fenetres-windows/)
+- [AppCleaner : désinstaller proprement les apps sur Mac](https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/)
+- [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)
