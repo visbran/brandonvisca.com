@@ -1,7 +1,0 @@
-{
-  "mcpServers": {
-    "google-search-console": {
-      "command": "google-searchconsole-mcp"
-    }
-  }
-}
