@@ -5,17 +5,20 @@ publish.py — Publie un article du vault Obsidian vers src/data/blog/.
 Workflow :
   1. Lit un article depuis Content/Articles/03-Pret-Publication/
   2. Convertit le frontmatter hybride → frontmatter Astro pur
-  3. Détermine le slug (strip préfixe date YYYY-MM-DD-)
-  4. Valide (description 120-155 chars, champs requis)
-  5. Dry-run par défaut — écrit avec --confirm
-  6. Déplace l'article vault → 04-Publies/ après publication
+  3. Détermine le slug (strip préfixe date YYYY-MM-DD-, ou --slug custom)
+  4. Copie les images locales vers src/images/{slug}/
+  5. Valide (description 120-155 chars, champs requis)
+  6. Dry-run par défaut — écrit avec --confirm
+  7. Déplace l'article vault → 04-Publies/ après publication
 
 Usage:
-  python3 scripts/publish.py                          # Liste les articles prêts
-  python3 scripts/publish.py article.md               # Dry-run d'un article
-  python3 scripts/publish.py article.md --confirm     # Publie
-  python3 scripts/publish.py --all --confirm          # Publie tous les prêts
-  python3 scripts/publish.py article.md --draft       # Publie en draft (preview)
+  python3 scripts/publish.py                                    # Liste les articles prêts
+  python3 scripts/publish.py article.md                         # Dry-run d'un article
+  python3 scripts/publish.py article.md --confirm               # Publie
+  python3 scripts/publish.py article.md --slug mon-slug         # Dry-run avec slug custom
+  python3 scripts/publish.py article.md --slug mon-slug --confirm  # Publie avec slug custom
+  python3 scripts/publish.py --all --confirm                    # Publie tous les prêts
+  python3 scripts/publish.py article.md --draft                 # Publie en draft (preview)
 """
 
 import sys
@@ -31,6 +34,9 @@ VAULT_ROOT = Path.home() / "Documents/brandon-knowledge"
 READY_DIR  = VAULT_ROOT / "Content/Articles/03-Pret-Publication"
 DONE_DIR   = VAULT_ROOT / "Content/Articles/04-Publies"
 BLOG_DIR   = Path(__file__).parent.parent / "src/data/blog"
+IMAGES_DIR = Path(__file__).parent.parent / "src/images"
+
+IMAGE_EXTENSIONS = {".gif", ".png", ".jpg", ".jpeg", ".webp"}
 
 # ── Champs Astro à conserver (depuis le vault hybrid) ─────────────────────────
 
@@ -294,9 +300,35 @@ def validate(fm: dict, slug: str, body: str = "") -> list[dict]:
     return issues
 
 
+# ── Copie des images locales ──────────────────────────────────────────────────
+
+def copy_images(body: str, vault_article_path: Path, slug: str, confirm: bool) -> str:
+    """Copie les images locales du vault vers src/images/{slug}/ et met à jour les chemins."""
+    IMG_RE = re.compile(r'!\[([^\]]*)\]\(([^)]+)\)')
+    vault_dir = vault_article_path.parent
+    target_dir = IMAGES_DIR / slug
+
+    def replace_img(match):
+        alt, path = match.group(1), match.group(2)
+        if path.startswith(("http://", "https://")):
+            return match.group(0)
+        src = (vault_dir / path).resolve()
+        if not src.exists() or src.suffix.lower() not in IMAGE_EXTENSIONS:
+            return match.group(0)
+        if confirm:
+            target_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(str(src), str(target_dir / src.name))
+            print(f"  🖼️  Image copiée : {src.name} → src/images/{slug}/")
+        else:
+            print(f"  🖼️  [Dry-run] Image à copier : {src.name} → src/images/{slug}/")
+        return f"![{alt}](../../images/{slug}/{src.name})"
+
+    return IMG_RE.sub(replace_img, body)
+
+
 # ── Traitement d'un fichier ───────────────────────────────────────────────────
 
-def process_file(filepath: Path, confirm: bool, keep_draft: bool) -> bool:
+def process_file(filepath: Path, confirm: bool, keep_draft: bool, custom_slug: str | None = None) -> bool:
     """
     Traite un article vault. Retourne True si publication réussie/prévue.
     """
@@ -310,8 +342,12 @@ def process_file(filepath: Path, confirm: bool, keep_draft: bool) -> bool:
         return False
 
     # Déterminer le slug
-    slug = derive_slug(filepath, vault_fm)
-    print(f"  → Slug : {slug}")
+    if custom_slug:
+        slug = custom_slug
+        print(f"  → Slug : {slug}  [override]")
+    else:
+        slug = derive_slug(filepath, vault_fm)
+        print(f"  → Slug : {slug}")
 
     # Construire le frontmatter Astro
     astro_fm = build_astro_frontmatter(vault_fm, slug, keep_draft=keep_draft)
@@ -336,6 +372,9 @@ def process_file(filepath: Path, confirm: bool, keep_draft: bool) -> bool:
     # Nettoyer le body : supprimer les éventuels titres H1 en double (déjà dans title)
     clean_body = body.lstrip("\n")
 
+    # Copier les images locales et adapter leurs chemins
+    clean_body = copy_images(clean_body, filepath, slug, confirm)
+
     new_content = new_fm + "\n" + clean_body
 
     target_path = BLOG_DIR / f"{slug}.md"
@@ -355,12 +394,15 @@ def process_file(filepath: Path, confirm: bool, keep_draft: bool) -> bool:
     target_path.write_text(new_content, encoding="utf-8")
     print(f"  ✅ Écrit → src/data/blog/{slug}.md")
 
-    # Déplacer vers 04-Publies/
+    # Déplacer vers 04-Publies/ (seulement si la source n'y est pas déjà)
     dest_vault = DONE_DIR / filepath.name
-    if dest_vault.exists():
-        dest_vault.unlink()
-    shutil.move(str(filepath), str(dest_vault))
-    print(f"  📦 Déplacé → 04-Publies/{filepath.name}")
+    if filepath.resolve() == dest_vault.resolve():
+        print(f"  ℹ️  Déjà dans 04-Publies/ — aucun déplacement")
+    else:
+        if dest_vault.exists():
+            dest_vault.unlink()
+        shutil.move(str(filepath), str(dest_vault))
+        print(f"  📦 Déplacé → 04-Publies/{filepath.name}")
 
     return True
 
@@ -404,9 +446,21 @@ def list_ready() -> None:
 
 def main():
     args = sys.argv[1:]
-    confirm   = "--confirm" in args
+    confirm    = "--confirm" in args
     keep_draft = "--draft" in args
-    all_mode  = "--all" in args
+    all_mode   = "--all" in args
+
+    # Extraire --slug VALUE
+    custom_slug = None
+    if "--slug" in args:
+        idx = args.index("--slug")
+        if idx + 1 < len(args):
+            custom_slug = args[idx + 1]
+            args = [a for a in args if a != "--slug" and a != custom_slug]
+        else:
+            print("❌ --slug requiert une valeur", file=sys.stderr)
+            sys.exit(1)
+
     args = [a for a in args if not a.startswith("--")]
 
     if not args and not all_mode:
@@ -423,6 +477,8 @@ def main():
         filepath = Path(target)
         if not filepath.is_absolute():
             filepath = READY_DIR / target
+            if not filepath.exists():
+                filepath = DONE_DIR / target  # fallback: article déjà publié
         if not filepath.exists():
             print(f"❌ Fichier introuvable : {filepath}")
             sys.exit(1)
@@ -433,7 +489,7 @@ def main():
 
     published = 0
     for filepath in files:
-        ok = process_file(filepath, confirm=confirm, keep_draft=keep_draft)
+        ok = process_file(filepath, confirm=confirm, keep_draft=keep_draft, custom_slug=custom_slug)
         if ok and confirm:
             published += 1
 

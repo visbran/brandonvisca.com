@@ -64,7 +64,7 @@ def has_accent(s: str) -> bool:
     return any(c in s for c in "àáâãäåèéêëìíîïòóôõöùúûüýÿçñ")
 
 
-def parse_frontmatter(content: str) -> tuple[dict, str]:
+def parse_frontmatter(content: str) -> tuple[str | None, str]:
     """Returns (frontmatter_raw_str, body_str). frontmatter is the raw block."""
     if not content.startswith("---"):
         return None, content
@@ -77,10 +77,15 @@ def parse_frontmatter(content: str) -> tuple[dict, str]:
 
 
 def extract_tags(fm_raw: str) -> list[str]:
+    # Format multi-ligne : tags:\n  - tag
     match = re.search(r"^tags:\s*\n((?:[ \t]+-[ \t]+\S[^\n]*\n?)+)", fm_raw, re.MULTILINE)
-    if not match:
-        return []
-    return re.findall(r"^[ \t]+-[ \t]+(\S[^\n]*)", match.group(0), re.MULTILINE)
+    if match:
+        return re.findall(r"^[ \t]+-[ \t]+(\S[^\n]*)", match.group(0), re.MULTILINE)
+    # Format inline : tags: [tag1, tag2]
+    inline = re.search(r"^tags:\s*\[([^\]]+)\]", fm_raw, re.MULTILINE)
+    if inline:
+        return [t.strip().strip("\"'") for t in inline.group(1).split(",") if t.strip()]
+    return []
 
 
 def extract_field(fm_raw: str, field: str) -> str | None:
@@ -149,7 +154,8 @@ def audit_focus_keyword(fm_raw: str, body: str, issues: list):
         focus_words = focus_lower.split()
         # Compter les occurrences de la séquence complète
         body_text = body_no_code.lower()
-        occurrences = body_text.count(focus_lower)
+        # Limites de mots pour éviter les faux positifs (ex: "docker" dans "docker-compose")
+        occurrences = len(re.findall(r'\b' + re.escape(focus_lower) + r'\b', body_text))
         density = (occurrences * len(focus_words) / len(words)) * 100
         if density < 0.5:
             issues.append({
@@ -233,7 +239,8 @@ def audit_toc(body: str, issues: list):
         return
 
     if not toc_match:
-        h2_count = len(re.findall(r"^##\s+", body, re.MULTILINE))
+        body_no_code = re.sub(r"```[\s\S]*?```", lambda m: "\n" * m.group().count("\n"), body)
+        h2_count = len(re.findall(r"^##\s+", body_no_code, re.MULTILINE))
         if h2_count >= TOC_MIN_H2:
             issues.append({"type": "info", "cat": "toc",
                            "msg": f"Pas de table des matières — article avec {h2_count} sections H2 "
@@ -317,6 +324,15 @@ def audit_tables(body: str, issues: list):
             in_table = False
             table_lines_buf = []
 
+    # Valider la dernière table si l'article se termine par une table
+    if in_table and len(table_lines_buf) >= 2:
+        sep_row = table_lines_buf[1]
+        if not re.match(r"^\|[-| :]+\|$", sep_row):
+            issues.append({
+                "type": "error", "cat": "tables",
+                "msg": f"Ligne {table_start} : table sans ligne séparateur valide (ex: `|---|---|`)"
+            })
+
 
 def audit_code_blocks(body: str, issues: list):
     # Count triple-backtick fences (not inside inline code)
@@ -327,12 +343,21 @@ def audit_code_blocks(body: str, issues: list):
             "msg": f"Nombre impair de \\`\\`\\` ({len(fences)}) — bloc de code non fermé"
         })
 
-    # Code blocks without language identifier
-    no_lang = re.findall(r"^```[ \t]*$", body, re.MULTILINE)
-    if no_lang:
+    # Code blocks without language identifier (opening fences only)
+    no_lang_count = 0
+    in_block = False
+    for line in body.splitlines():
+        if re.match(r"^```", line):
+            if in_block:
+                in_block = False  # closing fence — ignorer
+            else:
+                in_block = True   # opening fence
+                if re.match(r"^```[ \t]*$", line):
+                    no_lang_count += 1
+    if no_lang_count:
         issues.append({
             "type": "info", "cat": "code",
-            "msg": f"{len(no_lang)} bloc(s) de code sans identifiant de langage — ajouter bash/yaml/json/etc."
+            "msg": f"{no_lang_count} bloc(s) de code sans identifiant de langage — ajouter bash/yaml/json/etc."
         })
 
 
@@ -369,20 +394,25 @@ def audit_images(body: str, issues: list):
             "msg": f"{len(rel_imgs)} référence(s) image relative(s) cassée(s) : {rel_imgs[:2]}"
         })
 
-    # Local images that should be in public/
-    local_imgs = re.findall(r"!\[[^\]]*\]\((?!https?://)(?!\./public/)([^\)]+)\)", body)
+    # Images locales (absolues /path ou relatives ./path) — vérifie l'existence dans public/
+    local_imgs = re.findall(r"!\[[^\]]*\]\((?!https?://)([^\)]+)\)", body)
     for img in local_imgs:
-        if not img.startswith("/") and not img.startswith("http"):
+        if "uploads" in img or "wp-content" in img:
+            continue  # déjà détecté plus haut
+        if img.startswith("/"):
+            public_path = Path("/Users/brandon/Documents/2026-brandonvisca.com/public") / img.lstrip("/")
+        else:
             public_path = Path("/Users/brandon/Documents/2026-brandonvisca.com/public") / img.lstrip("./")
-            if not public_path.exists():
-                issues.append({
-                    "type": "warning", "cat": "images",
-                    "msg": f"Image locale introuvable dans public/ : `{img}`"
-                })
+        if not public_path.exists():
+            issues.append({
+                "type": "warning", "cat": "images",
+                "msg": f"Image locale introuvable dans public/ : `{img}`"
+            })
 
 
-def audit_links(body: str, issues: list):
-    all_slugs = get_all_slugs()
+def audit_links(body: str, issues: list, all_slugs: set | None = None):
+    if all_slugs is None:
+        all_slugs = get_all_slugs()
 
     # Obsidian wiki-links
     wiki = re.findall(r"\[\[[^\]]+\]\]", body)
@@ -403,8 +433,8 @@ def audit_links(body: str, issues: list):
             })
 
     # Plain-text Obsidian article references (bold text that looks like article titles)
-    # These are typically "Articles connexes" sections with **Titre** instead of links
-    connexes_section = re.search(r"## Articles connexes\n([\s\S]+?)(?=\n##|\Z)", body)
+    # These are typically "Pour aller plus loin" sections with **Titre** instead of links
+    connexes_section = re.search(r"## (?:Pour aller plus loin|Articles connexes)\n([\s\S]+?)(?=\n##|\Z)", body)
     if connexes_section:
         section_body = connexes_section.group(1)
         bold_items = re.findall(r"\*\*([^*]+)\*\*(?!\()", section_body)
@@ -412,13 +442,13 @@ def audit_links(body: str, issues: list):
         if bold_items and len(bold_items) > len(real_links):
             issues.append({
                 "type": "warning", "cat": "links",
-                "msg": f"Section 'Articles connexes' : {len(bold_items)} item(s) en gras sans lien — convertir en `[titre](/slug/)`"
+                "msg": f"Section 'Pour aller plus loin' : {len(bold_items)} item(s) en gras sans lien — convertir en `[titre](/slug/)`"
             })
 
 
 # ── Main audit ────────────────────────────────────────────────────────────────
 
-def audit_file(filepath: Path) -> dict:
+def audit_file(filepath: Path, all_slugs: set | None = None) -> dict:
     """Audit a single markdown file. Returns structured result."""
     issues = []
 
@@ -443,7 +473,7 @@ def audit_file(filepath: Path) -> dict:
     audit_code_blocks(body, issues)
     audit_hr_separators(body, issues)
     audit_images(body, issues)
-    audit_links(body, issues)
+    audit_links(body, issues, all_slugs)
 
     return {"file": filepath.name, "issues": issues}
 
@@ -559,7 +589,8 @@ if __name__ == "__main__":
     if "--hook" in args:
         hook_mode()
     elif "--all" in args:
-        results = [audit_file(f) for f in sorted(BLOG_DIR.glob("*.md"))]
+        all_slugs = get_all_slugs()
+        results = [audit_file(f, all_slugs) for f in sorted(BLOG_DIR.glob("*.md"))]
         verbose = "--summary" not in args
         print(format_report(results, verbose=verbose))
     elif args:
