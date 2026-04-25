@@ -22,8 +22,11 @@ pnpm-debug.log*
 .env.*
 .env.production
 
-# Claude Code local settings (may contain tokens/permissions)
-.claude/settings.local.json
+# Claude Code — local state (worktrees, permissions, skills, hooks)
+.claude/
+
+# Internal docs — not for public repo
+KNOWN_ISSUES.md
 
 # Sensitive files — never commit
 *.pem
