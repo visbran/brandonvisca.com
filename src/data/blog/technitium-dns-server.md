@@ -16,8 +16,8 @@ focusKeyword: technitium dns server
 faqs:
   - question: "Technitium DNS Server peut-il remplacer Pi-hole ?"
     answer: "Oui. Technitium DNS Server offre le blocage de publicités via listes DNS, un résolveur récursif natif, DNSSEC, DoH et DoT — dans une seule image Docker. Il fait tout ce que Pi-hole fait, sans dépendance à dnsmasq ni à un résolveur externe."
-  - question: "Peut-on utiliser Technitium DNS Server et Technitium Network Suite ensemble ?"
-    answer: "Absolument, et c'est même le setup recommandé pour un homelab. Technitium Network Suite gère le DHCP et pousse automatiquement l'IP du DNS Server aux clients via l'option DHCP 6. Les enregistrements DNS sont créés dynamiquement à chaque nouveau bail."
+  - question: "Technitium DNS Server a-t-il des zones DNS locales ?"
+    answer: "Oui. Tu peux créer des zones primaires (comme homelab.local) et gérer les enregistrements A, AAAA, CNAME, MX, TXT directement depuis l'interface web. Idéal pour résoudre tes machines par nom d'hôte sans modifier /etc/hosts sur chaque client."
   - question: "Technitium DNS Server fonctionne-t-il sur Raspberry Pi ?"
     answer: "Oui. L'image Docker est disponible pour linux/arm64 et linux/arm/v7, compatible Raspberry Pi 3 et 4. Le serveur tourne correctement avec 256 Mo de RAM allouée — largement suffisant sur un RPi 4."
 ---
@@ -26,13 +26,13 @@ faqs:
 > 💡 **TL;DR** — Ce qu'il faut retenir :
 > - Technitium DNS Server est un serveur DNS récursif open source avec blocage de pubs intégré — alternative directe à Pi-hole et AdGuard Home.
 > - L'installation Docker prend 5 minutes : une commande, un port, une interface web sur `:5380`.
-> - Il s'intègre nativement avec Technitium Network Suite pour unifier DNS + DHCP sur le même tableau de bord.
+> - DNS récursif natif, DNSSEC, DoH/DoT et zones locales — tout dans un seul conteneur.
 
 ## Table des matières
 
 T'as un Pi-hole qui tient par des bouts de ficelle depuis 3 ans, ou un AdGuard Home qui rame sur ton RPi parce qu'il charge 4 millions d'entrées au démarrage ? Technitium DNS Server mérite qu'on s'y attarde sérieusement.
 
-C'est un serveur DNS récursif complet, open source : blocage de pubs intégré, support DoH/DoT, DNSSEC et API REST propre dans une image Docker d'une centaine de mégaoctets. J'ai migré mon homelab dessus il y a quelques semaines, après avoir utilisé Technitium Network Suite pour le DHCP. Voilà le retour honnête.
+C'est un serveur DNS récursif complet, open source : blocage de pubs intégré, support DoH/DoT, DNSSEC et API REST propre dans une image Docker d'une centaine de mégaoctets.
 
 ## Technitium DNS Server vs Pi-hole vs AdGuard Home
 
@@ -53,9 +53,7 @@ Avant d'installer quoi que ce soit, voilà la situation objective. Les trois out
 
 Pi-hole reste excellent si tu veux le maximum de listes et de visibilité communautaire. AdGuard Home est plus léger au démarrage. **Technitium se distingue sur un point clé : il est son propre résolveur récursif**. Pas besoin d'empiler Unbound à côté pour du DNS-over-HTTPS propre.
 
-Autre avantage concret : si t'as déjà [Technitium Network Suite pour ton DHCP et ton NTP](https://brandonvisca.com/technitium-network-suite/), passer au DNS Server devient une évidence. Même stack, même interface web, intégration native entre les deux.
-
-Le projet est disponible sur [GitHub (TechnitiumSoftware/DnsServer)](https://github.com/TechnitiumSoftware/DnsServer) et activement maintenu — v13.x au moment de cet article.
+Le projet est développé activement sur [GitHub (TechnitiumSoftware/DnsServer)](https://github.com/TechnitiumSoftware/DnsServer) en C# (.NET) — v15.x au moment de cet article.
 
 ## Installation avec Docker Compose
 
@@ -210,50 +208,29 @@ Technitium peut faire autorité sur ta zone interne (`homelab.local`). Dans **Zo
 - **Type** : Primary Zone
 - **Name** : `homelab.local`
 
-Tu ajoutes ensuite tes enregistrements A manuellement, ou tu laisses Technitium Network Suite créer les enregistrements dynamiques via le DHCP. Les deux produits se complètent parfaitement ici.
+Tu ajoutes ensuite tes enregistrements A manuellement dans la zone. C'est idéal pour résoudre tes machines par nom d'hôte sans modifier `/etc/hosts` sur chaque client.
 
-## Intégration avec Technitium Network Suite
+## Bonus : DNS dynamique et résolution locale
 
-Si tu utilises déjà [Technitium Network Suite](https://brandonvisca.com/technitium-network-suite/) pour ton DHCP, l'intégration DNS est native et automatique.
+Technitium DNS Server peut créer des zones DNS primaires pour ton réseau local (`homelab.local`). Dans **Zones → Add Zone → Primary Zone** :
 
-Dans **Network Suite → DHCP → Scopes → Edit ton étendue** :
+- **Name** : `homelab.local`
+- Ajoute tes enregistrements `A` manuellement pour chaque machine (`nas.homelab.local`, `proxmox.homelab.local`…)
 
-- **DNS Servers** : l'IP de ton hôte Technitium DNS Server
-- **Domain Name** (option DHCP 15) : `homelab.local`
+Puis, configure ton routeur pour pousser l'IP de Technitium DNS Server comme DNS primaire via l'option DHCP 6. Toutes les machines du réseau obtiennent alors la résolution locale automatiquement.
 
-Les clients DHCP reçoivent automatiquement l'IP du DNS Server à chaque bail. Quand une machine obtient un bail, Network Suite crée un enregistrement `A` dans ta zone `homelab.local`. Résolution DNS par nom d'hôte transparente sur tout ton réseau, sans configuration supplémentaire.
-
-Mon setup actuel sur un Mini PC Proxmox :
-
-```text
-┌──────────────────────────────────────────────────┐
-│  LXC Proxmox (192.168.1.2)                       │
-│  ┌─────────────────┐  ┌────────────────────────┐ │
-│  │ Technitium NS   │  │ Technitium DNS Server  │ │
-│  │ DHCP .100-.200  │  │ DNS récursif + blocage │ │
-│  │ NTP stratum 3   │  │ Zone homelab.local     │ │
-│  │ Port :6080      │  │ Port :53 + :5380       │ │
-│  └─────────────────┘  └────────────────────────┘ │
-│  ┌──────────────────────────────────────────────┐ │
-│  │  Tous les clients → bail DHCP → DNS .2       │ │
-│  └──────────────────────────────────────────────┘ │
-└──────────────────────────────────────────────────┘
-```
-
-Le résultat : toute machine qui obtient un bail DHCP est immédiatement résolvable par nom sur le réseau (`proxmox-node.homelab.local`, `nas.homelab.local`…). Plus besoin de gérer `/etc/hosts` ou un DNS split-horizon complexe.
-
-Si tu veux aller plus loin sur la gestion des enregistrements DNS et le nettoyage des entrées obsolètes, le guide sur le [DNS Scavenging sous Windows Server](https://brandonvisca.com/dns-scavenging-windows-server-guide-complet/) couvre le même principe côté Active Directory.
+Résultat : plus besoin de gérer `/etc/hosts` sur chaque client, ni de configurer un DNS split-horizon complexe.
 
 ## Conclusion
 
-Technitium DNS Server est une des meilleures options pour auto-héberger son DNS en 2026. Il est propre, activement maintenu, et il fait du DNS récursif natif sans jongler avec Unbound. Si t'es déjà sur la stack Technitium pour le DHCP, c'est un no-brainer — t'es à 5 minutes d'un DNS complet unifié.
+Technitium DNS Server est une des meilleures options pour auto-héberger son DNS en 2026. Il est propre, activement maintenu par Shreyas Zare, et il fait du DNS récursif natif sans jongler avec Unbound. Le blocage de pubs est efficace, la configuration est intuitive, et le tout tient dans un conteneur Docker de ~100 Mo.
 
-La migration depuis Pi-hole est quasi-transparente : importe tes listes, désactive l'ancien serveur, pointe ton DHCP sur la nouvelle IP. Pas de mauvaise surprise.
+La migration depuis Pi-hole est quasi-transparente : importe tes listes, désactive l'ancien serveur, pointe ton routeur sur la nouvelle IP. Pas de mauvaise surprise.
 
 Et si tu veux synchroniser tes blocages DNS sur plusieurs instances (un DNS par VLAN, par exemple), jette un œil à [Nebula-Sync pour Pi-hole v6](https://brandonvisca.com/nebula-sync-pihole-v6-installation-docker-guide/) — le concept de synchronisation de listes est transposable.
 
 ## Pour aller plus loin
 
-- [Technitium Network Suite : serveur DHCP et NTP pour ton homelab](/technitium-network-suite/)
 - [Nebula-Sync : synchronise tes Pi-hole v6 automatiquement](/nebula-sync-pihole-v6-installation-docker-guide/)
 - [DNS Scavenging Windows Server : le guide complet](/dns-scavenging-windows-server-guide-complet/)
+- [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/)
