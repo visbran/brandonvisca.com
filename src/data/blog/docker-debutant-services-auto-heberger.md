@@ -1,6 +1,7 @@
 ---
 title: "Docker pour les débutants : 10 services essentiels à auto-héberger en 2025"
 pubDatetime: "2025-10-22T16:12:41+02:00"
+modDatetime: "2026-04-29T13:50:00+02:00"
 author: Brandon Visca
 description: "Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !"
 tags:
@@ -418,7 +419,7 @@ services:
     restart: unless-stopped
 
   nextcloud:
-    image: nextcloud:32
+    image: nextcloud:33
     container_name: nextcloud
     ports:
       - "8081:80"
