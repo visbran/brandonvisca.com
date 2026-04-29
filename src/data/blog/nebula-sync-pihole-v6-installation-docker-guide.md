@@ -429,6 +429,8 @@ Si tu as plusieurs Pi-hole v6 et que tu veux arrêter de les synchroniser à la 
 
 La prochaine étape logique : combine Nebula-Sync avec une config Pi-hole solide. Listes de blocage optimisées, DNS-over-HTTPS, surveillance des requêtes. Ton homelab DNS ne sera plus jamais un point de défaillance unique.
 
+Et si tu parts de zéro ou envisages une migration, [Technitium DNS Server](/technitium-dns-server/) propose blocage de pubs + DNS récursif natif + DNSSEC dans un seul conteneur — sans dépendance à dnsmasq ni à Unbound.
+
 ## Pour aller plus loin
 
 - [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/)
