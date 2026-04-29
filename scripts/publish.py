@@ -21,6 +21,7 @@ Usage:
   python3 scripts/publish.py article.md --draft                 # Publie en draft (preview)
 """
 
+import os
 import sys
 import re
 import shutil
@@ -30,7 +31,7 @@ from datetime import datetime
 
 # ── Chemins ───────────────────────────────────────────────────────────────────
 
-VAULT_ROOT = Path.home() / "Documents/brandon-knowledge"
+VAULT_ROOT = Path(os.environ.get("BRANDON_VAULT", Path.home() / "Documents/brandon-knowledge"))
 READY_DIR  = VAULT_ROOT / "Content/Articles/03-Pret-Publication"
 DONE_DIR   = VAULT_ROOT / "Content/Articles/04-Publies"
 BLOG_DIR   = Path(__file__).parent.parent / "src/data/blog"
