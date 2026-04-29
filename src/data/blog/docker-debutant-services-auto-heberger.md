@@ -1,26 +1,37 @@
 ---
 title: "Docker pour les débutants : 10 services essentiels à auto-héberger en 2025"
+description: "Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !"
 pubDatetime: "2025-10-22T16:12:41+02:00"
 modDatetime: "2026-04-29T13:50:00+02:00"
 author: Brandon Visca
-description: "Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !"
 tags:
   - docker
+  - docker-compose
   - auto-hebergement
   - homelab
   - linux
-  - guide
   - debutant
+featured: false
+draft: false
+focusKeyword: docker
 faqs:
   - question: "Docker vs LXC vs VM, quelle différence ?"
-    answer: "Docker : conteneurs applicatifs ultra-légers. LXC : conteneurs système (mini-VMs). VM : machine virtuelle complète avec OS, très lourd."
+    answer: "Docker : conteneurs applicatifs ultra-légers. LXC : conteneurs système (mini-VMs Linux). VM : machine virtuelle complète avec OS, très lourd."
   - question: "Mes conteneurs Docker utilisent beaucoup de RAM, c'est normal ?"
     answer: "Docker alloue la RAM par conteneur. Solution : limiter la RAM par conteneur (mem_limit), utiliser des images alpine, ou fermer les services inutilisés."
   - question: "Puis-je faire tourner Docker sur un Raspberry Pi ?"
     answer: "Oui. Beaucoup d'images disponibles en architecture ARM. Services lourds (Jellyfin avec transcodage) limités, mais Nextcloud/Vaultwarden tournent parfaitement."
+  - question: "Docker Compose vs Docker Swarm vs Kubernetes ?"
+    answer: "Docker Compose : un seul serveur, parfait pour homelab. Docker Swarm : plusieurs serveurs, orchestration simple. Kubernetes : orchestration complexe, overkill pour homelab."
   - question: "Comment migrer mes conteneurs Docker vers un autre serveur ?"
     answer: "Arrêter les conteneurs (docker compose down), copier le dossier docker vers le nouveau serveur, relancer (docker compose up -d)."
+  - question: "Docker consomme-t-il beaucoup de ressources ?"
+    answer: "Docker lui-même est très léger. Ce sont les services que tu fais tourner qui consomment. Un serveur avec 4 Go de RAM peut faire tourner 5-10 services légers sans problème."
 ---
+> 💡 **TL;DR** — Docker pour débutants en 3 points :
+> - **C’est quoi ?** Une façon de lancer des applis dans des « boîtes » isolées
+> - **Pourquoi ?** Installation en 2 minutes, zéro conflit entre logiciels, facile à supprimer
+> - **Comment ?** Un fichier `docker-compose.yml` + une commande = service opérationnel
 
 Tu as entendu parler de Docker partout. « C’est l’avenir », « Tous les devs l’utilisent », « Tu devrais apprendre Docker ».
 
@@ -32,14 +43,9 @@ Pas de théorie inutile. Que du concret.
 
 - - - - - -
 
-TL;DR : Docker en 3 phrases
+![](perspectief-camas-perspectief-it-5qzez0rtln9581k7q5.gif)
 
-- **C’est quoi ?** Une façon de lancer des applications dans des « boîtes » isolées
-- **Pourquoi ?** Installation en 2 minutes, pas de conflit entre logiciels, facile à supprimer
-- **Comment ?** Un fichier `docker-compose.yml` + une commande = service opérationnel
-
-![Illustration 1 — Docker pour les débutants](perspectief-camas-perspectief-it-5qzez0rtln9581k7q5.gif)- - - - - -
-
+- - - - - -
 
 - [Docker, c’est quoi (sans le jargon de dev)](#docker-cest-quoi-sans-le-jargon-de-dev)
   - [Comment ça marche ?](#comment-ca-marche)
@@ -110,6 +116,7 @@ TL;DR : Docker en 3 phrases
 
 
 Docker, c’est quoi (sans le jargon de dev)
+------------------------------------------
 
 Imagine que tu veuilles installer Nextcloud sur ton serveur.
 
@@ -146,8 +153,11 @@ Docker n’est pas de la virtualisation comme Proxmox ou VMware. C’est beaucou
 - - - - - -
 
 Pourquoi Docker change tout pour l’auto-hébergement
+---------------------------------------------------
 
 Si tu as lu mon guide sur [l’auto-hébergement](https://brandonvisca.com/auto-hebergement-guide-complet-2025/), tu sais qu’on peut héberger plein de services. Mais Docker rend ça 10x plus facile.
+
+J’utilise Docker depuis 3 ans dans mon homelab pour faire tourner une vingtaine de services. Nextcloud, Vaultwarden, Jellyfin, Paperless : tout tourne en conteneurs. Résultat : migration serveur en 20 minutes, zéro casse.
 
 ### Les avantages de Docker pour ton homelab
 
@@ -165,47 +175,55 @@ Tu changes de serveur ? Tu copies ton dossier de configs, tu relances Docker, et
 ```bash
 docker compose pull   # Télécharger la nouvelle version
 docker compose up -d  # Redémarrer avec la nouvelle version
-
 ```
 
-## Mise à jour du système
+- - - - - -
+
+## Installation de Docker (Ubuntu/Debian)
+
+### Étape 1 : Installer Docker Engine
+
+```bash
+# Mise à jour du système
 sudo apt update && sudo apt upgrade -y
 
-## Installation des prérequis
+# Installation des prérequis
 sudo apt install -y ca-certificates curl gnupg lsb-release
 
-## Ajout de la clé GPG officielle Docker
+# Ajout de la clé GPG officielle Docker
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
-## Ajout du dépôt Docker
+# Ajout du dépôt Docker
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-## Installation de Docker
+# Installation de Docker
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
-
+```
 
 ### Étape 2 : Vérifier que Docker fonctionne
 
 ```bash
 sudo docker run hello-world
-
 ```
 
-sudo usermod -aG docker $USER
+### Étape 3 : Utiliser Docker sans sudo (optionnel mais recommandé)
 
+```bash
+sudo usermod -aG docker $USER
+```
 
 Déconnecte-toi et reconnecte-toi pour que ça prenne effet. Ensuite, tu pourras faire `docker ps` sans `sudo`.
 
-**Sécurité :**  
-Ajouter ton user au groupe Docker lui donne des droits équivalents à root. Sur un serveur de prod, réfléchis-y à deux fois. Pour ton homelab perso, aucun souci.
+> ⚠️ **Sécurité** — Ajouter ton user au groupe Docker lui donne des droits équivalents à root. Sur un serveur de prod, réfléchis-y à deux fois. Pour ton homelab perso, aucun souci.
 
 - - - - - -
 
 Docker Compose : Le fichier magique
+-----------------------------------
 
 Docker Compose, c’est ce qui rend Docker vraiment puissant pour l’auto-hébergement.
 
@@ -213,7 +231,7 @@ Au lieu de lancer des commandes `docker run` à rallonge, tu définis tout dans 
 
 ### Structure d’un fichier docker-compose.yml
 
-```bash
+```yaml
 services:
   nom-du-service:
     image: nom-de-limage:version
@@ -225,29 +243,33 @@ services:
     environment:
       - VARIABLE=valeur
     restart: unless-stopped
-
 ```
 
-## Démarrer tous les services
+### Commandes Docker Compose essentielles
+
+```bash
+# Démarrer tous les services
 docker compose up -d
 
-## Voir les conteneurs en cours
+# Voir les conteneurs en cours
 docker compose ps
 
-## Voir les logs
+# Voir les logs
 docker compose logs -f nom-du-service
 
-## Arrêter tout
+# Arrêter tout
 docker compose down
 
-## Mettre à jour
+# Mettre à jour
 docker compose pull
 docker compose up -d
+```
 
 
 - - - - - -
 
 Organisation des fichiers (bonne pratique)
+------------------------------------------
 
 Avant de déployer tes services, crée une structure propre :
 
@@ -261,14 +283,15 @@ mkdir -p uptime-kuma nextcloud vaultwarden jellyfin
 
 ```
 
+```bash
 cd ~/docker/uptime-kuma
 mkdir data
 nano docker-compose.yml
-
+```
 
 Colle ce contenu :
 
-```bash
+```yaml
 services:
   uptime-kuma:
     image: louislam/uptime-kuma:2.0.1
@@ -280,7 +303,9 @@ services:
     restart: unless-stopped
 ```
 
+```bash
 docker compose up -d
+```
 
 
 **Accès :** `http://ton-serveur:3001`
@@ -291,7 +316,7 @@ docker compose up -d
 
 ### 2. Portainer — Interface de gestion Docker 🟢
 
-![Capture d'écran — 2 Portainer Interface de gestion Docker](portainer-github-banner.webp)**C’est quoi ?**  
+![](portainer-github-banner.webp)**C’est quoi ?**  
 Une interface web pour gérer tous tes conteneurs Docker sans ligne de commande.
 
 **Pourquoi ?**  
@@ -305,9 +330,9 @@ Voir d’un coup d’œil tous tes conteneurs, les logs, les stats CPU/RAM. Indi
 cd ~/docker/portainer
 mkdir data
 nano docker-compose.yml
-
 ```
 
+```yaml
 services:
   portainer:
     image: portainer/portainer-ce:2.35.0
@@ -318,19 +343,19 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./data:/data
     restart: unless-stopped
-
+```
 
 ```bash
 docker compose up -d
-
 ```
 
+```bash
 cd ~/docker/nginx-proxy-manager
 mkdir data letsencrypt
 nano docker-compose.yml
+```
 
-
-```bash
+```yaml
 services:
   nginx-proxy-manager:
     image: jc21/nginx-proxy-manager:2.12.6
@@ -343,10 +368,11 @@ services:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
     restart: unless-stopped
-
 ```
 
+```bash
 docker compose up -d
+```
 
 
 **Accès :** `http://ton-serveur:81`
@@ -362,8 +388,8 @@ docker compose up -d
 
 ### 4. Vaultwarden — Gestionnaire de mots de passe 🟢
 
-![Capture d'écran — 4 Vaultwarden Gestionnaire de mots de passe](vaultwarden.webp)**C’est quoi ?**  
-Une version allégée et auto-hébergée de Bitwarden (compatible avec toutes les apps officielles).
+![](vaultwarden.webp)**C’est quoi ?**  
+Une version allégée et auto-hébergée de Bitwarden (compatible avec toutes les apps officielles). J’ai un [guide dédié à Vaultwarden](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/) si tu veux aller plus loin.
 
 **Pourquoi ?**  
 Fini les mots de passe réutilisés partout. Et contrairement à LastPass, **tu gardes le contrôle**.
@@ -376,9 +402,9 @@ Fini les mots de passe réutilisés partout. Et contrairement à LastPass, **tu 
 cd ~/docker/vaultwarden
 mkdir data
 nano docker-compose.yml
-
 ```
 
+```yaml
 services:
   vaultwarden:
     image: vaultwarden/server:1.34.3
@@ -391,19 +417,20 @@ services:
       - SIGNUPS_ALLOWED=true
       - ADMIN_TOKEN=ton_token_super_secret
     restart: unless-stopped
-
+```
 
 ```bash
 docker compose up -d
-
 ```
 
+```bash
 cd ~/docker/nextcloud
 mkdir data
 nano docker-compose.yml
+```
 
 
-```bash
+```yaml
 services:
   nextcloud-db:
     image: mariadb:10.11
@@ -433,11 +460,11 @@ services:
     depends_on:
       - nextcloud-db
     restart: unless-stopped
-
 ```
 
+```bash
 docker compose up -d
-
+```
 
 **Accès :** `http://ton-serveur:8081`
 
@@ -448,14 +475,14 @@ docker compose up -d
 3. Utilise les identifiants du docker-compose
 4. Installe les apps recommandées
 
-**Astuce :** Active la prévisualisation des fichiers et l’app Memories pour gérer tes photos comme sur Google Photos.
+> 💡 **Astuce** — Active la prévisualisation des fichiers et l’app Memories pour gérer tes photos comme sur Google Photos. Tu peux aussi consulter mon [guide Nextcloud complet](https://brandonvisca.com/nextcloud-docker-installation-complete-2025/) pour aller plus loin.
 
 - - - - - -
 
 ### 6. Jellyfin — Serveur média (Netflix maison) 🟡
 
-![Capture d'écran — 6 Jellyfin Serveur média Netflix maison](jellyfin.webp)**C’est quoi ?**  
-Un serveur de streaming pour tes films, séries, musique. Open source, sans télémétrie, sans pub.
+![](jellyfin.webp)**C’est quoi ?**  
+Un serveur de streaming pour tes films, séries, musique. Open source, sans télémétrie, sans pub. Mon [guide Jellyfin](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/) couvre la configuration GPU et le transcodage.
 
 **Pourquoi ?**  
 Parce que c’est satisfaisant d’avoir son propre Netflix avec sa bibliothèque perso.
@@ -468,9 +495,9 @@ Parce que c’est satisfaisant d’avoir son propre Netflix avec sa bibliothèqu
 cd ~/docker/jellyfin
 mkdir -p config cache
 nano docker-compose.yml
-
 ```
 
+```yaml
 services:
   jellyfin:
     image: jellyfin/jellyfin:10.11.0
@@ -483,21 +510,21 @@ services:
       - /chemin/vers/tes/films:/media/films:ro
       - /chemin/vers/tes/series:/media/series:ro
     restart: unless-stopped
+```
 
-
-**Importante :** Remplace `/chemin/vers/tes/films` par le vrai chemin où sont stockés tes médias.
+**Important :** Remplace `/chemin/vers/tes/films` par le vrai chemin où sont stockés tes médias.
 
 ```bash
 docker compose up -d
-
 ```
 
+```bash
 cd ~/docker/homer
 mkdir assets
 nano docker-compose.yml
+```
 
-
-```bash
+```yaml
 services:
   homer:
     image: b4bz/homer
@@ -506,13 +533,15 @@ services:
       - ./assets:/www/assets
     ports:
       - 8082:8080
-    user: 1000:1000 # utilisateur par défaut, adapte en fonction
+    user: 1000:1000
     environment:
-      - INIT_ASSETS=1 # status 1 créer le fichier de config
+      - INIT_ASSETS=1
     restart: unless-stopped
 ```
 
+```bash
 docker compose up -d
+```
 
 
 **Accès :** `http://ton-serveur:8082`
@@ -523,7 +552,7 @@ docker compose up -d
 
 ### 8. Immich — Alternative Google Photos 🟡
 
-![Capture d'écran — 8 Immich Alternative Google Photos](immich.webp)**C’est quoi ?**  
+![](immich.webp)**C’est quoi ?**  
 Une app de backup et d’organisation de photos avec reconnaissance faciale, géolocalisation, et recherche intelligente.
 
 **Pourquoi ?**  
@@ -537,10 +566,8 @@ Google Photos c’est pratique, mais tes photos servent à entraîner leurs algo
 cd ~/docker/immich
 wget -O docker-compose.yml https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml
 wget -O .env https://github.com/immich-app/immich/releases/latest/download/example.env
-
-```
-
 docker compose up -d
+```
 
 
 **Accès :** `http://ton-serveur:2283`
@@ -551,7 +578,7 @@ docker compose up -d
 
 ### 9. Paperless-ngx — GED personnelle 🟡
 
-![Capture d'écran — 9 Paperless-ngx GED personnelle](paperless-ngx.webp)**C’est quoi ?**  
+![](paperless-ngx.webp)**C’est quoi ?**  
 Un système de gestion documentaire qui scanne, indexe et organise tous tes documents (factures, contrats, etc.).
 
 **Pourquoi ?**  
@@ -568,8 +595,7 @@ nano docker-compose.yml
 
 ```
 
-```bash
-
+```yaml
 services:
   paperless-redis:
     image: redis:7
@@ -622,7 +648,7 @@ mkdir -p db data
 nano docker-compose.yml
 ```
 
-```bash
+```yaml
 services:
   freshrss-db:
     image: postgres:15
@@ -636,7 +662,7 @@ services:
     restart: unless-stopped
 
   freshrss:
-    image: freshrss/freshrss:latest
+    image: freshrss/freshrss:1.24.3
     container_name: freshrss
     depends_on:
       - freshrss-db
@@ -667,6 +693,7 @@ docker compose up -d
 - - - - - -
 
 Commandes Docker essentielles (antisèche)
+-----------------------------------------
 
 ### Gestion des conteneurs
 
@@ -685,18 +712,20 @@ docker restart nom-conteneur
 
 # Supprimer un conteneur (il doit être arrêté avant)
 docker rm nom-conteneur
-
 ```
 
-## Lister les images téléchargées
+### Gestion des images
+
+```bash
+# Lister les images téléchargées
 docker images
 
-## Supprimer une image
+# Supprimer une image
 docker rmi nom-image:tag
 
-## Télécharger une image
+# Télécharger une image
 docker pull nom-image:tag
-
+```
 
 ### Logs et debug
 
@@ -709,22 +738,26 @@ docker logs -f nom-conteneur
 
 # Entrer dans un conteneur (pour débugger)
 docker exec -it nom-conteneur /bin/bash
-
 ```
 
-## Supprimer tous les conteneurs arrêtés
+### Nettoyage
+
+```bash
+# Supprimer tous les conteneurs arrêtés
 docker container prune
 
-## Supprimer toutes les images non utilisées
+# Supprimer toutes les images non utilisées
 docker image prune
 
-## Nettoyage complet (ATTENTION : supprime tout ce qui n'est pas utilisé)
+# Nettoyage complet (ATTENTION : supprime tout ce qui n'est pas utilisé)
 docker system prune -a
+```
 
 
 - - - - - -
 
 Erreurs fréquentes et solutions
+-------------------------------
 
 ### ❌ Erreur : « Port already allocated »
 
@@ -739,11 +772,18 @@ sudo lsof -i :8080
 # Ou change le port dans docker-compose.yml
 ports:
   - "8085:80"  # Au lieu de 8080:80
-
 ```
 
-## Donner les permissions au dossier
+#### ❌ Erreur : « permission denied » sur les volumes
+
+**Problème :** Docker n'arrive pas à écrire dans le dossier du volume.
+
+**Solution :**
+
+```bash
+# Donner les permissions au dossier
 sudo chown -R $USER:$USER ~/docker/nom-service
+```
 
 
 - - - - - -
@@ -762,30 +802,41 @@ docker logs nom-conteneur
 # - Variable d'environnement manquante
 # - Port déjà utilisé
 # - Volume mal configuré
-
 ```
 
-## Démarrer Docker
+#### ❌ « Cannot connect to Docker daemon »
+
+**Problème :** Le service Docker n'est pas démarré.
+
+**Solution :**
+
+```bash
+# Démarrer Docker
 sudo systemctl start docker
 
-## Activer au démarrage
+# Activer au démarrage
 sudo systemctl enable docker
+```
 
 
 - - - - - -
 
 Bonnes pratiques pour ton homelab Docker
+----------------------------------------
 
 ### 1. Toujours utiliser des versions fixes
 
 ❌ **Mauvais :**
 
-```bash
+```yaml
 image: nextcloud:latest
-
 ```
 
+✅ **Bien :**
+
+```yaml
 image: nextcloud:28
+```
 
 
 **Pourquoi ?** `latest` peut casser tes services lors d’une mise à jour majeure. Avec une version fixe, tu contrôles quand tu updates.
@@ -796,14 +847,16 @@ image: nextcloud:28
 
 ✅ **Bind mount (recommandé pour homelab) :**
 
-```bash
+```yaml
 volumes:
   - ./data:/app/data
-
 ```
 
-restart: unless-stopped
+### 3. Configurer restart: unless-stopped
 
+```yaml
+restart: unless-stopped
+```
 
 Ton serveur reboot ? Tes conteneurs redémarrent automatiquement.
 
@@ -813,7 +866,7 @@ Ton serveur reboot ? Tes conteneurs redémarrent automatiquement.
 
 Pour des services qui doivent communiquer ensemble (ex: Nextcloud + sa base de données), utilise un réseau dédié :
 
-```bash
+```yaml
 networks:
   nextcloud-net:
 
@@ -821,24 +874,30 @@ services:
   nextcloud-db:
     networks:
       - nextcloud-net
-  
+
   nextcloud:
     networks:
       - nextcloud-net
-
 ```
 
+### 5. Documenter tes docker-compose
+
+Un simple commentaire dans le fichier te sauvera la mise dans 6 mois :
+
+```yaml
 services:
   nextcloud:
     image: nextcloud:28
     # Port 8081 car 8080 déjà utilisé par Vaultwarden
     ports:
       - "8081:80"
+```
 
 
 - - - - - -
 
 Sauvegarder tes services Docker
+-------------------------------
 
 Les conteneurs Docker sont éphémères. Si tu supprimes un conteneur, tu perds ses données… **sauf si tu as bien configuré les volumes**.
 
@@ -858,6 +917,7 @@ find ~/backups -name "docker-*.tar.gz" -mtime +7 -delete
 
 ```
 
+```yaml
 services:
   watchtower:
     image: containrrr/watchtower:latest
@@ -866,36 +926,25 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - WATCHTOWER_CLEANUP=true
-      - WATCHTOWER_SCHEDULE=0 0 4 * * *  # Tous les jours à 4h du matin
+      - WATCHTOWER_SCHEDULE=0 0 4 * * *
     restart: unless-stopped
+```
 
-
-**Attention :** Teste bien avant d’activer ça en prod. Une mise à jour peut casser un service.
+> ⚠️ **Attention** — Teste bien Watchtower avant de l’activer. Une mise à jour majeure peut casser un service. Préfère les versions fixes dans tes compose et gère les updates manuellement si tu es pointilleux.
 
 - - - - - -
 
-Ressources pour aller plus loin
+## Pour aller plus loin
 
-### 📚 Articles complémentaires sur ce site
-
-- [Auto-hébergement : Le guide complet 2025](https://brandonvisca.com/auto-hebergement-guide-complet-2025/)
-- [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/)
-- [Sécuriser Nginx avec des headers HTTP](https://brandonvisca.com/securiser-nginx-avec-headers-http/)
-
-### 🌐 Ressources externes
-
-- [Docker Hub](https://hub.docker.com/) : Catalogue d’images Docker
-- [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : Liste de services auto-hébergeables
-- [LinuxServer.io](https://www.linuxserver.io/) : Images Docker maintenues et optimisées
-
-### 📺 Chaînes YouTube recommandées
-
-- TechnoTim (en anglais, très bon pour homelab)
-- Xavki (en français, DevOps et Docker)
+- [Auto-hébergement : le guide complet](https://brandonvisca.com/auto-hebergement-guide-complet-2025/) — la suite logique après Docker
+- [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) — indispensable avant d’exposer des services
+- [Docker Hub](https://hub.docker.com/) — catalogue officiel d’images Docker
+- [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) — liste exhaustive de services auto-hébergeables
 
 - - - - - -
 
 Conclusion : Docker, ton meilleur allié homelab
+-----------------------------------------------
 
 Si tu retiens une chose de cet article, c’est ça : **Docker simplifie tout**.
 
@@ -920,16 +969,14 @@ Avec Docker :
 - RSS (FreshRSS)
 - Reverse proxy (Nginx Proxy Manager)
 
-**Prochaine étape ?**  
-Installe Docker, déploie Uptime Kuma et Portainer pour commencer. Puis ajoute les autres services au fur et à mesure.
+**Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer. Puis ajoute les autres services au fur et à mesure. En quelques soirs, tu as un homelab complet.
 
-Dans le prochain article, on parlera de **Proxmox** pour virtualiser plusieurs VMs et conteneurs LXC. Parce que parfois, Docker ne suffit pas. 😉
-
-Tu galères sur un service ? Pose ta question en commentaires, je réponds à tout ! 👇
+Si tu veux aller encore plus loin, la prochaine étape c'est [sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) avant d'exposer tes services sur internet.
 
 - - - - - -
 
 FAQ : Les questions Docker qui reviennent souvent
+-------------------------------------------------
 
 ### **Docker vs LXC vs VM, quelle différence ?**
 
@@ -967,7 +1014,3 @@ C’est tout. C’est ça, la magie de Docker.
 
 Docker lui-même est très léger. Ce sont les **services** que tu fais tourner qui consomment. Un serveur avec 4 Go de RAM peut faire tourner 5-10 services légers sans problème.
 
-## Articles connexes
-
-- [Auto-hébergement : Le guide ultime 2025 pour reprendre contr](/auto-hebergement-guide-complet-2025/)
-- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économ](/jellyfin-docker-alternative-netflix-gratuite/)
