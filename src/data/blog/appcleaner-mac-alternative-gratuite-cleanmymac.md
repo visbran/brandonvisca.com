@@ -76,7 +76,7 @@ AppCleaner Mac se positionne comme la **solution minimaliste et efficace** : il 
 
 ### Méthode 2 : Via Homebrew (recommandé)
 
-Si tu utilises déjà Homebrew (le gestionnaire de paquets macOS dont je parle dans mon [guide d’installation Homebrew](../installation-homebrew-macos/.md)), c’est encore plus rapide :
+Si tu utilises déjà Homebrew (le gestionnaire de paquets macOS dont je parle dans mon [guide d’installation Homebrew](/installation-homebrew-macos/)), c’est encore plus rapide :
 
 ```bash
 brew install --cask appcleaner

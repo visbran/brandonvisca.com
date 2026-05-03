@@ -34,7 +34,7 @@ Spoiler : un jour, tu vas tout péter. Et tu vas pleurer.
 
 Dans ce guide, je te montre comment installer LocalWP, créer ton lab perso, et surtout : **comment migrer proprement vers la prod sans tout péter**.
 
-## Table of content
+## Table des matières
 
 ### 🎯 Ce que tu vas apprendre :
 

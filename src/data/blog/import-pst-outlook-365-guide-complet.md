@@ -113,7 +113,7 @@ Solution 1 : La méthode « oldschool » (ancienne version Outlook)
 
 **Outlook plante ?** → Pas assez de RAM ou PST défragmenté. Ferme tout, redémarre, et divise par lots.
 
-Si tu bosses en environnement AD et que ton PST est sur un partage réseau, assure-toi que ton [intégration Ubuntu Active Directory avec SSSD](https://brandonvisca.com/integration-ubuntu-active-directory-sssd/) permet l’accès aux fichiers. Ça peut paraître con, mais j’ai vu des gens galérer 2h là-dessus.
+Si tu bosses en environnement AD et que ton PST est sur un partage réseau, assure-toi que ton [intégration Ubuntu Active Directory avec SSSD](https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/) permet l’accès aux fichiers. Ça peut paraître con, mais j’ai vu des gens galérer 2h là-dessus.
 
 - - - - - -
 

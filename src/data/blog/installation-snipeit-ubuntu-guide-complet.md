@@ -22,7 +22,7 @@ Cette **installation SnipeIT Ubuntu** va couvrir Ubuntu 22.04 LTS et 24.04 LTS. 
 
 L'installation SnipeIT sur Ubuntu, c'est pas sorcier... si tu sais ce que tu fais. Sinon, tu vas te retrouver avec des erreurs 500, des permissions foireuses et l'envie de tout effacer. Dans ce guide installation SnipeIT Ubuntu, on va faire ça proprement.
 
-## Table of content
+## Table des matières
 
 ---
 

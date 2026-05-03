@@ -21,8 +21,6 @@ faqs:
   - question: "Technitium DNS Server fonctionne-t-il sur Raspberry Pi ?"
     answer: "Oui. L'image Docker est disponible pour linux/arm64 et linux/arm/v7, compatible Raspberry Pi 3 et 4. Le serveur tourne correctement avec 256 Mo de RAM allouée — largement suffisant sur un RPi 4."
 ---
-# Technitium DNS Server : installe ton bloqueur de pubs libre (2026)
-
 > 💡 **TL;DR** — Ce qu'il faut retenir :
 > - Technitium DNS Server est un serveur DNS récursif open source avec blocage de pubs intégré — alternative directe à Pi-hole et AdGuard Home.
 > - L'installation Docker prend 5 minutes : une commande, un port, une interface web sur `:5380`.

@@ -15,10 +15,6 @@ focusKeyword: contrôler luminosité écran externe mac
 ---
 ---
 
-# Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)
-
-
-
 
 
 
@@ -949,7 +945,7 @@ Lunar → Controls → Disable Software Dimming
 - Pro features encryptées dans le code source (pas 100% open)
 - Quelques bugs après wake-up (mais Auto Restart les résout)
 
-**Mon verdict perso** : J'utilise Lunar **depuis 2 ans** sur mon Mac Mini M4 + 2 écrans. C'est devenu **indispensable**. Combiné avec [rcmd](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/) et [Clop](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/), c'est le trio parfait Low-Tech Guys.
+**Mon verdict perso** : J'utilise Lunar **depuis 2 ans** sur mon Mac Mini M4 + 2 écrans. C'est devenu **indispensable**. Combiné avec [rcmd](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/) et [Clop](https://brandonvisca.com/clop-compression-images-videos-macos/), c'est le trio parfait Low-Tech Guys.
 
 **Pour qui c'est un must** :
 - ✅ Mac Mini (aucune alternative viable)
@@ -970,7 +966,7 @@ Alors, prêt à contrôler tes écrans comme un humain civilisé ? 🚀
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
 - **[rcmd : Le raccourci qui tue Cmd+Tab](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
-- **[Clop : Compression automatique images/vidéos](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
+- **[Clop : Compression automatique images/vidéos](https://brandonvisca.com/clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
 - **[Raycast : L'outil qui transforme macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)** : Automatise tes workflows
 - **[Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)** : Indispensable pour installer Lunar
 

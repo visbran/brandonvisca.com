@@ -22,7 +22,7 @@ Si le serveur qui a les rôles ne fonctionne plus, on doit forcer le transfert. 
 
 **Exemple** : Le domaine « **brandonvisca.local** » a deux contrôleurs de domaine sous **Windows Server 201**6 : **AD1** et **AD2**. AD1 a tous les rôles mais ne fonctionne plus. Nous allons donc transférer les rôles à AD2.
 
-## Table of content
+## Table des matières
 
 ## Se connecter au contrôleur de domaine
 

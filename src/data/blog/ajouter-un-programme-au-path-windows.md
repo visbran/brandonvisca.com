@@ -29,7 +29,7 @@ Tu viens de télécharger Python, Node.js ou Git, et là… surprise : impossibl
 
 Dans ce guide, je te montre **3 méthodes** pour ajouter un programme au PATH Windows : l’interface graphique (pour les prudents), PowerShell (pour les pros), et CMD (pour les nostalgiques). Avec en bonus : cas d’usage réels, troubleshooting, et tout ce qu’il faut pour ne plus jamais galérer.
 
-## Table of content
+## Table des matières
 
 - - - - - -
 

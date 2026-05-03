@@ -18,7 +18,7 @@ Dans ce guide de **configuration avancée SnipeIT**, on va couvrir tout ce qui f
 
 Cette **configuration SnipeIT avancée** est ce qui manque à 90% des installations que je vois. Allez, on transforme ton SnipeIT en Formule 1.
 
-## Table of content
+## Table des matières
 
 ## Prérequis configuration avancée SnipeIT
 

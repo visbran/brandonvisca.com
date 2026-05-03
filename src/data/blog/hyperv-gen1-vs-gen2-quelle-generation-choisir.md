@@ -197,7 +197,7 @@ Set-VMFirmware -VMName "SRV-XXX" -EnableSecureBoot Off
 ## FAQ
 
 **Peut-on convertir une VM Gen1 en Gen2 ?**
-Non. La génération est figée à la création. Pour passer de Gen1 à Gen2, il faut créer une nouvelle VM Gen2 et migrer le contenu — exactement comme la procédure de [restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-corrompu-winpe/).
+Non. La génération est figée à la création. Pour passer de Gen1 à Gen2, il faut créer une nouvelle VM Gen2 et migrer le contenu — exactement comme la procédure de [restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/).
 
 **Gen2 est-elle plus performante que Gen1 ?**
 Légèrement, surtout au démarrage. En production, la différence de performances I/O est négligeable sur les workloads courants. L'avantage de Gen2 est surtout fonctionnel (Secure Boot, vTPM, disques SCSI) plutôt que purement en termes de vitesse.
@@ -224,7 +224,7 @@ Gen1 reste pertinente pour deux cas précis : les OS anciens (32 bits, Windows 2
 
 Si tu crées une nouvelle VM aujourd'hui pour Windows Server 2019/2022/2025 ou un Linux récent : **Gen2, sans hésitation**.
 
-Et si tu te retrouves avec une VM Gen2 corrompue, j'ai détaillé [la procédure complète de restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-corrompu-winpe/) — ça peut toujours servir.
+Et si tu te retrouves avec une VM Gen2 corrompue, j'ai détaillé [la procédure complète de restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/) — ça peut toujours servir.
 
 ---
 

@@ -33,7 +33,7 @@ TL;DR : L’auto-hébergement en 3 points
 - **Pour qui ?** Débutants curieux, passionnés de tech, admins qui veulent apprendre
 - **Budget ?** De 0€ (vieux PC) à 50€/mois (VPS pro)
 
-## Table of content
+## Table des matières
 
 
 L’auto-hébergement, c’est quoi exactement ?

@@ -14,8 +14,6 @@ featured: false
 draft: false
 focusKeyword: outils low tech macos
 ---
-# 10 Outils Indispensables pour macOS (Guide Complet 2026)
-
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
 
 
@@ -194,7 +192,7 @@ Temps gagné : 5 min/article = 50 min/mois
 
 **Mon avis** : Version gratuite suffit pour la plupart. Si tu fais +20 screenshots/jour → Pro vaut le coup.
 
-👉 **Guide complet** : [Clop : Compression automatique images/vidéos macOS](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/)
+👉 **Guide complet** : [Clop : Compression automatique images/vidéos macOS](https://brandonvisca.com/clop-compression-images-videos-macos/)
 
 ---
 
@@ -268,7 +266,7 @@ Temps gagné : 5 min/jour = 30h/an
 
 **Mon avis** : Version gratuite = F1/F2 qui fonctionnent (déjà énorme). Pro = automatisation complète. **23$ lifetime pour 5 Macs = no-brainer si tu as un Mac Mini**.
 
-👉 **Guide complet** : [Lunar : Contrôle luminosité écrans externes macOS](https://brandonvisca.com/2025-11-27-lunar-luminosite-ecrans-externes-macos/)
+👉 **Guide complet** : [Lunar : Contrôle luminosité écrans externes macOS](https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/)
 
 ---
 
@@ -341,7 +339,7 @@ Temps gagné : 20 recherches/jour × 30 sec = 10 min/jour = 60h/an
 - **Cling** : Fichiers code, config, dotfiles
 - **Spotlight** : Recherches générales, emails, docs
 
-👉 **Guide complet** : [Cling : Recherche fuzzy fichiers macOS](https://brandonvisca.com/2025-11-27-cling-recherche-fuzzy-fichiers-macos/)
+👉 **Guide complet** : [Cling : Recherche fuzzy fichiers macOS](https://brandonvisca.com/cling-recherche-fuzzy-fichiers-macos/)
 
 ---
 
@@ -1101,9 +1099,9 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 **Approfondis chaque outil** :
 
 1. **[rcmd : Le raccourci qui tue Cmd+Tab](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)** (2800 mots)
-2. **[Clop : Compression automatique](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/)** (3200 mots)
-3. **[Lunar : Contrôle luminosité écrans](https://brandonvisca.com/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** (3800 mots)
-4. **[Cling : Recherche fuzzy fichiers](https://brandonvisca.com/2025-11-27-cling-recherche-fuzzy-fichiers-macos/)** (2800 mots)
+2. **[Clop : Compression automatique](https://brandonvisca.com/clop-compression-images-videos-macos/)** (3200 mots)
+3. **[Lunar : Contrôle luminosité écrans](https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/)** (3800 mots)
+4. **[Cling : Recherche fuzzy fichiers](https://brandonvisca.com/cling-recherche-fuzzy-fichiers-macos/)** (2800 mots)
 
 **Autres articles macOS** :
 - [Raycast : Launcher complet](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)

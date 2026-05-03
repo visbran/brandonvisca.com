@@ -13,8 +13,6 @@ featured: false
 draft: false
 focusKeyword: recherche fichiers mac rapide
 ---
-# Cling : Recherche fuzzy fichiers 10x plus rapide
-
 ![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
 
 ---
@@ -772,7 +770,7 @@ Settings > Max results : 100
 - Pas de recherche par contenu (nom de fichier uniquement)
 - Courbe apprentissage (syntaxe avancée)
 
-**Mon verdict perso** : J'utilise Cling **depuis 6 mois** pour chercher mes fichiers de config, dotfiles, et scripts. Combiné avec [rcmd](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/), [Clop](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/), et [Lunar](https://brandonvisca.com/2025-11-27-lunar-luminosite-ecrans-externes-macos/), c'est le **quatuor Low-Tech Guys parfait**.
+**Mon verdict perso** : J'utilise Cling **depuis 6 mois** pour chercher mes fichiers de config, dotfiles, et scripts. Combiné avec [rcmd](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/), [Clop](https://brandonvisca.com/clop-compression-images-videos-macos/), et [Lunar](https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/), c'est le **quatuor Low-Tech Guys parfait**.
 
 **Pour qui c'est un must** :
 - ✅ Développeurs (configs, dotfiles, repos)
@@ -794,8 +792,8 @@ Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 ## 🔗 Articles connexes qui pourraient t'intéresser
 
 - **[rcmd : Le raccourci qui tue Cmd+Tab](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)** : Switch entre apps ultra-rapidement
-- **[Clop : Compression automatique](https://brandonvisca.com/2025-11-27-clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
-- **[Lunar : Contrôle luminosité écrans externes](https://brandonvisca.com/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** : DDC natif pour tes moniteurs
+- **[Clop : Compression automatique](https://brandonvisca.com/clop-compression-images-videos-macos/)** : Optimise tes fichiers en arrière-plan
+- **[Lunar : Contrôle luminosité écrans externes](https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/)** : DDC natif pour tes moniteurs
 - **[Raycast : L'outil qui transforme macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)** : Launcher complet (complémentaire à Cling)
 - **[Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)** : Indispensable pour installer Cling
 
