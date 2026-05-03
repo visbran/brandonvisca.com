@@ -29,7 +29,7 @@ Tu viens de désinstaller une app sur ton Mac en la glissant dans la Corbeille ?
 
 Dans ce guide, je te montre comment installer AppCleaner Mac, configurer SmartDelete pour automatiser le nettoyage, et récupérer plusieurs gigaoctets d’espace disque que tu croyais perdus.
 
-## Table of content
+## Table des matières
 
 - - - - - -
 
