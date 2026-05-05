@@ -1,6 +1,7 @@
 ---
 title: "Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes HTTP"
 pubDatetime: "2025-04-15T20:18:39+02:00"
+modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Renforcez la sécurité Nginx en bloquant les fichiers sensibles et l'exécution de scripts dans les répertoires d'upload. Configurations prêtes à copier."
 tags:
@@ -123,3 +124,9 @@ location ~* /(composer\.json|composer\.lock|package\.json|wp-config\.php|php\.in
 
 - [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)
 - [Comment renforcer la sécurité de Nginx avec les headers HTTP](/securiser-nginx-avec-headers-http/)
+
+## Pour aller plus loin
+
+- [Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels](/securiser-nginx-avec-headers-http/)
+- [Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs](/content-security-policy-nginx-sans-casser-site/)
+- [Comprendre les blocs location de Nginx et leur impact sur la sécurité](/nginx-location-bloc-et-securite/)

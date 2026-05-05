@@ -1,6 +1,7 @@
 ---
 title: "Aller plus loin : Permissions-Policy et protection anti-bots sur Nginx"
 pubDatetime: "2025-04-27T17:12:59+02:00"
+modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Renforcez la sécurité de vos apps web avec Permissions-Policy Nginx pour restreindre les API navigateur et bloquer les bots malveillants. Guide complet."
 tags:
@@ -126,3 +127,9 @@ location /contact {
 
 - [Comment renforcer la sécurité de Nginx avec les headers HTTP](/securiser-nginx-avec-headers-http/)
 - [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)
+
+## Pour aller plus loin
+
+- [Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels](/securiser-nginx-avec-headers-http/)
+- [Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs](/content-security-policy-nginx-sans-casser-site/)
+- [Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes HTTP](/proteger-nginx-fichiers-sensibles-et-uploads/)

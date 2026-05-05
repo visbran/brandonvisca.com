@@ -1,6 +1,7 @@
 ---
 title: "pfsense CE 2.8.0 : Ce que vous devez savoir avant de cliquer sur “Mettre à jour”"
 pubDatetime: "2025-06-01T19:41:15+02:00"
+modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Mettez à jour pfSense CE 2.8 en toute sécurité : nouveautés FreeBSD 14, correctifs de sécurité et étapes de migration détaillées pour éviter les erreurs."
 tags:
@@ -255,3 +256,9 @@ Les deux partagent une base commune, mais pfSense Plus a des fonctionnalités ex
 
 - [Vaultwarden avec Docker : Gestionnaire de Mots de Passe auto-hébergé](/vaultwarden-docker-gestionnaire-mots-de-passe/)
 - [Nebula-Sync : synchroniser plusieurs Pi-hole v6](/nebula-sync-pihole-v6-installation-docker-guide/)
+
+## Pour aller plus loin
+
+- [Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?](/securite-de-votre-serveur-linux/)
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)](/vaultwarden-docker-gestionnaire-mots-de-passe/)
+- [Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul](/traefik-reverse-proxy-docker/)

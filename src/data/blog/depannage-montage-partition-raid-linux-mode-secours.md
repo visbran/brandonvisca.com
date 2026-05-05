@@ -1,6 +1,7 @@
 ---
 title: "Dépannage montage RAID mdadm en mode secours Linux : wrong fs type et partition cachée"
 pubDatetime: "2025-03-13T11:37:18+01:00"
+modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Dépannage RAID mdadm en mode secours Linux : diagnostiquer wrong fs type, partition cachée non montée et restaurer le tableau RAID. Guide complet."
 tags:
@@ -71,3 +72,9 @@ nano /mnt/recovery/etc/sudoers.d/gardeners
 
 - [Sécurité de votre serveur linux : Comment durcir un serveur ](/securite-de-votre-serveur-linux/)
 - [Connecter les systèmes Ubuntu à Active Directory en utilisan](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
+
+## Pour aller plus loin
+
+- [Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?](/securite-de-votre-serveur-linux/)
+- [Swap Linux : guide complet pour configurer et optimiser en 2026](/guide-swap-linux-configuration-optimisation/)
+- [Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul](/traefik-reverse-proxy-docker/)

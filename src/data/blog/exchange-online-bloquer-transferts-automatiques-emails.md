@@ -1,6 +1,7 @@
 ---
 title: "Exchange Online : Bloquer les transferts automatiques d'emails (Guide 2025)"
 pubDatetime: "2025-06-14T20:02:20+02:00"
+modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Bloquez les redirections email et transferts automatiques dans Exchange Online avec PowerShell. Transport Rules, audit RBAC et scripts prêts à l'emploi."
 tags:
@@ -77,7 +78,11 @@ Exchange Online propose deux mécanismes distincts pour rediriger automatiquemen
 
 Cette méthode redirige **tous** les emails reçus vers une adresse externe :
 
-```bash
+```bas
+
+## Table des matières
+
+h
 # Via l'interface OWA ou en PowerShell
 Set-Mailbox prenom.nom@domaine.com -ForwardingSmtpAddress "externe@gmail.com"
 
@@ -320,3 +325,9 @@ Dans un prochain guide, nous verrons comment aller plus loin avec la **protectio
 
 - [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Grat](/vaultwarden-docker-gestionnaire-mots-de-passe/)
 - [Masquer des utilisateurs de la GAL Office 365 + Active Direc](/masquer-utilisateurs-gal-office365-active-directory/)
+
+## Pour aller plus loin
+
+- [Masquer des utilisateurs de la GAL Office 365 + Active Directory : Guide complet](/masquer-utilisateurs-gal-office365-active-directory/)
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)](/vaultwarden-docker-gestionnaire-mots-de-passe/)
+- [Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)](/partager-mot-de-passe-securise-comparatif/)

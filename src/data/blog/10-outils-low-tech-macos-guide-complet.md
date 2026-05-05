@@ -19,6 +19,8 @@ focusKeyword: outils low tech macos
 
 ---
 
+## Table des matières
+
 ## Introduction : La philosophie Low-Tech
 
 **La promesse Apple** : macOS, c'est simple, élégant, ça marche out-of-the-box.

@@ -1,6 +1,7 @@
 ---
 title: Comprendre les blocs location de Nginx et leur impact sur la sécurité
 pubDatetime: "2025-04-15T20:25:29+02:00"
+modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Maîtrisez les blocs location Nginx : types, priorités, regex et implications sécurité. Guide complet avec exemples pratiques pour configurer vos sites."
 tags:
@@ -218,3 +219,9 @@ Ressources complémentaires
 
 - [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)
 - [Limiter les risques sur Nginx : fichiers sensibles, uploads,](/proteger-nginx-fichiers-sensibles-et-uploads/)
+
+## Pour aller plus loin
+
+- [Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels](/securiser-nginx-avec-headers-http/)
+- [Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs](/content-security-policy-nginx-sans-casser-site/)
+- [Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes HTTP](/proteger-nginx-fichiers-sensibles-et-uploads/)

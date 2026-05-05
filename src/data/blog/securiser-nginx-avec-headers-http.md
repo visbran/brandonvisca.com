@@ -1,6 +1,7 @@
 ---
 title: Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels
 pubDatetime: "2025-04-06T11:33:55+02:00"
+modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Sécurisez Nginx avec les headers HTTP OWASP : HSTS, X-Frame-Options, CSP, Referrer-Policy. Guide complet avec configurations testées et explications."
 tags:
@@ -131,3 +132,9 @@ Dans le prochain article, nous verrons comment configurer une **[Content-Securit
 
 - [Aller plus loin : Permissions-Policy et protection anti-bots](/nginx-permissions-policy-anti-bot/)
 - [Content-Security-Policy : Protéger votre site sans bloquer v](/content-security-policy-nginx-sans-casser-site/)
+
+## Pour aller plus loin
+
+- [Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs](/content-security-policy-nginx-sans-casser-site/)
+- [Aller plus loin : Permissions-Policy et protection anti-bots sur Nginx](/nginx-permissions-policy-anti-bot/)
+- [Comprendre les blocs location de Nginx et leur impact sur la sécurité](/nginx-location-bloc-et-securite/)
