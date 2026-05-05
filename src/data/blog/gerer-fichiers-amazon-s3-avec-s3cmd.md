@@ -1,7 +1,6 @@
 ---
 title: "Gérer vos fichiers sur Amazon S3 avec S3cmd : Guide complet"
 pubDatetime: "2025-02-17T17:37:40+01:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "S3cmd guide complet : installez et configurez ce client CLI open source pour gérer vos fichiers Amazon S3, synchroniser et sauvegarder vos données."
 tags:
@@ -98,9 +97,3 @@ s3cmd del s3://mon-bucket/fichier.txt
 
 - [Swap Linux : comment ne pas transformer ton serveur en escar](/guide-swap-linux-configuration-optimisation/)
 - [UptimeRobot : Le Guide Complet pour Surveiller Votre Infrast](/uptimerobot-guide-complet-monitoring-infrastructure/)
-
-## Pour aller plus loin
-
-- [UptimeRobot : surveille ton infrastructure gratuitement (guide 2026)](/uptimerobot-guide-complet-monitoring-infrastructure/)
-- [Swap Linux : guide complet pour configurer et optimiser en 2026](/guide-swap-linux-configuration-optimisation/)
-- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)

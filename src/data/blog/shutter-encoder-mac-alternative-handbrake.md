@@ -1,7 +1,6 @@
 ---
 title: "Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025)"
 pubDatetime: "2025-11-19T11:56:47+01:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Shutter Encoder Mac : alternative gratuite à HandBrake pour la compression vidéo avancée, l'édition, les sous-titres et le color grading. Guide complet."
 tags:
@@ -188,9 +187,3 @@ Liens utiles
 
 - [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
 - [Clop : Compresse tes images et vidéos automatiquement sur ma](/2025-11-27-clop-compression-images-videos-macos/)
-
-## Pour aller plus loin
-
-- [Installer Homebrew sur macOS : Guide complet Apple Silicon & Intel](/installation-homebrew-macos/)
-- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)
-- [Raycast : L'outil qui transforme macOS en machine de productivité ultime](/raycast-macos-outil-productivite-ultime/)

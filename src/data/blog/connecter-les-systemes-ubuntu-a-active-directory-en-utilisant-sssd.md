@@ -1,7 +1,6 @@
 ---
 title: Connecter les systèmes Ubuntu à Active Directory en utilisant SSSD
 pubDatetime: "2024-06-13T11:40:02+02:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Connectez Ubuntu à Active Directory via SSSD pour une authentification centralisée. Guide complet : installation, configuration Kerberos et dépannage."
 tags:
@@ -317,9 +316,3 @@ Pour plus de détails techniques et d’exemples, consultez [Comment utiliser Ac
 - [Sécurité de votre serveur Linux : Comment durcir un VPS](/securite-de-votre-serveur-linux/)
 - [Masquer des utilisateurs de la GAL Office 365 + Active Directory](/masquer-utilisateurs-gal-office365-active-directory/)
 - [Filtrage utilisateurs LDAP Snipe-IT](/ldap-filtrage-utilisateurs-snipeit/)
-
-## Pour aller plus loin
-
-- [Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?](/securite-de-votre-serveur-linux/)
-- [SnipeAgent : Automatiser l'inventaire Windows sans Excel ni galères](/snipeagent-automatiser-inventaire-windows-snipeit/)
-- [Active Directory : Transfère des rôles FSMO](/activedirectory-transfere-des-roles-fsmo/)

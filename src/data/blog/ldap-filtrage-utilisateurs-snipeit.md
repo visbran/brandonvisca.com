@@ -1,7 +1,6 @@
 ---
 title: "Filtrage utilisateurs LDAP Snipe-IT : Guide pratique Active Directory 2025"
 pubDatetime: "2025-03-02T21:06:25+01:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Guide avancé pour filtrer les utilisateurs LDAP dans Snipe-IT connecté à Active Directory. Filtres sécurisés, exclusions par OU, bonnes pratiques 2025."
 tags:
@@ -119,9 +118,3 @@ ldapsearch -x -h AD_SERVER -D "cn=Utilisateur,dc=exemple,dc=ad" -W -b "dc=exempl
 
 - [Configuration avancée SnipeIT : LDAP, automatisation et noti](/configuration-avancee-snipeit-ldap-teams-automatisation/)
 - [Connecter les systèmes Ubuntu à Active Directory en utilisan](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
-
-## Pour aller plus loin
-
-- [Configuration avancée SnipeIT : LDAP, automatisation et notifications (guide 2025)](/configuration-avancee-snipeit-ldap-teams-automatisation/)
-- [Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)](/installation-snipeit-ubuntu-guide-complet/)
-- [Connecter les systèmes Ubuntu à Active Directory en utilisant SSSD](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)

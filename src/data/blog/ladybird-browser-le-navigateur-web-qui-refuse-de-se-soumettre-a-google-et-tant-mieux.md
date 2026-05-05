@@ -1,7 +1,6 @@
 ---
 title: "Ladybird Browser : Le navigateur web qui refuse de se soumettre à Google (et tant mieux)"
 pubDatetime: "2025-06-13T18:47:21+02:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Découvrez Ladybird, le nouveau navigateur open source construit from scratch. Architecture, financement, timeline et pourquoi ça change tout pour le web."
 tags:
@@ -80,9 +79,3 @@ sudo apt install build-essential cmake ninja-build qt6-base-dev
 
 - [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
 - [Installation et configuration de Vim : Guide complet](/installation-vim-guide-complet/)
-
-## Pour aller plus loin
-
-- [Arc Browser abandonné : 7 alternatives épurées pour retrouver ton workflow de rêve](/arc-browser-alternatives-navigateur-epure-2025/)
-- [Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle](/independance-numerique-2025-guide-complet/)
-- [Pourquoi j&rsquo;ai quitté Google (et comment tu peux faire pareil en 2025)](/quitter-google-auto-hebergement/)

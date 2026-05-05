@@ -1,7 +1,6 @@
 ---
 title: "Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)"
 pubDatetime: "2025-10-26T20:59:01+01:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Installe Jellyfin avec Docker en 20 min. Alternative Netflix auto-hébergée, économise 378€/an. Guide 2025 complet + transcoding 4K."
 tags:
@@ -222,11 +221,7 @@ Installation Jellyfin avec Docker : La méthode qui marche
 On repart sur **Ubuntu 24.04 LTS** (ou 22.04, Debian 12, Raspbian…).
 
 ```bash
-# Mise
-
-## Table des matières
-
- à jour système
+# Mise à jour système
 sudo apt update && sudo apt upgrade -y
 
 # Installer Docker si pas déjà fait
@@ -742,9 +737,3 @@ Et surtout, profite de **378€/an** dans ta poche au lieu de les filer à Netfl
 - [Nextcloud avec Docker : Ton Cloud Perso en 1h](/nextcloud-docker-installation-complete-2025/)
 - [Docker pour les débutants : 10 services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/)
 - [Vaultwarden avec Docker : Gestionnaire de Mots de Passe](/vaultwarden-docker-gestionnaire-mots-de-passe/)
-
-## Pour aller plus loin
-
-- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
-- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)](/vaultwarden-docker-gestionnaire-mots-de-passe/)
-- [Docker pour les débutants : 10 services essentiels à auto-héberger en 2025](/docker-debutant-services-auto-heberger/)

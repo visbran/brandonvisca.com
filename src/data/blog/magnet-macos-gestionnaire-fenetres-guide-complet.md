@@ -14,9 +14,6 @@ featured: true
 draft: false
 focusKeyword: magnet macos
 ---
-
-## Table des matières
-
 ## Introduction : La gestion de fenêtres sur macOS, c'était la galère
 
 Tu connais cette sensation ?

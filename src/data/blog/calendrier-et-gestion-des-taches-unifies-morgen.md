@@ -1,7 +1,6 @@
 ---
 title: "Calendrier et gestion des tâches unifiés\\_: Morgen"
 pubDatetime: "2024-07-16T19:43:31+02:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Morgen réunit calendrier, tâches et time-blocking dans une interface unifiée pour macOS. Alternative à Fantastical. Guide complet des fonctionnalités."
 tags:
@@ -94,9 +93,3 @@ Morgen se distingue comme une solution indispensable pour ceux qui cherchent à 
 
 - [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
 - [Ice : L'alternative gratuite à Bartender qui révolutionne vo](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
-
-## Pour aller plus loin
-
-- [Raycast : L'outil qui transforme macOS en machine de productivité ultime](/raycast-macos-outil-productivite-ultime/)
-- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
-- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/)

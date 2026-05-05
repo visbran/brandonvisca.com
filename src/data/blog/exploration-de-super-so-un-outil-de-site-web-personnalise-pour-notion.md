@@ -1,7 +1,6 @@
 ---
 title: "Exploration de Super.so : un outil de site web personnalisé pour Notion"
 pubDatetime: "2024-06-25T21:03:27+02:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Super.so transforme vos pages Notion en site web personnalisé : domaine custom, SEO intégré, thèmes et scripts personnalisés. Guide complet et test."
 tags:
@@ -42,9 +41,3 @@ En résumé, [Super.so](http://super.so/) est un outil puissant pour transformer
 
 - [Notion Sites: Révolution dans la Création de Sites Web](/notion-sites-creation-de-sites-web/)
 - [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
-
-## Pour aller plus loin
-
-- [Notion Sites: Révolution dans la Création de Sites Web](/notion-sites-creation-de-sites-web/)
-- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)
-- [Migrer WordPress en 2025 : All-in-One WP Migration guide complet (+ astuces pro)](/migration-wordpress-all-in-one-guide-2025/)

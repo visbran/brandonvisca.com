@@ -1,7 +1,6 @@
 ---
 title: "Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs"
 pubDatetime: "2025-04-15T20:03:49+02:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Configurez une Content-Security-Policy Nginx pour bloquer les attaques XSS sans casser votre site. Guide complet directive par directive avec exemples."
 tags:
@@ -163,9 +162,3 @@ location ~ ^/([a-z0-9-]+)(/.*)?$ {
 
 - [Limiter les risques sur Nginx : fichiers sensibles, uploads,](/proteger-nginx-fichiers-sensibles-et-uploads/)
 - [Comment renforcer la sécurité de Nginx avec les headers HTTP](/securiser-nginx-avec-headers-http/)
-
-## Pour aller plus loin
-
-- [Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels](/securiser-nginx-avec-headers-http/)
-- [Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes HTTP](/proteger-nginx-fichiers-sensibles-et-uploads/)
-- [Comprendre les blocs location de Nginx et leur impact sur la sécurité](/nginx-location-bloc-et-securite/)

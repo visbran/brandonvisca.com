@@ -263,11 +263,7 @@ volumes:
 
 💡 **Explications ligne par ligne :**
 
-- `mariadb:11.2` : Base de données performante
-
-## Table des matières
-
- (+ rapide que PostgreSQL pour Nextcloud)
+- `mariadb:11.2` : Base de données performante (+ rapide que PostgreSQL pour Nextcloud)
 - `redis` : Cache qui accélère drastiquement l’interface
 - `nextcloud:28-apache` : Version 28 avec Apache intégré
 - `OVERWRITEPROTOCOL=https` : Force HTTPS même derrière un reverse proxy

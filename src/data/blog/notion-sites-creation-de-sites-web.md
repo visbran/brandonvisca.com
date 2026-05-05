@@ -1,7 +1,6 @@
 ---
 title: "Notion Sites: Révolution dans la Création de Sites Web"
 pubDatetime: "2024-06-25T20:59:29+02:00"
-modDatetime: 2026-05-05 00:00:00+01:00
 author: Brandon Visca
 description: "Notion Sites : créez un site web depuis Notion en quelques minutes. Fonctionnalités CMS, personnalisation, SEO et comparaison avec les alternatives."
 tags:
@@ -75,9 +74,3 @@ Oui, Notion Sites offre des fonctionnalités CMS robustes qui permettent la cré
 
 - [Exploration de Super.so : un outil de site web personnalisé ](/exploration-de-super-so-un-outil-de-site-web-personnalise-pour-notion/)
 - [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)
-
-## Pour aller plus loin
-
-- [Exploration de Super.so : un outil de site web personnalisé pour Notion](/exploration-de-super-so-un-outil-de-site-web-personnalise-pour-notion/)
-- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)
-- [Migrer WordPress en 2025 : All-in-One WP Migration guide complet (+ astuces pro)](/migration-wordpress-all-in-one-guide-2025/)

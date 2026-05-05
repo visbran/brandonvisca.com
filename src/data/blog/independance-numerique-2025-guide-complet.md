@@ -14,9 +14,6 @@ featured: false
 draft: false
 focusKeyword: Indépendance numérique 2025
 ---
-
-## Table des matières
-
 🎯 TL;DR
 -------
 
