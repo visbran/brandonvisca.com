@@ -88,11 +88,12 @@ issues de l'environnement réel de l'auteur. Pas de contenu généré — unique
 - Watchtower : mets tes conteneurs Docker à jour sans lever le petit doigt (https://brandonvisca.com/watchtower-mise-a-jour-docker-auto/) : Configure Watchtower pour mettre à jour automatiquement tes conteneurs Docker. Notifications, exclusions, planning — guide complet homelab.
 - Réparer WordPress : 2 solutions pour une base de données corrompue (https://brandonvisca.com/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/) : Réparer WordPress après une corruption de base de données : 2 méthodes éprouvées, testées en prod, pour restaurer votre site en moins de 10 minutes.
 - Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025) (https://brandonvisca.com/yopass-vs-privatebin-vs-password-pusher/) : Partager un mot de passe sécurisé depuis ton homelab : Yopass, PrivateBin ou Password Pusher ? Comparatif complet pour choisir lequel auto-héberger.
+- Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul (https://brandonvisca.com/traefik-reverse-proxy-docker/) : Installe Traefik v3 comme reverse proxy Docker. Labels auto, HTTPS Let's Encrypt, middlewares — guide complet pour ton homelab en 2026.
 
 ## Thématiques
 
 self-hosting, homelab, proxmox, docker, linux, macos, réseau, sécurité, windows,
-nginx, active-directory, jellyfin, nextcloud, vaultwarden, raycast, iterm2
+nginx, active-directory, jellyfin, nextcloud, vaultwarden, raycast, iterm2, traefik
 
 ## Contact et auteur
 
