@@ -56,7 +56,7 @@ sudo mount -o remount /dev/shm
 
 ## Durcissement de SSH – désactivation de la connexion en tant que root et changement de port
 
-Le moyen le plus efficace de sécuriser SSH : désactiver la connexion root, désactiver l'authentification par mot de passe (clés uniquement), et changer le port par défaut.
+Le moyen le plus efficace de sécuriser SSH : désactiver la connexion root, désactiver l'authentification par mot de passe (clés uniquement — ou mieux encore, des [passkeys SSH biométriques](/passkey-ssh-sshid/)), et changer le port par défaut.
 
 > **Avant tout** : crée un utilisateur non-root avec accès sudo et configure ta clé SSH. Si tu perds l'accès SSH après modification, tu te retrouves bloqué.
 

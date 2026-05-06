@@ -130,6 +130,8 @@ Termius gère ça comme un chef :
 
 ✅ **Astuce de pro** : Termius peut même **pousser automatiquement** ta clé publique sur le serveur lors de la première connexion. Magique.
 
+Tu veux zapper complètement les fichiers `.pem` ? Termius propose aussi [SSH ID](/passkey-ssh-sshid/) : tes clés SSH générées via passkey biométrique (Face ID, Touch ID, Windows Hello), la clé privée stockée dans le Secure Enclave — plus rien à copier, plus rien à perdre.
+
 ## Les fonctionnalités qui tuent (et pourquoi tu vas les adorer)
 
 ### 1. Organisation intelligente avec groupes et tags
