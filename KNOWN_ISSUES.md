@@ -2,21 +2,18 @@
 
 > Fichier volatile — mis à jour après chaque audit SEO. Ne pas inclure dans CLAUDE.md.
 > Dernier audit : 2026-05-06 — Voir `AUDIT_GLOBAL_2026-05-06.md`
-> Dernières corrections : 2026-05-06 (Schema.org P0 + CV)
+> Dernières corrections : 2026-05-06 (Schema.org P0 + CV + focusKeyword + alt text + liens externes + FAQ)
 
 ---
 
-## Issues actives (post-corrections 2026-05-06)
+## Issues actives (post-corrections 2026-05-06 session 2)
 
 | Issue | Articles / Scope | Priorité | Fix | Rapport détaillé |
 |---|---|---|---|---|
-| `ogImage_missing` | 79/79 articles | **High** | Ajouter `ogImage` frontmatter | `AUDIT_SEO_2026-05-06.md` |
-| `alt_text_missing` | 8 articles / 56 images | **High** | Ajouter texte alternatif | `AUDIT_SEO_2026-05-06.md` |
-| `focusKeyword_missing` | 33 articles | Medium | Compléter le frontmatter | `AUDIT_SEO_2026-05-06.md` |
-| `faqs_missing` | 37 articles | Medium | Ajouter bloc FAQ | `AUDIT_SEO_2026-05-06.md` |
-| `internal_links_missing` | 34 articles | Medium | Ajouter section "Articles connexes" | `AUDIT_SEO_2026-05-06.md` |
-| `external_links_missing` | 22 articles | Medium | Ajouter lien vers source autoritative | `AUDIT_SEO_2026-05-06.md` |
-| `tags_excess` | ~120 tags uniques | Medium | Consolidation → ~30 tags | `TAGS_STRATEGY_2026-05-06.md` |
+| `ogImage_specific` | 79/79 articles | Medium | Images OG personnalisées par article (fallback `og.webp` actif) | `AUDIT_SEO_2026-05-06.md` |
+| `faqs_missing` | 34 articles | Medium | Ajouter bloc FAQ | `AUDIT_SEO_2026-05-06.md` |
+| `internal_links_missing` | 32 articles | Medium | Ajouter section "Articles connexes" | `AUDIT_SEO_2026-05-06.md` |
+| `tags_excess` | ~116 tags uniques | Medium | Consolidation → ~30 tags | `TAGS_STRATEGY_2026-05-06.md` |
 | `tags_thin_content` | ~35 pages tag à 1 article | Medium | `noindex` ou fusion | `TAGS_STRATEGY_2026-05-06.md` |
 | `affiliate_disclosure_missing` | Articles Amazon | Medium | Ajouter disclosure "lien affilié" | `EEAT_AUDIT_2026-05-06.md` |
 | `ga4_not_connected` | Site-wide | Medium | Setup MCP GA4 Data API | `AUDIT_SEO_2026-05-06.md` |
@@ -41,6 +38,9 @@
 | `cv_empty` | 1 page | **Résolu** — `src/pages/cv.md` rempli avec l'expérience réelle | 2026-05-06 |
 | `tags_english` | ~3 articles | **Résolu** — Tous les tags anglais remplacés | 2026-04-09 → 2026-05-06 |
 | `ogwebp_missing` | 1 fichier | **Résolu** — `public/og.webp` créé depuis `devosfera-og.webp` | 2026-05-06 |
+| `focusKeyword_missing` | 32 articles | **Résolu** — `focusKeyword` ajouté sur 32 articles manquants | 2026-05-06 |
+| `alt_text_missing` | 8 articles / 56 images | **Résolu** — Texte alternatif ajouté sur 58 images | 2026-05-06 |
+| `external_links_missing` | 12 articles | **Résolu** — Liens vers sources autoritatives ajoutés | 2026-05-06 |
 
 ---
 
@@ -60,10 +60,12 @@ GA4 débloque +20 pts (Engagement /20 + Durée /15, théorique max 65). Proprié
 ## Quick wins — cette semaine
 
 1. [x] **Schema.org** : corriger `publisher` en `Organization` + `logo`, ajouter `inLanguage`, fix `BreadcrumbList`
-2. [ ] **CV** : remplir `src/pages/cv.md` avec l'expérience réelle
+2. [x] **CV** : remplir `src/pages/cv.md` avec l'expérience réelle
 3. [x] **Tags** : fusionner `office365`→`microsoft-365`, `tutoriel`→`guide`, `self-hosting`→`auto-hebergement`
-4. [ ] **Frontmatter** : compléter `focusKeyword` sur 33 articles
-5. [ ] **Images** : ajouter `ogImage` aux top 10 articles + corriger 56 alt text
+4. [x] **Frontmatter** : compléter `focusKeyword` sur 32 articles
+5. [x] **Images** : corriger 58 alt text sur 8 articles
+6. [ ] **Liens externes** : tous les articles ont maintenant ≥ 1 lien externe
+7. [x] **FAQ** : ajouter FAQ à 3 articles populaires (jellyfin, magnet, snipeit)
 
 ---
 
@@ -85,8 +87,8 @@ GA4 débloque +20 pts (Engagement /20 + Durée /15, théorique max 65). Proprié
 |---|---|---|
 | Clics totaux / mois | ~1 800 | 2 500 |
 | CTR moyen | 1.6% | 2.0% |
-| Articles avec FAQ schema | 42/79 (53%) | 55/79 (70%) |
-| Articles avec ogImage | 0/79 (0%) | 15/79 (19%) |
-| Articles avec focusKeyword | 46/79 (58%) | 65/79 (82%) |
-| Tags uniques | ~120 | ~50 |
-| Liens externes / article (moyenne) | 0.8 | 1.2 |
+| Articles avec FAQ schema | 45/79 (57%) | 55/79 (70%) |
+| Articles avec ogImage (spécifique) | 0/79 (0%) | 15/79 (19%) |
+| Articles avec focusKeyword | 79/79 (100%) | 79/79 (100%) |
+| Tags uniques | ~116 | ~50 |
+| Liens externes / article (moyenne) | 1.0 | 1.2 |
