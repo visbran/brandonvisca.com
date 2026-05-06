@@ -55,3 +55,7 @@ TAGS_AUDIT.md
 
 public/pagefind
 .vercel
+
+# backups
+backups/
+src/data/blog/backup/
