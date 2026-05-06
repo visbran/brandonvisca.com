@@ -1,8 +1,8 @@
 ---
-title: "Guide iTerm2 macOS : Installation et configuration complète (2026)"
-description: "Guide iTerm2 macOS : installation, thèmes, raccourcis, Oh My Zsh et plugins essentiels. Tout ce qu'il faut pour booster ta productivité terminal."
+title: "iTerm2 macOS 2026 : guide complet (install, config, thèmes)"
+description: "iTerm2 macOS, le guide complet : install, thèmes, raccourcis et Oh My Zsh. Tout ce qu'il faut pour un terminal qui déchire, gratuit et open-source."
 pubDatetime: 2025-03-31 15:19:31+02:00
-modDatetime: 2026-04-11 00:00:00+02:00
+modDatetime: 2026-05-06 00:00:00+01:00
 author: Brandon Visca
 tags:
   - macos
@@ -26,7 +26,12 @@ faqs:
   - question: "Puis-je synchroniser mes réglages iTerm2 entre plusieurs Macs ?"
     answer: "Oui. Sauvegarde tes préférences dans un dossier versionné avec Git, ou pointe vers un dossier Dropbox/iCloud dans Preferences > General > Preferences."
 ---
-T'en as marre du Terminal macOS qui ressemble à une interface sortie des années 90 ? Même ressenti. iTerm2 règle ça en 5 minutes, et une fois configuré correctement, tu ne regardes plus jamais en arrière.
+> 💡 **TL;DR**
+> - iTerm2 est le terminal macOS **gratuit** qui remplace le Terminal natif : Hotkey Window, Split Panes, 200+ thèmes de couleurs
+> - Installation en une commande : `brew install --cask iterm2`
+> - Associe Oh My Zsh + Powerlevel10k pour un setup terminal complet en moins de 15 minutes
+
+T'en as marre du Terminal macOS qui ressemble à une interface sortie des années 90 ? Même ressenti. iTerm2 macOS règle ça en 5 minutes, et une fois configuré correctement, tu ne regardes plus jamais en arrière.
 
 Voici tout ce qu'il faut savoir pour l'installer, le configurer et en tirer le maximum.
 
@@ -106,7 +111,6 @@ Les profils permettent de créer des configurations distinctes selon l'usage : d
 
 ```bash
 # Installation de Fira Code via Homebrew
-brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 ```
 
@@ -185,7 +189,7 @@ echo -e "\033]50;SetProfile=SSH Profile\a"
 Oh My Zsh est le framework qui rend Zsh vraiment utilisable. Si tu ne l'as pas encore, c'est la priorité. J'ai un [guide complet Oh My Zsh + Powerlevel10k](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/) si tu pars de zéro.
 
 ```bash
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 **Plugins à activer dans `.zshrc` :**
@@ -249,7 +253,7 @@ Non. Il consomme généralement moins de ressources que le Terminal par défaut,
 
 Oui. Sauvegarde tes préférences dans un dossier synchronisé (Dropbox, iCloud, ou repo Git privé), puis pointe iTerm2 vers ce dossier dans `Preferences > General > Preferences`.
 
-## Résumé : ton terminal, enfin utilisable
+## Conclusion
 
 iTerm2 transforme le terminal macOS en quelque chose qu'on a envie d'utiliser. La Hotkey Window seule justifie l'installation.
 
@@ -261,3 +265,9 @@ Priorités si tu pars de zéro :
 4. Active les plugins `zsh-autosuggestions` et `zsh-syntax-highlighting`
 
 Si tu hésites avec Warp ou un autre terminal IA, j'ai fait un [test complet iTerm2 vs Warp](https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) après 60 jours d'utilisation des deux.
+
+## Pour aller plus loin
+
+- [Installer Oh My Zsh + Powerlevel10k — guide complet](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/) : le combo indispensable avec iTerm2
+- [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) : si ce n'est pas encore fait
+- [iTerm2 vs Warp : test complet après 60 jours](https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) : pour savoir si tu dois switcher
