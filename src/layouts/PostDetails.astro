@@ -92,19 +92,52 @@ const nextPost =
       "headline": title,
       "description": description,
       "datePublished": pubDatetime,
-      ...(modDatetime ? { "dateModified": modDatetime } : {}),
+      "dateModified": modDatetime || pubDatetime,
+      "inLanguage": "fr",
+      "articleSection": tags?.[0] || "Blog",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalURL || Astro.url.href,
+      },
       "author": {
         "@type": "Person",
         "name": author || "Brandon Visca",
         "url": `${Astro.url.origin}/about/`,
+        "jobTitle": "Administrateur Systèmes & Réseaux",
+        "sameAs": [
+          "https://github.com/visbran",
+        ],
+        "knowsAbout": [
+          "Proxmox VE",
+          "Auto-hébergement",
+          "Linux",
+          "Docker",
+          "Sécurité informatique",
+          "DevOps",
+        ],
       },
       "publisher": {
-        "@type": "Person",
+        "@type": "Organization",
         "name": "Brandon Visca",
-        "url": `${Astro.url.origin}/about/`,
+        "url": `${Astro.url.origin}/`,
+        "logo": {
+          "@type": "ImageObject",
+          "url": new URL(`/${SITE.ogImage}`, Astro.url.origin).href,
+          "width": 1200,
+          "height": 630,
+        },
       },
       "url": canonicalURL || Astro.url.href,
-      ...(ogImage ? { "image": ogImage } : {}),
+      ...(ogImage
+        ? {
+            "image": {
+              "@type": "ImageObject",
+              "url": ogImage,
+              "width": 1200,
+              "height": 630,
+            },
+          }
+        : {}),
     })}
   />
   <script
@@ -124,12 +157,6 @@ const nextPost =
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Blog",
-          "item": Astro.url.origin + "/blog/",
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
           "name": title,
           "item": canonicalURL || Astro.url.href,
         },

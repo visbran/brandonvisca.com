@@ -1,0 +1,46 @@
+name: Regenerate llms.txt
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/blog/**'
+      - 'src/content.config.ts'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    name: Regenerate llms.txt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Regenerate llms.txt
+        run: node scripts/generate-llms-txt.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet public/llms.txt; then
+            echo "No changes to llms.txt"
+          else
+            git add public/llms.txt
+            git commit -m "chore: regenerate llms.txt [skip ci]"
+            git push
+          fi

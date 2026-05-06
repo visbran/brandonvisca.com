@@ -32,30 +32,23 @@ const {
 
 const socialImageURL = new URL(ogImage, Astro.url);
 
-// JSON-LD for article pages is emitted by PostDetails.astro (Article schema, more complete).
-// Layout.astro only emits WebSite schema (with SearchAction) for non-article pages.
-const structuredData = !pubDatetime
-  ? {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: SITE.title,
-      url: SITE.website,
-      description: SITE.desc,
-      author: {
-        "@type": "Person",
-        name: SITE.author,
-        ...(SITE.profile && { url: SITE.profile }),
-      },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: `${SITE.website}search/?q={search_term_string}`,
-        },
-        "query-input": "required name=search_term_string",
-      },
-    }
-  : null;
+// WebSite schema with SearchAction — emitted on every page
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.title,
+  url: SITE.website,
+  description: SITE.desc,
+  inLanguage: "fr",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${SITE.website}search/?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
 
 const showCursorGlow = SITE.backdropEffects.cursorGlow;
 const showGrain = SITE.backdropEffects.grain;
@@ -123,16 +116,12 @@ const showGrain = SITE.backdropEffects.grain;
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={socialImageURL} />
 
-    <!-- JSON-LD Structured data (WebSite on non-article pages; Article schema on posts is in PostDetails.astro) -->
-    {
-      structuredData && (
-        <script
-          type="application/ld+json"
-          is:inline
-          set:html={JSON.stringify(structuredData)}
-        />
-      )
-    }
+    <!-- JSON-LD Structured data (WebSite + SearchAction on every page; Article schema on posts is in PostDetails.astro) -->
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(webSiteSchema)}
+    />
 
     <!-- Enable RSS feed auto-discovery  -->
     <!-- https://docs.astro.build/en/recipes/rss/#enabling-rss-feed-auto-discovery -->

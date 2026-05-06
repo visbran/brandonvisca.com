@@ -30,7 +30,29 @@ jobs:
         run: pnpm run build:cf
 
       - name: Deploy to Cloudflare Pages
+        id: deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx wrangler@4 pages deploy dist --project-name brandonvisca-com --branch main --commit-message "deploy $(git rev-parse --short HEAD)"
+
+      - name: Smoke test — homepage
+        run: |
+          sleep 15
+          curl -sf -o /dev/null https://brandonvisca.com/ || { echo "Homepage failed"; exit 1; }
+          echo "Homepage OK"
+
+      - name: Smoke test — sitemap
+        run: |
+          curl -sf -o /dev/null https://brandonvisca.com/sitemap-index.xml || { echo "Sitemap failed"; exit 1; }
+          echo "Sitemap OK"
+
+      - name: Smoke test — robots.txt
+        run: |
+          curl -sf -o /dev/null https://brandonvisca.com/robots.txt || { echo "robots.txt failed"; exit 1; }
+          echo "robots.txt OK"
+
+      - name: Smoke test — llms.txt
+        run: |
+          curl -sf -o /dev/null https://brandonvisca.com/llms.txt || { echo "llms.txt failed"; exit 1; }
+          echo "llms.txt OK"
