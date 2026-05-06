@@ -19,6 +19,7 @@ https://brandonvisca-com.pages.dev/* https://brandonvisca.com/:splat 301
 /page/10   /blog/10   301
 
 # Anciens slugs WP dupliqués → canonical
+/android-file-transfer-mac-alternative/       /android-file-transfer-mac-alternatives-test-2025/ 301
 /installation-configuration-iterm2/           /iterm2-guide-configuration-macos-2025/           301
 /installation-de-oh-my-zsh/                   /installation-oh-my-zsh-powerlevel10k-guide-complet/ 301
 /import-pst-outlook365/                       /import-pst-outlook-365-guide-complet/            301
