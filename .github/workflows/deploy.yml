@@ -36,11 +36,18 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx wrangler@4 pages deploy dist --project-name brandonvisca-com --branch main --commit-message "deploy $(git rev-parse --short HEAD)"
 
-      - name: Smoke test — homepage
+      - name: Smoke test — homepage (with retries)
         run: |
-          sleep 15
-          curl -sf -o /dev/null https://brandonvisca.com/ || { echo "Homepage failed"; exit 1; }
-          echo "Homepage OK"
+          for i in {1..6}; do
+            if curl -sf -o /dev/null https://brandonvisca.com/; then
+              echo "Homepage OK"
+              exit 0
+            fi
+            echo "Attempt $i/6 failed, waiting 10s..."
+            sleep 10
+          done
+          echo "Homepage failed after 6 attempts"
+          exit 1
 
       - name: Smoke test — sitemap
         run: |
