@@ -268,6 +268,6 @@ Si tu hésites avec Warp ou un autre terminal IA, j'ai fait un [test complet iTe
 
 ## Pour aller plus loin
 
-- [Installer Oh My Zsh + Powerlevel10k — guide complet](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/) : le combo indispensable avec iTerm2
+- [Installer Oh My Zsh + Powerlevel10k guide complet](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/) : le combo indispensable avec iTerm2
 - [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) : si ce n'est pas encore fait
 - [iTerm2 vs Warp : test complet après 60 jours](https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) : pour savoir si tu dois switcher
