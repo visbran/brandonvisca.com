@@ -3,6 +3,7 @@ title: "Notion Sites: Révolution dans la Création de Sites Web"
 pubDatetime: "2024-06-25T20:59:29+02:00"
 author: Brandon Visca
 description: "Notion Sites : créez un site web depuis Notion en quelques minutes. Fonctionnalités CMS, personnalisation, SEO et comparaison avec les alternatives."
+focusKeyword: "Notion Sites"
 tags:
   - developpement
   - productivite

@@ -3,6 +3,7 @@ title: "Exploration de Super.so : un outil de site web personnalisé pour Notion
 pubDatetime: "2024-06-25T21:03:27+02:00"
 author: Brandon Visca
 description: "Super.so transforme vos pages Notion en site web personnalisé : domaine custom, SEO intégré, thèmes et scripts personnalisés. Guide complet et test."
+focusKeyword: "Super.so Notion"
 tags:
   - developpement
   - productivite

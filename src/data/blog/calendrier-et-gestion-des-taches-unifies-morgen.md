@@ -3,6 +3,7 @@ title: "Calendrier et gestion des tâches unifiés\\_: Morgen"
 pubDatetime: "2024-07-16T19:43:31+02:00"
 author: Brandon Visca
 description: "Morgen réunit calendrier, tâches et time-blocking dans une interface unifiée pour macOS. Alternative à Fantastical. Guide complet des fonctionnalités."
+focusKeyword: "Morgen calendrier"
 tags:
   - productivite
   - macos

@@ -3,6 +3,7 @@ title: "Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos
 pubDatetime: "2025-10-22T15:44:27+02:00"
 author: Brandon Visca
 description: "Découvrez l'auto-hébergement en 2025 : guide complet pour débutants, du choix du matériel aux premiers services. Reprenez le contrôle de vos données !"
+focusKeyword: "auto-hébergement guide"
 tags:
   - auto-hebergement
   - homelab

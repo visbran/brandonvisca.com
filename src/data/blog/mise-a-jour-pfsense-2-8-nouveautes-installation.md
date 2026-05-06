@@ -3,6 +3,7 @@ title: "pfsense CE 2.8.0 : Ce que vous devez savoir avant de cliquer sur “Mett
 pubDatetime: "2025-06-01T19:41:15+02:00"
 author: Brandon Visca
 description: "Mettez à jour pfSense CE 2.8 en toute sécurité : nouveautés FreeBSD 14, correctifs de sécurité et étapes de migration détaillées pour éviter les erreurs."
+focusKeyword: "pfSense 2.8 mise à jour"
 tags:
   - securite
   - reseau

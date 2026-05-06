@@ -3,6 +3,7 @@ title: "Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes H
 pubDatetime: "2025-04-15T20:18:39+02:00"
 author: Brandon Visca
 description: "Renforcez la sécurité Nginx en bloquant les fichiers sensibles et l'exécution de scripts dans les répertoires d'upload. Configurations prêtes à copier."
+focusKeyword: "sécuriser Nginx uploads"
 tags:
   - linux
   - securite

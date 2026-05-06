@@ -3,6 +3,7 @@ title: "Migrer WordPress en 2025 : All-in-One WP Migration guide complet (+ astu
 pubDatetime: "2025-02-24T18:51:33+01:00"
 author: Brandon Visca
 description: "Migrez votre site WordPress avec All-in-One WP Migration : sauvegarde, restauration et bonnes pratiques. Méthode testée, zéro perte de données garantie."
+focusKeyword: "migrer WordPress All-in-One"
 tags:
   - linux
   - developpement

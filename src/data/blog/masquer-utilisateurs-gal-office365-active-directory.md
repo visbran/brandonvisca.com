@@ -3,6 +3,7 @@ title: "Masquer des utilisateurs de la GAL Office 365 + Active Directory : Guide
 pubDatetime: "2025-08-01T21:17:07+02:00"
 author: Brandon Visca
 description: "Masquez des utilisateurs de la GAL Office 365 synchronisés depuis Active Directory sans les supprimer. Méthode PowerShell et console Exchange Admin Centre."
+focusKeyword: "masquer utilisateurs GAL Office 365"
 tags:
   - microsoft-365
   - sysadmin
