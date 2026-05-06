@@ -14,7 +14,7 @@ featured: false
 draft: false
 focusKeyword: outils low tech macos
 ---
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
+![Bannière des 10 outils Low-Tech pour macOS](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
 
 
 ---
@@ -82,7 +82,7 @@ Let's go ! 🚀
 ---
 
 ## 1. rcmd : Switch Apps à la Vitesse de l'Éclair
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400635/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_v19dfv.webp)
+![Interface de rcmd pour switcher entre applications](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400635/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_v19dfv.webp)
 
 ### Le problème
 
@@ -138,7 +138,7 @@ Mon setup Mac Mini M4 :
 
 ## 2. Clop : Compression Automatique Images/Vidéos
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400843/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs_kk7ded.webp)
+![Interface de Clop avec compression automatique activée](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400843/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs_kk7ded.webp)
 
 ### Le problème
 
@@ -198,7 +198,7 @@ Temps gagné : 5 min/article = 50 min/mois
 
 ## 3. Lunar : Contrôle Luminosité Écrans Externes
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400887/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_ftlgn2.webp)
+![Interface de Lunar contrôlant la luminosité des écrans](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400887/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_ftlgn2.webp)
 
 ### Le problème
 
@@ -272,7 +272,7 @@ Temps gagné : 5 min/jour = 30h/an
 
 ## 4. Cling : Recherche Fuzzy Ultra-Rapide
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400908/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_mg2ssk.jpg)
+![Interface de Cling avec résultats de recherche fuzzy](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400908/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_mg2ssk.jpg)
 
 ### Le problème
 
@@ -345,7 +345,7 @@ Temps gagné : 20 recherches/jour × 30 sec = 10 min/jour = 60h/an
 
 ## 5. Ice : Gestion Barre de Menu Propre
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400958/brandonviscacom/CleanShot_2025-12-10_at_22.09.07_2x_ir7xrv.jpg)
+![Interface d'Ice organisant la barre de menu macOS](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400958/brandonviscacom/CleanShot_2025-12-10_at_22.09.07_2x_ir7xrv.jpg)
 
 ### Le problème
 
@@ -407,7 +407,7 @@ Always hidden :
 
 ## 6. Grila : Calendrier Hotkey Instant
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401024/brandonviscacom/CleanShot_2025-12-10_at_22.10.13_2x_v4rx2n.jpg)
+![Interface de Grila affichant le calendrier en pop-up](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401024/brandonviscacom/CleanShot_2025-12-10_at_22.10.13_2x_v4rx2n.jpg)
 ### Le problème
 
 Tu veux voir ton planning : Ouvre Calendrier.app, attends chargement, clique sur date...
@@ -464,7 +464,7 @@ Temps gagné : 2 min/jour = 12h/an
 
 ## 7. YellowDot : Cache le Point Jaune Encoche
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401076/brandonviscacom/CleanShot_2025-12-10_at_22.11.06_2x_vyrjxw.jpg)
+![Interface de YellowDot masquant le point jaune de l'encoche](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401076/brandonviscacom/CleanShot_2025-12-10_at_22.11.06_2x_vyrjxw.jpg)
 
 ### Le problème
 
@@ -491,7 +491,7 @@ brew install --cask yellowdot
 
 ## 8. Music Decoy : Bloque Music.app Auto-Launch
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401112/brandonviscacom/CleanShot_2025-12-10_at_22.11.38_2x_om4cg7.jpg)
+![Interface de Music Decoy bloquant le lancement automatique](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401112/brandonviscacom/CleanShot_2025-12-10_at_22.11.38_2x_om4cg7.jpg)
 
 ### Le problème
 
@@ -518,7 +518,7 @@ brew install --cask musicdecoy
 
 ## 9. ZoomHider : Cache Contrôles Zoom en Partage Écran
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401518/brandonviscacom/CleanShot_2025-12-10_at_22.18.28_2x_w1yrxt.jpg)
+![Interface de ZoomHider cachant les contrôles de partage](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401518/brandonviscacom/CleanShot_2025-12-10_at_22.18.28_2x_w1yrxt.jpg)
 
 ### Le problème
 
@@ -547,7 +547,7 @@ brew install --cask zoomhider
 
 ## 10. Startup Folder : Lance Apps au Démarrage (Simple)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401542/brandonviscacom/CleanShot_2025-12-10_at_22.18.51_2x_h4d0o8.jpg)
+![Interface de Startup Folder avec dossier de lancement auto](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765401542/brandonviscacom/CleanShot_2025-12-10_at_22.18.51_2x_h4d0o8.jpg)
 
 ### Le problème
 

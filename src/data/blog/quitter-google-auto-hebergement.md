@@ -29,7 +29,7 @@ Introduction : Le jour où j’en ai eu marre
 
 Février 2024. Je reçois mon énième notification « Google One : stockage bientôt plein, passez à 200 Go ».
 
-![](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)
+![GIF Toby de The Office réagissant avec lassitude](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)
 20€/mois pour du stockage.  
 240€/an.  
 1200€ sur 5 ans.
@@ -159,7 +159,7 @@ Gratuit, open source, chiffré. Parfait.
 Le matériel : Ce dont tu as VRAIMENT besoin
 -------------------------------------------
 
-![](thedemocrats-democrats-dnc-dncgif-sl6nxplptffjoygeqq.gif)Pas besoin d’un serveur à 2000€. Voici mon setup actuel :
+![GIF démocrates applaudissant avec enthousiasme](thedemocrats-democrats-dnc-dncgif-sl6nxplptffjoygeqq.gif)Pas besoin d’un serveur à 2000€. Voici mon setup actuel :
 
 ### Option #1 : Le mini PC (mon choix)
 
@@ -211,7 +211,7 @@ Le matériel : Ce dont tu as VRAIMENT besoin
 L’installation : Un weekend suffit
 ----------------------------------
 
-![](time-mr-bean-look-at-the-qbd2klb5qdmysexre9.gif)
+![GIF Mr Bean regardant sa montre avec impatience](time-mr-bean-look-at-the-qbd2klb5qdmysexre9.gif)
 Voici comment j’ai procédé (et toi aussi tu peux) :
 
 ### Samedi matin : Setup de base (2h)
@@ -293,7 +293,7 @@ La seule différence ? **C’est chez moi. Sous mon contrôle.**
 Les galères (soyons honnêtes)
 -----------------------------
 
-![](latenightseth-seth-meyers-lnsm-5hkf0wxklqdw4goejj.gif)
+![GIF Seth Meyers expliquant avec des gestes](latenightseth-seth-meyers-lnsm-5hkf0wxklqdw4goejj.gif)
 Pas tout est rose. Voici les vrais problèmes que j’ai rencontrés :
 
 ### 1. Le premier setup est intimidant

@@ -43,7 +43,7 @@ Pas de théorie inutile. Que du concret.
 
 - - - - - -
 
-![](perspectief-camas-perspectief-it-5qzez0rtln9581k7q5.gif)
+![Animation Docker avec baleine et conteneurs](perspectief-camas-perspectief-it-5qzez0rtln9581k7q5.gif)
 
 - - - - - -
 
@@ -251,7 +251,7 @@ docker compose up -d
 
 ### 2. Portainer — Interface de gestion Docker 🟢
 
-![](portainer-github-banner.webp)**C’est quoi ?**  
+![Bannière officielle de Portainer sur GitHub](portainer-github-banner.webp)**C’est quoi ?**  
 Une interface web pour gérer tous tes conteneurs Docker sans ligne de commande.
 
 **Pourquoi ?**  
@@ -323,7 +323,7 @@ docker compose up -d
 
 ### 4. Vaultwarden — Gestionnaire de mots de passe 🟢
 
-![](vaultwarden.webp)**C’est quoi ?**  
+![Logo et bannière de Vaultwarden](vaultwarden.webp)**C’est quoi ?**  
 Une version allégée et auto-hébergée de Bitwarden (compatible avec toutes les apps officielles). J’ai un [guide dédié à Vaultwarden](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/) si tu veux aller plus loin.
 
 **Pourquoi ?**  
@@ -416,7 +416,7 @@ docker compose up -d
 
 ### 6. Jellyfin — Serveur média (Netflix maison) 🟡
 
-![](jellyfin.webp)**C’est quoi ?**  
+![Interface de Jellyfin avec bibliothèque de films](jellyfin.webp)**C’est quoi ?**  
 Un serveur de streaming pour tes films, séries, musique. Open source, sans télémétrie, sans pub. Mon [guide Jellyfin](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/) couvre la configuration GPU et le transcodage.
 
 **Pourquoi ?**  
@@ -487,7 +487,7 @@ docker compose up -d
 
 ### 8. Immich — Alternative Google Photos 🟡
 
-![](immich.webp)**C’est quoi ?**  
+![Interface d’Immich pour backup de photos](immich.webp)**C’est quoi ?**  
 Une app de backup et d’organisation de photos avec reconnaissance faciale, géolocalisation, et recherche intelligente.
 
 **Pourquoi ?**  
@@ -513,7 +513,7 @@ docker compose up -d
 
 ### 9. Paperless-ngx — GED personnelle 🟡
 
-![](paperless-ngx.webp)**C’est quoi ?**  
+![Interface de Paperless-ngx pour gestion documentaire](paperless-ngx.webp)**C’est quoi ?**  
 Un système de gestion documentaire qui scanne, indexe et organise tous tes documents (factures, contrats, etc.).
 
 **Pourquoi ?**  

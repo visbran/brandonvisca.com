@@ -23,7 +23,7 @@ focusKeyword: contrôler luminosité écran externe mac
 
 ## Introduction : Le problème que macOS refuse de résoudre
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137439/brandonviscacom/42856_fftbdr.webp)
+![Écran externe trop lumineux la nuit sur macOS](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137439/brandonviscacom/42856_fftbdr.webp)
 
 **La situation** : Tu as un Mac Mini, ou un MacBook connecté à un écran externe. Il fait nuit. Ton écran te brûle les yeux avec ses 100% de luminosité.
 
@@ -82,7 +82,7 @@ Contrairement aux apps qui ajoutent un overlay noir semi-transparent (fake dimmi
 
 ## DDC, c'est quoi ? (Explication simple)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136577/brandonviscacom/CleanShot_2025-12-07_at_20.42.27_2x_ghmfgm.webp)
+![Schéma explicatif du protocole DDC pour moniteurs](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136577/brandonviscacom/CleanShot_2025-12-07_at_20.42.27_2x_ghmfgm.webp)
 
 **DDC** = Display Data Channel
 
@@ -107,7 +107,7 @@ C'est un protocole qui permet à ton Mac de **communiquer avec ton moniteur** vi
 
 ### Méthode 1 : Homebrew (recommandée)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136361/brandonviscacom/CleanShot_2025-12-07_at_20.38.58_2x_v83vu2.webp)
+![Installation de Lunar via Homebrew dans le Terminal](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136361/brandonviscacom/CleanShot_2025-12-07_at_20.38.58_2x_v83vu2.webp)
 
 
 Si tu as Homebrew ([sinon, installe-le ici](https://brandonvisca.com/installation-homebrew-macos/)) :
@@ -128,18 +128,18 @@ brew install --cask lunar
 
 ### Méthode 2 : Download direct
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136623/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_pvjsgm.jpg)
+![Page de téléchargement de Lunar sur le site officiel](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765136623/brandonviscacom/CleanShot_2025-12-07_at_20.43.25_2x_pvjsgm.jpg)
 
 1. **Télécharge Lunar** : [lunar.fyi](https://lunar.fyi/)
 2. **Glisse `Lunar.app` dans `/Applications`**
 3. **Premier lancement** : Clic droit > Ouvrir
 4. **Autorise les permissions** : Accessibilité
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282044/brandonviscacom/CleanShot_2025-12-09_at_12.55.15_2x_oy3b3j.webp)
+![Autorisation des permissions Accessibilité pour Lunar](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282044/brandonviscacom/CleanShot_2025-12-09_at_12.55.15_2x_oy3b3j.webp)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282051/brandonviscacom/CleanShot_2025-12-09_at_12.55.29_2x_zmeuvp.webp)
+![Demande de permission Accessibilité pour Lunar sur macOS](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282051/brandonviscacom/CleanShot_2025-12-09_at_12.55.29_2x_zmeuvp.webp)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282062/brandonviscacom/CleanShot_2025-12-09_at_12.57.22_2x_tyz6d5.jpg)
+![Fenêtre de confirmation d'ouverture de Lunar.app](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282062/brandonviscacom/CleanShot_2025-12-09_at_12.57.22_2x_tyz6d5.jpg)
 
 
 ---
@@ -169,11 +169,11 @@ Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
 2. **Mode recommandé** : Manual (le plus simple pour commencer)
 3. **Raccourcis clavier** : F1/F2 pour brightness, F10/F11/F12 pour volume
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282127/brandonviscacom/CleanShot_2025-12-09_at_12.55.34_2x_tjzhud.webp)
+![Premier lancement de Lunar avec setup guidé](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282127/brandonviscacom/CleanShot_2025-12-09_at_12.55.34_2x_tjzhud.webp)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282136/brandonviscacom/CleanShot_2025-12-09_at_12.56.05_2x_ws1icd.webp)
+![Configuration du mode recommandé dans Lunar](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282136/brandonviscacom/CleanShot_2025-12-09_at_12.56.05_2x_ws1icd.webp)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282142/brandonviscacom/CleanShot_2025-12-09_at_12.57.10_2x_pq2j2c.webp)
+![Configuration des raccourcis clavier F1/F2 dans Lunar](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282142/brandonviscacom/CleanShot_2025-12-09_at_12.57.10_2x_pq2j2c.webp)
 
 
 ### Vérifier que DDC fonctionne
@@ -182,7 +182,7 @@ Au premier lancement, Lunar détecte automatiquement tes écrans et propose :
 
 **Si tu vois "Software Dimming"** → DDC ne fonctionne pas sur ce moniteur → Voir section Troubleshooting
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282202/brandonviscacom/CleanShot_2025-12-09_at_13.09.51_2x_kqfsip.jpg)
+![Indicateur Hardware DDC actif sous le nom du moniteur](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282202/brandonviscacom/CleanShot_2025-12-09_at_13.09.51_2x_kqfsip.jpg)
 
 ### Réglages de base recommandés
 
@@ -267,7 +267,7 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 ### Mode 1 : Manual (par défaut)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282265/brandonviscacom/CleanShot_2025-12-09_at_13.10.59_2x_h9yuky.jpg)
+![Interface du mode Manual dans Lunar](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282265/brandonviscacom/CleanShot_2025-12-09_at_13.10.59_2x_h9yuky.jpg)
 
 
 **Concept** : Tu contrôles tout manuellement avec F1/F2 ou les sliders.
@@ -280,9 +280,9 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 ### Mode 2 : Sync (Pro, 23$)
 
-![](https://files.lunar.fyi/sync-all-displays-h264.mp4)
+![Vidéo démonstration de la synchronisation multi-écrans](https://files.lunar.fyi/sync-all-displays-h264.mp4)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282287/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_yuyr4p.jpg)
+![Interface du mode Sync dans Lunar](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282287/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_yuyr4p.jpg)
 
 
 **Concept** : La luminosité de tes écrans externes **suit** celle de ton MacBook.
@@ -316,9 +316,9 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 ### Mode 3 : Location (Pro, 23$)
 
-![](https://lunar.fyi/static/video/location-demo-vp9.webm)
+![Vidéo démonstration du mode Location selon le soleil](https://lunar.fyi/static/video/location-demo-vp9.webm)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282306/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_ntjpw1.jpg)
+![Interface du mode Location dans Lunar](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282306/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_ntjpw1.jpg)
 
 
 **Concept** : La luminosité s'adapte selon **l'heure du lever/coucher du soleil** dans ta localisation.
@@ -370,7 +370,7 @@ Lunar propose **5 modes** de contrôle de la luminosité. Commençons par les pl
 
 ### Mode 5 : Clock (Pro, 23$)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282340/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_xdvq0f.jpg)
+![Interface du mode Clock avec horaires programmés](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765282340/brandonviscacom/CleanShot_2025-12-09_at_13.11.16_2x_xdvq0f.jpg)
 
 
 **Concept** : Programme des **horaires fixes** pour la luminosité.
@@ -463,7 +463,7 @@ Setup : 3 écrans
 
 ### 4. FaceLight (éclairage pour visio)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137357/brandonviscacom/4907_gmbyui.webp)
+![Fonction FaceLight éclairant le visage pendant une visio](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137357/brandonviscacom/4907_gmbyui.webp)
 
 **Problème** : Visio dans une pièce sombre. Ta face est sous-exposée.
 

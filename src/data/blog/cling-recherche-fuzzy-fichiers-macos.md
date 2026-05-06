@@ -13,7 +13,7 @@ featured: false
 draft: false
 focusKeyword: recherche fichiers mac rapide
 ---
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
+![Interface de Cling avec barre de recherche fuzzy](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
 
 ---
 
@@ -71,7 +71,7 @@ Let's go ! 🚀
 
 **Cling**, c'est l'alternative macOS à [Everything](https://www.voidtools.com/) (légendaire outil Windows), développée par [Low Tech Guys](https://lowtechguys.com/).
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283430/brandonviscacom/CleanShot_2025-12-09_at_13.30.14_2x_dtrfzm.jpg)
+![Résultats de recherche fuzzy instantanés dans Cling](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283430/brandonviscacom/CleanShot_2025-12-09_at_13.30.14_2x_dtrfzm.jpg)
 
 ### Le concept en une phrase
 
@@ -133,7 +133,7 @@ Si tu as Homebrew ([sinon, installe-le](https://brandonvisca.com/installation-ho
 brew install --cask thelowtechguys-cling
 ```
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283084/brandonviscacom/CleanShot_2025-12-09_at_13.15.30_2x_e6a81v.jpg)
+![Installation de Cling via Homebrew dans le Terminal](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283084/brandonviscacom/CleanShot_2025-12-09_at_13.15.30_2x_e6a81v.jpg)
 
 **Avantages** :
 - Mises à jour automatiques
@@ -151,7 +151,7 @@ brew install --cask thelowtechguys-cling
 3. **Premier lancement** : Clic droit > Ouvrir
 4. **Autorise les permissions** : Full Disk Access (pour indexer tout)
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283469/brandonviscacom/CleanShot_2025-12-09_at_13.17.34_2x_la0t47.jpg)
+![Page de téléchargement de Cling sur le site officiel](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283469/brandonviscacom/CleanShot_2025-12-09_at_13.17.34_2x_la0t47.jpg)
 
 💡 **Important** : Cling **nécessite Full Disk Access** pour indexer les fichiers système, dotfiles, etc. Sans ça, il sera limité comme Spotlight.
 
@@ -167,7 +167,7 @@ Au premier lancement :
 2. **Tu peux utiliser l'app pendant** : Indexation en arrière-plan
 3. **Barre de progression** : Visible en haut de la fenêtre Cling
 
-![](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283470/brandonviscacom/CleanShot_2025-12-09_at_13.17.41_2x_cnowb3.jpg)
+![Premier lancement de Cling avec barre d'indexation](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283470/brandonviscacom/CleanShot_2025-12-09_at_13.17.41_2x_cnowb3.jpg)
 
 **Consommation CPU** : 100% sur plusieurs cores pendant 1-5 min. **C'est normal**. Après, CPU à 0% en arrière-plan.
 
