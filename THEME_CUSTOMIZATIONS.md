@@ -68,7 +68,7 @@ Read this file before merging upstream updates — each entry is a potential con
 
 The following files are **not modified** and will merge cleanly:
 
-- All components in `src/components/`
+- All components in `src/components/` **except** `Header.astro` and `MobileMenu.astro`
 - All layouts in `src/layouts/`
 - `src/content.config.ts`
 - `src/utils/` (except `getPath.ts`)
@@ -133,3 +133,26 @@ The following files are **not modified** and will merge cleanly:
 **Reason**: Layer CSS isolé pour les overrides brandonvisca.com — jamais modifié par upstream.
 
 **Merge strategy**: Aucun conflit possible, fichier inexistant upstream.
+
+---
+
+### `src/components/Header.astro`
+
+**Reason**: Ajout d'un lien "CV" dans le menu principal de navigation.
+
+**Changes**:
+- Ajout d'un élément `<li>` avec lien vers `/cv` dans la liste de liens desktop (entre "À propos" et "Recherche")
+
+**Merge strategy**: Sur update upstream, conserver le lien CV. Fusionner manuellement si le menu change de structure.
+
+---
+
+### `src/components/MobileMenu.astro`
+
+**Reason**: Ajout d'un lien "CV" dans le menu mobile de navigation.
+
+**Changes**:
+- Ajout d'un élément `<a href="/cv">` dans la liste de liens mobile (entre "À propos" et "Archives")
+- Ajustement des indices `style="--i:N"` pour les éléments suivants (Archives → 4, Galleries → 5)
+
+**Merge strategy**: Sur update upstream, conserver le lien CV et les indices de délai d'animation.

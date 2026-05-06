@@ -52,6 +52,14 @@ const isActive = (path: string) => {
             <span class="mobile-nav-indicator"></span>
             <span>À propos</span>
           </a>
+          <a
+            href="/cv"
+            class:list={["mobile-nav-link", { active: isActive("/cv") }]}
+            style="--i:3"
+          >
+            <span class="mobile-nav-indicator"></span>
+            <span>CV</span>
+          </a>
           {
             SITE.showArchives && (
               <a
@@ -60,7 +68,7 @@ const isActive = (path: string) => {
                   "mobile-nav-link",
                   { active: isActive("/archives") },
                 ]}
-                style="--i:3"
+                style="--i:4"
               >
                 <span class="mobile-nav-indicator" />
                 <span>Archives</span>
@@ -75,7 +83,7 @@ const isActive = (path: string) => {
                   "mobile-nav-link",
                   { active: isActive("/galleries") },
                 ]}
-                style="--i:4"
+                style="--i:5"
               >
                 <span class="mobile-nav-indicator" />
                 <span>Galleries</span>

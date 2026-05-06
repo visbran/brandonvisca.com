@@ -7,7 +7,7 @@ title: "CV"
 
 **Responsable Infrastructure & Systèmes IT — Référent Technique**
 
-📍 Chambéry (73000) | 📧 [brandonvisca@gmail.com](mailto:brandonvisca@gmail.com) | 📞 07 60 84 88 90 | 🐙 [github.com/visbran](https://github.com/visbran) | 🌐 [brandonvisca.com](https://brandonvisca.com)
+📍 Chambéry (73000) | 📧 [bonjour@brandonvisca.com](mailto:bonjour@brandonvisca.com) | 🐙 [github.com/visbran](https://github.com/visbran) | 🌐 [brandonvisca.com](https://brandonvisca.com)
 
 ---
 
