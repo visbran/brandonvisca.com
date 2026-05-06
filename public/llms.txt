@@ -1,100 +1,479 @@
-# brandonvisca.com
+# llms.txt — Brandon Visca
+# Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
+# Dernière mise à jour : 2026-05-06
+# Total articles : 79
 
-Blog technique français sur le self-hosting, le homelab et l'indépendance numérique.
-Auteur : Brandon Visca — praticien depuis 2020, articles basés sur des expériences
-réelles en production (homelab Proxmox, services auto-hébergés, macOS, réseau, sécurité).
+## Proxmox LXC : des conteneurs légères pour ton homelab sans la lourdeur des VM
+URL: https://brandonvisca.com/proxmox-lxc-containers-guide/
+Description: Guide complet Proxmox LXC : créer, configurer et sécuriser des conteneurs Linux. Beaucoup plus légers que des VM, parfaits pour ton homelab débutant.
+Tags: 
+Publié: 2026-05-06 10:00:00+02:00
 
-## À propos
+## Passkey SSH : remplace tes clés avec SSH ID (2026)
+URL: https://brandonvisca.com/passkey-ssh-sshid/
+Description: Passe au passkey SSH biométrique avec SSH ID de Termius : Face ID, Touch ID, Windows Hello. La clé privée reste sur ton appareil, inextractible.
+Tags: 
+Publié: 2026-05-06 00:00:00+01:00
 
-brandonvisca.com documente des configurations réelles testées en production.
-Les articles incluent des captures d'écran, fichiers de configuration et commandes exactes
-issues de l'environnement réel de l'auteur. Pas de contenu généré — uniquement de l'expérience terrain.
+## Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul
+URL: https://brandonvisca.com/traefik-reverse-proxy-docker/
+Description: Installe Traefik v3 comme reverse proxy Docker. Labels auto, HTTPS Let's Encrypt, middlewares — guide complet pour ton homelab en 2026.
+Tags: 
+Publié: 2026-05-05 10:00:00+02:00
 
-## Articles
+## Watchtower : mets tes conteneurs Docker à jour sans lever le petit doigt
+URL: https://brandonvisca.com/watchtower-mise-a-jour-docker-auto/
+Description: Configure Watchtower pour mettre à jour automatiquement tes conteneurs Docker. Notifications, exclusions, planning — guide complet homelab.
+Tags: 
+Publié: 2026-05-01 00:00:00+01:00
 
-- 10 Extensions Raycast indispensables pour développeurs et sysadmins (https://brandonvisca.com/10-extensions-raycast-indispensables-pour-developpeurs-et-sysadmins/) : Docker, GitHub, SSH, Brew : 10 extensions Raycast pour transformer ton workflow dev/sysadmin. Guide complet avec installation et config.
-- 10 Outils macOS gratuits que j'utilise (2026) (https://brandonvisca.com/10-outils-low-tech-macos-guide-complet/) : 10 outils macOS que j'utilise quotidiennement : gratuits, légers, efficaces. Brewfile inclus. Économise 453€/an vs alternatives.
-- Active Directory : Transfère des rôles FSMO (https://brandonvisca.com/activedirectory-transfere-des-roles-fsmo/) : Les rôles FSMO sont 5 fonctions importantes dans un réseau Windows. Un seul contrôleur de domaine peut avoir un ou plusieurs de ces rôles.
-- Ajouter un programme au PATH Windows : Le guide ultime 2025 (3 méthodes (https://brandonvisca.com/ajouter-un-programme-au-path-windows/) : Ajoutez un programme au PATH Windows en 2025 : 3 méthodes (interface graphique, PowerShell, CMD) avec troubleshooting et exemples pratiques.
-- AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026) (https://brandonvisca.com/alttab-macos-gestion-fenetres-windows/) : AltTab macOS remplace ⌘+Tab avec des previews style Windows. Gratuit, open-source. Guide installation, layouts et configuration avancée.
-- Android File Transfer Mac : 2 alternatives testées (2025) (https://brandonvisca.com/android-file-transfer-mac-alternatives-test-2025/) : Android File Transfer Mac alternative : j'ai testé OpenMTP et MacDroid pendant 90 jours. OpenMTP gratuit gagne. Comparatif avec benchmarks réels.
-- AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025) (https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/) : AppCleaner Mac supprime complètement tes apps avec tous leurs fichiers associés (caches, préférences). Alternative gratuite à CleanMyMac. Guide 2025.
-- Arc Browser abandonné : 7 alternatives épurées pour retrouver ton workflow de rêve (https://brandonvisca.com/arc-browser-alternatives-navigateur-epure-2025/) : Arc Browser est abandonné ? Découvre 7 alternatives épurées avec split screen, raccourcis clavier et design minimaliste. SigmaOS, Zen Browser et plus.
-- Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données (https://brandonvisca.com/auto-hebergement-guide-complet-2025/) : Découvrez l'auto-hébergement en 2025 : guide complet pour débutants, du choix du matériel aux premiers services. Reprenez le contrôle de vos données !
-- Calendrier et gestion des tâches unifiés\_: Morgen (https://brandonvisca.com/calendrier-et-gestion-des-taches-unifies-morgen/) : Morgen réunit calendrier, tâches et time-blocking dans une interface unifiée pour macOS. Alternative à Fantastical. Guide complet des fonctionnalités.
-- Cling : Recherche fuzzy fichiers 10x plus rapide (https://brandonvisca.com/cling-recherche-fuzzy-fichiers-macos/) : Cling : trouve fichiers macOS instantanément avec recherche fuzzy. Même avec fautes frappe. Alternative Spotlight. Gratuit, open source.
-- Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit) (https://brandonvisca.com/clop-compression-images-videos-macos/) : Découvre Clop, l'outil qui compresse automatiquement tes images et vidéos dès que tu les copies. Fini les fichiers trop lourds pour les emails et Slack. Installation et config complète.
-- Comment définir le fuseau horaire et synchroniser l'heure du serveur sous Linux (https://brandonvisca.com/comment-modifier-heure-du-serveur-sous-linux/) : Apprenez à changer le fuseau horaire, définir le fuseau horaire et synchroniser l'heure du serveur sous Linux en utilisant timedatectl et NTP.
-- Configuration avancée SnipeIT : LDAP, automatisation et notifications (guide 2025) (https://brandonvisca.com/configuration-avancee-snipeit-ldap-teams-automatisation/) : Configuration avancée SnipeIT : intégration LDAP/Active Directory, scan réseau, notifications Teams et self-service. Guide complet avec exemples concrets.
-- Connecter les systèmes Ubuntu à Active Directory en utilisant SSSD (https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/) : Connectez Ubuntu à Active Directory via SSSD pour une authentification centralisée. Guide complet : installation, configuration Kerberos et dépannage.
-- Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs (https://brandonvisca.com/content-security-policy-nginx-sans-casser-site/) : Configurez une Content-Security-Policy Nginx pour bloquer les attaques XSS sans casser votre site. Guide complet directive par directive avec exemples.
-- Dépannage montage RAID mdadm en mode secours Linux : wrong fs type et partition cachée (https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/) : Dépannage RAID mdadm en mode secours Linux : diagnostiquer wrong fs type, partition cachée non montée et restaurer le tableau RAID. Guide complet.
-- DNS Scavenging Windows Server : automatiser le nettoyage DNS (https://brandonvisca.com/dns-scavenging-windows-server-guide-complet/) : Configure le DNS Scavenging Windows Server pour nettoyer automatiquement les enregistrements obsolètes. Scripts PowerShell et bonnes pratiques inclus.
-- Docker pour les débutants : 10 services essentiels à auto-héberger en 2025 (https://brandonvisca.com/docker-debutant-services-auto-heberger/) : Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !
-- Exchange Online : Bloquer les transferts automatiques d'emails (Guide 2025) (https://brandonvisca.com/exchange-online-bloquer-transferts-automatiques-emails/) : Bloquez les redirections email et transferts automatiques dans Exchange Online avec PowerShell. Transport Rules, audit RBAC et scripts prêts à l'emploi.
-- Exploration de Super.so : un outil de site web personnalisé pour Notion (https://brandonvisca.com/exploration-de-super-so-un-outil-de-site-web-personnalise-pour-notion/) : Super.so transforme vos pages Notion en site web personnalisé : domaine custom, SEO intégré, thèmes et scripts personnalisés. Guide complet et test.
-- Gérer vos fichiers sur Amazon S3 avec S3cmd : Guide complet (https://brandonvisca.com/gerer-fichiers-amazon-s3-avec-s3cmd/) : S3cmd guide complet : installez et configurez ce client CLI open source pour gérer vos fichiers Amazon S3, synchroniser et sauvegarder vos données.
-- Grila vs Fantastical : Comparatif honnête après 6 mois (2025) (https://brandonvisca.com/grila-vs-fantastical-comparatif-2025/) : Grila vs Fantastical : j'utilise Grila depuis 6 mois (6€ vs 70€/an). Est-ce que ça vaut 64€ de plus ? Comparatif honnête pour t'aider à choisir.
-- Swap Linux : guide complet pour configurer et optimiser en 2026 (https://brandonvisca.com/guide-swap-linux-configuration-optimisation/) : Guide complet swap Linux 2026 : configurer un fichier swap, ajuster la swappiness, redimensionner et surveiller l'utilisation mémoire.
-- Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026) (https://brandonvisca.com/hyperv-gen1-vs-gen2-quelle-generation-choisir/) : Hyper-V Gen1 vs Gen2 : UEFI, Secure Boot, PXE, performances — le comparatif complet pour choisir la bonne génération selon ton OS et ton contexte.
-- Ice macOS : remplace Bartender gratuitement et organise ta barre de menu (https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/) : Ice macOS remplace Bartender gratuitement. Gère ta barre de menu avec sections, hotkeys et personnalisation visuelle. Guide installation + configuration.
-- Importer fichiers PST dans Outlook 365 : Guide fiable et rapide (2025) (https://brandonvisca.com/import-pst-outlook-365-guide-complet/) : Importez vos fichiers PST dans Outlook 365 avec 2 méthodes testées. Alternative XstReader gratuite pour lire vos emails sans Outlook. Guide pas à pas.
-- Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle (https://brandonvisca.com/independance-numerique-2025-guide-complet/) : Guide complet auto-hébergement 2025 : Nextcloud + Jellyfin + Vaultwarden. Remplace Google/Netflix/1Password, économise 534€/an. Installation weekend.
-- Homebrew macOS : Guide d'Installation Complet (2026) (https://brandonvisca.com/installation-homebrew-macos/) : Comment installer Homebrew macOS en 1 commande. Prérequis, installation, commandes essentielles, apps incontournables et dépannage.
-- Oh My Zsh + Powerlevel10k : Guide d'installation complet (https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/) : Installer Oh My Zsh et Powerlevel10k : guide étape par étape, plugins essentiels (autosuggestions, syntax-highlighting) et configuration du thème.
-- Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025) (https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/) : Installez SnipeIT sur Ubuntu 22.04/24.04 : guide LAMP, MySQL, Git et permissions. Déployez votre ITSM d'inventaire IT en moins d'une heure, pas à pas.
-- Thème Vim : installer Catppuccin avec vim-plug en 5 minutes (https://brandonvisca.com/installation-theme-vim-guide/) : Installe le thème Catppuccin dans Vim en 5 minutes : vim-plug, configuration .vimrc et dépannage des couleurs 256. Fonctionne sur macOS et Linux.
-- Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes (https://brandonvisca.com/installation-vim-guide-complet/) : Installe Vim sur macOS ou Linux en 30 min : .vimrc de base commenté, vim-plug, NERDTree et FZF. Tout ce qu'il faut pour débuter sérieusement.
-- LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod) (https://brandonvisca.com/installer-localwp-wordpress-local/) : LocalWP : installez et testez WordPress en local sans serveur ni XAMPP. Guide complet avec installation, multi-site et workflow de déploiement en prod.
-- Guide iTerm2 macOS : Installation et configuration complète (2026) (https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) : Guide iTerm2 macOS : installation, thèmes, raccourcis, Oh My Zsh et plugins essentiels. Tout ce qu'il faut pour booster ta productivité terminal.
-- ITSM : pourquoi votre Excel va finalement vous rendre fou (guide survie) (https://brandonvisca.com/itsm-snipeit-alternative-excel-inventaire-it/) : Découvrez l''ITSM pour débutants avec SnipeIT, l''alternative gratuite à Excel pour gérer vos actifs IT sans stress. Guide complet inventaire informatique.
-- Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an) (https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/) : Installe Jellyfin avec Docker en 20 min. Alternative Netflix auto-hébergée, économise 378€/an. Guide 2025 complet + transcoding 4K.
-- Ladybird Browser : Le navigateur web qui refuse de se soumettre à Google (et tant mieux) (https://brandonvisca.com/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/) : Découvrez Ladybird, le nouveau navigateur open source construit from scratch. Architecture, financement, timeline et pourquoi ça change tout pour le web.
-- Filtrage utilisateurs LDAP Snipe-IT : Guide pratique Active Directory 2025 (https://brandonvisca.com/ldap-filtrage-utilisateurs-snipeit/) : Guide avancé pour filtrer les utilisateurs LDAP dans Snipe-IT connecté à Active Directory. Filtres sécurisés, exclusions par OU, bonnes pratiques 2025.
-- Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !) (https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/) : Découvre Lunar, l'app qui résout le problème de luminosité des écrans externes sur macOS. DDC natif, F1/F2 fonctionnent, sync auto. Indispensable Mac Mini.
-- Magnet macOS : Le gestionnaire de fenêtres qui va transformer ton workflow (+ alternatives gratuites) (https://brandonvisca.com/magnet-macos-gestionnaire-fenetres-guide-complet/) : Découvre Magnet macOS, le gestionnaire de fenêtres n°1. Comparatif complet avec Rectangle, BetterSnapTool, Moom + guide d'installation détaillé.
-- Masquer des utilisateurs de la GAL Office 365 + Active Directory : Guide complet (https://brandonvisca.com/masquer-utilisateurs-gal-office365-active-directory/) : Masquez des utilisateurs de la GAL Office 365 synchronisés depuis Active Directory sans les supprimer. Méthode PowerShell et console Exchange Admin Centre.
-- Migrer WordPress en 2025 : All-in-One WP Migration guide complet (+ astuces pro) (https://brandonvisca.com/migration-wordpress-all-in-one-guide-2025/) : Migrez votre site WordPress avec All-in-One WP Migration : sauvegarde, restauration et bonnes pratiques. Méthode testée, zéro perte de données garantie.
-- pfsense CE 2.8.0 : Ce que vous devez savoir avant de cliquer sur “Mettre à jour” (https://brandonvisca.com/mise-a-jour-pfsense-2-8-nouveautes-installation/) : Mettez à jour pfSense CE 2.8 en toute sécurité : nouveautés FreeBSD 14, correctifs de sécurité et étapes de migration détaillées pour éviter les erreurs.
-- Music Decoy macOS : Bloquer Apple Music au Démarrage (Solution Gratuite 2025) (https://brandonvisca.com/music-decoy-macos-bloquer-apple-music/) : Music Decoy empêche Apple Music de se lancer avec la touche Play sur macOS. Solution minimaliste gratuite pour utilisateurs Spotify ou YouTube Music.
-- Nebula-Sync : synchronise tes Pi-hole v6 automatiquement (remplace Gravity Sync) (https://brandonvisca.com/nebula-sync-pihole-v6-installation-docker-guide/) : Découvrez Nebula-Sync, l'outil gratuit qui remplace Gravity Sync pour synchroniser plusieurs Pi-hole v6. Installation Docker + config complète.
-- Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !) (https://brandonvisca.com/nextcloud-docker-installation-complete-2025/) : Installe Nextcloud avec Docker en 30 min. Alternative Google Drive auto-hébergée, économise 120€/an. Guide 2025 complet + HTTPS gratuit.
-- Comprendre les blocs location de Nginx et leur impact sur la sécurité (https://brandonvisca.com/nginx-location-bloc-et-securite/) : Maîtrisez les blocs location Nginx : types, priorités, regex et implications sécurité. Guide complet avec exemples pratiques pour configurer vos sites.
-- Aller plus loin : Permissions-Policy et protection anti-bots sur Nginx (https://brandonvisca.com/nginx-permissions-policy-anti-bot/) : Renforcez la sécurité de vos apps web avec Permissions-Policy Nginx pour restreindre les API navigateur et bloquer les bots malveillants. Guide complet.
-- Notion Sites: Révolution dans la Création de Sites Web (https://brandonvisca.com/notion-sites-creation-de-sites-web/) : Notion Sites : créez un site web depuis Notion en quelques minutes. Fonctionnalités CMS, personnalisation, SEO et comparaison avec les alternatives.
-- Omarchy : la distribution Linux qui transforme Arch en station productive (https://brandonvisca.com/omarchy-distribution-linux-arch-hyprland/) : Découvrez Omarchy, la distro Arch Linux avec Hyprland préconfigurée. Installation simplifiée, 11 thèmes, sécurité renforcée et outils dev inclus d'emblée.
-- Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025) (https://brandonvisca.com/partager-mot-de-passe-securise-comparatif/) : Partager un mot de passe sécurisé : j'ai comparé Password.link, OneTimeSecret et PrivateBin. Verdict clair selon ton profil et tes contraintes.
-- Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes HTTP (https://brandonvisca.com/proteger-nginx-fichiers-sensibles-et-uploads/) : Renforcez la sécurité Nginx en bloquant les fichiers sensibles et l'exécution de scripts dans les répertoires d'upload. Configurations prêtes à copier.
-- Pourquoi j&rsquo;ai quitté Google (et comment tu peux faire pareil en 2025) (https://brandonvisca.com/quitter-google-auto-hebergement/) : Découvre pourquoi et comment j'ai remplacé tous mes services Google par des alternatives auto-hébergées. Guide complet, 0€/mois, 100% fonctionnel.
-- Raycast : L'outil qui transforme macOS en machine de productivité ultime (https://brandonvisca.com/raycast-macos-outil-productivite-ultime/) : Découvrez Raycast, le launcher macOS gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2025.
-- Raycast vs Alfred : Test après 30 jours (Verdict 2025) (https://brandonvisca.com/raycast-vs-alfred-spotlight-comparatif-macos/) : Raycast vs Alfred vs Spotlight : 30 jours de tests réels. Tableaux comparatifs, prix détaillés, verdict par profil. Quel launcher macOS choisir ?
-- rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide (https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/) : rcmd, l'alternative Cmd+Tab mac gratuite : switche entre apps en 1 touche (Right Cmd + lettre). 10x plus rapide. Installation 2 min, config complète.
-- Compresser images Mac en WebP : méthode qui économise 70% d'espace (https://brandonvisca.com/reduire-taille-images-mac-webp/) : Compresser images Mac en WebP avec cwebp et Automator. Méthode gratuite, clic droit dans le Finder, gain 50 à 80% de taille. Tuto étape par étape.
-- VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026) (https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/) : Restaurer une VM Hyper-V avec VHDX OS corrompu : reconstruis l'OS via WinPE + robocopy + bcdboot. Sans réinstaller Windows Server. 45 minutes.
-- Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels (https://brandonvisca.com/securiser-nginx-avec-headers-http/) : Sécurisez Nginx avec les headers HTTP OWASP : HSTS, X-Frame-Options, CSP, Referrer-Policy. Guide complet avec configurations testées et explications.
-- Sécurité de votre serveur linux : Comment durcir un serveur sous linux ? (https://brandonvisca.com/securite-de-votre-serveur-linux/) : Guide complet pour renforcer la sécurité de votre serveur Linux : SSH, pare-feu ufw, fail2ban, mises à jour auto et surveillance des logs. Testé en prod.
-- Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne) (https://brandonvisca.com/sendme-cli-transfert-fichiers-p2p-terminal/) : Sendme CLI : transfert P2P sécurisé en 2 commandes. NAT traversal automatique, aucun serveur requis. Alternative moderne à scp. Guide complet 2026.
-- Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025) (https://brandonvisca.com/shutter-encoder-mac-alternative-handbrake/) : Shutter Encoder Mac : alternative gratuite à HandBrake pour la compression vidéo avancée, l'édition, les sous-titres et le color grading. Guide complet.
-- SnipeAgent : Automatiser l'inventaire Windows sans Excel ni galères (https://brandonvisca.com/snipeagent-automatiser-inventaire-windows-snipeit/) : Automatise ton inventaire Windows avec SnipeAgent et Snipe-IT. Guide complet : installation, déploiement GPO, automatisation et dépannage. Fini Excel !
-- SnipeIT vs GLPI : mon comparatif après 3 ans sur les deux outils (https://brandonvisca.com/snipeit-vs-glpi-comparatif-itsm-inventaire-it/) : SnipeIT vs GLPI 2026 : mon retour d'expérience sur 3 ans. Quel outil ITSM choisir pour ton inventaire IT ? Tableau comparatif inclus.
-- Technitium DNS Server : installe ton bloqueur de pubs libre (2026) (https://brandonvisca.com/technitium-dns-server/) : Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC — guide complet 2026.
-- Termius 2026 : remplace PuTTY et économise 30 min/jour sur Windows (https://brandonvisca.com/termius-client-ssh-windows-guide-complet/) : Termius remplace PuTTY sur Windows avec interface moderne, sync cloud et SFTP intégré. Guide complet 2026 pour admins sys et débutants SSH.
-- Uptime Kuma 2.0 : le monitoring auto-hébergé qui remplace les services payants (https://brandonvisca.com/uptime-kuma-2-0-monitoring-auto-heberge/) : Uptime Kuma 2.0 : MariaDB, Docker rootless et 90+ intégrations. Installation et migration V1→V2 pour ton homelab auto-hébergé.
-- UptimeRobot : surveille ton infrastructure gratuitement (guide 2026) (https://brandonvisca.com/uptimerobot-guide-complet-monitoring-infrastructure/) : UptimeRobot : surveille ton infrastructure gratuitement avec alertes Slack et pages de statut. Guide 2026, 50 moniteurs gratuits, API incluse.
-- Vanderplanki : sauvegarde email gratuite et multi-plateforme (guide 2026) (https://brandonvisca.com/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/) : Sauvegarde tes emails gratuitement avec Vanderplanki — chiffré, multi-plateforme, open source. Par les créateurs de MailStore. Guide 2026.
-- Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !) (https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/) : Installe Vaultwarden avec Docker en 15 min. Alternative 1Password/Bitwarden gratuite, économise 36€/an. Guide 2026 complet + sécurité maximale.
-- WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2026) (https://brandonvisca.com/wailbrew-interface-graphique-homebrew/) : WailBrew macOS : interface graphique Homebrew. Installe, mets à jour et gère tes apps sans Terminal. Guide 2026 + comparaison Cork, Cakebrew.
-- Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA) (https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) : Warp Terminal vs iTerm2 en 2025 : test complet sur 3 mois en prod. IA, Agent Mode, Warp Drive : ce qui change vraiment et si ça vaut le switch.
-- Watchtower : mets tes conteneurs Docker à jour sans lever le petit doigt (https://brandonvisca.com/watchtower-mise-a-jour-docker-auto/) : Configure Watchtower pour mettre à jour automatiquement tes conteneurs Docker. Notifications, exclusions, planning — guide complet homelab.
-- Réparer WordPress : 2 solutions pour une base de données corrompue (https://brandonvisca.com/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/) : Réparer WordPress après une corruption de base de données : 2 méthodes éprouvées, testées en prod, pour restaurer votre site en moins de 10 minutes.
-- Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025) (https://brandonvisca.com/yopass-vs-privatebin-vs-password-pusher/) : Partager un mot de passe sécurisé depuis ton homelab : Yopass, PrivateBin ou Password Pusher ? Comparatif complet pour choisir lequel auto-héberger.
-- Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul (https://brandonvisca.com/traefik-reverse-proxy-docker/) : Installe Traefik v3 comme reverse proxy Docker. Labels auto, HTTPS Let's Encrypt, middlewares — guide complet pour ton homelab en 2026.
+## Technitium DNS Server : installe ton bloqueur de pubs libre (2026)
+URL: https://brandonvisca.com/technitium-dns-server/
+Description: Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC — guide complet 2026.
+Tags: 
+Publié: 2026-04-29 00:00:00+01:00
 
-## Thématiques
+## Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)
+URL: https://brandonvisca.com/partager-mot-de-passe-securise-comparatif/
+Description: Partager un mot de passe sécurisé : j'ai comparé Password.link, OneTimeSecret et PrivateBin. Verdict clair selon ton profil et tes contraintes.
+Tags: 
+Publié: 2026-03-14T00:00:00+01:00
 
-self-hosting, homelab, proxmox, docker, linux, macos, réseau, sécurité, windows,
-nginx, active-directory, jellyfin, nextcloud, vaultwarden, raycast, iterm2, traefik
+## Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)
+URL: https://brandonvisca.com/yopass-vs-privatebin-vs-password-pusher/
+Description: Partager un mot de passe sécurisé depuis ton homelab : Yopass, PrivateBin ou Password Pusher ? Comparatif complet pour choisir lequel auto-héberger.
+Tags: 
+Publié: 2026-03-14 00:00:00+01:00
 
-## Contact et auteur
+## Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
+URL: https://brandonvisca.com/hyperv-gen1-vs-gen2-quelle-generation-choisir/
+Description: Hyper-V Gen1 vs Gen2 : UEFI, Secure Boot, PXE, performances — le comparatif complet pour choisir la bonne génération selon ton OS et ton contexte.
+Tags: 
+Publié: 2026-03-10T00:00:00+01:00
 
-https://brandonvisca.com/a-propos/
+## VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)
+URL: https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/
+Description: Restaurer une VM Hyper-V avec VHDX OS corrompu : reconstruis l'OS via WinPE + robocopy + bcdboot. Sans réinstaller Windows Server. 45 minutes.
+Tags: 
+Publié: 2026-03-10T00:00:00+01:00
+
+## Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)
+URL: https://brandonvisca.com/sendme-cli-transfert-fichiers-p2p-terminal/
+Description: Sendme CLI : transfert P2P sécurisé en 2 commandes. NAT traversal automatique, aucun serveur requis. Alternative moderne à scp. Guide complet 2026.
+Tags: 
+Publié: 2025-12-09T21:14:00+01:00
+
+## 10 Outils macOS gratuits que j'utilise (2026)
+URL: https://brandonvisca.com/10-outils-low-tech-macos-guide-complet/
+Description: 10 outils macOS que j'utilise quotidiennement : gratuits, légers, efficaces. Brewfile inclus. Économise 453€/an vs alternatives.
+Tags: 
+Publié: 2025-11-27 00:00:00+01:00
+
+## Cling : Recherche fuzzy fichiers 10x plus rapide
+URL: https://brandonvisca.com/cling-recherche-fuzzy-fichiers-macos/
+Description: Cling : trouve fichiers macOS instantanément avec recherche fuzzy. Même avec fautes frappe. Alternative Spotlight. Gratuit, open source.
+Tags: 
+Publié: 2025-11-27T00:00:00+01:00
+
+## Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)
+URL: https://brandonvisca.com/clop-compression-images-videos-macos/
+Description: Découvre Clop, l'outil qui compresse automatiquement tes images et vidéos macOS dès que tu les copies. Zéro effort, fichiers 10× plus légers.
+Tags: 
+Publié: 2025-11-27T00:00:00+01:00
+
+## Grila vs Fantastical : Comparatif honnête après 6 mois (2025)
+URL: https://brandonvisca.com/grila-vs-fantastical-comparatif-2025/
+Description: Grila vs Fantastical : j'utilise Grila depuis 6 mois (6€ vs 70€/an). Est-ce que ça vaut 64€ de plus ? Comparatif honnête pour t'aider à choisir.
+Tags: 
+Publié: 2025-11-27T00:00:00+01:00
+
+## Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)
+URL: https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/
+Description: Découvre Lunar, l'app qui résout le problème de luminosité des écrans externes sur macOS. DDC natif, F1/F2 fonctionnent, sync auto. Indispensable Mac Mini.
+Tags: 
+Publié: 2025-11-27T00:00:00+01:00
+
+## Raycast vs Alfred : Test après 30 jours (Verdict 2025)
+URL: https://brandonvisca.com/raycast-vs-alfred-spotlight-comparatif-macos/
+Description: Raycast vs Alfred vs Spotlight : 30 jours de tests réels. Tableaux comparatifs, prix détaillés, verdict par profil. Quel launcher macOS choisir ?
+Tags: 
+Publié: 2025-11-27T00:00:00+01:00
+
+## rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide
+URL: https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/
+Description: rcmd, l'alternative Cmd+Tab mac gratuite : switche entre apps en 1 touche (Right Cmd + lettre). 10x plus rapide. Installation 2 min, config complète.
+Tags: 
+Publié: 2025-11-27T00:00:00+01:00
+
+## Music Decoy macOS : Bloquer Apple Music au Démarrage (Solution Gratuite 2025)
+URL: https://brandonvisca.com/music-decoy-macos-bloquer-apple-music/
+Description: Music Decoy empêche Apple Music de se lancer avec la touche Play sur macOS. Solution minimaliste gratuite pour utilisateurs Spotify ou YouTube Music.
+Tags: 
+Publié: 2025-11-26T22:15:32+01:00
+
+## WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2026)
+URL: https://brandonvisca.com/wailbrew-interface-graphique-homebrew/
+Description: WailBrew macOS : interface graphique Homebrew. Installe, mets à jour et gère tes apps sans Terminal. Guide 2026 + comparaison Cork, Cakebrew.
+Tags: 
+Publié: 2025-11-24T22:03:21+01:00
+
+## Magnet macOS : Le gestionnaire de fenêtres qui va transformer ton workflow (+ alternatives gratuites)
+URL: https://brandonvisca.com/magnet-macos-gestionnaire-fenetres-guide-complet/
+Description: Découvre Magnet macOS, le gestionnaire de fenêtres n°1. Comparatif complet avec Rectangle, BetterSnapTool, Moom + guide d'installation détaillé.
+Tags: 
+Publié: 2025-11-19T22:43:10+01:00
+
+## Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025)
+URL: https://brandonvisca.com/shutter-encoder-mac-alternative-handbrake/
+Description: Shutter Encoder Mac : alternative gratuite à HandBrake pour la compression vidéo avancée, l'édition, les sous-titres et le color grading. Guide complet.
+Tags: 
+Publié: 2025-11-19T11:56:47+01:00
+
+## AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)
+URL: https://brandonvisca.com/alttab-macos-gestion-fenetres-windows/
+Description: AltTab macOS remplace ⌘+Tab avec des previews style Windows. Gratuit, open-source. Guide installation, layouts et configuration avancée.
+Tags: 
+Publié: 2025-11-18T18:55:54+01:00
+
+## AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)
+URL: https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/
+Description: AppCleaner Mac supprime complètement tes apps avec tous leurs fichiers associés (caches, préférences). Alternative gratuite à CleanMyMac. Guide 2025.
+Tags: 
+Publié: 2025-11-18T17:39:28+01:00
+
+## Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)
+URL: https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/
+Description: Warp Terminal vs iTerm2 en 2025 : test complet sur 3 mois en prod. IA, Agent Mode, Warp Drive : ce qui change vraiment et si ça vaut le switch.
+Tags: 
+Publié: 2025-11-16 22:52:46+01:00
+
+## Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle
+URL: https://brandonvisca.com/independance-numerique-2025-guide-complet/
+Description: Guide complet auto-hébergement 2025 : Nextcloud + Jellyfin + Vaultwarden. Remplace Google/Netflix/1Password, économise 534€/an. Installation weekend.
+Tags: 
+Publié: 2025-11-06T10:17:04+01:00
+
+## Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)
+URL: https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/
+Description: Installe Vaultwarden avec Docker en 15 min. Alternative 1Password/Bitwarden gratuite, économise 36€/an. Guide 2026 complet + sécurité maximale.
+Tags: 
+Publié: 2025-10-26T22:16:05+01:00
+
+## Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)
+URL: https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/
+Description: Installe Jellyfin avec Docker en 20 min. Alternative Netflix auto-hébergée, économise 378€/an. Guide 2025 complet + transcoding 4K.
+Tags: 
+Publié: 2025-10-26T20:59:01+01:00
+
+## Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)
+URL: https://brandonvisca.com/nextcloud-docker-installation-complete-2025/
+Description: Installe Nextcloud avec Docker en 30 min. Alternative Google Drive auto-hébergée, économise 120€/an. Guide 2025 complet + HTTPS gratuit.
+Tags: 
+Publié: 2025-10-26T20:58:49+01:00
+
+## Pourquoi j&rsquo;ai quitté Google (et comment tu peux faire pareil en 2025)
+URL: https://brandonvisca.com/quitter-google-auto-hebergement/
+Description: Découvre pourquoi et comment j'ai remplacé tous mes services Google par des alternatives auto-hébergées. Guide complet, 0€/mois, 100% fonctionnel.
+Tags: 
+Publié: 2025-10-26T15:09:10+01:00
+
+## Nebula-Sync : synchronise tes Pi-hole v6 automatiquement (remplace Gravity Sync)
+URL: https://brandonvisca.com/nebula-sync-pihole-v6-installation-docker-guide/
+Description: Découvrez Nebula-Sync, l'outil gratuit qui remplace Gravity Sync pour synchroniser plusieurs Pi-hole v6. Installation Docker + config complète.
+Tags: 
+Publié: 2025-10-23T20:55:40+02:00
+
+## Docker pour les débutants : 10 services essentiels à auto-héberger en 2025
+URL: https://brandonvisca.com/docker-debutant-services-auto-heberger/
+Description: Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !
+Tags: 
+Publié: 2025-10-22T16:12:41+02:00
+
+## Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données
+URL: https://brandonvisca.com/auto-hebergement-guide-complet-2025/
+Description: Découvrez l'auto-hébergement en 2025 : guide complet pour débutants, du choix du matériel aux premiers services. Reprenez le contrôle de vos données !
+Tags: 
+Publié: 2025-10-22T15:44:27+02:00
+
+## UptimeRobot : surveille ton infrastructure gratuitement (guide 2026)
+URL: https://brandonvisca.com/uptimerobot-guide-complet-monitoring-infrastructure/
+Description: UptimeRobot : surveille ton infrastructure gratuitement avec alertes Slack et pages de statut. Guide 2026, 50 moniteurs gratuits, API incluse.
+Tags: 
+Publié: 2025-10-22T15:42:22+02:00
+
+## 10 Extensions Raycast indispensables pour développeurs et sysadmins
+URL: https://brandonvisca.com/10-extensions-raycast-indispensables-pour-developpeurs-et-sysadmins/
+Description: Docker, GitHub, SSH, Brew : 10 extensions Raycast pour transformer ton workflow dev/sysadmin. Guide complet avec installation et config.
+Tags: 
+Publié: 2025-10-13T17:08:33+02:00
+
+## Termius 2026 : remplace PuTTY et économise 30 min/jour sur Windows
+URL: https://brandonvisca.com/termius-client-ssh-windows-guide-complet/
+Description: Termius remplace PuTTY sur Windows avec interface moderne, sync cloud et SFTP intégré. Guide complet 2026 pour admins sys et débutants SSH.
+Tags: 
+Publié: 2025-10-13 17:08:33+02:00
+
+## Uptime Kuma 2.0 : le monitoring auto-hébergé qui remplace les services payants
+URL: https://brandonvisca.com/uptime-kuma-2-0-monitoring-auto-heberge/
+Description: Uptime Kuma 2.0 : MariaDB, Docker rootless et 90+ intégrations. Installation et migration V1→V2 pour ton homelab auto-hébergé.
+Tags: 
+Publié: 2025-10-13 17:08:33+02:00
+
+## SnipeAgent : Automatiser l'inventaire Windows sans Excel ni galères
+URL: https://brandonvisca.com/snipeagent-automatiser-inventaire-windows-snipeit/
+Description: Automatise ton inventaire Windows avec SnipeAgent et Snipe-IT. Guide complet : installation, déploiement GPO, automatisation et dépannage. Fini Excel !
+Tags: 
+Publié: 2025-10-13T16:49:19+02:00
+
+## Configuration avancée SnipeIT : LDAP, automatisation et notifications (guide 2025)
+URL: https://brandonvisca.com/configuration-avancee-snipeit-ldap-teams-automatisation/
+Description: Configuration avancée SnipeIT : intégration LDAP/Active Directory, scan réseau, notifications Teams et self-service. Guide complet avec exemples concrets.
+Tags: 
+Publié: 2025-10-13T16:05:41+02:00
+
+## Raycast : L'outil qui transforme macOS en machine de productivité ultime
+URL: https://brandonvisca.com/raycast-macos-outil-productivite-ultime/
+Description: Découvrez Raycast, le launcher macOS gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2025.
+Tags: 
+Publié: 2025-10-13T15:20:28+02:00
+
+## Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)
+URL: https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/
+Description: Installez SnipeIT sur Ubuntu 22.04/24.04 : guide LAMP, MySQL, Git et permissions. Déployez votre ITSM d'inventaire IT en moins d'une heure, pas à pas.
+Tags: 
+Publié: 2025-10-03T12:38:51+02:00
+
+## SnipeIT vs GLPI : mon comparatif après 3 ans sur les deux outils
+URL: https://brandonvisca.com/snipeit-vs-glpi-comparatif-itsm-inventaire-it/
+Description: SnipeIT vs GLPI 2026 : mon retour d'expérience sur 3 ans. Quel outil ITSM choisir pour ton inventaire IT ? Tableau comparatif inclus.
+Tags: 
+Publié: 2025-10-03T12:14:07+02:00
+
+## ITSM : pourquoi votre Excel va finalement vous rendre fou (guide survie)
+URL: https://brandonvisca.com/itsm-snipeit-alternative-excel-inventaire-it/
+Description: Découvrez l''ITSM pour débutants avec SnipeIT, l''alternative gratuite à Excel pour gérer vos actifs IT sans stress. Guide complet inventaire informatique.
+Tags: 
+Publié: 2025-09-29T11:20:31+02:00
+
+## Omarchy : la distribution Linux qui transforme Arch en station productive
+URL: https://brandonvisca.com/omarchy-distribution-linux-arch-hyprland/
+Description: Découvrez Omarchy, la distro Arch Linux avec Hyprland préconfigurée. Installation simplifiée, 11 thèmes, sécurité renforcée et outils dev inclus d'emblée.
+Tags: 
+Publié: 2025-09-26T12:28:27+02:00
+
+## Ice macOS : remplace Bartender gratuitement et organise ta barre de menu
+URL: https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/
+Description: Ice macOS remplace Bartender gratuitement. Gère ta barre de menu avec sections, hotkeys et personnalisation visuelle. Guide installation + configuration.
+Tags: 
+Publié: 2025-09-22T22:25:45+02:00
+
+## Arc Browser abandonné : 7 alternatives épurées pour retrouver ton workflow de rêve
+URL: https://brandonvisca.com/arc-browser-alternatives-navigateur-epure-2025/
+Description: Arc Browser est abandonné ? Découvre 7 alternatives épurées avec split screen, raccourcis clavier et design minimaliste. SigmaOS, Zen Browser et plus.
+Tags: 
+Publié: 2025-08-09T19:57:34+02:00
+
+## Masquer des utilisateurs de la GAL Office 365 + Active Directory : Guide complet
+URL: https://brandonvisca.com/masquer-utilisateurs-gal-office365-active-directory/
+Description: Masquez des utilisateurs de la GAL Office 365 synchronisés depuis Active Directory sans les supprimer. Méthode PowerShell et console Exchange Admin Centre.
+Tags: 
+Publié: 2025-08-01T21:17:07+02:00
+
+## DNS Scavenging Windows Server : automatiser le nettoyage DNS
+URL: https://brandonvisca.com/dns-scavenging-windows-server-guide-complet/
+Description: Configure le DNS Scavenging Windows Server pour nettoyer automatiquement les enregistrements obsolètes. Scripts PowerShell et bonnes pratiques inclus.
+Tags: 
+Publié: 2025-07-13T22:45:43+02:00
+
+## Swap Linux : guide complet pour configurer et optimiser en 2026
+URL: https://brandonvisca.com/guide-swap-linux-configuration-optimisation/
+Description: Guide complet swap Linux 2026 : configurer un fichier swap, ajuster la swappiness, redimensionner et surveiller l'utilisation mémoire.
+Tags: 
+Publié: 2025-07-13T22:16:30+02:00
+
+## Exchange Online : Bloquer les transferts automatiques d'emails (Guide 2025)
+URL: https://brandonvisca.com/exchange-online-bloquer-transferts-automatiques-emails/
+Description: Bloquez les redirections email et transferts automatiques dans Exchange Online avec PowerShell. Transport Rules, audit RBAC et scripts prêts à l'emploi.
+Tags: 
+Publié: 2025-06-14T20:02:20+02:00
+
+## Ladybird Browser : Le navigateur web qui refuse de se soumettre à Google (et tant mieux)
+URL: https://brandonvisca.com/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/
+Description: Découvrez Ladybird, le nouveau navigateur open source construit from scratch. Architecture, financement, timeline et pourquoi ça change tout pour le web.
+Tags: 
+Publié: 2025-06-13T18:47:21+02:00
+
+## Compresser images Mac en WebP : méthode qui économise 70% d'espace
+URL: https://brandonvisca.com/reduire-taille-images-mac-webp/
+Description: Compresser images Mac en WebP avec cwebp et Automator. Méthode gratuite, clic droit dans le Finder, gain 50 à 80% de taille. Tuto étape par étape.
+Tags: 
+Publié: 2025-06-12T20:41:20+02:00
+
+## Vanderplanki : sauvegarde email gratuite et multi-plateforme (guide 2026)
+URL: https://brandonvisca.com/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/
+Description: Sauvegarde tes emails gratuitement avec Vanderplanki — chiffré, multi-plateforme, open source. Par les créateurs de MailStore. Guide 2026.
+Tags: 
+Publié: 2025-06-12T19:38:49+02:00
+
+## pfsense CE 2.8.0 : Ce que vous devez savoir avant de cliquer sur “Mettre à jour”
+URL: https://brandonvisca.com/mise-a-jour-pfsense-2-8-nouveautes-installation/
+Description: Mettez à jour pfSense CE 2.8 en toute sécurité : nouveautés FreeBSD 14, correctifs de sécurité et étapes de migration détaillées pour éviter les erreurs.
+Tags: 
+Publié: 2025-06-01T19:41:15+02:00
+
+## Aller plus loin : Permissions-Policy et protection anti-bots sur Nginx
+URL: https://brandonvisca.com/nginx-permissions-policy-anti-bot/
+Description: Renforcez la sécurité de vos apps web avec Permissions-Policy Nginx pour restreindre les API navigateur et bloquer les bots malveillants. Guide complet.
+Tags: 
+Publié: 2025-04-27T17:12:59+02:00
+
+## Comprendre les blocs location de Nginx et leur impact sur la sécurité
+URL: https://brandonvisca.com/nginx-location-bloc-et-securite/
+Description: Maîtrisez les blocs location Nginx : types, priorités, regex et implications sécurité. Guide complet avec exemples pratiques pour configurer vos sites.
+Tags: 
+Publié: 2025-04-15T20:25:29+02:00
+
+## Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes HTTP
+URL: https://brandonvisca.com/proteger-nginx-fichiers-sensibles-et-uploads/
+Description: Renforcez la sécurité Nginx en bloquant les fichiers sensibles et l'exécution de scripts dans les répertoires d'upload. Configurations prêtes à copier.
+Tags: 
+Publié: 2025-04-15T20:18:39+02:00
+
+## Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs
+URL: https://brandonvisca.com/content-security-policy-nginx-sans-casser-site/
+Description: Configurez une Content-Security-Policy Nginx pour bloquer les attaques XSS sans casser votre site. Guide complet directive par directive avec exemples.
+Tags: 
+Publié: 2025-04-15T20:03:49+02:00
+
+## Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels
+URL: https://brandonvisca.com/securiser-nginx-avec-headers-http/
+Description: Sécurisez Nginx avec les headers HTTP OWASP : HSTS, X-Frame-Options, CSP, Referrer-Policy. Guide complet avec configurations testées et explications.
+Tags: 
+Publié: 2025-04-06T11:33:55+02:00
+
+## Active Directory : Transfère des rôles FSMO
+URL: https://brandonvisca.com/activedirectory-transfere-des-roles-fsmo/
+Description: Les rôles FSMO sont 5 fonctions importantes dans un réseau Windows. Un seul contrôleur de domaine peut avoir un ou plusieurs de ces rôles.
+Tags: 
+Publié: 2025-03-31T17:34:29+02:00
+
+## Oh My Zsh + Powerlevel10k : guide complet installation 2026
+URL: https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/
+Description: Oh My Zsh + Powerlevel10k 2026 : installe et configure ton terminal en 15 min. Plugins indispensables, thèmes pro, config avancée.
+Tags: 
+Publié: 2025-03-31 15:55:32+02:00
+
+## Ajouter un programme au PATH Windows : Le guide ultime 2025 (3 méthodes
+URL: https://brandonvisca.com/ajouter-un-programme-au-path-windows/
+Description: Ajoutez un programme au PATH Windows en 2025 : 3 méthodes (interface graphique, PowerShell, CMD) avec troubleshooting et exemples pratiques.
+Tags: 
+Publié: 2025-03-31T15:50:44+02:00
+
+## Thème Vim : installer Catppuccin avec vim-plug en 5 minutes
+URL: https://brandonvisca.com/installation-theme-vim-guide/
+Description: Installe le thème Catppuccin dans Vim en 5 minutes : vim-plug, configuration .vimrc et dépannage des couleurs 256. Fonctionne sur macOS et Linux.
+Tags: 
+Publié: 2025-03-31T15:43:24+02:00
+
+## Installer Homebrew sur macOS : Guide complet Apple Silicon & Intel
+URL: https://brandonvisca.com/installation-homebrew-macos/
+Description: Installe Homebrew sur macOS en une commande. Fonctionne sur Apple Silicon (M1 à M4) et Intel. Commandes essentielles, apps utiles et dépannage inclus.
+Tags: 
+Publié: 2025-03-31 15:28:09+02:00
+
+## iTerm2 macOS 2026 : guide complet (install, config, thèmes)
+URL: https://brandonvisca.com/iterm2-guide-configuration-macos-2025/
+Description: iTerm2 macOS, le guide complet : install, thèmes, raccourcis et Oh My Zsh. Tout ce qu'il faut pour un terminal qui déchire, gratuit et open-source.
+Tags: 
+Publié: 2025-03-31 15:19:31+02:00
+
+## Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes
+URL: https://brandonvisca.com/installation-vim-guide-complet/
+Description: Installe Vim sur macOS ou Linux en 30 min : .vimrc de base commenté, vim-plug, NERDTree et FZF. Tout ce qu'il faut pour débuter sérieusement.
+Tags: 
+Publié: 2025-03-31T15:11:44+02:00
+
+## Dépannage montage RAID mdadm en mode secours Linux : wrong fs type et partition cachée
+URL: https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/
+Description: Dépannage RAID mdadm en mode secours Linux : diagnostiquer wrong fs type, partition cachée non montée et restaurer le tableau RAID. Guide complet.
+Tags: 
+Publié: 2025-03-13T11:37:18+01:00
+
+## Filtrage utilisateurs LDAP Snipe-IT : Guide pratique Active Directory 2025
+URL: https://brandonvisca.com/ldap-filtrage-utilisateurs-snipeit/
+Description: Guide avancé pour filtrer les utilisateurs LDAP dans Snipe-IT connecté à Active Directory. Filtres sécurisés, exclusions par OU, bonnes pratiques 2025.
+Tags: 
+Publié: 2025-03-02T21:06:25+01:00
+
+## LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)
+URL: https://brandonvisca.com/installer-localwp-wordpress-local/
+Description: LocalWP : installez et testez WordPress en local sans serveur ni XAMPP. Guide complet avec installation, multi-site et workflow de déploiement en prod.
+Tags: 
+Publié: 2025-02-24T19:12:37+01:00
+
+## Migrer WordPress en 2025 : All-in-One WP Migration guide complet (+ astuces pro)
+URL: https://brandonvisca.com/migration-wordpress-all-in-one-guide-2025/
+Description: Migrez votre site WordPress avec All-in-One WP Migration : sauvegarde, restauration et bonnes pratiques. Méthode testée, zéro perte de données garantie.
+Tags: 
+Publié: 2025-02-24T18:51:33+01:00
+
+## Importer fichiers PST dans Outlook 365 : Guide fiable et rapide (2025)
+URL: https://brandonvisca.com/import-pst-outlook-365-guide-complet/
+Description: Importez vos fichiers PST dans Outlook 365 avec 2 méthodes testées. Alternative XstReader gratuite pour lire vos emails sans Outlook. Guide pas à pas.
+Tags: 
+Publié: 2025-02-21T10:14:37+01:00
+
+## Gérer vos fichiers sur Amazon S3 avec S3cmd : Guide complet
+URL: https://brandonvisca.com/gerer-fichiers-amazon-s3-avec-s3cmd/
+Description: S3cmd guide complet : installez et configurez ce client CLI open source pour gérer vos fichiers Amazon S3, synchroniser et sauvegarder vos données.
+Tags: 
+Publié: 2025-02-17T17:37:40+01:00
+
+## Android File Transfer Mac : 2 alternatives testées (2025)
+URL: https://brandonvisca.com/android-file-transfer-mac-alternatives-test-2025/
+Description: Android File Transfer Mac alternative : j'ai testé OpenMTP et MacDroid pendant 90 jours. OpenMTP gratuit gagne. Comparatif avec benchmarks réels.
+Tags: 
+Publié: 2025-02-16T00:00:00+01:00
+
+## Réparer WordPress : 2 solutions pour une base de données corrompue
+URL: https://brandonvisca.com/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/
+Description: Réparer WordPress après une corruption de base de données : 2 méthodes éprouvées, testées en prod, pour restaurer votre site en moins de 10 minutes.
+Tags: 
+Publié: 2024-07-16T19:50:34+02:00
+
+## Calendrier et gestion des tâches unifiés\\_: Morgen
+URL: https://brandonvisca.com/calendrier-et-gestion-des-taches-unifies-morgen/
+Description: Morgen réunit calendrier, tâches et time-blocking dans une interface unifiée pour macOS. Alternative à Fantastical. Guide complet des fonctionnalités.
+Tags: 
+Publié: 2024-07-16T19:43:31+02:00
+
+## Exploration de Super.so : un outil de site web personnalisé pour Notion
+URL: https://brandonvisca.com/exploration-de-super-so-un-outil-de-site-web-personnalise-pour-notion/
+Description: Super.so transforme vos pages Notion en site web personnalisé : domaine custom, SEO intégré, thèmes et scripts personnalisés. Guide complet et test.
+Tags: 
+Publié: 2024-06-25T21:03:27+02:00
+
+## Notion Sites: Révolution dans la Création de Sites Web
+URL: https://brandonvisca.com/notion-sites-creation-de-sites-web/
+Description: Notion Sites : créez un site web depuis Notion en quelques minutes. Fonctionnalités CMS, personnalisation, SEO et comparaison avec les alternatives.
+Tags: 
+Publié: 2024-06-25T20:59:29+02:00
+
+## Connecter les systèmes Ubuntu à Active Directory en utilisant SSSD
+URL: https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/
+Description: Connectez Ubuntu à Active Directory via SSSD pour une authentification centralisée. Guide complet : installation, configuration Kerberos et dépannage.
+Tags: 
+Publié: 2024-06-13T11:40:02+02:00
+
+## Comment définir le fuseau horaire et synchroniser l'heure du serveur sous Linux
+URL: https://brandonvisca.com/comment-modifier-heure-du-serveur-sous-linux/
+Description: Apprenez à changer le fuseau horaire, définir le fuseau horaire et synchroniser l'heure du serveur sous Linux en utilisant timedatectl et NTP.
+Tags: 
+Publié: 2024-06-13T11:21:00+02:00
+
+## Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?
+URL: https://brandonvisca.com/securite-de-votre-serveur-linux/
+Description: Guide complet pour renforcer la sécurité de votre serveur Linux : SSH, pare-feu ufw, fail2ban, mises à jour auto et surveillance des logs. Testé en prod.
+Tags: 
+Publié: 2024-06-10T19:29:00+02:00
+
