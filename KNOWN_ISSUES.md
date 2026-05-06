@@ -2,7 +2,7 @@
 
 > Fichier volatile — mis à jour après chaque audit SEO. Ne pas inclure dans CLAUDE.md.
 > Dernier audit : 2026-05-06 — Voir `AUDIT_GLOBAL_2026-05-06.md`
-> Dernières corrections : 2026-05-06 (Schema.org P0)
+> Dernières corrections : 2026-05-06 (Schema.org P0 + CV)
 
 ---
 
@@ -18,7 +18,6 @@
 | `external_links_missing` | 22 articles | Medium | Ajouter lien vers source autoritative | `AUDIT_SEO_2026-05-06.md` |
 | `tags_excess` | ~120 tags uniques | Medium | Consolidation → ~30 tags | `TAGS_STRATEGY_2026-05-06.md` |
 | `tags_thin_content` | ~35 pages tag à 1 article | Medium | `noindex` ou fusion | `TAGS_STRATEGY_2026-05-06.md` |
-| `cv_empty` | 1 page | **High** | Remplir `src/pages/cv.md` | `EEAT_AUDIT_2026-05-06.md` |
 | `affiliate_disclosure_missing` | Articles Amazon | Medium | Ajouter disclosure "lien affilié" | `EEAT_AUDIT_2026-05-06.md` |
 | `ga4_not_connected` | Site-wide | Medium | Setup MCP GA4 Data API | `AUDIT_SEO_2026-05-06.md` |
 | `omarchy_traffic_drop` | 1 article | High | Mise à jour contenu ou redirect | — |
@@ -39,6 +38,7 @@
 | `schema_mainEntityOfPage_missing` | Site-wide | **Résolu** — `mainEntityOfPage` ajouté | 2026-05-06 |
 | `schema_image_string` | Site-wide | **Résolu** — `image` converti en `ImageObject` | 2026-05-06 |
 | `tags_accents` | ~4 articles | **Résolu** — Tous les tags accents corrigés | 2026-04-09 → 2026-05-06 |
+| `cv_empty` | 1 page | **Résolu** — `src/pages/cv.md` rempli avec l'expérience réelle | 2026-05-06 |
 | `tags_english` | ~3 articles | **Résolu** — Tous les tags anglais remplacés | 2026-04-09 → 2026-05-06 |
 | `ogwebp_missing` | 1 fichier | **Résolu** — `public/og.webp` créé depuis `devosfera-og.webp` | 2026-05-06 |
 
