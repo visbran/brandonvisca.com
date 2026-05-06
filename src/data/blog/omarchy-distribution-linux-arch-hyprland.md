@@ -18,6 +18,8 @@ Omarchy, c'est cette nouvelle distribution qui fait parler d'elle dans les cercl
 
 Autrement dit : fini de passer trois semaines à configurer ton environnement de travail. Ici, tout fonctionne out-of-the-box, et en beauté.
 
+## Table des matières
+
 ---
 
 ## Omarchy en résumé : Arch sans les larmes

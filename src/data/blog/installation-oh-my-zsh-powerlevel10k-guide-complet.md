@@ -16,7 +16,7 @@ draft: false
 focusKeyword: Oh My Zsh
 faqs:
   - question: "Oh My Zsh fonctionne-t-il sur Linux ?"
-    answer: "Oui. Oh My Zsh fonctionne sur macOS, Linux et WSL. La procédure d'installation est identique — curl ou wget, même commande."
+    answer: "Oui. Oh My Zsh fonctionne sur macOS, Linux et WSL. La procédure d'installation est identique curl ou wget, même commande."
   - question: "Powerlevel10k ralentit-il le terminal ?"
     answer: "Non, c'est l'inverse. Powerlevel10k est 10 à 100x plus rapide que les thèmes classiques grâce à son rendu asynchrone. Il ne bloque jamais le prompt."
   - question: "Comment désinstaller Oh My Zsh ?"
@@ -79,7 +79,7 @@ Git est indispensable pour Oh My Zsh :
 # Ubuntu/Debian
 sudo apt install git
 
-# macOS — déjà installé normalement
+# macOS déjà installé normalement
 git --version
 # Ou avec Homebrew : brew install git
 
@@ -304,7 +304,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-Active-les dans `.zshrc` — `zsh-syntax-highlighting` toujours en dernier :
+Active-les dans `.zshrc`  `zsh-syntax-highlighting` toujours en dernier :
 
 ```bash
 plugins=(
@@ -429,7 +429,7 @@ typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
 )
 ```
 
-💡 **Astuce** : le fichier `~/.p10k.zsh` est très bien documenté. Chaque segment a un commentaire. Prends 15 minutes pour le parcourir — tu trouveras des options insoupçonnées.
+💡 **Astuce** : le fichier `~/.p10k.zsh` est très bien documenté. Chaque segment a un commentaire. Prends 15 minutes pour le parcourir tu trouveras des options insoupçonnées.
 
 ## Maintenance et dépannage
 
@@ -513,7 +513,7 @@ uninstall_oh_my_zsh
 
 Oh My Zsh + Powerlevel10k, c'est le combo que tu installes une fois et que tu gardes sur tous tes Macs et serveurs. En 15 minutes, ton terminal passe de "fonctionnel" à "je veux l'ouvrir tout le temps".
 
-Si tu pars de zéro sur macOS, enchaîne avec iTerm2 : j'ai tout détaillé dans le [guide iTerm2 macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) — configuration Hotkey Window, profils SSH et thèmes inclus.
+Si tu pars de zéro sur macOS, enchaîne avec iTerm2 : j'ai tout détaillé dans le [guide iTerm2 macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) configuration Hotkey Window, profils SSH et thèmes inclus.
 
 ## Pour aller plus loin
 
