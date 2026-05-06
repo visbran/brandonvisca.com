@@ -1,49 +1,55 @@
 ---
-title: "Oh My Zsh + Powerlevel10k : Guide d'installation complet"
-pubDatetime: "2025-03-31T15:55:32+02:00"
-modDatetime: "2026-04-11T00:00:00+02:00"
+title: "Oh My Zsh + Powerlevel10k : guide complet installation 2026"
+description: "Oh My Zsh + Powerlevel10k 2026 : installe et configure ton terminal en 15 min. Plugins indispensables, thèmes pro, config avancée."
+pubDatetime: 2025-03-31 15:55:32+02:00
+modDatetime: 2026-05-06 00:00:00+01:00
 author: Brandon Visca
-description: "Installer Oh My Zsh et Powerlevel10k : guide étape par étape, plugins essentiels (autosuggestions, syntax-highlighting) et configuration du thème."
-focusKeyword: "oh my zsh powerlevel10k"
 tags:
-  - linux
+  - oh-my-zsh
+  - powerlevel10k
+  - zsh
   - macos
   - productivite
-  - developpement
-  - guide
   - intermediaire
+featured: false
+draft: false
+focusKeyword: Oh My Zsh
+faqs:
+  - question: "Oh My Zsh fonctionne-t-il sur Linux ?"
+    answer: "Oui. Oh My Zsh fonctionne sur macOS, Linux et WSL. La procédure d'installation est identique — curl ou wget, même commande."
+  - question: "Powerlevel10k ralentit-il le terminal ?"
+    answer: "Non, c'est l'inverse. Powerlevel10k est 10 à 100x plus rapide que les thèmes classiques grâce à son rendu asynchrone. Il ne bloque jamais le prompt."
+  - question: "Comment désinstaller Oh My Zsh ?"
+    answer: "Lance uninstall_oh_my_zsh dans ton terminal. La commande restaure ta configuration Zsh précédente automatiquement."
+  - question: "Puis-je utiliser Oh My Zsh avec Fish ou Bash ?"
+    answer: "Non. Oh My Zsh est un framework pour Zsh uniquement. Pour Fish, l'équivalent est Oh My Fish (omf)."
 ---
+> 💡 **TL;DR**
+> - Oh My Zsh transforme Zsh en cockpit de dev : autocomplétion intelligente, 300+ plugins, thèmes en quelques minutes
+> - Installe-le en une commande `curl`, configure Powerlevel10k via wizard interactif
+> - Résultat : un terminal rapide, informatif et personnalisé, en moins de 15 minutes
+
+T'en as marre de ton terminal terne et basique ? Oh My Zsh + Powerlevel10k, c'est la combinaison qui change tout. En 15 minutes, tu passes d'un terminal par défaut à un cockpit de développeur que tes collègues vont envier.
+
+Voici le guide complet : installation, configuration, plugins et personnalisation avancée.
+
+Sur macOS, j'utilise tout ça dans [iTerm2](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/), le combo parfait. Si tu hésites entre les terminaux, j'ai fait un [test iTerm2 vs Warp](https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) après 60 jours.
+
 ## Table des matières
 
-
-Introduction : Pourquoi Oh My Zsh va changer votre vie ?
-
-![Oh My Zsh Logo](ohmyzsh-logo-ansi.png)**Spoiler alert :** Après avoir installé Oh My Zsh, vous ne pourrez plus jamais revenir au bash par défaut. C’est scientifiquement prouvé (bon, pas vraiment, mais presque).
-
-[Oh My Zsh](https://ohmyz.sh/) est **LE** framework open-source qui transforme votre terminal terne en véritable cockpit de développeur. Imaginez Git qui vous dit où vous en êtes d’un coup d’œil, l’autocomplétion qui lit dans vos pensées, et un prompt qui fait baver d’envie vos collègues.
-
-
-**Ce que vous allez gagner :**
-
-- ⚡ Un terminal **10x plus productif**
-- 🎨 Un prompt **magnifique** et informatif
-- 🚀 Des **centaines de plugins** prêts à l’emploi
-- 🧠 Une **autocomplétion intelligente** qui anticipe vos besoins
-
-**Pour qui ?** Développeurs, sysadmins, étudiants, ou quiconque passe plus de 5 minutes par jour dans un terminal (donc vous, probablement).
-
-
-Prérequis : Ce qu’il vous faut avant de commencer
+## Prérequis : ce qu'il te faut avant de commencer
 
 ### Installation de Zsh
 
-Avant de plonger dans Oh My Zsh, assurez-vous d’avoir Zsh installé :
+Avant de plonger dans Oh My Zsh, assure-toi d'avoir Zsh installé :
 
 **Ubuntu/Debian :**
 
 ```bash
 sudo apt update && sudo apt install zsh
 ```
+
+**macOS (via [Homebrew](https://brandonvisca.com/installation-homebrew-macos/)) :**
 
 ```bash
 brew install zsh
@@ -57,11 +63,13 @@ sudo yum install zsh
 # Fedora
 sudo dnf install zsh
 ```
+
+Vérifie l'installation :
+
 ```bash
 zsh --version
+# Devrait afficher : zsh 5.9 ou supérieur
 ```
-Devrait afficher quelque chose comme : zsh 5.9
-
 
 ### Installation de Git
 
@@ -71,47 +79,51 @@ Git est indispensable pour Oh My Zsh :
 # Ubuntu/Debian
 sudo apt install git
 
-# macOS
-git --version  # Déjà installé normalement
+# macOS — déjà installé normalement
+git --version
 # Ou avec Homebrew : brew install git
 
 # CentOS/RHEL
 sudo yum install git
-
 ```
+
+💡 **Astuce** : sur macOS, si Git n'est pas installé, la commande `git --version` déclenche automatiquement l'installation des Xcode Command Line Tools. Accepte et continue.
+
+Bascule vers zsh si ce n'est pas encore ton shell par défaut :
 
 ```bash
 source ~/.bashrc
-exec zsh  # Pour basculer vers zsh
+exec zsh
 ```
 
-
-## Installation de Oh My Zsh : La méthode qui marche
+## Installation de Oh My Zsh
 
 ### Méthode recommandée (curl)
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 ```
 
 **Ce qui se passe :**
 
 1. Le script télécharge Oh My Zsh dans `~/.oh-my-zsh`
-2. Sauvegarde votre `.zshrc` existant
+2. Sauvegarde ton `.zshrc` existant en `.zshrc.pre-oh-my-zsh`
 3. Crée un nouveau `.zshrc` avec la config par défaut
-4. Change votre shell par défaut vers zsh
+4. Change ton shell par défaut vers zsh
 
-### ✅ À savoir
+### Méthode alternative (wget)
 
-L’installation vous demandera si vous voulez faire de zsh votre shell par défaut. **Répondez « Y »** (oui) sauf si vous avez une bonne raison de ne pas le faire.
+```bash
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
+✅ **À savoir** : l'installation te demandera si tu veux faire de zsh ton shell par défaut. Réponds « Y » sauf si tu as une bonne raison de ne pas le faire.
 
-## Configuration de base : Les incontournables
+## Configuration de base
 
 ### Le fichier de configuration
 
-Tout se passe dans `~/.zshrc`. Ouvrez-le avec votre éditeur préféré :
+Tout se passe dans `~/.zshrc`. Ouvre-le avec ton éditeur préféré :
 
 ```bash
 nano ~/.zshrc
@@ -119,27 +131,29 @@ nano ~/.zshrc
 vim ~/.zshrc
 # ou
 code ~/.zshrc  # VS Code
-
 ```
 
-## Chemin vers Oh My Zsh
+La structure de base générée par Oh My Zsh :
+
+```bash
+# Chemin vers Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
 
-## Thème (on va changer ça bientôt 😉)
+# Thème (on va changer ça bientôt)
 ZSH_THEME="robbyrussell"
 
-## Plugins activés
+# Plugins activés
 plugins=(git)
 
-## Source Oh My Zsh
+# Source Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
-## Vos alias et configurations perso ici
+# Tes alias et configurations perso ici
+```
 
+### Premiers réglages utiles
 
-### Premiers réglages sympas
-
-Ajoutez ces lignes à la fin de votre `.zshrc` :
+Ajoute ces lignes à la fin de ton `.zshrc` :
 
 ```bash
 # Historique plus long et intelligent
@@ -156,66 +170,73 @@ setopt CORRECT_ALL
 
 # Autocomplétion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-
 ```
 
+Recharge la config :
+
+```bash
 source ~/.zshrc
+```
 
-## Powerlevel10k : Le thème qui tue tout
+## Powerlevel10k : le thème qui tue tout
 
-Oubliez les thèmes basiques. **Powerlevel10k** (P10k pour les intimes) est **LE** thème qui va transformer votre terminal en vaisseau spatial.
+Oublie les thèmes basiques. **Powerlevel10k** (P10k pour les intimes) transforme ton terminal en vaisseau spatial.
 
 ### Pourquoi Powerlevel10k ?
 
-- ⚡ **Ultra-rapide** : 10-100x plus rapide que les autres thèmes
-- 🎨 **Magnifique** : Icons, couleurs, informations utiles
-- 🔧 **Configurable** : Wizard interactif pour tout personnaliser
-- 📊 **Informatif** : Git status, temps d’exécution, erreurs…
+- ⚡ **Ultra-rapide** : 10-100x plus rapide que les autres thèmes (rendu asynchrone)
+- 🎨 **Magnifique** : icons, couleurs, informations utiles d'un coup d'œil
+- 🔧 **Configurable** : wizard interactif pour tout personnaliser en 5 minutes
+- 📊 **Informatif** : Git status, temps d'exécution, erreurs en temps réel
 
 ### Installation de Powerlevel10k
 
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
 ```
 
-## Changez cette ligne :
+Dans ton `.zshrc`, change le thème :
+
+```bash
+# Remplace :
 ZSH_THEME="robbyrussell"
 
-## Par celle-ci :
+# Par :
 ZSH_THEME="powerlevel10k/powerlevel10k"
+```
 
-
-Rechargez :
+Recharge :
 
 ```bash
 source ~/.zshrc
-
 ```
 
+Lance le wizard de configuration :
+
+```bash
 p10k configure
+```
 
+**Mes recommandations pour le wizard :**
 
-**Guide de configuration (mes recommandations) :**
+1. **Font icons** : réponds « Y » si tu vois les icônes correctement
+2. **Prompt style** : « Rainbow » (option 3)
+3. **Character set** : « Unicode »
+4. **Show current time** : « 24-hour format »
+5. **Prompt separators** : « Angled »
+6. **Prompt heads** : « Sharp »
+7. **Prompt tails** : « Flat »
+8. **Prompt height** : « Two lines »
+9. **Prompt spacing** : « Sparse »
+10. **Icons** : « Many icons »
+11. **Prompt flow** : « Concise »
+12. **Transient prompt** : « Yes »
 
-1. **Font icons :** Répondez « Y » si vous voyez les icônes correctement
-2. **Prompt style :** « Rainbow » (option 3) – Le plus beau
-3. **Character set :** « Unicode » – Plus d’icônes
-4. **Show current time :** « 24-hour format » – Pratique pour les logs
-5. **Prompt separators :** « Angled » – Look moderne
-6. **Prompt heads :** « Sharp » – Style épuré
-7. **Prompt tails :** « Flat » – Équilibré
-8. **Prompt height :** « Two lines » – Plus d’espace
-9. **Prompt spacing :** « Sparse » – Plus lisible
-10. **Icons :** « Many icons » – On est là pour ça
-11. **Prompt flow :** « Concise » – Optimisé
-12. **Transient prompt :** « Yes » – Terminal plus propre
+### Installation des polices Nerd Font
 
-### Installation des polices Nerd Font (crucial !)
+Pour que les icônes s'affichent correctement dans le terminal :
 
-Pour que les icônes s’affichent correctement :
-
-**macOS :** Le wizard propose l’installation automatique. Acceptez !
+**macOS :** le wizard propose l'installation automatique. Accepte !
 
 **Linux :**
 
@@ -224,7 +245,7 @@ Pour que les icônes s’affichent correctement :
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 
-# MesloLGS NF (recommandée)
+# MesloLGS NF (recommandée par Powerlevel10k)
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
@@ -232,34 +253,23 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20B
 
 # Refresh du cache des polices
 fc-cache -fv
-
 ```
 
-## Relancez la config
+Relance ensuite le wizard :
+
+```bash
 p10k configure
-## Étape 1 : installez les polices recommandées
-
-
-**Prompt lent :** Trop de segments activés
-
-```bash
-# Éditez la config
-nano ~/.p10k.zsh
-# Commentez les segments lourds (ex: disk_usage)
-
 ```
 
-```bash
-git config --global --add safe.directory /votre/repo
-```
+⚠️ **Prompt lent :** si ton prompt met plus d'une seconde à apparaître, trop de segments sont activés. Ouvre `~/.p10k.zsh` et commente les segments lourds comme `disk_usage`.
 
-## Plugins essentiels : Votre nouveau superpouvoir
+## Plugins essentiels
 
-Oh My Zsh, c’est **300+ plugins** prêts à l’emploi. Voici ma sélection de ceux qui changent vraiment la vie.
+Oh My Zsh, c'est **300+ plugins** prêts à l'emploi. Voici ma sélection de ceux qui changent vraiment la vie.
 
 ### Ma config plugins de base
 
-Dans votre `.zshrc`, remplacez la ligne `plugins=(git)` par :
+Dans ton `.zshrc`, remplace la ligne `plugins=(git)` par :
 
 ```bash
 plugins=(
@@ -278,73 +288,84 @@ plugins=(
   extract
   web-search
 )
-
 ```
 
+### Plugins communautaires indispensables
+
+**zsh-autosuggestions** (suggestions basées sur ton historique) :
+
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
-
-**zsh-syntax-highlighting** (Coloration syntaxique)
+**zsh-syntax-highlighting** (coloration syntaxique en temps réel) :
 
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
 ```
 
+Active-les dans `.zshrc` — `zsh-syntax-highlighting` toujours en dernier :
+
+```bash
 plugins=(
   git
   docker
-  # ... autres plugins
   zsh-autosuggestions
   zsh-syntax-highlighting  # TOUJOURS en dernier !
 )
-
-
-### ⚡ Plugins par cas d’usage
-
-**Pour le développement web :**
-
-```bash
-plugins=(git node npm yarn react)
-
 ```
 
+### Plugins par cas d'usage
+
+**Développement web :**
+
+```bash
+plugins=(git node npm yarn web-search)
+```
+
+**Sysadmin / DevOps :**
+
+```bash
 plugins=(git docker ssh-agent systemd ansible)
+```
 
-
-**Pour Python :**
+**Python :**
 
 ```bash
 plugins=(git python pip virtualenv)
-
 ```
 
-## Navigation rapide
+### Alias magiques
+
+Ajoute ces alias dans ton `.zshrc` :
+
+```bash
+# Navigation rapide
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ..='cd ..'
 alias ...='cd ../..'
 
-## Git shortcuts
+# Git shortcuts
 alias gs='git status'
 alias gd='git diff'
 alias gl='git log --oneline --graph'
 
-## Docker shortcuts
+# Docker shortcuts
 alias dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
 alias dlog='docker logs -f'
 
-## Système
+# Système
 alias h='history'
 alias c='clear'
 alias reload='source ~/.zshrc'
 
-## Recherche rapide
+# Recherche avec couleurs
 alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+```
 
+## Configuration avancée
 
 ### Fonctions utiles
 
@@ -354,7 +375,7 @@ mkcd() {
   mkdir -p "$1" && cd "$1"
 }
 
-# Backup rapide
+# Backup rapide d'un fichier
 backup() {
   cp "$1" "$1.backup.$(date +%Y%m%d-%H%M%S)"
 }
@@ -368,34 +389,35 @@ hist() {
 myip() {
   curl -s https://ipinfo.io/ip
 }
-
 ```
 
-## Éditeur par défaut
+### Variables d'environnement
+
+```bash
+# Éditeur par défaut
 export EDITOR='nano'  # ou vim, code...
 
-## Langues
+# Langues
 export LANG=fr_FR.UTF-8
 export LC_ALL=fr_FR.UTF-8
 
-## Paths personnalisés
+# Paths personnalisés
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+```
 
-
-### 🔧 Configuration Powerlevel10k avancée
+### Configuration Powerlevel10k avancée
 
 Le fichier `~/.p10k.zsh` contient toute la config. Quelques tweaks sympas :
 
 ```bash
-# Éditez le fichier
+# Ouvre le fichier
 nano ~/.p10k.zsh
 
-# Trouver cette section et personnaliser :
+# Personnalise les segments du prompt gauche/droit :
 typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
   dir                     # Dossier actuel
   vcs                     # Git status
-  # newline              # Nouvelle ligne
   prompt_char             # Caractère de prompt
 )
 
@@ -405,22 +427,32 @@ typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
   background_jobs         # Jobs en arrière-plan
   time                    # Heure
 )
-
 ```
 
-omz update
+💡 **Astuce** : le fichier `~/.p10k.zsh` est très bien documenté. Chaque segment a un commentaire. Prends 15 minutes pour le parcourir — tu trouveras des options insoupçonnées.
 
+## Maintenance et dépannage
+
+### Mise à jour
+
+**Oh My Zsh :**
+
+```bash
+omz update
+```
 
 **Powerlevel10k :**
 
 ```bash
 git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull
-
 ```
 
-## Exemple pour zsh-autosuggestions
-git -C ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions pull
+**Plugins communautaires :**
 
+```bash
+# Exemple pour zsh-autosuggestions
+git -C ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions pull
+```
 
 ### Problèmes courants
 
@@ -430,79 +462,62 @@ git -C ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions pull
 # Debug des temps de chargement
 time zsh -i -c exit
 
-# Si > 1 seconde, debug Powerlevel10k
+# Si > 1 seconde, relance le wizard
 p10k configure
-# Désactivez les segments lourds
-
+# Désactive les segments lourds
 ```
 
+**Fichier de complétion corrompu :**
+
+```bash
 rm ~/.zcompdump*
 exec zsh
-
+```
 
 **Plugin qui ne marche pas :**
 
 ```bash
-# Vérifiez qu'il est dans la liste
+# Vérifie qu'il est dans la liste
 echo $plugins
 
-# Rechargez la config
+# Recharge la config
 source ~/.zshrc
 
-# Vérifiez les erreurs
+# Vérifie les erreurs
 zsh -x ~/.zshrc
-
 ```
 
-## Backup de votre setup
+**Problème Git safe.directory :**
+
+```bash
+git config --global --add safe.directory /ton/repo
+```
+
+### Sauvegarde de ta config
+
+```bash
+# Backup du setup complet
 tar -czf oh-my-zsh-backup.tar.gz ~/.zshrc ~/.p10k.zsh ~/.oh-my-zsh/custom/
 
-## Restauration
+# Restauration
 tar -xzf oh-my-zsh-backup.tar.gz -C ~/
+```
 
-
-### Désinstallation (si vraiment nécessaire)
+### Désinstallation
 
 ```bash
 uninstall_oh_my_zsh
-
 ```
 
-brew install --cask jordanbaird-ice
+## Conclusion
 
-- - - - - -
+Oh My Zsh + Powerlevel10k, c'est le combo que tu installes une fois et que tu gardes sur tous tes Macs et serveurs. En 15 minutes, ton terminal passe de "fonctionnel" à "je veux l'ouvrir tout le temps".
 
-Conclusion
+Si tu pars de zéro sur macOS, enchaîne avec iTerm2 : j'ai tout détaillé dans le [guide iTerm2 macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) — configuration Hotkey Window, profils SSH et thèmes inclus.
 
-**Bravo !** Vous venez de transformer votre terminal en véritable **cockpit de développeur**. Avec Oh My Zsh et Powerlevel10k, vous avez maintenant :
+## Pour aller plus loin
 
-✅ Un terminal **magnifique** et informatif  
-✅ Une **productivité décuplée** grâce aux plugins  
-✅ Une **configuration pro** qui fait envie  
-✅ Des **alias magiques** qui vous font gagner du temps
-
-### Et maintenant ?
-
-🚀 **Poussez plus loin :** Explorez [iTerm2 avec ma config ultime](https://brandonvisca.com/iterm2-terminal-macos/) pour une expérience terminale complète  
-🐳 **Automatisez :** Intégrez avec Docker pour des environnements de dev isolés  
-🔧 **Personnalisez :** Créez vos propres plugins et thèmes
-
-### Le mot de la fin
-
-Un bon terminal, c’est comme un bon café ☕ : ça rend tout le reste possible. Maintenant que vous avez goûté à Oh My Zsh + Powerlevel10k, impossible de revenir en arrière !
-
-**Questions ? Problèmes ?** La communauté Oh My Zsh est ultra-active. Et n’hésitez pas à partager vos configs et découvertes !
-
-- - - - - -
-
-Liens utiles
-
-- [Documentation officielle Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
-- [Powerlevel10k GitHub](https://github.com/romkatv/powerlevel10k)
-- [Liste complète des plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
-- [Awesome Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins)
-
-## Articles connexes
-
-- [iTerm2 sur macOS : Le guide complet](/iterm2-guide-configuration-macos-2025/)
-- [Installation et configuration de Vim : Guide complet](/installation-vim-guide-complet/)
+- [Guide iTerm2 macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) : le terminal qui sublimera ce setup
+- [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) : prérequis indispensable sur Mac
+- [Documentation officielle Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki) : wiki complet avec tous les plugins
+- [Powerlevel10k GitHub](https://github.com/romkatv/powerlevel10k) : config avancée et options cachées
