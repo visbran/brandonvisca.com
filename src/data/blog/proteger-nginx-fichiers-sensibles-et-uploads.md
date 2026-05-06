@@ -40,6 +40,8 @@ Dans cet article, nous allons aborder 3 axes cruciaux pour protéger votre appli
 
 Ces pratiques sont simples à mettre en place, mais trop souvent oubliées. Et pourtant, elles peuvent faire la différence entre un site sécurisé et un site compromis.
 
+Ces recommandations s'inspirent des bonnes pratiques du [guide de sécurité OWASP pour Nginx](https://cheatsheetseries.owasp.org/cheatsheets/Nginx_Security_Cheat_Sheet.html) et de la [documentation officielle Nginx](https://nginx.org/en/docs/http/ngx_http_core_module.html#location).
+
 - - - - - -
 
 1. Interdire l’accès aux fichiers sensibles

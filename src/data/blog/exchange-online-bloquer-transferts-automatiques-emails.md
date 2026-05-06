@@ -50,6 +50,8 @@ Microsoft n’a pas exactement facilité les choses avec ses multiples canaux de
 
 Dans ce guide, je vous montre comment **bloquer efficacement tous les transferts automatiques** dans Exchange Online, détecter ceux déjà en place, et mettre en place un monitoring automatisé. Du RBAC aux Transport Rules en passant par l’audit, on couvre tout avec **PowerShell Exchange Online sécurité**.
 
+Microsoft documente également les bonnes pratiques de sécurité des flux sortants dans sa [documentation sur les stratégies anti-spam sortantes](https://learn.microsoft.com/fr-fr/microsoft-365/security/office-365-security/outbound-spam-policies-configure).
+
 Pourquoi c’est un problème majeur en 2025
 
 Avant de foncer tête baissée dans les commandes, comprenons pourquoi Microsoft nous complique la vie avec ses transferts.

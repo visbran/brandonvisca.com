@@ -35,6 +35,8 @@ mdadm --detail /dev/md127
 
 Les résultats ont montré que les deux matrices étaient en bon état – « State: clean » avec tous les périphériques « active sync ». Cela m’a indiqué que la configuration RAID elle-même n’était pas la source du problème.
 
+Pour approfondir la gestion des volumes RAID sous Linux, la [documentation officielle du noyau](https://raid.wiki.kernel.org/index.php/Linux_Raid) reste une référence technique de premier plan.
+
 L’aperçu critique
 
 Après avoir tenté plusieurs commandes de montage de base sans succès, j’ai décidé de vérifier ce qui se trouvait réellement sur le périphérique RAID à l’aide de la commande `file` :

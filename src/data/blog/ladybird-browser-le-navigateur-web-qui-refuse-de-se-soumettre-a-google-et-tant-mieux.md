@@ -26,6 +26,8 @@ tags:
 
 Non, ce n’est pas encore un autre fork de Chromium avec une interface redessinée et trois fonctionnalités « révolutionnaires ». C’est carrément plus ambitieux que ça.
 
+Le projet est entièrement open source et son évolution est suivie sur le [site officiel Ladybird](https://ladybird.org) ainsi que sur son [dépôt GitHub](https://github.com/LadybirdBrowser/ladybird).
+
 Andreas Kling et son équipe ont eu une idée assez folle : repartir de zéro. Complètement. Même pas de code recyclé de WebKit, Blink ou Gecko. Du pur travail artisanal, comme on sait encore le faire dans l’open source quand on a du temps, de la passion et, accessoirement, des financements sérieux.
 
 Un navigateur né d’un hobby qui a mal tourné

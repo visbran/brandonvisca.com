@@ -26,6 +26,8 @@ Ah, la fameuse Liste d’Adresses Globale (GAL) d’Office 365… Tu sais, cette
 
 Si tu gères un environnement hybride avec Active Directory local et Office 365, tu as sûrement déjà pesté contre l’absence de l’attribut `msExchHideFromAddressLists` dans ton AD. Heureusement, il existe une solution élégante qui évite de foutre en l’air ton schéma Active Directory.
 
+Microsoft explique la procédure officielle pour [masquer une boîte aux lettres de la liste d’adresses globale](https://learn.microsoft.com/fr-fr/exchange/hide-mailboxes-from-address-lists) dans sa documentation Exchange.
+
 **Spoiler** : On va bidouiller Azure AD Connect avec style, sans tout casser.
 
 - - - - - -

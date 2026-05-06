@@ -30,6 +30,8 @@ faqs:
 > - Parfait pour des services légers : DNS, monitoring, reverse proxy, VPN.
 > - Docker dans un LXC, c'est possible mais demande une option spécifique.
 
+La [documentation officielle Proxmox sur les conteneurs LXC](https://pve.proxmox.com/wiki/Linux_Container) reste la référence technique pour aller plus loin.
+
 ## Table des matières
 
 ## Pourquoi les LXC changent la donne en homelab

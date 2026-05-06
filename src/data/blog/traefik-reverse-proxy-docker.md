@@ -44,6 +44,8 @@ En plus, il gère les certificats Let's Encrypt tout seul. Tu n'oublies jamais d
 
 *(Pas encore à l'aise avec Docker ? Commence par mon guide [Docker pour les débutants](/docker-debutant-services-auto-heberger/), c'est fait exprès.)*
 
+Pour creuser chaque paramètre, la [documentation officielle de Traefik](https://doc.traefik.io/traefik/) reste la source la plus complète.
+
 ## Architecture d'un reverse proxy en homelab
 
 Avant de configurer quoi que ce soit, il faut comprendre où Traefik s'insère dans ton bazar.

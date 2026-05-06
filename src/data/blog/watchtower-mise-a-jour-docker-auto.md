@@ -225,4 +225,6 @@ Watchtower transforme cette corvée en processus invisible. Une commande, une va
 
 Mais n'oublie pas : l'automatisation n'excuse pas l'ignorance. Garde un œil sur tes notifications. Exclus tes bases de données. Et surtout, garde des sauvegardes. Parce qu'un conteneur qui redémarre tout seul à 4h du matin, c'est génial. Un conteneur qui redémarre en boucle parce que l'image est corrompue, c'est beaucoup moins drôle.
 
+Pour aller plus loin avec la configuration avancée, la [documentation officielle de Watchtower](https://containrrr.dev/watchtower/) détaille toutes les variables d'environnement et options disponibles.
+
 Maintenant, arrête de faire `docker compose pull` à la main. T'as mieux à faire.

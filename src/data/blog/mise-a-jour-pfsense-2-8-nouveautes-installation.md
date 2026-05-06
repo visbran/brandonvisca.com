@@ -65,6 +65,8 @@ Je vais décortiqué cette mise à jour point par point : nouvelles fonctionnali
 
 J’ai moi-même migré deux firewalls, l’un sous Proxmox, l’autre bare-metal, avec quelques surprises que je vous partage dans cet article. Si vous utilisez pfBlockerNG, WireGuard ou une configuration ZFS, vous allez vouloir lire jusqu’au bout.
 
+Avant de vous lancer, je vous recommande de consulter les [notes de version officielles de pfSense 2.8.0](https://docs.netgate.com/pfsense/en/latest/releases/2-8-0.html) publiées par Netgate.
+
 Vous êtes prêts ? On entre dans le détail.
 
 ![Illustration — pfsense CE 2.8.0](snl-saturday-night-live-season-47-fn7eouktflhxhwkgfi.gif)### ✅ Points clés à retenir

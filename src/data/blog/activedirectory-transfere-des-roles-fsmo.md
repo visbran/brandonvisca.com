@@ -16,6 +16,8 @@ tags:
 
 Les rôles FSMO sont 5 fonctions importantes dans un réseau Windows. Un seul contrôleur de domaine peut avoir un ou plusieurs de ces rôles. On peut déplacer ces rôles entre les contrôleurs de domaine de deux façons :
 
+Pour plus de détails sur chaque rôle, consultez la [documentation Microsoft sur les rôles FSMO](https://learn.microsoft.com/fr-fr/windows-server/identity/ad-ds/plan/understanding-active-directory-operations-masters-roles).
+
 1. Avec l’interface graphique de Windows Server
 2. Avec la commande **ntdsutil**
 
