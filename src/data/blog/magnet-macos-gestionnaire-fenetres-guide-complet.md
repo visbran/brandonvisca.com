@@ -13,6 +13,15 @@ tags:
 featured: true
 draft: false
 focusKeyword: magnet macos
+faqs:
+  - question: "Magnet ralentit-il macOS ?"
+    answer: "Non. L'application fait 3,2 Mo et consomme environ 30 Mo de RAM. Son impact sur les performances est négligeable, même sur un MacBook Air M1 avec 8 Go de RAM."
+  - question: "Magnet fonctionne-t-il avec macOS Sequoia ?"
+    answer: "Oui, parfaitement. La version 3.0.7 (avril 2025) est optimisée pour macOS 15 Sequoia et l'application est maintenue depuis 2012."
+  - question: "Puis-je utiliser Magnet ET le window tiling natif de macOS ?"
+    answer: "Oui, les deux cohabitent sans problème. Cependant, il est recommandé de désactiver l'un des deux pour éviter les conflits de comportement."
+  - question: "Je peux partager ma licence Magnet avec mes autres Macs ?"
+    answer: "Oui, une licence Magnet fonctionne sur tous les Macs connectés au même compte Apple. Vous pouvez également la partager via le Partage Familial."
 ---
 ## Introduction : La gestion de fenêtres sur macOS, c'était la galère
 

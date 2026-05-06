@@ -4,6 +4,15 @@ pubDatetime: "2025-10-03T12:38:51+02:00"
 author: Brandon Visca
 description: "Installez SnipeIT sur Ubuntu 22.04/24.04 : guide LAMP, MySQL, Git et permissions. Déployez votre ITSM d'inventaire IT en moins d'une heure, pas à pas."
 focusKeyword: "installer Snipe-IT Ubuntu"
+faqs:
+  - question: "Quelle version d'Ubuntu pour installer SnipeIT ?"
+    answer: "Ubuntu 22.04 LTS ou 24.04 LTS sont recommandées. Ce sont les versions stables avec un support à long terme, idéales pour un serveur de production."
+  - question: "SnipeIT nécessite-t-il Docker ?"
+    answer: "Non, ce guide utilise une installation native via Git avec la stack LAMP (Linux, Apache, MySQL, PHP). Une version Docker existe si vous préférez la containerisation."
+  - question: "Comment résoudre l'erreur 500 sur SnipeIT ?"
+    answer: "Vérifiez les permissions du dossier storage/ (chmod 775) et consultez les logs Apache dans /var/log/apache2/snipeit-error.log. C'est souvent un problème de permissions ou de clé APP_KEY manquante."
+  - question: "Quelle est la taille minimale recommandée pour le serveur ?"
+    answer: "2 Go de RAM minimum (4 Go recommandés) et 20 Go d'espace disque. Pour un parc de plus de 200 assets, prévoyez 4 Go de RAM et des backups réguliers."
 tags:
   - linux
   - sysadmin

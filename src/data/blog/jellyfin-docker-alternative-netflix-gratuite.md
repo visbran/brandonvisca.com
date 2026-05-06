@@ -4,6 +4,15 @@ pubDatetime: "2025-10-26T20:59:01+01:00"
 author: Brandon Visca
 description: "Installe Jellyfin avec Docker en 20 min. Alternative Netflix auto-hébergée, économise 378€/an. Guide 2025 complet + transcoding 4K."
 focusKeyword: "Jellyfin Docker Netflix gratuit"
+faqs:
+  - question: "Jellyfin est-il vraiment gratuit ?"
+    answer: "Oui, Jellyfin est 100% gratuit et open source. Contrairement à Plex ou Emby, aucune fonctionnalité n'est payante ou bloquée derrière un abonnement."
+  - question: "Puis-je installer Jellyfin sans Docker ?"
+    answer: "Oui, Jellyfin propose des paquets natifs pour Windows, macOS et Linux. Cependant, Docker est recommandé pour sa simplicité de mise à jour, son isolation et sa portabilité."
+  - question: "Le transcoding 4K nécessite-t-il un GPU ?"
+    answer: "Non, un CPU puissant suffit. Toutefois, un GPU compatible (Intel QuickSync, NVIDIA NVENC, AMD VCE) accélère considérablement le transcoding et réduit la charge CPU."
+  - question: "Puis-je partager mon Jellyfin avec ma famille ?"
+    answer: "Oui, créez plusieurs comptes utilisateurs depuis le Dashboard Jellyfin et attribuez des permissions granulaires par bibliothèque."
 tags:
   - docker
   - auto-hebergement
