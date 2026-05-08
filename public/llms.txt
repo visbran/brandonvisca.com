@@ -6,7 +6,7 @@
 ## AdGuard Home remplace Pi-hole ? Guide Docker complet 2026
 URL: https://brandonvisca.com/adguard-home-docker-guide-2026/
 Description: Installe AdGuard Home en Docker pour bloquer pubs et trackers sur tout ton réseau. Guide complet 2026, configuration DNS et comparatif Pi-hole.
-Tags: debutant, auto-hebergement, docker, dns, securite, homelab
+Tags: 
 Publié: 2026-05-08 10:00:00+02:00
 
 ## Proxmox LXC : des conteneurs légères pour ton homelab sans la lourdeur des VM
