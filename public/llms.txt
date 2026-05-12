@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-05-08
-# Total articles : 80
+# Dernière mise à jour : 2026-05-12
+# Total articles : 81
+
+## Tianji : pourquoi j'ai lâché Google Analytics pour du self-hosted
+URL: https://brandonvisca.com/tianji-analytics-self-hosted/
+Description: Tianji : l'alternative open-source à Google Analytics en self-hosted. Analytics + uptime + server status, tout-en-un. Privacy-friendly, sans cookie banner.
+Tags: intermediaire, auto-hebergement, analytics, docker, privacy
+Publié: 2026-05-12 18:00:00+02:00
 
 ## AdGuard Home remplace Pi-hole ? Guide Docker complet 2026
 URL: https://brandonvisca.com/adguard-home-docker-guide-2026/
