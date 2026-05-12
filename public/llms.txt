@@ -3,9 +3,9 @@
 # Dernière mise à jour : 2026-05-12
 # Total articles : 81
 
-## Tianji : pourquoi j'ai lâché Google Analytics pour du self-hosted
+## Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted
 URL: https://brandonvisca.com/tianji-analytics-self-hosted/
-Description: Tianji : l'alternative open-source à Google Analytics en self-hosted. Analytics + uptime + server status, tout-en-un. Privacy-friendly, sans cookie banner.
+Description: Tianji analytics : l'outil self-hosted qui remplace Google Analytics, Uptime Kuma et Netdata. Open-source, privacy-friendly, zéro cookie banner.
 Tags: 
 Publié: 2026-05-12T18:00:00+02:00
 
