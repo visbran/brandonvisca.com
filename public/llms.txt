@@ -2,12 +2,12 @@
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-05-15
 # Total articles : 82
+
 ## Immich remplace Google Photos ? Guide Docker complet 2026
 URL: https://brandonvisca.com/immich-docker/
-Description: Guide complet pour installer Immich avec Docker Compose et remplacer Google Photos par un serveur open-source auto-hébergé.
-Tags: auto-hebergement, docker, multimedia, vie-privee, intermediaire, guide
+Description: Guide complet pour installer Immich avec Docker Compose et remplacer Google Photos par une solution open-source auto-hébergée.
+Tags: 
 Publié: 2026-05-15T19:00:00+02:00
-
 
 ## Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted
 URL: https://brandonvisca.com/tianji-analytics-self-hosted/
