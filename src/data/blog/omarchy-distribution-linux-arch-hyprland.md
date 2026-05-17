@@ -1,9 +1,9 @@
 ---
-title: "Omarchy : la distribution Linux qui transforme Arch en station productive"
+title: "Omarchy Linux : j'ai testé la distro Arch clé en main"
+description: "Omarchy Linux : la distro Arch avec Hyprland préconfigurée. Installation simplifiée, 11 thèmes, sécurité renforcée et outils dev inclus d'emblée."
 pubDatetime: "2025-09-26T12:28:27+02:00"
+modDatetime: 2026-05-17 00:00:00+02:00
 author: Brandon Visca
-description: "Découvrez Omarchy, la distro Arch Linux avec Hyprland préconfigurée. Installation simplifiée, 11 thèmes, sécurité renforcée et outils dev inclus d'emblée."
-focusKeyword: "Omarchy Linux"
 tags:
   - linux
   - productivite
@@ -11,11 +11,15 @@ tags:
   - hyprland
   - arch-linux
   - guide
+featured: false
+draft: false
+focusKeyword: Omarchy Linux
 ---
+> 💡 **TL;DR** : Omarchy installe Arch Linux + Hyprland clé en main. 11 thèmes préconçus, chiffrement disque obligatoire, outils dev (Neovim, Docker, Node.js) prêts à l'emploi. Parfait si tu veux la puissance d'Arch sans trois semaines de config.
 
 Tu cherches une distribution Linux qui allie la puissance d'Arch à l'esthétique d'un bureau moderne ? Spoiler : Omarchy pourrait bien révolutionner ta façon de bosser.
 
-Omarchy, c'est cette nouvelle distribution qui fait parler d'elle dans les cercles d'administrateurs systèmes éclairés. Basée sur Arch Linux mais avec un twist « omakase » (laissez au chef, en japonais), elle propose une expérience prête à l'emploi avec le gestionnaire de fenêtres tiling Hyprland.
+Omarchy Linux, c'est cette distribution qui fait parler d'elle dans les cercles d'administrateurs systèmes éclairés. Basée sur Arch Linux mais avec un twist « omakase » (laissez au chef, en japonais), elle propose une expérience prête à l'emploi avec le gestionnaire de fenêtres tiling Hyprland.
 
 Autrement dit : fini de passer trois semaines à configurer ton environnement de travail. Ici, tout fonctionne out-of-the-box, et en beauté.
 
@@ -52,9 +56,11 @@ Contrairement à une installation Arch classique qui peut transformer même un s
 - 50 GB d'espace disque minimum
 - Secure Boot désactivé
 
+> ⚠️ **Attention** : Omarchy ne supporte pas Secure Boot. Désactive-le dans ton BIOS avant de booter sur la clé USB, sinon l'installateur refusera de démarrer.
+
 ### Étapes d'installation
 
-1. **[Télécharge l'ISO d'Omarchy](https://iso.omarchy.org/omarchy-3.0.2.iso)** depuis le site officiel
+1. **[Télécharge l'ISO d'Omarchy](https://omarchy.org)** depuis le site officiel (vérifie la dernière version disponible)
 2. **Grave sur USB** avec [balenaEtcher](https://etcher.balena.io/#download-etcher)
 3. **Boot** sur ta clé USB
 4. **Lance l'installateur** Arch
@@ -98,7 +104,7 @@ Au premier lancement, tu tombes sur un bureau… vide. Normal ! Omarchy privilé
 | `Super + B` | Navigateur |
 | `Super + K` | Aide raccourcis |
 
-Le menu Omarchy (`Super + Alt + Space`) est ton nouveau meilleur ami. Il permet d'installer des packages, configurer le système, changer de thème…
+Le menu Omarchy (`Super + Alt + Space`) est ton nouveau meilleur ami. Depuis là, tu installes des packages, tu configures le système, tu changes de thème…
 
 ---
 
@@ -129,7 +135,7 @@ Omarchy embarque un stack complet pour le développement.
 
 ### Éditeurs
 
-- Neovim avec LazyVim (éditeur principal)
+- Neovim avec LazyVim (éditeur principal) : si tu débutes avec Vim, mon [guide d'installation Vim](/installation-vim-guide-complet/) te donnera les bases
 - Installation facile de VS Code, Cursor, Zed via le menu
 
 ### Environnements de développement
@@ -146,13 +152,15 @@ Omarchy embarque un stack complet pour le développement.
 - `ripgrep` pour chercher dans les fichiers
 - `lazygit` et `lazydocker` pour Git et Docker
 
+Si tu veux pousser encore plus loin, combine ça avec [Oh My Zsh + Powerlevel10k](/installation-oh-my-zsh-powerlevel10k-guide-complet/), le terminal devient franchement agréable à utiliser.
+
 L'intégration est remarquable. Par exemple, dans Neovim, `Space Space` utilise fzf pour ouvrir rapidement n'importe quel fichier.
 
 ---
 
 ## Sécurité : Omarchy prend ça au sérieux
 
-Contrairement à certaines distributions qui considèrent la sécurité comme optionnelle, Omarchy l'impose :
+Contrairement à certaines distributions qui considèrent la sécurité comme optionnelle, Omarchy Linux l'impose :
 
 - **Chiffrement disque obligatoire** avec LUKS
 - **Firewall activé par défaut** (sauf ports SSH et LocalSend)
@@ -164,8 +172,6 @@ Cette approche rappelle celle que j'ai détaillée dans mon [guide de sécurisat
 ---
 
 ## Performance et monitoring
-
-Omarchy inclut des outils de monitoring intégrés.
 
 **btop** remplace htop avec style :
 
@@ -218,18 +224,9 @@ Pour des problèmes plus complexes, la communauté sur GitHub est réactive et l
 
 ---
 
-## Ressources complémentaires
+## Conclusion : révolution ou simple évolution ?
 
-Pour approfondir tes connaissances système Linux, consulte aussi :
-
-- [Connecter Ubuntu à Active Directory avec SSSD](https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/) pour intégrer tes machines à un domaine
-- [Résolution des problèmes de montage RAID](https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/) si tu gères du stockage avancé
-
----
-
-## Verdict : révolution ou simple évolution ?
-
-Omarchy représente exactement ce que beaucoup d'entre nous attendaient : la puissance d'Arch sans les nuits blanches de configuration.
+J'ai installé Omarchy sur une machine de test en moins de 20 minutes, thème Tokyo Night actif, Neovim configuré, Docker qui tourne. Exactement ce que beaucoup d'entre nous attendaient : la puissance d'Arch sans les nuits blanches de configuration.
 
 ### Les plus
 
@@ -245,15 +242,17 @@ Omarchy représente exactement ce que beaucoup d'entre nous attendaient : la pui
 - ❌ Jeune projet (stabilité à confirmer)
 - ❌ Documentation encore limitée
 
-Si tu cherches une distribution Linux qui combine productivité, sécurité et esthétique sans sacrifier la puissance d'Arch, Omarchy mérite clairement ton attention.
+Si tu cherches une distribution Linux qui combine productivité, sécurité et esthétique sans sacrifier la puissance d'Arch, Omarchy Linux mérite clairement ton attention.
 
 Le concept « omakase » (laissez au chef) prend ici tout son sens : les développeurs ont fait les choix techniques à ta place, et franchement, ils ont plutôt bon goût.
 
 ---
 
-**Et toi, ça te tente de tester Omarchy ? Partage ton expérience dans les commentaires !**
+Télécharge l'ISO, installe, et balance-nous un screenshot dans les commentaires avec ton thème préféré.
 
-## Articles connexes
+## Pour aller plus loin
 
-- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
+- [Oh My Zsh + Powerlevel10k : transforme ton terminal](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
 - [Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement](/nebula-sync-pihole-v6-installation-docker-guide/)
+- [Connecter Ubuntu à Active Directory avec SSSD](https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
+- [Résolution des problèmes de montage RAID](https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/)
