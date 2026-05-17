@@ -3,9 +3,9 @@
 # Dernière mise à jour : 2026-05-17
 # Total articles : 83
 
-## Immich remplace Google Photos ? Guide Docker complet 2026
+## Immich Docker remplace Google Photos ? Guide complet 2026
 URL: https://brandonvisca.com/immich-docker/
-Description: Guide complet pour installer Immich avec Docker Compose et remplacer Google Photos par une solution open-source auto-hébergée.
+Description: Installe Immich Docker Compose en quelques minutes et remplace Google Photos par une solution open-source auto-hébergée sur ton serveur.
 Tags: 
 Publié: 2026-05-15T19:00:00+02:00
 
