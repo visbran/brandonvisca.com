@@ -333,9 +333,9 @@ Description: Sauvegarde tes emails gratuitement avec Vanderplanki — chiffré, 
 Tags: 
 Publié: 2025-06-12T19:38:49+02:00
 
-## pfsense CE 2.8.0 : Ce que vous devez savoir avant de cliquer sur “Mettre à jour”
+## pfSense 2.8 : télécharger l'ISO, mettre à jour et éviter les pièges (2026)
 URL: https://brandonvisca.com/mise-a-jour-pfsense-2-8-nouveautes-installation/
-Description: Mettez à jour pfSense CE 2.8 en toute sécurité : nouveautés FreeBSD 14, correctifs de sécurité et étapes de migration détaillées pour éviter les erreurs.
+Description: Télécharger pfSense 2.8.1, mettre à jour depuis 2.7.x ou installer l'ISO : guide complet avec les pièges FreeBSD 15 à éviter avant de cliquer.
 Tags: 
 Publié: 2025-06-01T19:41:15+02:00
 
