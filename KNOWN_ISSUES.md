@@ -2,26 +2,27 @@
 
 > Fichier volatile — mis à jour après chaque audit SEO. Ne pas inclure dans CLAUDE.md.
 > Dernier audit : 2026-05-06 — Voir `AUDIT_GLOBAL_2026-05-06.md`
-> Dernières corrections : 2026-05-06 (Schema.org P0 + CV + focusKeyword + alt text + liens externes + FAQ)
+> Dernières corrections : 2026-05-17 (liens internes — 51 articles mis à jour)
 
 ---
 
-## Issues actives (post-corrections 2026-05-06 session 2)
+## Issues actives — état réel 2026-05-17
+
+> Réévaluation complète : 82 articles (79 + 3 nouveaux : tianji, immich-docker, adguard-home)
 
 | Issue | Articles / Scope | Priorité | Fix | Rapport détaillé |
 |---|---|---|---|---|
-| `ogImage_specific` | 79/79 articles | Medium | Images OG personnalisées par article (fallback `og.webp` actif) | `AUDIT_SEO_2026-05-06.md` |
-| `faqs_missing` | 34 articles | Medium | Ajouter bloc FAQ | `AUDIT_SEO_2026-05-06.md` |
-| `internal_links_missing` | 32 articles | Medium | Ajouter section "Articles connexes" | `AUDIT_SEO_2026-05-06.md` |
-| `tags_excess` | ~116 tags uniques | Medium | Consolidation → ~30 tags | `TAGS_STRATEGY_2026-05-06.md` |
+| `ogImage_specific` | 0/82 avec ogImage | Medium | Images OG personnalisées par article (fallback `og.webp` actif) | `AUDIT_SEO_2026-05-06.md` |
+| `faqs_missing` | 34/82 sans `faqs:` frontmatter | Medium | Ajouter bloc FAQ | `AUDIT_SEO_2026-05-06.md` |
+| `internal_links_missing` | 51/82 sans section — **en cours** | Medium | Script `scripts/add-internal-links.py` | `AUDIT_SEO_2026-05-06.md` |
+| `tags_excess` | 119 tags uniques (cible ~30) | Medium | Consolidation semaine 3 non faite | `TAGS_STRATEGY_2026-05-06.md` |
 | `tags_thin_content` | ~35 pages tag à 1 article | Medium | `noindex` ou fusion | `TAGS_STRATEGY_2026-05-06.md` |
-| `affiliate_disclosure_missing` | Articles Amazon | Medium | Ajouter disclosure "lien affilié" | `EEAT_AUDIT_2026-05-06.md` |
+| `affiliate_disclosure_missing` | 2 articles : `s3cmd`, `vaultwarden` | Medium | Ajouter disclosure "lien affilié" | `EEAT_AUDIT_2026-05-06.md` |
 | `ga4_not_connected` | Site-wide | Medium | Setup MCP GA4 Data API | `AUDIT_SEO_2026-05-06.md` |
-| `omarchy_traffic_drop` | 1 article | High | Mise à jour contenu ou redirect | — |
 
 ---
 
-## Issues résolues (2026-05-06)
+## Issues résolues (2026-05-06 + 2026-05-17)
 
 | Issue | Ancien état | Résolution | Date |
 |---|---|---|---|
@@ -41,6 +42,8 @@
 | `focusKeyword_missing` | 32 articles | **Résolu** — `focusKeyword` ajouté sur 32 articles manquants | 2026-05-06 |
 | `alt_text_missing` | 8 articles / 56 images | **Résolu** — Texte alternatif ajouté sur 58 images | 2026-05-06 |
 | `external_links_missing` | 12 articles | **Résolu** — Liens vers sources autoritatives ajoutés | 2026-05-06 |
+| `omarchy_traffic_drop` | 1 article | **Résolu** — Réécriture complète v3.8.0 (2 commits) | 2026-05-17 |
+| `internal_links_missing` | 51/82 articles | **Résolu** — Section "Articles connexes" ajoutée (script Jaccard) | 2026-05-17 |
 
 ---
 

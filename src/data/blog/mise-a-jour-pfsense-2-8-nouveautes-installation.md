@@ -238,3 +238,10 @@ pfSense 2.8.1, c'est la version à déployer en 2026. FreeBSD 15.0 sous le capot
 - [Notes de version pfSense 2.8.0 — Netgate](https://docs.netgate.com/pfsense/en/latest/releases/2-8-0.html)
 - [Documentation principale pfSense — Netgate](https://docs.netgate.com/pfsense/en/latest)
 - [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/)
+
+## Articles connexes
+
+- [Exchange Online : bloquer les transferts email automatiques avec PowerShell (2026)](/exchange-online-bloquer-transferts-automatiques-emails/)
+- [Passkey SSH : remplace tes clés avec SSH ID (2026)](/passkey-ssh-sshid/)
+- [Technitium DNS Server : installe ton bloqueur de pubs libre (2026)](/technitium-dns-server/)
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)](/vaultwarden-docker-gestionnaire-mots-de-passe/)

@@ -178,3 +178,10 @@ Si quelque chose ne marche pas, c'est souvent un PATH mal configuré ou un confl
 ---
 
 Homebrew macOS en place, la vraie question c'est : qu'est-ce que tu vas en faire ? Les outils comme `ffmpeg`, `yt-dlp` ou `mas` (pour le Mac App Store en ligne de commande) changent complètement le rapport au Mac. Commence par `brew search` et explore.
+
+## Articles connexes
+
+- [WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2026)](/wailbrew-interface-graphique-homebrew/)
+- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)
+- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)
+- [Compresser images Mac en WebP : méthode qui économise 70% d'espace](/reduire-taille-images-mac-webp/)

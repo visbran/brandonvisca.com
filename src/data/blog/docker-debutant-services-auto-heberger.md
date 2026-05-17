@@ -949,3 +949,9 @@ C’est tout. C’est ça, la magie de Docker.
 
 Docker lui-même est très léger. Ce sont les **services** que tu fais tourner qui consomment. Un serveur avec 4 Go de RAM peut faire tourner 5-10 services légers sans problème.
 
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)
+- [AdGuard Home remplace Pi-hole ? Guide Docker complet 2026](/adguard-home-docker-guide-2026/)
+- [Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle](/independance-numerique-2025-guide-complet/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)

@@ -336,3 +336,10 @@ Bloquer les transferts automatiques dans Exchange Online prend 10 minutes avec P
 - [Documentation Microsoft — stratégies anti-spam sortantes](https://learn.microsoft.com/fr-fr/microsoft-365/security/office-365-security/outbound-spam-policies-configure)
 - [Masquer des utilisateurs de la GAL Office 365](https://brandonvisca.com/masquer-utilisateurs-gal-office365-active-directory/)
 - [Import PST dans Outlook 365 : guide complet](https://brandonvisca.com/import-pst-outlook-365-guide-complet/)
+
+## Articles connexes
+
+- [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
+- [Importer un fichier PST dans Outlook 365 : 2 méthodes qui marchent (2026)](/import-pst-outlook-365-guide-complet/)
+- [Masquer des utilisateurs de la GAL Office 365 + Active Directory : Guide complet](/masquer-utilisateurs-gal-office365-active-directory/)
+- [pfSense 2.8 : télécharger l'ISO, mettre à jour et éviter les pièges (2026)](/mise-a-jour-pfsense-2-8-nouveautes-installation/)

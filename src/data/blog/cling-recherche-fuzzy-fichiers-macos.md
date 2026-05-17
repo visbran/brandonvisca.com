@@ -806,3 +806,10 @@ Alors, prêt à chercher tes fichiers comme un ninja ? 🥷
 - [fd (outil Rust sous-jacent)](https://github.com/sharkdp/fd)
 - [fzf (fuzzy finder)](https://github.com/junegunn/fzf)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
+
+## Articles connexes
+
+- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)
+- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)

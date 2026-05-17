@@ -215,3 +215,10 @@ Pour les autres, [installe-le](https://www.warp.dev/) et teste 2 semaines. La mi
 - [Guide iTerm2 macOS : Installation et configuration complète (2026)](/iterm2-guide-configuration-macos-2025/)
 - [Oh My Zsh + Powerlevel10k : Guide d'installation complet](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
 - [Homebrew macOS : Guide d'Installation Complet (2026)](/installation-homebrew-macos/)
+
+## Articles connexes
+
+- [iTerm2 macOS 2026 : guide complet (install, config, thèmes)](/iterm2-guide-configuration-macos-2025/)
+- [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/)
+- [Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes](/installation-vim-guide-complet/)
+- [Omarchy Linux : j'ai testé la distro Arch clé en main](/omarchy-distribution-linux-arch-hyprland/)

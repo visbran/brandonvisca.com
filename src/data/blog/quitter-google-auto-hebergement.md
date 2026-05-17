@@ -450,3 +450,10 @@ Je vais t’accompagner avec une série complète sur ce blog. Tutos, guides, re
 - [r/selfhosted](https://reddit.com/r/selfhosted) : Communauté mondiale
 - [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : Liste de tous les services auto-hébergeables
 - [Documentation Docker](https://docs.docker.com) : Pour comprendre les bases
+
+## Articles connexes
+
+- [Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle](/independance-numerique-2025-guide-complet/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
+- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)](/vaultwarden-docker-gestionnaire-mots-de-passe/)

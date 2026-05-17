@@ -436,3 +436,10 @@ Et si tu parts de zéro ou envisages une migration, [Technitium DNS Server](/tec
 - [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/)
 - [Nextcloud avec Docker : ton cloud perso en 1h](/nextcloud-docker-installation-complete-2025/)
 - [Auto-hébergement : le guide complet pour débutants](/auto-hebergement-guide-complet-2025/)
+
+## Articles connexes
+
+- [Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)](/yopass-vs-privatebin-vs-password-pusher/)
+- [AdGuard Home remplace Pi-hole ? Guide Docker complet 2026](/adguard-home-docker-guide-2026/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)

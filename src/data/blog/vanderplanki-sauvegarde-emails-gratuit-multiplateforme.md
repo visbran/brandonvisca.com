@@ -179,3 +179,10 @@ Télécharge Vanderplanki sur [vanderplanki.com](https://vanderplanki.com) et co
 - [Import PST / Outlook 365 — guide complet](/import-pst-outlook-365-guide-complet/)
 - [Site officiel Vanderplanki](https://vanderplanki.com) — téléchargement et documentation
 - [Dépôt GitHub MailStore](https://github.com/mailstore) — contexte historique du projet
+
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)
+- [Comment définir le fuseau horaire et synchroniser l'heure du serveur sous Linux](/comment-modifier-heure-du-serveur-sous-linux/)
+- [Docker pour les débutants : 10 services essentiels à auto-héberger en 2025](/docker-debutant-services-auto-heberger/)
+- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)

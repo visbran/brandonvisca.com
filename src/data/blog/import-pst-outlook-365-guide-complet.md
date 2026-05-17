@@ -229,3 +229,10 @@ J'ai utilisé les deux méthodes en prod. La méthode oldschool reste la plus pr
 - [XstReader sur GitHub](https://github.com/iluvadev/XstReader/releases)
 - [Exchange Online — bloquer les transferts automatiques d'emails](https://brandonvisca.com/exchange-online-bloquer-transferts-automatiques-emails/)
 - [Vanderplanki : sauvegarde emails gratuit multiplateforme](https://brandonvisca.com/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/)
+
+## Articles connexes
+
+- [Exchange Online : bloquer les transferts email automatiques avec PowerShell (2026)](/exchange-online-bloquer-transferts-automatiques-emails/)
+- [Migrer WordPress gratuitement avec All-in-One WP Migration : guide 2026](/migration-wordpress-all-in-one-guide-2025/)
+- [Pourquoi j&rsquo;ai quitté Google (et comment tu peux faire pareil en 2025)](/quitter-google-auto-hebergement/)
+- [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/)

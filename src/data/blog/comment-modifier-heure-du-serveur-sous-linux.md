@@ -152,3 +152,10 @@ La configuration de l'heure fait partie des bases à avoir en place avant d'ouvr
 - [Documentation officielle systemd-timesyncd](https://www.freedesktop.org/software/systemd/man/latest/systemd-timesyncd.service.html)
 - [Dépannage montage partition RAID Linux en mode secours](/depannage-montage-partition-raid-linux-mode-secours/) (pour quand ton serveur ne démarre plus)
 - [Guide swap Linux : configuration et optimisation](/guide-swap-linux-configuration-optimisation/)
+
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)
+- [Ubuntu Active Directory SSSD : intègre tes machines Linux en 5 étapes](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
+- [Docker pour les débutants : 10 services essentiels à auto-héberger en 2025](/docker-debutant-services-auto-heberger/)
+- [Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)](/installation-snipeit-ubuntu-guide-complet/)

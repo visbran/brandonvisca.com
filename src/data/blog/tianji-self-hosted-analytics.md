@@ -199,3 +199,10 @@ Tu peux tester la démo sur [tianji.dev](https://tianji.dev) et installer ton in
 - [Uptime Kuma 2.0 : le monitoring auto-hébergé qui remplace les services payants](/uptime-kuma-2-0-monitoring-auto-heberge/)
 - [Docker pour les débutants : 10 services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/)
 - [Pourquoi j'ai quitté Google (et comment tu peux faire pareil)](/quitter-google-auto-hebergement/)
+
+## Articles connexes
+
+- [Immich Docker remplace Google Photos ? Guide complet 2026](/immich-docker/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
+- [Technitium DNS Server : installe ton bloqueur de pubs libre (2026)](/technitium-dns-server/)

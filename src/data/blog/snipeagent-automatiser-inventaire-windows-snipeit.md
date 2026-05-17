@@ -200,3 +200,10 @@ Spoiler : c'est satisfaisant de voir son inventaire se remplir tout seul.
 - [SnipeAgent sur GitHub](https://github.com/ReticentRobot/SnipeAgent) – Le repo officiel avec releases et doc
 - [Snipe-IT Documentation](https://snipe-it.readme.io/) – Pour configurer ton serveur d'inventaire
 - [Configuration avancée SnipeIT](https://brandonvisca.com/configuration-avancee-snipeit-ldap-teams-automatisation/) – LDAP, Teams, API et sécurité
+
+## Articles connexes
+
+- [PATH Windows : maîtrise l'ajout de programmes, dossiers et scripts (2026)](/ajouter-un-programme-au-path-windows/)
+- [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
+- [Exchange Online : bloquer les transferts email automatiques avec PowerShell (2026)](/exchange-online-bloquer-transferts-automatiques-emails/)
+- [Filtrage utilisateurs LDAP Snipe-IT : Guide pratique Active Directory 2025](/ldap-filtrage-utilisateurs-snipeit/)

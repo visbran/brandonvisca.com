@@ -349,3 +349,10 @@ En attendant, si tu veux préparer ton serveur, fais un tour sur mon guide [inst
 - [SnipeIT vs Excel : pourquoi migrer ton inventaire IT](/itsm-snipeit-alternative-excel-inventaire-it/)
 - [Installation SnipeIT sur Ubuntu : guide complet](/installation-snipeit-ubuntu-guide-complet/)
 - [Automatiser l’inventaire Windows avec SnipeAgent](/snipeagent-automatiser-inventaire-windows-snipeit/)
+
+## Articles connexes
+
+- [ITSM : pourquoi votre Excel va finalement vous rendre fou (guide survie)](/itsm-snipeit-alternative-excel-inventaire-it/)
+- [Configuration avancée SnipeIT : LDAP, automatisation et notifications (guide 2025)](/configuration-avancee-snipeit-ldap-teams-automatisation/)
+- [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
+- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)

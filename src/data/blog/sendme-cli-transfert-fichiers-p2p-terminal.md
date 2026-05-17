@@ -401,3 +401,10 @@ Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu b
 - [Alt-SendMe : interface graphique pour Iroh](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) – même techno, pour ceux qui fuient le terminal
 - [Documentation Iroh](https://iroh.computer/docs) – la stack sous Sendme CLI
 - [GitHub Sendme](https://github.com/n0-computer/sendme) – releases, issues, code source
+
+## Articles connexes
+
+- [Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes](/installation-vim-guide-complet/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
+- [Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/)

@@ -234,3 +234,10 @@ Commence par les bases : `hjkl` pour naviguer, `i` pour insérer, `:w` pour sauv
 - [Installer un thème sous Vim : guide complet](/installation-theme-vim-guide/)
 - [Oh My Zsh + Powerlevel10k : transforme ton terminal](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
 - [Termius : client SSH moderne pour Windows et macOS](/termius-client-ssh-windows-guide-complet/)
+
+## Articles connexes
+
+- [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/)
+- [Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/)
+- [Ladybird Browser : Le navigateur web qui refuse de se soumettre à Google (et tant mieux)](/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/)
+- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)

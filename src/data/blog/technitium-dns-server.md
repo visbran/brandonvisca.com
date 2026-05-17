@@ -232,3 +232,10 @@ Et si tu veux synchroniser tes blocages DNS sur plusieurs instances (un DNS par 
 - [Nebula-Sync : synchronise tes Pi-hole v6 automatiquement](/nebula-sync-pihole-v6-installation-docker-guide/)
 - [DNS Scavenging Windows Server : le guide complet](/dns-scavenging-windows-server-guide-complet/)
 - [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/)
+
+## Articles connexes
+
+- [Immich Docker remplace Google Photos ? Guide complet 2026](/immich-docker/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
+- [Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted](/tianji-self-hosted-analytics/)

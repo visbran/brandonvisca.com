@@ -521,3 +521,10 @@ Si tu pars de zéro sur macOS, enchaîne avec iTerm2 : j'ai tout détaillé dans
 - [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) : prérequis indispensable sur Mac
 - [Documentation officielle Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki) : wiki complet avec tous les plugins
 - [Powerlevel10k GitHub](https://github.com/romkatv/powerlevel10k) : config avancée et options cachées
+
+## Articles connexes
+
+- [10 Extensions Raycast indispensables pour développeurs et sysadmins](/10-extensions-raycast-indispensables-pour-developpeurs-et-sysadmins/)
+- [iTerm2 macOS 2026 : guide complet (install, config, thèmes)](/iterm2-guide-configuration-macos-2025/)
+- [Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025)](/shutter-encoder-mac-alternative-handbrake/)
+- [Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/)

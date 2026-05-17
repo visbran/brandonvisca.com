@@ -1196,3 +1196,10 @@ Alors, Grila ou Fantastical ? **Pour moi, Grila 100%**. 🚀
 **Et toi, qu'en penses-tu ?** Partage ton retour en commentaire ! 👇
 
 ---
+
+## Articles connexes
+
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
+- [Morgen 2026 : découvre le planificateur IA qui unifie tâches et calendrier](/calendrier-et-gestion-des-taches-unifies-morgen/)
+- [Raycast vs Alfred : Test après 30 jours (Verdict 2025)](/raycast-vs-alfred-spotlight-comparatif-macos/)

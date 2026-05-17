@@ -981,3 +981,9 @@ Alors, prêt à contrôler tes écrans comme un humain civilisé ? 🚀
 - [Changelog](https://lunar.fyi/changelog)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
 
+## Articles connexes
+
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)
+- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)

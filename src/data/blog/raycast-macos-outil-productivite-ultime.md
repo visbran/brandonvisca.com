@@ -291,3 +291,10 @@ Il y a une légère courbe d'apprentissage, mais après 2-3 jours d'utilisation,
 - [Store d'extensions Raycast](https://raycast.com/store)
 - [Documentation officielle Raycast](https://manual.raycast.com/)
 - [Raycast vs Alfred : Test après 30 jours](https://brandonvisca.com/raycast-vs-alfred-spotlight-comparatif-macos/)
+
+## Articles connexes
+
+- [Raycast vs Alfred : Test après 30 jours (Verdict 2025)](/raycast-vs-alfred-spotlight-comparatif-macos/)
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)

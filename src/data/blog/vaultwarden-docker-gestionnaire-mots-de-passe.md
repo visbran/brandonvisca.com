@@ -692,3 +692,10 @@ Si tu veux une vue d’ensemble de cette architecture, comment ces services s’
 - [Guide d’indépendance numérique 2026](/independance-numerique-2025-guide-complet/) — roadmap complète pour auto-héberger tous tes services
 - [Nextcloud avec Docker](/nextcloud-docker-installation-complete-2025/) — stockage cloud personnel en 1h
 - [Documentation officielle Vaultwarden](https://github.com/dani-garcia/vaultwarden/wiki) — wiki GitHub complet avec toutes les options de configuration
+
+## Articles connexes
+
+- [Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)](/yopass-vs-privatebin-vs-password-pusher/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
+- [Pourquoi j&rsquo;ai quitté Google (et comment tu peux faire pareil en 2025)](/quitter-google-auto-hebergement/)

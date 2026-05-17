@@ -770,3 +770,10 @@ Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** t
 - **Reddit** : r/france, r/selfhosted
 - **Forums** : HardwareFR, Homelab France
 - **Discord** : Homelab FR, Docker FR
+
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)
+- [Watchtower : mets tes conteneurs Docker à jour sans lever le petit doigt](/watchtower-mise-a-jour-docker-auto/)
+- [Pourquoi j&rsquo;ai quitté Google (et comment tu peux faire pareil en 2025)](/quitter-google-auto-hebergement/)
+- [AdGuard Home remplace Pi-hole ? Guide Docker complet 2026](/adguard-home-docker-guide-2026/)

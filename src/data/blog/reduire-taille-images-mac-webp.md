@@ -222,3 +222,10 @@ Dans mon workflow, j'applique ce script sur toutes les captures d'écran avant d
 - [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) – prérequis de ce tuto
 - [Documentation officielle cwebp](https://developers.google.com/speed/webp/docs/cwebp) – toutes les options de compression
 - [Raycast : outil de productivité ultime sur macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/) – pour aller encore plus loin dans l'automatisation
+
+## Articles connexes
+
+- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)
+- [Installer Homebrew sur macOS : Guide complet Apple Silicon & Intel](/installation-homebrew-macos/)
+- [WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2026)](/wailbrew-interface-graphique-homebrew/)
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)

@@ -403,3 +403,10 @@ Installe-le, configure tes groupes de monitors et tes alertes Telegram, et dors 
 - [Sécuriser ton serveur Linux — SSH, firewall, fail2ban](/securite-de-votre-serveur-linux/)
 - [Documentation officielle Uptime Kuma](https://github.com/louislam/uptime-kuma/wiki) : wiki GitHub complet
 - [Guide de migration V1→V2](https://github.com/louislam/uptime-kuma/wiki/Migration-From-v1-To-v2) : procédure officielle
+
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)
+- [Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle](/independance-numerique-2025-guide-complet/)
+- [Watchtower : mets tes conteneurs Docker à jour sans lever le petit doigt](/watchtower-mise-a-jour-docker-auto/)
+- [AdGuard Home remplace Pi-hole ? Guide Docker complet 2026](/adguard-home-docker-guide-2026/)

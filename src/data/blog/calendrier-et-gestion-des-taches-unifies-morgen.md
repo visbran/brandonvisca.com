@@ -127,3 +127,10 @@ Morgen n'est pas un calendrier de plus. C'est une couche de planification intell
 - [Grila vs Fantastical : le comparatif calendrier macOS 2025](https://brandonvisca.com/grila-vs-fantastical-comparatif-2025/)
 - [Raycast : l'outil de productivité macOS ultime](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)
 - [Site officiel Morgen](https://www.morgen.so/fr)
+
+## Articles connexes
+
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)
+- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)

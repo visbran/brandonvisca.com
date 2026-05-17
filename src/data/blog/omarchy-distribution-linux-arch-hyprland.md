@@ -262,3 +262,10 @@ Télécharge l'ISO, installe, et balance-nous un screenshot dans les commentaire
 - [Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement](/nebula-sync-pihole-v6-installation-docker-guide/)
 - [Connecter Ubuntu à Active Directory avec SSSD](https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
 - [Résolution des problèmes de montage RAID](https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/)
+
+## Articles connexes
+
+- [Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/)
+- [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/)
+- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)
+- [Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes](/installation-vim-guide-complet/)

@@ -256,3 +256,10 @@ Oui. La fonctionnalité Ice Bar est spécialement conçue pour optimiser l'espac
 - [AltTab macOS : remplace le ⌘+Tab avec des previews de fenêtres](https://brandonvisca.com/alttab-macos-gestion-fenetres-windows/)
 - [AppCleaner : désinstaller proprement les apps sur Mac](https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/)
 - [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)
+
+## Articles connexes
+
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)
+- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)

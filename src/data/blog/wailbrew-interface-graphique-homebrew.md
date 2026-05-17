@@ -424,3 +424,10 @@ Si tu veux aller plus loin côté propreté macOS, jette un œil à [AppCleaner]
 - [Installer Homebrew sur macOS — Guide complet](https://brandonvisca.com/installation-homebrew-macos/)
 - [iTerm2 : configuration et personnalisation macOS](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/)
 - [AppCleaner : l'alternative gratuite à CleanMyMac](https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/)
+
+## Articles connexes
+
+- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)
+- [Installer Homebrew sur macOS : Guide complet Apple Silicon & Intel](/installation-homebrew-macos/)
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)

@@ -1041,3 +1041,10 @@ Cmd+Shift+Space : Raycast (secondary)
 - [Josh Collinsworth Blog](https://joshcollinsworth.com/blog/alfred-raycast)
 
 ---
+
+## Articles connexes
+
+- [Raycast macOS : Guide complet 2026 — Extensions, AI et Snippets](/raycast-macos-outil-productivite-ultime/)
+- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/)
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)

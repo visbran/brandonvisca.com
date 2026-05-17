@@ -228,3 +228,10 @@ Mais n'oublie pas : l'automatisation n'excuse pas l'ignorance. Garde un œil sur
 Pour aller plus loin avec la configuration avancée, la [documentation officielle de Watchtower](https://containrrr.dev/watchtower/) détaille toutes les variables d'environnement et options disponibles.
 
 Maintenant, arrête de faire `docker compose pull` à la main. T'as mieux à faire.
+
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)
+- [Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle](/independance-numerique-2025-guide-complet/)
+- [AdGuard Home remplace Pi-hole ? Guide Docker complet 2026](/adguard-home-docker-guide-2026/)
+- [Docker pour les débutants : 10 services essentiels à auto-héberger en 2025](/docker-debutant-services-auto-heberger/)

@@ -655,3 +655,10 @@ Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 - [Clop sur Mac App Store](https://apps.apple.com/app/clop/id1611554949)
 - [Clop SDK (pour devs)](https://github.com/FuzzyIdeas/ClopSDK)
 - [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
+
+## Articles connexes
+
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
+- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)

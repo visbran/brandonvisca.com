@@ -441,3 +441,10 @@ UptimeRobot règle ça en 5 minutes. 50 moniteurs gratuits, alertes Discord/Slac
 - [Sécuriser ton serveur Linux — SSH, firewall, fail2ban](/securite-de-votre-serveur-linux/)
 - [Documentation officielle UptimeRobot](https://uptimerobot.com/help) : référence complète
 - [API UptimeRobot v2](https://uptimerobot.com/api) : endpoints et paramètres
+
+## Articles connexes
+
+- [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
+- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)
+- [Termius 2026 : remplace PuTTY et économise 30 min/jour sur Windows](/termius-client-ssh-windows-guide-complet/)
+- [Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted](/tianji-self-hosted-analytics/)

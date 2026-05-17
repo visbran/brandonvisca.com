@@ -220,3 +220,10 @@ Lance `sudo swapon --show` : si la commande retourne une ligne avec ton fichier 
 - [Sécuriser son serveur Linux : les bases](https://brandonvisca.com/securite-de-votre-serveur-linux/)
 - [Modifier l'heure de son serveur Linux](https://brandonvisca.com/comment-modifier-heure-du-serveur-sous-linux/)
 - [Doc officielle vm.swappiness (kernel.org)](https://www.kernel.org/doc/html/latest/admin-guide/sysctl/vm.html#swappiness)
+
+## Articles connexes
+
+- [Ladybird Browser : Le navigateur web qui refuse de se soumettre à Google (et tant mieux)](/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/)
+- [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/)
+- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)
+- [Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes](/installation-vim-guide-complet/)

@@ -312,3 +312,10 @@ Filtre les Event ID 1541 dans le journal DNS Server ou lance `Get-DnsServerScave
 - [Active Directory : transférer les rôles FSMO entre DC](https://brandonvisca.com/activedirectory-transfere-des-roles-fsmo/)
 - [Ubuntu + Active Directory avec SSSD : guide complet](https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
 - [Termius : client SSH moderne pour Windows et macOS](https://brandonvisca.com/termius-client-ssh-windows-guide-complet/)
+
+## Articles connexes
+
+- [Active Directory : Transfère des rôles FSMO](/activedirectory-transfere-des-roles-fsmo/)
+- [Exchange Online : bloquer les transferts email automatiques avec PowerShell (2026)](/exchange-online-bloquer-transferts-automatiques-emails/)
+- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)
+- [Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)](/hyperv-gen1-vs-gen2-quelle-generation-choisir/)

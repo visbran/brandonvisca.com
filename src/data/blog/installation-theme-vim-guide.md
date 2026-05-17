@@ -121,3 +121,10 @@ Catppuccin dans Vim, c'est 5 minutes de setup pour des heures d'utilisation agr�
 - [Vim : installation, .vimrc et plugins en 30 minutes](/installation-vim-guide-complet/)
 - [Oh My Zsh + Powerlevel10k : transforme ton terminal](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
 - [Termius : client SSH moderne pour Windows et macOS](/termius-client-ssh-windows-guide-complet/)
+
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)
+- [Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)](/installation-snipeit-ubuntu-guide-complet/)
+- [Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes](/installation-vim-guide-complet/)
+- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)

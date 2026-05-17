@@ -369,3 +369,10 @@ Configurer le PATH Windows, c'est une opération à faire une fois par outil ins
 - [Termius : client SSH pour Windows (guide complet)](https://brandonvisca.com/termius-client-ssh-windows-guide-complet/)
 - [Snipe-IT + agent Windows : inventaire automatisé](https://brandonvisca.com/snipeagent-automatiser-inventaire-windows-snipeit/)
 - [Documentation Microsoft — variable PATH](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/path)
+
+## Articles connexes
+
+- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)
+- [Arc Browser abandonné : 7 alternatives épurées pour retrouver ton workflow de rêve](/arc-browser-alternatives-navigateur-epure-2025/)
+- [Exploration de Super.so : un outil de site web personnalisé pour Notion](/exploration-de-super-so-un-outil-de-site-web-personnalise-pour-notion/)
+- [Installer Homebrew sur macOS : Guide complet Apple Silicon & Intel](/installation-homebrew-macos/)

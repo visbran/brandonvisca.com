@@ -325,3 +325,10 @@ Witch est payant (14$) avec des fonctionnalités similaires. HyperSwitch est aba
 - [Magnet macOS : redimensionner et snapper les fenêtres](https://brandonvisca.com/magnet-macos-gestionnaire-fenetres-guide-complet/)
 - [Ice : gérer la barre de menu macOS gratuitement](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
 - [Raycast : le lanceur d'apps qui remplace Spotlight](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)
+
+## Articles connexes
+
+- [Magnet macOS : Le gestionnaire de fenêtres qui va transformer ton workflow (+ alternatives gratuites)](/magnet-macos-gestionnaire-fenetres-guide-complet/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)
+- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)

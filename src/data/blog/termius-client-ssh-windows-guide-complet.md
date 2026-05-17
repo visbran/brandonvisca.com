@@ -667,3 +667,10 @@ Maintenant que tu as Termius bien configuré, il est temps de sécuriser sérieu
 - [Guide ultime de l'auto-hébergement 2026](https://brandonvisca.com/auto-hebergement-guide-complet-2025/) — Monter une infra perso solide et économiser 500€/an en abonnements cloud
 
 **Bon SSH, et que le ping soit avec toi. 🚀**
+
+## Articles connexes
+
+- [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
+- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)
+- [iTerm2 macOS 2026 : guide complet (install, config, thèmes)](/iterm2-guide-configuration-macos-2025/)
+- [Passkey SSH : remplace tes clés avec SSH ID (2026)](/passkey-ssh-sshid/)

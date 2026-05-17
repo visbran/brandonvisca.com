@@ -195,3 +195,10 @@ Les conteneurs LXC sur Proxmox, c'est le sweet spot entre la lourdeur des VMs et
 Mon conseil pour débuter : commence par 2 ou 3 LXC pour tes services les plus simples. Un DNS, un reverse proxy, un monitoring. Quand tu seras à l'aise, tu pourras en ajouter d'autres ou tester des VMs pour les plateformes plus lourdes.
 
 Et n'oublie pas : un snapshot avant chaque modification. C'est la règle d'or du self-hoster. Pas de snapshot, pas de chocolat.
+
+## Articles connexes
+
+- [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)
+- [Docker pour les débutants : 10 services essentiels à auto-héberger en 2025](/docker-debutant-services-auto-heberger/)
+- [AdGuard Home remplace Pi-hole ? Guide Docker complet 2026](/adguard-home-docker-guide-2026/)
+- [Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle](/independance-numerique-2025-guide-complet/)

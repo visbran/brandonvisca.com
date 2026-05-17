@@ -271,3 +271,10 @@ Si tu hésites avec Warp ou un autre terminal IA, j'ai fait un [test complet iTe
 - [Installer Oh My Zsh + Powerlevel10k guide complet](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/) : le combo indispensable avec iTerm2
 - [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) : si ce n'est pas encore fait
 - [iTerm2 vs Warp : test complet après 60 jours](https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) : pour savoir si tu dois switcher
+
+## Articles connexes
+
+- [Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/)
+- [Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025)](/shutter-encoder-mac-alternative-handbrake/)
+- [WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2026)](/wailbrew-interface-graphique-homebrew/)
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)

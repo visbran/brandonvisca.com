@@ -270,3 +270,10 @@ Oui sur Mac Apple Silicon. WebKit natif + zéro tracking = 30-40% moins de RAM q
 - [AltTab macOS : remplace le ⌘+Tab avec des previews de fenêtres](https://brandonvisca.com/alttab-macos-gestion-fenetres-windows/)
 - [Ice macOS : remplace Bartender gratuitement et organise ta barre de menu](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
 - [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)
+
+## Articles connexes
+
+- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)

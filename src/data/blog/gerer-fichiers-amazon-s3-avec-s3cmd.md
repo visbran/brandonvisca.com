@@ -273,3 +273,10 @@ S3cmd fait le boulot sans fioriture : upload, sync, backup automatisé, chiffrem
 - [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/)
 - [UptimeRobot : monitorer ton infrastructure](https://brandonvisca.com/uptimerobot-guide-complet-monitoring-infrastructure/)
 - [Documentation officielle S3cmd](https://s3tools.org/usage)
+
+## Articles connexes
+
+- [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/)
+- [Ubuntu Active Directory SSSD : intègre tes machines Linux en 5 étapes](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
+- [Dépannage montage RAID mdadm en mode secours Linux : wrong fs type et partition cachée](/depannage-montage-partition-raid-linux-mode-secours/)
+- [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)

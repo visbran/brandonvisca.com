@@ -716,3 +716,10 @@ Magnet est sur le Mac App Store. Rectangle est sur GitHub. Les deux sont à port
 - [Raycast macOS : Le launcher qui remplace Spotlight et 20 autres apps](https://brandonvisca.com/raycast-macos-launcher-productivite-2025/)
 - [iTerm2 : Le guide complet pour un terminal macOS de pro](https://brandonvisca.com/iterm2-guide-complet-terminal-macos-2025/)
 - [Ice macOS : Le gestionnaire de barre de menu gratuit](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
+
+## Articles connexes
+
+- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)
+- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)

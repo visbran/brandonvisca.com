@@ -409,3 +409,10 @@ Tu remarques que la base de données n'est même pas dans ce fichier. Elle vit d
 Avec Traefik v3, ton homelab change de dimension. Ajouter un service ne prend plus que quelques labels. La sécurité HTTPS est automatique. Le dashboard offre une visibilité totale.
 
 Et si tu veux continuer à construire ton infrastructure Docker, jette un œil à mes guides pour [Nextcloud](/nextcloud-docker-installation-complete-2025/), [Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/), ou pour automatiser les mises à jour avec [Watchtower](/watchtower-mise-a-jour-docker-auto/). Bon auto-hébergement !
+
+## Articles connexes
+
+- [Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)](/yopass-vs-privatebin-vs-password-pusher/)
+- [Immich Docker remplace Google Photos ? Guide complet 2026](/immich-docker/)
+- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
+- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)

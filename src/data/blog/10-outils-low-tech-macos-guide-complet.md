@@ -1131,3 +1131,10 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 - [r/macOS](https://reddit.com/r/macOS)
 - [r/MacApps](https://reddit.com/r/MacApps)
 - [r/opensource](https://reddit.com/r/opensource)
+
+## Articles connexes
+
+- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
+- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
+- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/)
+- [Ice macOS : remplace Bartender gratuitement et organise ta barre de menu](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
