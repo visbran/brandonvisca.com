@@ -8,7 +8,6 @@ tags:
   - microsoft-365
   - securite
   - powershell
-  - exchange-online
   - intermediaire
   - guide
 featured: false

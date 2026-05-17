@@ -8,7 +8,7 @@ tags:
   - intermediaire
   - auto-hebergement
   - docker
-  - vie-privee
+  - securite
   - monitoring
   - guide
 featured: false

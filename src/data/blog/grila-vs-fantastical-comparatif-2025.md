@@ -5,10 +5,7 @@ pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - macos
-  - calendrier
   - productivite
-  - low-tech
-  - comparatif
   - debutant
 featured: false
 draft: false

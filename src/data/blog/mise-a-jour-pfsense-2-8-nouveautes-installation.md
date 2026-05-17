@@ -7,8 +7,6 @@ author: Brandon Visca
 tags:
   - securite
   - reseau
-  - pfsense
-  - firewall
   - intermediaire
   - guide
 featured: false

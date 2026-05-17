@@ -8,7 +8,7 @@ tags:
   - vim
   - linux
   - macos
-  - cli
+  - terminal
   - guide
   - intermediaire
 featured: false

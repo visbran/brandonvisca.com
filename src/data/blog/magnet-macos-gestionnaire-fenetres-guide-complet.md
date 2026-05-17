@@ -6,8 +6,6 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - magnet
-  - gestion-fenetres
   - debutant
   - guide
 featured: true

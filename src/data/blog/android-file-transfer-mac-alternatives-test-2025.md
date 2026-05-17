@@ -5,9 +5,7 @@ pubDatetime: "2025-02-16T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - macos
-  - android
-  - file-transfer
-  - openmtp
+  - linux
   - productivite
   - debutant
 featured: false

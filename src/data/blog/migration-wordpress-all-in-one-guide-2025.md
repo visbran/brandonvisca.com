@@ -7,8 +7,8 @@ author: Brandon Visca
 tags:
   - developpement
   - wordpress
-  - migration
-  - sauvegarde
+  - sysadmin
+  - backup
   - intermediaire
   - guide
 featured: false

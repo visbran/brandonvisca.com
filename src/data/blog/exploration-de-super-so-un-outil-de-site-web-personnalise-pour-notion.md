@@ -8,8 +8,6 @@ tags:
   - developpement
   - productivite
   - debutant
-  - notion
-  - no-code
   - guide
 ---
 

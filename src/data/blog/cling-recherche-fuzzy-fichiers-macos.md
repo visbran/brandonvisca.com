@@ -6,7 +6,6 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - low-tech
   - debutant
   - guide
 featured: false

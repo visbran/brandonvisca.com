@@ -7,7 +7,7 @@ tags:
   - raycast
   - macos
   - productivite
-  - devops
+  - sysadmin
   - docker
   - intermediaire
 featured: true

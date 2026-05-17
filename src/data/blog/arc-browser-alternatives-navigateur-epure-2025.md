@@ -7,8 +7,6 @@ author: Brandon Visca
 tags:
   - macos
   - windows
-  - navigateur
-  - comparatif
   - guide
   - debutant
 featured: false

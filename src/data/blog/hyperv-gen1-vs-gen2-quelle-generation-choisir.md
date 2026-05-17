@@ -6,9 +6,9 @@ author: Brandon Visca
 tags:
   - hyper-v
   - windows-server
-  - virtualisation
+  - homelab
   - sysadmin
-  - uefi
+  - windows
   - intermediaire
 featured: false
 draft: false

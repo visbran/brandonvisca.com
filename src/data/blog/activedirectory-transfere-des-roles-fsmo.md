@@ -7,7 +7,6 @@ focusKeyword: "transfert rôles FSMO"
 tags:
   - active-directory
   - windows-server
-  - fsmo
   - guide
   - sysadmin
   - avance

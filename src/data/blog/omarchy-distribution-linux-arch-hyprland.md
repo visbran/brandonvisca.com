@@ -8,8 +8,6 @@ tags:
   - linux
   - productivite
   - intermediaire
-  - hyprland
-  - arch-linux
   - guide
 featured: false
 draft: false

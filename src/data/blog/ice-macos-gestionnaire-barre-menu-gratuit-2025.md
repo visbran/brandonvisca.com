@@ -7,10 +7,8 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - barre-menu
   - guide
   - debutant
-  - open-source
 featured: false
 draft: false
 focusKeyword: ice macOS

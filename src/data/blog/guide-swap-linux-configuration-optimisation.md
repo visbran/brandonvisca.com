@@ -6,10 +6,6 @@ modDatetime: "2026-04-16T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - linux
-  - swap
-  - memoire
-  - performance
-  - swappiness
   - intermediaire
 featured: false
 draft: false

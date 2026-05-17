@@ -7,7 +7,6 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - gestion-fenetres
   - guide
   - debutant
 featured: false

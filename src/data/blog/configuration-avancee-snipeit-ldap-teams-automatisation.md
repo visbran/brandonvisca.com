@@ -10,7 +10,6 @@ tags:
   - avance
   - snipeit
   - ldap
-  - automatisation
 ---
 
 Tu as réussi ton [installation SnipeIT Ubuntu](https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/), tu as un inventaire qui fonctionne, mais maintenant tu veux passer au **niveau ninja**. La **configuration avancée SnipeIT** va transformer ton installation basique en machine de guerre IT.

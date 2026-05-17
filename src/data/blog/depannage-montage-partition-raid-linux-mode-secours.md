@@ -8,9 +8,8 @@ tags:
   - linux
   - sysadmin
   - avance
-  - raid
+  - homelab
   - guide
-  - depannage
 ---
 
 

@@ -6,10 +6,7 @@ modDatetime: 2026-04-15 00:00:00+01:00
 author: Brandon Visca
 tags:
   - sysadmin
-  - itsm
   - snipeit
-  - comparatif
-  - inventaire-it
   - intermediaire
 featured: false
 draft: false

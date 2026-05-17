@@ -6,9 +6,7 @@ modDatetime: 2026-05-05 10:00:00+02:00
 author: Brandon Visca
 tags:
   - docker
-  - traefik
-  - reverse-proxy
-  - https
+  - securite
   - auto-hebergement
   - intermediaire
 featured: false

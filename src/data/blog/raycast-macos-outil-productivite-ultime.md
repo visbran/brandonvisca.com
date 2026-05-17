@@ -7,7 +7,6 @@ author: Brandon Visca
 tags:
   - raycast
   - macos
-  - launcher
   - productivite
   - guide
   - debutant

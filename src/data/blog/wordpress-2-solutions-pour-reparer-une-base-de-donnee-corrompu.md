@@ -7,7 +7,6 @@ author: Brandon Visca
 tags:
   - developpement
   - wordpress
-  - mysql
   - avance
   - guide
 featured: false

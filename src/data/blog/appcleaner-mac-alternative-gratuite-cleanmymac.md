@@ -10,7 +10,6 @@ tags:
   - debutant
   - homebrew
   - guide
-  - appcleaner
 faqs:
   - question: "AppCleaner est-il vraiment gratuit ?"
     answer: "Oui, 100% gratuit sans version premium. Le développeur accepte les donations mais l'app reste entièrement fonctionnelle."

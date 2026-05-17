@@ -24,7 +24,9 @@ const tagsWithCount = tags.map(({ tag, tagName }) => ({
   count: getPostsByTag(posts, tag).length,
 }));
 
-const maxCount = Math.max(...tagsWithCount.map(t => t.count));
+const META_TAGS = ["guide", "debutant", "intermediaire", "avance"];
+const displayTags = tagsWithCount.filter(({ tag }) => !META_TAGS.includes(tag));
+const maxCount = Math.max(...displayTags.map(t => t.count));
 ---
 
 <Layout title={`Tags | ${SITE.title}`}>
@@ -46,7 +48,7 @@ const maxCount = Math.max(...tagsWithCount.map(t => t.count));
         </p>
         <div class="mt-4 flex items-center gap-2 text-sm text-foreground/50">
           <span class="hero-badge">
-            {tagsWithCount.length} tags
+            {displayTags.length} tags
           </span>
           <span class="hero-badge">
             {posts.length} articles
@@ -57,7 +59,7 @@ const maxCount = Math.max(...tagsWithCount.map(t => t.count));
 
     <div class="tags-grid">
       {
-        tagsWithCount.map(({ tag, tagName, count }) => {
+        displayTags.map(({ tag, tagName, count }) => {
           const intensity = count / maxCount;
           return (
             <a

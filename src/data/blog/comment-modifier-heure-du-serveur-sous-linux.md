@@ -6,10 +6,6 @@ modDatetime: "2026-04-25T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - linux
-  - ubuntu
-  - ntp
-  - fuseau-horaire
-  - timedatectl
   - debutant
 featured: false
 draft: false

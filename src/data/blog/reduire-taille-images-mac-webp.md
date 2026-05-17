@@ -5,10 +5,8 @@ pubDatetime: "2025-06-12T20:41:20+02:00"
 modDatetime: "2026-04-15T00:00:00+01:00"
 author: Brandon Visca
 tags:
-  - webp
   - macos
   - homebrew
-  - automator
   - guide
   - debutant
 featured: false

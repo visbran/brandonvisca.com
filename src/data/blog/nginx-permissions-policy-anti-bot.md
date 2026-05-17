@@ -10,7 +10,7 @@ tags:
   - avance
   - nginx
   - guide
-  - headers
+  - hardening
 ---
 
 

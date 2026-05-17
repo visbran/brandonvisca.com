@@ -6,9 +6,6 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - raccourcis
-  - low-tech
-  - outils-systeme
   - debutant
 featured: false
 draft: false

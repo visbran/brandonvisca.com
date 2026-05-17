@@ -6,7 +6,6 @@ modDatetime: 2026-05-01 00:00:00+01:00
 author: Brandon Visca
 tags:
   - docker
-  - watchtower
   - auto-hebergement
   - homelab
   - debutant

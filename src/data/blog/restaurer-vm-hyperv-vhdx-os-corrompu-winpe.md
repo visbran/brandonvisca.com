@@ -6,8 +6,7 @@ author: Brandon Visca
 tags:
   - hyper-v
   - windows-server
-  - vhdx
-  - winpe
+  - windows
   - sysadmin
   - avance
 featured: false

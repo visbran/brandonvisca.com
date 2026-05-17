@@ -10,7 +10,6 @@ tags:
   - intermediaire
   - multimedia
   - guide
-  - ffmpeg
 faqs:
   - question: "Shutter Encoder est-il vraiment gratuit ?"
     answer: "Oui, 100% gratuit et open-source. Le développeur accepte les donations mais l'app reste entièrement fonctionnelle sans payer."

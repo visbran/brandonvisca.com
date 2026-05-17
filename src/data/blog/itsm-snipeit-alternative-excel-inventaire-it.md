@@ -9,7 +9,6 @@ tags:
   - sysadmin
   - debutant
   - snipeit
-  - itsm
   - guide
 ---
 

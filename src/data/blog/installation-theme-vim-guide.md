@@ -6,8 +6,6 @@ modDatetime: 2026-04-16 00:00:00+01:00
 author: Brandon Visca
 tags:
   - vim
-  - theme
-  - catppuccin
   - linux
   - guide
   - debutant

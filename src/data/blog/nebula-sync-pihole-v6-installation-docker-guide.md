@@ -5,8 +5,8 @@ pubDatetime: "2025-10-23T20:55:40+02:00"
 modDatetime: 2026-04-16 00:00:00+01:00
 author: Brandon Visca
 tags:
-  - nebula-sync
-  - pihole
+  - auto-hebergement
+  - reseau
   - dns
   - docker
   - homelab

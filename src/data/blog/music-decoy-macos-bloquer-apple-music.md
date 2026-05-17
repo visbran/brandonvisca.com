@@ -9,8 +9,6 @@ tags:
   - productivite
   - debutant
   - guide
-  - utilitaire
-  - music-decoy
 ---
 
 TL;DR

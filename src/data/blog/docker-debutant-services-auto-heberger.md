@@ -6,7 +6,6 @@ modDatetime: "2026-04-29T13:50:00+02:00"
 author: Brandon Visca
 tags:
   - docker
-  - docker-compose
   - auto-hebergement
   - homelab
   - linux

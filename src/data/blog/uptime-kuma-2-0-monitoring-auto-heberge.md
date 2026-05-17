@@ -8,7 +8,6 @@ tags:
   - homelab
   - monitoring
   - docker
-  - uptime-kuma
   - guide
   - debutant
 featured: true

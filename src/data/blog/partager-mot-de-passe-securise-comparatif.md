@@ -5,9 +5,6 @@ pubDatetime: "2026-03-14T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - securite
-  - password
-  - outils
-  - comparatif
   - debutant
 featured: false
 draft: false

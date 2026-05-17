@@ -8,8 +8,6 @@ tags:
   - developpement
   - productivite
   - debutant
-  - notion
-  - no-code
   - guide
 faqs:
   - question: "Quelle est la différence principale entre Notion Sites et WordPress ?"

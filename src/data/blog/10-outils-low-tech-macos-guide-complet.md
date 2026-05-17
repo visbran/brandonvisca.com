@@ -5,11 +5,8 @@ pubDatetime: 2025-11-27 00:00:00+01:00
 author: Brandon Visca
 tags:
   - macos
-  - low-tech
   - productivite
-  - guide-complet
-  - gratuit
-  - open-source
+  - guide
 featured: false
 draft: false
 focusKeyword: outils low tech macos

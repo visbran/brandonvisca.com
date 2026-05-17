@@ -7,7 +7,6 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - iterm2
   - terminal
   - intermediaire
   - guide

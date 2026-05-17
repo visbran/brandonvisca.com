@@ -7,7 +7,7 @@ author: Brandon Visca
 tags:
   - linux
   - sysadmin
-  - aws
+  - auto-hebergement
   - backup
   - intermediaire
   - guide

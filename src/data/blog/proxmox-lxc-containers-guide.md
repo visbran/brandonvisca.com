@@ -5,8 +5,6 @@ pubDatetime: 2026-05-06 10:00:00+02:00
 modDatetime: 2026-05-06 10:00:00+02:00
 author: Brandon Visca
 tags:
-  - proxmox
-  - lxc
   - homelab
   - linux
   - auto-hebergement

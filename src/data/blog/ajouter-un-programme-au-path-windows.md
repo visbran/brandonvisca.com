@@ -8,7 +8,6 @@ tags:
   - windows
   - developpement
   - powershell
-  - python
   - debutant
   - guide
 featured: false

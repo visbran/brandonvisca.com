@@ -5,10 +5,8 @@ pubDatetime: "2025-02-21T10:14:37+01:00"
 modDatetime: 2026-05-17 00:00:00+01:00
 author: Brandon Visca
 tags:
-  - outlook
   - microsoft-365
-  - migration
-  - email
+  - sysadmin
   - guide
   - intermediaire
 featured: false

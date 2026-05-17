@@ -9,7 +9,6 @@ tags:
   - sysadmin
   - avance
   - active-directory
-  - ubuntu
   - guide
 featured: false
 draft: false

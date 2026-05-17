@@ -7,8 +7,6 @@ author: Brandon Visca
 tags:
   - productivite
   - macos
-  - calendrier
-  - gestion-temps
   - debutant
   - guide
 featured: false
