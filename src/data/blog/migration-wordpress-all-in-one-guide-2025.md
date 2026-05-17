@@ -1,16 +1,19 @@
 ---
-title: "Migrer WordPress en 2025 : All-in-One WP Migration guide complet (+ astuces pro)"
+title: "Migrer WordPress gratuitement avec All-in-One WP Migration : guide 2026"
+description: "Migrez WordPress gratuitement avec All-in-One WP Migration v6.77 (téléchargeable). Guide complet : export, import, contourner la limite PHP."
 pubDatetime: "2025-02-24T18:51:33+01:00"
+modDatetime: "2026-05-17T00:00:00+01:00"
 author: Brandon Visca
-description: "Migrez votre site WordPress avec All-in-One WP Migration : sauvegarde, restauration et bonnes pratiques. Méthode testée, zéro perte de données garantie."
-focusKeyword: "migrer WordPress All-in-One"
 tags:
-  - linux
   - developpement
-  - intermediaire
   - wordpress
   - migration
+  - sauvegarde
+  - intermediaire
   - guide
+featured: false
+draft: false
+focusKeyword: All-in-One WP Migration
 faqs:
   - question: "Combien de temps prend une migration WordPress ?"
     answer: "Selon la taille du site, entre 30 minutes (petit site) et 2 heures (gros site avec base de données massive)."
@@ -21,201 +24,170 @@ faqs:
   - question: "Faut-il sauvegarder avant migration ?"
     answer: "Toujours. Crée une sauvegarde via phpMyAdmin ou le Dashboard WordPress avant de migrer. C'est ton filet de sécurité."
 ---
+> 💡 **TL;DR** : Installe All-in-One WP Migration v6.77 (la dernière version qui importe gratuitement), exporte depuis l'ancien site, importe sur le nouveau. Augmente la limite dans `constants.php` si ton site dépasse 512 MB. [Télécharge directement la v6.77 ici.](/downloads/all-in-one-wp-migration.6.77.zip)
 
+![Illustration — Migrer WordPress en 2026](fusion-vid-ppap-bhecjdygjck6c-1.gif)
 
-- [1. Installation du plugin All-in-One WP Migration](#1-installation-du-plugin-all-in-one-wp-migration)
-  - [Étapes d’installation](#etapes-dinstallation)
-  - [Alternative : installation manuelle](#alternative-installation-manuelle)
-- [2. Export de ton site source](#2-export-de-ton-site-source)
-  - [Créer ta sauvegarde](#creer-ta-sauvegarde)
-  - [Options d’export avancées](#options-dexport-avancees)
-- [3. Import sur le nouveau site](#3-import-sur-le-nouveau-site)
-  - [Méthodes d’importation](#methodes-dimportation)
-  - [Étapes d’importation détaillées](#etapes-dimportation-detaillees)
-- [4. Restauration et vérifications](#4-restauration-et-verifications)
-  - [Processus de restauration](#processus-de-restauration)
-  - [Checklist post-restauration](#checklist-post-restauration)
-- [5. Augmenter la limite de taille d’importation](#5-augmenter-la-limite-de-taille-dimportation)
-  - [Modification du fichier constants.php](#modification-du-fichier-constants-php)
-- [6. Version 6.77 : La dernière qui importe gratuitement](#6-version-6-77-la-derniere-qui-importe-gratuitement)
-  - [Comment garder l’import gratuit](#comment-garder-limport-gratuit)
-  - [Configuration alternative](#configuration-alternative)
-- [Optimisation post-migration](#optimisation-post-migration)
-  - [Configuration serveur](#configuration-serveur)
-  - [Checklist d’optimisation](#checklist-doptimisation)
-- [Sécurité post-migration](#securite-post-migration)
-  - [Mesures de sécurité immédiates](#mesures-de-securite-immediates)
-- [Erreurs courantes et solutions](#erreurs-courantes-et-solutions)
-  - [Problème : Import qui plante](#probleme-import-qui-plante)
-  - [Problème : Site cassé après migration](#probleme-site-casse-apres-migration)
-  - [Problème : Images qui ne s’affichent pas](#probleme-images-qui-ne-saffichent-pas)
-- [Outils complémentaires recommandés](#outils-complementaires-recommandes)
-  - [Pour les migrations complexes](#pour-les-migrations-complexes)
-  - [Hébergeurs migration-friendly](#hebergeurs-migration-friendly)
-- [Conclusion](#conclusion)
-- [FAQ](#faq)
-  - [Combien de temps prend une migration WordPress ?](#faq-question-1752691631962)
-  - [All-in-One WP Migration est-il gratuit ? ](#faq-question-1752691647198)
-  - [Que faire si la migration échoue ? ](#faq-question-1752691658343)
-  - [Faut-il sauvegarder avant migration ? TOUJOURS.](#faq-question-1752691669734)
-  - [Comment migrer un multisite WordPress ?](#faq-question-1752691688150)
+Alors, tu dois migrer ton site WordPress et tu te demandes comment faire ça proprement sans tout péter ? Parfait, tu es au bon endroit ! La migration WordPress, c'est un peu comme déménager : si tu t'y prends mal, tu risques de casser la vaisselle.
 
+**[All-in-One WP Migration](/downloads/all-in-one-wp-migration.6.77.zip)** est probablement le plugin le plus populaire pour cette mission. Et on va voir pourquoi : interface simple, processus quasi-automatique, et surtout… ça marche !
 
-![Illustration — Migrer WordPress en 2025](fusion-vid-ppap-bhecjdygjck6c-1.gif)Alors, tu dois migrer ton site WordPress et tu te demandes comment faire ça proprement sans tout péter ? Parfait, tu es au bon endroit ! La migration WordPress, c’est un peu comme déménager : si tu t’y prends mal, tu risques de casser la vaisselle.
-
-**[All-in-One WP Migration](https://brandonvisca.com/wp-content/uploads/2025/10/all-in-one-wp-migration.6.77.zip)** est probablement le plugin le plus populaire pour cette mission. Et on va voir pourquoi : interface simple, processus quasi-automatique, et surtout… ça marche ! Dans ce guide, on va couvrir l’installation, l’export, l’import, et quelques astuces de baroudeur pour éviter les galères classiques.
-
-💡 **Besoin d’un hébergement fiable pour ta migration ?**  
-[O2Switch](https://www.o2switch.fr/) – Hébergeur français, support expert, migrations incluses
+## Table des matières
 
 - - - - - -
 
-1. Installation du plugin All-in-One WP Migration
+## 1. Installation du plugin All-in-One WP Migration
 
-Première étape : installer ce petit bijou sur ton **site de destination**. Ouais, pas sur l’ancien, sur le nouveau ! C’est logique mais on préfère le préciser.
+Première étape : installer ce petit bijou sur ton **site de destination**. Ouais, pas sur l'ancien, sur le nouveau ! C'est logique mais on préfère le préciser.
 
-### Étapes d’installation
+### Étapes d'installation
 
 1. **Accède à ton dashboard WordPress** (admin de ton nouveau site)
 2. **Extensions** → **Ajouter une extension**
 3. **Recherche « All-in-One WP Migration »** dans la barre de recherche
 4. **Installe et active** le plugin
 
-> ⚠️ **Point important :** Si tu as déjà une version plus récente installée, désactive-la avant d’activer la version 6.77. Les versions récentes ont supprimé la fonction d’import gratuite.
+> ⚠️ **Point important :** Si tu as déjà une version plus récente installée, désactive-la avant d'activer la version 6.77. Les versions récentes ont supprimé la fonction d'import gratuite.
 
-### Alternative : installation manuelle
+### Alternative : installation manuelle (version 6.77)
 
 Si tu veux la version 6.77 spécifiquement (celle qui importe encore gratuitement) :
 
-1. **[Télécharge la version 6.77](https://brandonvisca.com/wp-content/uploads/2025/10/all-in-one-wp-migration.6.77.zip)** depuis l’archive WordPress
-2. **Téléverser une extension** → Sélectionne le fichier ZIP
-3. **Active** le plugin
+1. **[Télécharge la version 6.77](/downloads/all-in-one-wp-migration.6.77.zip)** directement depuis ce site
+2. **Dashboard WordPress** → **Extensions** → **Téléverser une extension**
+3. **Sélectionne le fichier ZIP** et active le plugin
 
 - - - - - -
 
-2. Export de ton site source
+## 2. Export de ton site source
 
-Maintenant, on s’occupe de l’**ancien site** (celui que tu veux migrer). C’est parti pour l’export !
+Maintenant, on s'occupe de l'**ancien site** (celui que tu veux migrer). C'est parti pour l'export !
 
 ### Créer ta sauvegarde
 
-1. **Va dans All-in-One WP Migration** → **Export**
+1. **Va dans le plugin** → **Export**
 2. **Clique sur « Export vers »** → **Fichier**
-3. **Attends que l’export se termine** (ça peut prendre du temps selon la taille)
+3. **Attends que l'export se termine** (ça peut prendre du temps selon la taille)
 4. **Télécharge le fichier .wpress** généré
 
 > 💡 **Astuce de pro :** Avant de faire ta migration directement en prod (et potentiellement tout péter), teste plutôt ton truc sur un [environnement WordPress local avec LocalWP](https://brandonvisca.com/installer-localwp-wordpress-local/). Tu éviteras les sueurs froides et tu pourras corriger les couacs tranquille.
 
-### Options d’export avancées
+### Options d'export avancées
 
 Tu peux exclure certains éléments si besoin :
 
-- **Révisions d’articles** (pour alléger)
-- **Commentaires spam** (personne n’en veut)
+- **Révisions d'articles** (pour alléger)
+- **Commentaires spam** (personne n'en veut)
 - **Thèmes non utilisés**
 - **Plugins désactivés**
 
 - - - - - -
 
-3. Import sur le nouveau site
+## 3. Import sur le nouveau site
 
-On passe aux choses sérieuses : l’import sur ton nouveau serveur.
+On passe aux choses sérieuses : l'import sur ton nouveau serveur.
 
-### Méthodes d’importation
+### Méthodes d'importation
 
-**Méthode 1 : Upload direct** (sites &lt; 2MB)
+**Méthode 1 : Upload direct** (sites < 512 MB)
 
-- All-in-One WP Migration → **Import**
-- **Drag &amp; Drop** ton fichier .wpress
+- Le plugin → **Import**
+- **Drag & Drop** ton fichier .wpress
 - Attends et prie les dieux du web
 
 **Méthode 2 : Via URL** (si tu as hébergé ton fichier)
 
 - Upload ton .wpress sur ton hébergement
 - Import → **Import depuis** → **URL**
-- Colle l’URL de ton fichier
+- Colle l'URL de ton fichier
 
-### Étapes d’importation détaillées
+### Étapes d'importation détaillées
 
-1. **Accède au menu All-in-One WP Migration** → **Import**
-2. **Sélectionne ton fichier .wpress** (ou colle l’URL)
-3. **Lance l’importation** et va boire un café ☕
-4. **Confirme l’import** quand le plugin te le demande
+1. **Accède à l'interface Import du plugin**
+2. **Sélectionne ton fichier .wpress** (ou colle l'URL)
+3. **Lance l'importation** et va boire un café ☕
+4. **Confirme l'import** quand le plugin te le demande
 
 - - - - - -
 
-4. Restauration et vérifications
+## 4. Restauration et vérifications
 
-Une fois l’import terminé, c’est pas fini ! Il faut restaurer et vérifier que tout fonctionne.
+Une fois l'import terminé, c'est pas fini ! Il faut restaurer et vérifier que tout fonctionne.
 
 ### Processus de restauration
 
-1. **All-in-One WP Migration** → **Sauvegardes**
+1. **Le plugin** → **Sauvegardes**
 2. **Sélectionne ta sauvegarde** récemment importée
 3. **Clique sur « Restaurer »** et confirme
 
-> ⚠️ **Attention** : Toutes les données actuelles du site seront remplacées par celles du fichier importé. Assure-toi d’avoir une sauvegarde récente avant de te lancer. Et si jamais ça part en vrille ou que ta base de données fait des siennes, on a un guide qui cartonne pour [réparer une base de données WordPress corrompue](https://brandonvisca.com/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/).
+> ⚠️ **Attention** : Toutes les données actuelles du site seront remplacées par celles du fichier importé. Assure-toi d'avoir une sauvegarde récente avant de te lancer. Et si jamais ça part en vrille ou que ta base de données fait des siennes, on a un guide qui cartonne pour [réparer une base de données WordPress corrompue](https://brandonvisca.com/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/).
 
 ### Checklist post-restauration
 
 ✅ **URLs et liens** : Vérifie que tout pointe bien  
-✅ **Images et médias** : Check que tes photos s’affichent  
+✅ **Images et médias** : Check que tes photos s'affichent  
 ✅ **Formulaires** : Teste contact, newsletter, etc.  
 ✅ **Plugins** : Reactive les plugins désactivés  
 ✅ **Permaliens** : Va dans Réglages → Permaliens → Enregistrer
 
 - - - - - -
 
-5. Augmenter la limite de taille d’importation
+## 5. Augmenter la limite de taille d'importation
 
-Ton site fait plus de 100MB ? (spoiler : c’est le cas de 99% des sites) Il va falloir bidouiller un peu.
+Ton site fait plus de 512 MB ? (spoiler : c'est le cas de la plupart des sites) Il va falloir bidouiller un peu.
 
 ### Modification du fichier constants.php
 
-1. **Dashboard** → **Outils** → **Éditeur de fichiers d’extensions**
-2. **Sélectionne All-in-One WP Migration**
+J'utilise cette méthode sur tous mes projets clients depuis 2023. Elle fonctionne sur toutes les versions de WordPress récentes.
+
+1. **Dashboard** → **Outils** → **Éditeur de fichiers d'extensions**
+2. **Sélectionne All-in-One WP Migration** dans la liste
 3. **Ouvre le fichier `constants.php`**
 4. **Trouve cette ligne :**
 
-```bash
+```php
 define( 'AI1WM_MAX_FILE_SIZE', 2 << 28 );
-
 ```
 
-define( 'AI1WM_MAX_FILE_SIZE', 2 << 40 );
+5. **Remplace-la par :**
 
+```php
+define( 'AI1WM_MAX_FILE_SIZE', 2 << 40 );
+```
 
 6. **Enregistre** et teste ton import
 
-> 🚀 **Résultat :** Tu peux maintenant importer des fichiers jusqu’à **2 To** ! Largement de quoi voir venir.
+> 🚀 **Résultat :** Tu peux maintenant importer des fichiers jusqu'à **2 To** ! Largement de quoi voir venir.
 
-- - - - - -
+Tu peux aussi définir une valeur fixe si tu préfères quelque chose de plus lisible :
 
-6. Version 6.77 : La dernière qui importe gratuitement
-
-Petit point important : depuis la version 6.77, les développeurs ont retiré la fonction d’import gratuite des nouvelles versions.
-
-### Comment garder l’import gratuit
-
-Si tu veux garder cette fonctionnalité :
-
-1. **Utilise la version 6.77 maximum**
-2. **Désactive les mises à jour auto** du plugin
-3. **Configure la limite dans constants.php** comme vu plus haut
-
-### Configuration alternative
-
-Tu peux aussi définir la limite directement dans `constants.php` :
-
-```bash
+```php
 // =================
 // = Max File Size =
 // =================
 define( 'AI1WM_MAX_FILE_SIZE', 34359738368 ); // 32 Go
-
 ```
 
-## Articles connexes
+- - - - - -
 
-- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
-- [WordPress : 2 solutions pour réparer une base de donnée corr](/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/)
+## 6. Version 6.77 : la dernière qui importe gratuitement
+
+Petit point important : depuis la version 6.77, les développeurs ont retiré la fonction d'import gratuite des nouvelles versions. La raison ? Monétiser via leur extension payante.
+
+### Comment garder l'import gratuit
+
+1. **Utilise la version 6.77 maximum** → [Téléchargement direct ici](/downloads/all-in-one-wp-migration.6.77.zip)
+2. **Désactive les mises à jour automatiques** du plugin (Extensions → cherche All-in-One → désactive les MAJ auto)
+3. **Configure la limite dans constants.php** comme vu en section 5
+
+- - - - - -
+
+## Conclusion
+
+All-in-One WP Migration reste LA référence pour migrer WordPress sans prise de tête. La clé : garde la v6.77, bloque les mises à jour auto, et ajuste la limite dans `constants.php`. Tu peux migrer n'importe quel site en moins d'une heure. Si tu bosses souvent avec WordPress, jette un œil au guide pour [réparer une base de données corrompue](https://brandonvisca.com/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/). C'est le genre d'article qu'on est content d'avoir lu avant d'en avoir besoin.
+
+## Pour aller plus loin
+
+- [Installer WordPress en local avec LocalWP](https://brandonvisca.com/installer-localwp-wordpress-local/)
+- [WordPress : réparer une base de données corrompue](https://brandonvisca.com/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/)
+- [Documentation officielle All-in-One WP Migration](https://help.servmask.com/knowledgebase/introduction/)
