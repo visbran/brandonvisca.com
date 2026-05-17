@@ -60,7 +60,9 @@ Content-Security-Policy: default-src 'self'
 
 ```
 
+```html
 <script>alert('Vous avez été piraté');</script>
+```
 
 
 Sans CSP, le navigateur l’exécutera. Avec une bonne politique, il le bloquera purement et simplement.
