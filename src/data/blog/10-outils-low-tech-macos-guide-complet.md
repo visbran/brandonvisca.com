@@ -6,6 +6,7 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
+  - debutant
   - guide
 featured: false
 draft: false

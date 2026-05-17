@@ -15,7 +15,9 @@ import os
 from pathlib import Path
 from datetime import datetime
 
-BLOG_DIR = Path("/Users/brandon/Documents/2026-brandonvisca.com/src/data/blog")
+# Détecte automatiquement le répertoire des articles depuis l'emplacement du script
+_SCRIPT_DIR = Path(__file__).resolve().parent
+BLOG_DIR = _SCRIPT_DIR.parent / "src" / "data" / "blog"
 
 # ── Tag convention (tag-convention.md) ────────────────────────────────────────
 
@@ -25,7 +27,7 @@ PRIMARY_TAGS = {
     "developpement", "microsoft-365",
 }
 LEVEL_TAGS = {"debutant", "intermediaire", "avance"}
-FORBIDDEN_TAGS = {"autres", "self-hosting", "productivity"}
+FORBIDDEN_TAGS = {"autres", "others", "self-hosting", "productivity"}
 PENDING_MERGE = {
     "office365": "microsoft-365",
     "tutoriel": "guide",
