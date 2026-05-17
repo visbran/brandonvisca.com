@@ -7,7 +7,7 @@ title: "CV"
 
 **Responsable Infrastructure & Systèmes IT — Référent Technique**
 
-📍 Chambéry (73000) | 📧 [bonjour@brandonvisca.com](mailto:bonjour@brandonvisca.com) | 🐙 [github.com/visbran](https://github.com/visbran) | 🌐 [brandonvisca.com](https://brandonvisca.com)
+📍 Chambéry (73000) | 🐙 [github.com/visbran](https://github.com/visbran) | 🌐 [brandonvisca.com](https://brandonvisca.com)
 
 ---
 
@@ -42,6 +42,18 @@ Responsable Infrastructure & Systèmes IT avec **6 ans d'expérience** comme ré
 ---
 
 ## Expérience professionnelle
+
+### Fondateur — Solution SaaS Enseignement Supérieur
+**SASU, Chambéry** | Août 2025 — Présent
+
+Création d'une SASU et développement d'un SaaS dédié à l'enseignement supérieur. Conception produit, développement full-stack, et go-to-market.
+
+### Rédacteur technique freelance
+**brandonvisca.com · mxtoolbox.eu · ippriv.com** | 2025 — Présent
+
+Rédaction d'articles techniques en français et en anglais sur l'administration système, la sécurité réseau et l'auto-hébergement. Stack éditoriale : Astro, Cloudflare Pages.
+
+---
 
 ### Responsable Informatique — Référent Technique Unique
 **Groupe ECORIS, Chambéry** | Août 2019 — Juillet 2025 (6 ans)
@@ -103,13 +115,13 @@ Modernisation extranet obsolète. Étude marché **8 solutions**, POC 2 finalist
 ## Projets personnels & veille
 
 **Blog technique IT** — [brandonvisca.com](https://brandonvisca.com)
-Blog francophone sur l'auto-hébergement, le homelab et l'indépendance numérique. **79+ articles**, stack Astro 6 + Cloudflare Pages.
+Blog francophone sur l'auto-hébergement, le homelab et l'indépendance numérique. **80+ articles**, stack Astro + Cloudflare Pages.
 
-**Infrastructure Docker/Podman en production**
-Nextcloud, Redis, sécurité — homelab Proxmox multi-nœuds en production personnelle.
+**mxtoolbox.eu · ippriv.com**
+Rédaction technique anglophone sur la sécurité réseau et les outils IT.
 
-**SaaS pour l'enseignement supérieur**
-Développement d'une solution SaaS dédiée à l'enseignement supérieur.
+**Infrastructure Docker/Proxmox en production**
+Homelab Proxmox multi-nœuds : Nextcloud, Vaultwarden, Jellyfin, backups automatisés — en production personnelle depuis 2020.
 
 **Veille technologique active**
 Automatisation, containerisation, cloud-native, sécurité offensive et défensive.

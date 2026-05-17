@@ -26,7 +26,10 @@ L'auto-hébergement n'est pas réservé aux ingénieurs système. Avec un mini P
 - **Linux & sécurité** — nginx, Caddy, headers HTTP, hardening
 - **macOS & productivité** — outils que j'utilise vraiment
 
+## Ce que je fais en ce moment
+
+En dehors du blog, je développe un SaaS dédié à l'enseignement supérieur, et je rédige des articles techniques pour [mxtoolbox.eu](https://mxtoolbox.eu) et [ippriv.com](https://ippriv.com).
+
 ## Me contacter
 
 - **GitHub** : [github.com/visbran](https://github.com/visbran)
-- **Email** : [contact@brandonvisca.com](mailto:contact@brandonvisca.com)
