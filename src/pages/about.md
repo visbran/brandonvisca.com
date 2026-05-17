@@ -5,11 +5,11 @@ title: "À propos"
 
 Salut, moi c'est **Brandon Visca**.
 
-Je suis passionné d'auto-hébergement, de homelab et d'indépendance numérique. J'ai monté ce blog parce que j'en avais marre de chercher des tutos en français qui soient à la fois techniques et accessibles — sans le ton condescendant des docs officielles, ni le flou des tutos YouTube.
+Je suis passionné d'auto-hébergement, de homelab et d'indépendance numérique. J'ai monté ce blog parce que j'en avais marre de chercher des tutos en français qui soient à la fois techniques et accessibles, sans le ton condescendant des docs officielles, ni le flou des tutos YouTube.
 
 ## Ce que je fais
 
-Je tourne un **homelab sous Proxmox** chez moi (deux nœuds : un Lenovo ThinkStation P720 et un ThinkCentre M720q), avec une VM Oracle Cloud en edge pour exposer les services publics. Réseau VLAN, reverse proxy Caddy, VPN Headscale, DNS Technitium, backups automatiques sur NAS QNAP — le setup classique du sysadmin maison un peu trop sérieux.
+Je tourne un **homelab sous Proxmox** chez moi (deux nœuds : un Lenovo ThinkStation P720 et un ThinkCentre M720q), avec une VM Oracle Cloud en edge pour exposer les services publics. Réseau VLAN, reverse proxy Caddy, VPN Headscale, DNS Technitium, backups automatiques sur NAS QNAP. Le setup classique du sysadmin maison un peu trop sérieux.
 
 Sur le blog, tu trouveras des **guides testés en prod**, pas de la théorie. Si j'écris un tuto Proxmox c'est parce que j'ai foiré l'install au moins une fois avant toi.
 

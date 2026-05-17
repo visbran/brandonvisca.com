@@ -13,7 +13,7 @@ title: "CV"
 
 ## Profil
 
-Responsable Infrastructure & Systèmes IT avec **6 ans d'expérience** comme référent technique unique pour **1800 utilisateurs**. Expertise technique solide (infra, réseau, virtualisation) couplée à une forte capacité de gestion de projets et de maîtrise d'ouvrage. Pilotage de **17+ projets majeurs** générant **90 K€ d'économies** avec une disponibilité maintenue à **99.5%**.
+Référent technique unique pendant **6 ans** sur une infrastructure de **1800 utilisateurs** (infra, réseau, virtualisation, maîtrise d'ouvrage). Pilotage de **17+ projets majeurs** générant **90 K€ d'économies** avec une disponibilité maintenue à **99.5%**.
 
 | | | | |
 |---|---|---|---|
