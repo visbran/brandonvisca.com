@@ -459,9 +459,9 @@ Description: Réparer WordPress après une corruption de base de données : 2 m�
 Tags: 
 Publié: 2024-07-16T19:50:34+02:00
 
-## Calendrier et gestion des tâches unifiés\\_: Morgen
+## Morgen 2026 : découvre le planificateur IA qui unifie tâches et calendrier
 URL: https://brandonvisca.com/calendrier-et-gestion-des-taches-unifies-morgen/
-Description: Morgen réunit calendrier, tâches et time-blocking dans une interface unifiée pour macOS. Alternative à Fantastical. Guide complet des fonctionnalités.
+Description: Morgen unifie calendrier, tâches et planificateur IA dans une seule app. Time-blocking, Frames, Calendar Sets : guide complet 2026 pour macOS.
 Tags: 
 Publié: 2024-07-16T19:43:31+02:00
 
