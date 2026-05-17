@@ -43,15 +43,15 @@ Responsable Infrastructure & Systèmes IT avec **6 ans d'expérience** comme ré
 
 ## Expérience professionnelle
 
-### Fondateur — Solution SaaS Enseignement Supérieur
-**SASU, Chambéry** | Août 2025 — Présent
+### Fondateur & Développeur
+**LMF Solutions (SASU), Chambéry** | Août 2025 — Présent
 
-Création d'une SASU et développement d'un SaaS dédié à l'enseignement supérieur. Conception produit, développement full-stack, et go-to-market.
+Création et développement de plusieurs produits web sous SASU :
 
-### Rédacteur technique freelance
-**brandonvisca.com · mxtoolbox.eu · ippriv.com** | 2025 — Présent
-
-Rédaction d'articles techniques en français et en anglais sur l'administration système, la sécurité réseau et l'auto-hébergement. Stack éditoriale : Astro, Cloudflare Pages.
+- **SaaS enseignement supérieur** — conception produit, développement full-stack, go-to-market
+- **[mxtoolbox.eu](https://mxtoolbox.eu)** — outil en ligne d'analyse MX et de diagnostic email
+- **[ippriv.com](https://ippriv.com)** — outil en ligne d'analyse IP et de géolocalisation réseau
+- **[javidcoiffure.fr](https://javidcoiffure.fr) + [app.javidcoiffure.fr](https://app.javidcoiffure.fr)** — site vitrine et application web pour salon de coiffure
 
 ---
 
@@ -117,9 +117,6 @@ Modernisation extranet obsolète. Étude marché **8 solutions**, POC 2 finalist
 **Blog technique IT** — [brandonvisca.com](https://brandonvisca.com)
 Blog francophone sur l'auto-hébergement, le homelab et l'indépendance numérique. **80+ articles**, stack Astro + Cloudflare Pages.
 
-**mxtoolbox.eu · ippriv.com**
-Rédaction technique anglophone sur la sécurité réseau et les outils IT.
-
 **Infrastructure Docker/Proxmox en production**
 Homelab Proxmox multi-nœuds : Nextcloud, Vaultwarden, Jellyfin, backups automatisés — en production personnelle depuis 2020.
 
@@ -128,9 +125,3 @@ Automatisation, containerisation, cloud-native, sécurité offensive et défensi
 
 ---
 
-## Certifications & formations complémentaires
-
-- **Cybersécurité** : Bachelor spécialisé (ECORIS, 2022)
-- **Administration système** : BTS SIO option SISR (ECORIS, 2021)
-- **Homelab** : Infrastructure Proxmox, Docker, Kubernetes en production (2020–présent)
-- **Développement web** : Astro, React, Node.js (2024–présent)
