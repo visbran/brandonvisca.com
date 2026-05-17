@@ -429,9 +429,9 @@ Description: LocalWP : installez et testez WordPress en local sans serveur ni XA
 Tags: 
 Publié: 2025-02-24T19:12:37+01:00
 
-## Migrer WordPress en 2025 : All-in-One WP Migration guide complet (+ astuces pro)
+## Migrer WordPress gratuitement avec All-in-One WP Migration : guide 2026
 URL: https://brandonvisca.com/migration-wordpress-all-in-one-guide-2025/
-Description: Migrez votre site WordPress avec All-in-One WP Migration : sauvegarde, restauration et bonnes pratiques. Méthode testée, zéro perte de données garantie.
+Description: Migrez WordPress gratuitement avec All-in-One WP Migration v6.77 (téléchargeable). Guide complet : export, import, contourner la limite PHP.
 Tags: 
 Publié: 2025-02-24T18:51:33+01:00
 
