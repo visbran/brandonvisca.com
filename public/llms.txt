@@ -249,9 +249,9 @@ Description: Configuration avancée SnipeIT : intégration LDAP/Active Directory
 Tags: 
 Publié: 2025-10-13T16:05:41+02:00
 
-## Raycast : L'outil qui transforme macOS en machine de productivité ultime
+## Raycast macOS : Guide complet 2026 — Extensions, AI et Snippets
 URL: https://brandonvisca.com/raycast-macos-outil-productivite-ultime/
-Description: Découvrez Raycast, le launcher macOS gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2025.
+Description: Découvrez Raycast macOS, le launcher gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2026.
 Tags: 
 Publié: 2025-10-13T15:20:28+02:00
 
