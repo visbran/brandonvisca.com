@@ -29,6 +29,13 @@ pnpm-debug.log*
 
 # Internal docs — not for public repo
 KNOWN_ISSUES.md
+AUDIT_GLOBAL_*.md
+AUDIT_SEO_*.md
+EEAT_AUDIT_*.md
+SCHEMA_AUDIT_*.md
+TAGS_STRATEGY_*.md
+*_AUDIT_*.md
+*_AUDIT.md
 
 # Sensitive files — never commit
 *.pem
