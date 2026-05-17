@@ -1,19 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-05-17
-# Total articles : 83
+# Total articles : 82
 
 ## Immich Docker remplace Google Photos ? Guide complet 2026
 URL: https://brandonvisca.com/immich-docker/
 Description: Installe Immich Docker Compose en quelques minutes et remplace Google Photos par une solution open-source auto-hébergée sur ton serveur.
 Tags: 
 Publié: 2026-05-15T19:00:00+02:00
-
-## Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted
-URL: https://brandonvisca.com/tianji-analytics-self-hosted/
-Description: Tianji analytics : l'outil self-hosted qui remplace Google Analytics, Uptime Kuma et Netdata. Open-source, privacy-friendly, zéro cookie banner.
-Tags: 
-Publié: 2026-05-12T18:00:00+02:00
 
 ## Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted
 URL: https://brandonvisca.com/tianji-self-hosted-analytics/
@@ -279,9 +273,9 @@ Description: Découvrez l''ITSM pour débutants avec SnipeIT, l''alternative gra
 Tags: 
 Publié: 2025-09-29T11:20:31+02:00
 
-## Omarchy : la distribution Linux qui transforme Arch en station productive
+## Omarchy Linux : j'ai testé la distro Arch clé en main
 URL: https://brandonvisca.com/omarchy-distribution-linux-arch-hyprland/
-Description: Découvrez Omarchy, la distro Arch Linux avec Hyprland préconfigurée. Installation simplifiée, 11 thèmes, sécurité renforcée et outils dev inclus d'emblée.
+Description: Omarchy Linux : la distro Arch avec Hyprland préconfigurée. Installation simplifiée, 11 thèmes, sécurité renforcée et outils dev inclus d'emblée.
 Tags: 
 Publié: 2025-09-26T12:28:27+02:00
 
