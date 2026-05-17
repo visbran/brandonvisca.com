@@ -1,8 +1,8 @@
 ---
-title: Immich remplace Google Photos ? Guide Docker complet 2026
-description: Guide complet pour installer Immich avec Docker Compose et remplacer Google Photos par une solution open-source auto-hébergée.
+title: Immich Docker remplace Google Photos ? Guide complet 2026
+description: Installe Immich Docker Compose en quelques minutes et remplace Google Photos par une solution open-source auto-hébergée sur ton serveur.
 pubDatetime: "2026-05-15T19:00:00+02:00"
-modDatetime: "2026-05-15T19:00:00+02:00"
+modDatetime: "2026-05-17T00:00:00+02:00"
 author: Brandon Visca
 tags:
   - auto-hebergement
@@ -24,23 +24,16 @@ faqs:
   - question: "Quelle est la différence avec Nextcloud Photos ?"
     answer: "Immich est spécialisé uniquement dans les médias. L'interface est fluide, la recherche par contenu (ML) est native, et l'expérience mobile est bien supérieure. Nextcloud reste le couteau-suisse, Immich est le scalpel."
 ---
-> 💡 **TL;DR** : Immich est une alternative open-source à Google Photos qui te permet d'héberger tes photos et vidéos sur ton propre serveur. Guide complet pour l'installer en quelques minutes avec Docker Compose.
+> 💡 **TL;DR** :
+> - Immich est une alternative open-source à Google Photos : tes photos restent sur ton serveur, pas chez Google.
+> - Installation en 5 minutes avec Docker Compose : 4 services préconfigurés, prêt à l'emploi.
+> - Synchronisation mobile automatique (iOS/Android), reconnaissance faciale, recherche par contenu.
 
 ## Table des matières
 
-1. [Immich, c'est quoi concrètement](#immich-cest-quoi-concrètement)
-2. [Pourquoi quitter Google Photos](#pourquoi-quitter-google-photos)
-3. [Prérequis](#prérequis)
-4. [Installation avec Docker Compose](#installation-avec-docker-compose)
-5. [Premier démarrage et configuration](#premier-démarrage-et-configuration)
-6. [Importer tes photos existantes](#importer-tes-photos-existantes)
-7. [Les applications mobiles](#les-applications-mobiles)
-8. [Astuces pour aller plus loin](#astuces-pour-aller-plus-loin)
-9. [Le mot de la fin](#le-mot-de-la-fin)
-
 ## Immich, c'est quoi concrètement
 
-Immich est une application web et mobile qui fait exactement ce que Google Photos fait — mais sur ton propre serveur. Pas de cloud américain, pas de collecte de données, pas de tarification qui change tous les six mois.
+Immich est une application web et mobile qui fait exactement ce que Google Photos fait. Mais sur ton propre serveur. En déployant **Immich Docker** Compose, tu récupères le contrôle total de ta bibliothèque photo en moins de cinq minutes. Pas de cloud américain, pas de collecte de données, pas de tarification qui change tous les six mois.
 
 Le projet est porté par une communauté très active. Avec plus de 100 000 étoiles sur GitHub et des releases régulières (la v2.7.5 vient de sortir en avril 2026), il est devenu le standard de facto dans le monde de l'auto-hébergement multimédia.
 
@@ -56,9 +49,9 @@ Ce que tu peux faire avec Immich :
 
 ## Pourquoi quitter Google Photos
 
-Google Photos a changé son modèle économique en 2022. La synchronisation gratuite illimitée avec compression a disparu. Aujourd'hui, chaque photo compte dans ton quota Google de 15 Go (partagé avec Gmail et Drive).
+Google Photos a changé son modèle économique en 2021. La synchronisation gratuite illimitée avec compression a disparu. Aujourd'hui, chaque photo compte dans ton quota Google de 15 Go (partagé avec Gmail et Drive).
 
-Et même si tu payes pour le stockage, il reste une question fondamentale : tes souvenirs intimes sont stockés sur des serveurs dont tu ne contrôles pas les politiques. Google a le droit d'utiliser tes images pour affiner sa modèle de reconnaissance faciale, d'analyse de contenu et même de publicité ciblée.
+Et même si tu payes pour le stockage, il reste une question qui dérange : tes souvenirs intimes sont stockés sur des serveurs dont tu ne contrôles pas les politiques. Google a le droit d'utiliser tes images pour affiner son modèle de reconnaissance faciale, d'analyse de contenu et même de publicité ciblée.
 
 Avec Immich :
 
@@ -85,9 +78,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 🔍 **Astuce** : si tu cherches un guide complet pour Docker, j'ai publié une [introduction à Docker pour débutants](/docker-debutant-services-auto-heberger/).
 
-## Installation avec Docker Compose
+## Installation Immich Docker Compose
 
-Immich ne s'installe pas en un seul container. Le compose officiel prévoit plusieurs services :
+La stack **Immich Docker** ne tient pas en un seul container. Le compose officiel prévoit plusieurs services :
 
 - `immich-server` : le moteur principal qui sert l'interface web et l'API
 - `immich-machine-learning` : le module qui repère les objets, les visages et les contenus dans tes photos
@@ -246,7 +239,7 @@ Le processus peut être long. Immich va indexer chaque fichier, extraire les mé
 
 ## Les applications mobiles
 
-C'est ici que le projet devient vraiment intéressant. Immich propose des applications iOS et Android gratuites.
+Immich propose des applications iOS et Android gratuites.
 
 - **iOS** : disponible sur le App Store, recherche "Immich"
 - **Android** : disponible sur le Google Play Store ou en APK direct
@@ -264,10 +257,16 @@ L'interface mobile est fluide, rapide, et gère même la lecture de vidéos tran
 
 💡 **Mon réglage perso** : j'ai monté un volume NFS depuis mon NAS Proxmox vers le container et j'utilise [Watchtower](/watchtower-mise-a-jour-docker-auto/) pour garder Immich à jour automatiquement. Zéro intervention, toujours la dernière version.
 
-## Le mot de la fin
+## Conclusion
 
 Immich est une des alternatives les plus abouties à Google Photos dans l'écosystème open-source. La synchronisation mobile est fiable, l'interface est moderne, et le machine learning ajoute une vraie valeur pour indexer ses souvenirs.
 
-Son seul défaut ? Il ne fait que des photos. Si tu cherches une suite complète — documents, agenda, contacts, fichiers — Nextcloud reste incontournable. Mais pour une bibliothèque photo dédiée, auto-hébergée et respectueuse, Immich est la solution à adopter en 2026.
+Son seul défaut ? Il ne fait que des photos. Si tu cherches une suite complète (documents, agenda, contacts, fichiers), Nextcloud reste le meilleur choix. Mais pour une bibliothèque photo dédiée, auto-hébergée et respectueuse, Immich est la solution à adopter en 2026.
 
-Si tu passés à l'auto-hébergement récemment, tu peux aussi lire mon [guide complet pour quitter Google](/quitter-google-auto-hebergement/). Il détaille chaque étape pour reprendre le contrôle de ton indépendance numérique.
+Si tu es passé à l'auto-hébergement récemment, tu peux aussi lire mon [guide complet pour quitter Google](/quitter-google-auto-hebergement/). Il détaille chaque étape pour reprendre le contrôle de ton indépendance numérique.
+
+## Pour aller plus loin
+
+- [Docker pour débutants : héberger ses services](/docker-debutant-services-auto-heberger/)
+- [Traefik vs Nginx : quel reverse proxy pour ton homelab ?](/traefik-reverse-proxy-docker/)
+- [Watchtower : maintenir Docker à jour automatiquement](/watchtower-mise-a-jour-docker-auto/)
