@@ -1,7 +1,7 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-05-15
-# Total articles : 82
+# Dernière mise à jour : 2026-05-17
+# Total articles : 83
 
 ## Immich remplace Google Photos ? Guide Docker complet 2026
 URL: https://brandonvisca.com/immich-docker/
@@ -11,6 +11,12 @@ Publié: 2026-05-15T19:00:00+02:00
 
 ## Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted
 URL: https://brandonvisca.com/tianji-analytics-self-hosted/
+Description: Tianji analytics : l'outil self-hosted qui remplace Google Analytics, Uptime Kuma et Netdata. Open-source, privacy-friendly, zéro cookie banner.
+Tags: 
+Publié: 2026-05-12T18:00:00+02:00
+
+## Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted
+URL: https://brandonvisca.com/tianji-self-hosted-analytics/
 Description: Tianji analytics : l'outil self-hosted qui remplace Google Analytics, Uptime Kuma et Netdata. Open-source, privacy-friendly, zéro cookie banner.
 Tags: 
 Publié: 2026-05-12T18:00:00+02:00
