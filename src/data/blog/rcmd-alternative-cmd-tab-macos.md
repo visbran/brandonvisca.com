@@ -75,7 +75,7 @@ Let's go ! 🚀
 
 ## Qu'est-ce que rcmd ?
 
-<iframe src="https://lowtechguys.com/static/video/rcmd-stage-manager-h264.mp4"></iframe>
+<video controls style="width:100%;border-radius:8px"><source src="https://lowtechguys.com/static/video/rcmd-stage-manager-h264.mp4" type="video/mp4"></video>
 
 **rcmd** (prononcé "are-command"), c'est un launcher minimaliste développé par [Low Tech Guys](https://lowtechguys.com/) qui repense complètement la façon de switcher entre applications sur macOS.
 

@@ -355,6 +355,10 @@ def check_article_sensitive_data():
             # Skip .tld suffix (clearly fictional)
             if domain.endswith(".tld"):
                 continue
+            # Skip media file extensions — e.g. Screenshot@2x.webp, CleanShot@2x.png
+            MEDIA_EXTS = {"webp", "png", "jpg", "jpeg", "gif", "svg", "avif", "mp4", "mp3", "mov"}
+            if domain.rsplit(".", 1)[-1] in MEDIA_EXTS:
+                continue
             issues.append((str(rel), "Adresse email exposée", email))
 
     return issues
@@ -530,9 +534,21 @@ def run_audit(summary_mode=False):
 
     # 9. Dépendances vulnérables
     print(f"\n{BOLD}[9/9] Dépendances vulnérables (pnpm audit){RST}")
-    import subprocess
-    result = subprocess.run(["pnpm", "audit", "--audit-level", "high"], capture_output=True, text=True, cwd=ROOT)
-    if result.returncode == 0:
+    import subprocess, shutil
+    pnpm_bin = shutil.which("pnpm") or next(
+        (p for p in [
+            "/home/hermes/.hermes/profiles/director/home/.local/share/pnpm/pnpm",
+            "/usr/share/nodejs/corepack/shims/pnpm",
+        ] if __import__("os").path.isfile(p)), None
+    )
+    if not pnpm_bin:
+        print(f"  {warn('pnpm introuvable dans PATH — skip audit dépendances')}")
+        result = None
+    else:
+        result = subprocess.run([pnpm_bin, "audit", "--audit-level", "high"], capture_output=True, text=True, cwd=ROOT)
+    if result is None:
+        pass
+    elif result.returncode == 0:
         print(f"  {ok('Aucune vulnérabilité high/critical dans les dépendances')}")
     else:
         # Static site = node_modules never shipped to visitors.

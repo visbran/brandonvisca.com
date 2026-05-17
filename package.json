@@ -32,6 +32,11 @@
     "slugify": "^1.6.6",
     "tailwindcss": "^4.1.18"
   },
+  "pnpm": {
+    "overrides": {
+      "vite": ">=7.3.2"
+    }
+  },
   "devDependencies": {
     "@astrojs/check": "^0.9.7",
     "@pagefind/default-ui": "^1.4.0",
