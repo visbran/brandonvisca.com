@@ -23,10 +23,9 @@ const primaryTags = new Set([
   "microsoft-365",
 ]);
 
-const forbiddenTags = new Set(["autres"]);
+const forbiddenTags = new Set(["autres", "others"]);
 const englishReplacements = {
   "self-hosting": "auto-hebergement",
-  troubleshooting: "depannage",
   productivity: "productivite",
 };
 
@@ -50,20 +49,49 @@ function extractFrontmatter(content) {
   if (!match) return null;
   const raw = match[1];
   const fm = {};
-  for (const line of raw.split("\n")) {
+  const lines = raw.split(/\r?\n/);
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
     const idx = line.indexOf(":");
-    if (idx > 0) {
-      const key = line.slice(0, idx).trim();
-      let val = line.slice(idx + 1).trim();
-      if (val.startsWith('"') && val.endsWith('"')) val = val.slice(1, -1);
-      if (val.startsWith("[") && val.endsWith("]")) {
-        val = val
+    if (idx <= 0) {
+      i++;
+      continue;
+    }
+    const key = line.slice(0, idx).trim();
+    let val = line.slice(idx + 1).trim();
+
+    if (key === "tags") {
+      const tags = [];
+      if (val === "") {
+        // Format multi-ligne : tags:\n  - foo\n  - bar
+        i++;
+        while (i < lines.length && lines[i].trim().startsWith("- ")) {
+          tags.push(lines[i].trim().replace(/^- /, "").replace(/^["']|["']$/g, ""));
+          i++;
+        }
+        fm.tags = tags;
+        continue;
+      } else if (val.startsWith("[") && val.endsWith("]")) {
+        // Format inline : tags: [foo, bar]
+        fm.tags = val
           .slice(1, -1)
           .split(",")
           .map((v) => v.trim().replace(/^["']|["']$/g, ""));
+        i++;
+        continue;
+      } else {
+        // Format simple : tags: foo
+        fm.tags = [val.replace(/^["']|["']$/g, "")];
+        i++;
+        continue;
       }
-      fm[key] = val;
     }
+
+    if (val.startsWith('"') && val.endsWith('"')) val = val.slice(1, -1);
+    fm[key] = val;
+    i++;
   }
   return fm;
 }
@@ -71,9 +99,26 @@ function extractFrontmatter(content) {
 for (const file of getAllMdFiles(BLOG_DIR)) {
   const content = readFileSync(file, "utf-8");
   const fm = extractFrontmatter(content);
-  if (!fm || !Array.isArray(fm.tags)) continue;
+  if (!fm) {
+    issues.push({ file, type: "no-frontmatter", msg: "Pas de frontmatter" });
+    continue;
+  }
+  if (!Array.isArray(fm.tags)) {
+    issues.push({ file, type: "invalid-tags", msg: "Champ tags absent ou mal formaté" });
+    continue;
+  }
 
   const tags = fm.tags;
+
+  if (tags.length === 0) {
+    issues.push({ file, type: "empty-tags", msg: "Tags vides" });
+    continue;
+  }
+
+  const uniqueTags = new Set(tags);
+  if (uniqueTags.size !== tags.length) {
+    issues.push({ file, type: "duplicates", msg: `Tags en doublon : ${tags.filter((t, i) => tags.indexOf(t) !== i).join(", ")}` });
+  }
 
   for (const tag of tags) {
     if (forbiddenTags.has(tag)) {
