@@ -477,9 +477,9 @@ Description: Notion Sites : créez un site web depuis Notion en quelques minutes
 Tags: 
 Publié: 2024-06-25T20:59:29+02:00
 
-## Connecter les systèmes Ubuntu à Active Directory en utilisant SSSD
+## Ubuntu Active Directory SSSD : intègre tes machines Linux en 5 étapes
 URL: https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/
-Description: Connectez Ubuntu à Active Directory via SSSD pour une authentification centralisée. Guide complet : installation, configuration Kerberos et dépannage.
+Description: Ubuntu Active Directory SSSD : installe, configure Kerberos et rejoins ton domaine en quelques commandes. Testé sur Ubuntu 22.04 et 24.04.
 Tags: 
 Publié: 2024-06-13T11:40:02+02:00
 
