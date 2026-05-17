@@ -441,9 +441,9 @@ Description: Importez vos fichiers PST dans Outlook 365 avec 2 méthodes testée
 Tags: 
 Publié: 2025-02-21T10:14:37+01:00
 
-## Gérer vos fichiers sur Amazon S3 avec S3cmd : Guide complet
+## S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)
 URL: https://brandonvisca.com/gerer-fichiers-amazon-s3-avec-s3cmd/
-Description: S3cmd guide complet : installez et configurez ce client CLI open source pour gérer vos fichiers Amazon S3, synchroniser et sauvegarder vos données.
+Description: S3cmd : installer, configurer et utiliser ce client CLI pour Amazon S3. Commandes essentielles, sync, backup et chiffrement. Guide complet 2026.
 Tags: 
 Publié: 2025-02-17T17:37:40+01:00
 
