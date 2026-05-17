@@ -15,7 +15,7 @@ featured: false
 draft: false
 focusKeyword: Omarchy Linux
 ---
-> 💡 **TL;DR** : Omarchy installe Arch Linux + Hyprland clé en main. 11 thèmes préconçus, chiffrement disque obligatoire, outils dev (Neovim, Docker, Node.js) prêts à l'emploi. Parfait si tu veux la puissance d'Arch sans trois semaines de config.
+> 💡 **TL;DR** : Omarchy Linux v3.8.0 installe Arch + Hyprland clé en main. 11 thèmes, météo live, rappels intégrés, choix du browser/terminal/éditeur par défaut, outils dev prêts. Zéro config de départ.
 
 Tu cherches une distribution Linux qui allie la puissance d'Arch à l'esthétique d'un bureau moderne ? Spoiler : Omarchy pourrait bien révolutionner ta façon de bosser.
 
@@ -60,7 +60,7 @@ Contrairement à une installation Arch classique qui peut transformer même un s
 
 ### Étapes d'installation
 
-1. **[Télécharge l'ISO d'Omarchy](https://omarchy.org)** depuis le site officiel (vérifie la dernière version disponible)
+1. **[Télécharge l'ISO d'Omarchy](https://iso.omarchy.org/omarchy-3.8.0.iso)** — version actuelle v3.8.0 (SHA256 : `a9b271e8884dc123f0787e10cff3153dca7361cc6583edd1a3baa283a031f872`)
 2. **Grave sur USB** avec [balenaEtcher](https://etcher.balena.io/#download-etcher)
 3. **Boot** sur ta clé USB
 4. **Lance l'installateur** Arch
@@ -103,8 +103,11 @@ Au premier lancement, tu tombes sur un bureau… vide. Normal ! Omarchy privilé
 | `Super + Return` | Terminal |
 | `Super + B` | Navigateur |
 | `Super + K` | Aide raccourcis |
+| `Super + Ctrl + R` | Créer un rappel |
+| `Super + Ctrl + Alt + W` | Météo détaillée |
+| `Super + Ctrl + .` | Transcoder un fichier |
 
-Le menu Omarchy (`Super + Alt + Space`) est ton nouveau meilleur ami. Depuis là, tu installes des packages, tu configures le système, tu changes de thème…
+Le menu Omarchy (`Super + Alt + Space`) est ton nouveau meilleur ami. Depuis là, tu installes des packages, tu configures le système, tu changes de thème… Depuis v3.8.0, tu accèdes aussi à _Setup > Defaults_ pour choisir ton navigateur, ton terminal et ton éditeur par défaut — Chrome, Brave, Firefox, Zen, Foot, Ghostty, Neovim, Helix, Zed, tout y est.
 
 ---
 
@@ -136,7 +139,7 @@ Omarchy embarque un stack complet pour le développement.
 ### Éditeurs
 
 - Neovim avec LazyVim (éditeur principal) : si tu débutes avec Vim, mon [guide d'installation Vim](/installation-vim-guide-complet/) te donnera les bases
-- Installation facile de VS Code, Cursor, Zed via le menu
+- Installation facile de VS Code, Cursor, Zed via le menu — Zed reçoit le theming Omarchy en temps réel depuis v3.8.0
 
 ### Environnements de développement
 
@@ -151,6 +154,7 @@ Omarchy embarque un stack complet pour le développement.
 - `zoxide` pour la navigation intelligente
 - `ripgrep` pour chercher dans les fichiers
 - `lazygit` et `lazydocker` pour Git et Docker
+- Terminal **Foot** disponible via _Install > Terminal_ : remarkably light, 1/5 de la mémoire d'Alacritty, avec theming Omarchy intégré
 
 Si tu veux pousser encore plus loin, combine ça avec [Oh My Zsh + Powerlevel10k](/installation-oh-my-zsh-powerlevel10k-guide-complet/), le terminal devient franchement agréable à utiliser.
 
@@ -162,10 +166,12 @@ L'intégration est remarquable. Par exemple, dans Neovim, `Space Space` utilise 
 
 Contrairement à certaines distributions qui considèrent la sécurité comme optionnelle, Omarchy Linux l'impose :
 
-- **Chiffrement disque obligatoire** avec LUKS
+- **Chiffrement disque obligatoire** avec LUKS (par défaut)
 - **Firewall activé par défaut** (sauf ports SSH et LocalSend)
 - **Rolling release** = correctifs de sécurité en temps réel
 - **Isolation Docker** sécurisée via ufw-docker
+
+> 💡 **Serveur headless ?** Depuis v3.8.0, tu peux installer sans chiffrement en appuyant sur `Ctrl + C` à l'étape de confirmation du disque. Pratique pour un redémarrage distant sans devoir saisir la passphrase LUKS au boot.
 
 Cette approche rappelle celle que j'ai détaillée dans mon [guide de sécurisation des serveurs Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) : la sécurité doit être native, pas ajoutée après coup.
 
