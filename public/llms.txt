@@ -309,9 +309,9 @@ Description: Guide complet swap Linux 2026 : configurer un fichier swap, ajuster
 Tags: 
 Publié: 2025-07-13T22:16:30+02:00
 
-## Exchange Online : Bloquer les transferts automatiques d'emails (Guide 2025)
+## Exchange Online : bloquer les transferts email automatiques avec PowerShell (2026)
 URL: https://brandonvisca.com/exchange-online-bloquer-transferts-automatiques-emails/
-Description: Bloquez les redirections email et transferts automatiques dans Exchange Online avec PowerShell. Transport Rules, audit RBAC et scripts prêts à l'emploi.
+Description: Bloquer les transferts automatiques dans Exchange Online avec PowerShell : Transport Rules, audit RBAC et script de monitoring prêts à l'emploi.
 Tags: 
 Publié: 2025-06-14T20:02:20+02:00
 
