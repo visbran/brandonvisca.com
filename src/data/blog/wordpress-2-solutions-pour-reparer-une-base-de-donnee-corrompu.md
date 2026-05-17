@@ -12,6 +12,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: réparer wordpress
+faqs:
+  - question: "Comment savoir si ma base de données WordPress est corrompue ?"
+    answer: "Les signes typiques : erreur 'Error establishing a database connection', tableaux manquants en phpMyAdmin, ou wp_posts qui n'existe plus. Lance CHECK TABLE wp_posts; dans phpMyAdmin — si le résultat est 'Corrupt', le problème est confirmé."
+  - question: "Peut-on réparer WordPress sans accès phpMyAdmin ?"
+    answer: "Oui. Ajoute define('WP_ALLOW_REPAIR', true); dans wp-config.php puis accède à https://ton-site.com/wp-admin/maint/repair.php. WordPress propose alors une réparation et une optimisation des tables sans phpMyAdmin."
+  - question: "La réparation de base MySQL WordPress supprime-t-elle des données ?"
+    answer: "La réparation (REPAIR TABLE) est non-destructive et tente de reconstruire les tables corrompues. En cas d'échec, la dernière option est la restauration depuis une sauvegarde. Toujours sauvegarder avant toute opération."
 ---
 ## Table des matières
 

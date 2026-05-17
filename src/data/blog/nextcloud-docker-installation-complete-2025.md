@@ -11,6 +11,13 @@ tags:
   - linux
   - guide
   - intermediaire
+faqs:
+  - question: "Quelle quantité de RAM est nécessaire pour Nextcloud avec Docker ?"
+    answer: "Le minimum recommandé est 2 Go de RAM pour une instance personnelle. Pour 5-10 utilisateurs avec Office Online (Collabora), prévoir 4 Go minimum. 8 Go pour un usage familial confortable."
+  - question: "Peut-on accéder à Nextcloud depuis l'extérieur sans IP fixe ?"
+    answer: "Oui, via Cloudflare Tunnel (gratuit) ou Tailscale. Ces solutions évitent d'ouvrir des ports sur ton routeur et fonctionnent même avec une IP dynamique fournie par ton FAI."
+  - question: "Comment migrer mes fichiers depuis Google Drive vers Nextcloud ?"
+    answer: "Nextcloud propose une app officielle 'External Storage' pour importer depuis Google Drive. L'outil rclone permet aussi une migration batch en ligne de commande avec détection des doublons."
 ---
 
 🎯 TL;DR

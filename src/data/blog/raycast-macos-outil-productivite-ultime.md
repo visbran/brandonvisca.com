@@ -13,6 +13,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: Raycast macOS
+faqs:
+  - question: "Raycast est-il gratuit ?"
+    answer: "Oui. Raycast est gratuit avec toutes les fonctionnalités essentielles : launcher, extensions, snippets, clipboard history, window management. Raycast Pro (~8$/mois) ajoute l'IA, la sync cloud et les profils d'équipe."
+  - question: "Quelle est la différence entre Raycast et Alfred ?"
+    answer: "Alfred nécessite un Powerpack (35€ paiement unique) pour les Workflows. Raycast est gratuit avec un store d'extensions open source. Alfred est plus personnalisable niveau scripting ; Raycast a une meilleure UX par défaut et une communauté plus active."
+  - question: "Raycast remplace-t-il complètement Spotlight ?"
+    answer: "Oui. Raycast peut être configuré pour remplacer ⌘Space et prend en charge la recherche de fichiers, les calculs, les conversions et les actions système. Spotlight peut être désactivé sans perdre de fonctionnalité."
 ---
 > 💡 **TL;DR**
 > - Raycast est un launcher macOS **gratuit** qui remplace Spotlight — clipboard history, snippets, window management inclus

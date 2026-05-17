@@ -12,6 +12,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: compresser images mac
+faqs:
+  - question: "La conversion en WebP dégrade-t-elle la qualité des images ?"
+    answer: "WebP avec qualité 85 (paramètre par défaut de cwebp) est visuellement identique au JPEG équivalent pour l'œil humain, avec 25 à 35% de taille en moins. WebP supporte aussi le mode lossless pour une qualité 100% préservée."
+  - question: "Safari et iOS supportent-ils bien le format WebP ?"
+    answer: "Oui, depuis Safari 14 (2020) et iOS 14. WebP est aujourd'hui supporté par tous les navigateurs modernes. Si tu dois supporter IE11 ou Safari < 14, prévois un fallback JPEG via la balise <picture>."
+  - question: "Peut-on convertir plusieurs images en batch avec cette méthode ?"
+    answer: "Oui. La méthode Automator décrite dans l'article traite une sélection de fichiers en batch. Pour des milliers d'images, un script shell avec une boucle for sur cwebp est plus rapide."
 ---
 > 💡 **TL;DR**
 > - `cwebp` via Homebrew + une action Automator = compression WebP en clic droit dans le Finder

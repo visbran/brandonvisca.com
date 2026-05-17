@@ -13,6 +13,13 @@ tags:
 featured: true
 draft: false
 focusKeyword: sendme cli
+faqs:
+  - question: "Sendme fonctionne-t-il derrière un NAT strict ou un pare-feu d'entreprise ?"
+    answer: "Oui. Sendme utilise le protocole QUIC avec traversée NAT automatique via STUN/TURN. Dans les environnements très restrictifs, seul le port 443 en sortie est nécessaire."
+  - question: "Le transfert Sendme est-il chiffré de bout en bout ?"
+    answer: "Oui. Sendme utilise le chiffrement TLS 1.3 avec vérification d'intégrité BLAKE3 sur chaque chunk. Ni le serveur de relais ni un observateur réseau ne peut lire le contenu transféré."
+  - question: "Y a-t-il une limite de taille de fichier avec Sendme ?"
+    answer: "Pas de limite théorique. Sendme transfère les fichiers par chunks et supporte la reprise après coupure. Des transferts de plusieurs dizaines de Go ont été testés avec succès."
 ---
 > 💡 **TL;DR**
 > - Sendme CLI envoie des fichiers P2P en 2 commandes, sans IP, sans config SSH, sans serveur

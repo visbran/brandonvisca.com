@@ -11,6 +11,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: contrôler luminosité écran externe mac
+faqs:
+  - question: "Lunar est-il gratuit ?"
+    answer: "Lunar propose une version gratuite avec les fonctionnalités DDC de base. La version Pro (paiement unique ~23€) débloque le mode Adaptatif, la synchronisation multi-écrans et les automatisations avancées."
+  - question: "Mon écran n'est pas compatible DDC, Lunar peut-il quand même contrôler la luminosité ?"
+    answer: "Oui. Lunar propose un mode Overlay (gamma software) qui simule la réduction de luminosité via un calque sombre. Ce n'est pas aussi précis que DDC mais ça fonctionne sur n'importe quel écran."
+  - question: "Lunar fonctionne-t-il avec plusieurs écrans externes différents ?"
+    answer: "Oui. Lunar gère chaque écran indépendamment avec ses propres profils. Tu peux synchroniser la luminosité de tous les écrans ou les contrôler individuellement selon tes préférences."
 ---
 ---
 

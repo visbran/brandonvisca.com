@@ -11,6 +11,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: recherche fichiers mac rapide
+faqs:
+  - question: "Cling est-il gratuit ?"
+    answer: "Oui, Cling est entièrement gratuit et open source. Il est disponible sur le Mac App Store et sur GitHub."
+  - question: "Quelle est la différence entre Cling et Spotlight ?"
+    answer: "Spotlight utilise une correspondance exacte des termes. Cling utilise la recherche fuzzy : tu peux taper des mots approximatifs, avec des fautes ou dans le désordre, et Cling trouve quand même le fichier."
+  - question: "Cling indexe-t-il les fichiers dans les dossiers cachés ou les volumes externes ?"
+    answer: "Par défaut, Cling cherche dans les emplacements standards de macOS. Tu peux configurer les dossiers indexés dans les préférences pour inclure volumes externes et dossiers personnalisés."
 ---
 ![Interface de Cling avec barre de recherche fuzzy](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765283142/brandonviscacom/CleanShot_2025-12-09_at_13.16.42_2x_x8liqi.jpg)
 

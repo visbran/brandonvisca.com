@@ -12,6 +12,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: UptimeRobot
+faqs:
+  - question: "UptimeRobot est-il gratuit ?"
+    answer: "Oui. Le plan gratuit inclut 50 moniteurs, une vérification toutes les 5 minutes, les alertes email et une page de statut publique. Les plans payants (7$/mois) descendent à 1 minute de vérification et ajoutent les SMS."
+  - question: "Quelle est la fréquence minimale de vérification avec le plan gratuit ?"
+    answer: "5 minutes sur le plan gratuit. Les plans Solo (7$/mois) et Team (20$/mois) permettent des vérifications toutes les 60 secondes, essentielles pour les services critiques."
+  - question: "Peut-on créer une page de statut publique avec UptimeRobot ?"
+    answer: "Oui, inclus dans le plan gratuit. UptimeRobot génère une page de statut publique personnalisable avec logo et domaine custom. Elle affiche l'uptime en temps réel et les incidents passés."
 ---
 > 💡 **TL;DR**
 > - UptimeRobot surveille tes sites, serveurs et services depuis l'extérieur — si ça tombe, tu es prévenu en 5 minutes max (email, Slack, Discord, SMS)

@@ -13,6 +13,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: SnipeAgent
+faqs:
+  - question: "SnipeAgent fonctionne-t-il sans Active Directory ?"
+    answer: "Oui. SnipeAgent est un agent standalone qui s'exécute localement sur chaque machine Windows. Il ne dépend pas d'AD pour collecter et envoyer l'inventaire à Snipe-IT via l'API REST."
+  - question: "Peut-on déployer SnipeAgent sur tout un parc Windows via GPO ?"
+    answer: "Oui. SnipeAgent peut être packagé en MSI et déployé via une GPO d'installation de logiciel ou via un script PowerShell GPO. Le déploiement en masse sur des centaines de machines est documenté dans l'article."
+  - question: "SnipeAgent détecte-t-il les logiciels installés en plus du matériel ?"
+    answer: "Oui. SnipeAgent remonte le matériel (CPU, RAM, disques, carte réseau), le système d'exploitation (version, build, clé produit) et les logiciels installés (via le registre Windows)."
 ---
 > 💡 **TL;DR**
 > - SnipeAgent automatise l'inventaire Windows en alimentant Snipe-IT via son API

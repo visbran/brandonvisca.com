@@ -10,6 +10,13 @@ tags:
   - avance
   - nginx
   - guide
+faqs:
+  - question: "Quelle est la priorité entre un bloc location exact (=) et un bloc regex ?"
+    answer: "L'ordre de priorité Nginx est : 1) location = (exact), 2) location ^~ (préfixe prioritaire), 3) location ~ ou ~* (regex, premier match gagne), 4) location /prefix (préfixe le plus long). Les blocs = court-circuitent toute évaluation regex."
+  - question: "Un bloc location s'applique-t-il récursivement aux sous-dossiers ?"
+    answer: "Non par défaut. Un bloc location /api/ s'applique à /api/ et ses sous-chemins (/api/v1/, /api/users/...) mais chaque sous-chemin peut être surchargé par un bloc location plus spécifique."
+  - question: "Comment déboguer un bloc location qui ne semble pas s'appliquer ?"
+    answer: "Active les logs de debug Nginx (error_log /var/log/nginx/debug.log debug;) et utilise nginx -T pour voir la configuration compilée. L'outil nginx-config-validator permet aussi de tester les règles de matching."
 ---
 
 

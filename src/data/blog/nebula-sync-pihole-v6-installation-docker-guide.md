@@ -14,6 +14,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: Nebula-Sync
+faqs:
+  - question: "Nebula-Sync est-il compatible avec Pi-hole v5 ?"
+    answer: "Non. Nebula-Sync est conçu spécifiquement pour Pi-hole v6 qui a changé son architecture d'API. Pour Pi-hole v5, utilise Gravity Sync qui reste compatible avec l'ancienne version."
+  - question: "Que se passe-t-il si le Pi-hole principal tombe pendant la synchronisation ?"
+    answer: "La synchronisation est unidirectionnelle (principal → réplicas). Si le principal est indisponible, les réplicas continuent de filtrer avec leur dernière liste synchronisée. Aucune donnée n'est perdue."
+  - question: "Peut-on synchroniser plus de 2 Pi-hole avec Nebula-Sync ?"
+    answer: "Oui. Nebula-Sync supporte un nombre illimité de réplicas. Il suffit d'ajouter les IPs et tokens API de chaque instance Pi-hole dans la configuration YAML."
 ---
 > 💡 **TL;DR** — Nebula-Sync est le successeur de Gravity Sync compatible Pi-hole v6. Il synchronise automatiquement tes Pi-hole (listes noires, config DNS, groupes) via Docker ou binaire Go. Un docker-compose de 10 lignes suffit pour démarrer.
 

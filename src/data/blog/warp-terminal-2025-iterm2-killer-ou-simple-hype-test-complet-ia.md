@@ -14,6 +14,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: Warp Terminal
+faqs:
+  - question: "Warp Terminal est-il gratuit ?"
+    answer: "Le plan Team est gratuit pour usage personnel (1 utilisateur). Les fonctionnalités IA (Warp AI, Agent Mode) sont incluses avec un quota mensuel. Des plans payants existent pour les équipes avec partage de Warp Drive."
+  - question: "Warp Terminal fonctionne-t-il sur Linux ?"
+    answer: "Oui. Warp est disponible sur macOS et Linux (Ubuntu, Fedora, Debian). La version Windows est en développement. Les fonctionnalités sont identiques sur les deux plateformes."
+  - question: "L'IA de Warp envoie-t-elle mes commandes vers le cloud ?"
+    answer: "Les commandes tapées dans le terminal ne sont pas envoyées automatiquement. Seules les requêtes explicites à Warp AI (via # ou le panneau IA) transmettent du contenu. Warp publie sa politique de données sur son site."
 ---
 > 💡 **TL;DR**
 > - Warp Terminal = terminal en Rust avec IA intégrée (Agent Mode, Warp Drive)

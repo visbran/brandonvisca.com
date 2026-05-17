@@ -12,6 +12,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: compresser images mac automatiquement
+faqs:
+  - question: "Clop est-il gratuit ?"
+    answer: "Clop est gratuit avec des fonctionnalités de base. Une version Pro (paiement unique ~15€) débloque la compression illimitée et les préréglages avancés."
+  - question: "Quels formats d'images et vidéos Clop supporte-t-il ?"
+    answer: "Clop supporte PNG, JPEG, WebP, GIF, HEIC pour les images, et MP4, MOV, AVI pour les vidéos. Il convertit aussi automatiquement vers WebP si configuré."
+  - question: "Clop compresse-t-il avec perte ou sans perte ?"
+    answer: "Les deux modes sont disponibles. Par défaut, Clop utilise une compression avec perte légère (qualité ~85%) invisible à l'œil nu mais qui réduit la taille de 50 à 80%."
 ---
 ![Interface principale de Clop avec aperçu flottant](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
 *Légende : Interface Clop - compression automatique en arrière-plan*

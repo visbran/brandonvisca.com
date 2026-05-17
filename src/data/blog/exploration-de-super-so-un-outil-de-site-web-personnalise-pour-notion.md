@@ -9,6 +9,13 @@ tags:
   - productivite
   - debutant
   - guide
+faqs:
+  - question: "Super.so est-il gratuit ?"
+    answer: "Super.so propose un essai gratuit de 14 jours. Ensuite, les plans payants commencent à 16$/mois (Basic) ou 24$/mois (Pro) avec domaine personnalisé, SEO avancé et analytics."
+  - question: "Peut-on utiliser Super.so avec un domaine personnalisé ?"
+    answer: "Oui, à partir du plan Basic. Tu configures ton DNS pour pointer vers les serveurs Super.so et le site est accessible sur ton domaine en quelques minutes."
+  - question: "Super.so est-il une bonne alternative à WordPress ou Ghost ?"
+    answer: "Pour un site vitrine ou un blog léger, oui. Super.so est idéal si ton contenu est déjà dans Notion. Pour un site e-commerce ou avec des plugins complexes, WordPress reste plus adapté."
 ---
 
 

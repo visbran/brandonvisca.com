@@ -12,6 +12,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: fichier PST dans Outlook 365
+faqs:
+  - question: "Peut-on importer un PST dans Outlook 365 sans installer le client lourd (desktop) ?"
+    answer: "Non, l'import PST natif nécessite Outlook desktop (Windows ou Mac). Outlook Web (OWA) ne supporte pas l'import PST. Des outils tiers comme XstReader permettent de lire un PST sans Outlook."
+  - question: "Quelle est la taille maximale d'un fichier PST supportée par Outlook 365 ?"
+    answer: "Outlook 365 supporte les PST jusqu'à 50 Go. Au-delà, l'import peut échouer ou être très lent. La recommandation Microsoft est de scinder les gros PST avant import."
+  - question: "Comment lire un fichier PST sans avoir Outlook installé ?"
+    answer: "XstReader (gratuit, open source) permet de lire les PST et OST sur Windows et Linux sans Outlook. Il supporte la recherche, l'export en EML et l'affichage des pièces jointes."
 ---
 > 💡 **TL;DR**
 > - Microsoft a supprimé l'import PST du nouvel Outlook 365 — mais deux alternatives fonctionnent

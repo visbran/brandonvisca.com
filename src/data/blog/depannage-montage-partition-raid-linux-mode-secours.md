@@ -10,6 +10,13 @@ tags:
   - avance
   - homelab
   - guide
+faqs:
+  - question: "Peut-on monter un RAID mdadm dégradé avec un seul disque fonctionnel ?"
+    answer: "Oui. La commande mdadm --assemble --force /dev/md0 /dev/sda1 force l'assemblage en mode dégradé. Le RAID est montable en lecture, mais rebuilder immédiatement sur un nouveau disque est impératif."
+  - question: "Comment identifier les membres d'un RAID en mode secours sans /etc/mdadm.conf ?"
+    answer: "Utilise mdadm --examine /dev/sdX sur chaque disque. La sortie affiche l'UUID du RAID, le nombre de membres et l'état de chaque disque. Tu peux reconstruire le tableau même sans configuration sauvegardée."
+  - question: "La commande mount -t ext4 échoue avec wrong fs type, que signifie cette erreur ?"
+    answer: "Cette erreur signifie que le système de fichiers n'est pas directement sur /dev/md0, mais sur une partition du RAID (ex: /dev/md0p1). Vérifie avec lsblk ou fdisk -l /dev/md0 pour voir les partitions du volume RAID."
 ---
 
 

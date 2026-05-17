@@ -12,6 +12,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: Auto-hébergement
+faqs:
+  - question: "Combien coûte une infrastructure auto-hébergée par mois ?"
+    answer: "Entre 5€ et 20€/mois en électricité pour un mini PC ou Raspberry Pi. Un VPS chez Hetzner (2 vCPU, 4 Go RAM) coûte ~4€/mois et convient pour Nextcloud + Vaultwarden. Contre 60 à 120€/an pour Google One + 1Password + Plex."
+  - question: "Faut-il des compétences avancées en Linux pour quitter Google ?"
+    answer: "Les bases suffisent : savoir utiliser un terminal, éditer un fichier de configuration, lancer docker compose up. Des guides comme celui-ci couvrent chaque étape. L'apprentissage se fait progressivement."
+  - question: "L'auto-hébergement est-il aussi fiable que les services Google ?"
+    answer: "Avec de bonnes sauvegardes (règle 3-2-1) et une UPS, un homelab bien configuré peut atteindre 99.5 à 99.9% d'uptime. La différence principale : la maintenance est de ta responsabilité, pas de celle de Google."
 ---
 TL;DR
 -----

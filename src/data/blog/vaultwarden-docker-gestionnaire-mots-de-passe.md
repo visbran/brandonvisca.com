@@ -14,6 +14,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: vaultwarden
+faqs:
+  - question: "Vaultwarden est-il compatible avec les apps Bitwarden officielles ?"
+    answer: "Oui. Vaultwarden implémente l'API Bitwarden complète. Les apps Bitwarden (iOS, Android, Chrome, Firefox, macOS, Windows) se connectent à Vaultwarden en changeant uniquement l'URL du serveur dans les paramètres."
+  - question: "Faut-il une adresse IP fixe pour héberger Vaultwarden chez soi ?"
+    answer: "Non. Cloudflare Tunnel (gratuit) permet d'exposer Vaultwarden sur un domaine HTTPS sans IP fixe ni ouverture de ports. C'est la méthode recommandée pour les connexions depuis l'extérieur."
+  - question: "Comment migrer de 1Password vers Vaultwarden ?"
+    answer: "1Password permet d'exporter au format CSV ou .1pux. Bitwarden/Vaultwarden dispose d'un outil d'import natif qui supporte les exports 1Password, LastPass et KeePass. La migration prend moins de 5 minutes."
 ---
 > 💡 **TL;DR**
 > - Vaultwarden est une implémentation Rust du serveur Bitwarden, toutes les fonctionnalités Premium, 512 Mo RAM, 0€ si tu as déjà un serveur

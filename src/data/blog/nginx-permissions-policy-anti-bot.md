@@ -11,6 +11,13 @@ tags:
   - nginx
   - guide
   - hardening
+faqs:
+  - question: "Le header Permissions-Policy remplace-t-il l'ancien Feature-Policy ?"
+    answer: "Oui. Permissions-Policy est le successeur standardisé de Feature-Policy. La syntaxe a changé (plus de guillemets, nouvelle notation) mais le concept est identique. Feature-Policy est déprécié depuis Chrome 88."
+  - question: "Comment bloquer les bots sans affecter les vrais utilisateurs avec Permissions-Policy ?"
+    answer: "Permissions-Policy contrôle les APIs navigateur (caméra, micro, géolocalisation), pas le trafic bot. Pour bloquer les bots, combiner fail2ban sur les logs Nginx + règles de rate limiting + Cloudflare Bot Management."
+  - question: "Peut-on tester ma Permissions-Policy sans la mettre en production ?"
+    answer: "Oui. Dans Chrome DevTools, l'onglet Application > Permissions Policy affiche les permissions autorisées et bloquées sur la page courante. L'extension Security Headers permet aussi d'analyser les headers en temps réel."
 ---
 
 

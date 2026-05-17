@@ -14,6 +14,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: vim
+faqs:
+  - question: "Quelle est la différence entre Vim et NeoVim ?"
+    answer: "NeoVim est un fork de Vim avec une architecture moderne : support Lua natif, LSP intégré, async par défaut et une API plus riche. Vim reste plus léger. Pour débuter, Vim est suffisant ; NeoVim s'impose pour un IDE complet."
+  - question: "vim-plug vs Vundle vs Lazy.nvim : lequel choisir ?"
+    answer: "Pour Vim classique, vim-plug est le gestionnaire le plus populaire : simple, rapide, supporte l'installation en parallèle. Vundle est obsolète. Pour NeoVim, Lazy.nvim est le standard actuel."
+  - question: "Comment sauvegarder et synchroniser ma configuration Vim entre machines ?"
+    answer: "Versionne ton .vimrc (et le dossier ~/.vim/plugged si nécessaire) dans un dépôt Git de dotfiles. Une commande git pull + vim +PlugInstall recrée l'environnement complet sur n'importe quelle machine."
 ---
 > 💡 **TL;DR** — Vim est disponible sur macOS via Homebrew (`brew install vim`) et sur Linux via le gestionnaire de paquets natif. Un `.vimrc` de 15 lignes suffit pour un éditeur fonctionnel. Ajoute vim-plug pour les plugins, NERDTree pour l'arbre de fichiers, FZF pour la recherche.
 

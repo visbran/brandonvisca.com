@@ -9,6 +9,13 @@ tags:
   - productivite
   - debutant
   - guide
+faqs:
+  - question: "Music Decoy est-il totalement gratuit ?"
+    answer: "Oui, Music Decoy est gratuit et open source (disponible sur GitHub). Il ne demande aucun abonnement ni paiement unique."
+  - question: "Music Decoy bloque-t-il uniquement Apple Music ou aussi Spotify ?"
+    answer: "Music Decoy cible spécifiquement Apple Music (et l'ancienne app iTunes). Il s'enregistre comme handler par défaut de la touche Play pour intercepter les événements avant qu'Apple Music ne les reçoive."
+  - question: "Faut-il laisser Music Decoy dans les éléments de connexion macOS ?"
+    answer: "Oui. Music Decoy doit être actif en arrière-plan pour intercepter les touches média. Ajoute-le dans Réglages Système > Général > Éléments de connexion pour qu'il démarre automatiquement."
 ---
 
 TL;DR

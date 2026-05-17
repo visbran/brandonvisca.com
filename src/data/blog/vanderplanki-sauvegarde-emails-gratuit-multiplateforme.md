@@ -11,6 +11,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: Vanderplanki
+faqs:
+  - question: "Vanderplanki supporte-t-il Gmail, Outlook et d'autres fournisseurs ?"
+    answer: "Oui. Vanderplanki supporte tous les fournisseurs IMAP standard : Gmail, Outlook, Proton Mail (via bridge), Fastmail, et tout serveur IMAP auto-hébergé (Dovecot, Postfix)."
+  - question: "Les emails sauvegardés par Vanderplanki sont-ils chiffrés ?"
+    answer: "Oui. Vanderplanki chiffre les sauvegardes avec AES-256 avant de les stocker. Seul ton mot de passe (ou clé) permet de déchiffrer les données — même l'équipe Vanderplanki ne peut pas accéder à tes emails."
+  - question: "Peut-on restaurer des emails depuis une sauvegarde Vanderplanki ?"
+    answer: "Oui. La restauration se fait depuis l'interface Vanderplanki : tu sélectionnes les emails ou dossiers à restaurer et les réimporter dans n'importe quel compte IMAP compatible."
 ---
 > 💡 **TL;DR**
 > - Vanderplanki est un outil gratuit de sauvegarde d'emails, développé par les fondateurs de MailStore — contrairement à son prédécesseur, il tourne sur Windows, macOS **et** Linux

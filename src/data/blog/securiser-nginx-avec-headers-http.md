@@ -11,6 +11,13 @@ tags:
   - nginx
   - guide
   - hardening
+faqs:
+  - question: "Ces headers HTTP causent-ils des problèmes avec WordPress ou Prestashop ?"
+    answer: "Certains oui. X-Frame-Options: DENY bloque les iframes — à remplacer par SAMEORIGIN pour les back-offices. Le header CSP est celui qui casse le plus souvent les plugins tiers : déployer en Report-Only d'abord."
+  - question: "Faut-il appliquer ces headers sur tous les virtual hosts Nginx ?"
+    answer: "Recommandé. Place les headers dans un fichier snippet (/etc/nginx/snippets/security-headers.conf) et inclus-le dans chaque virtual host avec include snippets/security-headers.conf;. Cela évite la duplication."
+  - question: "Comment vérifier que mes headers HTTP sont bien actifs sur mon site ?"
+    answer: "Utilise securityheaders.com (scan gratuit) ou curl -I https://ton-site.com pour voir tous les headers de réponse. Tu peux aussi inspecter l'onglet Réseau de Chrome DevTools sur n'importe quelle page."
 ---
 
 

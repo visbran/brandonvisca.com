@@ -12,6 +12,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: Omarchy Linux
+faqs:
+  - question: "Omarchy est-il compatible avec les cartes graphiques AMD et Intel (sans Nvidia) ?"
+    answer: "Oui. Omarchy est développé et testé principalement sur AMD (RDNA) et Intel (Iris Xe). Le support Nvidia existe mais est moins stable avec Hyprland sous Wayland — préférer les cartes AMD ou Intel."
+  - question: "Peut-on installer Omarchy sur une machine existante sans réinstaller Arch ?"
+    answer: "Omarchy est conçu comme une installation complète sur Arch Linux. Un script d'installation automatise tout depuis une Arch minimale. L'appliquer sur un Arch déjà configuré est possible mais non officiel."
+  - question: "Omarchy fonctionne-t-il bien sur laptop avec gestion de batterie ?"
+    answer: "Oui. Omarchy inclut power-profiles-daemon et auto-cpufreq pour la gestion d'énergie. La consommation en idle est comparable à d'autres distros Wayland modernes."
 ---
 > 💡 **TL;DR** : Omarchy Linux v3.8.0 installe Arch + Hyprland clé en main. 11 thèmes, météo live, rappels intégrés, choix du browser/terminal/éditeur par défaut, outils dev prêts. Zéro config de départ.
 

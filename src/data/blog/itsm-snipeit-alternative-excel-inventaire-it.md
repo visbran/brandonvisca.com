@@ -10,6 +10,13 @@ tags:
   - debutant
   - snipeit
   - guide
+faqs:
+  - question: "Snipe-IT est-il vraiment gratuit, même pour une entreprise ?"
+    answer: "Oui, Snipe-IT est open source (AGPL v3) et gratuit à auto-héberger sans limite d'actifs ni d'utilisateurs. Une version cloud hébergée est disponible à partir de 39,99$/mois si tu ne veux pas gérer l'infra."
+  - question: "Peut-on importer un inventaire Excel existant dans Snipe-IT ?"
+    answer: "Oui. Snipe-IT propose un import CSV natif. Il suffit de mapper les colonnes de ton Excel (nom, numéro de série, modèle, assignation) avec les champs Snipe-IT et d'importer le fichier depuis l'interface admin."
+  - question: "Combien d'actifs IT peut-on gérer avec Snipe-IT ?"
+    answer: "Il n'y a pas de limite technique. Des déploiements en production gèrent des dizaines de milliers d'actifs. La seule limite est les ressources du serveur qui héberge l'instance."
 ---
 
 

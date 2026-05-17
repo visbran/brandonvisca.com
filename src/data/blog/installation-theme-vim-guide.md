@@ -12,6 +12,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: catppuccin
+faqs:
+  - question: "Le thème Catppuccin fonctionne-t-il dans un terminal sans interface graphique ?"
+    answer: "Oui, à condition que ton terminal supporte les 256 couleurs ou True Color. Ajoute set termguicolors dans ton .vimrc et vérifie que TERM=xterm-256color est défini."
+  - question: "Mon terminal n'affiche pas les bonnes couleurs après l'installation, pourquoi ?"
+    answer: "Le problème vient généralement de la variable TERM mal configurée. Assure-toi que ton terminal est déclaré comme xterm-256color ou tmux-256color si tu utilises tmux. Dans .vimrc : set t_Co=256."
+  - question: "Catppuccin est-il compatible avec NeoVim ?"
+    answer: "Oui. Il existe un plugin Catppuccin dédié à NeoVim (catppuccin/nvim) optimisé pour Lua et les plugins NeoVim modernes comme Telescope, Treesitter et LSP."
 ---
 > 💡 **TL;DR** — Catppuccin est le thème Vim le plus populaire en 2025. Installe vim-plug, ajoute 2 lignes dans ton `.vimrc`, lance `:PlugInstall`. C'est tout. Si les couleurs ne s'affichent pas, ajoute `set termguicolors` dans ton `.vimrc`.
 

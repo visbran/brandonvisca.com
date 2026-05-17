@@ -10,6 +10,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: outils low tech macos
+faqs:
+  - question: "Ces outils fonctionnent-ils sur Apple Silicon (M1/M2/M3/M4) ?"
+    answer: "Oui, tous les outils listés sont compilés nativement pour Apple Silicon. Aucune émulation Rosetta 2 nécessaire."
+  - question: "Puis-je les installer tous d'un coup via Homebrew ?"
+    answer: "Oui. Un Brewfile généré depuis ces outils permet d'installer tout l'environnement en une commande : brew bundle --file=Brewfile."
+  - question: "Ces outils sont-ils compatibles avec macOS Sequoia (2025) ?"
+    answer: "Oui, la liste a été vérifiée sur macOS Sequoia. Chaque outil est maintenu activement et reçoit des mises à jour régulières."
 ---
 ![Bannière des 10 outils Low-Tech pour macOS](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
 

@@ -10,6 +10,13 @@ tags:
   - guide
   - sysadmin
   - avance
+faqs:
+  - question: "Peut-on transférer les rôles FSMO sans redémarrer le serveur ?"
+    answer: "Oui. Le transfert FSMO via ntdsutil ou PowerShell s'effectue à chaud, sans redémarrage du contrôleur de domaine source ni cible."
+  - question: "Que se passe-t-il si le DC portant les rôles FSMO tombe définitivement ?"
+    answer: "Il faut alors procéder à une saisie forcée (seize) des rôles depuis ntdsutil. Cette opération est irréversible — l'ancien DC ne peut plus rejoindre le domaine ensuite."
+  - question: "Combien de contrôleurs de domaine faut-il avant de redistribuer les rôles FSMO ?"
+    answer: "Au minimum 2 DC. Microsoft recommande de répartir les 5 rôles sur 2 DC : PDC Emulator + RID Master + Infrastructure Master sur le DC principal, Schema Master + Domain Naming Master sur le second."
 ---
 
 

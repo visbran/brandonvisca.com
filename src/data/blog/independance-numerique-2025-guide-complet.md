@@ -13,6 +13,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: Indépendance numérique 2025
+faqs:
+  - question: "Quel serveur minimum pour faire tourner Nextcloud + Jellyfin + Vaultwarden ?"
+    answer: "Un Raspberry Pi 5 (8 Go RAM) ou un mini PC type Beelink (N100, 16 Go RAM) suffit pour un usage familial. Pour Jellyfin avec transcodage, prévoir un CPU avec Quick Sync ou une GPU dédiée."
+  - question: "Faut-il une adresse IP fixe pour auto-héberger ses services ?"
+    answer: "Non obligatoire. Des solutions comme Cloudflare Tunnel ou Tailscale permettent d'exposer ses services sans IP fixe ni ouverture de ports sur le routeur."
+  - question: "L'auto-hébergement est-il aussi fiable que Google Drive ou Gmail ?"
+    answer: "La fiabilité dépend de votre infrastructure. Avec des sauvegardes 3-2-1 et une alimentation ondulée (UPS), un homelab bien configuré peut atteindre 99.9% d'uptime. Google garantit 99.9% en SLA."
 ---
 🎯 TL;DR
 -------

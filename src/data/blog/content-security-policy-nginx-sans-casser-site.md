@@ -10,6 +10,13 @@ tags:
   - nginx
   - avance
   - guide
+faqs:
+  - question: "Comment tester une CSP sans risquer de casser le site en production ?"
+    answer: "Utilise d'abord le header Content-Security-Policy-Report-Only avec une URL report-uri. Le navigateur signale les violations sans bloquer quoi que ce soit, ce qui te permet d'ajuster la politique avant de l'activer."
+  - question: "Ma CSP bloque Google Analytics ou Google Tag Manager, que faire ?"
+    answer: "Ajoute les domaines Google aux directives script-src et connect-src : 'https://www.googletagmanager.com' et 'https://www.google-analytics.com'. Pour GTM, le nonce-based CSP est la solution la plus propre."
+  - question: "Une CSP protège-t-elle contre toutes les attaques XSS ?"
+    answer: "Non, la CSP est une couche de défense supplémentaire, pas une solution complète. Elle réduit fortement l'impact d'une XSS en empêchant l'exécution de scripts non autorisés, mais ne remplace pas la validation des entrées."
 ---
 
 

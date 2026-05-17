@@ -10,6 +10,13 @@ tags:
   - avance
   - snipeit
   - ldap
+faqs:
+  - question: "Faut-il une version payante de Snipe-IT pour utiliser LDAP ?"
+    answer: "Non. L'intégration LDAP/Active Directory est incluse dans la version open source gratuite de Snipe-IT. Aucun abonnement n'est requis."
+  - question: "Peut-on synchroniser Snipe-IT avec Active Directory en temps réel ?"
+    answer: "Pas en temps réel natif. La sync LDAP est déclenchée manuellement ou via cron job. Les modifications AD (nouveaux comptes, départs) sont importées au prochain cycle de synchronisation."
+  - question: "Les notifications Teams nécessitent-elles un abonnement Microsoft 365 ?"
+    answer: "Non. Les notifications passent par les webhooks entrants Teams, disponibles dans tous les plans Microsoft 365 y compris les plans gratuits Teams Essentials."
 ---
 
 Tu as réussi ton [installation SnipeIT Ubuntu](https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/), tu as un inventaire qui fonctionne, mais maintenant tu veux passer au **niveau ninja**. La **configuration avancée SnipeIT** va transformer ton installation basique en machine de guerre IT.

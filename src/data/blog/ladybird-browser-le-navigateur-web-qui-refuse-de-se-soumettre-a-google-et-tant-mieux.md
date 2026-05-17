@@ -9,6 +9,13 @@ tags:
   - linux
   - macos
   - intermediaire
+faqs:
+  - question: "Ladybird est-il disponible au téléchargement aujourd'hui ?"
+    answer: "Des builds de développement sont disponibles sur GitHub pour Linux et macOS, mais Ladybird n'est pas encore prêt pour un usage quotidien. La première release stable est prévue pour 2026."
+  - question: "Ladybird utilise-t-il WebKit, Blink ou son propre moteur ?"
+    answer: "Ladybird utilise LibWeb, un moteur de rendu développé from scratch dans le cadre du projet SerenityOS. Il ne dépend ni de Blink (Chrome) ni de WebKit (Safari), ni de Gecko (Firefox)."
+  - question: "Ladybird accepte-t-il les extensions Chrome ou Firefox ?"
+    answer: "Non. Ladybird n'est pas compatible avec les extensions Chrome (Manifest V3) ni Firefox. Sa propre API d'extensions n'est pas encore définie — c'est prévu après la release stable de 2026."
 ---
 
 

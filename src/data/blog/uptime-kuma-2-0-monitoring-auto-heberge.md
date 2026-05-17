@@ -13,6 +13,13 @@ tags:
 featured: true
 draft: false
 focusKeyword: Uptime Kuma
+faqs:
+  - question: "Uptime Kuma 2.0 est-il rétrocompatible avec les données de la version 1 ?"
+    answer: "Oui, avec migration. Uptime Kuma 2.0 fournit un outil de migration officiel qui convertit la base SQLite v1 vers MariaDB v2. La migration est documentée dans l'article avec les commandes exactes."
+  - question: "Combien de moniteurs peut-on créer gratuitement avec Uptime Kuma ?"
+    answer: "Il n'y a pas de limite. Uptime Kuma est open source et auto-hébergé — tu peux créer autant de moniteurs que ton serveur le permet. Des instances en prod surveillent plusieurs centaines de services."
+  - question: "Uptime Kuma supporte-t-il les alertes Telegram, Discord et Slack ?"
+    answer: "Oui. Uptime Kuma propose plus de 90 intégrations natives : Telegram, Discord, Slack, Teams, PagerDuty, email SMTP, ntfy, Signal et bien d'autres. Tout se configure depuis l'interface web sans fichier de config."
 ---
 > 💡 **TL;DR**
 > - Uptime Kuma 2.0 introduit MariaDB (exit SQLite pour les gros setups), Docker rootless et 90+ canaux de notification dont Home Assistant
