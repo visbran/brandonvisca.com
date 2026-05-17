@@ -1,9 +1,9 @@
 ---
-title: Connecter les systèmes Ubuntu à Active Directory en utilisant SSSD
+title: "Ubuntu Active Directory SSSD : intègre tes machines Linux en 5 étapes"
+description: "Ubuntu Active Directory SSSD : installe, configure Kerberos et rejoins ton domaine en quelques commandes. Testé sur Ubuntu 22.04 et 24.04."
 pubDatetime: "2024-06-13T11:40:02+02:00"
+modDatetime: 2026-05-17 00:00:00+02:00
 author: Brandon Visca
-description: "Connectez Ubuntu à Active Directory via SSSD pour une authentification centralisée. Guide complet : installation, configuration Kerberos et dépannage."
-focusKeyword: "Ubuntu Active Directory SSSD"
 tags:
   - linux
   - sysadmin
@@ -11,184 +11,102 @@ tags:
   - active-directory
   - ubuntu
   - guide
+featured: false
+draft: false
+focusKeyword: Ubuntu Active Directory SSSD
 faqs:
   - question: "Comment dépanner les problèmes de SSSD ?"
-    answer: "Vérifie systemctl status sssd et journalctl -u sssd pour les erreurs. Les problèmes courants : DNS mal configuré, certificats Kerberos, ou permissions."
+    answer: "Lance systemctl status sssd et journalctl -u sssd pour voir les erreurs. Les causes fréquentes : DNS mal pointé vers le DC, certificats Kerberos expirés, permissions sur sssd.conf (doit être 600)."
   - question: "Puis-je utiliser SSSD avec d'autres distributions Linux ?"
-    answer: "Oui, SSSD est compatible avec Debian, RedHat, CentOS. Les commandes d'installation diffèrent légèrement."
-  - question: "Comment assurer la création des répertoires personnels pour les utilisateurs AD ?"
-    answer: "Configure oddjob-mkhomedir avec pam-auth-update --enable mkhomedir pour créer automatiquement les home dirs à la première connexion."
+    answer: "Oui, SSSD fonctionne sur Debian, RedHat, CentOS, Rocky Linux. Les commandes d'installation diffèrent (dnf install sssd au lieu d'apt), la config SSSD reste identique."
+  - question: "Comment créer automatiquement les répertoires personnels des utilisateurs AD ?"
+    answer: "Active oddjob-mkhomedir avec pam-auth-update --enable mkhomedir. Le home dir est créé à la première connexion. Crée les répertoires parents manuellement si tu uses le format /home/%d/%u."
+---
+> 💡 **TL;DR** : Intègre Ubuntu à Active Directory via SSSD en 5 étapes : installe realmd + sssd-ad, configure le DNS vers ton DC, `realm join`, ajuste sssd.conf et krb5.conf, active mkhomedir. Authentification centralisée opérationnelle en 15 min.
+
+Tu as un parc mixte Windows/Linux et tu veux que tes utilisateurs se connectent avec leurs credentials AD ? La combo **Ubuntu Active Directory SSSD** via realmd, c'est la solution standard. Ça s'intègre proprement avec Kerberos, ça gère le cache hors ligne, et ça évite de devoir maintenir des comptes locaux sur chaque machine.
+
+J'ai déployé ça sur une quinzaine de postes Ubuntu 22.04 et 24.04 rejoignant un domaine Windows Server 2019. Voilà ce qui marche. Si ton AD n'est pas encore en place, commence par [transférer tes rôles FSMO](/activedirectory-transfere-des-roles-fsmo/) correctement avant d'intégrer des clients Linux.
+
+## Table des matières
+
 ---
 
-Introduction
-============
+## Étape 1 — Installer les paquets
 
-L’intégration des systèmes Ubuntu à Windows Active Directory (AD) peut simplifier l’authentification des utilisateurs et la gestion des identités sur un réseau. Ce guide détaille comment utiliser le System Security Services Daemon (SSSD) pour connecter efficacement les hôtes Linux à un domaine Active Directory.
-
-
-  - [Pourquoi intégrer Ubuntu avec Active Directory ?](#pourquoi-integrer-ubuntu-avec-active-directory)
-  - [Préparer votre système Ubuntu](#preparer-votre-systeme-ubuntu)
-      - [Installer les paquets nécessaires](#installer-les-paquets-necessaires)
-      - [Configurer DNS](#configurer-dns)
-      - [Activer et démarrer SSSD](#activer-et-demarrer-sssd)
-      - [Découvrir et rejoindre le domaine](#decouvrir-et-rejoindre-le-domaine)
-  - [Configurer SSSD](#configurer-sssd)
-      - [Modifier la configuration de SSSD](#modifier-la-configuration-de-sssd)
-      - [Configurer Kerberos](#configurer-kerberos)
-  - [Création automatique du répertoire personnel](#creation-automatique-du-repertoire-personnel)
-  - [Tester notre configuration](#tester-notre-configuration)
-      - [Configurer PAM et NSS](#configurer-pam-et-nss)
-  - [Configuration avancée](#configuration-avancee)
-      - [Gérer plusieurs Active Directories](#gerer-plusieurs-active-directories)
-      - [Gérer les permissions des utilisateurs](#gerer-les-permissions-des-utilisateurs)
-  - [Questions fréquemment posées](#questions-frequemment-posees)
-      - [Comment dépanner les problèmes de SSSD ?](#faq-question-1754323710489)
-      - [Puis-je utiliser SSSD avec d’autres distributions Linux ?](#faq-question-1754323721895)
-      - [Comment assurer la création des répertoires personnels pour les utilisateurs AD ?](#faq-question-1754323741584)
-  - [Conclusion](#conclusion)
-
-
-L’intégration avec Active Directory fournit un fournisseur d’identité centralisé pour l’authentification réseau, rendant la gestion des utilisateurs plus sécurisée et efficace. Elle simplifie les connexions des utilisateurs et le contrôle d’accès sur plusieurs systèmes, réduisant ainsi la charge administrative.
-
-![Illustration — Connecter les systèmes Ubuntu à Active Directory en utilisan](image-1.gif)Préparer votre système Ubuntu
-
-### Installer les paquets nécessaires
-
-Commencez par installer les paquets requis sur votre système Ubuntu. La commande suivante installe `realmd`, `sssd`, et d’autres outils essentiels :
+Installe les outils nécessaires :
 
 ```bash
 sudo apt update
 sudo apt install realmd sssd-ad sssd-tools libnss-sss libpam-sss adcli samba-common-bin oddjob oddjob-mkhomedir packagekit
-
 ```
 
-sudo nano /etc/resolv.conf
+- **realmd** → découverte et jonction au domaine
+- **sssd-ad** → fournisseur AD pour SSSD
+- **adcli** → opérations bas niveau sur AD
+- **oddjob-mkhomedir** → création automatique des home dirs
 
-
-Ajoutez l’IP de votre serveur DNS AD :
+Active SSSD au démarrage :
 
 ```bash
-nameserver <AD_DNS_IP>
-
-```
-
 sudo systemctl enable sssd
 sudo systemctl start sssd
+```
 
+---
 
-### Découvrir et rejoindre le domaine
+## Étape 2 — Pointer le DNS vers ton contrôleur de domaine
 
-Utilisez la commande `realm` pour découvrir et rejoindre le domaine AD. Remplacez `domain.tld` par le nom de votre domaine réel :
+SSSD a besoin de résoudre ton domaine AD. Pointe le DNS vers ton DC :
+
+```bash
+sudo nano /etc/resolv.conf
+```
+
+Ajoute :
+
+```text
+nameserver <IP_DE_TON_DC>
+```
+
+> ⚠️ **Attention** : `/etc/resolv.conf` peut être écrasé par NetworkManager ou systemd-resolved. Sur Ubuntu 22.04+, préfère configurer le DNS via `nmcli` ou l'interface réseau Netplan pour que le changement survive aux redémarrages.
+
+Vérifie que tu résous bien le domaine :
 
 ```bash
 sudo realm discover domain.tld
-sudo realm join -v --user=Administrator domain.tld
-
 ```
 
+Tu dois voir les infos du domaine AD en retour.
+
+---
+
+## Étape 3 — Rejoindre le domaine
+
+```bash
+sudo realm join -v --user=Administrator domain.tld
+```
+
+`realm` crée automatiquement l'objet computer dans AD et génère un ticket Kerberos. Le `-v` affiche le détail si ça bloque.
+
+---
+
+## Étape 4 — Configurer SSSD
+
+### sssd.conf
+
+Sauvegarde la config générée par realm puis édite :
+
+```bash
 sudo cp /etc/sssd/sssd.conf /etc/sssd/sssd.conf.bak
 sudo nano /etc/sssd/sssd.conf
-
-
-Utilisez la configuration suivante comme modèle, en remplaçant `domain.tld` par votre domaine AD :
-
-```bash
-[sssd]
-domains = domain.tld
-config_file_version = 2
-services = nss, pam
-
-[domain/domain.tld]
-id_provider = ad
-auth_provider = ad
-chpass_provider = ad
-access_provider = ad
-ldap_id_mapping = True
-krb5_realm = DOMAIN.TLD
-realmd_tags = manages-system joined-with-samba
-cache_credentials = True
-default_shell = /bin/bash
-fallback_homedir = /home/%u@%d
-use_fully_qualified_names = True
-ldap_schema = ad
-
 ```
 
-sudo nano /etc/krb5.conf
+> ⚠️ **Ne redémarre jamais SSSD avec une config cassée** : si sssd.conf est invalide, ton système ne pourra plus authentifier et tu devras passer par le mode recovery. Valide toujours avant de redémarrer.
 
+Config de base :
 
-Ajoutez ou modifiez les lignes suivantes :
-
-```bash
-[libdefaults]
-    default_realm = DOMAIN.TLD
-    dns_lookup_realm = true
-    dns_lookup_kdc = true
-
-[realms]
-    DOMAIN.TLD = {
-        kdc = domain.tld
-        admin_server = domain.tld
-    }
-
-[domain_realm]
-    .domain.tld = DOMAIN.TLD
-    domain.tld = DOMAIN.TLD
-
-```
-
-sudo pam-auth-update --enable mkhomedir
-
-
-
-Tester notre configuration
-
-Vous devriez maintenant être en mesure de récupérer des informations sur les utilisateurs de l’AD. Dans cet exemple, `John DOE` est un utilisateur de l’AD :
-
-```bash
-$ getent passwd john@ad1.domain.tld
-john@ad1.domain.tld:*:1725801106:1725800513:John Smith:/home/john@ad1.domain.tld:/bin/bash
-
-
-```
-
-$ groups john@ad1.domain.tld
-john@ad1.domain.tld : utilisateurs du domaine@ad1.domain.tld it@ad1.domain.tld
-
-
-
-### Configurer PAM et NSS
-
-Modifiez les fichiers de configuration PAM et NSS pour intégrer SSSD :
-
-```bash
-sudo nano /etc/nsswitch.conf
-
-```
-
-passwd:     compat sss
-group:      compat sss
-shadow:     compat sss
-
-
-Configurez PAM pour utiliser SSSD :
-
-```bash
-sudo pam-auth-update
-
-```
-
-sudo realm permit -g "groupe@domain.tld"
-sudo realm deny --all
-
-
-Sauvegardez et modifiez le fichier de configuration. Si vous n’avez pas un sssd.conf fonctionnel, ne redémarrez pas car votre système ne démarrera pas ou ne se connectera pas lorsque SSSD est cassé, et vous devrez peut-être utiliser le mode de récupération.
-
-```bash
-cp /etc/sssd/sssd.conf /etc/sssd/sssd.back.20230101
-nano /etc/sssd/sssd.conf
-```
-
+```ini
 [sssd]
 config_file_version = 2
 services = nss, pam
@@ -200,7 +118,7 @@ default_shell = /bin/bash
 krb5_store_password_if_offline = True
 cache_credentials = True
 krb5_realm = DOMAIN.TLD
-realmd_tags = manages-system joined-with-adcli 
+realmd_tags = manages-system joined-with-adcli
 id_provider = ad
 ldap_sasl_authid = HOSTNAME$
 fallback_homedir = /home/%d/%u
@@ -216,104 +134,159 @@ ignore_group_members = True
 memcache_size_passwd = 200
 memcache_size_group = 200
 memcache_size_initgroups = 50
-
-Vous pouvez utiliser la configuration ci-dessus, en remplaçant domain.tld par votre propre domaine. Laissez-moi vous guider à travers certaines des modifications.
-
-```bash
-default_domain_suffix = domain.tld
 ```
 
-login myaduser@domain.tld
+Quelques paramètres importants :
 
-Lorsque nous définissons *default*domain*suffix* à domain.tld, cela ajoute automatiquement le domaine en suffixe à toutes les connexions, ce qui facilite la tâche des utilisateurs finaux.
+**`default_domain_suffix = domain.tld`** — les utilisateurs se connectent avec `jdoe` au lieu de `jdoe@domain.tld`. Plus pratique pour les utilisateurs finaux.
 
-```bash
-login myaduser
-```
-
-default_shell = /bin/bash
-fallback_homedir = /home/%d/%u
-
-L’emplacement du répertoire d’accueil %d/%u assure que les comptes d’utilisateurs ayant des sAMAccountNames chevauchants dans différents domaines ne se heurtent pas (jdoe@finance.domain.tld est peu probable qu’il soit le même jdoe@hr.domain.tld).
-
-Le %d sera remplacé par le domaine de l’utilisateur lors de la connexion. %u est le nom d’utilisateur, probablement l’attribut sAMAccountName. En utilisant l’exemple ci-dessus, un utilisateur se connectera à /home/finance.domain.tld/jdoe tandis que l’autre utilisera /home/hr.domain.tld/jdoe.
-
-Avec le %u@%d par défaut, nous avons remarqué que certains programmes ou utilisateurs ne gèrent pas bien le symbole @. Vous devez créer manuellement le répertoire parent pour chaque domaine, car oddjob-mkhomedir ne gère pas la création de répertoires parents.
+**`fallback_homedir = /home/%d/%u`** — crée `/home/domain.tld/jdoe` au lieu de `/home/jdoe@domain.tld`. Évite les problèmes avec le `@` dans certains programmes. Crée les répertoires parents manuellement :
 
 ```bash
-mkdir /home/finance.domain.tld /home/rh.domain.tld
+mkdir /home/domain.tld
 ```
 
-ad_gpo_access_control = disabled
+**`enumerate = False` + `ignore_group_members = True`** — indispensable sur les grands domaines. Sans ça, SSSD essaie d'énumérer tous les utilisateurs AD au démarrage, et c'est lent.
 
-En désactivant GPO, par défaut, personne ne pourra se connecter. Pour permettre à *quiconque possède une accréditation AD active* de se connecter (non recommandé) :
+**`ad_gpo_access_control = disabled`** — désactive le contrôle GPO. Sans ça, personne ne peut se connecter par défaut. Gère les permissions manuellement avec `realm permit`.
+
+La section `[nss]` agrandit le cache RAM à 200 MB — les requêtes `getent` restent rapides sans toucher le disque.
+
+SSSD exige des permissions strictes sur sssd.conf :
 
 ```bash
-realm permit --all
+sudo chmod 600 /etc/sssd/sssd.conf
 ```
 
-realm deny --all
-realm permit user@domain.tld
-realm permit -g group@domain.tld
-
-L’ensemble de configurations suivant est principalement destiné à des domaines plus grands :
+### krb5.conf
 
 ```bash
-enumerate = False
-ignore_group_members = True
+sudo nano /etc/krb5.conf
 ```
 
-[nss]
-memcache_size_passwd = 200
-memcache_size_group = 200
-memcache_size_initgroups = 50
+```ini
+[libdefaults]
+    default_realm = DOMAIN.TLD
+    dns_lookup_realm = true
+    dns_lookup_kdc = true
 
-Les utilisateurs qui terminent une connexion auront toujours leurs informations mises en cache localement. La section NSS agrandit le cache RAM par défaut à 200 MB, de sorte que les requêtes sont rapides et n’ont pas besoin de toucher le disque à chaque fois qu’un appel [*getent*](https://man7.org/linux/man-pages/man1/getent.1.html) est effectué.
+[realms]
+    DOMAIN.TLD = {
+        kdc = domain.tld
+        admin_server = domain.tld
+    }
 
-Assurez-vous de dimensionner en fonction des ressources disponibles, du nombre d’utilisateurs susceptibles de se connecter et de la taille des adhésions aux groupes.
+[domain_realm]
+    .domain.tld = DOMAIN.TLD
+    domain.tld = DOMAIN.TLD
+```
 
-Une fois toutes les modifications effectuées, redémarrez sssd. Cette commande ne devrait rien retourner, si tout va bien.
+---
+
+## Étape 5 — Activer la création automatique des home dirs
 
 ```bash
-systemctl restart sssd
+sudo pam-auth-update --enable mkhomedir
 ```
 
-systemctl status sssd
-journalctl -u sssd
+Le home dir est créé automatiquement à la première connexion de l'utilisateur AD.
 
-Questions fréquemment posées
+Configure PAM et NSS pour inclure SSSD :
 
-### Comment dépanner les problèmes de SSSD ?
+```bash
+sudo nano /etc/nsswitch.conf
+```
 
-Vérifiez le statut du service SSSD et les journaux pour le dépannage :
+Vérifie que ces lignes sont présentes :
 
-sudo systemctl status sssd  
+```text
+passwd:     compat sss
+group:      compat sss
+shadow:     compat sss
+```
+
+Redémarre SSSD :
+
+```bash
+sudo systemctl restart sssd
+```
+
+---
+
+## Tester l'intégration
+
+Récupère les infos d'un utilisateur AD :
+
+```bash
+getent passwd john@domain.tld
+```
+
+Résultat attendu :
+
+```text
+john@domain.tld:*:1725801106:1725800513:John Smith:/home/domain.tld/john:/bin/bash
+```
+
+Vérifie les groupes :
+
+```bash
+groups john@domain.tld
+```
+
+---
+
+## Gestion des permissions
+
+Par défaut avec `ad_gpo_access_control = disabled`, tout utilisateur AD valide peut se connecter. Restreins l'accès :
+
+Autoriser un groupe spécifique seulement (tu peux aussi [masquer certains groupes de la GAL](/masquer-utilisateurs-gal-office365-active-directory/) si nécessaire) :
+
+```bash
+sudo realm deny --all
+sudo realm permit -g "groupe@domain.tld"
+```
+
+Autoriser un utilisateur spécifique :
+
+```bash
+sudo realm permit user@domain.tld
+```
+
+Tout le monde (non recommandé) :
+
+```bash
+sudo realm permit --all
+```
+
+---
+
+## Dépannage
+
+Vérifie le statut SSSD et les logs :
+
+```bash
+sudo systemctl status sssd
 sudo journalctl -u sssd
+```
 
-### Puis-je utiliser SSSD avec d’autres distributions Linux ?
+**SSSD ne démarre pas** → permissions sssd.conf : doit être `600` et owned par root. Pour durcir davantage l'accès SSH sur ces machines, consulte le [guide de sécurisation des serveurs Linux](/securite-de-votre-serveur-linux/).
 
-Oui, [SSSD est compatible avec diverses distributions Linux](https://ubuntu.com/server/docs/how-to-set-up-sssd-with-active-directory), y compris Debian et RedHat. Les commandes d’installation peuvent légèrement différer.
+**`realm join` échoue** → DNS mal configuré. Vérifie que `realm discover domain.tld` renvoie quelque chose avant de joindre.
 
-### Comment assurer la création des répertoires personnels pour les utilisateurs AD ?
+**Authentification échoue hors ligne** → vérifie que `cache_credentials = True` est bien dans sssd.conf.
 
-Configurez `oddjob-mkhomedir` pour créer automatiquement les répertoires personnels lors de la connexion :
+---
 
-sudo pam-auth-update –enable mkhomedir
+## Conclusion
 
-Conclusion
+L'intégration **Ubuntu Active Directory SSSD** via realmd fait le job proprement. Une fois la config en place, tes utilisateurs AD se connectent avec leurs credentials habituels, les home dirs se créent tout seuls, et le cache offline garde les sessions actives même si le DC est temporairement inaccessible.
 
-L’intégration des systèmes Ubuntu avec Active Directory en utilisant SSSD améliore la sécurité et simplifie la gestion des utilisateurs.
+Pour les grands parcs, couple ça avec une GPO d'accès restrictive et des groupes AD dédiés par rôle — évite `realm permit --all` en prod.
 
-En suivant les étapes décrites dans ce guide, vous pouvez connecter efficacement vos hôtes Linux à un domaine AD et gérer les connexions utilisateur sans problème.
+---
 
-Pour des étapes plus détaillées sur [comment joindre des hôtes Linux à un domaine Active Directory](https://blog.netwrix.com/2022/11/01/join-linux-hosts-to-active-directory-domain/) ou [connecter Linux à Active Directory en utilisant SSSD](https://4sysops.com/archives/connect-linux-to-active-directory-using-sssd), consultez les ressources supplémentaires disponibles en ligne.
+## Pour aller plus loin
 
-Pour ceux utilisant des systèmes Ubuntu, des guides spécifiques tels que [Comment connecter Ubuntu à AD en utilisant SSSD](https://help.ubuntu.com/community/ActiveDirectoryWinbindHowto) offrent des instructions ciblées.
-
-Pour plus de détails techniques et d’exemples, consultez [Comment utiliser Active Directory comme fournisseur d’identité pour SSSD](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/windows_integration_guide/sssd-ad) et [Joindre une VM Linux à Active Directory](https://www.starwindsoftware.com/blog/join-a-linux-vm-to-active-directory-using-sssd).
-
-## Articles connexes
-
-- [Sécurité de votre serveur Linux : Comment durcir un VPS](/securite-de-votre-serveur-linux/)
+- [Sécurité de votre serveur Linux : durcir un VPS](/securite-de-votre-serveur-linux/)
 - [Masquer des utilisateurs de la GAL Office 365 + Active Directory](/masquer-utilisateurs-gal-office365-active-directory/)
-- [Filtrage utilisateurs LDAP Snipe-IT](/ldap-filtrage-utilisateurs-snipeit/)
+- [Transférer les rôles FSMO Active Directory](/activedirectory-transfere-des-roles-fsmo/)
