@@ -29,6 +29,24 @@ const totalPosts = page.total;
 ---
 
 <Layout title={`Articles | ${SITE.title}`}>
+  <script
+    slot="head"
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: `Articles — ${SITE.title}`,
+      description: SITE.desc,
+      url: `${SITE.website}blog/`,
+      inLanguage: "fr",
+      isPartOf: {
+        "@type": "WebSite",
+        name: SITE.title,
+        url: SITE.website,
+      },
+    })}
+  />
   <Header />
   <Breadcrumb />
   <main id="main-content" class="app-layout pb-4">

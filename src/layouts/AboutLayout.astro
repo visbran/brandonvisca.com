@@ -12,6 +12,27 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={`${frontmatter.title} | ${SITE.title}`}>
+  <script
+    slot="head"
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: SITE.author,
+      url: SITE.website,
+      sameAs: [
+        "https://github.com/visbran",
+      ],
+      jobTitle: "Développeur & Passionné d'auto-hébergement",
+      knowsAbout: ["Homelab", "Auto-hébergement", "Linux", "Proxmox", "Docker", "macOS", "Sécurité informatique"],
+      worksFor: {
+        "@type": "Organization",
+        name: SITE.title,
+        url: SITE.website,
+      },
+    })}
+  />
   <Header />
   <Breadcrumb />
   <main id="main-content" class="app-layout">

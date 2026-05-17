@@ -2,7 +2,7 @@
 
 > Fichier volatile — mis à jour après chaque audit SEO. Ne pas inclure dans CLAUDE.md.
 > Dernier audit : 2026-05-06 — Voir `AUDIT_GLOBAL_2026-05-06.md`
-> Dernières corrections : 2026-05-17 (liens internes — 51 articles mis à jour)
+> Dernières corrections : 2026-05-17 (audit complet — strings espagnoles constants.ts, schemas JSON-LD CollectionPage + Person)
 
 ---
 
@@ -13,9 +13,9 @@
 | Issue | Articles / Scope | Priorité | Fix | Rapport détaillé |
 |---|---|---|---|---|
 | `ogImage_specific` | 0/82 avec ogImage | Medium | Images OG personnalisées par article (fallback `og.webp` actif) | `AUDIT_SEO_2026-05-06.md` |
-| `faqs_missing` | 34/82 sans `faqs:` frontmatter | Medium | Ajouter bloc FAQ | `AUDIT_SEO_2026-05-06.md` |
-| `internal_links_missing` | 51/82 sans section — **en cours** | Medium | Script `scripts/add-internal-links.py` | `AUDIT_SEO_2026-05-06.md` |
-| `tags_excess` | 119 tags uniques (cible ~30) | Medium | Consolidation semaine 3 non faite | `TAGS_STRATEGY_2026-05-06.md` |
+| `faqs_missing` | **0/82** — tous les articles ont `faqs:` | ~~Medium~~ | ✅ Résolu | — |
+| `internal_links_missing` | **0/82** — tous les articles ont "Articles connexes" | ~~Medium~~ | ✅ Résolu 2026-05-17 | — |
+| `tags_excess` | 21 tags contenu + 4 meta-tags (cible ~30) | Low | Situation saine, monitoring | `TAGS_STRATEGY_2026-05-06.md` |
 | `tags_thin_content` | ~35 pages tag à 1 article | Medium | `noindex` ou fusion | `TAGS_STRATEGY_2026-05-06.md` |
 | `affiliate_disclosure_missing` | 2 articles : `s3cmd`, `vaultwarden` | Medium | Ajouter disclosure "lien affilié" | `EEAT_AUDIT_2026-05-06.md` |
 | `ga4_not_connected` | Site-wide | Medium | Setup MCP GA4 Data API | `AUDIT_SEO_2026-05-06.md` |
@@ -74,8 +74,9 @@ GA4 débloque +20 pts (Engagement /20 + Durée /15, théorique max 65). Proprié
 
 ## Backlog GEO (à implémenter)
 
+- [x] Person schema sur `/about/` — ajouté 2026-05-17
+- [x] CollectionPage schema sur `/blog/` — ajouté 2026-05-17
 - Organization standalone JSON-LD sur homepage
-- Enhanced Person schema sur `/about/` et `/cv/`
 - ProfilePage schema sur `/about/`
 - HowTo schema pour les articles tutoriels
 - SoftwareApplication + Review schema pour les reviews d'apps
