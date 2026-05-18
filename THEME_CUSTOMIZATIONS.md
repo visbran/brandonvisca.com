@@ -147,6 +147,26 @@ The following files are **not modified** and will merge cleanly:
 
 ---
 
+### `public/_headers`
+
+**Reason**: Headers HTTP durcis pour Cloudflare Pages (audit sécurité OWASP 2026-05-17).
+
+**Changes**:
+- `X-Frame-Options: DENY`
+- `X-Content-Type-Options: nosniff`
+- `Referrer-Policy: strict-origin-when-cross-origin`
+- `Permissions-Policy` : caméra, micro, géo, payment, USB bloqués
+- `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload`
+- `Content-Security-Policy` : `script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'`
+  - `'unsafe-inline'` conservé — approche hash-based abandonnée (minification non-déterministe local ≠ CF Pages)
+  - `'wasm-unsafe-eval'` requis par Pagefind (WebAssembly)
+  - `frame-src` : YouTube uniquement
+  - `media-src` : fluxfm.streamabc.net + lowtechguys.com (player audio + vidéo article)
+
+**Merge strategy**: Fichier inexistant upstream — aucun conflit. À mettre à jour manuellement si nouveaux scripts externes ou iframes ajoutés.
+
+---
+
 ### `src/components/MobileMenu.astro`
 
 **Reason**: Ajout d'un lien "CV" dans le menu mobile de navigation.
