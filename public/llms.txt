@@ -6,8 +6,8 @@
 ## Netdata Docker : monitorer ton serveur en temps réel sans te ruiner
 URL: https://brandonvisca.com/netdata-docker/
 Description: Installe Netdata en Docker pour monitorer CPU, RAM, disques et réseau en temps réel. Dashboard complet, alertes native — guide auto-hébergement 2026.
-Tags: docker, auto-hebergement, monitoring, intermediaire
-Publié: 2026-05-19T12:00:00+02:00
+Tags: 
+Publié: 2026-05-19 12:00:00+02:00
 
 ## Immich Docker remplace Google Photos ? Guide complet 2026
 URL: https://brandonvisca.com/immich-docker/
