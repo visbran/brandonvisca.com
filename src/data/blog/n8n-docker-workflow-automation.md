@@ -1,8 +1,8 @@
 ---
 title: "n8n Docker : remplace Zapier par du self-hosted"
-description: "Installe n8n en Docker pour automatiser ton homelab. Workflows visuels, 800+ intégrations, zéro coût — alternative open-source à Zapier."
+description: Installe n8n Docker pour automatiser ton homelab sans payer. Workflows visuels, 800+ intégrations, alternative open-source à Zapier.
 pubDatetime: 2026-05-22 12:00:00+02:00
-modDatetime: 2026-05-22 12:00:00+02:00
+modDatetime: 2026-05-26 00:00:00+01:00
 author: Brandon Visca
 tags:
   - docker
@@ -31,11 +31,15 @@ faqs:
 > - 3 workflows homelab prêts à l'emploi : monitoring, DNS, archivage.
 > - Sécurise avec HTTPS + auth basique, ne laisse pas ton instance en HTTP ouvert.
 
+## Table des matières
+
 ## Pourquoi payer quand tu peux self-hoster ?
 
 Zapier facture 150 €/mois pour 10 000 tâches. Make grimpe à 200 €/mois pour du volume un peu sérieux. Et à chaque exécution, **tes données partent chez eux**.
 
 n8n ? C'est **0 €**. Tu l'installes sur ton NAS, ton mini-PC ou ton VPS. Tes workflows restent chez toi. Pas de plafond de tâches. Pas de vendor lock-in. Si ton serveur est allumé, tes automatisations tournent.
+
+Chez moi ça tourne depuis plusieurs mois sous Debian 12 : 3 workflows actifs, zéro maintenance, zéro facture.
 
 L'outil est passé en licence **Sustainable Use License** (fair-code) : le code est lisible, modifiable, et gratuit pour la plupart des usages. Seules les fonctionnalités Enterprise (SSO, audit logs) sont payantes. Pour un homelab, tu n'en as pas besoin.
 
@@ -48,7 +52,7 @@ n8n est un éditeur de workflows visuels. Tu drag & drop des **nodes** (déclenc
 - **Expressions** en JavaScript pour transformer les données entre chaque node.
 - **Execution log** complet : chaque run est tracé, debuggable.
 
-L'interface ressemble à un Zapier en plus technique — et c'est exactement ce qu'on veut.
+L'interface ressemble à un Zapier en plus technique, et c'est exactement ce qu'on veut.
 
 ## Prérequis : ce qu'il te faut avant de commencer
 
@@ -56,7 +60,7 @@ Tu dois déjà avoir ça en place :
 
 - **Docker et Docker Compose** installés. Si ce n'est pas le cas, voir [/docker-debutant-services-auto-heberger/](/docker-debutant-services-auto-heberger/).
 - **2 Go de RAM minimum** pour n8n seul, 4 Go recommandés avec PostgreSQL.
-- **Un reverse proxy** (Traefik, Nginx Proxy Manager, Caddy) pour exposer n8n en HTTPS. Pas question de laisser ça en HTTP sur le port 5678 ouvert. Si tu utilises Traefik, on a déjà un guide : [/traefik-reverse-proxy-docker/](/traefik-reverse-proxy-docker/).
+- **Un reverse proxy** (Traefik, Nginx Proxy Manager, Caddy) pour exposer n8n en HTTPS. Pas question de laisser ça en HTTP sur le port 5678 ouvert. Si tu utilises Traefik, j'ai déjà un guide : [/traefik-reverse-proxy-docker/](/traefik-reverse-proxy-docker/).
 - **Un nom de domaine** (ou sous-domaine) pointé vers ton serveur.
 - **~5 Go d'espace disque** pour les volumes Docker.
 
@@ -113,6 +117,8 @@ volumes:
 
 Et le fichier `.env` à côté :
 
+⚠️ **Ajoute immédiatement `.env` à ton `.gitignore`** : mots de passe et tokens ne doivent jamais finir sur GitHub.
+
 ```bash
 POSTGRES_PASSWORD=ton_mot_de_passe_fort_ici
 N8N_USER=admin
@@ -164,7 +170,7 @@ Tu veux être notifié quand une nouvelle liste de blocage est chargée sur Pi-h
 **Dans n8n :**
 
 1. Node **Schedule Trigger** → toutes les 6 heures.
-2. Node **HTTP Request** → `GET http://pi-hole-ip/admin/api.php?summaryRaw` (adapte selon ton setup Pi-hole).
+2. Node **HTTP Request** → `GET http://pi-hole-ip/admin/api.php?summaryRaw` (Pi-hole v5) ou `GET http://pi-hole-ip/api/stats/summary` (Pi-hole v6+).
 3. Node **Compare Datasets** ou **If** → compare la valeur `gravity_last_updated` avec un valeur stockée dans une **Static Data** ou un fichier.
 4. Si différent → node **HTTP Request** vers ton serveur **ntfy** (ou directement le node ntfy s'il existe dans ta version) :
    - URL : `https://ntfy.tondomaine.com/homelab`
@@ -247,7 +253,7 @@ Pour tester un workflow rapidement, tu peux lancer n8n sans base de données (`D
 docker compose pull && docker compose up -d
 ```
 
-n8n sort une version par semaine environ. Le tag `latest` suit la branche stable. Relis les [release notes](https://github.com/n8n-io/n8n/releases) avant de mettre à jour — les breaking changes sont signalés.
+n8n sort une version par semaine environ. Le tag `latest` suit la branche stable. Relis les [release notes](https://github.com/n8n-io/n8n/releases) avant de mettre à jour : les breaking changes sont signalés.
 
 **Monitoring de n8n lui-même**
 Ajoute un healthcheck Docker dans le `docker-compose.yml` :
@@ -265,6 +271,14 @@ Et surveille-le avec [Uptime Kuma](/uptime-kuma-2-0-monitoring-auto-heberge/) ou
 **Docker en rootless**
 n8n tourne en interne avec l'user `node` (UID 1000). Assure-toi que les volumes ont les bonnes permissions, ou monte-le avec `user: "1000:1000"` dans le compose.
 
----
+## Conclusion
 
 Tu as maintenant un n8n fonctionnel, sécurisé, et trois workflows pour automatiser ton homelab sans sortir la carte bleue. Le temps que tu passes à monter ces workflows, tu le récupères en moins de deux mois comparé à un abonnement Zapier. Et surtout, **tes données ne quittent jamais ton serveur**.
+
+Si tu veux aller plus loin, [Watchtower](/watchtower-mise-a-jour-docker-auto/) maintient n8n à jour automatiquement sans intervention manuelle.
+
+## Pour aller plus loin
+
+- [Traefik avec Docker : reverse proxy HTTPS auto](/traefik-reverse-proxy-docker/)
+- [Uptime Kuma 2.0 : monitoring auto-hébergé](/uptime-kuma-2-0-monitoring-auto-heberge/)
+- [Watchtower : mises à jour Docker automatiques](/watchtower-mise-a-jour-docker-auto/)
