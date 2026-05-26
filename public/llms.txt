@@ -11,7 +11,7 @@ Publié: 2026-05-26T06:00:00Z
 
 ## n8n Docker : remplace Zapier par du self-hosted
 URL: https://brandonvisca.com/n8n-docker-workflow-automation/
-Description: Installe n8n en Docker pour automatiser ton homelab. Workflows visuels, 800+ intégrations, zéro coût — alternative open-source à Zapier.
+Description: Installe n8n Docker pour automatiser ton homelab sans payer. Workflows visuels, 800+ intégrations, alternative open-source à Zapier.
 Tags: 
 Publié: 2026-05-22 12:00:00+02:00
 
