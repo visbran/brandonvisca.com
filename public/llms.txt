@@ -6,8 +6,8 @@
 ## Nginx Proxy Manager : reverse proxy en 5 min avec Docker
 URL: https://brandonvisca.com/nginx-proxy-manager-docker-guide/
 Description: Guide complet Nginx Proxy Manager : installation Docker Compose, SSL Let's Encrypt auto, gestion reverse proxy, authentification.
-Tags: docker, nginx, reverse-proxy, ssl, intermediaire, auto-hebergement
-Publié: 2026-05-26T06:00:00+02:00
+Tags: 
+Publié: 2026-05-26T06:00:00Z
 
 ## n8n Docker : remplace Zapier par du self-hosted
 URL: https://brandonvisca.com/n8n-docker-workflow-automation/
