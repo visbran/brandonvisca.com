@@ -5,7 +5,7 @@
 
 ## Nginx Proxy Manager : reverse proxy en 5 min avec Docker
 URL: https://brandonvisca.com/nginx-proxy-manager-docker-guide/
-Description: Guide complet Nginx Proxy Manager : installation Docker Compose, SSL Let's Encrypt auto, gestion reverse proxy, authentification.
+Description: Nginx Proxy Manager Docker : reverse proxy en quelques clics, SSL Let's Encrypt auto, auth basique et bonnes pratiques homelab.
 Tags: 
 Publié: 2026-05-26T06:00:00Z
 
