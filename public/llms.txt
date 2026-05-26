@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-05-22
-# Total articles : 84
+# Dernière mise à jour : 2026-05-26
+# Total articles : 85
+
+## Nginx Proxy Manager : reverse proxy en 5 min avec Docker
+URL: https://brandonvisca.com/nginx-proxy-manager-docker-guide/
+Description: Guide complet Nginx Proxy Manager : installation Docker Compose, SSL Let's Encrypt auto, gestion reverse proxy, authentification.
+Tags: docker, nginx, reverse-proxy, ssl, intermediaire, auto-hebergement
+Publié: 2026-05-26T06:00:00+02:00
 
 ## n8n Docker : remplace Zapier par du self-hosted
 URL: https://brandonvisca.com/n8n-docker-workflow-automation/
