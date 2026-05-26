@@ -1,7 +1,8 @@
 ---
 title: "Nginx Proxy Manager : reverse proxy en 5 min avec Docker"
-description: "Guide complet Nginx Proxy Manager : installation Docker Compose, SSL Let's Encrypt auto, gestion reverse proxy, authentification."
+description: "Nginx Proxy Manager Docker : reverse proxy en quelques clics, SSL Let's Encrypt auto, auth basique et bonnes pratiques homelab."
 pubDatetime: "2026-05-26T06:00:00Z"
+modDatetime: "2026-05-26T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - intermediaire
@@ -14,16 +15,12 @@ featured: false
 draft: false
 focusKeyword: nginx proxy manager docker
 ---
-## Table des matières
+> 💡 **TL;DR** — Nginx Proxy Manager avec Docker :
+> - SSL Let's Encrypt auto en quelques clics, renouvellement transparent tous les 90 jours
+> - Reverse proxy multi-services depuis une interface web, zéro fichier conf à éditer
+> - Auth HTTP et restrictions IP intégrées nativement, sans plugin externe
 
-1. [Pourquoi Nginx Proxy Manager ?](#pourquoi-nginx-proxy-manager)
-2. [Prérequis](#prérequis)
-3. [Installation avec Docker Compose](#installation-avec-docker-compose)
-4. [Configuration du reverse proxy](#configuration-du-reverse-proxy)
-5. [Authentification basique](#authentification-basique-basic-auth)
-6. [Bonnes pratiques et astuces](#bonnes-pratiques-et-astuces)
-7. [Troubleshooting](#troubleshooting)
-8. [Conclusion](#conclusion)
+## Table des matières
 
 ## Pourquoi Nginx Proxy Manager ?
 
@@ -37,22 +34,26 @@ Si tu auto-héberges plusieurs services (Nextcloud, Plex, Grafana, vaultwarden�
 
 ## Prérequis
 
-- Un serveur Linux avec Docker + Docker Compose v2 installés
+- Un serveur Linux avec [Docker + Docker Compose v2](/docker-debutant-services-auto-heberger/) installés
 - Un domaine (ou sous-domaine) pointant vers ton serveur
 - Les ports 80 et 443 ouverts sur ton firewall / routeur
 - Une session SSH en root ou avec `sudo`
 
 ## Installation avec Docker Compose
 
-Crée le dossier et le fichier :```bash
-mkdir -p ~/npm/docker-compose.yml && cd ~/npm
+Crée le dossier et le fichier :
+
+```bash
+mkdir -p ~/npm && cd ~/npm
 ```
 
 <aside class="notion-callout notion-blue-callout">
 💡 Mon dossier racine des projets Docker est `~/npm`. Si tu préfères un autre chemin, adapte le volume.
 </aside>
 
-Copie ce `docker-compose.yml` :```yaml
+Copie ce `docker-compose.yml` :
+
+```yaml
 services:
   npm:
     image: jc21/nginx-proxy-manager:latest
@@ -72,7 +73,9 @@ services:
       - INITIAL_ADMIN_PASSWORD=changeme
 ```
 
-Lance le conteneur :```bash
+Lance le conteneur :
+
+```bash
 docker compose up -d
 ```
 
@@ -114,7 +117,9 @@ Le certificat est généré et le renouvellement se fait tout seul tous les 90 j
 
 ### 3. Redirection www ↔ non-www
 
-Onglet **Advanced** du proxy host, ajoute dans la zone **Custom Nginx Configuration** :```nginx
+Onglet **Advanced** du proxy host, ajoute dans la zone **Custom Nginx Configuration** :
+
+```nginx
 if ($host = www.tondomaine.fr) {
     return 301 https://tondomaine.fr$request_uri;
 }
@@ -142,6 +147,8 @@ Tu peux aussi ajouter des restrictions IP (whitelist) dans la même access list.
 - **Bloque le port 81 sur l'extérieur** via ton firewall si tu n'y accèdes que via un tunnel SSH ou VPN
 - **Sauvegarde les volumes** `./data` et `./letsencrypt` avec [restic](https://restic.net/) ou [duplicacy](https://duplicacy.com/)
 - **Active le logs forwarding** vers une stack ELK/Graylog si tu surveilles les accès
+
+Pour le durcissement HTTPS, complète avec les [headers HTTP sécurisés Nginx](/securiser-nginx-avec-headers-http/) — HSTS étendu, X-Frame-Options, CSP.
 
 ## Troubleshooting
 
@@ -172,8 +179,14 @@ Tu peux aussi ajouter des restrictions IP (whitelist) dans la même access list.
 
 Nginx Proxy Manager transforme la gestion d'un reverse proxy en une opération de quelques clics. Tu gagnes du temps, tu limites les erreurs de conf manuelle, et tes certificats SSL se gèrent sans intervention. Parfait pour un homelab qui grossit.
 
-Si tu cherches une alternative plus légère sans interface web, tu peux regarder [Traefik (Docker intégré)](/traefik-docker-compose-guide/) ou [Caddy (config en une ligne)](/caddy-server-auto-hebergement/). Si au contraire tu veux du poussé (WAF, rate limiting, geo-blocking), penche-toi sur [Nginx configuré à la main](/guide-nginx-configuration-securisee/).
+Si tu cherches une alternative sans interface web, regarde [Traefik avec Docker](/traefik-reverse-proxy-docker/) — configuration déclarative, intégration native avec les labels Docker.
 
 ---
 
 > 🛡️ **Stack testée** : Debian 12, Docker 28.x, Docker Compose v2, Nginx Proxy Manager v2.14.0
+
+## Pour aller plus loin
+
+- [Traefik avec Docker : reverse proxy déclaratif](/traefik-reverse-proxy-docker/)
+- [Sécuriser Nginx avec les headers HTTP](/securiser-nginx-avec-headers-http/)
+- [CSP Nginx sans casser son site](/content-security-policy-nginx-sans-casser-site/)
