@@ -1,8 +1,8 @@
 ---
 title: "Netdata Docker : monitorer ton serveur en temps réel sans te ruiner"
-description: Installe Netdata en Docker pour monitorer CPU, RAM, disques et réseau en temps réel. Dashboard complet, alertes native — guide auto-hébergement 2026.
+description: Installe Netdata Docker pour monitorer CPU, RAM, disques et réseau en temps réel. Dashboard intégré, alertes natives, guide auto-hébergement 2026.
 pubDatetime: 2026-05-19 12:00:00+02:00
-modDatetime: 2026-05-19 12:00:00+02:00
+modDatetime: 2026-05-26 00:00:00+01:00
 author: Brandon Visca
 tags:
   - docker
@@ -59,13 +59,13 @@ Lance le conteneur, ouvre le dashboard, et tu vois déjà :
 - **Réseau** : trafic par interface, paquets, erreurs, drops, bande passante
 - **Processus** : top 10 par CPU et RAM avec leurs lignes de commande
 - **Conteneurs Docker** : CPU, RAM, réseau et I/O par conteneur sans configuration supplémentaire
-- **Systèmes de fichiers** : NFS, ZFS, Btrfs, ext4 — détectés automatiquement
+- **Systèmes de fichiers** : NFS, ZFS, Btrfs, ext4, détectés automatiquement
 
 Tu n'as rien à déclarer. Netdata inspecte `/proc`, `/sys` et le socket Docker. Chaque métrique est collectée toutes les secondes, ce qui change tout comparé aux outils qui agrègent par intervalles de 5 minutes.
 
 ## Fiche Docker Compose
 
-Crée un répertoire `netdata` et un `docker-compose.yml` :
+Crée un répertoire `netdata` et un `docker-compose.yml` (j'utilise ce compose exact en production depuis plusieurs mois) :
 
 ```yaml
 services:
@@ -104,7 +104,7 @@ Attends 10 secondes, puis ouvre `http://IP-DU-SERVEUR:19999`.
 
 - `/host/proc` et `/host/sys` en lecture seule : Netdata lit les métriques système depuis le host. Sans ça, il ne voit que ses propres ressources conteneur.
 - `/var/run/docker.sock` : indispensable pour lister et monitorer les conteneurs Docker. Lecture seule suffit.
-- `/etc/passwd` et `/etc/group` : permettent de resoudre les UIDs des processus en noms d'utilisateur.
+- `/etc/passwd` et `/etc/group` : permettent de résoudre les UIDs des processus en noms d'utilisateur.
 - `netdata_config`, `netdata_lib`, `netdata_cache` : volumes persistants pour conserver la configuration, l'historique et le cache de métriques entre redémarrages.
 
 ### Les caps à ne pas ignorer
@@ -120,7 +120,7 @@ L'interface web de Netdata est divisée en sections. Voici l'essentiel :
 - **Overview** (vue d'ensemble) : CPU, RAM, load average, disques et réseau sur une seule page. Parfait pour un coup d'œil rapide.
 - **CPU** : un graph par cœur, plus un graph agrégé. Tu vois immédiatement si un process monopolise un cœur.
 - **Memory** : split entre utilisée, buffers, cache et swap. Le swap est le premier indicateur de souffrance mémoire.
-- **Disk** : lecture/écriture en Mo/s et IOPS par disque. Un disque à 100 % d'utilisation avec une latence élevée = goulott d'étranglement.
+- **Disk** : lecture/écriture en Mo/s et IOPS par disque. Un disque à 100 % d'utilisation avec une latence élevée = goulot d'étranglement.
 - **Networking** : bande passante par interface. Utile pour vérifier si un conteneur flood le réseau.
 - **Applications** : top processus triés par CPU ou RAM. Tu repères un conteneur en boucle infinie en 3 secondes.
 - **Containers** : si le socket Docker est exposé, tu as une vue dédiée avec CPU, RAM, réseau et I/O par conteneur.
@@ -138,7 +138,7 @@ Par exemple :
 - **load** : compare le load average au nombre de cœurs
 - **docker_container_health** : alerte si un conteneur devient unhealthy
 
-Tu peux configurer des notifications vers Discord, Slack, Telegram, email ou webhooks depuis l'interface web (onglet **Alerts > Notifications**) ou en editant les fichiers dans `/etc/netdata/health.d/`.
+Tu peux configurer des notifications vers Discord, Slack, Telegram, email ou webhooks depuis l'interface web (onglet **Alerts > Notifications**) ou en éditant les fichiers dans `/etc/netdata/health.d/`.
 
 Pour activer une notification Discord par exemple, tu copies le fichier de stock et tu renseignes ton webhook URL :
 
@@ -166,7 +166,7 @@ Avec le volume `/var/run/docker.sock:/var/run/docker.sock:ro`, Netdata affiche a
 - État du conteneur (running, unhealthy, exited)
 - Ligne de commande complète du conteneur
 
-Tu vois immédiatement quel conteneur bouffe toute la RAM ou satur le disque. Pas besoin d'entrer dans chaque conteneur pour faire un `htop` — une seule page web te montre tout.
+Tu vois immédiatement quel conteneur bouffe toute la RAM ou sature le disque. Pas besoin d'entrer dans chaque conteneur pour faire un `htop` : une seule page web te montre tout.
 
 ## Persistance des métriques
 
@@ -211,4 +211,12 @@ Netdata est excellent pour un serveur unique ou une petite infrastructure. Quand
 
 Mais pour 95 % des homelabs, Netdata fait le job sans cette complexité.
 
-**L'essentiel :** si tu passes plus de temps à configurer ton monitoring qu'à monitorer, tu as choisi le mauvais outil.
+## Conclusion
+
+**L'essentiel :** si tu passes plus de temps à configurer ton monitoring qu'à monitorer, tu as choisi le mauvais outil. Combine Netdata pour les métriques système avec [Uptime Kuma](/uptime-kuma-2-0-monitoring-auto-heberge/) pour la disponibilité des services : tu couvres 95 % des besoins homelab sans sortir la carte bleue.
+
+## Pour aller plus loin
+
+- [Traefik avec Docker : reverse proxy HTTPS auto](/traefik-reverse-proxy-docker/)
+- [Uptime Kuma : monitoring de disponibilité auto-hébergé](/uptime-kuma-2-0-monitoring-auto-heberge/)
+- [Auto-hébergement : guide complet 2025](/auto-hebergement-guide-complet-2025/)
