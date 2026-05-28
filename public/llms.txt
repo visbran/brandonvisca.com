@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-05-26
-# Total articles : 85
+# Dernière mise à jour : 2026-05-28
+# Total articles : 86
+
+## Beszel : Monitoring auto-hébergé ultra-léger pour ton homelab
+URL: https://brandonvisca.com/beszel-monitoring-docker/
+Description: Installe Beszel pour monitorer CPU, RAM et disque de tes serveurs via Docker Compose. Dashboard minimaliste, alertes, SSH. Sans Prometheus ni Grafana.
+Tags: intermediaire, docker, auto-hebergement, homelab, monitoring
+Publié: 2026-05-28T06:00:00Z
 
 ## Nginx Proxy Manager : reverse proxy en 5 min avec Docker
 URL: https://brandonvisca.com/nginx-proxy-manager-docker-guide/
