@@ -3,11 +3,11 @@
 # Dernière mise à jour : 2026-05-28
 # Total articles : 86
 
-## Beszel : Monitoring auto-hébergé ultra-léger pour ton homelab
+## Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab
 URL: https://brandonvisca.com/beszel-monitoring-docker/
-Description: Installe Beszel pour monitorer CPU, RAM et disque de tes serveurs via Docker Compose. Dashboard minimaliste, alertes, SSH. Sans Prometheus ni Grafana.
-Tags: intermediaire, docker, auto-hebergement, homelab, monitoring
-Publié: 2026-05-28T06:00:00Z
+Description: Guide Beszel Docker monitoring : installe ce monitoring auto-hébergé ultra-léger pour surveiller CPU, RAM et disque de tes serveurs.
+Tags: 
+Publié: 2026-05-28T06:00:00.000Z
 
 ## Nginx Proxy Manager : reverse proxy en 5 min avec Docker
 URL: https://brandonvisca.com/nginx-proxy-manager-docker-guide/
