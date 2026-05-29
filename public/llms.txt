@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-05-28
-# Total articles : 86
+# Dernière mise à jour : 2026-05-29
+# Total articles : 87
+
+## Stirling-PDF Docker : remplace SmallPDF et Adobe par du self-hosted open-source
+URL: https://brandonvisca.com/stirling-pdf-docker-guide-auto-hebergement/
+Description: Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF.
+Tags: docker, auto-hebergement, productivite, intermediaire, pdf
+Publié: 2026-05-29T10:00:00Z
 
 ## Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab
 URL: https://brandonvisca.com/beszel-monitoring-docker/
