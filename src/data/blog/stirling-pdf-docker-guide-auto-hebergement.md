@@ -1,8 +1,8 @@
 ---
 title: "Stirling-PDF Docker : remplace SmallPDF et Adobe par du self-hosted open-source"
 description: "Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF."
-pubDatetime: "2026-05-29T10:00:00.000Z"
-modDatetime: "2026-05-29T10:00:00.000Z"
+pubDatetime: "2026-05-29T09:00:00.000Z"
+modDatetime: "2026-05-29T09:00:00.000Z"
 author: "Brandon Visca"
 tags:
   - docker
