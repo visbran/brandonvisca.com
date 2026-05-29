@@ -6,8 +6,8 @@
 ## Stirling-PDF Docker : remplace SmallPDF et Adobe par du self-hosted open-source
 URL: https://brandonvisca.com/stirling-pdf-docker-guide-auto-hebergement/
 Description: Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF.
-Tags: docker, auto-hebergement, productivite, intermediaire, pdf
-Publié: 2026-05-29T10:00:00Z
+Tags: 
+Publié: 2026-05-29T10:00:00.000Z
 
 ## Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab
 URL: https://brandonvisca.com/beszel-monitoring-docker/
