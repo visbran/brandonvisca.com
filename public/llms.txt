@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-05-29
-# Total articles : 87
+# Total articles : 88
+
+## NocoDB Docker : alternative auto-hébergée à Airtable
+URL: https://brandonvisca.com/nocodb-docker-airtable-alternative/
+Description: NocoDB Docker : déploie ta base de données type Airtable en auto-hébergement. Guide complet avec PostgreSQL, Docker Compose et import CSV.
+Tags: docker, auto-hebergement, productivite
+Publié: 2026-05-30T08:00:00+02:00
 
 ## Stirling-PDF Docker : remplace SmallPDF et Adobe par du self-hosted open-source
 URL: https://brandonvisca.com/stirling-pdf-docker-guide-auto-hebergement/
