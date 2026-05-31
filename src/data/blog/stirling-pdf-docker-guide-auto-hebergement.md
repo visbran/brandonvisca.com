@@ -34,6 +34,8 @@ Combien tu lâches par an pour éditer des PDF ? Petit calcul rapide : SmallPDF 
 
 Spoiler : il existe une solution open-source qui fait tout ça — et bien plus — sans dépenser un sou.
 
+## Table des matières
+
 ## Stirling-PDF Docker : l'outil open-source qui te sert du PDF sur un plateau
 
 Stirling-PDF, c'est **l'outil web open-source #1 sur GitHub** pour manipuler des PDF. On parle de près de 73 000 stars, un projet maintenu par la communauté (Stirling-Tools), sous licence MIT. Pas de compte obligatoire, pas de limite de pages, pas de watermark imposé.

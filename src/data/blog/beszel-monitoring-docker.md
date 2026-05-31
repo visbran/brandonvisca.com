@@ -13,25 +13,25 @@ tags:
 featured: false
 draft: false
 focusKeyword: beszel docker
+faqs:
+  - question: "Combien de RAM consomme l'agent Beszel ?"
+    answer: "Très peu — l'agent tourne en binaire Go et consomme moins de 20 Mo de RAM, ce qui le rend idéal pour un Raspberry Pi ou un petit VPS."
+  - question: "Beszel peut-il superviser des conteneurs Docker ?"
+    answer: "Oui. En montant le socket Docker en lecture seule dans l'agent, Beszel remonte les stats par conteneur en plus des métriques système."
+  - question: "Peut-on recevoir les alertes ailleurs que par email ?"
+    answer: "Oui. Beszel envoie les alertes par email via PocketBase, mais tu peux brancher un webhook vers Discord, Slack, n8n ou Uptime Kuma."
 timezone: Europe/Paris
 ---
+> 💡 **TL;DR** — Beszel en bref :
+> - Monitoring auto-hébergé ultra-léger (binaire Go) : CPU, RAM, disque et réseau collectés via SSH.
+> - Pensé pour un homelab de 3 à 10 machines, sans Prometheus ni Grafana ni base externe.
+> - Hub + agents déployés en 10 minutes avec Docker Compose.
+
 T'as déjà perdu une nuit à configurer Prometheus + Grafana pour monitorer un simple Raspberry Pi ? Tu te retrouvais avec dix conteneurs, des règles YAML kafkaïennes et un dashboard que t'arrivais pas à lire sans ton bac+5 en observabilité ? T'inquiète pas, j'ai mangé la même soupe 🍜
 
 Aujourd'hui je te présente **Beszel**, un outil de monitoring auto-hébergé écrit par henrygd en Go sous licence MIT. Une Go binary, un dashboard web ultra-minimaliste, une comm' SSH, zéro port supplémentaire à ouvrir. Et tu peux le mettre en route en 10 minutes. Let's go.
 
 ## Table des matières
-
-> 💡 **Résumé :** Beszel est un monitoring auto-hébergé ultra-léger (Go) qui surveille CPU, RAM, disque et réseau via SSH. Parfait pour un homelab de 3 à 10 machines sans Prometheus ni Grafana — déploiement en 10 minutes via Docker Compose.
-
-- [Qu'est-ce que Beszel et pourquoi il te fera gagner du temps](/beszel-monitoring-docker/#quest-ce-que-beszel-et-pourquoi-il-te-fera-gagner-du-temps)
-- [L'architecture hub + agents en 30 secondes](/beszel-monitoring-docker/#larchitecture-hub-agents-en-30-secondes)
-- [Prérequis avant d'installer Beszel](/beszel-monitoring-docker/#prerequis-avant-dinstaller-beszel)
-- [Installation du hub avec Docker Compose](/beszel-monitoring-docker/#installation-du-hub-avec-docker-compose)
-- [Installation de l'agent sur une machine distante](/beszel-monitoring-docker/#installation-de-lagent-sur-une-machine-distante)
-- [Configuration des alertes et notifications](/beszel-monitoring-docker/#configuration-des-alertes-et-notifications)
-- [Mise à jour automatique avec Watchtower](/beszel-monitoring-docker/#mise-a-jour-automatique-avec-watchtower)
-- [Ajoute un reverse proxy et un certificat SSL](/beszel-monitoring-docker/#ajoute-un-reverse-proxy-et-un-certificat-ssl)
-- [Limites et conseils d'usage](/beszel-monitoring-docker/#limites-et-conseils-dusage)
 
 
 ## Qu'est-ce que Beszel et pourquoi il te fera gagner du temps
@@ -258,6 +258,19 @@ Beszel n'est pas parfait pour tout le monde. Voici ce qu'il faut savoir avant d'
 
 Dans ces cas, bascule sur une stack Prometheus + Grafana ou un outil comme Netdata ou Tianji.
 
+## FAQ
+
+### Combien de RAM consomme l'agent Beszel ?
+
+Très peu — l'agent tourne en binaire Go et consomme moins de 20 Mo de RAM, ce qui le rend idéal pour un Raspberry Pi ou un petit VPS.
+
+### Beszel peut-il superviser des conteneurs Docker ?
+
+Oui. En montant le socket Docker en lecture seule dans l'agent, Beszel remonte les stats par conteneur en plus des métriques système.
+
+### Peut-on recevoir les alertes ailleurs que par email ?
+
+Oui. Beszel envoie les alertes par email via PocketBase, mais tu peux brancher un webhook vers Discord, Slack, n8n ou Uptime Kuma.
 
 ## Articles connexes
 

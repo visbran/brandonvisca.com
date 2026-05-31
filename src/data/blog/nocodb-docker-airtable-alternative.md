@@ -14,9 +14,21 @@ tags:
 featured: false
 draft: false
 focusKeyword: nocodb docker
+faqs:
+  - question: "NocoDB est-il vraiment gratuit ?"
+    answer: "Oui. L'édition auto-hébergée est open-source et gratuite, sans limite de lignes ni de collaborateurs. Tu n'es limité que par ton propre serveur."
+  - question: "Peut-on migrer ses données Airtable vers NocoDB ?"
+    answer: "Oui, en passant par un export CSV d'Airtable que tu réimportes dans NocoDB. Il n'existe pas encore d'import direct 100 % natif depuis un export JSON Airtable."
+  - question: "NocoDB fonctionne-t-il avec MySQL en plus de PostgreSQL ?"
+    answer: "Oui. NocoDB se branche sur PostgreSQL, MySQL et MariaDB. Tes données restent dans ta base SQL, NocoDB n'ajoute qu'une couche visuelle."
 timezone: Europe/Paris
 ---
-> **Résumé :** Guide complet pour déployer NocoDB avec Docker Compose et PostgreSQL — une alternative open-source et auto-hébergée à Airtable, avec prérequis, stack YAML, configuration initiale, import CSV et cas d'usage homelab.
+> 💡 **TL;DR** — NocoDB en bref :
+> - Alternative open-source et auto-hébergée à Airtable, posée au-dessus de ta propre base SQL (PostgreSQL, MySQL, MariaDB).
+> - Stack Docker Compose NocoDB + PostgreSQL opérationnelle en moins de 10 minutes.
+> - Vues grille, kanban et formulaire, import CSV et API REST auto — tes données restent chez toi, sans lock-in.
+
+## Table des matières
 
 ## Tu payes Airtable alors que tu pourrais self-hoster gratuitement ?
 
@@ -225,6 +237,20 @@ Si NocoDB ne te convient pas, trois alternatives sérieuses existent dans l'éco
 **Teable** — Une solution plus jeune qui mise sur la rapidité et l'interface. Moins mature que NocoDB ou Baserow, mais si tu cherches purement de la performance et du design, cela vaut le coup de suivre son évolution.
 
 Mon conseil ? Déploie NocoDB d'abord, joue avec pendant une semaine sur un vrai cas d'usage. Si tu butes sur des limites bloquantes, migre vers Baserow. Les deux utilisent PostgreSQL, donc la bascule est envisageable sans réécriture totale.
+
+## FAQ
+
+### NocoDB est-il vraiment gratuit ?
+
+Oui. L'édition auto-hébergée est open-source et gratuite, sans limite de lignes ni de collaborateurs. Tu n'es limité que par ton propre serveur.
+
+### Peut-on migrer ses données Airtable vers NocoDB ?
+
+Oui, en passant par un export CSV d'Airtable que tu réimportes dans NocoDB. Il n'existe pas encore d'import direct 100 % natif depuis un export JSON Airtable.
+
+### NocoDB fonctionne-t-il avec MySQL en plus de PostgreSQL ?
+
+Oui. NocoDB se branche sur PostgreSQL, MySQL et MariaDB. Tes données restent dans ta base SQL, NocoDB n'ajoute qu'une couche visuelle.
 
 ## Conclusion
 
