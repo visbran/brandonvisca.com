@@ -19,13 +19,13 @@ Publié: 2026-05-30T06:00:00.000Z
 URL: https://brandonvisca.com/stirling-pdf-docker-guide-auto-hebergement/
 Description: Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF.
 Tags: 
-Publié: 2026-05-29T09:00:00.000Z
+Publié: 2026-05-29T10:00:00.000Z
 
 ## Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab
 URL: https://brandonvisca.com/beszel-monitoring-docker/
 Description: Guide Beszel Docker monitoring : installe ce monitoring auto-hébergé ultra-léger pour surveiller CPU, RAM et disque de tes serveurs.
 Tags: 
-Publié: 2026-05-28T06:00:00.000Z
+Publié: 2026-05-28 06:00:00+00:00
 
 ## Nginx Proxy Manager : reverse proxy en 5 min avec Docker
 URL: https://brandonvisca.com/nginx-proxy-manager-docker-guide/
