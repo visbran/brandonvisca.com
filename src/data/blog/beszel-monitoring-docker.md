@@ -1,7 +1,8 @@
 ---
 title: "Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab"
 description: "Guide Beszel Docker monitoring : installe ce monitoring auto-hébergé ultra-léger pour surveiller CPU, RAM et disque de tes serveurs."
-pubDatetime: 2026-05-28T06:00:00.000Z
+pubDatetime: 2026-05-28 06:00:00+00:00
+modDatetime: 2026-05-31 00:00:00+01:00
 author: Brandon Visca
 tags:
   - intermediaire
@@ -16,9 +17,11 @@ timezone: Europe/Paris
 ---
 T'as déjà perdu une nuit à configurer Prometheus + Grafana pour monitorer un simple Raspberry Pi ? Tu te retrouvais avec dix conteneurs, des règles YAML kafkaïennes et un dashboard que t'arrivais pas à lire sans ton bac+5 en observabilité ? T'inquiète pas, j'ai mangé la même soupe 🍜
 
-Aujourd'hui je te présente **Beszel**, un outil de monitoring auto-hébergé écrit par Henk (henrygd/beszel) en Go sous licence MIT. Une Go binary, un dashboard web ultra-minimaliste, une comm' SSH, zéro port supplémentaire à ouvrir. Et tu peux le mettre en route en 10 minutes. Let's go.
+Aujourd'hui je te présente **Beszel**, un outil de monitoring auto-hébergé écrit par henrygd en Go sous licence MIT. Une Go binary, un dashboard web ultra-minimaliste, une comm' SSH, zéro port supplémentaire à ouvrir. Et tu peux le mettre en route en 10 minutes. Let's go.
 
 ## Table des matières
+
+> 💡 **Résumé :** Beszel est un monitoring auto-hébergé ultra-léger (Go) qui surveille CPU, RAM, disque et réseau via SSH. Parfait pour un homelab de 3 à 10 machines sans Prometheus ni Grafana — déploiement en 10 minutes via Docker Compose.
 
 - [Qu'est-ce que Beszel et pourquoi il te fera gagner du temps](/beszel-monitoring-docker/#quest-ce-que-beszel-et-pourquoi-il-te-fera-gagner-du-temps)
 - [L'architecture hub + agents en 30 secondes](/beszel-monitoring-docker/#larchitecture-hub-agents-en-30-secondes)

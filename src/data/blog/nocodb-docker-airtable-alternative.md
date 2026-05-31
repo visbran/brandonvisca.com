@@ -2,6 +2,7 @@
 title: "NocoDB Docker : alternative auto-hébergée à Airtable"
 description: "NocoDB Docker : déploie ta base de données type Airtable en auto-hébergement. Guide complet avec PostgreSQL, Docker Compose et import CSV."
 pubDatetime: "2026-05-30T06:00:00.000Z"
+modDatetime: "2026-05-31T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - debutant
@@ -9,11 +10,14 @@ tags:
   - auto-hebergement
   - productivite
   - guide
+  - nocodb
 featured: false
 draft: false
 focusKeyword: nocodb docker
 timezone: Europe/Paris
 ---
+> **Résumé :** Guide complet pour déployer NocoDB avec Docker Compose et PostgreSQL — une alternative open-source et auto-hébergée à Airtable, avec prérequis, stack YAML, configuration initiale, import CSV et cas d'usage homelab.
+
 ## Tu payes Airtable alors que tu pourrais self-hoster gratuitement ?
 
 On va pas se mentir : Airtable, c'est magique. Des bases en mode tableur, des vues en kanban, des liens entre tables, des formulaires… Le problème ? Quand tu commences à t'y habituer et que tes projets grossissent, le pricing te rattrape comme un coup de pied aux culs. Les limitations gratuites deviennent vite étouffantes, et tes données restent planquées sur les serveurs de quelqu'un d'autre.
@@ -31,12 +35,12 @@ NocoDB est un outil de base de données **no-code / low-code** open-source qui s
 - Créer des tables et des colonnes (texte, nombre, date, lien vers une autre table, etc.)
 - Switche entre différentes vues : Grille, Kanban, Formulaire, Galerie
 - Gérer les permissions utilisateur et les rôles
-- Générer une API REST et GraphQL automatiquement sur chaque table
+- Générer une API REST automatiquement sur chaque table
 - Importer et exporter facilement en CSV
 
 C'est un peu le cousin opensource d'Airtable, mais avec une philosophie différente : tes données restent dans **ta** base SQL. NocoDB ne fait que proposer une couche d'abstraction visuelle au-dessus. Si demain tu décides d'abandonner NocoDB, tes données sont toujours là, propres et accessibles via PostgreSQL. Pas de lock-in vendeur, pas de format propriétaire.
 
-L'outil est développé en Node.js et Angular, il consomme peu de ressources et tourne très bien sur un petit VPS ou même un Raspberry Pi 4 pour des usages modestes.
+L'outil est développé en Node.js (NestJS côté serveur) et Vue.js, il consomme peu de ressources et tourne très bien sur un petit VPS ou même un Raspberry Pi 4 pour des usages modestes.
 
 ## Pourquoi l'auto-héberger plutôt que d'utiliser le cloud ?
 

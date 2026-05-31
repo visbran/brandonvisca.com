@@ -1,9 +1,9 @@
 ---
 title: "Stirling-PDF Docker : remplace SmallPDF et Adobe par du self-hosted open-source"
 description: "Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF."
-pubDatetime: "2026-05-29T09:00:00.000Z"
-modDatetime: "2026-05-29T09:00:00.000Z"
-author: "Brandon Visca"
+pubDatetime: "2026-05-29T10:00:00.000Z"
+modDatetime: "2026-05-31T00:00:00.000Z"
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement
@@ -12,8 +12,7 @@ tags:
   - pdf
 featured: false
 draft: false
-focusKeyword: "stirling-pdf docker"
-timezone: "Europe/Paris"
+focusKeyword: stirling-pdf docker
 faqs:
   - question: "Est-ce que mes PDF restent stockés sur le serveur ?"
     answer: "Non. Stirling-PDF traite les fichiers en local et ne les conserve pas par défaut. Aucun tracking, aucun cloud externe."
@@ -23,10 +22,10 @@ faqs:
     answer: "Oui. En activant SECURITY_ENABLELOGIN=true, tu crées un compte admin et tu peux ajouter d’autres comptes depuis l’interface."
   - question: "Quelle est la différence avec LibreOffice ?"
     answer: "Stirling-PDF est une interface web dédiée aux manipulations PDF. Il utilise parfois LibreOffice en arrière-plan pour certaines conversions, mais il est beaucoup plus simple et rapide pour les tâches courantes (fusion, split, OCR, signature)."
+timezone: Europe/Paris
 ---
-
 > 💡 **TL;DR** — Ce qu'il faut retenir :
-> - Stirling-PDF est un éditeur PDF open-source auto-hébergé (~80 000 stars GitHub).
+> - Stirling-PDF est un éditeur PDF open-source auto-hébergé (~73 000 stars GitHub).
 > - Il remplace SmallPDF (~84€/an) et Adobe Acrobat (~180€/an) gratuitement.
 > - Docker Compose en 5 minutes : mergé, split, OCR, conversion, signature.
 > - Active le login et mets-le derrière Traefik avant de l'exposer sur Internet.
@@ -37,7 +36,7 @@ Spoiler : il existe une solution open-source qui fait tout ça — et bien plus 
 
 ## Stirling-PDF Docker : l'outil open-source qui te sert du PDF sur un plateau
 
-Stirling-PDF, c'est **l'outil web open-source #1 sur GitHub** pour manipuler des PDF. On parle de près de 80 000 stars, un projet maintenu par la communauté (Stirling-Tools), sous licence MIT. Pas de compte obligatoire, pas de limite de pages, pas de watermark imposé.
+Stirling-PDF, c'est **l'outil web open-source #1 sur GitHub** pour manipuler des PDF. On parle de près de 73 000 stars, un projet maintenu par la communauté (Stirling-Tools), sous licence MIT. Pas de compte obligatoire, pas de limite de pages, pas de watermark imposé.
 
 Tu l'héberges chez toi sur un VPS ou un serveur perso via Docker. **Stirling-PDF Docker** devient alors ton éditeur PDF personnel : tes documents ne quittent jamais ton infrastructure. Zéro tracking, zéro analytics tiers, zéro surprise.
 
@@ -55,7 +54,7 @@ C'est la réponse parfaite à *"j'ai besoin de merger deux PDF rapidement sans o
 | Conversion Office | Oui (LibreOffice) | Oui | Oui |
 | Signature PDF | Oui | Oui | Oui |
 | Limite de taille | Tu décides | 5–100 Mo | 100 Mo |
-| Open-source | ✅ GPL v3 | ❌ Non | ❌ Non |
+| Open-source | ✅ MIT | ❌ Non | ❌ Non |
 
 Mon avis perso : à moins que ton entreprise impose Adobe pour des raisons de conformité très strictes, il n'y a aucune raison de payer pour ce que Stirling-PDF fait gratuitement et mieux.
 
@@ -202,7 +201,7 @@ Stirling-PDF est une interface web dédiée aux manipulations PDF. Il utilise pa
 - Il remplace SmallPDF (~84€/an) et Adobe Acrobat (~180€/an) gratuitement
 - Docker Compose à copier-coller, 5 min de setup
 - Active le login et mets-le derrière Traefik avant de l’exposer
-- ~80 000 stars GitHub, communauté active, zéro tracking
+- ~73 000 stars GitHub, communauté active, zéro tracking
 
 ## Articles connexes
 
