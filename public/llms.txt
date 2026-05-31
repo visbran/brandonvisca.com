@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-05-30
-# Total articles : 88
+# Dernière mise à jour : 2026-05-31
+# Total articles : 89
+
+## Paperless-ngx : votre bureau numérique auto-hébergé avec OCR
+URL: https://brandonvisca.com/paperless-ngx-docker-guide-auto-hebergement/
+Description: Guide complet pour installer Paperless-ngx avec Docker Compose. Archivez, numérisez et retrouvez facilement vos documents dans votre bureau numérique.
+Tags: docker, auto-hebergement, administration-systeme, productivite, ocr, debutant
+Publié: 2026-05-31 08:00:00+00:00
 
 ## NocoDB Docker : alternative auto-hébergée à Airtable
 URL: https://brandonvisca.com/nocodb-docker-airtable-alternative/
