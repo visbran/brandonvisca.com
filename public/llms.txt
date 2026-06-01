@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-05-31
-# Total articles : 89
+# Dernière mise à jour : 2026-06-01
+# Total articles : 90
+
+## Gitea Docker : ton serveur Git auto-hébergé en 5 minutes
+URL: https://brandonvisca.com/gitea-serveur-git-docker-auto-hebergement/
+Description: Installe Gitea avec Docker pour héberger tes repos Git sur ton serveur. Guide complet gitea docker pour remplacer GitHub en auto-hébergement léger.
+Tags: 
+Publié: 2026-06-01T07:00:00.000Z
 
 ## Paperless-ngx : votre bureau numérique auto-hébergé avec OCR
 URL: https://brandonvisca.com/paperless-ngx-docker-guide-auto-hebergement/
