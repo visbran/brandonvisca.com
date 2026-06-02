@@ -1,8 +1,8 @@
 ---
 title: "Fail2Ban Docker : bloquer les attaques brute-force automatiquement"
 description: "Guide Fail2Ban Docker : protège ton serveur contre les attaques brute-force. Docker Compose, filtres personnalisés et bonnes pratiques."
-pubDatetime: 2026-06-02 08:00:00+00:00
-modDatetime: 2026-06-02 08:00:00+00:00
+pubDatetime: "2026-06-02T08:00:00.000Z"
+modDatetime: "2026-06-02T08:00:00.000Z"
 author: Brandon Visca
 tags:
   - debutant
