@@ -7,7 +7,7 @@
 URL: https://brandonvisca.com/fail2ban-docker-securite-serveur/
 Description: Guide Fail2Ban Docker : protège ton serveur contre les attaques brute-force. Docker Compose, filtres personnalisés et bonnes pratiques.
 Tags: 
-Publié: 2026-06-02 08:00:00+00:00
+Publié: 2026-06-02T08:00:00.000Z
 
 ## Gitea Docker : ton serveur Git auto-hébergé en 5 minutes
 URL: https://brandonvisca.com/gitea-serveur-git-docker-auto-hebergement/
