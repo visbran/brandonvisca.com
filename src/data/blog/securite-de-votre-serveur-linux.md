@@ -2,7 +2,7 @@
 title: "Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?"
 description: "Guide complet pour renforcer la sécurité de votre serveur Linux : SSH, pare-feu ufw, fail2ban, mises à jour auto et surveillance des logs. Testé en prod."
 pubDatetime: "2024-06-10T19:29:00+02:00"
-modDatetime: "2026-04-12T00:00:00+01:00"
+modDatetime: "2026-06-02T10:00:00.000Z"
 author: Brandon Visca
 tags:
   - linux
@@ -234,6 +234,8 @@ sudo systemctl restart apache2
 ## Analysez les journaux et bannissez les hôtes suspects – Fail2Ban
 
 > **DenyHosts est obsolète** : plus maintenu depuis 2014 et incompatible avec systemd. Utilise uniquement **Fail2Ban**, qui remplit le même rôle avec une bien meilleure intégration système.
+>
+> Si tu préfères isoler Fail2Ban dans un container plutôt que l'installer sur l'hôte, j'ai publié un guide complet pour [déployer Fail2Ban avec Docker](/fail2ban-docker-securite-serveur/) et configurer les filtres personnalisés en quelques minutes.
 
 Installation :
 
