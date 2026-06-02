@@ -27,7 +27,7 @@ Description: NocoDB Docker : déploie ta base de données type Airtable en auto-
 Tags: 
 Publié: 2026-05-30T06:00:00.000Z
 
-## Stirling-PDF Docker : remplace SmallPDF et Adobe par du self-hosted open-source
+## Stirling-PDF Docker : alternative open-source à SmallPDF
 URL: https://brandonvisca.com/stirling-pdf-docker-guide-auto-hebergement/
 Description: Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF.
 Tags: 
