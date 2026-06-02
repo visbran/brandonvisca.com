@@ -1,13 +1,7 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-02
-# Total articles : 91
-
-## Gitea Docker : héberge ton propre serveur Git auto-hébergé
-URL: https://brandonvisca.com/gitea-docker-auto-hebergement-git/
-Description: Guide Gitea Docker : déploie ton serveur Git avec Docker Compose, SQLite ou PostgreSQL et reverse proxy dans un homelab.
-Tags: 
-Publié: 2026-06-02T06:00:00.000Z
+# Dernière mise à jour : 2026-06-01
+# Total articles : 90
 
 ## Gitea Docker : ton serveur Git auto-hébergé en 5 minutes
 URL: https://brandonvisca.com/gitea-serveur-git-docker-auto-hebergement/
