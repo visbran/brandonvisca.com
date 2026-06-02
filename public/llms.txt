@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-06-02
-# Total articles : 90
+# Total articles : 91
+
+## Fail2Ban Docker : bloquer les attaques brute-force automatiquement
+URL: https://brandonvisca.com/fail2ban-docker-securite-serveur/
+Description: Guide Fail2Ban Docker : protège ton serveur contre les attaques brute-force. Docker Compose, filtres personnalisés et bonnes pratiques.
+Tags: debutant, securite, docker, linux, auto-hebergement
+Publié: 2026-06-02 08:00:00+02:00
 
 ## Gitea Docker : ton serveur Git auto-hébergé en 5 minutes
 URL: https://brandonvisca.com/gitea-serveur-git-docker-auto-hebergement/
