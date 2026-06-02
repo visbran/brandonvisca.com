@@ -1,6 +1,6 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-01
+# Dernière mise à jour : 2026-06-02
 # Total articles : 90
 
 ## Gitea Docker : ton serveur Git auto-hébergé en 5 minutes
