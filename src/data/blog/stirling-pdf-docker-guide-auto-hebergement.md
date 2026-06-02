@@ -1,5 +1,5 @@
 ---
-title: "Stirling-PDF Docker : remplace SmallPDF et Adobe par du self-hosted open-source"
+title: "Stirling-PDF Docker : alternative open-source à SmallPDF"
 description: "Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF."
 pubDatetime: "2026-05-29T10:00:00.000Z"
 modDatetime: "2026-05-31T00:00:00.000Z"
@@ -62,7 +62,7 @@ Mon avis perso : à moins que ton entreprise impose Adobe pour des raisons de co
 
 ## Tout ce qu'il fait (et c'est beaucoup)
 
-Stirling-PDF embarge une dizaine d'outils PDF dans une seule interface web. Tu peux :
+Stirling-PDF embarque une dizaine d'outils PDF dans une seule interface web. Tu peux :
 
 - **Fusionner** plusieurs PDF en un seul
 - **Diviser** un PDF par pages ou en extraits
@@ -196,14 +196,6 @@ Oui. En activant `SECURITY_ENABLELOGIN=true`, tu crées un compte admin et tu pe
 ### Quelle est la différence avec LibreOffice ?
 
 Stirling-PDF est une interface web dédiée aux manipulations PDF. Il utilise parfois LibreOffice en arrière-plan pour certaines conversions, mais il est beaucoup plus simple et rapide pour les tâches courantes (fusion, split, OCR, signature).
-
-## TL;DR
-
-- Stirling-PDF est un éditeur PDF open-source hébergé chez toi
-- Il remplace SmallPDF (~84€/an) et Adobe Acrobat (~180€/an) gratuitement
-- Docker Compose à copier-coller, 5 min de setup
-- Active le login et mets-le derrière Traefik avant de l’exposer
-- ~73 000 stars GitHub, communauté active, zéro tracking
 
 ## Articles connexes
 

@@ -42,10 +42,10 @@ Dans ce tuto, on va voir comment déployer NocoDB avec Docker Compose et Postgre
 
 ## Qu'est-ce que NocoDB exactement ?
 
-NocoDB est un outil de base de données **no-code / low-code** open-source qui se place au-dessus d'une base de données relationnelle existante. Concrètement, il te offre une interface graphique dans le navigateur pour :
+NocoDB est un outil de base de données **no-code / low-code** open-source qui se place au-dessus d'une base de données relationnelle existante. Concrètement, il t'offre une interface graphique dans le navigateur pour :
 
 - Créer des tables et des colonnes (texte, nombre, date, lien vers une autre table, etc.)
-- Switche entre différentes vues : Grille, Kanban, Formulaire, Galerie
+- Basculer entre différentes vues : Grille, Kanban, Formulaire, Galerie
 - Gérer les permissions utilisateur et les rôles
 - Générer une API REST automatiquement sur chaque table
 - Importer et exporter facilement en CSV
@@ -94,7 +94,6 @@ nano ~/nocodb/docker-compose.yml
 Colle-y ce contenu :
 
 ```yaml
-version: '3.8'
 
 services:
   nocodb:
@@ -158,7 +157,7 @@ Tu devrais voir les deux services `Up` et `healthy`.
 
 Ouvre ensuite ton navigateur à l'adresse `http://IP_DE_TON_SERVEUR:8080`. Si tout va bien, NocoDB te propose de créer un compte administrateur.
 
-Si tu exposes ça sur Internet, **passes obligatoirement par un reverse proxy avec HTTPS**. Traefik, Nginx Proxy Manager, Caddy… peu importe, mais ne laisse jamais une application web en plain HTTP sur le web. Si tu ne sais pas comment faire, suis le guide Traefik mentionné plus haut.
+Si tu exposes ça sur Internet, **passe obligatoirement par un reverse proxy avec HTTPS**. Traefik, Nginx Proxy Manager, Caddy… peu importe, mais ne laisse jamais une application web en plain HTTP sur le web. Si tu ne sais pas comment faire, suis le guide Traefik mentionné plus haut.
 
 ## Configuration initiale : ta première base en 2 minutes
 
@@ -183,7 +182,7 @@ NocoDB sait nativement importer des fichiers **CSV** et des exports Airtable (fo
 
 Concernant Airtable spécifiquement, il n'existe pas encore d'import direct 100 % natif depuis un export JSON. La méthode la plus fiable reste de passer par un export CSV d'Airtable, que tu réimportes ensuite dans NocoDB. C'est une opération manuelle, mais elle fonctionne très bien pour des bases de taille moyenne.
 
-Pour les bases très complexes avec plein de relations et de pièces jointes, il faudra mettre les mains dans le cambouis et réétablrir manuellement les liens. C'est le prix de la liberté.
+Pour les bases très complexes avec plein de relations et de pièces jointes, il faudra mettre les mains dans le cambouis et rétablir manuellement les liens. C'est le prix de la liberté.
 
 ## Cas d'usage concrets pour ton homelab
 

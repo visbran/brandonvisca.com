@@ -2,6 +2,8 @@
 title: "Paperless-ngx : votre bureau numérique auto-hébergé avec OCR"
 description: Guide complet pour installer Paperless-ngx avec Docker Compose. Archivez, numérisez et retrouvez facilement vos documents dans votre bureau numérique.
 pubDatetime: 2026-05-31 06:00:00+00:00
+modDatetime: "2026-06-02T00:00:00.000Z"
+focusKeyword: paperless-ngx docker
 author: Brandon Visca
 tags:
   - debutant
@@ -14,6 +16,11 @@ featured: false
 draft: false
 ogImage: ""
 ---
+
+**TL;DR** — Paperless-ngx, c'est un bureau numérique auto-hébergé qui OCRise et classe tes documents automatiquement. Tu le déploies avec Docker Compose (PostgreSQL + Redis) en moins de 20 minutes, l'OCR français est natif, et tu retrouves n'importe quelle facture en deux secondes. Du Raspberry Pi 4 au petit serveur, sans confier tes papiers à un cloud tiers.
+
+## Table des matières
+
 ## Pourquoi vos documents méritent mieux qu'un tiroir en plastique
 
 Tu connais le coup. Tous les ans tu reçois :
@@ -61,8 +68,6 @@ Sur le plan logiciel, il te faut :
 Voici une stack complète et fonctionnelle. Elle inclut Paperless-ngx, une base PostgreSQL pour la métadonnée, et Redis pour le cache et les files d'attente de traitement. C'est la configuration recommandée par les développeurs.
 
 ```yaml
-version: "3.8"
-
 services:
   broker:
     image: docker.io/library/redis:7
@@ -136,12 +141,12 @@ mkdir -p ~/docker/paperless && cd ~/docker/paperless
 mkdir -p data media export consume redisdata pgdata
 ```
 
-4. Lances la stack :
+4. Lance la stack :
 ```bash
 docker compose up -d
 ```
 
-5. Patientes 30 à 60 secondes le temps que la base de données s'initialise et que Paperless migre son schéma.
+5. Patiente 30 à 60 secondes le temps que la base de données s'initialise et que Paperless migre son schéma.
 
 6. Vérifie les logs :
 ```bash
@@ -149,13 +154,13 @@ docker compose logs -f webserver
 ```
 Quand tu vois `Listening at: http://0.0.0.0:8000`, c'est bon.
 
-7. Ouvres `http://IP_DE_TON_SERVEUR:8000` dans ton navigateur et connecte-toi avec l'admin créé automatiquement (`admin` / `admin-temporaire-a-changer`).
+7. Ouvre `http://IP_DE_TON_SERVEUR:8000` dans ton navigateur et connecte-toi avec l'admin créé automatiquement (`admin` / `admin-temporaire-a-changer`).
 
 8. **Change immédiatement ce mot de passe** dans Paramètres > Comptes. Ce n'est pas une option.
 
 ## Créer un utilisateur proprement
 
-Si tu préfères ne pas laisser l'utilisateur admin par défaut, supprime-le après avoir créé le tien. Ou utilises la commande officielle pour créer un superuser :
+Si tu préfères ne pas laisser l'utilisateur admin par défaut, supprime-le après avoir créé le tien. Ou utilise la commande officielle pour créer un superuser :
 
 ```bash
 docker compose exec -T webserver python manage.py createsuperuser
@@ -196,7 +201,7 @@ Paperless-ngx n'est pas une île. Il s'intègre naturellement dans un homelab :
 - Avec **[Nextcloud](/nextcloud-docker-installation-complete-2025/)** : synchronise un dossier Nextcloud avec le dossier `consume` de Paperless via un lien symbolique ou un montage bind. Les documents uploadés sur Nextcloud sont automatiquement OCRisés.
 - Avec **[Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/)** : stocke ton mot de passe admin Paperless dans ton gestionnaire de mots de passe. Évidence, mais on ne le répète jamais assez.
 - Avec **Traefik ou Nginx Proxy Manager** : expose Paperless en HTTPS avec un certificat Let's Encrypt. Ne laisse jamais une interface d'admin accessible en HTTP clair sur internet.
-- Avec **[Immich](/immich-docker/)** : Paperless gère les documents, Immich les photos. Gardes les deux séparés : les PDF dans Paperless, les souvenirs dans Immich.
+- Avec **[Immich](/immich-docker/)** : Paperless gère les documents, Immich les photos. Garde les deux séparés : les PDF dans Paperless, les souvenirs dans Immich.
 
 ## Sauvegardes : ne perds pas trois ans de paperasse
 
@@ -237,6 +242,20 @@ Paperless-ngx sert à stocker des documents sensibles. C'est un trésor pour un 
 
 Le principe est simple : tes factures et relevés bancaires ne méritent pas moins de soin que ton [gestionnaire de mots de passe](/vaultwarden-docker-gestionnaire-mots-de-passe/) ou ton [cloud personnel](/nextcloud-docker-installation-complete-2025/).
 
+## FAQ
+
+### Paperless-ngx peut-il lire des documents en plusieurs langues ?
+Oui. La variable `PAPERLESS_OCR_LANGUAGE` accepte plusieurs langues combinées, par exemple `fra+eng`. Tesseract appliquera alors l'OCR dans chacune d'elles.
+
+### Quelle configuration matérielle minimale ?
+Un Raspberry Pi 4 avec 4 Go de RAM suffit pour un usage familial. Pour de gros volumes, vise 2 cœurs CPU et 8 Go de RAM.
+
+### Peut-on importer des fichiers Office (.docx, .xlsx) ?
+Oui, en ajoutant les services Gotenberg et Tika à la stack. Paperless les convertit alors automatiquement en PDF avant l'OCR.
+
+### Comment sauvegarder proprement ?
+Combine le backup du dossier `~/docker/paperless` (volumes) avec l'export natif via `document_exporter`. Et teste ta restauration au moins une fois par an.
+
 ## À qui s'adresse Paperless-ngx ?
 
 - **Au particulier** qui veut dématérialiser ses papiers administratifs sans donner ses données à un tiers.
@@ -247,3 +266,9 @@ Le principe est simple : tes factures et relevés bancaires ne méritent pas moi
 Ce n'est pas un outil pour les entreprises de 500 salariés (il existe des solutions plus robustes et payantes pour ça). Mais pour tout le reste, c'est un monstre d'efficacité.
 
 Penses-y la prochaine fois que tu ouvriras un tiroir en disant "il est où ce putain de contrat ?". La réponse sera dans Paperless, trouvée en 0,3 seconde.
+
+## Pour aller plus loin
+
+- [Docker pour débutants : les services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/)
+- [Nextcloud : ton cloud personnel auto-hébergé en Docker](/nextcloud-docker-installation-complete-2025/)
+- [n8n : automatise tes workflows en Docker](/n8n-docker-workflow-automation/)

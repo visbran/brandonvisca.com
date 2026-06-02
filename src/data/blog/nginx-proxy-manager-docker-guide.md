@@ -26,7 +26,7 @@ focusKeyword: nginx proxy manager docker
 
 Si tu auto-héberges plusieurs services (Nextcloud, Plex, Grafana, vaultwarden…), tu finis vite à gérer des dizaines de ports, des certificats SSL qui expirent et des fichiers de conf Nginx imbitables. 😵‍💫
 
-**Nginx Proxy Manager** (NPM) résout tout ça via une interface web claire. Tu crée un point d'entrée unique, tu rediriges les domaines vers les bons conteneurs, et les certificats Let's Encrypt se renouvellent tout seuls. Pas besoin de toucher au terminal à chaque nouveau service.
+**Nginx Proxy Manager** (NPM) résout tout ça via une interface web claire. Tu crées un point d'entrée unique, tu rediriges les domaines vers les bons conteneurs, et les certificats Let's Encrypt se renouvellent tout seuls. Pas besoin de toucher au terminal à chaque nouveau service.
 
 - Image Docker officielle : `jc21/nginx-proxy-manager:latest`
 - Repo GitHub : [NginxProxyManager/nginx-proxy-manager](https://github.com/NginxProxyManager/nginx-proxy-manager), 247M+ pulls, dernière version v2.14.0 (février 2026)
@@ -47,9 +47,7 @@ Crée le dossier et le fichier :
 mkdir -p ~/npm && cd ~/npm
 ```
 
-<aside class="notion-callout notion-blue-callout">
-💡 Mon dossier racine des projets Docker est `~/npm`. Si tu préfères un autre chemin, adapte le volume.
-</aside>
+> 💡 Mon dossier racine des projets Docker est `~/npm`. Si tu préfères un autre chemin, adapte le volume.
 
 Copie ce `docker-compose.yml` :
 
@@ -156,7 +154,7 @@ Pour le durcissement HTTPS, complète avec les [headers HTTP sécurisés Nginx](
 
 - Vérifie que le DNS pointe bien sur ton IP publique : `dig monapp.tondomaine.fr`
 - Vérifie que les ports 80 et 443 sont ouverts : `nc -zv tondomaine.fr 80`
-- Let's Encrypt a une limite de 5 certificats identiques par semaine. Attends un peu si tu as trop forçé.
+- Let's Encrypt a une limite de 5 certificats identiques par semaine. Attends un peu si tu as trop forcé.
 
 ### Erreur 502 Bad Gateway
 
@@ -168,7 +166,7 @@ Pour le durcissement HTTPS, complète avec les [headers HTTP sécurisés Nginx](
 
 - Vérifie que le conteneur tourne : `docker logs npm`
 - Le port 81 est-il libre sur le host ? `ss -tlnp | grep 81`
-- Si tu as un autre service sur le port 81, modifie la binding du port dans le `docker-compose.yml` : `"8081:81"`
+- Si tu as un autre service sur le port 81, modifie le binding du port dans le `docker-compose.yml` : `"8081:81"`
 
 ### Le certificat n'a pas renouvelé
 

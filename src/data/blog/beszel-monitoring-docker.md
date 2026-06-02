@@ -29,10 +29,9 @@ timezone: Europe/Paris
 
 T'as déjà perdu une nuit à configurer Prometheus + Grafana pour monitorer un simple Raspberry Pi ? Tu te retrouvais avec dix conteneurs, des règles YAML kafkaïennes et un dashboard que t'arrivais pas à lire sans ton bac+5 en observabilité ? T'inquiète pas, j'ai mangé la même soupe 🍜
 
-Aujourd'hui je te présente **Beszel**, un outil de monitoring auto-hébergé écrit par henrygd en Go sous licence MIT. Une Go binary, un dashboard web ultra-minimaliste, une comm' SSH, zéro port supplémentaire à ouvrir. Et tu peux le mettre en route en 10 minutes. Let's go.
+Aujourd'hui je te présente **Beszel**, un outil de monitoring auto-hébergé écrit par henrygd en Go sous licence MIT. Un binaire Go, un dashboard web ultra-minimaliste, une comm' SSH, zéro port supplémentaire à ouvrir. Et tu peux le mettre en route en 10 minutes. Let's go.
 
 ## Table des matières
-
 
 ## Qu'est-ce que Beszel et pourquoi il te fera gagner du temps
 
@@ -49,14 +48,14 @@ Les métriques collectées couvrent l'essentiel :
 
 Le tout est stocké dans un **SQLite intégré** au hub. Oui, ça tient dans un fichier. Oui, c'est suffisant pour un petit homelab. Non, ça ne remplace pas un Datadog à 500€/mois. C'est **l'outil parfait pour celui qui veut voir l'état de ses 4-5 machines sans lancer un cluster Kubernetes** 🎯
 
-En plus, Beszel est **responsive** : il tourne aussi bien sur un VPS chez Contabo qu'une armée de Raspberry Pi chez toi. Et le client est léger : l'agent consomme moins de 20 Mo de RAM.
+En plus, Beszel est **polyvalent** : il tourne aussi bien sur un VPS chez Contabo qu'une armée de Raspberry Pi chez toi. Et le client est léger : l'agent consomme moins de 20 Mo de RAM.
 
 ## L'architecture hub + agents en 30 secondes
 
 Le vocabulaire est simple :
 
 - **Hub** : le serveur central. C'est lui qui expose le dashboard web, stocke les données SQLite et initie les connexions SSH.
-- **Agent** : une petite binaire Go installée sur chaque machine à surveiller. Elle collecte les métriques en local et les servit via SSH quand le hub demande.
+- **Agent** : une petite binaire Go installée sur chaque machine à surveiller. Elle collecte les métriques en local et les sert via SSH quand le hub demande.
 
 La communication entre hub et agent se fait **exclusivement en SSH**. Le hub ouvre une connexion SSH vers chaque agent, ce qui signifie :
 
@@ -233,25 +232,25 @@ networks:
 
 Beszel n'est pas parfait pour tout le monde. Voici ce qu'il faut savoir avant d'adopter :
 
-### ✅ Les points forts
+### Les points forts
 - **Ultra-léger** : un agent + hub Docker, c'est moins de 100 Mo de RAM combinés
 - **Zéro dépendance** : pas de Prometheus, de Grafana ni de base de données externe
 - **Multi-arch** : ARM64 et AMD64 sans se poser de questions
 - **SSH natif** : pas de port exposé, pas de VPN nécessaire (mais possible si tu préfères)
 - **Open-source MIT** : tu peux forker, contribuer ou l'auditer
 
-### ⚠️ Les limites
+### Les limites
 - **Rétention** : les données sont stockées dans un fichier SQLite. Pour un historique de plusieurs années, il faudra peut-être penser à l'archivage. Pas de TSDB intégré.
 - **Pas de dashboard custom** : tu as les graphes par machine, point. Pas de construction de dashboard multi-métriques comme Grafana.
 - **Pas de templating d'alerte avancé** : les alertes sont des seuils simples, pas de règles complexes type PromQL.
 - **Besoin d'une IP statique ou d'un DNS** pour chaque agent (le hub appelle en SSH, pas l'inverse)
 
-### 🧠 Quand l'utiliser ?
+### Quand l'utiliser ?
 - Pour monitorer 3 à 10 machines sans te compliquer la vie
 - Quand tu veux un dashboard lisible sans formation
 - Pour un monitoring de base sur un homelab ou un petit VPS
 
-### 🚫 Quand passer à autre chose ?
+### Quand passer à autre chose ?
 - Plus de 20 serveurs ou besoin de métriques applicatives (requêtes HTTP, logs, traces)
 - Besoin de dashboards complexe avec agrégations multi-serveurs
 - Historique long terme (3+ ans) avec requêtes analytiques poussées
