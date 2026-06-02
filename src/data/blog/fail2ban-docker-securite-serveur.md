@@ -90,7 +90,7 @@ Quelques précisions :
 - `network_mode: host` est nécessaire pour qu'il puisse injecter des règles `iptables` directement sur l'hôte. Sans ça, il bloque dans son propre namespace réseau, donc zéro effet.
 - `NET_ADMIN` et `NET_RAW` donnent les droits pour manipuler le pare-feu.
 - Les volumes bindés vers `/var/log/auth.log` et `/var/log/syslog` permettent de superviser SSH. Si tu utilises `journald` sans fichier physique, il faudra passer par une autre stratégie (voir FAQ).
-- Le dernier volume pointe vers les logs de Traefik ou Nginx Proxy Manager. Adapte le chemin à ton installation. Si tu utilises [Nginx Proxy Manager](/nginx-proxy-manager-docker-guide/), les logs sont généralement dans `/var/log/`` ou exportés via un volume spécifique.
+- Le dernier volume pointe vers les logs de Traefik ou Nginx Proxy Manager. Adapte le chemin à ton installation. Si tu utilises [Nginx Proxy Manager](/nginx-proxy-manager-docker-guide/), les logs sont généralement dans `/var/log/` ou exportés via un volume spécifique.
 
 ## Structure des fichiers de configuration
 
@@ -248,7 +248,7 @@ Fail2Ban écrit aussi ses propres logs dans `/data/log/fail2ban.log`. Un grep si
 
 **Ne pas monter tout `/var/log` dans le container.** Monte uniquement ce dont Fail2Ban a besoin. Plus ciblé, plus sûr.
 
-**Toujours configurer `ignoreip`.** Si tu uses un VPN ou une IP fixe, ajoute-la. Se bannir soi-même en SSH est un classique du genre.
+**Toujours configurer `ignoreip`.** Si tu utilises un VPN ou une IP fixe, ajoute-la. Se bannir soi-même en SSH est un classique du genre.
 
 **Tester avant de déployer en production.** Fais un `fail2ban-regex` avec un extrait de tes logs et ton filtre pour confirmer qu'il matche bien.
 
@@ -260,7 +260,7 @@ docker exec -it fail2ban fail2ban-regex /var/log/traefik/access.log traefik-auth
 
 **Ne pas mettre `bantime` à des valeurs démentielles.** Ban 24h c'est bien pour un bot qui scanne. Ban 30 jours, tu risques de bloquer des utilisateurs légitimes derrière des CGNAT ou des proxies sortants.
 
-**Préférer `iptables` à `nftables` si tu ne maîtrises pas.** L'image `crazymax/fail2ban` joue bien avec `iptables`. Sur les distros recentes en `nftables` (Debian 12+, Ubuntu 24+), vérifie que la compatibilité legacy est activée ou adapte l'action pour `nftables-multiport`.
+**Préférer `iptables` à `nftables` si tu ne maîtrises pas.** L'image `crazymax/fail2ban` joue bien avec `iptables`. Sur les distros récentes en `nftables` (Debian 12+, Ubuntu 24+), vérifie que la compatibilité legacy est activée ou adapte l'action pour `nftables-multiport`.
 
 ## Tableau de synthèse des jails recommandés
 

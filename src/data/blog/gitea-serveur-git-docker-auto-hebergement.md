@@ -32,7 +32,7 @@ faqs:
 - Ports par défaut : **3000** (interface web) et **22** (Git SSH).
 - Déploiement en 5 minutes avec Docker Compose + un volume `/data` persistant.
 - SQLite pour commencer, PostgreSQL pour monter en charge proprement.
-- Reverse proxy recommended pour le HTTPS et la sécurité.
+- Reverse proxy recommandé pour le HTTPS et la sécurité.
 
 ---
 
@@ -238,7 +238,7 @@ Cette stack persiste aussi la base PostgreSQL dans le dossier `./postgres` local
 
 ## Reverse Proxy HTTPS (Nginx Proxy Manager)
 
-Ne laisse jamais Gitea en HTTP pur sur Internet. La méthode la plus simple pour ajouter du HTTPS est **Nginx Proxy Manager** (disponible lui aussi en Docker).
+Ne laisse jamais Gitea en HTTP pur sur Internet. La méthode la plus simple pour ajouter du HTTPS est **[Nginx Proxy Manager](/nginx-proxy-manager-docker-guide/)** (disponible lui aussi en Docker).
 
 Dans NPM :
 1. Ajoute un proxy host pointant vers `gitea:3000` (IP interne du conteneur ou `localhost:3000` si en réseau host).
@@ -339,14 +339,14 @@ docker compose pull
 docker compose up -d
 ```
 
-Gitea gère ses migrations de schéma automatiquement au démarrage. Aucune action manuelle requise entre les versions mineures. Lis tout de même les notes de version (release notes) avant chaque `pull`, notamment si tu passes d'une version majeure à une autre.
+Pour automatiser complètement cette étape, tu peux déléguer la surveillance des nouvelles images à [Watchtower](/watchtower-mise-a-jour-docker-auto/), qui pull et redémarre les conteneurs tout seul. Gitea gère ses migrations de schéma automatiquement au démarrage. Aucune action manuelle requise entre les versions mineures. Lis tout de même les notes de version (release notes) avant chaque `pull`, notamment si tu passes d'une version majeure à une autre.
 
 ---
 
 ## Sécurité : bonnes pratiques rapides
 
 1. **Reverse proxy HTTPS obligatoire** : ne laisse jamais Gitea en HTTP sur Internet public. Traefik, Nginx Proxy Manager ou Caddy font le job en quelques clics.
-2. **Fail2Ban** : protège le port 3000 contre les attaques par force brute sur le login. Un filtre spécifique existe pour Gitea dans les communautés Linux.
+2. **[Fail2Ban](/fail2ban-docker-securite-serveur/)** : protège le port 3000 contre les attaques par force brute sur le login. Un filtre spécifique existe pour Gitea dans les communautés Linux.
 3. **Backups chiffrés et hors site** : stocke tes dumps sur un cloud externe chiffré (rclone avec la couche crypt, BorgBase, ou Kopia).
 4. **Pas d'accès root** : les images officielles tournent avec `USER_UID=1000` par défaut. Ne modifies jamais cela sans raison impérieuse.
 5. **ClamAV ou audit** : si tu autorises des utilisateurs externes à uploader des fichiers, scanne les pièces jointes.
