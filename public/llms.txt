@@ -7,7 +7,7 @@
 URL: https://brandonvisca.com/ufw-docker-pare-feu-linux/
 Description: Guide UFW Docker : pare-feu Linux simple qui fonctionne avec tes conteneurs. Règles, pièges iptables et solution complète.
 Tags: 
-Publié: 2026-06-03T14:00:00.000Z
+Publié: 2026-06-03T08:00:00.000Z
 
 ## Fail2Ban Docker : bloquer les attaques brute-force automatiquement
 URL: https://brandonvisca.com/fail2ban-docker-securite-serveur/
