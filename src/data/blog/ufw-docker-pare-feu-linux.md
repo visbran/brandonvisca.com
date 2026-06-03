@@ -1,7 +1,7 @@
 ---
 title: "UFW Docker : configurer le pare-feu sans casser les conteneurs"
 description: "Guide UFW Docker : pare-feu Linux simple qui fonctionne avec tes conteneurs. Règles, pièges iptables et solution complète."
-pubDatetime: "2026-06-03T14:00:00.000Z"
+pubDatetime: "2026-06-03T08:00:00.000Z"
 modDatetime: "2026-06-03T14:00:00.000Z"
 author: Brandon Visca
 tags:
