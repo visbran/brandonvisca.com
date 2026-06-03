@@ -278,7 +278,7 @@ Adapte les chemins à ta configuration. L'important est que chaque jail pointe v
 
 **Faut-il Fail2Ban si j'ai déjà des clés SSH et ufw ?**
 
-Oui. Les clés SSH empêchent le bruteforce de mot de passe, mais pas les floods de connexions. Ufw est un pare-feu statique. Fail2Ban est réactif. C'est complémentaire. Si tu cherches à durcir l'ensemble de ton serveur, j'ai publié un guide complet sur [la sécurité Linux](/securite-de-votre-serveur-linux/) qui couvre SSH, sysctl et pare-feu.
+Oui. Les clés SSH empêchent le bruteforce de mot de passe, mais pas les floods de connexions. Ufw est un pare-feu statique. Fail2Ban est réactif. C'est complémentaire. Et pour configurer UFW correctement avec Docker sans que tes règles de pare-feu soient contournées, j'ai un guide complet sur [UFW avec Docker](/ufw-docker-pare-feu-linux/). Si tu cherches à durcir l'ensemble de ton serveur, j'ai aussi publié un guide sur [la sécurité Linux](/securite-de-votre-serveur-linux/) qui couvre SSH, sysctl et pare-feu.
 
 **Est-ce compatible avec Docker Swarm ou Kubernetes ?**
 

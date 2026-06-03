@@ -291,7 +291,7 @@ Ces mesures constituent une base solide pour tout serveur Linux exposé sur inte
 Quelques rappels essentiels :
 
 - Teste chaque changement SSH dans une **seconde session** avant de fermer la première
-- Configure un pare-feu (`ufw` ou `iptables`) en complément — ce guide ne le couvre pas
+- Configure un pare-feu en complément — mon guide [UFW avec Docker](/ufw-docker-pare-feu-linux/) explique comment faire sans que Docker contourne tes règles
 - Mets à jour régulièrement : `sudo apt update && sudo apt upgrade`
 - Surveille les logs : `journalctl -u ssh`, `sudo fail2ban-client status sshd`
 
