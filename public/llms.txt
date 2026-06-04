@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-03
-# Total articles : 92
+# Dernière mise à jour : 2026-06-04
+# Total articles : 93
+
+## Duplicati Docker : sauvegarde chiffrée auto-hébergée
+URL: https://brandonvisca.com/duplicati-docker-sauvegarde/
+Description: Installe Duplicati via Docker pour sauvegarder et chiffrer tes données localement. Docker Compose complet, protocoles cloud supportés et astuces de config.
+Tags: intermediaire, auto-hebergement, docker, backup, sauvegarde
+Publié: 2026-06-03T08:00:00.000Z
 
 ## UFW Docker : configurer le pare-feu sans casser les conteneurs
 URL: https://brandonvisca.com/ufw-docker-pare-feu-linux/
