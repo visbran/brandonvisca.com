@@ -468,7 +468,7 @@ Respecte la règle du **3-2-1** :
 **Outils de backup recommandés :**
 
 - **Restic** : Backups incrémentaux chiffrés vers cloud (Backblaze B2, Wasabi, S3)
-- **Duplicati** : Interface web, compatible tous les clouds
+- **[Duplicati](/duplicati-docker-sauvegarde/)** : Interface web, compatible tous les clouds
 - **Proxmox Backup Server** : Si tu utilises Proxmox
 - **Rsync + Cron** : La méthode old-school qui marche toujours
 

@@ -688,7 +688,7 @@ Si tu as suivi mes tutos précédents, tu devrais avoir :
 - ✅ Jellyfin (streaming perso)
 - ✅ Vaultwarden (gestionnaire de mots de passe)
 
-C’est **la stack d’indépendance numérique complète**. Tu remplaces Google Drive, Netflix ET LastPass avec des services que tu contrôles à 100%.
+C’est **la stack d’indépendance numérique complète**. Tu remplaces Google Drive, Netflix ET LastPass avec des services que tu contrôles à 100%. Tous ces services méritent une sauvegarde chiffrée automatique avec [Duplicati Docker](/duplicati-docker-sauvegarde/), ça prend 15 minutes à configurer et ça te sauve quand un disque lâche.
 
 **Économie annuelle : 534€** (j’ai fait le calcul).
 
