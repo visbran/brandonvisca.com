@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-04
-# Total articles : 93
+# Dernière mise à jour : 2026-06-05
+# Total articles : 94
+
+## Miniflux Docker : ton lecteur RSS auto-hébergé en 5 min
+URL: https://brandonvisca.com/miniflux-docker-lecteur-rss-guide/
+Description: Guide complet Miniflux Docker : déploie ton lecteur RSS auto-hébergé avec PostgreSQL en 5 min. Alternative open-source à Feedly.
+Tags: 
+Publié: 2026-06-05T08:00:00.000Z
 
 ## Duplicati Docker : sauvegarde chiffrée auto-hébergée
 URL: https://brandonvisca.com/duplicati-docker-sauvegarde/
