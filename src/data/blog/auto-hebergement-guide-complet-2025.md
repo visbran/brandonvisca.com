@@ -243,11 +243,12 @@ Pas de panique ! Chaque article que je publie est pensé pour les débutants. Tu
 - Alimentation → ~10€
 - **Total : ~105€**
 
-**Ce que tu peux faire avec :**
+Ce que tu peux faire avec :
 
 - Nextcloud (cloud perso léger)
 - Vaultwarden (mots de passe)
 - Uptime Kuma (monitoring)
+- Miniflux (lecteur RSS) — j'ai un [guide complet pour l'installer avec Docker](/miniflux-docker-lecteur-rss-guide/)
 - Pi-hole (blocage pub réseau) — ou [Technitium DNS Server](/technitium-dns-server/) pour un DNS récursif natif en un seul conteneur
 
 #### Setup minimal VPS (~82€/an)
