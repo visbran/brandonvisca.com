@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-05
-# Total articles : 94
+# Dernière mise à jour : 2026-06-06
+# Total articles : 95
+
+## Hardening Linux : 10 commandes pour durcir ton serveur
+URL: https://brandonvisca.com/hardening-linux-10-commandes/
+Description: Hardening Linux en 10 commandes : durcissez votre serveur en quelques minutes. SSH, pare-feu, mises à jour auto, audit sécurité. Guide pratique 2026.
+Tags: linux, securite, intermediaire, hardening, sysadmin, commandes
+Publié: 2026-06-06 10:00:00+02:00
 
 ## Miniflux Docker : ton lecteur RSS auto-hébergé en 5 min
 URL: https://brandonvisca.com/miniflux-docker-lecteur-rss-guide/
