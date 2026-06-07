@@ -177,7 +177,7 @@ Pour le durcissement HTTPS, complète avec les [headers HTTP sécurisés Nginx](
 
 Nginx Proxy Manager transforme la gestion d'un reverse proxy en une opération de quelques clics. Tu gagnes du temps, tu limites les erreurs de conf manuelle, et tes certificats SSL se gèrent sans intervention. Parfait pour un homelab qui grossit.
 
-Si tu cherches une alternative sans interface web, regarde [Traefik avec Docker](/traefik-reverse-proxy-docker/) — configuration déclarative, intégration native avec les labels Docker.
+Si tu cherches une alternative sans interface web, Caddy est encore plus simple avec un fichier de config de quelques lignes et un HTTPS totalement automatique — j'ai un guide complet sur [Caddy avec Docker](/caddy-docker-reverse-proxy-guide/). Pour une option plus déclarative et orientée Swarm/Kubernetes, regarde aussi [Traefik avec Docker](/traefik-reverse-proxy-docker/) — intégration native avec les labels Docker.
 
 ---
 

@@ -240,6 +240,8 @@ Cette stack persiste aussi la base PostgreSQL dans le dossier `./postgres` local
 
 Ne laisse jamais Gitea en HTTP pur sur Internet. La méthode la plus simple pour ajouter du HTTPS est **[Nginx Proxy Manager](/nginx-proxy-manager-docker-guide/)** (disponible lui aussi en Docker).
 
+Si tu préfères un reverse proxy en config fichier ultra-minimale, [Caddy avec Docker](/caddy-docker-reverse-proxy-guide/) gère aussi le HTTPS automatiquement sans interface graphique.
+
 Dans NPM :
 1. Ajoute un proxy host pointant vers `gitea:3000` (IP interne du conteneur ou `localhost:3000` si en réseau host).
 2. Rentre ton domaine : `git.tondomaine.fr`.
