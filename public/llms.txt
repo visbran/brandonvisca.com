@@ -6,7 +6,7 @@
 ## Caddy Docker : le reverse proxy HTTPS automatique en 5 minutes
 URL: https://brandonvisca.com/caddy-docker-reverse-proxy-guide/
 Description: Guide caddy docker complet : reverse proxy HTTPS automatique avec Let's Encrypt en Docker, Caddyfile simple et comparatif Nginx. En 5 minutes chrono.
-Tags: docker, auto-hebergement, reverse-proxy, https, intermediaire, guide
+Tags: 
 Publié: 2026-06-07T08:00:00.000Z
 
 ## Hardening Linux : 10 commandes pour durcir ton serveur
