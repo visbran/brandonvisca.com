@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-07
-# Total articles : 96
+# Dernière mise à jour : 2026-06-08
+# Total articles : 97
+
+## Linkding Docker : gestionnaire de bookmarks auto-hébergé
+URL: https://brandonvisca.com/linkding-docker-bookmarks/
+Description: Guide Linkding Docker : déploie ton gestionnaire de bookmarks auto-hébergé en 2 minutes. Alternative open-source légère à Pinboard et Pocket.
+Tags: 
+Publié: 2026-06-08T08:00:00.000Z
 
 ## Caddy Docker : le reverse proxy HTTPS automatique en 5 minutes
 URL: https://brandonvisca.com/caddy-docker-reverse-proxy-guide/
