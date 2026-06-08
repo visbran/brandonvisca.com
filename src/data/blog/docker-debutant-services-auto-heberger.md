@@ -901,6 +901,7 @@ Avec Docker :
 |- Documents (Paperless-ngx)
 |- Dashboard (Homer)
 |- Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))
+|- Sauvegarde de liens ([Linkding](/linkding-docker-bookmarks/))
 |- Reverse proxy (Nginx Proxy Manager)
 
 **Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer. Puis ajoute les autres services au fur et à mesure. En quelques soirs, tu as un homelab complet.
