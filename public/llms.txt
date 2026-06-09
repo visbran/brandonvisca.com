@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-08
-# Total articles : 97
+# Dernière mise à jour : 2026-06-09
+# Total articles : 98
+
+## Zsh Plugins essentiels : 7 plugins que j'utilise tous les jours
+URL: https://brandonvisca.com/zsh-plugins-essentiels-guide/
+Description: Les meilleurs plugins zsh essentiels pour ton terminal : git, autosuggestions, syntax-highlighting, sudo et extract. Guide Oh My Zsh 2026.
+Tags: 
+Publié: 2026-06-09T06:00:00.000Z
 
 ## Linkding Docker : gestionnaire de bookmarks auto-hébergé
 URL: https://brandonvisca.com/linkding-docker-bookmarks/
