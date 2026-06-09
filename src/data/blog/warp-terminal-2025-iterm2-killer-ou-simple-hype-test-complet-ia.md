@@ -29,7 +29,7 @@ faqs:
 
 ## Table des matières
 
-Pendant des années, on a bidouillé nos terminaux avec [Oh My Zsh](/installation-oh-my-zsh-powerlevel10k-guide-complet/), [iTerm2](/iterm2-guide-configuration-macos-2025/), et des thèmes à n'en plus finir. Ça fonctionne, c'est solide, mais... et si on pouvait faire mieux ?
+Pendant des années, on a bidouillé nos terminaux avec [Oh My Zsh](/installation-oh-my-zsh-powerlevel10k-guide-complet/), [iTerm2](/iterm2-guide-configuration-macos-2025/), et des thèmes à n'en plus finir. Ça fonctionne, c'est solide, mais... et si on pouvait faire mieux ? Si tu cherches à pousser la customisation de ton terminal encore plus loin, j'ai aussi compilé les [7 plugins Zsh essentiels](/zsh-plugins-essentiels-guide/) que j'utilise quotidiennement en production.
 
 **Spoiler :** Après 3 mois de test intensif sur mes serveurs de prod et mes projets perso, je ne suis plus sûr de vouloir revenir en arrière. Et pourtant, j'adore iTerm2.
 

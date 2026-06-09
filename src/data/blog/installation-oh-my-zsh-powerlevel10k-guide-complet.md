@@ -313,6 +313,8 @@ plugins=(
 )
 ```
 
+> 🔗 **Pour aller plus loin** : si tu veux une sélection ciblée des plugins qui changeront vraiment ta vie au quotidien, j'ai publié un dédié sur les [7 plugins Zsh essentiels](/zsh-plugins-essentiels-guide/) que j'utilise tous les jours sur mes serveurs et mes Macs.
+
 ### Plugins par cas d'usage
 
 **Développement web :**
