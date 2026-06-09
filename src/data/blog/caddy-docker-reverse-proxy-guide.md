@@ -1,8 +1,8 @@
 ---
 title: "Caddy Docker : le reverse proxy HTTPS automatique en 5 minutes"
-description: "Guide caddy docker complet : reverse proxy HTTPS automatique avec Let's Encrypt en Docker, Caddyfile simple et comparatif Nginx. En 5 minutes chrono."
+description: "Caddy Docker : configure un reverse proxy HTTPS automatique avec Let's Encrypt en 5 minutes. Caddyfile simple, certificats auto-renouvelés, zéro Certbot."
 pubDatetime: "2026-06-07T08:00:00.000Z"
-modDatetime: "2026-06-07T08:00:00.000Z"
+modDatetime: "2026-06-09T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - docker
@@ -14,9 +14,22 @@ tags:
 featured: false
 draft: false
 focusKeyword: caddy docker
-ogImage: ""
+faqs:
+  - question: "Caddy fonctionne-t-il derrière un CDN comme Cloudflare ?"
+    answer: "Oui. Active le mode Full (Strict) dans Cloudflare et laisse Caddy gérer Let's Encrypt. Caddy obtient un certificat pour ton domaine, Cloudflare lui fait confiance, et l'accès direct au serveur reste en HTTPS. Évite le mode Flexible qui masque des problèmes de chiffrement."
+  - question: "Peut-on utiliser Caddy sans Docker ?"
+    answer: "Oui, le binaire officiel fonctionne sur Linux, Windows et macOS. Mais dans un contexte d'auto-hébergement de services Docker, le conteneur reste plus pratique : isolation, reproductibilité et mises à jour atomiques."
+  - question: "Caddy ou Traefik, lequel choisir ?"
+    answer: "Pour un auto-hébergeur solo, Caddy est plus simple grâce à son Caddyfile très lisible. Traefik brille sur un cluster Kubernetes ou Swarm avec son auto-discovery via labels. Les deux gèrent le HTTPS automatique via Let's Encrypt."
+  - question: "Les certificats HTTPS sont-ils gratuits avec Caddy ?"
+    answer: "Oui, totalement. Caddy utilise Let's Encrypt qui est 100% gratuit, sans abonnement ni limite de sites pour un usage personnel. Caddy obtient et renouvelle les certificats automatiquement."
 ---
-**TL;DR : Caddy est un serveur web écrit en Go qui gère automatiquement les certificats HTTPS Let's Encrypt, sans Certbot, sans configuration complexe. Un Caddyfile de 5 lignes suffit à exposer un service Docker avec HTTPS. Voici la méthode.**
+> 💡 **TL;DR**
+> - Caddy est un serveur web en Go qui obtient et renouvelle seul les certificats HTTPS Let's Encrypt, sans Certbot ni cron
+> - Un Caddyfile de 5 lignes suffit à exposer un service Docker en HTTPS — HTTP/2 et HTTP/3 activés par défaut
+> - Approche encore plus simple via les labels Docker avec `caddy-docker-proxy` pour découvrir les services automatiquement
+
+## Table des matières
 
 ## Pourquoi Caddy change la donne
 
@@ -101,7 +114,7 @@ networks:
 **Points importants :**
 - Le port 80 est obligatoire pour le challenge HTTP-01 de Let's Encrypt
 - Le port 443 est ton HTTPS
-- `caddy_data` persiste les certificets et l'état ACME
+- `caddy_data` persiste les certificats et l'état ACME
 - Le service interne (Uptime Kuma) n'expose aucun port directement, il passe par le réseau Docker `proxy`
 
 Si tu cherches d'autres services à auto-héberger derrière ton reverse proxy, tu peux jeter un œil à [Gitea](/gitea-serveur-git-docker-auto-hebergement/) pour ton propre Git, ou [n8n](/n8n-docker-workflow-automation/) pour automatiser des workflows sans dépendre de Zapier.
@@ -283,7 +296,7 @@ docker compose logs caddy | tail -20
 ```
 
 Tu dois voir une ligne du type :
-`autoserv obtained certificate | kuma.monserveur.fr`
+`certificate obtained successfully {"identifier": "kuma.monserveur.fr"}`
 
 Puis teste en HTTPS :
 ```bash
@@ -298,7 +311,7 @@ Il existe une approche encore plus lazy : `lucaslorentz/caddy-docker-proxy`. Cad
 
 **Docker Compose adapté :**
 
-```caddyfile
+```yaml
 services:
   caddy:
     image: lucaslorentz/caddy-docker-proxy:2-alpine
@@ -359,3 +372,9 @@ Pour un usage perso sur un serveur dédié, c'est très pratique. Pour de la pro
 Caddy dans Docker, c'est le combo qui fait oublier les nuits à se battre avec Certbot. Un Caddyfile de 3 lignes, un `docker compose up -d`, et ton service est en HTTPS avec un certificat valide. Le renouvellement est silencieux, la config reste lisible, et tu peux même automatiser via les labels Docker si tu es dans une logique d'infrastructure as code.
 
 Si tu veux une interface graphique, je te renvoie vers [Nginx Proxy Manager](/nginx-proxy-manager-docker-guide/). Si tu veux du pur fichier de config minimaliste et maintenable, Caddy est probablement le meilleur choix du moment pour un auto-hébergement Docker.
+
+## Pour aller plus loin
+
+- [Documentation officielle de Caddy](https://caddyserver.com/docs/) — référence complète du Caddyfile et des directives
+- [Nginx Proxy Manager : le reverse proxy avec interface web](/nginx-proxy-manager-docker-guide/) — l'alternative graphique si tu fuis le terminal
+- [Fail2Ban en Docker : bannir les scanners](/fail2ban-docker-securite-serveur/) — pour blinder le serveur qui héberge ton Caddy

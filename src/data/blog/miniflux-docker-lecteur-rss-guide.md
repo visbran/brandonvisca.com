@@ -2,7 +2,7 @@
 title: "Miniflux Docker : ton lecteur RSS auto-hébergé en 5 min"
 description: "Guide complet Miniflux Docker : déploie ton lecteur RSS auto-hébergé avec PostgreSQL en 5 min. Alternative open-source à Feedly."
 pubDatetime: "2026-06-05T08:00:00.000Z"
-modDatetime: "2026-06-05T08:00:00.000Z"
+modDatetime: "2026-06-09T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - docker
@@ -29,11 +29,11 @@ faqs:
 > 💡 **TL;DR** — Miniflux Docker en 4 points :
 >
 > - **C'est quoi ?** Un lecteur RSS minimaliste et auto-hébergé qui lit les flux sans tracking ni pub
-> - **Pourquoi ?** Google Reader est mort, Feelly te piste, et tes flux méritent un toit privé
+> - **Pourquoi ?** Google Reader est mort, Feedly te piste, et tes flux méritent un toit privé
 > - **Comment ?** Un `docker-compose.yml` avec Miniflux + PostgreSQL = opérationnel en 5 minutes
 > - **Coût ?** Zéro euro si tu as déjà un serveur avec Docker
 
-Tu ouvres encore ton navigateur pour vérifier 15 blogs différents ? Tu regrettes Google Reader comme tout le monde ? Et Feelly, entre les pubs intégrées, le tracking de lecture et les algos qui décident ce que tu dois voir... ben ça commence à te gonfler sérieusement.
+Tu ouvres encore ton navigateur pour vérifier 15 blogs différents ? Tu regrettes Google Reader comme tout le monde ? Et Feedly, entre les pubs intégrées, le tracking de lecture et les algos qui décident ce que tu dois voir... ben ça commence à te gonfler sérieusement.
 
 Bonne nouvelle : **Miniflux** existe. C'est un lecteur RSS open-source, minimaliste, et terriblement efficace. Tu le déploies chez toi en Docker, tu gardes le contrôle total, et zéro tracking.
 
@@ -48,7 +48,7 @@ Si tu débutes en auto-hébergement, n'hésite pas à consulter mon [guide Docke
 
 Google Reader a fermé en 2013. Depuis, on a eu droit à une succession de remplaçants qui ont soit fermé, soit été rachetés, soit transformés en machines à données personnelles.
 
-Les réseaux sociaux ont essayé de remplacer RSS avec des algorithmes opaques. Résultat : tu rates 80% des publications des sites que tu suis pourquoi une IA te montre des memes de chats que tu n'as jamais demandés.
+Les réseaux sociaux ont essayé de remplacer RSS avec des algorithmes opaques. Résultat : tu rates 80% des publications des sites que tu suis parce qu'une IA te montre des memes de chats que tu n'as jamais demandés.
 
 Le RSS, c'est le web comme il aurait dû rester :
 
@@ -82,7 +82,7 @@ Mon choix : **Miniflux** pour la simplicité radicale. Si tu préfères personna
 
 Miniflux est si léger qu'il tourne parfaitement sur un Raspberry Pi 4 avec 4 Go de RAM. Sur un mini-PC Intel N100, tu oublieras même qu'il est là.
 
-## Déployer Miniflux Docker avec Compose
+## Installation avec Docker Compose
 
 On déploie Miniflux avec PostgreSQL dans une stack simple. Crée un dossier dédié :
 
@@ -209,7 +209,7 @@ C'est le cœur de Miniflux. Quand tu cliques sur un article, Miniflux affiche :
 - Le titre et l'auteur
 - Le contenu extrait (ou intégral si le flux est complet)
 - Les liens cliquables
-- Zéro pub, zéro pop-up, zére sidebar encombrante
+- Zéro pub, zéro pop-up, zéro sidebar encombrante
 
 Le mode "Reader" est intégré : il extrait automatiquement le contenu complet même si le flux ne le fournit que partiellement.
 
@@ -220,7 +220,7 @@ Le mode "Reader" est intégré : il extrait automatiquement le contenu complet m
 - **Archive** : les articles lus disparaissent de la vue par défaut mais restent accessibles
 - **Catégories** : organise tes flux par thème (Tech, News, Dev, etc.)
 
-Le raccourci clavier `m` marque comme lu, `s` met en favori. La navigation entièrement clavier est supportée (essayez `?` pour voir la liste).
+Le raccourci clavier `m` marque comme lu, `s` met en favori. La navigation entièrement clavier est supportée (essaie `?` pour voir la liste).
 
 ### Règles de filtrage (highlight)
 
@@ -280,7 +280,7 @@ Le protocole Fever est supporté nativement. Ça signifie que presque toutes les
 
 ### Catégories intelligentes
 
-Trie tes flux par catégorie (Tech, News, Science, Veille...). Pour chaque catégrorie, tu peux configurer l'ordre d'affichage (chronologique ou par priorité).
+Trie tes flux par catégorie (Tech, News, Science, Veille...). Pour chaque catégorie, tu peux configurer l'ordre d'affichage (chronologique ou par priorité).
 
 Astuce : crée une catégorie "Must Read" pour les flux les plus importants, et consulte-la en premier.
 
@@ -338,6 +338,10 @@ Miniflux c'est le retour du RSS comme on l'aimait : simple, rapide, et contrôl�
 
 Tu installes ça sur ton serveur en 5 minutes, tu branches Reeder sur ton iPhone, et tu retrouves enfin le plaisir de lire les actualités dans l'ordre, sans filtre, sans stress.
 
-Le RSS n'est pas mort. Il a juste attendu que tu lui construises une maison.
+Le RSS n'est pas mort. Il a juste attendu que tu lui construises une maison. Installe ta stack, branche Reeder, et reprends la main sur ta veille.
 
-Questions ou configs avancées ? Les commentaires sont ouverts.
+## Pour aller plus loin
+
+- [Documentation officielle de Miniflux](https://miniflux.app/docs/) — configuration, variables d'environnement et API REST
+- [Linkding : gestionnaire de bookmarks auto-hébergé](/linkding-docker-bookmarks/) — le complément parfait pour archiver ce que tu lis
+- [Duplicati en Docker : sauvegarder ta base PostgreSQL](/duplicati-docker-sauvegarde/) — pour ne jamais perdre tes flux et tes favoris

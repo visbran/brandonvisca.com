@@ -1,7 +1,8 @@
 ---
 title: "Zsh Plugins essentiels : 7 plugins que j'utilise tous les jours"
-description: "Les meilleurs plugins zsh essentiels pour ton terminal : git, autosuggestions, syntax-highlighting, sudo et extract. Guide Oh My Zsh 2026."
+description: "Les 7 zsh plugins essentiels que j'utilise chaque jour : git, autosuggestions, syntax-highlighting, sudo, extract. Guide Oh My Zsh 2026 complet."
 pubDatetime: "2026-06-09T06:00:00.000Z"
+modDatetime: "2026-06-09T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - linux
@@ -23,7 +24,6 @@ faqs:
     answer: "Oui, absolument. Aucun de ces plugins n'est strictement dépendant d'OMZ. Tu peux les sourcer manuellement dans ton .zshrc. Oh My Zsh n'est qu'un wrapper qui automatise l'installation et le chargement."
   - question: "Comment vérifier quel plugin ralentit mon terminal ?"
     answer: "Ajoute zsh/zprof en début et fin de ton .zshrc, puis lance zsh -i -c exit. Ça affiche un profil de démarrage avec le temps passé dans chaque composant. C'est le meilleur outil de diagnostic."
-ogImage: ""
 ---
 > 💡 **TL;DR**
 > - Les plugins Zsh divisent par 10 le nombre de frappes clavier nécessaires au quotidien
@@ -33,7 +33,7 @@ ogImage: ""
 
 T'as passé un quart d'heure à configurer Oh My Zsh, à choisir un thème clinquant genre Powerlevel10k, et tu te dis que c'est bon, t'as le terminal ultime ? Eh bien non. Le thème, c'est juste la peinture. Les plugins, c'est le moteur. Et si tu roules sans plugins, tu conduis une caisse sans volant assisté ni GPS.
 
-Je vais te montrer les 7 plugins Zsh que j'utilise tous les jours. Ceux qui m'évitent de taper 50 lignes en plus chaque jour, ceux qui m'empêchent d'oublier un sudo quand je suis en mode automatique pilote, et ceux qui détectent mes erreurs avant même que j'appuie sur Entrée.
+Je vais te montrer les 7 zsh plugins essentiels que j'utilise tous les jours. Ceux qui m'évitent de taper 50 lignes en plus chaque jour, ceux qui m'empêchent d'oublier un sudo quand je suis en mode automatique pilote, et ceux qui détectent mes erreurs avant même que j'appuie sur Entrée.
 
 Avant de commencer, si tu viens d'arriver et que tu n'as pas encore installé Oh My Zsh, j'ai un [guide complet d'installation Oh My Zsh + Powerlevel10k](/installation-oh-my-zsh-powerlevel10k-guide-complet/) qui te met la route. Sur macOS, je passe mes journées dans le terminal, donc j'ai aussi testé les alternatives : mon [comparatif Warp vs iTerm2](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) donne mon verdict après deux mois d'usage intensif.
 
@@ -41,7 +41,7 @@ Avant de commencer, si tu viens d'arriver et que tu n'as pas encore installé Oh
 
 ## Plugin n°1 : git — le cerveau de ton workflow
 
-Ça peut paraître évident, mais le plugin `git` d'Oh My Zsh reste le meilleur gain de productivité au kilo. Sans lui, tu tapes `git status`, `git branch`, `git checkout` à longueur de journée. Avec lui, tout devient un alias de 2 ou 3 caractètres.
+Ça peut paraître évident, mais le plugin `git` d'Oh My Zsh reste le meilleur gain de productivité au kilo. Sans lui, tu tapes `git status`, `git branch`, `git checkout` à longueur de journée. Avec lui, tout devient un alias de 2 ou 3 caractères.
 
 Voici ceux que j'utilise en boucle :
 
@@ -56,7 +56,7 @@ Voici ceux que j'utilise en boucle :
 | `gd`  | `git diff` | Voir les différences |
 | `glog`| `git log --oneline --decorate --graph`| Historique propre en arbre |
 
-En pratique, quand je travaille sur un projet avec plusieurs branches, je fais `gst` toutes les 30 secondes pour voir l'état, `gco feature/nouveau-truc` pour switcher, `ga .` pour tout stagé rapidement, `gc -m "fix: correction du parser"` pour commiter, puis `gp` pour push. Sans ces alias, je passerais mon temps à taper `git` en entier. Le plugin intègre aussi des alias pour `git stash` (`gsta`), `git reset` (`grh`), `git rebase` (`grb`) et `git merge` (`gm`).
+En pratique, quand je travaille sur un projet avec plusieurs branches, je fais `gst` toutes les 30 secondes pour voir l'état, `gco feature/nouveau-truc` pour switcher, `ga .` pour tout stager rapidement, `gc -m "fix: correction du parser"` pour commiter, puis `gp` pour push. Sans ces alias, je passerais mon temps à taper `git` en entier. Le plugin intègre aussi des alias pour `git stash` (`gsta`), `git reset` (`grh`), `git rebase` (`grb`) et `git merge` (`gm`).
 
 Mon préféré reste `glog` qui affiche un arbre Git avec des couleurs et des decorations branch/tag en une ligne compacte. Quand tu bosses en équipe et que tu dois comprendre qui a fait quoi et où les branches ont divergé, c'est indispensable.
 
@@ -78,7 +78,7 @@ Le gain de temps est absurde quand tu bosses sur des projets récurrents. `ssh r
 
 Techniquement, il y a plusieurs stratégies de suggestion : `history` (défaut, basé sur l'historique global), `completion` (basé sur les résultats de completion Zsh), et `match_prev_cmd` (suggère des commandes similaires au contexte actuel). La plupart des utilisateurs restent sur `history` qui est la plus intuitive.
 
-**Installation (manuellle) :**
+**Installation (manuelle) :**
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -145,7 +145,7 @@ Tu télécharges un fichier, tu dois l'extraire, et là commence le jeu des form
 
 Le plugin `extract` d'Oh My Zsh résout ça définitivement. Tu tapes `extract monfichier.tar.gz`, `extract monfichier.zip`, `extract monfichier.7z`, peu importe le format, il détecte et extrait automatiquement.
 
-Les formats supportés incluent : tar, gz, bz2, zip, rar, 7z, deb, rpm, jar, ear, war, iso et même les `.dmg` sur macOS. C'est OMZ natif, ça marche out of the box, et ça remplace un demi-douzaine de neurones que tu consacrais à mémoriser des syntaxes d'extraction.
+Les formats supportés incluent : tar, gz, bz2, zip, rar, 7z, deb, rpm, jar, ear, war, iso et même les `.dmg` sur macOS. C'est OMZ natif, ça marche out of the box, et ça remplace une demi-douzaine de neurones que tu consacrais à mémoriser des syntaxes d'extraction.
 
 Petite nuance cependant : `extract` ne fait que décompresser. Si tu décompresses un tar.gz et que tu veux le repackager, pas de plugin miracle, il faut retourner à `tar czvf`. Mais pour la lecture archivage, c'est le jour et la nuit.
 
@@ -166,9 +166,9 @@ The program 'htop' is currently not installed. You can install it by typing:
 sudo apt install htop
 ```
 
-C'est particulièrement utile sur des machines neuves ou des conteneurs Docker minimalistes où tu ne sais jamais ce qui est préinstallé. Au lieu de chercher pendant dix minutes, tu as la réponse instantanément.
+C'est particulièrement utile sur des machines neuves ou des conteneurs Docker minimalistes où tu ne sais jamais ce qui est préinstallé — typiquement quand tu débarques sur un serveur fraîchement provisionné pour le [durcir avec quelques commandes de base](/hardening-linux-10-commandes/). Au lieu de chercher pendant dix minutes, tu as la réponse instantanément.
 
-**Installation (plugins natif OMZ) :**
+**Installation (plugin natif OMZ) :**
 
 ```bash
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo extract command-not-found)
@@ -180,7 +180,7 @@ Les pages de manuel, c'est pratique, mais visuellement c'est le désert. Un bloc
 
 Le résultat ? Tu trouves l'information 3 fois plus vite. Quand tu cherches la syntaxe d'une option particulière dans `man rsync` ou `man sshd_config`, les yeux accrochent immédiatement sur les sections colorées. C'est un plugin OMZ natif, zéro config, et il rend la doc utilisable au lieu de la subir.
 
-**Installation (plugins natif OMZ) :**
+**Installation (plugin natif OMZ) :**
 
 ```bash
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo extract command-not-found colored-man-pages)
@@ -236,9 +236,9 @@ zprof
 
 Relance un terminal, et tu auras un profil complet du temps passé dans chaque composant. C'est le meilleur outil pour auditer ta config.
 
-J'ai testé des plugins comme `web-search`, `thefuck`, `copypath` au fil du temps. Certains sont sympas mais ajoutent du bruit pour peu de gain. Celui que je mentionne ici sont ceux qui survivent à l'épreuve du temps dans mon workflow quotidien.
+J'ai testé des plugins comme `web-search`, `thefuck`, `copypath` au fil du temps. Certains sont sympas mais ajoutent du bruit pour peu de gain. Ceux que je mentionne ici sont ceux qui survivent à l'épreuve du temps dans mon workflow quotidien.
 
-`thefuck` par exemple corrige ta commande précédente quand tu fais une faute de frappe. Tu tapes `gut status`, une seconde plus tard tu te tapes le fronteau, tu écris `fuck` et il corrige en `git status`. C'est marrant cinq minutes, mais tu passes ton temps à écrire `fuck` dans ton terminal en visio-conférence, ce qui n'est pas toujours idéal dans un contexte professionnel.
+`thefuck` par exemple corrige ta commande précédente quand tu fais une faute de frappe. Tu tapes `gut status`, une seconde plus tard tu te tapes le front, tu écris `fuck` et il corrige en `git status`. C'est marrant cinq minutes, mais tu passes ton temps à écrire `fuck` dans ton terminal en visio-conférence, ce qui n'est pas toujours idéal dans un contexte professionnel.
 
 `copypath` copie le chemin absolu du fichier sous le curseur dans le presse-papiers. `web-search` lance une recherche Google depuis le terminal. Ce sont des gadgets plus que des outils indispensables.
 
@@ -253,3 +253,9 @@ Un terminal bien configuré, ce n'est pas juste un prompt joli avec des icônes.
 Les 7 plugins que je viens de te présenter ne demandent pas de réapprendre des raccourcis impossibles. Ils s'intègrent naturellement dans ce que tu fais déjà. Tu vas les oublier comme installés, et tu vas les manquer immédiatement si tu dois travailler sur une machine sans eux.
 
 Installe-les, teste-les une semaine, et dis-moi lequel est devenu indispensable pour toi. Mon pronostic : ce sera `zsh-autosuggestions` pour 90% des lecteurs. Et pour les 10% restants, `sudo`.
+
+## Pour aller plus loin
+
+- [Installer Oh My Zsh + Powerlevel10k : le guide complet](/installation-oh-my-zsh-powerlevel10k-guide-complet/) — la base à avoir avant ces plugins
+- [Warp vs iTerm2 : mon comparatif après deux mois](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) — quel terminal pour héberger tout ça
+- [Documentation officielle des plugins Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) — la liste exhaustive des plugins natifs

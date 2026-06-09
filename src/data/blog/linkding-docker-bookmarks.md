@@ -2,7 +2,7 @@
 title: "Linkding Docker : gestionnaire de bookmarks auto-hébergé"
 description: "Guide Linkding Docker : déploie ton gestionnaire de bookmarks auto-hébergé en 2 minutes. Alternative open-source légère à Pinboard et Pocket."
 pubDatetime: "2026-06-08T08:00:00.000Z"
-modDatetime: "2026-06-08T08:00:00.000Z"
+modDatetime: "2026-06-09T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - docker
@@ -14,7 +14,6 @@ tags:
 featured: false
 draft: false
 focusKeyword: linkding docker
-ogImage: ""
 faqs:
   - question: "Linkding fonctionne-t-il sans PostgreSQL ?"
     answer: "Oui, Linkding utilise SQLite par défaut. Pour des charges importantes ou du multi-user, PostgreSQL est recommandé, mais l'image Docker fonctionne en SQLite out of the box sans base externe."
@@ -36,7 +35,7 @@ faqs:
 
 Tu collectionnes des liens dans 4 navigateurs différents, 3 services cloud, et un fichier texte sur le bureau ? Tu paies Pinboard depuis 2012 et t'es tanné du modèle SaaS qui change les règles quand ça l'arrange ? Tu regrettes l'époque où délicieux.icio.us existait sans te vendre à Mozilla ?
 
-Bonne nouvelle : **Linkding** existe. C'est un gestionnaire de bookmarks open-source, écrit en Django, avec une interface épurée en Tailwind CSS. Tu le déploies chez toi en Docker, tu gardes le contrôle total de tes données, et il consomme si peu de ressources que tu peux le faire tourner sur un Raspberry Pi sans bronchier.
+Bonne nouvelle : **Linkding** existe. C'est un gestionnaire de bookmarks open-source, écrit en Django, avec une interface épurée en Tailwind CSS. Tu le déploies chez toi en Docker, tu gardes le contrôle total de tes données, et il consomme si peu de ressources que tu peux le faire tourner sur un Raspberry Pi sans broncher.
 
 Dans cet article, on installe Linkding avec Docker Compose (version simple SQLite), on configure l'import de bookmarks, on active l'archive automatique, et on compare honnêtement les alternatives du marché.
 
@@ -172,7 +171,7 @@ curl -X POST http://localhost:9090/api/bookmarks/ \
   }'
 ```
 
-Tu peux automatiser l'ajout de liens depuis n'importe quel script, extension de navigateur, ou service tierce compatible. Certains utilisateurs couplent ça avec des flux RSS ou des raccourcis iOS pour envoyer un lien vers Linkding en un swipe.
+Tu peux automatiser l'ajout de liens depuis n'importe quel script, extension de navigateur, ou service tiers compatible. Certains utilisateurs couplent ça avec des flux RSS ou des raccourcis iOS pour envoyer un lien vers Linkding en un swipe.
 
 ## Sécuriser l'accès
 
@@ -191,7 +190,7 @@ Si tu veux une couche de sécurité supplémentaire :
 - Change le mot de passe superuser régulièrement
 - Garde Linkding à jour : `docker compose pull && docker compose up -d`
 
-Pour les options avancées (authentification via header proxy, multi-user), consulte la documentation officielle de Linkding sur GitHub. Dans la majorité des cas, un simple Caddyfile + UFW suffit à sécuriser un usage personnel.
+Pour les options avancées (authentification via header proxy, multi-user), consulte la [documentation officielle de Linkding sur GitHub](https://github.com/sissbruecker/linkding). Dans la majorité des cas, un simple Caddyfile + UFW suffit à sécuriser un usage personnel.
 
 ## Tableau comparatif : Linkding vs les alternatives
 
@@ -216,7 +215,7 @@ Pour les options avancées (authentification via header proxy, multi-user), cons
 - **Pinboard** : tu veux zéro maintenance et tu es prêt à payer pour un service qui ne bouge pas. Mais attention aux retards de développement connus.
 - **Wallabag** : tu cherches principalement de la lecture différée avec parsing de texte complet (comme Pocket). C'est un lecteur d'articles, pas un gestionnaire de bookmarks pur.
 - **Shaarli** : tu veux un truc en PHP très léger, sans base de données externe, avec une esthétique brute et fonctionnelle. C'est le linkding des années 2010.
-- **Pocket** : tu tiens absolument aux apps mobiles officielles et aux recommendations algorithmiques. En échange, tu cèdes tes données de lecture.
+- **Pocket** : tu tiens absolument aux apps mobiles officielles et aux recommandations algorithmiques. En échange, tu cèdes tes données de lecture.
 
 Mon avis perso : si tu as déjà un serveur Docker qui tourne pour [Miniflux](/miniflux-docker-lecteur-rss-guide/) ou [Gitea](/gitea-serveur-git-docker-auto-hebergement/), ajouter Linkding ne coûte que quelques dizaines de mégaoctets de RAM. L'effort est quasi nul et le gain en souveraineté est réel.
 
@@ -267,3 +266,9 @@ Linkding est l'un de ces outils qui font exactement ce qu'on leur demande, sans 
 Si tu es sérieux sur ton auto-hébergement, Linkding mérite une place dans ta stack. Il remplace élégamment Pinboard, réconcilie tes bookmarks éparpillés, et t'offre la tranquillité de savoir que tes liens ne disparaîtront pas avec un changement de politique d'une boîte californienne.
 
 Maintenant, à toi de jouer. Crée ton dossier, copie le Compose, lance le conteneur, et importe tes 2000 bookmarks oubliés depuis 2014. Tu me remercieras quand le prochain service SaaS fermera ses portes.
+
+## Pour aller plus loin
+
+- [Linkding sur GitHub](https://github.com/sissbruecker/linkding) — code source, releases et documentation officielle
+- [Caddy Docker : reverse proxy HTTPS](/caddy-docker-reverse-proxy-guide/) — pour exposer Linkding proprement en HTTPS
+- [Miniflux : lecteur RSS auto-hébergé](/miniflux-docker-lecteur-rss-guide/) — le complément idéal à tes bookmarks dans une stack souveraine
