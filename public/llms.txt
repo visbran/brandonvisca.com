@@ -5,7 +5,7 @@
 
 ## Zsh Plugins essentiels : 7 plugins que j'utilise tous les jours
 URL: https://brandonvisca.com/zsh-plugins-essentiels-guide/
-Description: Les meilleurs plugins zsh essentiels pour ton terminal : git, autosuggestions, syntax-highlighting, sudo et extract. Guide Oh My Zsh 2026.
+Description: Les 7 zsh plugins essentiels que j'utilise chaque jour : git, autosuggestions, syntax-highlighting, sudo, extract. Guide Oh My Zsh 2026 complet.
 Tags: 
 Publié: 2026-06-09T06:00:00.000Z
 
@@ -17,7 +17,7 @@ Publié: 2026-06-08T08:00:00.000Z
 
 ## Caddy Docker : le reverse proxy HTTPS automatique en 5 minutes
 URL: https://brandonvisca.com/caddy-docker-reverse-proxy-guide/
-Description: Guide caddy docker complet : reverse proxy HTTPS automatique avec Let's Encrypt en Docker, Caddyfile simple et comparatif Nginx. En 5 minutes chrono.
+Description: Caddy Docker : configure un reverse proxy HTTPS automatique avec Let's Encrypt en 5 minutes. Caddyfile simple, certificats auto-renouvelés, zéro Certbot.
 Tags: 
 Publié: 2026-06-07T08:00:00.000Z
 
