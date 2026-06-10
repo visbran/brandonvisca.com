@@ -26,7 +26,10 @@ faqs:
   - question: "Puis-je importer mes sessions PuTTY dans Termius ?"
     answer: "Pas directement, mais tu peux exporter tes sessions PuTTY depuis le registre Windows et utiliser un script de conversion, ou recréer tes connexions manuellement."
 ---
-> 💡 **TL;DR**, Termius est l'alternative moderne à PuTTY sur Windows : interface claire, clés SSH intégrées, SFTP natif. La version gratuite suffit pour 1-3 serveurs sur un seul poste. Le plan Pro (100$/an) débloque la sync cloud multi-appareils et s'amortit en 2 semaines pour un admin sys.
+> 💡 **TL;DR**
+> - Termius est l'alternative moderne à PuTTY sur Windows : interface claire, clés SSH intégrées, SFTP natif
+> - La version gratuite suffit pour 1 à 3 serveurs sur un seul poste
+> - Le plan Pro (100$/an) débloque la sync cloud multi-appareils, amorti en 2 semaines pour un admin sys
 
 ## Table des matières
 

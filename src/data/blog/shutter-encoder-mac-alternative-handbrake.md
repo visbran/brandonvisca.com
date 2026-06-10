@@ -21,8 +21,10 @@ faqs:
     answer: "Shutter Encoder est une interface graphique pour FFmpeg. Si tu maîtrises FFmpeg CLI, tu as plus de contrôle. Sinon, Shutter rend FFmpeg accessible."
 ---
 
-TL;DR
-
+> 💡 **TL;DR**
+> - HandBrake ne fait qu'une chose, la compression : impossible de trimmer, sous-titrer ou étalonner
+> - Shutter Encoder ajoute l'édition non-destructive, les sous-titres, les filtres et le batch processing
+> - Interface gratuite qui embarque FFmpeg, le couteau suisse de la vidéo
 HandBrake c’est bien pour compresser des vidéos rapidement. Mais dès que tu veux faire du trimming, ajouter des sous-titres hardcodés, ou du color grading basique, t’es coincé. HandBrake fait **une chose** : la compression. Point.
 
 **Shutter Encoder Mac** change la donne. Compression, édition non-destructive, sous-titres, filtres, batch processing, le tout dans une interface gratuite qui embarque FFmpeg (le couteau suisse vidéo).

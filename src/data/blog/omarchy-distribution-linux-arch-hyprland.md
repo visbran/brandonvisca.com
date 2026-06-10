@@ -20,7 +20,10 @@ faqs:
   - question: "Omarchy fonctionne-t-il bien sur laptop avec gestion de batterie ?"
     answer: "Oui. Omarchy inclut power-profiles-daemon et auto-cpufreq pour la gestion d'énergie. La consommation en idle est comparable à d'autres distros Wayland modernes."
 ---
-> 💡 **TL;DR** : Omarchy Linux v3.8.0 installe Arch + Hyprland clé en main. 11 thèmes, météo live, rappels intégrés, choix du browser/terminal/éditeur par défaut, outils dev prêts. Zéro config de départ.
+> 💡 **TL;DR**
+> - Omarchy Linux v3.8.0 installe Arch + Hyprland clé en main, zéro config de départ
+> - 11 thèmes, météo live, rappels intégrés, choix du browser/terminal/éditeur par défaut
+> - Outils de dev prêts à l'emploi, esprit « omakase » : tout fonctionne out-of-the-box
 
 Tu cherches une distribution Linux qui allie la puissance d'Arch à l'esthétique d'un bureau moderne ? Spoiler : Omarchy pourrait bien révolutionner ta façon de bosser.
 

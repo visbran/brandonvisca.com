@@ -21,7 +21,10 @@ faqs:
   - question: "GLPI peut-il remplacer complètement SnipeIT ?"
     answer: "Techniquement oui, mais GLPI est surdimensionné pour du simple inventaire. Pour un suivi d'actifs précis avec codes QR et check-in/check-out fluide, SnipeIT est clairement supérieur."
 ---
-> 💡 **TL;DR**, SnipeIT gagne pour 90% des cas : installation en 45 min, interface moderne, codes QR natifs. GLPI vaut le coup uniquement si tu as besoin d’un helpdesk intégré et d’une CMDB complète. J’ai utilisé les deux pendant 3 ans, SnipeIT reste mon choix par défaut.
+> 💡 **TL;DR**
+> - SnipeIT gagne pour 90% des cas : installation en 45 min, interface moderne, codes QR natifs
+> - GLPI ne vaut le coup que si tu as besoin d'un helpdesk intégré et d'une CMDB complète
+> - Après 3 ans avec les deux, SnipeIT reste mon choix par défaut pour l'asset management
 
 ## Table des matières
 

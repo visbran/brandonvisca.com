@@ -29,7 +29,10 @@ La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s
 
 ## Table des matières
 
-## TL;DR : Le comparatif en un coup d'œil
+> 💡 **TL;DR**
+> - Password.link : le plus simple pour les équipes IT (chiffrement client AES-256-GCM, notifications), mais pas self-hosted
+> - OneTimeSecret : illimité et open source, idéal pour les particuliers et les devs
+> - PrivateBin : self-hosted zéro connaissance, le choix des homelabbers (installation requise)
 
 | Critère | Password.link | OneTimeSecret | PrivateBin |
 |---|---|---|---|

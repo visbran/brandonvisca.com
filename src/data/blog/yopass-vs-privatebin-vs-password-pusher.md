@@ -34,7 +34,10 @@ Spoiler : Yopass pour 80% des cas. Mais ça dépend de ton contexte.
 
 ## Table des matières
 
-## TL;DR : Tableau comparatif
+> 💡 **TL;DR**
+> - Yopass : chiffrement côté client, CLI dispo, partage de fichiers, backend Memcached ou Redis
+> - PrivateBin : chiffrement côté client sans backend (fichiers), le plus simple à déployer
+> - Password Pusher : chiffrement côté serveur, autodestruction par vues ou durée, base de données requise
 
 | Critère                | Yopass                | PrivateBin       | Password Pusher        |
 | ---------------------- | --------------------- | ---------------- | ---------------------- |

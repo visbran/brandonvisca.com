@@ -23,12 +23,10 @@ faqs:
   - question: "PhotoPrism fonctionne-t-il sur Raspberry Pi ?"
     answer: "Oui, l'image ARM64 est disponible. L'indexation IA sera plus lente que sur x86_64. Prévois un Pi 4 avec 4 Go de RAM minimum et un stockage externe rapide."
 ---
-> 💡 **TL;DR**, PhotoPrism Docker en 4 points :
->
-> - **C'est quoi ?** Une galerie photo auto-hébergée avec reconnaissance faciale, classification par IA et import automatique
-> - **Pourquoi ?** Google Photos te facture 2 To à 10€/mois, piste tes métadonnées GPS et te bloque si tu dépasses les quotas
-> - **Comment ?** Un `docker-compose.yml` avec PhotoPrism + MariaDB = opérationnel en 10 minutes
-> - **Coût ?** Zéro euro si tu as déjà un serveur avec Docker
+> 💡 **TL;DR**
+> - Galerie photo auto-hébergée avec reconnaissance faciale, classification par IA et import automatique
+> - Alternative à Google Photos, qui facture 2 To à 10€/mois et piste tes métadonnées GPS
+> - Un `docker-compose.yml` avec PhotoPrism + MariaDB : opérationnel en 10 minutes, zéro euro si tu as déjà un serveur
 
 Tu stockes encore tes 15 000 photos sur Google Photos ? Tu reçois ce gentil mail "Vous avez utilisé 95% de votre espace" ? Et quand tu cherches "chat noir" dans ta galerie, Google te sort un algorithme flippant qui te dit exactement où tu étais quand tu l'as pris ?
 

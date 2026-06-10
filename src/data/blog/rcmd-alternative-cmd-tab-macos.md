@@ -53,11 +53,10 @@ Let's go ! 🚀
 
 ---
 
-## TL;DR : rcmd en 30 secondes
-
-**Le problème** : Cmd+Tab = lent (3-4 Tab minimum à chaque fois)
-
-**La solution** : rcmd = Right Command + lettre de l'app
+> 💡 **TL;DR**
+> - Cmd+Tab est lent (3 à 4 Tab à chaque fois pour atteindre la bonne app)
+> - rcmd remplace ça par Right Command + la lettre de l'app : accès direct en 0,2 s
+> - Un raccourci dédié par app (Right Cmd + S pour Safari, + V pour VS Code)
 
 | App | Raccourci rcmd | Gain vs Cmd+Tab |
 |-----|----------------|-----------------|
