@@ -1,7 +1,7 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-09
-# Total articles : 98
+# Dernière mise à jour : 2026-06-10
+# Total articles : 99
 
 ## PhotoPrism Docker : la galerie photo auto-hébergée qui remplace Google Photos
 URL: https://brandonvisca.com/photoprism-docker-galerie-photo/
