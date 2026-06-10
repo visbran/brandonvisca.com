@@ -688,7 +688,8 @@ Félicitations, tu viens de franchir un cap majeur : **remplacer Google Drive, G
 
 Si tu veux vraiment te libérer des GAFAM, Nextcloud est **le premier pilier d’une stack complète** qui te fera économiser jusqu’à **534€/an** :
 
-- ✅ **Nextcloud** → Remplace Google Drive/Photos/Docs (que tu viens d’installer)
+- ✅ **Nextcloud** → Remplace Google Drive/Photos/Docs (que tu viens d'installer)
+- 📸 **PhotoPrism** → Si tu préfères une galerie photo dédiée avec reconnaissance faciale IA et albums partagés, j'ai publié un guide complet pour [installer PhotoPrism avec Docker](/photoprism-docker-galerie-photo/)
 - 🎬 **Jellyfin** → Remplace Netflix/Prime Video (économie : ~240€/an)
 - 🔐 **Vaultwarden** → Remplace LastPass/1Password (économie : ~60€/an)
 
