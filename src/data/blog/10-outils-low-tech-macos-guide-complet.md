@@ -19,6 +19,12 @@ faqs:
   - question: "Ces outils sont-ils compatibles avec macOS Sequoia (2025) ?"
     answer: "Oui, la liste a été vérifiée sur macOS Sequoia. Chaque outil est maintenu activement et reçoit des mises à jour régulières."
 ---
+
+> 💡 **TL;DR**
+> - 10 outils macOS gratuits, légers et sans abonnement, chacun fait une chose et la fait bien
+> - rcmd (switch d'apps), Clop (compression), Lunar (luminosité) et 7 autres du quotidien
+> - Brewfile inclus pour tout installer d'un coup, environ 453€/an économisés vs les alternatives
+
 ![Bannière des 10 outils Low-Tech pour macOS](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765400580/brandonviscacom/CleanShot_2025-12-10_at_12.30.35_2x_pqyqrv.jpg)
 
 

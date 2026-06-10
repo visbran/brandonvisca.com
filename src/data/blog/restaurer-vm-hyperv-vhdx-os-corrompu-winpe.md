@@ -22,6 +22,12 @@ faqs:
   - question: "Cette procédure fonctionne-t-elle pour Gen1 et Gen2 ?"
     answer: "La partie WinPE + robocopy fonctionne pour les deux. La reconstruction du boot diffère : bcdboot pour Gen2 UEFI (couvert dans l'article), bootrec /fixmbr pour Gen1 BIOS."
 ---
+
+> 💡 **TL;DR**
+> - VM Hyper-V qui démarre encore mais `Export-VM` plante et les sauvegardes VSS refusent
+> - Reconstruis un VHDX OS sain via WinPE + robocopy + bcdboot, sans réinstaller Windows Server
+> - Procédure pas à pas, sans perdre tes données
+
 T'as une VM Hyper-V qui démarre encore, mais `Export-VM` plante, les sauvegardes VSS refusent de partir et DISM te regarde avec des yeux vides. La VM tourne, mais elle est cassée de l'intérieur.
 
 Bonne nouvelle : c'est récupérable. Sans réinstaller Windows Server. Sans perdre tes données.

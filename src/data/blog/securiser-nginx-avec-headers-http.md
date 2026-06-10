@@ -20,6 +20,10 @@ faqs:
     answer: "Utilise securityheaders.com (scan gratuit) ou curl -I https://ton-site.com pour voir tous les headers de réponse. Tu peux aussi inspecter l'onglet Réseau de Chrome DevTools sur n'importe quelle page."
 ---
 
+> 💡 **TL;DR**
+> - Sécuriser Nginx avec les headers HTTP recommandés par l'OWASP
+> - Protection contre XSS, clickjacking et vol de session
+> - Exemples de configuration concrets et bonnes pratiques
 
 - [Pourquoi les headers HTTP sont importants](#pourquoi-les-headers-http-sont-importants)
 - [Les headers de sécurité recommandés par l’OWASP](#les-headers-de-securite-recommandes-par-l-owasp)

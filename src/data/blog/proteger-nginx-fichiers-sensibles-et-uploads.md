@@ -19,6 +19,10 @@ faqs:
     answer: "Avec Nginx seul : non, Nginx ne traite pas PHP sans configuration explicite (fastcgi_pass). Mais si php-fpm est configuré globalement, les scripts dans uploads/ peuvent être exécutés, il faut donc bloquer explicitement l'exécution dans ce dossier."
 ---
 
+> 💡 **TL;DR**
+> - La sécurité Nginx commence dans la config, pas seulement avec les headers ou le pare-feu
+> - Bloquer l'accès aux fichiers sensibles et interdire l'exécution de scripts dans les dossiers d'uploads
+> - Limiter les méthodes HTTP aux seules actions légitimes
 
 - [1. Interdire l’accès aux fichiers sensibles](#1-interdire-lacces-aux-fichiers-sensibles)
   - [Configuration Nginx recommandée :](#configuration-nginx-recommandee)

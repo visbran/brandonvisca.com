@@ -24,6 +24,12 @@ faqs:
   - question: "Qu'est-ce que Fail2Ban ?"
     answer: "Fail2Ban analyse les logs et bannit automatiquement les IPs responsables d'attaques SSH et autres tentatives malveillantes."
 ---
+
+> 💡 **TL;DR**
+> - Durcir un serveur Linux de bout en bout : SSH, pare-feu ufw, fail2ban, mises à jour auto
+> - Renforcement réseau via sysctl, anti-spoofing IP et surveillance des logs
+> - Guide pratique testé en production
+
 Dans ce guide pratique, on va renforcer ensemble la sécurité de votre serveur Linux. De la configuration SSH au pare-feu en passant par les paramètres sysctl, on couvre toutes les mesures essentielles pour rendre ton serveur aussi résistant que possible. Si tu préfères une version condensée en dix commandes natives sans conteneur, j'ai aussi un guide [Hardening Linux : 10 commandes pour durcir ton serveur](/hardening-linux-10-commandes/).
 
 ![Illustration, Sécurité de votre serveur linux](image.gif)

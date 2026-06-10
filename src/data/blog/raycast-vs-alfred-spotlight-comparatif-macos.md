@@ -21,6 +21,12 @@ faqs:
   - question: "Peut-on migrer ses workflows Alfred vers Raycast ?"
     answer: "Pas directement, les formats sont incompatibles. Mais la grande majorité des cas d'usage Alfred sont couverts par les extensions disponibles dans le store Raycast."
 ---
+
+> 💡 **TL;DR**
+> - Test de Raycast, Alfred et Spotlight pendant 30 jours, comparatif objectif
+> - Tableaux détaillés, prix réels et verdict par profil d'utilisateur
+> - De quoi choisir ton launcher macOS sans y passer un mois toi-même
+
 ![Raycast vs Alfred vs Spotlight - PLACEHOLDER SCREENSHOT]
 *Légende : Les 3 launchers macOS comparés*
 
