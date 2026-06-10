@@ -1,6 +1,6 @@
 ---
 title: "PhotoPrism Docker : la galerie photo auto-hébergée qui remplace Google Photos"
-description: "Guide photoprism docker complet. Installe PhotoPrism avec Docker pour une galerie photo auto-hébergée avec reconnaissance IA. Alternative open-source à Google Photos."
+description: "Guide PhotoPrism Docker complet. Installe PhotoPrism avec Docker pour une galerie photo auto-hébergée avec reconnaissance IA. Alternative à Google Photos."
 pubDatetime: "2026-06-10T08:00:00.000Z"
 modDatetime: "2026-06-10T08:00:00.000Z"
 author: Brandon Visca
@@ -332,11 +332,6 @@ Pour isoler PhotoPrism dans un `.env` :
 ```bash
 # .env
 PHOTOPRISM_ADMIN_PASSWORD="super_mot_de_passe_secure_1234"
-```
-
-Puis remplace les valeurs en dur dans le `docker-compose.yml` par `${PHOTOPRISM_ADMIN_PASSWORD}`.
-MARIADB_PASSWORD="autre_mot_de_passe"
-MARIADB_ROOT_PASSWORD="root_ultra_secure"
 ```
 
 Puis remplace les valeurs en dur dans le `docker-compose.yml` par `${PHOTOPRISM_ADMIN_PASSWORD}`.
