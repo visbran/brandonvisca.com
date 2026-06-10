@@ -3,6 +3,12 @@
 # Dernière mise à jour : 2026-06-09
 # Total articles : 98
 
+## PhotoPrism Docker : la galerie photo auto-hébergée qui remplace Google Photos
+URL: https://brandonvisca.com/photoprism-docker-galerie-photo/
+Description: Guide photoprism docker complet. Installe PhotoPrism avec Docker pour une galerie photo auto-hébergée avec reconnaissance IA. Alternative open-source à Google Photos.
+Tags: 
+Publié: 2026-06-10T08:00:00.000Z
+
 ## Zsh Plugins essentiels : 7 plugins que j'utilise tous les jours
 URL: https://brandonvisca.com/zsh-plugins-essentiels-guide/
 Description: Les 7 zsh plugins essentiels que j'utilise chaque jour : git, autosuggestions, syntax-highlighting, sudo, extract. Guide Oh My Zsh 2026 complet.
