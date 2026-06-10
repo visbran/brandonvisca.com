@@ -5,7 +5,7 @@
 
 ## PhotoPrism Docker : la galerie photo auto-hébergée qui remplace Google Photos
 URL: https://brandonvisca.com/photoprism-docker-galerie-photo/
-Description: Guide photoprism docker complet. Installe PhotoPrism avec Docker pour une galerie photo auto-hébergée avec reconnaissance IA. Alternative open-source à Google Photos.
+Description: Guide PhotoPrism Docker complet. Installe PhotoPrism avec Docker pour une galerie photo auto-hébergée avec reconnaissance IA. Alternative à Google Photos.
 Tags: 
 Publié: 2026-06-10T08:00:00.000Z
 
