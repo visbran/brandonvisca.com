@@ -22,7 +22,7 @@ faqs:
   - question: "Peut-on synchroniser plus de 2 Pi-hole avec Nebula-Sync ?"
     answer: "Oui. Nebula-Sync supporte un nombre illimité de réplicas. Il suffit d'ajouter les IPs et tokens API de chaque instance Pi-hole dans la configuration YAML."
 ---
-> 💡 **TL;DR** — Nebula-Sync est le successeur de Gravity Sync compatible Pi-hole v6. Il synchronise automatiquement tes Pi-hole (listes noires, config DNS, groupes) via Docker ou binaire Go. Un docker-compose de 10 lignes suffit pour démarrer.
+> 💡 **TL;DR**, Nebula-Sync est le successeur de Gravity Sync compatible Pi-hole v6. Il synchronise automatiquement tes Pi-hole (listes noires, config DNS, groupes) via Docker ou binaire Go. Un docker-compose de 10 lignes suffit pour démarrer.
 
 Spoiler : c'est le successeur non-officiel de Gravity Sync, et il est compatible avec Pi-hole v6.
 
@@ -191,7 +191,7 @@ sudo systemctl restart pihole-FTL
 
 **Répète ça sur chaque réplique.** Oublie cette étape, et Nebula-Sync va se plaindre d'erreurs d'authentification.
 
-> ⚠️ **Attention** — `webserver.api.app_sudo = true` donne à Nebula-Sync les droits d'exécuter des commandes en tant que root via l'API Pi-hole. Limite l'accès réseau au conteneur Nebula-Sync uniquement : n'expose jamais le port API Pi-hole sur l'extérieur.
+> ⚠️ **Attention**, `webserver.api.app_sudo = true` donne à Nebula-Sync les droits d'exécuter des commandes en tant que root via l'API Pi-hole. Limite l'accès réseau au conteneur Nebula-Sync uniquement : n'expose jamais le port API Pi-hole sur l'extérieur.
 
 ## Configuration avancée : sync sélectif
 
@@ -395,7 +395,7 @@ Résultat : je modifie les listes noires sur mon Pi-hole principal, et dans les 
 
 ## Bonnes pratiques
 
-> 💡 **Astuce** — Avant d'activer Nebula-Sync, exporte ta config Pi-hole via **Settings → Teleporter → Export** sur chaque instance. Si quelque chose tourne mal lors du premier sync, tu peux restaurer en 30 secondes.
+> 💡 **Astuce**, Avant d'activer Nebula-Sync, exporte ta config Pi-hole via **Settings → Teleporter → Export** sur chaque instance. Si quelque chose tourne mal lors du premier sync, tu peux restaurer en 30 secondes.
 
 **Fais une sauvegarde Teleporter avant** : C'est le filet de sécurité numéro 1.
 
@@ -436,7 +436,7 @@ Si tu as plusieurs Pi-hole v6 et que tu veux arrêter de les synchroniser à la 
 
 La prochaine étape logique : combine Nebula-Sync avec une config Pi-hole solide. Listes de blocage optimisées, DNS-over-HTTPS, surveillance des requêtes. Ton homelab DNS ne sera plus jamais un point de défaillance unique.
 
-Et si tu parts de zéro ou envisages une migration, [Technitium DNS Server](/technitium-dns-server/) propose blocage de pubs + DNS récursif natif + DNSSEC dans un seul conteneur — sans dépendance à dnsmasq ni à Unbound.
+Et si tu parts de zéro ou envisages une migration, [Technitium DNS Server](/technitium-dns-server/) propose blocage de pubs + DNS récursif natif + DNSSEC dans un seul conteneur, sans dépendance à dnsmasq ni à Unbound.
 
 ## Pour aller plus loin
 

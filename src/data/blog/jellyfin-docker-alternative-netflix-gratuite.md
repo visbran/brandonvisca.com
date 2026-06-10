@@ -72,7 +72,7 @@ Et encore, si tu réutilises ton serveur Nextcloud ou un vieux PC, c’est **qua
 
 ### Jellyfin vs Plex vs Emby : Le match
 
-![Capture d'écran — Jellyfin vs Plex vs Emby Le match](seinfeld-fight-george-costanza-6hfudkwlwcabc.gif)Critère | Jellyfin | Plex | Emby | **Prix** | 🟢 Gratuit à vie | 🟡 Gratuit (limité) ou 5€/mois | 🟡 Gratuit (limité) ou 5€/mois | **Open source** | 🟢 100% | 🔴 Propriétaire | 🟡 Partiellement | **Vie privée** | 🟢 Aucune télémétrie | 🔴 Compte Plex obligatoire | 🟡 Compte optionnel | **Transcoding** | 🟢 Illimité | 🟡 Limité sans Plex Pass | 🟢 Illimité | **Apps mobiles** | 🟢 Gratuites | 🔴 5€ une fois | 🟡 Freemium | **Interface** | 🟡 Correcte | 🟢 Excellente | 🟢 Très bonne | **Plugins** | 🟢 Large choix | 🟡 Restreints | 🟡 Moyens | **Communauté FR** | 🟢 Active | 🟢 Très active | 🟡 Moyenne | 
+![Capture d'écran, Jellyfin vs Plex vs Emby Le match](seinfeld-fight-george-costanza-6hfudkwlwcabc.gif)Critère | Jellyfin | Plex | Emby | **Prix** | 🟢 Gratuit à vie | 🟡 Gratuit (limité) ou 5€/mois | 🟡 Gratuit (limité) ou 5€/mois | **Open source** | 🟢 100% | 🔴 Propriétaire | 🟡 Partiellement | **Vie privée** | 🟢 Aucune télémétrie | 🔴 Compte Plex obligatoire | 🟡 Compte optionnel | **Transcoding** | 🟢 Illimité | 🟡 Limité sans Plex Pass | 🟢 Illimité | **Apps mobiles** | 🟢 Gratuites | 🔴 5€ une fois | 🟡 Freemium | **Interface** | 🟡 Correcte | 🟢 Excellente | 🟢 Très bonne | **Plugins** | 🟢 Large choix | 🟡 Restreints | 🟡 Moyens | **Communauté FR** | 🟢 Active | 🟢 Très active | 🟡 Moyenne | 
 
 **Verdict :**
 
@@ -86,7 +86,7 @@ Et encore, si tu réutilises ton serveur Nextcloud ou un vieux PC, c’est **qua
 
 Jellyfin c’est quoi exactement ?
 
-![Capture d'écran — Jellyfin vs Plex vs Emby Le match](Jellyfin12.16.32@2x.webp)**En une phrase :** Un serveur multimédia qui transforme ta collection de films/séries en **Netflix personnel**.
+![Capture d'écran, Jellyfin vs Plex vs Emby Le match](Jellyfin12.16.32@2x.webp)**En une phrase :** Un serveur multimédia qui transforme ta collection de films/séries en **Netflix personnel**.
 
 **Ce que ça fait :**  
 ✅ Récupère automatiquement les **posters, synopsis, notes** (via TMDB/TVDB)  
@@ -178,28 +178,28 @@ VPS | Prix/mois | Specs | Transcoding | Hetzner CPX21 | 8,21€ HT | 3 vCPU, 4 G
 
 **Matériel testé et approuvé :**
 
-**🔴 Raspberry Pi 4/5 (8 Go RAM)** – 80€
+**🔴 Raspberry Pi 4/5 (8 Go RAM)**,  80€
 
 - ✅ Consommation : 5W (10€/an électricité)
 - ✅ Silencieux, compact
 - ⚠️ Transcoding limité (720p max, 1080p possible avec Raspberry Pi 5)
 - 💡 **Idéal pour Direct Play** (pas de transcoding)
 
-**🟢 Mini PC x86 (Intel N100)** – 150-200€
+**🟢 Mini PC x86 (Intel N100)**,  150-200€
 
 - ✅ Transcoding matériel Intel Quick Sync (4K OK)
 - ✅ Consommation : 10-15W (20€/an)
 - ✅ 16 Go RAM possible
 - 💡 **Le meilleur rapport qualité/prix 2025**
 
-**🟡 Vieux PC reconverti** – 0€
+**🟡 Vieux PC reconverti**,  0€
 
 - ✅ Gratuit (tu l’as déjà)
 - ❌ Consommation élevée (50-150W = 100-300€/an)
 - ✅ Transcoding OK si CPU récent (i5 8ème gen+)
 - 💡 **Solution transitoire avant mini PC**
 
-**🔵 NAS Synology/QNAP** – 300-800€
+**🔵 NAS Synology/QNAP**,  300-800€
 
 - ✅ Tout-en-un (stockage + apps)
 - ✅ Transcoding matériel (selon modèle)

@@ -248,9 +248,9 @@ Ce que tu peux faire avec :
 - Nextcloud (cloud perso léger)
 - Vaultwarden (mots de passe)
 - Uptime Kuma (monitoring)
-- Miniflux (lecteur RSS) — j'ai un [guide complet pour l'installer avec Docker](/miniflux-docker-lecteur-rss-guide/)
-- Linkding (sauvegarde de liens et bookmarks) — j'ai aussi publié un [guide pour l'installer avec Docker](/linkding-docker-bookmarks/)
-- Pi-hole (blocage pub réseau) — ou [Technitium DNS Server](/technitium-dns-server/) pour un DNS récursif natif en un seul conteneur
+- Miniflux (lecteur RSS), j'ai un [guide complet pour l'installer avec Docker](/miniflux-docker-lecteur-rss-guide/)
+- Linkding (sauvegarde de liens et bookmarks), j'ai aussi publié un [guide pour l'installer avec Docker](/linkding-docker-bookmarks/)
+- Pi-hole (blocage pub réseau), ou [Technitium DNS Server](/technitium-dns-server/) pour un DNS récursif natif en un seul conteneur
 
 #### Setup minimal VPS (~82€/an)
 
@@ -299,7 +299,7 @@ N’importe quelle connexion suffit. Même une 4G pourrie, car tu administres le
 
 Les 5 premiers services à auto-héberger (par ordre de difficulté)
 
-### 1. Uptime Kuma — Monitoring ultra-simple 🟢
+### 1. Uptime Kuma : Monitoring ultra-simple 🟢
 
 **C’est quoi ?**  
 Un outil de monitoring pour vérifier que tes services sont bien en ligne. Interface magnifique, notifications par email/Discord/Telegram.
@@ -323,7 +323,7 @@ Un outil de monitoring pour vérifier que tes services sont bien en ligne. Inter
 
 - - - - - -
 
-### 2. Nextcloud — Ton cloud personnel 🟡
+### 2. Nextcloud : Ton cloud personnel 🟡
 
 **C’est quoi ?**  
 L’alternative open source à Google Drive / Dropbox. Synchronisation de fichiers, calendrier, contacts, notes, galerie photos.
@@ -352,7 +352,7 @@ C’est LE service signature de l’auto-hébergement. Si tu n’héberges qu’
 
 - - - - - -
 
-### 3. Vaultwarden — Gestionnaire de mots de passe 🟢
+### 3. Vaultwarden : Gestionnaire de mots de passe 🟢
 
 **C’est quoi ?**  
 Une version allégée de Bitwarden (mais 100% compatible avec toutes les apps officielles Bitwarden). Stocke tous tes mots de passe de manière chiffrée.
@@ -378,7 +378,7 @@ Fini les mots de passe « 123456 » réutilisés partout. Et contrairement à La
 
 - - - - - -
 
-### 4. Jellyfin — Ton Netflix maison 🟡
+### 4. Jellyfin : Ton Netflix maison 🟡
 
 **C’est quoi ?**  
 Un serveur média pour tes films, séries, musique. Open source, sans télémétrie, sans pub.
@@ -400,7 +400,7 @@ Parce que c’est satisfaisant d’avoir son propre Netflix avec sa bibliothèqu
 
 - - - - - -
 
-### 5. Immich — Alternative à Google Photos 🟡
+### 5. Immich : Alternative à Google Photos 🟡
 
 **C’est quoi ?**  
 Une app de backup et d’organisation de photos avec reconnaissance faciale, géolocalisation, et recherche intelligente. Le Google Photos qu’on peut héberger chez soi.

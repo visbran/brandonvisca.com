@@ -405,9 +405,9 @@ Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu b
 
 ## Pour aller plus loin
 
-- [Alt-SendMe : interface graphique pour Iroh](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) – même techno, pour ceux qui fuient le terminal
-- [Documentation Iroh](https://iroh.computer/docs) – la stack sous Sendme CLI
-- [GitHub Sendme](https://github.com/n0-computer/sendme) – releases, issues, code source
+- [Alt-SendMe : interface graphique pour Iroh](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/), même techno, pour ceux qui fuient le terminal
+- [Documentation Iroh](https://iroh.computer/docs), la stack sous Sendme CLI
+- [GitHub Sendme](https://github.com/n0-computer/sendme), releases, issues, code source
 
 ## Articles connexes
 

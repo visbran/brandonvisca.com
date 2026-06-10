@@ -76,7 +76,7 @@ AltTab a besoin de capturer ton écran pour afficher les previews. Apple demande
 
 Si ça te stresse :
 
-1. **Vérifie le code source** sur GitHub — transparent, MIT license
+1. **Vérifie le code source** sur GitHub, transparent, MIT license
 2. **Bloque les connexions réseau** avec Lulu (firewall macOS gratuit)
 3. **Utilise le mode sans preview** (liste texte seulement) si t'es vraiment parano
 
@@ -129,7 +129,7 @@ Le ⌘+Tab natif est maintenant intercepté par AltTab. Tu gardes l'habitude mus
 
 Trois modes d'affichage selon ton usage et la taille de ton écran.
 
-### 1. Grid (Grille) – Recommandé pour multitasking
+### 1. Grid (Grille) : Recommandé pour multitasking
 
 Toutes les fenêtres en grille avec des thumbnails de taille égale. Idéal si t'as beaucoup de fenêtres ouvertes simultanément.
 
@@ -137,7 +137,7 @@ Toutes les fenêtres en grille avec des thumbnails de taille égale. Idéal si t
 
 Le nombre de colonnes s'adapte automatiquement. Sur un grand écran, tu peux avoir 6-8 previews visibles sans scroller.
 
-### 2. Thumbnails (Bande horizontale) – Style Windows 11
+### 2. Thumbnails (Bande horizontale) : Style Windows 11
 
 Bande horizontale de thumbnails. Le mode le plus proche du comportement Windows 11.
 
@@ -145,7 +145,7 @@ Bande horizontale de thumbnails. Le mode le plus proche du comportement Windows 
 
 C'est mon setup au quotidien sur MacBook 14". Les previews sont assez grandes pour identifier les fenêtres au premier coup d'œil.
 
-### 3. List (Liste texte) – Performance max
+### 3. List (Liste texte) : Performance max
 
 Noms des fenêtres seulement, sans preview visuelle. Consomme quasi zéro ressources.
 

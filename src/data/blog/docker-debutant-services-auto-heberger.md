@@ -27,7 +27,7 @@ faqs:
   - question: "Docker consomme-t-il beaucoup de ressources ?"
     answer: "Docker lui-même est très léger. Ce sont les services que tu fais tourner qui consomment. Un serveur avec 4 Go de RAM peut faire tourner 5-10 services légers sans problème."
 ---
-> 💡 **TL;DR** — Docker pour débutants en 3 points :
+> 💡 **TL;DR**, Docker pour débutants en 3 points :
 > - **C’est quoi ?** Une façon de lancer des applis dans des « boîtes » isolées
 > - **Pourquoi ?** Installation en 2 minutes, zéro conflit entre logiciels, facile à supprimer
 > - **Comment ?** Un fichier `docker-compose.yml` + une commande = service opérationnel
@@ -152,7 +152,7 @@ sudo usermod -aG docker $USER
 
 Déconnecte-toi et reconnecte-toi pour que ça prenne effet. Ensuite, tu pourras faire `docker ps` sans `sudo`.
 
-> ⚠️ **Sécurité** — Ajouter ton user au groupe Docker lui donne des droits équivalents à root. Sur un serveur de prod, réfléchis-y à deux fois. Pour ton homelab perso, aucun souci.
+> ⚠️ **Sécurité**, Ajouter ton user au groupe Docker lui donne des droits équivalents à root. Sur un serveur de prod, réfléchis-y à deux fois. Pour ton homelab perso, aucun souci.
 
 - - - - - -
 
@@ -248,7 +248,7 @@ docker compose up -d
 
 - - - - - -
 
-### 2. Portainer — Interface de gestion Docker 🟢
+### 2. Portainer : Interface de gestion Docker 🟢
 
 ![Bannière officielle de Portainer sur GitHub](portainer-github-banner.webp)**C’est quoi ?**  
 Une interface web pour gérer tous tes conteneurs Docker sans ligne de commande.
@@ -320,7 +320,7 @@ docker compose up -d
 
 - - - - - -
 
-### 4. Vaultwarden — Gestionnaire de mots de passe 🟢
+### 4. Vaultwarden : Gestionnaire de mots de passe 🟢
 
 ![Logo et bannière de Vaultwarden](vaultwarden.webp)**C’est quoi ?**  
 Une version allégée et auto-hébergée de Bitwarden (compatible avec toutes les apps officielles). J’ai un [guide dédié à Vaultwarden](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/) si tu veux aller plus loin.
@@ -409,11 +409,11 @@ docker compose up -d
 3. Utilise les identifiants du docker-compose
 4. Installe les apps recommandées
 
-> 💡 **Astuce** — Active la prévisualisation des fichiers et l’app Memories pour gérer tes photos comme sur Google Photos. Tu peux aussi consulter mon [guide Nextcloud complet](https://brandonvisca.com/nextcloud-docker-installation-complete-2025/) pour aller plus loin.
+> 💡 **Astuce**, Active la prévisualisation des fichiers et l’app Memories pour gérer tes photos comme sur Google Photos. Tu peux aussi consulter mon [guide Nextcloud complet](https://brandonvisca.com/nextcloud-docker-installation-complete-2025/) pour aller plus loin.
 
 - - - - - -
 
-### 6. Jellyfin — Serveur média (Netflix maison) 🟡
+### 6. Jellyfin : Serveur média (Netflix maison) 🟡
 
 ![Interface de Jellyfin avec bibliothèque de films](jellyfin.webp)**C’est quoi ?**  
 Un serveur de streaming pour tes films, séries, musique. Open source, sans télémétrie, sans pub. Mon [guide Jellyfin](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/) couvre la configuration GPU et le transcodage.
@@ -484,7 +484,7 @@ docker compose up -d
 
 - - - - - -
 
-### 8. Immich — Alternative Google Photos 🟡
+### 8. Immich : Alternative Google Photos 🟡
 
 ![Interface d’Immich pour backup de photos](immich.webp)**C’est quoi ?**  
 Une app de backup et d’organisation de photos avec reconnaissance faciale, géolocalisation, et recherche intelligente.
@@ -510,7 +510,7 @@ docker compose up -d
 
 - - - - - -
 
-### 9. Paperless-ngx — GED personnelle 🟡
+### 9. Paperless-ngx : GED personnelle 🟡
 
 ![Interface de Paperless-ngx pour gestion documentaire](paperless-ngx.webp)**C’est quoi ?**  
 Un système de gestion documentaire qui scanne, indexe et organise tous tes documents (factures, contrats, etc.).
@@ -864,16 +864,16 @@ services:
     restart: unless-stopped
 ```
 
-> ⚠️ **Attention** — Teste bien Watchtower avant de l’activer. Une mise à jour majeure peut casser un service. Préfère les versions fixes dans tes compose et gère les updates manuellement si tu es pointilleux.
+> ⚠️ **Attention**, Teste bien Watchtower avant de l’activer. Une mise à jour majeure peut casser un service. Préfère les versions fixes dans tes compose et gère les updates manuellement si tu es pointilleux.
 
 - - - - - -
 
 ## Pour aller plus loin
 
-- [Auto-hébergement : le guide complet](https://brandonvisca.com/auto-hebergement-guide-complet-2025/) — la suite logique après Docker
-- [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) — indispensable avant d’exposer des services
-- [Docker Hub](https://hub.docker.com/) — catalogue officiel d’images Docker
-- [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) — liste exhaustive de services auto-hébergeables
+- [Auto-hébergement : le guide complet](https://brandonvisca.com/auto-hebergement-guide-complet-2025/), la suite logique après Docker
+- [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/), indispensable avant d’exposer des services
+- [Docker Hub](https://hub.docker.com/), catalogue officiel d’images Docker
+- [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted), liste exhaustive de services auto-hébergeables
 
 - - - - - -
 
@@ -922,9 +922,9 @@ FAQ : Les questions Docker qui reviennent souvent
 ### **Mes conteneurs Docker utilisent beaucoup de RAM, c’est normal ?**
 
 Docker alloue de la RAM par conteneur. Si tu as 10 services, ça peut vite monter. Solution :  
-– Limite la RAM par conteneur dans docker-compose (paramètre `mem_limit`)  
-– Utilise des images « alpine » (versions allégées)  
-– Ferme les services que tu n’utilises pas
+, Limite la RAM par conteneur dans docker-compose (paramètre `mem_limit`)  
+, Utilise des images « alpine » (versions allégées)  
+, Ferme les services que tu n’utilises pas
 
 ### **Puis-je faire tourner Docker sur un Raspberry Pi ?**
 
@@ -932,9 +932,9 @@ Oui ! Beaucoup d’images sont disponibles en architecture ARM. Certains service
 
 ### **Docker Compose vs Docker Swarm vs Kubernetes ?**
 
-– **Docker Compose** : Un seul serveur, parfait pour homelab  
-– **Docker Swarm** : Plusieurs serveurs, orchestration simple  
-– **Kubernetes** : Plusieurs serveurs, orchestration complexe, overkill pour homelab  
+, **Docker Compose** : Un seul serveur, parfait pour homelab  
+, **Docker Swarm** : Plusieurs serveurs, orchestration simple  
+, **Kubernetes** : Plusieurs serveurs, orchestration complexe, overkill pour homelab  
 Pour 99% des homelabs, Docker Compose suffit largement.
 
 ### **Comment migrer mes conteneurs Docker vers un autre serveur ?**

@@ -14,7 +14,7 @@ featured: false
 draft: false
 ogImage: "" 
 ---
-**TL;DR** — Tu peux durcir un serveur Linux en dix minutes avec dix commandes. Pas besoin d'être expert en sécurité offensive : un pare-feu actif, SSH verrouillé, mises à jour auto et un audit rapide suffisent à éliminer 90 % des attaques automatisées.
+**TL;DR**, Tu peux durcir un serveur Linux en dix minutes avec dix commandes. Pas besoin d'être expert en sécurité offensive : un pare-feu actif, SSH verrouillé, mises à jour auto et un audit rapide suffisent à éliminer 90 % des attaques automatisées.
 
 ## Pourquoi dix commandes suffisent
 
@@ -89,7 +89,7 @@ Redémarre SSH :
 sudo systemctl restart sshd
 ```
 
-**Ce que ça corrige** : les attaques par force brute sur le port 22 avec le compte root. Changer le port réduit le bruit de 99 %. Désactiver les mots de passe et utiliser des clés SSH — ou mieux, des [passkeys SSH biométriques](/passkey-ssh-sshid/) — rend l'accès quasi impossible à compromettre.
+**Ce que ça corrige** : les attaques par force brute sur le port 22 avec le compte root. Changer le port réduit le bruit de 99 %. Désactiver les mots de passe et utiliser des clés SSH, ou mieux, des [passkeys SSH biométriques](/passkey-ssh-sshid/), rend l'accès quasi impossible à compromettre.
 
 Vérifie que tu peux te reconnecter avant de fermer ta session actuelle. Sinon, tu te verrouilles dehors.
 

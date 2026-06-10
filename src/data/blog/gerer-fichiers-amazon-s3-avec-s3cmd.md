@@ -26,7 +26,7 @@ faqs:
 ---
 > 💡 **TL;DR** : Installe S3cmd (`sudo apt install s3cmd`), configure avec `s3cmd --configure` (clés AWS + région), puis utilise `s3cmd sync /local/ s3://bucket/` pour synchroniser. Compatible MinIO, Backblaze B2, OVH. Gratuit et open source.
 
-![S3cmd — gérer Amazon S3 en CLI](friends-episode-15-friends-tv-the-one-where-estelle-dies-w3a0zo282fubpsqqyd.gif)
+![S3cmd, gérer Amazon S3 en CLI](friends-episode-15-friends-tv-the-one-where-estelle-dies-w3a0zo282fubpsqqyd.gif)
 
 Tu veux uploader, synchroniser ou sauvegarder des fichiers vers Amazon S3 (ou un service compatible) sans passer par la console AWS ? **S3cmd** est le client CLI qu'il te faut. Open source, gratuit, compatible avec tous les services S3-like, il tourne parfaitement dans des scripts cron ou des pipelines de déploiement.
 
@@ -40,13 +40,13 @@ J'utilise S3cmd pour sauvegarder mes dumps MySQL et configs Proxmox vers un buck
 
 S3cmd n'est pas le seul client S3 CLI (il y a aussi le AWS CLI officiel, rclone...), mais il a quelques atouts :
 
-- **Open source et gratuit** — pas de licence, pas d'abonnement
-- **Compatible S3-like** — fonctionne avec MinIO, Backblaze B2, OVH Object Storage, Scaleway, Cloudflare R2
-- **Syntaxe simple** — proche de cp/rsync, facile à mémoriser
-- **Chiffrement intégré** — GPG côté client ou SSE côté serveur
-- **Idéal pour les scripts** — dry-run, output parseable, pas d'interaction
+- **Open source et gratuit**, pas de licence, pas d'abonnement
+- **Compatible S3-like**, fonctionne avec MinIO, Backblaze B2, OVH Object Storage, Scaleway, Cloudflare R2
+- **Syntaxe simple**, proche de cp/rsync, facile à mémoriser
+- **Chiffrement intégré**, GPG côté client ou SSE côté serveur
+- **Idéal pour les scripts**, dry-run, output parseable, pas d'interaction
 
-Pour la gestion des permissions et des clés AWS, pense à appliquer les bonnes pratiques de [sécurisation de ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) — les clés IAM méritent autant d'attention que les accès SSH.
+Pour la gestion des permissions et des clés AWS, pense à appliquer les bonnes pratiques de [sécurisation de ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/), les clés IAM méritent autant d'attention que les accès SSH.
 
 - - - - - -
 
@@ -89,9 +89,9 @@ s3cmd --configure
 Il te demande :
 
 - **Access Key** et **Secret Key** (depuis IAM AWS ou ton service S3)
-- **Default Region** — `us-east-1` pour AWS standard
-- **S3 Endpoint** — laisser vide pour AWS, ou spécifier pour un service alternatif
-- **Encryption passphrase** — pour le chiffrement GPG côté client
+- **Default Region**, `us-east-1` pour AWS standard
+- **S3 Endpoint**, laisser vide pour AWS, ou spécifier pour un service alternatif
+- **Encryption passphrase**, pour le chiffrement GPG côté client
 
 La configuration est sauvegardée dans `~/.s3cfg`.
 
@@ -266,7 +266,7 @@ Si tu gères plusieurs serveurs, la [gestion de sauvegardes multi-plateformes av
 
 ## Conclusion
 
-S3cmd fait le boulot sans fioriture : upload, sync, backup automatisé, chiffrement. C'est l'outil parfait pour intégrer S3 dans tes scripts cron ou tes pipelines de déploiement. Si tu bosses avec MinIO en self-hosted ou Backblaze B2 pour les coûts, ça marche pareil — change juste l'endpoint dans `~/.s3cfg`. La référence complète des commandes est dans la [documentation officielle S3cmd](https://s3tools.org/usage).
+S3cmd fait le boulot sans fioriture : upload, sync, backup automatisé, chiffrement. C'est l'outil parfait pour intégrer S3 dans tes scripts cron ou tes pipelines de déploiement. Si tu bosses avec MinIO en self-hosted ou Backblaze B2 pour les coûts, ça marche pareil, change juste l'endpoint dans `~/.s3cfg`. La référence complète des commandes est dans la [documentation officielle S3cmd](https://s3tools.org/usage).
 
 ## Pour aller plus loin
 

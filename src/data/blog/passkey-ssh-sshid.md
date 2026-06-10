@@ -17,13 +17,13 @@ faqs:
   - question: "SSH ID fonctionne-t-il sans Termius côté serveur ?"
     answer: "Oui. Les clés publiques SSH ID sont standards et s'ajoutent dans ~/.ssh/authorized_keys comme n'importe quelle clé. Seule la création et gestion des clés côté client nécessite Termius."
   - question: "Mes clés privées sont-elles stockées dans le cloud ?"
-    answer: "Non. SSH ID garantit que la clé privée reste dans le Secure Enclave de ton appareil — inextractible et non synchronisable. Même Termius n'y a pas accès."
+    answer: "Non. SSH ID garantit que la clé privée reste dans le Secure Enclave de ton appareil, inextractible et non synchronisable. Même Termius n'y a pas accès."
   - question: "SSH ID est-il gratuit ?"
     answer: "La création de clés SSH ID est accessible via Termius. L'offre de base de Termius est gratuite. Vérifie les plans actuels sur termius.com pour les fonctionnalités avancées."
 ---
-> 💡 **TL;DR** — Ce qu'il faut retenir :
+> 💡 **TL;DR**, Ce qu'il faut retenir :
 > - SSH ID de Termius te permet d'utiliser un passkey biométrique (Face ID, Touch ID, Windows Hello) à la place de tes clés SSH classiques
-> - La clé privée reste dans le Secure Enclave de ton appareil — inextractible, non exportable, non synchronisable
+> - La clé privée reste dans le Secure Enclave de ton appareil, inextractible, non exportable, non synchronisable
 > - Provisionner un nouveau serveur se résume à une seule commande `curl`
 
 ## Table des matières

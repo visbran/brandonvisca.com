@@ -26,7 +26,7 @@ faqs:
   - question: "Puis-je importer mes sessions PuTTY dans Termius ?"
     answer: "Pas directement, mais tu peux exporter tes sessions PuTTY depuis le registre Windows et utiliser un script de conversion, ou recréer tes connexions manuellement."
 ---
-> 💡 **TL;DR** — Termius est l'alternative moderne à PuTTY sur Windows : interface claire, clés SSH intégrées, SFTP natif. La version gratuite suffit pour 1-3 serveurs sur un seul poste. Le plan Pro (100$/an) débloque la sync cloud multi-appareils et s'amortit en 2 semaines pour un admin sys.
+> 💡 **TL;DR**, Termius est l'alternative moderne à PuTTY sur Windows : interface claire, clés SSH intégrées, SFTP natif. La version gratuite suffit pour 1-3 serveurs sur un seul poste. Le plan Pro (100$/an) débloque la sync cloud multi-appareils et s'amortit en 2 semaines pour un admin sys.
 
 ## Table des matières
 
@@ -130,7 +130,7 @@ Termius gère ça comme un chef :
 
 ✅ **Astuce de pro** : Termius peut même **pousser automatiquement** ta clé publique sur le serveur lors de la première connexion. Magique.
 
-Tu veux zapper complètement les fichiers `.pem` ? Termius propose aussi [SSH ID](/passkey-ssh-sshid/) : tes clés SSH générées via passkey biométrique (Face ID, Touch ID, Windows Hello), la clé privée stockée dans le Secure Enclave — plus rien à copier, plus rien à perdre.
+Tu veux zapper complètement les fichiers `.pem` ? Termius propose aussi [SSH ID](/passkey-ssh-sshid/) : tes clés SSH générées via passkey biométrique (Face ID, Touch ID, Windows Hello), la clé privée stockée dans le Secure Enclave, plus rien à copier, plus rien à perdre.
 
 ## Les fonctionnalités qui tuent (et pourquoi tu vas les adorer)
 
@@ -663,8 +663,8 @@ Mais si tu es étudiant, débutant, ou que tu as juste 2-3 serveurs perso, **la 
 
 Maintenant que tu as Termius bien configuré, il est temps de sécuriser sérieusement tes serveurs SSH. Parce qu'avoir un beau client SSH, c'est bien, mais si ton serveur se fait rooter en 10 minutes par un bot, ça sert à rien.
 
-- [Guide complet : sécuriser un serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) — Fail2Ban, port SSH, désactivation root, auth par clé uniquement
-- [Guide ultime de l'auto-hébergement 2026](https://brandonvisca.com/auto-hebergement-guide-complet-2025/) — Monter une infra perso solide et économiser 500€/an en abonnements cloud
+- [Guide complet : sécuriser un serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/), Fail2Ban, port SSH, désactivation root, auth par clé uniquement
+- [Guide ultime de l'auto-hébergement 2026](https://brandonvisca.com/auto-hebergement-guide-complet-2025/), Monter une infra perso solide et économiser 500€/an en abonnements cloud
 
 **Bon SSH, et que le ping soit avec toi. 🚀**
 

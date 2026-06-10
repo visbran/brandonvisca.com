@@ -22,7 +22,7 @@ faqs:
   - question: "Faut-il redémarrer le service DNS après configuration ?"
     answer: "Non. Les changements de configuration du scavenging sont pris en compte sans redémarrage du service DNS."
   - question: "Peut-on activer le scavenging sur plusieurs serveurs DNS ?"
-    answer: "Oui, mais configure-le d'abord sur un seul serveur pour tester. Une fois validé, déploie sur les autres. Attention à la réplication AD — un seul serveur effectue réellement le scavenging par zone."
+    answer: "Oui, mais configure-le d'abord sur un seul serveur pour tester. Une fois validé, déploie sur les autres. Attention à la réplication AD, un seul serveur effectue réellement le scavenging par zone."
   - question: "Comment confirmer que le scavenging a bien supprimé des enregistrements ?"
     answer: "Filtre les Event ID 1541 dans le journal DNS Server (Get-WinEvent) ou lance Get-DnsServerScavenging pour voir la date du dernier passage."
 ---

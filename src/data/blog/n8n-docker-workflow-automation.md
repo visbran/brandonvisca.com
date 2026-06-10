@@ -24,7 +24,7 @@ faqs:
   - question: "Puis-je utiliser n8n sans Docker ?"
     answer: "Oui, via npm global (`npm install n8n -g`) ou en téléchargeant le binaire. Mais Docker reste le plus propre pour un homelab : isolation, backup des volumes, rollback facile."
 ---
-> 💡 **TL;DR** — Ce qu'il faut retenir :
+> 💡 **TL;DR**, Ce qu'il faut retenir :
 > - n8n est un outil d'automatisation visuel auto-hébergé, alternative à Zapier et Make.
 > - 800+ intégrations natives, licence Sustainable Use License (fair-code).
 > - Stack Docker simple : PostgreSQL + n8n + volumes persistants.
@@ -159,7 +159,7 @@ Tu utilises déjà [Uptime Kuma](/uptime-kuma-2-0-monitoring-auto-heberge/) pour
 Retour dans n8n, ajoute un node **Telegram** (action `Send Message`) :
 - Connecte ton bot Telegram (crée-le via [@BotFather](https://t.me/BotFather) si besoin).
 - Chat ID : ton ID personnel ou celui d'un groupe.
-- Message : `🔴 {{ $json.msg }} est DOWN — {{ $json.time }}`
+- Message : `🔴 {{ $json.msg }} est DOWN, {{ $json.time }}`
 
 Active le workflow. Dès qu'un service tombe, tu reçois le message sur Telegram.
 

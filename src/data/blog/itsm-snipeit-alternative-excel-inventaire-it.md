@@ -48,7 +48,7 @@ faqs:
 - [Conclusion : Excel c’est fini](#conclusion-excel-cest-fini)
 
 
-![Illustration 1 — ITSM](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)Félicitations, tu viens de découvrir pourquoi l’**ITSM** existe. Et spoiler : c’est pas pour faire joli dans ton CV.
+![Illustration 1, ITSM](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)Félicitations, tu viens de découvrir pourquoi l’**ITSM** existe. Et spoiler : c’est pas pour faire joli dans ton CV.
 
 Si tu passes encore tes journées à chercher où est passé ce serveur Dell, ou si tu découvres que votre « inventaire » ressemble à un bazar de brocante mal organisé, cet article va te sauver la vie. On va parler ITSM, de pourquoi Excel c’est l’enfer, et comment SnipeIT peut transformer ton quotidien d’admin.
 
@@ -117,7 +117,7 @@ SnipeIT : ton nouveau meilleur ami
 
 [SnipeIT](https://snipeitapp.com/) est une solution open source de **gestion d’actifs IT** qui fait exactement ce qu’Excel ne sait pas faire : être un vrai outil d’inventaire.
 
-![Capture d'écran — Sécurité et accès catastrophiques](friends-friends-episode-16-tv-vbawwigntkywofxf7u.gif)### Pourquoi SnipeIT et pas autre chose ?
+![Capture d'écran, Sécurité et accès catastrophiques](friends-friends-episode-16-tv-vbawwigntkywofxf7u.gif)### Pourquoi SnipeIT et pas autre chose ?
 
 - **100% gratuit** (si tu l’héberges toi-même)
 - **Interface moderne** qui ne ressemble pas à Windows 95
@@ -136,7 +136,7 @@ Contrairement à Excel, SnipeIT suit tes équipements de A à Z :
 - **Maintenance** → en réparation chez le prestataire
 - **Fin de vie** → recyclage ou revente
 
-![Capture d'écran — Les fonctionnalités qui changent la vie](gestion_des_actifs.webp)![Capture d'écran — Les fonctionnalités qui changent la vie](gestion_des_licences.webp)#### 2. Notifications automatiques
+![Capture d'écran, Les fonctionnalités qui changent la vie](gestion_des_actifs.webp)![Capture d'écran, Les fonctionnalités qui changent la vie](gestion_des_licences.webp)#### 2. Notifications automatiques
 
 Fini les « Oups, la garantie était expirée depuis 6 mois » :
 
@@ -166,7 +166,7 @@ Les avantages concrets pour l’admin débutant
 
 Tu sais utiliser un smartphone ? Tu sais utiliser SnipeIT. L’interface est claire, les boutons font ce qu’on attend d’eux, et pas besoin d’un master en ergonomie pour s’y retrouver.
 
-![Capture d'écran — Interface intuitive](/images/dashboard.webp)
+![Capture d'écran, Interface intuitive](/images/dashboard.webp)
 
 ### Déploiement pas-à-pas
 
@@ -230,7 +230,7 @@ Si tu en as marre de jongler avec des fichiers Excel qui ressemblent à un inven
 
 L’outil est gratuit, les concepts sont simples, et tu peux commencer petit avant d’étendre ton usage.
 
-Dans le prochain guide, on verra comment SnipeIT se positionne face à GLPI (spoiler : chacun a ses avantages selon ton contexte). En attendant, si tu veux préparer le terrain côté infrastructure, jette un œil à mon guide sur l’[installation d’Oh My Zsh avec Powerlevel10k](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/) – parce qu’un bon admin, ça commence par un terminal qui claque.
+Dans le prochain guide, on verra comment SnipeIT se positionne face à GLPI (spoiler : chacun a ses avantages selon ton contexte). En attendant, si tu veux préparer le terrain côté infrastructure, jette un œil à mon guide sur l’[installation d’Oh My Zsh avec Powerlevel10k](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/), parce qu’un bon admin, ça commence par un terminal qui claque.
 
 **💡 Une question sur la gestion d’actifs IT ?** N’hésite pas à me contacter ou à laisser un commentaire. J’ai probablement déjà galéré avec le même problème que toi !
 

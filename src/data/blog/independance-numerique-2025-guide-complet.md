@@ -109,38 +109,38 @@ Le matériel nécessaire : Moins cher que tu penses
 
 **Matériel recommandé :**
 
-- [Beelink Mini S12 Pro](https://amzn.to/4qGqtTI) – **289€**
+- [Beelink Mini S12 Pro](https://amzn.to/4qGqtTI), **289€**
   - Intel N100 4 cœurs
   - 16GB RAM
   - 500GB SSD
   - Consommation 10W (2€/mois élec)
-- [Disque externe 2TB](https://amzn.to/4942V4X) – **85€** (backups)
+- [Disque externe 2TB](https://amzn.to/4942V4X), **85€** (backups)
 
 **💰 Total : 374€ + 24€/an électricité**
 
 **Rentabilité :**
 
 - Coût année 1 : 398€
-- Économie année 1 : 534€ – 398€ = **136€ net**
+- Économie année 1 : 534€,  398€ = **136€ net**
 - Années suivantes : **510€/an économisés**
 
 ### Option 3 : VPS Cloud (si pas de matériel)
 
 **VPS recommandé :**
 
-- [CONTABO Cloud VPS 10](https://www.anrdoezrs.net/click-101572444-13796470) – **3,60€/mois = **43.20**€/an**
+- [CONTABO Cloud VPS 10](https://www.anrdoezrs.net/click-101572444-13796470), **3,60€/mois = **43.20**€/an**
   - 4 vCPU
   - 8GB RAM
   - 75GB SSD
 
-**Économie : 534€ – 44€ = 490€/an**
+**Économie : 534€,  44€ = 490€/an**
 
 - - - - - -
 
 Les 3 services à installer (dans l’ordre)
 -----------------------------------------
 
-### 🗄️ Service 1 : Nextcloud – Ton cloud personnel
+### 🗄️ Service 1 : Nextcloud : Ton cloud personnel
 
 ![Interface Nextcloud avec Docker - Auto-hébergement cloud personnel 2025](7b962eb7-0c5e-4e5b-a5e6-1bc8861d75d6.png)**C’est quoi ?**  
 Nextcloud, c’est **Google Drive + Google Photos + Google Calendar + Google Keep** dans un seul logiciel open source que tu héberges.
@@ -184,7 +184,7 @@ Nextcloud, c’est **Google Drive + Google Photos + Google Calendar + Google Kee
 
 - - - - - -
 
-### 🎬 Service 2 : Jellyfin – Ton Netflix personnel
+### 🎬 Service 2 : Jellyfin : Ton Netflix personnel
 
 ![Interface de Jellyfin avec bibliothèque multimédia](bfbdcf5f-f600-4a4d-b14d-105b0953de6d.png)**C’est quoi ?**  
 Jellyfin, c’est **Netflix + Disney+ + Prime Video + Spotify** dans un logiciel gratuit, open source, sans pub, sans télémétrie.
@@ -209,7 +209,7 @@ Jellyfin, c’est **Netflix + Disney+ + Prime Video + Spotify** dans un logiciel
 
 **Installation : 15 minutes**
 
-👉 **[Guide complet : Jellyfin – Alternative Netflix gratuite avec Docker](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/)**
+👉 **[Guide complet : Jellyfin, Alternative Netflix gratuite avec Docker](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/)**
 
 **Ce que tu vas apprendre :**
 
@@ -229,7 +229,7 @@ Jellyfin, c’est **Netflix + Disney+ + Prime Video + Spotify** dans un logiciel
 
 - - - - - -
 
-### 🔐 Service 3 : Vaultwarden – Ton coffre-fort personnel
+### 🔐 Service 3 : Vaultwarden : Ton coffre-fort personnel
 
 ![Interface Vaultwarden avec Docker - Gestionnaire mots de passe auto-hébergé 2025](9f4fac42-ac42-4dbb-a440-5d18d361d61b.png)**C’est quoi ?**  
 Vaultwarden, c’est **1Password + Dashlane + LastPass** dans un gestionnaire de mots de passe gratuit, open source, chiffré end-to-end.
@@ -253,7 +253,7 @@ Vaultwarden, c’est **1Password + Dashlane + LastPass** dans un gestionnaire de
 
 **Installation : 15 minutes**
 
-👉 **[Guide complet : Vaultwarden – Gestionnaire de mots de passe gratuit avec Docker](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/)**
+👉 **[Guide complet : Vaultwarden, Gestionnaire de mots de passe gratuit avec Docker](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/)**
 
 **Ce que tu vas apprendre :**
 
@@ -282,7 +282,7 @@ Le plan d’installation : Un weekend suffit
 **Matériel**
 
 - Serveur Linux prêt (ou VPS loué)
-- Nom de domaine acheté (ex: tonnom.fr – 10€/an)
+- Nom de domaine acheté (ex: tonnom.fr,  10€/an)
 - Sous-domaines configurés dans le DNS : 
   - `cloud.tonnom.fr` → Nextcloud
   - `media.tonnom.fr` → Jellyfin
@@ -302,21 +302,21 @@ Le plan d’installation : Un weekend suffit
 
 ### Samedi matin : Nextcloud (2-3h)
 
-**9h00 – Installation base**
+**9h00 , Installation base**
 
 - Créer `docker-compose.yml` Nextcloud
 - Lancer les conteneurs
 - Accéder à l’interface web
 - Créer compte admin
 
-**10h00 – Configuration**
+**10h00 , Configuration**
 
 - Configurer Redis (cache)
 - Activer APCu (performances)
 - Configurer cron
 - Tester upload/download
 
-**11h00 – Apps et synchro**
+**11h00 , Apps et synchro**
 
 - Installer apps essentielles (Photos, Calendar, Tasks)
 - Télécharger app mobile
@@ -329,20 +329,20 @@ Le plan d’installation : Un weekend suffit
 
 ### Samedi après-midi : Jellyfin (2h)
 
-**14h00 – Installation**
+**14h00 , Installation**
 
 - Créer `docker-compose.yml` Jellyfin
 - Configurer volumes médias
 - Activer transcoding hardware (si dispo)
 
-**15h00 – Bibliothèques**
+**15h00 , Bibliothèques**
 
 - Ajouter bibliothèque Films
 - Ajouter bibliothèque Séries
 - Scanner métadonnées automatiques
 - Tester lecture 4K
 
-**16h00 – Apps et partage**
+**16h00 , Apps et partage**
 
 - Installer app mobile
 - Créer compte famille
@@ -352,20 +352,20 @@ Le plan d’installation : Un weekend suffit
 
 ### Dimanche matin : Vaultwarden (1h)
 
-**9h00 – Installation**
+**9h00 , Installation**
 
 - Créer `docker-compose.yml` Vaultwarden
 - Vérifier SSL (OBLIGATOIRE)
 - Créer compte admin
 
-**9h30 – Configuration**
+**9h30 , Configuration**
 
 - Installer extension navigateur
 - Installer app mobile
 - Importer mots de passe existants
 - Activer 2FA sur le compte
 
-**10h00 – Migration**
+**10h00 , Migration**
 
 - Générer mots de passe forts pour comptes importants
 - Organiser en dossiers
@@ -375,21 +375,21 @@ Le plan d’installation : Un weekend suffit
 
 ### Dimanche après-midi : Sécurité &amp; Backups (2h)
 
-**14h00 – Sécurisation**
+**14h00 , Sécurisation**
 
 - Firewall configuré (ufw ou iptables)
 - Fail2ban installé
 - Certificats SSL vérifiés
 - Headers HTTP sécurisés (Nginx/Traefik)
 
-**15h00 – Backups automatisés**
+**15h00 , Backups automatisés**
 
 - Script backup Nextcloud (base + data)
 - Script backup Vaultwarden (export chiffré)
 - Cron quotidien configuré
 - Test restauration
 
-**16h00 – Documentation**
+**16h00 , Documentation**
 
 - Noter tous les identifiants admin dans Vaultwarden
 - Documenter procédure restauration

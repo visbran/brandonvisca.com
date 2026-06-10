@@ -60,7 +60,7 @@ systemctl enable systemd-timesyncd
 
 Sur mon homelab Proxmox, j'ai testé `systemd-timesyncd` et `chrony` côte à côte. Pour un VPS ou un serveur de fichiers classique, `timesyncd` fait très bien le job. Si tu as des besoins de précision sub-milliseconde (NFS, Kerberos, cluster haute dispo), passe à chrony.
 
-> ⚠️ **Attention — Kerberos et Active Directory**
+> ⚠️ **Attention, Kerberos et Active Directory**
 > Kerberos tolère un décalage d'horloge de 5 minutes maximum entre le client et le contrôleur de domaine. Au-delà, l'authentification échoue silencieusement. Si tu [connectes Ubuntu à Active Directory](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/), vérifie la synchro NTP en priorité.
 
 Pour les détails de configuration avancée, consulte la [documentation officielle systemd-timesyncd](https://www.freedesktop.org/software/systemd/man/latest/systemd-timesyncd.service.html).

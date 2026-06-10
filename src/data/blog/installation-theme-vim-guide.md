@@ -20,7 +20,7 @@ faqs:
   - question: "Catppuccin est-il compatible avec NeoVim ?"
     answer: "Oui. Il existe un plugin Catppuccin dédié à NeoVim (catppuccin/nvim) optimisé pour Lua et les plugins NeoVim modernes comme Telescope, Treesitter et LSP."
 ---
-> 💡 **TL;DR** — Catppuccin est le thème Vim le plus populaire en 2025. Installe vim-plug, ajoute 2 lignes dans ton `.vimrc`, lance `:PlugInstall`. C'est tout. Si les couleurs ne s'affichent pas, ajoute `set termguicolors` dans ton `.vimrc`.
+> 💡 **TL;DR**, Catppuccin est le thème Vim le plus populaire en 2025. Installe vim-plug, ajoute 2 lignes dans ton `.vimrc`, lance `:PlugInstall`. C'est tout. Si les couleurs ne s'affichent pas, ajoute `set termguicolors` dans ton `.vimrc`.
 
 J'utilise Catppuccin Mocha sur tous mes terminaux et dans Vim. C'est le thème qui tient le mieux sur les fonds sombres sans fatiguer les yeux après 4 heures de session. Voilà comment l'installer proprement.
 
@@ -78,7 +78,7 @@ Recharge la config sans quitter Vim :
 :source ~/.vimrc
 ```
 
-> 💡 **Astuce** — Ajoute `colorscheme catppuccin_mocha` à la fin de ton `.vimrc` pour que le thème se charge automatiquement à chaque ouverture.
+> 💡 **Astuce**, Ajoute `colorscheme catppuccin_mocha` à la fin de ton `.vimrc` pour que le thème se charge automatiquement à chaque ouverture.
 
 ## Vérification et dépannage
 
@@ -115,7 +115,7 @@ cp /tmp/catppuccin-vim/colors/*.vim ~/.vim/colors/
 
 Puis dans ton `.vimrc`, la ligne `colorscheme catppuccin_mocha` suffit : vim-plug n'est plus nécessaire.
 
-> ⚠️ **Attention** — Avec l'installation manuelle, tu ne recevras pas les mises à jour automatiques du thème. Répète le `git clone` + `cp` pour mettre à jour.
+> ⚠️ **Attention**, Avec l'installation manuelle, tu ne recevras pas les mises à jour automatiques du thème. Répète le `git clone` + `cp` pour mettre à jour.
 
 ## Conclusion
 

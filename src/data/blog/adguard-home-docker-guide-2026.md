@@ -37,7 +37,7 @@ T'as déjà vu Nextcloud, Jellyfin, Vaultwarden. Tu t'auto-héberges à fond. Ma
 
 **C'est le trou dans la raquette.** Un DNS filtrant, c'est la première brique d'un réseau propre. Pas besoin d'installer un adblocker sur chaque téléphone, tablette et TV. Tu bloques à la source.
 
-AdGuard Home est sorti en 2019, aujourd'hui c'est une alternative crédible — voire supérieure selon les usages — à Pi-hole. Et contrairement à ce que certains croient, il n'est pas "juste un bloqueur russe". Le code est open source, audité, et hébergé sur GitHub sous licence GPL v3.
+AdGuard Home est sorti en 2019, aujourd'hui c'est une alternative crédible, voire supérieure selon les usages, à Pi-hole. Et contrairement à ce que certains croient, il n'est pas "juste un bloqueur russe". Le code est open source, audité, et hébergé sur GitHub sous licence GPL v3.
 
 ---
 
@@ -77,7 +77,7 @@ Au-delà du blocage, il offre :
 
 - Un serveur avec Docker et Docker Compose installés (peu importe l'OS).
 - Un accès réseau stable, IP fixe recommandée pour le serveur.
-- Les ports 53/tcp et 53/udp **disponibles** sur l'hôte (conflit possible avec systemd-resolved sur Ubuntu — on verra la résolution plus bas).
+- Les ports 53/tcp et 53/udp **disponibles** sur l'hôte (conflit possible avec systemd-resolved sur Ubuntu, on verra la résolution plus bas).
 - Docker Hub accessible pour pull `adguard/adguardhome:latest`.
 
 > **Astuce** : AdGuard Home tourne parfaitement sur un Raspberry Pi 4, un LXC Proxmox ou une VM cheap chez Hetzner. J'ai testé sur un LXC Debian 12 avec 512 Mo de RAM : il ne gère même pas d'utiliser 10 % des ressources.

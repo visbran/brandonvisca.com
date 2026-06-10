@@ -13,7 +13,7 @@ tags:
 featured: false
 draft: false
 ---
-**TL;DR** — Duplicati via Docker te permet de sauvegarder chiffrées tes données vers n'importe quel stockage local ou cloud. Docker Compose complet, UI web sur le port 8200, chiffrement AES-256 et aucune ligne de commande nécessaire après l'install.
+**TL;DR**, Duplicati via Docker te permet de sauvegarder chiffrées tes données vers n'importe quel stockage local ou cloud. Docker Compose complet, UI web sur le port 8200, chiffrement AES-256 et aucune ligne de commande nécessaire après l'install.
 
 ## Pourquoi Duplicati en 2026 ?
 
@@ -155,6 +155,6 @@ docker compose up -d
 
 Duplicati est l'outil de backup qu'il manquait à ton stack Docker. Il est open-source, chiffré, polyvalent et suffisamment simple pour ne pas te demander un doctorat en administration système. L'image Docker officielle est à jour, la communauté est active et les fonctionnalités couvrent 95 % des besoins d'un homelab.
 
-Installe-le ce weekend. Configure une sauvegarde vers ton NAS et une autre vers un cloud froid. Teste une restauration. Et dors enfin tranquille, sachant que ton Vaultwarden, ton Nextcloud et tes données Docker sont à l'abri. Si tu cherches une solution pour héberger tes propres photos sans passer par Google, j'ai testé [PhotoPrism](/photoprism-docker-galerie-photo/) — la reconnaissance faciale est bluffante.
+Installe-le ce weekend. Configure une sauvegarde vers ton NAS et une autre vers un cloud froid. Teste une restauration. Et dors enfin tranquille, sachant que ton Vaultwarden, ton Nextcloud et tes données Docker sont à l'abri. Si tu cherches une solution pour héberger tes propres photos sans passer par Google, j'ai testé [PhotoPrism](/photoprism-docker-galerie-photo/), la reconnaissance faciale est bluffante.
 
 Questions ou configs avancées ? Les commentaires sont ouverts.

@@ -26,7 +26,7 @@ faqs:
 - [Leçons apprises](#lecons-apprises)
 
 
-![Illustration — Dépannage des problèmes de montage de matrices RAID (mdadm) ](no-nope-tracy-morgan-spfi6nabvuq5y.gif)
+![Illustration, Dépannage des problèmes de montage de matrices RAID (mdadm) ](no-nope-tracy-morgan-spfi6nabvuq5y.gif)
 
 Aujourd’hui, je me suis retrouvé dans une situation stressante lorsque je n’ai pas pu accéder à ma matrice RAID en mode de secours. J’avais besoin de modifier un fichier critique situé dans `/etc/sudoers.d/`, mais je me heurtais constamment à des erreurs de montage :
 
@@ -39,7 +39,7 @@ mdadm --detail /dev/md126
 mdadm --detail /dev/md127
 
 
-Les résultats ont montré que les deux matrices étaient en bon état – « State: clean » avec tous les périphériques « active sync ». Cela m’a indiqué que la configuration RAID elle-même n’était pas la source du problème.
+Les résultats ont montré que les deux matrices étaient en bon état, « State: clean » avec tous les périphériques « active sync ». Cela m’a indiqué que la configuration RAID elle-même n’était pas la source du problème.
 
 Pour approfondir la gestion des volumes RAID sous Linux, la [documentation officielle du noyau](https://raid.wiki.kernel.org/index.php/Linux_Raid) reste une référence technique de premier plan.
 

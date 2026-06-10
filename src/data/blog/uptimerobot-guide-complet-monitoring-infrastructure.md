@@ -21,7 +21,7 @@ faqs:
     answer: "Oui, inclus dans le plan gratuit. UptimeRobot génère une page de statut publique personnalisable avec logo et domaine custom. Elle affiche l'uptime en temps réel et les incidents passés."
 ---
 > 💡 **TL;DR**
-> - UptimeRobot surveille tes sites, serveurs et services depuis l'extérieur — si ça tombe, tu es prévenu en 5 minutes max (email, Slack, Discord, SMS)
+> - UptimeRobot surveille tes sites, serveurs et services depuis l'extérieur, si ça tombe, tu es prévenu en 5 minutes max (email, Slack, Discord, SMS)
 > - Plan gratuit : 50 moniteurs, vérifications toutes les 5 minutes, pages de statut publiques incluses
 > - API complète pour automatiser la création de monitors via script Python ou Terraform
 
@@ -79,7 +79,7 @@ J'utilise UptimeRobot depuis des années sur mon homelab et pour les sites de cl
 2. **Premier monitor** :
    - Clique sur « Add New Monitor »
    - **Monitor Type** : « HTTP(s) »
-   - **Friendly Name** : « Site Prod – brandonvisca.com » (sois explicite, ton toi de 3h du mat' te remerciera)
+   - **Friendly Name** : « Site Prod, brandonvisca.com » (sois explicite, ton toi de 3h du mat' te remerciera)
    - **URL** : `https://brandonvisca.com`
    - **Monitoring Interval** : 5 minutes (gratuit) ou 1 minute (plan payant)
 3. **Alert Contacts** : Configure au moins ton email principal
@@ -97,7 +97,7 @@ En moins de 2 minutes, ton site est surveillé. Si demain ton serveur tombe, tu 
 
 UptimeRobot ne fait pas que pinger ton site. Il supporte plusieurs protocoles et méthodes de vérification.
 
-### HTTP(s) — Le classique
+### HTTP(s) : Le classique
 
 Envoie une requête GET à ton URL, vérifie le code HTTP (200 = OK) et peut chercher un texte spécifique dans la page.
 
@@ -111,13 +111,13 @@ URL: https://brandonvisca.com/health-check
 Keyword Monitoring: Contains "status:ok"
 ```
 
-### Ping — Pour les serveurs bruts
+### Ping : Pour les serveurs bruts
 
 Envoie un ping ICMP vers ton serveur. Utile pour surveiller des machines qui n'exposent pas de service HTTP (serveurs de base de données, VPN, etc.).
 
 **Cas d'usage :** VPS, NAS, serveurs de backup, machines sur réseau privé exposées via tunnel.
 
-### Port Monitoring — Services spécifiques
+### Port Monitoring : Services spécifiques
 
 Vérifie qu'un port TCP est ouvert et répond. Parfait pour les services non-HTTP.
 
@@ -129,7 +129,7 @@ Server: 192.168.1.100
 
 Si ton serveur de base de données externe tombe, tu es prévenu immédiatement.
 
-### Keyword Monitoring — Surveillance de contenu
+### Keyword Monitoring : Surveillance de contenu
 
 Le plus sous-estimé. UptimeRobot peut vérifier la présence (ou l'absence) d'un texte sur ta page.
 
@@ -173,7 +173,7 @@ POST https://monapi.com/alert
 }
 ```
 
-### Alertes conditionnelles — éviter le spam
+### Alertes conditionnelles : éviter le spam
 
 Configure des fenêtres de maintenance pour silencer les alertes pendant les opérations planifiées :
 
@@ -396,17 +396,17 @@ Clique sur « Test Alert Contact » toutes les semaines. Vérifie que ton email/
 
 ### ❌ Pièges à éviter
 
-**1. Monitorer uniquement la homepage** — voir bonnes pratiques ci-dessus.
+**1. Monitorer uniquement la homepage**, voir bonnes pratiques ci-dessus.
 
-**2. Trop de monitors = alerte fatigue** — 50 monitors gratuits ne veut pas dire en créer 50. Commence par 5-10 services critiques, ajoute progressivement.
+**2. Trop de monitors = alerte fatigue**, 50 monitors gratuits ne veut pas dire en créer 50. Commence par 5-10 services critiques, ajoute progressivement.
 
-**3. Ignorer les patterns** — si ton site tombe tous les jeudis à 14h, c'est ton script de backup qui bouffe toute la RAM. Analyse les logs.
+**3. Ignorer les patterns**, si ton site tombe tous les jeudis à 14h, c'est ton script de backup qui bouffe toute la RAM. Analyse les logs.
 
 > ⚠️ **Erreur fréquente :** configurer des alertes sans plan d'action. Être alerté c'est bien, savoir quoi faire après c'est mieux.
 
 ## Optimisation avancée
 
-### Status Pages — transparence avec tes clients
+### Status Pages : transparence avec tes clients
 
 UptimeRobot génère des pages de statut publiques (comme status.github.com).
 
@@ -443,7 +443,7 @@ UptimeRobot règle ça en 5 minutes. 50 moniteurs gratuits, alertes Discord/Slac
 
 ## Pour aller plus loin
 
-- [Sécuriser ton serveur Linux — SSH, firewall, fail2ban](/securite-de-votre-serveur-linux/)
+- [Sécuriser ton serveur Linux, SSH, firewall, fail2ban](/securite-de-votre-serveur-linux/)
 - [Documentation officielle UptimeRobot](https://uptimerobot.com/help) : référence complète
 - [API UptimeRobot v2](https://uptimerobot.com/api) : endpoints et paramètres
 

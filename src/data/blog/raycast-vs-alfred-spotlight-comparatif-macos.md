@@ -13,7 +13,7 @@ draft: false
 focusKeyword: raycast vs alfred
 faqs:
   - question: "Raycast est-il vraiment gratuit ?"
-    answer: "La version de base est 100% gratuite et très complète. Raycast Pro (8$/mois) ajoute l'IA intégrée, les snippets illimités et quelques fonctions avancées — mais la plupart des usages ne l'exigent pas."
+    answer: "La version de base est 100% gratuite et très complète. Raycast Pro (8$/mois) ajoute l'IA intégrée, les snippets illimités et quelques fonctions avancées, mais la plupart des usages ne l'exigent pas."
   - question: "Alfred est-il encore pertinent face à Raycast en 2025 ?"
     answer: "Alfred reste excellent pour les workflows avancés et les utilisateurs avec des Powerpack payants. Raycast a rattrapé Alfred sur l'usage courant et le dépasse sur l'écosystème d'extensions."
   - question: "Spotlight suffit-il pour un usage basique ?"
@@ -40,9 +40,9 @@ faqs:
 
 **Le débat fait rage** :
 
-> "Alfred est plus rapide !" — Utilisateur Alfred depuis 10 ans  
-> "Raycast a tout gratuit !" — Convert récent  
-> "Spotlight me suffit..." — Minimaliste assumé
+> "Alfred est plus rapide !", Utilisateur Alfred depuis 10 ans  
+> "Raycast a tout gratuit !", Convert récent  
+> "Spotlight me suffit...", Minimaliste assumé
 
 **Problème** : Chacun jure que son launcher est LE meilleur. Mais **objectivement**, c'est quoi la vérité ?
 
@@ -1042,7 +1042,7 @@ Cmd+Shift+Space : Raycast (secondary)
 
 ## Articles connexes
 
-- [Raycast macOS : Guide complet 2026 — Extensions, AI et Snippets](/raycast-macos-outil-productivite-ultime/)
+- [Raycast macOS : Guide complet 2026, Extensions, AI et Snippets](/raycast-macos-outil-productivite-ultime/)
 - [Grila vs Fantastical : Comparatif honnête après 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/)
 - [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
 - [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)

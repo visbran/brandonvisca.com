@@ -1,6 +1,6 @@
 ---
 title: "Vanderplanki : sauvegarde email gratuite et multi-plateforme (guide 2026)"
-description: Sauvegarde tes emails gratuitement avec Vanderplanki — chiffré, multi-plateforme, open source. Par les créateurs de MailStore. Guide 2026.
+description: Sauvegarde tes emails gratuitement avec Vanderplanki, chiffré, multi-plateforme, open source. Par les créateurs de MailStore. Guide 2026.
 pubDatetime: "2025-06-12T19:38:49+02:00"
 modDatetime: "2026-04-14T00:00:00+01:00"
 author: Brandon Visca
@@ -15,12 +15,12 @@ faqs:
   - question: "Vanderplanki supporte-t-il Gmail, Outlook et d'autres fournisseurs ?"
     answer: "Oui. Vanderplanki supporte tous les fournisseurs IMAP standard : Gmail, Outlook, Proton Mail (via bridge), Fastmail, et tout serveur IMAP auto-hébergé (Dovecot, Postfix)."
   - question: "Les emails sauvegardés par Vanderplanki sont-ils chiffrés ?"
-    answer: "Oui. Vanderplanki chiffre les sauvegardes avec AES-256 avant de les stocker. Seul ton mot de passe (ou clé) permet de déchiffrer les données — même l'équipe Vanderplanki ne peut pas accéder à tes emails."
+    answer: "Oui. Vanderplanki chiffre les sauvegardes avec AES-256 avant de les stocker. Seul ton mot de passe (ou clé) permet de déchiffrer les données, même l'équipe Vanderplanki ne peut pas accéder à tes emails."
   - question: "Peut-on restaurer des emails depuis une sauvegarde Vanderplanki ?"
     answer: "Oui. La restauration se fait depuis l'interface Vanderplanki : tu sélectionnes les emails ou dossiers à restaurer et les réimporter dans n'importe quel compte IMAP compatible."
 ---
 > 💡 **TL;DR**
-> - Vanderplanki est un outil gratuit de sauvegarde d'emails, développé par les fondateurs de MailStore — contrairement à son prédécesseur, il tourne sur Windows, macOS **et** Linux
+> - Vanderplanki est un outil gratuit de sauvegarde d'emails, développé par les fondateurs de MailStore, contrairement à son prédécesseur, il tourne sur Windows, macOS **et** Linux
 > - Chiffrement Zero Knowledge, format d'archive ouvert, stockage local ou NAS : tes emails restent sous ton contrôle
 > - La version gratuite couvre 5 comptes email ; la version payante n'est pour l'instant disponible qu'en zone DACH (Allemagne, Autriche, Suisse)
 
@@ -72,7 +72,7 @@ chmod +x vanderplanki-desktop-1.0.0.AppImage
 ./vanderplanki-desktop-1.0.0.AppImage
 ```
 
-### Configuration IMAP — exemple Gmail
+### Configuration IMAP : exemple Gmail
 
 ```text
 Serveur IMAP : imap.gmail.com
@@ -93,7 +93,7 @@ Mot de passe : [mot de passe d'application si 2FA activé]
 - Tous les emplacements de stockage
 - Support communautaire
 
-### Version Plus (payante — non disponible en France)
+### Version Plus (payante : non disponible en France)
 
 - Comptes email illimités
 - Archives multiples
@@ -160,7 +160,7 @@ telnet imap.gmail.com 993
 # Si ça fonctionne, c'est un problème d'authentification
 ```
 
-Pour Gmail avec 2FA activé, génère un [mot de passe d'application](https://myaccount.google.com/apppasswords) dédié — le mot de passe principal ne fonctionnera pas.
+Pour Gmail avec 2FA activé, génère un [mot de passe d'application](https://myaccount.google.com/apppasswords) dédié, le mot de passe principal ne fonctionnera pas.
 
 ### « Archive corrompue »
 
@@ -180,9 +180,9 @@ Télécharge Vanderplanki sur [vanderplanki.com](https://vanderplanki.com) et co
 
 ## Pour aller plus loin
 
-- [Import PST / Outlook 365 — guide complet](/import-pst-outlook-365-guide-complet/)
-- [Site officiel Vanderplanki](https://vanderplanki.com) — téléchargement et documentation
-- [Dépôt GitHub MailStore](https://github.com/mailstore) — contexte historique du projet
+- [Import PST / Outlook 365, guide complet](/import-pst-outlook-365-guide-complet/)
+- [Site officiel Vanderplanki](https://vanderplanki.com), téléchargement et documentation
+- [Dépôt GitHub MailStore](https://github.com/mailstore), contexte historique du projet
 
 ## Articles connexes
 

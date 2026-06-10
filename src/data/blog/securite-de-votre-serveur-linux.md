@@ -26,9 +26,9 @@ faqs:
 ---
 Dans ce guide pratique, on va renforcer ensemble la sécurité de votre serveur Linux. De la configuration SSH au pare-feu en passant par les paramètres sysctl, on couvre toutes les mesures essentielles pour rendre ton serveur aussi résistant que possible. Si tu préfères une version condensée en dix commandes natives sans conteneur, j'ai aussi un guide [Hardening Linux : 10 commandes pour durcir ton serveur](/hardening-linux-10-commandes/).
 
-![Illustration — Sécurité de votre serveur linux](image.gif)
+![Illustration, Sécurité de votre serveur linux](image.gif)
 
-Cette optimisation s'inscrit dans une démarche plus globale de gestion des ressources système — au même titre que la [configuration du swap Linux](https://brandonvisca.com/guide-swap-linux-configuration-optimisation/) qui permet d'éviter les dysfonctionnements en cas de saturation mémoire.
+Cette optimisation s'inscrit dans une démarche plus globale de gestion des ressources système, au même titre que la [configuration du swap Linux](https://brandonvisca.com/guide-swap-linux-configuration-optimisation/) qui permet d'éviter les dysfonctionnements en cas de saturation mémoire.
 
 ## Table des matières
 
@@ -54,9 +54,9 @@ Recharge sans redémarrer :
 sudo mount -o remount /dev/shm
 ```
 
-## Durcissement de SSH – désactivation de la connexion en tant que root et changement de port
+## Durcissement de SSH : désactivation de la connexion en tant que root et changement de port
 
-Le moyen le plus efficace de sécuriser SSH : désactiver la connexion root, désactiver l'authentification par mot de passe (clés uniquement — ou mieux encore, des [passkeys SSH biométriques](/passkey-ssh-sshid/)), et changer le port par défaut.
+Le moyen le plus efficace de sécuriser SSH : désactiver la connexion root, désactiver l'authentification par mot de passe (clés uniquement, ou mieux encore, des [passkeys SSH biométriques](/passkey-ssh-sshid/)), et changer le port par défaut.
 
 > **Avant tout** : crée un utilisateur non-root avec accès sudo et configure ta clé SSH. Si tu perds l'accès SSH après modification, tu te retrouves bloqué.
 
@@ -78,7 +78,7 @@ X11Forwarding no
 AllowUsers <TON_UTILISATEUR>
 ```
 
-> `Protocol 2` est désormais le seul protocole supporté depuis OpenSSH 7.0 (2015) — inutile de le spécifier.
+> `Protocol 2` est désormais le seul protocole supporté depuis OpenSSH 7.0 (2015), inutile de le spécifier.
 
 Applique les changements :
 
@@ -149,7 +149,7 @@ sudo sysctl -p
 
 > `net.ipv4.icmp_echo_ignore_all = 1` (bloquer tous les pings) est intentionnellement omis : ça casse les diagnostics réseau sans apporter de sécurité réelle sur un serveur bien configuré avec un pare-feu.
 
-## Désactivez la récursion DNS ouverte et supprimez les informations de version – Serveur DNS BIND
+## Désactivez la récursion DNS ouverte et supprimez les informations de version : Serveur DNS BIND
 
 Si tu fais tourner BIND9, désactive la récursion ouverte pour éviter d'être utilisé dans une attaque par amplification DNS.
 
@@ -200,7 +200,7 @@ display_errors = Off
 html_errors = Off
 ```
 
-> `register_globals`, `magic_quotes_gpc` et `track_errors` ont été supprimés respectivement en PHP 5.4, 5.4 et 8.0 — inutile de les définir sur une installation moderne.
+> `register_globals`, `magic_quotes_gpc` et `track_errors` ont été supprimés respectivement en PHP 5.4, 5.4 et 8.0, inutile de les définir sur une installation moderne.
 
 Redémarre Apache :
 
@@ -231,7 +231,7 @@ sudo a2enconf security
 sudo systemctl restart apache2
 ```
 
-## Analysez les journaux et bannissez les hôtes suspects – Fail2Ban
+## Analysez les journaux et bannissez les hôtes suspects : Fail2Ban
 
 > **DenyHosts est obsolète** : plus maintenu depuis 2014 et incompatible avec systemd. Utilise uniquement **Fail2Ban**, qui remplit le même rôle avec une bien meilleure intégration système.
 >
@@ -243,7 +243,7 @@ Installation :
 sudo apt install fail2ban
 ```
 
-Crée une configuration locale — ne jamais modifier `jail.conf` directement, il est écrasé lors des mises à jour :
+Crée une configuration locale, ne jamais modifier `jail.conf` directement, il est écrasé lors des mises à jour :
 
 ```bash
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
@@ -284,14 +284,14 @@ sudo fail2ban-client status
 sudo fail2ban-client status sshd
 ```
 
-## Conclusion — sécurité de votre serveur Linux en pratique
+## Conclusion : sécurité de votre serveur Linux en pratique
 
 Ces mesures constituent une base solide pour tout serveur Linux exposé sur internet. L'ordre d'application compte : commence par SSH (tu ne veux pas te bloquer toi-même), puis sysctl, puis fail2ban.
 
 Quelques rappels essentiels :
 
 - Teste chaque changement SSH dans une **seconde session** avant de fermer la première
-- Configure un pare-feu en complément — mon guide [UFW avec Docker](/ufw-docker-pare-feu-linux/) explique comment faire sans que Docker contourne tes règles
+- Configure un pare-feu en complément, mon guide [UFW avec Docker](/ufw-docker-pare-feu-linux/) explique comment faire sans que Docker contourne tes règles
 - Mets à jour régulièrement : `sudo apt update && sudo apt upgrade`
 - Surveille les logs : `journalctl -u ssh`, `sudo fail2ban-client status sshd`
 

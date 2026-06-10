@@ -24,9 +24,9 @@ faqs:
 ---
 Tu envoies encore des mots de passe par Slack ou par email ? Vas-y, continue. Et pendant que tu lis ce message, quelqu'un d'autre lit peut-être aussi ton historique de messages.
 
-Le problème, c'est que tout le monde le fait. Le stagiaire qui arrive lundi, le client à qui tu livres un accès serveur, le collègue qui a besoin du compte admin en urgence. Et la réponse par défaut c'est toujours la même : un message Slack avec le mot de passe en clair, un email, ou pire — un Google Doc "partagé en privé".
+Le problème, c'est que tout le monde le fait. Le stagiaire qui arrive lundi, le client à qui tu livres un accès serveur, le collègue qui a besoin du compte admin en urgence. Et la réponse par défaut c'est toujours la même : un message Slack avec le mot de passe en clair, un email, ou pire, un Google Doc "partagé en privé".
 
-Il existe des outils conçus exactement pour ça : partager un secret **une seule fois**, chiffré, avec autodestruction. J'ai testé les trois principaux — Yopass, PrivateBin et Password Pusher — pour te dire lequel mérite une place dans ton homelab.
+Il existe des outils conçus exactement pour ça : partager un secret **une seule fois**, chiffré, avec autodestruction. J'ai testé les trois principaux, Yopass, PrivateBin et Password Pusher, pour te dire lequel mérite une place dans ton homelab.
 
 Spoiler : Yopass pour 80% des cas. Mais ça dépend de ton contexte.
 
@@ -34,7 +34,7 @@ Spoiler : Yopass pour 80% des cas. Mais ça dépend de ton contexte.
 
 ## Table des matières
 
-## TL;DR — Tableau comparatif
+## TL;DR : Tableau comparatif
 
 | Critère                | Yopass                | PrivateBin       | Password Pusher        |
 | ---------------------- | --------------------- | ---------------- | ---------------------- |
@@ -102,7 +102,7 @@ cat secret.txt | yopass --expiration=1d --one-time=false
 
 ### ✗ Points faibles
 
-- Backend obligatoire (Memcached ou Redis) — une dépendance de plus à gérer
+- Backend obligatoire (Memcached ou Redis), une dépendance de plus à gérer
 - Interface vraiment très minimaliste (certains trouveront ça austère)
 - Pas de statistiques d'utilisation ni de tableau de bord
 - Durées d'expiration limitées à 1h / 1j / 1 semaine (pas de durée personnalisée)
@@ -144,15 +144,15 @@ networks:
     driver: bridge
 ```
 
-> Ensuite, pointe ton reverse proxy (Nginx, Caddy, Traefik) vers `127.0.0.1:1337`. Ajoute un certificat TLS — sans HTTPS, la clé de chiffrement dans l'URL se baladerait en clair.
+> Ensuite, pointe ton reverse proxy (Nginx, Caddy, Traefik) vers `127.0.0.1:1337`. Ajoute un certificat TLS, sans HTTPS, la clé de chiffrement dans l'URL se baladerait en clair.
 
-💡 **Astuce** : Tu peux remplacer Memcached par Redis en changeant `--database=redis --redis=redis://redis:6379/0`. Redis a l'avantage de persister les données en cas de redémarrage — pratique si tu veux que les secrets avec expiration d'1 semaine survivent à un reboot.
+💡 **Astuce** : Tu peux remplacer Memcached par Redis en changeant `--database=redis --redis=redis://redis:6379/0`. Redis a l'avantage de persister les données en cas de redémarrage, pratique si tu veux que les secrets avec expiration d'1 semaine survivent à un reboot.
 
 ---
 
 ## PrivateBin : le champion du zero-knowledge
 
-PrivateBin, c'est l'héritier spirituel de ZeroBin. Même philosophie mais mieux maintenu, avec plus de fonctionnalités. Son argument principal : **zéro dépendance externe**. Pas de Redis, pas de Memcached — juste des fichiers plats (ou SQLite/MySQL si tu veux).
+PrivateBin, c'est l'héritier spirituel de ZeroBin. Même philosophie mais mieux maintenu, avec plus de fonctionnalités. Son argument principal : **zéro dépendance externe**. Pas de Redis, pas de Memcached, juste des fichiers plats (ou SQLite/MySQL si tu veux).
 
 ### ✅ Points forts
 
@@ -166,14 +166,14 @@ PrivateBin, c'est l'héritier spirituel de ZeroBin. Même philosophie mais mieux
 
 ### ✗ Points faibles
 
-- Pas de CLI — tout passe par l'interface web
+- Pas de CLI, tout passe par l'interface web
 - Interface un peu moins polie que Yopass ou Password Pusher
 - Le mode "discussion" peut être déroutant pour un usage simple de partage de secret
 - Configuration PHP à gérer si tu n'es pas à l'aise avec ça
 
 ### 💰 Prix réel
 
-Gratuit, open source (zlib/libpng). Consommation mémoire quasi nulle — PHP + fichiers plats.
+Gratuit, open source (zlib/libpng). Consommation mémoire quasi nulle, PHP + fichiers plats.
 
 ### 🎯 Cas d'usage idéal
 
@@ -223,7 +223,7 @@ Password Pusher (anciennement "pwpush.com") c'est une autre approche. Ici, l'acc
 
 ### 💰 Prix réel
 
-Gratuit et open source (GPL-3.0). Nécessite plus de RAM — prévoir 256-512 Mo pour Ruby on Rails + la base de données.
+Gratuit et open source (GPL-3.0). Nécessite plus de RAM, prévoir 256-512 Mo pour Ruby on Rails + la base de données.
 
 ### 🎯 Cas d'usage idéal
 
@@ -287,7 +287,7 @@ Oui et non. Le lien contient la clé dans le fragment URL (`#`), qui n'est **jam
 
 **Quelle différence entre chiffrement côté client et côté serveur ?**
 
-Côté client (Yopass, PrivateBin) : le chiffrement se fait dans ton navigateur. Le serveur ne voit jamais le contenu en clair — même toi, si tu héberges l'instance, tu ne peux pas lire les secrets. Côté serveur (Password Pusher) : le serveur chiffre les données, mais la clé est aussi sur le serveur. Si quelqu'un compromet le serveur, il peut potentiellement accéder aux secrets.
+Côté client (Yopass, PrivateBin) : le chiffrement se fait dans ton navigateur. Le serveur ne voit jamais le contenu en clair, même toi, si tu héberges l'instance, tu ne peux pas lire les secrets. Côté serveur (Password Pusher) : le serveur chiffre les données, mais la clé est aussi sur le serveur. Si quelqu'un compromet le serveur, il peut potentiellement accéder aux secrets.
 
 **Ces outils remplacent-ils un gestionnaire de mots de passe ?**
 
@@ -311,7 +311,7 @@ Mon setup perso : Yopass sur mon homelab, avec la CLI intégrée dans mes script
 
 Pour l'équipe : PrivateBin si la confidentialité prime, Password Pusher si l'expérience utilisateur et l'historique comptent davantage.
 
-Et si tu veux aller plus loin dans la sécurisation de ton infrastructure, jette un œil à mon guide pour [durcir ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) — parce qu'un secret bien partagé sur un serveur mal sécurisé, c'est un peu comme une porte blindée sur une maison sans toit.
+Et si tu veux aller plus loin dans la sécurisation de ton infrastructure, jette un œil à mon guide pour [durcir ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/), parce qu'un secret bien partagé sur un serveur mal sécurisé, c'est un peu comme une porte blindée sur une maison sans toit.
 
 ---
 

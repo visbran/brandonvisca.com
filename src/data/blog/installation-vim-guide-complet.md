@@ -22,7 +22,7 @@ faqs:
   - question: "Comment sauvegarder et synchroniser ma configuration Vim entre machines ?"
     answer: "Versionne ton .vimrc (et le dossier ~/.vim/plugged si nécessaire) dans un dépôt Git de dotfiles. Une commande git pull + vim +PlugInstall recrée l'environnement complet sur n'importe quelle machine."
 ---
-> 💡 **TL;DR** — Vim est disponible sur macOS via Homebrew (`brew install vim`) et sur Linux via le gestionnaire de paquets natif. Un `.vimrc` de 15 lignes suffit pour un éditeur fonctionnel. Ajoute vim-plug pour les plugins, NERDTree pour l'arbre de fichiers, FZF pour la recherche.
+> 💡 **TL;DR**, Vim est disponible sur macOS via Homebrew (`brew install vim`) et sur Linux via le gestionnaire de paquets natif. Un `.vimrc` de 15 lignes suffit pour un éditeur fonctionnel. Ajoute vim-plug pour les plugins, NERDTree pour l'arbre de fichiers, FZF pour la recherche.
 
 Vim intimide au premier abord. Mais une fois qu'on comprend la logique modale, c'est l'un des éditeurs les plus rapides qui soit. Je l'utilise quotidiennement sur mes serveurs Linux, et le `.vimrc` que je vais te montrer est exactement celui que je déploie partout.
 
@@ -62,7 +62,7 @@ make
 sudo make install
 ```
 
-> ⚠️ **Attention** — La compilation depuis les sources nécessite `gcc`, `make` et les headers Python3. Sur macOS : `xcode-select --install`. Sur Debian/Ubuntu : `sudo apt install build-essential python3-dev`.
+> ⚠️ **Attention**, La compilation depuis les sources nécessite `gcc`, `make` et les headers Python3. Sur macOS : `xcode-select --install`. Sur Debian/Ubuntu : `sudo apt install build-essential python3-dev`.
 
 ## Installation de Vim sur Linux
 
@@ -134,7 +134,7 @@ Enregistre et recharge sans quitter Vim :
 :source ~/.vimrc
 ```
 
-> 💡 **Astuce** — Ajoute `set clipboard=unnamedplus` à ton `.vimrc` pour synchroniser le presse-papiers Vim avec le presse-papiers système. Plus de `Ctrl+C` / `Ctrl+V` manqués.
+> 💡 **Astuce**, Ajoute `set clipboard=unnamedplus` à ton `.vimrc` pour synchroniser le presse-papiers Vim avec le presse-papiers système. Plus de `Ctrl+C` / `Ctrl+V` manqués.
 
 ## Personnalisation avancée avec vim-plug
 
@@ -154,16 +154,16 @@ Ajoute ce bloc dans ton `.vimrc` **avant** les autres paramètres :
 ```vim
 call plug#begin('~/.vim/plugged')
 
-" NERDTree — explorateur de fichiers latéral
+" NERDTree, explorateur de fichiers latéral
 Plug 'preservim/nerdtree'
 
-" Airline — barre de statut améliorée
+" Airline, barre de statut améliorée
 Plug 'vim-airline/vim-airline'
 
-" Auto-pairs — fermeture automatique des parenthèses/guillemets
+" Auto-pairs, fermeture automatique des parenthèses/guillemets
 Plug 'jiangmiao/auto-pairs'
 
-" FZF — recherche floue ultra-rapide
+" FZF, recherche floue ultra-rapide
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 

@@ -20,7 +20,7 @@ faqs:
   - question: "rcmd fonctionne-t-il avec plusieurs Spaces macOS ?"
     answer: "Oui, rcmd bascule vers l'app même si elle est dans un autre Space macOS, ce que Cmd+Tab natif ne gère pas toujours correctement."
 ---
-![Illustration 1 — rcmd](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_1_ljjoew.webp)
+![Illustration 1, rcmd](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.56.53_2x_1_ljjoew.webp)
 
 ---
 
@@ -85,7 +85,7 @@ Let's go ! 🚀
 
 C'est tout. Pas de menu. Pas d'interface. Juste tes doigts, ton clavier, et la vitesse de l'éclair.
 
-![Capture d'écran — Le concept en 3 mots](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.57.27_2x_faon2a.webp)
+![Capture d'écran, Le concept en 3 mots](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_14.57.27_2x_faon2a.webp)
 ### Pourquoi c'est génial ?
 
 ✅ **Muscle memory parfaite** : Ton cerveau associe chaque app à sa première lettre
@@ -125,7 +125,7 @@ rcmd est actuellement **gratuit en version 2** via le Mac App Store. Bonne nouve
 2. L'installation s'effectue (à l'heure où j'écris cet article) uniquement via le Mac App Store. Tu cliques : ça s'installe, c'est d'une simplicité enfantine.  
 3. Tu peux ensuite lancer l'application via Raycast si tu l'as déjà configuré, ou directement depuis le Launchpad.
 
-![Capture d'écran — Installation V2 actuelle - gratuite](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_15.34.38_2x_vc5glm.webp)
+![Capture d'écran, Installation V2 actuelle - gratuite](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_15.34.38_2x_vc5glm.webp)
 
 💡 **Astuce** : Épingle rcmd dans la barre de menu ou configure-le pour démarrer automatiquement au login (dans les préférences).
 
@@ -141,9 +141,9 @@ Au premier lancement, rcmd te demande :
 2. **Touche de déclenchement** : Par défaut = Right Command (⌘ droite)
 3. **Comportement** : Choisir comment gérer les apps multiples avec même lettre
 
-![Capture d'écran — Première utilisation Le tour du propriétaire](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_15.35.20_2x_dei4fd.webp)
+![Capture d'écran, Première utilisation Le tour du propriétaire](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_15.35.20_2x_dei4fd.webp)
 
-![Capture d'écran — Première utilisation Le tour du propriétaire](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_15.35.50_2x_yy9djs.webp)
+![Capture d'écran, Première utilisation Le tour du propriétaire](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765129755/brandonviscacom/rcmd_mac_12-06_at_15.35.50_2x_yy9djs.webp)
 ### Réglages de base recommandés
 
 ```

@@ -18,7 +18,7 @@ faqs:
   - question: "Faut-il une licence Windows Server pour le WinPE ?"
     answer: "Non, n'importe quelle ISO Windows Server (ou Windows 10/11) suffit pour booter en WinPE. Les outils utilisés (DiskPart, robocopy, bcdboot) sont inclus nativement."
   - question: "robocopy peut-il rater des fichiers système critiques ?"
-    answer: "Avec les flags /MIR /COPYALL /DCOPY:ALL, robocopy copie tout y compris les ACLs et attributs système. Seuls les fichiers verrouillés par le kernel (hiberfile.sys) sont ignorés — comportement normal."
+    answer: "Avec les flags /MIR /COPYALL /DCOPY:ALL, robocopy copie tout y compris les ACLs et attributs système. Seuls les fichiers verrouillés par le kernel (hiberfile.sys) sont ignorés, comportement normal."
   - question: "Cette procédure fonctionne-t-elle pour Gen1 et Gen2 ?"
     answer: "La partie WinPE + robocopy fonctionne pour les deux. La reconstruction du boot diffère : bcdboot pour Gen2 UEFI (couvert dans l'article), bootrec /fixmbr pour Gen1 BIOS."
 ---
@@ -36,9 +36,9 @@ La technique : créer un nouveau VHDX OS sain, y copier l'ancien OS en offline v
 
 - **VM arrêtée** (pas en veille, arrêtée proprement)
 - **ISO Windows Server 2022** disponible sur l'hôte Hyper-V
-- **Copie de sauvegarde** des VHDX existants (même si corrompus — au cas où)
+- **Copie de sauvegarde** des VHDX existants (même si corrompus, au cas où)
 - **Accès console Hyper-V** sur l'hôte
-- VM en **Génération 2 (UEFI)** — cette procédure est spécifique Gen2
+- VM en **Génération 2 (UEFI)**, cette procédure est spécifique Gen2
 
 > ⚠️ **Attention** : La corruption est *logique*, pas physique. Le VHDX démarre, mais l'intégrité du système de fichiers Windows est compromise. Cette procédure ne convient pas si le disque physique sous-jacent est mort.
 
@@ -119,7 +119,7 @@ assign letter=F
 exit
 ```
 
-> 🔍 **À savoir** : Identifie le bon disque avec `list disk` — le nouveau est celui qui affiche 0 Mo utilisés.
+> 🔍 **À savoir** : Identifie le bon disque avec `list disk`, le nouveau est celui qui affiche 0 Mo utilisés.
 
 ---
 

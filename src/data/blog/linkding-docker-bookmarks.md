@@ -26,7 +26,7 @@ faqs:
   - question: "Linkding est-il multi-utilisateur ?"
     answer: "Par défaut non, mais l'option LD_ENABLE_AUTH_PROXY permet une authentification multi-user via un reverse proxy comme Caddy ou Traefik."
 ---
-> 💡 **TL;DR** — Linkding Docker en 4 points :
+> 💡 **TL;DR**, Linkding Docker en 4 points :
 >
 > - **C'est quoi ?** Un gestionnaire de bookmarks open-source, auto-hébergé et minimaliste qui archive tes liens automatiquement
 > - **Pourquoi ?** Pinboard est payant, Pocket te piste, et tes bookmarks méritent un toit privé que tu contrôles
@@ -49,9 +49,9 @@ Les services de bookmarks commerciaux ont un problème structurel : ils dépende
 
 **Les trois raisons de switcher à Linkding :**
 
-1. **Souveraineté des données** — Tes bookmarks restent sur ton serveur. Pas d'API tierce qui ferme, pas de changement de CGU surprise.
-2. **Légèreté** — Linkding pèse moins d'une centaine de mégaoctets en RAM. Compare avec un Nextcloud ou un Wallabag gonflés par leurs dépendances PHP.
-3. **Fonctionnalités ciblées** — Tagging, archive automatique des pages (HTML snapshot), API REST, import/export Netscape HTML. Rien de superflu, tout ce qu'il faut.
+1. **Souveraineté des données**, Tes bookmarks restent sur ton serveur. Pas d'API tierce qui ferme, pas de changement de CGU surprise.
+2. **Légèreté**, Linkding pèse moins d'une centaine de mégaoctets en RAM. Compare avec un Nextcloud ou un Wallabag gonflés par leurs dépendances PHP.
+3. **Fonctionnalités ciblées**, Tagging, archive automatique des pages (HTML snapshot), API REST, import/export Netscape HTML. Rien de superflu, tout ce qu'il faut.
 
 L'archive automatique est particulièrement intéressante : Linkding télécharge une copie statique de la page web que tu bookmarkes. Si le lien meurt (404, site fermé, paywall), tu conserves une version lisible chez toi. C'est le genre de feature qui semble anodine jusqu'au jour où tu cherches un tuto technique et que le blog a disparu.
 
@@ -91,14 +91,14 @@ services:
 
 **Explication ligne par ligne :**
 
-- `image: sissbruecker/linkding:latest` — L'image officielle, maintenue par l'auteur du projet. Elle est mise à jour régulièrement et reste légère (~300 Mo).
-- `container_name: linkding` — Pour identifier facilement le conteneur avec `docker ps`.
-- `restart: unless-stopped` — Le conteneur redémarre automatiquement après un reboot du serveur, sauf si tu l'arrêtes explicitement.
-- `ports: "9090:9090"` — Expose le port 9090 du conteneur sur le port 9090 de l'hôte. Si tu passes par un reverse proxy, ce port reste en interne et tu n'exposes que le reverse proxy.
-- `volumes: ./data:/etc/linkding/data` — Persiste la base SQLite et les archives HTML sur le disque local dans un dossier `./data`. Sans ce volume, tes bookmarks disparaissent dès que le conteneur est recréé.
-- `LD_SUPERUSER_NAME` et `LD_SUPERUSER_PASSWORD` — Crée automatiquement un compte admin au premier démarrage. **Change ce mot de passe immédiatement**, c'est du clair dans le YAML mais nécessaire pour l'initialisation.
-- `LD_DISABLE_BACKGROUND_TASKS=False` — Active les tâches d'arrière-plan, notamment l'archive automatique des pages web. Mets `True` si tu veux un serveur ultra-minimal sans snapshots.
-- `LD_ENABLE_REQUEST_LOGS=False` — Désactive les logs de requêtes HTTP pour alléger les logs. Mets à `True` si tu debugues.
+- `image: sissbruecker/linkding:latest`, L'image officielle, maintenue par l'auteur du projet. Elle est mise à jour régulièrement et reste légère (~300 Mo).
+- `container_name: linkding`, Pour identifier facilement le conteneur avec `docker ps`.
+- `restart: unless-stopped`, Le conteneur redémarre automatiquement après un reboot du serveur, sauf si tu l'arrêtes explicitement.
+- `ports: "9090:9090"`, Expose le port 9090 du conteneur sur le port 9090 de l'hôte. Si tu passes par un reverse proxy, ce port reste en interne et tu n'exposes que le reverse proxy.
+- `volumes: ./data:/etc/linkding/data`, Persiste la base SQLite et les archives HTML sur le disque local dans un dossier `./data`. Sans ce volume, tes bookmarks disparaissent dès que le conteneur est recréé.
+- `LD_SUPERUSER_NAME` et `LD_SUPERUSER_PASSWORD`, Crée automatiquement un compte admin au premier démarrage. **Change ce mot de passe immédiatement**, c'est du clair dans le YAML mais nécessaire pour l'initialisation.
+- `LD_DISABLE_BACKGROUND_TASKS=False`, Active les tâches d'arrière-plan, notamment l'archive automatique des pages web. Mets `True` si tu veux un serveur ultra-minimal sans snapshots.
+- `LD_ENABLE_REQUEST_LOGS=False`, Désactive les logs de requêtes HTTP pour alléger les logs. Mets à `True` si tu debugues.
 
 Si tu veux sécuriser un minimum le truc, ne laisse pas le port 9090 ouvert sur internet. Jette plutôt un œil à mon guide [UFW avec Docker](/ufw-docker-pare-feu-linux/) pour configurer un pare-feu propre, ou passe directement par un reverse proxy HTTPS avec [Caddy](/caddy-docker-reverse-proxy-guide/).
 
@@ -269,6 +269,6 @@ Maintenant, à toi de jouer. Crée ton dossier, copie le Compose, lance le conte
 
 ## Pour aller plus loin
 
-- [Linkding sur GitHub](https://github.com/sissbruecker/linkding) — code source, releases et documentation officielle
-- [Caddy Docker : reverse proxy HTTPS](/caddy-docker-reverse-proxy-guide/) — pour exposer Linkding proprement en HTTPS
-- [Miniflux : lecteur RSS auto-hébergé](/miniflux-docker-lecteur-rss-guide/) — le complément idéal à tes bookmarks dans une stack souveraine
+- [Linkding sur GitHub](https://github.com/sissbruecker/linkding), code source, releases et documentation officielle
+- [Caddy Docker : reverse proxy HTTPS](/caddy-docker-reverse-proxy-guide/), pour exposer Linkding proprement en HTTPS
+- [Miniflux : lecteur RSS auto-hébergé](/miniflux-docker-lecteur-rss-guide/), le complément idéal à tes bookmarks dans une stack souveraine

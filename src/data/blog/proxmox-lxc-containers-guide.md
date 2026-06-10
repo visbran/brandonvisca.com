@@ -22,7 +22,7 @@ faqs:
   - question: "Quelles distributions sont compatibles avec Proxmox LXC ?"
     answer: "Proxmox propose des templates pour Debian, Ubuntu, Alpine, CentOS, Rocky Linux et d'autres. Alpine est le plus léger (environ 15 Mo)."
 ---
-> 💡 **TL;DR** — Ce qu'il faut retenir :
+> 💡 **TL;DR**, Ce qu'il faut retenir :
 > - Un LXC partage le kernel de l'hôte et consomme bien moins de ressources qu'une VM.
 > - Proxmox te fournit des templates prêts à l'emploi : création en 30 secondes.
 > - Parfait pour des services légers : DNS, monitoring, reverse proxy, VPN.

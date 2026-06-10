@@ -31,7 +31,7 @@ J'ai déployé ça sur une quinzaine de postes Ubuntu 22.04 et 24.04 rejoignant 
 
 ---
 
-## Étape 1 — Installer les paquets
+## Étape 1 : Installer les paquets
 
 Installe les outils nécessaires :
 
@@ -54,7 +54,7 @@ sudo systemctl start sssd
 
 ---
 
-## Étape 2 — Pointer le DNS vers ton contrôleur de domaine
+## Étape 2 : Pointer le DNS vers ton contrôleur de domaine
 
 SSSD a besoin de résoudre ton domaine AD. Pointe le DNS vers ton DC :
 
@@ -80,7 +80,7 @@ Tu dois voir les infos du domaine AD en retour.
 
 ---
 
-## Étape 3 — Rejoindre le domaine
+## Étape 3 : Rejoindre le domaine
 
 ```bash
 sudo realm join -v --user=Administrator domain.tld
@@ -90,7 +90,7 @@ sudo realm join -v --user=Administrator domain.tld
 
 ---
 
-## Étape 4 — Configurer SSSD
+## Étape 4 : Configurer SSSD
 
 ### sssd.conf
 
@@ -137,19 +137,19 @@ memcache_size_initgroups = 50
 
 Quelques paramètres importants :
 
-**`default_domain_suffix = domain.tld`** — les utilisateurs se connectent avec `jdoe` au lieu de `jdoe@domain.tld`. Plus pratique pour les utilisateurs finaux.
+**`default_domain_suffix = domain.tld`**, les utilisateurs se connectent avec `jdoe` au lieu de `jdoe@domain.tld`. Plus pratique pour les utilisateurs finaux.
 
-**`fallback_homedir = /home/%d/%u`** — crée `/home/domain.tld/jdoe` au lieu de `/home/jdoe@domain.tld`. Évite les problèmes avec le `@` dans certains programmes. Crée les répertoires parents manuellement :
+**`fallback_homedir = /home/%d/%u`**, crée `/home/domain.tld/jdoe` au lieu de `/home/jdoe@domain.tld`. Évite les problèmes avec le `@` dans certains programmes. Crée les répertoires parents manuellement :
 
 ```bash
 mkdir /home/domain.tld
 ```
 
-**`enumerate = False` + `ignore_group_members = True`** — indispensable sur les grands domaines. Sans ça, SSSD essaie d'énumérer tous les utilisateurs AD au démarrage, et c'est lent.
+**`enumerate = False` + `ignore_group_members = True`**, indispensable sur les grands domaines. Sans ça, SSSD essaie d'énumérer tous les utilisateurs AD au démarrage, et c'est lent.
 
-**`ad_gpo_access_control = disabled`** — désactive le contrôle GPO. Sans ça, personne ne peut se connecter par défaut. Gère les permissions manuellement avec `realm permit`.
+**`ad_gpo_access_control = disabled`**, désactive le contrôle GPO. Sans ça, personne ne peut se connecter par défaut. Gère les permissions manuellement avec `realm permit`.
 
-La section `[nss]` agrandit le cache RAM à 200 MB — les requêtes `getent` restent rapides sans toucher le disque.
+La section `[nss]` agrandit le cache RAM à 200 MB, les requêtes `getent` restent rapides sans toucher le disque.
 
 SSSD exige des permissions strictes sur sssd.conf :
 
@@ -182,7 +182,7 @@ sudo nano /etc/krb5.conf
 
 ---
 
-## Étape 5 — Activer la création automatique des home dirs
+## Étape 5 : Activer la création automatique des home dirs
 
 ```bash
 sudo pam-auth-update --enable mkhomedir
@@ -280,7 +280,7 @@ sudo journalctl -u sssd
 
 L'intégration **Ubuntu Active Directory SSSD** via realmd fait le job proprement. Une fois la config en place, tes utilisateurs AD se connectent avec leurs credentials habituels, les home dirs se créent tout seuls, et le cache offline garde les sessions actives même si le DC est temporairement inaccessible.
 
-Pour les grands parcs, couple ça avec une GPO d'accès restrictive et des groupes AD dédiés par rôle — évite `realm permit --all` en prod.
+Pour les grands parcs, couple ça avec une GPO d'accès restrictive et des groupes AD dédiés par rôle, évite `realm permit --all` en prod.
 
 ---
 

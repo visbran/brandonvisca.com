@@ -411,7 +411,7 @@ proxy_read_timeout 10;
 **Scénario** : Quelqu’un vole ton Master Password. Sans 2FA, il accède à tout. Avec 2FA, il est bloqué. 🛡️
 
 1. **Interface web** → **Paramètres** → **Sécurité** → **Authentification à deux étapes**
-2. **Choix de la méthode** : **Option 1 : Authenticator (TOTP) – Recommandé**
+2. **Choix de la méthode** : **Option 1 : Authenticator (TOTP), Recommandé**
   - Utilise une app type **Aegis** (Android, open source) ou **Raivo OTP** (iOS)
   - Scanne le QR code avec l’app
   - Entre le code de vérification → **Activer**
@@ -692,13 +692,13 @@ C’est **la stack d’indépendance numérique complète**. Tu remplaces Google
 
 **Économie annuelle : 534€** (j’ai fait le calcul).
 
-Si tu veux une vue d’ensemble de cette architecture, comment ces services s’interconnectent et une roadmap pour les sécuriser — consulte le [guide complet d’indépendance numérique 2026](/independance-numerique-2025-guide-complet/). La checklist 30 jours, les scripts d’automatisation et la stratégie de backup sont là-dedans.
+Si tu veux une vue d’ensemble de cette architecture, comment ces services s’interconnectent et une roadmap pour les sécuriser, consulte le [guide complet d’indépendance numérique 2026](/independance-numerique-2025-guide-complet/). La checklist 30 jours, les scripts d’automatisation et la stratégie de backup sont là-dedans.
 
 ## Pour aller plus loin
 
-- [Guide d’indépendance numérique 2026](/independance-numerique-2025-guide-complet/) — roadmap complète pour auto-héberger tous tes services
-- [Nextcloud avec Docker](/nextcloud-docker-installation-complete-2025/) — stockage cloud personnel en 1h
-- [Documentation officielle Vaultwarden](https://github.com/dani-garcia/vaultwarden/wiki) — wiki GitHub complet avec toutes les options de configuration
+- [Guide d’indépendance numérique 2026](/independance-numerique-2025-guide-complet/), roadmap complète pour auto-héberger tous tes services
+- [Nextcloud avec Docker](/nextcloud-docker-installation-complete-2025/), stockage cloud personnel en 1h
+- [Documentation officielle Vaultwarden](https://github.com/dani-garcia/vaultwarden/wiki), wiki GitHub complet avec toutes les options de configuration
 
 ## Articles connexes
 

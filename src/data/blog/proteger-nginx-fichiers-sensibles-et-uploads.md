@@ -16,7 +16,7 @@ faqs:
   - question: "Comment vérifier qu'un fichier sensible (.env, .git) est bien bloqué par Nginx ?"
     answer: "Teste avec curl -I https://ton-site.com/.env. La réponse doit être 403 Forbidden ou 404 Not Found, jamais 200. Utilise aussi nikto -h ton-site.com pour un scan automatique des fichiers exposés."
   - question: "Mon répertoire uploads autorise-t-il l'exécution PHP par défaut sur Nginx ?"
-    answer: "Avec Nginx seul : non, Nginx ne traite pas PHP sans configuration explicite (fastcgi_pass). Mais si php-fpm est configuré globalement, les scripts dans uploads/ peuvent être exécutés — il faut donc bloquer explicitement l'exécution dans ce dossier."
+    answer: "Avec Nginx seul : non, Nginx ne traite pas PHP sans configuration explicite (fastcgi_pass). Mais si php-fpm est configuré globalement, les scripts dans uploads/ peuvent être exécutés, il faut donc bloquer explicitement l'exécution dans ce dossier."
 ---
 
 

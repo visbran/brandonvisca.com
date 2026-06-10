@@ -23,7 +23,7 @@ faqs:
   - question: "PhotoPrism fonctionne-t-il sur Raspberry Pi ?"
     answer: "Oui, l'image ARM64 est disponible. L'indexation IA sera plus lente que sur x86_64. Prévois un Pi 4 avec 4 Go de RAM minimum et un stockage externe rapide."
 ---
-> 💡 **TL;DR** — PhotoPrism Docker en 4 points :
+> 💡 **TL;DR**, PhotoPrism Docker en 4 points :
 >
 > - **C'est quoi ?** Une galerie photo auto-hébergée avec reconnaissance faciale, classification par IA et import automatique
 > - **Pourquoi ?** Google Photos te facture 2 To à 10€/mois, piste tes métadonnées GPS et te bloque si tu dépasses les quotas
@@ -64,7 +64,7 @@ Si tu as déjà un serveur chez toi (Raspberry Pi 4/5, vieux PC, NAS Synology), 
 
 ### Ce que PhotoPrism fait aussi bien que Google
 
-- **Recherche par contenu** : tape "plage", "chat", "voiture rouge" — ça marche
+- **Recherche par contenu** : tape "plage", "chat", "voiture rouge", ça marche
 - **Reconnaissance faciale** : regroupe les portraits par personne automatiquement
 - **Import automatique** : dossier surveillé, les photos sont indexées dès l'arrivée
 - **Albums partagés** : liens publics ou privés avec expiration
@@ -99,7 +99,7 @@ Mais pour la majorité des usages personnels, PhotoPrism couvre 90% des besoins 
 | **Ressources RAM** | 2-4 Go | N/A (cloud) | 2-4 Go | 2 Go |
 | **Facilité install** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
 
-**Mon choix** : PhotoPrism pour la maturité du projet (5+ ans), la stabilité, et l'interface soignée. Immich est excellent mais encore très en mouvement — l'API et la base de données changent régulièrement. Si tu veux quelque chose qui tourne sans y toucher pendant 6 mois, PhotoPrism est plus sage.
+**Mon choix** : PhotoPrism pour la maturité du projet (5+ ans), la stabilité, et l'interface soignée. Immich est excellent mais encore très en mouvement, l'API et la base de données changent régulièrement. Si tu veux quelque chose qui tourne sans y toucher pendant 6 mois, PhotoPrism est plus sage.
 
 ## Prérequis
 
@@ -300,7 +300,7 @@ La recherche texte fonctionne en anglais par défaut. Tape "beach" plutôt que "
 
 ## Sauvegarde de ta galerie
 
-PhotoPrism ne sauvegarde pas tes photos — il les affiche. Si ton disque crashe, tes photos disparaissent. **Tu dois avoir une stratégie de backup.**
+PhotoPrism ne sauvegarde pas tes photos, il les affiche. Si ton disque crashe, tes photos disparaissent. **Tu dois avoir une stratégie de backup.**
 
 Mon setup recommandé :
 

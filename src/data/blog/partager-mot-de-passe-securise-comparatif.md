@@ -19,17 +19,17 @@ faqs:
   - question: "Peut-on les auto-héberger ?"
     answer: "PrivateBin est open-source et s'auto-héberge en 10 minutes via Docker. Password.link et OneTimeSecret proposent également des versions auto-hébergées pour les équipes."
 ---
-T'as déjà envoyé un mot de passe par Slack ou par email ? On l'a tous fait. Et on l'a tous regretté — ou on devrait.
+T'as déjà envoyé un mot de passe par Slack ou par email ? On l'a tous fait. Et on l'a tous regretté, ou on devrait.
 
 Le problème : ces messages restent dans des historiques, des serveurs de messagerie, des logs. Quelqu'un qui accède à la boîte mail de ton collègue six mois plus tard peut toujours lire le mot de passe root de ton serveur. Sympa.
 
-La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s'efface dès qu'il est ouvert. Une lecture, et c'est mort. J'ai testé les trois principales options — **Password.link**, **OneTimeSecret** et **PrivateBin** (auto-hébergé) — pour te dire laquelle colle à ton usage.
+La solution ? Des **liens auto-destructeurs** : tu crées un lien chiffré qui s'efface dès qu'il est ouvert. Une lecture, et c'est mort. J'ai testé les trois principales options, **Password.link**, **OneTimeSecret** et **PrivateBin** (auto-hébergé), pour te dire laquelle colle à ton usage.
 
 ---
 
 ## Table des matières
 
-## TL;DR — Le comparatif en un coup d'œil
+## TL;DR : Le comparatif en un coup d'œil
 
 | Critère | Password.link | OneTimeSecret | PrivateBin |
 |---|---|---|---|
@@ -66,15 +66,15 @@ Si tu gères des mots de passe au quotidien, jette aussi un œil à mon article 
 ---
 
 
-## Password.link — Le plus complet pour les équipes
+## Password.link : Le plus complet pour les équipes
 
 Password.link existe depuis 2016. C'est l'un des rares services du genre à proposer un chiffrement **côté client** (dans le navigateur) avant même que les données touchent leurs serveurs. En clair : même eux ne peuvent pas lire tes secrets.
 
 ### ✅ Ce que j'ai apprécié
 
-**Chiffrement sérieux.** Le processus génère deux clés aléatoires de 18 caractères dans le navigateur. La clé publique est embarquée dans le lien, la clé privée part côté serveur. Sans les deux, impossible de déchiffrer. Pas de JavaScript externe non plus — pas de risque d'injection de script malveillant.
+**Chiffrement sérieux.** Le processus génère deux clés aléatoires de 18 caractères dans le navigateur. La clé publique est embarquée dans le lien, la clé privée part côté serveur. Sans les deux, impossible de déchiffrer. Pas de JavaScript externe non plus, pas de risque d'injection de script malveillant.
 
-**Les notifications.** C'est là que Password.link se distingue vraiment. Tu sais exactement quand ton lien a été ouvert — via email, Slack ou webhook. Utile quand tu envoies des credentials à un client et que tu veux confirmer qu'il les a bien reçus.
+**Les notifications.** C'est là que Password.link se distingue vraiment. Tu sais exactement quand ton lien a été ouvert, via email, Slack ou webhook. Utile quand tu envoies des credentials à un client et que tu veux confirmer qu'il les a bien reçus.
 
 **Secret Request.** Fonctionnalité intéressante : tu envoies un lien à quelqu'un pour qu'il te transmette *ses* infos sensibles de manière sécurisée. Pratique pour les onboardings.
 
@@ -105,9 +105,9 @@ Les équipes IT qui ont besoin de traçabilité : savoir *qui* a ouvert *quoi* e
 
 ---
 
-## OneTimeSecret — Le vétéran open source
+## OneTimeSecret : Le vétéran open source
 
-OneTimeSecret c'est la référence historique du secteur. Open source depuis le départ, auto-hébergeable, et la version gratuite est **vraiment gratuite** — pas de limite de secrets.
+OneTimeSecret c'est la référence historique du secteur. Open source depuis le départ, auto-hébergeable, et la version gratuite est **vraiment gratuite**, pas de limite de secrets.
 
 
 ### ✅ Ce que j'ai apprécié
@@ -145,11 +145,11 @@ Les devs et sysadmins solo qui veulent un outil gratuit, fiable et sans prise de
 
 ---
 
-## PrivateBin — Le choix des self-hosters
+## PrivateBin : Le choix des self-hosters
 
-PrivateBin, c'est l'option pour ceux qui ne font confiance à personne — y compris aux hébergeurs. Le principe : **chiffrement zéro-connaissance** dans le navigateur, le serveur ne voit jamais le contenu en clair.
+PrivateBin, c'est l'option pour ceux qui ne font confiance à personne, y compris aux hébergeurs. Le principe : **chiffrement zéro-connaissance** dans le navigateur, le serveur ne voit jamais le contenu en clair.
 
-💡 **À savoir :** PrivateBin n'est pas un SaaS, c'est une application à déployer soi-même. Si tu n'as pas de serveur ou d'infra homelab, passe ton chemin — ou lis la suite quand même pour la culture.
+💡 **À savoir :** PrivateBin n'est pas un SaaS, c'est une application à déployer soi-même. Si tu n'as pas de serveur ou d'infra homelab, passe ton chemin, ou lis la suite quand même pour la culture.
 
 ### ✅ Ce que j'ai apprécié
 
@@ -157,7 +157,7 @@ PrivateBin, c'est l'option pour ceux qui ne font confiance à personne — y com
 
 **Pièces jointes chiffrées.** Tu peux joindre des fichiers. Chiffrés, évidemment.
 
-**Discussions chiffrées.** PrivateBin propose aussi un mode "discussion" — comme Password.link, mais en self-hosted.
+**Discussions chiffrées.** PrivateBin propose aussi un mode "discussion", comme Password.link, mais en self-hosted.
 
 **Déploiement Docker simple.**
 
@@ -177,7 +177,7 @@ C'est tout. Accès sur `http://localhost:8080`. Configure un reverse proxy nginx
 
 **Pas de notifications.** Comme OneTimeSecret, tu ne sais pas si le lien a été ouvert.
 
-**Pas d'interface de gestion.** Pas de dashboard, pas d'historique. C'est by design — mais ça peut déranger en contexte professionnel.
+**Pas d'interface de gestion.** Pas de dashboard, pas d'historique. C'est by design, mais ça peut déranger en contexte professionnel.
 
 ### 💰 Tarifs
 
@@ -220,7 +220,7 @@ Les homelabbers et les admins qui veulent contrôle total et confidentialité ma
 
 **Est-ce que ces services chiffrent vraiment mes données ?**
 
-Password.link et PrivateBin font du chiffrement côté client (dans le navigateur), ce qui signifie que le serveur ne voit jamais le contenu en clair. OneTimeSecret chiffre les données au repos, mais la clé est gérée côté serveur — c'est moins strict techniquement, mais suffisant pour la grande majorité des usages.
+Password.link et PrivateBin font du chiffrement côté client (dans le navigateur), ce qui signifie que le serveur ne voit jamais le contenu en clair. OneTimeSecret chiffre les données au repos, mais la clé est gérée côté serveur, c'est moins strict techniquement, mais suffisant pour la grande majorité des usages.
 
 **Que se passe-t-il si mon destinataire n'ouvre pas le lien avant expiration ?**
 
@@ -253,7 +253,7 @@ Et si tu veux aller plus loin dans la sécurisation de tes mots de passe au quot
 
 💡 **Tu veux aller plus loin ?**
 
-Je prépare une formation "Homelab Weekend" pour monter ton serveur auto-hébergé complet en un week-end — sécurité incluse.
+Je prépare une formation "Homelab Weekend" pour monter ton serveur auto-hébergé complet en un week-end, sécurité incluse.
 
 [Rejoins la liste d'attente →](#)
 

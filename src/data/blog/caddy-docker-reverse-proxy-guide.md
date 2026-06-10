@@ -26,7 +26,7 @@ faqs:
 ---
 > 💡 **TL;DR**
 > - Caddy est un serveur web en Go qui obtient et renouvelle seul les certificats HTTPS Let's Encrypt, sans Certbot ni cron
-> - Un Caddyfile de 5 lignes suffit à exposer un service Docker en HTTPS — HTTP/2 et HTTP/3 activés par défaut
+> - Un Caddyfile de 5 lignes suffit à exposer un service Docker en HTTPS, HTTP/2 et HTTP/3 activés par défaut
 > - Approche encore plus simple via les labels Docker avec `caddy-docker-proxy` pour découvrir les services automatiquement
 
 ## Table des matières
@@ -62,7 +62,7 @@ Pour ma part, si tu veux une interface graphique pour gérer tes reverse proxies
 
 ## Architecture du setup
 
-On va monter Caddy dans Docker avec un volume pour persister les certificats (éviter de les re-demander à chaque restart) et un volume pour le Caddyfile. Ensuite on expose un service — ici Uptime Kuma en exemple — derrière Caddy. Le tout sur un serveur avec un nom de domaine pointant dessus.
+On va monter Caddy dans Docker avec un volume pour persister les certificats (éviter de les re-demander à chaque restart) et un volume pour le Caddyfile. Ensuite on expose un service, ici Uptime Kuma en exemple, derrière Caddy. Le tout sur un serveur avec un nom de domaine pointant dessus.
 
 **Prérequis :**
 - Un serveur (VPS, Raspberry Pi, whatever) avec Docker et Docker Compose
@@ -375,6 +375,6 @@ Si tu veux une interface graphique, je te renvoie vers [Nginx Proxy Manager](/ng
 
 ## Pour aller plus loin
 
-- [Documentation officielle de Caddy](https://caddyserver.com/docs/) — référence complète du Caddyfile et des directives
-- [Nginx Proxy Manager : le reverse proxy avec interface web](/nginx-proxy-manager-docker-guide/) — l'alternative graphique si tu fuis le terminal
-- [Fail2Ban en Docker : bannir les scanners](/fail2ban-docker-securite-serveur/) — pour blinder le serveur qui héberge ton Caddy
+- [Documentation officielle de Caddy](https://caddyserver.com/docs/), référence complète du Caddyfile et des directives
+- [Nginx Proxy Manager : le reverse proxy avec interface web](/nginx-proxy-manager-docker-guide/), l'alternative graphique si tu fuis le terminal
+- [Fail2Ban en Docker : bannir les scanners](/fail2ban-docker-securite-serveur/), pour blinder le serveur qui héberge ton Caddy

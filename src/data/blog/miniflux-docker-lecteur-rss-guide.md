@@ -26,7 +26,7 @@ faqs:
   - question: "Comment migrer mes flux depuis Feedly ?"
     answer: "Exporte ton OPML depuis Feedly (Organize > Export OPML), puis importe-le dans Miniflux via Feeds > Import."
 ---
-> 💡 **TL;DR** — Miniflux Docker en 4 points :
+> 💡 **TL;DR**, Miniflux Docker en 4 points :
 >
 > - **C'est quoi ?** Un lecteur RSS minimaliste et auto-hébergé qui lit les flux sans tracking ni pub
 > - **Pourquoi ?** Google Reader est mort, Feedly te piste, et tes flux méritent un toit privé
@@ -263,10 +263,10 @@ Le protocole Fever est supporté nativement. Ça signifie que presque toutes les
 
 **Apps compatibles testées :**
 
-- Reeder 5 (iOS/macOS) — la référence
-- NetNewsWire (iOS/macOS) — open source, gratuit
+- Reeder 5 (iOS/macOS), la référence
+- NetNewsWire (iOS/macOS), open source, gratuit
 - Fiery Feeds (iOS)
-- Readrops (Android) — open source
+- Readrops (Android), open source
 
 **Configuration Reeder 5 :**
 
@@ -274,7 +274,7 @@ Le protocole Fever est supporté nativement. Ça signifie que presque toutes les
 2. URL : `https://miniflux.tondomaine.com/fever/`
 3. Username : ton username Miniflux
 4. Password : le `FEVER_TOKEN` de ton docker-compose
-5. Valider — sync instantanée
+5. Valider, sync instantanée
 
 ## Tips avancés
 
@@ -288,7 +288,7 @@ Astuce : crée une catégorie "Must Read" pour les flux les plus importants, et 
 
 Miniflux fournit un bookmarklet pour s'abonner rapidement à un site. Va dans Settings > Bookmarks, glisse le bookmarklet dans ta barre de favoris du navigateur.
 
-Quand tu es sur un site avec un flux, clique sur le bookmarklet — l'abonnement s'ouvre directement dans Miniflux.
+Quand tu es sur un site avec un flux, clique sur le bookmarklet, l'abonnement s'ouvre directement dans Miniflux.
 
 ### PWA (Progressive Web App)
 
@@ -322,7 +322,7 @@ Miniflux gère les migrations automatiquement (`RUN_MIGRATIONS: "1"`), donc zér
 
 La base de données PostgreSQL contient tous tes flux, articles lus, favoris et règles de filtrage. Sauvegarde-la régulièrement.
 
-Option simple : copie le dossier `./db/` monté en volume et stocke-le ailleurs (NAS, cloud chiffré). Pour les backups automatiques, j'utilise Duplicati sur mon homelab — j'ai écrit un [guide complet à ce sujet](/duplicati-docker-sauvegarde/) que je te recommande chaudement.
+Option simple : copie le dossier `./db/` monté en volume et stocke-le ailleurs (NAS, cloud chiffré). Pour les backups automatiques, j'utilise Duplicati sur mon homelab, j'ai écrit un [guide complet à ce sujet](/duplicati-docker-sauvegarde/) que je te recommande chaudement.
 
 Option pro : pg_dump via un cron hebdomadaire :
 
@@ -342,6 +342,6 @@ Le RSS n'est pas mort. Il a juste attendu que tu lui construises une maison. Ins
 
 ## Pour aller plus loin
 
-- [Documentation officielle de Miniflux](https://miniflux.app/docs/) — configuration, variables d'environnement et API REST
-- [Linkding : gestionnaire de bookmarks auto-hébergé](/linkding-docker-bookmarks/) — le complément parfait pour archiver ce que tu lis
-- [Duplicati en Docker : sauvegarder ta base PostgreSQL](/duplicati-docker-sauvegarde/) — pour ne jamais perdre tes flux et tes favoris
+- [Documentation officielle de Miniflux](https://miniflux.app/docs/), configuration, variables d'environnement et API REST
+- [Linkding : gestionnaire de bookmarks auto-hébergé](/linkding-docker-bookmarks/), le complément parfait pour archiver ce que tu lis
+- [Duplicati en Docker : sauvegarder ta base PostgreSQL](/duplicati-docker-sauvegarde/), pour ne jamais perdre tes flux et tes favoris

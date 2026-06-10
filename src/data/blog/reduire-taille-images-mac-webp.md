@@ -224,9 +224,9 @@ Dans mon workflow, j'applique ce script sur toutes les captures d'écran avant d
 
 ## Pour aller plus loin
 
-- [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) – prérequis de ce tuto
-- [Documentation officielle cwebp](https://developers.google.com/speed/webp/docs/cwebp) – toutes les options de compression
-- [Raycast : outil de productivité ultime sur macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/) – pour aller encore plus loin dans l'automatisation
+- [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/), prérequis de ce tuto
+- [Documentation officielle cwebp](https://developers.google.com/speed/webp/docs/cwebp), toutes les options de compression
+- [Raycast : outil de productivité ultime sur macOS](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/), pour aller encore plus loin dans l'automatisation
 
 ## Articles connexes
 

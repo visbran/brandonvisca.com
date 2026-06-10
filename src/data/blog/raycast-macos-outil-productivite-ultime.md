@@ -1,5 +1,5 @@
 ---
-title: "Raycast macOS : Guide complet 2026 — Extensions, AI et Snippets"
+title: "Raycast macOS : Guide complet 2026, Extensions, AI et Snippets"
 description: "Découvrez Raycast macOS, le launcher gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2026."
 pubDatetime: "2025-10-13T15:20:28+02:00"
 modDatetime: 2026-05-17 00:00:00+01:00
@@ -22,9 +22,9 @@ faqs:
     answer: "Oui. Raycast peut être configuré pour remplacer ⌘Space et prend en charge la recherche de fichiers, les calculs, les conversions et les actions système. Spotlight peut être désactivé sans perdre de fonctionnalité."
 ---
 > 💡 **TL;DR**
-> - Raycast est un launcher macOS **gratuit** qui remplace Spotlight — clipboard history, snippets, window management inclus
+> - Raycast est un launcher macOS **gratuit** qui remplace Spotlight, clipboard history, snippets, window management inclus
 > - Installe en 2 minutes via `brew install --cask raycast` ou depuis raycast.com
-> - La version gratuite couvre 90% des besoins — le Pro (96$/an) ajoute l'IA et le Cloud Sync
+> - La version gratuite couvre 90% des besoins, le Pro (96$/an) ajoute l'IA et le Cloud Sync
 
 ## Table des matières
 
@@ -128,7 +128,7 @@ J'utilisais [Magnet](https://brandonvisca.com/magnet-macos-gestionnaire-fenetres
 | Quart supérieur gauche | Ctrl + Opt + U |
 | Centre (70%) | Ctrl + Opt + C |
 
-Tu peux tout reconfigurer dans **Preferences → Extensions → Window Management**. J'ai gardé les defaults — ils sont suffisamment bien pensés.
+Tu peux tout reconfigurer dans **Preferences → Extensions → Window Management**. J'ai gardé les defaults, ils sont suffisamment bien pensés.
 
 ### Snippets : arrête de retaper les mêmes trucs
 

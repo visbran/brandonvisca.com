@@ -14,7 +14,7 @@ draft: false
 focusKeyword: Omarchy Linux
 faqs:
   - question: "Omarchy est-il compatible avec les cartes graphiques AMD et Intel (sans Nvidia) ?"
-    answer: "Oui. Omarchy est développé et testé principalement sur AMD (RDNA) et Intel (Iris Xe). Le support Nvidia existe mais est moins stable avec Hyprland sous Wayland — préférer les cartes AMD ou Intel."
+    answer: "Oui. Omarchy est développé et testé principalement sur AMD (RDNA) et Intel (Iris Xe). Le support Nvidia existe mais est moins stable avec Hyprland sous Wayland, préférer les cartes AMD ou Intel."
   - question: "Peut-on installer Omarchy sur une machine existante sans réinstaller Arch ?"
     answer: "Omarchy est conçu comme une installation complète sur Arch Linux. Un script d'installation automatise tout depuis une Arch minimale. L'appliquer sur un Arch déjà configuré est possible mais non officiel."
   - question: "Omarchy fonctionne-t-il bien sur laptop avec gestion de batterie ?"
@@ -44,7 +44,7 @@ Imagine Arch Linux, mais sans la galère de configuration habituelle. Omarchy em
 
 Le principe ? Tu installes, tu choisis ton thème, et tu bosses. Point.
 
-![Illustration 1 — Omarchy four-way tiling](fourway-tiling.webp)
+![Illustration 1, Omarchy four-way tiling](fourway-tiling.webp)
 
 ---
 
@@ -65,7 +65,7 @@ Contrairement à une installation Arch classique qui peut transformer même un s
 
 ### Étapes d'installation
 
-1. **[Télécharge l'ISO d'Omarchy](https://iso.omarchy.org/omarchy-3.8.0.iso)** — version actuelle v3.8.0 (SHA256 : `a9b271e8884dc123f0787e10cff3153dca7361cc6583edd1a3baa283a031f872`)
+1. **[Télécharge l'ISO d'Omarchy](https://iso.omarchy.org/omarchy-3.8.0.iso)**, version actuelle v3.8.0 (SHA256 : `a9b271e8884dc123f0787e10cff3153dca7361cc6583edd1a3baa283a031f872`)
 2. **Grave sur USB** avec [balenaEtcher](https://etcher.balena.io/#download-etcher)
 3. **Boot** sur ta clé USB
 4. **Lance l'installateur** Arch
@@ -85,13 +85,13 @@ Pour effectuer l'installation, rien de bien compliqué :
 
 ![Écran de configuration de compte utilisateur](Omarchy-2025-10-14-at-20.32.25@2x.webp)
 
-![Illustration 2 — Omarchy](Omarchy-2025-10-14-at-20.33.01@2x.webp)
+![Illustration 2, Omarchy](Omarchy-2025-10-14-at-20.33.01@2x.webp)
 
-![Illustration 3 — Omarchy](Omarchy-2025-10-14-at-20.33.32@2x.webp)
+![Illustration 3, Omarchy](Omarchy-2025-10-14-at-20.33.32@2x.webp)
 
-![Illustration 4 — Omarchy](Omarchy-2025-10-14-at-20.33.44@2x.webp)
+![Illustration 4, Omarchy](Omarchy-2025-10-14-at-20.33.44@2x.webp)
 
-![Illustration 5 — Omarchy](Omarchy-2025-10-14-at-20.34.45@2x.webp)
+![Illustration 5, Omarchy](Omarchy-2025-10-14-at-20.34.45@2x.webp)
 
 ---
 
@@ -112,7 +112,7 @@ Au premier lancement, tu tombes sur un bureau… vide. Normal ! Omarchy privilé
 | `Super + Ctrl + Alt + W` | Météo détaillée |
 | `Super + Ctrl + .` | Transcoder un fichier |
 
-Le menu Omarchy (`Super + Alt + Space`) est ton nouveau meilleur ami. Depuis là, tu installes des packages, tu configures le système, tu changes de thème… Depuis v3.8.0, tu accèdes aussi à _Setup > Defaults_ pour choisir ton navigateur, ton terminal et ton éditeur par défaut — Chrome, Brave, Firefox, Zen, Foot, Ghostty, Neovim, Helix, Zed, tout y est.
+Le menu Omarchy (`Super + Alt + Space`) est ton nouveau meilleur ami. Depuis là, tu installes des packages, tu configures le système, tu changes de thème… Depuis v3.8.0, tu accèdes aussi à _Setup > Defaults_ pour choisir ton navigateur, ton terminal et ton éditeur par défaut, Chrome, Brave, Firefox, Zen, Foot, Ghostty, Neovim, Helix, Zed, tout y est.
 
 ---
 
@@ -127,9 +127,9 @@ L'un des atouts majeurs d'Omarchy, ce sont ses thèmes intégrés qui changent *
 - **Gruvbox** : le classique qui ne vieillit pas
 - **Nord** : minimaliste et classe
 
-![Illustration 6 — Omarchy thème Catppuccin](catppuccin.webp)
+![Illustration 6, Omarchy thème Catppuccin](catppuccin.webp)
 
-![Illustration 7 — Omarchy thème Kanagawa](kanagawa.webp)
+![Illustration 7, Omarchy thème Kanagawa](kanagawa.webp)
 
 Pour changer de thème : `Super + Ctrl + Shift + Space`
 
@@ -144,7 +144,7 @@ Omarchy embarque un stack complet pour le développement.
 ### Éditeurs
 
 - Neovim avec LazyVim (éditeur principal) : si tu débutes avec Vim, mon [guide d'installation Vim](/installation-vim-guide-complet/) te donnera les bases
-- Installation facile de VS Code, Cursor, Zed via le menu — Zed reçoit le theming Omarchy en temps réel depuis v3.8.0
+- Installation facile de VS Code, Cursor, Zed via le menu, Zed reçoit le theming Omarchy en temps réel depuis v3.8.0
 
 ### Environnements de développement
 

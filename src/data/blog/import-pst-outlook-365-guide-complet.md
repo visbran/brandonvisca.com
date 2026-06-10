@@ -21,7 +21,7 @@ faqs:
     answer: "XstReader (gratuit, open source) permet de lire les PST et OST sur Windows et Linux sans Outlook. Il supporte la recherche, l'export en EML et l'affichage des pièces jointes."
 ---
 > 💡 **TL;DR**
-> - Microsoft a supprimé l'import PST du nouvel Outlook 365 — mais deux alternatives fonctionnent
+> - Microsoft a supprimé l'import PST du nouvel Outlook 365, mais deux alternatives fonctionnent
 > - **Méthode 1** : importer via l'ancien Outlook (2016-2019 ou Outlook 365 classique avant mi-2024)
 > - **Méthode 2** : XstReader, outil gratuit open source pour lire et exporter tes PST sans Outlook
 
@@ -161,7 +161,7 @@ L'arborescence de tes dossiers apparaît à gauche. Tu peux :
 | Taille PST | Méthode oldschool | XstReader |
 |------------|-------------------|-----------|
 | < 200 Mo | 2-5 min | Immédiat |
-| 200 Mo – 1 GB | 10-20 min | 1-3 min |
+| 200 Mo,  1 GB | 10-20 min | 1-3 min |
 | 1-2 GB | 20-45 min | 5-10 min |
 | > 2 GB | Risqué (peut planter) | Fonctionne |
 
@@ -199,7 +199,7 @@ Avec XstReader : oui, ouvre plusieurs instances en parallèle.
 2. Lance `scanpst.exe` sur le fichier
 3. Si ça persiste → ouvre avec XstReader (mode lecture seule, moins exigeant)
 
-### « Import partiel — la moitié des emails a disparu »
+### « Import partiel : la moitié des emails a disparu »
 
 **Cause :** Case « Inclure les sous-dossiers » non cochée à l'étape 5.
 
@@ -230,9 +230,9 @@ J'ai utilisé les deux méthodes en prod. La méthode oldschool reste la plus pr
 
 ## Pour aller plus loin
 
-- [Documentation Microsoft — Importer les emails et les contacts](https://support.microsoft.com/fr-fr/office/importer-les-e-mails-les-contacts-et-le-calendrier-outlook-71f8ef5a-80d8-4dbb-b9a7-4d73b4a09e46)
+- [Documentation Microsoft, Importer les emails et les contacts](https://support.microsoft.com/fr-fr/office/importer-les-e-mails-les-contacts-et-le-calendrier-outlook-71f8ef5a-80d8-4dbb-b9a7-4d73b4a09e46)
 - [XstReader sur GitHub](https://github.com/iluvadev/XstReader/releases)
-- [Exchange Online — bloquer les transferts automatiques d'emails](https://brandonvisca.com/exchange-online-bloquer-transferts-automatiques-emails/)
+- [Exchange Online, bloquer les transferts automatiques d'emails](https://brandonvisca.com/exchange-online-bloquer-transferts-automatiques-emails/)
 - [Vanderplanki : sauvegarde emails gratuit multiplateforme](https://brandonvisca.com/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/)
 
 ## Articles connexes

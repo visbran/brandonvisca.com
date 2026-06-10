@@ -23,10 +23,10 @@ faqs:
     answer: "Oui. NocoDB se branche sur PostgreSQL, MySQL et MariaDB. Tes données restent dans ta base SQL, NocoDB n'ajoute qu'une couche visuelle."
 timezone: Europe/Paris
 ---
-> 💡 **TL;DR** — NocoDB en bref :
+> 💡 **TL;DR**, NocoDB en bref :
 > - Alternative open-source et auto-hébergée à Airtable, posée au-dessus de ta propre base SQL (PostgreSQL, MySQL, MariaDB).
 > - Stack Docker Compose NocoDB + PostgreSQL opérationnelle en moins de 10 minutes.
-> - Vues grille, kanban et formulaire, import CSV et API REST auto — tes données restent chez toi, sans lock-in.
+> - Vues grille, kanban et formulaire, import CSV et API REST auto, tes données restent chez toi, sans lock-in.
 
 ## Table des matières
 
@@ -34,11 +34,11 @@ timezone: Europe/Paris
 
 On va pas se mentir : Airtable, c'est magique. Des bases en mode tableur, des vues en kanban, des liens entre tables, des formulaires… Le problème ? Quand tu commences à t'y habituer et que tes projets grossissent, le pricing te rattrape comme un coup de pied aux culs. Les limitations gratuites deviennent vite étouffantes, et tes données restent planquées sur les serveurs de quelqu'un d'autre.
 
-Heureusement, il existe une alternative open-source qui te permet de reprendre le contrôle : **NocoDB**. L'idée est simple — transformer n'importe quelle base de données SQL (MySQL, PostgreSQL, MariaDB…) en interface visuelle de type spreadsheet, exactement comme Airtable ou Notion Database. Et le meilleur dans tout ça : tu peux l'héberger toi-même avec Docker en quelques minutes.
+Heureusement, il existe une alternative open-source qui te permet de reprendre le contrôle : **NocoDB**. L'idée est simple, transformer n'importe quelle base de données SQL (MySQL, PostgreSQL, MariaDB…) en interface visuelle de type spreadsheet, exactement comme Airtable ou Notion Database. Et le meilleur dans tout ça : tu peux l'héberger toi-même avec Docker en quelques minutes.
 
 Si tu débutes avec Docker, sache que cette stack est un excellent premier projet appliqué. Tu peux d'ailleurs commencer par lire mon [guide complet pour débuter avec Docker](/docker-debutant-services-auto-heberger/) si tu veux comprendre les bases avant d'attaquer.
 
-Dans ce tuto, on va voir comment déployer NocoDB avec Docker Compose et PostgreSQL, comment configurer ta première base, importer des données et — surtout — ce que ça vaut vraiment comparé aux autres solutions du marché.
+Dans ce tuto, on va voir comment déployer NocoDB avec Docker Compose et PostgreSQL, comment configurer ta première base, importer des données et, surtout, ce que ça vaut vraiment comparé aux autres solutions du marché.
 
 ## Qu'est-ce que NocoDB exactement ?
 
@@ -76,7 +76,7 @@ Pour suivre ce guide, tu auras besoin de :
 - Un serveur ou une machine avec **Docker et Docker Compose** installés
 - Environ **2 Go de RAM** disponibles (NocoDB + PostgreSQL s'en sortent très bien avec ça)
 - **Un reverse proxy** (facultatif mais fortement recommandé pour le HTTPS). Si tu veux une solution simple, jette un œil à mon article sur [Traefik en Docker](/traefik-reverse-proxy-docker/)
-- Un minimum de confiance en toi — on va faire ça ensemble, promis
+- Un minimum de confiance en toi, on va faire ça ensemble, promis
 
 ## Installation avec Docker Compose
 
@@ -166,7 +166,7 @@ Une fois connecté, l'interface NocoDB est épurée et intuitive. Voici comment 
 ### Créer une base et une table
 
 1. Clique sur **"New Project"** (ou "Nouveau Projet" selon la langue)
-2. Choisir **"Create new base"** — cela crée une base PostgreSQL dédiée sous le capot
+2. Choisir **"Create new base"**, cela crée une base PostgreSQL dédiée sous le capot
 3. Donne un nom à ta base, par exemple `inventaire-homelab`
 4. NocoDB te place directement dans la vue grille avec une table par défaut. Renomme-la en cliquant sur le nom en haut
 
@@ -229,11 +229,11 @@ Je te préviens tout de suite : NocoDB n'est pas un clone parfait d'Airtable. Il
 
 Si NocoDB ne te convient pas, trois alternatives sérieuses existent dans l'écosystème self-hosted :
 
-**Baserow** — Probablement le plus proche d'Airtable en termes d'UX. L'interface est moderne, les formulaires sont bien foutus et le support des formules est plus avancé. Contrepartie : l'édition open-source manque quelques features payantes (comme les SSO ou les permissions granulaires de niveau ligne). Baserow est Docker-native et se déploie aussi facilement.
+**Baserow**, Probablement le plus proche d'Airtable en termes d'UX. L'interface est moderne, les formulaires sont bien foutus et le support des formules est plus avancé. Contrepartie : l'édition open-source manque quelques features payantes (comme les SSO ou les permissions granulaires de niveau ligne). Baserow est Docker-native et se déploie aussi facilement.
 
-**Grist** — Davantage orienté "spreadsheet programmable". Très puissant si tu aimes les formules Python embarquées et la logique de données structurée. Moins sexy visuellement, mais parfait pour les geeks qui veulent un Excel relationnel auto-hébergé.
+**Grist**, Davantage orienté "spreadsheet programmable". Très puissant si tu aimes les formules Python embarquées et la logique de données structurée. Moins sexy visuellement, mais parfait pour les geeks qui veulent un Excel relationnel auto-hébergé.
 
-**Teable** — Une solution plus jeune qui mise sur la rapidité et l'interface. Moins mature que NocoDB ou Baserow, mais si tu cherches purement de la performance et du design, cela vaut le coup de suivre son évolution.
+**Teable**, Une solution plus jeune qui mise sur la rapidité et l'interface. Moins mature que NocoDB ou Baserow, mais si tu cherches purement de la performance et du design, cela vaut le coup de suivre son évolution.
 
 Mon conseil ? Déploie NocoDB d'abord, joue avec pendant une semaine sur un vrai cas d'usage. Si tu butes sur des limites bloquantes, migre vers Baserow. Les deux utilisent PostgreSQL, donc la bascule est envisageable sans réécriture totale.
 

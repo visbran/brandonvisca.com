@@ -15,7 +15,7 @@ featured: false
 draft: false
 focusKeyword: nginx proxy manager docker
 ---
-> 💡 **TL;DR** — Nginx Proxy Manager avec Docker :
+> 💡 **TL;DR**, Nginx Proxy Manager avec Docker :
 > - SSL Let's Encrypt auto en quelques clics, renouvellement transparent tous les 90 jours
 > - Reverse proxy multi-services depuis une interface web, zéro fichier conf à éditer
 > - Auth HTTP et restrictions IP intégrées nativement, sans plugin externe
@@ -146,7 +146,7 @@ Tu peux aussi ajouter des restrictions IP (whitelist) dans la même access list.
 - **Sauvegarde les volumes** `./data` et `./letsencrypt` avec [restic](https://restic.net/) ou [duplicacy](https://duplicacy.com/)
 - **Active le logs forwarding** vers une stack ELK/Graylog si tu surveilles les accès
 
-Pour le durcissement HTTPS, complète avec les [headers HTTP sécurisés Nginx](/securiser-nginx-avec-headers-http/) — HSTS étendu, X-Frame-Options, CSP.
+Pour le durcissement HTTPS, complète avec les [headers HTTP sécurisés Nginx](/securiser-nginx-avec-headers-http/), HSTS étendu, X-Frame-Options, CSP.
 
 ## Troubleshooting
 
@@ -177,7 +177,7 @@ Pour le durcissement HTTPS, complète avec les [headers HTTP sécurisés Nginx](
 
 Nginx Proxy Manager transforme la gestion d'un reverse proxy en une opération de quelques clics. Tu gagnes du temps, tu limites les erreurs de conf manuelle, et tes certificats SSL se gèrent sans intervention. Parfait pour un homelab qui grossit.
 
-Si tu cherches une alternative sans interface web, Caddy est encore plus simple avec un fichier de config de quelques lignes et un HTTPS totalement automatique — j'ai un guide complet sur [Caddy avec Docker](/caddy-docker-reverse-proxy-guide/). Pour une option plus déclarative et orientée Swarm/Kubernetes, regarde aussi [Traefik avec Docker](/traefik-reverse-proxy-docker/) — intégration native avec les labels Docker.
+Si tu cherches une alternative sans interface web, Caddy est encore plus simple avec un fichier de config de quelques lignes et un HTTPS totalement automatique, j'ai un guide complet sur [Caddy avec Docker](/caddy-docker-reverse-proxy-guide/). Pour une option plus déclarative et orientée Swarm/Kubernetes, regarde aussi [Traefik avec Docker](/traefik-reverse-proxy-docker/), intégration native avec les labels Docker.
 
 ---
 

@@ -17,7 +17,7 @@ faqs:
   - question: "Uptime Kuma 2.0 est-il rétrocompatible avec les données de la version 1 ?"
     answer: "Oui, avec migration. Uptime Kuma 2.0 fournit un outil de migration officiel qui convertit la base SQLite v1 vers MariaDB v2. La migration est documentée dans l'article avec les commandes exactes."
   - question: "Combien de moniteurs peut-on créer gratuitement avec Uptime Kuma ?"
-    answer: "Il n'y a pas de limite. Uptime Kuma est open source et auto-hébergé — tu peux créer autant de moniteurs que ton serveur le permet. Des instances en prod surveillent plusieurs centaines de services."
+    answer: "Il n'y a pas de limite. Uptime Kuma est open source et auto-hébergé, tu peux créer autant de moniteurs que ton serveur le permet. Des instances en prod surveillent plusieurs centaines de services."
   - question: "Uptime Kuma supporte-t-il les alertes Telegram, Discord et Slack ?"
     answer: "Oui. Uptime Kuma propose plus de 90 intégrations natives : Telegram, Discord, Slack, Teams, PagerDuty, email SMTP, ntfy, Signal et bien d'autres. Tout se configure depuis l'interface web sans fichier de config."
 ---
@@ -63,10 +63,10 @@ Imagine qu'un attaquant exploite une faille dans Uptime Kuma. Avec un conteneur 
 - Il reste confiné dans son conteneur avec des droits limités
 
 ```bash
-# Avant (V1) — conteneur avec root
+# Avant (V1), conteneur avec root
 docker run -d --name uptime-kuma -p 3001:3001 louislam/uptime-kuma:1
 
-# Maintenant (V2) — conteneur rootless
+# Maintenant (V2), conteneur rootless
 docker run -d \
   --name uptime-kuma \
   --user 1000:1000 \
@@ -119,7 +119,7 @@ Autant être honnête : cette V2 contient plusieurs changements majeurs qui cass
 Les endpoints de badges (uptime et ping) acceptent maintenant **uniquement** ces valeurs : `24h`, `30d`, `1y`.
 
 ```markdown
-<!-- Ancien format (V1) — ne marche plus -->
+<!-- Ancien format (V1), ne marche plus -->
 ![Uptime](https://uptime.mondomaine.com/api/badge/1/uptime/7)
 
 <!-- Nouveau format (V2) -->
@@ -406,7 +406,7 @@ Installe-le, configure tes groupes de monitors et tes alertes Telegram, et dors 
 
 ## Pour aller plus loin
 
-- [Sécuriser ton serveur Linux — SSH, firewall, fail2ban](/securite-de-votre-serveur-linux/)
+- [Sécuriser ton serveur Linux, SSH, firewall, fail2ban](/securite-de-votre-serveur-linux/)
 - [Documentation officielle Uptime Kuma](https://github.com/louislam/uptime-kuma/wiki) : wiki GitHub complet
 - [Guide de migration V1→V2](https://github.com/louislam/uptime-kuma/wiki/Migration-From-v1-To-v2) : procédure officielle
 

@@ -26,7 +26,7 @@ faqs:
 ---
 > 💡 **TL;DR** : Installe All-in-One WP Migration v6.77 (la dernière version qui importe gratuitement), exporte depuis l'ancien site, importe sur le nouveau. Augmente la limite dans `constants.php` si ton site dépasse 512 MB. [Télécharge directement la v6.77 ici.](/downloads/all-in-one-wp-migration.6.77.zip)
 
-![Illustration — Migrer WordPress en 2026](fusion-vid-ppap-bhecjdygjck6c-1.gif)
+![Illustration, Migrer WordPress en 2026](fusion-vid-ppap-bhecjdygjck6c-1.gif)
 
 Alors, tu dois migrer ton site WordPress et tu te demandes comment faire ça proprement sans tout péter ? Parfait, tu es au bon endroit ! La migration WordPress, c'est un peu comme déménager : si tu t'y prends mal, tu risques de casser la vaisselle.
 

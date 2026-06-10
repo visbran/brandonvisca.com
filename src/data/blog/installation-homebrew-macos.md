@@ -47,7 +47,7 @@ Deux types de packages :
 
 ## Prérequis
 
-- macOS 11 (Big Sur) minimum — Monterey, Ventura, Sequoia : OK
+- macOS 11 (Big Sur) minimum, Monterey, Ventura, Sequoia : OK
 - Connexion internet
 - Les Xcode Command Line Tools (Homebrew les installe automatiquement si absents)
 
@@ -85,7 +85,7 @@ Affiche la version installée. Homebrew se met à jour automatiquement à chaque
 
 ### Configurer le PATH sur Apple Silicon
 
-Sur M1, M2, M3 ou M4, une étape supplémentaire est requise après l'installation : ajouter Homebrew au PATH. Le script l'affiche à la fin — si tu l'as raté :
+Sur M1, M2, M3 ou M4, une étape supplémentaire est requise après l'installation : ajouter Homebrew au PATH. Le script l'affiche à la fin, si tu l'as raté :
 
 ```bash
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile

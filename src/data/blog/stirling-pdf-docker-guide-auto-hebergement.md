@@ -1,6 +1,6 @@
 ---
 title: "Stirling-PDF Docker : alternative open-source à SmallPDF"
-description: "Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF."
+description: "Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe, sans payer un centime à Adobe ou SmallPDF."
 pubDatetime: "2026-05-29T10:00:00.000Z"
 modDatetime: "2026-05-31T00:00:00.000Z"
 author: Brandon Visca
@@ -24,7 +24,7 @@ faqs:
     answer: "Stirling-PDF est une interface web dédiée aux manipulations PDF. Il utilise parfois LibreOffice en arrière-plan pour certaines conversions, mais il est beaucoup plus simple et rapide pour les tâches courantes (fusion, split, OCR, signature)."
 timezone: Europe/Paris
 ---
-> 💡 **TL;DR** — Ce qu'il faut retenir :
+> 💡 **TL;DR**, Ce qu'il faut retenir :
 > - Stirling-PDF est un éditeur PDF open-source auto-hébergé (~73 000 stars GitHub).
 > - Il remplace SmallPDF (~84€/an) et Adobe Acrobat (~180€/an) gratuitement.
 > - Docker Compose en 5 minutes : mergé, split, OCR, conversion, signature.
@@ -32,7 +32,7 @@ timezone: Europe/Paris
 
 Combien tu lâches par an pour éditer des PDF ? Petit calcul rapide : SmallPDF Pro c’est ~84€/an, Adobe Acrobat Online s’approche allègrement des 180€/an. Et dans les deux cas, tes fichiers passent par leurs serveurs, avec le tracking et les comptes à la clé.
 
-Spoiler : il existe une solution open-source qui fait tout ça — et bien plus — sans dépenser un sou.
+Spoiler : il existe une solution open-source qui fait tout ça, et bien plus, sans dépenser un sou.
 
 ## Table des matières
 
@@ -133,7 +133,7 @@ Va dans l’icône **Settings** en haut à droite, change la **Language** en **F
 
 **Activer la sécurité (obligatoire si exposé sur Internet) :**
 1. Dans **Settings > Security**, active **Enable Login**
-2. Crée un premier compte — il sera automatiquement administrateur
+2. Crée un premier compte, il sera automatiquement administrateur
 3. Redémarre le conteneur pour que `SECURITY_ENABLELOGIN=true` soit pleinement actif :
    ```bash
    docker compose restart

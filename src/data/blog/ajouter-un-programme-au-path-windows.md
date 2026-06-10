@@ -367,7 +367,7 @@ Configurer le PATH Windows, c'est une opération à faire une fois par outil ins
 
 - [Termius : client SSH pour Windows (guide complet)](https://brandonvisca.com/termius-client-ssh-windows-guide-complet/)
 - [Snipe-IT + agent Windows : inventaire automatisé](https://brandonvisca.com/snipeagent-automatiser-inventaire-windows-snipeit/)
-- [Documentation Microsoft — variable PATH](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/path)
+- [Documentation Microsoft, variable PATH](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/path)
 
 ## Articles connexes
 

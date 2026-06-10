@@ -24,7 +24,7 @@ faqs:
 ---
 > 💡 **TL;DR** : Morgen connecte tous tes calendriers (Google, Outlook, Apple) et tes outils de tâches (Notion, Todoist, Linear) dans une seule interface. L'AI Planner planifie ta semaine automatiquement. Disponible sur macOS, Windows, Linux, iOS, Android.
 
-![Morgen — planificateur IA unifié](image-2.gif)
+![Morgen, planificateur IA unifié](image-2.gif)
 
 Tu jonglais déjà entre Google Calendar, Notion, Todoist, et Slack. Et là, quelqu'un te parle de Morgen. Encore une appli ? Eh bien, celle-là a un angle différent : elle ne remplace pas tes outils, elle les réunit. Et depuis 2026, elle embarque un planificateur IA qui priorise tes tâches directement dans ton calendrier.
 
@@ -56,7 +56,7 @@ C'est la nouveauté qui change tout dans la version 2026. Le planificateur IA de
 
 ### Frames : construire ta semaine idéale
 
-Frames, c'est la façon dont tu guides l'IA. Tu définis ta semaine idéale — quand tu veux du deep work, quand tu acceptes des réunions, quand tu traites les tâches courtes. L'IA remplit les créneaux en respectant ces contraintes.
+Frames, c'est la façon dont tu guides l'IA. Tu définis ta semaine idéale, quand tu veux du deep work, quand tu acceptes des réunions, quand tu traites les tâches courtes. L'IA remplit les créneaux en respectant ces contraintes.
 
 Concrètement : tu vois le plan proposé en live dans ton calendrier. Tu déplaces une tâche, ajustes sa durée, et l'IA recalcule. Quand le plan te convient, tu l'approuves. C'est toi qui décides, pas le bot.
 
@@ -68,7 +68,7 @@ Concrètement : tu vois le plan proposé en live dans ton calendrier. Tu déplac
 
 Morgen se connecte à Google Calendar, Outlook, Apple Calendar, Fastmail et la plupart des providers CalDAV. Tous tes événements perso et pro s'affichent dans une seule vue.
 
-Du côté des tâches : Notion, ClickUp, Linear, Todoist — les tâches de ces outils apparaissent comme des blocs planifiables dans ton calendrier. Plus besoin d'aller dans chaque outil pour savoir ce que tu as à faire.
+Du côté des tâches : Notion, ClickUp, Linear, Todoist, les tâches de ces outils apparaissent comme des blocs planifiables dans ton calendrier. Plus besoin d'aller dans chaque outil pour savoir ce que tu as à faire.
 
 > ⚠️ **Attention** : Morgen lit tes tâches mais n'écrit pas dedans (du moins pour certains intégrations). Vérifie la doc pour l'outil que tu utilises avant de tout miser là-dessus.
 
@@ -112,7 +112,7 @@ Morgen est disponible sur macOS, Windows, Linux, iOS et Android. L'app desktop e
 
 Sur la sécurité : Morgen ne revend pas tes données et ne demande accès qu'aux permissions strictement nécessaires pour chaque intégration. Si tu connectes uniquement Google Calendar, Morgen ne touche pas à tes emails.
 
-![Morgen — vue d'ensemble](image-3.gif)
+![Morgen, vue d'ensemble](image-3.gif)
 
 - - - - - -
 

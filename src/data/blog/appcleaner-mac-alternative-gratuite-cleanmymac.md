@@ -35,7 +35,7 @@ Dans ce guide, je te montre comment installer AppCleaner Mac, configurer SmartDe
 
 ## Pourquoi macOS ne sait pas désinstaller proprement
 
-![Capture d'écran — Pourquoi macOS ne sait pas désinstaller proprement](climate-crisis-greta-thunberg-un-action-summit-u1an4htfj2smgb2bbk.gif)
+![Capture d'écran, Pourquoi macOS ne sait pas désinstaller proprement](climate-crisis-greta-thunberg-un-action-summit-u1an4htfj2smgb2bbk.gif)
 Apple a conçu un système d’installation simple : tu glisses une app dans `/Applications`, tu la lances, ça marche. Mais à la désinstallation, macOS ne fait **que supprimer le bundle principal** de l’application.
 
 Tous les fichiers associés restent en place :
@@ -59,7 +59,7 @@ Voici un comparatif rapide pour situer AppCleaner face à ses concurrents :
 | **Détection auto fichiers** | ✅         | ✅         | ✅               | ❌               |
 | **SmartDelete**           | ✅         | ✅         | ✅ (règles)      | ❌               |
 | **Interface**             | Simple     | Surchargée | Complexe         | Terminal         |
-| **Taille**                | 2 Mo       | 85 Mo      | 25 Mo            | —                |
+| **Taille**                | 2 Mo       | 85 Mo      | 25 Mo            |, |
 
 AppCleaner Mac se positionne comme la **solution minimaliste et efficace** : il fait une seule chose, mais il la fait bien.
 

@@ -24,7 +24,7 @@ faqs:
   - question: "Quels matériels sont compatibles avec pfSense 2.8 ?"
     answer: "Support natif du matériel moderne Intel/AMD 64 bits grâce à FreeBSD 15. Les chipsets Realtek s'en sortent mieux qu'avant. Les cartes Intel NIC (i210, i350) restent le choix recommandé. Vérifie le Hardware Compatibility List Netgate en cas de doute."
 ---
-> 💡 **TL;DR** : Télécharge pfSense 2.8.1 (CE) sur [netgate.com](https://www.netgate.com/pfsense-plus-software/how-to-buy#pfsense-ce). Mise à jour depuis 2.7.x : sauvegarde config → System > Update → sélectionne CE 2.8.1 → redémarre. Sous Proxmox, préfère une clean install + import config.xml. WireGuard est intégré nativement — réimporte tes clés si tu migres depuis 2.7.x.
+> 💡 **TL;DR** : Télécharge pfSense 2.8.1 (CE) sur [netgate.com](https://www.netgate.com/pfsense-plus-software/how-to-buy#pfsense-ce). Mise à jour depuis 2.7.x : sauvegarde config → System > Update → sélectionne CE 2.8.1 → redémarre. Sous Proxmox, préfère une clean install + import config.xml. WireGuard est intégré nativement, réimporte tes clés si tu migres depuis 2.7.x.
 
 ![pfSense CE 2.8 mise à jour](snl-saturday-night-live-season-47-fn7eouktflhxhwkgfi.gif)
 
@@ -32,7 +32,7 @@ Tu administres un pare-feu pfSense et tu as vu passer la mise à jour 2.8 ? Pas 
 
 Ce n'est pas une simple révision de sécurité. Avec le passage à FreeBSD 15.0, des correctifs critiques et des changements profonds dans les pilotes réseau, pfSense 2.8 bouscule plusieurs habitudes. La version 2.8.1, sortie fin 2025, ajoute 19 correctifs supplémentaires sur Dynamic DNS, les interfaces et OpenVPN.
 
-J'ai moi-même migré deux firewalls — l'un sous Proxmox, l'autre bare-metal — avec quelques surprises que je te partage ici. Si tu utilises pfBlockerNG, WireGuard ou une configuration ZFS, tu vas vouloir lire jusqu'au bout.
+J'ai moi-même migré deux firewalls, l'un sous Proxmox, l'autre bare-metal, avec quelques surprises que je te partage ici. Si tu utilises pfBlockerNG, WireGuard ou une configuration ZFS, tu vas vouloir lire jusqu'au bout.
 
 Les [notes de version officielles pfSense 2.8.0](https://docs.netgate.com/pfsense/en/latest/releases/2-8-0.html) publiées par Netgate restent la référence pour le détail exhaustif.
 
@@ -46,7 +46,7 @@ Les [notes de version officielles pfSense 2.8.0](https://docs.netgate.com/pfsens
 
 C'est le changement le plus marquant. pfSense 2.8 repose sur FreeBSD 15-CURRENT : environnement plus moderne, meilleure compatibilité matérielle pour les chipsets récents, performances réseau améliorées.
 
-J'ai constaté un démarrage plus rapide et une gestion plus fluide des interfaces réseau — gain de stabilité notable sur les plateformes virtualisées.
+J'ai constaté un démarrage plus rapide et une gestion plus fluide des interfaces réseau, gain de stabilité notable sur les plateformes virtualisées.
 
 Points clés du passage à FreeBSD 15 :
 
@@ -233,8 +233,8 @@ pfSense 2.8.1, c'est la version à déployer en 2026. FreeBSD 15.0 sous le capot
 
 ## Pour aller plus loin
 
-- [Notes de version pfSense 2.8.0 — Netgate](https://docs.netgate.com/pfsense/en/latest/releases/2-8-0.html)
-- [Documentation principale pfSense — Netgate](https://docs.netgate.com/pfsense/en/latest)
+- [Notes de version pfSense 2.8.0, Netgate](https://docs.netgate.com/pfsense/en/latest/releases/2-8-0.html)
+- [Documentation principale pfSense, Netgate](https://docs.netgate.com/pfsense/en/latest)
 - [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/)
 
 ## Articles connexes

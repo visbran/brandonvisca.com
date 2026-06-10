@@ -21,7 +21,7 @@ faqs:
   - question: "GLPI peut-il remplacer complètement SnipeIT ?"
     answer: "Techniquement oui, mais GLPI est surdimensionné pour du simple inventaire. Pour un suivi d'actifs précis avec codes QR et check-in/check-out fluide, SnipeIT est clairement supérieur."
 ---
-> 💡 **TL;DR** — SnipeIT gagne pour 90% des cas : installation en 45 min, interface moderne, codes QR natifs. GLPI vaut le coup uniquement si tu as besoin d’un helpdesk intégré et d’une CMDB complète. J’ai utilisé les deux pendant 3 ans — SnipeIT reste mon choix par défaut.
+> 💡 **TL;DR**, SnipeIT gagne pour 90% des cas : installation en 45 min, interface moderne, codes QR natifs. GLPI vaut le coup uniquement si tu as besoin d’un helpdesk intégré et d’une CMDB complète. J’ai utilisé les deux pendant 3 ans, SnipeIT reste mon choix par défaut.
 
 ## Table des matières
 
@@ -31,7 +31,7 @@ Spoiler alert : si tu cherches juste à **gérer ton inventaire IT efficacement*
 
 ## GLPI et SnipeIT : présentation des combattants
 
-![SnipeIT vs GLPI — le match](/images/fight-wkdwa04krn58a.gif)
+![SnipeIT vs GLPI, le match](/images/fight-wkdwa04krn58a.gif)
 ### GLPI : le mastodonte français
 
 ![Interface GLPI](/images/c230c830-02bf-46d1-b368-c36f5a8fa824.webp)**GLPI** (Gestion Libre de Parc Informatique) est une solution française open source créée en 2003. C’est la Ferrari de l’ITSM gratuit : helpdesk, inventaire, gestion des changements, base de connaissances, suivi financier… GLPI fait **tout**.

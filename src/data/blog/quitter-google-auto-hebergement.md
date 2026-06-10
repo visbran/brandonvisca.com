@@ -172,10 +172,10 @@ Le matériel : Ce dont tu as VRAIMENT besoin
 
 ![a person holding a laptop with a fan in their hand](sa-0gdwmrrq.jpg)**Matériel :**
 
-- [Beelink Mini S12 Pro](https://amzn.to/4rlW7qa) – 289€
+- [Beelink Mini S12 Pro](https://amzn.to/4rlW7qa),  289€
 - Intel N100, 16GB RAM, 500GB SSD
 - Consommation : 10W (2€/mois élec)
-- [Disque externe 2TB](https://amzn.to/43yGnpt) – 81€ (backups)
+- [Disque externe 2TB](https://amzn.to/43yGnpt),  81€ (backups)
 - **Total : 370€**
 
 **Avantages :**
@@ -188,7 +188,7 @@ Le matériel : Ce dont tu as VRAIMENT besoin
 
 ![green and black circuit board](rzkds0wi8ks.jpg)**Matériel :**
 
-- [Starter Pack Raspberry Pi 5 8GB](https://amzn.to/49rWcCe) – 140€
+- [Starter Pack Raspberry Pi 5 8GB](https://amzn.to/49rWcCe),  140€
 - ✔ Alimentation officielle 27W : Alimentation stable et fiable pour votre Raspberry Pi 5.
 - ✔ Boîtier officiel avec ventilateur : Protège votre Raspberry Pi et assure un refroidissement optimal lors d’une utilisation intensive.
 - ✔ Carte mémoire de 128 Go : offre un stockage généreux pour votre système d’exploitation, vos applications et vos fichiers.
@@ -363,9 +363,9 @@ Tu es motivé ? Voici les étapes concrètes :
 
 ### Étape 1 : Choisis ton matériel (Budget 150-250€)
 
-**Option A – Mini PC** : [Beelink Mini S12 Pro](https://amzn.to/4rlW7qa) (~190€)  
-**Option B – Raspberry Pi** : [Raspberry Pi 5 8GB](https://amzn.to/49rWcCe) (~140€)  
-**Option C – Vieux PC** : Gratuit si tu en as un
+**Option A, Mini PC** : [Beelink Mini S12 Pro](https://amzn.to/4rlW7qa) (~190€)  
+**Option B, Raspberry Pi** : [Raspberry Pi 5 8GB](https://amzn.to/49rWcCe) (~140€)  
+**Option C, Vieux PC** : Gratuit si tu en as un
 
 Ajoute un disque externe pour les backups (60€).
 

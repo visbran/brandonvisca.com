@@ -1,6 +1,6 @@
 ---
 title: "Technitium DNS Server : installe ton bloqueur de pubs libre (2026)"
-description: Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC — guide complet 2026.
+description: Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC, guide complet 2026.
 pubDatetime: 2026-04-29 00:00:00+01:00
 author: Brandon Visca
 tags:
@@ -15,16 +15,16 @@ draft: false
 focusKeyword: technitium dns server
 faqs:
   - question: "Technitium DNS Server peut-il remplacer Pi-hole ?"
-    answer: "Oui. Technitium DNS Server offre le blocage de publicités via listes DNS, un résolveur récursif natif, DNSSEC, DoH et DoT — dans une seule image Docker. Il fait tout ce que Pi-hole fait, sans dépendance à dnsmasq ni à un résolveur externe."
+    answer: "Oui. Technitium DNS Server offre le blocage de publicités via listes DNS, un résolveur récursif natif, DNSSEC, DoH et DoT, dans une seule image Docker. Il fait tout ce que Pi-hole fait, sans dépendance à dnsmasq ni à un résolveur externe."
   - question: "Technitium DNS Server a-t-il des zones DNS locales ?"
     answer: "Oui. Tu peux créer des zones primaires (comme homelab.local) et gérer les enregistrements A, AAAA, CNAME, MX, TXT directement depuis l'interface web. Idéal pour résoudre tes machines par nom d'hôte sans modifier /etc/hosts sur chaque client."
   - question: "Technitium DNS Server fonctionne-t-il sur Raspberry Pi ?"
-    answer: "Oui. L'image Docker est disponible pour linux/arm64 et linux/arm/v7, compatible Raspberry Pi 3 et 4. Le serveur tourne correctement avec 256 Mo de RAM allouée — largement suffisant sur un RPi 4."
+    answer: "Oui. L'image Docker est disponible pour linux/arm64 et linux/arm/v7, compatible Raspberry Pi 3 et 4. Le serveur tourne correctement avec 256 Mo de RAM allouée, largement suffisant sur un RPi 4."
 ---
-> 💡 **TL;DR** — Ce qu'il faut retenir :
-> - Technitium DNS Server est un serveur DNS récursif open source avec blocage de pubs intégré — alternative directe à Pi-hole et AdGuard Home.
+> 💡 **TL;DR**, Ce qu'il faut retenir :
+> - Technitium DNS Server est un serveur DNS récursif open source avec blocage de pubs intégré, alternative directe à Pi-hole et AdGuard Home.
 > - L'installation Docker prend 5 minutes : une commande, un port, une interface web sur `:5380`.
-> - DNS récursif natif, DNSSEC, DoH/DoT et zones locales — tout dans un seul conteneur.
+> - DNS récursif natif, DNSSEC, DoH/DoT et zones locales, tout dans un seul conteneur.
 
 ## Table des matières
 
@@ -51,7 +51,7 @@ Avant d'installer quoi que ce soit, voilà la situation objective. Les trois out
 
 Pi-hole reste excellent si tu veux le maximum de listes et de visibilité communautaire. AdGuard Home est plus léger au démarrage. **Technitium se distingue sur un point clé : il est son propre résolveur récursif**. Pas besoin d'empiler Unbound à côté pour du DNS-over-HTTPS propre.
 
-Le projet est développé activement sur [GitHub (TechnitiumSoftware/DnsServer)](https://github.com/TechnitiumSoftware/DnsServer) en C# (.NET) — v15.x au moment de cet article.
+Le projet est développé activement sur [GitHub (TechnitiumSoftware/DnsServer)](https://github.com/TechnitiumSoftware/DnsServer) en C# (.NET), v15.x au moment de cet article.
 
 ## Installation avec Docker Compose
 
@@ -77,7 +77,7 @@ Le projet est développé activement sur [GitHub (TechnitiumSoftware/DnsServer)]
 >
 > Une fois Technitium lancé, tu mets à jour `/etc/resolv.conf` pour pointer vers `127.0.0.1`.
 
-### docker-compose.yml — mode host (recommandé)
+### docker-compose.yml : mode host (recommandé)
 
 ```yaml
 version: "3.8"
@@ -96,7 +96,7 @@ services:
       - TZ=Europe/Paris
 ```
 
-Le mode `host` est requis pour que le conteneur écoute directement sur l'interface réseau de l'hôte — indispensable pour répondre aux requêtes DNS du réseau local sur le port 53/UDP.
+Le mode `host` est requis pour que le conteneur écoute directement sur l'interface réseau de l'hôte, indispensable pour répondre aux requêtes DNS du réseau local sur le port 53/UDP.
 
 Lance le conteneur :
 
@@ -105,9 +105,9 @@ docker compose up -d
 docker logs -f technitium-dns
 ```
 
-L'interface web est accessible sur **http://IP-DE-TON-HÔTE:5380**. Au premier démarrage, définis un mot de passe administrateur — il n'y en a pas par défaut.
+L'interface web est accessible sur **http://IP-DE-TON-HÔTE:5380**. Au premier démarrage, définis un mot de passe administrateur, il n'y en a pas par défaut.
 
-### docker-compose.yml — mode bridge (NAS, Docker Desktop)
+### docker-compose.yml : mode bridge (NAS, Docker Desktop)
 
 Si le mode host n'est pas disponible sur ton environnement (NAS Synology, macOS avec Docker Desktop) :
 
@@ -151,7 +151,7 @@ Dans l'interface web, va dans **Blocklist** → **Add Blocklist** et ajoute tes 
 
 Clique sur **Update All** pour forcer la mise à jour immédiate. Technitium applique les listes en mémoire, sans redémarrage du conteneur.
 
-> ✅ **Bonne pratique** : Commence avec une seule liste (StevenBlack ou OISD Basic) et navigue normalement pendant 24h avant d'en ajouter d'autres. Certaines listes agressives (HaGeZi Pro++) cassent des services légitimes — vérifie d'abord que ton quotidien numérique n'est pas impacté.
+> ✅ **Bonne pratique** : Commence avec une seule liste (StevenBlack ou OISD Basic) et navigue normalement pendant 24h avant d'en ajouter d'autres. Certaines listes agressives (HaGeZi Pro++) cassent des services légitimes, vérifie d'abord que ton quotidien numérique n'est pas impacté.
 
 ### Vérifier que le blocage fonctionne
 
@@ -169,7 +169,7 @@ Les requêtes en temps réel sont visibles dans **Logs** → **Query Logs**. Tu 
 
 ### Whitelist ponctuelle
 
-Un domaine bloqué à tort ? Dans **Blocklist** → **Allow List**, ajoute le domaine. La whitelist est prioritaire sur toutes les listes de blocage — pas besoin de modifier les listes elles-mêmes.
+Un domaine bloqué à tort ? Dans **Blocklist** → **Allow List**, ajoute le domaine. La whitelist est prioritaire sur toutes les listes de blocage, pas besoin de modifier les listes elles-mêmes.
 
 ## DNS récursif, DNSSEC et modes de résolution
 
@@ -225,7 +225,7 @@ Technitium DNS Server est une des meilleures options pour auto-héberger son DNS
 
 La migration depuis Pi-hole est quasi-transparente : importe tes listes, désactive l'ancien serveur, pointe ton routeur sur la nouvelle IP. Pas de mauvaise surprise.
 
-Et si tu veux synchroniser tes blocages DNS sur plusieurs instances (un DNS par VLAN, par exemple), jette un œil à [Nebula-Sync pour Pi-hole v6](https://brandonvisca.com/nebula-sync-pihole-v6-installation-docker-guide/) — le concept de synchronisation de listes est transposable.
+Et si tu veux synchroniser tes blocages DNS sur plusieurs instances (un DNS par VLAN, par exemple), jette un œil à [Nebula-Sync pour Pi-hole v6](https://brandonvisca.com/nebula-sync-pihole-v6-installation-docker-guide/), le concept de synchronisation de listes est transposable.
 
 ## Pour aller plus loin
 

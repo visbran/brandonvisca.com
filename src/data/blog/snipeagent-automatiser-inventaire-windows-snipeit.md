@@ -26,7 +26,7 @@ faqs:
 > - L'installeur MSI se déploie en masse via GPO sur tout un parc Active Directory
 > - Une tâche planifiée au démarrage suffit pour maintenir l'inventaire à jour en continu
 
-Installation, configuration, déploiement GPO — tout ce qu'il faut pour que SnipeAgent s'occupe de ton inventaire Windows à ta place. Admin sys junior ou homelab à la maison, même combat.
+Installation, configuration, déploiement GPO, tout ce qu'il faut pour que SnipeAgent s'occupe de ton inventaire Windows à ta place. Admin sys junior ou homelab à la maison, même combat.
 
 ## Table des matières
 
@@ -97,7 +97,7 @@ Ouvre le fichier de configuration :
 C:\Program Files (x86)\Snipe-IT\SnipeAgent\SnipeAgent.exe.config
 ```
 
-Tu dois renseigner **au minimum** ces paramètres critiques (dans mon homelab, c'est l'URL interne de mon instance Snipe-IT — ça marche nickel tant que le `BaseURI` est exact) :
+Tu dois renseigner **au minimum** ces paramètres critiques (dans mon homelab, c'est l'URL interne de mon instance Snipe-IT, ça marche nickel tant que le `BaseURI` est exact) :
 
 ```xml
 <configuration>
@@ -203,9 +203,9 @@ Spoiler : c'est satisfaisant de voir son inventaire se remplir tout seul.
 
 ## Pour aller plus loin
 
-- [SnipeAgent sur GitHub](https://github.com/ReticentRobot/SnipeAgent) – Le repo officiel avec releases et doc
-- [Snipe-IT Documentation](https://snipe-it.readme.io/) – Pour configurer ton serveur d'inventaire
-- [Configuration avancée SnipeIT](https://brandonvisca.com/configuration-avancee-snipeit-ldap-teams-automatisation/) – LDAP, Teams, API et sécurité
+- [SnipeAgent sur GitHub](https://github.com/ReticentRobot/SnipeAgent), Le repo officiel avec releases et doc
+- [Snipe-IT Documentation](https://snipe-it.readme.io/), Pour configurer ton serveur d'inventaire
+- [Configuration avancée SnipeIT](https://brandonvisca.com/configuration-avancee-snipeit-ldap-teams-automatisation/), LDAP, Teams, API et sécurité
 
 ## Articles connexes
 

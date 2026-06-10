@@ -39,7 +39,7 @@ Avant de commencer, si tu viens d'arriver et que tu n'as pas encore installé Oh
 
 ## Table des matières
 
-## Plugin n°1 : git — le cerveau de ton workflow
+## Plugin n°1 : git : le cerveau de ton workflow
 
 Ça peut paraître évident, mais le plugin `git` d'Oh My Zsh reste le meilleur gain de productivité au kilo. Sans lui, tu tapes `git status`, `git branch`, `git checkout` à longueur de journée. Avec lui, tout devient un alias de 2 ou 3 caractères.
 
@@ -68,7 +68,7 @@ Si tu fais beaucoup de `git diff`, `gd` ouvre ton `diff` configuré. Si tu utili
 plugins=(git)
 ```
 
-## Plugin n°2 : zsh-autosuggestions — la mémoire externe
+## Plugin n°2 : zsh-autosuggestions : la mémoire externe
 
 Celui-là, c'est mon préféré. Quand tu commences à taper une commande, une suggestion transparente apparaît à droite du curseur, grisée. Tu appuies sur la flèche droite et bam, c'est rempli automatiquement.
 
@@ -96,7 +96,7 @@ Pour configurer la couleur de la suggestion (par défaut c'est trop clair sur ce
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 ```
 
-## Plugin n°3 : zsh-syntax-highlighting — le correcteur préventif
+## Plugin n°3 : zsh-syntax-highlighting : le correcteur préventif
 
 Ce plugin colore chaque partie de ta commande en temps réel pendant que tu tapes. Les commandes valides passent au vert, les chemins existants au bleu, les chaines au rouge. Si tu te trompes dans le nom d'une commande, elle reste rouge, et tu le vois avant même d'appuyer sur Entrée.
 
@@ -118,7 +118,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 Attention : ce plugin doit être le dernier de la liste. Oui, l'ordre compte dans le chargement Zsh.
 
-## Plugin n°4 : sudo — quand tu oublies systématiquement
+## Plugin n°4 : sudo : quand tu oublies systématiquement
 
 Tu tapes une commande longue et complexe genre `apt update && apt upgrade -y`, tu appuies sur Entrée, et là le terminal te crache sa moutarde : "Permission denied". Tu as oublié le `sudo` au début.
 
@@ -139,7 +139,7 @@ $ sudo apt update && apt upgrade -y
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo)
 ```
 
-## Plugin n°5 : extract — une commande pour tout décompresser
+## Plugin n°5 : extract : une commande pour tout décompresser
 
 Tu télécharges un fichier, tu dois l'extraire, et là commence le jeu des formats. `.tar.gz` ? Il faut `tar xzvf`. `.zip` ? C'est `unzip`. `.tar.bz2` ? `tar xjvf`. `.7z` ? Il faut p7zip. Tu passes ton temps à rechercher la syntaxe exacte sur Stack Overflow, surtout quand le flag `-f` de tar change selon que le fichier est au format gzip, bzip2 ou xz.
 
@@ -155,7 +155,7 @@ Petite nuance cependant : `extract` ne fait que décompresser. Si tu décompress
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo extract)
 ```
 
-## Plugin n°6 : command-not-found — le correcteur orthographique du terminal
+## Plugin n°6 : command-not-found : le correcteur orthographique du terminal
 
 Tu tapes `htop` et le système te répond "commande introuvable". Tu ne sais pas si c'est un paquet manquant ou si tu as fait une faute de frappe. Le plugin `command-not-found` te dit exactement quel paquet installer pour obtenir cette commande.
 
@@ -166,7 +166,7 @@ The program 'htop' is currently not installed. You can install it by typing:
 sudo apt install htop
 ```
 
-C'est particulièrement utile sur des machines neuves ou des conteneurs Docker minimalistes où tu ne sais jamais ce qui est préinstallé — typiquement quand tu débarques sur un serveur fraîchement provisionné pour le [durcir avec quelques commandes de base](/hardening-linux-10-commandes/). Au lieu de chercher pendant dix minutes, tu as la réponse instantanément.
+C'est particulièrement utile sur des machines neuves ou des conteneurs Docker minimalistes où tu ne sais jamais ce qui est préinstallé, typiquement quand tu débarques sur un serveur fraîchement provisionné pour le [durcir avec quelques commandes de base](/hardening-linux-10-commandes/). Au lieu de chercher pendant dix minutes, tu as la réponse instantanément.
 
 **Installation (plugin natif OMZ) :**
 
@@ -174,7 +174,7 @@ C'est particulièrement utile sur des machines neuves ou des conteneurs Docker m
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo extract command-not-found)
 ```
 
-## Plugin n°7 : colored-man-pages — la doc lisible enfin
+## Plugin n°7 : colored-man-pages : la doc lisible enfin
 
 Les pages de manuel, c'est pratique, mais visuellement c'est le désert. Un bloc de texte monochrome de 500 lignes sur fond noir, sans hiérarchie, sans couleur pour distinguer les sections des options. Le plugin `colored-man-pages` applique une coloration syntaxique aux man pages : les titres de sections en gras, les options en couleur, les chemins highlightés.
 
@@ -256,6 +256,6 @@ Installe-les, teste-les une semaine, et dis-moi lequel est devenu indispensable 
 
 ## Pour aller plus loin
 
-- [Installer Oh My Zsh + Powerlevel10k : le guide complet](/installation-oh-my-zsh-powerlevel10k-guide-complet/) — la base à avoir avant ces plugins
-- [Warp vs iTerm2 : mon comparatif après deux mois](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) — quel terminal pour héberger tout ça
-- [Documentation officielle des plugins Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) — la liste exhaustive des plugins natifs
+- [Installer Oh My Zsh + Powerlevel10k : le guide complet](/installation-oh-my-zsh-powerlevel10k-guide-complet/), la base à avoir avant ces plugins
+- [Warp vs iTerm2 : mon comparatif après deux mois](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/), quel terminal pour héberger tout ça
+- [Documentation officielle des plugins Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins), la liste exhaustive des plugins natifs

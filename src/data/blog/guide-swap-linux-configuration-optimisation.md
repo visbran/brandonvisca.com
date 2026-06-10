@@ -200,7 +200,7 @@ Retiens les essentiels : fichier swap plutôt que partition, swappiness à 10 su
 
 ![GIF Kenan Thompson applaudissant avec émotion](/images/nbc-season-2-kenan-vnr3draqtz6mwyfxv0.gif)
 
-## FAQ — Swap Linux
+## FAQ : Swap Linux
 
 **Quelle taille de swap choisir sous Linux ?**  
 Pour un serveur avec moins de 4 Go de RAM, prévois 2x la RAM. Au-delà, 1x suffit avec un maximum de 8-16 Go. Sur un desktop avec 16 Go+, 2-4 Go de swap suffisent comme filet de sécurité.

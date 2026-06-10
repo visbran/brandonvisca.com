@@ -27,7 +27,7 @@ faqs:
 
 ## TL;DR
 
-- Gitea est un serveur Git **open source et ultra-léger** — alternative crédible à GitHub, GitLab et Forgejo.
+- Gitea est un serveur Git **open source et ultra-léger**, alternative crédible à GitHub, GitLab et Forgejo.
 - Container officiel : `gitea/gitea:latest` (v1.26.2, licence MIT, ~300 Mo).
 - Ports par défaut : **3000** (interface web) et **22** (Git SSH).
 - Déploiement en 5 minutes avec Docker Compose + un volume `/data` persistant.
@@ -45,7 +45,7 @@ Tu stockes ton code sur GitHub. Gratuit, rapide, tout le monde y est. Jusqu'au j
 - Pas de limitation d'espace ou de bande passante imposée par un tiers.
 - Pas de risque de suspension arbitraire de compte pour une clause de service interprétée largement.
 - CI/CD possible via Gitea Actions, webhooks ou couplage avec Drone.
-- Tu peux l'héberger derrière un VPN, restreint à ton LAN ou exposé sur Internet — tu décides.
+- Tu peux l'héberger derrière un VPN, restreint à ton LAN ou exposé sur Internet, tu décides.
 
 Gitea, c'est le moyen le plus rapide et le moins gourmand d'y arriver. Une VM avec 1 Go de RAM et un modeste CPU x86 suffisent amplement. Sur un Raspberry Pi 4, il tourne sans sourciller.
 
@@ -97,7 +97,7 @@ La dernière version stable au moment de la rédaction : **v1.26.2**. Le projet 
 
 - Docker Engine et Docker Compose (v2+) installés.
 - Un serveur Linux (Debian, Ubuntu, AlmaLinux…), un NAS compatible Docker, ou un Raspberry Pi 4 avec 4 Go de RAM.
-- Un dossier dédié pour persister les données (`./gitea/data` — ne le perd pas).
+- Un dossier dédié pour persister les données (`./gitea/data`, ne le perd pas).
 - Les ports **3000** et **222** (ou **22**) libres sur l'hôte.
 - Un nom de domaine (recommandé) pour configurer le HTTPS via reverse proxy.
 - Connaissances de base Docker et Git (clonage SSH, `docker compose`).

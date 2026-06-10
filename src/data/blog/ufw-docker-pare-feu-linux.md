@@ -12,7 +12,7 @@ tags:
 featured: false
 draft: false
 ---
-**TL;DR** — UFW est le pare-feu le plus simple sous Linux, mais Docker contourne ses règles en manipulant iptables directement. Résultat : tes ports exposés restent accessibles depuis l'extérieur même si UFW dit le contraire. On va configurer UFW correctement avec Docker pour que tes règles de pare-feu soient réellement respectées, sans bloquer les conteneurs qui doivent communiquer entre eux.
+**TL;DR**, UFW est le pare-feu le plus simple sous Linux, mais Docker contourne ses règles en manipulant iptables directement. Résultat : tes ports exposés restent accessibles depuis l'extérieur même si UFW dit le contraire. On va configurer UFW correctement avec Docker pour que tes règles de pare-feu soient réellement respectées, sans bloquer les conteneurs qui doivent communiquer entre eux.
 
 ## Pourquoi UFW et Docker ne s'entendent pas
 

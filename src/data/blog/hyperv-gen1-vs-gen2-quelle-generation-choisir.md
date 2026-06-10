@@ -1,6 +1,6 @@
 ---
 title: "Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)"
-description: "Hyper-V Gen1 vs Gen2 : UEFI, Secure Boot, PXE, performances — le comparatif complet pour choisir la bonne génération selon ton OS et ton contexte."
+description: "Hyper-V Gen1 vs Gen2 : UEFI, Secure Boot, PXE, performances, le comparatif complet pour choisir la bonne génération selon ton OS et ton contexte."
 pubDatetime: "2026-03-10T00:00:00+01:00"
 author: Brandon Visca
 tags:
@@ -23,7 +23,7 @@ faqs:
   - question: "Le Secure Boot Gen2 bloque-t-il les Linux ?"
     answer: "Par défaut oui, si ton Linux n'est pas signé par Microsoft. Solution : désactiver le Secure Boot dans les paramètres de la VM Gen2. Ubuntu et Debian sont signés et démarrent sans modification."
 ---
-Gen1 ou Gen2 pour ta prochaine VM Hyper-V ? La question revient à chaque création de VM, et la réponse n'est pas toujours évidente — surtout quand on voit que certains OS ne supportent tout simplement pas Gen2.
+Gen1 ou Gen2 pour ta prochaine VM Hyper-V ? La question revient à chaque création de VM, et la réponse n'est pas toujours évidente, surtout quand on voit que certains OS ne supportent tout simplement pas Gen2.
 
 Spoiler : dans 90% des cas, tu veux Gen2. Mais il y a des exceptions qui méritent qu'on s'y arrête.
 
@@ -45,7 +45,7 @@ Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environn
 | Compatibilité OS 32 bits | ✅ Oui | ❌ Non | Gen1 |
 | Linux ancien (< RHEL 6) | ✅ Oui | ⚠️ Limité | Gen1 |
 | Windows Server 2012+ | ✅ Oui | ✅ Oui | Égalité |
-| Conversion possible | ❌ Non | ❌ Non | — |
+| Conversion possible | ❌ Non | ❌ Non |, |
 
 **Mon choix par défaut : Gen2** pour tout OS moderne (Windows Server 2012+, Ubuntu 14.04+, Debian 8+).
 
@@ -53,7 +53,7 @@ Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environn
 
 ## C'est quoi la différence concrète ?
 
-La génération d'une VM Hyper-V, c'est le firmware émulé : **Gen1 simule un BIOS legacy**, **Gen2 émule un firmware UEFI**. C'est fixé à la création de la VM et **non modifiable après** — d'où l'importance de choisir correctement dès le départ.
+La génération d'une VM Hyper-V, c'est le firmware émulé : **Gen1 simule un BIOS legacy**, **Gen2 émule un firmware UEFI**. C'est fixé à la création de la VM et **non modifiable après**, d'où l'importance de choisir correctement dès le départ.
 
 Gen1 est là depuis Hyper-V 2012. Gen2 est arrivé avec Hyper-V 2012 R2. Les deux coexistent parce que le parc de VMs existantes est souvent mixte.
 
@@ -74,7 +74,7 @@ Gen1 est là depuis Hyper-V 2012. Gen2 est arrivé avec Hyper-V 2012 R2. Les deu
 
 - **Démarrage plus lent** : le POST BIOS émulé rajoute quelques secondes inutiles
 - **Pas de Secure Boot** : pas de protection contre les bootkits
-- **Limité à 2 To pour le disque OS** (MBR) — un vrai problème sur des VMs très chargées
+- **Limité à 2 To pour le disque OS** (MBR), un vrai problème sur des VMs très chargées
 - **Pas de démarrage réseau HTTPS** : le PXE legacy ne supporte pas les déploiements sécurisés modernes
 - **Contrôleurs IDE émulés** : les disques IDE sont plus lents que SCSI virtuel
 
@@ -96,7 +96,7 @@ Aucun coût direct, mais le coût caché c'est le temps : si ton WSUS ou ton sys
 ### ✅ Points forts
 
 - **Démarrage UEFI natif** : plus rapide, sans le POST BIOS inutile
-- **Secure Boot** : protection contre les bootkits et les rootkits au démarrage — important en production
+- **Secure Boot** : protection contre les bootkits et les rootkits au démarrage, important en production
 - **Disques SCSI virtuel uniquement** : meilleures performances I/O, plus simple à gérer
 - **Taille disque OS jusqu'à 64 To** (GPT) : plus de limite MBR
 - **Démarrage réseau HTTPS** : compatible avec les déploiements WDS/MDT modernes
@@ -175,7 +175,7 @@ Le seul "coût" : s'assurer que ton OS est compatible et que ton infrastructure 
 
 ## Un point sur Secure Boot en Gen2
 
-Secure Boot est activé par défaut sur les VMs Gen2 — et c'est bien. Mais il peut bloquer le démarrage si le bootloader ou le kernel n'est pas signé avec une clé reconnue.
+Secure Boot est activé par défaut sur les VMs Gen2, et c'est bien. Mais il peut bloquer le démarrage si le bootloader ou le kernel n'est pas signé avec une clé reconnue.
 
 Hyper-V propose 3 templates de Secure Boot selon l'OS :
 
@@ -197,7 +197,7 @@ Set-VMFirmware -VMName "SRV-XXX" -EnableSecureBoot Off
 ## FAQ
 
 **Peut-on convertir une VM Gen1 en Gen2 ?**
-Non. La génération est figée à la création. Pour passer de Gen1 à Gen2, il faut créer une nouvelle VM Gen2 et migrer le contenu — exactement comme la procédure de [restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/).
+Non. La génération est figée à la création. Pour passer de Gen1 à Gen2, il faut créer une nouvelle VM Gen2 et migrer le contenu, exactement comme la procédure de [restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/).
 
 **Gen2 est-elle plus performante que Gen1 ?**
 Légèrement, surtout au démarrage. En production, la différence de performances I/O est négligeable sur les workloads courants. L'avantage de Gen2 est surtout fonctionnel (Secure Boot, vTPM, disques SCSI) plutôt que purement en termes de vitesse.
@@ -206,7 +206,7 @@ Légèrement, surtout au démarrage. En production, la différence de performanc
 Non. Secure Boot est une fonctionnalité UEFI uniquement, donc réservée aux VMs Gen2.
 
 **Est-ce qu'une VM Gen2 est compatible avec tous les hyperviseurs ?**
-Non. Le format VHDX Gen2 est spécifique à Hyper-V. Si tu migres vers VMware ou Proxmox, l'aspect "génération" ne s'applique plus — tu travailleras avec les formats UEFI/BIOS natifs de la plateforme cible.
+Non. Le format VHDX Gen2 est spécifique à Hyper-V. Si tu migres vers VMware ou Proxmox, l'aspect "génération" ne s'applique plus, tu travailleras avec les formats UEFI/BIOS natifs de la plateforme cible.
 
 **Quelle génération pour Windows 11 ?**
 Obligatoirement Gen2. Windows 11 nécessite TPM 2.0, et seul le vTPM disponible en Gen2 répond à cette exigence sous Hyper-V.
@@ -224,7 +224,7 @@ Gen1 reste pertinente pour deux cas précis : les OS anciens (32 bits, Windows 2
 
 Si tu crées une nouvelle VM aujourd'hui pour Windows Server 2019/2022/2025 ou un Linux récent : **Gen2, sans hésitation**.
 
-Et si tu te retrouves avec une VM Gen2 corrompue, j'ai détaillé [la procédure complète de restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/) — ça peut toujours servir.
+Et si tu te retrouves avec une VM Gen2 corrompue, j'ai détaillé [la procédure complète de restauration VHDX via WinPE](https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/), ça peut toujours servir.
 
 ---
 

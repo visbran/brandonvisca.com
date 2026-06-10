@@ -19,15 +19,15 @@ faqs:
   - question: "Le RBAC bloque-t-il vraiment les transferts dans Exchange Online ?"
     answer: "Non. Le RBAC retire uniquement les boutons dans l'interface OWA. Il ne bloque pas les transferts configurés par un admin PowerShell, ni les InboxRules existantes, ni les redirections déjà actives. Utilise une Transport Rule pour le vrai blocage."
   - question: "Quelle est la différence entre ForwardingAddress et InboxRule dans Exchange Online ?"
-    answer: "ForwardingAddress redirige globalement toute la boîte (configurable via OWA ou PowerShell admin). InboxRule est une règle conditionnelle créée par l'utilisateur (filtre sur sujet, expéditeur…). Les deux exfiltrent des données — auditer les deux avec Get-Mailbox et Get-InboxRule."
+    answer: "ForwardingAddress redirige globalement toute la boîte (configurable via OWA ou PowerShell admin). InboxRule est une règle conditionnelle créée par l'utilisateur (filtre sur sujet, expéditeur…). Les deux exfiltrent des données, auditer les deux avec Get-Mailbox et Get-InboxRule."
   - question: "Comment détecter les transferts actifs dans Exchange Online ?"
     answer: "Lance Get-Mailbox -ResultSize Unlimited | Where-Object { $_.ForwardingSmtpAddress -or $_.ForwardingAddress } pour les redirections globales. Et Get-InboxRule sur chaque boîte pour les règles conditionnelles. Exporte en CSV pour analyse."
 ---
-> 💡 **TL;DR** : Crée une Transport Rule PowerShell (`-MessageType AutoForward -SentToScope NotInOrganization`) pour bloquer tous les transferts externes en une commande. Le RBAC ne bloque rien — c'est cosmétique. Audite ensuite avec `Get-Mailbox` + `Get-InboxRule` pour nettoyer les redirections existantes.
+> 💡 **TL;DR** : Crée une Transport Rule PowerShell (`-MessageType AutoForward -SentToScope NotInOrganization`) pour bloquer tous les transferts externes en une commande. Le RBAC ne bloque rien, c'est cosmétique. Audite ensuite avec `Get-Mailbox` + `Get-InboxRule` pour nettoyer les redirections existantes.
 
-![Exchange Online — bloquer les transferts automatiques](great-job-al0xsyu0pkftq.gif)
+![Exchange Online, bloquer les transferts automatiques](great-job-al0xsyu0pkftq.gif)
 
-Les **transferts automatiques d'emails vers l'extérieur** ? Un cauchemar pour tout admin système qui se respecte. Si tu gères un tenant **Exchange Online**, tu as probablement déjà eu cette sueur froide en découvrant qu'un utilisateur a configuré une **redirection email** vers sa boîte perso — avec toutes les données sensibles qui partent en prime.
+Les **transferts automatiques d'emails vers l'extérieur** ? Un cauchemar pour tout admin système qui se respecte. Si tu gères un tenant **Exchange Online**, tu as probablement déjà eu cette sueur froide en découvrant qu'un utilisateur a configuré une **redirection email** vers sa boîte perso, avec toutes les données sensibles qui partent en prime.
 
 Microsoft n'a pas exactement facilité les choses avec ses multiples canaux de transfert et ses interfaces qui donnent l'illusion de contrôle. J'ai appliqué cette configuration sur plusieurs tenants clients : avec les bonnes commandes **PowerShell Exchange Online** et une stratégie claire, on verrouille ça proprement.
 
@@ -45,7 +45,7 @@ Avant de foncer dans les commandes, voilà pourquoi c'est un problème concret.
 
 **Fuite de données incontrôlée** : tes emails confidentiels partent vers Gmail, Yahoo ou ailleurs sans traçabilité.
 
-**Contournement des protections** : ATP (Advanced Threat Protection), DLP, audit logs — tout ça devient inutile si les mails sont redirigés avant même le scan.
+**Contournement des protections** : ATP (Advanced Threat Protection), DLP, audit logs, tout ça devient inutile si les mails sont redirigés avant même le scan.
 
 **Non-conformité RGPD** : l'entreprise perd la maîtrise de l'information. Bonjour l'amende CNIL.
 
@@ -118,7 +118,7 @@ Set-Mailbox prenom.nom@domaine.com -RoleAssignmentPolicy "PolicyNoEmailForward"
 Get-Mailbox -RecipientTypeDetails UserMailbox | Set-Mailbox -RoleAssignmentPolicy "PolicyNoEmailForward"
 ```
 
-> ⚠️ **Limite du RBAC** : Le RBAC ne bloque PAS les transferts configurés par un admin, ni les InboxRules, ni les redirections déjà existantes. C'est cosmétique au niveau interface — pas un blocage réel.
+> ⚠️ **Limite du RBAC** : Le RBAC ne bloque PAS les transferts configurés par un admin, ni les InboxRules, ni les redirections déjà existantes. C'est cosmétique au niveau interface, pas un blocage réel.
 
 - - - - - -
 
@@ -297,7 +297,7 @@ Planifie ce script dans le Planificateur de tâches Windows ou via Azure Automat
 
 ### Stratégie de déploiement progressive
 
-1. **Audit** : lance les scripts de scan — recense tout ce qui existe
+1. **Audit** : lance les scripts de scan, recense tout ce qui existe
 2. **Liste blanche** : identifie les transferts légitimes (comptes de service, notifications)
 3. **RBAC** : applique la policy à tous les utilisateurs
 4. **Transport Rule** : déploie en mode audit d'abord (`-Mode Audit`), puis bloquant
@@ -314,11 +314,11 @@ $WhitelistedAccounts = @(
 )
 ```
 
-> 💡 **Astuce** : Crée un groupe de sécurité `ForwardingExceptions` dans Azure AD. Gère la liste blanche via le groupe plutôt qu'en dur dans les scripts — la mise à jour est plus propre et auditée.
+> 💡 **Astuce** : Crée un groupe de sécurité `ForwardingExceptions` dans Azure AD. Gère la liste blanche via le groupe plutôt qu'en dur dans les scripts, la mise à jour est plus propre et auditée.
 
 ### Gérer les comptes de la GAL
 
-Si tu gères des boîtes de service ou des comptes techniques, pense aussi à [masquer les utilisateurs sensibles de la GAL Office 365](https://brandonvisca.com/masquer-utilisateurs-gal-office365-active-directory/) — un compte visible dans l'annuaire est plus exposé à l'ingénierie sociale.
+Si tu gères des boîtes de service ou des comptes techniques, pense aussi à [masquer les utilisateurs sensibles de la GAL Office 365](https://brandonvisca.com/masquer-utilisateurs-gal-office365-active-directory/), un compte visible dans l'annuaire est plus exposé à l'ingénierie sociale.
 
 ### Sécuriser les accès admin
 
@@ -328,11 +328,11 @@ Les mêmes réflexes de [sécurisation de tes accès système](https://brandonvi
 
 ## Conclusion
 
-Bloquer les transferts automatiques dans Exchange Online prend 10 minutes avec PowerShell. La Transport Rule est ton principal levier — le RBAC ne fait que cacher les boutons. Audite l'existant avant de déployer pour ne pas couper des flux légitimes, construis une liste blanche propre, et planifie le monitoring pour ne pas repartir de zéro après le prochain incident. Pour les tenants avec des flux complexes, déploie la Transport Rule en mode audit d'abord — tu verras exactement ce qui aurait été bloqué avant de passer en mode bloquant.
+Bloquer les transferts automatiques dans Exchange Online prend 10 minutes avec PowerShell. La Transport Rule est ton principal levier, le RBAC ne fait que cacher les boutons. Audite l'existant avant de déployer pour ne pas couper des flux légitimes, construis une liste blanche propre, et planifie le monitoring pour ne pas repartir de zéro après le prochain incident. Pour les tenants avec des flux complexes, déploie la Transport Rule en mode audit d'abord, tu verras exactement ce qui aurait été bloqué avant de passer en mode bloquant.
 
 ## Pour aller plus loin
 
-- [Documentation Microsoft — stratégies anti-spam sortantes](https://learn.microsoft.com/fr-fr/microsoft-365/security/office-365-security/outbound-spam-policies-configure)
+- [Documentation Microsoft, stratégies anti-spam sortantes](https://learn.microsoft.com/fr-fr/microsoft-365/security/office-365-security/outbound-spam-policies-configure)
 - [Masquer des utilisateurs de la GAL Office 365](https://brandonvisca.com/masquer-utilisateurs-gal-office365-active-directory/)
 - [Import PST dans Outlook 365 : guide complet](https://brandonvisca.com/import-pst-outlook-365-guide-complet/)
 

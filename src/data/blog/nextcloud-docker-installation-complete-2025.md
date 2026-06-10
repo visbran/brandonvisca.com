@@ -58,7 +58,7 @@ Pourquoi Nextcloud &gt; Google Drive (et les autres)
 - Domaine : **10€/an**
 - **Total : 58€/an pour stockage illimité** (dans la limite de ton VPS)
 
-💰 **Économie sur 5 ans avec 2 To :** 120€ x 5 – 58€ x 5 = **310€ économisés**
+💰 **Économie sur 5 ans avec 2 To :** 120€ x 5 ,  58€ x 5 = **310€ économisés**
 
 Et encore, si tu as déjà un serveur chez toi (Raspberry Pi, vieux PC…), c’est **gratuit** à part l’électricité.
 
@@ -413,7 +413,7 @@ Ouvre `https://cloud.ton-domaine.fr` → Tu arrives sur l’assistant d’instal
 - ✅ Contacts
 - ✅ Notes
 - ✅ Photos
-- ⬜ Talk (visio – gourmand en ressources)
+- ⬜ Talk (visio, gourmand en ressources)
 
 Clique **Terminer l’installation** → Ça prend 1-2 minutes.
 

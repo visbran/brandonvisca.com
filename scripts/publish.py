@@ -29,6 +29,9 @@ import yaml
 from pathlib import Path
 from datetime import datetime
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from strip_emdash import normalize_text
+
 # ── Chemins ───────────────────────────────────────────────────────────────────
 
 VAULT_ROOT = Path(os.environ.get("BRANDON_VAULT", Path.home() / "Documents/brandon-knowledge"))
@@ -377,6 +380,9 @@ def process_file(filepath: Path, confirm: bool, keep_draft: bool, custom_slug: s
     clean_body = copy_images(clean_body, filepath, slug, confirm)
 
     new_content = new_fm + "\n" + clean_body
+
+    # Couche anti-marqueur IA : supprimer tirets cadratin/demi-cadratin (frontmatter + corps)
+    new_content = normalize_text(new_content)
 
     target_path = BLOG_DIR / f"{slug}.md"
 
