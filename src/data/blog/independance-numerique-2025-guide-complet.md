@@ -21,19 +21,10 @@ faqs:
   - question: "L'auto-hébergement est-il aussi fiable que Google Drive ou Gmail ?"
     answer: "La fiabilité dépend de votre infrastructure. Avec des sauvegardes 3-2-1 et une alimentation ondulée (UPS), un homelab bien configuré peut atteindre 99.9% d'uptime. Google garantit 99.9% en SLA."
 ---
-🎯 TL;DR
--------
-
-Tu paies Google Drive (120€/an), Netflix (156€/an), 1Password (36€/an), et tu trouves ça normal ? Spoiler : **tu peux tout héberger toi-même pour 0€/an** (si tu as déjà un serveur) ou 30€/an (avec un VPS).
-
-**Ce guide pilier te montre comment :**
-
-- Remplacer Google Drive par **Nextcloud** (cloud personnel)
-- Remplacer Netflix par **Jellyfin** (streaming vidéo gratuit)
-- Remplacer 1Password par **Vaultwarden** (gestionnaire de mots de passe)
-- **Économiser 534€/an** (5 340€ sur 10 ans)
-- Garder le **contrôle total** de tes données
-- Installer le tout en **un weekend**
+> 💡 **TL;DR**
+> - Google Drive + Netflix + 1Password = 534€/an que tu peux ramener à 0€ (serveur existant) ou 30€/an (VPS)
+> - Remplace-les par Nextcloud (cloud), Jellyfin (streaming) et Vaultwarden (mots de passe)
+> - Contrôle total de tes données, 5 340€ économisés sur 10 ans
 
 💡 **Bonus** : Télécharge la **checklist gratuite « 30 jours pour l’indépendance numérique »** + script bash de backup automatisé en fin d’article.
 

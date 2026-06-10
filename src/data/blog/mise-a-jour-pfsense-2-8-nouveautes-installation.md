@@ -24,7 +24,10 @@ faqs:
   - question: "Quels matériels sont compatibles avec pfSense 2.8 ?"
     answer: "Support natif du matériel moderne Intel/AMD 64 bits grâce à FreeBSD 15. Les chipsets Realtek s'en sortent mieux qu'avant. Les cartes Intel NIC (i210, i350) restent le choix recommandé. Vérifie le Hardware Compatibility List Netgate en cas de doute."
 ---
-> 💡 **TL;DR** : Télécharge pfSense 2.8.1 (CE) sur [netgate.com](https://www.netgate.com/pfsense-plus-software/how-to-buy#pfsense-ce). Mise à jour depuis 2.7.x : sauvegarde config → System > Update → sélectionne CE 2.8.1 → redémarre. Sous Proxmox, préfère une clean install + import config.xml. WireGuard est intégré nativement, réimporte tes clés si tu migres depuis 2.7.x.
+> 💡 **TL;DR**
+> - pfSense 2.8.1 (CE) se télécharge sur netgate.com ; mise à jour depuis 2.7.x : sauvegarde config, System > Update, redémarre
+> - Sous Proxmox, préfère une clean install puis import du `config.xml`
+> - WireGuard est intégré nativement, réimporte tes clés si tu migres depuis 2.7.x
 
 ![pfSense CE 2.8 mise à jour](snl-saturday-night-live-season-47-fn7eouktflhxhwkgfi.gif)
 

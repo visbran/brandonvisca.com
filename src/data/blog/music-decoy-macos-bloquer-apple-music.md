@@ -18,8 +18,10 @@ faqs:
     answer: "Oui. Music Decoy doit être actif en arrière-plan pour intercepter les touches média. Ajoute-le dans Réglages Système > Général > Éléments de connexion pour qu'il démarre automatiquement."
 ---
 
-TL;DR
-
+> 💡 **TL;DR**
+> - La touche Play du clavier Mac lance Apple Music par défaut, même si tu utilises Spotify
+> - Music Decoy intercepte la touche Play et empêche Apple Music de se lancer, sans configuration
+> - Micro-app installée en 3 secondes, peut démarrer automatiquement au login
 Tu appuies sur la touche Play de ton clavier Mac pour lancer Spotify. Et là, Apple Music se lance. Encore. Pour la 47ème fois cette semaine.
 
 Tu l’as jamais ouvert Apple Music. Tu l’ouvriras jamais. T’as un abonnement Spotify/YouTube Music/Deezer. Mais macOS s’en fout : par défaut, la touche Play du clavier = Apple Music.

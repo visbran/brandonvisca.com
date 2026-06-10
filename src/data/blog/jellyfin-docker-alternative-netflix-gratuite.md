@@ -22,18 +22,10 @@ tags:
   - intermediaire
 ---
 
-🎯 TL;DR
-
-Tu paies Netflix + Disney+ + Prime Video = **378€/an** pour regarder des films ? Spoiler : tu peux héberger **ton propre Netflix avec Jellyfin** pour 0€ supplémentaire si tu as déjà un serveur (ou 4€/mois sur VPS).
-
-**Ce que tu vas apprendre :**
-
-- Installer Jellyfin avec Docker en 20 minutes chrono
-- Organiser ta bibliothèque films/séries automatiquement (metadata, posters, sous-titres)
-- Streamer sur TV, mobile, tablette, navigateur
-- Transcoding 4K en temps réel (si ton serveur suit)
-- Économiser 378€/an minimum en virant tes abonnements streaming
-- Inviter famille/amis avec comptes séparés
+> 💡 **TL;DR**
+> - Netflix + Disney+ + Prime = 378€/an que tu remplaces par ton propre Jellyfin (0€ si tu as déjà un serveur)
+> - Installation Docker en 20 minutes, bibliothèque films/séries organisée automatiquement (metadata, posters, sous-titres)
+> - Streaming sur TV, mobile, tablette et navigateur, transcoding 4K en temps réel si ton serveur suit
 
 **Prérequis :**
 

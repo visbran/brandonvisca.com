@@ -24,7 +24,10 @@ faqs:
   - question: "Faut-il sauvegarder avant migration ?"
     answer: "Toujours. Crée une sauvegarde via phpMyAdmin ou le Dashboard WordPress avant de migrer. C'est ton filet de sécurité."
 ---
-> 💡 **TL;DR** : Installe All-in-One WP Migration v6.77 (la dernière version qui importe gratuitement), exporte depuis l'ancien site, importe sur le nouveau. Augmente la limite dans `constants.php` si ton site dépasse 512 MB. [Télécharge directement la v6.77 ici.](/downloads/all-in-one-wp-migration.6.77.zip)
+> 💡 **TL;DR**
+> - All-in-One WP Migration v6.77 (dernière version qui importe gratuitement) : exporte l'ancien site, importe sur le nouveau
+> - Augmente la limite dans `constants.php` si ton site dépasse 512 Mo
+> - [Télécharge directement la v6.77 ici](/downloads/all-in-one-wp-migration.6.77.zip)
 
 ![Illustration, Migrer WordPress en 2026](fusion-vid-ppap-bhecjdygjck6c-1.gif)
 

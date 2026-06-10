@@ -22,7 +22,10 @@ faqs:
   - question: "Peut-on synchroniser plus de 2 Pi-hole avec Nebula-Sync ?"
     answer: "Oui. Nebula-Sync supporte un nombre illimité de réplicas. Il suffit d'ajouter les IPs et tokens API de chaque instance Pi-hole dans la configuration YAML."
 ---
-> 💡 **TL;DR**, Nebula-Sync est le successeur de Gravity Sync compatible Pi-hole v6. Il synchronise automatiquement tes Pi-hole (listes noires, config DNS, groupes) via Docker ou binaire Go. Un docker-compose de 10 lignes suffit pour démarrer.
+> 💡 **TL;DR**
+> - Nebula-Sync est le successeur de Gravity Sync, compatible Pi-hole v6
+> - Il synchronise automatiquement tes Pi-hole (listes noires, config DNS, groupes) via Docker ou binaire Go
+> - Un `docker-compose.yml` de 10 lignes suffit pour démarrer
 
 Spoiler : c'est le successeur non-officiel de Gravity Sync, et il est compatible avec Pi-hole v6.
 

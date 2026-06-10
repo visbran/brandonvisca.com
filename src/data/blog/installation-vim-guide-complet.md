@@ -22,7 +22,10 @@ faqs:
   - question: "Comment sauvegarder et synchroniser ma configuration Vim entre machines ?"
     answer: "Versionne ton .vimrc (et le dossier ~/.vim/plugged si nécessaire) dans un dépôt Git de dotfiles. Une commande git pull + vim +PlugInstall recrée l'environnement complet sur n'importe quelle machine."
 ---
-> 💡 **TL;DR**, Vim est disponible sur macOS via Homebrew (`brew install vim`) et sur Linux via le gestionnaire de paquets natif. Un `.vimrc` de 15 lignes suffit pour un éditeur fonctionnel. Ajoute vim-plug pour les plugins, NERDTree pour l'arbre de fichiers, FZF pour la recherche.
+> 💡 **TL;DR**
+> - Vim s'installe via Homebrew sur macOS (`brew install vim`) et le gestionnaire de paquets natif sous Linux
+> - Un `.vimrc` de 15 lignes suffit pour un éditeur fonctionnel
+> - Ajoute vim-plug pour les plugins, NERDTree pour l'arbre de fichiers, FZF pour la recherche
 
 Vim intimide au premier abord. Mais une fois qu'on comprend la logique modale, c'est l'un des éditeurs les plus rapides qui soit. Je l'utilise quotidiennement sur mes serveurs Linux, et le `.vimrc` que je vais te montrer est exactement celui que je déploie partout.
 

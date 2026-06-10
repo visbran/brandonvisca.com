@@ -33,7 +33,10 @@ Voici le comparatif complet, basé sur ce que j'utilise au quotidien en environn
 
 ## Table des matières
 
-## TL;DR
+> 💡 **TL;DR**
+> - Gen2 (UEFI) gagne presque partout : boot plus rapide, Secure Boot, disques OS jusqu'à 64 To (GPT)
+> - Gen1 (BIOS legacy) ne garde l'avantage que pour les OS 32 bits et les vieux Linux (< RHEL 6)
+> - Pour toute VM moderne (Windows Server 2012+, Linux récent), choisis Gen2 sans hésiter
 
 | Critère | Gen1 (BIOS) | Gen2 (UEFI) | Gagnant |
 |---|---|---|---|
