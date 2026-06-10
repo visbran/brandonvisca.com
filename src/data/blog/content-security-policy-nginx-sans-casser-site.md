@@ -19,6 +19,10 @@ faqs:
     answer: "Non, la CSP est une couche de défense supplémentaire, pas une solution complète. Elle réduit fortement l'impact d'une XSS en empêchant l'exécution de scripts non autorisés, mais ne remplace pas la validation des entrées."
 ---
 
+> 💡 **TL;DR**
+> - La Content-Security-Policy est l'un des headers les plus puissants contre les attaques XSS
+> - Mal configurée, elle bloque tes propres scripts et casse le site
+> - Ce guide montre comment la configurer dans Nginx pas à pas, sans casser le frontend
 
 - [Qu’est-ce qu’une Content-Security-Policy (CSP) ?](#quest-ce-quune-content-security-policy-csp)
 - [Pourquoi mettre en place une CSP ?](#pourquoi-mettre-en-place-une-csp)

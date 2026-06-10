@@ -19,6 +19,10 @@ faqs:
     answer: "Cette erreur signifie que le système de fichiers n'est pas directement sur /dev/md0, mais sur une partition du RAID (ex: /dev/md0p1). Vérifie avec lsblk ou fdisk -l /dev/md0 pour voir les partitions du volume RAID."
 ---
 
+> 💡 **TL;DR**
+> - Erreur `wrong fs type, bad superblock` au montage d'une matrice RAID mdadm en mode secours
+> - Cause : l'array RAID contenait une table de partitions, pas directement un système de fichiers
+> - Solution : monter la bonne partition de l'array plutôt que le périphérique RAID brut
 
 - [Enquête initiale](#enquete-initiale)
 - [L’aperçu critique](#lapercu-critique)

@@ -18,6 +18,10 @@ faqs:
     answer: "Pour un site vitrine ou un blog léger, oui. Super.so est idéal si ton contenu est déjà dans Notion. Pour un site e-commerce ou avec des plugins complexes, WordPress reste plus adapté."
 ---
 
+> 💡 **TL;DR**
+> - Super.so transforme tes pages Notion en site web personnalisé et optimisé pour le SEO
+> - Personnalisation avancée du design sans quitter ton workflow Notion
+> - Une solution simple pour publier un vrai site à partir de contenu Notion
 
 - [Personnalisation avancée](#personnalisation-avancee)
 - [Fonctionnalités SEO intégrées](#fonctionnalites-seo-integrees)

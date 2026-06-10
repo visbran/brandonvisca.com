@@ -26,6 +26,12 @@ faqs:
   - question: "Homebrew fonctionne-t-il sur macOS Sequoia ?"
     answer: "Oui, Homebrew est compatible avec macOS Sequoia (15.x) et se met à jour rapidement après chaque nouvelle version de macOS. Lance brew update pour être sûr d'avoir la dernière version."
 ---
+
+> 💡 **TL;DR**
+> - Homebrew, le gestionnaire de paquets macOS, s'installe en une seule commande
+> - Commandes essentielles (`brew install`, `update`, `upgrade`) et premières apps à installer
+> - Section dépannage pour les erreurs courantes après l'installation
+
 ## Table des matières
 
 T'as besoin d'installer un outil sur macOS et tu tombes sur une doc qui commence par "first, install Homebrew" ? Homebrew macOS s'installe en une commande :

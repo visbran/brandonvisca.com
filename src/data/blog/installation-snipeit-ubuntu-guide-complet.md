@@ -22,6 +22,11 @@ tags:
   - guide
 ---
 
+> 💡 **TL;DR**
+> - Installation complète de SnipeIT sur Ubuntu 22.04/24.04 : stack LAMP, MySQL, Git
+> - Permissions et sécurité gérées proprement pour ne rien casser
+> - Guide pas à pas pensé pour les débutants
+
 **Méta description :** Installation SnipeIT Ubuntu 22.04/24.04 complète : guide LAMP, MySQL, Git, permissions et sécurité. Tuto installation SnipeIT Ubuntu étape par étape pour débutants.
 
 ---

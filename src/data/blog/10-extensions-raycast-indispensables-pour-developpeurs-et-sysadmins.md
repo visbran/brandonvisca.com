@@ -24,6 +24,11 @@ faqs:
     answer: "Oui, les deux peuvent coexister. Assigne des raccourcis différents (ex: ⌥Space pour l'un, ⌘Space pour l'autre) pour éviter les conflits."
 ---
 
+> 💡 **TL;DR**
+> - Le Store Raycast compte plus de 1000 extensions gratuites et open source
+> - 10 incontournables pour dev et sysadmin : Docker, GitHub, SSH, Brew et compagnie
+> - Installation en un clic depuis le Store, et tu peux même créer la tienne
+
 ## Introduction : Le Store Raycast, un trésor inexploité
 
 Si t'as lu [mon article précédent sur Raycast](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/), tu sais déjà que c'est **la bombe absolue** pour la productivité sur macOS.

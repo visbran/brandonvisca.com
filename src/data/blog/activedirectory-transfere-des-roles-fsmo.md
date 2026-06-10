@@ -19,6 +19,10 @@ faqs:
     answer: "Au minimum 2 DC. Microsoft recommande de répartir les 5 rôles sur 2 DC : PDC Emulator + RID Master + Infrastructure Master sur le DC principal, Schema Master + Domain Naming Master sur le second."
 ---
 
+> 💡 **TL;DR**
+> - Les rôles FSMO sont 5 fonctions critiques d'un domaine Active Directory, portées par un ou plusieurs DC
+> - On les transfère proprement entre contrôleurs via l'interface graphique ou PowerShell
+> - Ce guide couvre le transfert (Maître RID en exemple) et la vérification post-transfert
 
 Les rôles FSMO sont 5 fonctions importantes dans un réseau Windows. Un seul contrôleur de domaine peut avoir un ou plusieurs de ces rôles. On peut déplacer ces rôles entre les contrôleurs de domaine de deux façons :
 

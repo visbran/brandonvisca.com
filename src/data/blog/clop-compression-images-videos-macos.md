@@ -20,6 +20,12 @@ faqs:
   - question: "Clop compresse-t-il avec perte ou sans perte ?"
     answer: "Les deux modes sont disponibles. Par défaut, Clop utilise une compression avec perte légère (qualité ~85%) invisible à l'œil nu mais qui réduit la taille de 50 à 80%."
 ---
+
+> 💡 **TL;DR**
+> - Clop compresse automatiquement tes images et vidéos dès que tu les copies, sur macOS
+> - Fini les fichiers trop lourds pour les emails ou Slack, sans manipulation manuelle
+> - Gratuit, installation en 3 méthodes, configuration essentielle en 5 minutes
+
 ![Interface principale de Clop avec aperçu flottant](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765130954/brandonviscacom/CleanShot_2025-12-07_at_19.07.06_2x_kfnaxs.webp)
 *Légende : Interface Clop - compression automatique en arrière-plan*
 
