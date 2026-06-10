@@ -399,16 +399,22 @@ def process_file(filepath: Path, confirm: bool, keep_draft: bool, custom_slug: s
 
     # Écriture
     target_path.write_text(new_content, encoding="utf-8")
+    os.chmod(target_path, 0o664)
     print(f"  ✅ Écrit → src/data/blog/{slug}.md")
 
     # Déplacer vers 04-Publies/ (seulement si la source n'y est pas déjà)
     dest_vault = DONE_DIR / filepath.name
     if filepath.resolve() == dest_vault.resolve():
+        # Normaliser les perms même si déjà publié (réémission)
+        os.chmod(dest_vault, 0o664)
         print(f"  ℹ️  Déjà dans 04-Publies/ — aucun déplacement")
     else:
         if dest_vault.exists():
             dest_vault.unlink()
         shutil.move(str(filepath), str(dest_vault))
+        # shutil.move préserve le mode source (souvent 600 si brouillon créé en
+        # umask 077) → forcer 664 pour qu'Obsidian/Syncthing (brandon) puisse lire
+        os.chmod(dest_vault, 0o664)
         print(f"  📦 Déplacé → 04-Publies/{filepath.name}")
 
     return True
