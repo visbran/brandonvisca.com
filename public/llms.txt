@@ -77,7 +77,7 @@ Publié: 2026-05-30T06:00:00.000Z
 
 ## Stirling-PDF Docker : alternative open-source à SmallPDF
 URL: https://brandonvisca.com/stirling-pdf-docker-guide-auto-hebergement/
-Description: Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe — sans payer un centime à Adobe ou SmallPDF.
+Description: Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe, sans payer un centime à Adobe ou SmallPDF.
 Tags: 
 Publié: 2026-05-29T10:00:00.000Z
 
@@ -137,19 +137,19 @@ Publié: 2026-05-06 00:00:00+01:00
 
 ## Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul
 URL: https://brandonvisca.com/traefik-reverse-proxy-docker/
-Description: Installe Traefik v3 comme reverse proxy Docker. Labels auto, HTTPS Let's Encrypt, middlewares — guide complet pour ton homelab en 2026.
+Description: Installe Traefik v3 comme reverse proxy Docker. Labels auto, HTTPS Let's Encrypt, middlewares, guide complet pour ton homelab en 2026.
 Tags: 
 Publié: 2026-05-05 10:00:00+02:00
 
 ## Watchtower : mets tes conteneurs Docker à jour sans lever le petit doigt
 URL: https://brandonvisca.com/watchtower-mise-a-jour-docker-auto/
-Description: Configure Watchtower pour mettre à jour automatiquement tes conteneurs Docker. Notifications, exclusions, planning — guide complet homelab.
+Description: Configure Watchtower pour mettre à jour automatiquement tes conteneurs Docker. Notifications, exclusions, planning, guide complet homelab.
 Tags: 
 Publié: 2026-05-01 00:00:00+01:00
 
 ## Technitium DNS Server : installe ton bloqueur de pubs libre (2026)
 URL: https://brandonvisca.com/technitium-dns-server/
-Description: Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC — guide complet 2026.
+Description: Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC, guide complet 2026.
 Tags: 
 Publié: 2026-04-29 00:00:00+01:00
 
@@ -167,7 +167,7 @@ Publié: 2026-03-14 00:00:00+01:00
 
 ## Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
 URL: https://brandonvisca.com/hyperv-gen1-vs-gen2-quelle-generation-choisir/
-Description: Hyper-V Gen1 vs Gen2 : UEFI, Secure Boot, PXE, performances — le comparatif complet pour choisir la bonne génération selon ton OS et ton contexte.
+Description: Hyper-V Gen1 vs Gen2 : UEFI, Secure Boot, PXE, performances, le comparatif complet pour choisir la bonne génération selon ton OS et ton contexte.
 Tags: 
 Publié: 2026-03-10T00:00:00+01:00
 
@@ -351,7 +351,7 @@ Description: Configuration avancée SnipeIT : intégration LDAP/Active Directory
 Tags: 
 Publié: 2025-10-13T16:05:41+02:00
 
-## Raycast macOS : Guide complet 2026 — Extensions, AI et Snippets
+## Raycast macOS : Guide complet 2026, Extensions, AI et Snippets
 URL: https://brandonvisca.com/raycast-macos-outil-productivite-ultime/
 Description: Découvrez Raycast macOS, le launcher gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2026.
 Tags: 
@@ -431,7 +431,7 @@ Publié: 2025-06-12T20:41:20+02:00
 
 ## Vanderplanki : sauvegarde email gratuite et multi-plateforme (guide 2026)
 URL: https://brandonvisca.com/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/
-Description: Sauvegarde tes emails gratuitement avec Vanderplanki — chiffré, multi-plateforme, open source. Par les créateurs de MailStore. Guide 2026.
+Description: Sauvegarde tes emails gratuitement avec Vanderplanki, chiffré, multi-plateforme, open source. Par les créateurs de MailStore. Guide 2026.
 Tags: 
 Publié: 2025-06-12T19:38:49+02:00
 
