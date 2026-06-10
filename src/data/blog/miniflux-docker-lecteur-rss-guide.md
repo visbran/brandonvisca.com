@@ -26,12 +26,10 @@ faqs:
   - question: "Comment migrer mes flux depuis Feedly ?"
     answer: "Exporte ton OPML depuis Feedly (Organize > Export OPML), puis importe-le dans Miniflux via Feeds > Import."
 ---
-> 💡 **TL;DR**, Miniflux Docker en 4 points :
->
-> - **C'est quoi ?** Un lecteur RSS minimaliste et auto-hébergé qui lit les flux sans tracking ni pub
-> - **Pourquoi ?** Google Reader est mort, Feedly te piste, et tes flux méritent un toit privé
-> - **Comment ?** Un `docker-compose.yml` avec Miniflux + PostgreSQL = opérationnel en 5 minutes
-> - **Coût ?** Zéro euro si tu as déjà un serveur avec Docker
+> 💡 **TL;DR**
+> - Lecteur RSS minimaliste et auto-hébergé, sans tracking ni pub, contrairement à Feedly
+> - Un `docker-compose.yml` avec Miniflux + PostgreSQL : opérationnel en 5 minutes
+> - Zéro euro si tu as déjà un serveur avec Docker
 
 Tu ouvres encore ton navigateur pour vérifier 15 blogs différents ? Tu regrettes Google Reader comme tout le monde ? Et Feedly, entre les pubs intégrées, le tracking de lecture et les algos qui décident ce que tu dois voir... ben ça commence à te gonfler sérieusement.
 

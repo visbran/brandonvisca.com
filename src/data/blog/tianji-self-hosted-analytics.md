@@ -24,7 +24,10 @@ faqs:
   - question: "Quelles sont les différences avec Umami ?"
     answer: "Tianji est inspiré d'Umami mais intègre en plus l'uptime monitoring, le server status, les surveys et le telemetry. C'est un hub tout-en-un, pas juste de l'analytics."
 ---
-> 💡 **TL;DR** : Tianji analytics est une alternative open-source à Google Analytics, 100% self-hosted. Il combine analytics, uptime monitoring et server status dans un seul container Docker. Pas de cookie, pas de bannière RGPD, zéro coût.
+> 💡 **TL;DR**
+> - Alternative open-source à Google Analytics, 100% auto-hébergée, sans cookie ni bannière RGPD
+> - Combine analytics, uptime monitoring et server status dans un seul container Docker
+> - Zéro coût, tes données de visiteurs restent chez toi
 
 ## Table des matières
 

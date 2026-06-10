@@ -21,8 +21,10 @@ faqs:
     answer: "La suppression manuelle laisse des traces dans Library. AppCleaner supprime tous les fichiers associés : préférences, caches, logs."
 ---
 
-TL;DR
-
+> 💡 **TL;DR**
+> - Désinstaller une app en la glissant à la Corbeille laisse des résidus (`~/Library`, caches, préférences)
+> - AppCleaner supprime tous les fichiers liés en un glisser-déposer, 100% gratuit
+> - SmartDelete automatise le nettoyage à chaque désinstallation, sans payer CleanMyMac 40€/an
 Tu viens de désinstaller une app sur ton Mac en la glissant dans la Corbeille ? Spoiler : elle a laissé des traces partout. Des fichiers de config dans `~/Library`, des caches dans `/tmp`, des préférences oubliées dans `Application Support`. Résultat ? Ton SSD se remplit de déchets invisibles.
 
 **AppCleaner Mac** résout ce problème une bonne fois pour toutes. Et contrairement à CleanMyMac qui te coûte 40€/an, cet utilitaire est **100% gratuit**.

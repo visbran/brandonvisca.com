@@ -21,7 +21,10 @@ faqs:
   - question: "Comment créer automatiquement les répertoires personnels des utilisateurs AD ?"
     answer: "Active oddjob-mkhomedir avec pam-auth-update --enable mkhomedir. Le home dir est créé à la première connexion. Crée les répertoires parents manuellement si tu uses le format /home/%d/%u."
 ---
-> 💡 **TL;DR** : Intègre Ubuntu à Active Directory via SSSD en 5 étapes : installe realmd + sssd-ad, configure le DNS vers ton DC, `realm join`, ajuste sssd.conf et krb5.conf, active mkhomedir. Authentification centralisée opérationnelle en 15 min.
+> 💡 **TL;DR**
+> - Intègre Ubuntu à Active Directory via SSSD : realmd + sssd-ad, DNS pointé vers ton DC, puis `realm join`
+> - Ajuste `sssd.conf` et `krb5.conf`, active `mkhomedir` pour créer les home au premier login
+> - Authentification centralisée Kerberos avec cache hors ligne, opérationnelle en 15 min
 
 Tu as un parc mixte Windows/Linux et tu veux que tes utilisateurs se connectent avec leurs credentials AD ? La combo **Ubuntu Active Directory SSSD** via realmd, c'est la solution standard. Ça s'intègre proprement avec Kerberos, ça gère le cache hors ligne, et ça évite de devoir maintenir des comptes locaux sur chaque machine.
 

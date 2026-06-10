@@ -22,7 +22,10 @@ faqs:
   - question: "Morgen remplace-t-il Fantastical ou Google Calendar ?"
     answer: "Morgen ne remplace pas ton fournisseur de calendrier. Il se connecte à Google Calendar, Outlook, Apple Calendar et les agrège dans une interface unifiée avec des surcouches IA et de planification."
 ---
-> 💡 **TL;DR** : Morgen connecte tous tes calendriers (Google, Outlook, Apple) et tes outils de tâches (Notion, Todoist, Linear) dans une seule interface. L'AI Planner planifie ta semaine automatiquement. Disponible sur macOS, Windows, Linux, iOS, Android.
+> 💡 **TL;DR**
+> - Réunit tous tes calendriers (Google, Outlook, Apple) et tes outils de tâches (Notion, Todoist, Linear) dans une seule interface
+> - L'AI Planner planifie ta semaine automatiquement en priorisant tes tâches dans le calendrier
+> - Disponible sur macOS, Windows, Linux, iOS et Android
 
 ![Morgen, planificateur IA unifié](image-2.gif)
 

@@ -23,7 +23,10 @@ faqs:
   - question: "Quelle est la limite de caractères du PATH Windows ?"
     answer: "La commande setx est limitée à 1024 caractères. Si ton PATH est long, utilise PowerShell ou l'interface graphique à la place."
 ---
-> 💡 **TL;DR** : Pour ajouter un programme au PATH Windows, lance `sysdm.cpl` → Avancé → Variables d'environnement → modifie `Path`. Pour automatiser : utilise `[Environment]::SetEnvironmentVariable` en PowerShell. Ferme et rouvre ton terminal après chaque modif.
+> 💡 **TL;DR**
+> - Interface graphique : `sysdm.cpl` puis Variables d'environnement, modifie `Path`
+> - Automatisation : `[Environment]::SetEnvironmentVariable` en PowerShell
+> - Ferme et rouvre ton terminal après chaque modification pour qu'elle soit prise en compte
 
 ![Homme en costume qui réfléchit intensément](denzel-malcolm-x-film-l46cbauxfk2cz0s2a.gif)
 

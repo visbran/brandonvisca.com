@@ -26,12 +26,10 @@ faqs:
   - question: "Linkding est-il multi-utilisateur ?"
     answer: "Par défaut non, mais l'option LD_ENABLE_AUTH_PROXY permet une authentification multi-user via un reverse proxy comme Caddy ou Traefik."
 ---
-> 💡 **TL;DR**, Linkding Docker en 4 points :
->
-> - **C'est quoi ?** Un gestionnaire de bookmarks open-source, auto-hébergé et minimaliste qui archive tes liens automatiquement
-> - **Pourquoi ?** Pinboard est payant, Pocket te piste, et tes bookmarks méritent un toit privé que tu contrôles
-> - **Comment ?** Un `docker-compose.yml` de 20 lignes = opérationnel en 2 minutes, SQLite intégré
-> - **Coût ?** Zéro euro, licence MIT, environ 100 Mo de RAM
+> 💡 **TL;DR**
+> - Gestionnaire de bookmarks open-source et auto-hébergé qui archive tes liens automatiquement
+> - Un `docker-compose.yml` de 20 lignes avec SQLite : opérationnel en 2 minutes
+> - Zéro euro, licence MIT, environ 100 Mo de RAM (tourne sur un Raspberry Pi)
 
 Tu collectionnes des liens dans 4 navigateurs différents, 3 services cloud, et un fichier texte sur le bureau ? Tu paies Pinboard depuis 2012 et t'es tanné du modèle SaaS qui change les règles quand ça l'arrange ? Tu regrettes l'époque où délicieux.icio.us existait sans te vendre à Mozilla ?
 

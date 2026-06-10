@@ -13,7 +13,10 @@ tags:
 featured: false
 draft: false
 ---
-**TL;DR**, Duplicati via Docker te permet de sauvegarder chiffrées tes données vers n'importe quel stockage local ou cloud. Docker Compose complet, UI web sur le port 8200, chiffrement AES-256 et aucune ligne de commande nécessaire après l'install.
+> 💡 **TL;DR**
+> - Sauvegardes chiffrées AES-256 vers n'importe quel stockage local ou cloud (S3, B2, SFTP, Drive)
+> - Stack Docker Compose complète, interface web sur le port 8200
+> - Aucune ligne de commande nécessaire après l'installation, restauration en trois clics
 
 ## Pourquoi Duplicati en 2026 ?
 

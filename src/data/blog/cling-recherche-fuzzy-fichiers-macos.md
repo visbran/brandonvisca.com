@@ -52,11 +52,10 @@ Let's go ! 🚀
 
 ---
 
-## TL;DR : Cling en 30 secondes
-
-**Le problème** : Spotlight lent + pas de tolérance aux fautes
-
-**La solution** : Cling = Recherche fuzzy ultra-rapide
+> 💡 **TL;DR**
+> - Spotlight est lent (2 à 5 s) et ne tolère pas les fautes de frappe
+> - Cling fait de la recherche fuzzy ultra-rapide (moins de 0,5 s), tolérante aux fautes
+> - Il trouve les dotfiles et fichiers système que Spotlight ignore
 
 | Recherche | Spotlight | Cling |
 |-----------|-----------|-------|

@@ -25,7 +25,10 @@ Tu en as marre qu'Android File Transfer plante toutes les 5 minutes ? J'ai test�
 
 ## Table des matières
 
-## 🎯 TL;DR : Le verdict en 30 secondes
+> 💡 **TL;DR**
+> - Android File Transfer est gratuit mais lent (4 Mo/s), instable et plafonné à 4 Go par fichier
+> - OpenMTP : gratuit, open-source, 2x plus rapide, sans limite de taille, mon choix pour 90% des cas
+> - MacDroid (19.99$) : payant mais stable, pour qui veut le support et l'interface la plus léchée
 
 | Critère | Android File Transfer | OpenMTP | MacDroid |
 |---------|----------------------|---------|----------|
