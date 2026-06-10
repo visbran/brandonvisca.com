@@ -14,7 +14,10 @@ featured: false
 draft: false
 ogImage: "" 
 ---
-**TL;DR**, Tu peux durcir un serveur Linux en dix minutes avec dix commandes. Pas besoin d'être expert en sécurité offensive : un pare-feu actif, SSH verrouillé, mises à jour auto et un audit rapide suffisent à éliminer 90 % des attaques automatisées.
+> 💡 **TL;DR**
+> - Durcir un serveur Linux prend dix minutes avec dix commandes, sans être expert en sécurité
+> - Pare-feu actif, SSH verrouillé, mises à jour automatiques et un audit rapide
+> - Ces basiques éliminent 90 % des attaques automatisées qui scannent internet
 
 ## Pourquoi dix commandes suffisent
 

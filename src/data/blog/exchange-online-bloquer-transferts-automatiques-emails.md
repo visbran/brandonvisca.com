@@ -23,7 +23,10 @@ faqs:
   - question: "Comment détecter les transferts actifs dans Exchange Online ?"
     answer: "Lance Get-Mailbox -ResultSize Unlimited | Where-Object { $_.ForwardingSmtpAddress -or $_.ForwardingAddress } pour les redirections globales. Et Get-InboxRule sur chaque boîte pour les règles conditionnelles. Exporte en CSV pour analyse."
 ---
-> 💡 **TL;DR** : Crée une Transport Rule PowerShell (`-MessageType AutoForward -SentToScope NotInOrganization`) pour bloquer tous les transferts externes en une commande. Le RBAC ne bloque rien, c'est cosmétique. Audite ensuite avec `Get-Mailbox` + `Get-InboxRule` pour nettoyer les redirections existantes.
+> 💡 **TL;DR**
+> - Une Transport Rule PowerShell (`-MessageType AutoForward -SentToScope NotInOrganization`) bloque tous les transferts externes en une commande
+> - Le RBAC ne bloque rien, c'est cosmétique : ne compte pas dessus
+> - Audite l'existant avec `Get-Mailbox` et `Get-InboxRule` pour nettoyer les redirections déjà en place
 
 ![Exchange Online, bloquer les transferts automatiques](great-job-al0xsyu0pkftq.gif)
 

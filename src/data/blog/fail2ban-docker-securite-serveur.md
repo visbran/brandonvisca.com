@@ -13,7 +13,10 @@ tags:
 featured: false
 draft: false
 ---
-**TL;DR**, On va installer Fail2Ban via Docker pour bloquer automatiquement les IP qui s'acharnent sur tes services. Container officiel `crazymax/fail2ban`, un `docker-compose.yml`, trois fichiers de config et tu dors tranquille. Pas besoin d'installer quoique ce soit sur l'hôte, sauf Docker.
+> 💡 **TL;DR**
+> - Fail2Ban via Docker bannit automatiquement les IP qui s'acharnent sur tes services (SSH, web)
+> - Image officielle `crazymax/fail2ban`, un `docker-compose.yml` et trois fichiers de config
+> - Rien à installer sur l'hôte à part Docker : service isolé, versionné, reproductible
 
 ## Pourquoi Fail2Ban en 2026 ?
 

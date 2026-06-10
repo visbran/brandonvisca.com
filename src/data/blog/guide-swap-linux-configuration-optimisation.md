@@ -18,7 +18,10 @@ faqs:
   - question: "Comment vérifier que le swap est actif sous Linux ?"
     answer: "Lance sudo swapon --show : si la commande retourne une ligne avec ton fichier swap et sa taille, c'est actif. La commande free -h affiche aussi l'utilisation en temps réel dans la colonne Swap."
 ---
-> 💡 **TL;DR** : Le swap sous Linux se configure mieux avec un fichier qu'une partition. Abaisse la swappiness à 10 sur un serveur, surveille avec `free -h` et `swapon --show`. Même avec 8 Go de RAM, 1 à 2 Go de swap restent une bonne pratique.
+> 💡 **TL;DR**
+> - Le swap se configure mieux avec un fichier qu'avec une partition (plus souple, sans toucher au disque)
+> - Abaisse la `swappiness` à 10 sur un serveur, surveille avec `free -h` et `swapon --show`
+> - Même avec 8 Go de RAM, garder 1 à 2 Go de swap reste une bonne pratique
 
 ## Table des matières
 

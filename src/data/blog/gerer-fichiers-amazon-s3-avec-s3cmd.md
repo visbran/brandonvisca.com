@@ -24,7 +24,10 @@ faqs:
   - question: "Comment automatiser des sauvegardes S3cmd ?"
     answer: "Ajoute une ligne cron : '0 2 * * * s3cmd sync /chemin/local/ s3://mon-bucket/backup/' pour une sauvegarde quotidienne à 2h du matin."
 ---
-> 💡 **TL;DR** : Installe S3cmd (`sudo apt install s3cmd`), configure avec `s3cmd --configure` (clés AWS + région), puis utilise `s3cmd sync /local/ s3://bucket/` pour synchroniser. Compatible MinIO, Backblaze B2, OVH. Gratuit et open source.
+> 💡 **TL;DR**
+> - Installe S3cmd (`sudo apt install s3cmd`) puis configure-le avec `s3cmd --configure` (clés AWS + région)
+> - `s3cmd sync /local/ s3://bucket/` synchronise tes fichiers, parfait en cron ou pipeline
+> - Compatible MinIO, Backblaze B2 et OVH, gratuit et open source
 
 ![S3cmd, gérer Amazon S3 en CLI](friends-episode-15-friends-tv-the-one-where-estelle-dies-w3a0zo282fubpsqqyd.gif)
 
