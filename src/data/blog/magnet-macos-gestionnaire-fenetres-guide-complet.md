@@ -21,6 +21,12 @@ faqs:
   - question: "Je peux partager ma licence Magnet avec mes autres Macs ?"
     answer: "Oui, une licence Magnet fonctionne sur tous les Macs connectés au même compte Apple. Vous pouvez également la partager via le Partage Familial."
 ---
+
+> 💡 **TL;DR**
+> - Magnet est le gestionnaire de fenêtres n°1 sur macOS : snap au clavier ou par glisser
+> - Comparatif complet avec Rectangle (gratuit), BetterSnapTool et Moom
+> - Retour d'expérience après 2 ans, plus un guide d'installation détaillé
+
 ## Introduction : La gestion de fenêtres sur macOS, c'était la galère
 
 Tu connais cette sensation ?

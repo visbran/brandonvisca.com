@@ -22,6 +22,11 @@ faqs:
     answer: "Oui, la même logique s'applique aux groupes Distribution avec l'attribut msExchHideFromAddressLists."
 ---
 
+> 💡 **TL;DR**
+> - Masquer des utilisateurs de la GAL Office 365 synchronisés depuis Active Directory local
+> - Sans étendre le schéma AD (l'attribut `msExchHideFromAddressLists` manque en hybride)
+> - Solution testée avec Azure AD Connect
+
 Ah, la fameuse Liste d’Adresses Globale (GAL) d’Office 365… Tu sais, cette liste interminable où tous les utilisateurs de ton organisation s’affichent fièrement, même ceux que tu préférerais planquer dans un placard virtuel ?
 
 Si tu gères un environnement hybride avec Active Directory local et Office 365, tu as sûrement déjà pesté contre l’absence de l’attribut `msExchHideFromAddressLists` dans ton AD. Heureusement, il existe une solution élégante qui évite de foutre en l’air ton schéma Active Directory.

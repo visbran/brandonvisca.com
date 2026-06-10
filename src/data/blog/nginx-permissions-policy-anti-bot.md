@@ -20,6 +20,10 @@ faqs:
     answer: "Oui. Dans Chrome DevTools, l'onglet Application > Permissions Policy affiche les permissions autorisées et bloquées sur la page courante. L'extension Security Headers permet aussi d'analyser les headers en temps réel."
 ---
 
+> 💡 **TL;DR**
+> - Après HSTS, CSP et X-Frame-Options, le header Permissions-Policy affine ta sécurité
+> - Il restreint les API navigateur (caméra, micro, géolocalisation) accessibles à ton site
+> - Plus des protections anti-bots intégrées à Nginx pour limiter les abus
 
 - [Objectif :](#objectif)
 - [Exemple de configuration :](#exemple-de-configuration)

@@ -21,6 +21,12 @@ faqs:
   - question: "Comment migrer de LocalWP vers un hébergeur ?"
     answer: "Utilise All-in-One WP Migration : export depuis LocalWP → fichier .wpress → import sur l'hébergement."
 ---
+
+> 💡 **TL;DR**
+> - LocalWP monte un lab WordPress en local en 5 minutes, sans galérer avec XAMPP ou MAMP
+> - Tu testes, tu casses tout, tu déploies en prod quand c'est carré
+> - Guide complet avec troubleshooting et migration vers la prod gratuite
+
 **⏱️ Temps de lecture : 8 minutes**
 
 ---

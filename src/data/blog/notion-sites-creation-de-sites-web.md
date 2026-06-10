@@ -18,6 +18,10 @@ faqs:
     answer: "Oui, Notion Sites offre des fonctionnalités CMS robustes pour créer et gérer des blogs professionnels avec aisance."
 ---
 
+> 💡 **TL;DR**
+> - Notion Sites transforme tes pages Notion en vrais sites web avec un CMS intégré
+> - Personnalisation facile et gestion de domaines personnalisés
+> - Une approche intuitive pour publier en ligne sans quitter Notion
 
   - [Création et Personnalisation des Pages avec Notion](#creation-et-personnalisation-des-pages-avec-notion)
   - [Publication et Gestion des Domaines Personnalisés](#publication-et-gestion-des-domaines-personnalises)

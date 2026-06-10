@@ -19,6 +19,10 @@ faqs:
     answer: "Il n'y a pas de limite technique. Des déploiements en production gèrent des dizaines de milliers d'actifs. La seule limite est les ressources du serveur qui héberge l'instance."
 ---
 
+> 💡 **TL;DR**
+> - Gérer son inventaire IT dans Excel finit toujours mal (fichier perdu, données périmées)
+> - SnipeIT est l'alternative gratuite et open source pour suivre tes actifs IT sans stress
+> - Tu sais enfin ce que tu as, où ça se trouve et dans quel état
 
   - [Savoir ce que tu as](#savoir-ce-que-tu-as)
   - [Savoir où ça se trouve](#savoir-ou-ca-se-trouve)

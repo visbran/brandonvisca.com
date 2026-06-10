@@ -20,6 +20,10 @@ faqs:
     answer: "Révise le filtre sur userAccountControl ou userPrincipalName. L'opérateur ! exclut, pas de demi-mesures."
 ---
 
+> 💡 **TL;DR**
+> - Filtrer les utilisateurs LDAP importés dans Snipe-IT depuis Active Directory
+> - Filtres sécurisés et exclusions par OU pour ne synchroniser que les bons comptes
+> - Cas d'usage avancés et bonnes pratiques 2025
 
 - [1️⃣ Prérequis](#1-%EF%B8%8F-prerequis)
 - [2️⃣ Objectif du filtre LDAP](#2-%EF%B8%8F-objectif-du-filtre-ldap)

@@ -19,6 +19,12 @@ faqs:
   - question: "Lunar fonctionne-t-il avec plusieurs écrans externes différents ?"
     answer: "Oui. Lunar gère chaque écran indépendamment avec ses propres profils. Tu peux synchroniser la luminosité de tous les écrans ou les contrôler individuellement selon tes préférences."
 ---
+
+> 💡 **TL;DR**
+> - Lunar contrôle la luminosité de tes écrans externes sur macOS, ce que le système refuse de faire
+> - Il utilise le protocole DDC natif : tes touches F1/F2 fonctionnent enfin, avec sync auto
+> - Indispensable sur Mac Mini, installation en 3 méthodes
+
 ---
 
 

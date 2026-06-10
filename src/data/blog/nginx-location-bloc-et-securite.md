@@ -19,6 +19,10 @@ faqs:
     answer: "Active les logs de debug Nginx (error_log /var/log/nginx/debug.log debug;) et utilise nginx -T pour voir la configuration compilée. L'outil nginx-config-validator permet aussi de tester les règles de matching."
 ---
 
+> 💡 **TL;DR**
+> - Les blocs `location` de Nginx définissent le comportement du serveur selon l'URL demandée
+> - Types de location, gestion des priorités et pièges de sécurité courants
+> - Bien utilisés ils organisent tes routes ; mal utilisés ils ouvrent des failles
 
 - [Qu’est-ce qu’un bloc location dans Nginx ?](#quest-ce-quun-bloc-location-dans-nginx)
 - [Les différents types de blocs location](#les-differents-types-de-blocs-location)

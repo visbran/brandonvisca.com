@@ -18,6 +18,10 @@ faqs:
     answer: "Non. Ladybird n'est pas compatible avec les extensions Chrome (Manifest V3) ni Firefox. Sa propre API d'extensions n'est pas encore définie, c'est prévu après la release stable de 2026."
 ---
 
+> 💡 **TL;DR**
+> - Ladybird est un navigateur open source construit from scratch, pas un énième fork de Chromium
+> - Ses propres moteurs maison (LibWeb, LibJS), indépendants de Google
+> - Architecture, financement et timeline d'un projet qui veut rebattre les cartes du web
 
 - [Architecture technique : du multi-processus qui assume](#architecture-technique-du-multi-processus-qui-assume)
   - [LibWeb et LibJS : les moteurs faits maison](#lib-web-et-lib-js-les-moteurs-faits-maison)
