@@ -140,7 +140,7 @@ Le matériel nécessaire : Moins cher que tu penses
 Les 3 services à installer (dans l’ordre)
 -----------------------------------------
 
-### 🗄️ Service 1 : Nextcloud : Ton cloud personnel
+### 🗄️ Service 1 : Nextcloud, Ton cloud personnel
 
 ![Interface Nextcloud avec Docker - Auto-hébergement cloud personnel 2025](7b962eb7-0c5e-4e5b-a5e6-1bc8861d75d6.png)**C’est quoi ?**  
 Nextcloud, c’est **Google Drive + Google Photos + Google Calendar + Google Keep** dans un seul logiciel open source que tu héberges.
@@ -184,7 +184,7 @@ Nextcloud, c’est **Google Drive + Google Photos + Google Calendar + Google Kee
 
 - - - - - -
 
-### 🎬 Service 2 : Jellyfin : Ton Netflix personnel
+### 🎬 Service 2 : Jellyfin, Ton Netflix personnel
 
 ![Interface de Jellyfin avec bibliothèque multimédia](bfbdcf5f-f600-4a4d-b14d-105b0953de6d.png)**C’est quoi ?**  
 Jellyfin, c’est **Netflix + Disney+ + Prime Video + Spotify** dans un logiciel gratuit, open source, sans pub, sans télémétrie.
@@ -229,7 +229,7 @@ Jellyfin, c’est **Netflix + Disney+ + Prime Video + Spotify** dans un logiciel
 
 - - - - - -
 
-### 🔐 Service 3 : Vaultwarden : Ton coffre-fort personnel
+### 🔐 Service 3 : Vaultwarden, Ton coffre-fort personnel
 
 ![Interface Vaultwarden avec Docker - Gestionnaire mots de passe auto-hébergé 2025](9f4fac42-ac42-4dbb-a440-5d18d361d61b.png)**C’est quoi ?**  
 Vaultwarden, c’est **1Password + Dashlane + LastPass** dans un gestionnaire de mots de passe gratuit, open source, chiffré end-to-end.

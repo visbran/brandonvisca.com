@@ -32,8 +32,10 @@ _FENCE = re.compile(r"\s*(```|~~~)")
 
 def _normalize_line(line: str, is_heading: bool) -> str:
     if is_heading:
-        # tiret séparateur de titre -> deux-points
-        return re.sub(r"\s*[—–]\s*", " : ", line)
+        # titre sans deux-points : tiret séparateur -> deux-points
+        # titre avec deux-points déjà présent : -> virgule (évite le double « : »)
+        repl = ", " if ":" in line else " : "
+        return re.sub(r"\s*[—–]\s*", repl, line)
     # corps : cadratin (incise) -> virgule
     line = re.sub(r"\s*—\s*", ", ", line)
     # demi-cadratin espacé (incise) -> virgule, mais on garde les plages 2020–2025
