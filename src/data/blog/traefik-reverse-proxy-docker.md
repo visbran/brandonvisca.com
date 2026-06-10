@@ -22,7 +22,7 @@ faqs:
   - question: "Comment savoir si un certificat SSL est bien généré ?"
     answer: "Vérifie le fichier acme.json dans ton volume Traefik. Ou regarde dans le dashboard : onglet HTTP > Routers > TLS doit afficher un cadenas vert."
 ---
-> 💡 **TL;DR**, Ce qu'il faut retenir :
+> 💡 **TL;DR**
 > - Traefik découvre tes conteneurs Docker tout seul via leurs labels.
 > - Plus besoin d'éditer un fichier de config à chaque nouveau service.
 > - HTTPS Let's Encrypt en deux lignes de labels.

@@ -15,7 +15,7 @@ featured: false
 draft: false
 focusKeyword: nginx proxy manager docker
 ---
-> 💡 **TL;DR**, Nginx Proxy Manager avec Docker :
+> 💡 **TL;DR**
 > - SSL Let's Encrypt auto en quelques clics, renouvellement transparent tous les 90 jours
 > - Reverse proxy multi-services depuis une interface web, zéro fichier conf à éditer
 > - Auth HTTP et restrictions IP intégrées nativement, sans plugin externe

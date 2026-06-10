@@ -21,7 +21,7 @@ faqs:
   - question: "SSH ID est-il gratuit ?"
     answer: "La création de clés SSH ID est accessible via Termius. L'offre de base de Termius est gratuite. Vérifie les plans actuels sur termius.com pour les fonctionnalités avancées."
 ---
-> 💡 **TL;DR**, Ce qu'il faut retenir :
+> 💡 **TL;DR**
 > - SSH ID de Termius te permet d'utiliser un passkey biométrique (Face ID, Touch ID, Windows Hello) à la place de tes clés SSH classiques
 > - La clé privée reste dans le Secure Enclave de ton appareil, inextractible, non exportable, non synchronisable
 > - Provisionner un nouveau serveur se résume à une seule commande `curl`

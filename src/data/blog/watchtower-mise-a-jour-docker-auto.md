@@ -23,7 +23,7 @@ faqs:
   - question: "Peut-on programmer les vérifications de Watchtower ?"
     answer: "Oui, avec la variable WATCHTOWER_SCHEDULE au format cron. Par exemple : 0 0 4 * * * pour vérifier tous les jours à 4h du matin."
 ---
-> 💡 **TL;DR**, Ce qu'il faut retenir :
+> 💡 **TL;DR**
 > - Watchtower surveille tes images Docker et redémarre les conteneurs automatiquement quand une nouvelle version sort.
 > - Une seule commande Docker suffit pour le lancer. Zéro configuration obligatoire.
 > - Tu peux exclure certains conteneurs, programmer les vérifications et recevoir des notifications sur Discord ou Telegram.

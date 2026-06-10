@@ -24,7 +24,7 @@ faqs:
   - question: "Puis-je utiliser n8n sans Docker ?"
     answer: "Oui, via npm global (`npm install n8n -g`) ou en téléchargeant le binaire. Mais Docker reste le plus propre pour un homelab : isolation, backup des volumes, rollback facile."
 ---
-> 💡 **TL;DR**, Ce qu'il faut retenir :
+> 💡 **TL;DR**
 > - n8n est un outil d'automatisation visuel auto-hébergé, alternative à Zapier et Make.
 > - 800+ intégrations natives, licence Sustainable Use License (fair-code).
 > - Stack Docker simple : PostgreSQL + n8n + volumes persistants.

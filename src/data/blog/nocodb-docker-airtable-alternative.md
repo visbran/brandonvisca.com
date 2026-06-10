@@ -23,7 +23,7 @@ faqs:
     answer: "Oui. NocoDB se branche sur PostgreSQL, MySQL et MariaDB. Tes données restent dans ta base SQL, NocoDB n'ajoute qu'une couche visuelle."
 timezone: Europe/Paris
 ---
-> 💡 **TL;DR**, NocoDB en bref :
+> 💡 **TL;DR**
 > - Alternative open-source et auto-hébergée à Airtable, posée au-dessus de ta propre base SQL (PostgreSQL, MySQL, MariaDB).
 > - Stack Docker Compose NocoDB + PostgreSQL opérationnelle en moins de 10 minutes.
 > - Vues grille, kanban et formulaire, import CSV et API REST auto, tes données restent chez toi, sans lock-in.

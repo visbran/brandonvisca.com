@@ -261,6 +261,49 @@ def audit_toc(body: str, issues: list):
                               "supprimer : remark-toc génère le contenu automatiquement"})
 
 
+def audit_tldr(body: str, issues: list):
+    """
+    Vérifie le bloc TL;DR.
+
+    Format canonique :
+      > 💡 **TL;DR**
+      > - point
+      > - point
+      > - point
+    """
+    body_no_code = re.sub(r"```[\s\S]*?```", lambda m: "\n" * m.group().count("\n"), body)
+    lines = body_no_code.split("\n")
+    idx = next((i for i, l in enumerate(lines) if re.search(r"TL\W?DR", l, re.IGNORECASE)), None)
+
+    if idx is None:
+        issues.append({"type": "info", "cat": "tldr",
+                       "msg": "Pas de TL;DR — ajouter `> 💡 **TL;DR**` + 3 puces en tout premier"})
+        return
+
+    header = lines[idx]
+
+    # Forme canonique exacte
+    if re.match(r"^>\s*💡\s*\*\*TL;DR\*\*\s*$", header):
+        bullets = [j for j in range(idx + 1, min(idx + 6, len(lines)))
+                   if re.match(r"^>\s*-\s+\S", lines[j])]
+        if len(bullets) < 2:
+            issues.append({"type": "warning", "cat": "tldr",
+                           "msg": "TL;DR sans puces en blockquote — attendu 3 puces `> - …` (pas de prose)"})
+        return
+
+    # Présent mais non conforme : classer la cause
+    if re.match(r"^#{1,6}\s", header):
+        issues.append({"type": "error", "cat": "tldr",
+                       "msg": "TL;DR en titre (`## TL;DR`) — remplacer par `> 💡 **TL;DR**` + 3 puces en blockquote"})
+    elif header.lstrip().startswith(">"):
+        issues.append({"type": "warning", "cat": "tldr",
+                       "msg": "TL;DR en blockquote mais header non conforme — utiliser exactement `> 💡 **TL;DR**` "
+                              "(emoji 💡, sans suffixe après **TL;DR**)"})
+    else:
+        issues.append({"type": "error", "cat": "tldr",
+                       "msg": "TL;DR hors blockquote (inline ou prose) — utiliser `> 💡 **TL;DR**` + 3 puces en blockquote"})
+
+
 def audit_tags(fm_raw: str, issues: list):
     if fm_raw is None:
         return
@@ -471,6 +514,7 @@ def audit_file(filepath: Path, all_slugs: set | None = None) -> dict:
         audit_faqs(fm_raw, issues)
 
     audit_toc(body, issues)
+    audit_tldr(body, issues)
     audit_tables(body, issues)
     audit_code_blocks(body, issues)
     audit_hr_separators(body, issues)

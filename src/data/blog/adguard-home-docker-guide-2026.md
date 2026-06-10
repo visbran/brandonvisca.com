@@ -21,13 +21,12 @@ faqs:
   - question: "Quels ports utiliser pour AdGuard Home en Docker ?"
     answer: "Tu dois exposer au minimum 53/tcp et 53/udp pour le DNS, 3000/tcp pour le setup initial, et 80/tcp (ou 443/tcp pour HTTPS). Le port 67/udp est nécessaire uniquement si tu actives le DHCP."
 ---
-## TL;DR
-
-- AdGuard Home bloque pubs, trackers et sites malveillants au niveau DNS pour **tout ton réseau**.
-- Container Docker officiel : `adguard/adguardhome:latest` (moins de 30 Mo, mis à jour avril 2026).
-- Il est **plus léger que Pi-hole** et intègre DoH/DoT/DoQ nativement sans bidouiller Unbound.
-- Déploiement en 5 min avec un `docker-compose.yml` et deux ports (53 + 3000).
-- Change le DNS de ta box pour l'IP de ton serveur, et c'est réglé.
+> 💡 **TL;DR**
+> - AdGuard Home bloque pubs, trackers et sites malveillants au niveau DNS pour **tout ton réseau**.
+> - Container Docker officiel : `adguard/adguardhome:latest` (moins de 30 Mo, mis à jour avril 2026).
+> - Il est **plus léger que Pi-hole** et intègre DoH/DoT/DoQ nativement sans bidouiller Unbound.
+> - Déploiement en 5 min avec un `docker-compose.yml` et deux ports (53 + 3000).
+> - Change le DNS de ta box pour l'IP de ton serveur, et c'est réglé.
 
 ---
 

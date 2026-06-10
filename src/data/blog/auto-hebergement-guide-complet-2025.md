@@ -28,11 +28,10 @@ Bienvenue dans le monde de l’**auto-hébergement**.
 
 Spoiler : c’est moins compliqué que tu le crois, et une fois que tu auras goûté à la liberté d’héberger tes propres services, tu ne pourras plus revenir en arrière.
 
-TL;DR : L’auto-hébergement en 3 points
-
-- **C’est quoi ?** Héberger soi-même ses services (cloud, mail, sites…) au lieu de dépendre de Google/Microsoft
-- **Pour qui ?** Débutants curieux, passionnés de tech, admins qui veulent apprendre
-- **Budget ?** De 0€ (vieux PC) à 50€/mois (VPS pro)
+> 💡 **TL;DR**
+> - **C’est quoi ?** Héberger soi-même ses services (cloud, mail, sites…) au lieu de dépendre de Google/Microsoft
+> - **Pour qui ?** Débutants curieux, passionnés de tech, admins qui veulent apprendre
+> - **Budget ?** De 0€ (vieux PC) à 50€/mois (VPS pro)
 
 ## Table des matières
 

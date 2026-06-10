@@ -20,14 +20,12 @@ faqs:
   - question: "L'auto-hébergement est-il aussi fiable que les services Google ?"
     answer: "Avec de bonnes sauvegardes (règle 3-2-1) et une UPS, un homelab bien configuré peut atteindre 99.5 à 99.9% d'uptime. La différence principale : la maintenance est de ta responsabilité, pas de celle de Google."
 ---
-TL;DR
------
-
-- ✅ J’ai viré Google Drive, Photos, Gmail et Calendar
-- ✅ Économie : 240€/an (après investissement 200€)
-- ✅ Alternatives : Nextcloud, Immich, Mailcow, Jellyfin
-- ✅ Temps d’installation : Un weekend
-- ✅ Résultat : 100% fonctionnel, contrôle total de mes données
+> 💡 **TL;DR**
+> - ✅ J’ai viré Google Drive, Photos, Gmail et Calendar
+> - ✅ Économie : 240€/an (après investissement 200€)
+> - ✅ Alternatives : Nextcloud, Immich, Mailcow, Jellyfin
+> - ✅ Temps d’installation : Un weekend
+> - ✅ Résultat : 100% fonctionnel, contrôle total de mes données
 
 - - - - - -
 

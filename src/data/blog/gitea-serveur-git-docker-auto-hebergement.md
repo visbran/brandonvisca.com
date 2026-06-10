@@ -25,14 +25,13 @@ faqs:
 
 ---
 
-## TL;DR
-
-- Gitea est un serveur Git **open source et ultra-léger**, alternative crédible à GitHub, GitLab et Forgejo.
-- Container officiel : `gitea/gitea:latest` (v1.26.2, licence MIT, ~300 Mo).
-- Ports par défaut : **3000** (interface web) et **22** (Git SSH).
-- Déploiement en 5 minutes avec Docker Compose + un volume `/data` persistant.
-- SQLite pour commencer, PostgreSQL pour monter en charge proprement.
-- Reverse proxy recommandé pour le HTTPS et la sécurité.
+> 💡 **TL;DR**
+> - Gitea est un serveur Git **open source et ultra-léger**, alternative crédible à GitHub, GitLab et Forgejo.
+> - Container officiel : `gitea/gitea:latest` (v1.26.2, licence MIT, ~300 Mo).
+> - Ports par défaut : **3000** (interface web) et **22** (Git SSH).
+> - Déploiement en 5 minutes avec Docker Compose + un volume `/data` persistant.
+> - SQLite pour commencer, PostgreSQL pour monter en charge proprement.
+> - Reverse proxy recommandé pour le HTTPS et la sécurité.
 
 ---
 

@@ -40,12 +40,12 @@ J'ai découvert **Grila** (le calendrier hotkey par Low Tech Guys) à **6€ one
 **Spoiler** : Pour **80% des utilisateurs** (dont moi), **Grila suffit largement**.
 
 💡 **Dans ce comparatif** :
-- TL;DR : Tableau comparatif immédiat (verdict en 30 sec)
-- Mon contexte et méthodologie (pourquoi tu peux me croire)
-- Grila : Test complet 6 mois (vécu personnel)
-- Fantastical : Analyse détaillée (features, cas d'usage, ROI)
-- **Le verdict : Qui pour qui ?** (aide décision concrète)
-- Bonus : 3e option (Raycast Calendar)
+> 💡 **TL;DR**
+> - Mon contexte et méthodologie (pourquoi tu peux me croire)
+> - Grila : Test complet 6 mois (vécu personnel)
+> - Fantastical : Analyse détaillée (features, cas d'usage, ROI)
+> - **Le verdict : Qui pour qui ?** (aide décision concrète)
+> - Bonus : 3e option (Raycast Calendar)
 
 **Économie potentielle** : 64€/an si tu choisis Grila. Mais est-ce que ça vaut vraiment le coup ? Réponse dans 10 minutes. 🚀
 

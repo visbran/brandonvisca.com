@@ -22,7 +22,7 @@ faqs:
   - question: "Combien de ressources consomme Netdata ?"
     answer: "Sur un serveur standard, environ 1 à 3 % de CPU et 100 à 300 Mo de RAM. C'est négligeable comparé à la valeur des métriques collectées."
 ---
-> 💡 **TL;DR**, Ce qu'il faut retenir :
+> 💡 **TL;DR**
 > - Netdata surveille CPU, RAM, disques, réseau, processes et conteneurs en temps réel.
 > - Dashboard web intégré accessible sur le port 19999.
 > - Pas de configuration complexe : l'image Docker détecte automatiquement ce qu'elle peut monitorer.

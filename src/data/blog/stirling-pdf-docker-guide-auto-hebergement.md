@@ -24,7 +24,7 @@ faqs:
     answer: "Stirling-PDF est une interface web dédiée aux manipulations PDF. Il utilise parfois LibreOffice en arrière-plan pour certaines conversions, mais il est beaucoup plus simple et rapide pour les tâches courantes (fusion, split, OCR, signature)."
 timezone: Europe/Paris
 ---
-> 💡 **TL;DR**, Ce qu'il faut retenir :
+> 💡 **TL;DR**
 > - Stirling-PDF est un éditeur PDF open-source auto-hébergé (~73 000 stars GitHub).
 > - Il remplace SmallPDF (~84€/an) et Adobe Acrobat (~180€/an) gratuitement.
 > - Docker Compose en 5 minutes : mergé, split, OCR, conversion, signature.

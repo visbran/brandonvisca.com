@@ -24,7 +24,7 @@ faqs:
   - question: "Quelle est la différence avec Nextcloud Photos ?"
     answer: "Immich est spécialisé uniquement dans les médias. L'interface est fluide, la recherche par contenu (ML) est native, et l'expérience mobile est bien supérieure. Nextcloud reste le couteau-suisse, Immich est le scalpel."
 ---
-> 💡 **TL;DR** :
+> 💡 **TL;DR**
 > - Immich est une alternative open-source à Google Photos : tes photos restent sur ton serveur, pas chez Google.
 > - Installation en 5 minutes avec Docker Compose : 4 services préconfigurés, prêt à l'emploi.
 > - Synchronisation mobile automatique (iOS/Android), reconnaissance faciale, recherche par contenu.

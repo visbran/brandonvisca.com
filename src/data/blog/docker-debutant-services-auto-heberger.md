@@ -27,7 +27,7 @@ faqs:
   - question: "Docker consomme-t-il beaucoup de ressources ?"
     answer: "Docker lui-même est très léger. Ce sont les services que tu fais tourner qui consomment. Un serveur avec 4 Go de RAM peut faire tourner 5-10 services légers sans problème."
 ---
-> 💡 **TL;DR**, Docker pour débutants en 3 points :
+> 💡 **TL;DR**
 > - **C’est quoi ?** Une façon de lancer des applis dans des « boîtes » isolées
 > - **Pourquoi ?** Installation en 2 minutes, zéro conflit entre logiciels, facile à supprimer
 > - **Comment ?** Un fichier `docker-compose.yml` + une commande = service opérationnel

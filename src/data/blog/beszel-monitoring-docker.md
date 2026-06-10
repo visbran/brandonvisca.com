@@ -22,7 +22,7 @@ faqs:
     answer: "Oui. Beszel envoie les alertes par email via PocketBase, mais tu peux brancher un webhook vers Discord, Slack, n8n ou Uptime Kuma."
 timezone: Europe/Paris
 ---
-> 💡 **TL;DR**, Beszel en bref :
+> 💡 **TL;DR**
 > - Monitoring auto-hébergé ultra-léger (binaire Go) : CPU, RAM, disque et réseau collectés via SSH.
 > - Pensé pour un homelab de 3 à 10 machines, sans Prometheus ni Grafana ni base externe.
 > - Hub + agents déployés en 10 minutes avec Docker Compose.
