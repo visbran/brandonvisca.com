@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-10
-# Total articles : 99
+# Dernière mise à jour : 2026-06-11
+# Total articles : 100
+
+## Home Assistant Docker : domotique auto-hébergée
+URL: https://brandonvisca.com/home-assistant-docker-domotique-guide/
+Description: Guide complet Home Assistant Docker : déploie ta domotique auto-hébergée avec Docker Compose, Zigbee, MQTT et automatisations. Zéro cloud, 100% contrôle.
+Tags: 
+Publié: 2026-06-11T08:00:00.000Z
 
 ## PhotoPrism Docker : la galerie photo auto-hébergée qui remplace Google Photos
 URL: https://brandonvisca.com/photoprism-docker-galerie-photo/
