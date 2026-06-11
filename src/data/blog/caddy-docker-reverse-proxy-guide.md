@@ -166,7 +166,7 @@ Caddy injecte déjà automatiquement les headers `X-Forwarded-Proto` dans la plu
 
 ## Reverse proxy multi-sites avec un seul Caddy
 
-Ton Caddyfile peut gérer autant de domaines que tu veux. Si tu auto-héberges plusieurs services (Gitea, n8n, Uptime Kuma, etc.), tu configures tout dans un seul fichier :
+Ton Caddyfile peut gérer autant de domaines que tu veux. Si tu auto-héberges plusieurs services (Gitea, n8n, Uptime Kuma, [Home Assistant](/home-assistant-docker-domotique-guide/), etc.), tu configures tout dans un seul fichier :
 
 ```caddyfile
 gitea.monserveur.fr {
