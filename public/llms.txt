@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-11
-# Total articles : 100
+# Dernière mise à jour : 2026-06-12
+# Total articles : 101
+
+## File Browser Docker : ton gestionnaire de fichiers web auto-hébergé
+URL: https://brandonvisca.com/filebrowser-docker-gestionnaire-fichiers/
+Description: Héberge ton propre gestionnaire de fichiers web avec File Browser sous Docker. Installation complète, config sécurisée, reverse proxy Caddy.
+Tags: auto-hebergement, docker, gestionnaire-fichiers, debian, intermediaire
+Publié: 2026-06-12T08:00:00.000Z
 
 ## Home Assistant Docker : domotique auto-hébergée
 URL: https://brandonvisca.com/home-assistant-docker-domotique-guide/
