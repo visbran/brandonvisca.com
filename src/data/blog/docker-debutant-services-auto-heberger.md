@@ -892,17 +892,18 @@ Avec Docker :
 
 **Les 10 services de cet article te donnent une base solide pour un homelab complet :**
 
-|- Monitoring (Uptime Kuma)
-|- Gestion Docker (Portainer)
-|- Cloud perso (Nextcloud)
-|- Mots de passe (Vaultwarden)
-|- Streaming (Jellyfin)
-|- Photos (Immich)
-|- Documents (Paperless-ngx)
-|- Dashboard (Homer)
-|- Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))
-|- Sauvegarde de liens ([Linkding](/linkding-docker-bookmarks/))
-|- Reverse proxy (Nginx Proxy Manager)
+||- Monitoring (Uptime Kuma)
+||- Gestion Docker (Portainer)
+||- Cloud perso (Nextcloud)
+||- Mots de passe (Vaultwarden)
+||- Streaming (Jellyfin)
+||- Photos (Immich)
+||- Documents (Paperless-ngx)
+||- Gestionnaire de fichiers ([File Browser](/filebrowser-docker-gestionnaire-fichiers/))
+||- Dashboard (Homer)
+||- Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))
+||- Sauvegarde de liens ([Linkding](/linkding-docker-bookmarks/))
+||- Reverse proxy (Nginx Proxy Manager)
 
 **Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer. Puis ajoute les autres services au fur et à mesure. En quelques soirs, tu as un homelab complet.
 
