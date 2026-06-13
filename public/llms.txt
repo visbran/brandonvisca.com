@@ -6,7 +6,7 @@
 ## BookStack Docker : wiki pour équipes
 URL: https://brandonvisca.com/bookstack-docker-wiki-equipe/
 Description: Déploie BookStack avec Docker Compose : wiki auto-hébergé, open-source et facile pour équipes. Guide complet, comparaison alternatives, reverse proxy.
-Tags: docker, auto-hebergement, wiki, intermediaire, bookstack
+Tags: 
 Publié: 2026-06-13T08:00:00.000Z
 
 ## File Browser Docker : ton gestionnaire de fichiers web auto-hébergé
