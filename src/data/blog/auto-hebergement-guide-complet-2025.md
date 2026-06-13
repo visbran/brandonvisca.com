@@ -527,7 +527,7 @@ Documente TOUT au fur et à mesure, même si ça te semble évident.
 - **Notion** : Base de connaissances perso
 - **Obsidian** : Notes markdown locales
 - **Un simple fichier README.md** dans chaque dossier de service
-- **Bookstack** : Wiki auto-hébergé
+- **Bookstack** : Wiki auto-hébergé — j'ai publié un [guide complet pour installer BookStack avec Docker](/bookstack-docker-wiki-equipe/)
 
 **Ce qu’il faut noter :**
 

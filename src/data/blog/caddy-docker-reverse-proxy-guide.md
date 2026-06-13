@@ -117,7 +117,7 @@ networks:
 - `caddy_data` persiste les certificats et l'état ACME
 - Le service interne (Uptime Kuma) n'expose aucun port directement, il passe par le réseau Docker `proxy`
 
-Si tu cherches d'autres services à auto-héberger derrière ton reverse proxy, tu peux jeter un œil à [Gitea](/gitea-serveur-git-docker-auto-hebergement/) pour ton propre Git, ou [n8n](/n8n-docker-workflow-automation/) pour automatiser des workflows sans dépendre de Zapier.
+Si tu cherches d'autres services à auto-héberger derrière ton reverse proxy, tu peux jeter un œil à [Gitea](/gitea-serveur-git-docker-auto-hebergement/) pour ton propre Git, [BookStack](/bookstack-docker-wiki-equipe/) pour un wiki d'équipe, ou [n8n](/n8n-docker-workflow-automation/) pour automatiser des workflows sans dépendre de Zapier.
 
 ## Le Caddyfile
 
