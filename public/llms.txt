@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-12
-# Total articles : 101
+# Dernière mise à jour : 2026-06-13
+# Total articles : 102
+
+## BookStack Docker : wiki pour équipes
+URL: https://brandonvisca.com/bookstack-docker-wiki-equipe/
+Description: Déploie BookStack avec Docker Compose : wiki auto-hébergé, open-source et facile pour équipes. Guide complet, comparaison alternatives, reverse proxy.
+Tags: docker, auto-hebergement, wiki, intermediaire, bookstack
+Publié: 2026-06-13T08:00:00.000Z
 
 ## File Browser Docker : ton gestionnaire de fichiers web auto-hébergé
 URL: https://brandonvisca.com/filebrowser-docker-gestionnaire-fichiers/
