@@ -899,6 +899,7 @@ Avec Docker :
 ||- Streaming (Jellyfin)
 ||- Photos (Immich)
 ||- Documents (Paperless-ngx)
+||- Ebooks et manga ([Kavita](/kavita-docker-lecteur-ebooks/))
 ||- Gestionnaire de fichiers ([File Browser](/filebrowser-docker-gestionnaire-fichiers/))
 ||- Dashboard (Homer)
 ||- Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))

@@ -728,7 +728,7 @@ Tu viens de monter **ton propre service de streaming** en 30 minutes. Jellyfin a
 2. **Invite ta famille** : Créer des comptes utilisateurs (Dashboard → Utilisateurs)
 3. **Automatise les backups** : Sauvegarde `/config` et ta liste de films
 4. **Explore les plugins** : Intro Skipper, OpenSubtitles, Trakt…
-5. **Monte ta stack complète** : Jellyfin + Nextcloud + Vaultwarden = indépendance totale
+5. **Monte ta stack complète** : Jellyfin + Nextcloud + Vaultwarden = indépendance totale. Et si tu lis aussi des ebooks ou des mangas, j'ai récemment publié un guide complet sur [Kavita avec Docker](/kavita-docker-lecteur-ebooks/), un serveur de lecture auto-hébergé qui complète parfaitement ton homelab média.
 
 Et surtout, profite de **378€/an** dans ta poche au lieu de les filer à Netflix. 🎉
 
