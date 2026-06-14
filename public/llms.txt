@@ -6,7 +6,7 @@
 ## Kavita Docker : ton lecteur ebooks auto-hébergé (alternative à Calibre)
 URL: https://brandonvisca.com/kavita-docker-lecteur-ebooks/
 Description: Installe Kavita avec Docker : le serveur de ebooks auto-hébergé qui lit EPUB, PDF, CBZ et manga. Guide complet avec Docker Compose, config et astuces.
-Tags: auto-hebergement, docker, kavita, ebooks, intermediaire
+Tags: 
 Publié: 2026-06-14T06:00:00.000Z
 
 ## BookStack Docker : wiki pour équipes
