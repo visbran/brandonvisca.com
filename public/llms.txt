@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-14
-# Total articles : 103
+# Dernière mise à jour : 2026-06-15
+# Total articles : 104
+
+## Outline Docker : wiki auto-hébergé
+URL: https://brandonvisca.com/outline-docker-wiki-auto-heberge/
+Description: Déploie Outline Docker : wiki auto-hébergé moderne. Guide complet avec Docker Compose, comparatif Notion et alternatives wiki.
+Tags: docker, intermediaire, auto-hebergement, wiki, outline
+Publié: 2026-06-15T08:00:00.000Z
 
 ## Kavita Docker : ton lecteur ebooks auto-hébergé (alternative à Calibre)
 URL: https://brandonvisca.com/kavita-docker-lecteur-ebooks/
