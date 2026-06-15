@@ -209,7 +209,7 @@ Mon verdict pour un homelab ou une PME :
 - **BookStack** : le meilleur rapport facilité / puissance / coût. WYSIWYG, organisation intuitive, LDAP, Docker simple. C'est mon choix par défaut.
 - **Confluence** : si tu es déjà dans l'écosystème Atlassian et que tu as le budget. Sinon, c'est overpriced pour ce que ça fait.
 - **Wiki.js** : excellent si ton équipe est technique et préfère le Markdown. Moins intuitif pour les profils non-développeurs.
-- **Outline** : magnifique, mais la licence BSL impose un paiement pour l'auto-hébergement au-delà de 500 utilisateurs. Dommage.
+- **Outline** : magnifique, mais la licence BSL impose un paiement pour l'auto-hébergement au-delà de 500 utilisateurs. Si tu cherches à le déployer quand même (et que tu restes sous la limite), j'ai publié un guide complet pour [déployer Outline avec Docker](/outline-docker-wiki-auto-heberge/).
 - **MediaWiki** : la référence historique (Wikipedia), mais l'interface fait peur en 2026. Réservé aux puristes.
 
 Pour stocker les mots de passe de l'équipe, [Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/) s'intègre très bien en complément d'un wiki d'entreprise. Même principe : auto-hébergé, open-source, Docker.
