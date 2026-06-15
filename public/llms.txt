@@ -6,7 +6,7 @@
 ## Outline Docker : wiki auto-hébergé
 URL: https://brandonvisca.com/outline-docker-wiki-auto-heberge/
 Description: Déploie Outline Docker : wiki auto-hébergé moderne. Guide complet avec Docker Compose, comparatif Notion et alternatives wiki.
-Tags: docker, intermediaire, auto-hebergement, wiki, outline
+Tags: 
 Publié: 2026-06-15T08:00:00.000Z
 
 ## Kavita Docker : ton lecteur ebooks auto-hébergé (alternative à Calibre)
