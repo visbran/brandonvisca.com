@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-15
-# Total articles : 104
+# Dernière mise à jour : 2026-06-16
+# Total articles : 105
+
+## Komga Docker : serveur de BD/manga auto-hébergé
+URL: https://brandonvisca.com/komga-docker-bd-manga-auto-heberge/
+Description: Guide komga docker : déploie Komga, serveur BD/manga auto-hébergé MIT. Docker Compose, config et comparatif inclus.
+Tags: docker, auto-hebergement, intermediaire, komga, manga, medias
+Publié: 2026-06-16T08:00:00.000Z
 
 ## Outline Docker : wiki auto-hébergé
 URL: https://brandonvisca.com/outline-docker-wiki-auto-heberge/
