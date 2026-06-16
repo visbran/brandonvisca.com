@@ -6,7 +6,7 @@
 ## Komga Docker : serveur de BD/manga auto-hébergé
 URL: https://brandonvisca.com/komga-docker-bd-manga-auto-heberge/
 Description: Guide komga docker : déploie Komga, serveur BD/manga auto-hébergé MIT. Docker Compose, config et comparatif inclus.
-Tags: docker, auto-hebergement, intermediaire, komga, manga, medias
+Tags: 
 Publié: 2026-06-16T08:00:00.000Z
 
 ## Outline Docker : wiki auto-hébergé
