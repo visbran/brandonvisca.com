@@ -172,7 +172,7 @@ Tu hésites entre plusieurs solutions ? Voici le match réel :
 
 - **Tu veux un serveur ebooks généraliste (romans, tech, manga)** → **Kavita** ✅
 - **Tu as déjà une base Calibre Desktop massive et tu veux juste un accès web** → Calibre-Web
-- **Tu lis exclusivement des mangas/comics et tu veux la meilleure expérience manga** → Komga
+- **Tu lis exclusivement des mangas/comics et tu veux la meilleure expérience manga** → [Komga](/komga-docker-bd-manga-auto-heberge/)
 
 Mon avis perso : Kavita fait 90% du job des deux autres réunis, avec une interface bien plus agréable et aucune dépendance externe. Pour un homelab, c'est le choix le plus simple et le plus propre.
 
