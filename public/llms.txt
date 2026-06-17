@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-16
-# Total articles : 105
+# Dernière mise à jour : 2026-06-17
+# Total articles : 106
+
+## Memos Docker : ton bloc-notes auto-hébergé (alternative à Google Keep)
+URL: https://brandonvisca.com/memos-docker-notes-auto-heberge/
+Description: Guide memos docker complet : installe Memos avec Docker Compose pour des notes rapides auto-hébergées, Markdown natif, et alternative à Google Keep.
+Tags: docker, auto-hebergement, intermediaire, productivite, notes
+Publié: 2026-06-17 08:00:00+02:00
 
 ## Komga Docker : serveur de BD/manga auto-hébergé
 URL: https://brandonvisca.com/komga-docker-bd-manga-auto-heberge/
