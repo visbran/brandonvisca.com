@@ -6,8 +6,8 @@
 ## Memos Docker : ton bloc-notes auto-hébergé (alternative à Google Keep)
 URL: https://brandonvisca.com/memos-docker-notes-auto-heberge/
 Description: Guide memos docker complet : installe Memos avec Docker Compose pour des notes rapides auto-hébergées, Markdown natif, et alternative à Google Keep.
-Tags: docker, auto-hebergement, intermediaire, productivite, notes
-Publié: 2026-06-17 08:00:00+02:00
+Tags: 
+Publié: 2026-06-17T08:00:00.000Z
 
 ## Komga Docker : serveur de BD/manga auto-hébergé
 URL: https://brandonvisca.com/komga-docker-bd-manga-auto-heberge/
