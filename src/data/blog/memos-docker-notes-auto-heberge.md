@@ -53,7 +53,7 @@ Voici ce qu'il propose concrètement :
 
 L'image Docker officielle `ghcr.io/usememos/memos:latest` est maintenue activement. Elle supporte amd64 et arm64. La taille de l'image est ridicule (~30 Mo), le démarrage est instantané, et la consommation mémoire tourne autour de 50 Mo au repos.
 
-Si tu cherches un wiki structuré pour équipe avec des étagères, des livres et des permissions granulaires, [BookStack avec Docker](/bookstack-docker-wiki-equipe/) est beaucoup plus adapté. Si tu veux une base de connaissances collaborative avec un éditeur bloc type Notion, [Outline avec Docker](/outline-docker-wiki-auto-heberge/) est une alternative solide. Mais si ton besoin est juste de jeter des notes rapides, des commandes shell, des snippets de code et des idées sans y réfléchir, Memos est l'outil qu'il te faut.
+Si tu cherches un wiki structuré pour équipe avec des étagères, des livres et des permissions granulaires, [BookStack avec Docker](/bookstack-docker-wiki-equipe/) est beaucoup plus adapté. Si tu veux une base de connaissances collaborative avec un éditeur bloc type Notion, [Outline avec Docker](/outline-docker-wiki-auto-heberge/) est une alternative solide. Mais si ton besoin est juste de jeter des notes rapides, des commandes shell, des snippets de code et des idées sans y réfléchir, j'ai aussi couvert [Memos avec Docker](/memos-docker-notes-auto-heberge/), un bloc-notes auto-hébergé ultra-léger et minimaliste.
 
 ## Prérequis
 

@@ -41,7 +41,7 @@ Le problème du cloud SaaS pour la documentation interne, c'est que ton savoir m
 
 Outline est la réponse technique à ce problème. C'est un wiki moderne développé par la team Outline (anciennement de la team @getoutline sur GitHub), construit avec React et Node.js, qui offre une expérience utilisateur très proche de Notion : éditeur bloc, Markdown caché, collections organisées, partages granulaires. Sauf que tu le contrôles entièrement. Tu l'installes sur ton serveur, tes données restent chez toi, et personne ne te facture à la tête d'utilisateur.
 
-Si tu débutes avec Docker et l'auto-hébergement, commence par mon [guide des services essentiels](/docker-debutant-services-auto-heberger/) pour bien poser les bases. Pour un wiki plus classique orienté équipe, j'ai aussi couvert [BookStack](/bookstack-docker-wiki-equipe/) qui est moins gourmand et plus simple à déployer.
+Si tu débutes avec Docker et l'auto-hébergement, commence par mon [guide des services essentiels](/docker-debutant-services-auto-heberger/) pour bien poser les bases. Pour un wiki plus classique orienté équipe, j'ai aussi couvert [BookStack](/bookstack-docker-wiki-equipe/) qui est moins gourmand et plus simple à déployer. Et si ce que tu cherches avant tout, c'est un bloc-notes personnel ultra-rapide sans la lourdeur d'un wiki, [Memos avec Docker](/memos-docker-notes-auto-heberge/) est beaucoup plus léger qu'Outline et parfait pour les notes jetées à la volée.
 
 ## Qu'est-ce qu'Outline exactement ?
 
