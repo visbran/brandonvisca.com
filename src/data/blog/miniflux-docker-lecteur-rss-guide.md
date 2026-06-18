@@ -69,7 +69,7 @@ Le RSS, c'est le web comme il aurait dû rester :
 | **Apps mobiles** | Via API Fever | Via API | Officielles (trackées) |
 | **Open source** | Oui (GPLv3) | Oui (AGPL) | Non |
 
-Mon choix : **Miniflux** pour la simplicité radicale. Si tu préfères personnaliser à fond et installer des plugins, explore FreshRSS. Feedly, c'est pratique mais tu es le produit.
+Mon choix : **Miniflux** pour la simplicité radicale. Si tu préfères personnaliser à fond et installer des plugins, j'ai publié un guide complet sur [FreshRSS avec Docker](/freshrss-docker-lecteur-rss/). Feedly, c'est pratique mais tu es le produit.
 
 ## Prérequis
 
