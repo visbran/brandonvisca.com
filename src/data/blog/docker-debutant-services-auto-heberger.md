@@ -624,6 +624,8 @@ docker compose up -d
 3. Ajoute tes flux RSS préférés
 4. Active le thème sombre (évidemment)
 
+Pour une configuration avancée avec reverse proxy Caddy et comparatif complet FreshRSS vs Miniflux, consulte mon guide dédié sur [FreshRSS avec Docker](https://brandonvisca.com/freshrss-docker-lecteur-rss/).
+
 - - - - - -
 
 Commandes Docker essentielles (antisèche)
