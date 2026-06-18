@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-17
-# Total articles : 106
+# Dernière mise à jour : 2026-06-18
+# Total articles : 107
+
+## FreshRSS Docker : ton lecteur RSS auto-hébergé (alternative légère à Google Reader)
+URL: https://brandonvisca.com/freshrss-docker-lecteur-rss/
+Description: Guide complet pour installer FreshRSS avec Docker Compose. Lecteur RSS auto-hébergé, léger et open-source. Comparatif FreshRSS vs Miniflux vs Feedly.
+Tags: auto-hebergement, docker, freshrss, intermediaire, rss, guide
+Publié: 2026-06-18T08:00:00.000Z
 
 ## Memos Docker : ton bloc-notes auto-hébergé (alternative à Google Keep)
 URL: https://brandonvisca.com/memos-docker-notes-auto-heberge/
