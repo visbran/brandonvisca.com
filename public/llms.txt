@@ -5,8 +5,8 @@
 
 ## FreshRSS Docker : ton lecteur RSS auto-hébergé (alternative légère à Google Reader)
 URL: https://brandonvisca.com/freshrss-docker-lecteur-rss/
-Description: Guide complet pour installer FreshRSS avec Docker Compose. Lecteur RSS auto-hébergé, léger et open-source. Comparatif FreshRSS vs Miniflux vs Feedly.
-Tags: auto-hebergement, docker, freshrss, intermediaire, rss, guide
+Description: Guide complet pour installer FreshRSS avec Docker Compose. Lecteur RSS auto-hébergé et open-source. Comparatif freshrss docker, Miniflux et Feedly.
+Tags: 
 Publié: 2026-06-18T08:00:00.000Z
 
 ## Memos Docker : ton bloc-notes auto-hébergé (alternative à Google Keep)
