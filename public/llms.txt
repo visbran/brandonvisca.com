@@ -6,7 +6,7 @@
 ## Navidrome Docker : ton Spotify auto-hébergé en 5 min
 URL: https://brandonvisca.com/navidrome-docker-serveur-musique/
 Description: Guide Navidrome Docker : déploie un serveur musique auto-hébergé et open-source. Docker Compose complet + comparatif avec Jellyfin et Plex.
-Tags: docker, auto-hebergement, intermediaire, musique, streaming
+Tags: 
 Publié: 2026-06-19T08:00:00.000Z
 
 ## FreshRSS Docker : ton lecteur RSS auto-hébergé (alternative légère à Google Reader)
