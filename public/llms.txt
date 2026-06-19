@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-18
-# Total articles : 107
+# Dernière mise à jour : 2026-06-19
+# Total articles : 108
+
+## Navidrome Docker : ton Spotify auto-hébergé en 5 min
+URL: https://brandonvisca.com/navidrome-docker-serveur-musique/
+Description: Guide Navidrome Docker : déploie un serveur musique auto-hébergé et open-source. Docker Compose complet + comparatif avec Jellyfin et Plex.
+Tags: docker, auto-hebergement, intermediaire, musique, streaming
+Publié: 2026-06-19T08:00:00.000Z
 
 ## FreshRSS Docker : ton lecteur RSS auto-hébergé (alternative légère à Google Reader)
 URL: https://brandonvisca.com/freshrss-docker-lecteur-rss/
