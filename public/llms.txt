@@ -6,7 +6,7 @@
 ## Mealie Docker : gestionnaire de recettes auto-hébergé
 URL: https://brandonvisca.com/mealie-docker-recettes-auto-heberge/
 Description: Mealie Docker : déploie un gestionnaire de recettes auto-hébergé avec Docker Compose. Guide complet, variables d'environnement et comparatif avec Tandoor.
-Tags: mealie, docker, auto-hebergement, homelab, intermediaire
+Tags: 
 Publié: 2026-06-20T08:00:00.000Z
 
 ## Navidrome Docker : ton Spotify auto-hébergé en 5 min
