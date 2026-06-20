@@ -202,7 +202,7 @@ Mon verdict pour un homelab ou une utilisation technique :
 - **Standard Notes** : excellent si le chiffrement de bout en bout est ta priorité absolue. Mais l'interface est austère, la sync auto-hébergée est payante, et il n'y a pas de partage public.
 - **Joplin** : très complet avec le plugin ecosystem, l'éditeur riche et le Web Clipper. Parfait pour des notes longues et structurées. Mais il est plus lourd, plus complexe à auto-héberger (besoin de Joplin Server pour la sync), et l'interface est moins agréable pour des notes rapides.
 
-Pour stocker tes mots de passe, [Vaultwarden avec Docker](/vaultwarden-docker-gestionnaire-mots-de-passe/) reste l'indispensable complément. Pour gérer tes bookmarks, [Linkding avec Docker](/linkding-docker-bookmarks/) fait le job. Memos complète cette stack productivité auto-hébergée par la prise de notes rapide.
+Pour stocker tes mots de passe, [Vaultwarden avec Docker](/vaultwarden-docker-gestionnaire-mots-de-passe/) reste l'indispensable complément. Pour gérer tes bookmarks, [Linkding avec Docker](/linkding-docker-bookmarks/) fait le job. Memos complète cette stack productivité auto-hébergée par la prise de notes rapide. Et si tu veux aussi gérer tes recettes de cuisine de la même manière, j'ai publié un guide complet sur [Mealie avec Docker](/mealie-docker-recettes-auto-heberge/).
 
 ## Sécuriser l'accès et les données
 
