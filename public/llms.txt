@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-19
-# Total articles : 108
+# Dernière mise à jour : 2026-06-20
+# Total articles : 109
+
+## Mealie Docker : gestionnaire de recettes auto-hébergé
+URL: https://brandonvisca.com/mealie-docker-recettes-auto-heberge/
+Description: Mealie Docker : déploie un gestionnaire de recettes auto-hébergé avec Docker Compose. Guide complet, variables d'environnement et comparatif avec Tandoor.
+Tags: mealie, docker, auto-hebergement, homelab, intermediaire
+Publié: 2026-06-20T08:00:00.000Z
 
 ## Navidrome Docker : ton Spotify auto-hébergé en 5 min
 URL: https://brandonvisca.com/navidrome-docker-serveur-musique/
