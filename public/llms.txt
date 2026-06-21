@@ -3,10 +3,10 @@
 # Dernière mise à jour : 2026-06-21
 # Total articles : 110
 
-## Homer Dashboard Docker : tableau de bord homelab
+## Homer Dashboard Docker : le tableau de bord ultime pour ton homelab
 URL: https://brandonvisca.com/homer-dashboard-docker-homelab/
 Description: Guide Homer Dashboard Docker : tableau de bord auto-hébergé et statique pour centraliser tous tes services. Docker Compose inclus.
-Tags: docker, auto-hebergement, homelab, dashboard, debutant, intermediaire
+Tags: 
 Publié: 2026-06-21T08:00:00.000Z
 
 ## Mealie Docker : gestionnaire de recettes auto-hébergé
