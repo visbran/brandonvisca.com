@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-20
-# Total articles : 109
+# Dernière mise à jour : 2026-06-21
+# Total articles : 110
+
+## Homer Dashboard Docker : tableau de bord homelab
+URL: https://brandonvisca.com/homer-dashboard-docker-homelab/
+Description: Guide Homer Dashboard Docker : déploie un tableau de bord auto-hébergé et statique pour centraliser tous tes services homelab. Docker Compose complet, config YAML et comparatif.
+Tags: docker, auto-hebergement, homelab, dashboard, debutant, intermediaire
+Publié: 2026-06-21T08:00:00.000Z
 
 ## Mealie Docker : gestionnaire de recettes auto-hébergé
 URL: https://brandonvisca.com/mealie-docker-recettes-auto-heberge/
