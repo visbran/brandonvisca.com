@@ -250,6 +250,7 @@ Ce que tu peux faire avec :
 - Miniflux (lecteur RSS), j'ai un [guide complet pour l'installer avec Docker](/miniflux-docker-lecteur-rss-guide/)
 - Linkding (sauvegarde de liens et bookmarks), j'ai aussi publié un [guide pour l'installer avec Docker](/linkding-docker-bookmarks/)
 - Pi-hole (blocage pub réseau), ou [Technitium DNS Server](/technitium-dns-server/) pour un DNS récursif natif en un seul conteneur
+- Actual Budget (gestion financière personnelle), j'ai aussi publié un [guide complet pour l'installer avec Docker](/actual-budget-docker-gestion-budget/)
 
 #### Setup minimal VPS (~82€/an)
 

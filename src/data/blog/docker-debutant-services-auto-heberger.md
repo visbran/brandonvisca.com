@@ -907,9 +907,10 @@ Avec Docker :
 ||- Dashboard (Homer)
 ||- Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))
 ||- Sauvegarde de liens ([Linkding](/linkding-docker-bookmarks/))
-||- Reverse proxy (Nginx Proxy Manager)
+|||- Reverse proxy (Nginx Proxy Manager)
+|||- Gestion budget ([Actual Budget](/actual-budget-docker-gestion-budget/))
 
-**Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer. Puis ajoute les autres services au fur et à mesure. En quelques soirs, tu as un homelab complet.
+**Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer.
 
 Si tu veux aller encore plus loin, la prochaine étape c'est [sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) avant d'exposer tes services sur internet.
 
