@@ -1,77 +1,57 @@
 ---
-title: "Dépannage montage RAID mdadm en mode secours Linux : wrong fs type et partition cachée"
+title: Dépannage des problèmes de montage de matrices RAID (mdadm) en mode de secours Linux
+description: "Guide pratique de dépannage d'un montage RAID en mode secours Linux. Solution à l'erreur \"wrong fs type\" en découvrant que l'array RAID contenait une table de partitions plutôt qu'un système de fichiers."
 pubDatetime: "2025-03-13T11:37:18+01:00"
 author: Brandon Visca
-description: "Dépannage RAID mdadm en mode secours Linux : diagnostiquer wrong fs type, partition cachée non montée et restaurer le tableau RAID. Guide complet."
-focusKeyword: "RAID mdadm dépannage"
 tags:
   - linux
-  - sysadmin
+  - raid
+  - mdadm
+  - depannage
+  - stockage
   - avance
-  - homelab
-  - guide
-faqs:
-  - question: "Peut-on monter un RAID mdadm dégradé avec un seul disque fonctionnel ?"
-    answer: "Oui. La commande mdadm --assemble --force /dev/md0 /dev/sda1 force l'assemblage en mode dégradé. Le RAID est montable en lecture, mais rebuilder immédiatement sur un nouveau disque est impératif."
-  - question: "Comment identifier les membres d'un RAID en mode secours sans /etc/mdadm.conf ?"
-    answer: "Utilise mdadm --examine /dev/sdX sur chaque disque. La sortie affiche l'UUID du RAID, le nombre de membres et l'état de chaque disque. Tu peux reconstruire le tableau même sans configuration sauvegardée."
-  - question: "La commande mount -t ext4 échoue avec wrong fs type, que signifie cette erreur ?"
-    answer: "Cette erreur signifie que le système de fichiers n'est pas directement sur /dev/md0, mais sur une partition du RAID (ex: /dev/md0p1). Vérifie avec lsblk ou fdisk -l /dev/md0 pour voir les partitions du volume RAID."
+featured: false
+draft: false
+focusKeyword: RAID
 ---
-
-> 💡 **TL;DR**
-> - Erreur `wrong fs type, bad superblock` au montage d'une matrice RAID mdadm en mode secours
-> - Cause : l'array RAID contenait une table de partitions, pas directement un système de fichiers
-> - Solution : monter la bonne partition de l'array plutôt que le périphérique RAID brut
-
-- [Enquête initiale](#enquete-initiale)
-- [L’aperçu critique](#lapercu-critique)
-- [La solution](#la-solution)
-- [Leçons apprises](#lecons-apprises)
-
-
-![Illustration, Dépannage des problèmes de montage de matrices RAID (mdadm) ](no-nope-tracy-morgan-spfi6nabvuq5y.gif)
+![507](no-nope-tracy-morgan-spfi6nabvuq5y.gif)
 
 Aujourd’hui, je me suis retrouvé dans une situation stressante lorsque je n’ai pas pu accéder à ma matrice RAID en mode de secours. J’avais besoin de modifier un fichier critique situé dans `/etc/sudoers.d/`, mais je me heurtais constamment à des erreurs de montage :
 
 ```bash
 mount: /mnt/recovery: wrong fs type, bad option, bad superblock on /dev/md126, missing codepage or helper program, or other error.
-
 ```
 
+```bash
 mdadm --detail /dev/md126
 mdadm --detail /dev/md127
-
+```
 
 Les résultats ont montré que les deux matrices étaient en bon état, « State: clean » avec tous les périphériques « active sync ». Cela m’a indiqué que la configuration RAID elle-même n’était pas la source du problème.
 
-Pour approfondir la gestion des volumes RAID sous Linux, la [documentation officielle du noyau](https://raid.wiki.kernel.org/index.php/Linux_Raid) reste une référence technique de premier plan.
-
 L’aperçu critique
+-----------------
 
 Après avoir tenté plusieurs commandes de montage de base sans succès, j’ai décidé de vérifier ce qui se trouvait réellement sur le périphérique RAID à l’aide de la commande `file` :
 
 ```bash
 file -s /dev/md126
 
-```
-
 /dev/md126: DOS/MBR boot sector; partition 1 : ID=0xee, start-CHS (0x0,0,2), end-CHS (0x3ff,255,63), startsector 1, 4294967295 sectors, extended partition table (last)
-
+```
 
 La matrice RAID n’était pas formatée directement comme un système de fichiers. Au lieu de cela, elle contenait une table de partition, ce qui signifiait que je devais monter l’une des partitions à l’intérieur de la matrice RAID, et non la matrice elle-même.
 
 La solution
+-----------
 
 La solution consistait à lister les partitions sur la matrice RAID :
 
 ```bash
 fdisk -l /dev/md126
 
-```
-
 mount /dev/md126p1 /mnt/recovery
-
+```
 
 Après avoir trouvé la partition contenant mon système de fichiers racine, j’ai finalement pu accéder et modifier le fichier cible :
 
@@ -80,7 +60,3 @@ nano /mnt/recovery/etc/sudoers.d/gardeners
 
 ```
 
-## Articles connexes
-
-- [Sécurité de votre serveur linux : Comment durcir un serveur ](/securite-de-votre-serveur-linux/)
-- [Connecter les systèmes Ubuntu à Active Directory en utilisan](/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/)
