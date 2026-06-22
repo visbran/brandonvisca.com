@@ -1,7 +1,7 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-06-22
-# Total articles : 111
+# Total articles : 110
 
 ## Actual Budget Docker : gestionnaire de budget open-source auto-hébergé
 URL: https://brandonvisca.com/actual-budget-docker-gestion-budget/
@@ -446,12 +446,6 @@ URL: https://brandonvisca.com/itsm-snipeit-alternative-excel-inventaire-it/
 Description: Découvrez l''ITSM pour débutants avec SnipeIT, l''alternative gratuite à Excel pour gérer vos actifs IT sans stress. Guide complet inventaire informatique.
 Tags: 
 Publié: 2025-09-29T11:20:31+02:00
-
-## Omarchy Linux : j'ai testé la distro Arch clé en main
-URL: https://brandonvisca.com/omarchy-distribution-linux-arch-hyprland/
-Description: Omarchy Linux : la distro Arch avec Hyprland préconfigurée. Installation simplifiée, 11 thèmes, sécurité renforcée et outils dev inclus d'emblée.
-Tags: 
-Publié: 2025-09-26T12:28:27+02:00
 
 ## Ice macOS : remplace Bartender gratuitement et organise ta barre de menu
 URL: https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/
