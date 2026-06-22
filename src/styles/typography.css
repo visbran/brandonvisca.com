@@ -55,7 +55,10 @@
     }
 
     img {
-      @apply mx-auto border border-border;
+      @apply mx-auto border border-border rounded-lg;
+      max-width: min(100%, 760px);
+      max-height: 80vh;
+      height: auto;
     }
 
     figcaption {
