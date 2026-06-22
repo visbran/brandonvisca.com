@@ -5,7 +5,7 @@ title: "CV"
 
 # BRANDON VISCA
 
-**Responsable Infrastructure & Systèmes IT — Référent Technique**
+**Responsable Infrastructure & Systèmes IT, Référent Technique**
 
 📍 Chambéry (73000) | 🐙 [github.com/visbran](https://github.com/visbran) | 🌐 [brandonvisca.com](https://brandonvisca.com)
 
@@ -33,7 +33,7 @@ Référent technique unique pendant **6 ans** sur une infrastructure de **1800 u
 | **Microsoft 365** | **Sauvegarde & Sécurité** |
 | Exchange Online, SharePoint | Veeam, Synology |
 | OneDrive, Teams | pfSense, pare-feu |
-| 5 ans — 2 tenants gérés | RGPD, cybersécurité |
+| 5 ans, 2 tenants gérés | RGPD, cybersécurité |
 | **Réseau** | **Automatisation & Projet** |
 | Unifi (switches, WiFi, routeurs) | PowerShell, Bash scripting |
 | TCP/IP, routage, VLANs | Maîtrise d'ouvrage |
@@ -44,19 +44,19 @@ Référent technique unique pendant **6 ans** sur une infrastructure de **1800 u
 ## Expérience professionnelle
 
 ### Fondateur & Développeur
-**LMF Solutions (SASU), Chambéry** | Août 2025 — Présent
+**LMF Solutions (SASU), Chambéry** | Août 2025 - Présent
 
 Création et développement de plusieurs produits web sous SASU :
 
-- **SaaS enseignement supérieur** — conception produit, développement full-stack, go-to-market
-- **[mxtoolbox.eu](https://mxtoolbox.eu)** — outil en ligne d'analyse MX et de diagnostic email
-- **[ippriv.com](https://ippriv.com)** — outil en ligne d'analyse IP et de géolocalisation réseau
-- **[javidcoiffure.fr](https://javidcoiffure.fr) + [app.javidcoiffure.fr](https://app.javidcoiffure.fr)** — site vitrine et application web pour salon de coiffure
+- **SaaS enseignement supérieur** : conception produit, développement full-stack, go-to-market
+- **[mxtoolbox.eu](https://mxtoolbox.eu)** : outil en ligne d'analyse MX et de diagnostic email
+- **[ippriv.com](https://ippriv.com)** : outil en ligne d'analyse IP et de géolocalisation réseau
+- **[javidcoiffure.fr](https://javidcoiffure.fr) + [app.javidcoiffure.fr](https://app.javidcoiffure.fr)** : site vitrine et application web pour salon de coiffure
 
 ---
 
-### Responsable Informatique — Référent Technique Unique
-**Groupe ECORIS, Chambéry** | Août 2019 — Juillet 2025 (6 ans)
+### Responsable Informatique, Référent Technique Unique
+**Groupe ECORIS, Chambéry** | Août 2019 - Juillet 2025 (6 ans)
 
 Gestion autonome complète de l'infrastructure IT d'une école supérieure de commerce (**1800 utilisateurs** : 1500 étudiants + 300 collaborateurs). Référent technique unique : infrastructure, réseau, sécurité, projets et support. Évolution du poste d'**Administrateur Système** (2019-2021) à **Responsable Informatique** (2021-2025).
 
@@ -114,11 +114,11 @@ Modernisation extranet obsolète. Étude marché **8 solutions**, POC 2 finalist
 
 ## Projets personnels & veille
 
-**Blog technique IT** — [brandonvisca.com](https://brandonvisca.com)
+**Blog technique IT** : [brandonvisca.com](https://brandonvisca.com)
 Blog francophone sur l'auto-hébergement, le homelab et l'indépendance numérique. **80+ articles**, stack Astro + Cloudflare Pages.
 
 **Infrastructure Docker/Proxmox en production**
-Homelab Proxmox multi-nœuds : Nextcloud, Vaultwarden, Jellyfin, backups automatisés — en production personnelle depuis 2020.
+Homelab Proxmox multi-nœuds : Nextcloud, Vaultwarden, Jellyfin, backups automatisés, en production personnelle depuis 2020.
 
 **Veille technologique active**
 Automatisation, containerisation, cloud-native, sécurité offensive et défensive.
