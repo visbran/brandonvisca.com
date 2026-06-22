@@ -579,9 +579,9 @@ Description: Installe Vim sur macOS ou Linux en 30 min : .vimrc de base comment�
 Tags: 
 Publié: 2025-03-31T15:11:44+02:00
 
-## Dépannage montage RAID mdadm en mode secours Linux : wrong fs type et partition cachée
+## Dépannage des problèmes de montage de matrices RAID (mdadm) en mode de secours Linux
 URL: https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/
-Description: Dépannage RAID mdadm en mode secours Linux : diagnostiquer wrong fs type, partition cachée non montée et restaurer le tableau RAID. Guide complet.
+Description: Guide pratique de dépannage d'un montage RAID en mode secours Linux. Solution à l'erreur \"wrong fs type\" en découvrant que l'array RAID contenait une table de partitions plutôt qu'un système de fichiers.
 Tags: 
 Publié: 2025-03-13T11:37:18+01:00
 
