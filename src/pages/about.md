@@ -21,10 +21,10 @@ L'auto-hébergement n'est pas réservé aux ingénieurs système. Avec un mini P
 
 ## Ce que je couvre
 
-- **Homelab & Proxmox** — virtualisation, LXC, ZFS, backup
-- **Auto-hébergement** — Nextcloud, Jellyfin, Vaultwarden, Immich et tout l'écosystème self-hosted
-- **Linux & sécurité** — nginx, Caddy, headers HTTP, hardening
-- **macOS & productivité** — outils que j'utilise vraiment
+- **Homelab & Proxmox** : virtualisation, LXC, ZFS, backup
+- **Auto-hébergement** : Nextcloud, Jellyfin, Vaultwarden, Immich et tout l'écosystème self-hosted
+- **Linux & sécurité** : nginx, Caddy, headers HTTP, hardening
+- **macOS & productivité** : outils que j'utilise vraiment
 
 ## Ce que je fais en ce moment
 
