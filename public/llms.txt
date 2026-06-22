@@ -6,7 +6,7 @@
 ## Actual Budget Docker : gestionnaire de budget open-source auto-hébergé
 URL: https://brandonvisca.com/actual-budget-docker-gestion-budget/
 Description: Guide actual budget docker complet : déployez Actual Budget, gestionnaire budget open-source auto-hébergé et alternative à YNAB.
-Tags: docker, auto-hebergement, finance, debutant
+Tags: 
 Publié: 2026-06-22T08:00:00.000Z
 
 ## Homer Dashboard Docker : le tableau de bord ultime pour ton homelab
