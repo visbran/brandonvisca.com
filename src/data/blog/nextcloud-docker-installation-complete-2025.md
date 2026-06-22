@@ -1,8 +1,9 @@
 ---
 title: "Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)"
 pubDatetime: "2025-10-26T20:58:49+01:00"
+modDatetime: "2026-06-22T00:00:00+01:00"
 author: Brandon Visca
-description: "Installe Nextcloud avec Docker en 30 min. Alternative Google Drive auto-hébergée, économise 120€/an. Guide 2025 complet + HTTPS gratuit."
+description: "Installe Nextcloud avec Docker en 1h : alternative Google Drive auto-hébergée, HTTPS gratuit, backup et synchro multi-appareils. Guide complet 2026."
 focusKeyword: "Nextcloud Docker installation"
 tags:
   - docker
@@ -22,20 +23,22 @@ faqs:
 
 > 💡 **TL;DR**
 > - Google Drive / Dropbox / OneDrive à 10-20€/mois remplacés par ton Nextcloud à 3-5€/mois sur un petit VPS
-> - Installation Docker en 30 minutes, HTTPS automatique (Let's Encrypt), synchro multi-appareils
-> - Contrôle total de tes données, 120-240€/an économisés
+> - Installation Docker en moins d'1h, HTTPS automatique (Let's Encrypt), synchro multi-appareils
+> - Contrôle total de tes données, 120 à 240€/an économisés
+
+T'en as marre de payer Google ou Dropbox pour stocker tes propres fichiers ? Nextcloud, c'est ton Google Drive à toi : tes photos, tes documents, ton agenda, tes contacts, hébergés chez toi ou sur un petit VPS. En moins d'une heure avec Docker, tu reprends le contrôle.
 
 **Prérequis :**
 
 - Un serveur Linux (VPS ou machine chez toi)
-- 2 Go RAM minimum, 4 Go recommandé
-- 20 Go d’espace disque (+ ce que tu veux stocker)
+- 2 Go de RAM minimum, 4 Go recommandé
+- 20 Go d'espace disque (plus ce que tu veux stocker)
 - Un nom de domaine (10€/an suffit)
 - 1h de ton temps
 
-- - - - - -
+## Table des matières
 
-Pourquoi Nextcloud &gt; Google Drive (et les autres)
+## Pourquoi Nextcloud > Google Drive (et les autres)
 
 ### Le calcul économique qui fâche
 
@@ -49,76 +52,37 @@ Pourquoi Nextcloud &gt; Google Drive (et les autres)
 
 - VPS 2 Go RAM : 4€/mois = **48€/an**
 - Domaine : **10€/an**
-- **Total : 58€/an pour stockage illimité** (dans la limite de ton VPS)
+- **Total : 58€/an pour un stockage limité seulement par ton VPS**
 
-💰 **Économie sur 5 ans avec 2 To :** 120€ x 5 ,  58€ x 5 = **310€ économisés**
+💰 **Économie sur 5 ans avec 2 To :** 600€ chez Google contre 290€ en auto-hébergé, soit **310€ dans ta poche**.
 
-Et encore, si tu as déjà un serveur chez toi (Raspberry Pi, vieux PC…), c’est **gratuit** à part l’électricité.
+Et encore, si tu as déjà un serveur chez toi (Raspberry Pi, vieux PC), c'est **gratuit** à part l'électricité.
 
 ### Ce que tu gagnes en plus
 
-✅ **Vie privée** : Tes fichiers ne partent pas aux USA  
-✅ **Pas de limite** : Tu choisis ta capacité  
-✅ **Apps intégrées** : Calendrier, contacts, notes, galerie photos, visio…  
-✅ **Partage de fichiers** : Comme WeTransfer mais à toi  
-✅ **Conforme RGPD** : Si c’est hébergé en France, tes données restent en France
+✅ **Vie privée** : tes fichiers ne partent pas aux USA
+✅ **Pas de limite** : tu choisis ta capacité
+✅ **Apps intégrées** : calendrier, contacts, notes, galerie photos, visio
+✅ **Partage de fichiers** : comme WeTransfer, mais à toi
+✅ **Conforme RGPD** : hébergé en France, tes données restent en France
 
-- - - - - -
-
-
-- [Pourquoi Nextcloud &gt; Google Drive (et les autres)](#pourquoi-nextcloud-google-drive-et-les-autres)
-  - [Le calcul économique qui fâche](#le-calcul-economique-qui-fache)
-  - [Ce que tu gagnes en plus](#ce-que-tu-gagnes-en-plus)
-- [Avant de commencer : Choisir ton setup](#avant-de-commencer-choisir-ton-setup)
-  - [Option 1 : VPS Cloud (recommandé pour débuter)](#option-1-vps-cloud-recommande-pour-debuter)
-  - [Option 2 : Homelab (gratuit mais plus technique)](#option-2-homelab-gratuit-mais-plus-technique)
-- [Installation Nextcloud avec Docker : La méthode propre](#installation-nextcloud-avec-docker-la-methode-propre)
-  - [Étape 1 : Préparer le serveur](#etape-1-preparer-le-serveur)
-  - [Étape 2 : Créer la structure Docker Compose](#etape-2-creer-la-structure-docker-compose)
-  - [Étape 3 : Lancer Nextcloud](#etape-3-lancer-nextcloud)
-  - [Étape 4 : Configuration HTTPS avec Nginx Proxy Manager](#etape-4-configuration-https-avec-nginx-proxy-manager)
-  - [Étape 5 : Configuration initiale Nextcloud](#etape-5-configuration-initiale-nextcloud)
-- [Optimisations post-installation (important !)](#optimisations-post-installation-important)
-  - [Activer le cache Redis](#activer-le-cache-redis)
-  - [Augmenter la limite d’upload](#augmenter-la-limite-dupload)
-  - [Sécuriser avec fail2ban (optionnel mais recommandé)](#securiser-avec-fail-2-ban-optionnel-mais-recommande)
-- [Synchronisation multi-appareils](#synchronisation-multi-appareils)
-  - [Desktop (Windows/Mac/Linux)](#desktop-windows-mac-linux)
-  - [Mobile (Android/iOS)](#mobile-android-i-os)
-- [Cas d’usage réels : Qui utilise Nextcloud ?](#cas-dusage-reels-qui-utilise-nextcloud)
-  - [Scénario 1 : Famille (4 personnes)](#scenario-1-famille-4-personnes)
-  - [Scénario 2 : Freelance / Entrepreneur Solo](#scenario-2-freelance-entrepreneur-solo)
-  - [Scénario 3 : Petite asso (15 membres)](#scenario-3-petite-asso-15-membres)
-- [Backup &amp; Restauration](#backup-restauration)
-  - [Stratégie de backup recommandée](#strategie-de-backup-recommandee)
-  - [Restauration depuis backup](#restauration-depuis-backup)
-- [Problèmes courants &amp; Solutions](#problemes-courants-solutions)
-  - [❌ « Trusted domain error »](#%E2%9D%8C-trusted-domain-error)
-  - [❌ Nextcloud lent / Timeouts](#%E2%9D%8C-nextcloud-lent-timeouts)
-  - [❌ « 502 Bad Gateway » après restart](#%E2%9D%8C-502-bad-gateway-apres-restart)
-  - [❌ Espace disque plein](#%E2%9D%8C-espace-disque-plein)
-- [🎯 Nextcloud dans l’écosystème d’indépendance numérique](#%F0%9F%8E%AF-nextcloud-dans-lecosysteme-dindependance-numerique)
-- [Pour aller plus loin](#maillage-interne-pour-aller-plus-loin)
-- [Conclusion : Reprends le contrôle de tes données](#conclusion-reprends-le-controle-de-tes-donnees)
-
-
-Avant de commencer : Choisir ton setup
+## Avant de commencer : choisir ton setup
 
 ### Option 1 : VPS Cloud (recommandé pour débuter)
 
-**Pour qui ?** Tu débutes, tu veux que ça marche vite, et tu n’as pas de serveur à la maison.
+**Pour qui ?** Tu débutes, tu veux que ça marche vite, et tu n'as pas de serveur à la maison.
 
-**Recommandation VPS français** :
+**Recommandation VPS :**
 
-- **Hetzner Cloud CPX11** : 4,51€/mois HT → 2 vCPU, 2 Go RAM, 40 Go SSD, Allemagne
-- **Scaleway DEV1-S** : 0,01€/h → 2 vCPU, 2 Go RAM, 20 Go SSD, Paris
-- **OVHcloud VPS Starter** : 3,50€/mois HT → 1 vCPU, 2 Go RAM, 20 Go SSD, France
+- **Hetzner Cloud CPX11** : 4,51€/mois HT, 2 vCPU, 2 Go RAM, 40 Go SSD, Allemagne
+- **Scaleway DEV1-S** : ~6€/mois, 2 vCPU, 2 Go RAM, 20 Go SSD, Paris
+- **OVHcloud VPS Starter** : 3,50€/mois HT, 1 vCPU, 2 Go RAM, 20 Go SSD, France
 
 💡 **Pourquoi un VPS ?**
 
-- Accès depuis n’importe où (pas besoin d’ouvrir ton routeur)
+- Accès depuis n'importe où (pas besoin d'ouvrir ton routeur)
 - IP fixe incluse
-- Bande passante illimitée
+- Bande passante confortable
 - Backups automatiques disponibles
 
 ### Option 2 : Homelab (gratuit mais plus technique)
@@ -135,15 +99,15 @@ Avant de commencer : Choisir ton setup
 
 - Configuration réseau plus complexe (DynDNS, port forwarding)
 - Dépendant de ta connexion internet maison
-- Pas d’accès si ton électricité saute
+- Pas d'accès si ton électricité saute
 
-💡 **Mon conseil :** Commence sur VPS, migre sur homelab quand tu seras à l’aise.
+💡 **Mon conseil :** commence sur VPS, migre sur homelab quand tu seras à l'aise.
 
-- - - - - -
+## Installation de Nextcloud avec Docker : la méthode propre
 
-Installation Nextcloud avec Docker : La méthode propre
+![Nextcloud Docker](7b962eb7-0c5e-4e5b-a5e6-1bc8861d75d6.png)
 
-![Nextcloud Docker](7b962eb7-0c5e-4e5b-a5e6-1bc8861d75d6.png)### Étape 1 : Préparer le serveur
+### Étape 1 : préparer le serveur
 
 On part sur **Ubuntu 24.04 LTS** (ou 22.04, ça marche aussi).
 
@@ -167,15 +131,11 @@ docker --version
 docker compose version
 ```
 
-sudo apt install docker-compose-plugin
+⚠️ **Erreur fréquente** : « Permission denied » signifie que tu as oublié `newgrp docker` ou que tu n'as pas relancé ta session SSH.
 
-⚠️ **Erreur fréquente** : « Permission denied » → Tu as oublié `newgrp docker` ou tu n’as pas relancé ta session SSH.
+### Étape 2 : créer la structure Docker Compose
 
-- - - - - -
-
-### Étape 2 : Créer la structure Docker Compose
-
-On va créer un setup **Nextcloud + MariaDB + Nginx Proxy Manager** pour gérer facilement HTTPS.
+On va monter un setup **Nextcloud + MariaDB + Redis + Nginx Proxy Manager** pour gérer facilement le HTTPS.
 
 ```bash
 # Créer le dossier projet
@@ -185,6 +145,9 @@ mkdir -p ~/nextcloud && cd ~/nextcloud
 nano docker-compose.yml
 ```
 
+Colle ce contenu dans `docker-compose.yml` :
+
+```yaml
 services:
   # Base de données MariaDB
   db:
@@ -261,20 +224,19 @@ volumes:
   db:
   nextcloud:
   data:
+```
 
 💡 **Explications ligne par ligne :**
 
-- `mariadb:11.2` : Base de données performante (+ rapide que PostgreSQL pour Nextcloud)
-- `redis` : Cache qui accélère drastiquement l’interface
-- `nextcloud:28-apache` : Version 28 avec Apache intégré
-- `OVERWRITEPROTOCOL=https` : Force HTTPS même derrière un reverse proxy
-- `cron` : Container dédié qui exécute les tâches de maintenance toutes les 5 min
+- `mariadb:11.2` : base de données performante (plus rapide que PostgreSQL pour Nextcloud)
+- `redis` : cache qui accélère drastiquement l'interface
+- `nextcloud:28-apache` : version 28 avec Apache intégré
+- `OVERWRITEPROTOCOL=https` : force le HTTPS même derrière un reverse proxy
+- `cron` : container dédié qui exécute les tâches de maintenance toutes les 5 min
 
-⚠️ **CHANGE LES MOTS DE PASSE !** Remplace tous les `ChangeMotDePasseSuperSecure`, `NextcloudPassword`, `RedisPassword` par TES mots de passe.
+⚠️ **CHANGE LES MOTS DE PASSE !** Remplace tous les `ChangeMotDePasseSuperSecure`, `NextcloudPassword`, `RedisPassword` par les tiens.
 
-- - - - - -
-
-### Étape 3 : Lancer Nextcloud
+### Étape 3 : lancer Nextcloud
 
 ```bash
 # Lancer tous les containers
@@ -284,32 +246,35 @@ docker compose up -d
 docker ps
 ```
 
-## Voir les logs
+Quelques commandes utiles si ça coince au démarrage :
+
+```bash
+# Voir les logs en direct
 docker compose logs -f nextcloud
 
-## Erreur classique "Connection refused" = la DB n'est pas prête
-## Solution : attends 30 secondes et recharge la page
+# "Connection refused" = la DB n'est pas encore prête.
+# Attends 30 secondes et recharge la page.
 
-## Erreur "Permission denied" dans les logs
+# "Permission denied" dans les logs : corrige les droits
 sudo chown -R www-data:www-data ./nextcloud ./data
+```
 
-- - - - - -
+### Étape 4 : configuration HTTPS avec Nginx Proxy Manager
 
-### Étape 4 : Configuration HTTPS avec Nginx Proxy Manager
-
-Pour exposer Nextcloud en HTTPS proprement, on va utiliser **Nginx Proxy Manager** (interface graphique hyper simple).
+Pour exposer Nextcloud en HTTPS proprement, on utilise **Nginx Proxy Manager** (interface graphique hyper simple).
 
 ```bash
 # Revenir dans le home
 cd ~
 
-# Créer dossier NPM
+# Créer le dossier NPM
 mkdir nginx-proxy-manager && cd nginx-proxy-manager
 
-# Créer docker-compose.yml
+# Créer le docker-compose.yml
 nano docker-compose.yml
 ```
 
+```yaml
 version: '3.8'
 
 services:
@@ -331,6 +296,7 @@ networks:
   proxy-network:
     external: true
     name: nextcloud_nextcloud-network
+```
 
 ```bash
 # Lancer NPM
@@ -341,18 +307,21 @@ docker network create nextcloud_nextcloud-network
 docker compose up -d
 ```
 
-## Headers de sécurité
+Dans l'interface NPM (port 81), crée un **Proxy Host** qui pointe vers `nextcloud-app:80`, puis demande un certificat Let's Encrypt dans l'onglet SSL. Dans l'onglet **Advanced**, colle cette config nginx :
+
+```nginx
+# Headers de sécurité
 add_header X-Content-Type-Options "nosniff" always;
 add_header X-XSS-Protection "1; mode=block" always;
 add_header X-Frame-Options "SAMEORIGIN" always;
 add_header X-Robots-Tag "noindex, nofollow" always;
 add_header Referrer-Policy "no-referrer" always;
 
-## Headers pour Nextcloud
+# Headers pour Nextcloud
 proxy_set_header X-Forwarded-Proto $scheme;
 proxy_set_header X-Forwarded-Host $host;
 
-## Configuration .well-known pour CalDAV/CardDAV
+# Configuration .well-known pour CalDAV/CardDAV
 location = /.well-known/carddav {
     return 301 $scheme://$host/remote.php/dav;
 }
@@ -369,62 +338,49 @@ location = /.well-known/nodeinfo {
     return 301 $scheme://$host/index.php/.well-known/nodeinfo;
 }
 
-## Augmenter les timeouts pour les gros fichiers
+# Augmenter les timeouts pour les gros fichiers
 client_max_body_size 10G;
 client_body_timeout 300s;
 fastcgi_buffers 64 4K;
+```
 
-Clique **Save** → Let’s Encrypt va automatiquement générer ton certificat HTTPS !
+Clique **Save** et Let's Encrypt génère automatiquement ton certificat HTTPS.
 
 🎉 **Tu peux maintenant accéder à** `https://cloud.ton-domaine.fr`
 
-- - - - - -
+### Étape 5 : configuration initiale Nextcloud
 
-### Étape 5 : Configuration initiale Nextcloud
-
-Ouvre `https://cloud.ton-domaine.fr` → Tu arrives sur l’assistant d’installation.
+Ouvre `https://cloud.ton-domaine.fr`, tu arrives sur l'assistant d'installation.
 
 **Configuration recommandée :**
 
-1. **Compte administrateur :**
+1. **Compte administrateur :** utilisateur `admin` (ou ton prénom), mot de passe **FORT** (générateur aléatoire recommandé)
+2. **Stockage et base de données :**
+   - Dossier des données : `/var/www/html/data` (déjà configuré)
+   - Base de données : MySQL/MariaDB
+   - Utilisateur BDD : `nextcloud`, mot de passe : celui du docker-compose
+   - Nom BDD : `nextcloud`, hôte : `db:3306`
+3. **Applications recommandées :** Calendrier, Contacts, Notes, Photos. Laisse Talk de côté pour l'instant (visio gourmande en ressources).
 
-- Utilisateur : `admin` (ou ton prénom)
-- Mot de passe : **FORT** (générateur aléatoire recommandé)
+Clique **Terminer l'installation**, ça prend 1 à 2 minutes.
 
-1. **Stockage &amp; base de données :**
-
-- Dossier des données : `/var/www/html/data` (déjà configuré)
-- **Configurer la base de données** : MySQL/MariaDB
-- Utilisateur BDD : `nextcloud`
-- Mot de passe BDD : `NextcloudPassword456!` (celui du docker-compose)
-- Nom BDD : `nextcloud`
-- Hôte BDD : `db:3306`
-
-1. **Applications recommandées :**
-
-- ✅ Calendrier
-- ✅ Contacts
-- ✅ Notes
-- ✅ Photos
-- ⬜ Talk (visio, gourmand en ressources)
-
-Clique **Terminer l’installation** → Ça prend 1-2 minutes.
-
-- - - - - -
-
-Optimisations post-installation (important !)
+## Optimisations post-installation (important !)
 
 ### Activer le cache Redis
 
-Par défaut, Nextcloud ne sait pas qu’on a Redis. Il faut l’activer manuellement.
+Par défaut, Nextcloud ne sait pas qu'on a Redis. Il faut l'activer manuellement.
 
 ```bash
 # Se connecter au container Nextcloud
 docker exec -it nextcloud-app bash
+
 # Éditer config.php
 nano /var/www/html/config/config.php
 ```
 
+Ajoute ces lignes dans le tableau de config :
+
+```php
   'memcache.local' => '\OC\Memcache\APCu',
   'memcache.distributed' => '\OC\Memcache\Redis',
   'memcache.locking' => '\OC\Memcache\Redis',
@@ -433,18 +389,23 @@ nano /var/www/html/config/config.php
     'port' => 6379,
     'password' => 'RedisPassword789!',
   ),
+```
 
-Sauvegarde (Ctrl+O, Enter, Ctrl+X) et quitte le container (`exit`).
+Sauvegarde (Ctrl+O, Entrée, Ctrl+X), quitte le container (`exit`), puis redémarre :
 
 ```bash
-# Redémarrer Nextcloud
 docker restart nextcloud-app
 ```
 
-## Créer un fichier de config PHP custom
-nano ~/nextcloud/nextcloud/uploads.ini
+### Augmenter la limite d'upload
+
+Crée un fichier de config PHP custom :
 
 ```bash
+nano ~/nextcloud/nextcloud/uploads.ini
+```
+
+```ini
 upload_max_filesize = 10G
 post_max_size = 10G
 max_execution_time = 3600
@@ -452,26 +413,24 @@ max_input_time = 3600
 memory_limit = 512M
 ```
 
-## Modifier le docker-compose pour monter ce fichier
-cd ~/nextcloud
-nano docker-compose.yml
+Monte ce fichier dans le container. Dans la section `nextcloud` du `docker-compose.yml`, ajoute la ligne au volume :
 
-Dans la section `nextcloud` → `volumes`, ajoute :
-
-```bash
+```yaml
     volumes:
       - ./nextcloud:/var/www/html
       - ./data:/var/www/html/data
       - ./nextcloud/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 ```
 
-## Relancer
+Puis relance :
+
+```bash
+cd ~/nextcloud
 docker compose down
 docker compose up -d
+```
 
-🎉 **Tu peux maintenant envoyer des fichiers jusqu’à 10 Go !**
-
-- - - - - -
+🎉 **Tu peux maintenant envoyer des fichiers jusqu'à 10 Go !**
 
 ### Sécuriser avec fail2ban (optionnel mais recommandé)
 
@@ -485,16 +444,19 @@ sudo apt install fail2ban -y
 sudo nano /etc/fail2ban/filter.d/nextcloud.conf
 ```
 
+```ini
 [Definition]
 failregex = ^{"reqId":".*","level":2,"time":".*","remoteAddr":"<HOST>","user":".*","app":"core","method":".*","url":".*","message":"Login failed:
             ^{"reqId":".*","level":2,"time":".*","remoteAddr":"<HOST>","user":".*","app":"no app in context","method":".*","url":".*","message":"Login failed:
 ignoreregex =
+```
 
 ```bash
 # Créer la jail
 sudo nano /etc/fail2ban/jail.d/nextcloud.local
 ```
 
+```ini
 [nextcloud]
 enabled = true
 port = http,https
@@ -504,6 +466,7 @@ maxretry = 5
 bantime = 3600
 findtime = 600
 logpath = /home/ton-user/nextcloud/data/nextcloud.log
+```
 
 > Remplace `/home/ton-user/nextcloud/data/nextcloud.log` par le chemin réel.
 
@@ -515,33 +478,94 @@ sudo systemctl restart fail2ban
 sudo fail2ban-client status nextcloud
 ```
 
+Pour aller plus loin sur le durcissement, j'ai un guide dédié pour [sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/).
+
+## Synchronisation multi-appareils
+
+Un cloud perso sans synchro automatique, ça ne sert à rien. Bonne nouvelle : Nextcloud a des clients officiels pour tout.
+
+### Desktop (Windows / Mac / Linux)
+
+Télécharge le client desktop sur [nextcloud.com/install](https://nextcloud.com/install/) (ou `brew install --cask nextcloud` sur Mac).
+
+1. Lance le client, entre l'adresse `https://cloud.ton-domaine.fr`
+2. Connecte-toi avec ton compte (le client crée un mot de passe d'application dédié)
+3. Choisis le dossier local à synchroniser et active la **synchro sélective** : tu décides quels dossiers descendent sur quelle machine
+
+Tu obtiens un dossier `Nextcloud` qui se comporte exactement comme Dropbox : tout ce que tu glisses dedans est synchronisé partout. La fonction **Virtual Files** (Windows) garde les fichiers dans le cloud et ne les télécharge qu'au moment où tu les ouvres, parfait pour un laptop avec peu de SSD.
+
+### Mobile (Android / iOS)
+
+Installe l'app **Nextcloud** (Play Store / App Store). Deux réglages qui changent la vie :
+
+- **Auto-upload des photos** : active-le et tu remplaces Google Photos. Chaque photo prise part automatiquement vers ton serveur, en Wi-Fi uniquement si tu veux préserver ton forfait
+- **Fichiers hors ligne** : marque tes documents importants comme disponibles offline pour y accéder sans connexion
+
+Ajoute les apps **Calendrier** et **Contacts** de Nextcloud (ou la synchro CalDAV/CardDAV native) et ton téléphone est entièrement dégooglisé côté données.
+
+## Cas d'usage réels : qui utilise Nextcloud ?
+
+Pour t'aider à dimensionner ton instance, voici trois setups concrets.
+
+### Scénario 1 : famille (4 personnes)
+
+Un compte par membre, un **dossier partagé famille** pour les photos de vacances et les documents administratifs, un **calendrier partagé** pour les rendez-vous. L'auto-upload photo de chaque téléphone remplace Google Photos pour toute la maison.
+
+- **VPS conseillé** : 4 Go de RAM, 200 Go à 500 Go de disque
+- **Apps utiles** : Photos, Calendrier, Contacts, Notes
+
+### Scénario 2 : freelance / entrepreneur solo
+
+Tes documents clients au même endroit, des **liens de partage** avec mot de passe et date d'expiration (fini WeTransfer), un calendrier de rendez-vous, et la signature de PDF directement dans l'interface. Tu remplaces Dropbox Pro et tu gardes tes données confidentielles chez toi.
+
+- **VPS conseillé** : 2 à 4 Go de RAM, 100 Go de disque
+- **Apps utiles** : partage avancé, Deck (gestion de tâches), OnlyOffice pour éditer les documents
+
+### Scénario 3 : petite asso (15 membres)
+
+Des **groupes** par pôle (bureau, bénévoles), un partage de documents avec droits fins, un **tableau Deck** en mode kanban pour suivre les actions, et un calendrier d'événements visible par tous.
+
+- **VPS conseillé** : 4 à 8 Go de RAM, 500 Go de disque
+- **Apps utiles** : Deck, Calendrier, Formulaires (Forms), Groupes
+
+## Backup et restauration
+
+Ton cloud perso ne vaut rien sans sauvegarde. Règle d'or : **3-2-1** (3 copies, 2 supports, 1 hors site).
+
+### Stratégie de backup recommandée
+
+Ce script met Nextcloud en maintenance, dump la base et compresse les fichiers :
+
+```bash
 #!/bin/bash
-## Script de backup Nextcloud
-## À placer dans ~/backup-nextcloud.sh
+# Script de backup Nextcloud, à placer dans ~/backup-nextcloud.sh
 
 BACKUP_DIR="/home/backups/nextcloud"
 DATE=$(date +%Y-%m-%d_%H-%M)
 
-## Créer dossier backup
+# Créer le dossier de backup
 mkdir -p $BACKUP_DIR
 
-## Mettre Nextcloud en mode maintenance
+# Mettre Nextcloud en mode maintenance
 docker exec nextcloud-app php occ maintenance:mode --on
 
-## Backup base de données
+# Backup de la base de données
 docker exec nextcloud-db mysqldump -u nextcloud -pNextcloudPassword456! nextcloud > $BACKUP_DIR/nextcloud-db-$DATE.sql
 
-## Backup fichiers (compression)
+# Backup des fichiers (compression)
 tar -czf $BACKUP_DIR/nextcloud-data-$DATE.tar.gz ~/nextcloud/data
 tar -czf $BACKUP_DIR/nextcloud-config-$DATE.tar.gz ~/nextcloud/nextcloud/config
 
-## Désactiver mode maintenance
+# Désactiver le mode maintenance
 docker exec nextcloud-app php occ maintenance:mode --off
 
-## Garder seulement les 7 derniers backups
+# Garder seulement les 7 derniers backups
 find $BACKUP_DIR -type f -mtime +7 -delete
 
-echo "✅ Backup terminé : $DATE"
+echo "Backup terminé : $DATE"
+```
+
+Rends-le exécutable et automatise-le avec cron :
 
 ```bash
 # Rendre exécutable
@@ -550,184 +574,153 @@ chmod +x ~/backup-nextcloud.sh
 # Tester
 ./backup-nextcloud.sh
 
-# Automatiser avec cron (tous les jours à 2h du matin)
+# Automatiser (tous les jours à 2h du matin)
 crontab -e
 ```
 
-0 2 * * * /home/ton-user/backup-nextcloud.sh >> /home/ton-user/backup.log 2>&1
-
-**Méthode 2 : Backup vers cloud externe (paranoia niveau ++)**
+Ajoute cette ligne dans le crontab :
 
 ```bash
-# Installer rclone (sync vers S3, Backblaze, etc.)
+0 2 * * * /home/ton-user/backup-nextcloud.sh >> /home/ton-user/backup.log 2>&1
+```
+
+### Backup vers un cloud externe (le hors-site du 3-2-1)
+
+Pour la copie hors site, rclone synchronise tes backups vers Backblaze B2, S3 ou autre :
+
+```bash
+# Installer rclone
 curl https://rclone.org/install.sh | sudo bash
 
 # Configurer une destination (exemple : Backblaze B2)
 rclone config
 # Suis l'assistant interactif
 
-# Modifier le script de backup pour envoyer ailleurs
+# Envoyer les backups hors site
 rclone sync /home/backups/nextcloud remote-b2:nextcloud-backups
 ```
 
-## 1. Réinstaller Docker + Docker Compose
+### Restauration depuis un backup
+
+Le jour où ton serveur meurt, voici la procédure complète :
+
+```bash
+# 1. Réinstaller Docker + Docker Compose
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
-## 2. Recréer la structure
+# 2. Recréer la structure
 mkdir -p ~/nextcloud && cd ~/nextcloud
 
-## 3. Copier le docker-compose.yml (tu l'as sauvegardé à part, hein ?)
+# 3. Récupérer ton docker-compose.yml (tu l'as sauvegardé à part, hein ?)
 
-## 4. Extraire les backups
+# 4. Extraire les backups
 tar -xzf nextcloud-data-XXXX.tar.gz -C ~/
 tar -xzf nextcloud-config-XXXX.tar.gz -C ~/nextcloud/nextcloud/
 
-## 5. Restaurer la base de données
-docker compose up -d db  # Lancer juste la DB d'abord
+# 5. Restaurer la base de données
+docker compose up -d db   # Lancer juste la DB d'abord
 sleep 10
 docker exec -i nextcloud-db mysql -u nextcloud -pNextcloudPassword456! nextcloud < nextcloud-db-XXXX.sql
 
-## 6. Lancer Nextcloud
+# 6. Lancer Nextcloud
 docker compose up -d
 
-## 7. Réparer les permissions si nécessaire
+# 7. Réparer les permissions si nécessaire
 docker exec nextcloud-app chown -R www-data:www-data /var/www/html
+```
 
 🎉 **Tu as récupéré toutes tes données !**
 
-- - - - - -
+## Problèmes courants et solutions
 
-Problèmes courants &amp; Solutions
+### « Trusted domain error »
 
-### ❌ « Trusted domain error »
+**Symptôme :** « Vous accédez au serveur depuis un domaine non approuvé ».
 
-**Symptôme :** Message d’erreur « Vous accédez au serveur depuis un domaine non approuvé ».
-
-**Cause :** Nextcloud refuse les connexions depuis un domaine non configuré.
-
-**Solution :**
+**Solution :** ajoute ton domaine dans la config.
 
 ```bash
 docker exec -it nextcloud-app bash
 nano /var/www/html/config/config.php
 ```
 
+```php
 'trusted_domains' =>
 array (
   0 => 'localhost',
   1 => 'ton-ip-serveur',
   2 => 'cloud.ton-domaine.fr',
 ),
+```
 
-- - - - - -
+### Nextcloud lent ou timeouts
 
-### ❌ Nextcloud lent / Timeouts
+**Symptôme :** l'interface rame, les uploads échouent après 30 secondes.
 
-**Symptôme :** L’interface rame, les uploads échouent après 30 secondes.
-
-**Causes possibles :**
-
-1. Redis pas activé → Voir section « Optimisations »
-2. VPS sous-dimensionné (&lt; 2 Go RAM)
-3. PHP mal configuré
-
-**Solution PHP :**
+**Causes possibles :** Redis pas activé (voir section Optimisations), VPS sous-dimensionné (moins de 2 Go de RAM) ou PHP mal configuré.
 
 ```bash
-# Éditer la config
+# Augmenter les limites PHP
 nano ~/nextcloud/nextcloud/uploads.ini
 ```
 
+```ini
 max_execution_time = 7200
 max_input_time = 7200
 memory_limit = 1G
+```
 
 ```bash
 docker compose restart nextcloud
 ```
 
-## Attends 30-60 secondes (MariaDB est lente à démarrer)
+Souvent, c'est juste que la DB n'était pas prête (MariaDB met 30 à 60 secondes à démarrer). Attends et relance.
 
-## Si ça persiste, check les logs
+### Commandes de maintenance utiles
+
+```bash
+# Voir les logs
 docker compose logs -f nextcloud
 docker compose logs -f db
 
-Souvent c’est juste que la DB n’était pas prête. Relance :
-
-```bash
-docker compose restart nextcloud
-```
-
-## Vérifier l'espace
+# Vérifier l'espace disque
 df -h
 
-## Nettoyer les anciennes images Docker
+# Nettoyer les anciennes images Docker
 docker system prune -a
 
-## Nettoyer les versions de fichiers Nextcloud (garde 5 versions)
+# Nettoyer les versions de fichiers (garde l'historique récent)
 docker exec nextcloud-app php occ versions:cleanup
 
-## Supprimer les fichiers en corbeille
+# Vider la corbeille de tous les utilisateurs
 docker exec nextcloud-app php occ trashbin:cleanup --all-users
+```
 
-## Dernière option : augmenter le VPS ou ajouter un volume
+## Nextcloud dans l'écosystème d'indépendance numérique
 
-- - - - - -
+Félicitations, tu viens de franchir un cap : **remplacer Google Drive, Google Photos et Google Docs** d'un seul coup. Mais l'indépendance numérique ne s'arrête pas au stockage.
 
-🎯 Nextcloud dans l’écosystème d’indépendance numérique
+Nextcloud est **le premier pilier d'une stack complète** qui peut te faire économiser jusqu'à 534€/an :
 
-Félicitations, tu viens de franchir un cap majeur : **remplacer Google Drive, Google Photos ET Google Docs** d’un seul coup. Mais soyons honnêtes, l’indépendance numérique ne s’arrête pas au stockage cloud.
+- ✅ **Nextcloud** : remplace Google Drive/Photos/Docs (que tu viens d'installer)
+- 📸 **PhotoPrism** : si tu préfères une galerie photo dédiée avec reconnaissance faciale IA, j'ai un guide pour [installer PhotoPrism avec Docker](https://brandonvisca.com/photoprism-docker-galerie-photo/)
+- 🎬 **Jellyfin** : remplace Netflix/Prime Video, voir mon [guide Jellyfin avec Docker](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/) (économie ~240€/an)
+- 🔐 **Vaultwarden** : remplace LastPass/1Password avec [Vaultwarden en Docker](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/) (économie ~60€/an)
 
-Si tu veux vraiment te libérer des GAFAM, Nextcloud est **le premier pilier d’une stack complète** qui te fera économiser jusqu’à **534€/an** :
+**Résultat ?** Une infrastructure 100% sous ton contrôle, sans abonnement, qui tient sur un simple Raspberry Pi 4.
 
-- ✅ **Nextcloud** → Remplace Google Drive/Photos/Docs (que tu viens d'installer)
-- 📸 **PhotoPrism** → Si tu préfères une galerie photo dédiée avec reconnaissance faciale IA et albums partagés, j'ai publié un guide complet pour [installer PhotoPrism avec Docker](/photoprism-docker-galerie-photo/)
-- 🎬 **Jellyfin** → Remplace Netflix/Prime Video (économie : ~240€/an)
-- 🔐 **Vaultwarden** → Remplace LastPass/1Password (économie : ~60€/an)
+👉 **[Découvre la stack complète d'indépendance numérique](https://brandonvisca.com/independance-numerique-2025-guide-complet/)**
 
-**Résultat ?** Une infrastructure 100% sous ton contrôle, sans abonnement récurrent, et qui peut tourner sur un simple Raspberry Pi 4.
+## Pour aller plus loin
 
-👉 **[Découvre la stack complète d’indépendance numérique (guide pas à pas)](https://brandonvisca.com/independance-numerique-2025-guide-complet/)**
+- [Sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) : firewall, SSH, fail2ban, mises à jour automatiques
+- [Docker pour débutants](https://brandonvisca.com/docker-debutant-services-auto-heberger/) : comprendre Docker et créer d'autres services
+- [Nginx : optimiser les headers HTTP](https://brandonvisca.com/securiser-nginx-avec-headers-http/) : renforcer la sécurité de ton reverse proxy
+- [Documentation officielle Nextcloud](https://docs.nextcloud.com/) : la référence complète
 
-*Note : Si tu suis ce guide, tu auras une vision d’ensemble de l’architecture + les liens entre ces 3 services.*
+## Conclusion : reprends le contrôle de tes données
 
-- - - - - -
+Tu viens de monter **ton propre cloud perso** en moins d'1h. Nextcloud avec Docker, c'est économique (58€/an contre 120€+ pour les clouds commerciaux), privé (tes données chez toi), puissant (calendrier, contacts, notes, galerie, visio) et évolutif (tu ajoutes de l'espace quand tu veux).
 
-Pour aller plus loin
-
-Si tu veux pousser ton setup plus loin, consulte ces guides complémentaires :
-
-🔒 **[Sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/)** → Firewall, SSH, fail2ban, mises à jour automatiques
-
-🐳 **[Docker pour débutants](https://brandonvisca.com/docker-debutant-services-auto-heberger/)** → Si tu veux mieux comprendre Docker et créer d’autres services
-
-🌐 **[Nginx : Optimiser les headers HTTP](https://brandonvisca.com/securiser-nginx-avec-headers-http/)** → Pour renforcer la sécurité de ton reverse proxy
-
-- - - - - -
-
-Conclusion : Reprends le contrôle de tes données
-
-Tu viens de mettre en place **ton propre cloud perso** en moins d’1h. Nextcloud avec Docker, c’est :
-
-✅ Économique (58€/an vs 120€+ pour les clouds commerciaux)  
-✅ Privé (tes données chez toi, pas chez Google/Microsoft)  
-✅ Puissant (calendrier, contacts, notes, galerie, visio…)  
-✅ Scalable (tu ajoutes de l’espace quand tu veux)
-
-**Prochaines étapes suggérées :**
-
-1. **Configurer les apps** : Calendrier, Contacts, Notes, Deck (kanban)
-2. **Installer OnlyOffice** : Éditer des documents Word/Excel directement dans Nextcloud
-3. **Activer 2FA** : Paramètres → Sécurité → Authentification à deux facteurs
-4. **Partager avec tes proches** : Créer des comptes pour ta famille
-5. **Automatiser les backups** : Utilise le script fourni + cron
-
-Et surtout, dis adieu aux 10-20€/mois de Google Drive. 🎉
-
-💬 **Questions, galères, ou réussites ?** Balance tout en commentaire, je réponds à tout le monde !
-
-## Articles connexes
-
-- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économ](/jellyfin-docker-alternative-netflix-gratuite/)
-- [Nebula-Sync : synchroniser plusieurs Pi-hole v6 gratuitement](/nebula-sync-pihole-v6-installation-docker-guide/)
+Tes prochaines étapes : active la double authentification dans **Paramètres, Sécurité**, installe OnlyOffice pour éditer tes documents, crée des comptes pour tes proches, et laisse le script de backup tourner en cron. Le reste, c'est du bonus. Tu as déjà dit adieu aux 10 à 20€/mois de Google Drive.
