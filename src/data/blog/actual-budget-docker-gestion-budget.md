@@ -297,7 +297,7 @@ docker compose up -d
 
 **Prévention** : backup quotidien avec Duplicati.
 
-## FAQ – Actual Budget Docker
+## FAQ : Actual Budget Docker
 
 ### Actual Budget est-il vraiment gratuit ?
 

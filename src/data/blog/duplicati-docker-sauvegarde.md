@@ -143,7 +143,7 @@ Duplicati génère également des rapports d'intégrité (`test` et `verify`) qu
 
 **Backup de la base de données :** si tu sauvegardes une base PostgreSQL ou MariaDB utilisée par Nextcloud ou Vaultwarden, ne copie pas les fichiers bruts pendant que la base est active. Utilise un pre-backup script (pg_dump, mysqldump) ou les outils natifs de Duplicati pour exécuter des commandes avant/après le backup.
 
-**Organise tes fichiers avant de sauvegarder :** Avant de lancer Duplicati, assure-toi d'avoir un gestionnaire de fichiers bien structuré sur ton serveur. J'utilise [File Browser](/filebrowser-docker-gestionnaire-fichiers/) pour ça — interface web simple, multi-utilisateur, parfait pour préparer les dossiers sources avant backup.
+**Organise tes fichiers avant de sauvegarder :** Avant de lancer Duplicati, assure-toi d'avoir un gestionnaire de fichiers bien structuré sur ton serveur. J'utilise [File Browser](/filebrowser-docker-gestionnaire-fichiers/) pour ça, interface web simple, multi-utilisateur, parfait pour préparer les dossiers sources avant backup.
 
 **Exposition du port 8200 :** ne met jamais Duplicati en face d'Internet sans mot de passe, sans VPN ou sans reverse proxy avec authentification. L'interface permet de lire, restaurer et supprimer des backups. C'est une cible idéale.
 
