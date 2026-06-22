@@ -55,7 +55,7 @@ C'est la réponse parfaite à *"j'ai besoin de merger deux PDF rapidement sans o
 | OCR intégré | Oui (Tesseract) | Oui | Oui |
 | Conversion Office | Oui (LibreOffice) | Oui | Oui |
 | Signature PDF | Oui | Oui | Oui |
-| Limite de taille | Tu décides | 5–100 Mo | 100 Mo |
+| Limite de taille | Tu décides | 5 à 100 Mo | 100 Mo |
 | Open-source | ✅ MIT | ❌ Non | ❌ Non |
 
 Mon avis perso : à moins que ton entreprise impose Adobe pour des raisons de conformité très strictes, il n'y a aucune raison de payer pour ce que Stirling-PDF fait gratuitement et mieux.
