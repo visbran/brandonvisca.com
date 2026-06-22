@@ -1,11 +1,13 @@
 ---
-title: "Oh My Zsh + Powerlevel10k : guide complet installation 2026"
-description: "Oh My Zsh + Powerlevel10k 2026 : installe et configure ton terminal en 15 min. Plugins indispensables, thèmes pro, config avancée."
+title: "Oh My Zsh + Powerlevel10k : terminal pro en 15 min (2026)"
+description: "Installe Oh My Zsh + Powerlevel10k en 15 min : ma config .zshrc prête à copier, plugins essentiels et thème pro, testés en 2026."
 pubDatetime: 2025-03-31 15:55:32+02:00
-modDatetime: 2026-05-06 00:00:00+01:00
+modDatetime: 2026-06-22 00:00:00+01:00
 author: Brandon Visca
 tags:
-  - terminal
+  - oh-my-zsh
+  - powerlevel10k
+  - zsh
   - macos
   - productivite
   - intermediaire
@@ -14,7 +16,7 @@ draft: false
 focusKeyword: Oh My Zsh
 faqs:
   - question: "Oh My Zsh fonctionne-t-il sur Linux ?"
-    answer: "Oui. Oh My Zsh fonctionne sur macOS, Linux et WSL. La procédure d'installation est identique curl ou wget, même commande."
+    answer: "Oui. Oh My Zsh fonctionne sur macOS, Linux et WSL. La procédure d'installation est identique, curl ou wget, même commande."
   - question: "Powerlevel10k ralentit-il le terminal ?"
     answer: "Non, c'est l'inverse. Powerlevel10k est 10 à 100x plus rapide que les thèmes classiques grâce à son rendu asynchrone. Il ne bloque jamais le prompt."
   - question: "Comment désinstaller Oh My Zsh ?"
@@ -77,7 +79,7 @@ Git est indispensable pour Oh My Zsh :
 # Ubuntu/Debian
 sudo apt install git
 
-# macOS déjà installé normalement
+# macOS, déjà installé normalement
 git --version
 # Ou avec Homebrew : brew install git
 
@@ -302,7 +304,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-Active-les dans `.zshrc`  `zsh-syntax-highlighting` toujours en dernier :
+Active-les dans `.zshrc`, `zsh-syntax-highlighting` toujours en dernier :
 
 ```bash
 plugins=(
@@ -313,7 +315,7 @@ plugins=(
 )
 ```
 
-> 🔗 **Pour aller plus loin** : si tu veux une sélection ciblée des plugins qui changeront vraiment ta vie au quotidien, j'ai publié un dédié sur les [7 plugins Zsh essentiels](/zsh-plugins-essentiels-guide/) que j'utilise tous les jours sur mes serveurs et mes Macs.
+> 🔗 **Pour aller plus loin** : pour une sélection ciblée, j'ai publié un guide dédié sur les [7 plugins Zsh essentiels](https://brandonvisca.com/zsh-plugins-essentiels-guide/) que j'utilise tous les jours sur mes serveurs et mes Macs.
 
 ### Plugins par cas d'usage
 
@@ -429,7 +431,7 @@ typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
 )
 ```
 
-💡 **Astuce** : le fichier `~/.p10k.zsh` est très bien documenté. Chaque segment a un commentaire. Prends 15 minutes pour le parcourir tu trouveras des options insoupçonnées.
+💡 **Astuce** : le fichier `~/.p10k.zsh` est très bien documenté. Chaque segment a un commentaire. Prends 15 minutes pour le parcourir, tu trouveras des options insoupçonnées.
 
 ## Maintenance et dépannage
 
@@ -513,7 +515,7 @@ uninstall_oh_my_zsh
 
 Oh My Zsh + Powerlevel10k, c'est le combo que tu installes une fois et que tu gardes sur tous tes Macs et serveurs. En 15 minutes, ton terminal passe de "fonctionnel" à "je veux l'ouvrir tout le temps".
 
-Si tu pars de zéro sur macOS, enchaîne avec iTerm2 : j'ai tout détaillé dans le [guide iTerm2 macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) configuration Hotkey Window, profils SSH et thèmes inclus.
+Si tu pars de zéro sur macOS, enchaîne avec iTerm2 : j'ai tout détaillé dans le [guide iTerm2 macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/), configuration Hotkey Window, profils SSH et thèmes inclus.
 
 ## Pour aller plus loin
 
@@ -521,10 +523,3 @@ Si tu pars de zéro sur macOS, enchaîne avec iTerm2 : j'ai tout détaillé dans
 - [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) : prérequis indispensable sur Mac
 - [Documentation officielle Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki) : wiki complet avec tous les plugins
 - [Powerlevel10k GitHub](https://github.com/romkatv/powerlevel10k) : config avancée et options cachées
-
-## Articles connexes
-
-- [10 Extensions Raycast indispensables pour développeurs et sysadmins](/10-extensions-raycast-indispensables-pour-developpeurs-et-sysadmins/)
-- [iTerm2 macOS 2026 : guide complet (install, config, thèmes)](/iterm2-guide-configuration-macos-2025/)
-- [Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025)](/shutter-encoder-mac-alternative-handbrake/)
-- [Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/)
