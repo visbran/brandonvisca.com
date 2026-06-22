@@ -9,7 +9,7 @@ Tu as une question sur un tuto, une coquille à signaler, ou une idée de collab
 
 **Email :** [contact@brandonvisca.com](mailto:contact@brandonvisca.com)
 
-**GitHub :** [github.com/visbran](https://github.com/visbran) — pour les issues et suggestions
+**GitHub :** [github.com/visbran](https://github.com/visbran), pour les issues et suggestions
 
 ---
 

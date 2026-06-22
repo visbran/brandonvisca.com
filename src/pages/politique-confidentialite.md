@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "Politique de confidentialité"
-description: "Politique de confidentialité de brandonvisca.com — collecte de données, hébergeur, droits RGPD."
+description: "Politique de confidentialité de brandonvisca.com : collecte de données, hébergeur, droits RGPD."
 ---
 
 *Dernière mise à jour : avril 2026*
@@ -23,7 +23,7 @@ Brandonvisca.com est un blog statique sans :
 - Cookies de suivi ou analytics
 - Publicités
 
-## 3. Hébergeur — Cloudflare Pages
+## 3. Hébergeur : Cloudflare Pages
 
 Ce site est hébergé par **Cloudflare, Inc.** (101 Townsend St, San Francisco, CA 94107, États-Unis).
 
@@ -43,7 +43,7 @@ Si des ressources tierces nécessitant des cookies sont ajoutées à l'avenir (a
 
 ## 6. Vos droits (RGPD)
 
-En vertu du Règlement Général sur la Protection des Données (RGPD — Règlement UE 2016/679), vous disposez des droits suivants :
+En vertu du Règlement Général sur la Protection des Données (RGPD, Règlement UE 2016/679), vous disposez des droits suivants :
 
 - **Droit d'accès** (Art. 15) : obtenir une copie de vos données
 - **Droit de rectification** (Art. 16) : corriger des données inexactes

@@ -130,7 +130,7 @@ const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
       // Prevent double initialization
       if (pageFindSearch.childElementCount > 0) return;
 
-      // @ts-expect-error — Missing types for @pagefind/default-ui package.
+      // @ts-expect-error: Missing types for @pagefind/default-ui package.
       const { PagefindUI } = await import("@pagefind/default-ui");
 
       // Display warning in dev mode
