@@ -178,7 +178,7 @@ Héberger chez toi les services « lourds » (fichiers, médias), et sur un VPS 
 #### Sur VPS
 
 - **Uptime Kuma** : Monitoring de tous tes services
-- **WireGuard** : VPN pour accéder à ton homelab de l’extérieur
+- **WireGuard** : VPN pour accéder à ton homelab de l'extérieur. J'ai publié un guide complet pour le déployer avec Docker : [WireGuard Docker : VPN ultra-simple pour ton homelab](/wireguard-docker-vpn-homelab/).
 - **Nginx Proxy Manager** : Reverse proxy central
 - **Vaultwarden** : Gestionnaire de mots de passe (critique)
 

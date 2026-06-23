@@ -756,7 +756,7 @@ Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** t
 
 - [Sécuriser ton serveur Linux : Guide complet](https://brandonvisca.com/securite-de-votre-serveur-linux/)
 - [Nginx : Sécuriser avec les headers HTTP](https://brandonvisca.com/securiser-nginx-avec-headers-http/)
-- [WireGuard VPN : Accès sécurisé à ton homelab](https://brandonvisca.com/wireguard-vpn-docker/) *(à venir)*
+- [WireGuard VPN : Accès sécurisé à ton homelab](https://brandonvisca.com/wireguard-docker-vpn-homelab/)
 
 **Matériel &amp; Optimisation :**
 
