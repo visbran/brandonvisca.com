@@ -6,7 +6,7 @@
 ## WireGuard Docker : VPN ultra-simple pour ton homelab
 URL: https://brandonvisca.com/wireguard-docker-vpn-homelab/
 Description: Guide WireGuard Docker : déploie un VPN simple et sécurisé avec Docker Compose. Comparatif, config pas à pas et astuces homelab.
-Tags: wireguard, docker, securite, vpn, reseau, debutant
+Tags: 
 Publié: 2026-06-23T08:00:00.000Z
 
 ## Actual Budget Docker : gestionnaire de budget open-source auto-hébergé
