@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-23
-# Total articles : 111
+# Dernière mise à jour : 2026-06-24
+# Total articles : 112
+
+## Chrony Docker : serveur NTP précis pour ton homelab
+URL: https://brandonvisca.com/chrony-docker-serveur-ntp-homelab/
+Description: Déploie un serveur NTP précis avec Chrony sous Docker. Synchronisation temps Linux, config complète et comparatif chrony vs ntpd vs timesyncd.
+Tags: 
+Publié: 2026-06-24T08:00:00.000Z
 
 ## WireGuard Docker : VPN ultra-simple pour ton homelab
 URL: https://brandonvisca.com/wireguard-docker-vpn-homelab/
