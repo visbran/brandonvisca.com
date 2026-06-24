@@ -293,6 +293,7 @@ Ces dix commandes couvrent les fondations. Pour aller plus loin, pense à :
 
 - Configurer un système de détection d'intrusion (AIDE, OSSEC).
 - Centraliser les logs avec rsyslog ou un outil comme Beszel.
+- Synchroniser précisément l'heure de tous tes serveurs avec un serveur NTP local — j'utilise [Chrony en Docker](/chrony-docker-serveur-ntp-homelab/) pour garder tous mes nœuds alignés au milliseconde près.
 - Mettre en place des sauvegardes chiffrées et testées.
 - Auditer régulièrement les comptes et groupes avec `cat /etc/passwd | grep /bin/bash`.
 
