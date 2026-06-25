@@ -6,7 +6,7 @@
 ## GLPI Agent Docker : monitorer tes postes clients
 URL: https://brandonvisca.com/glpi-agent-docker-monitorer-postes/
 Description: Déploie GLPI Agent Docker pour inventorier automatiquement ton parc informatique. Guide complet avec docker-compose et dépannage.
-Tags: docker, auto-hebergement, intermediaire, glpi, inventaire
+Tags: 
 Publié: 2026-06-25T08:00:00.000Z
 
 ## Chrony Docker : serveur NTP précis pour ton homelab
