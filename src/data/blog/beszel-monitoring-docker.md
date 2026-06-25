@@ -250,6 +250,8 @@ Beszel n'est pas parfait pour tout le monde. Voici ce qu'il faut savoir avant d'
 - Quand tu veux un dashboard lisible sans formation
 - Pour un monitoring de base sur un homelab ou un petit VPS
 
+Si tu cherches aussi à inventorier ton parc informatique (machines, OS, logiciels installés), j'ai publié un guide pour [déployer GLPI Agent avec Docker](/glpi-agent-docker-monitorer-postes/) et peupler automatiquement ton inventaire IT.
+
 ### Quand passer à autre chose ?
 - Plus de 20 serveurs ou besoin de métriques applicatives (requêtes HTTP, logs, traces)
 - Besoin de dashboards complexe avec agrégations multi-serveurs

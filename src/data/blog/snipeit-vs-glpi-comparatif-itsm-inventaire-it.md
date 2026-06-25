@@ -49,6 +49,8 @@ Spoiler alert : si tu cherches juste à **gérer ton inventaire IT efficacement*
 
 **Le problème ?** Exactement ce qui fait sa force : il fait trop de choses. Si tu veux juste gérer ton inventaire, tu vas te retrouver avec 80% de fonctionnalités dont tu n’as pas besoin.
 
+Une fois GLPI installé, tu vas devoir déployer des agents sur chaque poste pour peupler l’inventaire automatiquement. J’ai publié un guide complet pour [déployer GLPI Agent avec Docker](/glpi-agent-docker-monitorer-postes/) et scanner ton parc en quelques minutes.
+
 ### SnipeIT : le spécialiste américain
 
 ![Interface SnipeIT](/images/header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour. ([GitHub officiel](https://github.com/snipe/snipe-it))
