@@ -6,7 +6,7 @@
 ## nftables Docker : pare-feu nouvelle génération sous Linux
 URL: https://brandonvisca.com/nftables-docker-pare-feu-linux/
 Description: Guide nftables Docker : remplace iptables par un pare-feu moderne pour sécuriser tes conteneurs. Syntaxe claire, règles efficaces et compatibilité assurée.
-Tags: securite, linux, docker, nftables, pare-feu, intermediaire
+Tags: 
 Publié: 2026-06-26T08:00:00.000Z
 
 ## GLPI Agent Docker : monitorer tes postes clients
