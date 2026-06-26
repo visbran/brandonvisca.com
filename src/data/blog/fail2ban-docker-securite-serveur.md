@@ -263,7 +263,7 @@ docker exec -it fail2ban fail2ban-regex /var/log/traefik/access.log traefik-auth
 
 **Ne pas mettre `bantime` à des valeurs démentielles.** Ban 24h c'est bien pour un bot qui scanne. Ban 30 jours, tu risques de bloquer des utilisateurs légitimes derrière des CGNAT ou des proxies sortants.
 
-**Préférer `iptables` à `nftables` si tu ne maîtrises pas.** L'image `crazymax/fail2ban` joue bien avec `iptables`. Sur les distros récentes en `nftables` (Debian 12+, Ubuntu 24+), vérifie que la compatibilité legacy est activée ou adapte l'action pour `nftables-multiport`.
+**Préférer `iptables` à `nftables` si tu ne maîtrises pas.** L'image `crazymax/fail2ban` joue bien avec `iptables`. Sur les distros récentes en `nftables` (Debian 12+, Ubuntu 24+), vérifie que la compatibilité legacy est activée ou adapte l'action pour `nftables-multiport`. Pour une configuration nftables complète avec Docker, voir mon guide [nftables Docker : pare-feu nouvelle génération sous Linux](/nftables-docker-pare-feu-linux/).
 
 ## Tableau de synthèse des jails recommandés
 
