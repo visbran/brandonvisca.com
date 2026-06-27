@@ -491,6 +491,52 @@ def audit_links(body: str, issues: list, all_slugs: set | None = None):
             })
 
 
+def audit_content_patterns(body: str, issues: list):
+    """
+    Vérifie les patterns de contenu obligatoires et les anti-patterns.
+
+    Anti-patterns bloquants :
+      - Référence à un système de commentaires (inexistant)
+      - Référence à une newsletter (inexistante)
+      - Conclusion avec question ouverte en fin d'article
+    """
+    body_no_code = re.sub(r"```[\s\S]*?```", lambda m: "\n" * m.group().count("\n"), body)
+
+    # Références à des features inexistantes
+    COMMENT_REFS = re.compile(
+        r"(?i)(?:raconte\s+(?:en|dans|sur)\s+(?:le\s+)?commentaire|"
+        r"laisse\s+(?:un|ton)\s+commentaire|"
+        r"les?\s+commentaires?|"
+        r"abonne-toi\s+.*newsletter|"
+        r"newsletter.*inscris?|"
+        r"rejoins\s+(?:la|notre)\s+newsletter|"
+        r"souscri[sz]\s+.*newsletter)"
+    )
+    comment_match = COMMENT_REFS.search(body_no_code)
+    if comment_match:
+        issues.append({
+            "type": "error", "cat": "content",
+            "msg": f"Référence à commentaire/newsletter détectée : « {comment_match.group(0)[:50]}... » — "
+                   "supprimer (pas de système de commentaires ni de newsletter)"
+        })
+
+    # Conclusion : ne doit pas se terminer par une question ouverte
+    conclusion_match = re.search(r"## (?:Conclusion|Conclusion et perspectives)[^\n]*\n([\s\S]+?)(?=\n## |\Z)", body_no_code, re.IGNORECASE)
+    if conclusion_match:
+        conclusion_text = conclusion_match.group(1).strip()
+        # Dernière phrase de la conclusion
+        last_para = conclusion_text.split('\n\n')[-1].strip()
+        # Vérifier si la dernière phrase est une question
+        if '?' in last_para and len(last_para) < 300:
+            # Vérifier si c'est vraiment une question ouverte (pas un titre FAQ)
+            if not last_para.startswith('#') and not last_para.startswith('**'):
+                issues.append({
+                    "type": "error", "cat": "content",
+                    "msg": "La conclusion se termine par une question ouverte — "
+                           "supprimer la question et terminer par une assertion"
+                })
+
+
 # ── Main audit ────────────────────────────────────────────────────────────────
 
 def audit_file(filepath: Path, all_slugs: set | None = None) -> dict:
@@ -520,6 +566,7 @@ def audit_file(filepath: Path, all_slugs: set | None = None) -> dict:
     audit_hr_separators(body, issues)
     audit_images(body, issues)
     audit_links(body, issues, all_slugs)
+    audit_content_patterns(body, issues)
 
     return {"file": filepath.name, "issues": issues}
 
