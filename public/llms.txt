@@ -6,8 +6,8 @@
 ## GLPI Docker : ITSM complet auto-hébergé
 URL: https://brandonvisca.com/glpi-docker-itsm-auto-heberge/
 Description: Déploie GLPI avec Docker : tutoriel complet pour monter un ITSM auto-hébergé avec inventaire, helpdesk et ticketing en 20 minutes.
-Tags: intermediaire, auto-hebergement, docker, linux, glpi
-Publié: 2026-06-27T08:00:00+02:00
+Tags: 
+Publié: 2026-06-27T08:00:00.000Z
 
 ## nftables Docker : pare-feu nouvelle génération sous Linux
 URL: https://brandonvisca.com/nftables-docker-pare-feu-linux/
