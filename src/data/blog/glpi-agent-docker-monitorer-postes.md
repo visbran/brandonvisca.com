@@ -39,7 +39,7 @@ Avant de balancer ton docker-compose.yml, vérifie que tu as :
 - **Un serveur GLPI accessible en HTTP/HTTPS** depuis le réseau de tes postes clients. L'agent communique avec GLPI via des appels REST. Pas besoin que GLPI soit sur le même réseau, juste qu'il soit joignable.
 - **Les identifiants d'un utilisateur GLPI** avec les droits d'ecriture sur l'inventaire (souvent le compte `glpi` par defaut si tu n'as pas sécurisé ton instance).
 
-Si tu n'as pas encore de serveur GLPI, tu peux l'installer via Docker aussi, mais ce n'est pas le sujet de cet article. L'agent et le serveur sont deux choses distinctes.
+Si tu n'as pas encore de serveur GLPI, tu peux l'installer via Docker aussi, mais ce n'est pas le sujet de cet article. L'agent et le serveur sont deux choses distinctes. Pour aller plus loin, j'ai publié un tutoriel étape par étape pour [déployer GLPI avec Docker](/glpi-docker-itsm-auto-heberge/).
 
 ## Docker Compose complet
 

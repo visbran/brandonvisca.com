@@ -49,7 +49,7 @@ Spoiler alert : si tu cherches juste à **gérer ton inventaire IT efficacement*
 
 **Le problème ?** Exactement ce qui fait sa force : il fait trop de choses. Si tu veux juste gérer ton inventaire, tu vas te retrouver avec 80% de fonctionnalités dont tu n’as pas besoin.
 
-Une fois GLPI installé, tu vas devoir déployer des agents sur chaque poste pour peupler l’inventaire automatiquement. J’ai publié un guide complet pour [déployer GLPI Agent avec Docker](/glpi-agent-docker-monitorer-postes/) et scanner ton parc en quelques minutes.
+Une fois GLPI installé, tu vas devoir déployer des agents sur chaque poste pour peupler l'inventaire automatiquement. Pour aller plus loin, j'ai publié un tutoriel étape par étape pour [installer GLPI avec Docker](https://brandonvisca.com/glpi-docker-itsm-auto-heberge/).
 
 ### SnipeIT : le spécialiste américain
 
