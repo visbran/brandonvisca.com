@@ -15,6 +15,12 @@ draft: false
 focusKeyword: glpi docker
 ogImage: ""
 ---
+> 💡 **TL;DR**
+> - GLPI est un ITSM open source complet : helpdesk, inventaire, ticketing, gestion des licences
+> - Tu le déploies en 20 minutes avec Docker Compose (MariaDB + GLPI officiel)
+> - Docker Compose complet, guide de sécurisation, paramétrage et FAQ inclus ci-dessous
+> - L'image officielle `glpi/glpi` embarque déjà PHP et Apache préconfigurés
+
 ## Qu'est-ce que GLPI et pourquoi le dockeriser ?
 
 GLPI, c'est le couteau suisse de l'ITSM open source. Inventaire de parc, helpdesk, gestion des tickets, suivi des licences, base de connaissances, réservations de matériel… tout y passe. C'est la solution française qui tourne depuis 2003 et qui refuse de mourir, malgré des interfaces qui piquent parfois les yeux.
@@ -227,6 +233,4 @@ Oui. Change le port externe dans le compose (par exemple `8081:80` pour la deuxi
 
 Tu viens de monter un ITSM complet en auto-hébergement avec deux conteneurs et un fichier YAML. GLPI en Docker, c'est la fin des installations LAMP interminables. Tu as un helpdesk fonctionnel, une base d'inventaire prête à recevoir tes agents, et une stack qui se met à jour en deux commandes.
 
-Le plus dur reste l'adoption par tes utilisateurs. Un outil ITSM, ça ne vaut que si les gens l'utilisquent. Commence petit : impose le pour les demandes de matériel. Une fois que tes collègues auront compris que c'est plus rapide qu'un email à tout le monde, le reste suivra.
-
-Et toi, tu gères tes tickets avec quoi actuellement ? Excel ? Un Trello bancal ? Raconte en commentaire.
+Le plus dur reste l'adoption par tes utilisateurs. Un outil ITSM, ça ne vaut que si les gens l'utilisent. Commence petit : impose-le pour les demandes de matériel. Une fois que tes collègues auront compris que c'est plus rapide qu'un email à tout le monde, le reste suivra.
