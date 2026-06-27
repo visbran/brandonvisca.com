@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-26
-# Total articles : 114
+# Dernière mise à jour : 2026-06-27
+# Total articles : 115
+
+## GLPI Docker : ITSM complet auto-hébergé
+URL: https://brandonvisca.com/glpi-docker-itsm-auto-heberge/
+Description: Déploie GLPI avec Docker : tutoriel complet pour monter un ITSM auto-hébergé avec inventaire, helpdesk et ticketing en 20 minutes.
+Tags: intermediaire, auto-hebergement, docker, linux, glpi
+Publié: 2026-06-27T08:00:00+02:00
 
 ## nftables Docker : pare-feu nouvelle génération sous Linux
 URL: https://brandonvisca.com/nftables-docker-pare-feu-linux/
