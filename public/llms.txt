@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-27
-# Total articles : 115
+# Dernière mise à jour : 2026-06-28
+# Total articles : 116
+
+## Zabbix Docker : monitoring complet de ton infrastructure
+URL: https://brandonvisca.com/zabbix-docker-monitoring-infrastructure/
+Description: Déploie Zabbix sous Docker pour superviser ton infrastructure complète. Guide Docker Compose zabbix docker, templates intégrés et comparatif vs Prometheus.
+Tags: securite, docker, linux, monitoring, zabbix, intermediaire
+Publié: 2026-06-28 08:00:00+02:00
 
 ## GLPI Docker : ITSM complet auto-hébergé
 URL: https://brandonvisca.com/glpi-docker-itsm-auto-heberge/
