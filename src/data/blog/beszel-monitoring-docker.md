@@ -257,7 +257,7 @@ Si tu cherches aussi à inventorier ton parc informatique (machines, OS, logicie
 - Besoin de dashboards complexe avec agrégations multi-serveurs
 - Historique long terme (3+ ans) avec requêtes analytiques poussées
 
-Dans ces cas, bascule sur une stack Prometheus + Grafana ou un outil comme Netdata ou Tianji.
+Dans ces cas, bascule sur une stack Prometheus + Grafana, un outil comme Netdata ou Tianji, ou si tu veux une solution de [monitoring infrastructure complète avec Zabbix](/zabbix-docker-monitoring-infrastructure/) qui inclut alerting, cartes réseau et templates prêts à l'emploi.
 
 ## FAQ
 
