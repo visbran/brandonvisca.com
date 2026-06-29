@@ -6,7 +6,7 @@
 ## Polkit Linux : comprendre et configurer les autorisations
 URL: https://brandonvisca.com/polkit-linux-configurer-autorisations/
 Description: Guide Polkit Linux : comprends les autorisations système, configures pkexec et les règles .rules pour sécuriser ton serveur sans briser sudo.
-Tags: linux, securite, sysadmin, debutant
+Tags: 
 Publié: 2026-06-29T08:00:00.000Z
 
 ## Zabbix Docker : monitoring complet de ton infrastructure
