@@ -182,6 +182,8 @@ sudo chmod u-s /chemin/vers/binaire
 
 **Ce que ça corrige** : l'escalade de privilèges locale. Beaucoup d'exploits publics nécessitent un binaire SUID mal configuré pour fonctionner.
 
+Si tu veux aller plus loin dans le contrôle granulaire des privilèges sans donner les pleins pouvoirs sudo, jette un œil à mon guide [Polkit Linux](/polkit-linux-configurer-autorisations/) qui explique comment gérer les autorisations système avec des règles chirurgicales.
+
 ## 8. Auditer les ports ouverts et les connexions actives
 
 ```bash
