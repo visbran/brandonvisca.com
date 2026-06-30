@@ -259,6 +259,8 @@ Si tu cherches aussi à inventorier ton parc informatique (machines, OS, logicie
 
 Dans ces cas, bascule sur une stack Prometheus + Grafana, un outil comme Netdata ou Tianji, ou si tu veux une solution de [monitoring infrastructure complète avec Zabbix](/zabbix-docker-monitoring-infrastructure/) qui inclut alerting, cartes réseau et templates prêts à l'emploi.
 
+Pour superviser tes switchs et routeurs simplement, j'ai aussi publié un guide sur [SNMPd avec Docker](/snmpd-docker-monitorer-reseau/).
+
 ## FAQ
 
 ### Combien de RAM consomme l'agent Beszel ?
