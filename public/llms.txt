@@ -6,7 +6,7 @@
 ## SNMPd Docker : monitorer ton réseau simplement
 URL: https://brandonvisca.com/snmpd-docker-monitorer-reseau/
 Description: Guide SNMPd Docker complet : déploie un agent SNMP simple dans Docker pour superviser ton réseau, tes switchs et serveurs en quelques minutes.
-Tags: intermediaire, reseau, monitoring, docker, sysadmin
+Tags: 
 Publié: 2026-06-30T08:00:00.000Z
 
 ## Polkit Linux : comprendre et configurer les autorisations
