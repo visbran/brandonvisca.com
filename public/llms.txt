@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-29
-# Total articles : 117
+# Dernière mise à jour : 2026-06-30
+# Total articles : 118
+
+## SNMPd Docker : monitorer ton réseau simplement
+URL: https://brandonvisca.com/snmpd-docker-monitorer-reseau/
+Description: Guide SNMPd Docker complet : déploie un agent SNMP simple dans Docker pour superviser ton réseau, tes switchs et serveurs en quelques minutes.
+Tags: intermediaire, reseau, monitoring, docker, sysadmin
+Publié: 2026-06-30T08:00:00.000Z
 
 ## Polkit Linux : comprendre et configurer les autorisations
 URL: https://brandonvisca.com/polkit-linux-configurer-autorisations/
