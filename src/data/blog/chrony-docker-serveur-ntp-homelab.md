@@ -231,7 +231,7 @@ Si tu cherches à sécuriser davantage ton serveur Docker, j'ai un [guide WireGu
 
 **Ne pas synchroniser avec une seule source** : Même si ton serveur local est la source principale pour tes clients, le serveur Chrony lui-même doit se synchroniser avec plusieurs sources externes (au moins 3 ou 4). Cela évite qu'une source corrompue ou compromise injecte une heure fausse dans tout ton réseau. Le pool.ntp.org est conçu pour ça : il te donne accès à des centaines de serveurs redondants.
 
-**Monitoring simple** : Ajoute un check dans ton monitoring (Uptime Kuma, Beszel, ou un simple cron) qui vérifie que `chronyc tracking` retourne un statut normal. Si le conteneur redémarre ou perd sa connexion, tu veux le savoir avant que tes logs ne partent en vrille.
+**Monitoring simple** : Ajoute un check dans ton monitoring (Uptime Kuma, Beszel, ou un simple [cron job](/cron-linux-avance-crontab-guide/)) qui vérifie que `chronyc tracking` retourne un statut normal. Si le conteneur redémarre ou perd sa connexion, tu veux le savoir avant que tes logs ne partent en vrille.
 
 ## Dépannage des problèmes courants
 

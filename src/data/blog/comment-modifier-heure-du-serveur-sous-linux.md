@@ -23,7 +23,7 @@ faqs:
 > - Active la synchro avec `timedatectl set-ntp true`, change le fuseau avec `timedatectl set-timezone Europe/Paris`
 > - `systemd-timesyncd` suffit pour la plupart des usages ; passe à chrony si tu as besoin d'une précision sub-milliseconde
 
-Garder la date et l'heure de ton système précises, c'est la base de plein d'opérations : journalisation, cron jobs, certificats TLS, logs corrélés entre machines... Surtout si tu [auto-héberges des services](/auto-hebergement-guide-complet-2025/), et un décalage horaire peut faire planter des renouvellements de certificats ou corrompre des logs. Cet article couvre comment définir ou changer le fuseau horaire sous Linux, synchroniser l'heure de ton serveur avec NTP, et les commandes à connaître absolument.
+Garder la date et l'heure de ton système précises, c'est la base de plein d'opérations : journalisation, [cron jobs](/cron-linux-avance-crontab-guide/), certificats TLS, logs corrélés entre machines... Surtout si tu [auto-héberges des services](/auto-hebergement-guide-complet-2025/), et un décalage horaire peut faire planter des renouvellements de certificats ou corrompre des logs. Cet article couvre comment définir ou changer le fuseau horaire sous Linux, synchroniser l'heure de ton serveur avec NTP, et les commandes à connaître absolument.
 
 ![Synchronisation NTP Linux](https://media4.giphy.com/media/26Do6la9cIiHvIwMM/giphy.gif?cid=7941fdc6pnk6cs7qnembjdx4x1mxp0ll1p00n5uszui5sssz&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 

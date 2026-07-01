@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-06-30
-# Total articles : 118
+# Dernière mise à jour : 2026-07-01
+# Total articles : 119
+
+## Cron Linux avancé : crontab, variables et pièges
+URL: https://brandonvisca.com/cron-linux-avance-crontab-guide/
+Description: Maîtrise cron et crontab sur Linux : syntaxe avancée, variables d'environnement, pièges classiques et cas pratiques pour planifier tes tâches sans souci.
+Tags: linux, sysadmin, cron, planification
+Publié: 2026-07-01T08:00:00.000Z
 
 ## SNMPd Docker : monitorer ton réseau simplement
 URL: https://brandonvisca.com/snmpd-docker-monitorer-reseau/
