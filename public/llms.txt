@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-01
-# Total articles : 119
+# Dernière mise à jour : 2026-07-02
+# Total articles : 120
+
+## NTP Active Directory : synchroniser tes domaines Windows
+URL: https://brandonvisca.com/ntp-active-directory-synchroniser-domaines/
+Description: Guide ntp active directory : synchronise tes domaines Windows avec NTP, w32time, config PDC Emulator, GPO temps et dépannage Kerberos.
+Tags: windows, reseau, active-directory, ntp, intermediaire
+Publié: 2026-07-02T08:00:00.000Z
 
 ## Cron Linux avancé : crontab, variables et pièges
 URL: https://brandonvisca.com/cron-linux-avance-crontab-guide/
