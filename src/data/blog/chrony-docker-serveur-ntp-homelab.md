@@ -202,6 +202,8 @@ Restart-Service w32time
 w32tm /resync
 ```
 
+Si tu administres un domaine Active Directory, sache que Windows gère déjà la synchro temps via w32time et que ton PDC Emulator doit pointer vers une source NTP fiable. J'explique toute la config dans mon guide [NTP pour Active Directory](/ntp-active-directory-synchroniser-domaines/).
+
 ### macOS
 
 ```bash

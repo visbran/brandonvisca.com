@@ -283,6 +283,8 @@ sudo journalctl -u sssd
 
 L'intégration **Ubuntu Active Directory SSSD** via realmd fait le job proprement. Une fois la config en place, tes utilisateurs AD se connectent avec leurs credentials habituels, les home dirs se créent tout seuls, et le cache offline garde les sessions actives même si le DC est temporairement inaccessible.
 
+N'oublie pas de synchroniser l'horloge de ta machine Ubuntu avec ton PDC Emulator pour éviter les erreurs Kerberos dues au décalage horaire. J'ai détaillé la procédure dans mon guide [NTP pour Active Directory](/ntp-active-directory-synchroniser-domaines/).
+
 Pour les grands parcs, couple ça avec une GPO d'accès restrictive et des groupes AD dédiés par rôle, évite `realm permit --all` en prod.
 
 ---
