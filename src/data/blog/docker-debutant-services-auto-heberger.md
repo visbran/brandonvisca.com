@@ -908,7 +908,8 @@ Avec Docker :
 ||- Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))
 ||- Sauvegarde de liens ([Linkding](/linkding-docker-bookmarks/))
 |||- Reverse proxy (Nginx Proxy Manager)
-|||- Gestion budget ([Actual Budget](/actual-budget-docker-gestion-budget/))
+||||- Gestion budget ([Actual Budget](/actual-budget-docker-gestion-budget/))
+||||- Newsletters ([Listmonk](/listmonk-docker-newsletter-auto-hebergee/))
 
 **Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer.
 
