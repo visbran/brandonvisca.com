@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-02
-# Total articles : 120
+# Dernière mise à jour : 2026-07-03
+# Total articles : 121
+
+## Listmonk Docker : newsletters auto-hébergées (alternative Mailchimp)
+URL: https://brandonvisca.com/listmonk-docker-newsletter-auto-hebergee/
+Description: Déploie Listmonk sous Docker : guide listmonk docker complet pour créer une newsletter auto-hébergée et se passer de Mailchimp.
+Tags: auto-hebergement, docker, intermediaire, newsletter, listmonk
+Publié: 2026-07-03 08:00:00+00:00
 
 ## NTP Active Directory : synchroniser tes domaines Windows
 URL: https://brandonvisca.com/ntp-active-directory-synchroniser-domaines/
