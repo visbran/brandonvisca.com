@@ -19,7 +19,7 @@ Publié: 2026-07-03T08:00:00.000Z
 URL: https://brandonvisca.com/ntp-active-directory-synchroniser-domaines/
 Description: Guide ntp active directory : synchronise tes domaines Windows avec NTP, w32time, config PDC Emulator, GPO temps et dépannage Kerberos.
 Tags: 
-Publié: 2026-07-02 08:00:00+00:00
+Publié: 2026-07-02T08:00:00.000Z
 
 ## Cron Linux avancé : crontab, variables et pièges
 URL: https://brandonvisca.com/cron-linux-avance-crontab-guide/
