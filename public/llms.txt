@@ -6,7 +6,7 @@
 ## Zoraxy Docker : reverse proxy HTTP/HTTPS en Go (alternative simple à Traefik)
 URL: https://brandonvisca.com/zoraxy-docker-reverse-proxy/
 Description: Zoraxy Docker : déploie un reverse proxy HTTP/HTTPS en Go simple et léger. Alternative à Traefik pour ton homelab avec Docker Compose.
-Tags: reseau, docker, intermediaire, zoraxy, reverse-proxy, homelab
+Tags: 
 Publié: 2026-07-04T09:00:00.000Z
 
 ## Listmonk Docker : newsletters auto-hébergées (alternative Mailchimp)
