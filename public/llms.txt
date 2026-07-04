@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-03
-# Total articles : 121
+# Dernière mise à jour : 2026-07-04
+# Total articles : 122
+
+## Zoraxy Docker : reverse proxy HTTP/HTTPS en Go (alternative simple à Traefik)
+URL: https://brandonvisca.com/zoraxy-docker-reverse-proxy/
+Description: Zoraxy Docker : déploie un reverse proxy HTTP/HTTPS en Go simple et léger. Alternative à Traefik pour ton homelab avec Docker Compose.
+Tags: reseau, docker, intermediaire, zoraxy, reverse-proxy, homelab
+Publié: 2026-07-04T09:00:00.000Z
 
 ## Listmonk Docker : newsletters auto-hébergées (alternative Mailchimp)
 URL: https://brandonvisca.com/listmonk-docker-newsletter-auto-hebergee/
