@@ -44,7 +44,7 @@ Caddy, lui, intègre nativement ACME (le protocole de Let's Encrypt). Il demande
 - Pas de dépendance externe (Certbot, cron, scripts de renouvellement)
 - Réécriture de headers et reverse proxy en quelques mots
 
-Le seul point où Nginx reste devant : les très grosses charges (C10K problem) et les cas d'usage avancés avec des modules tiers spécifiques.
+Le seul point où Nginx reste devant : les très grosses charges (C10K problem) et les cas d'usage avancés avec des modules tiers spécifiques. Si tu veux explorer une troisième voie entre Caddy et Nginx, [Zoraxy](/zoraxy-docker-reverse-proxy/) est un reverse proxy en Go encore plus minimaliste, parfait pour un homelab sans prise de tête.
 
 ## Caddy vs Nginx Proxy Manager vs Nginx pur
 

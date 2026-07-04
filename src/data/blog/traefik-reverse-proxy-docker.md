@@ -38,7 +38,7 @@ Tu installes un nouveau conteneur. Tu ouvres ton `nginx.conf`. Tu ajoutes un blo
 
 **Traefik v3** supprime toute cette friction. Il écoute le socket Docker et détecte les conteneurs qui se lancent. Tu ajoutes trois labels dans ton `docker-compose.yml`, et Ta-da : ta route est créée. Zéro reload, zéro fichier de conf à trifouiller.
 
-En plus, il gère les certificats Let's Encrypt tout seul. Tu n'oublies jamais de renouveler un certificat parce que Traefik le fait automatiquement. C'est ça qui fait la différence pour un homelab : la barrière à l'ajout d'un service passe de 15 minutes à 30 secondes.
+En plus, il gère les certificats Let's Encrypt tout seul. Tu n'oublies jamais de renouveler un certificat parce que Traefik le fait automatiquement. C'est ça qui fait la différence pour un homelab : la barrière à l'ajout d'un service passe de 15 minutes à 30 secondes. Si cette approche par labels te fait encore peur, [Zoraxy](/zoraxy-docker-reverse-proxy/) propose la même chose en passant par une interface web sans aucune ligne de YAML à écrire.
 
 *(Pas encore à l'aise avec Docker ? Commence par mon guide [Docker pour les débutants](/docker-debutant-services-auto-heberger/), c'est fait exprès.)*
 
