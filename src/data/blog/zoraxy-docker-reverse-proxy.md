@@ -2,7 +2,7 @@
 title: "Zoraxy Docker : reverse proxy HTTP/HTTPS en Go (alternative simple à Traefik)"
 description: "Zoraxy Docker : déploie un reverse proxy HTTP/HTTPS en Go simple et léger. Alternative à Traefik pour ton homelab avec Docker Compose."
 pubDatetime: "2026-07-04T09:00:00.000Z"
-modDatetime: "2026-07-04T09:00:00.000Z"
+modDatetime: "2026-07-04T14:00:00.000Z"
 author: Brandon Visca
 tags:
   - reseau
@@ -23,7 +23,6 @@ faqs:
     answer: "Absolument. Zoraxy est distribué sous forme de binaire Go autonome. Cependant, Docker (ou Docker Compose) reste la méthode recommandée pour un déploiement propre, reproductible et facilement maintenable dans un homelab."
   - question: "Zoraxy gère-t-il la répartition de charge (load balancing) ?"
     answer: "Oui, Zoraxy propose un load balancing simple en amont avec plusieurs backends. Il supporte aussi le failover basique, ce qui suffit largement pour la majorité des usages domestiques et petites infrastructures."
-ogImage: ""
 ---
 > 💡 **TL;DR**
 > - Zoraxy est un reverse proxy HTTP/HTTPS écrit en Go, beaucoup plus simple à prendre en main que Traefik
@@ -31,15 +30,17 @@ ogImage: ""
 > - Parfait pour un homelab où tu veux un reverse proxy simple sans la complexité
 > - Gestion automatique des certificats Let's Encrypt, load balancing basique et zéro dépendance
 
+## Table des matières
+
 ## Pourquoi chercher une alternative à Traefik ?
 
 Traefik est excellent. Je l'utilise depuis des années sur plusieurs infrastructures et je ne cracherai pas dessus. Mais avouons-le : sa courbe d'apprentissage est raide. Entre les providers, les middlewares, les labels Docker, les CRDs Kubernetes et la doc qui change à chaque version majeure, on passe parfois plus de temps à configurer le reverse proxy qu'à déployer l'application derrière.
 
-Dans un homelab, la complexité doit rester proportionnelle au besoin. Tu n'as pas besoin d'un Airbus A380 pour aller chercher ton pain. C'est là qu'intervient **Zoraxy** : un reverse proxy HTTP/HTTPS écrit en Go par les équipes de Tobu Topia, conçu pour être **léger, rapide et simple**. Une installation **zoraxy docker** se résume à un fichier Compose et quelques clics dans une interface web.
+Dans un homelab, la complexité doit rester proportionnelle au besoin. Tu n'as pas besoin d'un Airbus A380 pour aller chercher ton pain. C'est là qu'intervient **Zoraxy** : un reverse proxy HTTP/HTTPS écrit en Go par Toby Chui (tobychui sur GitHub), conçu pour être **léger, rapide et simple**. Une installation **zoraxy docker** se résume à un fichier Compose et quelques clics dans une interface web.
 
-Zoraxy ne révolutionne pas le genre. Il fait ce qu'on attend d'un reverse proxy — router du HTTP/HTTPS vers des services internes — sans inventer quarante-deux concepts abstraits. Une interface web, un fichier de conf JSON, et c'est parti.
+Zoraxy ne révolutionne pas le genre. Il fait ce qu'on attend d'un reverse proxy (router du HTTP/HTTPS vers des services internes) sans inventer quarante-deux concepts abstraits. Une interface web, un fichier de conf JSON, et c'est parti.
 
-Si tu cherches un comparatif avec un autre reverse proxy Docker déjà déployé, jette un œil à mon [guide Traefik Docker](/traefik-reverse-proxy-docker/).
+Si tu cherches un comparatif avec un autre reverse proxy Docker déjà déployé, jette un œil à mon [guide Traefik Docker](https://brandonvisca.com/traefik-reverse-proxy-docker/).
 
 ## Qu'est-ce que Zoraxy exactement ?
 
@@ -75,28 +76,28 @@ Si tu n'as pas encore de domaine configuré pour ton homelab, tu peux utiliser d
 
 ## Installation de Zoraxy Docker avec Docker Compose
 
-Zoraxy n'est pas encore sur Docker Hub officiel (le projet évolue vite), mais l'image communautaire `tobu1337/zoraxy` est fiable et bien maintenue. Voici un `docker-compose.yml` minimal et fonctionnel pour déployer **zoraxy docker** sur ton serveur :
+L'image officielle `zoraxydocker/zoraxy` est publiée sur Docker Hub et maintenue par le projet. Voici un `docker-compose.yml` minimal et fonctionnel pour déployer **zoraxy docker** sur ton serveur :
 
 ```yaml
-version: "3.8"
-
 services:
   zoraxy:
-    image: tobu1337/zoraxy:latest
+    image: zoraxydocker/zoraxy:latest
     container_name: zoraxy
     restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
-      - "5487:5487"
+      - "8000:8000"
     volumes:
-      - ./zoraxy-data:/opt/zoraxy/data
-      - ./zoraxy-certs:/opt/zoraxy/certs
+      - ./zoraxy-config:/opt/zoraxy/config/
+      - ./zoraxy-plugins:/opt/zoraxy/plugin/
       - /var/run/docker.sock:/var/run/docker.sock:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
-      - ZORAXY_PORT=5487
-      - ZORAXY_ADMIN_USER=admin
-      - ZORAXY_ADMIN_PASS=change_me_maintenant
+      PORT: "8000"
+      FASTGEOIP: "true"
+      TZ: "Europe/Paris"
     networks:
       - proxy
 
@@ -106,10 +107,10 @@ networks:
 ```
 
 **Points importants :**
-- Le port `5487` est l'interface d'administration web. Ne l'expose **jamais** sur Internet sans protection (VPN, IP whitelist ou authentification forte)
-- Le volume `zoraxy-data` conserve la configuration JSON et la base de règles
-- Le volume `zoraxy-certs` stocke les certificats SSL générés ou importés
-- Le montage du socket Docker en read-only permet à Zoraxy de lister les conteneurs si tu actives les fonctionnalités de découverte limitée
+- Le port `8000` est l'interface d'administration web. Ne l'expose **jamais** sur Internet sans protection (VPN, IP whitelist ou authentification forte)
+- Le volume `zoraxy-config` conserve toute la configuration : règles de proxy, certificats SSL, base de données interne
+- L'entrée `extra_hosts` te laisse proxifier des services qui tournent directement sur l'hôte via `host.docker.internal`
+- Le montage du socket Docker en read-only sert à Zoraxy pour lister tes conteneurs si tu actives la découverte limitée
 
 Démarre le conteneur :
 
@@ -118,7 +119,7 @@ cd /chemin/vers/zoraxy
 docker compose up -d
 ```
 
-Attends 10-15 secondes que le service initialise, puis connecte-toi à `http://<ip-du-serveur>:5487` avec les identifiants définis dans les variables d'environnement.
+Attends 10-15 secondes que le service initialise, puis connecte-toi à `http://<ip-du-serveur>:8000`. Au premier lancement, Zoraxy te demande de créer ton compte administrateur directement dans l'interface web. Choisis un mot de passe solide, on en reparle plus bas.
 
 ## Configuration de base
 
@@ -153,8 +154,6 @@ Prenons un scénario réel. Tu as trois services dans ton homelab et tu veux leu
 
 ```yaml
 # docker-compose.yml des services
-version: "3.8"
-
 services:
   plex:
     image: linuxserver/plex:latest
@@ -202,11 +201,11 @@ Dans Zoraxy, tu crées trois règles :
 
 Tu demandes un certificat Let's Encrypt pour `*.tondomaine.com` (wildcard avec challenge DNS si ton registrar est supporté) ou trois certificats distincts. Zoraxy les déploie, les associe aux règles, et tu peux oublier la partie réseau.
 
-Si tu cherches une solution de gestionnaire de mots de passe auto-hébergée, j'ai aussi un [guide complet Vaultwarden Docker](/vaultwarden-docker-gestionnaire-mots-de-passe/) qui détaille la sécurisation du conteneur.
+Si tu cherches une solution de gestionnaire de mots de passe auto-hébergée, j'ai aussi un [guide complet Vaultwarden Docker](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/) qui détaille la sécurisation du conteneur.
 
 ## Load balancing et failover
 
-Zoraxy permet de définir plusieurs backends pour une même règle. C'est rudimentaire, pas d'algorithmes avancés comme least-connection, mais pour un homelab, un simple round-robin ou un failover actif/passif suffit.
+Avec Zoraxy, tu définis plusieurs backends pour une même règle. C'est rudimentaire, pas d'algorithmes avancés comme least-connection, mais pour un homelab, un simple round-robin ou un failover actif/passif suffit.
 
 Dans l'interface, édite une règle existante et ajoute des **Upstream Servers** :
 
@@ -247,17 +246,17 @@ tar czvf zoraxy-backup-$(date +%F).tar.gz zoraxy-data/
 | Load balancing | Simple | Avancé | Simple |
 | Empreinte mémoire | ~20 Mo | ~50-80 Mo | ~30 Mo |
 
-Mon avis : si tu débutes dans l'auto-hébergement et que tu veux juste pointer des sous-domaines vers des conteneurs sans lire 200 pages de doc, **Zoraxy est un excellent choix**. Une stack **zoraxy docker** est plus légère que [Caddy](/caddy-docker-reverse-proxy-guide/) et infiniment plus accessible que Traefik pour un usage domestique.
+Mon avis : si tu débutes dans l'auto-hébergement et que tu veux juste pointer des sous-domaines vers des conteneurs sans lire 200 pages de doc, **Zoraxy est un excellent choix**. Une stack **zoraxy docker** est plus légère que [Caddy](https://brandonvisca.com/caddy-docker-reverse-proxy-guide/) et infiniment plus accessible que Traefik pour un usage domestique.
 
 Traefik reste le roi des environnements Cloud Native complexes. Caddy est le champion de la configuration déclarative élégante. Zoraxy occupe une niche simple : **le reverse proxy qui se configure en cliquant**.
 
 ## Sécuriser l'interface d'administration
 
-C'est le point le plus critique. Le port 5487 est la clef de ton royaume. Si quelqu'un y accède, il peut rediriger n'importe quel domaine vers n'importe quoi.
+C'est le point le plus critique. Le port 8000 est la clef de ton royaume. Si quelqu'un y accède, il peut rediriger n'importe quel domaine vers n'importe quoi.
 
 **Mes recommandations :**
-- **Ne jamais exposer 5487 sur Internet**. Utilise un VPN comme [WireGuard](/wireguard-docker-vpn-homelab/) ou un tunnel SSH pour y accéder
-- Changer le mot de passe par défaut immédiatement (évidence, mais on sait jamais)
+- **Ne jamais exposer 8000 sur Internet**. Utilise un VPN comme [WireGuard](https://brandonvisca.com/wireguard-docker-vpn-homelab/) ou un tunnel SSH pour y accéder
+- Choisir un mot de passe administrateur solide dès la création du compte (évidence, mais on sait jamais)
 - Limiter l'accès par IP si tu es en réseau local fixe
 - Activer l'authentification basique sur l'interface si Zoraxy le propose dans ta version
 
@@ -266,7 +265,7 @@ Dans un contexte professionnel, Zoraxy n'est probablement pas assez durci. Pour 
 ## Dépannage rapide
 
 ### Zoraxy ne démarre pas
-Vérifie que les ports 80, 443 et 5487 ne sont pas déjà occupés par un autre service (Apache, Nginx, Traefik...). Utilise `ss -tlnp | grep -E '(:80|:443|:5487)'` pour identifier le coupable.
+Vérifie que les ports 80, 443 et 8000 ne sont pas déjà occupés par un autre service (Apache, Nginx, Traefik...). Utilise `ss -tlnp | grep -E '(:80|:443|:8000)'` pour identifier le coupable.
 
 ### Certificat Let's Encrypt en échec
 Le challenge HTTP-01 nécessite que le port 80 soit accessible depuis Internet et que le domaine resolve bien vers ton IP. Vérifie aussi que Cloudflare n'est pas en mode proxy strict (qui masque l'IP originale) sans configuration DNS spécifique.
