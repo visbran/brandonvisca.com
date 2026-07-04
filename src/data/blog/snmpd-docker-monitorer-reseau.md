@@ -2,7 +2,7 @@
 title: "SNMPd Docker : monitorer ton réseau simplement"
 description: "Guide SNMPd Docker complet : déploie un agent SNMP simple dans Docker pour superviser ton réseau, tes switchs et serveurs en quelques minutes."
 pubDatetime: "2026-06-30T08:00:00.000Z"
-modDatetime: "2026-06-30T08:00:00.000Z"
+modDatetime: "2026-07-04T14:00:00.000Z"
 author: Brandon Visca
 tags:
   - intermediaire
@@ -13,20 +13,21 @@ tags:
 featured: false
 draft: false
 focusKeyword: snmpd docker
-ogImage: ""
 ---
 > 💡 **TL;DR**
 > - SNMPd transforme n'importe quelle machine en agent de monitoring réseau standardisé, exploitable par Zabbix, LibreNMS ou un simple script.
 > - Dockerisé, il se déploie en 2 minutes, isole sa config du système hôte et fonctionne sur toutes les architectures.
-> - Un docker-compose.yml de 25 lignes + un snmpd.conf minimal = monitoring réseau fonctionnel sans toucher au système.
+> - Un docker-compose.yml de 15 lignes + un snmpd.conf minimal = monitoring réseau fonctionnel sans toucher au système.
 
 Tu as un switch, un routeur ou un petit serveur dont tu veux récupérer les métriques réseau, températures ou uptime, mais tu ne veux pas installer trois tonnes de métrologie dessus ? **SNMP** reste le protocole le plus simple et universel pour ça. Il est supporté nativement par quasiment tous les équipements réseau, et quand c'est pas le cas, tu peux l'ajouter en quelques secondes avec **snmpd**.
 
 Dans cet article, je te montre comment faire tourner un agent SNMP dans un conteneur Docker. Zéro pollution système, zéro dépendance sur l'hôte, et une config qui suit le conteneur partout où tu le balances. Si tu cherches une solution de monitoring complète pour agréger toutes ces données, j'ai aussi publié un [guide Zabbix sous Docker](/zabbix-docker-monitoring-infrastructure/) qui s'intègre parfaitement avec SNMP.
 
+## Table des matières
+
 ## Qu'est-ce que SNMP et pourquoi l'utiliser en Docker ?
 
-**SNMP** (Simple Network Management Protocol) est un protocole de supervision réseau vieux de 35 ans et toujours d'actualité. Son principe est simple :
+**SNMP** (Simple Network Management Protocol) est un protocole de supervision réseau vieux de bientôt 40 ans et toujours d'actualité. Son principe est simple :
 
 - Un **agent SNMP** (snmpd) tourne sur la machine à surveiller et expose des données structurées (OID).
 - Un **manager SNMP** (Zabbix, LibreNMS, Nagios, ou un simple `snmpwalk`) interroge cet agent pour récupérer CPU, RAM, interfaces réseau, disques, etc.
@@ -75,8 +76,6 @@ services:
     volumes:
       - ./snmpd.conf:/etc/snmp/snmpd.conf:ro
       - /proc:/host/proc:ro
-    environment:
-      - SNMPD_EXTRA_FLAGS=-Lsd -Lf /dev/null -p /var/run/snmpd.pid
 ```
 
 Quelques explications sur les choix techniques :
@@ -102,8 +101,8 @@ sysContact     "admin@tondomaine.local"
 sysServices    72
 
 # Community string par défaut (à CHANGER !)
-rocommunity tonsecret 127.0.0.1
-rocommunity tonsecret 192.168.1.0/24
+rocommunity tonsecret 127.0.0.1 -V systemonly
+rocommunity tonsecret 192.168.1.0/24 -V systemonly
 
 # Ne pas exposer tout le système, juste les bases
 # Accès limité aux OID système standard
@@ -180,14 +179,14 @@ snmpwalk -v2c -c tonsecret 192.168.1.10 1.3.6.1.4.1.2021.10.1.3.1
 **Depuis un conteneur client SNMP temporaire** (pratique si tu n'as pas de client installé) :
 
 ```bash
-docker run --rm -it polinux/snmp:latest snmpwalk -v2c -c tonsecret 192.168.1.10 1.3.6.1.2.1.1
+docker run --rm -it alpine sh -c "apk add --no-cache net-snmp-tools >/dev/null && snmpwalk -v2c -c tonsecret 192.168.1.10 1.3.6.1.2.1.1"
 ```
 
 Si tu obtiens des réponses avec des OID et des valeurs, ton agent est opérationnel.
 
 ## Les métriques les plus utiles à surveiller
 
-Voici les OID incontournables pour un monitoring réseau basique :
+Voici les OID essentiels pour un monitoring réseau basique :
 
 | Métrique | OID | Description |
 |---|---|---|
@@ -200,7 +199,7 @@ Voici les OID incontournables pour un monitoring réseau basique :
 | État interface | `1.3.6.1.2.1.2.2.1.8.X` | 1=up, 2=down, 3=testing |
 | Load average | `1.3.6.1.4.1.2021.10.1.3.1` | Charge CPU (1 min) via UCD-SNMP |
 | RAM totale | `1.3.6.1.4.1.2021.4.5.0` | Mémoire physique totale |
-| RAM utilisée | `1.3.6.1.4.1.2021.4.6.0` | Mémoire physique utilisée |
+| RAM disponible | `1.3.6.1.4.1.2021.4.6.0` | Mémoire physique disponible (memAvailReal) |
 
 Remplace `X` par l'index de l'interface (généralement 1, 2, 3...). Tu peux lister les index avec :
 
@@ -216,7 +215,7 @@ SNMPd sans manager, c'est comme un téléphone sans interlocuteur. Voici comment
 
 ### Avec Zabbix
 
-Si tu utilises déjà Zabbix pour superviser ton infrastructure, l'intégration SNMP est native. Crée un hôte dans Zabbix, ajoute l'interface SNMP avec l'IP de ta machine Docker, utilise la community string (ou les credentials v3), et associe le template **"Template Net Network Generic Device SNMP"** ou **"Template OS Linux SNMP"**. Les items se peuplent automatiquement.
+Si tu utilises déjà Zabbix pour superviser ton infrastructure, l'intégration SNMP est native. Crée un hôte dans Zabbix, ajoute l'interface SNMP avec l'IP de ta machine Docker, utilise la community string (ou les credentials v3), et associe le template **"Network Generic Device by SNMP"** ou **"Linux by SNMP"**. Les items se peuplent automatiquement.
 
 ### Avec LibreNMS
 
@@ -224,9 +223,9 @@ LibreNMS détecte automatiquement les hôtes SNMP. Ajoute simplement l'IP de ta 
 
 ### Avec un script personnalisé
 
-Un simple script Python avec `pysnmp` ou `easysnmp` suffit pour récupérer une valeur et l'envoyer vers InfluxDB, Prometheus Pushgateway ou une API maison. SNMP est un protocole texte : pas besoin de SDK complexe.
+Un simple script Python avec `pysnmp` ou `easysnmp` suffit pour récupérer une valeur et l'envoyer vers InfluxDB, Prometheus Pushgateway ou une API maison. SNMP est un protocole simple et bien documenté : pas besoin de SDK complexe.
 
-Si tu cherches une solution de monitoring plus moderne et ultra-légère, mon article sur [Beszel Docker](/beszel-monitoring-docker/) couvre une approche agentless par SSH qui complète bien SNMP pour les métriques système.
+Si tu cherches une solution de monitoring plus moderne et ultra-légère, mon article sur [Beszel Docker](/beszel-monitoring-docker/) couvre une approche à base de mini-agent ultra-léger qui complète bien SNMP pour les métriques système.
 
 ## Sécuriser ton agent SNMP
 
@@ -250,7 +249,7 @@ Sur un VPS cloud exposé à Internet, tu ne dois **jamais** exposer SNMP sans re
 | Valeurs système vides | Pas accès à `/proc` | Vérifie le volume `/proc:/host/proc:ro` dans le compose |
 | Interfaces absentes | Pas de `network_mode: host` | Passe en mode host ou `--net=host` |
 
-Si tu es sur un NAS Synology ou un routeur OpenWrt, snmpd est souvent préinstallé mais limité. L'image Docker te donne un snmpd complet et à jour sans toucher au firmware.
+Si tu es sur un NAS Synology ou un routeur OpenWrt, snmpd est souvent préinstallé mais limité. L'image Docker te donne un snmpd complet sans toucher au firmware.
 
 ## Conclusion
 

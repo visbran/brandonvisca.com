@@ -2,7 +2,7 @@
 title: "Listmonk Docker : newsletters auto-hébergées (alternative Mailchimp)"
 description: "Déploie Listmonk sous Docker : guide listmonk docker complet pour créer une newsletter auto-hébergée et se passer de Mailchimp."
 pubDatetime: "2026-07-03T08:00:00.000Z"
-modDatetime: "2026-07-03T08:00:00.000Z"
+modDatetime: "2026-07-04T14:00:00.000Z"
 author: Brandon
 tags:
   - auto-hebergement
@@ -20,7 +20,6 @@ faqs:
     answer: "Non. Listmonk gère les listes et les campagnes, mais il a besoin d'un relais SMTP pour envoyer les emails. Tu peux utiliser un service externe (Mailgun, Brevo, AWS SES) ou ton propre serveur mail si tu l'as auto-hébergé."
   - question: "Listmonk peut-il gérer des milliers d'abonnés ?"
     answer: "Oui. Listmonk est codé en Go et conçu pour la performance. Des instances en production gèrent des centaines de milliers de contacts sans problème, pourvu que PostgreSQL dispose de suffisamment de ressources."
-ogImage: "" 
 ---
 > 💡 **TL;DR**
 > - **Listmonk** est un outil de newsletter open-source en Go et Vue.js : gratuit, rapide, sans limite d'abonnés
@@ -115,6 +114,7 @@ services:
     image: listmonk/listmonk:latest
     container_name: listmonk_app
     restart: unless-stopped
+    command: [sh, -c, "./listmonk --install --idempotent --yes && ./listmonk --upgrade --yes && ./listmonk"]
     ports:
       - "127.0.0.1:9000:9000"
     environment:
@@ -132,6 +132,8 @@ volumes:
 ```
 
 **Note sur le port** : on bind `127.0.0.1:9000` pour que Listmonk ne soit accessible que localement. Le reverse proxy (Traefik, Caddy, etc.) redirige le trafic externe vers ce port. C'est une bonne pratique de sécurité.
+
+**Note sur la commande** : au premier démarrage, `--install --idempotent` crée les tables PostgreSQL si la base est vide, et `--upgrade` applique les migrations après une mise à jour d'image. Sans cette étape, Listmonk refuse de démarrer sur une base vierge.
 
 Le conteneur Listmonk attend un fichier `config.toml`. Crée-le :
 
@@ -154,13 +156,9 @@ ssl_mode = "disable"
 max_open = 25
 max_idle = 25
 max_lifetime = "300s"
-
-# SMTP (à configurer après le premier démarrage via l'UI)
-[smtp]
-[]
 ```
 
-On laisse la section SMTP vide pour l'instant. On la configurera via l'interface web, ce qui est plus simple et évite d'écrire des mots de passe en clair dans un fichier versionné.
+Pas de section SMTP dans ce fichier : Listmonk stocke cette configuration en base de données et tu la définis via l'interface web, ce qui évite d'écrire des mots de passe en clair dans un fichier versionné.
 
 **Change le mot de passe PostgreSQL** avant de lancer. Ne laisse pas `change_me_strong_password` en production. Un mot de passe de 32 caractères aléatoires est le minimum.
 
@@ -174,12 +172,9 @@ docker compose up -d
 
 Attends que PostgreSQL soit prêt (le healthcheck valide ça automatiquement). Puis ouvre ton navigateur sur `http://ton-ip:9000` (ou via ton reverse proxy si déjà configuré).
 
-Au premier démarrage, Listmonk affiche un **setup wizard**. Il te demande :
-- Les identifiants admin (email + mot de passe)
-- La langue (français disponible)
-- La configuration de base
+Au premier démarrage, Listmonk t'invite à **créer le compte administrateur** (email, identifiant, mot de passe). Une fois connecté, tu peux passer l'interface en français dans les réglages.
 
-Crée ton compte admin, choisis une langue, et tu arrives sur le tableau de bord.
+Crée ton compte admin et tu arrives sur le tableau de bord.
 
 **Première chose à faire** : créer une liste.
 

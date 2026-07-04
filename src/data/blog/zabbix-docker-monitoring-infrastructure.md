@@ -1,8 +1,8 @@
 ---
 title: "Zabbix Docker : monitoring complet de ton infrastructure"
-description: "Déploie Zabbix sous Docker pour superviser ton infrastructure complète. Guide Docker Compose zabbix docker, templates intégrés et comparatif vs Prometheus."
+description: Déploie Zabbix sous Docker pour superviser ton infrastructure complète. Guide Docker Compose zabbix docker, templates intégrés et comparatif vs Prometheus.
 pubDatetime: "2026-06-28T08:00:00.000Z"
-modDatetime: "2026-06-28T08:00:00.000Z"
+modDatetime: "2026-07-04T14:00:00.000Z"
 author: Brandon Visca
 tags:
   - securite
@@ -23,7 +23,6 @@ faqs:
     answer: "Oui. En montant le socket Docker dans le conteneur agent, Zabbix remonte automatiquement le statut, le CPU, la RAM et les événements de chaque conteneur via le plugin natif de l'agent 2."
   - question: "Zabbix ou Prometheus pour un homelab ?"
     answer: "Zabbix est plus simple à mettre en route et plus complet pour la supervision système traditionnelle (SNMP, agents natifs). Prometheus brille dans les environnements Kubernetes cloud-native. Pour un homelab classique, Zabbix Docker reste le premier choix."
-ogImage: ""
 ---
 > 💡 **TL;DR**
 > - Zabbix est la solution de monitoring open-source la plus complète : métriques, logs, alerting, cartes réseau, tout y est
@@ -69,8 +68,6 @@ Et oui, si tu as déjà mis en place un pare-feu avec [nftables](/nftables-docke
 Crée un répertoire `zabbix` quelque part sur ton serveur, et jette ce `docker-compose.yml` dedans :
 
 ```yaml
-version: '3.8'
-
 services:
   zabbix-mysql:
     image: mysql:8.0
@@ -180,13 +177,13 @@ Une fois connecté, tu vas voir une interface austère. Ne panique pas, c'est no
 
 **Monitoring > Hosts** : C'est la liste des machines supervisées. Par défaut, il y a juste "Zabbix server", qui est l'agent qu'on a déployé dans le compose.
 
-**Configuration > Hosts** : C'est là que tu ajoutes des hôtes, que tu attaches des templates, que tu configures les interfaces. C'est le cœur de la configuration.
+**Data collection > Hosts** : C'est là que tu ajoutes des hôtes, que tu attaches des templates, que tu configures les interfaces. C'est le cœur de la configuration.
 
 **Monitoring > Latest data** : Les données brutes remontées par les agents. CPU, mémoire, espace disque... Tout y est.
 
-**Monitoring > Dashboard** : Le tableau de bord principal. Tu peux le personnaliser à mort avec des widgets, des graphiques, des cartes réseau.
+**Dashboards** : Le tableau de bord principal. Tu peux le personnaliser à mort avec des widgets, des graphiques, des cartes réseau.
 
-Ton premier réflexe devrait être de changer le mot de passe Admin. Va dans **Administration > Users > Admin > Change password**. Fais-le maintenant, je t'attends.
+Ton premier réflexe devrait être de changer le mot de passe Admin. Va dans **Users > Users > Admin > Change password**. Fais-le maintenant, je t'attends.
 
 ## Superviser Docker avec Zabbix en temps réel
 
@@ -198,7 +195,7 @@ Le gros avantage de l'agent 2, c'est qu'il a un plugin Docker natif. Grâce au m
 - Le nombre de conteneurs en cours d'exécution
 - Les événements Docker (création, destruction, redémarrage)
 
-Pour activer ça, rien de plus simple. Va dans **Configuration > Hosts**, clique sur "Zabbix server", puis dans l'onglet **Templates**. Ajoute le template **"Docker by Zabbix agent 2"** (c'est un template officiel livré avec Zabbix 6.0+). Attends une minute, et dans **Monitoring > Latest data**, tu verras apparaître des items liés à Docker.
+Pour activer ça, rien de plus simple. Va dans **Data collection > Hosts**, clique sur "Zabbix server", puis dans l'onglet **Templates**. Ajoute le template **"Docker by Zabbix agent 2"** (c'est un template officiel livré avec Zabbix 6.0+). Attends une minute, et dans **Monitoring > Latest data**, tu verras apparaître des items liés à Docker.
 
 Si tu veux monitorer d'autres conteneurs sur d'autres machines, il te suffit d'installer l'agent Zabbix 2 sur ces machines (aussi en Docker ou en binaire natif) et de lier le même template. C'est aussi simple que ça.
 
@@ -228,12 +225,12 @@ Zabbix gère l'alerting de manière très granulaire. Tu peux configurer :
 - **Des escalades** : Si personne ne réagit dans les 30 minutes, envoie un SMS au boss.
 - **Des conditions** : Alertes différentes selon le groupe d'hôtes, la sévérité, l'heure du jour...
 
-Pour configurer Telegram (parce que c'est pratique et que tout le monde a Telegram sur son téléphone), va dans **Administration > Media types > Telegram**. Tu auras besoin de créer un bot via @BotFather sur Telegram, de récupérer le token, et de coller ton chat ID. Teste la connexion. Si ça marche, va dans **Administration > Users**, sélectionne ton utilisateur, onglet **Media**, et ajoute Telegram avec le chat ID.
+Pour configurer Telegram (parce que c'est pratique et que tout le monde a Telegram sur son téléphone), va dans **Alerts > Media types > Telegram**. Tu auras besoin de créer un bot via @BotFather sur Telegram, de récupérer le token, et de coller ton chat ID. Teste la connexion. Si ça marche, va dans **Users > Users**, sélectionne ton utilisateur, onglet **Media**, et ajoute Telegram avec le chat ID.
 
-Pour les triggers, Zabbix en a déjà pas mal de créés par les templates. Mais tu peux en ajouter. Par exemple, un trigger personnalisé qui vérifie si un conteneur spécifique est down :
+Pour les triggers, Zabbix en a déjà pas mal de créés par les templates. Mais tu peux en ajouter. Par exemple, un trigger personnalisé qui vérifie si un conteneur spécifique a disparu de la liste des conteneurs actifs (la clé `docker.containers` ne liste que les conteneurs en cours d'exécution par défaut) :
 
 ```bash
-last(/Zabbix server/docker.containers[up,"mon_conteneur"])=0
+find(/Zabbix server/docker.containers,,"like","mon_conteneur")=0
 ```
 
 Sévérité : High. Et hop, tu reçois un message Telegram dès que ton conteneur tombe.
@@ -254,9 +251,9 @@ La bonne nouvelle : tu peux même faire cohabiter les deux. Zabbix pour la super
 
 **Les mots de passe par défaut** : On en a déjà parlé, mais c'est important. Admin / zabbix, c'est le premier couple testé par les bots. Change-le immédiatement.
 
-**La rétention des données** : Par défaut, Zabbix garde l'historique des items pendant 90 jours et les tendances pendant 365 jours. Sur un petit VPS, ça peut faire grossir la base MySQL à plusieurs gigas. Va dans **Administration > General > Housekeeping** pour ajuster selon tes besoins. Tu peux aussi activer la compression de tables si tu es sur MySQL 8.
+**La rétention des données** : Par défaut, Zabbix garde l'historique des items pendant 90 jours et les tendances pendant 365 jours. Sur un petit VPS, ça peut faire grossir la base MySQL à plusieurs gigas. Va dans **Administration > Housekeeping** pour ajuster selon tes besoins. Tu peux aussi activer la compression de tables si tu es sur MySQL 8.
 
-**Les triggers trop sensibles** : Un trigger qui s'enclenche à chaque pic de CPU de 5 secondes, c'est un trigger inutile. Utilise les fonctions comme `avg()` ou `min()` sur une fenêtre de temps pour éviter le bruit. Par exemple : `avg(/Linux server/system.cpu.util[,user])>90` sur 5 minutes, c'est bien plus fiable qu'un `last()` brut.
+**Les triggers trop sensibles** : Un trigger qui s'enclenche à chaque pic de CPU de 5 secondes, c'est un trigger inutile. Utilise les fonctions comme `avg()` ou `min()` sur une fenêtre de temps pour éviter le bruit. Par exemple : `avg(/Linux server/system.cpu.util[,user],5m)>90`, c'est bien plus fiable qu'un `last()` brut.
 
 **Le reverse proxy** : Exposer Zabbix sur le port 8080 en direct, c'est moche. Mets un reverse proxy nginx ou [Caddy](/caddy-docker-reverse-proxy-guide/) devant avec HTTPS. Le frontend Zabbix fonctionne très bien derrière un reverse proxy, il suffit de bien configurer les en-têtes `X-Forwarded-For` et `X-Forwarded-Proto`.
 

@@ -1,8 +1,8 @@
 ---
 title: "NTP Active Directory : synchroniser tes domaines Windows"
 description: "Guide ntp active directory : synchronise tes domaines Windows avec NTP, w32time, config PDC Emulator, GPO temps et dépannage Kerberos."
-pubDatetime: 2026-07-02 08:00:00+00:00
-modDatetime: 2026-07-02 08:00:00+00:00
+pubDatetime: "2026-07-02T08:00:00.000Z"
+modDatetime: "2026-07-04T14:00:00.000Z"
 author: Brandon Visca
 tags:
   - windows
@@ -13,12 +13,11 @@ tags:
 featured: false
 draft: false
 focusKeyword: ntp active directory
-ogImage: ""
 ---
 > 💡 **TL;DR**
 > - Active Directory dépend d'un temps synchrone : Kerberos plante si le décalage dépasse 5 minutes
 > - Le PDC Emulator est la source NTP de référence pour toute la forêt
-> - Tu configures w32time sur le DC, tu verifies avec `w32tm /monitor`, et tu laisses NT5DS gérer les clients
+> - Tu configures w32time sur le DC, tu vérifies avec `w32tm /monitor`, et tu laisses NT5DS gérer les clients
 > - Pour tes machines Linux jointes au domaine, pointe Chrony vers ton DC pour éviter les décalages Kerberos
 
 ## Table des matières
@@ -212,4 +211,4 @@ Si les postes sont dans des fuseaux horaires différents, vérifie que le param�
 
 La synchronisation temps dans Active Directory n'est pas un détail d'administration. C'est un pilier de la sécurité et de la cohérence du domaine. Un PDC Emulator mal configuré, une source NTP inaccessible, ou un client qui dérive silencieusement, et c'est tout l'écosystème Kerberos qui fragilise.
 
-La règle est simple : le PDC Emulator pointe vers des sources NTP fiables, les DCs remontent au PDC, les clients remontent aux DCs, et tes machines Linux pointent vers le même référentiel. Tu verifies avec `w32tm /monitor`, tu corriges au premier signe de dérive, et tu ne laisses jamais un décalage atteindre les 5 fatidiques minutes.
+La règle est simple : le PDC Emulator pointe vers des sources NTP fiables, les DCs remontent au PDC, les clients remontent aux DCs, et tes machines Linux pointent vers le même référentiel. Tu vérifies avec `w32tm /monitor`, tu corriges au premier signe de dérive, et tu ne laisses jamais un décalage atteindre les 5 fatidiques minutes.

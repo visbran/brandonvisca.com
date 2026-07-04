@@ -2,7 +2,7 @@
 title: "Cron Linux avancé : crontab, variables et pièges"
 description: "Maîtrise cron et crontab sur Linux : syntaxe avancée, variables d'environnement, pièges classiques et cas pratiques pour planifier tes tâches sans souci."
 pubDatetime: "2026-07-01T08:00:00.000Z"
-modDatetime: "2026-07-01T08:00:00.000Z"
+modDatetime: "2026-07-04T14:00:00.000Z"
 author: Brandon Visca
 tags:
   - intermediaire
@@ -13,13 +13,14 @@ tags:
 featured: false
 draft: false
 focusKeyword: cron linux avance
-ogImage: ""
 ---
 > 💡 **TL;DR**
 > - Cron est partout mais personne ne le comprend vraiment ; une bonne maîtrise évite des jobs qui tournent à 3h du matin pour rien
 > - Les variables d'environnement dans crontab ne sont PAS celles de ton shell interactif : PATH, SHELL et MAILTO sont des pièges à connaître
 > - Les spéciaux `@daily`, `@reboot`, `*/n` et le pourcent `%` ont des comportements surprenants qu'il faut anticiper
 > - Ce guide couvre la syntaxe complète, les cas avancés et les erreurs qui font pleurer en production
+
+## Table des matières
 
 ## Introduction : pourquoi cron mérite un article dédié
 
@@ -59,7 +60,7 @@ Quelques exemples concrets :
 # Tous les jours à 3h du matin
 0 3 * * * /opt/scripts/backup-daily.sh
 
-# Le premier lundi de chaque mois à 8h
+# Piège : PAS "le premier lundi du mois" (OU logique, voir plus bas)
 0 8 1-7 * 1 /opt/scripts/rapport-mensuel.sh
 
 # Toutes les heures en semaine, de 9h à 18h
@@ -130,7 +131,7 @@ Cron moderne (Vixie cron, cronie) supporte des raccourcis lisibles. Ils remplace
 
 | Raccourci | Signification | Équivalent |
 |-----------|--------------|------------|
-| `@reboot` | Au démarrage de la machine |, |
+| `@reboot` | Au démarrage de la machine | (aucun) |
 | `@yearly` | Une fois par an (1er janvier à 0h00) | `0 0 1 1 *` |
 | `@monthly` | Une fois par mois (1er du mois à 0h00) | `0 0 1 * *` |
 | `@weekly` | Une fois par semaine (dimanche à 0h00) | `0 0 * * 0` |
@@ -143,7 +144,7 @@ Cron moderne (Vixie cron, cronie) supporte des raccourcis lisibles. Ils remplace
 @reboot /opt/scripts/wait-for-network.sh && /opt/scripts/start-agent.sh
 ```
 
-Et `@daily` à minuit ? Sur un serveur qui fait des backups, c'est le moment où tout le monde planifie ses tâches. Si tu as dix machines qui partent en backup à 0h00 pile, ton NAS va crier. Décale de quelques minutes (`13 2 * * *` par exemple), ou utilise un minute aléatoire.
+Et `@daily` à minuit ? Sur un serveur qui fait des backups, c'est le moment où tout le monde planifie ses tâches. Si tu as dix machines qui partent en backup à 0h00 pile, ton NAS va crier. Décale de quelques minutes (`13 2 * * *` par exemple), ou utilise une minute aléatoire.
 
 ## Les pièges classiques
 
