@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-04
-# Total articles : 122
+# Dernière mise à jour : 2026-07-05
+# Total articles : 123
+
+## Focalboard Docker : alternative Notion/Trello auto-hébergée
+URL: https://brandonvisca.com/focalboard-docker-alternative-notion/
+Description: Guide focalboard docker complet : déploie Focalboard sous Docker pour un kanban self-hosted open-source. Alternative Notion et Trello auto-hébergée avec Docker Compose.
+Tags: 
+Publié: 2026-07-05T08:00:00.000Z
 
 ## Zoraxy Docker : reverse proxy HTTP/HTTPS en Go (alternative simple à Traefik)
 URL: https://brandonvisca.com/zoraxy-docker-reverse-proxy/

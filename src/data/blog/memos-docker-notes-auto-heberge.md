@@ -282,6 +282,8 @@ Pour les pièces jointes lourdes ou les archives de documents, [File Browser ave
 **Personnalisation CSS**
 Memos permet d'injecter du CSS personnalisé via les paramètres d'administration. Tu peux ajuster la typographie, les couleurs, ou masquer des éléments que tu ne souhaites pas afficher.
 
+Si tu préfères un outil de gestion de projet visuel avec des tableaux kanban, [Focalboard avec Docker](/focalboard-docker-alternative-notion/) est une excellente alternative Notion/Trello auto-hébergée.
+
 ## FAQ
 
 **Puis-je utiliser PostgreSQL à la place de SQLite ?**
