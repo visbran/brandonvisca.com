@@ -1,6 +1,6 @@
 ---
 title: "Focalboard Docker : alternative Notion/Trello auto-hébergée"
-description: "Guide focalboard docker complet : déploie Focalboard sous Docker pour un kanban self-hosted open-source. Alternative Notion et Trello auto-hébergée avec Docker Compose."
+description: "Guide focalboard docker : déploie Focalboard avec Docker Compose pour un kanban self-hosted. Alternative Notion/Trello auto-hébergée."
 pubDatetime: "2026-07-05T08:00:00.000Z"
 modDatetime: "2026-07-05T08:00:00.000Z"
 author: Brandon
