@@ -1,8 +1,8 @@
 ---
-title: "Oh My Zsh + Powerlevel10k : terminal pro en 15 min (2026)"
+title: "Oh My Zsh gratuit : installation complète + Powerlevel10k (2026)"
 description: "Installe Oh My Zsh + Powerlevel10k en 15 min : ma config .zshrc prête à copier, plugins essentiels et thème pro, testés en 2026."
 pubDatetime: 2025-03-31 15:55:32+02:00
-modDatetime: 2026-06-22 00:00:00+01:00
+modDatetime: 2026-07-06 00:00:00+01:00
 author: Brandon Visca
 tags:
   - oh-my-zsh
@@ -36,6 +36,24 @@ Voici le guide complet : installation, configuration, plugins et personnalisatio
 Sur macOS, j'utilise tout ça dans [iTerm2](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/), le combo parfait. Si tu hésites entre les terminaux, j'ai fait un [test iTerm2 vs Warp](https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) après 60 jours.
 
 ## Table des matières
+
+## Pourquoi Zsh cartonne encore en 2026 ?
+
+Zsh reste le shell par défaut sur macOS depuis Catalina, et l'écosystème Oh My Zsh n'a pas pris une ride : plus de 300 plugins maintenus, communauté toujours active, compatibilité totale avec les terminaux récents (Ghostty, WezTerm, Warp). Face à Fish ou Nushell qui montent, il garde un avantage simple : compatibilité POSIX totale, utile dès que tu jongles entre serveurs Linux et poste local.
+
+Ce qui bouge en 2026, c'est la nouvelle génération de plugins. La communauté migre vers des outils réécrits en Rust, pensés pour ne pas plomber le temps de démarrage du prompt.
+
+**Plugins tendance à ajouter en 2026 :**
+
+| Plugin | Usage | Pourquoi il monte |
+|---|---|---|
+| zoxide | Navigation dossiers intelligente (remplace `cd`) | Écrit en Rust, ultra rapide, apprend tes habitudes |
+| fzf-tab | Autocomplétion fuzzy dans le terminal | Remplace le menu de complétion natif, plus rapide à l'usage |
+| forgit | Interface Git interactive via fzf | Simplifie git add/log/diff sans quitter le clavier |
+| you-should-use | Rappelle tes alias oubliés | Évite de retaper des commandes longues par réflexe |
+| zsh-abbr | Abréviations expansibles à la volée | Alternative moderne aux alias classiques |
+
+Ces plugins viennent en complément de `zsh-autosuggestions` et `zsh-syntax-highlighting`, toujours la base incontournable (section plus bas).
 
 ## Prérequis : ce qu'il te faut avant de commencer
 
