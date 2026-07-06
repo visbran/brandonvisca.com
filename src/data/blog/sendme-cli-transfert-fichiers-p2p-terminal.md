@@ -311,7 +311,7 @@ chmod 700 ~/.cache/sendme
 
 **Tu préfères le terminal ?** → **Sendme CLI** (cet article)
 
-**Tu préfères les interfaces graphiques ?** → **Alt-SendMe** (interface desktop, article à venir)
+**Tu préfères les interfaces graphiques ?** → [**Alt-SendMe**](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) (interface desktop)
 
 **Bonne nouvelle :** Les deux sont **interopérables** ! Un ticket généré par Sendme CLI fonctionne dans Alt-SendMe GUI et vice-versa.
 
@@ -394,12 +394,13 @@ curl -X POST https://ntfy.sh/homelab-backup \
 Sendme CLI devrait être installé par défaut sur toutes les machines Linux/macOS. C'est tellement plus simple que `scp` pour les transferts ponctuels, et tellement plus rapide que passer par WeTransfer ou un serveur FTP.
 
 **Prochaine étape :**  
-Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, garde un œil sur Alt-SendMe pour avoir la même puissance avec une interface graphique.
+Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, essaye [Alt-SendMe](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) pour avoir la même puissance avec une interface graphique.
 
 ---
 
 ## Pour aller plus loin
 
+- [Alt-SendMe : interface graphique interopérable avec Sendme CLI](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/)
 - [Documentation Iroh](https://iroh.computer/docs) : la stack sous Sendme CLI
 - [GitHub Sendme](https://github.com/n0-computer/sendme) : releases, issues, code source
 - [Docker pour débutants : les services à auto-héberger absolument](https://brandonvisca.com/docker-debutant-services-auto-heberger/)
