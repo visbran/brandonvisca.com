@@ -627,7 +627,7 @@ Description: Les rôles FSMO sont 5 fonctions importantes dans un réseau Window
 Tags: 
 Publié: 2025-03-31T17:34:29+02:00
 
-## Oh My Zsh + Powerlevel10k : terminal pro en 15 min (2026)
+## Oh My Zsh gratuit : installation complète + Powerlevel10k (2026)
 URL: https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/
 Description: Installe Oh My Zsh + Powerlevel10k en 15 min : ma config .zshrc prête à copier, plugins essentiels et thème pro, testés en 2026.
 Tags: 
