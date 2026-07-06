@@ -645,9 +645,9 @@ Description: Installe le thème Catppuccin dans Vim en 5 minutes : vim-plug, con
 Tags: 
 Publié: 2025-03-31T15:43:24+02:00
 
-## Installer Homebrew sur macOS : Guide complet Apple Silicon & Intel
+## Homebrew macOS : Guide d'Installation Complet (2026)
 URL: https://brandonvisca.com/installation-homebrew-macos/
-Description: Installe Homebrew sur macOS en une commande. Fonctionne sur Apple Silicon (M1 à M4) et Intel. Commandes essentielles, apps utiles et dépannage inclus.
+Description: Comment installer Homebrew macOS en 1 commande. Prérequis, installation, commandes essentielles, apps incontournables et dépannage.
 Tags: 
 Publié: 2025-03-31 15:28:09+02:00
 
