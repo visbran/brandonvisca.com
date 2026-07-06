@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-05
-# Total articles : 123
+# Dernière mise à jour : 2026-07-06
+# Total articles : 124
+
+## Netboot Docker avec Netboot.xyz : boot PXE pour installer n'importe quel OS
+URL: https://brandonvisca.com/netboot-xyz-docker-pxe-boot/
+Description: Netboot docker avec Netboot.xyz : boot PXE pour installer Linux, Windows ou BSD via le réseau. Guide Docker Compose complet et testé.
+Tags: 
+Publié: 2026-07-06T08:00:00.000Z
 
 ## Focalboard Docker : alternative Notion/Trello auto-hébergée
 URL: https://brandonvisca.com/focalboard-docker-alternative-notion/

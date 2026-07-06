@@ -186,6 +186,10 @@ Uptime Kuma surveille tes services et t'alerte quand quelque chose tombe. Il con
 
 Un petit LXC pour ton VPN d'accès à distance. 128 Mo de RAM, un peu de CPU, et tu accèdes à ton réseau depuis n'importe où.
 
+### 5. Boot réseau (Netboot.xyz Docker)
+
+Tu veux provisionner des VMs ou des machines physiques sans clé USB ? Un LXC avec [Netboot.xyz Docker](/netboot-xyz-docker-pxe-boot/) te permet de booter n'importe quel OS en PXE. Idéal pour déployer rapidement des nouveaux nœuds dans ton cluster Proxmox.
+
 ## Conclusion
 
 Les conteneurs LXC sur Proxmox, c'est le sweet spot entre la lourdeur des VMs et la complexité de Kubernetes. Tu gardes un vrai système d'exploitation, tu peux y installer ce que tu veux, mais tu consommes 10 fois moins de ressources.

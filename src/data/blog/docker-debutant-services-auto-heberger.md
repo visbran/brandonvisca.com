@@ -911,7 +911,7 @@ Avec Docker :
 ||||- Gestion budget ([Actual Budget](/actual-budget-docker-gestion-budget/))
 ||||- Newsletters ([Listmonk](/listmonk-docker-newsletter-auto-hebergee/))
 
-**Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer.
+**Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer. Et si tu veux provisionner tes futures machines sans clé USB, le [boot PXE avec Netboot Docker](/netboot-xyz-docker-pxe-boot/) te fera gagner un temps fou.
 
 Si tu veux aller encore plus loin, la prochaine étape c'est [sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) avant d'exposer tes services sur internet.
 
