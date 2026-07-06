@@ -2,7 +2,7 @@
 title: "Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)"
 description: "Sendme CLI : transfert P2P sécurisé en 2 commandes. NAT traversal automatique, aucun serveur requis. Alternative moderne à scp. Guide complet 2026."
 pubDatetime: "2025-12-09T21:14:00+01:00"
-modDatetime: "2026-04-15T00:00:00+01:00"
+modDatetime: "2026-07-06T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - homelab
@@ -13,13 +13,6 @@ tags:
 featured: true
 draft: false
 focusKeyword: sendme cli
-faqs:
-  - question: "Sendme fonctionne-t-il derrière un NAT strict ou un pare-feu d'entreprise ?"
-    answer: "Oui. Sendme utilise le protocole QUIC avec traversée NAT automatique via STUN/TURN. Dans les environnements très restrictifs, seul le port 443 en sortie est nécessaire."
-  - question: "Le transfert Sendme est-il chiffré de bout en bout ?"
-    answer: "Oui. Sendme utilise le chiffrement TLS 1.3 avec vérification d'intégrité BLAKE3 sur chaque chunk. Ni le serveur de relais ni un observateur réseau ne peut lire le contenu transféré."
-  - question: "Y a-t-il une limite de taille de fichier avec Sendme ?"
-    answer: "Pas de limite théorique. Sendme transfère les fichiers par chunks et supporte la reprise après coupure. Des transferts de plusieurs dizaines de Go ont été testés avec succès."
 ---
 > 💡 **TL;DR**
 > - Sendme CLI envoie des fichiers P2P en 2 commandes, sans IP, sans config SSH, sans serveur
@@ -96,6 +89,8 @@ Le binaire sera copié dans le répertoire d'où tu lances le script.
 ```
 
 ### Option 3 : Homebrew (macOS)
+
+Si tu n'as pas encore [Homebrew installé sur ton Mac](https://brandonvisca.com/installation-homebrew-macos/), c'est le prérequis.
 
 ```bash
 brew install sendme
@@ -316,7 +311,7 @@ chmod 700 ~/.cache/sendme
 
 **Tu préfères le terminal ?** → **Sendme CLI** (cet article)
 
-**Tu préfères les interfaces graphiques ?** → [**Alt-SendMe**](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) (interface desktop)
+**Tu préfères les interfaces graphiques ?** → **Alt-SendMe** (interface desktop, article à venir)
 
 **Bonne nouvelle :** Les deux sont **interopérables** ! Un ticket généré par Sendme CLI fonctionne dans Alt-SendMe GUI et vice-versa.
 
@@ -357,7 +352,7 @@ sendme receive blobQmXYZ... | gunzip | docker load
 
 ### Exemple : Backup homelab
 
-Dans mon homelab, j'utilise exactement ce pattern pour envoyer des archives de config vers un VPS Oracle. Ça tourne dans un cron, zéro intervention manuelle.
+Dans mon homelab, j'utilise exactement ce pattern pour envoyer des archives de config vers un VPS Oracle. Ça tourne dans un [cron Linux](https://brandonvisca.com/cron-linux-avance-crontab-guide/), zéro intervention manuelle.
 
 ```bash
 #!/bin/bash
@@ -399,19 +394,12 @@ curl -X POST https://ntfy.sh/homelab-backup \
 Sendme CLI devrait être installé par défaut sur toutes les machines Linux/macOS. C'est tellement plus simple que `scp` pour les transferts ponctuels, et tellement plus rapide que passer par WeTransfer ou un serveur FTP.
 
 **Prochaine étape :**  
-Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, essaye [Alt-SendMe](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) pour avoir la même puissance avec une interface graphique.
+Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, garde un œil sur Alt-SendMe pour avoir la même puissance avec une interface graphique.
 
 ---
 
 ## Pour aller plus loin
 
-- [Alt-SendMe : interface graphique pour Iroh](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/), même techno, pour ceux qui fuient le terminal
-- [Documentation Iroh](https://iroh.computer/docs), la stack sous Sendme CLI
-- [GitHub Sendme](https://github.com/n0-computer/sendme), releases, issues, code source
-
-## Articles connexes
-
-- [Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes](/installation-vim-guide-complet/)
-- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
-- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
-- [Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/)
+- [Documentation Iroh](https://iroh.computer/docs) : la stack sous Sendme CLI
+- [GitHub Sendme](https://github.com/n0-computer/sendme) : releases, issues, code source
+- [Docker pour débutants : les services à auto-héberger absolument](https://brandonvisca.com/docker-debutant-services-auto-heberger/)
