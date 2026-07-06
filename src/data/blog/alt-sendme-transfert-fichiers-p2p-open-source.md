@@ -218,10 +218,3 @@ Alt-SendMe comble un vrai vide : une interface graphique simple posée sur une t
 
 Si tu gères un homelab et que tu échanges régulièrement de gros fichiers avec d'autres machines ou d'autres personnes, installe-le en parallèle de ton stockage permanent habituel. Pour de l'automatisation ou de l'intégration script, bascule sur Sendme CLI en ligne de commande, les tickets restent compatibles dans les deux sens.
 
-## Pour aller plus loin
-
-- [Sendme CLI : transfert P2P en ligne de commande](https://brandonvisca.com/sendme-cli-transfert-fichiers-p2p-terminal/) : la version terminal, interopérable avec Alt-SendMe
-- [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) : utile si tu montes un VPS relais
-- [Docker pour débutants : les services à auto-héberger absolument](https://brandonvisca.com/docker-debutant-services-auto-heberger/) : pour aller plus loin qu'un simple transfert ponctuel
-- [Documentation Iroh](https://iroh.computer/docs) : la stack technique derrière Alt-SendMe et Sendme CLI
-- [GitHub Alt-SendMe](https://github.com/tonyantony300/alt-sendme) : code source, releases, issues

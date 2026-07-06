@@ -398,9 +398,3 @@ Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu b
 
 ---
 
-## Pour aller plus loin
-
-- [Alt-SendMe : interface graphique interopérable avec Sendme CLI](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) : la même techno, pour ceux qui fuient le terminal
-- [Documentation Iroh](https://iroh.computer/docs) : la stack sous Sendme CLI
-- [GitHub Sendme](https://github.com/n0-computer/sendme) : releases, issues, code source
-- [Docker pour débutants : les services à auto-héberger absolument](https://brandonvisca.com/docker-debutant-services-auto-heberger/) : d'autres services qui se combinent bien avec des transferts P2P
