@@ -1,13 +1,19 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-07-06
-# Total articles : 124
+# Total articles : 125
 
 ## Netboot Docker avec Netboot.xyz : boot PXE pour installer n'importe quel OS
 URL: https://brandonvisca.com/netboot-xyz-docker-pxe-boot/
 Description: Netboot docker avec Netboot.xyz : boot PXE pour installer Linux, Windows ou BSD via le réseau. Guide Docker Compose complet et testé.
 Tags: 
 Publié: 2026-07-06T08:00:00.000Z
+
+## Alt-SendMe : L'Arme Secrète pour Partager des Fichiers Sans Espionnage (Guide 2026)
+URL: https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/
+Description: Alt-SendMe transfert fichiers en P2P : alternative gratuite à WeTransfer, chiffrement de bout en bout, aucune limite de taille. Guide complet 2026.
+Tags: 
+Publié: 2026-07-06T00:00:00+01:00
 
 ## Focalboard Docker : alternative Notion/Trello auto-hébergée
 URL: https://brandonvisca.com/focalboard-docker-alternative-notion/
