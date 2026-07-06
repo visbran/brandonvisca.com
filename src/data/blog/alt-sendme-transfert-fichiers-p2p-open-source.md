@@ -220,8 +220,8 @@ Si tu gères un homelab et que tu échanges régulièrement de gros fichiers ave
 
 ## Pour aller plus loin
 
-- [Sendme CLI : transfert P2P en ligne de commande](https://brandonvisca.com/sendme-cli-transfert-fichiers-p2p-terminal/)
-- [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/)
-- [Docker pour débutants : les services à auto-héberger absolument](https://brandonvisca.com/docker-debutant-services-auto-heberger/)
-- [Documentation Iroh](https://iroh.computer/docs)
-- [GitHub Alt-SendMe](https://github.com/tonyantony300/alt-sendme)
+- [Sendme CLI : transfert P2P en ligne de commande](https://brandonvisca.com/sendme-cli-transfert-fichiers-p2p-terminal/) : la version terminal, interopérable avec Alt-SendMe
+- [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) : utile si tu montes un VPS relais
+- [Docker pour débutants : les services à auto-héberger absolument](https://brandonvisca.com/docker-debutant-services-auto-heberger/) : pour aller plus loin qu'un simple transfert ponctuel
+- [Documentation Iroh](https://iroh.computer/docs) : la stack technique derrière Alt-SendMe et Sendme CLI
+- [GitHub Alt-SendMe](https://github.com/tonyantony300/alt-sendme) : code source, releases, issues

@@ -171,6 +171,6 @@ Homebrew macOS en place, reste à l'exploiter. Des outils comme `ffmpeg`, `yt-dl
 
 ## Pour aller plus loin
 
-- [iTerm2 : guide de configuration macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/)
-- [WailBrew : interface graphique pour gérer Homebrew](https://brandonvisca.com/wailbrew-interface-graphique-homebrew/)
-- [AppCleaner : alternative gratuite à CleanMyMac](https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/)
+- [iTerm2 : guide de configuration macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) : le terminal à installer juste après Homebrew
+- [WailBrew : interface graphique pour gérer Homebrew](https://brandonvisca.com/wailbrew-interface-graphique-homebrew/) : si tu préfères cliquer plutôt que taper
+- [AppCleaner : alternative gratuite à CleanMyMac](https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/) : à installer via `brew install --cask appcleaner`

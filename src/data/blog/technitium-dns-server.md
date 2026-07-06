@@ -232,6 +232,6 @@ Et si tu veux synchroniser tes blocages DNS sur plusieurs instances (un DNS par 
 
 ## Pour aller plus loin
 
-- [Nebula-Sync : synchronise tes Pi-hole v6 automatiquement](/nebula-sync-pihole-v6-installation-docker-guide/)
-- [DNS Scavenging Windows Server : le guide complet](/dns-scavenging-windows-server-guide-complet/)
-- [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/)
+- [Nebula-Sync : synchronise tes Pi-hole v6 automatiquement](/nebula-sync-pihole-v6-installation-docker-guide/) : le même principe de synchronisation, côté Pi-hole
+- [DNS Scavenging Windows Server : le guide complet](/dns-scavenging-windows-server-guide-complet/) : nettoyer les enregistrements DNS obsolètes côté Active Directory
+- [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/) : d'autres services qui complètent bien un DNS maison
