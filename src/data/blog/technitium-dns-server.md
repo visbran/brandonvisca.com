@@ -2,6 +2,7 @@
 title: "Technitium DNS Server : installe ton bloqueur de pubs libre (2026)"
 description: Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC, guide complet 2026.
 pubDatetime: 2026-04-29 00:00:00+01:00
+modDatetime: "2026-07-06T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - reseau
@@ -21,6 +22,8 @@ faqs:
   - question: "Technitium DNS Server fonctionne-t-il sur Raspberry Pi ?"
     answer: "Oui. L'image Docker est disponible pour linux/arm64 et linux/arm/v7, compatible Raspberry Pi 3 et 4. Le serveur tourne correctement avec 256 Mo de RAM allouée, largement suffisant sur un RPi 4."
 ---
+# Technitium DNS Server : installe ton bloqueur de pubs libre (2026)
+
 > 💡 **TL;DR**
 > - Technitium DNS Server est un serveur DNS récursif open source avec blocage de pubs intégré, alternative directe à Pi-hole et AdGuard Home.
 > - L'installation Docker prend 5 minutes : une commande, un port, une interface web sur `:5380`.
@@ -77,7 +80,7 @@ Le projet est développé activement sur [GitHub (TechnitiumSoftware/DnsServer)]
 >
 > Une fois Technitium lancé, tu mets à jour `/etc/resolv.conf` pour pointer vers `127.0.0.1`.
 
-### docker-compose.yml : mode host (recommandé)
+### docker-compose.yml, mode host (recommandé)
 
 ```yaml
 version: "3.8"
@@ -107,7 +110,7 @@ docker logs -f technitium-dns
 
 L'interface web est accessible sur **http://IP-DE-TON-HÔTE:5380**. Au premier démarrage, définis un mot de passe administrateur, il n'y en a pas par défaut.
 
-### docker-compose.yml : mode bridge (NAS, Docker Desktop)
+### docker-compose.yml, mode bridge (NAS, Docker Desktop)
 
 Si le mode host n'est pas disponible sur ton environnement (NAS Synology, macOS avec Docker Desktop) :
 
@@ -232,10 +235,3 @@ Et si tu veux synchroniser tes blocages DNS sur plusieurs instances (un DNS par 
 - [Nebula-Sync : synchronise tes Pi-hole v6 automatiquement](/nebula-sync-pihole-v6-installation-docker-guide/)
 - [DNS Scavenging Windows Server : le guide complet](/dns-scavenging-windows-server-guide-complet/)
 - [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/)
-
-## Articles connexes
-
-- [Immich Docker remplace Google Photos ? Guide complet 2026](/immich-docker/)
-- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
-- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
-- [Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted](/tianji-self-hosted-analytics/)
