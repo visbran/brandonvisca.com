@@ -1,8 +1,8 @@
 ---
-title: "Installer Homebrew sur macOS : Guide complet Apple Silicon & Intel"
-description: "Installe Homebrew sur macOS en une commande. Fonctionne sur Apple Silicon (M1 à M4) et Intel. Commandes essentielles, apps utiles et dépannage inclus."
+title: "Homebrew macOS : Guide d'Installation Complet (2026)"
+description: Comment installer Homebrew macOS en 1 commande. Prérequis, installation, commandes essentielles, apps incontournables et dépannage.
 pubDatetime: 2025-03-31 15:28:09+02:00
-modDatetime: 2026-05-05 00:00:00+01:00
+modDatetime: "2026-07-06T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - macos
@@ -13,7 +13,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: installer homebrew macos
+focusKeyword: homebrew macos
 faqs:
   - question: "Homebrew est-il gratuit ?"
     answer: "Oui, Homebrew est un projet open source entièrement gratuit. Il fonctionne sur n'importe quel Mac sous macOS 11 (Big Sur) ou plus récent."
@@ -21,16 +21,11 @@ faqs:
     answer: "Lance brew update pour mettre à jour Homebrew, puis brew upgrade pour mettre à jour tous les paquets installés. Un brew cleanup ensuite supprime les vieilles versions."
   - question: "Homebrew ralentit-il le Mac ?"
     answer: "Non. Homebrew ne tourne pas en arrière-plan. Il s'exécute uniquement quand tu lances une commande brew. Aucun daemon, aucun impact sur les performances au repos."
-  - question: "Comment configurer Homebrew sur Apple Silicon (M1, M2, M3, M4) ?"
-    answer: "Après installation, le script affiche les commandes à coller dans le terminal. Lance : echo 'eval \"$(/opt/homebrew/bin/brew shellenv)\"' >> ~/.zprofile puis source ~/.zprofile. Homebrew s'installe dans /opt/homebrew/ sur Apple Silicon, contre /usr/local/ sur Intel."
-  - question: "Homebrew fonctionne-t-il sur macOS Sequoia ?"
-    answer: "Oui, Homebrew est compatible avec macOS Sequoia (15.x) et se met à jour rapidement après chaque nouvelle version de macOS. Lance brew update pour être sûr d'avoir la dernière version."
 ---
-
 > 💡 **TL;DR**
-> - Homebrew, le gestionnaire de paquets macOS, s'installe en une seule commande
-> - Commandes essentielles (`brew install`, `update`, `upgrade`) et premières apps à installer
-> - Section dépannage pour les erreurs courantes après l'installation
+> - Homebrew s'installe macOS en une seule commande `curl`, 2-3 minutes montre en main
+> - Deux types de paquets : Formulae (CLI) et Casks (apps graphiques), tout depuis le terminal
+> - Une fois en place, `brew install --cask` remplace la recherche manuelle d'installeurs .dmg
 
 ## Table des matières
 
@@ -89,17 +84,6 @@ brew --version
 
 Affiche la version installée. Homebrew se met à jour automatiquement à chaque commande `brew install`.
 
-### Configurer le PATH sur Apple Silicon
-
-Sur M1, M2, M3 ou M4, une étape supplémentaire est requise après l'installation : ajouter Homebrew au PATH. Le script l'affiche à la fin, si tu l'as raté :
-
-```bash
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-source ~/.zprofile
-```
-
-Relance ensuite `brew doctor` pour confirmer que tout est en ordre.
-
 ## Les commandes Homebrew essentielles
 
 | Commande | Action |
@@ -120,7 +104,7 @@ Relance ensuite `brew doctor` pour confirmer que tout est en ordre.
 
 ## Premières apps à installer
 
-Homebrew en place, voici ce qui mérite d'être là dès le départ.
+Homebrew en place, voici ce qui mérite d'être là dès le départ. Sur mes machines, ce sont les 5 premiers `brew install` que je lance juste après une install propre de macOS.
 
 **[iTerm2](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/)**, le terminal qui remplace Terminal.app :
 
@@ -181,13 +165,12 @@ brew upgrade <nom-paquet>
 
 Si quelque chose ne marche pas, c'est souvent un PATH mal configuré ou un conflit avec un outil installé manuellement avant Homebrew.
 
----
+## Conclusion
 
-Homebrew macOS en place, la vraie question c'est : qu'est-ce que tu vas en faire ? Les outils comme `ffmpeg`, `yt-dlp` ou `mas` (pour le Mac App Store en ligne de commande) changent complètement le rapport au Mac. Commence par `brew search` et explore.
+Homebrew macOS en place, reste à l'exploiter. Des outils comme `ffmpeg`, `yt-dlp` ou `mas` (pour le Mac App Store en ligne de commande) changent complètement le rapport au Mac. Lance `brew search` et explore le catalogue, tu vas y passer du temps.
 
-## Articles connexes
+## Pour aller plus loin
 
-- [WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2026)](/wailbrew-interface-graphique-homebrew/)
-- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)
-- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)
-- [Compresser images Mac en WebP : méthode qui économise 70% d'espace](/reduire-taille-images-mac-webp/)
+- [iTerm2 : guide de configuration macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/)
+- [WailBrew : interface graphique pour gérer Homebrew](https://brandonvisca.com/wailbrew-interface-graphique-homebrew/)
+- [AppCleaner : alternative gratuite à CleanMyMac](https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/)
