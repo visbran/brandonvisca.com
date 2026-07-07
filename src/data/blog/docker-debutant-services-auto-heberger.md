@@ -416,7 +416,7 @@ docker compose up -d
 ### 6. Jellyfin : Serveur média (Netflix maison) 🟡
 
 ![Interface de Jellyfin avec bibliothèque de films](jellyfin.webp)**C’est quoi ?**  
-Un serveur de streaming pour tes films, séries, musique. Open source, sans télémétrie, sans pub. Mon [guide Jellyfin](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/) couvre la configuration GPU et le transcodage. Pour la musique uniquement, j'ai aussi publié un guide sur [Navidrome avec Docker](/navidrome-docker-serveur-musique/), un serveur audio ultra-léger et dédié.
+Un serveur de streaming pour tes films, séries, musique. Open source, sans télémétrie, sans pub. Mon [guide Jellyfin](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/) couvre la configuration GPU et le transcodage. Pour la musique uniquement, j'ai aussi publié un guide sur [Navidrome avec Docker](/navidrome-docker-serveur-musique/), un serveur audio ultra-léger et dédié. Et si tu veux streamer tes jeux PC vers la TV du salon, j'ai un guide complet sur [Sunshine Docker pour le streaming de jeux](/sunshine-docker-streaming-jeux/).
 
 **Pourquoi ?**  
 Parce que c’est satisfaisant d’avoir son propre Netflix avec sa bibliothèque perso.

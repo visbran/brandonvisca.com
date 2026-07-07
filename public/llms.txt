@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-06
-# Total articles : 125
+# Dernière mise à jour : 2026-07-07
+# Total articles : 126
+
+## Sunshine Docker : serveur de streaming de jeux (Moonlight)
+URL: https://brandonvisca.com/sunshine-docker-streaming-jeux/
+Description: Déploie Sunshine sous Docker pour streamer tes jeux PC vers n'importe quel écran. Guide complet Moonlight + sunshine docker, réseau et latence.
+Tags: intermediaire, auto-hebergement, docker, gaming, streaming, homelab
+Publié: 2026-07-05T10:00:00.000Z
 
 ## Netboot Docker avec Netboot.xyz : boot PXE pour installer n'importe quel OS
 URL: https://brandonvisca.com/netboot-xyz-docker-pxe-boot/
