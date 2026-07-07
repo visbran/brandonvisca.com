@@ -3,12 +3,6 @@
 # Dernière mise à jour : 2026-07-07
 # Total articles : 126
 
-## Sunshine Docker : serveur de streaming de jeux (Moonlight)
-URL: https://brandonvisca.com/sunshine-docker-streaming-jeux/
-Description: Déploie Sunshine sous Docker pour streamer tes jeux PC vers n'importe quel écran. Guide complet Moonlight + sunshine docker, réseau et latence.
-Tags: intermediaire, auto-hebergement, docker, gaming, streaming, homelab
-Publié: 2026-07-05T10:00:00.000Z
-
 ## Netboot Docker avec Netboot.xyz : boot PXE pour installer n'importe quel OS
 URL: https://brandonvisca.com/netboot-xyz-docker-pxe-boot/
 Description: Netboot docker avec Netboot.xyz : boot PXE pour installer Linux, Windows ou BSD via le réseau. Guide Docker Compose complet et testé.
@@ -20,6 +14,12 @@ URL: https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/
 Description: Alt-SendMe transfert fichiers en P2P : alternative gratuite à WeTransfer, chiffrement de bout en bout, aucune limite de taille. Guide complet 2026.
 Tags: 
 Publié: 2026-07-06T00:00:00+01:00
+
+## Sunshine Docker : ton serveur de streaming de jeux maison avec Moonlight
+URL: https://brandonvisca.com/sunshine-docker-streaming-jeux/
+Description: Déploie Sunshine sous Docker pour streamer tes jeux PC vers n'importe quel écran. Guide complet Moonlight + sunshine docker, réseau et latence.
+Tags: 
+Publié: 2026-07-05T10:00:00.000Z
 
 ## Focalboard Docker : alternative Notion/Trello auto-hébergée
 URL: https://brandonvisca.com/focalboard-docker-alternative-notion/
