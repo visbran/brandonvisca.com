@@ -3,10 +3,10 @@
 # Dernière mise à jour : 2026-07-08
 # Total articles : 127
 
-## Changedetection Docker : surveille n'importe quel site web (alternative Distill.io)
+## Changedetection Docker : guide complet pour surveiller n'importe quel site web (alternative Distill.io)
 URL: https://brandonvisca.com/changedetection-docker-surveillance-web/
 Description: Guide changedetection docker : installe Changedetection.io et surveille n'importe quel site web avec alertes prix et disponibilité.
-Tags: intermediaire, auto-hebergement, docker, surveillance, monitoring
+Tags: 
 Publié: 2026-07-08T08:00:00.000Z
 
 ## Netboot Docker avec Netboot.xyz : boot PXE pour installer n'importe quel OS
