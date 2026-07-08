@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-07
-# Total articles : 126
+# Dernière mise à jour : 2026-07-08
+# Total articles : 127
+
+## Changedetection Docker : surveille n'importe quel site web (alternative Distill.io)
+URL: https://brandonvisca.com/changedetection-docker-surveillance-web/
+Description: Guide changedetection docker : installe Changedetection.io et surveille n'importe quel site web avec alertes prix et disponibilité.
+Tags: intermediaire, auto-hebergement, docker, surveillance, monitoring
+Publié: 2026-07-08T08:00:00.000Z
 
 ## Netboot Docker avec Netboot.xyz : boot PXE pour installer n'importe quel OS
 URL: https://brandonvisca.com/netboot-xyz-docker-pxe-boot/
