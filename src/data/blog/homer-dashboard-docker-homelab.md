@@ -335,4 +335,6 @@ Homer Dashboard est probablement le tableau de bord le plus sobre et efficace po
 
 Si tu débutes avec Docker et que tu cherches un moyen simple de centraliser tes services, c'est le candidat idéal. Tu peux le faire tourner sur un Raspberry Pi sans aucun souci, le configurer en 5 minutes, et l'oublier ensuite. Il tourne, il affiche, il ping. C'est tout ce qu'on lui demande.
 
+Et pour surveiller les changements sur des pages web (prix, disponibilité, releases) tout en gardant ton homelab sous contrôle, jette un oeil à [Changedetection.io](/changedetection-docker-surveillance-web/), un autre outil Docker que j'ai couvert récemment.
+
 Et toi, tu utilises quel dashboard pour ton homelab ? Homer, Heimdall, ou autre chose ?

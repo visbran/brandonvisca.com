@@ -275,6 +275,8 @@ Oui. En montant le socket Docker en lecture seule dans l'agent, Beszel remonte l
 
 Oui. Beszel envoie les alertes par email via PocketBase, mais tu peux brancher un webhook vers Discord, Slack, n8n ou Uptime Kuma.
 
+Pour compléter ta stack de monitoring et surveiller aussi les changements sur des pages web extérieures (prix, disponibilité produit), tu peux utiliser [Changedetection.io](/changedetection-docker-surveillance-web/) que j'ai aussi couvert en Docker.
+
 ## Articles connexes
 
 - [Netdata Docker : monitorer ton serveur en temps réel sans te ruiner](/netdata-docker/)
