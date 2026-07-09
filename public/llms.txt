@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-08
-# Total articles : 127
+# Dernière mise à jour : 2026-07-09
+# Total articles : 128
+
+## Tsdproxy Docker : reverse proxy automatique Tailscale pour conteneurs
+URL: https://brandonvisca.com/tsdproxy-docker-tailscale-proxy/
+Description: Tsdproxy Docker expose tes conteneurs via Tailscale sans config manuelle. Reverse proxy auto avec labels Docker. Guide complet.
+Tags: reseau, docker, tailscale, auto-hebergement, intermediaire
+Publié: 2026-07-09T08:00:00.000Z
 
 ## Changedetection Docker : guide complet pour surveiller n'importe quel site web (alternative Distill.io)
 URL: https://brandonvisca.com/changedetection-docker-surveillance-web/
