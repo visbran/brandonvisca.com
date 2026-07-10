@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-09
-# Total articles : 128
+# Dernière mise à jour : 2026-07-10
+# Total articles : 129
+
+## Dashy Docker : ton dashboard homelab ultra-personnalisable avec widgets
+URL: https://brandonvisca.com/dashy-docker-dashboard-homelab/
+Description: Guide Dashy Docker : crée un dashboard homelab ultra-personnalisable avec widgets, monitoring de services et statuts en temps réel.
+Tags: intermediaire, auto-hebergement, docker, dashboard, homelab
+Publié: 2026-07-10T08:00:00.000Z
 
 ## Tsdproxy Docker : reverse proxy automatique Tailscale pour conteneurs
 URL: https://brandonvisca.com/tsdproxy-docker-tailscale-proxy/
