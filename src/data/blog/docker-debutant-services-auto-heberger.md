@@ -904,7 +904,7 @@ Avec Docker :
 ||| Wiki et documentation ([Outline](/outline-docker-wiki-auto-heberge/))
 ||| Ebooks et manga ([Kavita](/kavita-docker-lecteur-ebooks/))
 ||- Gestionnaire de fichiers ([File Browser](/filebrowser-docker-gestionnaire-fichiers/))
-||- Dashboard (Homer)
+||- Dashboard ([Homer](/homer-dashboard-docker-homelab/), [Dashy](/dashy-docker-dashboard-homelab/))
 ||- Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))
 ||- Sauvegarde de liens ([Linkding](/linkding-docker-bookmarks/))
 |||- Reverse proxy (Nginx Proxy Manager)
