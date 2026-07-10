@@ -6,7 +6,7 @@
 ## Dashy Docker : ton dashboard homelab ultra-personnalisable avec widgets
 URL: https://brandonvisca.com/dashy-docker-dashboard-homelab/
 Description: Guide Dashy Docker : crée un dashboard homelab ultra-personnalisable avec widgets, monitoring de services et statuts en temps réel.
-Tags: intermediaire, auto-hebergement, docker, dashboard, homelab
+Tags: 
 Publié: 2026-07-10T08:00:00.000Z
 
 ## Tsdproxy Docker : reverse proxy automatique Tailscale pour conteneurs
