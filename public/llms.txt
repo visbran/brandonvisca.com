@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-10
-# Total articles : 129
+# Dernière mise à jour : 2026-07-11
+# Total articles : 130
+
+## Firezone Docker : VPN zero-trust basé sur WireGuard
+URL: https://brandonvisca.com/firezone-docker-vpn-zero-trust/
+Description: Guide Firezone Docker : déploie un VPN zero-trust basé sur WireGuard avec Docker Compose. OIDC, policies et split tunneling inclus.
+Tags: intermediaire, securite, vpn, wireguard, docker, zero-trust
+Publié: 2026-07-11T08:00:00.000Z
 
 ## Dashy Docker : ton dashboard homelab ultra-personnalisable avec widgets
 URL: https://brandonvisca.com/dashy-docker-dashboard-homelab/
