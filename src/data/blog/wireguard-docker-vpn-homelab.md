@@ -72,6 +72,8 @@ Dans la pratique, pour un homelab Dockerisé, tu vas déployer WireGuard via un 
 
 **Verdict** : pour un homelab personnel, WireGuard est le choix par défaut. OpenVPN reste pertinent dans des contextes d'entreprise où la conformité FIPS ou l'intégration avec des PKI existantes est obligatoire. Pour toi et tes appareils, WireGuard est plus rapide à déployer, plus rapide à l'exécution, et plus simple à auditer.
 
+> **Tu veux aller plus loin ?** Si tu cherches un VPN zero-trust avec authentification SSO et politiques d'accès granulaires basées sur WireGuard, j'ai publié un guide complet sur [Firezone Docker](/firezone-docker-vpn-zero-trust/).
+
 ## Prérequis
 
 Avant de lancer ton conteneur WireGuard, vérifie ces quelques points :

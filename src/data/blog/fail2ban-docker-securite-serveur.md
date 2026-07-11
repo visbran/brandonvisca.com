@@ -148,6 +148,8 @@ bantime = 7200
 
 Note l'utilisation de `ignoreip`. Si tu te connectes depuis un réseau local ou un VPN, ajoute tes plages pour éviter de te bannir toi-même. C'est la première cause de désespoir chez les débutants Fail2Ban.
 
+Si tu cherches à sécuriser ton homelab avec un VPN zero-trust qui contrôle précisément qui accède à quoi, j.ai publié un guide complet sur [Firezone Docker](/firezone-docker-vpn-zero-trust/).
+
 ### Un filtre personnalisé : `filter.d/traefik-auth.conf`
 
 Si tu utilises Traefik avec une authentification basique, un filtre simple pour repérer les 401 :
