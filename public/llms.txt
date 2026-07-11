@@ -6,7 +6,7 @@
 ## Firezone Docker : VPN zero-trust basé sur WireGuard
 URL: https://brandonvisca.com/firezone-docker-vpn-zero-trust/
 Description: Guide Firezone Docker : déploie un VPN zero-trust basé sur WireGuard avec Docker Compose. OIDC, policies et split tunneling inclus.
-Tags: intermediaire, securite, vpn, wireguard, docker, zero-trust
+Tags: 
 Publié: 2026-07-11T08:00:00.000Z
 
 ## Dashy Docker : ton dashboard homelab ultra-personnalisable avec widgets
