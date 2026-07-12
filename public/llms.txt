@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-11
-# Total articles : 130
+# Dernière mise à jour : 2026-07-12
+# Total articles : 131
+
+## Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé
+URL: https://brandonvisca.com/romm-docker-retro-gaming/
+Description: Guide Romm Docker : déploie un gestionnaire de ROMs rétro-gaming auto-hébergé. Docker Compose complet, scan auto et intégration émulateurs.
+Tags: debutant, auto-hebergement, docker, retro-gaming, emulation
+Publié: 2026-07-12T08:00:00.000Z
 
 ## Firezone Docker : VPN zero-trust basé sur WireGuard
 URL: https://brandonvisca.com/firezone-docker-vpn-zero-trust/
