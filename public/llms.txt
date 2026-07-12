@@ -6,7 +6,7 @@
 ## Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé
 URL: https://brandonvisca.com/romm-docker-retro-gaming/
 Description: Guide Romm Docker : déploie un gestionnaire de ROMs rétro-gaming auto-hébergé. Docker Compose complet, scan auto et intégration émulateurs.
-Tags: debutant, auto-hebergement, docker, retro-gaming, emulation
+Tags: 
 Publié: 2026-07-12T08:00:00.000Z
 
 ## Firezone Docker : VPN zero-trust basé sur WireGuard
