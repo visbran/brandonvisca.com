@@ -299,4 +299,4 @@ Navidrome est l'un des services les plus impressionnants que j'ai ajoutés à mo
 
 Pour la musique, il bat Jellyfin et Plex sur la légèreté, la simplicité et la découvrabilité via l'API Subsonic. Si tu cherches à compléter ta stack média auto-hébergée, c'est le choix évident.
 
-Déploie-le, scanne ta bibliothèque, télécharge Ultrasonic ou DSub sur ton téléphone, et redécouvre ta collection musicale sans algorithme ni publicité. C'est une liberation.
+Déploie-le, scanne ta bibliothèque, télécharge Ultrasonic ou DSub sur ton téléphone, et redécouvre ta collection musicale sans algorithme ni publicité. C'est une liberation. Si tu préfères les jeux vidéo rétro à la musique, j'ai aussi publié un guide sur [Romm Docker](/romm-docker-retro-gaming/), un gestionnaire de ROMs auto-hébergé qui organise tes jeux avec pochettes et métadonnées.
