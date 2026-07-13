@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-12
-# Total articles : 131
+# Dernière mise à jour : 2026-07-13
+# Total articles : 132
+
+## Podman vs Docker : conteneurs rootless sans daemon
+URL: https://brandonvisca.com/podman-vs-docker-rootless/
+Description: Podman vs Docker : découvre pourquoi Podman rootless sans daemon change la donne. Guide pratique avec installation, commandes et migration complète.
+Tags: docker, linux, intermediaire, securite, containerisation
+Publié: 2026-07-13T08:00:00.000Z
 
 ## Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé
 URL: https://brandonvisca.com/romm-docker-retro-gaming/
