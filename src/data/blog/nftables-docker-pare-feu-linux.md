@@ -302,3 +302,5 @@ Assure-toi que nftables est chargé et que iptables n'est pas actif en parallèl
 nftables n'est pas qu'un remplacement d'iptables. C'est une opportunité de reprendre le contrôle total du réseau de tes conteneurs. Oui, ça demande un peu plus de travail initial qu'UFW. Oui, il faut comprendre comment Docker manipule le réseau sous le capot. Mais le résultat est un pare-feu lisible, performant et entièrement maîtrisé.
 
 Dans un monde où Docker injecte des règles iptables opaques et où UFW se fait contourner, nftables est l'outil qui te remet aux commandes. Et si tu es déjà passé par le [durcissement de ton serveur Linux](/hardening-linux-10-commandes/), ajouter une couche nftables bien configurée est la dernière brique pour un homelab sérieusement sécurisé.
+
+D'ailleurs, si tu envisages de remplacer Docker par une solution rootless, j'ai comparé [Podman vs Docker](/podman-vs-docker-rootless/) — le daemon-less et le rootless changent vraiment la donne.
