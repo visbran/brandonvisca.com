@@ -167,5 +167,5 @@ Si quelque chose ne marche pas, c'est souvent un PATH mal configuré ou un confl
 
 ## Conclusion
 
-Homebrew macOS en place, reste à l'exploiter. Des outils comme `ffmpeg`, `yt-dlp` ou `mas` (pour le Mac App Store en ligne de commande) changent complètement le rapport au Mac. Lance `brew search` et explore le catalogue, tu vas y passer du temps.
+Homebrew macOS en place, reste à l'exploiter. Des outils comme `ffmpeg`, `yt-dlp` ou `mas` (pour le Mac App Store en ligne de commande) changent complètement le rapport au Mac. Si tu cherches d'autres outils pour booster ton MacBook, j'ai publié un guide sur [Boring.Notch](/boring-notch-macbook-dynamic-island/) qui transforme la notch en Dynamic Island fonctionnelle — un autre must-have gratuit et open-source. Lance `brew search` et explore le catalogue, tu vas y passer du temps.
 
