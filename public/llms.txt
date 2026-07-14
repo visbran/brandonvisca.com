@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-13
-# Total articles : 132
+# Dernière mise à jour : 2026-07-14
+# Total articles : 133
+
+## Boring notch macOS : transforme la notch de ton MacBook en Dynamic Island
+URL: https://brandonvisca.com/boring-notch-macbook-dynamic-island/
+Description: Boring notch macOS : transforme la notch de ton MacBook en Dynamic Island utile. Notifications, musique et contrôles depuis la barre de menu.
+Tags: 
+Publié: 2026-07-14T08:00:00.000Z
 
 ## Podman vs Docker : conteneurs rootless sans daemon
 URL: https://brandonvisca.com/podman-vs-docker-rootless/
