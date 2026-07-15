@@ -232,4 +232,4 @@ L'interface web de Netboot.xyz (port 3000) n'a pas d'authentification par défau
 
 ## Conclusion
 
-Netboot.xyz sous Docker transforme n'importe quel serveur en point de boot universel. Plus besoin de clés USB, plus besoin de graver des ISO. Tu configures une fois, et tu installes ce que tu veux, quand tu veux, directement depuis le réseau. C'est l'outil parfait pour un homelab efficace et un provisionnement sans friction.
+Netboot.xyz sous Docker transforme n'importe quel serveur en point de boot universel. Plus besoin de clés USB, plus besoin de graver des ISO. Tu configures une fois, et tu installes ce que tu veux, quand tu veux, directement depuis le réseau. C'est l'outil parfait pour un homelab efficace et un provisionnement sans friction. Si tu veux aller plus loin avec Proxmox, j'ai aussi publié un guide sur les [Proxmox VE Helper Scripts](/proxmox-ve-helper-scripts-community/) qui te permettent d'installer des conteneurs LXC préconfigurés en un clic.
