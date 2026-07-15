@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-14
-# Total articles : 133
+# Dernière mise à jour : 2026-07-15
+# Total articles : 134
+
+## Proxmox VE Helper Scripts : installer des LXC en 1 clic
+URL: https://brandonvisca.com/proxmox-ve-helper-scripts-community/
+Description: Proxmox VE Helper Scripts : découvre comment déployer des conteneurs LXC préconfigurés en une seule commande. Guide pratique, sécurité et commandes copier-coller.
+Tags: 
+Publié: 2026-07-15T08:00:00.000Z
 
 ## Boring notch macOS : transforme la notch de ton MacBook en Dynamic Island
 URL: https://brandonvisca.com/boring-notch-macbook-dynamic-island/
