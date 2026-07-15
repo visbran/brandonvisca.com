@@ -5,9 +5,9 @@
 
 ## Proxmox VE Helper Scripts : installer des LXC en 1 clic
 URL: https://brandonvisca.com/proxmox-ve-helper-scripts-community/
-Description: Proxmox VE Helper Scripts : découvre comment déployer des conteneurs LXC préconfigurés en une seule commande. Guide pratique, sécurité et commandes copier-coller.
+Description: Découvrez les Proxmox VE Helper Scripts pour déployer des conteneurs LXC en un clic. Guide pratique, sécurité et commandes copier-coller.
 Tags: 
-Publié: 2026-07-15T08:00:00.000Z
+Publié: 2026-07-15 08:00:00+00:00
 
 ## Boring notch macOS : transforme la notch de ton MacBook en Dynamic Island
 URL: https://brandonvisca.com/boring-notch-macbook-dynamic-island/
