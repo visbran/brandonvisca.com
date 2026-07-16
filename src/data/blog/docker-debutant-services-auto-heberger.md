@@ -913,6 +913,8 @@ Avec Docker :
 
 **Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer. Et si tu veux provisionner tes futures machines sans clé USB, le [boot PXE avec Netboot Docker](/netboot-xyz-docker-pxe-boot/) te fera gagner un temps fou.
 
+Si tu cherches un navigateur web embarqué accessible depuis n'importe quel appareil pour accéder à tes ressources internes, j'ai publié un guide sur [Alcove Docker](/alcove-navigateur-auto-heberge/).
+
 Si tu veux aller encore plus loin, la prochaine étape c'est [sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) avant d'exposer tes services sur internet.
 
 Et si tu cherches une alternative plus sécurisée à Docker, j'ai testé [Podman en rootless](https://brandonvisca.com/podman-vs-docker-rootless/) — conteneurs sans daemon root, c'est bluffant.

@@ -339,4 +339,6 @@ Si tu veux pousser plus loin avec des widgets intégrés (météo, monitoring, s
 
 Et pour surveiller les changements sur des pages web (prix, disponibilité, releases) tout en gardant ton homelab sous contrôle, jette un oeil à [Changedetection.io](/changedetection-docker-surveillance-web/), un autre outil Docker que j'ai couvert récemment.
 
-Et toi, tu utilises quel dashboard pour ton homelab ? Homer, Heimdall, ou autre chose ?
+Si tu as besoin d'un navigateur web accessible depuis n'importe quel appareil directement depuis ton homelab, j'ai publié un guide sur [Alcove Docker](/alcove-navigateur-auto-heberge/), un conteneur Chromium embarqué parfait pour accéder à tes ressources internes sans client lourd.
+
+Homer reste le dashboard le plus sobre et efficace pour un homelab. Pas de base de données, pas de dependencies lourdes, juste un fichier YAML qui décrit tes services et une page web qui charge en un clin d'oeil.
