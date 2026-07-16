@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-15
-# Total articles : 134
+# Dernière mise à jour : 2026-07-16
+# Total articles : 135
+
+## Alcove Docker : navigateur web auto-hébergé pour homelab
+URL: https://brandonvisca.com/alcove-navigateur-auto-heberge/
+Description: Guide Alcove Docker : déploie un navigateur web auto-hébergé pour ton homelab avec Docker Compose. Reverse proxy, sécurité HTTPS et configuration complète.
+Tags: debutant, auto-hebergement, alcove, navigateur, homelab
+Publié: 2026-07-16T08:00:00.000Z
 
 ## Proxmox VE Helper Scripts : installer des LXC en 1 clic
 URL: https://brandonvisca.com/proxmox-ve-helper-scripts-community/
