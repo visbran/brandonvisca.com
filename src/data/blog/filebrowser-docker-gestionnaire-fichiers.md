@@ -218,7 +218,7 @@ Avec Caddy, tu obtiens automatiquement un certificat Let's Encrypt, du HTTPS for
 
 ### Partager rapidement un fichier depuis ton serveur
 
-Tu as un ISO Debian à envoyer à un collègue ? Glisse-le dans le dossier géré par File Browser, clique droit sur le fichier, « Partager », et tu obtiens un lien direct avec une URL propre. Pas besoin de configurer un serveur FTP ou d'ouvrir des ports supplémentaires.
+Tu as un ISO Debian à envoyer à un collègue ? Glisse-le dans le dossier géré par File Browser, clique droit sur le fichier, « Partager », et tu obtiens un lien direct avec une URL propre. Pas besoin de configurer un serveur FTP ou d'ouvrir des ports supplémentaires. Si tu cherches un outil dédié uniquement au partage d'images avec génération de liens directs, j'ai aussi publié un guide sur [Droppy avec Docker](/droppy-partage-images-auto-heberge/), un serveur de partage d'images ultra-léger sans base de données.
 
 ### Gérer les fichiers d'un serveur sans interface graphique
 
