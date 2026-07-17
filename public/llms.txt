@@ -6,7 +6,7 @@
 ## Droppy Docker : partage d'images auto-hébergé léger
 URL: https://brandonvisca.com/droppy-partage-images-auto-heberge/
 Description: Droppy Docker : déploie un partage d'images auto-hébergé léger. Alternative à Imgur, installation en 5 min avec Docker Compose. Guide complet.
-Tags: docker, auto-hebergement, debutant
+Tags: 
 Publié: 2026-07-17T08:00:00.000Z
 
 ## Alcove Docker : navigateur web auto-hébergé pour homelab
