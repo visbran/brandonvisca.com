@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-16
-# Total articles : 135
+# Dernière mise à jour : 2026-07-17
+# Total articles : 136
+
+## Droppy Docker : partage d'images auto-hébergé léger
+URL: https://brandonvisca.com/droppy-partage-images-auto-heberge/
+Description: Droppy Docker : déploie un partage d'images auto-hébergé léger. Alternative à Imgur, installation en 5 min avec Docker Compose. Guide complet.
+Tags: docker, auto-hebergement, debutant
+Publié: 2026-07-17T08:00:00.000Z
 
 ## Alcove Docker : navigateur web auto-hébergé pour homelab
 URL: https://brandonvisca.com/alcove-navigateur-auto-heberge/
