@@ -87,6 +87,8 @@ La notch sur MacBook, c'est un peu comme la prise jack sur iPhone : on s'y fait,
 
 Dans un monde où chaque pixel compte et où on veut une interface épurée, avoir un hub d'informations discret qui apparaît uniquement quand on en a besoin, c'est exactement ce qu'il faut. Pas de barre de tâches surchargée, pas de widgets qui bouffent de la place sur le bureau. Juste la notch, enfin utile.
 
+Si tu utilises des agents IA de code (Claude Code, Codex CLI, Cursor...), tu peux aussi transformer la notch en tableau de bord de surveillance avec [Open Island](/vibe-island-macos-agents-ia-coding/), le fork open-source qui affiche l'état de tes sessions directement dans la barre de menu macOS.
+
 Si tu es du genre à personnaliser ton terminal avec [Oh My Zsh et Powerlevel10k](/installation-oh-my-zsh-powerlevel10k-guide-complet/), tu vas adorer l'esprit de Boring.Notch. C'est la même philosophie : prendre un outil du quotidien et le pousser un cran au-dessus.
 
 ## Les limites à connaître

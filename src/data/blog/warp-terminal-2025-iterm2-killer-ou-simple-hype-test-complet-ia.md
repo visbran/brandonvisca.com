@@ -217,6 +217,8 @@ Le seul tradeoff réel : tu dépends d'internet pour les fonctions IA, et Warp e
 
 Pour les autres, [installe-le](https://www.warp.dev/) et teste 2 semaines. La migration depuis iTerm2 prend 10 minutes. Tu reviendras probablement pas en arrière.
 
+Si tu utilises déjà des agents IA comme Claude Code ou Codex CLI, jette un œil à [Open Island](/vibe-island-macos-agents-ia-coding/), un panneau natif macOS qui s'installe dans la notch pour surveiller tes sessions d'agents sans quitter ton terminal.
+
 ## Pour aller plus loin
 
 - [Guide iTerm2 macOS : Installation et configuration complète (2026)](/iterm2-guide-configuration-macos-2025/)
