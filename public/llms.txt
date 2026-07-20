@@ -6,7 +6,7 @@
 ## Vibe Island : le panneau notch macOS pour surveiller tes agents IA de code
 URL: https://brandonvisca.com/vibe-island-macos-agents-ia-coding/
 Description: Open Island, fork open-source de Vibe Island : un panneau macOS natif dans la notch pour surveiller Claude Code, Codex et Cursor sans quitter ta fenêtre.
-Tags: macos, productivite, debutant, open-island, vibe-coding, agent-ia
+Tags: 
 Publié: 2026-07-18T08:00:00.000Z
 
 ## Droppy Docker : partage d'images auto-hébergé léger
