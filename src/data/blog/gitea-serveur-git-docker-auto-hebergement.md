@@ -89,6 +89,7 @@ La dernière version stable au moment de la rédaction : **v1.26.2**. Le projet 
 - Tu veux une solution monolithique avec registry, CI et monitoring intégrés ? **GitLab**.
 - Tu veux **un serveur Git léger, rapide à déployer et facile à maintenir** ? **Gitea**.
 - Tu veux Gitea mais avec une gouvernance communautaire totalement indépendante ? **Forgejo** (fork né de désaccords sur la gouvernance de Gitea).
+- Si tu veux aller plus loin, j'ai testé [Forgejo avec Docker](/forgejo-docker-serveur-git/) et son déploiement est tout aussi simple.
 
 ---
 
