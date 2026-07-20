@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-07-20
-# Total articles : 137
+# Total articles : 138
+
+## Forgejo Docker : fork Gitea open-source sans restrictions
+URL: https://brandonvisca.com/forgejo-docker-serveur-git/
+Description: Forgejo Docker : déploie ce fork open-source de Gitea, libre et communautaire. Guide complet avec Docker Compose, comparaison et astuces.
+Tags: intermediaire, auto-hebergement, docker, git, homelab, forgejo
+Publié: 2026-07-20 08:00:00+02:00
 
 ## Vibe Island : le panneau notch macOS pour surveiller tes agents IA de code
 URL: https://brandonvisca.com/vibe-island-macos-agents-ia-coding/
