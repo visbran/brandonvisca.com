@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-20
-# Total articles : 138
+# Dernière mise à jour : 2026-07-21
+# Total articles : 139
+
+## CrowdSec Docker : sécurité collaborative contre les attaques
+URL: https://brandonvisca.com/crowdsec-docker-securite-collaborative/
+Description: Installe CrowdSec en Docker pour protéger ton homelab grâce à une intelligence collective contre les attaques brute-force et les scans malveillants.
+Tags: 
+Publié: 2026-07-21T08:00:00.000Z
 
 ## Forgejo Docker : le fork Gitea 100% libre que tu devrais déjà utiliser
 URL: https://brandonvisca.com/forgejo-docker-serveur-git/
