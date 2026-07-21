@@ -287,7 +287,7 @@ Oui. Les clés SSH empêchent le bruteforce de mot de passe, mais pas les floods
 
 **Est-ce compatible avec Docker Swarm ou Kubernetes ?**
 
-`crazymax/fail2ban` est prévu pour des hôtes uniques. En Swarm ou K8s, le réseau overlay rend `iptables` plus complexe. CrowdSec ou un WAF cloud deviennent alors plus pertinents.
+`crazymax/fail2ban` est prévu pour des hôtes uniques. En Swarm ou K8s, le réseau overlay rend `iptables` plus complexe. [CrowdSec Docker](/crowdsec-docker-securite-collaborative/) ou un WAF cloud deviennent alors plus pertinents.
 
 **Et les logs journald sans fichier physique ?**
 
