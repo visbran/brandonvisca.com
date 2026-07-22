@@ -43,7 +43,7 @@ Tu stockes ton code sur GitHub. Gratuit, rapide, tout le monde y est. Jusqu'au j
 - Tu contrôles 100 % de tes données et de ton historique.
 - Pas de limitation d'espace ou de bande passante imposée par un tiers.
 - Pas de risque de suspension arbitraire de compte pour une clause de service interprétée largement.
-- CI/CD possible via Gitea Actions, webhooks ou couplage avec Drone.
+- CI/CD possible via [Gitea Actions Docker](/gitea-actions-docker-ci-cd/), webhooks ou couplage avec Drone.
 - Tu peux l'héberger derrière un VPN, restreint à ton LAN ou exposé sur Internet, tu décides.
 
 Gitea, c'est le moyen le plus rapide et le moins gourmand d'y arriver. Une VM avec 1 Go de RAM et un modeste CPU x86 suffisent amplement. Sur un Raspberry Pi 4, il tourne sans sourciller.

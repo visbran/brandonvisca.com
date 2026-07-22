@@ -272,6 +272,8 @@ Pour que ça marche, tu dois activer les runners dans l'interface d'administrati
 
 Les runners consomment des ressources. Si tu n'as que 2 Go de RAM sur ton serveur, limite-toi à un runner et des workflows légers. Sinon, ton serveur va ramer comme un vieux portable sous Windows Vista.
 
+Pour un guide détaillé sur la configuration du runner avec Docker et la syntaxe des workflows, j'ai publié un article complet sur [Gitea Actions Docker](/gitea-actions-docker-ci-cd/).
+
 ## Migration depuis Gitea
 
 Si tu as déjà un Gitea en place et que tu veux basculer vers Forgejo, la migration est presque insultante de simplicité :
