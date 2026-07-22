@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-21
-# Total articles : 139
+# Dernière mise à jour : 2026-07-22
+# Total articles : 140
+
+## Gitea Actions Docker : CI/CD self-hosted intégré à Gitea
+URL: https://brandonvisca.com/gitea-actions-docker-ci-cd/
+Description: Déploie Gitea Actions Docker pour un CI/CD self-hosted intégré à Gitea. Guide complet avec act_runner, workflows YAML et Docker Compose pour ton homelab.
+Tags: 
+Publié: 2026-07-22T08:00:00.000Z
 
 ## CrowdSec Docker : sécurité collaborative contre les attaques
 URL: https://brandonvisca.com/crowdsec-docker-securite-collaborative/
