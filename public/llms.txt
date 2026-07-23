@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-22
-# Total articles : 140
+# Dernière mise à jour : 2026-07-23
+# Total articles : 141
+
+## Cloudflare Tunnel Docker : accède à ton homelab sans IP publique
+URL: https://brandonvisca.com/cloudflare-tunnel-docker-homelab/
+Description: Guide complet cloudflare tunnel docker : expose ton homelab sur Internet sans IP fixe ni ouverture de ports. Docker compose fonctionnel inclus.
+Tags: intermediaire, reseau, docker, cloudflare, tunnel, homelab
+Publié: 2026-07-23T08:00:00.000Z
 
 ## Gitea Actions Docker : CI/CD self-hosted intégré à Gitea
 URL: https://brandonvisca.com/gitea-actions-docker-ci-cd/
