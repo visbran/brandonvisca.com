@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-23
-# Total articles : 141
+# Dernière mise à jour : 2026-07-24
+# Total articles : 142
+
+## Woodpecker CI Docker : CI/CD léger pour ton homelab
+URL: https://brandonvisca.com/woodpecker-ci-docker-homelab/
+Description: Guide woodpecker ci docker : déploie un pipeline CI/CD léger dans ton homelab avec Docker Compose, agents et workflows YAML prêts à l'emploi.
+Tags: woodpecker, ci-cd, docker, auto-hebergement, intermediaire, devops
+Publié: 2026-07-24T08:00:00.000Z
 
 ## Cloudflare Tunnel Docker : accède à ton homelab sans IP publique
 URL: https://brandonvisca.com/cloudflare-tunnel-docker-homelab/
