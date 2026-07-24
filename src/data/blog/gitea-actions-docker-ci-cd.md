@@ -376,6 +376,8 @@ Pour un homelab ou une petite équipe qui veut rester maître de sa chaîne de d
 
 Gitea Actions transforme ton serveur Git en plateforme CI/CD complète sans ajouter de complexité inutile. Avec un runner Docker et quelques fichiers YAML, tu automatises tes builds, tes tests et tes déploiements sans jamais sortir de ton infrastructure.
 
+Si tu préfères une solution CI/CD découplée de ta forge, avec encore moins de consommation mémoire, [Woodpecker CI Docker](/woodpecker-ci-docker-homelab/) propose un serveur Go et un agent qui tiennent dans moins de 200 Mo de RAM.
+
 La mise en place prend moins d'une heure. Une fois configurée, elle te fait gagner du temps à chaque push. Et si tu cherches à aller encore plus loin dans l'auto-hébergement, tu peux coupler ça avec un reverse proxy comme [Traefik](/traefik-reverse-proxy-docker/) pour sécuriser les endpoints, ou [Caddy](/caddy-docker-reverse-proxy-guide/) pour une config HTTPS minimaliste.
 
 Ton code mérite un pipeline qui travaille pour toi, pas pour une plateforme externe.
