@@ -244,7 +244,7 @@ Non. Le port 3000 sert uniquement pour le wizard initial. Une fois configuré, t
 
 ## Conclusion
 
-AdGuard Home n'est pas "le nouveau Pi-hole qui tue l'ancien". C'est un outil différent, plus moderne sur l'intégration DNS chiffré et plus léger en ressources. Pour un auto-hébergeur qui veut un DNS filtrant propre sans monter une usine à gaz avec Unbound + cloudflared + Pi-hole, c'est le choix malin.
+AdGuard Home n'est pas "le nouveau Pi-hole qui tue l'ancien". C'est un outil différent, plus moderne sur l'intégration DNS chiffré et plus léger en ressources. Pour un auto-hébergeur qui veut un DNS filtrant propre sans monter une usine à gaz avec [Unbound](https://brandonvisca.com/unbound-docker-dns-recursif/) + cloudflared + Pi-hole, c'est le choix malin.
 
 Le container `adguard/adguardhome:latest` fait moins de 30 Mo, démarre en quelques secondes, et une fois ton routeur configuré, **tout ton réseau est nettoyé** : pub, trackers, malware, et même les requêtes teslascopes de tes objets connectés.
 

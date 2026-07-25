@@ -224,7 +224,7 @@ Résultat : plus besoin de gérer `/etc/hosts` sur chaque client, ni de configur
 
 ## Conclusion
 
-Technitium DNS Server est une des meilleures options pour auto-héberger son DNS en 2026. Il est propre, activement maintenu par Shreyas Zare, et il fait du DNS récursif natif sans jongler avec Unbound. Le blocage de pubs est efficace, la configuration est intuitive, et le tout tient dans un conteneur Docker de ~100 Mo.
+Technitium DNS Server est une des meilleures options pour auto-héberger son DNS en 2026. Il est propre, activement maintenu par Shreyas Zare, et il fait du DNS récursif natif sans jongler avec [Unbound](https://brandonvisca.com/unbound-docker-dns-recursif/). Le blocage de pubs est efficace, la configuration est intuitive, et le tout tient dans un conteneur Docker de ~100 Mo.
 
 La migration depuis Pi-hole est quasi-transparente : importe tes listes, désactive l'ancien serveur, pointe ton routeur sur la nouvelle IP. Pas de mauvaise surprise.
 
