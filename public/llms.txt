@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-24
-# Total articles : 142
+# Dernière mise à jour : 2026-07-25
+# Total articles : 143
+
+## Unbound Docker DNS récursif auto-hébergé et performant
+URL: https://brandonvisca.com/unbound-docker-dns-recursif/
+Description: Déployez Unbound Docker DNS récursif et cache open-source pour accélérer vos requêtes, valider DNSSEC et gagner en souveraineté réseau.
+Tags: reseau, docker, intermediaire, securite
+Publié: 2026-07-25T08:00:00.000Z
 
 ## Woodpecker CI Docker : CI/CD léger pour ton homelab
 URL: https://brandonvisca.com/woodpecker-ci-docker-homelab/
