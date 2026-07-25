@@ -6,7 +6,7 @@
 ## Unbound Docker DNS récursif auto-hébergé et performant
 URL: https://brandonvisca.com/unbound-docker-dns-recursif/
 Description: Déployez Unbound Docker DNS récursif et cache open-source pour accélérer vos requêtes, valider DNSSEC et gagner en souveraineté réseau.
-Tags: reseau, docker, intermediaire, securite
+Tags: 
 Publié: 2026-07-25T08:00:00.000Z
 
 ## Woodpecker CI Docker : CI/CD léger pour ton homelab
