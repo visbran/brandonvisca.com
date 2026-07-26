@@ -3,11 +3,10 @@
 # Dernière mise à jour : 2026-07-26
 # Total articles : 144
 
-
 ## Ansible homelab 101 : automatise ton infrastructure en YAML
 URL: https://brandonvisca.com/ansible-101-homelab-yaml/
 Description: Guide Ansible homelab pour débutants : automatise ton infrastructure en YAML avec playbooks, inventaires, rôles et exemples prêts à copier.
-Tags: linux, auto-hebergement, ansible, intermediaire
+Tags: 
 Publié: 2026-07-26T08:00:00.000Z
 
 ## Unbound Docker DNS récursif auto-hébergé et performant
@@ -867,3 +866,4 @@ URL: https://brandonvisca.com/securite-de-votre-serveur-linux/
 Description: Guide complet pour renforcer la sécurité de votre serveur Linux : SSH, pare-feu ufw, fail2ban, mises à jour auto et surveillance des logs. Testé en prod.
 Tags: 
 Publié: 2024-06-10T19:29:00+02:00
+
