@@ -296,6 +296,7 @@ Ces dix commandes couvrent les fondations. Pour aller plus loin, pense à :
 - Configurer un système de détection d'intrusion (AIDE, OSSEC).
 - Centraliser les logs avec rsyslog ou un outil comme Beszel.
 - Synchroniser précisément l'heure de tous tes serveurs avec un serveur NTP local — j'utilise [Chrony en Docker](/chrony-docker-serveur-ntp-homelab/) pour garder tous mes nœuds alignés au milliseconde près.
+- Automatiser ces dix commandes et toute la configuration avec [Ansible et des playbooks YAML](/ansible-101-homelab-yaml/) pour ne plus jamais le faire à la main.
 - Mettre en place des sauvegardes chiffrées et testées.
 - Auditer régulièrement les comptes et groupes avec `cat /etc/passwd | grep /bin/bash`.
 
