@@ -33,6 +33,8 @@ faqs:
 
 Tu veux uploader, synchroniser ou sauvegarder des fichiers vers Amazon S3 (ou un service compatible) sans passer par la console AWS ? **S3cmd** est le client CLI qu'il te faut. Open source, gratuit, compatible avec tous les services S3-like, il tourne parfaitement dans des scripts cron ou des pipelines de déploiement.
 
+Si tu cherches à auto-héberger ton propre serveur S3-compatible plutôt que de payer Amazon, j'ai couvert le sujet dans mon guide [MinIO Docker](/minio-docker-stockage-objet-s3/) : un conteneur, une console web, et une API S3 fonctionnelle en 10 minutes.
+
 J'utilise S3cmd pour sauvegarder mes dumps MySQL et configs Proxmox vers un bucket S3-compatible. Ça tourne en cron chaque nuit depuis 2 ans sans accroc.
 
 ## Table des matières

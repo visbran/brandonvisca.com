@@ -26,6 +26,8 @@ Duplicati est un outil de sauvegarde open-source développé en C# sur .NET. Le 
 
 Ce qui fait la force de Duplicati : il chiffre tes backups localement avec AES-256 avant de les envoyer vers la destination. Même si ton cloud se fait pirater, tes données restent illisibles sans le mot de passe. Il supporte une dizaine de protocoles (S3, SFTP, FTP, WebDAV, Backblaze B2, Wasabi, Google Drive, SMB, SSH) et il gère la compression, la déduplication et les versions incrémentales. Tu peux restaurer un fichier datant de mardi 14h en trois clics depuis l'interface web.
 
+Si tu préfères héberger toi-même ton stockage S3 plutôt que de payer Amazon, j'ai détaillé le déploiement de [MinIO avec Docker](/minio-docker-stockage-objet-s3/) : conteneur unique, console web, et compatibilité totale avec l'API S3.
+
 Dans mon [guide auto-hébergement complet](/auto-hebergement-guide-complet-2025/), je répète un mantra : un service auto-hébergé sans backup, c'est un service provisoire. Duplicati transforme ce provisoire en pérenne.
 
 ## Duplicati vs les alternatives : tableau comparatif
