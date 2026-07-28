@@ -6,7 +6,7 @@
 ## MinIO Docker : stockage objet S3-compatible auto-hébergé
 URL: https://brandonvisca.com/minio-docker-stockage-objet-s3/
 Description: MinIO Docker : déploie ton propre stockage objet S3-compatible en 10 minutes. Alternative auto-hébergée à AWS S3, simple et performante.
-Tags: auto-hebergement, docker, intermediaire, minio, s3, stockage
+Tags: 
 Publié: 2026-07-28T08:00:00.000Z
 
 ## Ansible homelab 101 : automatise ton infrastructure en YAML
