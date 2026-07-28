@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-26
-# Total articles : 144
+# Dernière mise à jour : 2026-07-28
+# Total articles : 145
+
+## MinIO Docker : stockage objet S3-compatible auto-hébergé
+URL: https://brandonvisca.com/minio-docker-stockage-objet-s3/
+Description: MinIO Docker : déploie ton propre stockage objet S3-compatible en 10 minutes. Alternative auto-hébergée à AWS S3, simple et performante.
+Tags: auto-hebergement, docker, intermediaire, minio, s3, stockage
+Publié: 2026-07-28T08:00:00.000Z
 
 ## Ansible homelab 101 : automatise ton infrastructure en YAML
 URL: https://brandonvisca.com/ansible-101-homelab-yaml/
