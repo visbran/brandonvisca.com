@@ -145,6 +145,7 @@ Tu peux aussi ajouter des restrictions IP (whitelist) dans la même access list.
 - **Bloque le port 81 sur l'extérieur** via ton firewall si tu n'y accèdes que via un tunnel SSH ou VPN
 - **Sauvegarde les volumes** `./data` et `./letsencrypt` avec [restic](https://restic.net/) ou [duplicacy](https://duplicacy.com/)
 - **Active le logs forwarding** vers une stack ELK/Graylog si tu surveilles les accès
+- Si ton FAI change ton IP publique régulièrement, associe NPM à [DuckDNS Docker](/duckdns-docker-ddns-gratuit/) pour maintenir ton domaine à jour sans intervention
 
 Pour le durcissement HTTPS, complète avec les [headers HTTP sécurisés Nginx](/securiser-nginx-avec-headers-http/), HSTS étendu, X-Frame-Options, CSP.
 

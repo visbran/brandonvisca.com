@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-28
-# Total articles : 145
+# Dernière mise à jour : 2026-07-29
+# Total articles : 146
+
+## DuckDNS Docker : DDNS gratuit pour ton IP dynamique
+URL: https://brandonvisca.com/duckdns-docker-ddns-gratuit/
+Description: DuckDNS Docker : garde ton nom de domaine à jour avec ton IP dynamique gratuitement. Guide pas à pas avec Docker Compose, variables et astuces homelab.
+Tags: 
+Publié: 2026-07-29T08:00:00.000Z
 
 ## MinIO Docker : stockage objet S3-compatible auto-hébergé
 URL: https://brandonvisca.com/minio-docker-stockage-objet-s3/
