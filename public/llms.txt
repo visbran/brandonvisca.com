@@ -6,7 +6,7 @@
 ## Syncthing Docker : synchronise tes fichiers sans le cloud
 URL: https://brandonvisca.com/syncthing-docker-synchronisation-fichiers/
 Description: Syncthing Docker : synchronise tes fichiers entre appareils sans cloud. Tutoriel complet Docker Compose, sécurité et configuration P2P.
-Tags: debutant, auto-hebergement, docker, syncthing, synchronisation, p2p
+Tags: 
 Publié: 2026-08-03T08:00:00.000Z
 
 ## DuckDNS Docker : DDNS gratuit pour ton IP dynamique
