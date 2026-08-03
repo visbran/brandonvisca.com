@@ -259,4 +259,4 @@ File Browser, c'est l'outil qu'il te manquait si tu trouvais Nextcloud trop lour
 
 Il consomme moins de ressources qu'un onglet Chrome, il demande zéro base de données externe, et il fait exactement ce qu'on lui demande : gérer des fichiers. Pour l'auto-hébergement, c'est exactement ce genre d'outil simple et efficace qui fait la différence entre un homelab qui tourne et un homelab qui encombre.
 
-Déploie-le, teste-le, et dis-moi dans quels cas d'usage tu l'utilises.
+Déploie-le, teste-le, et si tu cherches aussi à synchroniser tes fichiers automatiquement entre plusieurs appareils sans passer par un cloud, j'ai publié un guide complet sur [Syncthing avec Docker](https://brandonvisca.com/syncthing-docker-synchronisation-fichiers/).
