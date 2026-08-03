@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-07-29
-# Total articles : 146
+# Dernière mise à jour : 2026-08-03
+# Total articles : 147
+
+## Syncthing Docker : synchronise tes fichiers sans le cloud
+URL: https://brandonvisca.com/syncthing-docker-synchronisation-fichiers/
+Description: Syncthing Docker : synchronise tes fichiers entre appareils sans cloud. Tutoriel complet Docker Compose, sécurité et configuration P2P.
+Tags: debutant, auto-hebergement, docker, syncthing, synchronisation, p2p
+Publié: 2026-08-03T08:00:00.000Z
 
 ## DuckDNS Docker : DDNS gratuit pour ton IP dynamique
 URL: https://brandonvisca.com/duckdns-docker-ddns-gratuit/
