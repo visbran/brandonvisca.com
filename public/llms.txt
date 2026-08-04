@@ -3,10 +3,10 @@
 # Dernière mise à jour : 2026-08-04
 # Total articles : 148
 
-## Pocket-ID Docker : SSO léger avec OpenID Connect
+## Pocket-ID Docker SSO : déploiement léger avec OpenID Connect
 URL: https://brandonvisca.com/pocket-id-docker-sso-leger/
 Description: Guide pocket-id docker sso complet : déploie Pocket-ID avec Docker Compose pour un SSO léger et rapide via OpenID Connect dans ton homelab.
-Tags: sso, openid-connect, docker, securite, auto-hebergement, intermediaire
+Tags: 
 Publié: 2026-08-04T06:00:00.000Z
 
 ## Syncthing Docker : synchronise tes fichiers sans le cloud
