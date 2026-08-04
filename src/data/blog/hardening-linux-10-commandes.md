@@ -297,6 +297,7 @@ Ces dix commandes couvrent les fondations. Pour aller plus loin, pense à :
 - Centraliser les logs avec rsyslog ou un outil comme Beszel.
 - Synchroniser précisément l'heure de tous tes serveurs avec un serveur NTP local — j'utilise [Chrony en Docker](/chrony-docker-serveur-ntp-homelab/) pour garder tous mes nœuds alignés au milliseconde près.
 - Automatiser ces dix commandes et toute la configuration avec [Ansible et des playbooks YAML](/ansible-101-homelab-yaml/) pour ne plus jamais le faire à la main.
+- Centraliser l'authentification de tes services avec un SSO léger comme [Pocket-ID sous Docker](/pocket-id-docker-sso-leger/) pour ne plus gérer des dizaines de mots de passe.
 - Mettre en place des sauvegardes chiffrées et testées.
 - Auditer régulièrement les comptes et groupes avec `cat /etc/passwd | grep /bin/bash`.
 
