@@ -1116,6 +1116,7 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 
 **Autres articles macOS** :
 - [Raycast : Launcher complet](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)
+- [Amethyst : Tiling window manager au clavier](https://brandonvisca.com/amethyst-macos-tiling-window-manager/)
 - [Ice : Gestionnaire barre menu détaillé](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
 - [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)
 - [iTerm2 : Terminal optimisé](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/)

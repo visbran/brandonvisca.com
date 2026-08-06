@@ -193,6 +193,8 @@ Si tu hésites à payer pour Magnet, commence par Rectangle. C'est gratuit, ça 
 - Tu aimes l'open source
 - Tu veux une alternative solide et maintenue
 
+> 💡 **Bonus tiling :** Si tu veux un tiling window manager gratuit et open-source qui organise automatiquement tes fenêtres au clavier, j'ai testé [Amethyst](https://brandonvisca.com/amethyst-macos-tiling-window-manager/) sur macOS. C'est moins visuel que Magnet, mais le gain de productivité au clavier est énorme.
+
 ---
 
 ### 🏆 BetterSnapTool : Le couteau suisse pour power users
