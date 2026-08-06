@@ -7,7 +7,7 @@
 URL: https://brandonvisca.com/amethyst-macos-tiling-window-manager/
 Description: Amethyst macOS : tiling window manager gratuit et open-source. Organise tes fenêtres au clavier sans lever les mains du clavier.
 Tags: 
-Publié: 2026-08-06T10:00:00.000Z
+Publié: 2026-08-06T00:00:00.000+02:00
 
 ## Pocket-ID Docker SSO : déploiement léger avec OpenID Connect
 URL: https://brandonvisca.com/pocket-id-docker-sso-leger/
@@ -896,5 +896,4 @@ URL: https://brandonvisca.com/securite-de-votre-serveur-linux/
 Description: Guide complet pour renforcer la sécurité de votre serveur Linux : SSH, pare-feu ufw, fail2ban, mises à jour auto et surveillance des logs. Testé en prod.
 Tags: 
 Publié: 2024-06-10T19:29:00+02:00
-
 
