@@ -6,6 +6,7 @@ import { SITE } from "@/config";
 export const BLOG_PATH = "src/data/blog";
 export const GALLERY_PATH = "src/data/galleries";
 
+// FORCE REBUILD: 2026-08-06T16:30Z
 const blog = defineCollection({
   loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: `./${BLOG_PATH}` }),
   schema: ({ image }) =>
