@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-08-04
-# Total articles : 148
+# Total articles : 149
+
+## Amethyst macOS : tiling window manager gratuit pour un workflow au clavier
+URL: https://brandonvisca.com/amethyst-macos-tiling-window-manager/
+Description: Amethyst macOS : tiling window manager gratuit et open-source. Organise tes fenêtres au clavier sans lever les mains du clavier.
+Tags: macos, productivite, debutant, amethyst, tiling
+Publié: 2026-08-06T10:00:00.000Z
 
 ## Pocket-ID Docker SSO : déploiement léger avec OpenID Connect
 URL: https://brandonvisca.com/pocket-id-docker-sso-leger/
