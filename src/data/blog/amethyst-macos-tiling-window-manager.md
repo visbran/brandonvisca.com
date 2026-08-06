@@ -1,7 +1,7 @@
 ---
 title: "Amethyst macOS : tiling window manager gratuit pour un workflow au clavier"
 description: "Amethyst macOS : tiling window manager gratuit et open-source. Organise tes fenêtres au clavier sans lever les mains du clavier."
-pubDatetime: "2026-08-06T10:00:00.000Z"
+pubDatetime: "2026-08-06T00:00:00.000+02:00"
 modDatetime: "2026-08-06T10:00:00.000Z"
 author: Brandon
 tags:
