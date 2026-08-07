@@ -110,7 +110,7 @@ Mais pour la majorité des usages personnels, PhotoPrism couvre 90% des besoins 
 
 ## Installation de PhotoPrism avec Docker Compose
 
-On part sur une stack complète **photoprism docker** : PhotoPrism + MariaDB. SQLite fonctionne pour les petites collections, mais MariaDB est recommandé dès que tu dépasses 5 000 photos.
+On part sur une stack complète **photoprism docker** : PhotoPrism + MariaDB. SQLite fonctionne pour les petites collections, mais MariaDB est recommandé dès que tu dépasses 5 000 photos. Si tu veux configurer MariaDB proprement pour tous tes services, j'ai écrit un guide dédié sur [MariaDB avec Docker](/mariadb-docker-base-de-donnees/).
 
 Crée un dossier dédié :
 

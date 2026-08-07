@@ -222,7 +222,7 @@ Un wiki contient souvent des informations sensibles. Voici les mesures de base �
 Ne laisse jamais BookStack en HTTP. Ton reverse proxy doit forcer le HTTPS, activer HSTS et bloquer les versions obsolètes de TLS. Caddy le fait nativement. Avec Traefik ou NPM, c'est un simple toggle.
 
 **Sauvegardes automatisées**
-Le volume `./bookstack_app_data` contient les uploads et la config. Le volume `./bookstack_db_data` contient la base MariaDB. Sauvegarde-les avec [Duplicati](/duplicati-docker-sauvegarde/) ou un script cron rsync.
+Le volume `./bookstack_app_data` contient les uploads et la config. Le volume `./bookstack_db_data` contient la base MariaDB. Si tu cherches une configuration plus robuste et centralisée pour ta base de données, j'ai publié un guide complet sur [MariaDB avec Docker](/mariadb-docker-base-de-donnees/). Sauvegarde-les avec [Duplicati](/duplicati-docker-sauvegarde/) ou un script cron rsync.
 
 ```bash
 #!/bin/bash
