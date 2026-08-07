@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-06
-# Total articles : 149
+# Dernière mise à jour : 2026-08-07
+# Total articles : 150
+
+## MariaDB Docker : base de données robuste pour tes services
+URL: https://brandonvisca.com/mariadb-docker-base-de-donnees/
+Description: Déploie MariaDB Docker en 10 minutes : stack complète, persistance des données, sauvegarde automatisée et optimisation pour ton homelab.
+Tags: 
+Publié: 2026-08-07T08:00:00.000Z
 
 ## Amethyst macOS : tiling window manager gratuit pour un workflow au clavier
 URL: https://brandonvisca.com/amethyst-macos-tiling-window-manager/
