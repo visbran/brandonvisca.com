@@ -853,6 +853,8 @@ find ~/backups -name "docker-*.tar.gz" -mtime +7 -delete
 
 ```
 
+Ce script basique fonctionne, mais pour une vraie stratégie de sauvegarde avec déduplication et chiffrement, j'utilise [BorgBackup avec Docker](/borgbackup-docker-sauvegarde/). C'est plus efficace que des archives tar brute, surtout quand tes volumes grossissent.
+
 ```yaml
 services:
   watchtower:

@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-07
-# Total articles : 150
+# Dernière mise à jour : 2026-08-08
+# Total articles : 151
+
+## BorgBackup Docker : sauvegarde dédupliquée et chiffrée pour ton homelab
+URL: https://brandonvisca.com/borgbackup-docker-sauvegarde/
+Description: Guide borgbackup docker complet : déploie BorgBackup en conteneur pour des sauvegardes dédupliquées, compressées et chiffrées AES-256.
+Tags: docker, auto-hebergement, sauvegarde, borgbackup, intermediaire, homelab
+Publié: 2026-08-08T08:00:00.000Z
 
 ## MariaDB Docker : base de données robuste pour tes services
 URL: https://brandonvisca.com/mariadb-docker-base-de-donnees/
