@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-08-08
-# Total articles : 151
+# Total articles : 152
+
+## Certimate Docker : renouvellement auto des certificats SSL
+URL: https://brandonvisca.com/certimate-docker-renouvellement-ssl/
+Description: Déploie Certimate Docker pour gérer et renouveler automatiquement tes certificats SSL Let's Encrypt. Guide complet avec Docker Compose.
+Tags: docker, securite, certificat-ssl, letsencrypt, auto-hebergement, intermediaire
+Publié: 2026-08-09T08:00:00.000Z
 
 ## BorgBackup Docker : sauvegarde dédupliquée et chiffrée pour ton homelab
 URL: https://brandonvisca.com/borgbackup-docker-sauvegarde/
