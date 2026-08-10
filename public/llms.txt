@@ -6,7 +6,7 @@
 ## Restic Docker : sauvegarde moderne vers S3 et plus
 URL: https://brandonvisca.com/restic-docker-sauvegarde-moderne/
 Description: Guide complet restic docker : sauvegarde tes conteneurs avec déduplication, chiffrement AES-256, stockage S3 et cron automatisé.
-Tags: intermediaire, auto-hebergement, docker, restic, sauvegarde
+Tags: 
 Publié: 2026-08-10T08:00:00.000Z
 
 ## Certimate Docker : renouvellement auto des certificats SSL
