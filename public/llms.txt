@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-09
-# Total articles : 152
+# Dernière mise à jour : 2026-08-10
+# Total articles : 153
+
+## Restic Docker : sauvegarde moderne vers S3 et plus
+URL: https://brandonvisca.com/restic-docker-sauvegarde-moderne/
+Description: Guide complet restic docker : sauvegarde tes conteneurs avec déduplication, chiffrement AES-256, stockage S3 et cron automatisé.
+Tags: intermediaire, auto-hebergement, docker, restic, sauvegarde
+Publié: 2026-08-10T08:00:00.000Z
 
 ## Certimate Docker : renouvellement auto des certificats SSL
 URL: https://brandonvisca.com/certimate-docker-renouvellement-ssl/
