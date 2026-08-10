@@ -40,7 +40,7 @@ Dans mon [guide auto-hébergement complet](/auto-hebergement-guide-complet-2025/
 | **Kopia** | AES-256-GCM | CLI + UI optionnelle | Oui (`kopia/kopia`) | S3, SFTP, SMB… | Intermédiaire |
 | **rsync + cron** | Aucun | Aucune | Non (natif Linux) | SSH | Avancée |
 
-Mon choix pour un homelab Dockerisé : **Duplicati**. Parce que l'interface web est intuitive, l'image Docker est officielle, et tu peux configurer une sauvegarde planifiée sans écrire un script shell. [BorgBackup](/borgbackup-docker-sauvegarde/) et Restic sont plus puissants mais demandent de la patience. rsync n'est pas un vrai système de backup : pas de versions, pas de chiffrement, pas de compression native.
+Mon choix pour un homelab Dockerisé : **Duplicati**. Parce que l'interface web est intuitive, l'image Docker est officielle, et tu peux configurer une sauvegarde planifiée sans écrire un script shell. [BorgBackup](/borgbackup-docker-sauvegarde/) et Restic sont plus puissants mais demandent de la patience. Si tu préfères la ligne de commande avec une déduplication avancée et un support S3 natif, [Restic avec Docker](/restic-docker-sauvegarde-moderne/) est une alternative moderne à considérer. rsync n'est pas un vrai système de backup : pas de versions, pas de chiffrement, pas de compression native.
 
 ## Prérequis
 

@@ -48,7 +48,7 @@ Contrairement à [Duplicati](/duplicati-docker-sauvegarde/) qui mise tout sur so
 || **Kopia** | Bloc à bloc | AES-256-GCM | CLI + UI optionnelle | `kopia/kopia` | Intermédiaire |
 || **rsync** | Aucune | Aucun | Aucune | Non (natif) | Avancée |
 
-Mon verdict pour un homelab Dockerisé : **BorgBackup** si tu veux de la performance brute avec un minimum de complexité. Duplicati reste pertinent pour ceux qui préfèrent cliquer. Restic est excellent mais sa syntaxe et son écosystème sont plus verbeux. rsync n'est pas un système de backup : zéro versioning, zéro chiffrement, zéro compression native.
+Mon verdict pour un homelab Dockerisé : **BorgBackup** si tu veux de la performance brute avec un minimum de complexité. Duplicati reste pertinent pour ceux qui préfèrent cliquer. Restic est excellent mais sa syntaxe et son écosystème sont plus verbeux. Si tu cherches une alternative plus moderne et performante avec une déduplication avancée et un chiffrement robuste, [Restic avec Docker](/restic-docker-sauvegarde-moderne/) mérite sérieusement ton attention. rsync n'est pas un système de backup : zéro versioning, zéro chiffrement, zéro compression native.
 
 ## Prérequis
 
