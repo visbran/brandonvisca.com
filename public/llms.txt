@@ -6,7 +6,7 @@
 ## PostgreSQL Docker : la base de données préférée des devs
 URL: https://brandonvisca.com/postgresql-docker-base-de-donnees/
 Description: Déploie PostgreSQL Docker en 10 minutes : stack complète avec persistance, healthcheck, sauvegarde automatisée et optimisation pour ton homelab.
-Tags: 
+Tags: docker, postgresql, base-de-donnees, intermediaire, auto-hebergement
 Publié: 2026-08-11T08:00:00.000Z
 
 ## Restic Docker : sauvegarde moderne vers S3 et plus
