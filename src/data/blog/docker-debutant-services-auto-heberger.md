@@ -405,7 +405,7 @@ docker compose up -d
 **Premier lancement :**
 
 1. Crée ton compte admin
-2. Sélectionne MySQL/MariaDB
+2. Sélectionne MySQL/MariaDB (ou [PostgreSQL avec Docker](/postgresql-docker-base-de-donnees/) si tu préfères une base plus robuste)
 3. Utilise les identifiants du docker-compose
 4. Installe les apps recommandées
 

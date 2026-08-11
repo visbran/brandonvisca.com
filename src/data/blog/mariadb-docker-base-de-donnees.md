@@ -395,3 +395,5 @@ Vérifie le slow query log (`/var/lib/mysql/slow.log` dans le conteneur). Ajoute
 MariaDB avec Docker, c'est pas sorcier. Une image stable, un volume persistant, un `.env` propre, et tu as une base de données relationnelle prête à servir tes applications auto-hébergées. La clé, c'est de ne pas négliger les bases : healthcheck, backup automatisé, et utilisateurs dédiés par service.
 
 Si tu déploies plusieurs applis sur ton serveur, centraliser MariaDB est le choix le plus efficace. Moins de conteneurs, moins de ressources gaspillées, et une maintenance simplifiée. Ce n'est pas le setup le plus hype du monde, mais c'est celui qui fonctionne jour après jour sans te réveiller à 3h du matin.
+
+Et si tu hésites entre MariaDB et PostgreSQL, j'ai aussi publié un guide complet sur [PostgreSQL avec Docker](/postgresql-docker-base-de-donnees/) avec healthcheck, sauvegarde et tuning.
