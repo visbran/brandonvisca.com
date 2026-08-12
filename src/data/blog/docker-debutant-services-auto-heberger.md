@@ -916,7 +916,7 @@ Avec Docker :
 
 **Prochaine étape :** installe Docker, déploie Uptime Kuma et Portainer pour commencer. Et si tu veux provisionner tes futures machines sans clé USB, le [boot PXE avec Netboot Docker](/netboot-xyz-docker-pxe-boot/) te fera gagner un temps fou.
 
-Si tu cherches un navigateur web embarqué accessible depuis n'importe quel appareil pour accéder à tes ressources internes, j'ai publié un guide sur [Alcove Docker](/alcove-navigateur-auto-heberge/).
+Si tu cherches un navigateur web embarqué accessible depuis n'importe quel appareil pour accéder à tes ressources internes, j'ai publié un guide sur [Alcove Docker](/alcove-navigateur-auto-heberge/). Et si tu as besoin d'un environnement de développement VS Code accessible depuis ton navigateur sans rien installer en local, [Code-Server Docker](/code-server-docker-vscode-web/) te permet de coder depuis n'importe où.
 
 Si tu veux aller encore plus loin, la prochaine étape c'est [sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) avant d'exposer tes services sur internet.
 

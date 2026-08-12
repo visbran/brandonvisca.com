@@ -197,6 +197,8 @@ ingress:
     service: http://nextcloud:80
   - hostname: vaultwarden.ton-domaine.com
     service: http://vaultwarden:80
+  - hostname: code.ton-domaine.com
+    service: http://code-server:8080
   - hostname: adguard.ton-domaine.com
     service: http://adguard:3000
   - service: http_status:404
