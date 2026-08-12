@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-11
-# Total articles : 154
+# Dernière mise à jour : 2026-08-12
+# Total articles : 155
+
+## Code Server Docker : VS Code dans ton navigateur auto-hébergé
+URL: https://brandonvisca.com/code-server-docker-vscode-web/
+Description: Guide code server docker : déploie VS Code auto-hébergé dans ton navigateur. Docker Compose, sécurité et reverse proxy inclus.
+Tags: debutant, auto-hebergement, docker, vscode, productivite
+Publié: 2026-08-12T08:00:00.000Z
 
 ## PostgreSQL Docker : la base de données préférée des devs
 URL: https://brandonvisca.com/postgresql-docker-base-de-donnees/
