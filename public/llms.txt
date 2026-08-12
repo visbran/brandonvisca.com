@@ -6,7 +6,7 @@
 ## Code Server Docker : VS Code dans ton navigateur auto-hébergé
 URL: https://brandonvisca.com/code-server-docker-vscode-web/
 Description: Guide code server docker : déploie VS Code auto-hébergé dans ton navigateur. Docker Compose, sécurité et reverse proxy inclus.
-Tags: debutant, auto-hebergement, docker, vscode, productivite
+Tags: 
 Publié: 2026-08-12T08:00:00.000Z
 
 ## PostgreSQL Docker : la base de données préférée des devs
