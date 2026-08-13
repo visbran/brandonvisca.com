@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-12
-# Total articles : 155
+# Dernière mise à jour : 2026-08-13
+# Total articles : 156
+
+## K3s Docker : Kubernetes léger pour ton homelab
+URL: https://brandonvisca.com/k3s-docker-kubernetes-leger-homelab/
+Description: K3s Docker : déploie Kubernetes léger sur ton homelab en 10 minutes. Installation, kubectl, pods, ingress et migration depuis Docker Compose.
+Tags: docker, kubernetes, homelab, k3s, intermediaire
+Publié: 2026-08-13T08:00:00.000Z
 
 ## Code Server Docker : VS Code dans ton navigateur auto-hébergé
 URL: https://brandonvisca.com/code-server-docker-vscode-web/
