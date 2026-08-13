@@ -6,7 +6,7 @@
 ## K3s Docker : Kubernetes léger pour ton homelab
 URL: https://brandonvisca.com/k3s-docker-kubernetes-leger-homelab/
 Description: K3s Docker : déploie Kubernetes léger sur ton homelab en 10 minutes. Installation, kubectl, pods, ingress et migration depuis Docker Compose.
-Tags: docker, kubernetes, homelab, k3s, intermediaire
+Tags: 
 Publié: 2026-08-13T08:00:00.000Z
 
 ## Code Server Docker : VS Code dans ton navigateur auto-hébergé
