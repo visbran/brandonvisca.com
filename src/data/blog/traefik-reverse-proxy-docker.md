@@ -406,6 +406,8 @@ Tu remarques que la base de données n'est même pas dans ce fichier. Elle vit d
 
 Avec Traefik v3, ton homelab change de dimension. Ajouter un service ne prend plus que quelques labels. La sécurité HTTPS est automatique. Le dashboard offre une visibilité totale.
 
+Si tu veux passer à l'échelle, sache que [K3s Docker](/k3s-docker-kubernetes-leger-homelab/) embarque Traefik nativement. Tu peux donc garder tes habitudes de labels tout en profitant de l'orchestration Kubernetes.
+
 Si tu préfères rester dans un réseau privé sans jamais exposer tes services sur Internet public, [Tsdproxy Docker](/tsdproxy-docker-tailscale-proxy/) combine Tailscale et Docker pour une exposition automatique via le tailnet, sans Certbot ni domaine.
 
 Et si tu veux continuer à construire ton infrastructure Docker, jette un œil à mes guides pour [Nextcloud](/nextcloud-docker-installation-complete-2025/), [Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/), ou pour automatiser les mises à jour avec [Watchtower](/watchtower-mise-a-jour-docker-auto/). Bon auto-hébergement !

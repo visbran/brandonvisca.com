@@ -948,8 +948,11 @@ Oui ! Beaucoup d’images sont disponibles en architecture ARM. Certains service
 
 , **Docker Compose** : Un seul serveur, parfait pour homelab  
 , **Docker Swarm** : Plusieurs serveurs, orchestration simple  
-, **Kubernetes** : Plusieurs serveurs, orchestration complexe, overkill pour homelab  
+, **Kubernetes** : Plusieurs serveurs, orchestration complexe, overkill pour homelab
+
 Pour 99% des homelabs, Docker Compose suffit largement. Et si tu veux automatiser le déploiement de tes stacks sur plusieurs machines, j'ai détaillé comment faire avec [Ansible et des playbooks YAML](/ansible-101-homelab-yaml/).
+
+Si Kubernetes te titille mais que tu trouves ça trop lourd, il existe une solution intermédiaire : [K3s Docker](/k3s-docker-kubernetes-leger-homelab/), une distribution Kubernetes allégée qui tourne sur un Raspberry Pi 4 et embarque Traefik pour le HTTPS.
 
 ### **Comment migrer mes conteneurs Docker vers un autre serveur ?**
 
