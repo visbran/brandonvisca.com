@@ -46,7 +46,7 @@ Les métriques collectées couvrent l'essentiel :
 - 🧑‍🔬 **Processus** : top processus par CPU ou mémoire
 - 🌡️ **Température** : capteurs disponibles (si exposés par `sensors`)
 
-Le tout est stocké dans un **SQLite intégré** au hub. Oui, ça tient dans un fichier. Oui, c'est suffisant pour un petit homelab. Non, ça ne remplace pas un Datadog à 500€/mois. C'est **l'outil parfait pour celui qui veut voir l'état de ses 4-5 machines sans lancer un cluster Kubernetes** 🎯
+Le tout est stocké dans un **SQLite intégré** au hub. Oui, ça tient dans un fichier. Oui, c'est suffisant pour un petit homelab. Non, ça ne remplace pas un Datadog à 500€/mois. C'est **l'outil parfait pour celui qui veut voir l'état de ses 4-5 machines sans lancer un cluster Kubernetes** 🎯 Si tu veux aller plus loin avec des dashboards interactifs et du monitoring pro sans payer un centime, j'ai aussi publié un guide complet sur [Grafana + Prometheus sous Docker](/grafana-prometheus-docker-monitoring-pro/).
 
 En plus, Beszel est **polyvalent** : il tourne aussi bien sur un VPS chez Contabo qu'une armée de Raspberry Pi chez toi. Et le client est léger : l'agent consomme moins de 20 Mo de RAM.
 

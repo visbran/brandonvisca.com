@@ -22,7 +22,7 @@ faqs:
   - question: "Peut-on superviser des conteneurs Docker avec Zabbix ?"
     answer: "Oui. En montant le socket Docker dans le conteneur agent, Zabbix remonte automatiquement le statut, le CPU, la RAM et les événements de chaque conteneur via le plugin natif de l'agent 2."
   - question: "Zabbix ou Prometheus pour un homelab ?"
-    answer: "Zabbix est plus simple à mettre en route et plus complet pour la supervision système traditionnelle (SNMP, agents natifs). Prometheus brille dans les environnements Kubernetes cloud-native. Pour un homelab classique, Zabbix Docker reste le premier choix."
+    answer: "Zabbix est plus simple à mettre en route et plus complet pour la supervision système traditionnelle (SNMP, agents natifs). Prometheus brille dans les environnements Kubernetes cloud-native. Pour un homelab classique, Zabbix Docker reste le premier choix. Si tu veux un guide pas à pas pour déployer Prometheus + Grafana, j'ai publié un tutoriel complet sur la [stack Grafana Prometheus Docker](/grafana-prometheus-docker-monitoring-pro/)."
 ---
 > 💡 **TL;DR**
 > - Zabbix est la solution de monitoring open-source la plus complète : métriques, logs, alerting, cartes réseau, tout y est
