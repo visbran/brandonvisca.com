@@ -6,8 +6,8 @@
 ## Grafana Prometheus Docker : monitoring pro pour 0€
 URL: https://brandonvisca.com/grafana-prometheus-docker-monitoring-pro/
 Description: Guide complet Grafana Prometheus Docker : déploie une stack monitoring pro gratuite avec Docker Compose, dashboards et alertes.
-Tags: docker, monitoring, prometheus, grafana, linux, intermediaire
-Publié: 2026-08-14T06:00:00.000Z
+Tags: 
+Publié: 2026-08-14 06:00:00+00:00
 
 ## K3s Docker : Kubernetes léger pour ton homelab
 URL: https://brandonvisca.com/k3s-docker-kubernetes-leger-homelab/
