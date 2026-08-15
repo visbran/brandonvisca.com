@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-14
-# Total articles : 157
+# Dernière mise à jour : 2026-08-15
+# Total articles : 158
+
+## Mattermost Docker : chat d'équipe auto-hébergé (alternative Slack)
+URL: https://brandonvisca.com/mattermost-docker-chat-equipe/
+Description: Guide complet pour déployer Mattermost avec Docker. Messagerie d'équipe auto-hébergée, alternative open-source à Slack.
+Tags: auto-hebergement, docker, messagerie, equipe, intermediaire
+Publié: 2026-08-15 08:00:00+02:00
 
 ## Grafana Prometheus Docker : monitoring pro pour 0€
 URL: https://brandonvisca.com/grafana-prometheus-docker-monitoring-pro/
