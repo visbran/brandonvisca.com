@@ -909,7 +909,7 @@ Avec Docker :
 ||- Gestionnaire de fichiers ([File Browser](/filebrowser-docker-gestionnaire-fichiers/))
 ||- Dashboard ([Homer](/homer-dashboard-docker-homelab/), [Dashy](/dashy-docker-dashboard-homelab/))
 ||| Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))
-||- Messagerie d'équipe ([Mattermost Docker](/mattermost-docker-chat-equipe/))
+||- Messagerie d'équipe ([Mattermost Docker](/mattermost-docker-chat-equipe/) ou [Rocket.Chat Docker](/rocket-chat-docker-messagerie-auto-hebergee/))
 |||- Sauvegarde de liens ([Linkding](/linkding-docker-bookmarks/))
 |||- Reverse proxy (Nginx Proxy Manager)
 ||||- Gestion budget ([Actual Budget](/actual-budget-docker-gestion-budget/))
