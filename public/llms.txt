@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-15
-# Total articles : 158
+# Dernière mise à jour : 2026-08-16
+# Total articles : 159
+
+## Rocket.Chat Docker : messagerie collaborative auto-hébergée
+URL: https://brandonvisca.com/rocket-chat-docker-messagerie-auto-hebergee/
+Description: Guide complet rocket.chat docker pour déployer Rocket.Chat avec Docker Compose. Messagerie collaborative auto-hébergée et sécurisée.
+Tags: 
+Publié: 2026-08-16T06:00:00.000Z
 
 ## Mattermost Docker : chat d'équipe auto-hébergé (alternative Slack)
 URL: https://brandonvisca.com/mattermost-docker-chat-equipe/
