@@ -3,11 +3,11 @@
 # Dernière mise à jour : 2026-08-17
 # Total articles : 160
 
-## Tailscale VPN : ton réseau mesh privé en 5 minutes
+## Tailscale VPN : mesh zero-config pour ton homelab
 URL: https://brandonvisca.com/tailscale-vpn-mesh-homelab/
 Description: Guide Tailscale VPN mesh : déploie un réseau privé zero-config en 5 minutes. Installation Docker, Linux, macOS, ACLs et use cases homelab inclus.
-Tags: intermediaire, reseau, tailscale, vpn, mesh, auto-hebergement
-Publié: 2026-08-17 08:00:00+02:00
+Tags: 
+Publié: 2026-08-17T08:00:00.000Z
 
 ## Rocket.Chat Docker : messagerie collaborative auto-hébergée
 URL: https://brandonvisca.com/rocket-chat-docker-messagerie-auto-hebergee/
