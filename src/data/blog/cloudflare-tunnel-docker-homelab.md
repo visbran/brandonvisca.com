@@ -36,7 +36,7 @@ Ton FAI t'a filé une IP dynamique. Ou pire : une IP derrière un CGNAT (la fame
 Les solutions classiques ?
 
 - **Ouverture de ports + DDNS** (ex: [DuckDNS Docker](/duckdns-docker-ddns-gratuit/)) : ça marche quand ton FAI n'est pas en CGNAT. C'est fragile, dangereux, et ton IP finit sur Shodan avant d'avoir fini ton café.
-- **VPN comme [WireGuard](/wireguard-docker-vpn-homelab/) ou Tailscale** : excellent pour l'accès distant sécurisé, mais ça ne résout pas le problème de partage public. Ton VPN, c'est pour toi. Pas pour exposer un service à des utilisateurs externes.
+- **VPN comme [WireGuard](/wireguard-docker-vpn-homelab/) ou [Tailscale](/tailscale-vpn-mesh-homelab/)** : excellent pour l'accès distant sécurisé, mais ça ne résout pas le problème de partage public. Ton VPN, c'est pour toi. Pas pour exposer un service à des utilisateurs externes.
 - **Reverse proxy avec IP publique fixe** : c'est le Graal, mais ça coûte cher et ça expose ton infrastructure.
 
 Cloudflare Tunnel est la solution intermédiaire qui tue le game : tu exposes tes services sur Internet, sans IP publique, sans ouvrir de ports, et avec la protection réseau de Cloudflare en prime.
