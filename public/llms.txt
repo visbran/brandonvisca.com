@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-17
-# Total articles : 160
+# Dernière mise à jour : 2026-08-18
+# Total articles : 161
+
+## Element + Matrix Docker : héberge ta messagerie décentralisée
+URL: https://brandonvisca.com/element-matrix-docker-messagerie/
+Description: Héberge ta propre messagerie Matrix avec Element et Docker. Guide complet pour un serveur Synapse décentralisé, sécurisé et fédéré.
+Tags: intermediaire, auto-hebergement, messagerie, matrix, docker, decentralise
+Publié: 2026-08-18T06:00:00.000Z
 
 ## Tailscale VPN : mesh zero-config pour ton homelab
 URL: https://brandonvisca.com/tailscale-vpn-mesh-homelab/
