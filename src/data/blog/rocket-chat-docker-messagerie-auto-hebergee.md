@@ -247,7 +247,7 @@ Après avoir déployé plusieurs instances de Rocket.Chat, voici les écueils qu
 
 Rocket.Chat n'est pas le seul acteur du marché de la messagerie auto-hébergée. Si tu cherches une alternative, j'ai aussi testé [Mattermost en Docker](/mattermost-docker-chat-equipe/) dans un article dédié. Mattermost est plus léger, plus rapide au démarrage, et son interface est très proche de Slack. En contrepartie, il est moins riche en fonctionnalités natives et pousse plus fort vers la version Enterprise.
 
-Rocket.Chat reste mon choix quand j'ai besoin d'une plateforme complète : chat, vidéo, live chat, omnichannel, workflows. Si tu veux juste un Slack-like pur et simple, Mattermost est peut-être plus adapté. Si la décentralisation et la fédération te parlent plus, oriente-toi vers Element/Matrix.
+Rocket.Chat reste mon choix quand j'ai besoin d'une plateforme complète : chat, vidéo, live chat, omnichannel, workflows. Si tu veux juste un Slack-like pur et simple, Mattermost est peut-être plus adapté. Si la décentralisation et la fédération te parlent plus, oriente-toi vers [Element/Matrix](/element-matrix-docker-messagerie/).
 
 ## Conclusion
 

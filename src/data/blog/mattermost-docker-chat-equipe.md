@@ -252,7 +252,7 @@ Mattermost n'est pas le seul chat d'équipe auto-hébergé. Voici comment il se 
 | **[Rocket.Chat](/rocket-chat-docker-messagerie-auto-hebergee/)** | Propriétaire | Très configurable, live chat intégré, large communauté | Consomme plus de RAM, UI moins réactive |
 | **Zulip** | Propriétaire | Organisation par sujets (threads), idéal pour les devs | UX spécifique, courbe d'apprentissage |
 
-Si tu veux une expérience la plus proche possible de Slack sans fédération, Mattermost est le choix le plus sûr. Si la fédération et le chiffrement de bout en bout sont des impératifs, oriente-toi vers Element/Matrix.
+Si tu veux une expérience la plus proche possible de Slack sans fédération, Mattermost est le choix le plus sûr. Si la fédération et le chiffrement de bout en bout sont des impératifs, oriente-toi vers [Element/Matrix](/element-matrix-docker-messagerie/).
 
 ## Sécurité avancée
 
