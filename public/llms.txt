@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-18
-# Total articles : 161
+# Dernière mise à jour : 2026-08-19
+# Total articles : 162
+
+## Swish macOS : gère tes fenêtres avec des gestures trackpad (4 doigts)
+URL: https://brandonvisca.com/swish-macos-gestion-fenetres-gestures/
+Description: Swish macOS : gère tes fenêtres avec des gestes trackpad à 4 doigts. Guide complet d'installation, configuration et avis après test approfondi.
+Tags: macos, productivite, intermediaire, gestion-fenetres, trackpad
+Publié: 2026-08-19T06:00:00.000Z
 
 ## Element + Matrix Docker : héberge ta messagerie décentralisée
 URL: https://brandonvisca.com/element-matrix-docker-messagerie/
