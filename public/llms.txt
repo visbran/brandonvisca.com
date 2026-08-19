@@ -6,7 +6,7 @@
 ## Swish macOS : gère tes fenêtres avec des gestures trackpad (4 doigts)
 URL: https://brandonvisca.com/swish-macos-gestion-fenetres-gestures/
 Description: Swish macOS : gère tes fenêtres avec des gestes trackpad à 4 doigts. Guide complet d'installation, configuration et avis après test approfondi.
-Tags: macos, productivite, intermediaire, gestion-fenetres, trackpad
+Tags: 
 Publié: 2026-08-19T06:00:00.000Z
 
 ## Element + Matrix Docker : héberge ta messagerie décentralisée
