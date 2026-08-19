@@ -355,6 +355,8 @@ Swish se contrôle **entièrement au trackpad** avec des gestes personnalisés.
 **Mon avis :**  
 Si tu es un **addict du trackpad** (MacBook users, je vous vois), Swish est génial. Mais ça ne remplace pas vraiment un gestionnaire classique.
 
+Pour un guide complet sur Swish avec tous les gestes et la configuration, j'ai écrit un article dédié : [Swish macOS : gère tes fenêtres avec des gestures trackpad](/swish-macos-gestion-fenetres-gestures/).
+
 **Quand choisir Swish :**
 
 - Tu utilises principalement le trackpad

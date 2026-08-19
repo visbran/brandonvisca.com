@@ -226,6 +226,8 @@ Setup : Raycast sur `⌘+Espace`, AltTab sur `⌘+Tab`. Tu lances avec Raycast, 
 
 [Magnet](https://brandonvisca.com/magnet-macos-gestionnaire-fenetres-guide-complet/) gère le snap et le redimensionnement des fenêtres, AltTab gère le switching. Combo indispensable pour un workflow productif sur Mac.
 
+Si tu préfères une approche entièrement gestuelle au trackpad plutôt que les raccourcis clavier, [Swish](/swish-macos-gestion-fenetres-gestures/) est l'alternative parfaite pour compléter AltTab.
+
 ## Comparaison : AltTab vs alternatives
 
 ### AltTab vs Witch (payant)
