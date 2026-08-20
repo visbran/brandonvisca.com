@@ -458,6 +458,8 @@ mkdir assets
 nano docker-compose.yml
 ```
 
+Pour alimenter ta bibliothèque Jellyfin avec du contenu web organisé, [HomeTube Docker](/hometube-docker-telechargeur-youtube/) télécharge et classe automatiquement tes vidéos dans une structure compatible Plex, Jellyfin ou Emby.
+
 ```yaml
 services:
   homer:
