@@ -6,8 +6,8 @@
 ## HomeTube Docker : téléchargeur YouTube auto-hébergé avec interface web
 URL: https://brandonvisca.com/hometube-docker-telechargeur-youtube/
 Description: HomeTube Docker : installe un téléchargeur YouTube auto-hébergé avec interface web et intégration Plex/Jellyfin en quelques minutes.
-Tags: intermediaire, auto-hebergement, docker, youtube, jellyfin
-Publié: 2026-08-20T09:00:00+02:00
+Tags: 
+Publié: 2026-08-20T09:00:00.000Z
 
 ## Swish macOS : gère tes fenêtres avec des gestures trackpad (4 doigts)
 URL: https://brandonvisca.com/swish-macos-gestion-fenetres-gestures/
