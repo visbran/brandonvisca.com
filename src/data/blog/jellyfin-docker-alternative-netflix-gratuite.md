@@ -94,6 +94,8 @@ Jellyfin c’est quoi exactement ?
 ❌ Gérer les DRM (pas de Netflix/Prime rippé)  
 ❌ Remplacer ta box TV (c’est complémentaire)
 
+Si tu cherches justement à télécharger du contenu YouTube pour l’intégrer proprement dans ta bibliothèque, [HomeTube Docker](/hometube-docker-telechargeur-youtube/) est l’outil complémentaire qu’il te faut.
+
 - - - - - -
 
 
