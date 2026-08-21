@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-20
-# Total articles : 163
+# Dernière mise à jour : 2026-08-21
+# Total articles : 164
+
+## Yabai macOS : le tiling window manager avancé pour pros (SIP off)
+URL: https://brandonvisca.com/yabai-macos-tiling-avance/
+Description: Yabai macOS : tiling WM avancé avec espaces virtuels dynamiques. Tuto complet : install, config, skhd, et pourquoi désactiver SIP.
+Tags: 
+Publié: 2026-08-21T06:00:00.000Z
 
 ## HomeTube Docker : téléchargeur YouTube auto-hébergé avec interface web
 URL: https://brandonvisca.com/hometube-docker-telechargeur-youtube/
