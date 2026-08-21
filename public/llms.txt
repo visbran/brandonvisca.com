@@ -7,7 +7,7 @@
 URL: https://brandonvisca.com/yabai-macos-tiling-avance/
 Description: Yabai macOS : tiling WM avancé avec espaces virtuels dynamiques. Tuto complet : install, config, skhd, et pourquoi désactiver SIP.
 Tags: 
-Publié: 2026-08-21T06:00:00.000Z
+Publié: 2026-08-21 06:00:00+00:00
 
 ## HomeTube Docker : téléchargeur YouTube auto-hébergé avec interface web
 URL: https://brandonvisca.com/hometube-docker-telechargeur-youtube/
