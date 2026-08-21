@@ -159,7 +159,7 @@ Mais Yabai nécessite de **désactiver SIP** (System Integrity Protection) pour 
 
 Amethyst reste en user-space et n'a besoin que de la permission Accessibilité. C'est moins puissant, mais infiniment plus sûr et simple à maintenir.
 
-**Verdict** : Yabai pour les power users prêts à bidouiller le système. Amethyst pour tout le monde.
+**Verdict** : [Yabai](/yabai-macos-tiling-avance/) pour les power users prêts à bidouiller le système et qui veulent des espaces virtuels dynamiques. Amethyst pour tout le monde.
 
 ## Astuces pour bien démarrer avec Amethyst
 
