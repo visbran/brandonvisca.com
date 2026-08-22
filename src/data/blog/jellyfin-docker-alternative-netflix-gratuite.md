@@ -730,7 +730,7 @@ Tu viens de monter **ton propre service de streaming** en 30 minutes. Jellyfin a
 2. **Invite ta famille** : Créer des comptes utilisateurs (Dashboard → Utilisateurs)
 3. **Automatise les backups** : Sauvegarde `/config` et ta liste de films
 4. **Explore les plugins** : Intro Skipper, OpenSubtitles, Trakt…
-5. **Monte ta stack complète** : Jellyfin + Nextcloud + Vaultwarden = indépendance totale. Et si tu lis aussi des ebooks ou des mangas, j'ai publié des guides sur [Kavita avec Docker](/kavita-docker-lecteur-ebooks/) pour les ebooks et [Komga avec Docker](/komga-docker-bd-manga-auto-heberge/) pour les BD et mangas, qui complètent parfaitement ton homelab média. Si tu veux aussi transformer ton PC en console de jeu pour streamer vers la TV du salon, j'ai un guide sur [Sunshine Docker avec Moonlight](/sunshine-docker-streaming-jeux/).
+5. **Monte ta stack complète** : Jellyfin + Nextcloud + Vaultwarden = indépendance totale. Pour gérer les demandes de ta famille sans y passer la journée, ajoute [Jellyseerr avec Docker](/jellyseerr-docker-gestion-demandes/) à ta stack média. Et si tu lis aussi des ebooks ou des mangas, j'ai publié des guides sur [Kavita avec Docker](/kavita-docker-lecteur-ebooks/) pour les ebooks et [Komga avec Docker](/komga-docker-bd-manga-auto-heberge/) pour les BD et mangas, qui complètent parfaitement ton homelab média. Si tu veux aussi transformer ton PC en console de jeu pour streamer vers la TV du salon, j'ai un guide sur [Sunshine Docker avec Moonlight](/sunshine-docker-streaming-jeux/).
 
 Et surtout, profite de **378€/an** dans ta poche au lieu de les filer à Netflix. 🎉
 
