@@ -318,7 +318,7 @@ Si tu as un MacBook branché sur un écran externe avec clavier et souris, garde
 
 ### Combine avec Raycast pour le lancement d'apps
 
-[Raycast](/raycast-macos-outil-productivite-ultime/) gère le lancement d'applications avec `⌘ + Espace`. Swish gère l'organisation des fenêtres au trackpad. Les deux cohabitent parfaitement : tu lances avec Raycast, tu organises avec Swish.
+[Raycast](/raycast-macos-outil-productivite-ultime/) gère le lancement d'applications avec `⌘ + Espace`. Swish gère l'organisation des fenêtres au trackpad. Les deux cohabitent parfaitement : tu lances avec Raycast, tu organises avec Swish. Pour la gestion du temps dans la menu bar, jette aussi un œil à [Itsycal macOS](/itsycal-macos-calendrier-menu-bar/), un mini calendrier gratuit qui affiche tes événements en un clic.
 
 ## Conclusion : Est-ce que Swish macOS vaut son prix ?
 

@@ -98,7 +98,9 @@ Boring.Notch n'est pas parfait, et il vaut mieux le savoir avant d'installer :
 - Il ne fonctionne que sur les MacBook **avec notch** (14" et 16" M1/M2/M3/M4 Pro/Max, et MacBook Air M2/M3/M4). Si tu as un MacBook sans encoche (Intel, ou M1/M2 13"), l'app n'a aucun intérêt visuel
 - Certains jeux en plein écran masquent la barre de menu, donc la Dynamic Island aussi. C'est normal
 - Sur les Mac avec plusieurs écrans, Boring.Notch s'affiche sur l'écran principal uniquement
-- L'app consomme un peu de RAM (environ 80-120 Mo) et un minuscule pourcentage de CPU pour les animations. Rien de dramatique, mais à noter si tu pousses déjà ta machine dans ses derniers retranchements
+- L'app consomme un peu de RAM (environ 80-120 Mo) et un minuscule pourcentage de CPU pour les animations. Rien de dramatique, mais à noter si tu pousses déjà ta machine dans ses derniers retranchements.
+
+Si tu cherches un autre utilitaire menu bar pour compléter Boring.Notch, [Itsycal macOS](/itsycal-macos-calendrier-menu-bar/) est un mini calendrier gratuit qui affiche tes événements et la date personnalisée directement dans la barre de menu. C'est le combo parfait pour une menu bar véritablement utile.
 
 ## Conclusion
 
