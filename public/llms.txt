@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-08-24
-# Total articles : 165
+# Total articles : 166
+
+## Itsycal macOS : mini calendrier gratuit dans ta menu bar
+URL: https://brandonvisca.com/itsycal-macos-calendrier-menu-bar/
+Description: Itsycal macOS : mini calendrier gratuit pour la menu bar. Découvre comment installer, configurer et remplacer l'horloge native en 2 minutes.
+Tags: macos, productivite, debutant, calendrier, menu-bar
+Publié: 2026-08-24T06:00:00.000Z
 
 ## Jellyseerr Docker : gestion des demandes médias pour Jellyfin/Plex
 URL: https://brandonvisca.com/jellyseerr-docker-gestion-demandes/
