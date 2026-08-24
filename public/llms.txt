@@ -1,6 +1,6 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-22
+# Dernière mise à jour : 2026-08-24
 # Total articles : 165
 
 ## Jellyseerr Docker : gestion des demandes médias pour Jellyfin/Plex
@@ -621,9 +621,9 @@ Description: Raycast vs Alfred vs Spotlight : 30 jours de tests réels. Tableaux
 Tags: 
 Publié: 2025-11-27T00:00:00+01:00
 
-## rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide
+## rcmd : Alternative Cmd+Tab réimaginée pour macOS
 URL: https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/
-Description: rcmd, l'alternative Cmd+Tab mac gratuite : switche entre apps en 1 touche (Right Cmd + lettre). 10x plus rapide. Installation 2 min, config complète.
+Description: rcmd, l'alternative Cmd+Tab macOS : switche entre apps en 1 touche (Right Cmd + lettre), fuzzy search, Space switching instantané, 16 thèmes. Guide complet 2026.
 Tags: 
 Publié: 2025-11-27T00:00:00+01:00
 
