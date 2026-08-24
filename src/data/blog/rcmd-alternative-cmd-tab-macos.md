@@ -8,7 +8,7 @@ tags:
   - macos
   - productivite
   - debutant
-featured: false
+featured: true
 draft: false
 focusKeyword: rcmd alternative cmd+tab mac
 faqs:
@@ -30,37 +30,36 @@ faqs:
 
 ## Introduction : Cmd+Tab, c'est 2005
 
-Soyons honnêtes deux secondes : **Cmd+Tab sur macOS, c'est pratique, mais c'est lent**.
+Cmd+Tab sur macOS est pratique, mais lent.
 
-Tu veux passer de Safari à iTerm2 ? Cmd+Tab, Tab, Tab, Tab... ah merde j'ai dépassé, Shift+Tab pour revenir.
+Tu veux passer de Safari à iTerm2 ? Cmd+Tab, Tab, Tab, Tab... j'ai dépassé, Shift+Tab pour revenir.
 
-**Le constat** : Tu perds 3-4 secondes à chaque fois. Sur une journée de travail, ça fait **facilement 5-10 minutes de perdues** juste à naviguer entre tes apps.
+Le constat : tu perds 3-4 secondes à chaque fois. Sur une journée de travail, c'est facilement 5-10 minutes de perdues juste à naviguer entre tes apps.
 
-Et si je te disais qu'il existe un outil qui te permet de **switcher vers n'importe quelle app en une seule combinaison de touches** ?
+Il existe un outil qui permet de switcher vers n'importe quelle app en une seule combinaison de touches :
 
-Genre Right Command + S = Safari. Right Command + I = iTerm2. Right Command + V = VS Code.
+Right Command + S = Safari. Right Command + I = iTerm2. Right Command + V = VS Code.
 
-**Instantané. Précis. Zero friction.**
+Instantané, précis, sans friction.
 
-Bienvenue dans le monde de **rcmd**, l'outil développé par [The Low Tech Guys](https://lowtechguys.com/) qui repense complètement le switch d'apps sur macOS.
+**rcmd**, développé par [The Low Tech Guys](https://lowtechguys.com/), repense le switch d'apps sur macOS.
 
-💡 **Ce que tu vas apprendre dans ce guide** :
+Ce que tu vas apprendre dans ce guide :
 - Installer rcmd via Homebrew ou le Mac App Store
 - Configurer tes raccourcis personnalisés
 - Les nouvelles fonctionnalités (fuzzy search, Spaces, Stages, thèmes)
 - Pourquoi c'est différent de Raycast, Alfred ou AltTab
 - Troubleshooting des problèmes courants
 
-Let's go ! 🚀
-
 ---
 
-> 💡 **TL;DR**
-> - Cmd+Tab est lent (3 à 4 Tab à chaque fois pour atteindre la bonne app)
-> - rcmd remplace ça par Right Command + la lettre de l'app : accès direct en 0,2 s
-> - Un raccourci dédié par app (Right Cmd + S pour Safari, + V pour VS Code)
-> - Nouveau : fuzzy search, Space switching instantané, 16 thèmes, Stages (workspaces)
-> - Prix : 15 € one-time (5 Macs), 14 jours d'essai, mode Free ensuite
+**TL;DR**
+
+- Cmd+Tab est lent (3 à 4 Tab à chaque fois pour atteindre la bonne app)
+- rcmd remplace ça par Right Command + la lettre de l'app : accès direct en 0,2 s
+- Un raccourci dédié par app (Right Cmd + S pour Safari, + V pour VS Code)
+- Nouveau : fuzzy search, Space switching instantané, 16 thèmes, Stages (workspaces)
+- Prix : 15 € one-time (5 Macs), 14 jours d'essai, mode Free ensuite
 
 | App | Raccourci rcmd | Gain vs Cmd+Tab |
 |-----|----------------|-----------------|
@@ -68,11 +67,9 @@ Let's go ! 🚀
 | iTerm2 | Right Cmd + I | 3 secondes → 0.2s |
 | VS Code | Right Cmd + V | 4 secondes → 0.2s |
 
-**Résultat concret** : 10 min/jour gagnées = **60h économisées/an**
-
-**Installation** : 2 minutes chrono (Homebrew ou Mac App Store)
-
-**Prix** : 15 € one-time (jusqu'à 5 Macs) — 14 jours d'essai gratuits
+- **Résultat** : 10 min/jour gagnées = 60h économisées/an
+- **Installation** : 2 minutes chrono (Homebrew ou Mac App Store)
+- **Prix** : 15 € one-time (jusqu'à 5 Macs) — 14 jours d'essai gratuits
 
 ---
 
@@ -80,46 +77,46 @@ Let's go ! 🚀
 
 <video controls style="width:100%;border-radius:8px"><source src="/images/rcmd-demo-app-switch-assign.mp4" type="video/mp4"></video>
 
-**rcmd** (prononcé "are-command"), c'est un app switcher reimaginé par [The Low Tech Guys](https://lowtechguys.com/) pour macOS 13.0+. Il transforme la façon de naviguer entre tes applications.
+**rcmd** (prononce "are-command"), c'est un app switcher reimaginé par [The Low Tech Guys](https://lowtechguys.com/) pour macOS 13.0+. Il transforme la façon de naviguer entre tes applications.
 
 ### Le concept en 3 mots
 
 **Right Command + Lettre = App**
 
-C'est tout. Pas de menu. Pas d'interface lourde. Juste tes doigts, ton clavier, et la vitesse de l'éclair.
+Pas de menu. Pas d'interface lourde. Juste le clavier.
 
 ![Le concept rcmd](rcmd-app-switcher-ui.webp)
 
-### Pourquoi c'est génial ?
+### Pourquoi c'est efficace
 
-✅ **Muscle memory parfaite** : Ton cerveau associe chaque app à sa première lettre
-✅ **Zéro latence** : Pas d'overlay lourd, switch instantané
-✅ **Léger** : Invisible en arrière-plan, zéro impact sur les performances
-✅ **Compatible Apple Silicon** : Optimisé M1/M2/M3/M4
-✅ **14 jours d'essai** : Tu testes sans risque avant d'acheter
+- **Muscle memory** : Ton cerveau associe chaque app à sa première lettre
+- **Zero latence** : Pas d'overlay lourd, switch instantané
+- **Leger** : Invisible en arriere-plan, zero impact sur les performances
+- **Compatible Apple Silicon** : Optimise M1/M2/M3/M4
+- **14 jours d'essai** : Tu testes sans risque avant d'acheter
 
 ---
 
-## ⚠️ Changement important : le passage au payant
+## Changement important : le passage au payant
 
-**Historique rapide** : rcmd était gratuit en V2 via le Mac App Store. Le développeur a annoncé un changement de modèle.
+**Historique rapide** : rcmd etait gratuit en V2 via le Mac App Store. Le developpeur a annonce un changement de modele.
 
 **Situation actuelle (2026)** :
-- 💰 **Prix** : 15 € en achat unique
-- 🖥️ **Licence** : Jusqu'à 5 Macs
-- 🍺 **Installation** : `brew install rcmd` (hors Mac App Store) ou téléchargement direct
-- 🆓 **Mode Free** : Après les 14 jours d'essai, un mode gratuit limité reste accessible (le switch instantané d'app reste fonctionnel)
+- **Prix** : 15 € en achat unique
+- **Licence** : Jusqu'a 5 Macs
+- **Installation** : `brew install rcmd` (hors Mac App Store) ou telechargement direct
+- **Mode Free** : Apres les 14 jours d'essai, un mode gratuit limite reste accessible (le switch instantane d'app reste fonctionnel)
 
-**Ce qui n'a pas changé** :
+**Ce qui n'a pas change** :
 - Pas d'abonnement mensuel
-- Pas de fonctions cachées derrière un paywall
-- Développement actif et réactif
+- Pas de fonctions cachees derriere un paywall
+- Developpement actif et reactif
 
 ---
 
 ## Installation de rcmd
 
-### Via Homebrew (recommandé)
+### Via Homebrew (recommande)
 
 ```bash
 brew install rcmd
@@ -127,15 +124,15 @@ brew install rcmd
 
 ### Via le site officiel
 
-1. **Télécharge rcmd** : [lowtechguys.com/rcmd](https://lowtechguys.com/rcmd/)
-2. Déplace l'app dans `/Applications`
-3. Lance et autorise dans Réglages Système > Confidentialité et sécurité > Accessibilité
+1. Telecharge rcmd : [lowtechguys.com/rcmd](https://lowtechguys.com/rcmd/)
+2. Deplace l'app dans `/Applications`
+3. Lance et autorise dans Reglages Systeme > Confidentialite et securite > Accessibilite
 
 ### Premiers pas
 
-1. **Accessibilité** : Autoriser dans Réglages Système > Confidentialité
-2. **Touche de déclenchement** : Par défaut = Right Command (⌘ droite)
-3. **Lancer au démarrage** : Activé dans les préférences
+1. **Accessibilite** : Autoriser dans Reglages Systeme > Confidentialite
+2. **Touche de declenchement** : Par defaut = Right Command (cmd droite)
+3. **Lancer au demarrage** : Active dans les preferences
 
 ![Configuration rcmd](rcmd-themes-and-styling.webp)
 
@@ -143,21 +140,21 @@ brew install rcmd
 
 ## Configuration essentielle en 5 minutes
 
-### Réglages de base recommandés
+### Reglages de base recommandes
 
 ```
-✅ Trigger Key : Right Command (par défaut)
-✅ Cycle behavior : Enabled (pour apps avec même lettre)
-✅ Launch at login : Enabled
-✅ Show in menu bar : Disabled (minimalisme FTW)
+Trigger Key : Right Command (par defaut)
+Cycle behavior : Enabled (pour apps avec meme lettre)
+Launch at login : Enabled
+Show in menu bar : Disabled (minimalisme)
 ```
 
 **Pourquoi Right Command ?**
-- Ta main droite est déjà sur les lettres
-- Aucun conflit avec les raccourcis système existants
+- Ta main droite est deja sur les lettres
+- Aucun conflit avec les raccourcis systeme existants
 - Muscle memory plus naturelle que Left Command
 
-💡 **Claviers externes ?** Si ton clavier n'a pas de Right Command distinct, tu peux changer la trigger key dans les settings (Control, Option, etc.)
+**Claviers externes ?** Si ton clavier n'a pas de Right Command distinct, tu peux changer la trigger key dans les settings (Control, Option, etc.)
 
 ---
 
@@ -173,15 +170,15 @@ Right Command + S = Safari se lance/devient active
 
 Simple, rapide, efficace.
 
-### Exemple 2 : Apps avec même première lettre
+### Exemple 2 : Apps avec meme premiere lettre
 
 Tu as **Safari**, **Spotify** et **Slack** ?
 
-Première pression : Right Command + S → Safari
-Deuxième pression : Right Command + S → Spotify
-Troisième pression : Right Command + S → Slack
+Premiere pression : Right Command + S -> Safari
+Deuxieme pression : Right Command + S -> Spotify
+Troisieme pression : Right Command + S -> Slack
 
-**Cycle automatique** entre les apps qui commencent par la même lettre.
+**Cycle automatique** entre les apps qui commencent par la meme lettre.
 
 ### Exemple 3 : Assigner une lettre custom
 
@@ -189,21 +186,21 @@ Tu veux que **Music.app** s'ouvre avec Right Command + U au lieu de M ?
 
 1. Active Music.app
 2. Presse Right Command + Right Option + U
-3. C'est fait ! Désormais, Right Command + U = Music
+3. C'est fait : desormais, Right Command + U = Music
 
 ---
 
-## 🆕 Fonctionnalités avancées (V2+)
+## Fonctionnalites avancees (V2+)
 
-rcmd a énormément évolué. Voici ce qui a été ajouté au-delà du simple switch d'apps :
+rcmd a beaucoup evolue. Voici ce qui a ete ajoute au-dela du simple switch d'apps :
 
 ### 1. Fuzzy search
 
 <video controls style="width:100%;border-radius:8px"><source src="/images/rcmd-demo-fuzzy-search.mp4" type="video/mp4"></video>
 
-Tu ne te souviens pas de la lettre exacte ? Pas de souci.
+Tu ne te souviens pas de la lettre exacte ?
 
-**Right Command + tape le nom de l'app** → rcmd filtre et trouve instantanément.
+**Right Command + tape le nom de l'app** -> rcmd filtre et trouve instantanement.
 
 Exemple : "ter" trouve iTerm2, Terminal, Hyper...
 
@@ -214,145 +211,143 @@ Exemple : "ter" trouve iTerm2, Terminal, Hyper...
 Tu travailles avec plusieurs Spaces virtuels ?
 
 - **Right Command + chiffre** = Switch vers le Space correspondant
-- **Sans animation de glissement** (si configuré)
-- Tu peux aussi **déplacer une fenêtre vers un autre Space** et la suivre, le tout depuis le clavier
+- **Sans animation de glissement** (si configure)
+- Tu peux aussi **deplacer une fenetre vers un autre Space** et la suivre, le tout depuis le clavier
 
-### 3. Stages : sauvegarder des layouts de fenêtres
+### 3. Stages : sauvegarder des layouts de fenetres
 
-**Stages** te permet de sauvegarder et restaurer des configurations de fenêtres complètes.
+**Stages** te permet de sauvegarder et restaurer des configurations de fenetres completes.
 
 Cas d'usage concret :
-- Tu as un layout "Développement" (VS Code + iTerm2 + Safari)
-- Un layout "Écriture" (Obsidian + Music)
+- Un layout "Developpement" (VS Code + iTerm2 + Safari)
+- Un layout "Ecriture" (Obsidian + Music)
 - Un layout "Admin" (iTerm2 + Snipe-IT + Grafana)
 
-Un raccourci → tout se remet en place.
+Un raccourci -> tout se remet en place.
 
 ### 4. Window jumping
 
-- **⌥ + lettre** = Saute vers une fenêtre spécifique (pas juste l'app)
-- **Cmd + backtick** = Cycle entre les fenêtres de la même app
+- **Option + lettre** = Saute vers une fenetre specifique (pas juste l'app)
+- **Cmd + backtick** = Cycle entre les fenetres de la meme app
 
-### 5. Keylume : hints à l'écran
+### 5. Keylume : hints a l'ecran
 
-rcmd s'intègre avec **Keylume**, le clavier virtuel companion, pour afficher les lettres assignées directement sur ton écran pendant l'utilisation.
+rcmd s'integre avec **Keylume**, le clavier virtuel companion, pour afficher les lettres assignees directement sur ton ecran pendant l'utilisation.
 
-### 6. 16 thèmes intégrés
+### 6. 16 themes integres
 
-rcmd propose maintenant **16 thèmes visuels** avec personnalisation étendue :
+rcmd propose maintenant **16 themes visuels** avec personnalisation etendue :
 
-![Thèmes rcmd](rcmd-themes-and-styling.webp)
+![Themes rcmd](rcmd-themes-and-styling.webp)
 
-| Thème | Ambiance |
+| Theme | Ambiance |
 |-------|----------|
-| Frost | Clair et épuré |
+| Frost | Clair et epure |
 | Noir | Sobre et discret |
 | Warm | Tons chaleureux |
 
-![Thème Frost](rcmd-theme-frost.webp)
-![Thème Noir](rcmd-theme-noir.webp)
-![Thème Warm](rcmd-theme-warm.webp)
+![Theme Frost](rcmd-theme-frost.webp)
+![Theme Noir](rcmd-theme-noir.webp)
+![Theme Warm](rcmd-theme-warm.webp)
 
 ### 7. Mouse follows the focused app
 
-Une option pratique : **la souris suit automatiquement l'app qui vient de recevoir le focus**. Parfait quand tu switch entre plusieurs écrans.
+Une option pratique : **la souris suit automatiquement l'app qui vient de recevoir le focus**. Utile quand tu switch entre plusieurs ecrans.
 
-### 8. Command-Tab replacement amélioré
+### 8. Command-Tab replacement ameliore
 
 rcmd peut remplacer le Cmd+Tab natif en filtrant :
-- Les fenêtres minimisées
-- Les fenêtres situées sur d'autres Spaces
+- Les fenetres minimisees
+- Les fenetres situees sur d'autres Spaces
 
-Résultat : un Cmd+Tab qui ne te montre que ce qui est réellement utile.
+Resultat : un Cmd+Tab qui ne te montre que ce qui est reellement utile.
 
 ---
 
-## rcmd vs les alternatives : Le match sans pitié
+## rcmd vs les alternatives
 
 ### rcmd vs Cmd+Tab (macOS natif)
 
-| Critère | rcmd | Cmd+Tab |
+| Critere | rcmd | Cmd+Tab |
 |---------|------|---------|
-| **Vitesse** | ⚡ Instantané | 🐌 3-4 Tab parfois |
-| **Précision** | 🎯 Touche dédiée par app | 🎲 Ordre chronologique |
-| **Muscle memory** | ✅ Lettre = toujours même app | ❌ Position change constamment |
-| **Visuel** | 🚫 Minimaliste (ou thème) | 👁️ Overlay obligatoire |
+| **Vitesse** | Instantane | 3-4 Tab parfois |
+| **Precision** | Touche dediee par app | Ordre chronologique |
+| **Muscle memory** | Lettre = toujours meme app | Position change constamment |
+| **Visuel** | Minimaliste (ou theme) | Overlay obligatoire |
 | **Prix** | 15 € one-time | Gratuit |
 
-**Verdict** : rcmd gagne haut la main sur la vitesse et la prévisibilité.
+Verdict : rcmd gagne sur la vitesse et la previsibilite.
 
 ---
 
 ### rcmd vs Raycast / Alfred
 
-| Critère | rcmd | Raycast | Alfred |
+| Critere | rcmd | Raycast | Alfred |
 |---------|------|---------|--------|
 | **Focus** | Switch + search + Spaces | Launcher complet | Launcher + workflows |
-| **Simplicité** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ |
+| **Simplicite** | Simple | Moyen | Complexe |
 | **Latence** | 0 ms | ~50 ms | ~50 ms |
 | **Prix** | 15 € | Gratuit (Pro = 96$/an) | Gratuit (Powerpack = 59€) |
 | **Courbe apprentissage** | 2 min | 1-2 jours | 1 semaine |
 
-**Verdict** : rcmd est **complémentaire** à Raycast/Alfred.
+Verdict : rcmd est **complementaire** a Raycast/Alfred.
 
-**Usage idéal** :
-- **rcmd** pour switcher entre apps, rechercher fuzzy, gérer les Spaces
+Usage ideal :
+- **rcmd** pour switcher entre apps, rechercher fuzzy, gerer les Spaces
 - **Raycast** pour lancer des commandes, snippets, extensions
-
-Perso, j'utilise les deux en parallèle. Chacun excelle dans son domaine.
 
 ---
 
 ### rcmd vs AltTab
 
-**AltTab** est une autre alternative open source qui améliore Cmd+Tab.
+**AltTab** est une autre alternative open source qui ameliore Cmd+Tab.
 
-| Critère | rcmd | AltTab |
+| Critere | rcmd | AltTab |
 |---------|------|--------|
-| **Approche** | Touche dédiée + search + Spaces | Cmd+Tab amélioré |
-| **Prévisualisation fenêtres** | ⌥ + lettre | ✅ (avec thumbnails) |
-| **Vitesse** | ⚡ Plus rapide | 🐌 Légèrement plus lent |
-| **Simplicité** | Plus simple | Plus de features |
+| **Approche** | Touche dediee + search + Spaces | Cmd+Tab ameliore |
+| **Previsualisation fenetres** | Option + lettre | Avec thumbnails |
+| **Vitesse** | Plus rapide | Legerement plus lent |
+| **Simplicite** | Plus simple | Plus de features |
 | **Prix** | 15 € | Gratuit |
 
-**Verdict** : Si tu veux juste **switcher vite** et gérer les Spaces, prends rcmd. Si tu veux **voir** tes fenêtres avant de switcher, prends AltTab.
+Verdict : Si tu veux juste **switcher vite** et gerer les Spaces, prends rcmd. Si tu veux **voir** tes fenetres avant de switcher, prends AltTab.
 
 ---
 
-## Cas d'usage concrets (comment je gagne 10 min/jour)
+## Cas d'usage concrets
 
-### Workflow 1 : Développeur
+### Workflow 1 : Developpeur
 
 ```
 Right Command + I = iTerm2 (terminal)
-Right Command + V = VS Code (éditeur)
+Right Command + V = VS Code (editeur)
 Right Command + S = Safari (docs/Stack Overflow)
 Right Command + N = Notion (notes)
 Right Command + P = Postman (API testing)
 ```
 
-**Avant rcmd** : Cmd+Tab x4 = 4 secondes
-**Avec rcmd** : Right Command + lettre = 0.2 seconde
+Avant rcmd : Cmd+Tab x4 = 4 secondes
+Avec rcmd : Right Command + lettre = 0.2 seconde
 
-**Gain sur 8h de dev** : ~10 minutes/jour
+Gain sur 8h de dev : ~10 minutes/jour
 
 ---
 
-### Workflow 2 : Rédaction d'articles (mon cas)
+### Workflow 2 : Redaction d'articles (mon cas)
 
 ```
-Right Command + O = Obsidian (rédaction markdown)
+Right Command + O = Obsidian (redaction markdown)
 Right Command + S = Safari (recherche web)
-Right Command + F = Firefox (vérif rendu)
-Right Command + I = iTerm2 (déploiement)
+Right Command + F = Firefox (verif rendu)
+Right Command + I = iTerm2 (deploiement)
 Right Command + M = Music (concentration)
 ```
 
-**Résultat** : Je ne quitte plus mon clavier. Zéro friction cognitive.
+Resultat : Je ne quitte plus mon clavier. Zero friction cognitive.
 
 ---
 
-### Workflow 3 : Admin système
+### Workflow 3 : Admin systeme
 
 ```
 Right Command + I = iTerm2 (SSH serveurs)
@@ -362,63 +357,63 @@ Right Command + N = Notion (runbooks)
 Right Command + U = Uptime Kuma (monitoring)
 ```
 
-**Effet** : Réactivité accrue pour les incidents. Pas de temps perdu à chercher la bonne app.
+Effet : Reactivite accrue pour les incidents. Pas de temps perdu a chercher la bonne app.
 
 ---
 
-## Troubleshooting : Les pièges à éviter
+## Troubleshooting : Les pieges a eviter
 
-### Problème 1 : Right Command ne fonctionne pas
+### Probleme 1 : Right Command ne fonctionne pas
 
-**Symptômes** : Rien ne se passe quand tu appuies sur Right Command + lettre.
+**Symptomes** : Rien ne se passe quand tu appuies sur Right Command + lettre.
 
 **Causes possibles** :
 1. Ton clavier externe envoie le mauvais keycode
-2. Tu as mappé Right Command à autre chose dans Réglages Système
+2. Tu as mappe Right Command a autre chose dans Reglages Systeme
 
 **Solution** :
 
-1. **Vérifier les keycodes** avec l'app [KeyCodes](https://files.alinpanaitiu.com/KeyCodes.zip)
-2. **Changer la trigger key** dans les settings rcmd (essaye Right Option ou Right Control)
+1. Verifier les keycodes avec l'app [KeyCodes](https://files.alinpanaitiu.com/KeyCodes.zip)
+2. Changer la trigger key dans les settings rcmd (essaye Right Option ou Right Control)
 
 ---
 
-### Problème 2 : Conflit avec Raycast/Alfred
+### Probleme 2 : Conflit avec Raycast/Alfred
 
-**Symptôme** : rcmd et Raycast se marchent dessus sur certaines touches.
+**Symptome** : rcmd et Raycast se marchent dessus sur certaines touches.
 
 **Solution** :
 
 1. Dans Raycast : Utilise Cmd+Space (pas Right Command)
 2. Dans rcmd : Utilise Right Command uniquement
-3. **Aucun conflit** = usage complémentaire optimal
+3. Aucun conflit = usage complementaire optimal
 
 ---
 
-### Problème 3 : Une app ne se lance pas
+### Probleme 3 : Une app ne se lance pas
 
-**Symptôme** : Right Command + S ne fait rien, alors que Safari est installé.
+**Symptome** : Right Command + S ne fait rien, alors que Safari est installe.
 
 **Causes** :
 1. Safari n'est pas dans `/Applications`
-2. Le nom de l'app a changé
+2. Le nom de l'app a change
 
 **Solution** :
 
-1. Vérifie que l'app est bien dans `/Applications`
+1. Verifie que l'app est bien dans `/Applications`
 2. Assigne manuellement la touche : Ouvre Safari, puis Right Command + Right Option + S
 
 ---
 
-### Problème 4 : Fuzzy search ne trouve pas une fenêtre
+### Probleme 4 : Fuzzy search ne trouve pas une fenetre
 
-**Symptôme** : Tu tapes le nom d'une fenêtre mais elle n'apparaît pas.
+**Symptome** : Tu tapes le nom d'une fenetre mais elle n'apparait pas.
 
 **Solution** :
 
-1. Vérifie que la fenêtre n'est pas minimisée (peut être exclue selon les réglages)
-2. Active l'option "Include minimized windows" dans les préférences si nécessaire
-3. Pour les fenêtres sur d'autres Spaces, assure-toi que l'option de suivi inter-Spaces est activée
+1. Verifie que la fenetre n'est pas minimisee (peut etre exclue selon les reglages)
+2. Active l'option "Include minimized windows" dans les preferences si necessaire
+3. Pour les fenetres sur d'autres Spaces, assure-toi que l'option de suivi inter-Spaces est activee
 
 ---
 
@@ -431,18 +426,18 @@ Right Command + U = Uptime Kuma (monitoring)
 - Courbe d'apprentissage plus longue
 - Gratuit avec version Pro
 
-**2. [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2025)](/alttab-macos-gestion-fenetres-windows/)** (Cmd+Tab amélioré)
-- Prévisualisation des fenêtres
+**2. [AltTab macOS : Gestion Fenetres Style Windows (Alternative Gratuite 2025)](/alttab-macos-gestion-fenetres-windows/)** (Cmd+Tab ameliore)
+- Previsualisation des fenetres
 - Plus visuel que rcmd
 - Gratuit et open source
 
 **3. Contexts** (payant, 10$)
-- Switch par fenêtre (pas par app)
+- Switch par fenetre (pas par app)
 - Recherche fuzzy
 - Plus complexe
 
 **4. Witch** (payant, 14$)
-- Très customisable
+- Tres customisable
 - Lourd en features
 - Overkill pour la plupart
 
@@ -450,55 +445,48 @@ Right Command + U = Uptime Kuma (monitoring)
 
 ## Conclusion : Faut-il adopter rcmd ?
 
-**La réponse courte : OUI**, si tu passes beaucoup de temps à switcher entre apps sur macOS.
+Reponse courte : oui, si tu passes beaucoup de temps a switcher entre apps sur macOS.
 
 **Les 3 raisons d'installer rcmd** :
 
-1. ✅ **C'est rapide** : Accès direct aux apps en 0.2s
-2. ✅ **Ça s'installe en 2 minutes** (Homebrew ou manuel)
-3. ✅ **Impact immédiat** sur ta productivité
+1. C'est rapide : acces direct aux apps en 0.2s
+2. Ca s'installe en 2 minutes (Homebrew ou manuel)
+3. Impact immediat sur ta productivite
 
 **Ce que j'aime** :
-- Vitesse de l'éclair
+- Vitesse
 - Muscle memory parfaite
 - Fuzzy search et Space switching
 - Stages pour sauvegarder mes layouts
-- 16 thèmes pour matcher mon setup
+- 16 themes pour matcher mon setup
 
 **Ce qui pourrait freiner** :
-- Payant (15 €) — mais pas cher pour un achat unique à vie
-- Pas de preview des fenêtres intégrée (mais ⌥ + lettre fait le job)
+- Payant (15 €) — mais pas cher pour un achat unique a vie
+- Pas de preview des fenetres integree (Option + lettre fait l'affaire)
 - Courbe d'apprentissage de 2-3 jours pour oublier Cmd+Tab
 
-**Mon verdict perso** : Je l'utilise **tous les jours depuis plus d'un an**, et je ne reviendrais jamais en arrière. Combiné avec [Raycast](/raycast-macos-outil-productivite-ultime/) et Ice, c'est la trinité productivité macOS.
+**Mon verdict** : Je l'utilise tous les jours depuis plus d'un an, et je ne reviendrais pas en arriere. Combine avec [Raycast](/raycast-macos-outil-productivite-ultime/) et Ice, c'est un combo productivite macOS solide.
 
-**Temps d'adaptation** : 2-3 jours pour que tes doigts oublient Cmd+Tab. Après, c'est du velours.
-
-Alors, prêt à switcher à la vitesse de la lumière ? 🚀
-
----
-
-## 🔗 Articles connexes qui pourraient t'intéresser
-
-- **[Raycast : L'outil qui transforme macOS en machine de productivité](/raycast-macos-outil-productivite-ultime/)** : Complémentaire à rcmd pour les commandes et snippets
-- **Ice : Le gestionnaire de barre de menu gratuit pour macOS** : Garde ta barre de menu propre pendant que rcmd tourne
-- **[iTerm2 : Guide complet configuration macOS](/iterm2-guide-configuration-macos-2025/)** : Optimise ton terminal (que tu vas ouvrir avec Right Command + I)
-- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer rcmd et plein d'autres outils
-
----
-
-## 💡 Ressources utiles
-
-- [Site officiel rcmd](https://lowtechguys.com/rcmd/)
-- [FAQ officielle rcmd](https://lowtechguys.com/rcmd/#faq)
-- [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
-- [Download direct rcmd](https://lowtechguys.com/rcmd/#download)
+Temps d'adaptation : 2-3 jours pour que tes doigts oublient Cmd+Tab. Apres, ca devient instinctif.
 
 ---
 
 ## Articles connexes
 
+- **[Raycast : L'outil qui transforme macOS en machine de productivite](/raycast-macos-outil-productivite-ultime/)** : Complementaire a rcmd pour les commandes et snippets
+- **[Ice : Le gestionnaire de barre de menu gratuit pour macOS](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)** : Garde ta barre de menu propre pendant que rcmd tourne
+- **[iTerm2 : Guide complet configuration macOS](/iterm2-guide-configuration-macos-2025/)** : Optimise ton terminal (que tu vas ouvrir avec Right Command + I)
+- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer rcmd et plein d'autres outils
 - [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
-- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
-- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/)
-- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+- [Lunar : Controle la luminosite de tes ecrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
+- [Grila vs Fantastical : Comparatif honnete apres 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/)
+- [AltTab macOS : Gestion Fenetres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
+
+---
+
+## Ressources utiles
+
+- [Site officiel rcmd](https://lowtechguys.com/rcmd/)
+- [FAQ officielle rcmd](https://lowtechguys.com/rcmd/#faq)
+- [Low Tech Guys (tous leurs outils)](https://lowtechguys.com/)
+- [Download direct rcmd](https://lowtechguys.com/rcmd/#download)

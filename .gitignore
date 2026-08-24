@@ -66,3 +66,4 @@ public/pagefind
 # backups
 backups/
 src/data/blog/backup/
+__pycache__/
