@@ -6,7 +6,7 @@
 ## Itsycal macOS : mini calendrier gratuit dans ta menu bar
 URL: https://brandonvisca.com/itsycal-macos-calendrier-menu-bar/
 Description: Itsycal macOS : mini calendrier gratuit pour la menu bar. Découvre comment installer, configurer et remplacer l'horloge native en 2 minutes.
-Tags: macos, productivite, debutant, calendrier, menu-bar
+Tags: 
 Publié: 2026-08-24T06:00:00.000Z
 
 ## Jellyseerr Docker : gestion des demandes médias pour Jellyfin/Plex
