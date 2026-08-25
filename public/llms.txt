@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-24
-# Total articles : 166
+# Dernière mise à jour : 2026-08-25
+# Total articles : 167
+
+## Radarr Docker : gestion automatique de films pour ton mediacenter
+URL: https://brandonvisca.com/radarr-docker-gestion-films/
+Description: Déploie Radarr avec Docker pour automatiser la gestion de tes films : téléchargement, renommage, qualité et organisation sans lever le petit doigt.
+Tags: 
+Publié: 2026-08-25T12:00:00.000Z
 
 ## Itsycal macOS : mini calendrier gratuit dans ta menu bar
 URL: https://brandonvisca.com/itsycal-macos-calendrier-menu-bar/
