@@ -7,7 +7,7 @@
 URL: https://brandonvisca.com/radarr-docker-gestion-films/
 Description: Déploie Radarr avec Docker pour automatiser la gestion de tes films : téléchargement, renommage, qualité et organisation sans lever le petit doigt.
 Tags: 
-Publié: 2026-08-25T12:00:00.000Z
+Publié: 2026-08-25T06:00:00.000Z
 
 ## Itsycal macOS : mini calendrier gratuit dans ta menu bar
 URL: https://brandonvisca.com/itsycal-macos-calendrier-menu-bar/
