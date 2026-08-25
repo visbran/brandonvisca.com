@@ -1,8 +1,8 @@
 ---
 title: "Radarr Docker : gestion automatique de films pour ton mediacenter"
 description: "Déploie Radarr avec Docker pour automatiser la gestion de tes films : téléchargement, renommage, qualité et organisation sans lever le petit doigt."
-pubDatetime: "2026-08-25T12:00:00.000Z"
-modDatetime: "2026-08-25T12:00:00.000Z"
+pubDatetime: "2026-08-25T06:00:00.000Z"
+modDatetime: "2026-08-25T06:00:00.000Z"
 author: Brandon Visca
 tags:
   - docker
