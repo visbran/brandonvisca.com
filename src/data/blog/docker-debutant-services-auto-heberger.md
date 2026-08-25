@@ -91,7 +91,7 @@ Pourquoi Docker change tout pour l’auto-hébergement
 
 Si tu as lu mon guide sur [l’auto-hébergement](https://brandonvisca.com/auto-hebergement-guide-complet-2025/), tu sais qu’on peut héberger plein de services. Mais Docker rend ça 10x plus facile.
 
-J'utilise Docker depuis 3 ans dans mon homelab pour faire tourner une vingtaine de services. Nextcloud, Vaultwarden, Jellyfin, Paperless : tout tourne en conteneurs. Résultat : migration serveur en 20 minutes, zéro casse. Même le partage rapide d'images passe par un conteneur : j'ai déployé [Droppy avec Docker](/droppy-partage-images-auto-heberge/) pour héberger mes screenshots et générer des liens directs sans dépendre d'Imgur.
+J'utilise Docker depuis 3 ans dans mon homelab pour faire tourner une vingtaine de services. Nextcloud, Vaultwarden, Jellyfin, Paperless, [Radarr](/radarr-docker-gestion-films/) : tout tourne en conteneurs. Résultat : migration serveur en 20 minutes, zéro casse. Même le partage rapide d'images passe par un conteneur : j'ai déployé [Droppy avec Docker](/droppy-partage-images-auto-heberge/) pour héberger mes screenshots et générer des liens directs sans dépendre d'Imgur.
 
 ### Les avantages de Docker pour ton homelab
 
