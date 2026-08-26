@@ -6,7 +6,7 @@
 ## Dato macOS : un calendrier intelligent qui remplace l'horloge native
 URL: https://brandonvisca.com/dato-macos-calendrier-intelligent/
 Description: Dato macOS remplace l'horloge native par un calendrier intelligent dans la menu bar. 15 $ une fois, et tu gagnes un temps fou chaque jour.
-Tags: macos, productivite, debutant, calendrier, menu-bar
+Tags: 
 Publié: 2026-08-26T06:00:00.000Z
 
 ## Radarr Docker : gestion automatique de films pour ton mediacenter
