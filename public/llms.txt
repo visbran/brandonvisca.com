@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-25
-# Total articles : 167
+# Dernière mise à jour : 2026-08-26
+# Total articles : 168
+
+## Dato macOS : un calendrier intelligent qui remplace l'horloge native
+URL: https://brandonvisca.com/dato-macos-calendrier-intelligent/
+Description: Dato macOS remplace l'horloge native par un calendrier intelligent dans la menu bar. 15 $ une fois, et tu gagnes un temps fou chaque jour.
+Tags: macos, productivite, debutant, calendrier, menu-bar
+Publié: 2026-08-26T06:00:00.000Z
 
 ## Radarr Docker : gestion automatique de films pour ton mediacenter
 URL: https://brandonvisca.com/radarr-docker-gestion-films/
