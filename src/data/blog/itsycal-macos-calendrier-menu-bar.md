@@ -132,7 +132,7 @@ Et si tu veux aller encore plus loin dans l'automatisation de ta menu bar, jette
 
 Le marché des calendriers menu bar sur macOS n'est pas énorme, mais il existe quelques alternatives qui méritent d'être mentionnées.
 
-**Dato** est probablement l'alternative la plus proche. C'est un calendrier menu bar payant (environ 5 dollars) avec une interface plus moderne, des rappels intégrés, et des options de personnalisation avancées. Si tu veux absolument un look plus "Apple Design 2026", Dato est solide. Mais Itsycal fait 90 % du travail gratuitement, et la différence de prix n'est pas justifiée pour un usage standard.
+**[Dato](/dato-macos-calendrier-intelligent/)** est probablement l'alternative la plus proche. C'est un calendrier menu bar payant (environ 15 dollars) avec une interface plus moderne, des rappels intégrés, et la possibilité de rejoindre tes visioconférences en un clic. Si tu veux absolument un look plus "Apple Design 2026", Dato est solide. Mais Itsycal fait 90 % du travail gratuitement, et la différence de prix n'est pas justifiée pour un usage standard.
 
 **Calendar 366** est une autre option payante, plus orientée vers la gestion complète des événements avec édition inline. C'est un bon outil, mais c'est overkill si tu cherches juste un calendrier en lecture rapide.
 
