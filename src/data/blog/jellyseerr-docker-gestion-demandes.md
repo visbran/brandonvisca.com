@@ -34,7 +34,7 @@ ogImage: ""
 
 Tu as monté ton [Jellyfin comme serveur média](/jellyfin-docker-alternative-netflix-gratuite/), tout roule. Sauf que ta famille et tes amis te bombardent de messages : « Tu peux rajouter la saison 2 de ça ? », « Y a pas tel film ? ».
 
-**Jellyseerr résout ce problème.** C'est une interface web où tes utilisateurs peuvent chercher et demander eux-mêmes du contenu. Tu gardes la main sur ce qui est accepté, et si tu branches [Radarr](/radarr-docker-gestion-films/) et Sonarr, le téléchargement se fait tout seul. Pour un déploiement rapide, la solution jellyseerr docker est idéale : un seul conteneur, pas de base de données externe.
+**Jellyseerr résout ce problème.** C'est une interface web où tes utilisateurs peuvent chercher et demander eux-mêmes du contenu. Tu gardes la main sur ce qui est accepté, et si tu branches [Radarr](/radarr-docker-gestion-films/) et [Sonarr](/sonarr-docker-gestion-series/), le téléchargement se fait tout seul. Pour un déploiement rapide, la solution jellyseerr docker est idéale : un seul conteneur, pas de base de données externe.
 
 Jellyseerr est le fork d'Overseerr (initialement réservé à Plex) adapté à Jellyfin. Même code, même interface soignée, mais avec un support natif des deux serveurs média.
 

@@ -26,7 +26,7 @@ Dans ce tutoriel, on va déployer **Radarr avec Docker**, le configurer pour qu'
 
 ## Qu'est-ce que Radarr et pourquoi l'utiliser ?
 
-Radarr est un gestionnaire de films open-source inspiré de Sonarr (son cousin pour les séries). Son job :
+Radarr est un gestionnaire de films open-source inspiré de [Sonarr](/sonarr-docker-gestion-series/), son cousin pour les séries. Son job :
 
 - Surveiller les films que tu veux voir ou revoir.
 - Découvrir automatiquement quand une nouvelle version est disponible (Web-DL, Blu-Ray 1080p, 4K HDR…).
