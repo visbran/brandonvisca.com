@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-26
-# Total articles : 168
+# Dernière mise à jour : 2026-08-27
+# Total articles : 169
+
+## Sonarr Docker : gestion automatique de séries TV
+URL: https://brandonvisca.com/sonarr-docker-gestion-series/
+Description: Installe Sonarr avec Docker pour automatiser le téléchargement de tes séries. Guide sonarr docker complet avec docker-compose, config et intégration.
+Tags: 
+Publié: 2026-08-27T06:00:00.000Z
 
 ## Dato macOS : un calendrier intelligent qui remplace l'horloge native
 URL: https://brandonvisca.com/dato-macos-calendrier-intelligent/
