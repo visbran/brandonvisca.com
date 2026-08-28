@@ -2,7 +2,7 @@
 title: "Radarr Docker : gestion automatique de films pour ton mediacenter"
 description: "Déploie Radarr avec Docker pour automatiser la gestion de tes films : téléchargement, renommage, qualité et organisation sans lever le petit doigt."
 pubDatetime: "2026-08-25T06:00:00.000Z"
-modDatetime: "2026-08-25T06:00:00.000Z"
+modDatetime: "2026-08-28T06:00:00.000Z"
 author: Brandon Visca
 tags:
   - docker
@@ -174,7 +174,7 @@ Radarr stocke toute sa config dans `/config`. Mais une base SQLite corrompue, c'
 ## Dépannage rapide
 
 ### Radarr ne trouve pas de release
-- Vérifie que tes indexeurs sont bien configurés et accessibles.
+- Vérifie que tes indexeurs sont bien configurés et accessibles. Pour les gérer et synchroniser automatiquement avec Sonarr depuis un seul point, j'ai testé [Prowlarr Docker](/prowlarr-docker-indexeur-trackers/).
 - Regarde les **logs** (System > Logs > Files) pour voir si l'indexeur répond.
 - Assure-toi que le film est bien taggé "Monitored".
 

@@ -2,7 +2,7 @@
 title: "Sonarr Docker : gestion automatique de séries TV"
 description: "Installe Sonarr avec Docker pour automatiser le téléchargement de tes séries. Guide sonarr docker complet avec docker-compose, config et intégration."
 pubDatetime: "2026-08-27T06:00:00.000Z"
-modDatetime: "2026-08-27T06:00:00.000Z"
+modDatetime: "2026-08-28T06:00:00.000Z"
 author: Brandon Visca
 tags:
   - docker
@@ -212,7 +212,7 @@ Sonarr stocke tout dans `/config` : séries suivies, profils de qualité, histor
 
 ### Sonarr ne trouve pas de release pour un épisode
 - Vérifie que l'épisode est bien marqué "Monitored".
-- Teste tes indexeurs un par un dans **Settings > Indexers**.
+- Teste tes indexeurs un par un dans **Settings > Indexers**. Tu peux aussi utiliser [Prowlarr Docker](/prowlarr-docker-indexeur-trackers/) pour centraliser et synchroniser tous tes indexeurs depuis un seul point.
 - Regarde les logs (System > Logs) pour voir si l'indexeur répond.
 - Vérifie que la date de sortie de l'épisode est bien passée (TMDB peut indiquer une date future par erreur).
 
