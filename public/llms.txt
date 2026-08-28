@@ -1,7 +1,19 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-27
-# Total articles : 169
+# Dernière mise à jour : 2026-08-28
+# Total articles : 171
+
+## One Switch macOS : panneau de contrôle rapide en un clic
+URL: https://brandonvisca.com/one-switch-macos-panneau-controle/
+Description: One Switch pour macOS : un panneau de contrôle rapide qui active le Dark Mode, le Ne Pas Déranger et plus en un seul clic.
+Tags: 
+Publié: 2026-08-28T06:00:00.000Z
+
+## Prowlarr Docker : indexeur de trackers pour Radarr et Sonarr
+URL: https://brandonvisca.com/prowlarr-docker-indexeur-trackers/
+Description: Déploie Prowlarr avec Docker pour centraliser tes indexeurs de trackers et les synchroniser automatiquement avec Radarr et Sonarr.
+Tags: 
+Publié: 2026-08-28T06:00:00.000Z
 
 ## Sonarr Docker : gestion automatique de séries TV
 URL: https://brandonvisca.com/sonarr-docker-gestion-series/
