@@ -343,7 +343,7 @@ alt - tab : yabai -m window --focus next || yabai -m window --focus first
 
 skhd est le compagnon officiel de Yabai. C'est un gestionnaire de raccourcis clavier qui lit `~/.config/skhd/skhdrc` et traduit les keybindings en commandes shell. skhd est minimaliste : il écoute les touches et exécute. Rien d'autre.
 
-Pourquoi pas Hammerspoon ici ? Parce que skhd est plus léger, démarre plus vite, et sa syntaxe de config est lisible en 5 minutes. Hammerspoon reste supérieur pour des automatisations complexes (changement de résolution, lancement de contextes, notifications), mais pour du tiling pur, skhd suffit amplement.
+Pourquoi pas Hammerspoon ici ? Parce que skhd est plus léger, démarre plus vite, et sa syntaxe de config est lisible en 5 minutes. [Hammerspoon](https://brandonvisca.com/hammerspoon-macos-scripting-lua/) reste supérieur pour des automatisations complexes (changement de résolution, lancement de contextes, notifications), mais pour du tiling pur, skhd suffit amplement.
 
 ### Lancer des apps directement
 
