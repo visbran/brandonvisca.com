@@ -1,7 +1,19 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-28
-# Total articles : 170
+# Dernière mise à jour : 2026-08-29
+# Total articles : 172
+
+## Hammerspoon macOS : scripting Lua ultra-puissant pour automatiser tout
+URL: https://brandonvisca.com/hammerspoon-macos-scripting-lua/
+Description: Hammerspoon macOS : automatise ton workflow avec des scripts Lua ultra-puissants. Raccourcis, fenêtres, lancement d'apps, tout devient programmable.
+Tags: 
+Publié: 2026-08-29T06:00:00.000Z
+
+## One Switch macOS : panneau de contrôle rapide en un clic
+URL: https://brandonvisca.com/one-switch-macos-panneau-controle/
+Description: One Switch pour macOS : un panneau de contrôle rapide qui active le Dark Mode, le Ne Pas Déranger et plus en un seul clic.
+Tags: 
+Publié: 2026-08-28T06:00:00.000Z
 
 ## Prowlarr Docker : indexeur de trackers pour Radarr et Sonarr
 URL: https://brandonvisca.com/prowlarr-docker-indexeur-trackers/
