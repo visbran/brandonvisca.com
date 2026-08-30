@@ -122,7 +122,7 @@ Va dans **Settings > Indexers** et clique sur **Add**. Tu peux ajouter :
 
 Toujours dans **Settings > Download Clients**, ajoute ton client :
 
-- **qBittorrent** : hôte `qbittorrent`, port `8080`, identifiants de connexion.
+- **qBittorrent** : hôte `qbittorrent`, port `8080`, identifiants de connexion Web UI. Si tu ne l'as pas encore installé, j'ai un guide complet sur [qBittorrent Docker](https://brandonvisca.com/qbittorrent-docker-client-torrent/).
 - **Transmission** : hôte `transmission`, port `9091`.
 - **SABnzbd** : hôte `sabnzbd`, port `8080`, clé API.
 
