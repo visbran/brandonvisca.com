@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-29
-# Total articles : 172
+# Dernière mise à jour : 2026-08-30
+# Total articles : 173
+
+## qBittorrent Docker : client torrent avec interface web auto-hébergé
+URL: https://brandonvisca.com/qbittorrent-docker-client-torrent/
+Description: qBittorrent Docker : déploie un client torrent auto-hébergé avec interface web et intègre-le à ta stack mediacenter en quelques minutes.
+Tags: 
+Publié: 2026-08-30T06:00:00.000Z
 
 ## Hammerspoon macOS : scripting Lua ultra-puissant pour automatiser tout
 URL: https://brandonvisca.com/hammerspoon-macos-scripting-lua/
