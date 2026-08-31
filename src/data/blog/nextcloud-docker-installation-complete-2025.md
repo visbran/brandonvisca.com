@@ -698,7 +698,7 @@ docker exec nextcloud-app php occ versions:cleanup
 docker exec nextcloud-app php occ trashbin:cleanup --all-users
 ```
 
-## Quoi de neuf dans Nextcloud 34 (Hub 26) — 2026
+## Quoi de neuf dans Nextcloud 34 (Hub 26) - 2026
 
 Ton guide utilise **Nextcloud 34** (`nextcloud:34-apache`), sorti en juin 2026 avec Hub 26. Voici les changements concrets par rapport à la version 28 :
 
@@ -712,7 +712,7 @@ Nextcloud Office intègre désormais **Euro-Office** comme suite bureautique nat
 
 **Performance : getUserGroupIds remplace getUserGroups**
 
-La version 34 optimise les appels de permissions sur les groupes d'utilisateurs. Sur une instance avec 50+ comptes, l'interface Files est nettement plus réactive. Pas de changement de config — c'est automatique.
+La version 34 optimise les appels de permissions sur les groupes d'utilisateurs. Sur une instance avec 50+ comptes, l'interface Files est nettement plus réactive. Pas de changement de config - c'est automatique.
 
 **Pour mettre à jour depuis la version 28**
 
