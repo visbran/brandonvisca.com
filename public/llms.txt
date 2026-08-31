@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-08-31
-# Total articles : 173
+# Total articles : 174
+
+## Bunch macOS : lance des contextes complets en un clic
+URL: https://brandonvisca.com/bunch-macos-lancer-contextes/
+Description: Découvre Bunch, l'appli macOS qui lance des contextes complets (apps, fichiers, sites) en un seul clic. Parfait pour switcher instantanément entre projets.
+Tags: 
+Publié: 2026-08-31 06:00:00+00:00
 
 ## qBittorrent Docker : client torrent avec interface web auto-hébergé
 URL: https://brandonvisca.com/qbittorrent-docker-client-torrent/
