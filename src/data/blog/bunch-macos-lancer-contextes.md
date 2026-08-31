@@ -1,6 +1,6 @@
 ---
 title: "Bunch macOS : lance des contextes complets en un clic"
-description: "Découvre Bunch, l'appli macOS qui lance des contextes complets (apps, fichiers, sites) en un seul clic. Parfait pour switcher instantanément entre projets."
+description: "Bunch macOS : lance des contextes complets (apps, fichiers, sites) en un clic. Gratuit, open-source et parfait pour switcher entre projets."
 pubDatetime: 2026-08-31 06:00:00+00:00
 modDatetime: 2026-08-31 06:00:00+00:00
 author: Brandon
@@ -13,24 +13,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: bunch macos
-ogImage: 
+ogImage: ""
 ---
 > 💡 **TL;DR**
 >
 > - Bunch lance des groupes d'applications et fichiers en un clic
 > - Parfait pour switcher entre contextes de travail sur macOS
 > - Gratuit et open-source avec des raccourcis clavier et AppleScript
-
-## Table des matières
-
-- [Qu'est-ce que Bunch ?](#quest-ce-que-bunch-)
-- [Comment ça marche ?](#comment-ca-marche-)
-- [Cas d'usage concrets](#cas-dusage-concrets)
-- [Fonctionnalités avancées](#fonctionnalites-avancees)
-- [Installation et mise en route](#installation-et-mise-en-route)
-- [Avantages et inconvénients](#avantages-et-inconvenients)
-- [Les alternatives](#les-alternatives)
-- [Verdict](#verdict)
 
 ## Qu'est-ce que Bunch ?
 
@@ -193,3 +182,20 @@ Son approche par fichiers texte est à la fois son plus grand atout et son princ
 Personnellement, Bunch a trouvé sa place dans mon workflow quotidien entre [One Switch](https://brandonvisca.com/one-switch-macos-panneau-controle/) pour les toggles système et les raccourcis clavier pour les actions rapides. C'est devenu un muscle mémoire : `Cmd + Shift + 1` pour le matin, `Cmd + Shift + 2` pour le blog, `Cmd + Shift + 3` pour le code. Simple, rapide, efficace.
 
 Tu devrais l'essayer. Ça prend cinq minutes à installer et à configurer ton premier contexte, et je parie que tu ne reviendras pas en arrière. Dans un monde où chaque seconde compte, automatiser les transitions entre tes modes de travail n'est pas un luxe, c'est une nécessité. Bunch rend ça accessible, gratuit, et sans friction. Essaie-le, et dis-moi pas merci.
+
+## FAQ
+
+**Bunch est-il gratuit ?**
+Oui, Bunch est entièrement gratuit et open-source. Tu peux le télécharger sur le Mac App Store ou directement depuis le site officiel bunchapp.co sans payer un centime.
+
+**Bunch fonctionne-t-il sur Windows ou Linux ?**
+Non, Bunch est exclusivement disponible sur macOS. Si tu cherches un équivalent sur Linux, des solutions comme AutoKey ou des scripts bash peuvent partiellement remplir ce rôle.
+
+**Bunch peut-il remplacer Keyboard Maestro ?**
+Pour la gestion de contextes simples (ouvrir/fermer des apps), oui. Mais Keyboard Maestro fait bien plus (macros complexes, conditions, interfaces). Bunch est plus léger et spécialisé.
+
+**Comment assigner un raccourci clavier à un bunch ?**
+Dans les préférences de Bunch, tu peux lier chaque bunch à un raccourci clavier global. L'app demande les permissions d'accessibilité macOS pour que ça fonctionne.
+
+**Où sont stockés les fichiers de configuration ?**
+Les fichiers `.bunch` sont stockés dans `~/Bunch` par défaut. Tu peux les éditer dans n'importe quel éditeur de texte, les versionner avec Git, ou les synchroniser via iCloud/Dropbox.
