@@ -257,6 +257,8 @@ Hammerspoon n'est pas le seul outil d'automatisation sur macOS. Voici comment il
 
 **Apple Shortcuts** est de plus en plus capable sur macOS, mais il reste limité par son approche visuelle. Certaines actions avancées sont impossibles ou demandent des contournements complexes.
 
+Si tu cherches juste à lancer des groupes d'applications et de fichiers sans écrire une ligne de code, [Bunch](https://brandonvisca.com/bunch-macos-lancer-contextes/) est une alternative légère et gratuite qui utilise de simples fichiers texte pour définir tes contextes de travail.
+
 Hammerspoon trône au sommet en termes de flexibilité brute. Le prix à payer est une courbe d'apprentissage plus raide. Si tu aimes bidouiller et comprendre ce qui se passe sous le capot, c'est l'outil idéal.
 
 ## Astuces pour bien démarrer

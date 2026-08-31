@@ -70,7 +70,7 @@ C'est tout. L'application est légère, ne consomme pas de ressources, et se fai
 
 ## Limites à connaître
 
-One Switch ne remplace pas les réglages système avancés. Il ne fait que créer des raccourcis vers des actions existantes. Si tu cherches à automatiser des scripts ou à chaîner des actions complexes, il faudra plutôt te tourner vers des outils comme [Hammerspoon](https://brandonvisca.com/hammerspoon-macos-scripting-lua/), Keyboard Maestro ou Shortcuts.
+One Switch ne remplace pas les réglages système avancés. Il ne fait que créer des raccourcis vers des actions existantes. Si tu cherches à automatiser des scripts ou à chaîner des actions complexes, il faudra plutôt te tourner vers des outils comme [Hammerspoon](https://brandonvisca.com/hammerspoon-macos-scripting-lua/), Keyboard Maestro ou Shortcuts. Et si tu veux simplement lancer des groupes d'applications et de fichiers en un clic pour passer d'un contexte à l'autre, [Bunch](https://brandonvisca.com/bunch-macos-lancer-contextes/) est parfait pour ça.
 
 De plus, comme toute app tierce, elle nécessite des permissions d'accessibilité pour simuler les actions système. Si tu es particulièrement strict sur la sécurité, relis bien les permissions que tu accordes.
 
