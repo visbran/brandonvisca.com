@@ -5,7 +5,7 @@
 
 ## Bunch macOS : lance des contextes complets en un clic
 URL: https://brandonvisca.com/bunch-macos-lancer-contextes/
-Description: Découvre Bunch, l'appli macOS qui lance des contextes complets (apps, fichiers, sites) en un seul clic. Parfait pour switcher instantanément entre projets.
+Description: Bunch macOS : lance des contextes complets (apps, fichiers, sites) en un clic. Gratuit, open-source et parfait pour switcher entre projets.
 Tags: 
 Publié: 2026-08-31 06:00:00+00:00
 
