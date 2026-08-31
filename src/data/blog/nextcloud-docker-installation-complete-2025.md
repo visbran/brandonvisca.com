@@ -1,7 +1,7 @@
 ---
 title: "Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)"
 pubDatetime: "2025-10-26T20:58:49+01:00"
-modDatetime: "2026-06-22T00:00:00+01:00"
+modDatetime: "2026-08-31T00:00:00+01:00"
 author: Brandon Visca
 description: "Installe Nextcloud avec Docker en 1h : alternative Google Drive auto-hébergée, HTTPS gratuit, backup et synchro multi-appareils. Guide complet 2026."
 focusKeyword: "Nextcloud Docker installation"
@@ -22,9 +22,10 @@ faqs:
 ---
 
 > 💡 **TL;DR**
-> - Google Drive / Dropbox / OneDrive à 10-20€/mois remplacés par ton Nextcloud à 3-5€/mois sur un petit VPS
+> - Google Drive / Dropbox / OneDrive à 10-20€/mois remplacés par ton Nextcloud 34 à 3-5€/mois sur un petit VPS
 > - Installation Docker en moins d'1h, HTTPS automatique (Let's Encrypt), synchro multi-appareils
 > - Contrôle total de tes données, 120 à 240€/an économisés
+> - **Mise à jour août 2026** : guide compatible Nextcloud 34 (Hub 26), migration 28 → 34 incluse
 
 T'en as marre de payer Google ou Dropbox pour stocker tes propres fichiers ? Nextcloud, c'est ton Google Drive à toi : tes photos, tes documents, ton agenda, tes contacts, hébergés chez toi ou sur un petit VPS. En moins d'une heure avec Docker, tu reprends le contrôle.
 
@@ -176,7 +177,7 @@ services:
 
   # Nextcloud
   nextcloud:
-    image: nextcloud:28-apache
+    image: nextcloud:34-apache
     container_name: nextcloud-app
     restart: unless-stopped
     ports:
@@ -202,7 +203,7 @@ services:
 
   # Cron pour les tâches de maintenance
   cron:
-    image: nextcloud:28-apache
+    image: nextcloud:34-apache
     container_name: nextcloud-cron
     restart: unless-stopped
     volumes:
@@ -230,7 +231,7 @@ volumes:
 
 - `mariadb:11.2` : base de données performante (plus rapide que PostgreSQL pour Nextcloud)
 - `redis` : cache qui accélère drastiquement l'interface
-- `nextcloud:28-apache` : version 28 avec Apache intégré
+- `nextcloud:34-apache` : version 34 (Hub 26) avec Apache intégré
 - `OVERWRITEPROTOCOL=https` : force le HTTPS même derrière un reverse proxy
 - `cron` : container dédié qui exécute les tâches de maintenance toutes les 5 min
 
@@ -696,6 +697,43 @@ docker exec nextcloud-app php occ versions:cleanup
 # Vider la corbeille de tous les utilisateurs
 docker exec nextcloud-app php occ trashbin:cleanup --all-users
 ```
+
+## Quoi de neuf dans Nextcloud 34 (Hub 26) — 2026
+
+Ton guide utilise **Nextcloud 34** (`nextcloud:34-apache`), sorti en juin 2026 avec Hub 26. Voici les changements concrets par rapport à la version 28 :
+
+**UI revue et menu waffle**
+
+La navigation a été retravaillée. Le menu applications (waffle) est plus clair, la barre latérale utilise des teintes plus douces, et l'onglet actif dans le panneau de droite est surligné visuellement. Ça paraît mineur, mais sur un usage quotidien, c'est moins fatiguant.
+
+**Euro-Office en alternative à Collabora**
+
+Nextcloud Office intègre désormais **Euro-Office** comme suite bureautique native, en parallèle de Collabora. Si tu préfères une intégration plus légère ou que tu as des contraintes de souveraineté européenne, c'est une option supplémentaire directement dans les paramètres.
+
+**Performance : getUserGroupIds remplace getUserGroups**
+
+La version 34 optimise les appels de permissions sur les groupes d'utilisateurs. Sur une instance avec 50+ comptes, l'interface Files est nettement plus réactive. Pas de changement de config — c'est automatique.
+
+**Pour mettre à jour depuis la version 28**
+
+```bash
+# Backup avant toute chose
+docker exec nextcloud-app php occ maintenance:mode --on
+cd ~/nextcloud && tar czvf backup-nextcloud-$(date +%F).tar.gz nextcloud data
+
+# Mettre à jour l'image
+sed -i 's/nextcloud:28-apache/nextcloud:34-apache/' docker-compose.yml
+docker compose pull nextcloud cron
+docker compose up -d nextcloud cron
+
+# Exécuter le migrateur
+docker exec nextcloud-app php occ upgrade
+docker exec nextcloud-app php occ maintenance:mode --off
+```
+
+La migration 28 → 34 est automatique mais compte 5-10 min de downtime selon la taille de ta base.
+
+---
 
 ## Nextcloud dans l'écosystème d'indépendance numérique
 
