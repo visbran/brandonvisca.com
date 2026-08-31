@@ -6,19 +6,19 @@ author: Brandon Visca
 description: "Installe Nextcloud avec Docker en 1h : alternative Google Drive auto-hébergée, HTTPS gratuit, backup et synchro multi-appareils. Guide complet 2026."
 focusKeyword: "Nextcloud Docker installation"
 tags:
- - docker
- - auto-hebergement
- - homelab
- - linux
- - guide
- - intermediaire
+  - docker
+  - auto-hebergement
+  - homelab
+  - linux
+  - guide
+  - intermediaire
 faqs:
- - question: "Quelle quantité de RAM est nécessaire pour Nextcloud avec Docker ?"
- answer: "Le minimum recommandé est 2 Go de RAM pour une instance personnelle. Pour 5-10 utilisateurs avec Office Online (Collabora), prévoir 4 Go minimum. 8 Go pour un usage familial confortable."
- - question: "Peut-on accéder à Nextcloud depuis l'extérieur sans IP fixe ?"
- answer: "Oui, via Cloudflare Tunnel (gratuit) ou Tailscale. Ces solutions évitent d'ouvrir des ports sur ton routeur et fonctionnent même avec une IP dynamique fournie par ton FAI."
- - question: "Comment migrer mes fichiers depuis Google Drive vers Nextcloud ?"
- answer: "Nextcloud propose une app officielle 'External Storage' pour importer depuis Google Drive. L'outil rclone permet aussi une migration batch en ligne de commande avec détection des doublons."
+  - question: "Quelle quantité de RAM est nécessaire pour Nextcloud avec Docker ?"
+    answer: "Le minimum recommandé est 2 Go de RAM pour une instance personnelle. Pour 5-10 utilisateurs avec Office Online (Collabora), prévoir 4 Go minimum. 8 Go pour un usage familial confortable."
+  - question: "Peut-on accéder à Nextcloud depuis l'extérieur sans IP fixe ?"
+    answer: "Oui, via Cloudflare Tunnel (gratuit) ou Tailscale. Ces solutions évitent d'ouvrir des ports sur ton routeur et fonctionnent même avec une IP dynamique fournie par ton FAI."
+  - question: "Comment migrer mes fichiers depuis Google Drive vers Nextcloud ?"
+    answer: "Nextcloud propose une app officielle 'External Storage' pour importer depuis Google Drive. L'outil rclone permet aussi une migration batch en ligne de commande avec détection des doublons."
 ---
 
 > **TL;DR**
@@ -55,17 +55,17 @@ T'en as marre de payer Google ou Dropbox pour stocker tes propres fichiers ? Nex
 - Domaine : **10€/an**
 - **Total : 58€/an pour un stockage limité seulement par ton VPS**
 
- **Économie sur 5 ans avec 2 To :** 600€ chez Google contre 290€ en auto-hébergé, soit **310€ dans ta poche**.
+**Économie sur 5 ans avec 2 To :** 600€ chez Google contre 290€ en auto-hébergé, soit **310€ dans ta poche**.
 
 Et encore, si tu as déjà un serveur chez toi (Raspberry Pi, vieux PC), c'est **gratuit** à part l'électricité.
 
 ### Ce que tu gagnes en plus
 
- **Vie privée** : tes fichiers ne partent pas aux USA
- **Pas de limite** : tu choisis ta capacité
- **Apps intégrées** : calendrier, contacts, notes, galerie photos, visio
- **Partage de fichiers** : comme WeTransfer, mais à toi
- **Conforme RGPD** : hébergé en France, tes données restent en France
+**Vie privée** : tes fichiers ne partent pas aux USA
+**Pas de limite** : tu choisis ta capacité
+**Apps intégrées** : calendrier, contacts, notes, galerie photos, visio
+**Partage de fichiers** : comme WeTransfer, mais à toi
+**Conforme RGPD** : hébergé en France, tes données restent en France
 
 ## Avant de commencer : choisir ton setup
 
@@ -79,7 +79,7 @@ Et encore, si tu as déjà un serveur chez toi (Raspberry Pi, vieux PC), c'est *
 - **Scaleway DEV1-S** : ~6€/mois, 2 vCPU, 2 Go RAM, 20 Go SSD, Paris
 - **OVHcloud VPS Starter** : 3,50€/mois HT, 1 vCPU, 2 Go RAM, 20 Go SSD, France
 
- **Pourquoi un VPS ?**
+**Pourquoi un VPS ?**
 
 - Accès depuis n'importe où (pas besoin d'ouvrir ton routeur)
 - IP fixe incluse
@@ -102,7 +102,7 @@ Et encore, si tu as déjà un serveur chez toi (Raspberry Pi, vieux PC), c'est *
 - Dépendant de ta connexion internet maison
 - Pas d'accès si ton électricité saute
 
- **Mon conseil :** commence sur VPS, migre sur homelab quand tu seras à l'aise.
+**Mon conseil :** commence sur VPS, migre sur homelab quand tu seras à l'aise.
 
 ## Installation de Nextcloud avec Docker : la méthode propre
 
@@ -132,7 +132,7 @@ docker --version
 docker compose version
 ```
 
- **Erreur fréquente** : « Permission denied » signifie que tu as oublié `newgrp docker` ou que tu n'as pas relancé ta session SSH.
+**Erreur fréquente** : « Permission denied » signifie que tu as oublié `newgrp docker` ou que tu n'as pas relancé ta session SSH.
 
 ### Étape 2 : créer la structure Docker Compose
 
@@ -150,84 +150,84 @@ Colle ce contenu dans `docker-compose.yml` :
 
 ```yaml
 services:
- # Base de données MariaDB
- db:
- image: mariadb:11.2
- container_name: nextcloud-db
- restart: unless-stopped
- command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
- volumes:
- - ./db:/var/lib/mysql
- environment:
- - MYSQL_ROOT_PASSWORD=ChangeMotDePasseSuperSecure123!
- - MYSQL_DATABASE=nextcloud
- - MYSQL_USER=nextcloud
- - MYSQL_PASSWORD=NextcloudPassword456!
- networks:
- - nextcloud-network
+  # Base de données MariaDB
+  db:
+    image: mariadb:11.2
+    container_name: nextcloud-db
+    restart: unless-stopped
+    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=ChangeMotDePasseSuperSecure123!
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=NextcloudPassword456!
+    networks:
+      - nextcloud-network
 
- # Redis pour améliorer les performances
- redis:
- image: redis:7.2-alpine
- container_name: nextcloud-redis
- restart: unless-stopped
- command: redis-server --requirepass RedisPassword789!
- networks:
- - nextcloud-network
+  # Redis pour améliorer les performances
+  redis:
+    image: redis:7.2-alpine
+    container_name: nextcloud-redis
+    restart: unless-stopped
+    command: redis-server --requirepass RedisPassword789!
+    networks:
+      - nextcloud-network
 
- # Nextcloud
- nextcloud:
- image: nextcloud:34-apache
- container_name: nextcloud-app
- restart: unless-stopped
- ports:
- - "8080:80"
- volumes:
- - ./nextcloud:/var/www/html
- - ./data:/var/www/html/data
- environment:
- - MYSQL_HOST=db
- - MYSQL_DATABASE=nextcloud
- - MYSQL_USER=nextcloud
- - MYSQL_PASSWORD=NextcloudPassword456!
- - REDIS_HOST=redis
- - REDIS_HOST_PASSWORD=RedisPassword789!
- - NEXTCLOUD_TRUSTED_DOMAINS=ton-domaine.fr
- - OVERWRITEPROTOCOL=https
- - OVERWRITECLIURL=https://ton-domaine.fr
- depends_on:
- - db
- - redis
- networks:
- - nextcloud-network
+  # Nextcloud
+  nextcloud:
+    image: nextcloud:34-apache
+    container_name: nextcloud-app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nextcloud:/var/www/html
+      - ./data:/var/www/html/data
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=NextcloudPassword456!
+      - REDIS_HOST=redis
+      - REDIS_HOST_PASSWORD=RedisPassword789!
+      - NEXTCLOUD_TRUSTED_DOMAINS=ton-domaine.fr
+      - OVERWRITEPROTOCOL=https
+      - OVERWRITECLIURL=https://ton-domaine.fr
+    depends_on:
+      - db
+      - redis
+    networks:
+      - nextcloud-network
 
- # Cron pour les tâches de maintenance
- cron:
- image: nextcloud:34-apache
- container_name: nextcloud-cron
- restart: unless-stopped
- volumes:
- - ./nextcloud:/var/www/html
- - ./data:/var/www/html/data
- entrypoint: /cron.sh
- depends_on:
- - db
- - redis
- - nextcloud
- networks:
- - nextcloud-network
+  # Cron pour les tâches de maintenance
+  cron:
+    image: nextcloud:34-apache
+    container_name: nextcloud-cron
+    restart: unless-stopped
+    volumes:
+      - ./nextcloud:/var/www/html
+      - ./data:/var/www/html/data
+    entrypoint: /cron.sh
+    depends_on:
+      - db
+      - redis
+      - nextcloud
+    networks:
+      - nextcloud-network
 
 networks:
- nextcloud-network:
- driver: bridge
+  nextcloud-network:
+    driver: bridge
 
 volumes:
- db:
- nextcloud:
- data:
+  db:
+  nextcloud:
+  data:
 ```
 
- **Explications ligne par ligne :**
+**Explications ligne par ligne :**
 
 - `mariadb:11.2` : base de données performante (plus rapide que PostgreSQL pour Nextcloud)
 - `redis` : cache qui accélère drastiquement l'interface
@@ -235,7 +235,7 @@ volumes:
 - `OVERWRITEPROTOCOL=https` : force le HTTPS même derrière un reverse proxy
 - `cron` : container dédié qui exécute les tâches de maintenance toutes les 5 min
 
- **CHANGE LES MOTS DE PASSE !** Remplace tous les `ChangeMotDePasseSuperSecure`, `NextcloudPassword`, `RedisPassword` par les tiens.
+**CHANGE LES MOTS DE PASSE !** Remplace tous les `ChangeMotDePasseSuperSecure`, `NextcloudPassword`, `RedisPassword` par les tiens.
 
 ### Étape 3 : lancer Nextcloud
 
@@ -279,24 +279,24 @@ nano docker-compose.yml
 version: '3.8'
 
 services:
- npm:
- image: 'jc21/nginx-proxy-manager:latest'
- container_name: nginx-proxy-manager
- restart: unless-stopped
- ports:
- - '80:80' # HTTP
- - '443:443' # HTTPS
- - '81:81' # Interface admin
- volumes:
- - ./data:/data
- - ./letsencrypt:/etc/letsencrypt
- networks:
- - proxy-network
+  npm:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    ports:
+      - '80:80'    # HTTP
+      - '443:443'  # HTTPS
+      - '81:81'    # Interface admin
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    networks:
+      - proxy-network
 
 networks:
- proxy-network:
- external: true
- name: nextcloud_nextcloud-network
+  proxy-network:
+    external: true
+    name: nextcloud_nextcloud-network
 ```
 
 ```bash
@@ -324,19 +324,19 @@ proxy_set_header X-Forwarded-Host $host;
 
 # Configuration .well-known pour CalDAV/CardDAV
 location = /.well-known/carddav {
- return 301 $scheme://$host/remote.php/dav;
+    return 301 $scheme://$host/remote.php/dav;
 }
 
 location = /.well-known/caldav {
- return 301 $scheme://$host/remote.php/dav;
+    return 301 $scheme://$host/remote.php/dav;
 }
 
 location = /.well-known/webfinger {
- return 301 $scheme://$host/index.php/.well-known/webfinger;
+    return 301 $scheme://$host/index.php/.well-known/webfinger;
 }
 
 location = /.well-known/nodeinfo {
- return 301 $scheme://$host/index.php/.well-known/nodeinfo;
+    return 301 $scheme://$host/index.php/.well-known/nodeinfo;
 }
 
 # Augmenter les timeouts pour les gros fichiers
@@ -347,7 +347,7 @@ fastcgi_buffers 64 4K;
 
 Clique **Save** et Let's Encrypt génère automatiquement ton certificat HTTPS.
 
- **Tu peux maintenant accéder à** `https://cloud.ton-domaine.fr`
+**Tu peux maintenant accéder à** `https://cloud.ton-domaine.fr`
 
 ### Étape 5 : configuration initiale Nextcloud
 
@@ -357,10 +357,10 @@ Ouvre `https://cloud.ton-domaine.fr`, tu arrives sur l'assistant d'installation.
 
 1. **Compte administrateur :** utilisateur `admin` (ou ton prénom), mot de passe **FORT** (générateur aléatoire recommandé)
 2. **Stockage et base de données :**
- - Dossier des données : `/var/www/html/data` (déjà configuré)
- - Base de données : MySQL/MariaDB
- - Utilisateur BDD : `nextcloud`, mot de passe : celui du docker-compose
- - Nom BDD : `nextcloud`, hôte : `db:3306`
+   - Dossier des données : `/var/www/html/data` (déjà configuré)
+   - Base de données : MySQL/MariaDB
+   - Utilisateur BDD : `nextcloud`, mot de passe : celui du docker-compose
+   - Nom BDD : `nextcloud`, hôte : `db:3306`
 3. **Applications recommandées :** Calendrier, Contacts, Notes, Photos. Laisse Talk de côté pour l'instant (visio gourmande en ressources).
 
 Clique **Terminer l'installation**, ça prend 1 à 2 minutes.
@@ -382,14 +382,14 @@ nano /var/www/html/config/config.php
 Ajoute ces lignes dans le tableau de config :
 
 ```php
- 'memcache.local' => '\OC\Memcache\APCu',
- 'memcache.distributed' => '\OC\Memcache\Redis',
- 'memcache.locking' => '\OC\Memcache\Redis',
- 'redis' => array(
- 'host' => 'redis',
- 'port' => 6379,
- 'password' => 'RedisPassword789!',
- ),
+  'memcache.local' => '\OC\Memcache\APCu',
+  'memcache.distributed' => '\OC\Memcache\Redis',
+  'memcache.locking' => '\OC\Memcache\Redis',
+  'redis' => array(
+    'host' => 'redis',
+    'port' => 6379,
+    'password' => 'RedisPassword789!',
+  ),
 ```
 
 Sauvegarde (Ctrl+O, Entrée, Ctrl+X), quitte le container (`exit`), puis redémarre :
@@ -417,10 +417,10 @@ memory_limit = 512M
 Monte ce fichier dans le container. Dans la section `nextcloud` du `docker-compose.yml`, ajoute la ligne au volume :
 
 ```yaml
- volumes:
- - ./nextcloud:/var/www/html
- - ./data:/var/www/html/data
- - ./nextcloud/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    volumes:
+      - ./nextcloud:/var/www/html
+      - ./data:/var/www/html/data
+      - ./nextcloud/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 ```
 
 Puis relance :
@@ -431,7 +431,7 @@ docker compose down
 docker compose up -d
 ```
 
- **Tu peux maintenant envoyer des fichiers jusqu'à 10 Go !**
+**Tu peux maintenant envoyer des fichiers jusqu'à 10 Go !**
 
 ### Sécuriser avec fail2ban (optionnel mais recommandé)
 
@@ -448,7 +448,7 @@ sudo nano /etc/fail2ban/filter.d/nextcloud.conf
 ```ini
 [Definition]
 failregex = ^{"reqId":".*","level":2,"time":".*","remoteAddr":"<HOST>","user":".*","app":"core","method":".*","url":".*","message":"Login failed:
- ^{"reqId":".*","level":2,"time":".*","remoteAddr":"<HOST>","user":".*","app":"no app in context","method":".*","url":".*","message":"Login failed:
+            ^{"reqId":".*","level":2,"time":".*","remoteAddr":"<HOST>","user":".*","app":"no app in context","method":".*","url":".*","message":"Login failed:
 ignoreregex =
 ```
 
@@ -620,7 +620,7 @@ tar -xzf nextcloud-data-XXXX.tar.gz -C ~/
 tar -xzf nextcloud-config-XXXX.tar.gz -C ~/nextcloud/nextcloud/
 
 # 5. Restaurer la base de données
-docker compose up -d db # Lancer juste la DB d'abord
+docker compose up -d db   # Lancer juste la DB d'abord
 sleep 10
 docker exec -i nextcloud-db mysql -u nextcloud -pNextcloudPassword456! nextcloud < nextcloud-db-XXXX.sql
 
@@ -631,7 +631,7 @@ docker compose up -d
 docker exec nextcloud-app chown -R www-data:www-data /var/www/html
 ```
 
- **Tu as récupéré toutes tes données !**
+**Tu as récupéré toutes tes données !**
 
 ## Problèmes courants et solutions
 
@@ -649,9 +649,9 @@ nano /var/www/html/config/config.php
 ```php
 'trusted_domains' =>
 array (
- 0 => 'localhost',
- 1 => 'ton-ip-serveur',
- 2 => 'cloud.ton-domaine.fr',
+  0 => 'localhost',
+  1 => 'ton-ip-serveur',
+  2 => 'cloud.ton-domaine.fr',
 ),
 ```
 
@@ -748,7 +748,7 @@ Nextcloud est **le premier pilier d'une stack complète** qui peut te faire éco
 
 **Résultat ?** Une infrastructure 100% sous ton contrôle, sans abonnement, qui tient sur un simple Raspberry Pi 4.
 
- **[Découvre la stack complète d'indépendance numérique](https://brandonvisca.com/independance-numerique-2025-guide-complet/)**
+**[Découvre la stack complète d'indépendance numérique](https://brandonvisca.com/independance-numerique-2025-guide-complet/)**
 
 ## Pour aller plus loin
 
