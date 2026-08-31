@@ -93,3 +93,4 @@ sudo apt install build-essential cmake ninja-build qt6-base-dev
 
 - [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
 - [Installation et configuration de Vim : Guide complet](/installation-vim-guide-complet/)
+- [Arc Browser abandonné : 7 alternatives épurées pour retrouver ton workflow de rêve](/arc-browser-alternatives-navigateur-epure-2025/)

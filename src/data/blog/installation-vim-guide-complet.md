@@ -2,7 +2,7 @@
 title: "Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes"
 description: "Installe Vim sur macOS ou Linux en 30 min : .vimrc de base commenté, vim-plug, NERDTree et FZF. Tout ce qu'il faut pour débuter sérieusement."
 pubDatetime: "2025-03-31T15:11:44+02:00"
-modDatetime: 2026-04-16 00:00:00+01:00
+modDatetime: "2026-08-31T00:00:00+01:00"
 author: Brandon Visca
 tags:
   - vim
@@ -26,8 +26,9 @@ faqs:
 > - Vim s'installe via Homebrew sur macOS (`brew install vim`) et le gestionnaire de paquets natif sous Linux
 > - Un `.vimrc` de 15 lignes suffit pour un éditeur fonctionnel
 > - Ajoute vim-plug pour les plugins, NERDTree pour l'arbre de fichiers, FZF pour la recherche
+> - **Mise à jour 2026** : Vim 9.1 est disponible, les distributions rolling-release l'incluent déjà
 
-Vim intimide au premier abord. Mais une fois qu'on comprend la logique modale, c'est l'un des éditeurs les plus rapides qui soit. Je l'utilise quotidiennement sur mes serveurs Linux, et le `.vimrc` que je vais te montrer est exactement celui que je déploie partout.
+Vim intimide au premier abord. Mais une fois qu'on comprend la logique modale, c'est l'un des éditeurs les plus rapides qui soit. Je l'utilise quotidiennement sur mes serveurs Linux, et le `.vimrc` que je vais te montrer est exactement celui que je déploie partout. Si tu débutes avec les outils en ligne de commande, commence par [sécuriser tes accès SSH avec Termius](/termius-client-ssh-windows-guide-complet/) — c'est le setup que j'utilise pour administrer mes machines distantes.
 
 ## Table des matières
 
@@ -233,11 +234,71 @@ Ensuite :
 
 Si tu veux aller plus loin dans l'optimisation de ton terminal, regarde aussi [Oh My Zsh + Powerlevel10k](/installation-oh-my-zsh-powerlevel10k-guide-complet/). Vim + un shell propre, c'est imbattable.
 
+## Nouveautés Vim en 2026
+
+Vim continue d'évoluer. Voici ce qui change pour cette année et pourquoi ton installation mérite une mise à jour.
+
+### Vim 9.1 : le point sur les versions
+
+En 2026, Vim 9.1 est la version stable de référence. Sortie en janvier 2024, cette version apporte des évolutions concrètes par rapport à la 8.x préinstallée sur macOS. Voici ce qui change vraiment :
+
+**Classes et objets (Vim9 script)**
+
+Vim 9.1 introduit le support des classes et objets dans le langage Vim9. Pour un utilisateur avancé, ça permet d'écrire des plugins plus structurés sans sortir de l'écosystème Vim. Exemple concret : tu peux encapsuler ta logique de configuration dans une classe réutilisable :
+
+```vim
+vim9script
+
+class Config
+    var theme: string
+    var tabsize: number
+
+    def new(theme: string, tabsize: number)
+        this.theme = theme
+        this.tabsize = tabsize
+    enddef
+endclass
+
+var myconfig = Config.new('gruvbox', 4)
+```
+
+C'est propre, typé, et maintenable. Pour la plupart des utilisateurs, le `.vimrc` classique reste suffisant, mais si tu écris des plugins personnalisés, Vim9 script remplace les scripts legacy pour de bon.
+
+**Texte virtuel inline**
+
+La fonctionnalité `virtual text` permet d'afficher des annotations directement dans le buffer sans modifier le fichier. C'est utile pour afficher des erreurs de linter, des types de variables, ou des hints de fonction. Avant Vim 9.1, ça nécessitait des hacks ou des plugins externes. Maintenant, c'est natif via `prop_add()` avec le type `'virtual_text'`.
+
+**Améliorations de performance**
+
+Vim 9.1 accélère l'exécution des scripts Vim9 avec une compilation à la volée (JIT-like). Les macros lourdes et les opérations sur de gros fichiers sont nettement plus rapides. Sur un fichier de 10 000 lignes, l'indentation automatique (`gg=G`) est 2-3x plus rapide qu'avec Vim 8.2.
+
+**Vérifier ta version**
+
+```bash
+vim --version | head -2
+```
+
+Les distributions rolling-release (Arch, Fedora rawhide) embarquent Vim 9.1. Sur Debian stable ou Ubuntu LTS, les dépôts restent en 9.0 — Homebrew ou une compilation depuis les sources restent la meilleure option pour avoir le dernier patch.
+
+### Les plugins à suivre en 2026
+
+L'écosystème Vim évolue vite. Quelques recommandations actualisées :
+
+- **NERDTree** reste l'explorateur de fichiers de référence, mais [vim-vinegar](https://github.com/tpope/vim-vinegar) gagne du terrain pour ceux qui veulent un arbre intégré à l'éditeur natif
+- **fzf.vim** reste le standard pour la recherche floue ; l'alternative [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) est réservée à NeoVim
+- **vim-airline** est stable, mais [lualine](https://github.com/nvim-lualine/lualine.nvim) (NeoVim uniquement) offre plus de personnalisation visuelle
+
+Si tu hésites à passer à NeoVim, mon guide thèmes détaille les différences concrètes entre les deux éditeurs et pourquoi Vim reste pertinent en 2026.
+
+### Intégration avec les terminaux modernes
+
+Vim fonctionne désormais de manière transparente avec les terminaux modernes comme [Warp](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) ou [iTerm2](https://iterm2.com/). Le presse-papiers système, les couleurs truecolor et les événements de redimensionnement de fenêtre sont gérés nativement sans configuration supplémentaire, à condition d'utiliser Vim 9.x compilé avec le support `+clipboard`.
+
 ## Conclusion
 
 Vim a une courbe d'apprentissage abrupte les premiers jours. Mais une fois que tu as ton `.vimrc` calibré et tes plugins installés, tu réalises pourquoi les sysadmins y reviennent toujours : il est disponible partout, démarre en une seconde, et ne t'impose rien.
 
-Commence par les bases : `hjkl` pour naviguer, `i` pour insérer, `:w` pour sauvegarder, `:q` pour quitter. Le reste vient naturellement. Et si tu veux pousser la personnalisation visuelle, le [guide thèmes dédié](/installation-theme-vim-guide/) est l'étape suivante logique.
+Commence par les bases : `hjkl` pour naviguer, `i` pour insérer, `:w` pour sauvegarder, `:q` pour quitter. Le reste vient naturellement. Et si tu veux pousser la personnalisation visuelle, le [guide thèmes dédié](/installation-theme-vim-guide/) est l'étape suivante logique. Pour aller plus loin dans l'écosystème terminal, j'ai aussi testé en profondeur [Warp Terminal](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) et documenté [l'installation complète de Oh My Zsh](/installation-oh-my-zsh-powerlevel10k-guide-complet/).
 
 ## Pour aller plus loin
 

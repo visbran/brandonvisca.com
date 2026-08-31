@@ -976,3 +976,4 @@ Docker lui-même est très léger. Ce sont les **services** que tu fais tourner 
 - [Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle](/independance-numerique-2025-guide-complet/)
 - [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
 - [Mealie avec Docker : gère tes recettes comme un pro](/mealie-docker-recettes-auto-heberge/)
+- [Migrer WordPress gratuitement avec All-in-One WP Migration : guide 2026](/migration-wordpress-all-in-one-guide-2025/)
