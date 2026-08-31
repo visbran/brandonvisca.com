@@ -5,30 +5,30 @@ pubDatetime: "2025-03-31T15:11:44+02:00"
 modDatetime: "2026-08-31T00:00:00+01:00"
 author: Brandon Visca
 tags:
-  - vim
-  - linux
-  - macos
-  - terminal
-  - guide
-  - intermediaire
+ - vim
+ - linux
+ - macos
+ - terminal
+ - guide
+ - intermediaire
 featured: false
 draft: false
 focusKeyword: vim
 faqs:
-  - question: "Quelle est la différence entre Vim et NeoVim ?"
-    answer: "NeoVim est un fork de Vim avec une architecture moderne : support Lua natif, LSP intégré, async par défaut et une API plus riche. Vim reste plus léger. Pour débuter, Vim est suffisant ; NeoVim s'impose pour un IDE complet."
-  - question: "vim-plug vs Vundle vs Lazy.nvim : lequel choisir ?"
-    answer: "Pour Vim classique, vim-plug est le gestionnaire le plus populaire : simple, rapide, supporte l'installation en parallèle. Vundle est obsolète. Pour NeoVim, Lazy.nvim est le standard actuel."
-  - question: "Comment sauvegarder et synchroniser ma configuration Vim entre machines ?"
-    answer: "Versionne ton .vimrc (et le dossier ~/.vim/plugged si nécessaire) dans un dépôt Git de dotfiles. Une commande git pull + vim +PlugInstall recrée l'environnement complet sur n'importe quelle machine."
+ - question: "Quelle est la différence entre Vim et NeoVim ?"
+ answer: "NeoVim est un fork de Vim avec une architecture moderne : support Lua natif, LSP intégré, async par défaut et une API plus riche. Vim reste plus léger. Pour débuter, Vim est suffisant ; NeoVim s'impose pour un IDE complet."
+ - question: "vim-plug vs Vundle vs Lazy.nvim : lequel choisir ?"
+ answer: "Pour Vim classique, vim-plug est le gestionnaire le plus populaire : simple, rapide, supporte l'installation en parallèle. Vundle est obsolète. Pour NeoVim, Lazy.nvim est le standard actuel."
+ - question: "Comment sauvegarder et synchroniser ma configuration Vim entre machines ?"
+ answer: "Versionne ton .vimrc (et le dossier ~/.vim/plugged si nécessaire) dans un dépôt Git de dotfiles. Une commande git pull + vim +PlugInstall recrée l'environnement complet sur n'importe quelle machine."
 ---
-> 💡 **TL;DR**
+> **TL;DR**
 > - Vim s'installe via Homebrew sur macOS (`brew install vim`) et le gestionnaire de paquets natif sous Linux
 > - Un `.vimrc` de 15 lignes suffit pour un éditeur fonctionnel
 > - Ajoute vim-plug pour les plugins, NERDTree pour l'arbre de fichiers, FZF pour la recherche
 > - **Mise à jour 2026** : Vim 9.1 est disponible, les distributions rolling-release l'incluent déjà
 
-Vim intimide au premier abord. Mais une fois qu'on comprend la logique modale, c'est l'un des éditeurs les plus rapides qui soit. Je l'utilise quotidiennement sur mes serveurs Linux, et le `.vimrc` que je vais te montrer est exactement celui que je déploie partout. Si tu débutes avec les outils en ligne de commande, commence par [sécuriser tes accès SSH avec Termius](/termius-client-ssh-windows-guide-complet/) — c'est le setup que j'utilise pour administrer mes machines distantes.
+Vim intimide au premier abord. Mais une fois qu'on comprend la logique modale, c'est l'un des éditeurs les plus rapides qui soit. Je l'utilise quotidiennement sur mes serveurs Linux, et le `.vimrc` que je vais te montrer est exactement celui que je déploie partout. Si tu débutes avec les outils en ligne de commande, commence par [sécuriser tes accès SSH avec Termius](/termius-client-ssh-windows-guide-complet/) - c'est le setup que j'utilise pour administrer mes machines distantes.
 
 ## Table des matières
 
@@ -66,7 +66,7 @@ make
 sudo make install
 ```
 
-> ⚠️ **Attention**, La compilation depuis les sources nécessite `gcc`, `make` et les headers Python3. Sur macOS : `xcode-select --install`. Sur Debian/Ubuntu : `sudo apt install build-essential python3-dev`.
+> **Attention**, La compilation depuis les sources nécessite `gcc`, `make` et les headers Python3. Sur macOS : `xcode-select --install`. Sur Debian/Ubuntu : `sudo apt install build-essential python3-dev`.
 
 ## Installation de Vim sur Linux
 
@@ -119,17 +119,17 @@ set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
-set expandtab          " Espaces au lieu de tabulations
+set expandtab " Espaces au lieu de tabulations
 
 " Encodage et affichage
 set encoding=utf-8
-set cursorline          " Surligne la ligne courante
-set showmatch           " Montre les parenthèses correspondantes
-set hlsearch            " Surligne les résultats de recherche
-set incsearch           " Recherche incrémentale en temps réel
+set cursorline " Surligne la ligne courante
+set showmatch " Montre les parenthèses correspondantes
+set hlsearch " Surligne les résultats de recherche
+set incsearch " Recherche incrémentale en temps réel
 
 " Performance
-set lazyredraw          " Accélère le rendu lors des macros
+set lazyredraw " Accélère le rendu lors des macros
 ```
 
 Enregistre et recharge sans quitter Vim :
@@ -138,7 +138,7 @@ Enregistre et recharge sans quitter Vim :
 :source ~/.vimrc
 ```
 
-> 💡 **Astuce**, Ajoute `set clipboard=unnamedplus` à ton `.vimrc` pour synchroniser le presse-papiers Vim avec le presse-papiers système. Plus de `Ctrl+C` / `Ctrl+V` manqués.
+> **Astuce**, Ajoute `set clipboard=unnamedplus` à ton `.vimrc` pour synchroniser le presse-papiers Vim avec le presse-papiers système. Plus de `Ctrl+C` / `Ctrl+V` manqués.
 
 ## Personnalisation avancée avec vim-plug
 
@@ -148,7 +148,7 @@ Enregistre et recharge sans quitter Vim :
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 ### Plugins recommandés
@@ -223,8 +223,8 @@ chmod -R u+rw ~/.vim
 Si un plugin casse l'éditeur au démarrage, lance-le sans config pour isoler le problème :
 
 ```bash
-vim -u NONE    # Vim sans .vimrc ni plugins
-vim -u ~/.vimrc --noplugin   # .vimrc mais sans plugins
+vim -u NONE # Vim sans .vimrc ni plugins
+vim -u ~/.vimrc --noplugin # .vimrc mais sans plugins
 ```
 
 Ensuite :
@@ -250,13 +250,13 @@ Vim 9.1 introduit le support des classes et objets dans le langage Vim9. Pour un
 vim9script
 
 class Config
-    var theme: string
-    var tabsize: number
+ var theme: string
+ var tabsize: number
 
-    def new(theme: string, tabsize: number)
-        this.theme = theme
-        this.tabsize = tabsize
-    enddef
+ def new(theme: string, tabsize: number)
+ this.theme = theme
+ this.tabsize = tabsize
+ enddef
 endclass
 
 var myconfig = Config.new('gruvbox', 4)
@@ -278,7 +278,7 @@ Vim 9.1 accélère l'exécution des scripts Vim9 avec une compilation à la vol�
 vim --version | head -2
 ```
 
-Les distributions rolling-release (Arch, Fedora rawhide) embarquent Vim 9.1. Sur Debian stable ou Ubuntu LTS, les dépôts restent en 9.0 — Homebrew ou une compilation depuis les sources restent la meilleure option pour avoir le dernier patch.
+Les distributions rolling-release (Arch, Fedora rawhide) embarquent Vim 9.1. Sur Debian stable ou Ubuntu LTS, les dépôts restent en 9.0 - Homebrew ou une compilation depuis les sources restent la meilleure option pour avoir le dernier patch.
 
 ### Les plugins à suivre en 2026
 
