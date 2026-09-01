@@ -229,4 +229,6 @@ Sonarr stocke tout dans `/config` : séries suivies, profils de qualité, histor
 
 Sonarr transforme la gestion de tes séries en un processus invisible. Tu ajoutes une série une fois, tu configures ton profil de qualité, et il fait le reste : recherche, téléchargement, renommage, organisation. Couplé à Docker, tu obtiens un service propre, isolé et facile à sauvegarder.
 
+Côté client torrent, Sonarr fonctionne aussi bien avec [Transmission Docker](/transmission-docker-client-torrent/) qu'avec qBittorrent. Transmission est particulièrement pertinent si tu veux minimiser l'empreinte mémoire sur un serveur limité.
+
 Intègre-le avec Radarr pour les films, [Jellyseerr](/jellyseerr-docker-gestion-demandes/) pour les demandes utilisateurs, et Jellyfin pour la lecture, et tu auras un mediacenter qui gère tout seul ta bibliothèque TV. Le seul truc qu'il ne fera pas à ta place, c'est choisir quelle série binge-watcher ce week-end.
