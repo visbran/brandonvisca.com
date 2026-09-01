@@ -1,7 +1,7 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-08-31
-# Total articles : 174
+# Dernière mise à jour : 2026-09-01
+# Total articles : 175
 
 ## Bunch macOS : lance des contextes complets en un clic
 URL: https://brandonvisca.com/bunch-macos-lancer-contextes/
