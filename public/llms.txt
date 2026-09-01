@@ -3,6 +3,12 @@
 # Dernière mise à jour : 2026-09-01
 # Total articles : 175
 
+## Transmission Docker : client torrent ultra-léger avec interface web
+URL: https://brandonvisca.com/transmission-docker-client-torrent/
+Description: Déploie Transmission avec Docker : client torrent ultra-léger, interface web, et intégration parfaite avec ta stack mediacenter auto-hébergée.
+Tags: 
+Publié: 2026-09-01T06:00:00.000Z
+
 ## Bunch macOS : lance des contextes complets en un clic
 URL: https://brandonvisca.com/bunch-macos-lancer-contextes/
 Description: Bunch macOS : lance des contextes complets (apps, fichiers, sites) en un clic. Gratuit, open-source et parfait pour switcher entre projets.
