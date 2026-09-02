@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-01
-# Total articles : 175
+# Dernière mise à jour : 2026-09-02
+# Total articles : 176
+
+## Maccy macOS : presse-papiers open-source avec historique et recherche
+URL: https://brandonvisca.com/maccy-macos-presse-papiers-historique/
+Description: Maccy est un gestionnaire de presse-papiers open-source pour macOS. Historique, recherche rapide, raccourcis clavier. Guide installation.
+Tags: 
+Publié: 2026-09-02 11:00:00+00:00
 
 ## Transmission Docker : client torrent ultra-léger avec interface web
 URL: https://brandonvisca.com/transmission-docker-client-torrent/
