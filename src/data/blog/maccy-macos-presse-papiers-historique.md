@@ -1,8 +1,8 @@
 ---
 title: "Maccy macOS : presse-papiers open-source avec historique et recherche"
 description: Maccy est un gestionnaire de presse-papiers open-source pour macOS. Historique, recherche rapide, raccourcis clavier. Guide installation.
-pubDatetime: 2026-09-02 11:00:00+00:00
-modDatetime: 2026-09-02 11:00:00+00:00
+pubDatetime: "2026-09-02T11:00:00.000Z"
+modDatetime: "2026-09-02T11:00:00.000Z"
 author: Brandon
 tags:
   - macos
