@@ -7,7 +7,7 @@
 URL: https://brandonvisca.com/maccy-macos-presse-papiers-historique/
 Description: Maccy est un gestionnaire de presse-papiers open-source pour macOS. Historique, recherche rapide, raccourcis clavier. Guide installation.
 Tags: 
-Publié: 2026-09-02 11:00:00+00:00
+Publié: 2026-09-02T11:00:00.000Z
 
 ## Transmission Docker : client torrent ultra-léger avec interface web
 URL: https://brandonvisca.com/transmission-docker-client-torrent/
