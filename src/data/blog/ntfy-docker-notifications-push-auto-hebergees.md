@@ -295,5 +295,3 @@ notify("Script terminé", "L'import CSV s'est bien passé", "low")
 Ntfy est l'outil qu'il te manquait si tu veux des notifications push sans dépendre d'un service tiers. Deux minutes de setup, un `curl`, et tu reçois tes alertes partout.
 
 Le combo Ntfy + Uptime Kuma + Beszel couvre 90% des besoins de monitoring d'un homelab. Le reste, ce sont des scripts maison qui appellent ton topic.
-
-Et toi, tu utilises quoi pour tes alertes ? Des emails ? Un bot Telegram ? Tu as testé Ntfy ? Dis-moi en commentaire, non, attends, j'ai pas de commentaires. Envoie-moi un MP si tu veux qu'on en discute.
