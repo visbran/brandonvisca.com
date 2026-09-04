@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-02
-# Total articles : 176
+# Dernière mise à jour : 2026-09-04
+# Total articles : 177
+
+## Ntfy Docker : notifications push auto-hébergées pour ton homelab
+URL: https://brandonvisca.com/ntfy-docker-notifications-push-auto-hebergees/
+Description: Guide Ntfy Docker : reçois des notifications push gratuites et auto-hébergées depuis tes services Docker, scripts et monitoring vers ton téléphone.
+Tags: 
+Publié: 2026-09-04 11:00:00+01:00
 
 ## Maccy macOS : presse-papiers open-source avec historique et recherche
 URL: https://brandonvisca.com/maccy-macos-presse-papiers-historique/
