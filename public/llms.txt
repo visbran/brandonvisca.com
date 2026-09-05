@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-04
-# Total articles : 177
+# Dernière mise à jour : 2026-09-05
+# Total articles : 178
+
+## Numi macOS : calculatrice textuelle qui comprend le langage naturel
+URL: https://brandonvisca.com/numi-macos-calculatrice-textuelle/
+Description: Découvre Numi, la calculatrice macOS qui comprend le langage naturel. Calculs unités, devises, dates et variables en texte brut. Guide complet 2026.
+Tags: 
+Publié: 2026-09-05 11:00:00+00:00
 
 ## Ntfy Docker : notifications push auto-hébergées pour ton homelab
 URL: https://brandonvisca.com/ntfy-docker-notifications-push-auto-hebergees/
