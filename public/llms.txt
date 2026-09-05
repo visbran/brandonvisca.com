@@ -7,7 +7,7 @@
 URL: https://brandonvisca.com/numi-macos-calculatrice-textuelle/
 Description: Découvre Numi, la calculatrice macOS qui comprend le langage naturel. Calculs unités, devises, dates et variables en texte brut. Guide complet 2026.
 Tags: 
-Publié: 2026-09-05 11:00:00+00:00
+Publié: 2026-09-05T08:00:00.000Z
 
 ## Ntfy Docker : notifications push auto-hébergées pour ton homelab
 URL: https://brandonvisca.com/ntfy-docker-notifications-push-auto-hebergees/
