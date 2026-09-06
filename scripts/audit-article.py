@@ -537,6 +537,71 @@ def audit_content_patterns(body: str, issues: list):
                 })
 
 
+# ── Marqueurs IA (ai-check niveau 1) ──────────────────────────────────────────
+# Source de vérité : /opt/2026-Korbelike-article/.claude/skills/ai-check/SKILL.md
+# Sévérités calées sur ce skill : le tiret cadratin y est un « MARQUEUR MAJEUR »,
+# les connecteurs et intros bateau sont à reformuler, les tournures passives et
+# les adjectifs d'inflation se surveillent sans bloquer la publication.
+
+AI_MARKERS = [
+    ("error", re.compile(r"—"),
+     "tiret cadratin (—), marqueur IA majeur : remplacer par une virgule, des parenthèses ou un point"),
+
+    ("warning", re.compile(r"(?m)^[ \t]*(?:De plus|En outre|Par ailleurs)[ \t]*,"),
+     "connecteur IA en tête de phrase : supprimer, ou passer à « Et », « Aussi »"),
+    ("warning", re.compile(r"(?i)il (?:convient|est important) de noter"),
+     "« il convient / il est important de noter » : énoncer directement"),
+    ("warning", re.compile(r"(?m)^[ \t]*À noter que\b"),
+     "« À noter que » en tête de phrase : énoncer directement"),
+    ("warning", re.compile(r"(?i)dans un monde où|à l'ère du numérique"),
+     "intro bateau (« dans un monde où », « à l'ère du numérique ») : attaquer sur le sujet"),
+    ("warning", re.compile(r"(?i)\b(?:plongeons dans|explorons)\b"),
+     "« plongeons dans » / « explorons » : aller droit au fait"),
+    ("warning", re.compile(r"(?i)dans (?:cet article|ce guide),? nous allons"),
+     "intro bateau « dans cet article, nous allons » : annoncer le bénéfice, pas le plan"),
+
+    ("info", re.compile(r"(?i)\bpermet(?:tent)? d[e']"),
+     "tournure passive « permet de + infinitif » : préférer un verbe actif direct"),
+    ("info", re.compile(r"(?i)\bil est possible de\b"),
+     "tournure passive « il est possible de » : préférer « tu peux »"),
+    ("info", re.compile(r"(?i)\bil suffit de\b"),
+     "tournure passive « il suffit de » : préférer un impératif"),
+    ("info", re.compile(r"(?i)\b(?:crucial|cruciale|fondamental|fondamentale|incontournable|robuste)\b"),
+     "adjectif d'inflation IA : supprimer, ou remplacer par un fait chiffré"),
+]
+
+
+def audit_ai_markers(body: str, issues: list, line_offset: int = 0):
+    """
+    Détecte les marqueurs textuels IA du niveau 1 de /ai-check.
+
+    Le ton Korben est volontaire et n'est pas vérifié ici : tutoiement, phrases
+    courtes, formules signature (« Spoiler : ça va marcher ») et section finale
+    « ## Conclusion » avec CTA sont la convention maison, pas des marqueurs.
+
+    Blocs de code et code inline sont exclus : un tiret cadratin dans une sortie
+    de commande n'est pas un marqueur IA.
+
+    ``line_offset`` ramène les numéros de ligne au fichier complet : ``body`` est
+    amputé du frontmatter, sans quoi les positions seraient inexploitables.
+    """
+    body_no_code = re.sub(r"```[\s\S]*?```", lambda m: "\n" * m.group().count("\n"), body)
+    body_no_code = re.sub(r"`[^`\n]*`", "", body_no_code)
+
+    for level, rx, label in AI_MARKERS:
+        hits = list(rx.finditer(body_no_code))
+        if not hits:
+            continue
+        locs = ", ".join(
+            f"L{body_no_code.count(chr(10), 0, m.start()) + 1 + line_offset}" for m in hits[:5]
+        )
+        if len(hits) > 5:
+            locs += f", +{len(hits) - 5}"
+        count = f" ({len(hits)}×)" if len(hits) > 1 else ""
+        issues.append({"type": level, "cat": "ia", "msg": f"{label}{count} [{locs}]"})
+
+
+
 # ── Main audit ────────────────────────────────────────────────────────────────
 
 def audit_file(filepath: Path, all_slugs: set | None = None) -> dict:
@@ -567,6 +632,7 @@ def audit_file(filepath: Path, all_slugs: set | None = None) -> dict:
     audit_images(body, issues)
     audit_links(body, issues, all_slugs)
     audit_content_patterns(body, issues)
+    audit_ai_markers(body, issues, content[:len(content) - len(body)].count("\n"))
 
     return {"file": filepath.name, "issues": issues}
 
