@@ -1,7 +1,8 @@
 ---
 title: "10 Outils macOS gratuits que j'utilise (2026)"
 description: "10 outils macOS que j'utilise quotidiennement : gratuits, légers, efficaces. Brewfile inclus. Économise 453€/an vs alternatives."
-pubDatetime: 2025-11-27 00:00:00+01:00
+pubDatetime: "2025-11-27T00:00:00.000+01:00"
+modDatetime: "2026-09-06T14:00:00.000Z"
 author: Brandon Visca
 tags:
   - macos
@@ -19,7 +20,6 @@ faqs:
   - question: "Ces outils sont-ils compatibles avec macOS Sequoia (2025) ?"
     answer: "Oui, la liste a été vérifiée sur macOS Sequoia. Chaque outil est maintenu activement et reçoit des mises à jour régulières."
 ---
-
 > 💡 **TL;DR**
 > - 10 outils macOS gratuits, légers et sans abonnement, chacun fait une chose et la fait bien
 > - rcmd (switch d'apps), Clop (compression), Lunar (luminosité) et 7 autres du quotidien
@@ -62,7 +62,7 @@ Pas d'IA inutile, pas de features bloated, pas d'abonnements SaaS. Juste des **o
 
 Let's go ! 🚀
 
----
+## Table des matières
 
 ## Les 10 Outils Low-Tech (Vue d'ensemble)
 
@@ -1118,6 +1118,7 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 - [Raycast : Launcher complet](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)
 - [Amethyst : Tiling window manager au clavier](https://brandonvisca.com/amethyst-macos-tiling-window-manager/)
 - [Ice : Gestionnaire barre menu détaillé](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
+- [Numi : Calculatrice textuelle](https://brandonvisca.com/numi-macos-calculatrice-textuelle/)
 - [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)
 - [iTerm2 : Terminal optimisé](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/)
 
@@ -1143,10 +1144,3 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 - [r/macOS](https://reddit.com/r/macOS)
 - [r/MacApps](https://reddit.com/r/MacApps)
 - [r/opensource](https://reddit.com/r/opensource)
-
-## Articles connexes
-
-- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
-- [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
-- [Grila vs Fantastical : Comparatif honnête après 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/)
-- [Ice macOS : remplace Bartender gratuitement et organise ta barre de menu](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)

@@ -1,8 +1,8 @@
 ---
 title: "Maccy macOS : presse-papiers open-source avec historique et recherche"
 description: Maccy est un gestionnaire de presse-papiers open-source pour macOS. Historique, recherche rapide, raccourcis clavier. Guide installation.
-pubDatetime: "2026-09-02T06:00:00.000Z"
-modDatetime: "2026-09-02T06:00:00.000Z"
+pubDatetime: "2026-09-02T11:00:00.000Z"
+modDatetime: "2026-09-06T14:00:00.000Z"
 author: Brandon
 tags:
   - macos
@@ -32,7 +32,7 @@ faqs:
 
 T'as deja copie un lien, une adresse ou un morceau de code pour te rendre compte 30 secondes plus tard que tu as ecrase le presse-papiers avec un autre copier-coller ? C'est le scenario classique. macOS garde en memoire une seule chose a la fois. Un seul. C'est ridicule en 2026.
 
-Maccy resout ce probleme. C'est un gestionnaire de presse-papiers open-source, gratuit, qui stocke tout ton historique de copies et te permet de retrouver n'importe quel element en quelques frappes. J'utilise Maccy depuis plus de deux ans sur mon MacBook Pro M3. Il tourne en arriere-plan, invisible, et me sauve plusieurs fois par jour. Voici pourquoi tu devrais l'installer aujourd'hui.
+Maccy resout ce probleme. C'est un gestionnaire de presse-papiers open-source, gratuit, qui stocke tout ton historique de copies et te permet de retrouver n'importe quel element en quelques frappes. J'utilise Maccy depuis plus de deux ans sur mon MacBook Pro M3. Il tourne en arriere-plan, invisible, et me sauve plusieurs fois par jour. Il fait partie des [outils macOS gratuits que je garde installes en permanence](/10-outils-low-tech-macos-guide-complet/), avec une regle simple : un outil, une fonction, zero abonnement. Voici pourquoi tu devrais l'installer aujourd'hui.
 
 ## Qu'est-ce que Maccy et pourquoi tu en as besoin
 
@@ -153,12 +153,6 @@ Si tu cherches une alternative a Maccy, Paste est la reference payante. Il est e
 
 Maccy est l'un de ces outils que tu installes en 10 secondes et qui te font gagner du temps chaque jour. Il est gratuit, open-source, leger, et respecte ta vie privee. Pas de compte a creer, pas de donnees dans le cloud, pas d'interface surchargee. Un raccourci clavier, une fenetre flottante, et tu retrouves tout ce que tu as copie depuis des heures.
 
-Si tu travailles sur macOS, que tu copies du texte, des liens, du code ou des images, Maccy devrait faire partie de ton setup de base. Il est aussi indispensable qu'un bon gestionnaire de fenetres ou une barre de menu organisee. [Ice macOS](/ice-macos-gestionnaire-barre-menu-gratuit-2025/), [AltTab macOS](/alttab-macos-gestion-fenetres-windows/) et Maccy forment chez moi un trio productivite minimaliste et efficace.
+Si tu travailles sur macOS, que tu copies du texte, des liens, du code ou des images, Maccy devrait faire partie de ton setup de base. Il est aussi indispensable qu'un bon gestionnaire de fenetres ou une barre de menu organisee. [Ice macOS](/ice-macos-gestionnaire-barre-menu-gratuit-2025/), [AltTab macOS](/alttab-macos-gestion-fenetres-windows/) et Maccy forment chez moi un quatuor productivite minimaliste et efficace, avec [Numi](/numi-macos-calculatrice-textuelle/) pour les calculs rapides en langage naturel.
 
 Installe-le aujourd'hui via Homebrew ou depuis GitHub. Configure-le en 2 minutes. Oublie-le. Il travaillera en silence et te sauvera la mise au moment ou tu t'y attendras le moins. C'est exactement ce qu'on attend d'un bon outil macOS.
-
-## Pour aller plus loin
-
-- [10 Outils macOS gratuits que j'utilise](/10-outils-low-tech-macos-guide-complet/) : une liste complete de ma suite productivite macOS, avec Maccy, Ice, AltTab et d'autres outils open-source
-- [AltTab macOS : gestion de fenetres style Windows](/alttab-macos-gestion-fenetres-windows/) : remplace le Cmd+Tab natif avec des previews visuelles de chaque fenetre, gratuit et open-source
-- [Ice macOS : remplace Bartender gratuitement](/ice-macos-gestionnaire-barre-menu-gratuit-2025/) : organise ta barre de menu avec des sections, des hotkeys et une personnalisation complete
