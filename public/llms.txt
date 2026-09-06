@@ -1,6 +1,6 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-05
+# Dernière mise à jour : 2026-09-06
 # Total articles : 178
 
 ## Numi macOS : calculatrice textuelle qui comprend le langage naturel
@@ -19,7 +19,7 @@ Publié: 2026-09-04 11:00:00+01:00
 URL: https://brandonvisca.com/maccy-macos-presse-papiers-historique/
 Description: Maccy est un gestionnaire de presse-papiers open-source pour macOS. Historique, recherche rapide, raccourcis clavier. Guide installation.
 Tags: 
-Publié: 2026-09-02T06:00:00.000Z
+Publié: 2026-09-02T11:00:00.000Z
 
 ## Transmission Docker : client torrent ultra-léger avec interface web
 URL: https://brandonvisca.com/transmission-docker-client-torrent/
@@ -667,7 +667,7 @@ Publié: 2025-12-09T21:14:00+01:00
 URL: https://brandonvisca.com/10-outils-low-tech-macos-guide-complet/
 Description: 10 outils macOS que j'utilise quotidiennement : gratuits, légers, efficaces. Brewfile inclus. Économise 453€/an vs alternatives.
 Tags: 
-Publié: 2025-11-27 00:00:00+01:00
+Publié: 2025-11-27T00:00:00.000+01:00
 
 ## Cling : Recherche fuzzy fichiers 10x plus rapide
 URL: https://brandonvisca.com/cling-recherche-fuzzy-fichiers-macos/
