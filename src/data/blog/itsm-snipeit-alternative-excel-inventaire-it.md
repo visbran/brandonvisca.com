@@ -1,15 +1,17 @@
 ---
 title: "ITSM : pourquoi votre Excel va finalement vous rendre fou (guide survie)"
+description: "Découvrez l''ITSM pour débutants avec SnipeIT, l''alternative gratuite à Excel pour gérer vos actifs IT sans stress. Guide complet inventaire informatique."
 pubDatetime: "2025-09-29T11:20:31+02:00"
 author: Brandon Visca
-description: "Découvrez l''ITSM pour débutants avec SnipeIT, l''alternative gratuite à Excel pour gérer vos actifs IT sans stress. Guide complet inventaire informatique."
-focusKeyword: "ITSM Snipe-IT vs Excel"
 tags:
   - linux
   - sysadmin
   - debutant
   - snipeit
   - guide
+featured: false
+draft: false
+focusKeyword: ITSM Snipe-IT vs Excel
 faqs:
   - question: "Snipe-IT est-il vraiment gratuit, même pour une entreprise ?"
     answer: "Oui, Snipe-IT est open source (AGPL v3) et gratuit à auto-héberger sans limite d'actifs ni d'utilisateurs. Une version cloud hébergée est disponible à partir de 39,99$/mois si tu ne veux pas gérer l'infra."
@@ -18,47 +20,23 @@ faqs:
   - question: "Combien d'actifs IT peut-on gérer avec Snipe-IT ?"
     answer: "Il n'y a pas de limite technique. Des déploiements en production gèrent des dizaines de milliers d'actifs. La seule limite est les ressources du serveur qui héberge l'instance."
 ---
-
 > 💡 **TL;DR**
 > - Gérer son inventaire IT dans Excel finit toujours mal (fichier perdu, données périmées)
 > - SnipeIT est l'alternative gratuite et open source pour suivre tes actifs IT sans stress
 > - Tu sais enfin ce que tu as, où ça se trouve et dans quel état
 
-  - [Savoir ce que tu as](#savoir-ce-que-tu-as)
-  - [Savoir où ça se trouve](#savoir-ou-ca-se-trouve)
-  - [Prévoir les coûts](#prevoir-les-couts)
-- [Pourquoi Excel va te rendre dingue](#pourquoi-excel-va-te-rendre-dingue)
-  - [Le problème des versions multiples](#le-probleme-des-versions-multiples)
-  - [Pas de workflow ni d’historique](#pas-de-workflow-ni-dhistorique)
-  - [Zéro automatisation](#zero-automatisation)
-  - [Sécurité et accès catastrophiques](#securite-et-acces-catastrophiques)
-- [SnipeIT : ton nouveau meilleur ami](#snipe-it-ton-nouveau-meilleur-ami)
-  - [Pourquoi SnipeIT et pas autre chose ?](#pourquoi-snipe-it-et-pas-autre-chose)
-  - [Les fonctionnalités qui changent la vie](#les-fonctionnalites-qui-changent-la-vie)
-      - [1. Gestion complète du cycle de vie](#1-gestion-complete-du-cycle-de-vie)
-      - [2. Notifications automatiques](#2-notifications-automatiques)
-      - [3. Génération de rapports](#3-generation-de-rapports)
-      - [4. Intégration LDAP/Active Directory](#4-integration-ldap-active-directory)
-- [Les avantages concrets pour l’admin débutant](#les-avantages-concrets-pour-ladmin-debutant)
-  - [Interface intuitive](#interface-intuitive)
-  - [Déploiement pas-à-pas](#deploiement-pas-a-pas)
-- [Où héberger tout ça (sans se ruiner)](#ou-heberger-tout-ca-sans-se-ruiner)
-  - [Option 1 : Auto-hébergement sur VPS](#option-1-auto-hebergement-sur-vps)
-  - [Option 2 : Version hébergée officielle](#option-2-version-hebergee-officielle)
-- [Cas d’usage concrets](#cas-dusage-concrets)
-  - [PME de 30 personnes](#pme-de-30-personnes)
-  - [Startup tech de 15 développeurs](#startup-tech-de-15-developpeurs)
-  - [Association de 100 bénévoles](#association-de-100-benevoles)
-- [Conclusion : Excel c’est fini](#conclusion-excel-cest-fini)
+- - - - - -
 
+## Table des matières
+![Illustration 1, ITSM](../../images/itsm-snipeit-alternative-excel-inventaire-it/theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)
 
-![Illustration 1, ITSM](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)Félicitations, tu viens de découvrir pourquoi l’**ITSM** existe. Et spoiler : c’est pas pour faire joli dans ton CV.
+Félicitations, tu viens de découvrir pourquoi l’**ITSM** existe. Et spoiler : c’est pas pour faire joli dans ton CV.
 
 Si tu passes encore tes journées à chercher où est passé ce serveur Dell, ou si tu découvres que votre « inventaire » ressemble à un bazar de brocante mal organisé, cet article va te sauver la vie. On va parler ITSM, de pourquoi Excel c’est l’enfer, et comment SnipeIT peut transformer ton quotidien d’admin.
 
 - - - - - -
 
-L’ITSM c’est quoi (sans le jargon marketing)
+## L’ITSM c’est quoi (sans le jargon marketing)
 
 **ITSM** (IT Service Management), c’est l’art de ne plus perdre ses affaires dans le bureau. Sauf qu’au lieu de tes clés de voiture, c’est tes serveurs, tes licences logicielles et tes câbles réseau qui disparaissent dans la nature.
 
@@ -86,7 +64,7 @@ Concrètement, l’**inventaire IT** et la **gestion d’actifs** permettent de 
 
 - - - - - -
 
-Pourquoi Excel va te rendre dingue
+## Pourquoi Excel va te rendre dingue
 
 ### Le problème des versions multiples
 
@@ -117,11 +95,15 @@ Qui peut modifier ton fichier Excel ? Tout le monde sur le réseau (si tu le par
 
 - - - - - -
 
-SnipeIT : ton nouveau meilleur ami
+## SnipeIT : ton nouveau meilleur ami
 
 [SnipeIT](https://snipeitapp.com/) est une solution open source de **gestion d’actifs IT** qui fait exactement ce qu’Excel ne sait pas faire : être un vrai outil d’inventaire.
 
-![Capture d'écran, Sécurité et accès catastrophiques](friends-friends-episode-16-tv-vbawwigntkywofxf7u.gif)### Pourquoi SnipeIT et pas autre chose ?
+![Capture d'écran, Sécurité et accès catastrophiques](../../images/itsm-snipeit-alternative-excel-inventaire-it/friends-friends-episode-16-tv-vbawwigntkywofxf7u.gif)
+
+Avant de te lancer, sache qu'il existe un concurrent sérieux : le match est arbitré dans [SnipeIT vs GLPI](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/).
+
+### Pourquoi SnipeIT et pas autre chose ?
 
 - **100% gratuit** (si tu l’héberges toi-même)
 - **Interface moderne** qui ne ressemble pas à Windows 95
@@ -140,7 +122,11 @@ Contrairement à Excel, SnipeIT suit tes équipements de A à Z :
 - **Maintenance** → en réparation chez le prestataire
 - **Fin de vie** → recyclage ou revente
 
-![Capture d'écran, Les fonctionnalités qui changent la vie](gestion_des_actifs.webp)![Capture d'écran, Les fonctionnalités qui changent la vie](gestion_des_licences.webp)#### 2. Notifications automatiques
+![Capture d'écran, Les fonctionnalités qui changent la vie](../../images/itsm-snipeit-alternative-excel-inventaire-it/gestion_des_actifs.webp)
+
+![Capture d'écran, Les fonctionnalités qui changent la vie](../../images/itsm-snipeit-alternative-excel-inventaire-it/gestion_des_licences.webp)
+
+#### 2. Notifications automatiques
 
 Fini les « Oups, la garantie était expirée depuis 6 mois » :
 
@@ -164,7 +150,7 @@ Plus besoin de saisir manuellement la liste des utilisateurs !
 
 - - - - - -
 
-Les avantages concrets pour l’admin débutant
+## Les avantages concrets pour l’admin débutant
 
 ### Interface intuitive
 
@@ -184,7 +170,9 @@ Pas besoin de révolutionner ton infrastructure du jour au lendemain :
 
 - - - - - -
 
-Où héberger tout ça (sans se ruiner)
+## Où héberger tout ça (sans se ruiner)
+
+Le déploiement complet, de la base de données au vhost, est détaillé dans [l'installation de SnipeIT sur Ubuntu](/installation-snipeit-ubuntu-guide-complet/).
 
 ### Option 1 : Auto-hébergement sur VPS
 
@@ -205,9 +193,11 @@ Si tu veux juste que ça marche sans te préoccuper de l’installation :
 - Maintenance, sauvegardes et mises à jour incluses
 - Support technique direct de l’éditeur
 
+Une fois l'annuaire branché, le point qui fait perdre le plus de temps est le filtrage des comptes remontés : c'est l'objet du guide [filtrer les utilisateurs LDAP dans Snipe-IT](/ldap-filtrage-utilisateurs-snipeit/).
+
 - - - - - -
 
-Cas d’usage concrets
+## Cas d’usage concrets
 
 ### PME de 30 personnes
 
@@ -228,7 +218,7 @@ Cas d’usage concrets
 
 - - - - - -
 
-Conclusion : Excel c’est fini
+## Conclusion : Excel c’est fini
 
 Si tu en as marre de jongler avec des fichiers Excel qui ressemblent à un inventaire de brocante, **SnipeIT** est LA solution pour débuter sereinement dans l’ITSM.
 
@@ -237,8 +227,3 @@ L’outil est gratuit, les concepts sont simples, et tu peux commencer petit ava
 Dans le prochain guide, on verra comment SnipeIT se positionne face à GLPI (spoiler : chacun a ses avantages selon ton contexte). En attendant, si tu veux préparer le terrain côté infrastructure, jette un œil à mon guide sur l’[installation d’Oh My Zsh avec Powerlevel10k](https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/), parce qu’un bon admin, ça commence par un terminal qui claque.
 
 **💡 Une question sur la gestion d’actifs IT ?** N’hésite pas à me contacter ou à laisser un commentaire. J’ai probablement déjà galéré avec le même problème que toi !
-
-## Articles connexes
-
-- [Installation SnipeIT Ubuntu : guide complet pour ne rien cas](/installation-snipeit-ubuntu-guide-complet/)
-- [SnipeIT vs GLPI : David contre Goliath dans l'arène de l'ITS](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/)

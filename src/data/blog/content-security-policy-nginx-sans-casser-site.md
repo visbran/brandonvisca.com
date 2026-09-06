@@ -1,15 +1,17 @@
 ---
 title: "Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs"
+description: Configurez une Content-Security-Policy Nginx pour bloquer les attaques XSS sans casser votre site. Guide complet directive par directive avec exemples.
 pubDatetime: "2025-04-15T20:03:49+02:00"
 author: Brandon Visca
-description: "Configurez une Content-Security-Policy Nginx pour bloquer les attaques XSS sans casser votre site. Guide complet directive par directive avec exemples."
-focusKeyword: "Content-Security-Policy Nginx"
 tags:
   - linux
   - securite
   - nginx
   - avance
   - guide
+featured: false
+draft: false
+focusKeyword: Content-Security-Policy Nginx
 faqs:
   - question: "Comment tester une CSP sans risquer de casser le site en production ?"
     answer: "Utilise d'abord le header Content-Security-Policy-Report-Only avec une URL report-uri. Le navigateur signale les violations sans bloquer quoi que ce soit, ce qui te permet d'ajuster la politique avant de l'activer."
@@ -18,27 +20,14 @@ faqs:
   - question: "Une CSP protège-t-elle contre toutes les attaques XSS ?"
     answer: "Non, la CSP est une couche de défense supplémentaire, pas une solution complète. Elle réduit fortement l'impact d'une XSS en empêchant l'exécution de scripts non autorisés, mais ne remplace pas la validation des entrées."
 ---
-
 > 💡 **TL;DR**
 > - La Content-Security-Policy est l'un des headers les plus puissants contre les attaques XSS
 > - Mal configurée, elle bloque tes propres scripts et casse le site
 > - Ce guide montre comment la configurer dans Nginx pas à pas, sans casser le frontend
 
-- [Qu’est-ce qu’une Content-Security-Policy (CSP) ?](#quest-ce-quune-content-security-policy-csp)
-- [Pourquoi mettre en place une CSP ?](#pourquoi-mettre-en-place-une-csp)
-- [Exemple d’attaque sans CSP](#exemple-dattaque-sans-csp)
-- [Intégrer une CSP dans Nginx](#integrer-une-csp-dans-nginx)
-- [Une configuration CSP souple et sécurisée](#une-configuration-csp-souple-et-securisee)
-  - [Détails des directives :](#details-des-directives)
-- [CSP et environnement frontend moderne](#csp-et-environnement-frontend-moderne)
-- [Astuce : mode report-only pour tester sans casser](#astuce-mode-report-only-pour-tester-sans-casser)
-- [Où ajouter la CSP dans Nginx ?](#ou-ajouter-la-csp-dans-nginx)
-- [Conseils pratiques](#conseils-pratiques)
-- [Tester votre configuration](#tester-votre-configuration)
-- [Cas réel : CSP dans un contexte scolaire (site avec sous-répertoires)](#cas-reel-csp-dans-un-contexte-scolaire-site-avec-sous-repertoires)
-- [En résumé](#en-resume)
-- [Ressources utiles](#ressources-utiles)
+- - - - - -
 
+## Table des matières
 
 La **Content-Security-Policy** (CSP) est l’un des outils les plus puissants de la sécurité web moderne. Pourtant, elle est aussi l’une des plus redoutées. Mal configurée, elle peut casser des fonctionnalités critiques de votre site. Bien configurée, elle offre une **protection redoutable contre les attaques XSS, les injections de scripts et les chargements externes non maîtrisés**.
 
@@ -48,10 +37,8 @@ Dans cet article, nous allons explorer pas à pas :
 - Comment la configurer dans Nginx
 - Comment éviter de bloquer le bon fonctionnement du site
 - Et comment la tester et l’ajuster en toute sécurité
-
 - - - - - -
-
-Qu’est-ce qu’une Content-Security-Policy (CSP) ?
+## Qu’est-ce qu’une Content-Security-Policy (CSP) ?
 
 La CSP est un **header HTTP** qui indique au navigateur **quelles ressources il est autorisé à charger** (scripts, styles, images, etc.) et depuis quelles sources.
 
@@ -59,33 +46,55 @@ Son objectif principal : **empêcher l’exécution de contenu non prévu** dans
 
 Prenons un exemple simple :
 
-```bash
+```
 Content-Security-Policy: default-src 'self'
 
 ```
 
-```html
+Cette directive interdit au navigateur de charger des ressources (scripts, images, etc.) depuis des domaines autres que le vôtre.
+- - - - - -
+## Pourquoi mettre en place une CSP ?
+
+Voici quelques bénéfices clés :
+
+- Empêche les **scripts injectés** (XSS) d’être exécutés
+- Bloque les **ressources non autorisées** (ex. CDN tiers non validés)
+- Évite les **attaques de type data exfiltration** (ex. chargement d’images depuis un domaine pirate pour récupérer des infos)
+- Protège les utilisateurs avec un niveau de sécurité élevé
+- ✅ Recommandé par l’[OWASP](https://owasp.org/www-project-secure-headers/) et Mozilla
+- - - - - -
+## Exemple d’attaque sans CSP
+
+Un champ de commentaire non protégé peut permettre à un utilisateur malveillant d’injecter :
+
+```
 <script>alert('Vous avez été piraté');</script>
+
 ```
 
-
 Sans CSP, le navigateur l’exécutera. Avec une bonne politique, il le bloquera purement et simplement.
-
 - - - - - -
+## Intégrer une CSP dans Nginx
 
-Intégrer une CSP dans Nginx
-
-Dans Nginx, la CSP se configure via une directive `add_header` dans votre bloc `server {}` ou `location {}`.
+Dans Nginx, la CSP se configure via une directive `add_header` dans votre bloc `server {}` ou `location {}`. Si le fonctionnement des blocs `location` ne vous est pas familier, [ce guide sur les blocs location](/nginx-location-bloc-et-securite/) explique leur ordre de priorité, qui décide quel header s'applique où.
 
 Exemple basique :
 
-```bash
+```nginx
 add_header Content-Security-Policy "default-src 'self'" always;
 
 ```
 
+Mais en pratique, cela cassera tous vos scripts, styles et ressources provenant de CDNs externes (Bootstrap, jQuery, Google Fonts…).
+- - - - - -
+## Une configuration CSP souple et sécurisée
+
+Voici une configuration **équilibrée** qui couvre la majorité des sites modernes sans tout bloquer :
+
+```nginx
 add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https: data:; connect-src 'self' https:; frame-ancestors 'self';" always;
 
+```
 
 #### Détails des directives :
 
@@ -98,10 +107,8 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsaf
 - `frame-ancestors 'self'` : empêche l’intégration dans une iframe par un autre domaine
 
 💡 Tu peux **affiner chaque directive** selon les besoins de ton site.
-
 - - - - - -
-
-CSP et environnement frontend moderne
+## CSP et environnement frontend moderne
 
 Si tu utilises un framework comme Vue, React, Angular ou un CMS comme WordPress, il faut adapter la CSP :
 
@@ -111,30 +118,34 @@ Si tu utilises un framework comme Vue, React, Angular ou un CMS comme WordPress,
 
 Exemple spécifique WordPress avec CDN :
 
-```bash
+```nginx
 add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://code.jquery.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;" always;
 
 ```
+- - - - - -
+## Astuce : mode `report-only` pour tester sans casser
 
+Avant d’activer ta politique CSP, tu peux la tester en mode `report-only`. Cela permet de voir les violations sans bloquer les ressources :
+
+```nginx
 add_header Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' https:;" always;
 
+```
 
 Couple ça avec une plateforme de monitoring CSP comme :
 
 - [https://report-uri.com](https://report-uri.com/)
 - [https://csp-evaluator.withgoogle.com](https://csp-evaluator.withgoogle.com/)
-
 - - - - - -
+## Où ajouter la CSP dans Nginx ?
 
-Où ajouter la CSP dans Nginx ?
-
-Toujours dans le bloc `server {}` ou directement dans un `location` si tu veux l’appliquer uniquement sur des zones sensibles (`/admin`, `/login`, etc.)
+Toujours dans le bloc `server {}` ou directement dans un `location` si tu veux l’appliquer uniquement sur des zones sensibles (`/admin`, `/login`, etc.). La CSP arrive rarement seule : elle se pose en général en même temps que [les autres headers de sécurité](/securiser-nginx-avec-headers-http/).
 
 **Important :** ajoute `always` pour que le header soit appliqué même sur les pages 404/500.
 
+Une CSP bien réglée bloque l'exécution de scripts injectés, mais elle n'empêche pas de servir un fichier qui n'aurait jamais dû être exposé. Pour ce volet, voir [protéger les fichiers sensibles et les uploads](/proteger-nginx-fichiers-sensibles-et-uploads/).
 - - - - - -
-
-Conseils pratiques
+## Conseils pratiques
 
 - 🔁 Teste ta CSP sur un environnement de staging avant production
 - ✅ Utilise `report-only` pour analyser sans casse
@@ -142,10 +153,8 @@ Conseils pratiques
 - 🧪 Utilise `csp-evaluator` pour voir les failles potentielles
 - ❌ Évite `unsafe-inline` et `unsafe-eval` si ton frontend le permet
 - 🧩 Ne bloque jamais `img-src data:` si tu utilises des images en base64 (ex. avatars dans WordPress)
-
 - - - - - -
-
-Tester votre configuration
+## Tester votre configuration
 
 Voici les meilleurs outils pour valider ta politique CSP :
 
@@ -154,14 +163,12 @@ Voici les meilleurs outils pour valider ta politique CSP :
 - [https://csp-evaluator.withgoogle.com](https://csp-evaluator.withgoogle.com/)
 
 Avec une CSP bien configurée, ton site obtiendra facilement un score **A ou A+** sur ces plateformes.
-
 - - - - - -
-
-Cas réel : CSP dans un contexte scolaire (site avec sous-répertoires)
+## Cas réel : CSP dans un contexte scolaire (site avec sous-répertoires)
 
 Si tu héberges des applications ou sites étudiants dans des sous-répertoires (`/tata`, `/toto`, etc.), tu peux appliquer une CSP globale dans un bloc avec regex :
 
-```bash
+```nginx
 location ~ ^/([a-z0-9-]+)(/.*)?$ {
     root /home/app/htdocs;
     try_files $uri $uri/ /$1/index.php?$args;
@@ -170,8 +177,19 @@ location ~ ^/([a-z0-9-]+)(/.*)?$ {
 }
 
 ```
+- - - - - -
+## En résumé
 
-## Articles connexes
+- ✅ La Content-Security-Policy protège contre les attaques XSS et injections
+- ⚙️ Elle se configure facilement dans Nginx avec `add_header`
+- 🎯 Elle peut être testée en mode `report-only` pour éviter de casser ton site
+- 🔒 Elle est recommandée par tous les standards modernes (OWASP, Mozilla, Google)
+- 💡 Elle doit être **adaptée à ton environnement technique**
+- - - - - -
+## Ressources utiles
 
-- [Limiter les risques sur Nginx : fichiers sensibles, uploads,](/proteger-nginx-fichiers-sensibles-et-uploads/)
-- [Comment renforcer la sécurité de Nginx avec les headers HTTP](/securiser-nginx-avec-headers-http/)
+- Documentation MDN CSP : <https://developer.mozilla.org/fr/docs/Web/HTTP/CSP>
+- Google CSP Evaluator : [https://csp-evaluator.withgoogle.com](https://csp-evaluator.withgoogle.com/)
+- OWASP Secure Headers : <https://owasp.org/www-project-secure-headers/>
+- Report URI : [https://report-uri.com](https://report-uri.com/)
+- SecurityHeaders.com : [https://securityheaders.com](https://securityheaders.com/)

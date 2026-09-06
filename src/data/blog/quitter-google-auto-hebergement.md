@@ -31,34 +31,39 @@ faqs:
 
 ## Table des matières
 
-Introduction : Le jour où j’en ai eu marre
-------------------------------------------
+## Introduction : Le jour où j’en ai eu marre
 
-Février 2024. Je reçois mon énième notification « Google One : stockage bientôt plein, passez à 200 Go ».
+Février 2024. Je reçois mon énième notification « Google One : stockage bientôt plein, passez à 200 Go ».
 
-![GIF Toby de The Office réagissant avec lassitude](theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)
-20€/mois pour du stockage.  
-240€/an.  
+![theoffice the office tv frame toby hyyv7pnbe0fqlnbazs](../../images/quitter-google-auto-hebergement/theoffice-the-office-tv-frame-toby-hyyv7pnbe0fqlnbazs.gif)
+
+Photo by [The Office](https://giphy.com/theoffice/) on [Giphy](https://giphy.com)
+
+20€/mois pour du stockage.
+240€/an.
 1200€ sur 5 ans.
 
 Et là, le déclic : **je paie pour que Google garde MES données**.
 
-Données qu’ils scannent.  
-Qu’ils analysent pour me profiler.  
+Données qu’ils scannent.
+Qu’ils analysent pour me profiler.
 Que je ne peux pas récupérer facilement si je veux partir.
 
 Spoiler : j’ai viré Google. Ça m’a pris un weekend. Et depuis 18 mois, je n’ai payé que 30€/an pour mon nom de domaine.
 
 Voici comment.
-
-Pourquoi quitter Google ? (Les vraies raisons)
-----------------------------------------------
+- - - - - -- - - - - -
+## Pourquoi quitter Google ? (Les vraies raisons)
 
 ### 1. L’argent (évidemment)
 
 Faisons le compte de ce que Google me ponctionnait :
 
-Service | Prix mensuel | Prix annuel | Google One 200 GB | 20€ | 240€ | YouTube Premium | 12€ | 144€ | **Total** | **32€/mois** | **384€/an** | 
+| Service | Prix mensuel | Prix annuel |
+| --- | --- | --- |
+| Google One 200 GB | 20€ | 240€ |
+| YouTube Premium | 12€ | 144€ |
+| **Total** | **32€/mois** | **384€/an** |
 
 **Sur 5 ans : 1920€.**
 
@@ -86,11 +91,12 @@ Le jour où Google décide de :
 Tu fais quoi ? Tu râles et tu paies.
 
 **Moi je voulais reprendre le contrôle.**
-
 - - - - - -
+## Ma stack auto-hébergée (ce qui remplace Google)
 
-Ma stack auto-hébergée (ce qui remplace Google)
------------------------------------------------
+![Auto-Hébergement](../../images/quitter-google-auto-hebergement/urtxbx5i5se.jpg)
+
+Photo by [Thomas Jensen](https://unsplash.com/@thomasjsn?utm_source=instant-images&utm_medium=referral) on [Unsplash](https://unsplash.com)
 
 Voici mon setup actuel, 100% fonctionnel depuis 18 mois :
 
@@ -103,10 +109,10 @@ Voici mon setup actuel, 100% fonctionnel depuis 18 mois :
 - Partage de fichiers avec liens sécurisés
 - Édition de documents en ligne (Collabora)
 
-**Temps d’installation :** 1h  
+**Temps d’installation :** 1h
 **Coût :** 0€/mois (après setup)
 
-👉 [Guide complet : Installe Nextcloud en 1h](https://brandonvisca.com/nextcloud-docker-installation-complete-2025/)
+👉 [Guide complet : Installe Nextcloud en 1h](/nextcloud-docker-installation-complete-2025/)
 
 ### Google Photos → Immich
 
@@ -118,7 +124,7 @@ Voici mon setup actuel, 100% fonctionnel depuis 18 mois :
 - Timeline comme Google Photos
 - Partage d’albums
 
-**Temps d’installation :** 30 minutes  
+**Temps d’installation :** 30 minutes
 **Coût :** 0€/mois
 
 C’est **exactement** Google Photos, mais gratuit et privé.
@@ -150,32 +156,37 @@ Mais si tu veux auto-héberger, Mailcow est la référence.
 
 Je ne parle pas de piratage ici. Mais pour streamer mes achats DVD/Blu-ray et mes vidéos persos, Jellyfin est parfait.
 
-**Temps d’installation :** 20 minutes  
+**Temps d’installation :** 20 minutes
 **Coût :** 0€/mois
 
-👉 [Jellyfin : Netflix gratuit chez toi](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/)
+👉 [Jellyfin : Netflix gratuit chez toi](/jellyfin-docker-alternative-netflix-gratuite/)
 
 ### Bonus : Bitwarden (Passwords)
 
-Google gérait mes mots de passe. Maintenant j’utilise **[Vaultwarden](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/)** (version auto-hébergée de Bitwarden).
+Google gérait mes mots de passe. Maintenant j’utilise **[Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/)** (version auto-hébergée de Bitwarden).
 
 Gratuit, open source, chiffré. Parfait.
-
 - - - - - -
+## Le matériel : Ce dont tu as VRAIMENT besoin
 
-Le matériel : Ce dont tu as VRAIMENT besoin
--------------------------------------------
+![thedemocrats democrats dnc dncgif](../../images/quitter-google-auto-hebergement/thedemocrats-democrats-dnc-dncgif-sl6nxplptffjoygeqq.gif)
 
-![GIF démocrates applaudissant avec enthousiasme](thedemocrats-democrats-dnc-dncgif-sl6nxplptffjoygeqq.gif)Pas besoin d’un serveur à 2000€. Voici mon setup actuel :
+Photo by [The Democrats](https://giphy.com/TheDemocrats/) on [Giphy](https://giphy.com)
+
+Pas besoin d’un serveur à 2000€. Voici mon setup actuel :
 
 ### Option #1 : Le mini PC (mon choix)
 
-![a person holding a laptop with a fan in their hand](sa-0gdwmrrq.jpg)**Matériel :**
+![a person holding a laptop with a fan in their hand](../../images/quitter-google-auto-hebergement/sa-0gdwmrrq.jpg)
 
-- [Beelink Mini S12 Pro](https://amzn.to/4rlW7qa),  289€
+Photo by [Onur Binay](https://unsplash.com/@onurbinay?utm_source=instant-images&utm_medium=referral) on [Unsplash](https://unsplash.com)
+
+**Matériel :**
+
+- [Beelink Mini S12 Pro](https://amzn.to/4rlW7qa) - 289€
 - Intel N100, 16GB RAM, 500GB SSD
 - Consommation : 10W (2€/mois élec)
-- [Disque externe 2TB](https://amzn.to/43yGnpt),  81€ (backups)
+- [Disque externe 2TB](https://amzn.to/43yGnpt) - 81€ (backups)
 - **Total : 370€**
 
 **Avantages :**
@@ -186,9 +197,13 @@ Le matériel : Ce dont tu as VRAIMENT besoin
 
 ### Option #2 : Le Raspberry Pi (budget serré)
 
-![green and black circuit board](rzkds0wi8ks.jpg)**Matériel :**
+![green and black circuit board](../../images/quitter-google-auto-hebergement/rzkds0wi8ks.jpg)
 
-- [Starter Pack Raspberry Pi 5 8GB](https://amzn.to/49rWcCe),  140€
+Photo by [Vishnu Mohanan](https://unsplash.com/@vishnumaiea?utm_source=instant-images&utm_medium=referral) on [Unsplash](https://unsplash.com)
+
+**Matériel :**
+
+- [Starter Pack Raspberry Pi 5 8GB](https://amzn.to/49rWcCe) - 140€
 - ✔ Alimentation officielle 27W : Alimentation stable et fiable pour votre Raspberry Pi 5.
 - ✔ Boîtier officiel avec ventilateur : Protège votre Raspberry Pi et assure un refroidissement optimal lors d’une utilisation intensive.
 - ✔ Carte mémoire de 128 Go : offre un stockage généreux pour votre système d’exploitation, vos applications et vos fichiers.
@@ -209,16 +224,20 @@ Le matériel : Ce dont tu as VRAIMENT besoin
 
 ### Option #3 : Le vieux PC (0€)
 
-![a laptop computer sitting on top of a white table](saj5h85dbos.jpg)Tu as un vieux PC qui traîne ? Installe Ubuntu Server dessus. Gratuit, fonctionnel.
+![a laptop computer sitting on top of a white table](../../images/quitter-google-auto-hebergement/saj5h85dbos.jpg)
+
+Photo by [Kompjuteri Com](https://unsplash.com/@kompjuteri?utm_source=instant-images&utm_medium=referral) on [Unsplash](https://unsplash.com)
+
+Tu as un vieux PC qui traîne ? Installe Ubuntu Server dessus. Gratuit, fonctionnel.
 
 👉 [Guide : Ton premier serveur avec un vieux PC](#)
-
 - - - - - -
+## L’installation : Un weekend suffit
 
-L’installation : Un weekend suffit
-----------------------------------
+![time mr bean look at the](../../images/quitter-google-auto-hebergement/time-mr-bean-look-at-the-qbd2klb5qdmysexre9.gif)
 
-![GIF Mr Bean regardant sa montre avec impatience](time-mr-bean-look-at-the-qbd2klb5qdmysexre9.gif)
+Photo by on [Giphy](https://giphy.com)
+
 Voici comment j’ai procédé (et toi aussi tu peux) :
 
 ### Samedi matin : Setup de base (2h)
@@ -254,11 +273,8 @@ C’est la fondation. Après ça, installer des services = copier-coller des Doc
 **Résultat :** Stack complète fonctionnelle.
 
 **Total : 6h de taf sur un weekend.**
-
 - - - - - -
-
-Les résultats après 18 mois
----------------------------
+## Les résultats après 18 mois
 
 ### Côté finances
 
@@ -278,8 +294,8 @@ Les résultats après 18 mois
 
 ### Côté technique
 
-**Uptime :** 99.7% (3 redémarrages en 18 mois)  
-**Bugs :** 2-3 fois où j’ai dû fouiller les logs (fixés en 30 min)  
+**Uptime :** 99.7% (3 redémarrages en 18 mois)
+**Bugs :** 2-3 fois où j’ai dû fouiller les logs (fixés en 30 min)
 **Maintenance :** ~2h/mois (updates Docker)
 
 C’est largement gérable, même en bossant à temps plein.
@@ -294,13 +310,13 @@ C’est largement gérable, même en bossant à temps plein.
 - Bitwarden fonctionne partout (extension navigateur)
 
 La seule différence ? **C’est chez moi. Sous mon contrôle.**
-
 - - - - - -
+## Les galères (soyons honnêtes)
 
-Les galères (soyons honnêtes)
------------------------------
+![latenightseth seth meyers lnsm](../../images/quitter-google-auto-hebergement/latenightseth-seth-meyers-lnsm-5hkf0wxklqdw4goejj.gif)
 
-![GIF Seth Meyers expliquant avec des gestes](latenightseth-seth-meyers-lnsm-5hkf0wxklqdw4goejj.gif)
+Photo by [Late Night with Seth Meyers](https://giphy.com/latenightseth/) on [Giphy](https://giphy.com)
+
 Pas tout est rose. Voici les vrais problèmes que j’ai rencontrés :
 
 ### 1. Le premier setup est intimidant
@@ -326,11 +342,8 @@ Pas de support Google pour te dépanner.
 - Documentation top (Nextcloud, Immich, etc.)
 
 En 18 mois, j’ai eu 2-3 bugs. À chaque fois, solution trouvée en 20 minutes sur Google (ironique, je sais).
-
 - - - - - -
-
-Pourquoi ça vaut le coup (vraiment)
------------------------------------
+## Pourquoi ça vaut le coup (vraiment)
 
 Au-delà des économies et de la vie privée, voici ce qui change vraiment :
 
@@ -353,19 +366,16 @@ Si tu bosses dans l’IT (ou veux y bosser), c’est un ÉNORME plus sur un CV.
 Avoir son propre serveur, c’est un peu comme avoir sa propre maison vs louer un appart.
 
 C’est à toi. Tu fais ce que tu veux. C’est satisfaisant.
-
 - - - - - -
-
-Par où commencer ? (Le plan d’action)
--------------------------------------
+## Par où commencer ? (Le plan d’action)
 
 Tu es motivé ? Voici les étapes concrètes :
 
 ### Étape 1 : Choisis ton matériel (Budget 150-250€)
 
-**Option A, Mini PC** : [Beelink Mini S12 Pro](https://amzn.to/4rlW7qa) (~190€)  
-**Option B, Raspberry Pi** : [Raspberry Pi 5 8GB](https://amzn.to/49rWcCe) (~140€)  
-**Option C, Vieux PC** : Gratuit si tu en as un
+**Option A - Mini PC** : [Beelink Mini S12 Pro](https://amzn.to/4rlW7qa) (~190€)
+**Option B - Raspberry Pi** : [Raspberry Pi 5 8GB](https://amzn.to/49rWcCe) (~140€)
+**Option C - Vieux PC** : Gratuit si tu en as un
 
 Ajoute un disque externe pour les backups (60€).
 
@@ -375,92 +385,80 @@ Sérieux. Bloque samedi + dimanche. Coupe le téléphone. C’est ton projet.
 
 ### Étape 3 : Suis mes guides
 
-Je vais publier une série « Homelab pour débutants » sur ce blog :
+Je vais publier une série « Homelab pour débutants » sur ce blog :
 
 1. **Installer Ubuntu Server + Docker** (30 min)
 2. **Configurer Traefik + Let’s Encrypt** (45 min)
 3. **Installer Nextcloud** (1h)
 4. **Installer Immich** (30 min)
-5. [**Installer Jellyfin** ](https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/)(20 min)
-6. **[Installer Vaultwarden](https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/)** (20 min)
+5. [**Installer Jellyfin**](/jellyfin-docker-alternative-netflix-gratuite/) (20 min)
+6. **[Installer Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/)** (20 min)
 7. **Automatiser les backups** (30 min)
 
 **Total : ~4h de tutos à suivre.**
 
-👉 [Série complète : Homelab pour débutants](https://brandonvisca.com/independance-numerique-2025-guide-complet/)
+👉 [Série complète : Homelab pour débutants](/independance-numerique-2025-guide-complet/)
 
 ### Étape 4 : Migre progressivement
 
 **Ne vire pas Google d’un coup.** Fais ça progressivement :
 
-**Semaine 1 :** Nextcloud → Migre 10% de tes fichiers  
-**Semaine 2 :** Immich → Upload quelques albums photos  
-**Semaine 3 :** Teste tout pendant 1 mois en double  
+**Semaine 1 :** Nextcloud → Migre 10% de tes fichiers
+**Semaine 2 :** Immich → Upload quelques albums photos
+**Semaine 3 :** Teste tout pendant 1 mois en double
 **Semaine 4 :** Si tout va bien, migre à 100%
 
 **Mois 2 :** Annule Google One.
-
 - - - - - -
-
-FAQ : Les questions que tout le monde pose
-------------------------------------------
+## FAQ : Les questions que tout le monde pose
 
 ### C’est compliqué ?
 
-Si tu sais ce qu’est un fichier ZIP, tu peux le faire.  
+Si tu sais ce qu’est un fichier ZIP, tu peux le faire.
 Oui, il y a des commandes Linux. Mais ce sont des copier-coller. Aucun code à écrire.
 
 ### C’est sécurisé ?
 
-**Plus que Google, en fait.**  
-Tes données sont chez toi. Pas dans un cloud scanné par des algos.  
+**Plus que Google, en fait.**
+Tes données sont chez toi. Pas dans un cloud scanné par des algos.
 Par contre, faut suivre les bonnes pratiques : firewall, backups, HTTPS, passwords forts.
 
 ### Et si ça tombe en panne ?
 
-Tu restaures un backup. Prend 30 minutes.  
+Tu restaures un backup. Prend 30 minutes.
 En 18 mois, j’ai eu besoin de le faire… zéro fois.
 
 ### C’est légal ?
 
-100% légal.  
-Héberger tes propres données = parfaitement légal.  
-Streamer TES achats DVD sur Jellyfin = légal.  
+100% légal.
+Héberger tes propres données = parfaitement légal.
+Streamer TES achats DVD sur Jellyfin = légal.
 Ce qui est illégal : le piratage. Mais ça, c’est pareil partout.
-
 - - - - - -
-
-Conclusion : Reprends le contrôle
----------------------------------
+## Conclusion : Reprends le contrôle
 
 Ça fait 18 mois que j’ai viré Google.
 
-**Économies :** 1632€ sur 5 ans.  
-**Vie privée :** Mes données sont chez moi.  
+**Économies :** 1632€ sur 5 ans.
+**Vie privée :** Mes données sont chez moi.
 **Satisfaction :** J’ai appris plein de trucs.
 
 Le setup initial demande un weekend. Mais une fois en place, ça roule tout seul.
 
-**Si tu en as marre de payer Google, Netflix et tous les autres…**  
-**Si tu veux reprendre le contrôle de tes données…**  
+**Si tu en as marre de payer Google, Netflix et tous les autres…**
+**Si tu veux reprendre le contrôle de tes données…**
 **Si tu es curieux et prêt à mettre les mains dans le cambouis…**
 
 **Alors lance-toi.**
 
 Je vais t’accompagner avec une série complète sur ce blog. Tutos, guides, retours d’expérience.
 
-🔗 Pour aller plus loin
-----------------------
+Abonne-toi pour ne rien rater 👇
 
-**Ressources utiles :**
+Remarque : JavaScript est requis pour ce contenu.
+- - - - - -
+## Ressources utiles
 
 - [r/selfhosted](https://reddit.com/r/selfhosted) : Communauté mondiale
 - [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) : Liste de tous les services auto-hébergeables
 - [Documentation Docker](https://docs.docker.com) : Pour comprendre les bases
-
-## Articles connexes
-
-- [Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle](/independance-numerique-2025-guide-complet/)
-- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
-- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
-- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)](/vaultwarden-docker-gestionnaire-mots-de-passe/)
