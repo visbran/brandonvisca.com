@@ -56,7 +56,7 @@ Testé sur **Jellyfin 10.11.11** (sortie le 6 juin 2026), sur un mini PC Intel a
 - Prime Video : 6,99€/mois = **84€/an**
 - Canal+ sans engagement : 24,99€/mois = **300€/an** (si fan de sport/séries)
 
-💰 **Total famille moyenne : 396-696€/an**
+**Total famille moyenne : 396-696€/an**
 
 Et ça monte tous les ans. Netflix Standard était à 13,49€ fin 2025, il est à 14,99€ aujourd'hui. Tu paies plus cher chaque année un catalogue qui rétrécit.
 
@@ -66,7 +66,7 @@ Et ça monte tous les ans. Netflix Standard était à 13,49€ fin 2025, il est 
 - Électricité (Raspberry Pi) : **~10€/an**
 - Contenu : **variable** (achats VOD, Blu-ray d'occasion, bibliothèque municipale…)
 
-💰 **Économie réaliste sur 5 ans : 1 800-3 200€**
+**Économie réaliste sur 5 ans : 1 800-3 200€**
 
 Et encore, si tu réutilises ton serveur [Nextcloud](/nextcloud-docker-installation-complete-2025/) ou un vieux PC, c'est **quasi gratuit**.
 
@@ -78,22 +78,21 @@ Et encore, si tu réutilises ton serveur [Nextcloud](/nextcloud-docker-installat
 
 | Critère | Jellyfin | Plex | Emby |
 | --- | --- | --- | --- |
-| **Prix** | 🟢 Gratuit à vie | 🟡 Gratuit (limité) ou payant | 🟡 Gratuit (limité) ou payant |
-| **Open source** | 🟢 100% | 🔴 Propriétaire | 🟡 Partiellement |
-| **Vie privée** | 🟢 Aucune télémétrie | 🔴 Compte Plex obligatoire | 🟡 Compte optionnel |
-| **Transcoding matériel** | 🟢 Illimité | 🟡 Réservé au Plex Pass | 🟡 Réservé au Premiere |
-| **Apps mobiles** | 🟢 Gratuites | 🔴 Déblocage payant | 🟡 Freemium |
-| **Interface** | 🟡 Correcte | 🟢 Excellente | 🟢 Très bonne |
-| **Plugins** | 🟢 Large choix | 🟡 Restreints | 🟡 Moyens |
-| **Communauté FR** | 🟢 Active | 🟢 Très active | 🟡 Moyenne |
+| **Prix** | Gratuit à vie | Gratuit (limité) ou payant | Gratuit (limité) ou payant |
+| **Open source** | 100% | Propriétaire | Partiellement |
+| **Vie privée** | Aucune télémétrie | Compte Plex obligatoire | Compte optionnel |
+| **Transcoding matériel** | Illimité | Réservé au Plex Pass | Réservé au Premiere |
+| **Apps mobiles** | Gratuites | Déblocage payant | Freemium |
+| **Interface** | Correcte | Excellente | Très bonne |
+| **Plugins** | Large choix | Restreints | Moyens |
+| **Communauté FR** | Active | Très active | Moyenne |
 
 **Verdict :**
 
-- **Tu veux gratuit + privé + sans limites** → **Jellyfin** ✅
-- **Tu veux la meilleure interface** → Plex (mais tu paies)
+- **Tu veux gratuit + privé + sans limites** → **Jellyfin** - **Tu veux la meilleure interface** → Plex (mais tu paies)
 - **Tu veux un mix** → Emby
 
-💡 **Mon avis perso** : Jellyfin fait 95% du job de Plex gratuitement. L'interface est moins léchée par défaut, mais un thème CSS règle ça en deux minutes (voir plus bas). Et surtout, **tes données restent chez toi**.
+**Mon avis perso** : Jellyfin fait 95% du job de Plex gratuitement. L'interface est moins léchée par défaut, mais un thème CSS règle ça en deux minutes (voir plus bas). Et surtout, **tes données restent chez toi**.
 
 - - - - - -
 
@@ -104,18 +103,18 @@ Et encore, si tu réutilises ton serveur [Nextcloud](/nextcloud-docker-installat
 **En une phrase :** un serveur multimédia qui transforme ta collection de films/séries en **Netflix personnel**.
 
 **Ce que ça fait :**
-✅ Récupère automatiquement les **posters, synopsis, notes** (via TMDB/TVDB)
-✅ Organise ta bibliothèque par **films, séries, musique, photos**
-✅ **Transcode à la volée** (ton film 4K devient 720p si ton mobile est en 4G)
-✅ **Sous-titres automatiques** (recherche et téléchargement intégrés)
-✅ **Comptes utilisateurs** séparés (papa voit pas les dessins animés des enfants)
-✅ **Reprise lecture** multi-appareils (tu commences sur TV, tu finis sur tablette)
-✅ **Apps dédiées** Android TV, Fire TV, Roku, iOS, Android, Web…
+- Récupère automatiquement les **posters, synopsis, notes** (via TMDB/TVDB)
+- Organise ta bibliothèque par **films, séries, musique, photos**
+- **Transcode à la volée** (ton film 4K devient 720p si ton mobile est en 4G)
+- **Sous-titres automatiques** (recherche et téléchargement intégrés)
+- **Comptes utilisateurs** séparés (papa voit pas les dessins animés des enfants)
+- **Reprise lecture** multi-appareils (tu commences sur TV, tu finis sur tablette)
+- **Apps dédiées** Android TV, Fire TV, Roku, iOS, Android, Web…
 
 **Ce que ça fait PAS :**
-❌ Télécharger du contenu à ta place (c'est pas son job)
-❌ Gérer les DRM (pas de Netflix/Prime rippé)
-❌ Remplacer ta box TV (c'est complémentaire)
+- Télécharger du contenu à ta place (c'est pas son job)
+- Gérer les DRM (pas de Netflix/Prime rippé)
+- Remplacer ta box TV (c'est complémentaire)
 
 Si tu cherches justement à télécharger du contenu YouTube pour l'intégrer proprement dans ta bibliothèque, [HomeTube Docker](/hometube-docker-telechargeur-youtube/) est l'outil complémentaire qu'il te faut.
 
@@ -127,13 +126,13 @@ Si tu cherches justement à télécharger du contenu YouTube pour l'intégrer pr
 
 **Pour qui ?** Tu veux streamer depuis l'extérieur, pas de serveur à la maison.
 
-**⚠️ ATTENTION : légalité du streaming depuis VPS**
+**ATTENTION : légalité du streaming depuis VPS**
 
 Juridiquement en France :
 
-- ✅ Streamer **tes propres Blu-ray/DVD** = légal (copie privée)
-- ✅ Héberger sur VPS français = légal
-- ❌ Partager avec 50 personnes = zone grise (contrefaçon)
+- Streamer **tes propres Blu-ray/DVD** = légal (copie privée)
+- Héberger sur VPS français = légal
+- Partager avec 50 personnes = zone grise (contrefaçon)
 
 **Conseil légal :** utilise Jellyfin pour **ton usage personnel/familial** uniquement.
 
@@ -145,7 +144,7 @@ Juridiquement en France :
 | Scaleway DEV1-M | ~0,02€/h | 3 vCPU, 4 Go RAM | 1080p OK |
 | OVH VPS Value | ~6€ HT | 2 vCPU, 4 Go RAM | 720p-1080p OK |
 
-💡 **Astuce transcoding :** le transcoding 4K demande un CPU costaud OU un GPU (pas dispo sur VPS classiques). Solution : **active Direct Play**, le client lit directement sans transcoder.
+**Astuce transcoding :** le transcoding 4K demande un CPU costaud OU un GPU (pas dispo sur VPS classiques). Solution : **active Direct Play**, le client lit directement sans transcoder.
 
 - - - - - -
 
@@ -155,33 +154,29 @@ Juridiquement en France :
 
 **Matériel testé et approuvé :**
 
-**🔴 Raspberry Pi 4/5 (8 Go RAM)**, ~80€
+**Raspberry Pi 4/5 (8 Go RAM)**, ~80€
 
-- ✅ Consommation : 5W (10€/an électricité)
-- ✅ Silencieux, compact
-- ⚠️ Transcoding limité (720p max, 1080p possible sur Pi 5)
-- 💡 **Idéal pour Direct Play** (pas de transcoding)
+- Pour : consommation 5W (10€/an électricité), silencieux, compact
+- Contre : transcoding limité (720p max, 1080p possible sur Pi 5)
+- Verdict : **idéal pour Direct Play**, à fuir si tu dois transcoder
 
-**🟢 Mini PC x86 (Intel N100 ou N150)**, 150-200€
+**Mini PC x86 (Intel N100 ou N150)**, 150-200€
 
-- ✅ Transcoding matériel Intel Quick Sync (4K OK, décodage AV1 sur N150)
-- ✅ Consommation : 10-15W (20€/an)
-- ✅ 16 Go RAM possible
-- 💡 **Le meilleur rapport qualité/prix 2026**
+- Pour : transcoding matériel Intel Quick Sync (4K OK, décodage AV1 sur N150), 10-15W (20€/an), 16 Go RAM possible
+- Contre : rien de rédhibitoire à ce prix
+- Verdict : **le meilleur rapport qualité/prix 2026**
 
-**🟡 Vieux PC reconverti**, 0€
+**Vieux PC reconverti**, 0€
 
-- ✅ Gratuit (tu l'as déjà)
-- ❌ Consommation élevée (50-150W = 100-300€/an)
-- ✅ Transcoding OK si CPU récent (i5 8ème gen et plus)
-- 💡 **Solution transitoire avant mini PC**
+- Pour : gratuit (tu l'as déjà), transcoding correct si CPU récent (i5 8ème gen et plus)
+- Contre : consommation élevée, 50 à 150W, soit 100 à 300€/an d'électricité
+- Verdict : **solution transitoire avant mini PC**
 
-**🔵 NAS Synology/QNAP**, 300-800€
+**NAS Synology/QNAP**, 300-800€
 
-- ✅ Tout-en-un (stockage + apps)
-- ✅ Transcoding matériel (selon modèle)
-- ❌ Cher à l'achat
-- 💡 **Si tu as déjà un NAS, c'est parfait**
+- Pour : tout-en-un (stockage + apps), transcoding matériel selon le modèle
+- Contre : cher à l'achat
+- Verdict : **parfait si tu en as déjà un**, jamais rentable si tu l'achètes pour ça
 
 **Ma recommandation 2026 :** **mini PC Intel N150** (Beelink, GMKtec, Acemagic), le sweet spot performance/prix/conso. Le N100 reste excellent et se trouve d'occasion à 120€.
 
@@ -197,7 +192,7 @@ Juridiquement en France :
 - **Stockage objet** (Backblaze B2, Wasabi, Hetzner Storage Box) : 5€/To/mois
 - **Total : 9€/mois** pour du To accessible partout
 
-💡 **Astuce avancée :** monte le stockage distant avec `rclone` en cache local (`--vfs-cache-mode full`). Tu gagnes en vitesse de seek sans exploser le disque du VPS.
+**Astuce avancée :** monte le stockage distant avec `rclone` en cache local (`--vfs-cache-mode full`). Tu gagnes en vitesse de seek sans exploser le disque du VPS.
 
 - - - - - -
 
@@ -323,7 +318,7 @@ id
 - `TZ=Europe/Paris` : fuseau horaire français (sinon les heures de visionnage sont fausses)
 - **Transcoding matériel** : décommente la section selon ton matériel pour accélérer le transcoding x10
 
-💡 J'épingle volontairement la version (`10.11.11`) plutôt que `latest`. Une mise à jour majeure de Jellyfin casse régulièrement les thèmes CSS et certains plugins, autant décider toi-même du moment.
+J'épingle volontairement la version (`10.11.11`) plutôt que `latest`. Une mise à jour majeure de Jellyfin casse régulièrement les thèmes CSS et certains plugins, autant décider toi-même du moment.
 
 - - - - - -
 
@@ -383,7 +378,7 @@ Clique sur **Ajouter une médiathèque**, choisis le **type de contenu** (Films,
 
 ![Menu déroulant Type de contenu de Jellyfin avec Films, Musiques, Séries, Livres](../../images/jellyfin-docker-alternative-netflix-gratuite/Jellyfin-ajout-mediatheque.webp)
 
-⚠️ **Le piège classique :** le chemin à saisir est `/media/movies`, pas `~/jellyfin/media/movies`. Jellyfin vit dans un conteneur, il ne voit que ce que tu lui as monté.
+**Le piège classique :** le chemin à saisir est `/media/movies`, pas `~/jellyfin/media/movies`. Jellyfin vit dans un conteneur, il ne voit que ce que tu lui as monté.
 
 ![Sélecteur de chemin Jellyfin affichant /media avec les dossiers movies, music et series](../../images/jellyfin-docker-alternative-netflix-gratuite/Jellyfin-chemin-de-fichier-.webp)
 
@@ -407,7 +402,7 @@ C'est **la** étape que tout le monde bâcle. Jellyfin identifie tes fichiers pa
 
 ### Structure de dossiers recommandée
 
-**🎬 Films :**
+**Films :**
 
 ```text
 /media/movies/
@@ -423,14 +418,14 @@ C'est **la** étape que tout le monde bâcle. Jellyfin identifie tes fichiers pa
 
 **Règles :**
 
-- ✅ **Dossier par film** : `Nom du Film (Année)/`
-- ✅ **Nom de fichier** : `Nom du Film (Année).extension`
-- ✅ **Année obligatoire** : sinon Jellyfin confond les remakes
-- ⚠️ Évite les caractères spéciaux : `é` OK, mais `? : * < >` → remplace par `-`
+- **Dossier par film** : `Nom du Film (Année)/`
+- **Nom de fichier** : `Nom du Film (Année).extension`
+- **Année obligatoire** : sinon Jellyfin confond les remakes
+- Évite les caractères spéciaux : `é` OK, mais `? : * < >` → remplace par `-`
 
 - - - - - -
 
-**📺 Séries (structure optimale) :**
+**Séries (structure optimale) :**
 
 ```text
 /media/series/
@@ -454,7 +449,7 @@ C'est **la** étape que tout le monde bâcle. Jellyfin identifie tes fichiers pa
 
 Le format `SxxExx` est non négociable. `Episode 1.mkv` ne sera jamais reconnu.
 
-💡 **Le raccourci qui sauve** : si ta collection est déjà un capharnaüm, [FileBot](https://www.filebot.net/) renomme tout automatiquement en interrogeant TMDB. Une heure de boulot économisée par centaine de fichiers.
+**Le raccourci qui sauve** : si ta collection est déjà un capharnaüm, [FileBot](https://www.filebot.net/) renomme tout automatiquement en interrogeant TMDB. Une heure de boulot économisée par centaine de fichiers.
 
 ### Scanner la bibliothèque
 
@@ -469,7 +464,7 @@ docker compose logs -f jellyfin | grep -i "library scan"
 
 Compte environ **1 à 2 minutes pour 100 films** (le temps de récupérer posters et synopsis sur TMDB). Sur Raspberry Pi, multiplie par trois.
 
-Si un film reste sans poster : clique dessus → **⚙️ Modifier les métadonnées** → **Identifier** → saisis le titre exact. Jellyfin réinterroge TMDB.
+Si un film reste sans poster : clique dessus → **Modifier les métadonnées** → **Identifier** → saisis le titre exact. Jellyfin réinterroge TMDB.
 
 - - - - - -
 
@@ -484,7 +479,7 @@ Le plus simple : [Nginx Proxy Manager](/nginx-proxy-manager-docker-guide/), qui 
 1. **Hosts** → **Proxy Hosts** → **Add Proxy Host**
 2. **Domain Names** : `jellyfin.ton-domaine.fr`
 3. **Forward Hostname/IP** : l'IP de ton serveur Jellyfin, **Port** : `8096`
-4. **Websockets Support** : ✅ **obligatoire** (sinon la lecture se bloque au bout de 30 secondes)
+4. **Websockets Support** : **obligatoire** (sinon la lecture se bloque au bout de 30 secondes)
 5. Onglet **SSL** → **Request a new SSL Certificate** + **Force SSL**
 6. Onglet **Advanced**, colle cette configuration :
 
@@ -509,7 +504,7 @@ proxy_set_header X-Forwarded-Host $host;
 
 Pense aussi à renseigner l'URL publique dans **Dashboard** → **Réseau** → **URL du serveur publiée**, sinon les apps mobiles génèrent des liens en IP locale.
 
-🎉 **Ton Jellyfin est accessible en HTTPS.**
+**Ton Jellyfin est accessible en HTTPS.**
 
 - - - - - -
 
@@ -527,7 +522,7 @@ L'interface par défaut de Jellyfin est fonctionnelle mais austère. Bonne nouve
 @import url("https://cdn.jsdelivr.net/gh/n00bcodr/jellyfish@main/10.11_fixes.css");
 ```
 
-⚠️ La ligne `10.11_fixes.css` est **indispensable** depuis Jellyfin 10.11. Sans elle, la barre de navigation part en vrac.
+La ligne `10.11_fixes.css` est **indispensable** depuis Jellyfin 10.11. Sans elle, la barre de navigation part en vrac.
 
 **NetFin**, plus radicalement Netflix (vignettes larges, fond noir profond) :
 
@@ -537,13 +532,13 @@ L'interface par défaut de Jellyfin est fonctionnelle mais austère. Bonne nouve
 
 Rafraîchis la page (Ctrl+F5) et c'est appliqué. Aucun redémarrage du conteneur nécessaire.
 
-💡 **Le piège :** un thème CSS tiers casse à chaque montée de version majeure de Jellyfin. JellyFlix, longtemps la référence, n'a pas survécu au passage en 10.11. Vérifie la date du dernier commit du dépôt avant d'adopter un thème, et garde le CSS dans un fichier texte pour pouvoir le retirer en un copier-coller.
+**Le piège :** un thème CSS tiers casse à chaque montée de version majeure de Jellyfin. JellyFlix, longtemps la référence, n'a pas survécu au passage en 10.11. Vérifie la date du dernier commit du dépôt avant d'adopter un thème, et garde le CSS dans un fichier texte pour pouvoir le retirer en un copier-coller.
 
 - - - - - -
 
 ## Apps mobiles et clients
 
-### 📱 Mobile (Android et iOS)
+### Mobile (Android et iOS)
 
 **Jellyfin officiel** (recommandé) :
 
@@ -561,11 +556,11 @@ Rafraîchis la page (Ctrl+F5) et c'est appliqué. Aucun redémarrage du conteneu
 1. Lance l'app → **Connexion manuelle**
 2. URL : `https://jellyfin.ton-domaine.fr`
 3. Identifiants : ton compte Jellyfin
-4. ✅ **Active le téléchargement hors ligne** si tu veux regarder dans le train
+4. **Active le téléchargement hors ligne** si tu veux regarder dans le train
 
 - - - - - -
 
-### 📺 TV (Android TV, Fire TV, Apple TV)
+### TV (Android TV, Fire TV, Apple TV)
 
 **Android TV / Google TV / Fire TV :**
 
@@ -582,12 +577,12 @@ Rafraîchis la page (Ctrl+F5) et c'est appliqué. Aucun redémarrage du conteneu
 
 **Smart TV Samsung/LG :**
 
-- Pas d'app native 😢
+- Pas d'app native
 - Solution : **Chromecast** ou **mini PC Android TV** (30€)
 
 - - - - - -
 
-### 💻 Desktop (Windows, Mac, Linux)
+### Desktop (Windows, Mac, Linux)
 
 **Option 1 : navigateur** (recommandé)
 
@@ -609,13 +604,13 @@ Si tu as un mini PC Intel avec Quick Sync :
 
 1. **Dashboard** → **Lecture** → **Transcodage**
 2. Chemin FFmpeg : `/usr/lib/jellyfin-ffmpeg/ffmpeg` (auto)
-3. ✅ **Accélération matérielle** : `Intel QuickSync (QSV)`
-4. ✅ Décodage matériel pour : **H264, HEVC, VP9, AV1**
-5. ✅ Encodage matériel pour : **H264, HEVC**
+3. **Accélération matérielle** : `Intel QuickSync (QSV)`
+4. Décodage matériel pour : **H264, HEVC, VP9, AV1**
+5. Encodage matériel pour : **H264, HEVC**
 6. **Threads de transcodage** : `0` (auto)
 7. **Sauvegarder**
 
-✅ **Test :** lance un film 4K sur mobile en 4G. Il doit transcoder en 720p instantanément, avec le CPU sous les 15% au lieu de 100%.
+**Test :** lance un film 4K sur mobile en 4G. Il doit transcoder en 720p instantanément, avec le CPU sous les 15% au lieu de 100%.
 
 - - - - - -
 
@@ -630,7 +625,7 @@ Si tu as un mini PC Intel avec Quick Sync :
    - Crée un compte gratuit sur [opensubtitles.com](https://www.opensubtitles.com/)
    - Entre tes identifiants et ta clé API
    - Langue préférée : `Français`
-5. **Utilisation :** clique sur un film → **⚙️ Sous-titres** → **Rechercher** → Jellyfin télécharge les `.srt` automatiquement
+5. **Utilisation :** clique sur un film → **Sous-titres** → **Rechercher** → Jellyfin télécharge les `.srt` automatiquement
 
 - - - - - -
 
@@ -641,12 +636,12 @@ Si tu as un mini PC Intel avec Quick Sync :
 1. **Plugins** → **Catalogue** → installe **Intro Skipper**
 2. **Redémarre**
 3. **Plugins** → **Intro Skipper** :
-   - ✅ Détection automatique des génériques
-   - ✅ Bouton « Skip Intro » dans le player
+   - Détection automatique des génériques
+   - Bouton « Skip Intro » dans le player
 
-🎉 **Comme Netflix : tu sautes les génériques en un clic.**
+**Comme Netflix : tu sautes les génériques en un clic.**
 
-⚠️ Intro Skipper suit les versions de Jellyfin d'assez près. Si tu épingles ta version comme conseillé plus haut, vérifie que le plugin existe pour cette version avant de mettre à jour.
+Intro Skipper suit les versions de Jellyfin d'assez près. Si tu épingles ta version comme conseillé plus haut, vérifie que le plugin existe pour cette version avant de mettre à jour.
 
 - - - - - -
 
@@ -670,8 +665,8 @@ Si tu as un mini PC Intel avec Quick Sync :
 
 - Avant : Netflix + Disney+ + Prime = **396€/an**
 - Après : 20€/an d'électricité
-- 💰 **Gain : 376€/an, amorti en 9 mois**
-- 💰 **Gain sur 5 ans : 1 610€**
+- **Gain : 376€/an, amorti en 9 mois**
+- **Gain sur 5 ans : 1 610€**
 
 **Usage :**
 
@@ -701,7 +696,7 @@ Si tu as un mini PC Intel avec Quick Sync :
 
 - Avant : achats VOD ~30€/mois = **360€/an**
 - Après : 100€/an d'électricité + Blu-ray d'occasion à 3€
-- 💰 **Gain : 260€/an**
+- **Gain : 260€/an**
 
 **Usage :**
 
@@ -726,8 +721,8 @@ Si tu as un mini PC Intel avec Quick Sync :
 
 - Avant : 8 × Netflix Standard = **8 × 180€ = 1 440€/an**
 - Après : 360€/an partagés entre 8 = **45€/personne/an**
-- 💰 **Économie collective : 1 080€/an**
-- 💰 **Par personne : 135€/an économisés**
+- **Économie collective : 1 080€/an**
+- **Par personne : 135€/an économisés**
 
 Pour éviter que les huit te réclament un film par SMS, [Jellyseerr avec Docker](/jellyseerr-docker-gestion-demandes/) leur donne une interface de demandes en libre-service.
 
@@ -735,7 +730,7 @@ Pour éviter que les huit te réclament un film par SMS, [Jellyseerr avec Docker
 
 ## Problèmes courants et solutions
 
-### ❌ « Playback Error » / erreur de lecture
+### « Playback Error » / erreur de lecture
 
 **Causes possibles :**
 
@@ -748,7 +743,7 @@ Pour éviter que les huit te réclament un film par SMS, [Jellyseerr avec Docker
 
 - - - - - -
 
-### ❌ Transcoding ultra-lent (buffering constant)
+### Transcoding ultra-lent (buffering constant)
 
 **Symptôme :** le film lag toutes les 10 secondes.
 
@@ -766,7 +761,7 @@ Deux issues : activer le transcoding matériel (voir plus haut), ou forcer le Di
 
 - - - - - -
 
-### ❌ Metadata en anglais au lieu de français
+### Metadata en anglais au lieu de français
 
 Tu as zappé l'écran « Langue de métadonnées » à l'installation. Ça se rattrape :
 
@@ -775,11 +770,11 @@ Tu as zappé l'écran « Langue de métadonnées » à l'installation. Ça se ra
 3. Enregistre, puis **⋮** → **Actualiser les métadonnées**
 4. Coche **Remplacer toutes les métadonnées**, sinon Jellyfin garde l'existant
 
-⚠️ Un rafraîchissement complet sur 500 films prend un bon moment et tape sur l'API TMDB. Lance-le le soir.
+Un rafraîchissement complet sur 500 films prend un bon moment et tape sur l'API TMDB. Lance-le le soir.
 
 - - - - - -
 
-### ❌ Jellyfin inaccessible depuis l'extérieur
+### Jellyfin inaccessible depuis l'extérieur
 
 Dans l'ordre, vérifie :
 
@@ -803,11 +798,11 @@ sudo ufw allow 443
 
 - - - - - -
 
-## 🧩 Jellyfin : la pièce maîtresse de ton indépendance numérique
+## Jellyfin : la pièce maîtresse de ton indépendance numérique
 
 Bravo, tu as maintenant ton propre Netflix. Mais imagine un instant :
 
-- **Jellyfin** pour tes films/séries (✅ fait)
+- **Jellyfin** pour tes films/séries (fait)
 - **[Nextcloud](/nextcloud-docker-installation-complete-2025/)** pour tes fichiers/photos/documents
 - **[Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/)** pour tes mots de passe
 
@@ -821,7 +816,7 @@ Tu te retrouves avec **une stack d'indépendance numérique complète** qui te c
 
 = environ **276€/an** que tu peux économiser, sur ces trois services uniquement.
 
-👉 **[Consulte le guide complet d'indépendance numérique](/independance-numerique-2025-guide-complet/)** pour voir comment tout interconnecter proprement.
+**[Consulte le guide complet d'indépendance numérique](/independance-numerique-2025-guide-complet/)** pour voir comment tout interconnecter proprement.
 
 *Bonus : le guide inclut une roadmap progressive pour ne pas te noyer dans la technique.*
 
@@ -829,7 +824,7 @@ Tu te retrouves avec **une stack d'indépendance numérique complète** qui te c
 
 ## Légalité et éthique : ce qu'il faut savoir
 
-### ✅ Usages légaux en France
+### Usages légaux en France
 
 **Tu as le DROIT de :**
 
@@ -840,11 +835,11 @@ Tu te retrouves avec **une stack d'indépendance numérique complète** qui te c
 
 **Tu n'as PAS le droit de :**
 
-- ❌ Télécharger des films piratés (torrent sans droit = contrefaçon)
-- ❌ Partager avec 50 personnes (= diffusion publique, article L335-2 CPI)
-- ❌ Contourner les DRM (Netflix/Prime/Disney+ rippé = illégal)
+- Télécharger des films piratés (torrent sans droit = contrefaçon)
+- Partager avec 50 personnes (= diffusion publique, article L335-2 CPI)
+- Contourner les DRM (Netflix/Prime/Disney+ rippé = illégal)
 
-### 💡 Sources de contenu légales
+### Sources de contenu légales
 
 **Où trouver du contenu pour Jellyfin :**
 
@@ -866,11 +861,11 @@ Tu te retrouves avec **une stack d'indépendance numérique complète** qui te c
 
 Tu viens de monter **ton propre service de streaming** en 30 minutes. Jellyfin avec Docker, c'est :
 
-✅ **Économique** : 376€/an économisés minimum
-✅ **Indépendant** : plus d'abonnements qui augmentent tous les ans
-✅ **Privé** : tes habitudes de visionnage ne partent pas chez Netflix
-✅ **Complet** : films, séries, musique, photos, tout en un
-✅ **Durable** : ta collection t'appartient à vie
+- **Économique** : 376€/an économisés minimum
+- **Indépendant** : plus d'abonnements qui augmentent tous les ans
+- **Privé** : tes habitudes de visionnage ne partent pas chez Netflix
+- **Complet** : films, séries, musique, photos, tout en un
+- **Durable** : ta collection t'appartient à vie
 
 **Prochaines étapes suggérées :**
 
@@ -880,6 +875,5 @@ Tu viens de monter **ton propre service de streaming** en 30 minutes. Jellyfin a
 4. **Explore les plugins** : Intro Skipper, OpenSubtitles, Trakt…
 5. **Complète ta stack média** : si tu lis aussi des ebooks ou des mangas, [Kavita avec Docker](/kavita-docker-lecteur-ebooks/) gère les ebooks et [Komga avec Docker](/komga-docker-bd-manga-auto-heberge/) les BD et mangas. Et pour streamer tes jeux PC vers la TV du salon, il y a [Sunshine Docker avec Moonlight](/sunshine-docker-streaming-jeux/).
 
-Et surtout, profite de ces **396€/an** dans ta poche au lieu de les filer à Netflix. 🎉
+Et surtout, profite de ces **396€/an** dans ta poche au lieu de les filer à Netflix.
 
-💬 Si tu bloques quelque part ou si ton setup tourne, raconte-le en commentaire, ça sert au suivant qui lit ce guide.
