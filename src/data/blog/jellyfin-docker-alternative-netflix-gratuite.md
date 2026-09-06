@@ -1,9 +1,19 @@
 ---
 title: "Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)"
+description: Installe Jellyfin avec Docker en 20 min. Alternative Netflix auto-hébergée, économise 378€/an. Guide 2025 complet + transcoding 4K.
 pubDatetime: "2025-10-26T20:59:01+01:00"
+modDatetime: "2026-09-06T15:00:00.000Z"
 author: Brandon Visca
-description: "Installe Jellyfin avec Docker en 20 min. Alternative Netflix auto-hébergée, économise 378€/an. Guide 2025 complet + transcoding 4K."
-focusKeyword: "Jellyfin Docker Netflix gratuit"
+tags:
+  - docker
+  - auto-hebergement
+  - homelab
+  - linux
+  - guide
+  - intermediaire
+featured: false
+draft: false
+focusKeyword: Jellyfin Docker Netflix gratuit
 faqs:
   - question: "Jellyfin est-il vraiment gratuit ?"
     answer: "Oui, Jellyfin est 100% gratuit et open source. Contrairement à Plex ou Emby, aucune fonctionnalité n'est payante ou bloquée derrière un abonnement."
@@ -13,15 +23,7 @@ faqs:
     answer: "Non, un CPU puissant suffit. Toutefois, un GPU compatible (Intel QuickSync, NVIDIA NVENC, AMD VCE) accélère considérablement le transcoding et réduit la charge CPU."
   - question: "Puis-je partager mon Jellyfin avec ma famille ?"
     answer: "Oui, créez plusieurs comptes utilisateurs depuis le Dashboard Jellyfin et attribuez des permissions granulaires par bibliothèque."
-tags:
-  - docker
-  - auto-hebergement
-  - homelab
-  - linux
-  - guide
-  - intermediaire
 ---
-
 > 💡 **TL;DR**
 > - Netflix + Disney+ + Prime = 378€/an que tu remplaces par ton propre Jellyfin (0€ si tu as déjà un serveur)
 > - Installation Docker en 20 minutes, bibliothèque films/séries organisée automatiquement (metadata, posters, sous-titres)
@@ -37,7 +39,9 @@ tags:
 
 - - - - - -
 
-Pourquoi Jellyfin &gt; Netflix (et Plex, et Emby)
+## Table des matières
+
+## Pourquoi Jellyfin > Netflix (et Plex, et Emby)
 
 ### Le calcul économique qui fait mal
 
@@ -76,7 +80,7 @@ Et encore, si tu réutilises ton serveur Nextcloud ou un vieux PC, c’est **qua
 
 - - - - - -
 
-Jellyfin c’est quoi exactement ?
+## Jellyfin c’est quoi exactement ?
 
 ![Capture d'écran, Jellyfin vs Plex vs Emby Le match](Jellyfin12.16.32@2x.webp)**En une phrase :** Un serveur multimédia qui transforme ta collection de films/séries en **Netflix personnel**.
 
@@ -142,7 +146,7 @@ Si tu cherches justement à télécharger du contenu YouTube pour l’intégrer 
 - [Conclusion : Ton Netflix à toi, pour toujours](#conclusion-ton-netflix-a-toi-pour-toujours)
 
 
-Avant de commencer : Choisir ton matériel
+## Avant de commencer : Choisir ton matériel
 
 ### Option 1 : VPS Cloud (le plus simple)
 
@@ -423,7 +427,7 @@ proxy_set_header X-Forwarded-Host $host;
 
 - - - - - -
 
-Apps mobiles &amp; clients
+## Apps mobiles & clients
 
 ### 📱 Mobile (Android &amp; iOS)
 
@@ -483,7 +487,7 @@ Apps mobiles &amp; clients
 
 - - - - - -
 
-Optimisations avancées
+## Optimisations avancées
 
 ### Activer le transcoding matériel
 
@@ -536,7 +540,7 @@ Si tu as un mini PC Intel avec Quick Sync :
 
 - - - - - -
 
-Cas d’usage réels
+## Cas d’usage réels
 
 ### Scénario 1 : Famille (4 personnes)
 
@@ -617,7 +621,7 @@ Cas d’usage réels
 
 - - - - - -
 
-Problèmes courants &amp; Solutions
+## Problèmes courants & Solutions
 
 ### ❌ « Playback Error » / Erreur de lecture
 
@@ -655,7 +659,7 @@ docker exec jellyfin htop
 
 - - - - - -
 
-🧩 Jellyfin : La pièce maîtresse de ton indépendance numérique
+## 🧩 Jellyfin : La pièce maîtresse de ton indépendance numérique
 
 Bravo, tu as maintenant ton propre Netflix. Mais imagine un instant :
 
@@ -681,7 +685,7 @@ Et ce n’est que le début. Si tu combines ces 3 services, tu montes à **534�
 
 - - - - - -
 
-Légalité &amp; Éthique : Ce qu’il faut savoir
+## Légalité & Éthique : Ce qu’il faut savoir
 
 ### ✅ Usages légaux en France
 
@@ -716,7 +720,7 @@ Légalité &amp; Éthique : Ce qu’il faut savoir
 
 - - - - - -
 
-Conclusion : Ton Netflix à toi, pour toujours
+## Conclusion : Ton Netflix à toi, pour toujours
 
 Tu viens de monter **ton propre service de streaming** en 30 minutes. Jellyfin avec Docker, c’est :
 
@@ -737,9 +741,3 @@ Tu viens de monter **ton propre service de streaming** en 30 minutes. Jellyfin a
 Et surtout, profite de **378€/an** dans ta poche au lieu de les filer à Netflix. 🎉
 
 💬 **Questions, problèmes, ou succès ?** Balance tout en commentaire !
-
-## Articles connexes
-
-- [Nextcloud avec Docker : Ton Cloud Perso en 1h](/nextcloud-docker-installation-complete-2025/)
-- [Docker pour les débutants : 10 services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/)
-- [Vaultwarden avec Docker : Gestionnaire de Mots de Passe](/vaultwarden-docker-gestionnaire-mots-de-passe/)
