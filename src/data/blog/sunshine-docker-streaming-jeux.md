@@ -154,7 +154,7 @@ Va dans **Configuration > Audio/Video** :
 | **Bitrate** | 20 Mbps pour 1080p60, 50 Mbps pour 4K60 |
 | **Codec** | HEVC (H.265) si ton client le supporte, sinon H.264 |
 
-L'encodeur matériel est crucial. Sans lui, le CPU encode en software et la latence explose.
+Sans encodeur matériel, le CPU encode en software et la latence explose.
 
 ### 3. Ajouter des applications
 

@@ -127,7 +127,7 @@ Attends 30 secondes pour que le certificat se génère, puis accède au dashboar
 
 ## Le fichier acme.json : ton coffre-fort de certificats
 
-Le volume `./letsencrypt:/letsencrypt` est crucial. Il stocke le fichier `acme.json` qui contient toutes les données de tes certificats Let's Encrypt.
+Le volume `./letsencrypt:/letsencrypt` stocke le fichier `acme.json` qui contient toutes les données de tes certificats Let's Encrypt.
 
 Règles immuables :
 

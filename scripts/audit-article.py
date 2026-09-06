@@ -560,7 +560,7 @@ AI_MARKERS = [
     ("warning", re.compile(r"(?i)dans (?:cet article|ce guide),? nous allons"),
      "intro bateau « dans cet article, nous allons » : annoncer le bénéfice, pas le plan"),
 
-    ("info", re.compile(r"(?i)\bpermet(?:tent)? d[e']"),
+    ("info", re.compile(r"(?i)\bpermet(?:tent)? (?:d'|de\b)"),
      "tournure passive « permet de + infinitif » : préférer un verbe actif direct"),
     ("info", re.compile(r"(?i)\bil est possible de\b"),
      "tournure passive « il est possible de » : préférer « tu peux »"),

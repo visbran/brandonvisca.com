@@ -73,7 +73,7 @@ camera=(self "https://appli.externe.com")
 - Réduction des risques d’exploitation des APIs navigateur
 - Moins de permissions = surface d’attaque plus faible
 - Compatible avec les navigateurs modernes (Chrome, Edge, Firefox)
-- Permet de **respecter les règles RGPD** en désactivant des fonctions sensibles
+- **Respect des règles RGPD** en désactivant des fonctions sensibles
 - - - - - -
 ## 2. Rate limiting avec Nginx : la protection anti-bots native
 

@@ -599,7 +599,7 @@ On en a déjà parlé, mais **Raycast** mérite sa place dans cet écosystème.
 - Snippets : templates pour mes commandes Docker fréquentes
 - Extensions : GitHub, Notion, Google Drive...
 
-Le window management de Raycast est basique, mais ses **autres features** en font un incontournable.
+Le window management de Raycast est basique, mais ses **autres features** en font un outil à garder.
 
 👉 **Article connexe :** [Raycast macOS : Le launcher qui remplace Spotlight et 20 autres apps](https://brandonvisca.com/raycast-macos-launcher-productivite-2025/)
 

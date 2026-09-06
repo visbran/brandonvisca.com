@@ -117,7 +117,7 @@ Dans l'interface Proxmox, onglet **Resources**, tu peux limiter :
 - **CPU limit** : laisse 1 core pour un DNS, 2 pour un reverse proxy chargé
 - **Cores** : cocher la case **Enable nesting** si tu veux Docker dans le LXC
 
-Cette case **Enable nesting** est cruciale. Sans elle, Docker refusera de s'installer. Avec elle, tu peux faire tourner des conteneurs Docker à l'intérieur d'un conteneur LXC. On appelle ça des **conteneurs imbriqués**. C'est un peu inception, mais ça marche très bien en homelab.
+Sans la case **Enable nesting**, Docker refusera de s'installer. Avec elle, tu peux faire tourner des conteneurs Docker à l'intérieur d'un conteneur LXC. On appelle ça des **conteneurs imbriqués**. C'est un peu inception, mais ça marche très bien en homelab.
 
 Docker dans un LXC ? Attention quand même
 

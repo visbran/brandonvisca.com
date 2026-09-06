@@ -30,7 +30,7 @@ faqs:
 
 ![](../../images/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/baseline_ladybird.webp)
 
-Dans un monde où Chrome domine à 65% et où Firefox peine à maintenir ses 3% de parts de marché, plusieurs projets osent défier les géants avec des approches radicalement différentes. D’un côté, **[Arc Search révolutionne l’expérience utilisateur](https://brandonvisca.com/arc-search-redefinir-la-navigation-internet-avec-lia)** en intégrant l’IA directement dans la navigation. De l’autre, **Ladybird Browser** prend le chemin inverse : plutôt que d’améliorer l’existant, il repart de zéro.
+Chrome domine à 65%, Firefox peine à maintenir ses 3% de parts de marché. Plusieurs projets osent quand même défier les géants avec des approches radicalement différentes. D’un côté, **[Arc Search révolutionne l’expérience utilisateur](https://brandonvisca.com/arc-search-redefinir-la-navigation-internet-avec-lia)** en intégrant l’IA directement dans la navigation. De l’autre, **Ladybird Browser** prend le chemin inverse : plutôt que d’améliorer l’existant, il repart de zéro.
 
 Non, ce n’est pas encore un autre fork de Chromium avec une interface redessinée et trois fonctionnalités « révolutionnaires ». C’est carrément plus ambitieux que ça.
 
@@ -101,7 +101,7 @@ sudo apt install build-essential cmake ninja-build qt6-base-dev
 
 ## Financement : l’argent sans les contraintes
 
-Point crucial : Ladybird est financé uniquement par des **donations et sponsorships**, sans aucun deal commercial. Pas de moteur de recherche par défaut négocié à prix d’or, pas de tracking publicitaire, pas de tokens crypto. Just build a browser, point.
+Ladybird est financé uniquement par des **donations et sponsorships**, sans aucun deal commercial. Pas de moteur de recherche par défaut négocié à prix d’or, pas de tracking publicitaire, pas de tokens crypto. Just build a browser, point.
 
 L’équipe actuelle compte **7 ingénieurs** à temps pleins. C’est peu comparé aux centaines de développeurs chez Google ou Mozilla, mais suffisant pour avancer sérieusement sur les fondations.
 
@@ -109,7 +109,7 @@ L’équipe actuelle compte **7 ingénieurs** à temps pleins. C’est peu compa
 
 ## Pourquoi ça compte pour l’écosystème web
 
-Avoir un quatrième moteur de rendu majeur, ce n’est pas juste de la diversité pour faire joli. C’est crucial pour :
+Avoir un quatrième moteur de rendu majeur, ce n’est pas juste de la diversité pour faire joli. Ça compte pour :
 
 - **Éviter la mono-culture Chromium** qui dicte les standards de facto
 - **Donner une voix indépendante** dans les discussions sur les standards web

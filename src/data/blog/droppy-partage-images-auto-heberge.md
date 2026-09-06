@@ -173,7 +173,7 @@ Glisse-dépose ton fichier dans la zone centrale, ou clique sur le bouton upload
 Clique droit sur une image → "Copy link". Le lien est de la forme `https://ton-domaine.com/!/nom-du-fichier`. Ce lien pointe directement vers le fichier, sans interface web. Parfait pour les forums, les tickets, les documentations Markdown.
 
 **Prévisualiser une image**
-Clique sur le nom du fichier. Droppy affiche une vignette et permet de naviguer entre les images du dossier avec les flèches du clavier.
+Clique sur le nom du fichier. Droppy affiche une vignette et tu navigues entre les images du dossier avec les flèches du clavier.
 
 **Créer un dossier**
 Clique sur l'icône dossier en haut à gauche. Les dossiers te permettent d'organiser tes images par projet, par date ou par catégorie.
@@ -300,4 +300,4 @@ Droppy est l'exemple parfait de ce que l'auto-hébergement fait de mieux : prend
 
 Ce qui frappe avec Droppy, c'est sa radicalité. Pas de base de données, pas de dépendance externe, pas d'interface surchargée. Un conteneur Docker, un dossier sur le disque, et tu as un service de partage d'images opérationnel. C'est exactement ce genre d'outil léger qui rend l'auto-hébergement accessible à tous : tu n'as pas besoin d'être un administrateur système pour le faire tourner.
 
-Dans un monde où chaque service cloud devient un abonnement mensuel avec des conditions qui changent tous les trimestres, héberger ses propres outils n'est pas une question de purisme technique. C'est une question de pragmatisme. Droppy te coûte zéro euro par mois, il ne disparaît pas quand un CEO décide de "pivoter", et tes screenshots de logs d'erreur restent disponibles aussi longtemps que tu le décides. C'est ça, l'indépendance numérique.
+Quand chaque service cloud devient un abonnement mensuel avec des conditions qui changent tous les trimestres, héberger ses propres outils n'est pas une question de purisme technique. C'est une question de pragmatisme. Droppy te coûte zéro euro par mois, il ne disparaît pas quand un CEO décide de "pivoter", et tes screenshots de logs d'erreur restent disponibles aussi longtemps que tu le décides. C'est ça, l'indépendance numérique.

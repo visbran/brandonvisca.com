@@ -178,7 +178,7 @@ docker exec -e BORG_PASSPHRASE="change_moi_maintenant_avec_un_truc_long" \
   borgbackup sh -c "mkdir -p /tmp/restore && cd /tmp/restore && borg extract /backups/repo::backup-20260808-080000"
 ```
 
-BorgBackup préserve les permissions, les attributs étendus et les ACLs lors de l'extraction. C'est un détail crucial quand tu restaures des volumes Docker avec des permissions spécifiques.
+BorgBackup préserve les permissions, les attributs étendus et les ACLs lors de l'extraction. Ça compte quand tu restaures des volumes Docker avec des permissions spécifiques.
 
 ## Automatiser avec un cron Dockerisé
 

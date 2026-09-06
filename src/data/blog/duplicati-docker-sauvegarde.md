@@ -151,7 +151,7 @@ Duplicati génère également des rapports d'intégrité (`test` et `verify`) qu
 
 **Exposition du port 8200 :** ne met jamais Duplicati en face d'Internet sans mot de passe, sans VPN ou sans reverse proxy avec authentification. L'interface permet de lire, restaurer et supprimer des backups. C'est une cible idéale.
 
-**Mise à jour de l'image :** Duplicati prévient quand une nouvelle version est disponible. Avec Docker, il suffit de faire :
+**Mise à jour de l'image :** Duplicati prévient quand une nouvelle version est disponible. Avec Docker, fais :
 
 ```bash
 docker compose pull

@@ -34,7 +34,7 @@ La documentation structurée, c'est le ciment des équipes techniques. Quand que
 
 BookStack répond exactement à ce besoin. C'est un wiki open-source développé en PHP par Dan Brown, sous licence MIT, avec plus de 14 000 stars sur GitHub. L'approche est astucieuse : au lieu d'une arborescence de dossiers à la Wikipedia (qui devient vite un bazar), BookStack organise la connaissance en **étagères**, **livres** et **chapitres**. C'est intuitive, visuel, et même ton collègue commercial comprend comment ça marche en deux minutes. Si ton besoin est plutôt des notes rapides sans structure wiki, j'ai aussi couvert [Memos avec Docker](/memos-docker-notes-auto-heberge/), un bloc-notes auto-hébergé ultra-léger parfait pour les snippets et les idées jetées à la volée.
 
-Dans mon [guide auto-hébergement complet](/auto-hebergement-guide-complet-2025/), je recommande un wiki comme service fondamental d'une infrastructure personnelle. BookStack est celui que je déploie systématiquement quand on me demande un outil de documentation interne sans budget ni cloud.
+Dans mon [guide auto-hébergement complet](/auto-hebergement-guide-complet-2025/), je recommande un wiki comme service de base d'une infrastructure personnelle. BookStack est celui que je déploie systématiquement quand on me demande un outil de documentation interne sans budget ni cloud.
 
 ## Qu'est-ce que BookStack exactement ?
 

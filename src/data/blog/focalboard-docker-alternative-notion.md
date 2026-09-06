@@ -223,7 +223,7 @@ Si tu cherches un reverse proxy simple et léger, j'ai couvert [Zoraxy](/zoraxy-
 
 ## Sauvegarde
 
-La sauvegarde de Focalboard est triviale puisqu'il utilise SQLite. Il suffit de copier le fichier de base et les uploads.
+La sauvegarde de Focalboard est triviale puisqu'il utilise SQLite. Copie le fichier de base et les uploads.
 
 Script de backup quotidien :
 

@@ -14,7 +14,7 @@ draft: false
 focusKeyword: jellyseerr docker
 faqs:
   - question: "Jellyseerr fonctionne-t-il avec Plex et Jellyfin ?"
-    answer: "Oui, Jellyseerr supporte nativement Jellyfin et Plex. Il suffit de connecter ton serveur média dans les paramètres pour synchroniser les bibliothèques et les utilisateurs."
+    answer: "Oui, Jellyseerr supporte nativement Jellyfin et Plex. Connecte ton serveur média dans les paramètres pour synchroniser les bibliothèques et les utilisateurs."
   - question: "Quelle est la différence entre Jellyseerr et Ombi ?"
     answer: "Jellyseerr est le fork officiel d'Overseerr adapté à Jellyfin, avec une interface plus moderne et une meilleure intégration *arr. Ombi est plus ancien et moins actif en développement."
   - question: "Jellyseerr a-t-il besoin d'une base de données externe ?"

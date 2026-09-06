@@ -169,7 +169,7 @@ chat.tondomaine.com {
 }
 ```
 
-Caddy va automatiquement générer et renouveler le certificat SSL via Let's Encrypt. Si tu préfères utiliser Traefik ou Nginx Proxy Manager, l'adaptation est simple, il suffit de rediriger le trafic vers le port 8065 du conteneur Mattermost.
+Caddy va automatiquement générer et renouveler le certificat SSL via Let's Encrypt. Si tu préfères utiliser Traefik ou Nginx Proxy Manager, l'adaptation est simple : redirige le trafic vers le port 8065 du conteneur Mattermost.
 
 ## Premier lancement
 

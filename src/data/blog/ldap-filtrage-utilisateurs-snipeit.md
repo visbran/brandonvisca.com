@@ -30,7 +30,7 @@ faqs:
 
 ## Table des matières
 
-Le filtrage utilisateurs LDAP Snipe-IT est crucial lors de l’intégration avec Active Directory.
+Le filtrage utilisateurs LDAP Snipe-IT conditionne l’intégration avec Active Directory.
 
 L’intégration de Snipe-IT avec un annuaire LDAP permet d’automatiser la gestion des accès, mais il est essentiel de bien configurer les filtres LDAP pour exclure certaines unités organisationnelles (OU) ou utilisateurs spécifiques.
 
@@ -58,7 +58,7 @@ Un bon filtrage utilisateurs LDAP Snipe-IT vous permettra de :
 
 ## 🔐 Bonnes pratiques de sécurité pour le filtrage LDAP
 
-Le filtrage utilisateurs LDAP Snipe-IT ne se limite pas à exclure des comptes. C’est aussi une question de sécurité cruciale pour votre infrastructure.
+Le filtrage utilisateurs LDAP Snipe-IT ne se limite pas à exclure des comptes. C’est aussi une question de sécurité pour ton infrastructure.
 
 **Erreurs de sécurité courantes :**
 

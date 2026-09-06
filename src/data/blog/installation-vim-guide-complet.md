@@ -244,7 +244,7 @@ En 2026, Vim 9.1 est la version stable de référence. Sortie en janvier 2024, c
 
 **Classes et objets (Vim9 script)**
 
-Vim 9.1 introduit le support des classes et objets dans le langage Vim9. Pour un utilisateur avancé, ça permet d'écrire des plugins plus structurés sans sortir de l'écosystème Vim. Exemple concret : tu peux encapsuler ta logique de configuration dans une classe réutilisable :
+Vim 9.1 introduit le support des classes et objets dans le langage Vim9. Pour un utilisateur avancé, tu écris des plugins plus structurés sans sortir de l'écosystème Vim. Exemple concret : tu peux encapsuler ta logique de configuration dans une classe réutilisable :
 
 ```vim
 vim9script

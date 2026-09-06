@@ -36,7 +36,7 @@ Gérer une dizaine de services dans ton homelab signifie souvent gérer une diza
 
 **Pocket-ID** est un fournisseur d'identité OpenID Connect (OIDC) open-source conçu pour être minimaliste, rapide et facile à déployer. Un conteneur, une base de données SQLite, et tu obtiens un portail d'authentification centralisé prêt à connecter tes applications.
 
-Dans ce guide, nous allons déployer Pocket-ID avec Docker Compose, configurer un client OIDC de base et sécuriser l'accès.
+On déploie Pocket-ID avec Docker Compose, on configure un client OIDC de base, et on sécurise l'accès.
 
 ## Pourquoi choisir Pocket-ID ?
 

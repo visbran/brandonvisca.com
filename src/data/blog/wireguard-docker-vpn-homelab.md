@@ -18,7 +18,7 @@ faqs:
   - question: "Quelle différence entre WireGuard et OpenVPN ?"
     answer: "WireGuard est plus léger (~4 000 lignes de code contre 400 000+ pour OpenVPN), plus rapide (3 à 4×), et utilise une cryptographie moderne (Curve25519, ChaCha20). Sa configuration tient en 10 lignes contre des centaines pour OpenVPN."
   - question: "WireGuard fonctionne-t-il derrière un routeur NAT ?"
-    answer: "Oui, grâce au UDP hole punching et au PersistentKeepalive qui maintient le mapping NAT actif. Il suffit de rediriger le port UDP (51820 par défaut) sur ta box vers ton serveur Docker."
+    answer: "Oui, grâce au UDP hole punching et au PersistentKeepalive qui maintient le mapping NAT actif. Redirige le port UDP (51820 par défaut) sur ta box vers ton serveur Docker."
   - question: "Puis-je utiliser WireGuard Docker sur un Raspberry Pi ?"
     answer: "Absolument. WireGuard est intégré au kernel Linux moderne et consomme très peu de ressources. L'image linuxserver/wireguard tourne parfaitement sur un Raspberry Pi 4 avec 1 Go de RAM."
 ogImage: ""

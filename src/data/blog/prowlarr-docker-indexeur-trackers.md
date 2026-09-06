@@ -29,7 +29,7 @@ Dans ce tutoriel, on déploie Prowlarr avec Docker, on configure les indexeurs, 
 
 ## Qu'est-ce que Prowlarr et pourquoi l'utiliser ?
 
-Prowlarr fait partie de la famille *Arr (Radarr, Sonarr, Lidarr, Readarr, Whisparr) développée par le même groupe. Son rôle est simple mais crucial :
+Prowlarr fait partie de la famille *Arr (Radarr, Sonarr, Lidarr, Readarr, Whisparr) développée par le même groupe. Son rôle est simple :
 
 - **Centraliser la gestion de tes indexeurs** : tu ajoutes un tracker une fois dans Prowlarr, et il le pousse vers Radarr, Sonarr, et les autres.
 - **Synchronisation automatique** : quand tu ajoutes, modifies ou supprimes un indexeur, Prowlarr met à jour toutes les applications connectées sans intervention manuelle.

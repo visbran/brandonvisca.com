@@ -31,7 +31,7 @@ faqs:
 
 La **Content-Security-Policy** (CSP) est l’un des outils les plus puissants de la sécurité web moderne. Pourtant, elle est aussi l’une des plus redoutées. Mal configurée, elle peut casser des fonctionnalités critiques de votre site. Bien configurée, elle offre une **protection redoutable contre les attaques XSS, les injections de scripts et les chargements externes non maîtrisés**.
 
-Dans cet article, nous allons explorer pas à pas :
+Au programme, pas à pas :
 
 - Ce qu’est la Content-Security-Policy
 - Comment la configurer dans Nginx
@@ -125,7 +125,7 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsaf
 - - - - - -
 ## Astuce : mode `report-only` pour tester sans casser
 
-Avant d’activer ta politique CSP, tu peux la tester en mode `report-only`. Cela permet de voir les violations sans bloquer les ressources :
+Avant d’activer ta politique CSP, tu peux la tester en mode `report-only`. Tu vois les violations sans bloquer les ressources :
 
 ```nginx
 add_header Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' https:;" always;

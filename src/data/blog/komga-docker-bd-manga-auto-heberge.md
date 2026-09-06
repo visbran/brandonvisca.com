@@ -191,7 +191,7 @@ Avec Nginx Proxy Manager, crée simplement un proxy host pointant vers `http://k
 
 ## Sauvegarde
 
-Komga stocke toutes ses données dans le volume `/config`. Pour sauvegarder, il suffit de copier ce dossier :
+Komga stocke toutes ses données dans le volume `/config`. Pour sauvegarder, copie ce dossier :
 
 ```bash
 tar czvf komga-backup-$(date +%Y%m%d).tar.gz ~/komga/config

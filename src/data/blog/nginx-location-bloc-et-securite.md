@@ -33,7 +33,7 @@ Le serveur web **Nginx** est reconnu pour sa performance et sa flexibilité. L�
 
 Bien utilisée, cette directive permet d’organiser proprement ses routes, d’améliorer la sécurité, et de simplifier la maintenance du serveur. Mal utilisée, elle peut introduire des failles de sécurité, provoquer des conflits entre règles, ou casser certaines fonctionnalités.
 
-Dans cet article, nous allons explorer :
+Au programme :
 
 - Les différents types de blocs location
 - La priorité d’évaluation

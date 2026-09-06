@@ -138,7 +138,7 @@ Le marché des calendriers menu bar sur macOS n'est pas énorme, mais il existe 
 
 **MeetingBar** est une alternative intéressante si tu passes ta journée en visioconférence. Il affiche ton prochain meeting directement dans la menu bar avec un bouton pour rejoindre Zoom/Teams/Meet en un clic. Ce n'est pas exactement la même cible qu'Itsycal, mais ça peut compléter l'expérience.
 
-Pour la grande majorité des utilisateurs, Itsycal reste le choix par défaut. Il est gratuit, open-source, léger, fiable depuis des années, et il fait exactement ce qu'on lui demande sans artifice. Dans un monde où les apps deviennent de plus en plus lourdes et dépendantes de l'abonnement SaaS, Itsycal est une bouffée d'air frais.
+Pour la grande majorité des utilisateurs, Itsycal reste le choix par défaut. Il est gratuit, open-source, léger, fiable depuis des années, et il fait exactement ce qu'on lui demande sans artifice. Alors que les apps deviennent de plus en plus lourdes et dépendantes de l'abonnement SaaS, Itsycal est une bouffée d'air frais.
 
 ## Quelques astuces avancées
 

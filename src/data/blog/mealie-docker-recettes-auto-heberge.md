@@ -19,7 +19,7 @@ faqs:
   - question: "Mealie ou Tandoor, lequel choisir ?"
     answer: "Mealie est plus simple à déployer, plus léger et bénéficie d'une UX plus moderne. Tandoor est plus complet sur la planification de repas et les listes de courses. Choisis Mealie pour la simplicité, Tandoor si tu veux des fonctionnalités avancées de planification."
   - question: "Peut-on importer des recettes depuis un site web ?"
-    answer: "Oui. Mealie scrap automatiquement les recettes depuis la plupart des sites de cuisine. Il suffit de coller l'URL et Mealie extrait les ingrédients, les étapes, les images et les temps de cuisson."
+    answer: "Oui. Mealie scrap automatiquement les recettes depuis la plupart des sites de cuisine. Colle l'URL et Mealie extrait les ingrédients, les étapes, les images et les temps de cuisson."
   - question: "Quelle configuration matérielle est nécessaire ?"
     answer: "Pour une utilisation familiale (1 à 20 utilisateurs), SQLite suffit avec 1 cœur CPU, 1 Go de RAM et quelques Go de stockage. Pour des instances plus grosses ou avec NAS, PostgreSQL est recommandé."
 ogImage: ""

@@ -32,7 +32,7 @@ faqs:
 - - - - - -
 La sécurité d’un site web ne repose pas uniquement sur des headers ou un pare-feu. Elle commence aussi par des **mesures préventives dans la configuration du serveur web**.
 
-Dans cet article, nous allons aborder 3 axes cruciaux pour protéger votre application via **Nginx** :
+Trois axes pour protéger ton application via **Nginx** :
 
 1. L’interdiction d’accès aux **fichiers sensibles** (ex. : .env, .git, .htaccess)
 2. La **désactivation de l’exécution PHP dans les répertoires d’upload**

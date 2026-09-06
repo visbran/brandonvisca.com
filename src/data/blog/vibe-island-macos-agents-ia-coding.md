@@ -138,7 +138,7 @@ Dans mon workflow, j'ai souvent plusieurs sessions qui tournent en parallèle. U
 
 Open Island me permet de garder un œil sur tout ça sans saturer mon espace de travail. C'est léger, natif, et ça ne consomme pratiquement pas de ressources. En moyenne, l'app utilise moins de 50 Mo de RAM et 0 % de CPU au repos. Comparé à Electron qui dévore la moitié de ton Mac pour afficher une page web déguisée en app, c'est le jour et la nuit.
 
-Et comme tout tourne en local, pas de peur que mes prompts ou mes sessions fuient vers un serveur tiers. Dans un monde où on balance nos lignes de code à des API extérieures, garder un minimum de contrôle sur l'interface de surveillance, c'est déjà ça.
+Et comme tout tourne en local, pas de peur que mes prompts ou mes sessions fuient vers un serveur tiers. Quand on balance nos lignes de code à des API extérieures, garder un minimum de contrôle sur l'interface de surveillance, c'est déjà ça.
 
 ## Les limites à connaître
 

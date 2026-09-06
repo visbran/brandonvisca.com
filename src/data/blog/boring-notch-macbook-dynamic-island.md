@@ -34,7 +34,7 @@ En 2026, macOS Sequoia a commencé à proposer quelques fonctionnalités autour 
 
 Boring.Notch est une petite application macOS qui s'installe dans ta barre de menu et réveille la notch de ton MacBook. Elle affiche une Dynamic Island inspirée de l'iPhone : la musique en cours, les notifications, les contrôles système, le volume, la luminosité, les appels entrants, et même des widgets personnalisables. Le tout s'affiche en fluide, avec des animations soignées qui glissent depuis l'encoche.
 
-Le projet est open-source, gratuit, et ne demande aucun droit d'admin particulier. Il suffit de télécharger l'app, de l'autoriser dans les paramètres d'accessibilité, et c'est parti. Aucune dépendance, aucun serveur externe, aucun compte à créer. C'est exactement le genre d'outil que j'aime : il fait une chose, il la fait bien, et il te laisse tranquille.
+Le projet est open-source, gratuit, et ne demande aucun droit d'admin particulier. Télécharge l'app, autorise-la dans les paramètres d'accessibilité, et c'est parti. Aucune dépendance, aucun serveur externe, aucun compte à créer. C'est exactement le genre d'outil que j'aime : il fait une chose, il la fait bien, et il te laisse tranquille.
 
 ## Ce que Boring.Notch macOS affiche dans la notch
 
@@ -85,7 +85,7 @@ Le résultat est bluffant. Les animations sont fluides, les informations bien po
 
 La notch sur MacBook, c'est un peu comme la prise jack sur iPhone : on s'y fait, mais on sait que c'est une concession technique. Sauf que là, au lieu de subir, on transforme cette contrainte en atout. Boring.Notch redonne un sens à cette bande noire. Et surtout, c'est **gratuit**, **open-source**, **sans tracking**, **sans abonnement**.
 
-Dans un monde où chaque pixel compte et où on veut une interface épurée, avoir un hub d'informations discret qui apparaît uniquement quand on en a besoin, c'est exactement ce qu'il faut. Pas de barre de tâches surchargée, pas de widgets qui bouffent de la place sur le bureau. Juste la notch, enfin utile.
+Quand chaque pixel compte et qu'on veut une interface épurée, un hub d'informations discret qui apparaît uniquement quand on en a besoin, c'est exactement ce qu'il faut. Pas de barre de tâches surchargée, pas de widgets qui bouffent de la place sur le bureau. Juste la notch, enfin utile.
 
 Si tu utilises des agents IA de code (Claude Code, Codex CLI, Cursor...), tu peux aussi transformer la notch en tableau de bord de surveillance avec [Open Island](/vibe-island-macos-agents-ia-coding/), le fork open-source qui affiche l'état de tes sessions directement dans la barre de menu macOS.
 

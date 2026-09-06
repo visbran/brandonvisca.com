@@ -202,7 +202,7 @@ EXIT;
 
 ## Étape 3 : Installer SnipeIT Ubuntu via Git
 
-Cette étape est cruciale pour ton **installation SnipeIT Ubuntu**. On va cloner le repo officiel dans `/var/www/snipe-it`, le répertoire standard pour les applications web sur Ubuntu.
+Ne saute pas cette étape de ton **installation SnipeIT Ubuntu**. On va cloner le repo officiel dans `/var/www/snipe-it`, le répertoire standard pour les applications web sur Ubuntu.
 
 ### Clone du repo Git
 

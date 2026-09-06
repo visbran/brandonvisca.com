@@ -136,7 +136,7 @@ L'autre appareil recevra une notification de partage. Accepte-le, choisis le che
 |-----------|-------------------|----------|
 | **Écouteur d'adresses** | `default` | Écoute sur 0.0.0.0:22000, IPv4 + IPv6 |
 | **Serveur de relais** | `default` | Active les relay publics en secours (données chiffrées) |
-| **Découverte globale** | Activée | Permet de trouver tes appareils même sans IP fixe |
+| **Découverte globale** | Activée | Trouve tes appareils même sans IP fixe |
 | **Découverte locale** | Activée | Découverte rapide sur le LAN (broadcast UDP) |
 | **Limite bande passante** | `0` (illimité) ou personnalise | Évite de saturer ta connexion |
 | **Rescan interval** | 3600s (1h) | Syncthing utilise l'os fs watcher, le rescan est rarement utile |

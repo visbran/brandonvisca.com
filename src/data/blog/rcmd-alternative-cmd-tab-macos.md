@@ -43,7 +43,7 @@ Tu veux passer de Safari à iTerm2 ? Cmd+Tab, Tab, Tab, Tab... j'ai dépassé, S
 
 Le constat : tu perds 3-4 secondes à chaque fois. Sur une journée de travail, c'est facilement 5-10 minutes de perdues juste à naviguer entre tes apps.
 
-Il existe un outil qui permet de switcher vers n'importe quelle app en une seule combinaison de touches :
+Il existe un outil pour switcher vers n'importe quelle app en une seule combinaison de touches :
 
 Right Command + S = Safari. Right Command + I = iTerm2. Right Command + V = VS Code.
 

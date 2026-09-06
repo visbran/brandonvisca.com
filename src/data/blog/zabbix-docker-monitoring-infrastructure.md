@@ -255,7 +255,7 @@ La bonne nouvelle : tu peux même faire cohabiter les deux. Zabbix pour la super
 
 **Les triggers trop sensibles** : Un trigger qui s'enclenche à chaque pic de CPU de 5 secondes, c'est un trigger inutile. Utilise les fonctions comme `avg()` ou `min()` sur une fenêtre de temps pour éviter le bruit. Par exemple : `avg(/Linux server/system.cpu.util[,user],5m)>90`, c'est bien plus fiable qu'un `last()` brut.
 
-**Le reverse proxy** : Exposer Zabbix sur le port 8080 en direct, c'est moche. Mets un reverse proxy nginx ou [Caddy](/caddy-docker-reverse-proxy-guide/) devant avec HTTPS. Le frontend Zabbix fonctionne très bien derrière un reverse proxy, il suffit de bien configurer les en-têtes `X-Forwarded-For` et `X-Forwarded-Proto`.
+**Le reverse proxy** : Exposer Zabbix sur le port 8080 en direct, c'est moche. Mets un reverse proxy nginx ou [Caddy](/caddy-docker-reverse-proxy-guide/) devant avec HTTPS. Le frontend Zabbix fonctionne très bien derrière un reverse proxy, à condition de bien configurer les en-têtes `X-Forwarded-For` et `X-Forwarded-Proto`.
 
 **Les sauvegardes** : La base MySQL contient TOUTES tes configurations, templates, hôtes, triggers, historiques. Sauvegarde-la régulièrement. Un simple `mysqldump` quotidien vers un répertoire qui est sync vers ton NAS ou S3, et tu dors tranquille.
 

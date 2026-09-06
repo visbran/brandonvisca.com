@@ -183,7 +183,7 @@ Son approche par fichiers texte est à la fois son plus grand atout et son princ
 
 Personnellement, Bunch a trouvé sa place dans mon workflow quotidien entre [One Switch](https://brandonvisca.com/one-switch-macos-panneau-controle/) pour les toggles système et les raccourcis clavier pour les actions rapides. C'est devenu un muscle mémoire : `Cmd + Shift + 1` pour le matin, `Cmd + Shift + 2` pour le blog, `Cmd + Shift + 3` pour le code. Simple, rapide, efficace.
 
-Tu devrais l'essayer. Ça prend cinq minutes à installer et à configurer ton premier contexte, et je parie que tu ne reviendras pas en arrière. Dans un monde où chaque seconde compte, automatiser les transitions entre tes modes de travail n'est pas un luxe, c'est une nécessité. Bunch rend ça accessible, gratuit, et sans friction. Essaie-le, et dis-moi pas merci.
+Tu devrais l'essayer. Ça prend cinq minutes à installer et à configurer ton premier contexte, et je parie que tu ne reviendras pas en arrière. Quand chaque seconde compte, automatiser les transitions entre tes modes de travail n'est pas un luxe, c'est une nécessité. Bunch rend ça accessible, gratuit, et sans friction. Essaie-le, et dis-moi pas merci.
 
 ## FAQ
 

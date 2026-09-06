@@ -53,7 +53,7 @@ Ce qui bouge en 2026, c'est la nouvelle génération de plugins. La communauté 
 | you-should-use | Rappelle tes alias oubliés | Évite de retaper des commandes longues par réflexe |
 | zsh-abbr | Abréviations expansibles à la volée | Alternative moderne aux alias classiques |
 
-Ces plugins viennent en complément de `zsh-autosuggestions` et `zsh-syntax-highlighting`, toujours la base incontournable (section plus bas).
+Ces plugins viennent en complément de `zsh-autosuggestions` et `zsh-syntax-highlighting`, toujours la base (section plus bas).
 
 ## Prérequis : ce qu'il te faut avant de commencer
 

@@ -33,7 +33,7 @@ Dans cet article, on va voir ce qui différencie vraiment Podman de Docker, comm
 
 ## Docker, le daemon root qui pose problème
 
-Docker est génial. Il a démocratisé les conteneurs et aujourd'hui c'est incontournable. Mais son architecture a une faille fondamentale pour la sécurité.
+Docker est génial. Il a démocratisé les conteneurs et aujourd'hui il est partout. Mais son architecture a une faille fondamentale pour la sécurité.
 
 Quand tu installes Docker, tu installes un **daemon** (`dockerd`) qui tourne en permanence en tant que root. Ce daemon gère tout : le cycle de vie des conteneurs, le réseau, les volumes, les images. Et pour communiquer avec lui, le client Docker (`docker`) utilise un **socket Unix** situé à `/var/run/docker.sock`.
 

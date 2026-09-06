@@ -30,9 +30,9 @@ faqs:
 
 ## Table des matières
 
-La sécurité web est aujourd’hui un enjeu fondamental. Face à la montée des attaques (XSS, clickjacking, vol de session…), les administrateurs système doivent renforcer la protection de leurs serveurs. Dans ce contexte, les **headers HTTP de sécurité** représentent une première ligne de défense simple, rapide à mettre en place et très efficace.
+Face à la montée des attaques (XSS, clickjacking, vol de session…), les administrateurs système doivent renforcer la protection de leurs serveurs. Dans ce contexte, les **headers HTTP de sécurité** représentent une première ligne de défense simple, rapide à mettre en place et très efficace.
 
-Dans cet article, nous allons découvrir comment sécuriser un serveur **Nginx** grâce aux en-têtes recommandés par l’**OWASP**. Nous détaillerons également leur fonctionnement, leur impact sur le comportement du navigateur, et leur intégration propre dans la configuration du serveur.
+On sécurise un serveur **Nginx** avec les en-têtes recommandés par l’**OWASP** : leur fonctionnement, leur impact sur le comportement du navigateur, et leur intégration propre dans la configuration du serveur.
 
 ## Pourquoi les headers HTTP sont importants
 
