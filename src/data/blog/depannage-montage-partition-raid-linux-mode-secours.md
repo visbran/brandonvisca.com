@@ -14,6 +14,11 @@ featured: false
 draft: false
 focusKeyword: RAID
 ---
+> 💡 **TL;DR**
+> - `mount` refuse la matrice avec "wrong fs type, bad option, bad superblock" alors que `mdadm --detail` la donne « clean »
+> - `file -s /dev/md126` montre une table de partition : la matrice n'est pas formatée directement, elle contient des partitions
+> - Monte la partition et pas la matrice : `fdisk -l /dev/md126` puis `mount /dev/md126p1 /mnt/recovery`
+
 ![507](no-nope-tracy-morgan-spfi6nabvuq5y.gif)
 
 Aujourd’hui, je me suis retrouvé dans une situation stressante lorsque je n’ai pas pu accéder à ma matrice RAID en mode de secours. J’avais besoin de modifier un fichier critique situé dans `/etc/sudoers.d/`, mais je me heurtais constamment à des erreurs de montage :

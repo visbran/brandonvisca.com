@@ -13,6 +13,11 @@ draft: false
 focusKeyword: numi macos calculatrice textuelle
 ---
 
+> 💡 **TL;DR**
+> - Calculatrice macOS qui comprend le langage naturel : tu tapes "15 dollars en euros" ou "3 heures + 45 minutes" et tu as la réponse
+> - Unités, devises, dates et timezones, variables, conversions binaire/hexa, plus un widget Notification Center et un raccourci clavier
+> - Gratuit dans sa version de base (version Pro à ~15€), natif Apple Silicon, `brew install --cask numi`
+
 ## Numi macOS : ta calculatrice enfin intelligente
 
 T'es comme moi, tu détestes l'application Calculatrice native de macOS. Elle est moche, limitée, et dès que tu veux faire un calcul avec des unités ou des conversions, tu perds 10 minutes à googler des ratios. Entre nous, on mérite mieux.

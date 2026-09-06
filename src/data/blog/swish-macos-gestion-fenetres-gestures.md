@@ -266,7 +266,7 @@ Si tu utilises une souris en permanence et que ton trackpad est désactivé, Swi
 
 Contrairement à Magnet, Rectangle ou Amethyst, Swish n'offre aucun raccourci clavier. Si tu es sur un clavier externe sans trackpad, tu ne peux pas utiliser Swish. C'est un choix de design, mais ça limite l'audience.
 
-Si tu cherches un tiling manager plus puissant avec espaces virtuels dynamiques et raccourcis clavier avancés, [Yabai](/yabai-macos-tiling-avance/) est le choix des pros — même si ça demande de désactiver SIP.
+Si tu cherches un tiling manager plus puissant avec espaces virtuels dynamiques et raccourcis clavier avancés, [Yabai](/yabai-macos-tiling-avance/) est le choix des pros, même si ça demande de désactiver SIP.
 
 ### 3. Le prix
 

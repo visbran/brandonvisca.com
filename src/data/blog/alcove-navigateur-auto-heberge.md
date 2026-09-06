@@ -212,7 +212,7 @@ L'image `linuxserver/chromium` supporte les architectures ARM64. Sur un Raspberr
 
 ### Alcove est-il sécurisé pour consulter des sites bancaires ?
 
-Non. Même auto-hébergé, ce n'est pas un environnement certifié pour la bureautique sensible. Utilise-le pour tester, accéder à des ressources internes, ou naviguer de façon isolée — jamais pour des données critiques.
+Non. Même auto-hébergé, ce n'est pas un environnement certifié pour la bureautique sensible. Utilise-le pour tester, accéder à des ressources internes, ou naviguer de façon isolée, jamais pour des données critiques.
 
 ## Conclusion
 

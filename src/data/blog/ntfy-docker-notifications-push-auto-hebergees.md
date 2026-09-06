@@ -25,7 +25,9 @@ faqs:
     answer: "Oui, le serveur Ntfy conserve les messages jusqu'à ce que ton appareil se reconnecte, comme un broker MQTT."
 ---
 > 💡 **TL;DR**
-> Ntfy est un serveur de notifications push auto-hébergé. Tu publies un message via HTTP et il arrive instantanément sur ton téléphone. Parfait pour les alertes monitoring, les scripts de backup ou les notifications domotique.
+> - Serveur de notifications push auto-hébergé : tu publies en HTTP, ça arrive instantanément sur ton téléphone
+> - Installation Docker Compose en quelques minutes, reverse proxy et HTTPS pour l'exposer proprement
+> - Se branche sur Uptime Kuma, Beszel ou n'importe quel script Bash et Python, sans compte ni API tierce
 
 ---
 

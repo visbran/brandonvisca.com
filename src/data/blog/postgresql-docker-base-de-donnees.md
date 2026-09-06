@@ -15,7 +15,7 @@ draft: false
 focusKeyword: postgresql docker
 ogImage: "" 
 ---
-> **TL;DR**
+> 💡 **TL;DR**
 > - PostgreSQL est la base de données relationnelle open-source la plus avancée, avec un moteur ACID strict, le support JSON natif, et une fiabilité légendaire en production.
 > - Une stack Docker Compose avec persistance des données, healthcheck et variables d'environnement externes suffit a lancer une instance production-ready en 5 minutes.
 > - Configure des sauvegardes automatisees avec `pg_dump`, optimise la memoire via `shared_buffers`, et isole chaque application dans sa propre base et son propre utilisateur.

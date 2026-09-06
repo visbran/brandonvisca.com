@@ -17,7 +17,10 @@ draft: false
 ogImage: ""
 ---
 
-**TL;DR**, Paperless-ngx, c'est un bureau numérique auto-hébergé qui OCRise et classe tes documents automatiquement. Tu le déploies avec Docker Compose (PostgreSQL + Redis) en moins de 20 minutes, l'OCR français est natif, et tu retrouves n'importe quelle facture en deux secondes. Du Raspberry Pi 4 au petit serveur, sans confier tes papiers à un cloud tiers.
+> 💡 **TL;DR**
+> - Bureau numérique auto-hébergé qui OCRise et classe tes documents automatiquement
+> - Déploiement Docker Compose (PostgreSQL + Redis) en moins de 20 minutes, OCR français natif
+> - Du Raspberry Pi 4 au petit serveur, tu retrouves n'importe quelle facture en deux secondes sans cloud tiers
 
 ## Table des matières
 

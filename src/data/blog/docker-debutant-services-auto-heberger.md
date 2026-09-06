@@ -923,7 +923,7 @@ Si tu cherches un navigateur web embarqué accessible depuis n'importe quel appa
 
 Si tu veux aller encore plus loin, la prochaine étape c'est [sécuriser ton serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/) avant d'exposer tes services sur internet.
 
-Et si tu cherches une alternative plus sécurisée à Docker, j'ai testé [Podman en rootless](https://brandonvisca.com/podman-vs-docker-rootless/) — conteneurs sans daemon root, c'est bluffant.
+Et si tu cherches une alternative plus sécurisée à Docker, j'ai testé [Podman en rootless](https://brandonvisca.com/podman-vs-docker-rootless/), conteneurs sans daemon root, c'est bluffant.
 
 - - - - - -
 

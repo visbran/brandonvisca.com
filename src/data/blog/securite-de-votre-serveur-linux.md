@@ -66,7 +66,7 @@ Le moyen le plus efficace de sécuriser SSH : désactiver la connexion root, dé
 
 > **Avant tout** : crée un utilisateur non-root avec accès sudo et configure ta clé SSH. Si tu perds l'accès SSH après modification, tu te retrouves bloqué.
 >
-> Au lieu de donner sudo à tout le monde, tu peux aussi utiliser [Polkit Linux](/polkit-linux-configurer-autorisations/) pour autoriser des actions précises — comme redémarrer un service — sans ouvrir un shell root.
+> Au lieu de donner sudo à tout le monde, tu peux aussi utiliser [Polkit Linux](/polkit-linux-configurer-autorisations/) pour autoriser des actions précises, comme redémarrer un service, sans ouvrir un shell root.
 
 Édite la configuration SSH :
 

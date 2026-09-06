@@ -305,4 +305,4 @@ nftables n'est pas qu'un remplacement d'iptables. C'est une opportunité de repr
 
 Dans un monde où Docker injecte des règles iptables opaques et où UFW se fait contourner, nftables est l'outil qui te remet aux commandes. Et si tu es déjà passé par le [durcissement de ton serveur Linux](/hardening-linux-10-commandes/), ajouter une couche nftables bien configurée est la dernière brique pour un homelab sérieusement sécurisé.
 
-D'ailleurs, si tu envisages de remplacer Docker par une solution rootless, j'ai comparé [Podman vs Docker](/podman-vs-docker-rootless/) — le daemon-less et le rootless changent vraiment la donne.
+D'ailleurs, si tu envisages de remplacer Docker par une solution rootless, j'ai comparé [Podman vs Docker](/podman-vs-docker-rootless/), le daemon-less et le rootless changent vraiment la donne.

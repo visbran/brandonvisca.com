@@ -22,6 +22,13 @@ faqs:
     answer: "Oui, rcmd bascule vers l'app même si elle est dans un autre Space, avec ou sans animation selon tes réglages. Il peut aussi déplacer une fenêtre vers un autre Space depuis le clavier."
 ---
 
+> 💡 **TL;DR**
+> - Cmd+Tab est lent : 3 à 4 Tab à chaque fois pour atteindre la bonne app
+> - rcmd remplace ça par Right Command + la lettre de l'app, accès direct en 0,2 s
+> - Un raccourci dédié par app (Right Cmd + S pour Safari, + V pour VS Code)
+> - Fuzzy search, Space switching instantané, 16 thèmes et Stages (workspaces)
+> - 15 € one-time pour 5 Macs, 14 jours d'essai puis un mode Free
+
 ![rcmd app switcher](rcmd-screenshot.webp)
 
 ---
@@ -51,16 +58,6 @@ Ce que tu vas apprendre dans ce guide :
 - Pourquoi c'est différent de Raycast, Alfred ou AltTab
 - Troubleshooting des problèmes courants
 
----
-
-**TL;DR**
-
-- Cmd+Tab est lent (3 à 4 Tab à chaque fois pour atteindre la bonne app)
-- rcmd remplace ça par Right Command + la lettre de l'app : accès direct en 0,2 s
-- Un raccourci dédié par app (Right Cmd + S pour Safari, + V pour VS Code)
-- Nouveau : fuzzy search, Space switching instantané, 16 thèmes, Stages (workspaces)
-- Prix : 15 € one-time (5 Macs), 14 jours d'essai, mode Free ensuite
-
 | App | Raccourci rcmd | Gain vs Cmd+Tab |
 |-----|----------------|-----------------|
 | Safari | Right Cmd + S | 4 secondes → 0.2s |
@@ -69,7 +66,7 @@ Ce que tu vas apprendre dans ce guide :
 
 - **Résultat** : 10 min/jour gagnées = 60h économisées/an
 - **Installation** : 2 minutes chrono (Homebrew ou Mac App Store)
-- **Prix** : 15 € one-time (jusqu'à 5 Macs) — 14 jours d'essai gratuits
+- **Prix** : 15 € one-time (jusqu'à 5 Macs), 14 jours d'essai gratuits
 
 ---
 
@@ -461,7 +458,7 @@ Reponse courte : oui, si tu passes beaucoup de temps a switcher entre apps sur m
 - 16 themes pour matcher mon setup
 
 **Ce qui pourrait freiner** :
-- Payant (15 €) — mais pas cher pour un achat unique a vie
+- Payant (15 €), mais pas cher pour un achat unique a vie
 - Pas de preview des fenetres integree (Option + lettre fait l'affaire)
 - Courbe d'apprentissage de 2-3 jours pour oublier Cmd+Tab
 

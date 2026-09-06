@@ -135,7 +135,7 @@ Ensuite, crée un utilisateur dédié pour tes applications. Ne jamais utiliser 
 
 Récupère la **Access Key** et la **Secret Key** de cet utilisateur. C'est ce couple que tu colleras dans Duplicati, Nextcloud, ou ton `.s3cfg`.
 
-Si tu maîtrises déjà les commandes S3 en CLI avec ton instance minio docker, tu te sentiras comme chez toi — j'ai détaillé l'usage de [S3cmd avec des services S3-compatibles](/gerer-fichiers-amazon-s3-avec-s3cmd/) dans un article dédié. Les mêmes commandes `s3cmd sync`, `s3cmd put`, `s3cmd ls` fonctionnent avec MinIO en changeant juste l'endpoint.
+Si tu maîtrises déjà les commandes S3 en CLI avec ton instance minio docker, tu te sentiras comme chez toi, j'ai détaillé l'usage de [S3cmd avec des services S3-compatibles](/gerer-fichiers-amazon-s3-avec-s3cmd/) dans un article dédié. Les mêmes commandes `s3cmd sync`, `s3cmd put`, `s3cmd ls` fonctionnent avec MinIO en changeant juste l'endpoint.
 
 Test rapide avec le client MinIO (`mc`) :
 

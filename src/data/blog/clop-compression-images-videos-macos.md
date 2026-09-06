@@ -648,7 +648,7 @@ open -a Clop
 
 **ROI** : Si tu fais 20 screenshots par jour et que Clop te fait gagner 30 secondes par screenshot, ça fait **10 minutes par jour** = **60 heures par an**. Pour 0€ (ou 15$ si version Pro).
 
-Et si tu veux personnaliser encore plus l'interface de ton MacBook, j'ai publié un guide sur [Boring.Notch](/boring-notch-macbook-dynamic-island/) qui transforme la notch en hub d'informations utiles — totalement gratuit et open-source.
+Et si tu veux personnaliser encore plus l'interface de ton MacBook, j'ai publié un guide sur [Boring.Notch](/boring-notch-macbook-dynamic-island/) qui transforme la notch en hub d'informations utiles, totalement gratuit et open-source.
 
 Alors, prêt à dire adieu aux fichiers trop lourds ? 🚀
 

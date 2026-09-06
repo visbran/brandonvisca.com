@@ -294,6 +294,6 @@ tar xzvf qbittorrent-backup-YYYYMMDD.tar.gz -C ~/docker/qbittorrent/
 
 qBittorrent en Docker, c'est le client torrent que tout homelab qui se respecte devrait avoir. Propre, rapide, accessible de n'importe où et parfaitement intégrable à ta stack mediacenter. Une fois que tu as goûté au téléchargement automatisé avec Radarr, Sonarr et Prowlarr, tu ne pourras plus jamais revenir en arrière.
 
-Si tu cherches une alternative plus légère qui consomme trois fois moins de RAM, j'ai aussi testé [Transmission avec Docker](/transmission-docker-client-torrent/) — c'est le scalpel face au couteau suisse qBittorrent.
+Si tu cherches une alternative plus légère qui consomme trois fois moins de RAM, j'ai aussi testé [Transmission avec Docker](/transmission-docker-client-torrent/), c'est le scalpel face au couteau suisse qBittorrent.
 
 Si tu suis le [guide Docker Compose](/docker-debutant-services-auto-heberger/) pour structurer ton projet, tu auras un homelab robuste et maintenable. Le téléchargement automatisé n'est plus un fantasme de sysadmin : c'est ta réalité quotidienne. Et ça, ça n'a pas de prix.

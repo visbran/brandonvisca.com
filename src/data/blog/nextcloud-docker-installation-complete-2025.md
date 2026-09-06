@@ -21,7 +21,7 @@ faqs:
     answer: "Nextcloud propose une app officielle 'External Storage' pour importer depuis Google Drive. L'outil rclone permet aussi une migration batch en ligne de commande avec détection des doublons."
 ---
 
-> **TL;DR**
+> 💡 **TL;DR**
 > - Google Drive / Dropbox / OneDrive à 10-20€/mois remplacés par ton Nextcloud 34 à 3-5€/mois sur un petit VPS
 > - Installation Docker en moins d'1h, HTTPS automatique (Let's Encrypt), synchro multi-appareils
 > - Contrôle total de tes données, 120 à 240€/an économisés
