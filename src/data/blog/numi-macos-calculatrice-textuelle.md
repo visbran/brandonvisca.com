@@ -40,7 +40,7 @@ Ce qui fait la force de Numi, c'est qu'il comprend :
 
 ## Installation : rapide et propre
 
-Télécharge Numi depuis [numi.app](https://numi.app) ou directement via Homebrew si t'es un vrai :
+Télécharge Numi depuis [numi.app](https://numi.app) ou directement via Homebrew si t'es un vrai. Si tu n'as pas encore Homebrew sur ton Mac, j'ai un guide complet sur [comment installer Homebrew sur macOS](/installation-homebrew-macos/) en 2 minutes.
 
 ```bash
 brew install --cask numi
@@ -194,7 +194,7 @@ Numi n'est pas parfait. Quelques limites à connaître :
 
 Numi est l'une de ces rares applications qui améliorent ton quotidien sans que tu aies à changer tes habitudes. Tu continues à taper du texte, mais maintenant il calcule pour toi.
 
-Pour les devs, les sysadmins, les freelances qui font des devis, ou simplement ceux qui détestent la Calculatrice macOS, Numi est indispensable. Gratuit, léger, natif, puissant. Pas d'excuse pour ne pas l'essayer.
+Pour les devs, les sysadmins, les freelances qui font des devis, ou simplement ceux qui détestent la Calculatrice macOS, Numi est indispensable. Gratuit, léger, natif, puissant. Il rejoint dans ma barre à outils des applis comme [Maccy](/maccy-macos-presse-papiers-historique/) et [AltTab](/alttab-macos-gestion-fenetres-windows/), tous des outils open-source qui remplacent les solutions natives Apple sans jamais les regretter. Pas d'excuse pour ne pas l'essayer.
 
 Installe-le via Homebrew, teste-le 10 minutes, et dis-moi pas que tu reviens en arrière.
 
