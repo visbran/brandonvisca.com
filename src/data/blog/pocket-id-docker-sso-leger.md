@@ -28,6 +28,8 @@ ogImage: ""
 > - Il se déploie en 5 minutes avec Docker Compose et consomme moins de 100 Mo de RAM
 > - Tu peux centraliser l'authentification de tous tes services homelab sans la complexité de Keycloak
 
+## Table des matières
+
 ## Introduction
 
 Gérer une dizaine de services dans ton homelab signifie souvent gérer une dizaine de couples login / mot de passe. C'est fastidieux, peu sécurisé et source d'erreurs. Les solutions enterprise comme Keycloak ou Authelia existent, mais elles demandent une courbe d'apprentissage steile et des ressources serveur conséquentes.

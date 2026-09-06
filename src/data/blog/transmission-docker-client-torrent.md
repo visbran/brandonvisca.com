@@ -25,6 +25,8 @@ Tu cherches un client torrent qui ne bouffe pas toute ta RAM, qui démarre en de
 
 Et quand tu le mets dans un conteneur Docker, Transmission devient un service discret qui tourne en arrière-plan sur ton serveur, accessible depuis une interface web minimaliste. Si tu as déjà lu mon guide sur [qBittorrent Docker](/qbittorrent-docker-client-torrent/), tu te demandes sûrement quel client choisir. La réponse est simple : qBittorrent est le couteau suisse avec toutes les options, Transmission est le scalpel qui consomme trois fois moins de mémoire et démarre instantanément. Pour un serveur auto-hébergé où chaque mégabyte compte, le choix se fait vite.
 
+## Table des matières
+
 ## Pourquoi choisir Transmission Docker ?
 
 Commençons par le chiffre qui tue. Un conteneur Transmission au repos consomme environ 30 à 50 Mo de RAM. qBittorrent consomme 150 à 250 Mo dans la même situation. Sur un Raspberry Pi 4 avec 4 Go de RAM, cette différence représente le quart de ta mémoire disponible. Sur un VPS low-cost avec 1 Go de RAM, c'est la différence entre un serveur fluide et un serveur qui swap jusqu'à la mort. Transmission est écrit en C, le code est mature et épuré, et le projet est maintenu activement depuis deux décennies. Ce n'est pas un joujou qu'un développeur a abandonné après six mois parce qu'il s'est découvert une passion pour le crochet.

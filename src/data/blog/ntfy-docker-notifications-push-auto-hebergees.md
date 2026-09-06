@@ -35,6 +35,8 @@ T'en as marre des emails pour tes alertes monitoring ? Ou pire, des webhooks Sla
 
 Dans ce guide, on installe Ntfy via Docker Compose, on le branche à un reverse proxy pour le HTTPS, et on connecte quelques services classiques (Uptime Kuma, Beszel, scripts Bash). Objectif : recevoir une notif push quand quelque chose cloche dans ton homelab.
 
+## Table des matières
+
 ## Qu'est-ce que Ntfy et pourquoi l'utiliser ?
 
 Ntfy (prononcé "notify") est un service de publication/souscription HTTP. Tu publies sur un topic public ou privé, et tous les abonnés reçoivent la notification en temps réel.

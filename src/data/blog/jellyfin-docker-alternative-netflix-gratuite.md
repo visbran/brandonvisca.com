@@ -216,9 +216,7 @@ VPS | Prix/mois | Specs | Transcoding | Hetzner CPX21 | 8,21€ HT | 3 vCPU, 4 G
 
 💡 **Astuce avancée :** Monte le stockage cloud avec `rclone` en cache local. Tu gagnes en vitesse sans exploser le VPS.
 
-- - - - - -
-
-Installation Jellyfin avec Docker : La méthode qui marche
+## Installation Jellyfin avec Docker : la méthode qui marche
 
 ### Étape 1 : Préparer le serveur
 
@@ -238,12 +236,14 @@ newgrp docker
 docker --version
 ```
 
-## Créer les dossiers
+```bash
+# Créer les dossiers
 mkdir -p ~/jellyfin/{config,cache,media/{movies,series,music}}
 cd ~/jellyfin
 
-## Vérifier la structure
+# Vérifier la structure
 tree -L 2
+```
 
 Tu devrais voir :
 
@@ -400,20 +400,22 @@ docker compose logs -f jellyfin
         └── ...
 ```
 
-## Augmenter les timeouts pour le streaming
+```nginx
+# Augmenter les timeouts pour le streaming
 proxy_connect_timeout 600;
 proxy_send_timeout 600;
 proxy_read_timeout 600;
 send_timeout 600;
 
-## Pas de buffer pour le streaming en temps réel
+# Pas de buffer pour le streaming en temps réel
 proxy_buffering off;
 
-## Headers
+# Headers
 proxy_set_header X-Real-IP $remote_addr;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header X-Forwarded-Proto $scheme;
 proxy_set_header X-Forwarded-Host $host;
+```
 
 5. **Save** → Attends 30s → Teste `https://jellyfin.ton-domaine.fr`
 

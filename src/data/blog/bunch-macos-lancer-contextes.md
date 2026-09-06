@@ -21,6 +21,8 @@ ogImage: ""
 > - Parfait pour switcher entre contextes de travail sur macOS
 > - Gratuit et open-source avec des raccourcis clavier et AppleScript
 
+## Table des matières
+
 ## Qu'est-ce que Bunch ?
 
 Bunch, c'est une petite appli macOS gratuite et open-source créée par Brett Terpstra (un gars qui connait un rayon sur l'automation macOS, tu peux lui faire confiance les yeux fermés). Son job ? Te permettre de lancer des **contextes complets** en un seul clic ou raccourci clavier.

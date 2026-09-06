@@ -21,6 +21,8 @@ ogImage: ""
 > - Un docker-compose.yml de 30 lignes suffit à faire tourner l'agent avec les bonnes variables d'environnement
 > - Tu peux fusionner les données avec FusionInventory ou utiliser l'agent en mode standalone
 
+## Table des matières
+
 ## Qu'est-ce que GLPI Agent et pourquoi l'utiliser en Docker ?
 
 GLPI Agent est le successeur de FusionInventory Agent. C'est un petit logiciel qui tourne sur tes postes clients et qui remonte régulièrement un inventaire complet vers ton serveur GLPI : processeur, RAM, disques, cartes réseau, logiciels installés, périphériques USB, imprimantes, etc.

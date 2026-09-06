@@ -12,11 +12,14 @@ featured: false
 draft: false
 focusKeyword: numi macos calculatrice textuelle
 ---
+
 ## Numi macOS : ta calculatrice enfin intelligente
 
 T'es comme moi, tu détestes l'application Calculatrice native de macOS. Elle est moche, limitée, et dès que tu veux faire un calcul avec des unités ou des conversions, tu perds 10 minutes à googler des ratios. Entre nous, on mérite mieux.
 
 C'est là que **Numi** entre en scène. Pas une calculatrice classique. Un éditeur de texte qui calcule. Tu tapes "15 dollars en euros" et bam, t'as ta réponse. Tu écris "3 heures + 45 minutes" et il te donne la durée totale. C'est exactement le genre d'outil qui te fait te demander pourquoi Apple ne l'a pas intégré nativement.
+
+## Table des matières
 
 ## Pourquoi Numi change la donne
 

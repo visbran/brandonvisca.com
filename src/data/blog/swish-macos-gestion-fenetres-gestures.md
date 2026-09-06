@@ -45,6 +45,8 @@ ogImage: ""
 > - [Conclusion : Est-ce que Swish vaut son prix ?](#conclusion--est-ce-que-swish-vaut-son-prix-)
 > - [FAQ Swish macOS](#faq-swish-macos)
 
+## Table des matières
+
 ## Introduction : Quand le trackpad devient ton outil de window management
 
 Sur macOS, on a deux écoles pour gérer ses fenêtres.

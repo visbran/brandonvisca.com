@@ -33,6 +33,8 @@ faqs:
 
 ---
 
+## Table des matières
+
 ## Introduction : Le problème que macOS refuse de résoudre
 
 ![Écran externe trop lumineux la nuit sur macOS](https://res.cloudinary.com/dlkn3lxkk/image/upload/v1765137439/brandonviscacom/42856_fftbdr.webp)

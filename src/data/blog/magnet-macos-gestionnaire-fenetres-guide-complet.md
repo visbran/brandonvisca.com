@@ -27,6 +27,8 @@ faqs:
 > - Comparatif complet avec Rectangle (gratuit), BetterSnapTool et Moom
 > - Retour d'expérience après 2 ans, plus un guide d'installation détaillé
 
+## Table des matières
+
 ## Introduction : La gestion de fenêtres sur macOS, c'était la galère
 
 Tu connais cette sensation ?

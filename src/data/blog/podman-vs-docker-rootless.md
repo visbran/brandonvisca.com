@@ -29,6 +29,8 @@ Mais il y a un truc qui te chatouille depuis un moment : ce daemon qui tourne en
 
 Dans cet article, on va voir ce qui différencie vraiment Podman de Docker, comment l'installer, comment l'utiliser au quotidien, et surtout si tu peux (et si tu dois) le remplacer complètement.
 
+## Table des matières
+
 ## Docker, le daemon root qui pose problème
 
 Docker est génial. Il a démocratisé les conteneurs et aujourd'hui c'est incontournable. Mais son architecture a une faille fondamentale pour la sécurité.

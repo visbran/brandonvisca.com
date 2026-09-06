@@ -18,6 +18,8 @@ draft: false
 > - Image officielle `crazymax/fail2ban`, un `docker-compose.yml` et trois fichiers de config
 > - Rien à installer sur l'hôte à part Docker : service isolé, versionné, reproductible
 
+## Table des matières
+
 ## Pourquoi Fail2Ban en 2026 ?
 
 Ouvrir un serveur sur internet, c'est comme laisser ta porte d'entrée sur un trottoir parisien. En cinq minutes, tu vois passer des dizaines de robots qui testent des mots de passe en SSH, sniffent tes endpoints web ou essaient d'exploiter des failles connues.

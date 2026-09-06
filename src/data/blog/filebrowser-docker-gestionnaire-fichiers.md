@@ -19,6 +19,8 @@ ogImage: ""
 > - Parfait alternative à FTP, SMB mal configuré ou Nextcloud quand tu veux juste gérer des fichiers
 > - Docker Compose complet + reverse proxy Caddy inclus ci-dessous
 
+## Table des matières
+
 ## Pourquoi File Browser en 2026 ?
 
 Tu as un serveur auto-hébergé. Tu y ranges des backups, des documents, des logs, des photos. Jusqu'ici, pour y accéder à distance, tu avais trois options :

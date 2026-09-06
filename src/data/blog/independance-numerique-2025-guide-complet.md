@@ -28,6 +28,7 @@ faqs:
 
 💡 **Bonus** : Télécharge la **checklist gratuite « 30 jours pour l’indépendance numérique »** + script bash de backup automatisé en fin d’article.
 
+## Table des matières
 
 Pourquoi l’indépendance numérique, maintenant ?
 -----------------------------------------------

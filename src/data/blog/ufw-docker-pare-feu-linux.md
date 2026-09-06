@@ -17,6 +17,8 @@ draft: false
 > - Résultat : tes ports exposés restent accessibles de l'extérieur même si UFW dit le contraire
 > - On configure UFW correctement avec Docker pour que tes règles soient respectées sans casser les conteneurs
 
+## Table des matières
+
 ## Pourquoi UFW et Docker ne s'entendent pas
 
 Quand tu installes UFW (`ufw enable`) et que tu bloques tout sauf SSH et HTTP, tu t'attends à ce que seuls ces ports soient ouverts. Sauf que Docker ne passe pas par UFW. Il injecte ses propres règles directement dans `iptables`, en amont de la chaîne `ufw-user-input`. Autrement dit, UFW dit "non" et Docker dit "oui" juste derrière. Le "oui" de Docker gagne.

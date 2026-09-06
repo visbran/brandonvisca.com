@@ -19,6 +19,8 @@ ogImage: ""
 > - En le conteneurisant avec Docker Compose, vous obtenez un resolver DNS local performant en quelques minutes.
 > - C'est un complément idéal à un bloqueur comme [AdGuard Home](/adguard-home-docker-guide-2026/) : Unbound résout, AdGuard filtre.
 
+## Table des matières
+
 ## Pourquoi héberger son propre resolver DNS
 
 Chaque fois que vous ouvrez une page web, votre machine envoie une requête DNS pour traduire un nom de domaine en adresse IP. Par défaut, cette requête part vers le serveur DNS de votre FAI, un Google 8.8.8.8 ou un Cloudflare 1.1.1.1. C'est rapide, mais vous dépendez d'un tiers et vous laissez trainer vos requêtes de résolution chez eux.

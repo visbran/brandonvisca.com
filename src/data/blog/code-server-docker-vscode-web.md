@@ -21,6 +21,8 @@ ogImage: ""
 > - Parfait pour coder sur une tablette, un Chromebook, ou depuis un serveur headless sans bureau graphique
 > - Docker Compose complet + sécurité + reverse proxy inclus ci-dessous
 
+## Table des matières
+
 ## Pourquoi Code-Server en 2026 ?
 
 Tu as un serveur auto-hébergé. Une machine headless dans un coin, un VPS pas cher, ou un Raspberry Pi 4. Tu veux y coder sans installer X11, sans VNC qui rame, sans SSH -X qui te fait pleurer devant un terminal qui freeze à chaque caractère tapé.

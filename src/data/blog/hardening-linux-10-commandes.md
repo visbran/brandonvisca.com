@@ -19,6 +19,8 @@ ogImage: ""
 > - Pare-feu actif, SSH verrouillé, mises à jour automatiques et un audit rapide
 > - Ces basiques éliminent 90 % des attaques automatisées qui scannent internet
 
+## Table des matières
+
 ## Pourquoi dix commandes suffisent
 
 Les robots qui scanent internet ne cherchent pas à exploiter des zero-days sophistiqués. Ils testent des ports ouverts, des mots de passe faibles et des services obsolètes. En appliquant les basiques du hardening, tu passes sous leur radar. Ce guide est volontairement court et actionnable : chaque section donne une commande à copier-coller, une explication de ce qu'elle corrige, et un moyen de vérifier que ça fonctionne.

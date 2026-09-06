@@ -21,6 +21,8 @@ ogImage: ""
 > - Docker s'appuie encore sur iptables par défaut, mais tu peux router tout le trafic conteneur vers nftables
 > - Ce guide te montre comment configurer nftables pour Docker sans casser le réseau de tes conteneurs
 
+## Table des matières
+
 ## Pourquoi nftables et pas iptables
 
 iptables, c'est le grand-père du pare-feu Linux. Il fonctionne, il est partout, mais il commence à sentir le moisi. Sa syntaxe est verbeuse, les règles s'accumulent dans des chaînes séparées (filter, nat, mangle), et la moindre modification demande de recharger toute la table. Quand tu as une cinquantaine de règles et que tu veux juste bloquer un port, tu transpires.

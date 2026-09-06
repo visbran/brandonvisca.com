@@ -21,6 +21,8 @@ ogImage: ""
 > - Le projet est désormais maintenu par **community-scripts/ProxmoxVE** après l'archivage du repo original par tteck.
 > - Toujours vérifier le code source sur GitHub avant d'exécuter un script : `curl | bash` sans contrôle, c'est jouer avec le feu.
 
+## Table des matières
+
 ## Qu'est-ce que Proxmox VE Helper Scripts ?
 
 Proxmox VE est une plateforme de virtualisation open-source ultra-populaire dans les homelabs. Elle combine la virtualisation complète (KVM/QEMU) et la virtualisation légère (LXC) dans une interface web unique. Le point de friction ? Configurer manuellement un conteneur LXC, installer les dépendances, régler les permissions et sécuriser le tout prend facilement 20 à 40 minutes.

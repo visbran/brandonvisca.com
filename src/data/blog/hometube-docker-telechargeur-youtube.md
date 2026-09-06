@@ -35,6 +35,8 @@ Tu as déjà eu envie de télécharger une playlist YouTube complète, de l'orga
 
 **HomeTube** résout exactement ce problème. C'est un téléchargeur vidéo universel avec une interface web élégante, conçu pour s'intégrer directement dans ton homelab. Pas de terminal, pas de scripts bash à bidouiller. Tu colles l'URL, tu choisis la qualité, et HomeTube gère le reste : téléchargement, nommage propre, placement dans la bonne arborescence, et même synchronisation de playlists.
 
+## Table des matières
+
 ## Qu'est-ce que HomeTube Docker exactement ?
 
 HomeTube est un projet open-source (AGPL-3.0) développé par **EgalitarianMonkey**, avec plus de 1400 stars sur GitHub. Il s'agit d'une couche graphique en **Streamlit** au-dessus de **yt-dlp**, le célèbre fork actif de youtube-dl. Mais ce n'est pas juste un wrapper : HomeTube ajoute une logique d'organisation automatique des fichiers, une gestion résiliente des playlists, et des options de processing vidéo avancées (découpage, sous-titres intégrés, conversion de formats).

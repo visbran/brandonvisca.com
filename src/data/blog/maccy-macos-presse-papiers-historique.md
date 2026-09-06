@@ -34,6 +34,8 @@ T'as deja copie un lien, une adresse ou un morceau de code pour te rendre compte
 
 Maccy resout ce probleme. C'est un gestionnaire de presse-papiers open-source, gratuit, qui stocke tout ton historique de copies et te permet de retrouver n'importe quel element en quelques frappes. J'utilise Maccy depuis plus de deux ans sur mon MacBook Pro M3. Il tourne en arriere-plan, invisible, et me sauve plusieurs fois par jour. Il fait partie des [outils macOS gratuits que je garde installes en permanence](/10-outils-low-tech-macos-guide-complet/), avec une regle simple : un outil, une fonction, zero abonnement. Voici pourquoi tu devrais l'installer aujourd'hui.
 
+## Table des matières
+
 ## Qu'est-ce que Maccy et pourquoi tu en as besoin
 
 Maccy est un gestionnaire de presse-papiers concu specifiquement pour macOS. Il est developpe en Swift natif par Alex Rodionov, distribue sous licence MIT, et disponible gratuitement sur GitHub. Contrairement aux solutions lourdes ou payantes, Maccy fait une chose et la fait bien : il garde une trace de tout ce que tu copies et te donne un acces rapide a cet historique.

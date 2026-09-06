@@ -22,6 +22,8 @@ ogImage: ""
 > - Tu crées des scripts personnalisés pour gérer les fenêtres, les raccourcis clavier, le lancement d'apps et bien plus
 > - Une courbe d'apprentissage douce pour un potentiel quasi illimité, du débutant au power user
 
+## Table des matières
+
 ## Qu'est-ce que Hammerspoon macOS ?
 
 Tu connais peut-être AutoHotkey sur Windows. Cet outil magique qui te permet de binder n'importe quelle touche à n'importe quelle action, de redimensionner des fenêtres à la volée, et de transformer ton PC en machine sur mesure. Sur macOS, l'équivalent existe. Il s'appelle **Hammerspoon**.

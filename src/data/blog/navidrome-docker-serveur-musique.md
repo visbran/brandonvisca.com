@@ -20,6 +20,8 @@ ogImage: ""
 > - Alternative open-source à Spotify, Plexamp et Jellyfin pour la musique uniquement, sans abonnement ni tracking
 > - Docker Compose complet, tableau comparatif et astuces de config inclus ci-dessous
 
+## Table des matières
+
 ## Pourquoi un serveur de musique auto-hébergé ?
 
 T'as des Go de MP3 et FLAC accumulés depuis des années. Des albums achetés sur Bandcamp, des rips de tes vieux CDs, des mixes SoundCloud téléchargés légalement, et des fichiers lossless que tu refuses de compresser parce que "on entend la différence sur un bon casque". Le tout éparpillé sur ton NAS, ton laptop, ton téléphone et trois applications différentes qui ne se parlent pas.

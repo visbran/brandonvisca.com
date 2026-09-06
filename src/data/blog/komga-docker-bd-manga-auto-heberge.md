@@ -31,6 +31,8 @@ faqs:
 > - Déploiement Docker en 5 minutes, ressources ultra-légères (512 Mo RAM), compatible Raspberry Pi
 > - Docker Compose complet, comparatif avec Calibre-Web, Kavita et Plex Comics, ainsi que la config OPDS et multi-utilisateurs ci-dessous
 
+## Table des matières
+
 ## Pourquoi un serveur de BD et manga auto-hébergé ?
 
 T'as des Go de comics, mangas et bandes dessinées stockés sur un NAS, un disque dur externe ou un vieux serveur. Les retrouver demande de parcourir des dossiers imbriqués à dix niveaux de profondeur avec des noms comme `One_Piece_v87_[FR]_VIZ_DIGITAL.cbz`. Quand tu veux reprendre une série au tome 43, tu perds 10 minutes à vérifier quel fichier tu avais ouvert la dernière fois.

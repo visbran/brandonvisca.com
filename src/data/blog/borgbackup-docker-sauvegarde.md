@@ -28,6 +28,8 @@ ogImage: ""
 > - L'image Docker officielle `borgbackup/borg` te permet d'isoler l'outil sans polluer l'hôte
 > - Stack Docker Compose prête à copier, avec montage des volumes et cron d'automatisation
 
+## Table des matières
+
 ## Pourquoi choisir BorgBackup dans ton homelab ?
 
 Tu as déjà testé Duplicati, peut-être même joué avec rsync et des scripts maison. Mais quand tes volumes Docker commencent à peser plusieurs centaines de gigaoctets, tu remarques vite que la bande passante et l'espace disque deviennent des problèmes réels. BorgBackup est un outil de sauvegarde écrit en Python qui résout ces deux problèmes d'une manière brutalement efficace : la **déduplication bloc à bloc**, la **compression** et le **chiffrement** intégré.

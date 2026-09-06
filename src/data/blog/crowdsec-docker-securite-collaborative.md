@@ -20,6 +20,8 @@ ogImage: ""
 > - Un agent Docker + un bouncer pour ton reverse proxy = protection active en 10 minutes
 > - C'est la version "2026" de Fail2Ban : même principe, mais avec une communauté qui partage les signatures d'attaques
 
+## Table des matières
+
 ## Pourquoi CrowdSec plutôt que Fail2Ban ?
 
 Si tu as déjà suivi mon guide sur [Fail2Ban Docker](/fail2ban-docker-securite-serveur/), tu sais que bloquer les IPs à la main, c'est efficace mais limité. Fail2Ban observe **ton** serveur, repère les motifs suspects dans **tes** logs et bannit en conséquence. Le problème ? Chaque serveur apprend seul. Un bot qui scanne des milliers de machines répère les faiblesses avant que ton Fail2Ban ne déclenche.

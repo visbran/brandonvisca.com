@@ -20,6 +20,8 @@ ogImage: ""
 > - Un seul conteneur Docker suffit : initialisation du repo, backup incrémental, gestion de snapshots et nettoyage automatique
 > - Stack Docker Compose complète avec cron intégré pour des backups quotidiens sans intervention
 
+## Table des matières
+
 ## Pourquoi Restic et pas rsync ou tar ?
 
 Tu as probablement déjà écrit un script shell qui fait `tar czvf` suivi d'un `rsync -avz` vers un NAS. Ça marche. Jusqu'au jour où ton volume pèse 500 Go, que la bande passante sature, et que tu découvres que tes backups prennent trois fois la taille originale parce que chaque archive contient l'intégralité des fichiers.

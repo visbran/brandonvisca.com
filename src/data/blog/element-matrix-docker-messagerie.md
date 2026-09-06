@@ -22,6 +22,8 @@ ogImage: ""
 > - Synapse est le homeserver de référence. On le déploie avec Element et PostgreSQL en quelques minutes via Docker Compose.
 > - Tu obtiens un serveur de chat auto-hébergé, chiffré de bout en bout, fédéré avec le réseau Matrix mondial.
 
+## Table des matières
+
 ## Pourquoi Matrix et pas WhatsApp, Signal ou Slack ?
 
 WhatsApp appartient à Meta. Signal est mieux, mais tu dépends toujours de leurs serveurs. Slack ? C'est fermé, payant, et tes données dorment chez Salesforce. Matrix, c'est différent. C'est un **protocole** ouvert, pas un produit. Tu installes un **homeserver** chez toi (Synapse), tu choisis ton client (Element, Cinny, FluffyChat), et tu communiques avec n'importe qui sur le réseau Matrix mondial. Ou personne, si tu préfères rester en interne.

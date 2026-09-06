@@ -25,6 +25,8 @@ Tu as déployé [Radarr](/radarr-docker-gestion-films/) pour tes films et [Sonar
 
 Dans ce tutoriel, on déploie Prowlarr avec Docker, on configure les indexeurs, on le lie à Radarr et Sonarr, et on automatise la synchro. Rien de superflu, que de la technique qui marche.
 
+## Table des matières
+
 ## Qu'est-ce que Prowlarr et pourquoi l'utiliser ?
 
 Prowlarr fait partie de la famille *Arr (Radarr, Sonarr, Lidarr, Readarr, Whisparr) développée par le même groupe. Son rôle est simple mais crucial :

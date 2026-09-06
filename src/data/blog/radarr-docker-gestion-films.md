@@ -24,6 +24,8 @@ Tu as déjà mis en place [Jellyfin sur Docker](https://brandonvisca.com/jellyfi
 
 Dans ce tutoriel, on va déployer **Radarr avec Docker**, le configurer pour qu'il parle à ton client de téléchargement, et l'intégrer à ton écosystème mediacenter. Pas de blabla, que du concret.
 
+## Table des matières
+
 ## Qu'est-ce que Radarr et pourquoi l'utiliser ?
 
 Radarr est un gestionnaire de films open-source inspiré de [Sonarr](/sonarr-docker-gestion-series/), son cousin pour les séries. Son job :

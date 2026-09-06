@@ -28,6 +28,8 @@ ogImage: ""
 > - Contrairement à [Amethyst](/amethyst-macos-tiling-window-manager/), il exige de désactiver SIP (System Integrity Protection) pour accéder aux fonctionnalités avancées
 > - Couplé à skhd pour les raccourcis clavier, il offre des espaces virtuels dynamiques et des layouts bsp/stack/float dignes d'i3 ou dwm
 
+## Table des matières
+
 ## Pourquoi Yabai et pas un autre ?
 
 Sur macOS, la gestion des fenêtres est un goulot d'étranglement. Apple te donne Mission Control, des espaces virtuels manuels et du drag-and-drop approximatif. Si tu viens de Linux (i3, Awesome, Hyprland) ou que tu bosses avec plusieurs terminaux, IDE et navigateurs en parallèle, tu sais déjà que le tiling n'est pas un luxe, c'est une nécessité.

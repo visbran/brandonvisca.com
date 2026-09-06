@@ -29,6 +29,8 @@ faqs:
 
 - - - - - -
 
+## Table des matières
+
 Introduction : Le jour où j’en ai eu marre
 ------------------------------------------
 

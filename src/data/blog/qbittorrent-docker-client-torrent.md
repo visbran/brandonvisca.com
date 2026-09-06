@@ -27,6 +27,8 @@ Tu en as marre de laisser ton PC allumé la nuit pour finir un torrent ? Ou pire
 
 qBittorrent, c'est le client open-source qui a fait oublier µTorrent à toute une génération. Pas de pub, pas de spyware, pas de limite débile. Et en version Docker, il devient un service propre, isolé et intégrable dans ton homelab. Prêt ? C'est parti.
 
+## Table des matières
+
 ## Pourquoi qBittorrent Docker plutôt qu'un client desktop ?
 
 Bon, déjà, la question elle est vite répondue. Un client desktop, c'est bien pour un usage ponctuel sur ta machine. Mais pour un mediacenter auto-hébergé, c'est une plaie :

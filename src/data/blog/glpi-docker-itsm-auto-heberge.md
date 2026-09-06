@@ -21,6 +21,8 @@ ogImage: ""
 > - Docker Compose complet, guide de sécurisation, paramétrage et FAQ inclus ci-dessous
 > - L'image officielle `glpi/glpi` embarque déjà PHP et Apache préconfigurés
 
+## Table des matières
+
 ## Qu'est-ce que GLPI et pourquoi le dockeriser ?
 
 GLPI, c'est le couteau suisse de l'ITSM open source. Inventaire de parc, helpdesk, gestion des tickets, suivi des licences, base de connaissances, réservations de matériel… tout y passe. C'est la solution française qui tourne depuis 2003 et qui refuse de mourir, malgré des interfaces qui piquent parfois les yeux.

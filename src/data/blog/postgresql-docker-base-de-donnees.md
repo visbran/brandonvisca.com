@@ -20,6 +20,8 @@ ogImage: ""
 > - Une stack Docker Compose avec persistance des données, healthcheck et variables d'environnement externes suffit a lancer une instance production-ready en 5 minutes.
 > - Configure des sauvegardes automatisees avec `pg_dump`, optimise la memoire via `shared_buffers`, et isole chaque application dans sa propre base et son propre utilisateur.
 
+## Table des matières
+
 ## Pourquoi PostgreSQL plutot que MariaDB ou MySQL ?
 
 MariaDB et MySQL dominent le web classique. Mais quand tu montes un homelab avec des applications modernes comme NocoDB, Outline, ou des outils devops, PostgreSQL devient souvent le choix par defaut. Ce n'est pas un hasard : c'est la base de donnees preferee des developpeurs depuis des annees, et ce n'est pas que de la hype.

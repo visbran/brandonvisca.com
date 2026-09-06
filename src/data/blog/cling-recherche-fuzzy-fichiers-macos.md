@@ -23,6 +23,8 @@ faqs:
 
 ---
 
+## Table des matières
+
 ## Introduction : Spotlight, c'est bien... pour 2010
 
 **Le problème** : Tu cherches ce fichier `docker-compose.yaml` que tu as modifié hier. Tu tapes "docker compose" dans Spotlight.

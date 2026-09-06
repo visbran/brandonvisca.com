@@ -22,6 +22,8 @@ focusKeyword: mattermost docker
 
 Tu en as marre de payer Slack à 8$ par utilisateur et par mois pour un historique de messages qui finit dans un cloud américain ? Tu veux une messagerie d'équipe où **tu** décides où tes données dorment ? Mattermost est la réponse. C'est un logiciel de chat d'équipe open-source, développé en Go et React, qui tourne parfaitement dans un conteneur Docker. Ce guide te montre comment le monter de zéro, le sécuriser avec HTTPS et le rendre utilisable par ton équipe en moins d'une demi-heure.
 
+## Table des matières
+
 ## Pourquoi Mattermost plutôt que Slack ou Teams ?
 
 Slack, c'est pratique. Microsoft Teams aussi. Le problème, c'est le prix, la souveraineté des données et la dépendance à un tiers. Quand tu cliques sur "Accepter" chez Slack, tu acceptes que tes conversations, fichiers et métadonnées transitent par leurs serveurs. Avec Mattermost, tout reste sur **ta** machine.

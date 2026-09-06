@@ -19,6 +19,8 @@ ogImage: ""
 > - Alternative open-source (GPL-3.0) à Calibre-Web, plus rapide et plus agréable à utiliser
 > - Docker Compose complet, tableau comparatif et astuces de config inclus ci-dessous
 
+## Table des matières
+
 ## Pourquoi un serveur d'ebooks auto-hébergé ?
 
 T'as une bibliothèque numérique qui ressemble à un champ de bataille. Des EPUB achetés sur diverses plateformes, des PDF de documentation technique, des mangas en CBZ téléchargés légalement (ou pas), et des scans de vieux magazines. Le tout éparpillé sur ton NAS, ton laptop, ton téléphone et trois applications différentes qui ne se parlent pas.

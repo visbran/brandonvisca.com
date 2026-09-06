@@ -21,6 +21,8 @@ ogImage: ""
 > - Une stack Compose minimaliste avec persistance des données, healthcheck et variables d'environnement sécurisées suffit à 90% des cas.
 > - Configure des sauvegardes automatiques et des optimisations mémoire pour éviter les surprises en production.
 
+## Table des matières
+
 ## Pourquoi MariaDB plutôt que MySQL ?
 
 MySQL appartient à Oracle. MariaDB, c'est le fork communautaire créé par le fondateur original de MySQL après le rachat. Si tu veux rester dans l'écosystème open-source pur, le choix est vite fait.

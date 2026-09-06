@@ -21,6 +21,8 @@ ogImage: ""
 > - Un stack Docker Compose minimal avec MongoDB suffit pour démarrer en quelques minutes
 > - Le déploiement nécessite une base MongoDB, un reverse proxy et une gestion des backups pour la prod
 
+## Table des matières
+
 ## Rocket.Chat : la messagerie collaborative que tu contrôles
 
 Si tu en as marre de payer un abonnement Slack à prix d'or pour ton équipe de cinq personnes, ou si tu refuses de confier tes conversations professionnelles aux serveurs de Microsoft, il est temps de passer à l'auto-hébergement. [Rocket.Chat](https://www.rocket.chat/) est une plateforme de messagerie collaborative open source qui offre exactement ce que tu attends d'un outil de chat d'équipe, sans la facture mensuelle et avec tes données chez toi.

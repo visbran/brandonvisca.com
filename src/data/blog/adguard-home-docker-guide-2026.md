@@ -30,6 +30,8 @@ faqs:
 
 ---
 
+## Table des matières
+
 ## Pourquoi encore un guide DNS ?
 
 T'as déjà vu Nextcloud, Jellyfin, Vaultwarden. Tu t'auto-héberges à fond. Mais tu laisses encore ta Freebox ou ta Livebox pointer vers les DNS d'Orange qui loggent tes requêtes et laissent passer la pub sur chaque appareil de la maison.

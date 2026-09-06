@@ -20,6 +20,8 @@ ogImage: ""
 > - Tu l'héberges toi-même en 5 minutes avec Docker Compose, sans dépendre d'un service cloud payant comme Distill.io
 > - Parfait pour les alertes prix, la surveillance de disponibilité produit, le monitoring de pages concurrentes ou de documentation
 
+## Table des matières
+
 ## Pourquoi surveiller des pages web ?
 
 T'as déjà rafraîchi dix fois par jour la page d'un site d'e-commerce en attendant une baisse de prix ? Ou attendu une réouverture des inscriptions à une formation sans savoir quand ça tombe ? Ou voulu suivre une modification discrète sur un site concurrent sans passer ta vie à comparer des captures d'écran ?

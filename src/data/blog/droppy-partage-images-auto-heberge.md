@@ -19,6 +19,8 @@ ogImage: ""
 > - Parfait pour héberger des screenshots, des memes, des photos de documentation sans dépendre d'un service tiers
 > - Docker Compose complet + reverse proxy Caddy inclus ci-dessous
 
+## Table des matières
+
 ## Pourquoi auto-héberger le partage d'images ?
 
 Tu connais la routine. Tu prends un screenshot d'une erreur pour l'envoyer à un collègue. Tu uploades sur Imgur, tu copies le lien, tu l'envoies. Trois mois plus tard, Imgur a supprimé l'image pour "violation des conditions d'utilisation" (alors que c'était juste un log d'erreur Nginx). Ou pire : le service a changé de politique et ton lien est mort.

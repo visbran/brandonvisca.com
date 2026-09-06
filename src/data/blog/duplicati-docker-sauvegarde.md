@@ -18,6 +18,8 @@ draft: false
 > - Stack Docker Compose complète, interface web sur le port 8200
 > - Aucune ligne de commande nécessaire après l'installation, restauration en trois clics
 
+## Table des matières
+
 ## Pourquoi Duplicati en 2026 ?
 
 Tu as monté ton [serveur Nextcloud](/nextcloud-docker-installation-complete-2025/), hébergé tes mots de passe avec [Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/) et déployé une demi-douzaine de services Docker. Tout roule. Jusqu'au jour où un disque lâche, une fausse manip efface un volume ou un ransomware chiffre ton NAS. Sans backup, ton homelab devient un cimetière de données en quelques secondes.
