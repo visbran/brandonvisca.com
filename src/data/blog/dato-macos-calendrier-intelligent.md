@@ -123,6 +123,8 @@ Dato vaut ses 15 $ si :
 
 Si tu n'as qu'une réunion par semaine et que tu t'en fiches de la menu bar, garde ton argent. [Itsycal](/itsycal-macos-calendrier-menu-bar/) suffit amplement.
 
+💡 À lire aussi : [BetterDisplay macOS hidpi : résolutions custom et contrôle DDC sur écrans externes](/betterdisplay-macos-hidpi-ddc/), dans la même veine que cet article.
+
 ## Conclusion
 
 Dato macOS est ce que l'horloge native devrait être depuis des années. Un calendrier interactif, des visioconférences en un clic, des time zones, et une personnalisation poussée, le tout dans une menu bar propre et native. À 15 $ l'achat unique, c'est un investissement qui rentabilise son temps dès la première semaine d'utilisation. Si tu passes tes journées sur macOS et que tu jongles entre rendez-vous, Dato n'est pas un luxe, c'est un outil de productivité essentiel.

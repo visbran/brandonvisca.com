@@ -12,7 +12,10 @@ featured: false
 draft: false
 focusKeyword: betterdisplay macos hidpi
 ---
-## Table des matières
+> 💡 **TL;DR**
+> - BetterDisplay macOS hidpi force le rendu HiDPI sur n'importe quel écran externe, même non reconnu par Apple
+> - Le contrôle DDC active les touches de luminosité du Mac sur ton écran tiers
+> - Gratuit pour l'essentiel, Pro à ~15€ pour les fonctions avancées. Teste la version gratuite d'abord
 
 ## Pourquoi ton écran externe est flou sous macOS (et pourquoi Apple s'en fout)
 
@@ -28,10 +31,7 @@ Et le contrôle de la luminosité via les touches du clavier ? Oublie. Apple blo
 
 J'ai vécu ça pendant 2 ans avec un Dell U2723QE. Branché en USB-C, belle image, mais floue. Jusqu'à ce que je tombe sur BetterDisplay.
 
-> 💡 **TL;DR**
-> - BetterDisplay macOS hidpi force le rendu HiDPI sur n'importe quel écran externe, même non reconnu par Apple
-> - Le contrôle DDC active les touches de luminosité du Mac sur ton écran tiers
-> - Gratuit pour l'essentiel, Pro à ~15€ pour les fonctions avancées. Teste la version gratuite d'abord
+## Table des matières
 
 ## Qu'est-ce que BetterDisplay fait exactement
 

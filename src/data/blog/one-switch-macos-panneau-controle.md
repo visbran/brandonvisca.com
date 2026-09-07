@@ -74,6 +74,8 @@ One Switch ne remplace pas les réglages système avancés. Il ne fait que crée
 
 Et comme toute app tierce, elle nécessite des permissions d'accessibilité pour simuler les actions système. Si tu es particulièrement strict sur la sécurité, relis bien les permissions que tu accordes.
 
+💡 À lire aussi : [BetterDisplay macOS hidpi : résolutions custom et contrôle DDC sur écrans externes](/betterdisplay-macos-hidpi-ddc/), dans la même veine que cet article.
+
 ## Verdict
 
 One Switch fait exactement ce qu'il promet : un panneau de contrôle rapide, propre et personnalisable. Pour quelques euros, il te fait gagner du temps chaque jour en éliminant la friction de certaines actions macOS répétitives. C'est le genre d'outil qui semble anodin, mais qu'on ne peut plus quitter une fois adopté. Si tu passes beaucoup de temps sur macOS et que tu optimises déjà ton environnement avec des outils comme [Dato pour ton calendrier](/dato-macos-calendrier-intelligent/), One Switch est un ajout pertinent et sans regret.
