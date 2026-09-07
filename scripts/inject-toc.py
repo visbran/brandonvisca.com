@@ -42,6 +42,9 @@ TOC_NONCONFORM_RE = re.compile(
 )
 
 ATX_H2_RE    = re.compile(r"^##\s+(?!#)", re.MULTILINE)
+
+# Le bloc TL;DR ouvre toujours l'article : la TOC ne doit jamais passer au-dessus.
+TLDR_RE = re.compile(r"^>\s*(?:💡\s*)?\*\*TL;DR\*\*", re.MULTILINE)
 SETEXT_H2_RE = re.compile(r"^([^\n`#>|\-][^\n]+)\n-{3,}\s*$", re.MULTILINE)
 
 
@@ -64,14 +67,39 @@ def count_h2(body: str) -> int:
     return atx_count + setext_count
 
 
+def tldr_end_pos(body: str) -> int:
+    """Position juste après le bloc de citation TL;DR (0 s'il n'y en a pas)."""
+    m = TLDR_RE.search(body)
+    if not m:
+        return 0
+    offset = m.start()
+    for line in body[m.start():].splitlines(keepends=True):
+        if line.lstrip().startswith(">"):
+            offset += len(line)
+        else:
+            break
+    return offset
+
+
 def find_first_h2_pos(body: str) -> int:
-    """Position dans le body avant laquelle insérer la TOC."""
+    """Position dans le body avant laquelle insérer la TOC.
+
+    Plancher = fin du bloc TL;DR : la TOC se place toujours après lui, jamais
+    entre le frontmatter et le TL;DR (régression observée sur 9 articles quand
+    l'article ouvre directement sur un H2).
+    """
     body_no_code = re.sub(r"```[\s\S]*?```", lambda m: "\n" * m.group().count("\n"), body)
+    floor = tldr_end_pos(body)
+    # La TOC vient après l'intro. Si l'article ouvre directement sur un H2, cette
+    # première section EST l'intro : on pose la TOC après elle, pas avant.
+    first = ATX_H2_RE.search(body_no_code, floor)
+    if first and not body_no_code[floor:first.start()].strip():
+        floor = first.end()
     candidates = []
-    m_atx = ATX_H2_RE.search(body_no_code)
+    m_atx = ATX_H2_RE.search(body_no_code, floor)
     if m_atx:
         candidates.append(m_atx.start())
-    m_set = SETEXT_H2_RE.search(body_no_code)
+    m_set = SETEXT_H2_RE.search(body_no_code, floor)
     if m_set:
         candidates.append(m_set.start())
     return min(candidates) if candidates else len(body)
