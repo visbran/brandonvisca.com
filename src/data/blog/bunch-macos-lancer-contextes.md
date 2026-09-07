@@ -185,6 +185,8 @@ Personnellement, Bunch a trouvé sa place dans mon workflow quotidien entre [One
 
 Tu devrais l'essayer. Ça prend cinq minutes à installer et à configurer ton premier contexte, et je parie que tu ne reviendras pas en arrière. Quand chaque seconde compte, automatiser les transitions entre tes modes de travail n'est pas un luxe, c'est une nécessité. Bunch rend ça accessible, gratuit, et sans friction. Essaie-le, et dis-moi pas merci.
 
+💡 À lire aussi : [BetterDisplay macOS hidpi : résolutions custom et contrôle DDC sur écrans externes](/betterdisplay-macos-hidpi-ddc/), dans la même veine que cet article.
+
 ## FAQ
 
 **Bunch est-il gratuit ?**

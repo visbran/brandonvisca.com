@@ -208,6 +208,8 @@ Installe-le via Homebrew, teste-le 10 minutes, et dis-moi pas que tu reviens en 
 
 ---
 
+💡 À lire aussi : [BetterDisplay macOS hidpi : résolutions custom et contrôle DDC sur écrans externes](/betterdisplay-macos-hidpi-ddc/), dans la même veine que cet article.
+
 ## FAQ rapide
 
 **Numi est-il gratuit ?**
