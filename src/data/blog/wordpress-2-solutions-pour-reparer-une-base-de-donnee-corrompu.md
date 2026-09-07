@@ -7,21 +7,13 @@ author: Brandon Visca
 tags:
   - developpement
   - wordpress
+  - mysql
   - avance
   - guide
 featured: false
 draft: false
 focusKeyword: réparer wordpress
-faqs:
-  - question: "Comment savoir si ma base de données WordPress est corrompue ?"
-    answer: "Les signes typiques : erreur 'Error establishing a database connection', tableaux manquants en phpMyAdmin, ou wp_posts qui n'existe plus. Lance CHECK TABLE wp_posts; dans phpMyAdmin, si le résultat est 'Corrupt', le problème est confirmé."
-  - question: "Peut-on réparer WordPress sans accès phpMyAdmin ?"
-    answer: "Oui. Ajoute define('WP_ALLOW_REPAIR', true); dans wp-config.php puis accède à https://ton-site.com/wp-admin/maint/repair.php. WordPress propose alors une réparation et une optimisation des tables sans phpMyAdmin."
-  - question: "La réparation de base MySQL WordPress supprime-t-elle des données ?"
-    answer: "La réparation (REPAIR TABLE) est non-destructive et tente de reconstruire les tables corrompues. En cas d'échec, la dernière option est la restauration depuis une sauvegarde. Toujours sauvegarder avant toute opération."
 ---
-## Table des matières
-
 Ton site WordPress affiche "Erreur lors de la connexion à la base de données" au pire moment. Pas de panique. Une base MySQL corrompue, ça arrive : crash serveur, mise à jour ratée, coupure de courant en pleine écriture.
 
 J'ai eu le cas sur un site client en production : voilà les deux méthodes que j'utilise pour réparer WordPress rapidement.
@@ -30,6 +22,8 @@ J'ai eu le cas sur un site client en production : voilà les deux méthodes que 
 > - Une base de données corrompue = site inaccessible, pages blanches, erreurs SQL
 > - Solution 1 : l'outil de réparation intégré WordPress (1 ligne dans `wp-config.php`)
 > - Solution 2 : `REPAIR TABLE` via phpMyAdmin pour les cas résistants
+
+## Table des matières
 
 ## Identifier les symptômes
 
@@ -125,6 +119,8 @@ Une corruption de base ne s'anticipe pas, mais ses conséquences si.
 
 - Plugin [UpdraftPlus](https://wordpress.org/plugins/updraftplus/) pour des sauvegardes quotidiennes vers Dropbox, Google Drive ou S3
 - Sauvegardes côté hébergeur en complément (pas à la place)
+
+Si ton WordPress tourne sur ton propre serveur, double ça d'une sauvegarde système chiffrée et incrémentale avec [Restic](/restic-docker-sauvegarde-moderne/) : tu récupères les fichiers et la config, pas seulement la base.
 
 **Optimisation régulière :**
 

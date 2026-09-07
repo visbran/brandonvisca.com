@@ -47,6 +47,8 @@ Conclusion
 
 En résumé, [Super.so](http://super.so/) est un outil puissant pour transformer vos pages Notion en un site web personnalisé et optimisé pour le SEO. Il offre une multitude de fonctionnalités de personnalisation, une expérience utilisateur améliorée, et des fonctionnalités SEO intégrées pour aider votre contenu à se démarquer sur le web.
 
+💡 À lire aussi : [Réparer WordPress : 2 solutions pour une base de données corrompue](/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [Notion Sites: Révolution dans la Création de Sites Web](/notion-sites-creation-de-sites-web/)

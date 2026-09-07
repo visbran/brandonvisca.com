@@ -73,6 +73,8 @@ La [gestion des domaines personnalisés avec Notion](https://www.notion.so/fr-fr
 
 Oui, Notion Sites offre des fonctionnalités CMS robustes qui permettent la création et la gestion de [blogs professionnels avec facilité](https://apprendre-notion.com/6-outils-gratuits-pour-creer-son-site-avec-notion/). Les utilisateurs peuvent publier du contenu, gérer des commentaires et personnaliser l’apparence de leur blog selon leurs besoins spécifiques.
 
+💡 À lire aussi : [Réparer WordPress : 2 solutions pour une base de données corrompue](/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [Exploration de Super.so : un outil de site web personnalisé ](/exploration-de-super-so-un-outil-de-site-web-personnalise-pour-notion/)
