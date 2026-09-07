@@ -100,6 +100,8 @@ Boring.Notch n'est pas parfait, et il vaut mieux le savoir avant d'installer :
 - Sur les Mac avec plusieurs écrans, Boring.Notch s'affiche sur l'écran principal uniquement
 - L'app consomme un peu de RAM (environ 80-120 Mo) et un minuscule pourcentage de CPU pour les animations. Rien de dramatique, mais à noter si tu pousses déjà ta machine dans ses derniers retranchements.
 
+Si tu as plusieurs écrans et que tu cherches à optimiser leur rendu, j'ai testé [BetterDisplay macOS hidpi](/betterdisplay-macos-hidpi-ddc/) qui force le HiDPI et active le contrôle DDC sur les écrans externes. Parfait complément quand tu veux une qualité d'affichage pro sur du matériel tiers.
+
 Si tu cherches un autre utilitaire menu bar pour compléter Boring.Notch, [Itsycal macOS](/itsycal-macos-calendrier-menu-bar/) est un mini calendrier gratuit qui affiche tes événements et la date personnalisée directement dans la barre de menu. Si tu veux la version premium avec visioconférences en un clic et time zones multiples, [Dato macOS](/dato-macos-calendrier-intelligent/) est le calendrier payant qui remplace l'horloge native avec brio.
 
 ## Conclusion

@@ -279,6 +279,8 @@ Temps gagné : 5 min/jour = 30h/an
 
 👉 **Guide complet** : [Lunar : Contrôle luminosité écrans externes macOS](https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/)
 
+Alternative : si tu veux aussi forcer le rendu HiDPI sur des écrans non reconnus par Apple et obtenir un contrôle DDC complet, j'ai testé [BetterDisplay macOS hidpi](/betterdisplay-macos-hidpi-ddc/). Lui et Lunar se complètent bien selon tes besoins.
+
 ---
 
 ## 4. Cling : Recherche Fuzzy Ultra-Rapide
