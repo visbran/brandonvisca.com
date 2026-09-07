@@ -231,7 +231,7 @@ Temps : 5 secondes
 
 **Gagnant** : **Alfred** (écrase la concurrence)
 
-**Note** : Pour recherche fichiers pure, utilise [Cling](/2025-11-27-cling-recherche-fuzzy-fichiers-macos/) (spécialisé).
+**Note** : Pour recherche fichiers pure, utilise [Cling](/cling-recherche-fuzzy-fichiers-macos/) (spécialisé).
 
 ---
 
@@ -608,7 +608,7 @@ Temps : 2 min (si extension existe)
 ```
 Alfred Powerpack (78€ lifetime)
 + rcmd (gratuit) → [rcmd : Alternative Cmd+Tab gratuite et 10x plus rapide](/rcmd-alternative-cmd-tab-macos/)
-+ Cling (gratuit) → [Cling : Recherche fuzzy fichiers 10x plus rapide](/2025-11-27-cling-recherche-fuzzy-fichiers-macos/)
++ Cling (gratuit) → [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
 + iTerm2 (gratuit)
 = Stack complète 78€ one-time
 ```
@@ -631,8 +631,8 @@ Alfred Powerpack (78€ lifetime)
 **Setup créateur** :
 ```
 Raycast Free (0€)
-+ Clop (gratuit) → [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/2025-11-27-clop-compression-images-videos-macos/)
-+ Lunar (gratuit) → [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)
++ Clop (gratuit) → [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)
++ Lunar (gratuit) → [Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
 = Stack complète gratuite
 ```
 
@@ -1017,12 +1017,12 @@ Cmd+Shift+Space : Raycast (secondary)
 
 **Productivité macOS** :
 - **[rcmd : Switch apps ultra-rapide](/rcmd-alternative-cmd-tab-macos/)** (complémentaire aux launchers)
-- **[Cling : Recherche fuzzy spécialisée](/2025-11-27-cling-recherche-fuzzy-fichiers-macos/)** (si recherche fichiers critique)
+- **[Cling : Recherche fuzzy spécialisée](/cling-recherche-fuzzy-fichiers-macos/)** (si recherche fichiers critique)
 - **[10 Outils Low-Tech macOS](/10-outils-low-tech-macos-guide-complet/)** (stack complète productivité)
 
 **Outils complémentaires** :
-- [Clop : Compression automatique](/2025-11-27-clop-compression-images-videos-macos/)
-- [Lunar : Contrôle luminosité](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)
+- [Clop : Compression automatique](/clop-compression-images-videos-macos/)
+- [Lunar : Contrôle luminosité](/lunar-luminosite-ecrans-externes-macos/)
 - [Homebrew : Installation](/installation-homebrew-macos/)
 
 ---

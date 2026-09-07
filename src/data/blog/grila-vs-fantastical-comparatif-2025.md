@@ -135,7 +135,7 @@ J'ai découvert **Grila** (le calendrier hotkey par Low Tech Guys) à **6€ one
 
 ### 🎯 Qu'est-ce que Grila ?
 
-**Grila** = **Calendrier hotkey-driven** créé par [Low Tech Guys](https://lowtechguys.com/) (mêmes devs que [Lunar](/2025-11-27-lunar-luminosite-ecrans-externes-macos/), [Clop](/2025-11-27-clop-compression-images-videos-macos/)).
+**Grila** = **Calendrier hotkey-driven** créé par [Low Tech Guys](https://lowtechguys.com/) (mêmes devs que [Lunar](/lunar-luminosite-ecrans-externes-macos/), [Clop](/clop-compression-images-videos-macos/)).
 
 **Le pitch** : "A calendar that's always one hotkey away."
 
@@ -1135,8 +1135,8 @@ Option-only hotkeys bugués sur Sequoia
 - **[Stack Low-Tech complète](/10-outils-low-tech-macos-guide-complet/)** (Grila + Lunar + Clop + rcmd)
 - **[rcmd](/rcmd-alternative-cmd-tab-macos/)** (hotkeys complémentaires)
 - **[Raycast vs Alfred](/raycast-vs-alfred-spotlight-comparatif-macos/)** (Raycast Calendar extension)
-- **[Lunar](/2025-11-27-lunar-luminosite-ecrans-externes-macos/)** (setup multi-écrans)
-- **[Clop](/2025-11-27-clop-compression-images-videos-macos/)** (compression fichiers)
+- **[Lunar](/lunar-luminosite-ecrans-externes-macos/)** (setup multi-écrans)
+- **[Clop](/clop-compression-images-videos-macos/)** (compression fichiers)
 
 **Communautés** :
 - [Mac Power Users Forum - Grila](https://talk.macpowerusers.com/t/grila-a-calendar-for-keyboard-addicts/31581)
