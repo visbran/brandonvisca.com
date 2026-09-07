@@ -58,12 +58,11 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: Build site
         run: pnpm run build:cf
-      - name: Check internal links with htmltest
-        uses: wjdp/htmltest-action@master
-        with:
-          path: dist
-          config: .htmltest.yml
-        continue-on-error: true
+      - name: Check internal links
+        # Bloquant : c'est le contrôle qui manquait quand 045f37d a introduit des
+        # liens vers un article reverté. htmltest était décoratif (continue-on-error)
+        # et référençait un .htmltest.yml inexistant.
+        run: python3 scripts/check-internal-links.py
 
   frontmatter-audit:
     name: Frontmatter & SEO Audit
