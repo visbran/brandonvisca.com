@@ -933,9 +933,9 @@ Description: Renforcez la sécurité de vos apps web avec Permissions-Policy Ngi
 Tags: 
 Publié: 2025-04-27T17:12:59+02:00
 
-## Comprendre les blocs location de Nginx et leur impact sur la sécurité
+## Nginx location : blocs, priorités et pièges de sécurité
 URL: https://brandonvisca.com/nginx-location-bloc-et-securite/
-Description: Maîtrisez les blocs location Nginx : types, priorités, regex et implications sécurité. Guide complet avec exemples pratiques pour configurer vos sites.
+Description: Nginx location : types de blocs, ordre de priorité, regex et pièges de sécurité. Guide complet avec des exemples de configuration testés.
 Tags: 
 Publié: 2025-04-15T20:25:29+02:00
 
@@ -1077,9 +1077,9 @@ Description: Apprenez à changer le fuseau horaire, définir le fuseau horaire e
 Tags: 
 Publié: 2024-06-13T11:21:00+02:00
 
-## Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?
+## Hardening serveur Linux : le durcissement complet, étape par étape
 URL: https://brandonvisca.com/securite-de-votre-serveur-linux/
-Description: Guide complet pour renforcer la sécurité de votre serveur Linux : SSH, pare-feu ufw, fail2ban, mises à jour auto et surveillance des logs. Testé en prod.
+Description: Hardening serveur Linux : SSH, pare-feu ufw, fail2ban, sysctl, mises à jour automatiques et surveillance des logs. Durcissement testé en prod.
 Tags: 
 Publié: 2024-06-10T19:29:00+02:00
 
