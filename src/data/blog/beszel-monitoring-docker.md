@@ -33,7 +33,7 @@ Aujourd'hui je te présente **Beszel**, un outil de monitoring auto-hébergé é
 
 ## Table des matières
 
-## Qu'est-ce que Beszel et pourquoi il te fera gagner du temps
+## Beszel Docker : ce que c'est et pourquoi tu vas gagner du temps
 
 Beszel, c'est le petit dernier de la famille monitoring auto-hébergé. C'est un système de monitoring de serveurs **open-source** qui se veut minimaliste : pas de base de données externe à configurer, pas de TSDB, pas de PromQL. Juste un **hub** central qui collecte des métriques via SSH auprès d'**agents** installés sur chaque machine.
 

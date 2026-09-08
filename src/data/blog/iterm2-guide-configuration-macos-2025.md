@@ -36,7 +36,7 @@ Voici tout ce qu'il faut savoir pour l'installer, le configurer et en tirer le m
 
 ## Table des matières
 
-## Qu'est-ce qu'iTerm2 et pourquoi l'adopter ?
+## iTerm2 macOS : qu'est-ce que c'est et pourquoi l'adopter ?
 
 iTerm2 est un émulateur de terminal gratuit et open-source conçu exclusivement pour macOS. Il remplace le Terminal natif d'Apple avec des fonctionnalités que tout dev ou admin sys utilise au quotidien.
 

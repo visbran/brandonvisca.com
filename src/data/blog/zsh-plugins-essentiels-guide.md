@@ -192,7 +192,7 @@ Après tout ça, reload le shell :
 source ~/.zshrc
 ```
 
-## Ma config perso complète pour copier-coller
+## Zsh plugins essentiels : ma config perso complète à copier-coller
 
 Voici à quoi ressemble la ligne `plugins` dans mon `.zshrc` au quotidien :
 

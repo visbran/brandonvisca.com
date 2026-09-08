@@ -3,7 +3,16 @@ title: "Paperless-ngx : votre bureau numérique auto-hébergé avec OCR"
 description: Guide complet pour installer Paperless-ngx avec Docker Compose. Archivez, numérisez et retrouvez facilement vos documents dans votre bureau numérique.
 pubDatetime: 2026-05-31 06:00:00+00:00
 modDatetime: "2026-06-02T00:00:00.000Z"
-focusKeyword: paperless-ngx docker
+focusKeyword: paperless-ngx
+faqs:
+  - question: "Paperless-ngx peut-il lire des documents en plusieurs langues ?"
+    answer: "Oui. La variable PAPERLESS_OCR_LANGUAGE accepte plusieurs langues combinees, par exemple fra+eng. Tesseract applique alors l'OCR dans chacune d'elles."
+  - question: "Quelle configuration materielle minimale pour Paperless-ngx ?"
+    answer: "Un Raspberry Pi 4 avec 4 Go de RAM suffit pour un usage familial. Pour de gros volumes, vise 2 coeurs CPU et 8 Go de RAM."
+  - question: "Peut-on importer des fichiers Office (.docx, .xlsx) ?"
+    answer: "Oui, en ajoutant les services Gotenberg et Tika a la stack. Paperless les convertit alors automatiquement en PDF avant l'OCR."
+  - question: "Comment sauvegarder proprement une instance Paperless-ngx ?"
+    answer: "Combine le backup du dossier ~/docker/paperless (volumes) avec l'export natif via document_exporter. Et teste ta restauration au moins une fois par an."
 author: Brandon Visca
 tags:
   - debutant
@@ -14,7 +23,6 @@ tags:
   - ocr
 featured: false
 draft: false
-ogImage: ""
 ---
 
 > 💡 **TL;DR**

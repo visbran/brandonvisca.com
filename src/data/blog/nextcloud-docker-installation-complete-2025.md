@@ -1,10 +1,10 @@
 ---
-title: "Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)"
+title: "Nextcloud Docker : ton cloud perso en 1h (adieu Google Drive)"
 pubDatetime: "2025-10-26T20:58:49+01:00"
 modDatetime: "2026-08-31T00:00:00+01:00"
 author: Brandon Visca
-description: "Installe Nextcloud avec Docker en 1h : alternative Google Drive auto-hébergée, HTTPS gratuit, backup et synchro multi-appareils. Guide complet 2026."
-focusKeyword: "Nextcloud Docker installation"
+description: "Nextcloud Docker en 1h : alternative Google Drive auto-hébergée, HTTPS gratuit, backup et synchro multi-appareils. Guide complet 2026."
+focusKeyword: "Nextcloud Docker"
 tags:
   - docker
   - auto-hebergement
@@ -104,7 +104,7 @@ Et encore, si tu as déjà un serveur chez toi (Raspberry Pi, vieux PC), c'est *
 
 **Mon conseil :** commence sur VPS, migre sur homelab quand tu seras à l'aise.
 
-## Installation de Nextcloud avec Docker : la méthode propre
+## Nextcloud Docker : l'installation, la méthode propre
 
 ![Nextcloud Docker](7b962eb7-0c5e-4e5b-a5e6-1bc8861d75d6.png)
 
