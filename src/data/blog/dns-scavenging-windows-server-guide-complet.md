@@ -13,7 +13,7 @@ tags:
   - intermediaire
 featured: false
 draft: false
-focusKeyword: DNS Scavenging Windows Server
+focusKeyword: "dns scavenging"
 faqs:
   - question: "Le DNS Scavenging peut-il supprimer des enregistrements statiques ?"
     answer: "Non. Le scavenging ne touche que les enregistrements dynamiques (créés via DHCP ou ddns). Les enregistrements statiques sont intouchables."

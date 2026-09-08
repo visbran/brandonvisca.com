@@ -12,7 +12,7 @@ tags:
   - debutant
 featured: false
 draft: false
-focusKeyword: Raycast macOS
+focusKeyword: "raycast"
 faqs:
   - question: "Raycast est-il gratuit ?"
     answer: "Oui. Raycast est gratuit avec toutes les fonctionnalités essentielles : launcher, extensions, snippets, clipboard history, window management. Raycast Pro (~8$/mois) ajoute l'IA, la sync cloud et les profils d'équipe."

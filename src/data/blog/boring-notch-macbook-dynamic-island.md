@@ -13,7 +13,7 @@ tags:
   - auto-hebergement
 featured: false
 draft: false
-focusKeyword: boring notch macos
+focusKeyword: "boring notch"
 ogImage: "" 
 ---
 > 💡 **TL;DR**

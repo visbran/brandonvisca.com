@@ -12,7 +12,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: zsh plugins essentiels
+focusKeyword: "zsh plugins"
 faqs:
   - question: "Dois-je utiliser Oh My Zsh pour installer ces plugins ?"
     answer: "Non, mais c'est bien plus simple. Sans OMZ, tu dois cloner chaque dépôt manuellement, sourcer les fichiers dans ton .zshrc et gérer les dépendances toi-même. Avec OMZ, c'est un ajout dans le tableau plugins=() et un reload."

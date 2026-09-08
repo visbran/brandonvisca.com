@@ -13,7 +13,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: technitium dns server
+focusKeyword: "technitium"
 faqs:
   - question: "Technitium DNS Server peut-il remplacer Pi-hole ?"
     answer: "Oui. Technitium DNS Server offre le blocage de publicités via listes DNS, un résolveur récursif natif, DNSSEC, DoH et DoT, dans une seule image Docker. Il fait tout ce que Pi-hole fait, sans dépendance à dnsmasq ni à un résolveur externe."

@@ -12,7 +12,7 @@ tags:
   - monitoring
 featured: false
 draft: false
-focusKeyword: beszel docker
+focusKeyword: "beszel"
 faqs:
   - question: "Combien de RAM consomme l'agent Beszel ?"
     answer: "Très peu, l'agent tourne en binaire Go et consomme moins de 20 Mo de RAM, ce qui le rend idéal pour un Raspberry Pi ou un petit VPS."

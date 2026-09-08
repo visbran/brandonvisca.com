@@ -12,7 +12,7 @@ tags:
   - guide
 featured: true
 draft: false
-focusKeyword: sendme cli
+focusKeyword: "sendme"
 ---
 > 💡 **TL;DR**
 > - Sendme CLI envoie des fichiers P2P en 2 commandes, sans IP, sans config SSH, sans serveur

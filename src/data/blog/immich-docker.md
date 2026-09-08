@@ -13,7 +13,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: immich docker
+focusKeyword: "immich"
 faqs:
   - question: "Immich est-il vraiment gratuit ?"
     answer: "Oui, c'est open-source sous licence AGPL-3.0 et 100 % gratuit en self-hosted. Aucune fonctionnalité payante, aucun abonnement."

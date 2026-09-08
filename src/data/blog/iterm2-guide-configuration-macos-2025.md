@@ -12,7 +12,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: iTerm2 macOS
+focusKeyword: "iterm2"
 faqs:
   - question: "iTerm2 est-il gratuit ?"
     answer: "Oui, iTerm2 est complètement gratuit et open-source. Aucune limitation ni version premium."

@@ -13,7 +13,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: homebrew macos
+focusKeyword: "homebrew"
 faqs:
   - question: "Homebrew est-il gratuit ?"
     answer: "Oui, Homebrew est un projet open source entièrement gratuit. Il fonctionne sur n'importe quel Mac sous macOS 11 (Big Sur) ou plus récent."

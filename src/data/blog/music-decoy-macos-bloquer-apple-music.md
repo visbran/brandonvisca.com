@@ -10,7 +10,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: Music Decoy macOS
+focusKeyword: "music decoy"
 faqs:
   - question: "Music Decoy est-il totalement gratuit ?"
     answer: "Oui, Music Decoy est gratuit et open source (disponible sur GitHub). Il ne demande aucun abonnement ni paiement unique."

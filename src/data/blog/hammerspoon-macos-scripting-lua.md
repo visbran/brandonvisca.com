@@ -13,7 +13,7 @@ tags:
   - debutant
 featured: false
 draft: false
-focusKeyword: hammerspoon macos
+focusKeyword: "hammerspoon"
 faqs: []
 ogImage: ""
 ---

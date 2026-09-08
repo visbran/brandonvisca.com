@@ -13,7 +13,7 @@ tags:
   - auto-hebergement
 featured: false
 draft: false
-focusKeyword: nginx proxy manager docker
+focusKeyword: "nginx proxy manager"
 ---
 > 💡 **TL;DR**
 > - SSL Let's Encrypt auto en quelques clics, renouvellement transparent tous les 90 jours

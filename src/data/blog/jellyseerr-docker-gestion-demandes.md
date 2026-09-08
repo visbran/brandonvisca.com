@@ -11,7 +11,7 @@ tags:
   - debutant
 featured: false
 draft: false
-focusKeyword: jellyseerr docker
+focusKeyword: "jellyseerr"
 faqs:
   - question: "Jellyseerr fonctionne-t-il avec Plex et Jellyfin ?"
     answer: "Oui, Jellyseerr supporte nativement Jellyfin et Plex. Connecte ton serveur média dans les paramètres pour synchroniser les bibliothèques et les utilisateurs."

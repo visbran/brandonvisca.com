@@ -12,7 +12,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: Ubuntu Active Directory SSSD
+focusKeyword: "sssd"
 faqs:
   - question: "Comment dépanner les problèmes de SSSD ?"
     answer: "Lance systemctl status sssd et journalctl -u sssd pour voir les erreurs. Les causes fréquentes : DNS mal pointé vers le DC, certificats Kerberos expirés, permissions sur sssd.conf (doit être 600)."
