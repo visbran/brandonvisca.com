@@ -1,8 +1,8 @@
 ---
 title: "Authelia Docker : authentification double facteur centralisée pour ton homelab"
 description: "Authelia Docker : mets en place l'authentification 2FA centralisée pour tous tes services homelab. Guide complet Docker Compose, TOTP et SSO."
-pubDatetime: 2026-09-07 08:00:00+00:00
-modDatetime: "2026-09-07T08:00:00.000Z"
+pubDatetime: "2026-09-08T11:04:38+02:00"
+modDatetime: "2026-09-08T11:04:38+02:00"
 author: Brandon
 tags:
   - intermediaire

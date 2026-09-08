@@ -188,6 +188,8 @@ Chrome headless peut monter à 1 Go de RAM selon les pages rendues. Si tu n'as q
 
 Changedetection.io stocke tout dans une base SQLite locale. Avec plusieurs centaines de surveillances, ça peut ramer. Limite-toi à quelques dizaines de pages surveillées, ou migre vers une base de données externe si tu veux scaler (voir la doc officielle pour PostgreSQL).
 
+💡 À lire aussi : [Authelia Docker : authentification double facteur centralisée pour ton homelab](/authelia-docker-authentification-2fa-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 Changedetection.io est l'un de ces outils que tu installes une fois et que tu finis par utiliser tous les jours sans y penser. Il fait exactement ce qu'il promet : surveiller le web à ta place, te prévenir au bon moment, et te laisser le contrôle total sur tes données.
