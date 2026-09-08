@@ -181,7 +181,7 @@ Avec Traefik et labels Docker Compose :
 ```yaml
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.komga.rule=Host(\`komga.exemple.com\`)"
+      - "traefik.http.routers.komga.rule=Host(`komga.exemple.com`)"
       - "traefik.http.routers.komga.tls=true"
       - "traefik.http.routers.komga.tls.certresolver=letsencrypt"
       - "traefik.http.services.komga.loadbalancer.server.port=25600"

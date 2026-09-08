@@ -260,7 +260,7 @@ Restaure ta sauvegarde et consulte les logs détaillés avec `docker logs uptime
 
 Dans mon homelab, Uptime Kuma surveille 47 endpoints depuis 2 ans. Voici une config type pour un homelab classique :
 
-```yaml
+```text
 Monitors à créer :
 ├── HTTP(S) Monitor
 │   ├── Nextcloud (https://cloud.maison.local)

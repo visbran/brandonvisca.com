@@ -205,7 +205,7 @@ Si tu utilises un reverse proxy (fortement recommandé), ajoute cette configurat
 ```yaml
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.immich.rule=Host(\`photos.ton-domaine.fr\`)"
+      - "traefik.http.routers.immich.rule=Host(`photos.ton-domaine.fr`)"
       - "traefik.http.routers.immich.entrypoints=websecure"
       - "traefik.http.routers.immich.tls.certresolver=letsencrypt"
       - "traefik.http.services.immich.loadbalancer.server.port=2283"
