@@ -777,9 +777,9 @@ Description: Installe Jellyfin avec Docker en 30 min. Alternative Netflix auto-h
 Tags: 
 Publié: 2025-10-26T20:59:01+01:00
 
-## Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)
+## Nextcloud Docker : ton cloud perso en 1h (adieu Google Drive)
 URL: https://brandonvisca.com/nextcloud-docker-installation-complete-2025/
-Description: Installe Nextcloud avec Docker en 1h : alternative Google Drive auto-hébergée, HTTPS gratuit, backup et synchro multi-appareils. Guide complet 2026.
+Description: Nextcloud Docker en 1h : alternative Google Drive auto-hébergée, HTTPS gratuit, backup et synchro multi-appareils. Guide complet 2026.
 Tags: 
 Publié: 2025-10-26T20:58:49+01:00
 
