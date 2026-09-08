@@ -1,13 +1,19 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-07
-# Total articles : 179
+# Dernière mise à jour : 2026-09-08
+# Total articles : 180
 
 ## BetterDisplay macOS hidpi : résolutions custom et contrôle DDC sur écrans externes
 URL: https://brandonvisca.com/betterdisplay-macos-hidpi-ddc/
 Description: BetterDisplay macOS hidpi : comment forcer les résolutions HiDPI et activer le contrôle DDC sur n'importe quel écran externe sans payer un Studio Display.
 Tags: 
 Publié: 2026-09-07 11:00:00+00:00
+
+## Authelia Docker : authentification double facteur centralisée pour ton homelab
+URL: https://brandonvisca.com/authelia-docker-authentification-2fa-homelab/
+Description: Authelia Docker : mets en place l'authentification 2FA centralisée pour tous tes services homelab. Guide complet Docker Compose, TOTP et SSO.
+Tags: 
+Publié: 2026-09-07 08:00:00+00:00
 
 ## Numi macOS : calculatrice textuelle qui comprend le langage naturel
 URL: https://brandonvisca.com/numi-macos-calculatrice-textuelle/
