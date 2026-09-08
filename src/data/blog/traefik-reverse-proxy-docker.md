@@ -412,6 +412,8 @@ Si tu préfères rester dans un réseau privé sans jamais exposer tes services 
 
 Et si tu veux continuer à construire ton infrastructure Docker, jette un œil à mes guides pour [Nextcloud](/nextcloud-docker-installation-complete-2025/), [Vaultwarden](/vaultwarden-docker-gestionnaire-mots-de-passe/), ou pour automatiser les mises à jour avec [Watchtower](/watchtower-mise-a-jour-docker-auto/). Bon auto-hébergement !
 
+💡 À lire aussi : [Authelia Docker : authentification double facteur centralisée pour ton homelab](/authelia-docker-authentification-2fa-homelab/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)](/yopass-vs-privatebin-vs-password-pusher/)
