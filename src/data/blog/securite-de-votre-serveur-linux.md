@@ -1,6 +1,6 @@
 ---
-title: "Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?"
-description: "Guide complet pour renforcer la sécurité de votre serveur Linux : SSH, pare-feu ufw, fail2ban, mises à jour auto et surveillance des logs. Testé en prod."
+title: "Hardening serveur Linux : le durcissement complet, étape par étape"
+description: "Hardening serveur Linux : SSH, pare-feu ufw, fail2ban, sysctl, mises à jour automatiques et surveillance des logs. Durcissement testé en prod."
 pubDatetime: "2024-06-10T19:29:00+02:00"
 modDatetime: "2026-06-02T10:00:00.000Z"
 author: Brandon Visca
@@ -13,7 +13,7 @@ tags:
   - avance
 featured: false
 draft: false
-focusKeyword: sécurité de votre serveur linux
+focusKeyword: "hardening serveur linux"
 faqs:
   - question: "Qu'est-ce que le durcissement d'un serveur sous Linux ?"
     answer: "C'est l'ensemble des mesures de sécurité appliquées à un serveur pour minimiser les vulnérabilités : SSH durci, firewall, fail2ban, sysctl renforcés."
@@ -292,7 +292,7 @@ sudo fail2ban-client status
 sudo fail2ban-client status sshd
 ```
 
-## Conclusion : sécurité de votre serveur Linux en pratique
+## Conclusion : le hardening serveur Linux en pratique
 
 Ces mesures constituent une base solide pour tout serveur Linux exposé sur internet. L'ordre d'application compte : commence par SSH (tu ne veux pas te bloquer toi-même), puis sysctl, puis fail2ban.
 

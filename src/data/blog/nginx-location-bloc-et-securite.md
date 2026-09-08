@@ -1,6 +1,6 @@
 ---
-title: Comprendre les blocs location de Nginx et leur impact sur la sécurité
-description: "Maîtrisez les blocs location Nginx : types, priorités, regex et implications sécurité. Guide complet avec exemples pratiques pour configurer vos sites."
+title: "Nginx location : blocs, priorités et pièges de sécurité"
+description: "Nginx location : types de blocs, ordre de priorité, regex et pièges de sécurité. Guide complet avec des exemples de configuration testés."
 pubDatetime: "2025-04-15T20:25:29+02:00"
 author: Brandon Visca
 tags:
@@ -11,7 +11,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: Nginx location sécurité
+focusKeyword: "nginx location"
 faqs:
   - question: "Quelle est la priorité entre un bloc location exact (=) et un bloc regex ?"
     answer: "L'ordre de priorité Nginx est : 1) location = (exact), 2) location ^~ (préfixe prioritaire), 3) location ~ ou ~* (regex, premier match gagne), 4) location /prefix (préfixe le plus long). Les blocs = court-circuitent toute évaluation regex."
@@ -41,7 +41,7 @@ Au programme :
 - Les erreurs fréquentes
 - Les bonnes pratiques à adopter
 - - - - - -
-## Qu’est-ce qu’un bloc location dans Nginx ?
+## Nginx location : qu’est-ce qu’un bloc location ?
 
 Un bloc location permet de définir un **comportement spécifique pour une requête HTTP en fonction de son URI**. C'est la brique sur laquelle reposent la plupart des règles de durcissement, des [headers de sécurité](/securiser-nginx-avec-headers-http/) au filtrage d'extensions. Il est souvent utilisé pour :
 
