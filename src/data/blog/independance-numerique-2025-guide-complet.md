@@ -30,8 +30,7 @@ faqs:
 
 ## Table des matières
 
-Pourquoi l’indépendance numérique, maintenant ?
------------------------------------------------
+## Pourquoi l’indépendance numérique, maintenant ?
 
 ### La vraie question : Combien tu paies pour tes données ?
 
@@ -83,8 +82,7 @@ Et c’est sans compter :
 
 - - - - - -
 
-Le matériel nécessaire : Moins cher que tu penses
--------------------------------------------------
+## Le matériel nécessaire : Moins cher que tu penses
 
 ### Option 1 : Tu as déjà un serveur/NAS ?
 
@@ -129,8 +127,7 @@ Le matériel nécessaire : Moins cher que tu penses
 
 - - - - - -
 
-Les 3 services à installer (dans l’ordre)
------------------------------------------
+## Les 3 services à installer (dans l’ordre)
 
 ### 🗄️ Service 1 : Nextcloud, Ton cloud personnel
 
@@ -266,8 +263,7 @@ Vaultwarden, c’est **1Password + Dashlane + LastPass** dans un gestionnaire de
 
 - - - - - -
 
-Le plan d’installation : Un weekend suffit
-------------------------------------------
+## Le plan d’installation : Un weekend suffit
 
 ### Vendredi soir : Préparation (1h)
 
@@ -389,8 +385,7 @@ Le plan d’installation : Un weekend suffit
 
 - - - - - -
 
-Les coûts réels : Le calcul complet
------------------------------------
+## Les coûts réels : Le calcul complet
 
 ### Scénario 1 : Mini PC à domicile
 
@@ -460,8 +455,7 @@ Les coûts réels : Le calcul complet
 
 - - - - - -
 
-Les avantages cachés (au-delà de l’argent)
-------------------------------------------
+## Les avantages cachés (au-delà de l’argent)
 
 ### 1. Vie privée &amp; RGPD
 
@@ -522,8 +516,7 @@ Les avantages cachés (au-delà de l’argent)
 
 - - - - - -
 
-Les inconvénients (soyons honnêtes)
------------------------------------
+## Les inconvénients (soyons honnêtes)
 
 ### Ce que tu dois accepter
 
@@ -558,8 +551,7 @@ Les inconvénients (soyons honnêtes)
 
 - - - - - -
 
-FAQ : Questions fréquentes
---------------------------
+## FAQ : Questions fréquentes
 
 ### C’est légal d’héberger mes propres services ?
 
@@ -627,8 +619,7 @@ Les guides sont conçus pour débutants motivés. Temps d’apprentissage : 1 we
 
 - - - - - -
 
-Aller plus loin : La stack complète
------------------------------------
+## Aller plus loin : La stack complète
 
 ### Services complémentaires recommandés
 
@@ -658,8 +649,7 @@ Aller plus loin : La stack complète
 
 - - - - - -
 
-🎁 BONUS : Ton pack de démarrage gratuit
----------------------------------------
+## 🎁 BONUS : Ton pack de démarrage gratuit
 
 ### Ce que tu reçois gratuitement
 
@@ -714,8 +704,7 @@ En téléchargeant le **Pack Indépendance Numérique 2025**, tu obtiens :
 
 - - - - - -
 
-Conclusion : Et maintenant ?
-----------------------------
+## Conclusion : Et maintenant ?
 
 Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** tout en économisant **534€/an minimum**.
 
@@ -742,8 +731,7 @@ Tu viens de découvrir comment **reprendre le contrôle de ta vie numérique** t
 
 - - - - - -
 
-📚 Ressources complémentaires
-----------------------------
+## 📚 Ressources complémentaires
 
 ### Articles liés sur BrandonVisca.com
 

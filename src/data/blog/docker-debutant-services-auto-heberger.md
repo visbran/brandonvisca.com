@@ -49,8 +49,7 @@ Pas de théorie inutile. Que du concret.
 ## Table des matières
 
 
-Docker, c’est quoi (sans le jargon de dev)
-------------------------------------------
+## Docker, c’est quoi (sans le jargon de dev)
 
 Imagine que tu veuilles installer Nextcloud sur ton serveur.
 
@@ -86,8 +85,7 @@ Docker n’est pas de la virtualisation comme Proxmox ou VMware. C’est beaucou
 
 - - - - - -
 
-Pourquoi Docker change tout pour l’auto-hébergement
----------------------------------------------------
+## Pourquoi Docker change tout pour l’auto-hébergement
 
 Si tu as lu mon guide sur [l’auto-hébergement](https://brandonvisca.com/auto-hebergement-guide-complet-2025/), tu sais qu’on peut héberger plein de services. Mais Docker rend ça 10x plus facile.
 
@@ -156,8 +154,7 @@ Déconnecte-toi et reconnecte-toi pour que ça prenne effet. Ensuite, tu pourras
 
 - - - - - -
 
-Docker Compose : Le fichier magique
------------------------------------
+## Docker Compose : Le fichier magique
 
 Docker Compose, c’est ce qui rend Docker vraiment puissant pour l’auto-hébergement.
 
@@ -202,8 +199,7 @@ docker compose up -d
 
 - - - - - -
 
-Organisation des fichiers (bonne pratique)
-------------------------------------------
+## Organisation des fichiers (bonne pratique)
 
 Avant de déployer tes services, crée une structure propre :
 
@@ -630,8 +626,7 @@ Pour une configuration avancée avec reverse proxy Caddy et comparatif complet F
 
 - - - - - -
 
-Commandes Docker essentielles (antisèche)
------------------------------------------
+## Commandes Docker essentielles (antisèche)
 
 ### Gestion des conteneurs
 
@@ -694,8 +689,7 @@ docker system prune -a
 
 - - - - - -
 
-Erreurs fréquentes et solutions
--------------------------------
+## Erreurs fréquentes et solutions
 
 ### ❌ Erreur : « Port already allocated »
 
@@ -759,8 +753,7 @@ sudo systemctl enable docker
 
 - - - - - -
 
-Bonnes pratiques pour ton homelab Docker
-----------------------------------------
+## Bonnes pratiques pour ton homelab Docker
 
 ### 1. Toujours utiliser des versions fixes
 
@@ -834,8 +827,7 @@ services:
 
 - - - - - -
 
-Sauvegarder tes services Docker
--------------------------------
+## Sauvegarder tes services Docker
 
 Les conteneurs Docker sont éphémères. Si tu supprimes un conteneur, tu perds ses données… **sauf si tu as bien configuré les volumes**.
 
@@ -883,8 +875,7 @@ services:
 
 - - - - - -
 
-Conclusion : Docker, ton meilleur allié homelab
------------------------------------------------
+## Conclusion : Docker, ton meilleur allié homelab
 
 Si tu retiens une chose de cet article, c’est ça : **Docker simplifie tout**.
 
@@ -927,8 +918,7 @@ Et si tu cherches une alternative plus sécurisée à Docker, j'ai testé [Podma
 
 - - - - - -
 
-FAQ : Les questions Docker qui reviennent souvent
--------------------------------------------------
+## FAQ : Les questions Docker qui reviennent souvent
 
 ### **Docker vs LXC vs VM, quelle différence ?**
 
