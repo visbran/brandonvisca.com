@@ -104,6 +104,8 @@ Pas tout est magique. Quelques réalités :
 
 Moi je reste sur BetterDisplay parce que le combo HiDPI + DDC + écrans virtuels couvre tous mes cas. Et la barre de menu native est rapide.
 
+💡 À lire aussi : [Default Folder X macOS : les boîtes de dialogue Ouvrir/Enregistrer enfin intelligentes](/default-folder-x-macos-dialogues-intelligents/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 Si tu veux automatiser ton setup macOS au-delà de l'affichage, j'ai publié des guides sur [Amethyst, le tiling window manager gratuit](/amethyst-macos-tiling-window-manager/) pour organiser tes fenêtres au clavier, et sur [Maccy, le presse-papiers avec historique](/maccy-macos-presse-papiers-historique/) pour ne plus jamais perdre un copier-coller.
