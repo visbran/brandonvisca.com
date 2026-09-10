@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-09
-# Total articles : 181
+# Dernière mise à jour : 2026-09-10
+# Total articles : 182
+
+## Scrutiny Docker : monitoring SMART de tes disques avec alertes
+URL: https://brandonvisca.com/scrutiny-docker-monitoring-smart-disques/
+Description: Scrutiny Docker : surveille la santé SMART de tes disques en temps réel, reçois des alertes avant la panne. Guide déploiement complet homelab 2026.
+Tags: 
+Publié: 2026-09-10T11:02:11+02:00
 
 ## Default Folder X macOS : les boîtes de dialogue Ouvrir/Enregistrer enfin intelligentes
 URL: https://brandonvisca.com/default-folder-x-macos-dialogues-intelligents/
