@@ -277,6 +277,8 @@ Oui. Beszel envoie les alertes par email via PocketBase, mais tu peux brancher u
 
 Pour compléter ta stack de monitoring et surveiller aussi les changements sur des pages web extérieures (prix, disponibilité produit), tu peux utiliser [Changedetection.io](/changedetection-docker-surveillance-web/) que j'ai aussi couvert en Docker.
 
+💡 À lire aussi : [Scrutiny Docker : monitoring SMART de tes disques avec alertes](/scrutiny-docker-monitoring-smart-disques/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [Netdata Docker : monitorer ton serveur en temps réel sans te ruiner](/netdata-docker/)
