@@ -50,3 +50,8 @@ https://brandonvisca-com.pages.dev/* https://brandonvisca.com/:splat 301
 /2026-03-10-hyperv-gen1-vs-gen2-quelle-generation-choisir/    /hyperv-gen1-vs-gen2-quelle-generation-choisir/    301
 /2026-03-10-restaurer-vm-hyperv-vhdx-os-corrompu-winpe/       /restaurer-vm-hyperv-vhdx-os-corrompu-winpe/       301
 /2026-03-14-partager-mot-de-passe-securise-comparatif/        /partager-mot-de-passe-securise-comparatif/        301
+
+# Fusion d'articles → page canonique
+# alt-sendme fusionne dans sendme-cli le 2026-09-11 : 0 impression sur 90 jours,
+# et le produit documente a ete renomme DashBeam en v0.6.2 (30 juillet 2026).
+/alt-sendme-transfert-fichiers-p2p-open-source/ /sendme-cli-transfert-fichiers-p2p-terminal/ 301
