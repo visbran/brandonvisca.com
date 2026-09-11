@@ -8,11 +8,11 @@ tags:
   - macos
   - productivite
   - terminal
-  - intermediaire
   - guide
+  - intermediaire
 featured: false
 draft: false
-focusKeyword: "iterm2"
+focusKeyword: iterm2
 faqs:
   - question: "iTerm2 est-il gratuit ?"
     answer: "Oui, iTerm2 est complètement gratuit et open-source. Aucune limitation ni version premium."
@@ -74,7 +74,7 @@ brew install --cask iterm2
 Si tu veux tester les dernières fonctionnalités avant tout le monde :
 
 ```bash
-brew install --cask iterm2-beta
+brew install --cask iterm2@beta
 ```
 
 ⚠️ **Attention** : la beta peut introduire des régressions. Garde-la sur une machine secondaire ou un profil de test.

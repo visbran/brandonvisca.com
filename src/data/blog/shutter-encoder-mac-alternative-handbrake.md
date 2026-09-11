@@ -432,6 +432,8 @@ Shutter Encoder est une interface graphique pour FFmpeg. Si tu maîtrises FFmpeg
 
 Ça dépend du codec. H.264 (MP4) est compatible partout. H.265 fonctionne sur les devices récents (2016+). Pour maximiser compatibilité, utilise H.264.
 - - - - - -
+💡 À lire aussi : [iTerm2 macOS 2026 : guide complet (install, config, thèmes)](/iterm2-guide-configuration-macos-2025/), dans la même veine que cet article.
+
 ## Liens utiles
 
 - [Site officiel Shutter Encoder](https://www.shutterencoder.com/) (source de téléchargement)
