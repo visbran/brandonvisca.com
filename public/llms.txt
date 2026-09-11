@@ -1,7 +1,7 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-09-11
-# Total articles : 183
+# Total articles : 182
 
 ## Cheatsheet macOS : CheatSheet est mort, KeyClu prend le relais
 URL: https://brandonvisca.com/cheatsheet-macos-raccourcis-clavier/
@@ -350,12 +350,6 @@ URL: https://brandonvisca.com/netboot-xyz-docker-pxe-boot/
 Description: Netboot docker avec Netboot.xyz : boot PXE pour installer Linux, Windows ou BSD via le réseau. Guide Docker Compose complet et testé.
 Tags: 
 Publié: 2026-07-06T08:00:00.000Z
-
-## Alt-SendMe : L'Arme Secrète pour Partager des Fichiers Sans Espionnage (Guide 2026)
-URL: https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/
-Description: Alt-SendMe transfert fichiers en P2P : alternative gratuite à WeTransfer, chiffrement de bout en bout, aucune limite de taille. Guide complet 2026.
-Tags: 
-Publié: 2026-07-06T00:00:00+01:00
 
 ## Sunshine Docker : ton serveur de streaming de jeux maison avec Moonlight
 URL: https://brandonvisca.com/sunshine-docker-streaming-jeux/
