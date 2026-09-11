@@ -331,6 +331,8 @@ Oui. Actual Budget utilise un chiffrement de bout en bout côté client. Tes don
 
 Tu perds l'accès à tes données. Il n'y a pas de "mot de passe oublié" ni de backdoor. C'est le prix du chiffrement E2E. Stocke ton mot de passe dans un gestionnaire de mots de passe comme Vaultwarden.
 
+💡 À lire aussi : [Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé](/romm-docker-retro-gaming/), dans la même veine que cet article.
+
 ## Conclusion
 
 Actual Budget est l'outil qu'il manquait à ton homelab. Pas un tracker de dépenses anonyme qui te juge après coup, mais un véritable système de budgeting qui te dit **à l'avance** où va ton argent. La méthode des enveloppes est la plus efficace que j'ai testée pour ne plus finir à découvert, et Actual Budget la rend accessible sans facturer 15 dollars par mois.

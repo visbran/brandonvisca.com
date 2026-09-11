@@ -1,20 +1,18 @@
 ---
-author: Brandon
+title: "Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé"
+description: "Guide Romm Docker : déploie un gestionnaire de ROMs rétro-gaming auto-hébergé. Docker Compose complet, scan auto et intégration émulateurs."
 pubDatetime: "2026-07-12T08:00:00.000Z"
 modDatetime: "2026-07-12T08:00:00.000Z"
-title: "Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé"
-slug: romm-docker-retro-gaming
-featured: false
-draft: false
+author: Brandon
 tags:
-  - debutant
   - auto-hebergement
   - docker
   - retro-gaming
   - emulation
-focusKeyword: "romm docker"
-description: "Guide Romm Docker : déploie un gestionnaire de ROMs rétro-gaming auto-hébergé. Docker Compose complet, scan auto et intégration émulateurs."
-ogImage: ""
+  - debutant
+featured: false
+draft: false
+focusKeyword: romm docker
 faqs:
   - question: "Romm supporte-t-il les jeux multi-disques ?"
     answer: "Oui, Romm regroupe automatiquement les fichiers multi-disques placés dans un sous-dossier commun. Une seule fiche est créée avec un sélecteur de disque."
@@ -23,7 +21,6 @@ faqs:
   - question: "Romm peut-il lancer les jeux directement dans le navigateur ?"
     answer: "Romm intègre EmulatorJS pour certains systèmes 8 et 16 bits. Pour les consoles plus exigeantes, il génère des liens vers des émulateurs locaux comme RetroArch ou DuckStation."
 ---
-
 > 💡 **TL;DR**
 > - Romm est un gestionnaire de ROMs rétro-gaming auto-hébergé, open-source, qui scanne, identifie et organise tes jeux avec métadonnées et pochettes
 > - Tu le déploies en 10 minutes avec Docker Compose : conteneur Romm + MariaDB + Redis, stack complète et prête à l'emploi
@@ -45,7 +42,7 @@ Tu veux une solution qui :
 - gère les multi-discs, les versions alternatives et les traductions fan-made,
 - reste 100 % sur ton infrastructure, sans abonnement ni télémétrie.
 
-Romm est la réponse. Développé par zurdi15 et la communauté, c'est le chaînon manquant entre ton dossier `ROMS/` et une vraie bibliothèque de jeux rétro gérée par Romm Docker. Si tu cherches à compléter ton homelab média à côté de ton [serveur Komga pour BD et mangas](/komga-docker-bd-manga-auto-heberge/) ou de ton [Navidrome pour la musique](/navidrome-docker-serveur-musique/), Romm est le pendant gaming de ta stack auto-hébergée.
+Romm est la réponse. Développé par la communauté rommapp, à l'origine par zurdi15, c'est le chaînon manquant entre ton dossier `ROMS/` et une vraie bibliothèque de jeux rétro gérée par Romm Docker. Si tu cherches à compléter ton homelab média à côté de ton [serveur Komga pour BD et mangas](/komga-docker-bd-manga-auto-heberge/) ou de ton [Navidrome pour la musique](/navidrome-docker-serveur-musique/), Romm est le pendant gaming de ta stack auto-hébergée.
 
 ## Qu'est-ce que Romm exactement ?
 
@@ -65,7 +62,7 @@ Voici ce qu'il propose concrètement :
 - **Scan planifié** : surveillance automatique des dossiers pour détecter les nouveaux ajouts et les indexer sans intervention.
 - **API REST** : documentation Swagger incluse pour automatiser l'ajout de ROMs, la gestion des collections ou l'intégration avec d'autres outils.
 
-Le projet est open-source sous licence GPL-3.0, maintenu activement sur le repo `zurdi15/romm` avec plus de 4 000 stars sur GitHub. L'image Docker officielle `rommapp/romm` est publiée sur Docker Hub avec support amd64 et arm64. Si tu débutes avec Docker, commence par mon guide sur [les services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/) pour bien structurer ton environnement avant d'ajouter Romm Docker à ta stack.
+Le projet est open-source sous licence GPL-3.0, maintenu activement sur le repo `rommapp/romm`, qui dépasse les 12 700 stars sur GitHub (le projet a quitté le compte personnel `zurdi15` pour l'organisation `rommapp`). L'image Docker officielle `rommapp/romm` est publiée sur Docker Hub avec support amd64 et arm64. Si tu débutes avec Docker, commence par mon guide sur [les services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/) pour bien structurer ton environnement avant d'ajouter Romm Docker à ta stack.
 
 ## Prérequis
 
@@ -188,7 +185,7 @@ Romm attend une structure de dossiers logique. Voici l'organisation recommandée
     └── The Legend of Zelda - Phantom Hourglass (Europe).nds
 ```
 
-Le nom du dossier parent (`gba`, `snes`, `psx`) correspond à l'identifiant de plateforme reconnu par Romm. Consulte la [documentation officielle](https://github.com/zurdi15/romm/wiki/Supported-Platforms) pour la liste complète des slugs de plateformes. Garde les noms de fichiers propres : Romm utilise le nom de fichier pour l'identification si le hash matching échoue.
+Le nom du dossier parent (`gba`, `snes`, `psx`) correspond à l'identifiant de plateforme reconnu par Romm. Consulte la [documentation officielle](https://github.com/rommapp/romm/wiki/Supported-Platforms) pour la liste complète des slugs de plateformes. Garde les noms de fichiers propres : Romm utilise le nom de fichier pour l'identification si le hash matching échoue.
 
 ## Premier scan et scraping des métadonnées
 

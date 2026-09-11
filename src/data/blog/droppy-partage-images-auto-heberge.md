@@ -294,6 +294,8 @@ proxy_set_header Host $host;
 proxy_set_header X-Real-IP $remote_addr;
 ```
 
+💡 À lire aussi : [Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé](/romm-docker-retro-gaming/), dans la même veine que cet article.
+
 ## Conclusion
 
 Droppy est l'exemple parfait de ce que l'auto-hébergement fait de mieux : prendre un service quotidien banal (héberger une image et générer un lien), le déployer chez soi en quelques minutes, et récupérer le contrôle total sur ses données. Pas de compte à créer chez un tiers, pas de limite arbitraire, pas de lien qui meurt après six mois.
