@@ -2,22 +2,21 @@
 title: "Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)"
 description: "Sendme CLI : transfert P2P sécurisé en 2 commandes. NAT traversal automatique, aucun serveur requis. Alternative moderne à scp. Guide complet 2026."
 pubDatetime: "2025-12-09T21:14:00+01:00"
-modDatetime: "2026-07-06T00:00:00+01:00"
+modDatetime: "2026-09-11T23:10:00+02:00"
 author: Brandon Visca
 tags:
   - homelab
   - linux
-  - macos
-  - intermediaire
   - guide
+  - intermediaire
 featured: true
 draft: false
-focusKeyword: "sendme"
+focusKeyword: sendme
 ---
 > 💡 **TL;DR**
 > - Sendme CLI envoie des fichiers P2P en 2 commandes, sans IP, sans config SSH, sans serveur
 > - NAT traversal automatique via la stack Iroh (QUIC + TLS 1.3 + Blake3) : ça marche même derrière un firewall d'entreprise
-> - Compatible Linux, macOS, Windows, interopérable avec Alt-SendMe GUI
+> - Compatible Linux, macOS, Windows, interopérable avec DashBeam, la version graphique (ex-Alt-SendMe)
 
 Tu galères avec `scp` qui te demande des IP que tu ne connais pas ? Tu es obligé de passer par WeTransfer même pour un fichier de 10 Mo ? **Sendme CLI** va changer ça.
 
@@ -90,7 +89,7 @@ Le binaire sera copié dans le répertoire d'où tu lances le script.
 
 ### Option 3 : Homebrew (macOS)
 
-Si tu n'as pas encore [Homebrew installé sur ton Mac](https://brandonvisca.com/installation-homebrew-macos/), c'est le prérequis.
+Si tu n'as pas encore [Homebrew installé sur ton Mac](/installation-homebrew-macos/), c'est le prérequis.
 
 ```bash
 brew install sendme
@@ -307,22 +306,60 @@ chmod 700 ~/.cache/sendme
 
 ---
 
-## 🎨 Sendme CLI vs Alt-SendMe GUI : Lequel Choisir ?
+## 🎨 La version graphique : DashBeam (ex-Alt-SendMe)
 
-**Tu préfères le terminal ?** → **Sendme CLI** (cet article)
+Si le terminal te fait peur, ou si tu dois envoyer un fichier à quelqu'un qui n'y touchera jamais, il existe une application de bureau bâtie sur la même stack Iroh : **DashBeam**, développée par tonyantony300.
 
-**Tu préfères les interfaces graphiques ?** → [**Alt-SendMe**](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) (interface desktop)
+> ⚠️ **Le projet s'appelait Alt-SendMe jusqu'à la version 0.6.2, sortie le 30 juillet 2026.** Depuis, binaires et dépôt portent le nom DashBeam. Si tu tombes sur un tutoriel qui te fait télécharger un fichier `AltSendme_*`, il date d'avant ce renommage. Le dépôt GitHub `tonyantony300/alt-sendme` redirige vers `tonyantony300/dashbeam`.
 
-**Bonne nouvelle :** Les deux sont **interopérables** ! Un ticket généré par Sendme CLI fonctionne dans Alt-SendMe GUI et vice-versa.
+**Les deux outils sont interopérables** : un ticket généré par Sendme CLI s'ouvre dans DashBeam, et inversement. C'est la même techno dessous, seule l'enveloppe change.
+
+### Installer DashBeam
+
+La version courante est la **0.7.1** (1er septembre 2026). Récupère toujours la dernière sur la [page des releases GitHub](https://github.com/tonyantony300/dashbeam/releases), les noms de fichiers ci-dessous suivent le numéro de version.
+
+**Windows** : l'installeur `DashBeam_0.7.1_x64-setup.exe`, ou le `.msi` si tu déploies en entreprise. Une version portable `DashBeam_0.7.1_x64-portable.zip` existe si tu ne veux rien installer.
+
+**macOS** : le `DashBeam_0.7.1_universal.dmg` couvre Intel et Apple Silicon. Gatekeeper bloque souvent l'app à la première ouverture :
+
+```bash
+cd /Applications
+xattr -dr com.apple.quarantine DashBeam.app
+```
+
+**Linux** : un `.deb`, un `.rpm` et une AppImage universelle :
+
+```bash
+# Debian / Ubuntu
+wget https://github.com/tonyantony300/dashbeam/releases/download/v0.7.1/DashBeam_0.7.1_amd64.deb
+sudo dpkg -i DashBeam_0.7.1_amd64.deb
+
+# AppImage, n'importe quelle distro
+wget https://github.com/tonyantony300/dashbeam/releases/download/v0.7.1/DashBeam_0.7.1_amd64.AppImage
+chmod +x DashBeam_0.7.1_amd64.AppImage
+./DashBeam_0.7.1_amd64.AppImage
+```
+
+**Android** : un APK universel est fourni dans les releases, hors Play Store.
+
+> 💡 Chaque binaire est accompagné d'un fichier `.sig`. En environnement sensible, vérifie la signature plutôt que de faire confiance à un exécutable téléchargé.
+
+### Envoyer depuis l'interface
+
+1. Glisse-dépose ton fichier ou ton dossier dans DashBeam
+2. L'app génère un ticket
+3. Tu transmets ce ticket par le canal que tu veux (chat, SMS, email)
+4. Le destinataire le colle dans son DashBeam, ou lance `sendme receive <ticket>`
+5. Laisse l'app ouverte jusqu'à la fin du transfert
 
 ### Cas d'usage recommandés
 
 |Situation|Outil recommandé|
 |---|---|
 |Automation, scripts, CI/CD|**Sendme CLI**|
-|Envoyer à un non-technicien|**Alt-SendMe GUI**|
+|Envoyer à un non-technicien|**DashBeam**|
 |Serveur sans interface graphique|**Sendme CLI**|
-|Usage ponctuel sur laptop|**Alt-SendMe GUI**|
+|Usage ponctuel sur laptop|**DashBeam**|
 |Intégration dans homelab|**Sendme CLI**|
 
 ---
@@ -352,7 +389,7 @@ sendme receive blobQmXYZ... | gunzip | docker load
 
 ### Exemple : Backup homelab
 
-Dans mon homelab, j'utilise exactement ce pattern pour envoyer des archives de config vers un VPS Oracle. Ça tourne dans un [cron Linux](https://brandonvisca.com/cron-linux-avance-crontab-guide/), zéro intervention manuelle.
+Dans mon homelab, j'utilise exactement ce pattern pour envoyer des archives de config vers un VPS Oracle. Ça tourne dans un [cron Linux](/cron-linux-avance-crontab-guide/), zéro intervention manuelle.
 
 ```bash
 #!/bin/bash
@@ -363,7 +400,7 @@ curl -X POST https://ntfy.sh/homelab-backup \
      -d "Backup ready: $(cat /tmp/ticket.txt)"
 ```
 
-📌 **Ressource utile :** [Guide Docker Compose production sécurisé](https://brandonvisca.com/docker-debutant-services-auto-heberger/) pour structurer ton homelab proprement.
+📌 **Ressource utile :** [Guide Docker Compose production sécurisé](/docker-debutant-services-auto-heberger/) pour structurer ton homelab proprement.
 
 ---
 
@@ -394,7 +431,7 @@ curl -X POST https://ntfy.sh/homelab-backup \
 Sendme CLI devrait être installé par défaut sur toutes les machines Linux/macOS. C'est tellement plus simple que `scp` pour les transferts ponctuels, et tellement plus rapide que passer par WeTransfer ou un serveur FTP.
 
 **Prochaine étape :**  
-Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, essaye [Alt-SendMe](https://brandonvisca.com/alt-sendme-transfert-fichiers-p2p-open-source/) pour avoir la même puissance avec une interface graphique.
+Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, DashBeam te donne la même puissance avec une interface graphique.
 
 ---
 

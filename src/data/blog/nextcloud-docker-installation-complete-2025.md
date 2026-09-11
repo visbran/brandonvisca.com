@@ -757,6 +757,8 @@ Nextcloud est **le premier pilier d'une stack complète** qui peut te faire éco
 - [Nginx : optimiser les headers HTTP](https://brandonvisca.com/securiser-nginx-avec-headers-http/) : renforcer la sécurité de ton reverse proxy
 - [Documentation officielle Nextcloud](https://docs.nextcloud.com/) : la référence complète
 
+💡 À lire aussi : [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/), dans la même veine que cet article.
+
 ## Conclusion : reprends le contrôle de tes données
 
 Tu viens de monter **ton propre cloud perso** en moins d'1h. Nextcloud avec Docker, c'est économique (58€/an contre 120€+ pour les clouds commerciaux), privé (tes données chez toi), puissant (calendrier, contacts, notes, galerie, visio) et évolutif (tu ajoutes de l'espace quand tu veux).

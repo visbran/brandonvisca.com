@@ -251,6 +251,8 @@ Rocket.Chat n'est pas le seul acteur du marché de la messagerie auto-hébergée
 
 Rocket.Chat reste mon choix quand j'ai besoin d'une plateforme complète : chat, vidéo, live chat, omnichannel, workflows. Si tu veux juste un Slack-like pur et simple, Mattermost est peut-être plus adapté. Si la décentralisation et la fédération te parlent plus, oriente-toi vers [Element/Matrix](/element-matrix-docker-messagerie/).
 
+💡 À lire aussi : [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/), dans la même veine que cet article.
+
 ## Conclusion
 
 Déployer Rocket.Chat avec Docker, c'est reprendre le contrôle de sa messagerie d'équipe sans sacrifier le confort. Le stack est accessible, bien documenté, et les fonctionnalités de l'édition communautaire couvrent largement les besoins d'une petite structure. L'investissement principal n'est pas technique, le `docker-compose.yml` tient en une page, mais organisationnel : penser aux backups, aux mises à jour, et à la gestion des utilisateurs.
