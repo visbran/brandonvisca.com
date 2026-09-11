@@ -293,6 +293,8 @@ Si tu veux gérer la synchronisation horaire de tout ton homelab de façon centr
 
 > ⚠️ Garde toujours une session SSH active sur ton serveur pendant la configuration initiale. Si tu te bloques dehors, tu dois accéder directement aux fichiers de config pour désactiver la protection temporairement.
 
+💡 À lire aussi : [Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab](/beszel-monitoring-docker/), dans la même veine que cet article.
+
 ## Conclusion
 
 Authelia Docker te donne un portail 2FA pour tout ton homelab en une après-midi de configuration. Un seul login, un seul code TOTP, accès à tous tes services protégés. Tes Jellyfin, Gitea et tableaux de bord ne sont plus accessibles en clair depuis l'extérieur.

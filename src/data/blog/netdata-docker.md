@@ -215,6 +215,8 @@ Mais pour 95 % des homelabs, Netdata fait le job sans cette complexité.
 
 **L'essentiel :** si tu passes plus de temps à configurer ton monitoring qu'à monitorer, tu as choisi le mauvais outil. Combine Netdata pour les métriques système avec [Uptime Kuma](/uptime-kuma-2-0-monitoring-auto-heberge/) pour la disponibilité des services : tu couvres 95 % des besoins homelab sans sortir la carte bleue.
 
+💡 À lire aussi : [Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab](/beszel-monitoring-docker/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Traefik avec Docker : reverse proxy HTTPS auto](/traefik-reverse-proxy-docker/)
