@@ -1,9 +1,17 @@
 ---
 title: "Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)"
+description: "Installez SnipeIT sur Ubuntu 22.04/24.04 : guide LAMP, MySQL, Git et permissions. Déployez votre ITSM d'inventaire IT en moins d'une heure, pas à pas."
 pubDatetime: "2025-10-03T12:38:51+02:00"
 author: Brandon Visca
-description: "Installez SnipeIT sur Ubuntu 22.04/24.04 : guide LAMP, MySQL, Git et permissions. Déployez votre ITSM d'inventaire IT en moins d'une heure, pas à pas."
-focusKeyword: "installer Snipe-IT Ubuntu"
+tags:
+  - linux
+  - sysadmin
+  - snipeit
+  - guide
+  - debutant
+featured: false
+draft: false
+focusKeyword: installer Snipe-IT Ubuntu
 faqs:
   - question: "Quelle version d'Ubuntu pour installer SnipeIT ?"
     answer: "Ubuntu 22.04 LTS ou 24.04 LTS sont recommandées. Ce sont les versions stables avec un support à long terme, idéales pour un serveur de production."
@@ -13,15 +21,7 @@ faqs:
     answer: "Vérifiez les permissions du dossier storage/ (chmod 775) et consultez les logs Apache dans /var/log/apache2/snipeit-error.log. C'est souvent un problème de permissions ou de clé APP_KEY manquante."
   - question: "Quelle est la taille minimale recommandée pour le serveur ?"
     answer: "2 Go de RAM minimum (4 Go recommandés) et 20 Go d'espace disque. Pour un parc de plus de 200 assets, prévoyez 4 Go de RAM et des backups réguliers."
-tags:
-  - linux
-  - sysadmin
-  - debutant
-  - snipeit
-  - docker
-  - guide
 ---
-
 > 💡 **TL;DR**
 > - Installation complète de SnipeIT sur Ubuntu 22.04/24.04 : stack LAMP, MySQL, Git
 > - Permissions et sécurité gérées proprement pour ne rien casser
@@ -208,7 +208,7 @@ Ne saute pas cette étape de ton **installation SnipeIT Ubuntu**. On va cloner l
 
 ```bash
 cd /var/www
-sudo git clone https://github.com/snipe/snipe-it.git snipe-it
+sudo git clone https://github.com/grokability/snipe-it.git snipe-it
 ```
 
 Ça va télécharger les ~100 Mo de code. Patience.
@@ -591,7 +591,7 @@ Et si ton terminal ressemble encore à celui de Windows XP, fais un tour sur mon
 
 ### Liens externes (documentation) :
 - https://snipe-it.readme.io/docs/installation
-- https://github.com/snipe/snipe-it
+- https://github.com/grokability/snipe-it
 
 ## Articles connexes
 

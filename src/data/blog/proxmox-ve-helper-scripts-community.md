@@ -219,6 +219,8 @@ Après le fork tteck -> community-scripts, le projet est sain et actif. Mais c'e
 
 Comme mentionné plus haut, le choix par défaut de conteneurs privilégiés facilite l'installation mais réduit l'isolation de sécurité. Pour un homelab personnel derrière un firewall, le risque est acceptable. Pour un environnement professionnel ou exposé, privilégie les conteneurs unprivilégiés et adapte les scripts manuellement.
 
+💡 À lire aussi : [Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)](/installation-snipeit-ubuntu-guide-complet/), dans la même veine que cet article.
+
 ## Conclusion
 
 Les Proxmox VE Helper Scripts sont l'outil qui manquait à l'écosystème Proxmox. Ils transforment une procédure de 30 minutes en une commande de 2 minutes, sans sacrifier la qualité de la configuration. Le fork community-scripts/ProxmoxVE a pris le relais de manière professionnelle après l'arrêt du projet original par tteck, et la collection de scripts couvre aujourd'hui plus de 150 services différents.

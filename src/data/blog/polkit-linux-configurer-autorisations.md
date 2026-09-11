@@ -218,6 +218,8 @@ Ou sur les anciennes distributions :
 /etc/init.d/polkitd restart
 ```
 
+💡 À lire aussi : [Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)](/installation-snipeit-ubuntu-guide-complet/), dans la même veine que cet article.
+
 ## Conclusion
 
 Polkit est l'outil d'autorisation que beaucoup d'administrateurs Linux ignorent jusqu'au jour où une mise à jour casse leurs scripts, où un utilisateur se plaint de fenêtres d'authentification en boucle, ou où un audit révèle que tout le monde a sudo. Apprendre à configurer Polkit, c'est passer de "ça marche" à "c'est propre". C'est durcir ton serveur sans le rendre inutilisable, et donner des droits sans donner les clés du royaume.
