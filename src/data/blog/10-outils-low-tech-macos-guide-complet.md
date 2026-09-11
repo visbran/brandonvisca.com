@@ -1126,6 +1126,8 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 
 ---
 
+💡 À lire aussi : [Arc Browser abandonné : 7 alternatives épurées pour retrouver ton workflow de rêve](/arc-browser-alternatives-navigateur-epure-2025/), dans la même veine que cet article.
+
 ## 💡 Ressources Utiles
 
 **Sites officiels** :

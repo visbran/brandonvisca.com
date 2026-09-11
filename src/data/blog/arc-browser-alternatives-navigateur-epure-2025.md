@@ -94,11 +94,11 @@ J'ai utilisé SigmaOS pendant 3 semaines après l'abandon d'Arc. L'expérience e
 
 [Zen Browser](https://zen-browser.app/) prend Firefox comme base et le transforme en navigateur minimaliste avec une approche très Arc-like. Interface latérale, thèmes sombres, personnalisation poussée.
 
-Si t'as déjà [installé Homebrew](https://brandonvisca.com/installation-homebrew-macos/), une commande suffit :
+Si t'as déjà [installé Homebrew](/installation-homebrew-macos/), une commande suffit :
 
 ```bash
 # Sur macOS avec Homebrew
-brew install --cask zen-browser
+brew install --cask zen
 
 # Sur Windows via Winget
 winget install zen-team.zen-browser
@@ -211,7 +211,7 @@ Si tu passais surtout du temps dans Arc à jongler entre apps web professionnell
 
 **Limite** : La profondeur des options peut être paralysante au début. Compte 30 minutes pour la configuration initiale. Après ça, c'est l'un des navigateurs les plus efficaces pour les power users. J'ai configuré Vivaldi sur ma machine Windows avec split screen 2 colonnes. Ça remplace 60% de mon workflow Arc desktop.
 
-Si tu utilises aussi [AltTab](https://brandonvisca.com/alttab-macos-gestion-fenetres-windows/) pour la gestion des fenêtres sur macOS, Vivaldi s'intègre très bien dans ce type de workflow clavier-first.
+Si tu utilises aussi [AltTab](/alttab-macos-gestion-fenetres-windows/) pour la gestion des fenêtres sur macOS, Vivaldi s'intègre très bien dans ce type de workflow clavier-first.
 
 ## Comment choisir ton alternative
 
@@ -229,7 +229,7 @@ Si tu utilises aussi [AltTab](https://brandonvisca.com/alttab-macos-gestion-fene
 
 Pour migrer, Arc exporte les favoris au format HTML standard (Paramètres > Exporter). Tous les navigateurs de cette liste importent ce format.
 
-Si tu gères aussi ta barre de menu macOS, [Ice](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/) complète bien n'importe lequel de ces navigateurs pour un setup propre.
+Si tu gères aussi ta barre de menu macOS, [Ice](/ice-macos-gestionnaire-barre-menu-gratuit-2025/) complète bien n'importe lequel de ces navigateurs pour un setup propre.
 
 ## Conclusion
 
@@ -237,7 +237,7 @@ Arc Browser a prouvé qu'on pouvait encore innover dans la navigation web. Le de
 
 Pour 2026 : si t'es sur macOS et veux l'expérience la plus proche d'Arc, pars sur **Zen Browser** (gratuit) ou **SigmaOS** (payant, plus abouti). Sur Windows, **Zen Browser** ou **Brave** avec onglets verticaux.
 
-Le reste ? Du bon travail supplémentaire selon tes besoins spécifiques. Teste, installe, désinstalle. Un navigateur, ça se change plus vite qu'un OS.
+Les autres font du bon travail selon tes besoins spécifiques. Teste, installe, désinstalle. Un navigateur, ça se change plus vite qu'un OS.
 
 ## FAQ Arc Browser alternatives
 
@@ -262,12 +262,6 @@ Oui. Arc exporte en HTML standard (Paramètres > Exporter). Tous les navigateurs
 Oui sur Mac Apple Silicon. WebKit natif + zéro tracking = 30-40% moins de RAM que Chrome avec 20 onglets. Encore en bêta publique mais très stable au quotidien.
 
 ---
-
-## Pour aller plus loin
-
-- [AltTab macOS : remplace le ⌘+Tab avec des previews de fenêtres](https://brandonvisca.com/alttab-macos-gestion-fenetres-windows/)
-- [Ice macOS : remplace Bartender gratuitement et organise ta barre de menu](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
-- [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)
 
 ## Articles connexes
 
