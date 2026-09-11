@@ -212,6 +212,8 @@ Installe-le via Homebrew, teste-le 10 minutes, et dis-moi pas que tu reviens en 
 
 💡 À lire aussi : [Default Folder X macOS : les boîtes de dialogue Ouvrir/Enregistrer enfin intelligentes](/default-folder-x-macos-dialogues-intelligents/), dans la même veine que cet article.
 
+💡 À lire aussi : [Cheatsheet macOS : CheatSheet est mort, KeyClu prend le relais](/cheatsheet-macos-raccourcis-clavier/), dans la même veine que cet article.
+
 ## FAQ rapide
 
 **Numi est-il gratuit ?**
