@@ -593,7 +593,7 @@ Publié: 2026-05-29T10:00:00.000Z
 
 ## Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab
 URL: https://brandonvisca.com/beszel-monitoring-docker/
-Description: Guide Beszel Docker monitoring : installe ce monitoring auto-hébergé ultra-léger pour surveiller CPU, RAM et disque de tes serveurs.
+Description: Guide Beszel Docker : monitoring auto-hébergé ultra-léger, agents connectés en WebSocket avec token, et les nouveautés ZFS de la version 0.19.
 Tags: 
 Publié: 2026-05-28 06:00:00+00:00
 
