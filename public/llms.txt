@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-10
-# Total articles : 182
+# Dernière mise à jour : 2026-09-11
+# Total articles : 183
+
+## Cheatsheet macOS : CheatSheet est mort, KeyClu prend le relais
+URL: https://brandonvisca.com/cheatsheet-macos-raccourcis-clavier/
+Description: CheatSheet ne fonctionne plus depuis macOS Sonoma. Voici KeyClu, la cheatsheet macOS gratuite qui affiche les raccourcis de l'app active.
+Tags: 
+Publié: 2026-09-11T11:02:12+02:00
 
 ## Scrutiny Docker : monitoring SMART de tes disques avec alertes
 URL: https://brandonvisca.com/scrutiny-docker-monitoring-smart-disques/
