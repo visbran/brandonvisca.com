@@ -110,6 +110,8 @@ Moi je reste sur BetterDisplay parce que le combo HiDPI + DDC + écrans virtuels
 
 💡 À lire aussi : [Music Decoy macOS : Bloquer Apple Music au Démarrage (Solution Gratuite 2025)](/music-decoy-macos-bloquer-apple-music/), dans la même veine que cet article.
 
+💡 À lire aussi : [Boring notch macOS : transforme la notch de ton MacBook en Dynamic Island](/boring-notch-macbook-dynamic-island/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 Si tu veux automatiser ton setup macOS au-delà de l'affichage, j'ai publié des guides sur [Amethyst, le tiling window manager gratuit](/amethyst-macos-tiling-window-manager/) pour organiser tes fenêtres au clavier, et sur [Maccy, le presse-papiers avec historique](/maccy-macos-presse-papiers-historique/) pour ne plus jamais perdre un copier-coller.

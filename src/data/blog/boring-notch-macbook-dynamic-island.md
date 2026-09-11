@@ -5,16 +5,14 @@ pubDatetime: "2026-07-14T08:00:00.000Z"
 modDatetime: "2026-07-14T08:00:00.000Z"
 author: Brandon Visca
 tags:
-  - debutant
   - macos
-  - boring-notch
   - productivite
+  - boring-notch
   - macbook
-  - auto-hebergement
+  - debutant
 featured: false
 draft: false
-focusKeyword: "boring notch"
-ogImage: "" 
+focusKeyword: boring notch
 ---
 > 💡 **TL;DR**
 > - Boring.Notch transforme la notch de ton MacBook en une Dynamic Island fonctionnelle, gratuite et open-source
@@ -51,9 +49,9 @@ Le tout réagit en temps réel. Quand tu changes le volume avec les touches de f
 
 ## Installation en 2 minutes
 
-1. Télécharge Boring.Notch depuis le [dépôt GitHub](https://github.com/TheBoredTeam/boring.notch) ou via Homebrew :
+1. Télécharge Boring.Notch depuis le [dépôt GitHub](https://github.com/TheBoredTeam/boring.notch) ou via Homebrew. L'app n'est pas dans le dépôt principal, elle a son propre tap :
    ```bash
-   brew install --cask boring.notch
+   brew install --cask theboredteam/boring-notch/boring-notch
    ```
 2. Ouvre l'app. macOS va te demander d'autoriser l'accès à l'accessibilité (obligatoire pour afficher des éléments par-dessus d'autres fenêtres)
 3. Va dans **Réglages Système > Confidentialité et sécurité > Accessibilité** et coche Boring.Notch

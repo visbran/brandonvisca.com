@@ -216,6 +216,8 @@ Installe-le via Homebrew, teste-le 10 minutes, et dis-moi pas que tu reviens en 
 
 💡 À lire aussi : [Music Decoy macOS : Bloquer Apple Music au Démarrage (Solution Gratuite 2025)](/music-decoy-macos-bloquer-apple-music/), dans la même veine que cet article.
 
+💡 À lire aussi : [Boring notch macOS : transforme la notch de ton MacBook en Dynamic Island](/boring-notch-macbook-dynamic-island/), dans la même veine que cet article.
+
 ## FAQ rapide
 
 **Numi est-il gratuit ?**
