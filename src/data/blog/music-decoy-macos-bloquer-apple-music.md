@@ -6,11 +6,11 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - debutant
   - guide
+  - debutant
 featured: false
 draft: false
-focusKeyword: "music decoy"
+focusKeyword: music decoy
 faqs:
   - question: "Music Decoy est-il totalement gratuit ?"
     answer: "Oui, Music Decoy est gratuit et open source (disponible sur GitHub). Il ne demande aucun abonnement ni paiement unique."
@@ -70,7 +70,7 @@ C’est juste un **bloqueur Apple Music**. Pour contrôler Spotify avec les touc
 
 ### Méthode 1 : Téléchargement direct
 
-1. Va sur le [repo GitHub de Music Decoy](https://github.com/simonbs/MusicDecoy)
+1. Va sur le [repo GitHub de Music Decoy](https://github.com/FuzzyIdeas/MusicDecoy)
 2. Télécharge le fichier `.app` depuis les Releases
 3. Glisse **Music Decoy.app** dans `/Applications`
 4. Lance l’app (clic droit > Ouvrir si macOS bloque)
@@ -304,6 +304,6 @@ Prochaine étape : si tu veux aller plus loin dans le contrôle de Spotify, mon 
 - - - - - -
 ## Liens utiles
 
-- [GitHub Music Decoy](https://github.com/simonbs/MusicDecoy) (source officielle)
+- [GitHub Music Decoy](https://github.com/FuzzyIdeas/MusicDecoy) (source officielle)
 - [Guide d’installation Homebrew](/installation-homebrew-macos/) (pour installer via CLI)
 - [Raycast pour contrôler Spotify](/raycast-macos-outil-productivite-ultime/) (extension Spotify)
