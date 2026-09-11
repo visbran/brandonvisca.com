@@ -220,6 +220,8 @@ Installe-le via Homebrew, teste-le 10 minutes, et dis-moi pas que tu reviens en 
 
 💡 À lire aussi : [Grila vs Fantastical : Comparatif honnête après 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/), dans la même veine que cet article.
 
+💡 À lire aussi : [10 Outils macOS gratuits que j'utilise (2026)](/10-outils-low-tech-macos-guide-complet/), dans la même veine que cet article.
+
 ## FAQ rapide
 
 **Numi est-il gratuit ?**

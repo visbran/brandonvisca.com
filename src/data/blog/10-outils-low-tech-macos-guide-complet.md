@@ -7,8 +7,8 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - debutant
   - guide
+  - debutant
 featured: false
 draft: false
 focusKeyword: outils low tech macos
@@ -143,7 +143,7 @@ Mon setup Mac Mini M4 :
 | Raycast | Gratuit/96$/an | Complémentaire (pas concurrent) |
 | Alfred | 59€ | rcmd plus simple et gratuit |
 
-👉 **Guide complet** : [rcmd : Le raccourci qui tue Cmd+Tab sur macOS](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)
+👉 **Guide complet** : [rcmd : Le raccourci qui tue Cmd+Tab sur macOS](/rcmd-alternative-cmd-tab-macos/)
 
 ---
 
@@ -203,7 +203,7 @@ Temps gagné : 5 min/article = 50 min/mois
 
 **Mon avis** : Version gratuite suffit pour la plupart. Si tu fais +20 screenshots/jour → Pro vaut le coup.
 
-👉 **Guide complet** : [Clop : Compression automatique images/vidéos macOS](https://brandonvisca.com/clop-compression-images-videos-macos/)
+👉 **Guide complet** : [Clop : Compression automatique images/vidéos macOS](/clop-compression-images-videos-macos/)
 
 ---
 
@@ -277,7 +277,7 @@ Temps gagné : 5 min/jour = 30h/an
 
 **Mon avis** : Version gratuite = F1/F2 qui fonctionnent (déjà énorme). Pro = automatisation complète. **23$ lifetime pour 5 Macs = no-brainer si tu as un Mac Mini**.
 
-👉 **Guide complet** : [Lunar : Contrôle luminosité écrans externes macOS](https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/)
+👉 **Guide complet** : [Lunar : Contrôle luminosité écrans externes macOS](/lunar-luminosite-ecrans-externes-macos/)
 
 Alternative : si tu veux aussi forcer le rendu HiDPI sur des écrans non reconnus par Apple et obtenir un contrôle DDC complet, j'ai testé [BetterDisplay macOS hidpi](/betterdisplay-macos-hidpi-ddc/). Lui et Lunar se complètent bien selon tes besoins.
 
@@ -352,7 +352,7 @@ Temps gagné : 20 recherches/jour × 30 sec = 10 min/jour = 60h/an
 - **Cling** : Fichiers code, config, dotfiles
 - **Spotlight** : Recherches générales, emails, docs
 
-👉 **Guide complet** : [Cling : Recherche fuzzy fichiers macOS](https://brandonvisca.com/cling-recherche-fuzzy-fichiers-macos/)
+👉 **Guide complet** : [Cling : Recherche fuzzy fichiers macOS](/cling-recherche-fuzzy-fichiers-macos/)
 
 ---
 
@@ -437,9 +437,9 @@ Tu veux voir ton planning : Ouvre Calendrier.app, attends chargement, clique sur
 
 ### Installation & Config
 
+Grila n'est pas distribué par Homebrew : il s'installe depuis le [Mac App Store](https://apps.apple.com/app/grila-calendar-for-typers/id6444335028).
+
 ```bash
-# Installation
-brew install --cask grila
 
 # Configuration
 1. Lance Grila
@@ -520,7 +520,7 @@ Tu branches des écouteurs. Tu appuies sur Play sur ton clavier. **Music.app se 
 
 ```bash
 # Installation
-brew install --cask musicdecoy
+brew install --cask music-decoy
 
 # Config : Lance au démarrage, c'est tout.
 ```
@@ -547,9 +547,9 @@ Tu partages ton écran sur Zoom. Les **contrôles Zoom restent visibles** en hau
 
 ### Installation
 
+ZoomHider se télécharge directement chez l'éditeur, il n'existe pas de cask Homebrew officiel : [files.lowtechguys.com/releases/ZoomHider.dmg](https://files.lowtechguys.com/releases/ZoomHider.dmg).
+
 ```bash
-# Installation
-brew install --cask zoomhider
 
 # Config : Active avant partager écran.
 ```
@@ -607,7 +607,7 @@ brew install --cask startupfolder
 
 ### Étape 1 : Installe Homebrew
 
-Si tu n'as pas encore Homebrew ([guide ici](https://brandonvisca.com/installation-homebrew-macos/)) :
+Si tu n'as pas encore Homebrew ([guide ici](/installation-homebrew-macos/)) :
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -1111,18 +1111,18 @@ Alors, prêt à transformer ton Mac en bête de productivité ? 🚀
 
 **Approfondis chaque outil** :
 
-1. **[rcmd : Le raccourci qui tue Cmd+Tab](https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/)** (2800 mots)
-2. **[Clop : Compression automatique](https://brandonvisca.com/clop-compression-images-videos-macos/)** (3200 mots)
-3. **[Lunar : Contrôle luminosité écrans](https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/)** (3800 mots)
-4. **[Cling : Recherche fuzzy fichiers](https://brandonvisca.com/cling-recherche-fuzzy-fichiers-macos/)** (2800 mots)
+1. **[rcmd : Le raccourci qui tue Cmd+Tab](/rcmd-alternative-cmd-tab-macos/)** (2800 mots)
+2. **[Clop : Compression automatique](/clop-compression-images-videos-macos/)** (3200 mots)
+3. **[Lunar : Contrôle luminosité écrans](/lunar-luminosite-ecrans-externes-macos/)** (3800 mots)
+4. **[Cling : Recherche fuzzy fichiers](/cling-recherche-fuzzy-fichiers-macos/)** (2800 mots)
 
 **Autres articles macOS** :
-- [Raycast : Launcher complet](https://brandonvisca.com/raycast-macos-outil-productivite-ultime/)
-- [Amethyst : Tiling window manager au clavier](https://brandonvisca.com/amethyst-macos-tiling-window-manager/)
-- [Ice : Gestionnaire barre menu détaillé](https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
-- [Numi : Calculatrice textuelle](https://brandonvisca.com/numi-macos-calculatrice-textuelle/)
-- [Installation Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/)
-- [iTerm2 : Terminal optimisé](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/)
+- [Raycast : Launcher complet](/raycast-macos-outil-productivite-ultime/)
+- [Amethyst : Tiling window manager au clavier](/amethyst-macos-tiling-window-manager/)
+- [Ice : Gestionnaire barre menu détaillé](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)
+- [Numi : Calculatrice textuelle](/numi-macos-calculatrice-textuelle/)
+- [Installation Homebrew sur macOS](/installation-homebrew-macos/)
+- [iTerm2 : Terminal optimisé](/iterm2-guide-configuration-macos-2025/)
 
 ---
 
