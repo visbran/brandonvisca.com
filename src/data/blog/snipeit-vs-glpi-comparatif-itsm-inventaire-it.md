@@ -53,7 +53,7 @@ Une fois GLPI installé, tu vas devoir déployer des agents sur chaque poste pou
 
 ### SnipeIT : le spécialiste américain
 
-![Interface SnipeIT](/images/header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour. ([GitHub officiel](https://github.com/snipe/snipe-it))
+![Interface SnipeIT](/images/header_snipeit.webp)**SnipeIT** est un outil américain créé en 2013, spécialisé exclusivement dans l’**asset management**. Pas de ticketing, pas de helpdesk, pas de CMDB complexe. Juste l’inventaire IT, mais fait avec amour. ([GitHub officiel](https://github.com/grokability/snipe-it))
 
 ![Dashboard SnipeIT](/images/dashboard.webp)**Points clés :**
 

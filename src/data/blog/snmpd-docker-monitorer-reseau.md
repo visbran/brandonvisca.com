@@ -251,6 +251,8 @@ Sur un VPS cloud exposé à Internet, tu ne dois **jamais** exposer SNMP sans re
 
 Si tu es sur un NAS Synology ou un routeur OpenWrt, snmpd est souvent préinstallé mais limité. L'image Docker te donne un snmpd complet sans toucher au firmware.
 
+💡 À lire aussi : [SnipeIT vs GLPI : mon comparatif après 3 ans sur les deux outils](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/), dans la même veine que cet article.
+
 ## Conclusion
 
 SNMPd en Docker, c'est la solution la plus rapide pour rendre une machine Linux monitorable sans l'alourdir. Un fichier Compose, un `snmpd.conf` de 10 lignes, et tu peux brancher n'importe quel outil de supervision dessus. Que tu sois sur Zabbix, LibreNMS ou un simple script Python, le protocole est universel.

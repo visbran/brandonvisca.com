@@ -321,6 +321,8 @@ Cette commande simule l'environnement minimaliste de cron. Si ça plante ici, ç
 
 Et n'oublie pas : cron n'envoie pas d'email si `MAILTO` n'est pas configuré et que la sortie est redirigée. Si tu ne vois rien nulle part, c'est souvent que le job n'a jamais été lu par cron, vérifie que le service tourne (`systemctl status cron`).
 
+💡 À lire aussi : [SnipeIT vs GLPI : mon comparatif après 3 ans sur les deux outils](/snipeit-vs-glpi-comparatif-itsm-inventaire-it/), dans la même veine que cet article.
+
 ## Conclusion
 
 Cron n'est pas compliqué, mais il est exigeant. Il exécute exactement ce que tu lui demandes, dans l'environnement que tu lui donnes, à l'heure que tu spécifies. Le problème, c'est que la plupart des gens supposent que cron "hérite" de leur shell interactif. Spoiler : non. PATH minimal, pas de `.bashrc`, pas de variables exportées à l'arrache.
