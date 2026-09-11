@@ -7,8 +7,6 @@ author: Brandon Visca
 tags:
   - docker
   - auto-hebergement
-  - homelab
-  - linux
   - guide
   - intermediaire
 featured: false
@@ -589,9 +587,10 @@ Rafraîchis la page (Ctrl+F5) et c'est appliqué. Aucun redémarrage du conteneu
 - Ouvre `https://jellyfin.ton-domaine.fr`
 - Ça marche parfaitement en web, pas besoin d'app
 
-**Option 2 : Jellyfin Media Player** (si tu veux une vraie app)
+**Option 2 : Jellyfin Desktop** (si tu veux une vraie app)
 
-- Télécharge : [github.com/jellyfin/jellyfin-media-player/releases](https://github.com/jellyfin/jellyfin-media-player/releases)
+- L'app s'appelait **Jellyfin Media Player** jusqu'à la version 2.0.0, sortie le 14 décembre 2025. Les tutoriels qui emploient encore l'ancien nom datent d'avant ce renommage.
+- Télécharge : [github.com/jellyfin/jellyfin-desktop/releases](https://github.com/jellyfin/jellyfin-desktop/releases)
 - Interface type Netflix, mode plein écran, lecteur mpv intégré
 
 - - - - - -

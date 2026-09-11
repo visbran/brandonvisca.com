@@ -211,6 +211,8 @@ docker cp freshrss:/var/www/FreshRSS/extensions ./freshrss_extensions_backup
 
 Pour restaurer, inverse simplement ces opérations. Tu peux aussi configurer un conteneur [Duplicati](/duplicati-docker-sauvegarde/) pour automatiser ces backups vers un stockage distant.
 
+💡 À lire aussi : [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 396€/an)](/jellyfin-docker-alternative-netflix-gratuite/), dans la même veine que cet article.
+
 ## Conclusion : FreshRSS, l'agrégateur RSS qui a tout bon
 
 FreshRSS est sans doute le meilleur compromis entre légèreté, richesse fonctionnelle et facilité de déploiement dans le monde des lecteurs RSS auto-hébergés. Son interface familière rappelle les meilleures heures de Google Reader, tandis que son support Docker et son API mobile en font une solution moderne et pratique au quotidien.
