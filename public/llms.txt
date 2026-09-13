@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-11
-# Total articles : 182
+# Dernière mise à jour : 2026-09-13
+# Total articles : 183
+
+## Wazuh Docker : SIEM open source pour surveiller ton homelab
+URL: https://brandonvisca.com/wazuh-docker-siem-securite-homelab/
+Description: Wazuh Docker : installe ce SIEM open source sur ton homelab, détecte les intrusions, centralise les logs et compare-le à Suricata.
+Tags: 
+Publié: 2026-09-13T11:01:11+02:00
 
 ## Cheatsheet macOS : CheatSheet est mort, KeyClu prend le relais
 URL: https://brandonvisca.com/cheatsheet-macos-raccourcis-clavier/
