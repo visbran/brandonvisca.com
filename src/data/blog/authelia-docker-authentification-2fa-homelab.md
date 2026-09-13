@@ -295,6 +295,8 @@ Si tu veux gérer la synchronisation horaire de tout ton homelab de façon centr
 
 💡 À lire aussi : [Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab](/beszel-monitoring-docker/), dans la même veine que cet article.
 
+💡 À lire aussi : [Wazuh Docker : SIEM open source pour surveiller ton homelab](/wazuh-docker-siem-securite-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 Authelia Docker te donne un portail 2FA pour tout ton homelab en une après-midi de configuration. Un seul login, un seul code TOTP, accès à tous tes services protégés. Tes Jellyfin, Gitea et tableaux de bord ne sont plus accessibles en clair depuis l'extérieur.

@@ -203,6 +203,8 @@ Tu peux tester la démo sur [tianji.dev](https://tianji.dev) et installer ton in
 - [Docker pour les débutants : 10 services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/)
 - [Pourquoi j'ai quitté Google (et comment tu peux faire pareil)](/quitter-google-auto-hebergement/)
 
+💡 À lire aussi : [Wazuh Docker : SIEM open source pour surveiller ton homelab](/wazuh-docker-siem-securite-homelab/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [Immich Docker remplace Google Photos ? Guide complet 2026](/immich-docker/)
