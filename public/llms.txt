@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-13
-# Total articles : 183
+# Dernière mise à jour : 2026-09-14
+# Total articles : 184
+
+## Velja macOS : choisis quel navigateur ouvrir pour chaque lien
+URL: https://brandonvisca.com/velja-macos-choisir-navigateur/
+Description: Velja macOS route chaque lien vers le bon navigateur, par domaine, appli source ou profil, avec nettoyage automatique du tracking.
+Tags: 
+Publié: 2026-09-14T11:01:11+02:00
 
 ## Wazuh Docker : SIEM open source pour surveiller ton homelab
 URL: https://brandonvisca.com/wazuh-docker-siem-securite-homelab/
