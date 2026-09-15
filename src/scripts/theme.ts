@@ -32,7 +32,10 @@ function setPreference(): void {
 function reflectPreference(): void {
   document.firstElementChild?.setAttribute("data-theme", themeValue);
 
-  document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
+  document.querySelector("#theme-btn")?.setAttribute(
+    "aria-label",
+    themeValue === "dark" ? "Thème sombre" : "Thème clair"
+  );
 
   // Get a reference to the body element
   const body = document.body;
