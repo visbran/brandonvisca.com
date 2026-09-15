@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-14
-# Total articles : 184
+# Dernière mise à jour : 2026-09-15
+# Total articles : 185
+
+## Headscale Docker : serveur Tailscale auto-hébergé (open-source)
+URL: https://brandonvisca.com/headscale-docker-tailscale-self-hosted/
+Description: Héberge ton propre control plane Tailscale avec Headscale Docker : Compose complet, comparatif Tailscale et limites à connaître avant de migrer.
+Tags: 
+Publié: 2026-09-15T11:01:11+02:00
 
 ## Velja macOS : choisis quel navigateur ouvrir pour chaque lien
 URL: https://brandonvisca.com/velja-macos-choisir-navigateur/
