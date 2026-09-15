@@ -14,34 +14,64 @@ colors:
   signal-line: "#2264e3"
 typography:
   display:
-    fontFamily: "Wotfard, sans-serif"
+    fontFamily: "Figtree, sans-serif"
     fontSize: "clamp(3rem, 8vw, 4.5rem)"
     fontWeight: 700
     lineHeight: 1.1
     letterSpacing: "-0.025em"
   headline:
-    fontFamily: "Wotfard, sans-serif"
+    fontFamily: "Figtree, sans-serif"
     fontSize: "clamp(1.875rem, 5vw, 2.75rem)"
     fontWeight: 700
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   title:
-    fontFamily: "Wotfard, sans-serif"
+    fontFamily: "Figtree, sans-serif"
     fontSize: "1.125rem"
     fontWeight: 600
     lineHeight: 1.55
   body:
-    fontFamily: "Wotfard, sans-serif"
-    fontSize: "1rem"
+    fontFamily: "Figtree, sans-serif"
+    fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.75
+  heading-lg:
+    fontFamily: "Figtree, sans-serif"
+    fontSize: "2rem"
+    fontWeight: 700
+    lineHeight: 1.2
+  heading-md:
+    fontFamily: "Figtree, sans-serif"
+    fontSize: "1.5rem"
+    fontWeight: 700
+    lineHeight: 1.3
+  heading-sm:
+    fontFamily: "Figtree, sans-serif"
+    fontSize: "1.25rem"
+    fontWeight: 600
+    lineHeight: 1.35
+  body-ui:
+    fontFamily: "Figtree, sans-serif"
+    fontSize: "1rem"
+    fontWeight: 400
+    lineHeight: 1.6
+  ui:
+    fontFamily: "Figtree, sans-serif"
+    fontSize: "0.8125rem"
+    fontWeight: 500
+    lineHeight: 1.4
+  micro:
+    fontFamily: "Cartograph CF, monospace"
+    fontSize: "0.75rem"
+    fontWeight: 400
+    lineHeight: 1.3
   note:
     fontFamily: "Sriracha, cursive"
     fontSize: "1.05rem"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "Wotfard, sans-serif"
+    fontFamily: "Figtree, sans-serif"
     fontSize: "0.875rem"
     fontWeight: 700
     lineHeight: 1.4
@@ -51,12 +81,6 @@ typography:
     fontSize: "0.875rem"
     fontWeight: 400
     lineHeight: 1.6
-  mono-micro:
-    fontFamily: "Cartograph CF, monospace"
-    fontSize: "10px"
-    fontWeight: 400
-    lineHeight: 1
-    letterSpacing: "0.1em"
 rounded:
   sm: "4px"
   md: "6px"
@@ -122,14 +146,14 @@ components:
 
 **Creative North Star: "Le Carnet de Bord Sysadmin"**
 
-Le site se lit comme le journal de terrain de quelqu'un qui administre vraiment son rack. Le corps de texte est un sans-serif chaleureux et arrondi (Wotfard), justifié avec césure comme une page imprimée. Les notes en marge, les citations et les sous-titres passent à la main levée (Sriracha), comme griffonnés au stylo. Les commandes, les étiquettes et le prompt `~/homelab git:(main) $` sont en monospace (Cartograph CF). Trois écritures, trois rôles : ce que j'explique, ce que je note, ce que je tape.
+Le site se lit comme le journal de terrain de quelqu'un qui administre vraiment son rack. Le corps de texte est un sans-serif chaleureux et arrondi (Figtree), justifié avec césure comme une page imprimée. Les notes en marge, les citations et les sous-titres passent à la main levée (Sriracha), comme griffonnés au stylo. Les commandes, les étiquettes et le prompt `~/homelab git:(main) $` sont en monospace (Cartograph CF). Trois écritures, trois rôles : ce que j'explique, ce que je note, ce que je tape.
 
 Le support est un papier légèrement teinté, vert sauge en clair et bleu nuit de salle serveur en sombre, recouvert d'un grain fin et d'une grille de 50 px à peine visible qui s'efface vers le bas de la page. Une seule encre de couleur, le Bleu Console, sert aux liens, aux puces, aux focus et aux signaux d'état. La densité est modérée : colonne unique de 56 à 64 rem, cartes empilées, beaucoup d'air autour des titres.
 
 Le système hérite du thème astro-devosfera. Ses effets décoratifs (verre dépoli, orbes aurora animés, halos qui suivent la souris, titres à reflet ou en dégradé, variantes amber/purple) ont été retirés le 2026-09-15 : ils ne servaient pas le carnet. Les Don'ts empêchent leur retour.
 
 **Key Characteristics:**
-- Trois voix typographiques à rôle strict : exposé (Wotfard), annotation (Sriracha), machine (Cartograph).
+- Trois voix typographiques à rôle strict : exposé (Figtree), annotation (Sriracha), machine (Cartograph).
 - Une seule couleur d'accent, déclinée en opacités via `color-mix`, jamais une deuxième teinte.
 - Papier teinté + grain + grille fantôme comme matière de fond.
 - Signature terminal : badge prompt avec curseur clignotant et point d'état fixe.
@@ -160,25 +184,30 @@ Palette à encre unique : un bleu de terminal posé sur un papier teinté, tout 
 
 ## Typography
 
-**Display Font:** Wotfard (fallback sans-serif)
-**Body Font:** Wotfard (fallback sans-serif)
+**Display Font:** Figtree (fallback sans-serif)
+**Body Font:** Figtree (fallback sans-serif)
 **Annotation Font:** Sriracha (fallback cursive)
 **Label/Mono Font:** Cartograph CF (fallback monospace)
 
-**Character:** Un sans-serif doux et géométrique pour tout ce qui est expliqué, contrarié par une écriture manuscrite pour ce qui est commenté et un monospace à ligatures pour ce qui est exécuté. Le contraste entre les trois est la personnalité du site.
+**Character:** Un sans-serif géométrique et ouvert (Figtree, variable 300–900, OFL, auto-hébergé) pour tout ce qui est expliqué, contrarié par une écriture manuscrite pour ce qui est commenté et un monospace à ligatures pour ce qui est exécuté. Le contraste entre les trois est la personnalité du site.
 
 ### Hierarchy
 - **Display** (700, 3rem → 4.5rem, 1.1, tracking serré) : titre du hero de la page d'accueil uniquement.
 - **Headline** (700, 1.875rem → 2.75rem, 1.25, tracking serré) : H1 d'article, centré dans le panneau d'en-tête.
 - **Title** (600, 1.125rem, 1.55) : titres des cartes d'articles, libellé du bouton CTA.
-- **Body** (400, 1rem, 1.75) : prose d'article via `@tailwindcss/typography`, justifiée avec `hyphens: auto` au-delà de 640 px, alignée à gauche en dessous.
+- **Body** (400, 1.0625rem dès 640 px, 1rem en dessous, 1.75) : prose d'article via `@tailwindcss/typography`. Texte courant limité à 70ch ; blocs de code, tableaux et paragraphes d'images gardent toute la colonne. Justifié avec `hyphens: auto` au-delà de 640 px, aligné à gauche en dessous.
+- **Heading lg / md / sm** (700 / 700 / 600 ; 2rem / 1.5rem / 1.25rem) : titres de pages secondaires, libellés d'année, chiffres des archives et des tags.
+- **Body UI** (400, 1rem, 1.6) : texte hors prose (titres de listes d'archives, noms de tags, descriptions d'états vides).
+- **UI** (500, 0.8125rem) : boutons secondaires, badges de hero, descriptions compactes.
 - **Note** (400, Sriracha, 1.05rem) : H3 de prose, `em` et `i`, citations en bloc. L'italique du site *est* Sriracha.
 - **Label** (700, 0.875rem, 0.1em, capitales) : en-têtes de section de l'accueil (« À la une », « Récents »).
 - **Mono** (400, Cartograph, 0.875rem) : code inline et blocs, badges de tags, sommaire, badge terminal.
-- **Mono micro** (Cartograph, 10 px, 0.1em, capitales) : marqueurs discrets « end », « Next », compteurs `[6/184]`.
+- **Micro** (Cartograph, 0.75rem, capitales espacées selon le contexte) : marqueurs « end », « Précédent/Suivant », compteurs `[6/180]`, copyright. Plancher absolu : rien sous 12 px.
 
 ### Named Rules
-**La Règle des Trois Écritures.** Wotfard explique, Sriracha annote, Cartograph exécute. Ne jamais mettre du code en Sriracha, ni un paragraphe entier en Cartograph, ni un titre d'article en Sriracha.
+**La Règle des Trois Écritures.** Figtree explique, Sriracha annote, Cartograph exécute. Ne jamais mettre du code en Sriracha, ni un paragraphe entier en Cartograph, ni un titre d'article en Sriracha.
+
+**La Règle des Graisses Réelles.** Seules les graisses présentes dans un fichier s'affichent (`font-synthesis: none`). Figtree porte toute la hiérarchie en graisse ; Sriracha et Cartograph restent en 400, sans faux gras ni faux italique.
 
 **La Règle de l'Italique Manuscrit.** Tout `em` bascule en Sriracha. Réserver l'emphase aux vraies apartés, sinon la page devient un cahier de brouillon.
 
@@ -230,7 +259,7 @@ Rares et affirmés : un seul vrai bouton d'appel par page.
 - **À la une:** même carte, ton renforcé (bordure accent 30 %, fond accent 5 %). Pas d'autre teinte.
 
 ### Navigation
-- **Style:** liens Wotfard 14 px medium, padding 6 × 12 px, coins 8 px.
+- **Style:** liens Figtree 14 px medium, padding 6 × 12 px, coins 8 px.
 - **Hover:** texte accent, fond accent 8 %.
 - **Active:** texte accent + point plein de 5,6 px centré sous le lien.
 - **Mobile:** burger à trois traits animés dans un carré de 40 px, menu plein écran.
@@ -254,11 +283,13 @@ Filets horizontaux en dégradé qui convergent vers un point accent à 50 % et l
 
 ### Do:
 - **Do** dériver toute nouvelle couleur des cinq tokens CSS (`--background`, `--foreground`, `--accent`, `--muted`, `--border`) par opacité ou `color-mix`, et vérifier les deux thèmes.
-- **Do** respecter la Règle des Trois Écritures : Wotfard pour l'exposé, Sriracha pour l'annotation, Cartograph pour tout ce qui se tape ou s'étiquette.
+- **Do** respecter la Règle des Trois Écritures : Figtree pour l'exposé, Sriracha pour l'annotation, Cartograph pour tout ce qui se tape ou s'étiquette.
 - **Do** garder les bordures diluées (15-40 %) et les ombres teintées d'accent, uniquement sur état.
 - **Do** réutiliser le vocabulaire terminal (prompt, compteur `[n/total]`, marqueur `end`, `kbd`) pour les nouveaux éléments de navigation ou d'état.
 - **Do** placer les overrides dans `src/styles/custom.css` et consigner toute modif de fichier thème dans `THEME_CUSTOMIZATIONS.md`.
 - **Do** fournir un focus visible en pointillé 2 px accent sur tout élément interactif.
+- **Do** garder le texte courant des articles à 70ch maximum et n'utiliser que les tailles de l'échelle typographique (frontmatter).
+- **Do** exporter toute nouvelle graisse Figtree utilisée par les images OG dans `src/assets/fonts/og/` (Satori ne lit ni woff2 ni police variable).
 
 ### Don't:
 - **Don't** utiliser le verre dépoli (`backdrop-filter`) comme décor. Réservé aux surfaces qui flottent au-dessus du contenu défilant : header collant, player compact, menu mobile, modale de recherche, bouton retour en haut.
@@ -267,5 +298,6 @@ Filets horizontaux en dégradé qui convergent vers un point accent à 50 % et l
 - **Don't** ajouter de halo qui suit le curseur, d'orbe aurora, de lueur à décalage nul (`0 0 Npx`) ni d'animation infinie décorative.
 - **Don't** référencer `--muted-foreground` : la variable n'existe pas. Texte secondaire = `color-mix(in srgb, var(--foreground) 65%, transparent)`.
 - **Don't** utiliser d'easing à rebond (`cubic-bezier(0.34, 1.56, …)`) : préférer `cubic-bezier(0.25, 1, 0.5, 1)`.
+- **Don't** descendre sous 12 px (0.75rem), ni poser un paragraphe entier en Cartograph (le monospace est réservé au code et aux étiquettes).
 - **Don't** mettre de H1 dans le corps d'un article : le panneau d'en-tête génère déjà le titre.
 - **Don't** justifier le texte sous 640 px (rivières) ni désactiver la césure au-dessus.

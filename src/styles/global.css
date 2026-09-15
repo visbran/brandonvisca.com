@@ -21,7 +21,7 @@ html[data-theme="dark"] {
 }
 
 @theme inline {
-  --font-app: var(--font-wotfard);
+  --font-app: var(--font-figtree);
   --font-sriracha: var(--font-sriracha);
   --font-cartograph: var(--font-cartograph);
   --color-background: var(--background);
@@ -36,7 +36,8 @@ html[data-theme="dark"] {
 em,
 i {
   font-family: var(--font-sriracha);
-  font-style: italic;
+  /* Sriracha is upright-slanted by design and ships no italic: never synthesize one */
+  font-style: normal;
 }
 
 .spicy {
@@ -51,6 +52,8 @@ i {
   }
   html {
     @apply overflow-y-scroll scroll-smooth;
+    /* Only real font files render: no faux bold on single-weight faces (Sriracha, Cartograph) */
+    font-synthesis: none;
   }
   body {
     @apply flex min-h-svh flex-col bg-background font-app text-foreground selection:bg-accent/75 selection:text-background;

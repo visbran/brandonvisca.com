@@ -4,6 +4,18 @@
   /* ===== Override default Tailwind Typography styles ===== */
   .app-prose {
     @apply prose;
+    /* Figtree runs small: 17px body from sm up, 16px floor on phones */
+    @apply sm:text-[1.0625rem];
+
+    /* Reading measure: running text stays at ~70ch; code, tables and
+       images keep the full column for long commands and screenshots */
+    > :where(p, ul, ol, dl, h2, h3, h4, h5, h6, blockquote, details, hr) {
+      max-width: 70ch;
+    }
+
+    > :where(p:has(> img, > picture, > a > img)) {
+      max-width: none;
+    }
 
     h1,
     h2,
@@ -14,7 +26,7 @@
     }
 
     h3 {
-      @apply font-sriracha italic;
+      @apply font-sriracha;
     }
 
     p,
@@ -185,7 +197,7 @@
     }
 
     details > ul li a {
-      @apply relative inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 font-cartograph text-[13px] text-foreground/85 no-underline transition-all duration-200 hover:bg-accent/8 hover:text-accent hover:no-underline;
+      @apply relative inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 font-cartograph text-[0.8125rem] text-foreground/85 no-underline transition-all duration-200 hover:bg-accent/8 hover:text-accent hover:no-underline;
       background-image: none !important;
     }
 
@@ -211,7 +223,7 @@
     }
 
     details > ul ul li a {
-      @apply text-[12px] text-foreground/70;
+      @apply text-xs text-foreground/70;
     }
 
     details > ul ul li a::before {
