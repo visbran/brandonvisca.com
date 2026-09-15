@@ -190,7 +190,7 @@
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Prose d'article, 17px dès 640 px, texte courant limité à 70ch, justifié avec césure au-delà de 640 px."
+        "purpose": "Prose d'article, 17px dès 640 px, pleine largeur de colonne, justifiée avec césure au-delà de 640 px."
       },
       "note": {
         "displayName": "Note manuscrite",
@@ -394,7 +394,7 @@
       "Do réutiliser le vocabulaire terminal (prompt, compteur `[n/total]`, marqueur `end`, `kbd`) pour les nouveaux éléments de navigation ou d'état.",
       "Do placer les overrides dans `src/styles/custom.css` et consigner toute modif de fichier thème dans `THEME_CUSTOMIZATIONS.md`.",
       "Do fournir un focus visible en pointillé 2 px accent sur tout élément interactif.",
-      "Do garder le texte courant des articles à 70ch maximum et n'utiliser que les tailles de l'échelle typographique (frontmatter).",
+      "Do aligner le texte des articles sur la pleine largeur de la colonne (comme l'en-tête) et n'utiliser que les tailles de l'échelle typographique (frontmatter).",
       "Do exporter toute nouvelle graisse Figtree utilisée par les images OG dans `src/assets/fonts/og/` (Satori ne lit ni woff2 ni police variable)."
     ],
     "donts": [

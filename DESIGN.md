@@ -195,7 +195,7 @@ Palette à encre unique : un bleu de terminal posé sur un papier teinté, tout 
 - **Display** (700, 3rem → 4.5rem, 1.1, tracking serré) : titre du hero de la page d'accueil uniquement.
 - **Headline** (700, 1.875rem → 2.75rem, 1.25, tracking serré) : H1 d'article, centré dans le panneau d'en-tête.
 - **Title** (600, 1.125rem, 1.55) : titres des cartes d'articles, libellé du bouton CTA.
-- **Body** (400, 1.0625rem dès 640 px, 1rem en dessous, 1.75) : prose d'article via `@tailwindcss/typography`. Texte courant limité à 70ch ; blocs de code, tableaux et paragraphes d'images gardent toute la colonne. Justifié avec `hyphens: auto` au-delà de 640 px, aligné à gauche en dessous.
+- **Body** (400, 1.0625rem dès 640 px, 1rem en dessous, 1.75) : prose d'article via `@tailwindcss/typography`. Le texte occupe toute la colonne de l'article, alignée sur l'en-tête (choix confirmé : pas de mesure réduite sur desktop). Justifié avec `hyphens: auto` au-delà de 640 px, aligné à gauche en dessous.
 - **Heading lg / md / sm** (700 / 700 / 600 ; 2rem / 1.5rem / 1.25rem) : titres de pages secondaires, libellés d'année, chiffres des archives et des tags.
 - **Body UI** (400, 1rem, 1.6) : texte hors prose (titres de listes d'archives, noms de tags, descriptions d'états vides).
 - **UI** (500, 0.8125rem) : boutons secondaires, badges de hero, descriptions compactes.
@@ -288,7 +288,7 @@ Filets horizontaux en dégradé qui convergent vers un point accent à 50 % et l
 - **Do** réutiliser le vocabulaire terminal (prompt, compteur `[n/total]`, marqueur `end`, `kbd`) pour les nouveaux éléments de navigation ou d'état.
 - **Do** placer les overrides dans `src/styles/custom.css` et consigner toute modif de fichier thème dans `THEME_CUSTOMIZATIONS.md`.
 - **Do** fournir un focus visible en pointillé 2 px accent sur tout élément interactif.
-- **Do** garder le texte courant des articles à 70ch maximum et n'utiliser que les tailles de l'échelle typographique (frontmatter).
+- **Do** aligner le texte des articles sur la pleine largeur de la colonne (comme l'en-tête) et n'utiliser que les tailles de l'échelle typographique (frontmatter).
 - **Do** exporter toute nouvelle graisse Figtree utilisée par les images OG dans `src/assets/fonts/og/` (Satori ne lit ni woff2 ni police variable).
 
 ### Don't:

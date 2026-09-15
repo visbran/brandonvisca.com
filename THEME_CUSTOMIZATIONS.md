@@ -226,3 +226,11 @@ The following files are **not modified** and will merge cleanly:
 - `Header`, `IntroAudio`, `IntroAudioCompact`, `MobileMenu`, `SearchModal`, `GalleryEmbed`, `AboutLayout`, pages `archives`, `blog`, `tags`, `galleries` — tailles consolidées sur l'échelle de `DESIGN.md` (0.75 / 0.8125 / 0.875 / 1 / 1.0625 / 1.25 / 1.5 / 2 / 2.75rem).
 
 **Merge strategy**: Sur update upstream, conserver Figtree et l'échelle ; ne pas réintroduire de police mono-graisse utilisée en gras.
+
+---
+
+### Correctif largeur des articles (2026-09-15)
+
+**Reason**: La limite de 70ch ajoutée par la passe typeset laissait ~220 px vides à droite du texte sur desktop, désalignés de l'en-tête d'article pleine largeur.
+
+**Change**: `src/styles/typography.css` — suppression de la limite `max-width: 70ch` sur la prose ; le texte reprend toute la colonne. Taille de prose 17 px conservée.
