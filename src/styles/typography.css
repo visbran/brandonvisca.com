@@ -7,16 +7,6 @@
     /* Figtree runs small: 17px body from sm up, 16px floor on phones */
     @apply sm:text-[1.0625rem];
 
-    /* Reading measure: running text stays at ~70ch; code, tables and
-       images keep the full column for long commands and screenshots */
-    > :where(p, ul, ol, dl, h2, h3, h4, h5, h6, blockquote, details, hr) {
-      max-width: 70ch;
-    }
-
-    > :where(p:has(> img, > picture, > a > img)) {
-      max-width: none;
-    }
-
     h1,
     h2,
     h3,
