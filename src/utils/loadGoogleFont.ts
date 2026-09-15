@@ -1,23 +1,24 @@
 import fs from "fs";
 import path from "path";
 
-async function loadGoogleFonts(
-): Promise<
+const WEIGHTS = [400, 600, 700, 900] as const;
+
+async function loadGoogleFonts(): Promise<
   Array<{ name: string; data: ArrayBuffer; weight: number; style: string }>
 > {
-  // Ensure it searches from the root of the project
-  const fontPath = path.resolve("./src/assets/fonts/wotfard.ttf");
-  const fontData = fs.readFileSync(fontPath);
-
-  // We map different weights to the same TTF file so that satori 
-  // can render correctly regardless of the fontWeight 
-  // used in the templates.
-  return [
-    { name: "Wotfard", data: fontData.buffer, weight: 400, style: "normal" },
-    { name: "Wotfard", data: fontData.buffer, weight: 600, style: "normal" },
-    { name: "Wotfard", data: fontData.buffer, weight: 700, style: "normal" },
-    { name: "Wotfard", data: fontData.buffer, weight: 900, style: "normal" },
-  ];
+  // Satori cannot read woff2 or variable fonts: load one static WOFF per
+  // weight so OG images render real Figtree weights instead of faux bold.
+  return WEIGHTS.map(weight => {
+    const fontPath = path.resolve(
+      `./src/assets/fonts/og/figtree-latin-${weight}-normal.woff`
+    );
+    const file = fs.readFileSync(fontPath);
+    const data = file.buffer.slice(
+      file.byteOffset,
+      file.byteOffset + file.byteLength
+    ) as ArrayBuffer;
+    return { name: "Figtree", data, weight, style: "normal" };
+  });
 }
 
 export default loadGoogleFonts;

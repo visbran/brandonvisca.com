@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-15T22:00:00+02:00",
+  "generatedAt": "2026-09-15T22:40:00+02:00",
   "title": "Design System: Brandon Visca",
   "extensions": {
     "colorMeta": {
@@ -190,7 +190,7 @@
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Prose d'article, justifiée avec césure au-delà de 640 px."
+        "purpose": "Prose d'article, 17px dès 640 px, texte courant limité à 70ch, justifié avec césure au-delà de 640 px."
       },
       "note": {
         "displayName": "Note manuscrite",
@@ -204,9 +204,29 @@
         "displayName": "Mono",
         "purpose": "Code, tags, sommaire, badge terminal."
       },
-      "mono-micro": {
-        "displayName": "Mono micro",
-        "purpose": "Marqueurs discrets : end, Next, compteurs."
+      "heading-lg": {
+        "displayName": "Heading lg",
+        "purpose": "Titres de pages secondaires."
+      },
+      "heading-md": {
+        "displayName": "Heading md",
+        "purpose": "Libellés d'année et jours des archives."
+      },
+      "heading-sm": {
+        "displayName": "Heading sm",
+        "purpose": "Titres d'état vide, compteurs de tags."
+      },
+      "ui": {
+        "displayName": "UI",
+        "purpose": "Boutons secondaires, badges, descriptions compactes."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Marqueurs et compteurs en Cartograph ; plancher 12 px."
+      },
+      "body-ui": {
+        "displayName": "Body UI",
+        "purpose": "Texte courant hors prose : listes, noms de tags, états vides."
       }
     },
     "shadows": [
@@ -266,7 +286,7 @@
       "refersTo": "button-cta",
       "description": "Unique appel à l'action par page, ex. « Voir tous les articles ».",
       "html": "<a class=\"ds-btn-cta\" href=\"#\">Voir tous les articles <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/><polyline points=\"12 5 19 12 12 19\"/></svg></a>",
-      "css": ".ds-btn-cta { display: inline-flex; align-items: center; gap: 8px; padding: 16px 32px; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--accent, #1158d1) 20%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 10%, transparent); color: var(--accent, #1158d1); font-family: Wotfard, sans-serif; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 300ms ease; } .ds-btn-cta svg { transition: transform 300ms ease; } .ds-btn-cta:hover { border-color: color-mix(in srgb, var(--accent, #1158d1) 60%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 15%, transparent); box-shadow: 0 10px 15px -3px color-mix(in srgb, var(--accent, #1158d1) 15%, transparent); transform: translateY(-2px); } .ds-btn-cta:hover svg { transform: translateX(4px); } .ds-btn-cta:focus-visible { outline: 2px dashed var(--accent, #1158d1); outline-offset: 2px; }"
+      "css": ".ds-btn-cta { display: inline-flex; align-items: center; gap: 8px; padding: 16px 32px; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--accent, #1158d1) 20%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 10%, transparent); color: var(--accent, #1158d1); font-family: Figtree, sans-serif; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 300ms ease; } .ds-btn-cta svg { transition: transform 300ms ease; } .ds-btn-cta:hover { border-color: color-mix(in srgb, var(--accent, #1158d1) 60%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 15%, transparent); box-shadow: 0 10px 15px -3px color-mix(in srgb, var(--accent, #1158d1) 15%, transparent); transform: translateY(-2px); } .ds-btn-cta:hover svg { transform: translateX(4px); } .ds-btn-cta:focus-visible { outline: 2px dashed var(--accent, #1158d1); outline-offset: 2px; }"
     },
     {
       "name": "Navigation",
@@ -274,7 +294,7 @@
       "refersTo": "nav-link",
       "description": "Liens du header avec point plein sous l'élément actif.",
       "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link ds-nav-active\" href=\"#\">Articles</a><a class=\"ds-nav-link\" href=\"#\">Tags</a><a class=\"ds-nav-link\" href=\"#\">À propos</a><a class=\"ds-nav-link\" href=\"#\">CV</a></nav>",
-      "css": ".ds-nav { display: flex; gap: 4px; } .ds-nav-link { position: relative; display: inline-flex; align-items: center; padding: 6px 12px; font-family: Wotfard, sans-serif; font-size: 0.875rem; font-weight: 500; color: var(--foreground, #353538); text-decoration: none; border-radius: 8px; transition: color 200ms ease, background-color 200ms ease; } .ds-nav-link:hover { color: var(--accent, #1158d1); background: color-mix(in srgb, var(--accent, #1158d1) 8%, transparent); } .ds-nav-link:focus-visible { outline: none; box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent, #1158d1) 50%, transparent); } .ds-nav-active { color: var(--accent, #1158d1); } .ds-nav-active::after { content: ''; position: absolute; bottom: -1.6px; left: 50%; transform: translateX(-50%); width: 5.6px; height: 5.6px; border-radius: 50%; background: var(--accent, #1158d1); }"
+      "css": ".ds-nav { display: flex; gap: 4px; } .ds-nav-link { position: relative; display: inline-flex; align-items: center; padding: 6px 12px; font-family: Figtree, sans-serif; font-size: 0.875rem; font-weight: 500; color: var(--foreground, #353538); text-decoration: none; border-radius: 8px; transition: color 200ms ease, background-color 200ms ease; } .ds-nav-link:hover { color: var(--accent, #1158d1); background: color-mix(in srgb, var(--accent, #1158d1) 8%, transparent); } .ds-nav-link:focus-visible { outline: none; box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent, #1158d1) 50%, transparent); } .ds-nav-active { color: var(--accent, #1158d1); } .ds-nav-active::after { content: ''; position: absolute; bottom: -1.6px; left: 50%; transform: translateX(-50%); width: 5.6px; height: 5.6px; border-radius: 50%; background: var(--accent, #1158d1); }"
     },
     {
       "name": "Post Card",
@@ -282,7 +302,7 @@
       "refersTo": "card-post",
       "description": "Carte d'article des listes : titre, date, description tronquée.",
       "html": "<article class=\"ds-card\"><h3 class=\"ds-card-title\"><a href=\"#\">Headscale : ton propre serveur Tailscale</a></h3><time class=\"ds-card-date\">15 sept. 2026</time><p class=\"ds-card-desc\">Monte ton control plane Tailscale auto-hébergé avec Docker, sans dépendre du SaaS, et connecte tout ton homelab.</p></article>",
-      "css": ".ds-card { position: relative; padding: 20px; border-radius: 16px; border: 1px solid color-mix(in srgb, var(--border, #7cadff) 25%, transparent); background: color-mix(in srgb, var(--muted, #bbc789) 10%, transparent); transition: border-color 300ms ease-out, background-color 300ms ease-out, box-shadow 300ms ease-out, transform 300ms ease-out; } .ds-card:hover, .ds-card:focus-within { border-color: color-mix(in srgb, var(--accent, #1158d1) 40%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 5%, transparent); box-shadow: 0 10px 15px -3px color-mix(in srgb, var(--accent, #1158d1) 10%, transparent); transform: translateY(-2px); } .ds-card-title { margin: 0; font-family: Wotfard, sans-serif; font-size: 1.125rem; font-weight: 600; } .ds-card-title a { color: var(--foreground, #353538); text-decoration: none; transition: color 200ms ease; } .ds-card-title a::after { content: ''; position: absolute; inset: 0; } .ds-card:hover .ds-card-title a { color: var(--accent, #1158d1); } .ds-card-title a:focus-visible { outline: 2px dashed var(--accent, #1158d1); outline-offset: 2px; } .ds-card-date { display: block; margin-top: 6px; font-size: 0.875rem; opacity: 0.7; } .ds-card-desc { margin: 8px 0 0; font-size: 0.875rem; line-height: 1.625; color: color-mix(in srgb, var(--foreground, #353538) 75%, transparent); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }"
+      "css": ".ds-card { position: relative; padding: 20px; border-radius: 16px; border: 1px solid color-mix(in srgb, var(--border, #7cadff) 25%, transparent); background: color-mix(in srgb, var(--muted, #bbc789) 10%, transparent); transition: border-color 300ms ease-out, background-color 300ms ease-out, box-shadow 300ms ease-out, transform 300ms ease-out; } .ds-card:hover, .ds-card:focus-within { border-color: color-mix(in srgb, var(--accent, #1158d1) 40%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 5%, transparent); box-shadow: 0 10px 15px -3px color-mix(in srgb, var(--accent, #1158d1) 10%, transparent); transform: translateY(-2px); } .ds-card-title { margin: 0; font-family: Figtree, sans-serif; font-size: 1.125rem; font-weight: 600; } .ds-card-title a { color: var(--foreground, #353538); text-decoration: none; transition: color 200ms ease; } .ds-card-title a::after { content: ''; position: absolute; inset: 0; } .ds-card:hover .ds-card-title a { color: var(--accent, #1158d1); } .ds-card-title a:focus-visible { outline: 2px dashed var(--accent, #1158d1); outline-offset: 2px; } .ds-card-date { display: block; margin-top: 6px; font-size: 0.875rem; opacity: 0.7; } .ds-card-desc { margin: 8px 0 0; font-size: 0.875rem; line-height: 1.625; color: color-mix(in srgb, var(--foreground, #353538) 75%, transparent); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }"
     },
     {
       "name": "Tag Badge",
@@ -306,7 +326,7 @@
       "refersTo": "code-inline",
       "description": "Code inline dans la prose de tutoriel.",
       "html": "<p class=\"ds-prose-line\">Lance <code class=\"ds-code\">docker compose up -d</code> puis vérifie avec <code class=\"ds-code\">docker ps</code>.</p>",
-      "css": ".ds-prose-line { font-family: Wotfard, sans-serif; font-size: 1rem; line-height: 1.75; color: var(--foreground, #353538); } .ds-code { padding: 2px 6px; border-radius: 6px; background: color-mix(in srgb, var(--muted, #bbc789) 15%, transparent); font-family: 'Cartograph CF', monospace; font-size: 0.875rem; color: var(--foreground, #353538); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }"
+      "css": ".ds-prose-line { font-family: Figtree, sans-serif; font-size: 1rem; line-height: 1.75; color: var(--foreground, #353538); } .ds-code { padding: 2px 6px; border-radius: 6px; background: color-mix(in srgb, var(--muted, #bbc789) 15%, transparent); font-family: 'Cartograph CF', monospace; font-size: 0.875rem; color: var(--foreground, #353538); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }"
     },
     {
       "name": "Handwritten Blockquote",
@@ -327,9 +347,9 @@
   ],
   "narrative": {
     "northStar": "Le Carnet de Bord Sysadmin",
-    "overview": "Le site se lit comme le journal de terrain de quelqu'un qui administre vraiment son rack. Le corps de texte est un sans-serif chaleureux et arrondi (Wotfard), justifié avec césure comme une page imprimée. Les notes en marge, les citations et les sous-titres passent à la main levée (Sriracha), comme griffonnés au stylo. Les commandes, les étiquettes et le prompt `~/homelab git:(main) $` sont en monospace (Cartograph CF). Trois écritures, trois rôles : ce que j'explique, ce que je note, ce que je tape.\n\nLe support est un papier légèrement teinté, vert sauge en clair et bleu nuit de salle serveur en sombre, recouvert d'un grain fin et d'une grille de 50 px à peine visible qui s'efface vers le bas de la page. Une seule encre de couleur, le Bleu Console, sert aux liens, aux puces, aux focus et aux signaux d'état. La densité est modérée : colonne unique de 56 à 64 rem, cartes empilées, beaucoup d'air autour des titres.\n\nLe système hérite du thème astro-devosfera. Ses effets décoratifs (verre dépoli, orbes aurora animés, halos qui suivent la souris, titres à reflet ou en dégradé, variantes amber/purple) ont été retirés le 2026-09-15 : ils ne servaient pas le carnet. Les Don'ts empêchent leur retour.",
+    "overview": "Le site se lit comme le journal de terrain de quelqu'un qui administre vraiment son rack. Le corps de texte est un sans-serif chaleureux et arrondi (Figtree), justifié avec césure comme une page imprimée. Les notes en marge, les citations et les sous-titres passent à la main levée (Sriracha), comme griffonnés au stylo. Les commandes, les étiquettes et le prompt `~/homelab git:(main) $` sont en monospace (Cartograph CF). Trois écritures, trois rôles : ce que j'explique, ce que je note, ce que je tape.\n\nLe support est un papier légèrement teinté, vert sauge en clair et bleu nuit de salle serveur en sombre, recouvert d'un grain fin et d'une grille de 50 px à peine visible qui s'efface vers le bas de la page. Une seule encre de couleur, le Bleu Console, sert aux liens, aux puces, aux focus et aux signaux d'état. La densité est modérée : colonne unique de 56 à 64 rem, cartes empilées, beaucoup d'air autour des titres.\n\nLe système hérite du thème astro-devosfera. Ses effets décoratifs (verre dépoli, orbes aurora animés, halos qui suivent la souris, titres à reflet ou en dégradé, variantes amber/purple) ont été retirés le 2026-09-15 : ils ne servaient pas le carnet. Les Don'ts empêchent leur retour.",
     "keyCharacteristics": [
-      "Trois voix typographiques à rôle strict : exposé (Wotfard), annotation (Sriracha), machine (Cartograph).",
+      "Trois voix typographiques à rôle strict : exposé (Figtree), annotation (Sriracha), machine (Cartograph).",
       "Une seule couleur d'accent, déclinée en opacités via `color-mix`, jamais une deuxième teinte.",
       "Papier teinté + grain + grille fantôme comme matière de fond.",
       "Signature terminal : badge prompt avec curseur clignotant et point d'état fixe.",
@@ -348,7 +368,12 @@
       },
       {
         "name": "La Règle des Trois Écritures",
-        "body": "Wotfard explique, Sriracha annote, Cartograph exécute. Ne jamais mettre du code en Sriracha, ni un paragraphe entier en Cartograph, ni un titre d'article en Sriracha.",
+        "body": "Figtree explique, Sriracha annote, Cartograph exécute. Ne jamais mettre du code en Sriracha, ni un paragraphe entier en Cartograph, ni un titre d'article en Sriracha.",
+        "section": "typography"
+      },
+      {
+        "name": "La Règle des Graisses Réelles",
+        "body": "Seules les graisses présentes dans un fichier s'affichent (`font-synthesis: none`). Figtree porte toute la hiérarchie en graisse ; Sriracha et Cartograph restent en 400, sans faux gras ni faux italique.",
         "section": "typography"
       },
       {
@@ -364,11 +389,13 @@
     ],
     "dos": [
       "Do dériver toute nouvelle couleur des cinq tokens CSS (`--background`, `--foreground`, `--accent`, `--muted`, `--border`) par opacité ou `color-mix`, et vérifier les deux thèmes.",
-      "Do respecter la Règle des Trois Écritures : Wotfard pour l'exposé, Sriracha pour l'annotation, Cartograph pour tout ce qui se tape ou s'étiquette.",
+      "Do respecter la Règle des Trois Écritures : Figtree pour l'exposé, Sriracha pour l'annotation, Cartograph pour tout ce qui se tape ou s'étiquette.",
       "Do garder les bordures diluées (15-40 %) et les ombres teintées d'accent, uniquement sur état.",
       "Do réutiliser le vocabulaire terminal (prompt, compteur `[n/total]`, marqueur `end`, `kbd`) pour les nouveaux éléments de navigation ou d'état.",
       "Do placer les overrides dans `src/styles/custom.css` et consigner toute modif de fichier thème dans `THEME_CUSTOMIZATIONS.md`.",
-      "Do fournir un focus visible en pointillé 2 px accent sur tout élément interactif."
+      "Do fournir un focus visible en pointillé 2 px accent sur tout élément interactif.",
+      "Do garder le texte courant des articles à 70ch maximum et n'utiliser que les tailles de l'échelle typographique (frontmatter).",
+      "Do exporter toute nouvelle graisse Figtree utilisée par les images OG dans `src/assets/fonts/og/` (Satori ne lit ni woff2 ni police variable)."
     ],
     "donts": [
       "Don't utiliser le verre dépoli (`backdrop-filter`) comme décor. Réservé aux surfaces qui flottent au-dessus du contenu défilant : header collant, player compact, menu mobile, modale de recherche, bouton retour en haut.",
@@ -377,6 +404,7 @@
       "Don't ajouter de halo qui suit le curseur, d'orbe aurora, de lueur à décalage nul (`0 0 Npx`) ni d'animation infinie décorative.",
       "Don't référencer `--muted-foreground` : la variable n'existe pas. Texte secondaire = `color-mix(in srgb, var(--foreground) 65%, transparent)`.",
       "Don't utiliser d'easing à rebond (`cubic-bezier(0.34, 1.56, …)`) : préférer `cubic-bezier(0.25, 1, 0.5, 1)`.",
+      "Don't descendre sous 12 px (0.75rem), ni poser un paragraphe entier en Cartograph (le monospace est réservé au code et aux étiquettes).",
       "Don't mettre de H1 dans le corps d'un article : le panneau d'en-tête génère déjà le titre.",
       "Don't justifier le texte sous 640 px (rivières) ni désactiver la césure au-dessus."
     ]

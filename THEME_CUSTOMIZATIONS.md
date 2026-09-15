@@ -208,3 +208,21 @@ The following files are **not modified** and will merge cleanly:
 - `Header.astro` — fond du bouton recherche ramené à `muted` 15 % (trop lourd en thème clair).
 
 **Merge strategy**: Conserver les libellés FR et l'import de locale sur update upstream.
+
+---
+
+### Passe « typeset » — vraies graisses, mesure, échelle (2026-09-15)
+
+**Reason**: Wotfard n'était livré qu'en 400 statique : tout le gras du site était synthétisé (faux gras), Sriracha recevait un faux italique, la prose courait sur ~120 caractères par ligne, et 18 tailles arbitraires coexistaient (dont des libellés à 9–11 px).
+
+**Files & changes**:
+- `astro.config.ts` — Wotfard remplacée par **Figtree variable 300–900** (OFL, `@fontsource-variable/figtree` 5.3.0, sous-ensembles latin + latin-ext avec `unicodeRange`) ; Cascadia Code supprimée (utilisée seulement par l'ancien logo devosfera, désactivé).
+- `src/assets/fonts/` — ajout `figtree-latin-wght-normal.woff2`, `figtree-latin-ext-wght-normal.woff2`, `figtree-OFL.txt`, `og/figtree-latin-{400,600,700,900}-normal.woff` ; suppression `wotfard.woff2`, `wotfard.ttf`, `cascadia-code.woff2`.
+- `src/utils/loadGoogleFont.ts` — images OG (Satori) en Figtree statique réelle par graisse (Satori ne lit ni woff2 ni variable).
+- `src/layouts/Layout.astro` — `<Font>` Figtree préchargée, Cascadia retirée.
+- `src/styles/global.css` — `--font-app` → Figtree ; `font-synthesis: none` ; `em`/`i` Sriracha en `font-style: normal`.
+- `src/styles/typography.css` — prose à 17 px dès 640 px ; texte courant limité à 70ch (code, tableaux, images pleine largeur) ; H3 sans italique ; sommaire en 0.8125rem / 0.75rem.
+- `PostDetails.astro`, `Footer.astro`, `ShareLinks.astro`, `BackToTopButton.astro` — plancher 12 px, contraste des micro-libellés relevé ; description du footer en Figtree (plus en monospace) ; libellé « top » redondant supprimé.
+- `Header`, `IntroAudio`, `IntroAudioCompact`, `MobileMenu`, `SearchModal`, `GalleryEmbed`, `AboutLayout`, pages `archives`, `blog`, `tags`, `galleries` — tailles consolidées sur l'échelle de `DESIGN.md` (0.75 / 0.8125 / 0.875 / 1 / 1.0625 / 1.25 / 1.5 / 2 / 2.75rem).
+
+**Merge strategy**: Sur update upstream, conserver Figtree et l'échelle ; ne pas réintroduire de police mono-graisse utilisée en gras.
