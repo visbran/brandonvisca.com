@@ -290,6 +290,8 @@ docker exec unbound unbound-anchor
 
 💡 À lire aussi : [Authelia Docker : authentification double facteur centralisée pour ton homelab](/authelia-docker-authentification-2fa-homelab/), dans la même veine que cet article.
 
+💡 À lire aussi : [Headscale Docker : serveur Tailscale auto-hébergé (open-source)](/headscale-docker-tailscale-self-hosted/), dans la même veine que cet article.
+
 ## Conclusion
 
 Unbound est l'outil qu'il manquait à votre stack réseau. Léger, sécurisé, véritablement récursif et open-source, il vous rend souverain sur la résolution DNS de votre infrastructure. Conteneurisé avec Docker Compose, il s'intègre en cinq minutes dans un homelab existant et devient rapidement invisible tant il fait bien son travail.
