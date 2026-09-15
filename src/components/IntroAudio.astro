@@ -41,7 +41,7 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
   <button
     id="intro-audio-btn"
     class="intro-audio-btn"
-    aria-label="Play intro audio"
+    aria-label="Écouter la radio"
     type="button"
   >
     <!-- Play icon -->
@@ -93,7 +93,7 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
         aria-valuenow={0}
         aria-valuemin={0}
         aria-valuemax={duration}
-        aria-label="Audio progress control"
+        aria-label="Progression audio"
       >
         <div class="intro-progress-bar" id="intro-progress-bar"></div>
       </div>
@@ -136,15 +136,12 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
       border-color 0.3s,
       background 0.3s;
     max-width: 100%;
-    backdrop-filter: blur(4px);
   }
 
   /* playing state applied by JS */
   .intro-audio-wrap.playing {
     border-color: color-mix(in oklab, var(--accent) 55%, transparent);
     background: color-mix(in oklab, var(--accent) 6%, transparent);
-    box-shadow: 0 0 18px -4px
-      color-mix(in oklab, var(--accent) 20%, transparent);
   }
 
   .intro-audio-prefix {
@@ -222,6 +219,13 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
     opacity: 0.8;
     animation: wave-bounce 0.6s ease-in-out infinite alternate;
     animation-delay: var(--delay, 0s);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .playing .intro-wave-bar {
+      animation: none;
+      height: var(--h, 80%);
+    }
   }
 
   @keyframes wave-bounce {
@@ -360,8 +364,8 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
     const isStream = wrap.dataset.stream === "true";
     const store = getIntroAudioStore({ src, label, isStream, durationHint });
 
-    const playLabel = isStream ? "Play live radio" : "Play intro audio";
-    const pauseLabel = isStream ? "Pause radio" : "Pause intro audio";
+    const playLabel = isStream ? "Écouter la radio" : "Lire l'audio";
+    const pauseLabel = isStream ? "Mettre la radio en pause" : "Mettre l'audio en pause";
 
     const setPlaying = (playing: boolean) => {
       wrap.classList.toggle("playing", playing);

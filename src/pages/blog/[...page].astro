@@ -52,10 +52,6 @@ const totalPosts = page.total;
   <main id="main-content" class="app-layout pb-4">
     <!-- Hero -->
     <div class="posts-hero" data-posts-hero>
-      <div class="aurora-orb aurora-orb-1"></div>
-      <div class="aurora-orb aurora-orb-2"></div>
-      <div class="aurora-orb aurora-orb-3"></div>
-      <div class="aurora-mouse" data-posts-mouse></div>
       <div class="relative z-10">
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
           <span class="glow-text">Articles</span>
@@ -109,7 +105,7 @@ const totalPosts = page.total;
             </p>
           </div>
         ) : (
-          <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 [&>li]:my-0">
             {page.data.map((data: ContentEntry) => <Card {...data} />)}
           </ul>
         )
@@ -131,23 +127,6 @@ const totalPosts = page.total;
     if (cleanupController) cleanupController.abort();
     cleanupController = new AbortController();
     const { signal } = cleanupController;
-
-    // Hero mouse glow
-    const hero = document.querySelector("[data-posts-hero]") as HTMLElement;
-    const heroMouse = document.querySelector("[data-posts-mouse]") as HTMLElement;
-    if (hero && heroMouse) {
-      hero.addEventListener("mousemove", e => {
-        requestAnimationFrame(() => {
-          const rect = hero.getBoundingClientRect();
-          heroMouse.style.setProperty("--mx", `${e.clientX - rect.left}px`);
-          heroMouse.style.setProperty("--my", `${e.clientY - rect.top}px`);
-          heroMouse.style.opacity = "1";
-        });
-      }, { signal });
-      hero.addEventListener("mouseleave", () => {
-        heroMouse.style.opacity = "0";
-      }, { signal });
-    }
 
     // Initialize Pagefind local search
     const container = document.querySelector("#posts-pagefind");
@@ -246,109 +225,8 @@ const totalPosts = page.total;
     }
   }
 
-  .aurora-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(60px);
-    pointer-events: none;
-    will-change: transform;
-  }
-  .aurora-orb-1 {
-    width: 300px;
-    height: 300px;
-    top: -30%;
-    left: -10%;
-    background: radial-gradient(
-      circle,
-      color-mix(in srgb, var(--color-accent) 25%, transparent),
-      transparent 70%
-    );
-    animation: orb-1 7s ease-in-out infinite alternate;
-  }
-  .aurora-orb-2 {
-    width: 250px;
-    height: 250px;
-    top: 10%;
-    right: -5%;
-    background: radial-gradient(
-      circle,
-      color-mix(in srgb, var(--color-border) 20%, transparent),
-      transparent 70%
-    );
-    animation: orb-2 9s ease-in-out infinite alternate;
-  }
-  .aurora-orb-3 {
-    width: 200px;
-    height: 200px;
-    bottom: -20%;
-    left: 40%;
-    background: radial-gradient(
-      circle,
-      color-mix(in srgb, var(--color-accent) 12%, transparent),
-      transparent 70%
-    );
-    animation: orb-3 11s ease-in-out infinite alternate;
-  }
-  @keyframes orb-1 {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    100% {
-      transform: translate(40px, 20px) scale(1.2);
-    }
-  }
-  @keyframes orb-2 {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    100% {
-      transform: translate(-30px, 30px) scale(1.15);
-    }
-  }
-  @keyframes orb-3 {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    100% {
-      transform: translate(20px, -25px) scale(1.1);
-    }
-  }
-
-  .aurora-mouse {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background: radial-gradient(
-      circle,
-      color-mix(in srgb, var(--color-accent) 18%, transparent),
-      color-mix(in srgb, var(--color-border) 8%, transparent) 40%,
-      transparent 70%
-    );
-    filter: blur(50px);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    transform: translate(
-      calc(var(--mx, 0px) - 175px),
-      calc(var(--my, 0px) - 175px)
-    );
-    will-change: transform;
-    z-index: 1;
-  }
-
   .glow-text {
-    background: linear-gradient(
-      135deg,
-      var(--color-foreground),
-      var(--color-accent)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    filter: drop-shadow(
-      0 0 25px color-mix(in srgb, var(--color-accent) 25%, transparent)
-    );
+    color: var(--color-foreground);
   }
 
   .hero-badge {
@@ -362,7 +240,6 @@ const totalPosts = page.total;
     color: var(--color-accent);
     background: color-mix(in srgb, var(--color-accent) 8%, transparent);
     border: 1px solid color-mix(in srgb, var(--color-accent) 15%, transparent);
-    backdrop-filter: blur(8px);
   }
 
   /* Toolbar & Search Styles */
@@ -385,7 +262,6 @@ const totalPosts = page.total;
     border-radius: 1.5rem;
     border: 2px dashed color-mix(in srgb, var(--border) 40%, transparent);
     background: color-mix(in srgb, var(--background) 50%, transparent);
-    backdrop-filter: blur(12px);
   }
 
   .empty-icon-wrapper {
@@ -398,15 +274,7 @@ const totalPosts = page.total;
     background: color-mix(in srgb, var(--accent) 8%, transparent);
     color: var(--accent);
     margin-bottom: 1.5rem;
-    box-shadow: 
-      0 0 0 1px color-mix(in srgb, var(--accent) 15%, transparent),
-      0 10px 30px -10px color-mix(in srgb, var(--accent) 25%, transparent);
-    animation: empty-float 4s ease-in-out infinite alternate;
-  }
-
-  @keyframes empty-float {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-8px); }
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 15%, transparent);
   }
 
   .empty-title {
@@ -418,7 +286,7 @@ const totalPosts = page.total;
 
   .empty-desc {
     font-size: 0.95rem;
-    color: var(--muted-foreground);
+    color: color-mix(in srgb, var(--foreground) 65%, transparent);
     max-width: 300px;
     margin: 0 auto;
   }

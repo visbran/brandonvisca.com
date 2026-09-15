@@ -191,8 +191,7 @@ const nextPost =
   >
     <!-- Post header section -->
     <header class="post-header relative mb-10 text-center">
-      <div class="post-hero-bg"></div>
-      <div class="relative z-10 rounded-3xl border border-border/20 bg-muted/5 px-6 py-8 backdrop-blur-md sm:px-10 sm:py-12">
+      <div class="relative z-10 rounded-3xl border border-border/20 bg-muted/5 px-6 py-8 sm:px-10 sm:py-12">
         <!-- Title -->
         <h1
 class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]"
@@ -206,7 +205,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
             tags.map((tag: string) => (
               <a
                 href={`/tags/${slugifyStr(tag)}/`}
-                class="post-tag-badge inline-flex items-center gap-1 rounded-full border border-accent/20 bg-accent/5 px-2.5 py-0.5 font-cartograph text-xs text-accent transition-all duration-200 hover:border-accent/40 hover:bg-accent/10 hover:shadow-sm hover:shadow-accent/10"
+                class="post-tag-badge inline-flex items-center gap-1 rounded-full border border-accent/20 bg-accent/5 px-2.5 py-0.5 font-cartograph text-xs text-accent transition-all duration-200 hover:border-accent/40 hover:bg-accent/10"
               >
                 <span class="opacity-50">#</span>
                 {tag}
@@ -221,7 +220,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
         >
           <!-- Author chip -->
           <div
-            class="inline-flex items-center gap-1.5 rounded-lg border border-border/25 bg-muted/10 px-2.5 py-1 backdrop-blur-sm"
+            class="inline-flex items-center gap-1.5 rounded-lg border border-border/25 bg-muted/10 px-2.5 py-1"
           >
             <svg
               class="size-3.5 text-accent/70"
@@ -240,7 +239,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
 
           <!-- Date chip -->
           <div
-            class="inline-flex items-center gap-1.5 rounded-lg border border-border/25 bg-muted/10 px-2.5 py-1 backdrop-blur-sm"
+            class="inline-flex items-center gap-1.5 rounded-lg border border-border/25 bg-muted/10 px-2.5 py-1"
           >
             <svg
               class="size-3.5 text-accent/70"
@@ -269,7 +268,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
           <EditPost
             {hideEditPost}
             {post}
-            class="flex rounded-lg border border-border/25 bg-muted/10 px-2.5 py-1 opacity-70 backdrop-blur-sm transition-all duration-200 hover:border-accent/30 hover:opacity-100 [&>svg]:size-3.5"
+            class="flex rounded-lg border border-border/25 bg-muted/10 px-2.5 py-1 opacity-70 transition-all duration-200 hover:border-accent/30 hover:opacity-100 [&>svg]:size-3.5"
           />
         </div>
 
@@ -286,18 +285,14 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
 
     <!-- ═══════ Post footer section ═══════ -->
     <div class="relative mt-12 mb-8 flex items-center justify-center gap-4" aria-hidden="true">
-      <div class="relative h-px flex-1 bg-linear-to-r from-transparent via-border/30 to-accent/20">
-        <div class="absolute inset-0 bg-linear-to-r from-transparent via-accent/40 to-accent/40 blur-[2px]"></div>
-      </div>
+      <div class="h-px flex-1 bg-linear-to-r from-transparent via-border/30 to-accent/20"></div>
       
       <div class="relative z-10 flex items-center gap-2 font-cartograph text-[10px] tracking-widest text-accent/40 uppercase select-none">
-        <span class="h-1.5 w-1.5 rounded-full bg-accent/50 shadow-[0_0_8px_var(--color-accent)]"></span>
+        <span class="h-1.5 w-1.5 rounded-full bg-accent/50"></span>
         end
       </div>
 
-      <div class="relative h-px flex-1 bg-linear-to-l from-transparent via-border/30 to-accent/20">
-        <div class="absolute inset-0 bg-linear-to-l from-transparent via-accent/40 to-accent/40 blur-[2px]"></div>
-      </div>
+      <div class="h-px flex-1 bg-linear-to-l from-transparent via-border/30 to-accent/20"></div>
     </div>
 
     <!-- Tags & Share row -->
@@ -338,9 +333,8 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
         prevPost ? (
           <a
             href={getPath(prevPost.id, prevPost.filePath)}
-            class="post-nav-link group relative flex flex-col gap-1 rounded-2xl border border-border/20 px-5 py-4 transition-all duration-300 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5"
+            class="post-nav-link group relative flex flex-col gap-1 rounded-2xl border border-border/20 px-5 py-4 transition-all duration-300 hover:border-accent/30 hover:shadow-md hover:shadow-accent/5"
           >
-            <div class="post-nav-bg" />
             <div class="flex items-center gap-1.5">
               <svg
                 class="size-3.5 text-accent/50 transition-transform duration-300 group-hover:-translate-x-1 rtl:rotate-180"
@@ -355,7 +349,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
                 <polyline points="12 19 5 12 12 5" />
               </svg>
               <span class="font-cartograph text-[10px] tracking-wider text-foreground/35 uppercase">
-                Previous
+                Précédent
               </span>
             </div>
             <span class="line-clamp-2 text-sm leading-snug font-medium text-foreground/70 transition-colors duration-200 group-hover:text-accent">
@@ -370,12 +364,11 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
         nextPost && (
           <a
             href={getPath(nextPost.id, nextPost.filePath)}
-            class="post-nav-link group relative col-start-2 flex flex-col items-end gap-1 rounded-2xl border border-border/20 px-5 py-4 text-end transition-all duration-300 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5"
+            class="post-nav-link group relative col-start-2 flex flex-col items-end gap-1 rounded-2xl border border-border/20 px-5 py-4 text-end transition-all duration-300 hover:border-accent/30 hover:shadow-md hover:shadow-accent/5"
           >
-            <div class="post-nav-bg" />
             <div class="flex items-center gap-1.5">
               <span class="font-cartograph text-[10px] tracking-wider text-foreground/35 uppercase">
-                Next
+                Suivant
               </span>
               <svg
                 class="size-3.5 text-accent/50 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180"
@@ -475,7 +468,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
   /** Attaches copy buttons to code blocks in the document,
    * allowing users to copy code easily. */
   function attachCopyButtons() {
-    const copyButtonLabel = "Copy";
+    const copyButtonLabel = "Copier";
     const codeBlocks = Array.from(document.querySelectorAll("pre"));
 
     // Pass 1: read all computed styles before touching the DOM
@@ -513,7 +506,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
       await navigator.clipboard.writeText(text ?? "");
 
       // visual feedback that task is completed
-      button.innerText = "Copied";
+      button.innerText = "Copié";
 
       setTimeout(() => {
         button.innerText = copyButtonLabel;
@@ -530,49 +523,10 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
 
 <style>
   .post-title {
-    background: linear-gradient(
-      135deg,
-      var(--accent) 0%,
-      color-mix(in oklab, var(--accent) 60%, var(--foreground)) 25%,
-      var(--foreground) 50%,
-      var(--foreground) 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /* .post-tag-badge: no backdrop-filter — parent container already has
-     backdrop-blur-md, individual badge layers add no visual benefit
-     but cost a compositing layer each */
-  .post-tag-badge {
-    /* intentionally empty — styles fully handled by Tailwind utilities */
-  }
-
-  /* Hero Aurora glow layer — gradient-only, no filter:blur (avoids repaint) */
-  .post-hero-bg {
-    position: absolute;
-    inset: -2px;
-    opacity: 0.6;
-    background:
-      radial-gradient(
-        circle at 20% 5%,
-        color-mix(in oklab, var(--accent) 12%, transparent) 0%,
-        transparent 45%
-      ),
-      radial-gradient(
-        ellipse 80% 60% at 80% 95%,
-        color-mix(in oklab, var(--accent) 8%, transparent) 0%,
-        transparent 55%
-      );
-    pointer-events: none;
-    z-index: 0;
-    border-radius: 1.5rem; /* matches rounded-3xl */
+    color: var(--foreground);
   }
 
   .post-nav-link {
-    /* No backdrop-filter here — .post-nav-bg already provides the
-     blur effect via filter:blur(16px), avoiding a second compositing layer */
     background: color-mix(in srgb, var(--muted) 5%, transparent);
     position: relative;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
@@ -587,41 +541,4 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
     transform: translateY(0) scale(0.98);
   }
 
-  /* Aurora glow layer — opacity-only transition, single blur value */
-  .post-nav-bg {
-    position: absolute;
-    inset: -1px;
-    opacity: 0.4;
-    transition: opacity 0.35s ease;
-    background:
-      radial-gradient(
-        ellipse 80% 60% at 20% 80%,
-        color-mix(in oklab, var(--accent) 12%, transparent) 0%,
-        transparent 70%
-      ),
-      radial-gradient(
-        ellipse 60% 70% at 80% 20%,
-        color-mix(in oklab, var(--accent) 8%, transparent) 0%,
-        transparent 60%
-      ),
-      radial-gradient(
-        ellipse 90% 40% at 50% 100%,
-        color-mix(in oklab, var(--accent) 6%, transparent) 0%,
-        transparent 50%
-      );
-    filter: blur(16px); /* single value — no change on hover → no repaint */
-    pointer-events: none;
-    z-index: -1;
-    border-radius: inherit;
-  }
-
-  .post-nav-link:hover .post-nav-bg {
-    opacity: 1; /* only opacity transitions — compositor-friendly */
-  }
-
-  @media (pointer: fine) {
-    .post-nav-bg {
-      will-change: opacity;
-    }
-  }
 </style>

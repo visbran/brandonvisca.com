@@ -68,8 +68,8 @@ Read this file before merging upstream updates — each entry is a potential con
 
 The following files are **not modified** and will merge cleanly:
 
-- All components in `src/components/` **except** `Header.astro` and `MobileMenu.astro`
-- All layouts in `src/layouts/`
+- Components in `src/components/` **except** those listed in this file (Header, MobileMenu, Card, Footer, Pagination, Breadcrumb, ShareLinks, IntroAudio, IntroAudioCompact)
+- Layouts in `src/layouts/` **except** `PostDetails.astro`, `Layout.astro`, `AboutLayout.astro`
 - `src/content.config.ts`
 - `src/utils/` (except `getPath.ts`)
 - `astro.config.ts`
@@ -176,3 +176,35 @@ The following files are **not modified** and will merge cleanly:
 - Ajustement des indices `style="--i:N"` pour les éléments suivants (Archives → 4, Galleries → 5)
 
 **Merge strategy**: Sur update upstream, conserver le lien CV et les indices de délai d'animation.
+
+---
+
+### Passe « quieter » — suppression des effets décoratifs (2026-09-15)
+
+**Reason**: Aligner le thème sur `DESIGN.md` (« Le Carnet de Bord Sysadmin ») : encre unique, repos plat, pas de texte en dégradé, pas de verre décoratif, pas d'animation infinie décorative, pas de halo qui suit la souris.
+
+**Files & changes**:
+- `src/pages/index.astro` — titre hero plein (shimmer supprimé), badge terminal sans blur/lueur, point d'état fixe (plus d'`animate-ping`), curseur `▌` conservé + `prefers-reduced-motion`, script glow des cartes supprimé, halo CTA adouci.
+- `src/components/Card.astro` — plus de `backdrop-blur`, plus de glow curseur, variantes amber/purple remplacées par l'accent (featured = `border-accent/30 bg-accent/5`).
+- `src/components/Header.astro` — logo en couleur pleine, lueur du point actif supprimée, blur du header défilé réduit (12px, sans saturate), CSS mort du logo SVG supprimé, `--muted-foreground` (non défini) remplacé par `color-mix(foreground 65%)`.
+- `src/layouts/PostDetails.astro` — titre plein, panneau d'en-tête et chips sans blur, aurora `.post-hero-bg` / `.post-nav-bg` supprimées, marqueur `end` sans lueur.
+- `src/pages/blog/[...page].astro`, `src/pages/tags/index.astro`, `src/pages/archives/index.astro` — orbes aurora animés, halos souris (hero, bordures de cartes) et leur JS supprimés, `.glow-text` et libellés d'année en couleur pleine, badges sans blur, empty state sans flottement, lueurs `text-shadow`/`box-shadow` de survol supprimées.
+- `src/layouts/AboutLayout.astro` — orbes, halo avatar, anneau rotatif et script souris/ripple supprimés ; anneau avatar statique ; nom en couleur pleine ; badges sans blur.
+- `src/components/Footer.astro`, `Pagination.astro`, `Breadcrumb.astro`, `ShareLinks.astro`, `IntroAudio.astro`, `IntroAudioCompact.astro` — blur décoratif, dégradés et lueurs supprimés ; easing à rebond de la pagination remplacé par `cubic-bezier(0.25, 1, 0.5, 1)` ; animation d'onde audio respecte `prefers-reduced-motion`.
+
+**Conservé volontairement** : blur fonctionnel des surfaces flottantes (header collant, player compact du header, menu mobile, modale de recherche, bouton retour en haut), grain et grille de fond, curseur clignotant du badge terminal.
+
+**Merge strategy**: Sur update upstream de ces fichiers, ne pas réintroduire les effets listés ; appliquer les autres diffs manuellement.
+
+---
+
+### Passe « polish » — cohérence FR et défauts locaux (2026-09-15)
+
+**Files & changes**:
+- `src/components/Datetime.astro` — import `dayjs/locale/fr` (la locale n'était jamais chargée → mois en anglais), format `D MMM YYYY` en FR (« 15 sept. 2026 »).
+- `Header.astro`, `MobileMenu.astro`, `BackToTopButton.astro`, `Pagination.astro`, `SearchModal.astro` (aussi : titre plein, rebond et halos supprimés), `IntroAudio.astro`, `IntroAudioCompact.astro`, `src/scripts/theme.ts`, `PostDetails.astro`, `src/pages/index.astro` — libellés visibles et accessibles traduits (Aller au contenu, Recherche, Mode sombre/clair, Précédent/Suivant, Copier/Copié, Revenir en haut, Page précédente/suivante, Flux RSS, Thème clair/sombre…).
+- `src/pages/blog/[...page].astro` — `[&>li]:my-0` sur la grille : les marges des cartes doublaient l'écart vertical.
+- `src/pages/index.astro` — compteur `[6/180]` sans espace parasite.
+- `Header.astro` — fond du bouton recherche ramené à `muted` 15 % (trop lourd en thème clair).
+
+**Merge strategy**: Conserver les libellés FR et l'import de locale sur update upstream.

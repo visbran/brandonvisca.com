@@ -100,25 +100,25 @@ const isActive = (path: string) => {
           <button
             data-search-trigger
             class="mobile-action-btn flex-1 justify-center"
-            title="Search (⌘K)"
-            aria-label="Open search"
+            title="Rechercher (⌘K)"
+            aria-label="Ouvrir la recherche"
           >
             <IconSearch class="size-4" />
-            <span>Search</span>
+            <span>Recherche</span>
           </button>
           {
             SITE.lightAndDarkMode && (
               <button
                 id="theme-btn-mobile"
                 class="mobile-action-btn flex-1 justify-center"
-                title="Toggle theme"
+                title="Basculer le thème"
                 aria-label="auto"
                 aria-live="polite"
               >
                 <IconMoon class="block size-4 dark:hidden" />
                 <IconSunHigh class="hidden size-4 dark:block" />
-                <span class="block dark:hidden">Dark mode</span>
-                <span class="hidden dark:block">Light mode</span>
+                <span class="block dark:hidden">Mode sombre</span>
+                <span class="hidden dark:block">Mode clair</span>
               </button>
             )
           }
