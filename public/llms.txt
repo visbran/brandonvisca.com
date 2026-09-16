@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-15
-# Total articles : 185
+# Dernière mise à jour : 2026-09-16
+# Total articles : 186
+
+## SideNotes macOS : notes rapides qui glissent depuis le bord de l'écran
+URL: https://brandonvisca.com/sidenotes-macos-notes-rapides/
+Description: SideNotes macOS range tes notes sur le bord de l'écran, accessibles en un clic sans quitter ton app active. Installation, prix et astuces.
+Tags: 
+Publié: 2026-09-16T11:01:12+02:00
 
 ## Headscale Docker : serveur Tailscale auto-hébergé (open-source)
 URL: https://brandonvisca.com/headscale-docker-tailscale-self-hosted/
