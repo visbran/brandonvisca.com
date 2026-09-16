@@ -225,6 +225,8 @@ Si tu utilises déjà des agents IA comme Claude Code ou Codex CLI, jette un œi
 - [Oh My Zsh + Powerlevel10k : Guide d'installation complet](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
 - [Homebrew macOS : Guide d'Installation Complet (2026)](/installation-homebrew-macos/)
 
+💡 À lire aussi : [SideNotes macOS : notes rapides qui glissent depuis le bord de l'écran](/sidenotes-macos-notes-rapides/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [iTerm2 macOS 2026 : guide complet (install, config, thèmes)](/iterm2-guide-configuration-macos-2025/)

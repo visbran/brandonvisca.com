@@ -434,6 +434,8 @@ Shutter Encoder est une interface graphique pour FFmpeg. Si tu maîtrises FFmpeg
 - - - - - -
 💡 À lire aussi : [iTerm2 macOS 2026 : guide complet (install, config, thèmes)](/iterm2-guide-configuration-macos-2025/), dans la même veine que cet article.
 
+💡 À lire aussi : [SideNotes macOS : notes rapides qui glissent depuis le bord de l'écran](/sidenotes-macos-notes-rapides/), dans la même veine que cet article.
+
 ## Liens utiles
 
 - [Site officiel Shutter Encoder](https://www.shutterencoder.com/) (source de téléchargement)
