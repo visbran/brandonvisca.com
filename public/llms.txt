@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-16
-# Total articles : 186
+# Dernière mise à jour : 2026-09-17
+# Total articles : 187
+
+## Dozzle Docker : visionneuse de logs Docker en temps réel via web
+URL: https://brandonvisca.com/dozzle-docker-visionneuse-logs-web/
+Description: Guide dozzle docker complet : installe cette visionneuse de logs Docker temps réel, léger, sans base de données, avec ou sans authentification.
+Tags: 
+Publié: 2026-09-17T11:01:11+02:00
 
 ## SideNotes macOS : notes rapides qui glissent depuis le bord de l'écran
 URL: https://brandonvisca.com/sidenotes-macos-notes-rapides/
