@@ -232,6 +232,8 @@ Pour un monitoring réseau qui complète Scrutiny, mon article sur [SNMPd Docker
 
 > 💡 Pour vérifier que smartmontools accède bien aux disques depuis le conteneur : `docker exec scrutiny smartctl -a /dev/sda`. Si ça sort des données SMART, le collecteur fonctionne.
 
+💡 À lire aussi : [Dozzle Docker : visionneuse de logs Docker en temps réel via web](/dozzle-docker-visionneuse-logs-web/), dans la même veine que cet article.
+
 ## Conclusion
 
 Scrutiny Docker, c'est le chaînon manquant entre `smartctl` qui crache du texte et une vraie supervision des disques. Dix minutes pour déployer le mode omnibus, et tu as un historique SMART de tous tes disques avec des alertes qui fonctionnent vraiment.
