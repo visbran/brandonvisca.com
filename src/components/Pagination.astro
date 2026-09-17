@@ -39,8 +39,8 @@ const { page } = Astro.props;
       
       <div class="pagination-info select-none">
         <span class="font-semibold text-foreground">{page.currentPage}</span> 
-        <span class="text-foreground/40 mx-1">/</span> 
-        <span class="text-foreground/70">{page.lastPage}</span>
+        <span class="text-soft mx-1">/</span> 
+        <span class="text-soft">{page.lastPage}</span>
       </div>
 
       <LinkButton
@@ -67,7 +67,7 @@ const { page } = Astro.props;
     justify-content: center;
     width: 2.75rem;
     height: 2.75rem;
-    border-radius: 0.85rem;
+    border-radius: 0.75rem;
     background: color-mix(in srgb, var(--muted) 8%, transparent);
     border: 1px solid color-mix(in srgb, var(--border) 40%, transparent);
     color: var(--foreground);

@@ -10,17 +10,27 @@ import {
   transformerNotationWordHighlight,
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
+import proseImageSizes from "./src/utils/prose-image-sizes.mjs";
 import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
   integrations: [
+    proseImageSizes(),
     mdx({
       extendMarkdownConfig: true,
     }),
     sitemap({
-      filter: page => SITE.showArchives || !page.endsWith("/archives"),
+      // Les routes désactivées restent générées par le build : sans filtre
+      // elles continuaient d'être soumises à Google et indexées.
+      filter: page => {
+        // `includes` et non `endsWith` : les URLs du sitemap portent un slash
+        // final, donc le test d'origine ne matchait jamais.
+        if (!SITE.showArchives && page.includes("/archives")) return false;
+        if (!SITE.showGalleries && page.includes("/galleries")) return false;
+        return true;
+      },
     }),
   ],
   markdown: {

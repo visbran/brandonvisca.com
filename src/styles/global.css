@@ -10,6 +10,10 @@ html[data-theme="light"] {
   --accent: #1158d1;
   --muted: #bbc789;
   --border: #7cadff;
+  /* Texte secondaire. Le papier sauge est le thème le plus clair du site, donc
+   * c'est lui qui fixe le plancher : 72 % donne 4.85:1, au-dessus du 4.5:1 de
+   * WCAG AA. En dessous de 70 % le ratio tombe sous le seuil (65 % = 4.02:1). */
+  --text-soft: color-mix(in srgb, var(--foreground) 72%, transparent);
 }
 
 html[data-theme="dark"] {
@@ -18,6 +22,7 @@ html[data-theme="dark"] {
   --accent: #008fec;
   --muted: #212f3f;
   --border: #2264e3;
+  --text-soft: color-mix(in srgb, var(--foreground) 65%, transparent);
 }
 
 @theme inline {
@@ -29,6 +34,7 @@ html[data-theme="dark"] {
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-border: var(--border);
+  --color-soft: var(--text-soft);
 }
 
 .italic,
@@ -119,7 +125,7 @@ i {
 }
 
 .premium-search input.pagefind-ui__search-input::placeholder {
-  color: color-mix(in srgb, var(--foreground) 35%, transparent);
+  color: var(--text-soft);
 }
 
 .premium-search form::before {

@@ -54,9 +54,9 @@ const totalPosts = page.total;
     <div class="posts-hero" data-posts-hero>
       <div class="relative z-10">
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          <span class="glow-text">Articles</span>
+          <span>Articles</span>
         </h1>
-        <p class="mt-3 max-w-lg text-foreground/70 italic">
+        <p class="mt-3 max-w-lg text-soft italic">
           Guides, tutos et retours d'expérience sur le homelab, l'auto-hébergement et l'indépendance numérique.
         </p>
         <div class="mt-4 flex flex-wrap items-center gap-2">
@@ -225,9 +225,6 @@ const totalPosts = page.total;
     }
   }
 
-  .glow-text {
-    color: var(--color-foreground);
-  }
 
   .hero-badge {
     display: inline-flex;
@@ -270,11 +267,10 @@ const totalPosts = page.total;
     justify-content: center;
     width: 5rem;
     height: 5rem;
-    border-radius: 1.25rem;
+    border-radius: 1.5rem;
     background: color-mix(in srgb, var(--accent) 8%, transparent);
     color: var(--accent);
     margin-bottom: 1.5rem;
-    box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 15%, transparent);
   }
 
   .empty-title {
@@ -286,7 +282,7 @@ const totalPosts = page.total;
 
   .empty-desc {
     font-size: 1rem;
-    color: color-mix(in srgb, var(--foreground) 65%, transparent);
+    color: var(--text-soft);
     max-width: 300px;
     margin: 0 auto;
   }

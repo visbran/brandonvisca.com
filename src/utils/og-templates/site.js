@@ -2,6 +2,11 @@ import satori from "satori";
 import { SITE } from "@/config";
 import loadGoogleFonts from "../loadGoogleFont";
 
+/**
+ * Carte OG du site — même monde que la carte d'article : rack-night, accent
+ * cyan, grille fantôme en signature. Aucun halo, aucune ombre portée.
+ * `#a6a7aa` = `--text-soft` sombre aplati (f6f7f8 à 65 % sur 10131a).
+ */
 export default async () => {
   // Get the clean hostname (e.g. mydomain.com)
   const hostname = new URL(SITE.website).hostname;
@@ -17,50 +22,15 @@ export default async () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#0f172a", // Dark background (Slate 900)
+          backgroundColor: "#10131a",
+          // Grille fantôme : la signature du site, pas un halo décoratif.
           backgroundImage:
-            "radial-gradient(circle at 25px 25px, #1e293b 2%, transparent 0%), radial-gradient(circle at 75px 75px, #1e293b 2%, transparent 0%)", // Subtle dot pattern (optional, delete if you don't like it)
-          backgroundSize: "100px 100px",
-          color: "white",
-          position: "relative",
+            "linear-gradient(rgba(34, 100, 227, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 100, 227, 0.12) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+          color: "#f6f7f8",
         },
         children: [
-          // 1. Top Right Decorative Gradient (Purple)
-          {
-            type: "div",
-            props: {
-              style: {
-                position: "absolute",
-                top: "-150px",
-                right: "-50px",
-                width: "600px",
-                height: "600px",
-                background: "linear-gradient(140deg, #a855f7, #ec4899)", // Purple to Pink
-                filter: "blur(120px)",
-                opacity: 0.3,
-                borderRadius: "100%",
-              },
-            },
-          },
-          // 2. Bottom Left Decorative Gradient (Indigo)
-          {
-            type: "div",
-            props: {
-              style: {
-                position: "absolute",
-                bottom: "-150px",
-                left: "-50px",
-                width: "500px",
-                height: "500px",
-                background: "linear-gradient(140deg, #3b82f6, #6366f1)", // Blue to Indigo
-                filter: "blur(120px)",
-                opacity: 0.3,
-                borderRadius: "100%",
-              },
-            },
-          },
-
-          // 3. Central Container
+          // 1. Conteneur central
           {
             type: "div",
             props: {
@@ -74,45 +44,43 @@ export default async () => {
                 width: "90%",
               },
               children: [
-                // Site Title (HERO)
                 {
                   type: "h1",
                   props: {
                     style: {
-                      fontSize: 100, // Very large
+                      fontSize: 96,
                       fontWeight: 900,
                       letterSpacing: "-2px",
-                      color: "white",
-                      margin: "0 0 20px 0",
+                      color: "#f6f7f8",
+                      margin: "0 0 24px 0",
                       lineHeight: 1,
-                      textShadow: "0 4px 20px rgba(0,0,0,0.5)",
                     },
                     children: SITE.title,
                   },
                 },
 
-                // Small separator line
+                // Filet accent
                 {
                   type: "div",
                   props: {
                     style: {
-                      width: "80px",
-                      height: "6px",
-                      backgroundColor: "#818cf8", // Indigo Accent
-                      borderRadius: "4px",
-                      marginBottom: "30px",
+                      width: "64px",
+                      height: "5px",
+                      borderRadius: "3px",
+                      backgroundColor: "#008fec",
+                      marginBottom: "32px",
                     },
                   },
                 },
 
-                // Site description
+                // Description
                 {
                   type: "p",
                   props: {
                     style: {
-                      fontSize: 36,
-                      color: "#cbd5e1", // Slate 300 (light gray)
-                      maxWidth: "80%", // So it doesn't stretch too much to the sides
+                      fontSize: 34,
+                      color: "#a6a7aa",
+                      maxWidth: "78%",
                       margin: 0,
                       lineHeight: 1.4,
                       fontWeight: 400,
@@ -124,7 +92,7 @@ export default async () => {
             },
           },
 
-          // 4. Footer: Site URL (Pill design)
+          // 2. Pied : domaine, en pastille
           {
             type: "div",
             props: {
@@ -134,8 +102,8 @@ export default async () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: "rgba(255, 255, 255, 0.05)",
-                border: "1px solid rgba(255, 255, 255, 0.1)",
+                backgroundColor: "rgba(0, 143, 236, 0.10)",
+                border: "1px solid rgba(0, 143, 236, 0.35)",
                 padding: "12px 30px",
                 borderRadius: "100px",
               },
@@ -144,7 +112,7 @@ export default async () => {
                 props: {
                   style: {
                     fontSize: 24,
-                    color: "#94a3b8", // Subtle text
+                    color: "#a6a7aa",
                     fontWeight: 600,
                     letterSpacing: "1px",
                   },

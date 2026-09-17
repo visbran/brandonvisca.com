@@ -204,7 +204,6 @@
 
     details > ul li a:hover::before {
       background: var(--accent);
-      box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 40%, transparent);
     }
 
     /* Nested list (sub-items) */
@@ -213,7 +212,7 @@
     }
 
     details > ul ul li a {
-      @apply text-xs text-foreground/70;
+      @apply text-xs text-soft;
     }
 
     details > ul ul li a::before {
