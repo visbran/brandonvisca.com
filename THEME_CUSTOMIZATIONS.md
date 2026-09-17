@@ -234,3 +234,29 @@ The following files are **not modified** and will merge cleanly:
 **Reason**: La limite de 70ch ajoutée par la passe typeset laissait ~220 px vides à droite du texte sur desktop, désalignés de l'en-tête d'article pleine largeur.
 
 **Change**: `src/styles/typography.css` — suppression de la limite `max-width: 70ch` sur la prose ; le texte reprend toute la colonne. Taille de prose 17 px conservée.
+
+---
+
+### Passe « audit impeccable » — contraste, focus, décors, perf (2026-09-17)
+
+**Reason**: Audit technique (a11y, perf, responsive, intégrité). 21 cibles sous WCAG AA (texte secondaire entre 1,73:1 et 4,02:1), indicateurs de focus à 2,25:1, modale de recherche sans piège de focus (Tab s'échappait malgré `aria-modal`), 5 animations infinies tournant en permanence dans une modale `visibility: hidden`, halos et orbes décoratifs bannis par `DESIGN.md`, et `sizes` des images d'article calculé sur la largeur intrinsèque (jusqu'à 2880 px) au lieu des 760 px du corps de texte.
+
+**Files & changes**:
+- `src/styles/global.css` — nouveau token `--text-soft` (72 % clair / 65 % sombre, seul palier qui tienne 4,5:1 sur le fond le plus clair du site), exposé en `--color-soft` donc en utilitaire `text-soft` ; `::placeholder` repassé dessus (35 % = 1,94:1).
+- `Header.astro`, `Breadcrumb.astro`, `Footer.astro`, `Pagination.astro`, `ShareLinks.astro`, `EditPost.astro`, `PostDetails.astro`, `Card.astro`, `Datetime.astro`, `GalleryEmbed.astro`, `GalleryCard.astro`, `SearchModal.astro`, pages `blog`/`archives`/`tags`/`galleries`/`search`, `typography.css` — tous les `text-foreground/40|50|60|65|70` et `opacity: 0.4–0.7` sur du texte remplacés par `text-soft` / `var(--text-soft)`. Les paliers `/75` et `/80` passent AA et sont conservés comme palier d'emphase supérieur.
+- `IntroAudio.astro`, `archives/index.astro`, `tags/index.astro` — libellés accent à 0,35–0,55 d'opacité remontés (l'accent n'atteint 4,5:1 qu'à 100 %, 3:1 à 80 % pour le grand texte) ; `.post-day` (1,5 rem/800 = grand texte) passe de 0,35 à 0,70.
+- `Header.astro` — indicateur de focus en double anneau (fond + accent plein = 5,70:1 / 5,43:1) au lieu d'un accent à 50 % (2,25:1) ; `aria-label="auto"` remplacé par un libellé d'action.
+- `src/scripts/theme.ts` — `<meta name="theme-color">` alimenté depuis le fond calculé, écouté aussi sur `#theme-btn-mobile` ; l'écoute de `prefers-color-scheme` ne suit plus le système si l'utilisateur a choisi explicitement (elle écrasait son choix et l'écrivait dans `localStorage`) ; `initialColorScheme` aligné sur celui du script inline de `Layout.astro` (divergents, les deux scripts se contredisaient et produisaient un flash) ; libellés de bouton reformulés comme des actions.
+- `src/layouts/Layout.astro` — `<meta name="theme-color" content="#10131a">` (le tag n'existait pas : le `querySelector` de `theme.ts` ne trouvait rien).
+- `src/components/SearchModal.astro` — piège de focus cyclique (Tab/Shift+Tab) et retour du focus au déclencheur ; suppression des 3 orbes `blur(70px)`, des 5 étincelles, de la lueur de bord en `conic-gradient` animé et de la lueur suiveuse de souris — soit 5 animations infinies et 2 `will-change` qui tournaient sur chaque page, la modale restant `visibility: hidden` (seul `display: none` arrête une animation) ; `prefers-reduced-motion` ajouté.
+- `src/pages/search.astro` — même retrait (3 orbes animés, lueur suiveuse de souris, lueur de bord) et suppression des deux blocs JS de suivi de souris devenus sans cible.
+- `src/pages/*/index.astro` (tags, archives, blog, search, galleries) — `.glow-text` supprimé : `background-clip: text` + `drop-shadow(0 0 25px)` sur les titres, banni par `DESIGN.md`.
+- `src/utils/og-templates/post.js` et `site.js` — réécrits sur la palette du site : rack-night `#10131a`, accent `#008fec`, grille fantôme en signature (au lieu de dégradés violet/indigo/rose flous), Figtree, « Par Brandon Visca » en français, plus d'`textShadow`.
+- `src/utils/prose-image-sizes.mjs` (nouveau) + `astro.config.ts` — intégration de build qui recadre `sizes="(min-width: Npx) Npx, 100vw"` sur `(min-width: 792px) 760px, 100vw` quand `N` dépasse la largeur du corps de texte. Les plugins rehype s'exécutent avant celui qui produit `sizes`, et les remark ne connaissent pas encore la largeur résolue : la correction se fait donc sur le HTML écrit. 42 images sur 14 pages.
+- `astro.config.ts` — filtre sitemap étendu aux galeries désactivées ; `endsWith("/archives")` remplacé par `includes` (les URLs du sitemap portent un slash final, le test ne matchait jamais).
+- `IntroAudio.astro` — `wave-bounce` et la barre de progression animés en `transform: scaleY` / `scaleX` (avec `overflow: hidden` et rayon pilule sur la piste) : `height` et `width` déclenchaient une mise en page à chaque frame.
+- Rayons alignés sur l'échelle 4/6/8/12/16/24/pilule (0.2/0.35/0.45/0.6/0.625/0.85/1.25 rem et 10 px supprimés) ; halos sans décalage `0 0 Npx` retirés de `MobileMenu`, `typography.css`, `SearchModal`, `blog/[...page]`, `search`, et des piles `box-shadow` de `archives`/`tags`.
+
+**Conservé volontairement**: `git:(main)` (0,55) et `$` (0,35) du badge terminal de `index.astro`, épinglés par `DESIGN.md` ; séparateurs et puces décoratives ; état désactivé de `Pagination` (exempté par WCAG 1.4.3) ; `.shortcuts-sep` (0,3). Deux faux positifs du détecteur à ne pas « corriger » : `codex-grid-background` (la grille fantôme est une signature documentée) et `bounce-easing` sur `wave-bounce` (les keyframes ne dépassent jamais leur cible, seul le nom trompe).
+
+**Merge strategy**: Sur update upstream, conserver le token `--text-soft`, le double anneau de focus, le piège de focus et le retrait des décors ; ne pas réintroduire les orbes, lueurs, étincelles ni le texte en dégradé.

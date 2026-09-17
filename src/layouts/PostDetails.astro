@@ -207,7 +207,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
                 href={`/tags/${slugifyStr(tag)}/`}
                 class="post-tag-badge inline-flex items-center gap-1 rounded-full border border-accent/20 bg-accent/5 px-2.5 py-0.5 font-cartograph text-xs text-accent transition-all duration-200 hover:border-accent/40 hover:bg-accent/10"
               >
-                <span class="opacity-50">#</span>
+                <span class="text-soft">#</span>
                 {tag}
               </a>
             ))
@@ -308,7 +308,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
               tabindex="-1"
               class="inline-flex items-center gap-1 rounded-full border border-border/25 bg-muted/10 px-2.5 py-1 font-cartograph text-xs transition-all duration-200 hover:border-accent/40 hover:bg-accent/5 hover:text-accent"
             >
-              <span class="opacity-40">#</span>
+              <span class="text-soft">#</span>
               {tag}
             </a>
           ))
@@ -348,11 +348,11 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
                 <line x1="19" y1="12" x2="5" y2="12" />
                 <polyline points="12 19 5 12 12 5" />
               </svg>
-              <span class="font-cartograph text-xs tracking-wider text-foreground/60 uppercase">
+              <span class="font-cartograph text-xs tracking-wider text-soft uppercase">
                 Précédent
               </span>
             </div>
-            <span class="line-clamp-2 text-sm leading-snug font-medium text-foreground/70 transition-colors duration-200 group-hover:text-accent">
+            <span class="line-clamp-2 text-sm leading-snug font-medium text-soft transition-colors duration-200 group-hover:text-accent">
               {prevPost.title}
             </span>
           </a>
@@ -367,7 +367,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
             class="post-nav-link group relative col-start-2 flex flex-col items-end gap-1 rounded-2xl border border-border/20 px-5 py-4 text-end transition-all duration-300 hover:border-accent/30 hover:shadow-md hover:shadow-accent/5"
           >
             <div class="flex items-center gap-1.5">
-              <span class="font-cartograph text-xs tracking-wider text-foreground/60 uppercase">
+              <span class="font-cartograph text-xs tracking-wider text-soft uppercase">
                 Suivant
               </span>
               <svg
@@ -383,7 +383,7 @@ class="post-title text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg
                 <polyline points="12 5 19 12 12 19" />
               </svg>
             </div>
-            <span class="line-clamp-2 text-sm leading-snug font-medium text-foreground/70 transition-colors duration-200 group-hover:text-accent">
+            <span class="line-clamp-2 text-sm leading-snug font-medium text-soft transition-colors duration-200 group-hover:text-accent">
               {nextPost.title}
             </span>
           </a>

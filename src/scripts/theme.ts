@@ -5,6 +5,7 @@ const DARK = "dark";
 
 // Initial color scheme
 // Can be "light", "dark", or empty string for system's prefers-color-scheme
+// Doit rester identique à `initialColorScheme` du script inline de Layout.astro.
 const initialColorScheme = "dark";
 
 function getPreferTheme(): string {
@@ -32,10 +33,14 @@ function setPreference(): void {
 function reflectPreference(): void {
   document.firstElementChild?.setAttribute("data-theme", themeValue);
 
-  document.querySelector("#theme-btn")?.setAttribute(
-    "aria-label",
-    themeValue === "dark" ? "Thème sombre" : "Thème clair"
-  );
+  // Le libellé décrit l'action du bouton, pas l'état courant : « Thème sombre »
+  // sur un bouton qui bascule vers le clair annonçait l'inverse de l'effet.
+  document.querySelectorAll("#theme-btn, #theme-btn-mobile").forEach(btn => {
+    btn.setAttribute(
+      "aria-label",
+      themeValue === "dark" ? "Passer au thème clair" : "Passer au thème sombre"
+    );
+  });
 
   // Get a reference to the body element
   const body = document.body;
@@ -127,7 +132,12 @@ document.addEventListener("astro:before-swap", event => {
 window
   .matchMedia("(prefers-color-scheme: dark)")
   .addEventListener("change", ({ matches: isDark }) => {
+    // Ne suivre le système que si l'utilisateur n'a jamais choisi explicitement.
+    // Sinon un basculement d'OS écrasait son choix ET l'écrivait dans
+    // localStorage, rendant le choix définitif impossible à retrouver.
+    if (localStorage.getItem(THEME)) return;
+
     themeValue = isDark ? DARK : LIGHT;
     window.theme?.setTheme(themeValue);
-    setPreference();
+    reflectPreference();
   });

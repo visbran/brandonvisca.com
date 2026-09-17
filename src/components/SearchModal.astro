@@ -2,7 +2,7 @@
 /**
  * SearchModal — A floating, interactive modal for site-wide searching.
  * Utilizes Pagefind for fast, static indexing and searching capabilities.
- * Includes visual elements like cursors glows, sparkles, and keyboard navigation.
+ * Keyboard navigation, focus trap, and focus return to the opener.
  */
 import "@pagefind/default-ui/css/ui.css";
 ---
@@ -17,25 +17,6 @@ import "@pagefind/default-ui/css/ui.css";
 >
   <div class="search-modal-backdrop" data-search-close></div>
   <div class="search-modal-container" data-modal-card>
-    <!-- Aurora orbs background -->
-    <div class="modal-aurora" aria-hidden="true">
-      <div class="modal-aurora-orb modal-aurora-orb-1"></div>
-      <div class="modal-aurora-orb modal-aurora-orb-2"></div>
-      <div class="modal-aurora-orb modal-aurora-orb-3"></div>
-    </div>
-    <!-- Cursor-follow glow -->
-    <div class="modal-cursor-glow" data-modal-glow aria-hidden="true"></div>
-    <!-- Sparkles -->
-    <div class="modal-sparkles" aria-hidden="true">
-      <div class="sparkle sparkle-1"></div>
-      <div class="sparkle sparkle-2"></div>
-      <div class="sparkle sparkle-3"></div>
-      <div class="sparkle sparkle-4"></div>
-      <div class="sparkle sparkle-5"></div>
-    </div>
-    <!-- Animated border glow -->
-    <div class="modal-border-glow" aria-hidden="true"></div>
-
     <!-- Header -->
     <div class="search-modal-header">
       <div class="search-modal-title">
@@ -134,40 +115,26 @@ import "@pagefind/default-ui/css/ui.css";
     const modal = document.getElementById("search-modal");
     if (!modal) return;
 
-    const card = modal.querySelector("[data-modal-card]") as HTMLElement;
-    const glow = modal.querySelector("[data-modal-glow]") as HTMLElement;
     const emptyState = modal.querySelector(
       "[data-search-empty]"
     ) as HTMLElement;
     let pagefindLoaded = false;
+    // Élément qui avait le focus avant l'ouverture, pour le lui rendre à la
+    // fermeture : sans ça le focus retombait sur <body> et le clavier
+    // repartait du début du document.
+    let opener: HTMLElement | null = null;
 
-    // Mouse follow glow on card
-    if (card && glow) {
-      card.addEventListener(
-        "mousemove",
-        (e: MouseEvent) => {
-          requestAnimationFrame(() => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            glow.style.setProperty("--gx", `${x}px`);
-            glow.style.setProperty("--gy", `${y}px`);
-            glow.style.opacity = "1";
-          });
-        },
-        { signal }
-      );
-
-      card.addEventListener(
-        "mouseleave",
-        () => {
-          glow.style.opacity = "0";
-        },
-        { signal }
-      );
+    /** Éléments focalisables réellement visibles dans la modale. */
+    function focusables(): HTMLElement[] {
+      return Array.from(
+        modal!.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        )
+      ).filter(el => el.getClientRects().length > 0);
     }
 
     function openModal() {
+      opener = document.activeElement as HTMLElement | null;
       modal!.classList.add("active");
       document.body.style.overflow = "hidden";
 
@@ -187,6 +154,13 @@ import "@pagefind/default-ui/css/ui.css";
     function closeModal() {
       modal!.classList.remove("active");
       document.body.style.overflow = "";
+
+      // Rendre le focus au déclencheur (bouton du header, lien, ⌘K depuis un
+      // autre élément) pour que la tabulation reprenne là où elle s'était
+      // arrêtée. `isConnected` couvre le cas d'une navigation qui a remplacé
+      // l'élément entre-temps.
+      if (opener?.isConnected) opener.focus();
+      opener = null;
     }
 
     // Keyboard navigation for search results
@@ -301,6 +275,37 @@ import "@pagefind/default-ui/css/ui.css";
       { signal }
     );
 
+    // Piège de focus : `aria-modal="true"` promet que le reste de la page est
+    // inerte, mais Tab continuait de sortir vers le header et le footer.
+    // Cyclique aux deux extrémités, dans les deux sens.
+    document.addEventListener(
+      "keydown",
+      (e: KeyboardEvent) => {
+        if (e.key !== "Tab" || !modal.classList.contains("active")) return;
+
+        const items = focusables();
+        if (items.length === 0) {
+          e.preventDefault();
+          return;
+        }
+
+        const first = items[0];
+        const last = items[items.length - 1];
+        const active = document.activeElement as HTMLElement;
+
+        if (e.shiftKey) {
+          if (active === first || !modal.contains(active)) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else if (active === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      },
+      { signal }
+    );
+
     document.addEventListener(
       "keydown",
       (e: KeyboardEvent) => {
@@ -380,12 +385,14 @@ import "@pagefind/default-ui/css/ui.css";
     max-height: 78vh;
     display: flex;
     flex-direction: column;
-    border-radius: 1.25rem;
+    border-radius: 1rem;
     border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
     background: color-mix(in srgb, var(--foreground) 3%, var(--background));
     overflow: hidden;
+    /* Élévation d'une surface flottante : ombres décalées uniquement. Le
+     * `0 0 0 1px` d'origine était un halo sans décalage, déjà redondant avec la
+     * bordure accent juste au-dessus. */
     box-shadow:
-      0 0 0 1px color-mix(in srgb, var(--accent) 5%, transparent),
       0 4px 12px color-mix(in srgb, var(--background) 40%, transparent),
       0 20px 60px -12px color-mix(in srgb, var(--background) 70%, transparent);
     transform: scale(0.95) translateY(-12px);
@@ -394,214 +401,6 @@ import "@pagefind/default-ui/css/ui.css";
 
   .search-modal-overlay.active .search-modal-container {
     transform: scale(1) translateY(0);
-  }
-
-  /* ===== Aurora orbs ===== */
-  .modal-aurora {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-    border-radius: inherit;
-    z-index: 0;
-  }
-
-  .modal-aurora-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(70px);
-    will-change: transform;
-    opacity: 0.6;
-  }
-
-  .modal-aurora-orb-1 {
-    width: 280px;
-    height: 280px;
-    top: -40%;
-    left: -15%;
-    background: radial-gradient(
-      circle,
-      color-mix(in srgb, var(--accent) 30%, transparent),
-      transparent 70%
-    );
-    animation: modal-orb-1 6s ease-in-out infinite alternate;
-  }
-
-  .modal-aurora-orb-2 {
-    width: 220px;
-    height: 220px;
-    top: 20%;
-    right: -10%;
-    background: radial-gradient(
-      circle,
-      color-mix(in srgb, var(--border) 25%, transparent),
-      transparent 70%
-    );
-    animation: modal-orb-2 8s ease-in-out infinite alternate;
-  }
-
-  .modal-aurora-orb-3 {
-    width: 180px;
-    height: 180px;
-    bottom: -30%;
-    left: 35%;
-    background: radial-gradient(
-      circle,
-      color-mix(in srgb, var(--accent) 18%, transparent),
-      transparent 70%
-    );
-    animation: modal-orb-3 10s ease-in-out infinite alternate;
-  }
-
-  @keyframes modal-orb-1 {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    100% {
-      transform: translate(50px, 30px) scale(1.3);
-    }
-  }
-  @keyframes modal-orb-2 {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    100% {
-      transform: translate(-40px, 20px) scale(1.2);
-    }
-  }
-  @keyframes modal-orb-3 {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    100% {
-      transform: translate(30px, -20px) scale(1.15);
-    }
-  }
-
-  /* ===== Cursor glow ===== */
-  .modal-cursor-glow {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background: radial-gradient(
-      circle,
-      color-mix(in srgb, var(--accent) 15%, transparent),
-      color-mix(in srgb, var(--accent) 5%, transparent) 40%,
-      transparent 70%
-    );
-    filter: blur(40px);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    transform: translate(
-      calc(var(--gx, 0px) - 175px),
-      calc(var(--gy, 0px) - 175px)
-    );
-    will-change: transform;
-    z-index: 0;
-  }
-
-  /* ===== Sparkles ===== */
-  .modal-sparkles {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    overflow: hidden;
-    border-radius: inherit;
-  }
-
-  .sparkle {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 6px 1px color-mix(in srgb, var(--accent) 50%, transparent);
-    opacity: 0;
-    animation: sparkle-pulse 3s ease-in-out infinite;
-  }
-
-  .sparkle-1 {
-    top: 12%;
-    left: 8%;
-    animation-delay: 0s;
-  }
-  .sparkle-2 {
-    top: 25%;
-    right: 12%;
-    animation-delay: 0.6s;
-  }
-  .sparkle-3 {
-    bottom: 30%;
-    left: 20%;
-    animation-delay: 1.2s;
-  }
-  .sparkle-4 {
-    top: 8%;
-    right: 25%;
-    animation-delay: 1.8s;
-  }
-  .sparkle-5 {
-    bottom: 15%;
-    right: 8%;
-    animation-delay: 2.4s;
-  }
-
-  @keyframes sparkle-pulse {
-    0%,
-    100% {
-      opacity: 0;
-      transform: scale(0);
-    }
-    50% {
-      opacity: 0.8;
-      transform: scale(1);
-    }
-  }
-
-  /* ===== Animated border glow ===== */
-  .modal-border-glow {
-    position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    pointer-events: none;
-    z-index: 0;
-    background: conic-gradient(
-      from var(--border-angle, 0deg),
-      transparent 0%,
-      color-mix(in srgb, var(--accent) 25%, transparent) 10%,
-      transparent 20%,
-      transparent 80%,
-      color-mix(in srgb, var(--accent) 15%, transparent) 90%,
-      transparent 100%
-    );
-    mask:
-      linear-gradient(black, black) content-box,
-      linear-gradient(black, black);
-    -webkit-mask:
-      linear-gradient(black, black) content-box,
-      linear-gradient(black, black);
-    mask-composite: exclude;
-    -webkit-mask-composite: xor;
-    padding: 1px;
-    animation: border-rotate 4s linear infinite;
-  }
-
-  @keyframes border-rotate {
-    0% {
-      --border-angle: 0deg;
-    }
-    100% {
-      --border-angle: 360deg;
-    }
-  }
-
-  @property --border-angle {
-    syntax: "<angle>";
-    inherits: false;
-    initial-value: 0deg;
   }
 
   /* ===== Header ===== */
@@ -667,7 +466,7 @@ import "@pagefind/default-ui/css/ui.css";
     border-radius: 0.25rem;
     border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
     background: color-mix(in srgb, var(--foreground) 5%, transparent);
-    color: color-mix(in srgb, var(--foreground) 50%, transparent);
+    color: var(--text-soft);
     box-shadow: 0 1px 2px color-mix(in srgb, var(--background) 30%, transparent);
   }
 
@@ -695,7 +494,6 @@ import "@pagefind/default-ui/css/ui.css";
   .search-modal-close:hover {
     color: var(--accent);
     background: color-mix(in srgb, var(--accent) 12%, transparent);
-    box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 15%, transparent);
   }
 
   /* ===== Body ===== */
@@ -716,7 +514,7 @@ import "@pagefind/default-ui/css/ui.css";
   }
   .search-modal-body::-webkit-scrollbar-thumb {
     background: color-mix(in srgb, var(--accent) 20%, transparent);
-    border-radius: 10px;
+    border-radius: 0.75rem;
   }
 
   /* ===== Empty state ===== */
@@ -730,18 +528,7 @@ import "@pagefind/default-ui/css/ui.css";
   }
 
   .empty-icon {
-    color: color-mix(in srgb, var(--accent) 30%, transparent);
-    animation: empty-float 3s ease-in-out infinite;
-  }
-
-  @keyframes empty-float {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-6px);
-    }
+    color: color-mix(in srgb, var(--accent) 45%, transparent);
   }
 
   .empty-text {
@@ -785,7 +572,7 @@ import "@pagefind/default-ui/css/ui.css";
     min-width: 1.125rem;
     padding: 0 0.2rem;
     font-size: 0.75rem;
-    border-radius: 0.2rem;
+    border-radius: 0.25rem;
     border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
     background: color-mix(in srgb, var(--foreground) 4%, transparent);
   }
@@ -797,5 +584,20 @@ import "@pagefind/default-ui/css/ui.css";
   .footer-powered strong {
     color: var(--accent);
     font-weight: 600;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .search-modal-overlay,
+    .search-modal-container,
+    .search-modal-backdrop {
+      transition: none;
+    }
+
+    .search-modal-container {
+      transform: none;
+    }
+
+    .search-modal-overlay.active .search-modal-container {
+      transform: none;
+    }
   }
 </style>

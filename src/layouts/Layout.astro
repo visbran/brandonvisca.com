@@ -52,6 +52,10 @@ const webSiteSchema = {
 
 const showCursorGlow = SITE.backdropEffects.cursorGlow;
 const showGrain = SITE.backdropEffects.grain;
+
+// Fond du thème par défaut (rack-night). theme.ts le réécrit ensuite depuis le
+// fond réellement calculé, donc cette valeur ne sert qu'à la première peinture.
+const THEME_COLOR = "#10131a";
 ---
 
 <!doctype html>
@@ -144,6 +148,14 @@ const showGrain = SITE.backdropEffects.grain;
       )
     }
 
+    <!--
+      Couleur de la barre système (Android/iOS). Doit exister avant que
+      theme.ts ne la mette à jour depuis le fond calculé : sans ce tag, le
+      `querySelector` du script ne trouvait rien et la barre gardait le blanc
+      du navigateur en thème sombre.
+    -->
+    <meta name="theme-color" content={THEME_COLOR} />
+
     <!-- Named slot for per-page extra <head> content (e.g. FAQPage JSON-LD) -->
     <slot name="head" />
 
@@ -152,7 +164,10 @@ const showGrain = SITE.backdropEffects.grain;
     <!-- Minimal inline script to prevent FOUC - sets theme immediately -->
     <script is:inline>
       (function () {
-        const initialColorScheme = ""; // "light" | "dark"
+        // Doit rester identique à `initialColorScheme` de src/scripts/theme.ts.
+        // Divergents, les deux scripts se contredisaient : le thème peint ici
+        // était remplacé au chargement du module, produisant un flash.
+        const initialColorScheme = "dark"; // "light" | "dark" | "" (système)
         const currentTheme = localStorage.getItem("theme");
 
         function getPreferTheme() {

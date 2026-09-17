@@ -106,9 +106,9 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
       <span class="intro-live-pill" aria-live="off">LIVE</span>
     ) : (
       <span class="intro-time" id="intro-time" aria-live="off">
-        <span id="intro-current">0:00</span><span class="opacity-30"> /</span><span
+        <span id="intro-current">0:00</span><span class="text-soft"> /</span><span
           id="intro-total"
-          class="opacity-30"
+          class="text-soft"
         >
           {formattedDuration}</span
         >
@@ -126,7 +126,7 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
     align-items: center;
     gap: 0.5rem;
     padding: 0.45rem 0.9rem;
-    border-radius: 0.6rem;
+    border-radius: 0.5rem;
     border: 1px solid color-mix(in oklab, var(--border) 40%, transparent);
     background: color-mix(in oklab, var(--muted) 10%, transparent);
     font-family: var(--font-cartograph, monospace);
@@ -145,13 +145,11 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
   }
 
   .intro-audio-prefix {
-    color: var(--accent);
-    opacity: 0.5;
+    color: var(--text-soft);
     user-select: none;
   }
   .intro-audio-cmd {
-    color: var(--accent);
-    opacity: 0.7;
+    color: var(--text-soft);
     user-select: none;
     letter-spacing: 0.03em;
   }
@@ -209,7 +207,13 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
     width: 2px;
     border-radius: 999px;
     background: var(--accent);
-    height: 30%;
+    /* La hauteur réelle ne bouge plus : l'animation joue sur transform, que le
+     * compositeur prend en charge. `height` déclenchait une mise en page à
+     * chaque frame. Le conteneur centre ses barres, donc scaleY depuis le
+     * centre donne exactement le même rendu. */
+    height: var(--h, 80%);
+    transform: scaleY(0.375);
+    transform-origin: center;
     opacity: 0.35;
     transition: opacity 0.3s;
   }
@@ -224,16 +228,16 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
   @media (prefers-reduced-motion: reduce) {
     .playing .intro-wave-bar {
       animation: none;
-      height: var(--h, 80%);
+      transform: scaleY(1);
     }
   }
 
   @keyframes wave-bounce {
     from {
-      height: 20%;
+      transform: scaleY(0.25);
     }
     to {
-      height: var(--h, 80%);
+      transform: scaleY(1);
     }
   }
 
@@ -269,22 +273,26 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
 
   .intro-progress-bar {
     height: 100%;
-    width: 0%;
+    width: 100%;
     border-radius: 999px;
     background: linear-gradient(
       90deg,
       var(--accent) 0%,
       color-mix(in oklab, var(--accent) 70%, var(--foreground)) 100%
     );
-    transition: width 0.25s linear;
+    /* Largeur pleine et scaleX : la piste rogne (overflow hidden, rayon
+     * pilule), donc les extrémités restent arrondies et la mise en page ne
+     * bouge plus à chaque tick de lecture. */
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.25s linear;
   }
 
   /* ── Time ── */
   .intro-time {
     font-variant-numeric: tabular-nums;
     font-size: 0.75rem;
-    color: var(--foreground);
-    opacity: 0.6;
+    color: var(--text-soft);
     white-space: nowrap;
     flex-shrink: 0;
   }
@@ -307,7 +315,6 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
     font-size: 0.75rem;
     letter-spacing: 0.08em;
     color: var(--accent);
-    opacity: 0.55;
     text-transform: uppercase;
     user-select: none;
     white-space: nowrap;
@@ -387,7 +394,7 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
       const now = state.currentTime;
       const pct = total > 0 ? (now / total) * 100 : 0;
 
-      if (bar) bar.style.width = `${pct}%`;
+      if (bar) bar.style.transform = `scaleX(${pct / 100})`;
 
       const nowStr = fmt(now);
       if (current && current.textContent !== nowStr) {

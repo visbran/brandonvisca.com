@@ -2,6 +2,14 @@ import satori from "satori";
 import { SITE } from "@/config";
 import loadGoogleFonts from "../loadGoogleFont";
 
+/**
+ * Carte OG d'article — palette du site, pas de décor flottant.
+ *
+ * rack-night (#10131a) en fond, accent cyan (#008fec), grille fantôme en
+ * signature (celle du site, pas un halo), texte plat sans ombre. Les valeurs
+ * sont littérales : Satori ne résout ni les tokens CSS ni color-mix().
+ * `#a6a7aa` est le `--text-soft` sombre aplati (f6f7f8 à 65 % sur 10131a).
+ */
 export default async post => {
   return satori(
     {
@@ -14,58 +22,53 @@ export default async post => {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "space-between",
-          backgroundColor: "#0f172a", // Dark background (Slate 900)
-          color: "white",
-          padding: "80px",
-          position: "relative",
+          backgroundColor: "#10131a",
+          color: "#f6f7f8",
+          padding: "72px",
+          // Grille fantôme : la signature du site, pas un halo décoratif.
+          backgroundImage:
+            "linear-gradient(rgba(34, 100, 227, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 100, 227, 0.12) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
         },
         children: [
-          // 1. Background Decorative Element (Painted first = stays in background)
-          {
-            type: "div",
-            props: {
-              style: {
-                position: "absolute",
-                top: "-100px",
-                right: "-100px",
-                width: "600px",
-                height: "600px",
-                background: "linear-gradient(140deg, #6366f1, #a855f7)",
-                filter: "blur(100px)",
-                opacity: 0.4,
-                borderRadius: "100%",
-              },
-            },
-          },
-
-          // 2. Header: Site name (Painted on top of background)
+          // 1. En-tête : marqueur accent + nom de domaine
           {
             type: "div",
             props: {
               style: {
                 display: "flex",
                 alignItems: "center",
-                backgroundColor: "rgba(255, 255, 255, 0.1)",
-                padding: "10px 24px",
-                borderRadius: "50px",
-                border: "1px solid rgba(255, 255, 255, 0.2)",
               },
-              children: {
-                type: "span",
-                props: {
-                  style: {
-                    fontSize: 24,
-                    fontWeight: "bold",
-                    color: "#e2e8f0",
-                    letterSpacing: "2px",
+              children: [
+                {
+                  type: "div",
+                  props: {
+                    style: {
+                      width: "12px",
+                      height: "12px",
+                      borderRadius: "3px",
+                      backgroundColor: "#008fec",
+                      marginRight: "14px",
+                    },
                   },
-                  children: SITE.title + ".com",
                 },
-              },
+                {
+                  type: "span",
+                  props: {
+                    style: {
+                      fontSize: 24,
+                      fontWeight: 600,
+                      color: "#a6a7aa",
+                      letterSpacing: "1px",
+                    },
+                    children: SITE.title + ".com",
+                  },
+                },
+              ],
             },
           },
 
-          // 3. Main Content: Post Title
+          // 2. Titre de l'article
           {
             type: "div",
             props: {
@@ -73,19 +76,16 @@ export default async post => {
                 display: "flex",
                 flexDirection: "column",
                 width: "100%",
-                // zIndex removed (not needed due to child order)
               },
               children: {
                 type: "h1",
                 props: {
                   style: {
-                    fontSize: 84,
+                    fontSize: 76,
                     fontWeight: 900,
-                    lineHeight: 1.1,
+                    lineHeight: 1.12,
                     margin: 0,
-                    color: "#ffffff",
-                    textShadow: "0 2px 10px rgba(0,0,0,0.3)",
-
+                    color: "#f6f7f8",
                     overflow: "hidden",
                     display: "-webkit-box",
                     lineClamp: 3,
@@ -97,7 +97,7 @@ export default async post => {
             },
           },
 
-          // 4. Footer: Author
+          // 3. Signature : filet accent + auteur
           {
             type: "div",
             props: {
@@ -105,17 +105,16 @@ export default async post => {
                 display: "flex",
                 alignItems: "center",
                 width: "100%",
-                // zIndex removed
               },
               children: [
-                // Decorative separator line
                 {
                   type: "div",
                   props: {
                     style: {
-                      width: "60px",
-                      height: "4px",
-                      backgroundColor: "#818cf8",
+                      width: "56px",
+                      height: "5px",
+                      borderRadius: "3px",
+                      backgroundColor: "#008fec",
                       marginRight: "24px",
                     },
                   },
@@ -124,18 +123,17 @@ export default async post => {
                   type: "span",
                   props: {
                     style: {
-                      fontSize: 32,
-                      color: "#cbd5e1",
+                      fontSize: 30,
+                      color: "#a6a7aa",
                     },
                     children: [
-                      "Written by ",
+                      "Par ",
                       {
                         type: "span",
                         props: {
                           style: {
-                            fontWeight: "bold",
-                            color: "white",
-                            marginLeft: "8px",
+                            fontWeight: 700,
+                            color: "#f6f7f8",
                           },
                           children: post.data.author,
                         },
@@ -154,7 +152,7 @@ export default async post => {
       height: 630,
       embedFont: true,
       fonts: await loadGoogleFonts(
-        post.data.title + post.data.author + SITE.title + "Writtenby" + ".com"
+        post.data.title + post.data.author + SITE.title + "Par" + ".com"
       ),
     }
   );

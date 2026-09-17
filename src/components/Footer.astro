@@ -44,7 +44,7 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
           <span class="footer-logo-text">{SITE.title}</span>
         </a>
         <p
-          class="max-w-xs text-center text-sm leading-relaxed text-foreground/70 sm:text-start"
+          class="max-w-xs text-center text-sm leading-relaxed text-soft sm:text-start"
         >
           {SITE.desc}
         </p>
@@ -54,7 +54,7 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
       <nav class="flex flex-col items-center gap-3 sm:items-end" aria-labelledby={socialHeadingId}>
         <p
           id={socialHeadingId}
-          class="font-cartograph text-xs tracking-wider text-foreground/60 uppercase select-none"
+          class="font-cartograph text-xs tracking-wider text-soft uppercase select-none"
           >Liens</p
         >
         <ul class="flex items-center gap-2" role="list">
@@ -90,12 +90,12 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
     <div
       class="mt-4 flex flex-col items-center justify-between gap-2 sm:flex-row"
     >
-      <p class="font-cartograph text-xs tracking-wide text-foreground/65">
+      <p class="font-cartograph text-xs tracking-wide text-soft">
         &copy; {currentYear}
         {SITE.title}. Tous droits réservés. &mdash;
         <a href="/politique-confidentialite/" class="hover:text-accent transition-colors">Politique de confidentialité</a>
       </p>
-      <p class="font-cartograph text-xs tracking-wide text-foreground/65">
+      <p class="font-cartograph text-xs tracking-wide text-soft">
         Thème <a href="https://github.com/0xdres/astro-devosfera" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">astro-devosfera</a> par <span class="text-accent/70">0xdres</span>
       </p>
     </div>

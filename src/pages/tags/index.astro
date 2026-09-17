@@ -39,12 +39,12 @@ const maxCount = Math.max(...displayTags.map(t => t.count));
     <div class="tags-hero">
       <div class="relative z-10">
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          <span class="glow-text">Tags</span>
+          <span>Tags</span>
         </h1>
-        <p class="mt-3 max-w-lg text-foreground/70 italic">
+        <p class="mt-3 max-w-lg text-soft italic">
           Explorez tous les sujets du blog. Chaque tag est un univers à part entière.
         </p>
-        <div class="mt-4 flex items-center gap-2 text-sm text-foreground/50">
+        <div class="mt-4 flex items-center gap-2 text-sm text-soft">
           <span class="hero-badge">
             {displayTags.length} tags
           </span>
@@ -67,7 +67,7 @@ const maxCount = Math.max(...displayTags.map(t => t.count));
             >
               <div class="tag-content">
                 <div class="flex items-center gap-1.5">
-                  <IconHash class="size-5 text-accent opacity-60 transition-opacity group-hover:opacity-100" />
+                  <IconHash class="size-5 text-accent" />
                   <span class="tag-name">{tagName}</span>
                 </div>
                 <div class="tag-count">
@@ -114,9 +114,6 @@ const maxCount = Math.max(...displayTags.map(t => t.count));
     }
   }
 
-  .glow-text {
-    color: var(--color-foreground);
-  }
 
   .hero-badge {
     display: inline-flex;
@@ -168,7 +165,6 @@ const maxCount = Math.max(...displayTags.map(t => t.count));
     border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
     box-shadow:
       0 10px 40px -10px color-mix(in srgb, var(--color-accent) 15%, transparent),
-      0 0 0 1px color-mix(in srgb, var(--color-accent) 8%, transparent),
       inset 0 1px 0 color-mix(in srgb, var(--color-accent) 6%, transparent);
   }
 
@@ -212,7 +208,7 @@ const maxCount = Math.max(...displayTags.map(t => t.count));
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    opacity: 0.5;
+    color: var(--text-soft);
   }
 
   /* Progress bar */
