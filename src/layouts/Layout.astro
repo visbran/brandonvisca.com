@@ -53,9 +53,12 @@ const webSiteSchema = {
 const showCursorGlow = SITE.backdropEffects.cursorGlow;
 const showGrain = SITE.backdropEffects.grain;
 
-// Fond du thème par défaut (rack-night). theme.ts le réécrit ensuite depuis le
-// fond réellement calculé, donc cette valeur ne sert qu'à la première peinture.
-const THEME_COLOR = "#10131a";
+// Fond de chaque thème, pour le `theme-color` de la première peinture. theme.ts
+// le recalcule ensuite depuis le fond réellement appliqué, donc ces deux
+// valeurs ne servent qu'au tout premier rendu — mais elles doivent être
+// exactes : le visiteur suit le thème de son système, pas un choix figé.
+const THEME_COLORS = { light: "#f2f5ec", dark: "#10131a" };
+const THEME_COLOR = THEME_COLORS.dark;
 ---
 
 <!doctype html>
@@ -152,7 +155,9 @@ const THEME_COLOR = "#10131a";
       Couleur de la barre système (Android/iOS). Doit exister avant que
       theme.ts ne la mette à jour depuis le fond calculé : sans ce tag, le
       `querySelector` du script ne trouvait rien et la barre gardait le blanc
-      du navigateur en thème sombre.
+      du navigateur en thème sombre. Le script inline ci-dessous la réécrit dès
+      qu'il connaît le thème retenu, sinon un visiteur en thème clair voyait une
+      barre sombre jusqu'à l'exécution du module.
     -->
     <meta name="theme-color" content={THEME_COLOR} />
 
@@ -165,9 +170,11 @@ const THEME_COLOR = "#10131a";
     <script is:inline>
       (function () {
         // Doit rester identique à `initialColorScheme` de src/scripts/theme.ts.
-        // Divergents, les deux scripts se contredisaient : le thème peint ici
-        // était remplacé au chargement du module, produisant un flash.
-        const initialColorScheme = "dark"; // "light" | "dark" | "" (système)
+        // Vide = thème du système. Les deux scripts n'ont pas à diverger : le
+        // module lit `window.theme.themeValue`, donc la valeur peinte ici est
+        // celle qu'il conserve — la figer à "dark" priverait du thème clair les
+        // visiteurs dont le système est en clair.
+        const initialColorScheme = ""; // "light" | "dark" | "" (système)
         const currentTheme = localStorage.getItem("theme");
 
         function getPreferTheme() {
@@ -182,6 +189,15 @@ const THEME_COLOR = "#10131a";
 
         // Set theme immediately to prevent flash
         document.firstElementChild?.setAttribute("data-theme", themeValue);
+
+        // Barre système : la valeur statique du <head> ne peut en cibler qu'un
+        // des deux thèmes, donc on la corrige ici avant la première peinture.
+        document
+          .querySelector("meta[name='theme-color']")
+          ?.setAttribute(
+            "content",
+            themeValue === "light" ? "#f2f5ec" : "#10131a"
+          );
 
         // Export minimal API for external script
         window.theme = {

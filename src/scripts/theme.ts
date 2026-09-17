@@ -6,7 +6,10 @@ const DARK = "dark";
 // Initial color scheme
 // Can be "light", "dark", or empty string for system's prefers-color-scheme
 // Doit rester identique à `initialColorScheme` du script inline de Layout.astro.
-const initialColorScheme = "dark";
+// Vide = thème du système : c'est le comportement d'origine du site, et il
+// laisse le visiteur dans le thème qu'il a réglé sur sa machine tant qu'il n'a
+// pas cliqué sur le bouton.
+const initialColorScheme = "";
 
 function getPreferTheme(): string {
   // get theme data from local storage (user's explicit choice)
