@@ -4,9 +4,9 @@ description: Blog tech francophone sur le homelab, l'auto-hébergement et l'ind�
 colors:
   console-blue: "#1158d1"
   console-blue-night: "#008fec"
-  sage-paper: "#f2f5ec"
+  tracing-paper: "#f1f4f8"
   graphite-ink: "#353538"
-  lichen: "#bbc789"
+  slate-mist: "#c3cfdf"
   blueprint-line: "#7cadff"
   rack-night: "#10131a"
   chalk-white: "#f6f7f8"
@@ -111,7 +111,7 @@ components:
     rounded: "{rounded.lg}"
     padding: "6px 12px"
   card-post:
-    backgroundColor: "{colors.lichen}"
+    backgroundColor: "{colors.slate-mist}"
     textColor: "{colors.graphite-ink}"
     rounded: "{rounded.2xl}"
     padding: "{spacing.card}"
@@ -122,7 +122,7 @@ components:
     rounded: "{rounded.full}"
     padding: "2px 10px"
   code-inline:
-    backgroundColor: "{colors.lichen}"
+    backgroundColor: "{colors.slate-mist}"
     textColor: "{colors.graphite-ink}"
     typography: "{typography.mono}"
     rounded: "{rounded.md}"
@@ -148,7 +148,7 @@ components:
 
 Le site se lit comme le journal de terrain de quelqu'un qui administre vraiment son rack. Le corps de texte est un sans-serif chaleureux et arrondi (Figtree), justifié avec césure comme une page imprimée. Les notes en marge, les citations et les sous-titres passent à la main levée (Sriracha), comme griffonnés au stylo. Les commandes, les étiquettes et le prompt `~/homelab git:(main) $` sont en monospace (Cartograph CF). Trois écritures, trois rôles : ce que j'explique, ce que je note, ce que je tape.
 
-Le support est un papier légèrement teinté, vert sauge en clair et bleu nuit de salle serveur en sombre, recouvert d'un grain fin et d'une grille de 50 px à peine visible qui s'efface vers le bas de la page. Une seule encre de couleur, le Bleu Console, sert aux liens, aux puces, aux focus et aux signaux d'état. La densité est modérée : colonne unique de 56 à 64 rem, cartes empilées, beaucoup d'air autour des titres.
+Le support est un papier calque légèrement bleuté en clair et bleu nuit de salle serveur en sombre, recouvert d'un grain fin et d'une grille de 50 px à peine visible qui s'efface vers le bas de la page. Une seule encre de couleur, le Bleu Console, sert aux liens, aux puces, aux focus et aux signaux d'état. La densité est modérée : colonne unique de 56 à 64 rem, cartes empilées, beaucoup d'air autour des titres.
 
 Le système hérite du thème astro-devosfera. Ses effets décoratifs (verre dépoli, orbes aurora animés, halos qui suivent la souris, titres à reflet ou en dégradé, variantes amber/purple) ont été retirés le 2026-09-15 : ils ne servaient pas le carnet. Les Don'ts empêchent leur retour.
 
@@ -157,7 +157,7 @@ Le système hérite du thème astro-devosfera. Ses effets décoratifs (verre dé
 - Une seule couleur d'accent, déclinée en opacités via `color-mix`, jamais une deuxième teinte.
 - Papier teinté + grain + grille fantôme comme matière de fond.
 - Signature terminal : badge prompt avec curseur clignotant et point d'état fixe.
-- Deux thèmes complets (clair sauge, sombre rack) pilotés par `data-theme`.
+- Deux thèmes complets (clair calque, sombre rack) pilotés par `data-theme`.
 
 ## Colors
 
@@ -168,9 +168,9 @@ Palette à encre unique : un bleu de terminal posé sur un papier teinté, tout 
 - **Bleu Console de nuit** (#008fec, thème sombre) : même rôle, éclairci pour garder le contraste sur fond rack.
 
 ### Neutral
-- **Papier Sauge** (#f2f5ec) : fond de page en thème clair. Le vert très léger évite le blanc clinique.
+- **Papier Calque** (#f1f4f8) : fond de page en thème clair. Le bleu très léger évite le blanc clinique sans virer au gris de gabarit, et reste dans la famille de teinte de l'encre (255°) — les cartes lavées à l'accent ne jurent pas contre lui.
 - **Encre Graphite** (#353538) : texte principal en clair, titres compris.
-- **Lichen** (#bbc789) : token `muted` en clair. Utilisé presque uniquement à 5-15 % pour les fonds de cartes, de chips et de code inline, et pour la barre de défilement.
+- **Brume d'Ardoise** (#c3cfdf) : token `muted` en clair. Utilisé presque uniquement à 5-15 % pour les fonds de cartes, de chips et de code inline, et pour la barre de défilement. Pôle clair du même axe que le Puits Ardoise sombre (250°).
 - **Trait de Plan** (#7cadff) : token `border` en clair, presque toujours à 15-40 % d'opacité (cartes, séparateurs, tableaux).
 - **Nuit de Rack** (#10131a) : fond de page en thème sombre.
 - **Blanc Craie** (#f6f7f8) : texte principal en sombre.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-15T22:40:00+02:00",
+  "generatedAt": "2026-09-17T22:55:00+02:00",
   "title": "Design System: Brandon Visca",
   "extensions": {
     "colorMeta": {
@@ -38,21 +38,21 @@
           "oklch(95% 0.02 245)"
         ]
       },
-      "sage-paper": {
+      "tracing-paper": {
         "role": "neutral",
-        "displayName": "Papier Sauge",
-        "canonical": "#f2f5ec",
+        "displayName": "Papier Calque",
+        "canonical": "#f1f4f8",
         "theme": "light",
         "cssVar": "--background",
         "tonalRamp": [
-          "oklch(15% 0.012 125)",
-          "oklch(27% 0.012 125)",
-          "oklch(39% 0.012 125)",
-          "oklch(51% 0.012 125)",
-          "oklch(63% 0.012 125)",
-          "oklch(75% 0.012 125)",
-          "oklch(85% 0.012 125)",
-          "oklch(97% 0.012 125)"
+          "oklch(15% 0.006 255)",
+          "oklch(27% 0.006 255)",
+          "oklch(39% 0.006 255)",
+          "oklch(51% 0.006 255)",
+          "oklch(63% 0.006 255)",
+          "oklch(75% 0.006 255)",
+          "oklch(85% 0.006 255)",
+          "oklch(97% 0.006 255)"
         ]
       },
       "graphite-ink": {
@@ -72,21 +72,21 @@
           "oklch(95% 0.005 285)"
         ]
       },
-      "lichen": {
+      "slate-mist": {
         "role": "neutral",
-        "displayName": "Lichen",
-        "canonical": "#bbc789",
+        "displayName": "Brume d'Ardoise",
+        "canonical": "#c3cfdf",
         "theme": "light",
         "cssVar": "--muted",
         "tonalRamp": [
-          "oklch(15% 0.03 118)",
-          "oklch(27% 0.05 118)",
-          "oklch(39% 0.07 118)",
-          "oklch(51% 0.08 118)",
-          "oklch(63% 0.08 118)",
-          "oklch(80% 0.08 118)",
-          "oklch(88% 0.05 118)",
-          "oklch(95% 0.02 118)"
+          "oklch(15% 0.010 256)",
+          "oklch(27% 0.018 256)",
+          "oklch(39% 0.024 256)",
+          "oklch(51% 0.026 256)",
+          "oklch(63% 0.026 256)",
+          "oklch(80% 0.026 256)",
+          "oklch(88% 0.022 256)",
+          "oklch(95% 0.012 256)"
         ]
       },
       "blueprint-line": {
@@ -302,7 +302,7 @@
       "refersTo": "card-post",
       "description": "Carte d'article des listes : titre, date, description tronquée.",
       "html": "<article class=\"ds-card\"><h3 class=\"ds-card-title\"><a href=\"#\">Headscale : ton propre serveur Tailscale</a></h3><time class=\"ds-card-date\">15 sept. 2026</time><p class=\"ds-card-desc\">Monte ton control plane Tailscale auto-hébergé avec Docker, sans dépendre du SaaS, et connecte tout ton homelab.</p></article>",
-      "css": ".ds-card { position: relative; padding: 20px; border-radius: 16px; border: 1px solid color-mix(in srgb, var(--border, #7cadff) 25%, transparent); background: color-mix(in srgb, var(--muted, #bbc789) 10%, transparent); transition: border-color 300ms ease-out, background-color 300ms ease-out, box-shadow 300ms ease-out, transform 300ms ease-out; } .ds-card:hover, .ds-card:focus-within { border-color: color-mix(in srgb, var(--accent, #1158d1) 40%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 5%, transparent); box-shadow: 0 10px 15px -3px color-mix(in srgb, var(--accent, #1158d1) 10%, transparent); transform: translateY(-2px); } .ds-card-title { margin: 0; font-family: Figtree, sans-serif; font-size: 1.125rem; font-weight: 600; } .ds-card-title a { color: var(--foreground, #353538); text-decoration: none; transition: color 200ms ease; } .ds-card-title a::after { content: ''; position: absolute; inset: 0; } .ds-card:hover .ds-card-title a { color: var(--accent, #1158d1); } .ds-card-title a:focus-visible { outline: 2px dashed var(--accent, #1158d1); outline-offset: 2px; } .ds-card-date { display: block; margin-top: 6px; font-size: 0.875rem; opacity: 0.7; } .ds-card-desc { margin: 8px 0 0; font-size: 0.875rem; line-height: 1.625; color: color-mix(in srgb, var(--foreground, #353538) 75%, transparent); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }"
+      "css": ".ds-card { position: relative; padding: 20px; border-radius: 16px; border: 1px solid color-mix(in srgb, var(--border, #7cadff) 25%, transparent); background: color-mix(in srgb, var(--muted, #c3cfdf) 10%, transparent); transition: border-color 300ms ease-out, background-color 300ms ease-out, box-shadow 300ms ease-out, transform 300ms ease-out; } .ds-card:hover, .ds-card:focus-within { border-color: color-mix(in srgb, var(--accent, #1158d1) 40%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 5%, transparent); box-shadow: 0 10px 15px -3px color-mix(in srgb, var(--accent, #1158d1) 10%, transparent); transform: translateY(-2px); } .ds-card-title { margin: 0; font-family: Figtree, sans-serif; font-size: 1.125rem; font-weight: 600; } .ds-card-title a { color: var(--foreground, #353538); text-decoration: none; transition: color 200ms ease; } .ds-card-title a::after { content: ''; position: absolute; inset: 0; } .ds-card:hover .ds-card-title a { color: var(--accent, #1158d1); } .ds-card-title a:focus-visible { outline: 2px dashed var(--accent, #1158d1); outline-offset: 2px; } .ds-card-date { display: block; margin-top: 6px; font-size: 0.875rem; opacity: 0.7; } .ds-card-desc { margin: 8px 0 0; font-size: 0.875rem; line-height: 1.625; color: color-mix(in srgb, var(--foreground, #353538) 75%, transparent); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }"
     },
     {
       "name": "Tag Badge",
@@ -318,7 +318,7 @@
       "refersTo": "terminal-badge",
       "description": "Signature du hero : prompt homelab avec point d'état fixe et curseur clignotant.",
       "html": "<div class=\"ds-term\"><span class=\"ds-term-dot\"></span><span class=\"ds-term-prefix\">~/homelab</span><span class=\"ds-term-branch\">git:(<span class=\"ds-term-name\">main</span>)</span><span class=\"ds-term-suffix\">$</span><span class=\"ds-term-cursor\" aria-hidden=\"true\">▌</span></div>",
-      "css": ".ds-term { display: inline-flex; align-items: center; gap: 7px; padding: 6px 16px 6px 12px; border-radius: 9999px; border: 1px solid color-mix(in srgb, var(--accent, #1158d1) 25%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 4%, var(--background, #f2f5ec)); font-family: 'Cartograph CF', monospace; font-size: 0.875rem; color: var(--foreground, #353538); } .ds-term-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent, #1158d1); } .ds-term-prefix { color: var(--accent, #1158d1); font-weight: 600; } .ds-term-branch { opacity: 0.55; font-size: 0.8em; } .ds-term-name { color: var(--accent, #1158d1); } .ds-term-suffix { opacity: 0.35; } .ds-term-cursor { color: var(--accent, #1158d1); animation: ds-blink 1.1s step-end infinite; } @keyframes ds-blink { 0%, 100% { opacity: 0.8; } 50% { opacity: 0; } } @media (prefers-reduced-motion: reduce) { .ds-term-cursor { animation: none; } }"
+      "css": ".ds-term { display: inline-flex; align-items: center; gap: 7px; padding: 6px 16px 6px 12px; border-radius: 9999px; border: 1px solid color-mix(in srgb, var(--accent, #1158d1) 25%, transparent); background: color-mix(in srgb, var(--accent, #1158d1) 4%, var(--background, #f1f4f8)); font-family: 'Cartograph CF', monospace; font-size: 0.875rem; color: var(--foreground, #353538); } .ds-term-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent, #1158d1); } .ds-term-prefix { color: var(--accent, #1158d1); font-weight: 600; } .ds-term-branch { opacity: 0.55; font-size: 0.8em; } .ds-term-name { color: var(--accent, #1158d1); } .ds-term-suffix { opacity: 0.35; } .ds-term-cursor { color: var(--accent, #1158d1); animation: ds-blink 1.1s step-end infinite; } @keyframes ds-blink { 0%, 100% { opacity: 0.8; } 50% { opacity: 0; } } @media (prefers-reduced-motion: reduce) { .ds-term-cursor { animation: none; } }"
     },
     {
       "name": "Inline Code",
@@ -326,7 +326,7 @@
       "refersTo": "code-inline",
       "description": "Code inline dans la prose de tutoriel.",
       "html": "<p class=\"ds-prose-line\">Lance <code class=\"ds-code\">docker compose up -d</code> puis vérifie avec <code class=\"ds-code\">docker ps</code>.</p>",
-      "css": ".ds-prose-line { font-family: Figtree, sans-serif; font-size: 1rem; line-height: 1.75; color: var(--foreground, #353538); } .ds-code { padding: 2px 6px; border-radius: 6px; background: color-mix(in srgb, var(--muted, #bbc789) 15%, transparent); font-family: 'Cartograph CF', monospace; font-size: 0.875rem; color: var(--foreground, #353538); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }"
+      "css": ".ds-prose-line { font-family: Figtree, sans-serif; font-size: 1rem; line-height: 1.75; color: var(--foreground, #353538); } .ds-code { padding: 2px 6px; border-radius: 6px; background: color-mix(in srgb, var(--muted, #c3cfdf) 15%, transparent); font-family: 'Cartograph CF', monospace; font-size: 0.875rem; color: var(--foreground, #353538); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }"
     },
     {
       "name": "Handwritten Blockquote",
@@ -347,13 +347,13 @@
   ],
   "narrative": {
     "northStar": "Le Carnet de Bord Sysadmin",
-    "overview": "Le site se lit comme le journal de terrain de quelqu'un qui administre vraiment son rack. Le corps de texte est un sans-serif chaleureux et arrondi (Figtree), justifié avec césure comme une page imprimée. Les notes en marge, les citations et les sous-titres passent à la main levée (Sriracha), comme griffonnés au stylo. Les commandes, les étiquettes et le prompt `~/homelab git:(main) $` sont en monospace (Cartograph CF). Trois écritures, trois rôles : ce que j'explique, ce que je note, ce que je tape.\n\nLe support est un papier légèrement teinté, vert sauge en clair et bleu nuit de salle serveur en sombre, recouvert d'un grain fin et d'une grille de 50 px à peine visible qui s'efface vers le bas de la page. Une seule encre de couleur, le Bleu Console, sert aux liens, aux puces, aux focus et aux signaux d'état. La densité est modérée : colonne unique de 56 à 64 rem, cartes empilées, beaucoup d'air autour des titres.\n\nLe système hérite du thème astro-devosfera. Ses effets décoratifs (verre dépoli, orbes aurora animés, halos qui suivent la souris, titres à reflet ou en dégradé, variantes amber/purple) ont été retirés le 2026-09-15 : ils ne servaient pas le carnet. Les Don'ts empêchent leur retour.",
+    "overview": "Le site se lit comme le journal de terrain de quelqu'un qui administre vraiment son rack. Le corps de texte est un sans-serif chaleureux et arrondi (Figtree), justifié avec césure comme une page imprimée. Les notes en marge, les citations et les sous-titres passent à la main levée (Sriracha), comme griffonnés au stylo. Les commandes, les étiquettes et le prompt `~/homelab git:(main) $` sont en monospace (Cartograph CF). Trois écritures, trois rôles : ce que j'explique, ce que je note, ce que je tape.\n\nLe support est un papier légèrement teinté, papier calque légèrement bleuté en clair et bleu nuit de salle serveur en sombre, recouvert d'un grain fin et d'une grille de 50 px à peine visible qui s'efface vers le bas de la page. Une seule encre de couleur, le Bleu Console, sert aux liens, aux puces, aux focus et aux signaux d'état. La densité est modérée : colonne unique de 56 à 64 rem, cartes empilées, beaucoup d'air autour des titres.\n\nLe système hérite du thème astro-devosfera. Ses effets décoratifs (verre dépoli, orbes aurora animés, halos qui suivent la souris, titres à reflet ou en dégradé, variantes amber/purple) ont été retirés le 2026-09-15 : ils ne servaient pas le carnet. Les Don'ts empêchent leur retour.",
     "keyCharacteristics": [
       "Trois voix typographiques à rôle strict : exposé (Figtree), annotation (Sriracha), machine (Cartograph).",
       "Une seule couleur d'accent, déclinée en opacités via `color-mix`, jamais une deuxième teinte.",
       "Papier teinté + grain + grille fantôme comme matière de fond.",
       "Signature terminal : badge prompt avec curseur clignotant et point d'état fixe.",
-      "Deux thèmes complets (clair sauge, sombre rack) pilotés par `data-theme`."
+      "Deux thèmes complets (clair calque, sombre rack) pilotés par `data-theme`."
     ],
     "rules": [
       {
