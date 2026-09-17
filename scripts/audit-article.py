@@ -18,6 +18,7 @@ from datetime import datetime
 # Détecte automatiquement le répertoire des articles depuis l'emplacement du script
 _SCRIPT_DIR = Path(__file__).resolve().parent
 BLOG_DIR = _SCRIPT_DIR.parent / "src" / "data" / "blog"
+PUBLIC_DIR = _SCRIPT_DIR.parent / "public"
 
 # ── Tag convention (tag-convention.md) ────────────────────────────────────────
 
@@ -422,7 +423,7 @@ def audit_hr_separators(body: str, issues: list):
             })
 
 
-def audit_images(body: str, issues: list):
+def audit_images(body: str, issues: list, filepath: Path | None = None):
     # WordPress upload paths
     wp_imgs = re.findall(r"!\[[^\]]*\]\([^\)]*(?:uploads|wp-content)[^\)]*\)", body)
     if wp_imgs:
@@ -439,19 +440,23 @@ def audit_images(body: str, issues: list):
             "msg": f"{len(rel_imgs)} référence(s) image relative(s) cassée(s) : {rel_imgs[:2]}"
         })
 
-    # Images locales (absolues /path ou relatives ./path) — vérifie l'existence dans public/
+    # Images locales — Astro résout un chemin absolu depuis public/, et un chemin
+    # relatif depuis le fichier article (images colocalisées dans src/data/blog/,
+    # ou remontant vers src/images/<dossier>/).
     local_imgs = re.findall(r"!\[[^\]]*\]\((?!https?://)([^\)]+)\)", body)
     for img in local_imgs:
         if "uploads" in img or "wp-content" in img:
             continue  # déjà détecté plus haut
         if img.startswith("/"):
-            public_path = Path("/Users/brandon/Documents/2026-brandonvisca.com/public") / img.lstrip("/")
+            candidates = [PUBLIC_DIR / img.lstrip("/")]
         else:
-            public_path = Path("/Users/brandon/Documents/2026-brandonvisca.com/public") / img.lstrip("./")
-        if not public_path.exists():
+            candidates = [PUBLIC_DIR / img.lstrip("./")]
+            if filepath is not None:
+                candidates.insert(0, (filepath.parent / img).resolve())
+        if not any(p.exists() for p in candidates):
             issues.append({
                 "type": "warning", "cat": "images",
-                "msg": f"Image locale introuvable dans public/ : `{img}`"
+                "msg": f"Image locale introuvable : `{img}`"
             })
 
 
@@ -629,7 +634,7 @@ def audit_file(filepath: Path, all_slugs: set | None = None) -> dict:
     audit_tables(body, issues)
     audit_code_blocks(body, issues)
     audit_hr_separators(body, issues)
-    audit_images(body, issues)
+    audit_images(body, issues, filepath)
     audit_links(body, issues, all_slugs)
     audit_content_patterns(body, issues)
     audit_ai_markers(body, issues, content[:len(content) - len(body)].count("\n"))
