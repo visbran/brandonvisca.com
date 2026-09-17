@@ -57,7 +57,7 @@ const showGrain = SITE.backdropEffects.grain;
 // le recalcule ensuite depuis le fond réellement appliqué, donc ces deux
 // valeurs ne servent qu'au tout premier rendu — mais elles doivent être
 // exactes : le visiteur suit le thème de son système, pas un choix figé.
-const THEME_COLORS = { light: "#f2f5ec", dark: "#10131a" };
+const THEME_COLORS = { light: "#f1f4f8", dark: "#10131a" };
 const THEME_COLOR = THEME_COLORS.dark;
 ---
 
@@ -196,7 +196,7 @@ const THEME_COLOR = THEME_COLORS.dark;
           .querySelector("meta[name='theme-color']")
           ?.setAttribute(
             "content",
-            themeValue === "light" ? "#f2f5ec" : "#10131a"
+            themeValue === "light" ? "#f1f4f8" : "#10131a"
           );
 
         // Export minimal API for external script

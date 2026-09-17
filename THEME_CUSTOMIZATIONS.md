@@ -262,3 +262,21 @@ The following files are **not modified** and will merge cleanly:
 **Conservé volontairement**: `git:(main)` (0,55) et `$` (0,35) du badge terminal de `index.astro`, épinglés par `DESIGN.md` ; séparateurs et puces décoratives ; état désactivé de `Pagination` (exempté par WCAG 1.4.3) ; `.shortcuts-sep` (0,3). Deux faux positifs du détecteur à ne pas « corriger » : `codex-grid-background` (la grille fantôme est une signature documentée) et `bounce-easing` sur `wave-bounce` (les keyframes ne dépassent jamais leur cible, seul le nom trompe).
 
 **Merge strategy**: Sur update upstream, conserver le token `--text-soft`, le double anneau de focus, le piège de focus et le retrait des décors ; ne pas réintroduire les orbes, lueurs, étincelles ni le texte en dégradé.
+
+---
+
+### Passe « palette claire » — le fond quitte le sauge (2026-09-17)
+
+**Reason**: Le fond clair `#f2f5ec` (Papier Sauge) était trop peu saturé pour se lire comme un choix : à cette luminosité la teinte verte passe pour du blanc sale, pas pour du papier teinté. Mesuré sur le rendu réel, la teinte ne se distingue qu'à quelques unités RVB du neutre. Le fond adopté est `#f1f4f8` (Papier Calque), un blanc très légèrement bleuté (teinte oklch 255°, chroma 0,006).
+
+**Pourquoi bleu et pas neutre ni chaud** : les fonds de cartes sont lavés à l'accent (`bg-accent/5`, `color-mix(accent 4%)`). Sur un sol vert ou crème, ce lavis bleu refroidit les cartes et crée un clash de température visible ; sur un sol de la même famille de teinte que l'encre, cartes et fond se lisent comme un seul plan. Le neutre absolu `#f6f6f6` a été écarté : c'est le gris de gabarit par défaut, plus générique encore que le sauge.
+
+**Files & changes**:
+- `src/styles/global.css` — thème clair : `--background: #f1f4f8`, `--muted: #c3cfdf` (Brume d'Ardoise). Commentaire de `--text-soft` recalculé : sur le nouveau fond, 72 % donne 4,88:1 (AA), 70 % 4,62:1, 65 % 4,00:1 — le seuil de 72 % reste donc imposé par le thème clair.
+- `src/layouts/Layout.astro` — `THEME_COLORS.light` et la réécriture de `theme-color` du script inline passent à `#f1f4f8`. Sans ça, la barre système gardait l'ancien vert pendant la première peinture.
+- `DESIGN.md` — jetons renommés : `sage-paper` → `tracing-paper` (Papier Calque), `lichen` → `slate-mist` (Brume d'Ardoise) ; prose (Overview, Key Characteristics, section Neutral) mise à jour ; les deux `{colors.lichen}` des composants `card-post` et `code-inline` suivent.
+- `.impeccable/design.json` — `extensions.colorMeta` : clés, `displayName`, `canonical` et `tonalRamp` des deux jetons refaits sur la teinte 255/256 ; les littéraux de repli des composants (`var(--muted, …)`, `var(--background, …)`) et le récit suivent, pour que l'artefact ne contredise pas `DESIGN.md`.
+
+**Vérification** (mesurée sur le rendu, pas déduite) : corps 11,08:1, texte secondaire 4,88:1, accent 5,70:1 en clair ; thème sombre inchangé. Aucune autre occurrence des anciennes valeurs dans le dépôt.
+
+**Merge strategy**: Sur update upstream, conserver les valeurs du thème clair. Si upstream ajoute des surfaces teintées à l'accent, vérifier qu'elles restent dans la famille de teinte du fond.

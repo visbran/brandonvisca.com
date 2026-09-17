@@ -5,14 +5,14 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #f2f5ec;
+  --background: #f1f4f8;
   --foreground: #353538;
   --accent: #1158d1;
-  --muted: #bbc789;
+  --muted: #c3cfdf;
   --border: #7cadff;
-  /* Texte secondaire. Le papier sauge est le thème le plus clair du site, donc
-   * c'est lui qui fixe le plancher : 72 % donne 4.85:1, au-dessus du 4.5:1 de
-   * WCAG AA. En dessous de 70 % le ratio tombe sous le seuil (65 % = 4.02:1). */
+  /* Texte secondaire. Le fond clair est le plus lumineux du site, donc c'est
+   * lui qui fixe le plancher : 72 % donne 4.88:1, au-dessus du 4.5:1 de
+   * WCAG AA. En dessous de 70 % le ratio tombe sous le seuil (65 % = 4.00:1). */
   --text-soft: color-mix(in srgb, var(--foreground) 72%, transparent);
 }
 
