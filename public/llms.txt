@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-17
-# Total articles : 187
+# Dernière mise à jour : 2026-09-18
+# Total articles : 188
+
+## Keka macOS : compresseur avancé gratuit (7z, split, chiffrement AES)
+URL: https://brandonvisca.com/keka-macos-compresseur-avance/
+Description: Keka macOS : l'archiveur gratuit et open source qui gère 7z, zip chiffré AES-256, split de fichiers et plus de 30 formats en glisser-déposer.
+Tags: 
+Publié: 2026-09-18T11:01:11+02:00
 
 ## Dozzle Docker : visionneuse de logs Docker en temps réel via web
 URL: https://brandonvisca.com/dozzle-docker-visionneuse-logs-web/
