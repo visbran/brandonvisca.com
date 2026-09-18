@@ -103,6 +103,8 @@ Pas de version gratuite limitée à tester avant achat sur le site officiel au m
 
 Rien de rédhibitoire, mais autant le savoir avant de sortir la carte bleue plutôt qu'après.
 
+💡 À lire aussi : [Keka macOS : compresseur avancé gratuit (7z, split, chiffrement AES)](/keka-macos-compresseur-avance/), dans la même veine que cet article.
+
 ## Conclusion
 
 SideNotes macOS n'invente rien de révolutionnaire, il exécute une idée simple avec un soin réel : des notes toujours à portée de main, jamais dans tes pattes. Si tu captures des idées en continu pendant que tu bosses et que basculer entre fenêtres te sort du rythme, les 19,99 dollars se rentabilisent vite.
