@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-18
-# Total articles : 188
+# Dernière mise à jour : 2026-09-19
+# Total articles : 189
+
+## Rallly Docker : planification de réunions auto-hébergée (alternative Doodle)
+URL: https://brandonvisca.com/rallly-docker-planification-reunions/
+Description: Rallly Docker : héberge ton propre outil de sondage de réunions avec docker-compose, alternative libre à Doodle, HTTPS automatique inclus.
+Tags: 
+Publié: 2026-09-19T11:02:12+02:00
 
 ## Keka macOS : compresseur avancé gratuit (7z, split, chiffrement AES)
 URL: https://brandonvisca.com/keka-macos-compresseur-avance/
