@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-19
-# Total articles : 189
+# Dernière mise à jour : 2026-09-20
+# Total articles : 190
+
+## GitLab CE Docker : forge Git complète avec CI/CD intégré
+URL: https://brandonvisca.com/gitlab-ce-docker-forge-cicd-complete/
+Description: Installe GitLab CE Docker chez toi, une forge Git complète avec CI/CD, Container Registry et Runners self-hosted, sans dépendre du cloud.
+Tags: 
+Publié: 2026-09-20T11:01:11+02:00
 
 ## Rallly Docker : planification de réunions auto-hébergée (alternative Doodle)
 URL: https://brandonvisca.com/rallly-docker-planification-reunions/
