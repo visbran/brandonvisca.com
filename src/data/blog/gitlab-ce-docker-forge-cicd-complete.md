@@ -176,6 +176,8 @@ La vraie question c'est : pourquoi préférer GitLab CE Docker à une alternativ
 
 Si ta machine a moins de 2 Go de RAM disponibles, Gitea reste le choix raisonnable. Si tu as la RAM et que tu veux du CI/CD sérieux sans repasser par GitHub Actions, GitLab CE Docker est largement au niveau d'une offre cloud payante, gratuitement, chez toi.
 
+💡 À lire aussi : [PairDrop Docker : AirDrop multiplateforme via le navigateur](/pairdrop-docker-airdrop-navigateur/), dans la même veine que cet article.
+
 ## Sauvegardes, mises à jour et conclusion
 
 GitLab embarque son propre outil de sauvegarde, à lancer directement dans le conteneur :

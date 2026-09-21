@@ -202,6 +202,8 @@ Rallly Pro, la version payante éditée par Stack Snap Ltd, ajoute la personnali
 
 💡 À lire aussi : [GitLab CE Docker : forge Git complète avec CI/CD intégré](/gitlab-ce-docker-forge-cicd-complete/), dans la même veine que cet article.
 
+💡 À lire aussi : [PairDrop Docker : AirDrop multiplateforme via le navigateur](/pairdrop-docker-airdrop-navigateur/), dans la même veine que cet article.
+
 ## Conclusion
 
 Rallly Docker coche toutes les cases d'un bon candidat homelab : une seule commande pour l'installer avec le CLI officiel, une base Postgres classique à sauvegarder, un HTTPS qui se configure tout seul si tu veux, et un vrai reverse proxy externe si tu préfères garder la main. Pas de pub, pas de compte forcé pour tes participants, pas de dépendance à un service tiers qui change ses conditions tous les six mois.
