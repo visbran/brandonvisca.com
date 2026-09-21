@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-20
-# Total articles : 190
+# Dernière mise à jour : 2026-09-21
+# Total articles : 191
+
+## PairDrop Docker : AirDrop multiplateforme via le navigateur
+URL: https://brandonvisca.com/pairdrop-docker-airdrop-navigateur/
+Description: PairDrop Docker : héberge ton propre AirDrop multiplateforme dans le navigateur, sans compte ni appli, avec Docker Compose et reverse proxy.
+Tags: 
+Publié: 2026-09-21T11:02:11+02:00
 
 ## GitLab CE Docker : forge Git complète avec CI/CD intégré
 URL: https://brandonvisca.com/gitlab-ce-docker-forge-cicd-complete/
