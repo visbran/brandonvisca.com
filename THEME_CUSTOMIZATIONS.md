@@ -296,6 +296,8 @@ The following files are **not modified** and will merge cleanly:
 
 **Infra (2026-09-22)** : tunnel Cloudflare vers Tianji sur le LXC 108, nom d'hôte protégé par une application Access en Service Auth. Identifiants et jeton : tableau de bord Cloudflare Zero Trust. Le jeton de service expire au bout d'un an — à renouveler avant le 2027-09-22. Vérifié à la mise en ligne : 403 sans jeton, 200 avec.
 
+**Géolocalisation** : Tianji fait confiance à `cf-connecting-ip` en priorité, or Cloudflare réécrit cet en-tête sur les sous-requêtes d'un Worker — tous les visiteurs atterrissaient aux États-Unis. La Function envoie donc l'IP dans `x-visitor-ip`, et le service `tianji` porte `CLIENT_IP_HEADER=x-visitor-ip` (surcharge systemd `client-ip.conf` sur le LXC). **Si Tianji est réinstallé, remettre cette variable**, sinon les pays redeviennent faux.
+
 **CSP** : aucune modification — le script et les requêtes sont same-origin, couverts par `'self'`.
 
 **Merge strategy**: Sur update upstream, conserver le bloc Tianji du `<head>` et l'entrée du schéma `env`.
