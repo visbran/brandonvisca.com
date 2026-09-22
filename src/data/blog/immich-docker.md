@@ -273,7 +273,7 @@ Si tu es passé à l'auto-hébergement récemment, tu peux aussi lire mon [guide
 
 ## Articles connexes
 
-- [Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted](/tianji-self-hosted-analytics/)
+- [Installer Tianji : l'analytics auto-hébergé qui remplace Google Analytics](/tianji-self-hosted-analytics/)
 - [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
 - [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
 - [Technitium DNS Server : installe ton bloqueur de pubs libre (2026)](/technitium-dns-server/)

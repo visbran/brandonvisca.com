@@ -123,7 +123,7 @@ volumes:
 
 | Variable | Valeur | Description |
 |----------|--------|-------------|
-| `ALLOW_SIGNUP` | `"false""` | Désactive l'inscription publique. Tu crées les comptes toi-même. Depuis la version 1.4.0, cette valeur est `false` par défaut pour des raisons de sécurité. |
+| `ALLOW_SIGNUP` | `"false"` | Désactive l'inscription publique. Tu crées les comptes toi-même. Depuis la version 1.4.0, cette valeur est `false` par défaut pour des raisons de sécurité. |
 | `PUID` | `1000` | ID utilisateur Linux pour les permissions sur les fichiers du volume. Doit correspondre à l'utilisateur qui lance Docker. |
 | `PGID` | `1000` | ID groupe Linux pour les permissions sur les fichiers du volume. |
 | `TZ` | `Europe/Paris` | Fuseau horaire pour les dates et heures des recettes, planifications et logs. |

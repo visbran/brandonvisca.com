@@ -197,4 +197,4 @@ Pour les postes de travail Windows et macOS, garde l'agent natif. Docker n'appor
 
 Maintenant que tes machines remontent leur inventaire, tu peux les monitorer en temps réel avec des outils comme Beszel. J'ai détaillé le déploiement dans mon guide [Beszel Docker monitoring](/beszel-monitoring-docker/), parfait complément à GLPI pour la supervision.
 
-Et toi, tu déploies déjà tes agents en Docker ou tu restes sur l'installation classique ? Raconte en commentaire.
+La bascule vaut le coup dès que tu gères plus de trois serveurs : un `docker compose up -d` par machine remplace une installation à maintenir, et la mise à jour de l'agent devient un changement de tag.

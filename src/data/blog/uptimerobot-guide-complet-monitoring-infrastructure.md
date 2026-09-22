@@ -71,6 +71,8 @@ J'utilise UptimeRobot depuis des années sur mon homelab et pour les sites de cl
 
 [**Créer un compte UptimeRobot gratuitement**](https://uptimerobot.com/?red=brando5751b9)
 
+> ℹ️ **Transparence** : ce lien est affilié. Si tu crées un compte payant après l'avoir suivi, je touche une commission, sans surcoût pour toi. Ça ne change rien à ce que je recommande : le plan gratuit suffit pour la majorité des homelabs.
+
 ## Configuration initiale
 
 ### Créer ton premier monitor en 2 minutes
@@ -452,4 +454,4 @@ UptimeRobot règle ça en 5 minutes. 50 moniteurs gratuits, alertes Discord/Slac
 - [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
 - [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)
 - [Termius 2026 : remplace PuTTY et économise 30 min/jour sur Windows](/termius-client-ssh-windows-guide-complet/)
-- [Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted](/tianji-self-hosted-analytics/)
+- [Installer Tianji : l'analytics auto-hébergé qui remplace Google Analytics](/tianji-self-hosted-analytics/)

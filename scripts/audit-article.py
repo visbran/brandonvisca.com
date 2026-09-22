@@ -339,7 +339,15 @@ def audit_tables(body: str, issues: list):
     # Single-line table artifact from WordPress export
     for i, line in enumerate(body_lines, 1):
         pipe_count = line.count("|")
-        if pipe_count >= 4 and len(line) > 180 and not line.strip().startswith("```"):
+        stripped_line = line.strip()
+        # Une vraie ligne de table commence et finit par « | » : longue mais valide
+        is_valid_row = stripped_line.startswith("|") and stripped_line.endswith("|")
+        if (
+            pipe_count >= 4
+            and len(line) > 180
+            and not stripped_line.startswith("```")
+            and not is_valid_row
+        ):
             issues.append({
                 "type": "error", "cat": "tables",
                 "msg": f"Ligne {i} : table potentiellement sur une seule ligne ({len(line)} chars, {pipe_count} pipes)"
@@ -511,7 +519,10 @@ def audit_content_patterns(body: str, issues: list):
     COMMENT_REFS = re.compile(
         r"(?i)(?:raconte\s+(?:en|dans|sur)\s+(?:le\s+)?commentaire|"
         r"laisse\s+(?:un|ton)\s+commentaire|"
-        r"les?\s+commentaires?|"
+        # « les commentaires » au sens large matche aussi les commentaires de code
+        # ou ceux d'un outil tiers (Outline, Raycast) : viser les appels au lecteur
+        r"commentaires?\s+(?:sont\s+ouverts?|ci-dessous)|"
+        r"(?:dis|dites|dis-moi|r\u00e9agis|partage)[^.!?\n]{0,40}\s+en\s+commentaire|"
         r"abonne-toi\s+.*newsletter|"
         r"newsletter.*inscris?|"
         r"rejoins\s+(?:la|notre)\s+newsletter|"
@@ -531,8 +542,10 @@ def audit_content_patterns(body: str, issues: list):
         conclusion_text = conclusion_match.group(1).strip()
         # Dernière phrase de la conclusion
         last_para = conclusion_text.split('\n\n')[-1].strip()
+        # Un « ? » dans une URL (query string) n'est pas une question posée au lecteur
+        last_para_no_url = re.sub(r'\(https?://[^)]+\)', '()', last_para)
         # Vérifier si la dernière phrase est une question
-        if '?' in last_para and len(last_para) < 300:
+        if '?' in last_para_no_url and len(last_para) < 300:
             # Vérifier si c'est vraiment une question ouverte (pas un titre FAQ)
             if not last_para.startswith('#') and not last_para.startswith('**'):
                 issues.append({

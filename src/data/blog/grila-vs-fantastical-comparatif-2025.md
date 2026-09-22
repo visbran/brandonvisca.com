@@ -1188,7 +1188,7 @@ Satisfaction : 9/10
 
 Alors, Grila ou Fantastical ? **Pour moi, Grila 100%**. 🚀
 
-**Et toi, qu'en penses-tu ?** Partage ton retour en commentaire ! 👇
+Si tu hésites encore, installe les deux : Grila est gratuit, et deux semaines d'usage réel tranchent mieux que n'importe quel comparatif.
 
 ---
 

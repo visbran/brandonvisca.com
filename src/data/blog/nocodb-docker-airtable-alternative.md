@@ -261,4 +261,4 @@ Allez, assez lu. Ouvre un terminal, copie le compose, et lance-toi. Et si tu blo
 
 ---
 
-Besoin d'autres outils pour ton homelab dockerisé ? Jette un œil à mon article sur [les services Docker accessibles même aux débutants](/docker-debutant-services-auto-heberger/). Tu y trouveras des idées pour aller plus loin.
+Pour étoffer ton homelab dockerisé, enchaîne avec mon article sur [les services Docker accessibles même aux débutants](/docker-debutant-services-auto-heberger/). Tu y trouveras des idées pour aller plus loin.

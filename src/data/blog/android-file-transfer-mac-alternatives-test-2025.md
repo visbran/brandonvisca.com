@@ -442,9 +442,7 @@ Après 90 jours de tests intensifs, **OpenMTP a remplacé Android File Transfer 
 
 Il fait 90% de ce que j'ai besoin, gratuitement, et sans me faire chier.
 
-**Et toi, t'utilises quoi ?**
-
-Dis-moi en commentaire si tu as testé OpenMTP ou si tu galères encore avec Android File Transfer ! 👇
+Commence par OpenMTP : c'est gratuit, open-source, et ça règle le problème en une installation. Les autres options ne valent le coup que si tu as un besoin précis qu'il ne couvre pas.
 
 ---
 
