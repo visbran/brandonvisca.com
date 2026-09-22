@@ -292,6 +292,10 @@ The following files are **not modified** and will merge cleanly:
 - `astro.config.ts` — variable `PUBLIC_TIANJI_WEBSITE_ID` ajoutée au schéma `env` (publique, optionnelle).
 - `functions/stats/[[path]].ts` (nouveau, hors thème) — proxy limité à `tracker.js`, `api/website/send` et `api/website/batch` ; tout le reste renvoie 404. Transmet l'IP du visiteur en `x-forwarded-for` pour la géolocalisation, retire `set-cookie`.
 
+- `.github/workflows/deploy.yml` — `PUBLIC_TIANJI_WEBSITE_ID` passé à l'étape de build. Le site est construit par GitHub Actions puis poussé avec `wrangler pages deploy` : les variables d'environnement de Cloudflare Pages ne sont lues qu'à l'exécution de la Function, jamais au build.
+
+**Infra (2026-09-22)** : tunnel Cloudflare vers Tianji sur le LXC 108, nom d'hôte protégé par une application Access en Service Auth. Identifiants et jeton : tableau de bord Cloudflare Zero Trust. Le jeton de service expire au bout d'un an — à renouveler avant le 2027-09-22. Vérifié à la mise en ligne : 403 sans jeton, 200 avec.
+
 **CSP** : aucune modification — le script et les requêtes sont same-origin, couverts par `'self'`.
 
 **Merge strategy**: Sur update upstream, conserver le bloc Tianji du `<head>` et l'entrée du schéma `env`.
