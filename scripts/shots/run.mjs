@@ -131,7 +131,7 @@ if (outputs.length) {
   console.log("\nMarkdown à coller :\n");
   for (const { webp, alt } of outputs) {
     if (!alt) console.log(`<!-- alt manquant : ajoute "alt:" dans ${slug}.yml -->`);
-    console.log(`![${alt}](./${webp})\n`);
+    console.log(`![${alt}](${webp})\n`);
   }
   console.log("Relis les images avant de committer (IP, e-mails, jetons).");
 }
