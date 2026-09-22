@@ -57,10 +57,15 @@ export async function onRequest({ request, env, params }: Context) {
     const value = request.headers.get(name);
     if (value) headers.set(name, value);
   }
-  // Subrequests leave from Cloudflare's IP: pass the visitor's IP on so
-  // Tianji can resolve the country. It is not stored in clear by Tianji.
+  // Subrequests leave from Cloudflare's own IP, and Cloudflare overwrites
+  // cf-connecting-ip on them — which Tianji would otherwise trust, putting
+  // every visitor in the US. Tianji reads x-visitor-ip first, via
+  // CLIENT_IP_HEADER set on the tianji service.
   const ip = request.headers.get("cf-connecting-ip");
-  if (ip) headers.set("x-forwarded-for", ip);
+  if (ip) {
+    headers.set("x-visitor-ip", ip);
+    headers.set("x-forwarded-for", ip);
+  }
   headers.set("CF-Access-Client-Id", env.CF_ACCESS_CLIENT_ID);
   headers.set("CF-Access-Client-Secret", env.CF_ACCESS_CLIENT_SECRET);
 
