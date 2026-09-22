@@ -27,6 +27,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
+        env:
+          # Public Tianji website id (ends up in the HTML anyway)
+          PUBLIC_TIANJI_WEBSITE_ID: cmrmi47m4001xhjq36r8xsad9
         run: pnpm run build:cf
 
       - name: Deploy to Cloudflare Pages
