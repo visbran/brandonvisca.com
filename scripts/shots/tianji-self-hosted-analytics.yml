@@ -1,13 +1,14 @@
-# Captures pour l'article Tianji. Lancer : pnpm shots tianji-self-hosted-analytics
-- output: dashboard.png
-  url: http://192.168.50.8:12345/
+# Instance jetable + données de démo : voir les fichiers .compose.yml et .setup.sh
+- output: tianji-overview.png
+  url: http://localhost:12346/website/overview
   width: 1440
-  wait: 3000
-  alt: "Tableau de bord Tianji : visites, pages vues et sessions des 7 derniers jours"
-  auth: tianji
-- output: website-list.png
-  url: http://192.168.50.8:12345/settings/websites
+  wait: 5000
+  alt: "Vue d'ensemble de Tianji : visiteurs, pages vues et graphique des 7 derniers jours"
+  auth: tianji-demo
+- output: tianji-details.png
+  # L'identifiant du site est fixé par le script de données de démo
+  url: http://localhost:12346/website/demo-website-0001
   width: 1440
-  wait: 2500
-  alt: "Liste des sites suivis dans les paramètres de Tianji"
-  auth: tianji
+  wait: 6000
+  alt: "Vue détaillée d'un site dans Tianji : pages les plus vues, sites référents et pays des visiteurs"
+  auth: tianji-demo
