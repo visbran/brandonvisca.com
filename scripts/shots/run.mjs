@@ -93,7 +93,15 @@ try {
 
   if (authName) {
     // A stale session silently produces screenshots of the login page.
-    ssh(`test -s ${REMOTE}/auth/${authName}.json || { echo "session ${authName} absente — lancer le script de login"; exit 1; }`);
+    try {
+      ssh(`test -s ${REMOTE}/auth/${authName}.json`, { stdio: ["ignore", "ignore", "ignore"] });
+    } catch {
+      console.error(
+        `session "${authName}" absente sur le runner.\n` +
+          `  → ssh shots /opt/shots/${authName}_login.py   (identifiants dans /etc/shots/${authName}.env)`
+      );
+      process.exit(1);
+    }
   }
   const authFlag = authName ? `--auth ${REMOTE}/auth/${authName}.json` : "";
   ssh(`cd ${job} && /opt/shots-venv/bin/shot-scraper multi shots.yml --retina ${authFlag} --fail`);
