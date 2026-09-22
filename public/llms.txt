@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-21
-# Total articles : 191
+# Dernière mise à jour : 2026-09-22
+# Total articles : 192
+
+## Trivy Docker : scanner de vulnérabilités pour images et conteneurs
+URL: https://brandonvisca.com/trivy-docker-scanner-vulnerabilites/
+Description: Trivy Docker scanne tes images pour CVE, secrets et configs dangereuses, gratuit et open source. Installation, commandes essentielles et CI/CD.
+Tags: 
+Publié: 2026-09-22T11:01:12+02:00
 
 ## PairDrop Docker : AirDrop multiplateforme via le navigateur
 URL: https://brandonvisca.com/pairdrop-docker-airdrop-navigateur/
