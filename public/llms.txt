@@ -675,9 +675,9 @@ Description: Installe Immich Docker Compose en quelques minutes et remplace Goog
 Tags: 
 Publié: 2026-05-15T19:00:00+02:00
 
-## Tianji analytics : pourquoi j'ai lâché Google Analytics pour du self-hosted
+## Installer Tianji : l'analytics auto-hébergé
 URL: https://brandonvisca.com/tianji-self-hosted-analytics/
-Description: Tianji analytics : l'outil self-hosted qui remplace Google Analytics, Uptime Kuma et Netdata. Open-source, privacy-friendly, zéro cookie banner.
+Description: Installer Tianji pas à pas : LXC Proxmox ou Docker, script de suivi sur un site statique, et la collecte sans exposer ton instance sur Internet.
 Tags: 
 Publié: 2026-05-12T18:00:00+02:00
 
