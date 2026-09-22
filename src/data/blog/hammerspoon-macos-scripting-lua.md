@@ -14,7 +14,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: "hammerspoon"
-faqs: []
+faqs:
+  - question: "Faut-il savoir programmer pour utiliser Hammerspoon ?"
+    answer: "Il faut accepter d'écrire du Lua, mais les premiers scripts tiennent en quelques lignes et se copient. C'est la contrepartie de la flexibilité : sans code, rien ne se passe."
+  - question: "Hammerspoon est-il gratuit ?"
+    answer: "Oui, gratuit et open-source. BetterTouchTool, qui couvre des besoins proches avec une interface graphique, est payant."
+  - question: "Quelle différence avec BetterTouchTool ou Bunch ?"
+    answer: "BetterTouchTool fait la même chose sans code, avec une interface. Bunch se limite au lancement de groupes d'applications. Hammerspoon est le plus flexible des trois, au prix d'une courbe d'apprentissage plus raide."
+  - question: "Hammerspoon consomme-t-il beaucoup de ressources ?"
+    answer: "Non. Il reste discret tant que tes scripts ne lancent pas de boucles coûteuses : ce que tu écris détermine la consommation."
 ogImage: ""
 ---
 > 💡 **TL;DR**

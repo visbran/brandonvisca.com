@@ -14,7 +14,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: syncthing docker
-faqs: []
+faqs:
+  - question: "Syncthing a-t-il besoin d'un serveur central ?"
+    answer: "Non. La synchronisation se fait en pair à pair et chiffrée entre tes appareils. Les serveurs de découverte et de relais publics aident seulement à établir la connexion, ils ne voient pas tes fichiers."
+  - question: "Sur quel port se trouve l'interface web ?"
+    answer: "Le port 8384. Il n'est pas protégé par défaut : configure un identifiant et un mot de passe, et ne l'expose pas directement sur Internet."
+  - question: "Syncthing remplace-t-il une sauvegarde ?"
+    answer: "Non, et c'est un piège classique : une suppression se propage à tous les appareils. Active le versionnage de fichiers et garde une vraie sauvegarde à côté."
+  - question: "Combien d'appareils peut-on synchroniser ?"
+    answer: "Autant que tu veux : chaque appareil déclare les autres par leur identifiant, et tu choisis quels dossiers partager avec qui. La charge vient du volume de fichiers surveillés, pas du nombre de pairs."
 ogImage: ""
 ---
 > 💡 **TL;DR**

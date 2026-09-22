@@ -13,7 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: podman vs docker
-faqs: []
+faqs:
+  - question: "Podman est-il vraiment compatible avec les commandes Docker ?"
+    answer: "Oui pour l'essentiel. La CLI reprend la même syntaxe, au point qu'un alias `docker=podman` fonctionne dans la majorité des cas. Les écarts apparaissent sur les fonctions liées au daemon."
+  - question: "Quelles sont les limites du mode rootless ?"
+    answer: "Tu ne peux pas publier de port sous 1024 sans configuration supplémentaire, et le réseau passe par slirp4netns plutôt qu'un pont classique, ce qui est un peu plus lent et plus limité."
+  - question: "Faut-il abandonner Docker pour Podman ?"
+    answer: "Pas partout. Sur Linux, Podman est un bon défaut pour la sécurité. Sur macOS et Windows, Docker Desktop reste plus simple et mieux intégré, et Podman ne remplace pas Docker Swarm : pour du multi-nœuds, la suite logique est Kubernetes."
+  - question: "Docker Compose fonctionne-t-il avec Podman ?"
+    answer: "Oui, via `podman-compose` ou en activant le socket compatible Docker de Podman. Les fichiers Compose existants se réutilisent tels quels dans la plupart des cas."
 ogImage: ""
 ---
 > 💡 **TL;DR**

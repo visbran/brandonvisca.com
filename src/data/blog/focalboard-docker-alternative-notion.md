@@ -13,7 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: focalboard docker
-faqs: []
+faqs:
+  - question: "Focalboard a-t-il besoin d'une base de données externe ?"
+    answer: "Non. L'image embarque SQLite, donc un seul conteneur suffit pour démarrer. Au-delà d'une vingtaine d'utilisateurs, SQLite montre ses limites en écriture concurrente : c'est là qu'il faut passer à PostgreSQL."
+  - question: "Quelle machine faut-il pour héberger Focalboard ?"
+    answer: "Peu de choses. Un Raspberry Pi 4 avec 2 Go de RAM encaisse une équipe de dix personnes, et un VPS 1 cœur / 2 Go tourne sans forcer."
+  - question: "Focalboard remplace-t-il vraiment Notion ?"
+    answer: "Pour la gestion de projet en kanban, listes et calendrier, oui. Notion reste devant pour la partie base de connaissances et documents imbriqués : Focalboard est un outil de tableaux, pas un wiki."
+  - question: "Le projet est-il toujours maintenu par Mattermost ?"
+    answer: "Mattermost a arrêté le développement actif de Focalboard en tant que produit autonome. L'image Docker reste utilisable et stable pour un usage perso ou en petite équipe, mais n'attends pas de nouvelles fonctionnalités majeures."
 ogImage: ""
 ---
 > 💡 **TL;DR**

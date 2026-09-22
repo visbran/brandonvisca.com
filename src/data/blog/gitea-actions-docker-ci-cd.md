@@ -14,7 +14,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: gitea actions docker
-faqs: []
+faqs:
+  - question: "Les workflows GitHub Actions fonctionnent-ils tels quels ?"
+    answer: "La syntaxe est compatible et les workflows simples se réutilisent directement. Les actions qui dépendent de services propres à GitHub demandent en revanche une adaptation."
+  - question: "Où placer les fichiers de workflow ?"
+    answer: "Dans `.gitea/workflows/` à la racine du dépôt, et non dans `.github/workflows/`."
+  - question: "Faut-il un runner séparé ?"
+    answer: "Oui. Gitea délègue l'exécution à `act_runner`, un conteneur à part qu'il faut enregistrer auprès de ton instance avec un jeton."
+  - question: "Combien de ressources prévoir ?"
+    answer: "Compte environ 300 Mo pour Gitea et 500 Mo pour le runner, soit 2 Go de RAM disponibles pour être tranquille selon les workloads."
 ogImage: "" 
 ---
 > 💡 **TL;DR**

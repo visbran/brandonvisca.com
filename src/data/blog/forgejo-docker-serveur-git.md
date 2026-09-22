@@ -14,7 +14,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: forgejo docker
-faqs: []
+faqs:
+  - question: "Quelle est la différence entre Forgejo et Gitea ?"
+    answer: "Forgejo est un fork communautaire de Gitea, sous licence copyleft et gouverné par une fondation indépendante. Les fonctionnalités sont les mêmes : dépôts, pull requests, issues, Actions CI/CD et packages."
+  - question: "Puis-je migrer depuis Gitea sans tout perdre ?"
+    answer: "Oui. Forgejo part de la même base de données que Gitea, la bascule se fait en quelques clics depuis l'interface. Sauvegarde ton volume avant, comme pour toute migration."
+  - question: "Quelle configuration matérielle faut-il ?"
+    answer: "1 Go de RAM suffit pour une forge personnelle, 2 Go si tu actives les Actions CI/CD. L'image existe en arm64, donc un Raspberry Pi 4 avec 4 Go fait très bien l'affaire."
+  - question: "SQLite ou PostgreSQL ?"
+    answer: "SQLite convient pour un usage solo ou à quelques personnes, et simplifie la sauvegarde. PostgreSQL devient utile dès que plusieurs personnes poussent en même temps ou que les Actions tournent en parallèle."
 ogImage: ""
 ---
 > 💡 **TL;DR**

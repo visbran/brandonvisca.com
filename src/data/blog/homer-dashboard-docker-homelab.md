@@ -14,7 +14,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: homer dashboard docker
-faqs: []
+faqs:
+  - question: "Homer a-t-il besoin d'une base de données ?"
+    answer: "Non. Homer est une page statique : toute la configuration tient dans un fichier `config.yml`. Pas de base, pas de migration, et tu peux versionner ta config avec Git."
+  - question: "Homer peut-il afficher l'état de mes services ?"
+    answer: "En partie. Homer pinge les services déclarés pour montrer s'ils répondent, et sait afficher un compteur pour ceux qui exposent une API. Pour de la vraie supervision avec historique et alertes, il faut un outil dédié comme Uptime Kuma."
+  - question: "Est-ce risqué d'exposer Homer sur Internet ?"
+    answer: "Homer n'a pas de backend, donc pas d'injection SQL ni d'exécution de code à craindre. Le risque, c'est le contenu : ta page liste les URLs de tous tes services. Mets-la derrière un reverse proxy authentifié ou ton VPN."
+  - question: "Combien de ressources consomme Homer ?"
+    answer: "Presque rien. C'est un serveur web qui sert des fichiers statiques : il tourne sans problème sur un Raspberry Pi à côté de tout le reste."
 ogImage: "" 
 ---
 > 💡 **TL;DR**

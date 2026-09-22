@@ -14,7 +14,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: minio docker
-faqs: []
+faqs:
+  - question: "MinIO est-il vraiment compatible avec l'API S3 ?"
+    answer: "Oui. Les clients S3 habituels (aws-cli, s3cmd, rclone, SDK) fonctionnent en changeant simplement l'adresse du point d'accès et les clés."
+  - question: "Quels outils peuvent utiliser MinIO comme stockage ?"
+    answer: "Tout ce qui parle S3 : Nextcloud pour le stockage primaire, Duplicati ou Restic pour les sauvegardes, et la plupart des applications qui proposent un backend S3."
+  - question: "Un seul nœud MinIO, est-ce suffisant ?"
+    answer: "Pour un homelab, oui, mais un nœud unique ne protège pas d'une panne de disque : il te faut une vraie sauvegarde à côté. La redondance par erasure coding demande plusieurs disques ou plusieurs nœuds."
+  - question: "MinIO reste-t-il gratuit ?"
+    answer: "L'édition communautaire est open-source et gratuite en auto-hébergement. Les offres payantes ajoutent du support et des fonctions d'entreprise dont un homelab n'a pas besoin."
 ogImage: ""
 ---
 > 💡 **TL;DR**

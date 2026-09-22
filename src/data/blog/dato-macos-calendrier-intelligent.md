@@ -13,7 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: dato macos
-faqs: []
+faqs:
+  - question: "Combien coûte Dato ?"
+    answer: "14,99 $ sur le Mac App Store, en achat unique, sans abonnement."
+  - question: "Dato fonctionne-t-il sur plusieurs écrans ?"
+    answer: "Non, et c'est sa limite la plus gênante : Dato ne s'affiche que dans la barre de menus de l'écran principal."
+  - question: "Dato synchronise-t-il mes calendriers ?"
+    answer: "Non. Il lit les calendriers de macOS via EventKit : si un agenda ne remonte pas dans l'app Calendrier d'Apple, Dato ne le verra pas non plus."
+  - question: "Existe-t-il une alternative gratuite ?"
+    answer: "Itsycal, qui couvre l'essentiel pour zéro euro et consomme environ 15 Mo de RAM, contre 60 à 90 Mo pour Dato."
 ogImage: ""
 ---
 > 💡 **TL;DR**
