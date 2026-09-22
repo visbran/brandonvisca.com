@@ -1,0 +1,13 @@
+# Captures pour l'article Tianji. Lancer : pnpm shots tianji-self-hosted-analytics
+- output: dashboard.png
+  url: http://192.168.50.8:12345/
+  width: 1440
+  wait: 3000
+  alt: "Tableau de bord Tianji : visites, pages vues et sessions des 7 derniers jours"
+  auth: tianji
+- output: website-list.png
+  url: http://192.168.50.8:12345/settings/websites
+  width: 1440
+  wait: 2500
+  alt: "Liste des sites suivis dans les paramètres de Tianji"
+  auth: tianji

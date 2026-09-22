@@ -1,0 +1,13 @@
+services:
+  dozzle:
+    container_name: dozzle
+    image: amir20/dozzle:v8.14.3
+    ports: ["8081:8080"]
+    volumes: ["/var/run/docker.sock:/var/run/docker.sock:ro"]
+  # Conteneurs de démo, pour que l'interface ne soit pas vide
+  nginx:
+    image: nginx:1.29-alpine
+    container_name: web-frontend
+  redis:
+    image: redis:8-alpine
+    container_name: cache-redis

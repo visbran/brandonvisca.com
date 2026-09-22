@@ -1,0 +1,9 @@
+# Instance jetable : voir dozzle-docker-visionneuse-logs-web.compose.yml
+- output: dozzle-accueil.png
+  url: http://localhost:8081/
+  width: 1440
+  wait: 3000
+  alt: "Interface de Dozzle listant les conteneurs Docker en cours d'exécution"
+  javascript: |
+    // Le nom de la machine qui prend la capture n'a rien à faire dans l'article
+    document.body.innerHTML = document.body.innerHTML.replaceAll('shots', 'docker-host');
