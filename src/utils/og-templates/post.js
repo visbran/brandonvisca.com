@@ -127,7 +127,7 @@ export default async post => {
                       color: "#a6a7aa",
                     },
                     children: [
-                      "Par ",
+                      "Par\u00a0",
                       {
                         type: "span",
                         props: {

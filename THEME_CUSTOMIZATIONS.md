@@ -301,3 +301,22 @@ The following files are **not modified** and will merge cleanly:
 **CSP** : aucune modification — le script et les requêtes sont same-origin, couverts par `'self'`.
 
 **Merge strategy**: Sur update upstream, conserver le bloc Tianji du `<head>` et l'entrée du schéma `env`.
+
+---
+
+### Image OG : espace manquant avant le nom de l'auteur (2026-09-22)
+
+**Reason** : les images OG générées affichaient « ParBrandon Visca ». Satori supprime l'espace final
+d'un enfant texte quand le suivant est un élément : `"Par "` perdait son espace au rendu.
+
+**Files & changes** :
+- `src/utils/og-templates/post.js` — `"Par "` remplacé par `"Par\u00a0"` (espace insécable, conservé
+  par Satori). La police est déjà chargée pour ces caractères, rien d'autre à changer.
+
+**Au passage** : l'issue `ogImage_specific` du backlog SEO est sans objet. Chaque article a déjà sa
+propre image de partage, générée au build (`/{slug}/index.png` via `generateOgImages.ts`), référencée
+par `og:image` **et** `twitter:image`. Aucun article n'a d'`ogImage` personnalisée : 64 ont un champ
+vide, 129 n'ont pas le champ. Remplir ce champ remplacerait une image générée et cohérente par une
+image figée à maintenir — à réserver à une bannière vraiment travaillée.
+
+**Merge strategy** : sur update upstream, conserver l'espace insécable.
