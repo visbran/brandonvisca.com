@@ -1,6 +1,6 @@
 ---
-title: Immich Docker remplace Google Photos ? Guide complet 2026
-description: Installe Immich Docker Compose en quelques minutes et remplace Google Photos par une solution open-source auto-hébergée sur ton serveur.
+title: "Immich en Docker : ton Google Photos auto-hébergé"
+description: "Installe Immich avec Docker Compose, importe ta photothèque Google Photos et retrouve appli mobile, sauvegarde auto et recherche, chez toi."
 pubDatetime: "2026-05-15T19:00:00+02:00"
 modDatetime: "2026-05-17T00:00:00+02:00"
 author: Brandon Visca

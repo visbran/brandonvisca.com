@@ -1,6 +1,6 @@
 ---
-title: "Oh My Zsh gratuit : installation complète + Powerlevel10k (2026)"
-description: "Installe Oh My Zsh + Powerlevel10k en 15 min : ma config .zshrc prête à copier, plugins essentiels et thème pro, testés en 2026."
+title: "Oh My Zsh et Powerlevel10k : ma config .zshrc"
+description: "Oh My Zsh et Powerlevel10k installés en 15 minutes : ma config .zshrc à copier, les plugins qui servent vraiment et le dépannage courant."
 pubDatetime: 2025-03-31 15:55:32+02:00
 modDatetime: 2026-07-06 00:00:00+01:00
 author: Brandon Visca

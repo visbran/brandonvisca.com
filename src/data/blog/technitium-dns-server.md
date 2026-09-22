@@ -1,6 +1,6 @@
 ---
-title: "Technitium DNS Server : installe ton bloqueur de pubs libre (2026)"
-description: Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC, guide complet 2026.
+title: "Technitium DNS : l'alternative libre à Pi-hole"
+description: "Technitium DNS Server en Docker : blocage des pubs, DNS récursif, DNSSEC et résolution locale. Comparé à Pi-hole et AdGuard Home, sans langue de bois."
 pubDatetime: 2026-04-29 00:00:00+01:00
 modDatetime: "2026-07-06T00:00:00+01:00"
 author: Brandon Visca
