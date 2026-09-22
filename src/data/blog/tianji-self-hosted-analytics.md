@@ -42,7 +42,7 @@ Depuis GA4, c'est devenu **illisible** pour un site perso. Les rapports sont fai
 
 Et puis il y a la vie privée. Le RGPD, les bannières de cookies, les gestionnaires de consentement à 30 $ par mois… tout ça pour pister des visiteurs qui cliquent « Refuser » de toute façon.
 
-Si toi aussi tu cherches à [quitter Google et reprendre le contrôle de tes données](/quitter-google-auto-hebergement/), tu es au bon endroit. J'ai testé Umami, Plausible et Matomo. C'est bien. J'ai fini sur **Tianji**, et cet article est le guide que j'aurais voulu lire : l'installation, le branchement sur un site statique, et surtout la partie que les autres tutoriels passent sous silence — comment collecter les visites sans ouvrir son instance au monde entier.
+Si toi aussi tu cherches à [quitter Google et reprendre le contrôle de tes données](/quitter-google-auto-hebergement/), tu es au bon endroit. J'ai testé Umami, Plausible et Matomo. C'est bien. J'ai fini sur **Tianji**, et cet article est le guide que j'aurais voulu lire : l'installation, le branchement sur un site statique, et surtout la partie que les autres tutoriels passent sous silence, comment collecter les visites sans ouvrir son instance au monde entier.
 
 ---
 
@@ -65,9 +65,9 @@ Le projet est sous licence Apache 2.0, écrit en TypeScript avec Prisma et Next.
 
 ---
 
-## Installer Tianji : deux chemins
+## Installer Tianji : deux chemins possibles
 
-### En LXC sur Proxmox
+### Installer Tianji en LXC sur Proxmox
 
 C'est ce que j'utilise. Le script de la communauté [Proxmox VE Helper-Scripts](https://community-scripts.org/scripts?q=analytic) crée un conteneur Debian avec PostgreSQL et Tianji en service systemd, sans Docker :
 
@@ -75,7 +75,7 @@ C'est ce que j'utilise. Le script de la communauté [Proxmox VE Helper-Scripts](
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/tianji.sh)"
 ```
 
-Le script demande les ressources du conteneur — 2 vCPU et 2 Go de RAM suffisent largement — puis il fait le reste. À la fin, l'interface répond sur `http://IP-DU-LXC:12345`.
+Le script demande les ressources du conteneur, 2 vCPU et 2 Go de RAM suffisent largement, puis il fait le reste. À la fin, l'interface répond sur `http://IP-DU-LXC:12345`.
 
 Deux choses à savoir pour la suite : la base s'appelle `tianji_db` (et pas `tianji`, ça m'a fait chercher), et le service se pilote comme n'importe quel service systemd :
 
@@ -85,7 +85,7 @@ systemctl status postgresql@17-main   # si la base tombe, Tianji tombe avec
 journalctl -u tianji -n 100 --no-pager
 ```
 
-### En Docker Compose
+### Installer Tianji avec Docker Compose
 
 Le chemin officiel, valable sur un VPS comme sur une machine du salon. Si tu débutes, passe d'abord par mon [guide Docker pour débutants](/docker-debutant-services-auto-heberger/).
 
@@ -126,7 +126,7 @@ volumes:
 
 **Le `healthcheck` n'est pas décoratif.** Sans lui, Tianji démarre avant PostgreSQL, la migration Prisma échoue et le conteneur reste muet :
 
-```
+```text
 Error: P1001: Can't reach database server at `postgres:5432`
 ```
 
@@ -150,7 +150,7 @@ Le script est cookieless, il n'a besoin d'aucune bannière de consentement. Quel
 
 | Attribut | Effet |
 |---|---|
-| `data-domains` | Limite le suivi à une liste de domaines — pratique pour ne pas compter tes previews de déploiement |
+| `data-domains` | Limite le suivi à une liste de domaines, pratique pour ne pas compter tes previews de déploiement |
 | `data-do-not-track` | Respecte le réglage « Do Not Track » du navigateur |
 | `data-host-url` | Force l'adresse de collecte, si elle diffère de celle du script |
 
@@ -164,9 +164,9 @@ Sans `data-host-url`, le script envoie les visites **au dossier d'où il a été
 
 Voilà le vrai sujet. Mon Tianji tourne sur un LXC du réseau local, joignable uniquement par VPN. Or le script de suivi s'exécute dans le navigateur de visiteurs qui, eux, sont sur Internet. Pointer le script sur une adresse locale ne marche pas : les visiteurs ne joignent pas ton LAN, et chaque page déclenche une erreur dans leur console.
 
-Il faut donc **un point d'entrée public** — mais ça n'oblige pas à exposer l'interface d'administration de Tianji. Voici le montage que j'utilise :
+Il faut donc **un point d'entrée public**, mais ça n'oblige pas à exposer l'interface d'administration de Tianji. Voici le montage que j'utilise :
 
-```
+```text
 navigateur → https://ton-site.fr/stats/*     (proxy sur ton propre domaine)
            → https://collecte.ton-site.fr    (tunnel + contrôle d'accès)
            → http://localhost:12345          (Tianji, chez toi)
@@ -239,7 +239,7 @@ Environment=CLIENT_IP_HEADER=x-visitor-ip
 
 En Docker, c'est une ligne dans `environment:`. Côté proxy, tu recopies l'IP du visiteur dans cet en-tête avant de relayer. Après ça, mes visites sont reparties en France, ville comprise.
 
-> ⚠️ **Le revers** : avec ce réglage, quiconque peut joindre Tianji directement peut annoncer l'adresse IP de son choix. Ça reste acceptable tant que seul ton proxy — authentifié — et ton réseau local y ont accès. Ça ne le serait pas sur une instance ouverte à tous.
+> ⚠️ **Le revers** : avec ce réglage, quiconque peut joindre Tianji directement peut annoncer l'adresse IP de son choix. Ça reste acceptable tant que seul ton proxy, authentifié, et ton réseau local y ont accès. Ça ne le serait pas sur une instance ouverte à tous.
 
 ---
 
