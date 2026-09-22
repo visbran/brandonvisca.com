@@ -280,3 +280,18 @@ The following files are **not modified** and will merge cleanly:
 **Vérification** (mesurée sur le rendu, pas déduite) : corps 11,08:1, texte secondaire 4,88:1, accent 5,70:1 en clair ; thème sombre inchangé. Aucune autre occurrence des anciennes valeurs dans le dépôt.
 
 **Merge strategy**: Sur update upstream, conserver les valeurs du thème clair. Si upstream ajoute des surfaces teintées à l'accent, vérifier qu'elles restent dans la famille de teinte du fond.
+
+---
+
+### Mesure d'audience Tianji, en first-party (2026-09-22)
+
+**Reason**: Remplacer Google Analytics par l'instance Tianji auto-hébergée (LXC 108), sans exposer Tianji sur Internet. Le navigateur ne parle qu'à `brandonvisca.com/stats/*` ; une Pages Function relaie vers Tianji via un tunnel Cloudflare protégé par un jeton de service Cloudflare Access.
+
+**Files & changes**:
+- `src/layouts/Layout.astro` — balise `<script src="/stats/tracker.js">` émise seulement si `PUBLIC_TIANJI_WEBSITE_ID` est défini. `data-domains` limite le suivi aux domaines de production (rien en local ni sur les previews) ; `data-do-not-track` respecte le réglage DNT. Le tracker s'accroche à `history.pushState`, donc les navigations du `ClientRouter` sont comptées sans relancer le script.
+- `astro.config.ts` — variable `PUBLIC_TIANJI_WEBSITE_ID` ajoutée au schéma `env` (publique, optionnelle).
+- `functions/stats/[[path]].ts` (nouveau, hors thème) — proxy limité à `tracker.js`, `api/website/send` et `api/website/batch` ; tout le reste renvoie 404. Transmet l'IP du visiteur en `x-forwarded-for` pour la géolocalisation, retire `set-cookie`.
+
+**CSP** : aucune modification — le script et les requêtes sont same-origin, couverts par `'self'`.
+
+**Merge strategy**: Sur update upstream, conserver le bloc Tianji du `<head>` et l'entrée du schéma `env`.

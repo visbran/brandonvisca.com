@@ -68,6 +68,11 @@ export default defineConfig({
         context: "client",
         optional: true,
       }),
+      PUBLIC_TIANJI_WEBSITE_ID: envField.string({
+        access: "public",
+        context: "client",
+        optional: true,
+      }),
     },
   },
 
