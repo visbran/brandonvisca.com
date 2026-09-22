@@ -13,6 +13,32 @@ pnpm shots <slug> --force  # refait même les images déjà présentes
 Le script envoie le YAML au conteneur, lance `shot-scraper multi --retina`, rapatrie les PNG,
 les convertit en WebP 1600 px et les range dans `src/data/blog/`, nommées `<slug>-<n>.webp`.
 
+## Instance jetable plutôt que ta production (recommandé)
+
+La plupart des articles sont des tutoriels : le lecteur doit voir l'interface **telle qu'il la
+découvrira après l'installation**, pas ta prod. Trois fichiers, les deux derniers optionnels :
+
+| Fichier | Rôle |
+|---|---|
+| `<slug>.yml` | les captures (format shot-scraper) |
+| `<slug>.compose.yml` | instance jetable, démarrée avant et **détruite après** (`down -v`) |
+| `<slug>.setup.sh` | tourne sur le runner une fois l'instance up : attendre, créer le compte admin, injecter des données de démo |
+
+Avantages : aucun compte à gérer par outil, aucune donnée personnelle à masquer, captures
+reproductibles (image épinglée), et fidèles au tutoriel. Exemple complet :
+`dozzle-docker-visionneuse-logs-web.*`.
+
+Bonnes pratiques :
+
+- `container_name:` explicite pour chaque service — les noms générés par Compose apparaissent dans
+  certaines interfaces et trahissent l'infra.
+- Le projet Compose s'appelle `demo` : lisible dans les UI, mais **une seule recette à la fois**.
+- `--keep` laisse l'instance en vie pour mettre une recette au point ; à détruire ensuite à la main.
+- Les ports publiés sont locaux au runner : les captures pointent sur `http://localhost:<port>`.
+
+**Le compte dédié sur un service de prod ne se justifie que** si l'article montre des données réelles
+accumulées (statistiques Tianji, bibliothèque Immich). Sinon, instance jetable.
+
 ## Écrire une recette
 
 Un fichier par article : `scripts/shots/<slug>.yml`.
