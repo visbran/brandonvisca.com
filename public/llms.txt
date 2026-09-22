@@ -669,9 +669,9 @@ Description: Installe Netdata Docker pour monitorer CPU, RAM, disques et réseau
 Tags: 
 Publié: 2026-05-19 12:00:00+02:00
 
-## Immich Docker remplace Google Photos ? Guide complet 2026
+## Immich en Docker : ton Google Photos auto-hébergé
 URL: https://brandonvisca.com/immich-docker/
-Description: Installe Immich Docker Compose en quelques minutes et remplace Google Photos par une solution open-source auto-hébergée sur ton serveur.
+Description: Installe Immich avec Docker Compose, importe ta photothèque Google Photos et retrouve appli mobile, sauvegarde auto et recherche, chez toi.
 Tags: 
 Publié: 2026-05-15T19:00:00+02:00
 
@@ -711,9 +711,9 @@ Description: Configure Watchtower pour mettre à jour automatiquement tes conten
 Tags: 
 Publié: 2026-05-01 00:00:00+01:00
 
-## Technitium DNS Server : installe ton bloqueur de pubs libre (2026)
+## Technitium DNS : l'alternative libre à Pi-hole
 URL: https://brandonvisca.com/technitium-dns-server/
-Description: Installe Technitium DNS Server en Docker et remplace Pi-hole ou AdGuard Home. Blocage pubs, DNS récursif, DNSSEC, guide complet 2026.
+Description: Technitium DNS Server en Docker : blocage des pubs, DNS récursif, DNSSEC et résolution locale. Comparé à Pi-hole et AdGuard Home, sans langue de bois.
 Tags: 
 Publié: 2026-04-29 00:00:00+01:00
 
@@ -1035,9 +1035,9 @@ Description: Les rôles FSMO sont 5 fonctions importantes dans un réseau Window
 Tags: 
 Publié: 2025-03-31T17:34:29+02:00
 
-## Oh My Zsh gratuit : installation complète + Powerlevel10k (2026)
+## Oh My Zsh et Powerlevel10k : ma config .zshrc
 URL: https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/
-Description: Installe Oh My Zsh + Powerlevel10k en 15 min : ma config .zshrc prête à copier, plugins essentiels et thème pro, testés en 2026.
+Description: Oh My Zsh et Powerlevel10k installés en 15 minutes : ma config .zshrc à copier, les plugins qui servent vraiment et le dépannage courant.
 Tags: 
 Publié: 2025-03-31 15:55:32+02:00
 
