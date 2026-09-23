@@ -185,6 +185,8 @@ docker compose pull
 docker compose up -d
 ```
 
+💡 À lire aussi : [Whoogle Docker : pourquoi le projet est mort et par quoi le remplacer](/whoogle-docker-moteur-recherche-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 PairDrop Docker fait une chose et la fait bien : transférer un fichier d'un appareil à un autre sans compte, sans appli, sans upload intermédiaire. Pas de base de données à sauvegarder, pas de volume à gérer, un conteneur qui démarre en quelques secondes.
