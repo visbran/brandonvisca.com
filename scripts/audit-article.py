@@ -9,6 +9,7 @@ Usage:
 """
 
 import sys
+import difflib
 import json
 import re
 import os
@@ -20,13 +21,33 @@ _SCRIPT_DIR = Path(__file__).resolve().parent
 BLOG_DIR = _SCRIPT_DIR.parent / "src" / "data" / "blog"
 PUBLIC_DIR = _SCRIPT_DIR.parent / "public"
 
-# ── Tag convention (tag-convention.md) ────────────────────────────────────────
+# ── Tag convention (src/data/tags.json) ───────────────────────────────────────
 
-PRIMARY_TAGS = {
+# Vocabulaire fermé du site : même fichier que `scripts/tag-check.mjs` en CI et que
+# `pipeline/tags.py` côté agent éditorial. Un tag hors de cette liste est une erreur :
+# c'est ainsi que 112 tags à un seul article s'étaient accumulés avant le 2026-09-24.
+TAGS_FILE = _SCRIPT_DIR.parent / "src" / "data" / "tags.json"
+
+_FALLBACK_PRIMARY = {
     "homelab", "auto-hebergement", "linux", "macos", "windows",
     "docker", "securite", "reseau", "productivite", "sysadmin",
     "developpement", "microsoft-365",
 }
+
+
+def _load_vocabulary():
+    """(primaires, tous les tags autorisés). Repli sur les primaires si illisible."""
+    try:
+        with open(TAGS_FILE, encoding="utf-8") as handle:
+            data = json.load(handle)
+        primary = set(data["primary"])
+        allowed = primary | set(data["meta"]) | set(data.get("secondary", ()))
+        return primary, allowed
+    except (OSError, ValueError, KeyError):
+        return set(_FALLBACK_PRIMARY), set()
+
+
+PRIMARY_TAGS, ALLOWED_TAGS = _load_vocabulary()
 LEVEL_TAGS = {"debutant", "intermediaire", "avance"}
 FORBIDDEN_TAGS = {"autres", "others", "self-hosting", "productivity"}
 PENDING_MERGE = {
@@ -326,6 +347,18 @@ def audit_tags(fm_raw: str, issues: list):
             issues.append({"type": "error", "cat": "tags", "msg": f"Tag avec accent : `{tag}` — convertir en kebab-case sans accent"})
         elif tag in PENDING_MERGE:
             issues.append({"type": "info", "cat": "tags", "msg": f"Tag à fusionner : `{tag}` → `{PENDING_MERGE[tag]}`"})
+
+    if ALLOWED_TAGS:
+        for tag in tags:
+            if tag in ALLOWED_TAGS or tag in FORBIDDEN_TAGS or has_accent(tag):
+                continue
+            near = difflib.get_close_matches(tag, sorted(ALLOWED_TAGS), n=3, cutoff=0.6)
+            hint = f" — plus proche : {', '.join(near)}" if near else ""
+            issues.append({
+                "type": "error", "cat": "tags",
+                "msg": f"Tag hors vocabulaire : `{tag}`{hint}. "
+                       f"Choisir un tag de src/data/tags.json, ou l'y ajouter s'il couvre 2+ articles",
+            })
 
     if not any(t in PRIMARY_TAGS for t in tags):
         issues.append({"type": "warning", "cat": "tags", "msg": f"Aucun tag primaire — choisir parmi : {', '.join(sorted(PRIMARY_TAGS))}"})
