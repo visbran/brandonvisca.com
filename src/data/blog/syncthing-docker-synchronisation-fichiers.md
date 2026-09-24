@@ -8,9 +8,6 @@ tags:
   - debutant
   - auto-hebergement
   - docker
-  - syncthing
-  - synchronisation
-  - p2p
 featured: false
 draft: false
 focusKeyword: syncthing docker

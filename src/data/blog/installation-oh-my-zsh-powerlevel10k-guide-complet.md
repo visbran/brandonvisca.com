@@ -5,8 +5,6 @@ pubDatetime: 2025-03-31 15:55:32+02:00
 modDatetime: 2026-07-06 00:00:00+01:00
 author: Brandon Visca
 tags:
-  - oh-my-zsh
-  - powerlevel10k
   - zsh
   - macos
   - productivite

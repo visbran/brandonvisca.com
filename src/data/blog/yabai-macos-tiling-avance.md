@@ -9,7 +9,6 @@ tags:
   - macos
   - productivite
   - tiling
-  - window-manager
 featured: false
 draft: false
 focusKeyword: yabai macos

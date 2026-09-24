@@ -10,7 +10,6 @@ tags:
   - auto-hebergement
   - productivite
   - guide
-  - nocodb
 featured: false
 draft: false
 focusKeyword: nocodb docker

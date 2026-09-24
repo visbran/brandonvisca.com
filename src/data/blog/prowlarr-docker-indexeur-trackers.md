@@ -10,7 +10,7 @@ tags:
   - intermediaire
   - radarr
   - sonarr
-  - prowlarr
+  - mediacenter
 featured: false
 draft: false
 focusKeyword: prowlarr docker

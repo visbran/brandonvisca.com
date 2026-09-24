@@ -7,9 +7,7 @@ author: Brandon Visca
 tags:
   - intermediaire
   - docker
-  - kubernetes
   - homelab
-  - k3s
 featured: false
 draft: false
 focusKeyword: k3s docker

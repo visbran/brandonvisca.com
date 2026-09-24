@@ -5,7 +5,6 @@ pubDatetime: 2026-08-31 06:00:00+00:00
 modDatetime: 2026-08-31 06:00:00+00:00
 author: Brandon
 tags:
-  - bunch
   - macos
   - productivite
   - debutant

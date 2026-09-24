@@ -7,8 +7,6 @@ author: Brandon
 tags:
   - debutant
   - auto-hebergement
-  - alcove
-  - navigateur
   - homelab
 featured: false
 draft: false

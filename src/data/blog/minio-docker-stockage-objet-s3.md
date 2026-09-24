@@ -8,8 +8,6 @@ tags:
   - auto-hebergement
   - docker
   - intermediaire
-  - minio
-  - s3
   - stockage
 featured: false
 draft: false

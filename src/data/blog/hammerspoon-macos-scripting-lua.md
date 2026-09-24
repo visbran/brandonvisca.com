@@ -8,8 +8,6 @@ tags:
   - macos
   - productivite
   - automation
-  - lua
-  - scripting
   - debutant
 featured: false
 draft: false

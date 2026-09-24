@@ -9,7 +9,6 @@ tags:
   - intermediaire
   - auto-hebergement
   - wiki
-  - outline
 featured: false
 draft: false
 focusKeyword: outline docker

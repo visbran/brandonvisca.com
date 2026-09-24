@@ -5,8 +5,6 @@ pubDatetime: "2026-09-01T06:00:00.000Z"
 modDatetime: "2026-09-01T06:00:00.000Z"
 author: Brandon
 tags:
-  - transmission
-  - torrent
   - auto-hebergement
   - docker
   - debutant

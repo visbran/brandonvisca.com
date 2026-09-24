@@ -10,7 +10,6 @@ tags:
   - vpn
   - wireguard
   - docker
-  - zero-trust
 featured: false
 draft: false
 focusKeyword: firezone docker

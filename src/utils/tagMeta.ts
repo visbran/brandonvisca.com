@@ -181,10 +181,12 @@ export const TAG_META: Record<string, TagMeta> = {
     description:
       "Tous les articles sur le monitoring : Uptime Kuma, UptimeRobot, supervision et alertes.",
   },
-  backup: {
+  sauvegarde: {
     title: `Sauvegarde — Guides et tutoriels | ${SITE.title}`,
     description:
-      "Tous les articles sur la sauvegarde : stratégies, outils et restauration de données.",
+      "Tous les articles sur la sauvegarde : Restic, BorgBackup, Duplicati, stratégies 3-2-1 et restauration.",
+    intro:
+      "Sauvegarder pour de vrai — chiffrement, déduplication et restauration testée.",
   },
   nextcloud: {
     title: `Nextcloud — Guides et tutoriels | ${SITE.title}`,
@@ -215,6 +217,55 @@ export const TAG_META: Record<string, TagMeta> = {
     title: `Hyper-V — Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Hyper-V : virtualisation Windows, VHDX et machines virtuelles.",
+  },
+  mediacenter: {
+    title: `Mediacenter — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur le mediacenter auto-hébergé : Jellyfin, Radarr, Sonarr, Prowlarr et clients torrent.",
+    intro:
+      "Monter une médiathèque complète et automatisée sur son propre serveur.",
+  },
+  automation: {
+    title: `Automatisation — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur l'automatisation : n8n, Ansible, scripts et workflows pour homelab.",
+    intro:
+      "Faire travailler les machines à sa place — workflows, scripts et orchestration.",
+  },
+  "reverse-proxy": {
+    title: `Reverse proxy — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur les reverse proxies : Caddy, Nginx Proxy Manager, Zoraxy, HTTPS et certificats.",
+  },
+  messagerie: {
+    title: `Messagerie — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur la messagerie auto-hébergée : Matrix, Mattermost et alternatives à Slack.",
+  },
+  git: {
+    title: `Git — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur Git auto-hébergé : Gitea, Forgejo, CI/CD et forges open source.",
+  },
+  tailscale: {
+    title: `Tailscale — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur Tailscale : réseau mesh WireGuard, Headscale et accès distant au homelab.",
+  },
+  vpn: {
+    title: `VPN — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur les VPN auto-hébergés : WireGuard, Tailscale, Firezone et accès zero trust.",
+  },
+  "base-de-donnees": {
+    title: `Bases de données — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur les bases de données : PostgreSQL, MariaDB, Docker et sauvegarde des données.",
+  },
+  ntp: {
+    title: `NTP — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur la synchronisation horaire : Chrony, serveurs NTP et fuseaux horaires Linux.",
   },
 };
 

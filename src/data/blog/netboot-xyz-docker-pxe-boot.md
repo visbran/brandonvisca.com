@@ -6,10 +6,9 @@ modDatetime: "2026-07-06T08:00:00.000Z"
 author: Brandon
 tags:
   - debutant
-  - linux-sysadmin
+  - sysadmin
   - docker
-  - netboot
-  - pxe
+  - linux
 featured: false
 draft: false
 focusKeyword: netboot docker

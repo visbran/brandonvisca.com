@@ -8,8 +8,6 @@ tags:
   - macos
   - productivite
   - intermediaire
-  - gestion-fenetres
-  - trackpad
 featured: false
 draft: false
 focusKeyword: swish macos

@@ -9,7 +9,6 @@ tags:
   - docker
   - linux
   - monitoring
-  - zabbix
   - intermediaire
 featured: false
 draft: false

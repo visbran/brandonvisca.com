@@ -7,8 +7,7 @@ author: Brandon Visca
 tags:
   - debutant
   - linux
-  - proxmox
-  - lxc
+  - homelab
   - sysadmin
   - auto-hebergement
 featured: false

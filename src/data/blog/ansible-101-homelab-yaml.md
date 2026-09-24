@@ -7,7 +7,7 @@ author: Brandon Visca
 tags:
   - linux
   - auto-hebergement
-  - ansible
+  - automation
   - intermediaire
 featured: false
 draft: false

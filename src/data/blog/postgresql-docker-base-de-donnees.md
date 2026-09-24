@@ -6,7 +6,6 @@ modDatetime: "2026-08-11T08:00:00.000Z"
 author: Brandon Visca
 tags:
   - docker
-  - postgresql
   - base-de-donnees
   - intermediaire
   - auto-hebergement

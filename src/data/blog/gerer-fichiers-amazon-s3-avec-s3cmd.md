@@ -8,7 +8,7 @@ tags:
   - linux
   - sysadmin
   - auto-hebergement
-  - backup
+  - sauvegarde
   - intermediaire
   - guide
 featured: false

@@ -8,7 +8,7 @@ tags:
   - developpement
   - wordpress
   - sysadmin
-  - backup
+  - sauvegarde
   - intermediaire
   - guide
 featured: false

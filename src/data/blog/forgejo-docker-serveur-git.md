@@ -10,7 +10,6 @@ tags:
   - docker
   - git
   - homelab
-  - forgejo
 featured: false
 draft: false
 focusKeyword: forgejo docker

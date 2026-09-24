@@ -9,7 +9,6 @@ tags:
   - productivite
   - debutant
   - guide
-  - open-source
 featured: false
 draft: false
 focusKeyword: maccy macos

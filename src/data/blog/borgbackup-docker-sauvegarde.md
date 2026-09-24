@@ -8,7 +8,6 @@ tags:
   - docker
   - auto-hebergement
   - sauvegarde
-  - borgbackup
   - intermediaire
   - homelab
 featured: false

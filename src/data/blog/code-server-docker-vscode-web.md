@@ -8,7 +8,7 @@ tags:
   - debutant
   - auto-hebergement
   - docker
-  - vscode
+  - developpement
   - productivite
 featured: false
 draft: false

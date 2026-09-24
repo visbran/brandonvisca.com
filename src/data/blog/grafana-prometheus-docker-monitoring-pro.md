@@ -8,8 +8,6 @@ tags:
   - intermediaire
   - docker
   - monitoring
-  - prometheus
-  - grafana
   - linux
 featured: false
 draft: false

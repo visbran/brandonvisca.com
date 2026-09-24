@@ -8,8 +8,6 @@ tags:
   - intermediaire
   - linux
   - sysadmin
-  - cron
-  - planification
 featured: false
 draft: false
 focusKeyword: cron linux avance

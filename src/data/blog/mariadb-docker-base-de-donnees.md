@@ -6,8 +6,6 @@ modDatetime: "2026-08-07T08:00:00.000Z"
 author: Brandon
 tags:
   - docker
-  - mariadb
-  - mysql
   - base-de-donnees
   - intermediaire
   - auto-hebergement

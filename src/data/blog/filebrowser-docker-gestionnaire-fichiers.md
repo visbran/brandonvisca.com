@@ -6,8 +6,7 @@ author: Brandon Visca
 tags:
   - auto-hebergement
   - docker
-  - gestionnaire-fichiers
-  - debian
+  - linux
   - intermediaire
 featured: false
 draft: false

@@ -9,7 +9,6 @@ tags:
   - auto-hebergement
   - productivite
   - intermediaire
-  - pdf
 featured: false
 draft: false
 focusKeyword: stirling-pdf docker

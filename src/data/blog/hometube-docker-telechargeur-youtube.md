@@ -8,8 +8,7 @@ tags:
   - intermediaire
   - auto-hebergement
   - docker
-  - youtube
-  - jellyfin
+  - mediacenter
 featured: false
 draft: false
 focusKeyword: hometube docker

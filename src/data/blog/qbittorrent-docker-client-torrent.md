@@ -5,7 +5,6 @@ pubDatetime: "2026-08-30T06:00:00.000Z"
 modDatetime: "2026-08-30T06:00:00.000Z"
 author: Brandon Visca
 tags:
-  - qbittorrent
   - auto-hebergement
   - docker
   - debutant

@@ -8,7 +8,7 @@ tags:
   - docker
   - auto-hebergement
   - reverse-proxy
-  - https
+  - securite
   - intermediaire
   - guide
 featured: false

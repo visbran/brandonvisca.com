@@ -5,10 +5,8 @@ pubDatetime: "2025-11-18T17:39:28+01:00"
 modDatetime: "2026-06-22T00:00:00+01:00"
 author: Brandon Visca
 tags:
-  - appcleaner
   - macos
   - homebrew
-  - nettoyage
   - productivite
   - debutant
 featured: false

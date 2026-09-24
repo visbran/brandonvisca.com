@@ -9,7 +9,6 @@ tags:
   - securite
   - docker
   - homelab
-  - fail2ban
 featured: false
 draft: false
 focusKeyword: crowdsec docker

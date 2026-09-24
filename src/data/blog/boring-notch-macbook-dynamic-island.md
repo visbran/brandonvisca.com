@@ -7,8 +7,6 @@ author: Brandon Visca
 tags:
   - macos
   - productivite
-  - boring-notch
-  - macbook
   - debutant
 featured: false
 draft: false

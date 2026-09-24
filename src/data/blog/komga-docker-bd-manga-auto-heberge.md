@@ -8,9 +8,7 @@ tags:
   - docker
   - auto-hebergement
   - intermediaire
-  - komga
-  - manga
-  - medias
+  - multimedia
 featured: false
 draft: false
 focusKeyword: "komga docker"

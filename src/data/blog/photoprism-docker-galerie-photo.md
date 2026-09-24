@@ -8,7 +8,6 @@ focusKeyword: photoprism docker
 tags:
   - auto-hebergement
   - docker
-  - photoprism
   - intermediaire
   - guide
 featured: false

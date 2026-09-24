@@ -9,7 +9,6 @@ tags:
   - linux
   - intermediaire
   - securite
-  - containerisation
 featured: false
 draft: false
 focusKeyword: podman vs docker

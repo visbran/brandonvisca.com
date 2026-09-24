@@ -5,12 +5,10 @@ pubDatetime: "2026-07-24T08:00:00.000Z"
 modDatetime: "2026-07-24T08:00:00.000Z"
 author: Brandon
 tags:
-  - woodpecker
   - ci-cd
   - docker
   - auto-hebergement
   - intermediaire
-  - devops
 featured: false
 draft: false
 focusKeyword: woodpecker ci docker

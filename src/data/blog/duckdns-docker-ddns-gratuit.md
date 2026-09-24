@@ -8,7 +8,7 @@ tags:
   - debutant
   - reseau
   - docker
-  - duckdns
+  - dns
   - auto-hebergement
 featured: false
 draft: false

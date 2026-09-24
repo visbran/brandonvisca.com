@@ -5,8 +5,6 @@ pubDatetime: "2026-08-04T06:00:00.000Z"
 modDatetime: "2026-08-04T06:00:00.000Z"
 author: Brandon
 tags:
-  - sso
-  - openid-connect
   - docker
   - securite
   - auto-hebergement
