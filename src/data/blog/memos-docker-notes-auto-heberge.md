@@ -9,7 +9,6 @@ tags:
   - auto-hebergement
   - intermediaire
   - productivite
-  - notes
 featured: false
 draft: false
 focusKeyword: memos docker

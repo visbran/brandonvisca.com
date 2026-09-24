@@ -8,9 +8,6 @@ tags:
   - macos
   - productivite
   - debutant
-  - open-island
-  - vibe-coding
-  - agent-ia
 featured: false
 draft: false
 focusKeyword: vibe island macos

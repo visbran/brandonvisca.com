@@ -8,7 +8,6 @@ tags:
   - intermediaire
   - auto-hebergement
   - docker
-  - backup
   - sauvegarde
 featured: false
 draft: false

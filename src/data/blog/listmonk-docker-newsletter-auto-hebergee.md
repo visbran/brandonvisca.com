@@ -8,8 +8,6 @@ tags:
   - auto-hebergement
   - docker
   - intermediaire
-  - newsletter
-  - listmonk
 featured: false
 draft: false
 focusKeyword: listmonk docker

@@ -7,8 +7,6 @@ author: Brandon Visca
 tags:
   - docker
   - securite
-  - certificat-ssl
-  - letsencrypt
   - auto-hebergement
   - intermediaire
 featured: false

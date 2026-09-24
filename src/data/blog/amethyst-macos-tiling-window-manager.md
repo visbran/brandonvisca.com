@@ -8,7 +8,6 @@ tags:
   - macos
   - productivite
   - debutant
-  - amethyst
   - tiling
 featured: false
 draft: false

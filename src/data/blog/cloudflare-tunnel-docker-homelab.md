@@ -8,8 +8,6 @@ tags:
   - intermediaire
   - reseau
   - docker
-  - cloudflare
-  - tunnel
   - homelab
 featured: false
 draft: false

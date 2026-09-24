@@ -8,8 +8,6 @@ tags:
   - securite
   - linux
   - docker
-  - nftables
-  - pare-feu
   - intermediaire
 featured: false
 draft: false

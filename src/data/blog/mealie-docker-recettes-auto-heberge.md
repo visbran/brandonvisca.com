@@ -5,7 +5,6 @@ pubDatetime: "2026-06-20T08:00:00.000Z"
 modDatetime: "2026-06-20T08:00:00.000Z"
 author: Brandon
 tags:
-  - mealie
   - docker
   - auto-hebergement
   - homelab

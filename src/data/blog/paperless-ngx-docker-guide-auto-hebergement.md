@@ -18,9 +18,8 @@ tags:
   - debutant
   - docker
   - auto-hebergement
-  - administration-systeme
+  - sysadmin
   - productivite
-  - ocr
 featured: false
 draft: false
 ---

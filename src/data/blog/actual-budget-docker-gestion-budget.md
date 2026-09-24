@@ -7,7 +7,6 @@ author: Brandon Visca
 tags:
   - docker
   - auto-hebergement
-  - finance
   - debutant
 featured: false
 draft: false

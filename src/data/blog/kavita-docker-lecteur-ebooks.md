@@ -6,8 +6,7 @@ author: Brandon
 tags:
   - auto-hebergement
   - docker
-  - kavita
-  - ebooks
+  - multimedia
   - intermediaire
 featured: false
 draft: false

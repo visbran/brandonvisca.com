@@ -10,7 +10,6 @@ tags:
   - docker
   - ci-cd
   - git
-  - gitea
 featured: false
 draft: false
 focusKeyword: gitea actions docker

@@ -6,8 +6,7 @@ modDatetime: 2026-05-26 00:00:00+01:00
 author: Brandon Visca
 tags:
   - docker
-  - n8n
-  - workflow-automation
+  - automation
   - intermediaire
   - auto-hebergement
   - homelab

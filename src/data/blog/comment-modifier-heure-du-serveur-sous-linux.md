@@ -7,6 +7,8 @@ author: Brandon Visca
 tags:
   - linux
   - debutant
+  - sysadmin
+  - ntp
 featured: false
 draft: false
 focusKeyword: heure du serveur sous linux

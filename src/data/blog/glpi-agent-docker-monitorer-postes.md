@@ -9,7 +9,7 @@ tags:
   - auto-hebergement
   - intermediaire
   - glpi
-  - inventaire
+  - sysadmin
 featured: false
 draft: false
 focusKeyword: glpi agent docker

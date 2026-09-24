@@ -8,9 +8,7 @@ tags:
   - intermediaire
   - auto-hebergement
   - messagerie
-  - matrix
   - docker
-  - decentralise
 featured: false
 draft: false
 focusKeyword: element matrix docker

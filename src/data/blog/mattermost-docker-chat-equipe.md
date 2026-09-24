@@ -8,7 +8,6 @@ tags:
   - auto-hebergement
   - docker
   - messagerie
-  - equipe
   - intermediaire
 featured: false
 draft: false

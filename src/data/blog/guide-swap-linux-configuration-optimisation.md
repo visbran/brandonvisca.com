@@ -7,6 +7,7 @@ author: Brandon Visca
 tags:
   - linux
   - intermediaire
+  - sysadmin
 featured: false
 draft: false
 focusKeyword: Swap Linux

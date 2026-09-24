@@ -8,7 +8,6 @@ tags:
   - intermediaire
   - auto-hebergement
   - docker
-  - restic
   - sauvegarde
 featured: false
 draft: false

@@ -9,7 +9,6 @@ tags:
   - intermediaire
   - auto-hebergement
   - docker
-  - surveillance
   - monitoring
 featured: false
 draft: false

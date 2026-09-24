@@ -9,7 +9,6 @@ tags:
   - docker
   - linux
   - auto-hebergement
-  - notifications
   - homelab
 featured: false
 draft: false

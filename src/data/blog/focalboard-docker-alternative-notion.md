@@ -8,8 +8,7 @@ tags:
   - intermediaire
   - auto-hebergement
   - docker
-  - focalboard
-  - kanban
+  - productivite
 featured: false
 draft: false
 focusKeyword: focalboard docker

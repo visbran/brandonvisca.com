@@ -9,7 +9,6 @@ tags:
   - docker
   - git
   - homelab
-  - github-alternative
 featured: false
 draft: false
 focusKeyword: gitea docker

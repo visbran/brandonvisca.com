@@ -8,7 +8,6 @@ tags:
   - auto-hebergement
   - wiki
   - intermediaire
-  - bookstack
 featured: false
 draft: false
 ogImage: ""

@@ -7,9 +7,7 @@ author: Brandon Visca
 tags:
   - auto-hebergement
   - docker
-  - freshrss
   - intermediaire
-  - rss
   - guide
 featured: false
 draft: false

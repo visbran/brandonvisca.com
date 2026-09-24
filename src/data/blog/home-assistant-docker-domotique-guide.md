@@ -6,10 +6,8 @@ author: Brandon Visca
 tags:
   - docker
   - auto-hebergement
-  - domotique
+  - homelab
   - debutant
-  - home-assistant
-  - smart-home
 featured: false
 draft: false
 focusKeyword: home assistant docker

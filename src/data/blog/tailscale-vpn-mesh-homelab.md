@@ -9,7 +9,6 @@ tags:
   - reseau
   - tailscale
   - vpn
-  - mesh
   - auto-hebergement
 featured: false
 draft: false

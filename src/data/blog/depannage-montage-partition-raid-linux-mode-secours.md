@@ -5,9 +5,7 @@ pubDatetime: "2025-03-13T11:37:18+01:00"
 author: Brandon Visca
 tags:
   - linux
-  - raid
-  - mdadm
-  - depannage
+  - sysadmin
   - stockage
   - avance
 featured: false

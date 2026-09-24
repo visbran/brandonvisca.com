@@ -9,7 +9,6 @@ tags:
   - intermediaire
   - hardening
   - sysadmin
-  - commandes
 featured: false
 draft: false
 ogImage: "" 

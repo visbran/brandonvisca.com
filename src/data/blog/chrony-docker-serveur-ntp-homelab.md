@@ -7,7 +7,6 @@ author: Brandon Visca
 tags:
   - linux
   - docker
-  - chrony
   - ntp
   - intermediaire
   - reseau

@@ -5,7 +5,7 @@ pubDatetime: "2025-06-12T19:38:49+02:00"
 modDatetime: "2026-04-14T00:00:00+01:00"
 author: Brandon Visca
 tags:
-  - backup
+  - sauvegarde
   - linux
   - debutant
 featured: false

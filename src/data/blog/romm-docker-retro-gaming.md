@@ -7,8 +7,7 @@ author: Brandon
 tags:
   - auto-hebergement
   - docker
-  - retro-gaming
-  - emulation
+  - gaming
   - debutant
 featured: false
 draft: false
