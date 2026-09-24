@@ -15,6 +15,9 @@
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "lint": "eslint .",
+    "check:tags": "node scripts/tag-check.mjs",
+    "check:redirects": "node scripts/redirects-check.mjs",
+    "check:content": "node scripts/tag-check.mjs && node scripts/redirects-check.mjs",
     "shots": "node scripts/shots/run.mjs"
   },
   "dependencies": {

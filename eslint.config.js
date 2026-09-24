@@ -14,5 +14,7 @@ export default [
     },
   },
   { rules: { "no-console": "error" } },
+  // Les scripts de `scripts/` sont des CLI : leur sortie console est leur interface.
+  { files: ["scripts/**/*.mjs"], rules: { "no-console": "off" } },
   { ignores: ["dist/**", ".astro", "public/pagefind/**"] },
 ];
