@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-23
-# Total articles : 193
+# Dernière mise à jour : 2026-09-24
+# Total articles : 194
+
+## Homepage Docker : dashboard homelab personnalisable avec widgets
+URL: https://brandonvisca.com/homepage-docker-dashboard-homelab-widgets/
+Description: Installe Homepage Docker sur ton homelab : dashboard personnalisable, widgets natifs, config YAML claire et intégrations Docker en direct.
+Tags: 
+Publié: 2026-09-24T11:00:13+02:00
 
 ## Whoogle Docker : pourquoi le projet est mort et par quoi le remplacer
 URL: https://brandonvisca.com/whoogle-docker-moteur-recherche-auto-heberge/
