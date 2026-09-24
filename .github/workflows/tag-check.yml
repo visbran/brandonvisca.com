@@ -5,10 +5,20 @@ on:
     branches: [main]
     paths:
       - 'src/data/blog/**'
+      - 'src/data/tags.json'
+      - 'src/utils/tagMeta.ts'
+      - 'public/_redirects'
+      - 'scripts/tag-check.mjs'
+      - 'scripts/redirects-check.mjs'
   push:
     branches: [main]
     paths:
       - 'src/data/blog/**'
+      - 'src/data/tags.json'
+      - 'src/utils/tagMeta.ts'
+      - 'public/_redirects'
+      - 'scripts/tag-check.mjs'
+      - 'scripts/redirects-check.mjs'
 
 jobs:
   validate-tags:
@@ -21,3 +31,6 @@ jobs:
           node-version: 22
       - name: Validate tags
         run: node scripts/tag-check.mjs
+      - name: Validate redirects
+        if: always()
+        run: node scripts/redirects-check.mjs
