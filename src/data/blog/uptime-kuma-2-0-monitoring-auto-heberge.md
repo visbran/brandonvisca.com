@@ -410,6 +410,8 @@ Installe-le, configure tes groupes de monitors et tes alertes Telegram, et dors 
 - [Documentation officielle Uptime Kuma](https://github.com/louislam/uptime-kuma/wiki) : wiki GitHub complet
 - [Guide de migration V1→V2](https://github.com/louislam/uptime-kuma/wiki/Migration-From-v1-To-v2) : procédure officielle
 
+💡 À lire aussi : [Homepage Docker : dashboard homelab personnalisable avec widgets](/homepage-docker-dashboard-homelab-widgets/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données](/auto-hebergement-guide-complet-2025/)

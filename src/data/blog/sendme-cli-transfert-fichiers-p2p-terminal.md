@@ -424,6 +424,8 @@ curl -X POST https://ntfy.sh/homelab-backup \
 
 ---
 
+💡 À lire aussi : [Homepage Docker : dashboard homelab personnalisable avec widgets](/homepage-docker-dashboard-homelab-widgets/), dans la même veine que cet article.
+
 ## 🎯 Conclusion : Sendme CLI, Le scp du Futur
 
 **Sendme CLI** résout un vrai problème : transférer des fichiers rapidement en ligne de commande sans se prendre la tête avec des configs réseau ou des serveurs intermédiaires.
