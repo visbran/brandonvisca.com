@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-24
-# Total articles : 194
+# Dernière mise à jour : 2026-09-25
+# Total articles : 195
+
+## SearXNG Docker : méta-moteur de recherche auto-hébergé et personnalisable
+URL: https://brandonvisca.com/searxng-docker-meta-moteur-recherche/
+Description: SearXNG Docker en pratique : installation en 10 minutes, configuration des moteurs, sécurisation, et comparatif honnête face à Whoogle et Google.
+Tags: 
+Publié: 2026-09-25T11:02:11+02:00
 
 ## Homepage Docker : dashboard homelab personnalisable avec widgets
 URL: https://brandonvisca.com/homepage-docker-dashboard-homelab-widgets/
