@@ -193,6 +193,8 @@ Changedetection.io stocke tout dans une base SQLite locale. Avec plusieurs centa
 
 💡 À lire aussi : [Dozzle Docker : visionneuse de logs Docker en temps réel via web](/dozzle-docker-visionneuse-logs-web/), dans la même veine que cet article.
 
+💡 À lire aussi : [Portainer Docker : interface web pour gérer tes conteneurs facilement](/portainer-docker-interface-web-conteneurs/), dans la même veine que cet article.
+
 ## Conclusion
 
 Changedetection.io est l'un de ces outils que tu installes une fois et que tu finis par utiliser tous les jours sans y penser. Il fait exactement ce qu'il promet : surveiller le web à ta place, te prévenir au bon moment, et te laisser le contrôle total sur tes données.
