@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-25
-# Total articles : 195
+# Dernière mise à jour : 2026-09-26
+# Total articles : 196
+
+## Portainer Docker : interface web pour gérer tes conteneurs facilement
+URL: https://brandonvisca.com/portainer-docker-interface-web-conteneurs/
+Description: Guide Portainer Docker complet : installe l'interface web, gère conteneurs, volumes et stacks sans ligne de commande, en dix minutes chrono.
+Tags: 
+Publié: 2026-09-26T11:01:12+02:00
 
 ## SearXNG Docker : méta-moteur de recherche auto-hébergé et personnalisable
 URL: https://brandonvisca.com/searxng-docker-meta-moteur-recherche/
