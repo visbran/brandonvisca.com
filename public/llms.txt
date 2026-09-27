@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-26
-# Total articles : 196
+# Dernière mise à jour : 2026-09-27
+# Total articles : 197
+
+## Plex Docker : serveur média auto-hébergé complet
+URL: https://brandonvisca.com/plex-docker-serveur-media-auto-heberge/
+Description: Installe Plex Docker en 10 minutes : docker-compose, PLEX_CLAIM, montage des bibliothèques, transcodage matériel et comparatif Jellyfin.
+Tags: 
+Publié: 2026-09-27T11:02:34+02:00
 
 ## Portainer Docker : interface web pour gérer tes conteneurs facilement
 URL: https://brandonvisca.com/portainer-docker-interface-web-conteneurs/
