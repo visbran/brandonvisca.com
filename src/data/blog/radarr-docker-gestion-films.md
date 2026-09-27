@@ -187,6 +187,8 @@ Radarr stocke toute sa config dans `/config`. Mais une base SQLite corrompue, c'
 ### Jellyfin ne voit pas le nouveau film
 - Radarr a peut-être renommé le dossier après le scan Jellyfin. Dans Jellyfin, lance un scan manuel ou configure le webhook Jellyfin dans Radarr pour forcer le rafraîchissement automatique.
 
+💡 À lire aussi : [Plex Docker : serveur média auto-hébergé complet](/plex-docker-serveur-media-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Radarr transforme ton serveur en véritable cinémathèque autonome. Une fois configuré, il gère les recherches, les téléchargements, le renommage et l'organisation sans que tu aies à intervenir. Couplé à Docker, tu obtiens un service propre, reproductible et facile à sauvegarder.

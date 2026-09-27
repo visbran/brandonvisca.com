@@ -294,6 +294,8 @@ Navidrome utilise FFmpeg pour le transcodage. Vérifie que l'image Docker inclut
 **Les apps mobiles ne se connectent pas**
 Vérifie que l'URL du serveur est accessible depuis le réseau de ton téléphone. Si tu es en HTTPS, assure-toi que le certificat est valide (pas de self-signed sur mobile, c'est galère). Le format d'URL est `https://music.tondomaine.com` avec login/mot de passe Navidrome.
 
+💡 À lire aussi : [Plex Docker : serveur média auto-hébergé complet](/plex-docker-serveur-media-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Navidrome est l'un des services les plus impressionnants que j'ai ajoutés à mon homelab cette année. En 5 minutes de Docker Compose, tu obtiens un serveur musical complet, compatible avec des dizaines d'apps mobiles, qui consomme moins de 50 Mo de RAM et ne demande aucun compte tiers.
