@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-27
-# Total articles : 197
+# Dernière mise à jour : 2026-09-28
+# Total articles : 198
+
+## Redis Docker : déployer une base de données clé-valeur ultra-rapide
+URL: https://brandonvisca.com/redis-docker-base-donnees-cle-valeur/
+Description: Redis Docker en pratique : installation, docker-compose, persistance RDB/AOF, sécurité et cas d'usage cache/session pour ton homelab.
+Tags: 
+Publié: 2026-09-28T11:02:11+02:00
 
 ## Plex Docker : serveur média auto-hébergé complet
 URL: https://brandonvisca.com/plex-docker-serveur-media-auto-heberge/
