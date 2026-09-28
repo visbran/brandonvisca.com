@@ -430,6 +430,8 @@ Causes frequentes :
 
 Verifie le slow query log. Ajoute des index si necessaire. Si le conteneur manque de RAM, Linux va swapper et tout ralentir. Augmente `shared_buffers` ou ajoute de la RAM au serveur.
 
+💡 À lire aussi : [Redis Docker : déployer une base de données clé-valeur ultra-rapide](/redis-docker-base-donnees-cle-valeur/), dans la même veine que cet article.
+
 ## Conclusion
 
 PostgreSQL avec Docker, c'est pas sorcier. Une image stable, un volume persistant, un `.env` propre, et tu as la base de donnees relationnelle la plus fiable du monde open-source prete a servir tes applications auto-hebergees. La cle, c'est de ne pas negliger les bases : healthcheck, backup automatise, et utilisateurs dedies par service.
