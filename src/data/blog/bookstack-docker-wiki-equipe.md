@@ -277,6 +277,8 @@ La migration d'un MediaWiki est la plus pénible à cause du format wiki-texte. 
 
 💡 À lire aussi : [Portainer Docker : interface web pour gérer tes conteneurs facilement](/portainer-docker-interface-web-conteneurs/), dans la même veine que cet article.
 
+💡 À lire aussi : [Grocy Docker : ERP domestique auto-hébergé (stocks, courses, tâches)](/grocy-docker-erp-domestique-auto-heberge/), dans la même veine que cet article.
+
 ## FAQ
 
 **Puis-je utiliser PostgreSQL à la place de MariaDB ?**
