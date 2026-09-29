@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-28
-# Total articles : 198
+# Dernière mise à jour : 2026-09-29
+# Total articles : 199
+
+## Grocy Docker : ERP domestique auto-hébergé (stocks, courses, tâches)
+URL: https://brandonvisca.com/grocy-docker-erp-domestique-auto-heberge/
+Description: Grocy Docker : installe cet ERP domestique auto-hébergé pour gérer stocks, courses, recettes et tâches ménagères sans dépendre du cloud.
+Tags: 
+Publié: 2026-09-29T11:02:12+02:00
 
 ## Redis Docker : déployer une base de données clé-valeur ultra-rapide
 URL: https://brandonvisca.com/redis-docker-base-donnees-cle-valeur/
