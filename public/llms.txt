@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-29
-# Total articles : 199
+# Dernière mise à jour : 2026-09-30
+# Total articles : 200
+
+## Lynis Docker : audit de sécurité automatisé pour Linux
+URL: https://brandonvisca.com/lynis-docker-audit-securite-linux/
+Description: Audite ton serveur avec Lynis Docker : scan système en conteneur, audit de Dockerfile, hardening index et automatisation, sans rien installer sur l'hôte.
+Tags: 
+Publié: 2026-09-30T11:02:11+02:00
 
 ## Grocy Docker : ERP domestique auto-hébergé (stocks, courses, tâches)
 URL: https://brandonvisca.com/grocy-docker-erp-domestique-auto-heberge/
