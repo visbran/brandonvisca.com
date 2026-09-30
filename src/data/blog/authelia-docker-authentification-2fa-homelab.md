@@ -303,6 +303,8 @@ Si tu veux gérer la synchronisation horaire de tout ton homelab de façon centr
 
 💡 À lire aussi : [Trivy Docker : scanner de vulnérabilités pour images et conteneurs](/trivy-docker-scanner-vulnerabilites/), dans la même veine que cet article.
 
+💡 À lire aussi : [Lynis Docker : audit de sécurité automatisé pour Linux](/lynis-docker-audit-securite-linux/), dans la même veine que cet article.
+
 ## Conclusion
 
 Authelia Docker te donne un portail 2FA pour tout ton homelab en une après-midi de configuration. Un seul login, un seul code TOTP, accès à tous tes services protégés. Tes Jellyfin, Gitea et tableaux de bord ne sont plus accessibles en clair depuis l'extérieur.

@@ -331,6 +331,8 @@ C'est pratique pour comprendre d'où viennent les menaces. Si tu as [Zabbix Dock
 
 Mon verdict personnel : Fail2Ban reste parfait pour un serveur monolithique avec SSH et un service web. CrowdSec brille quand tu commences à avoir une stack complète (reverse proxy, plusieurs services, monitoring) et que tu veux une protection qui grandit avec ton infra.
 
+💡 À lire aussi : [Lynis Docker : audit de sécurité automatisé pour Linux](/lynis-docker-audit-securite-linux/), dans la même veine que cet article.
+
 ## Conclusion
 
 CrowdSec en Docker, c'est la protection collaborative que ton homelab mérite. Tu installes l'agent, tu branches un bouncer sur ton reverse proxy, et d'un coup ton serveur ne se contente plus de réagir à ses propres logs : il tire parti de l'intelligence de milliers d'administrateurs qui partagent les signatures d'attaques en temps réel.
