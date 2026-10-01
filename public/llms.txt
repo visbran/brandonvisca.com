@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-09-30
-# Total articles : 200
+# Dernière mise à jour : 2026-10-01
+# Total articles : 201
+
+## Cockpit Docker : interface web d'administration Linux moderne
+URL: https://brandonvisca.com/cockpit-docker-interface-web-administration/
+Description: Cockpit Docker : installe l'interface web native Cockpit, ajoute le plugin cockpit-docker et pilote conteneurs, stockage et pare-feu depuis un navigateur.
+Tags: 
+Publié: 2026-10-01T11:01:12+02:00
 
 ## Lynis Docker : audit de sécurité automatisé pour Linux
 URL: https://brandonvisca.com/lynis-docker-audit-securite-linux/
