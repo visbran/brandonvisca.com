@@ -44,6 +44,8 @@ file -s /dev/md126
 
 La matrice RAID n’était pas formatée directement comme un système de fichiers. Au lieu de cela, elle contenait une table de partition, ce qui signifiait que je devais monter l’une des partitions à l’intérieur de la matrice RAID, et non la matrice elle-même.
 
+💡 À lire aussi : [Cockpit Docker : interface web d'administration Linux moderne](/cockpit-docker-interface-web-administration/), dans la même veine que cet article.
+
 ## La solution
 
 La solution consistait à lister les partitions sur la matrice RAID :
