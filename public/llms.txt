@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-01
-# Total articles : 201
+# Dernière mise à jour : 2026-10-02
+# Total articles : 202
+
+## MongoDB Docker : base de données NoSQL pour applications modernes
+URL: https://brandonvisca.com/mongodb-docker-base-donnees-nosql/
+Description: Déploie MongoDB Docker avec docker-compose : image officielle, authentification, sauvegarde et bonnes pratiques pour ta base NoSQL auto-hébergée.
+Tags: 
+Publié: 2026-10-02T11:02:12+02:00
 
 ## Cockpit Docker : interface web d'administration Linux moderne
 URL: https://brandonvisca.com/cockpit-docker-interface-web-administration/
