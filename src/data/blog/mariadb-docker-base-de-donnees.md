@@ -392,6 +392,8 @@ Vérifie le slow query log (`/var/lib/mysql/slow.log` dans le conteneur). Ajoute
 
 💡 À lire aussi : [Redis Docker : déployer une base de données clé-valeur ultra-rapide](/redis-docker-base-donnees-cle-valeur/), dans la même veine que cet article.
 
+💡 À lire aussi : [MongoDB Docker : base de données NoSQL pour applications modernes](/mongodb-docker-base-donnees-nosql/), dans la même veine que cet article.
+
 ## Conclusion
 
 MariaDB avec Docker, c'est pas sorcier. Une image stable, un volume persistant, un `.env` propre, et tu as une base de données relationnelle prête à servir tes applications auto-hébergées. La clé, c'est de ne pas négliger les bases : healthcheck, backup automatisé, et utilisateurs dédiés par service.

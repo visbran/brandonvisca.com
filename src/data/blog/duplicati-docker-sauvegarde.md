@@ -159,6 +159,8 @@ docker compose up -d
 
 **Nommage des jobs :** donne des noms explicites à tes sauvegardes (« Backup Nextcloud Quotidien », « Backup Docker Volumes Hebdo ») pour t'y retrouver quand tu as dix jobs qui tournent.
 
+💡 À lire aussi : [MongoDB Docker : base de données NoSQL pour applications modernes](/mongodb-docker-base-donnees-nosql/), dans la même veine que cet article.
+
 ## Conclusion
 
 Duplicati est l'outil de backup qu'il manquait à ton stack Docker. Il est open-source, chiffré, polyvalent et suffisamment simple pour ne pas te demander un doctorat en administration système. L'image Docker officielle est à jour, la communauté est active et les fonctionnalités couvrent 95 % des besoins d'un homelab.
