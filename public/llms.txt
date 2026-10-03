@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-02
-# Total articles : 202
+# Dernière mise à jour : 2026-10-03
+# Total articles : 203
+
+## Calibre Web Docker : bibliothèque ebooks auto-hébergée
+URL: https://brandonvisca.com/calibre-web-docker-bibliotheque-ebooks/
+Description: Déploie calibre web docker pour lire tes ebooks partout : configuration complète, flux OPDS et sync Kobo, en 10 minutes chrono.
+Tags: 
+Publié: 2026-10-03T11:02:12+02:00
 
 ## MongoDB Docker : base de données NoSQL pour applications modernes
 URL: https://brandonvisca.com/mongodb-docker-base-donnees-nosql/
