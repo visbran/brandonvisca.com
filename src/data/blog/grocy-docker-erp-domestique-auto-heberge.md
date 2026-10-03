@@ -123,6 +123,8 @@ L'interface, bien que fonctionnelle, reste un peu datée visuellement comparée 
 
 Enfin, l'app mobile facilite la saisie en magasin mais elle n'est pas aussi polie que l'interface web. Pour un usage confortable, prévois de scanner tes achats depuis ton téléphone puis de peaufiner les détails (recettes, plan de repas) depuis un écran plus grand.
 
+💡 À lire aussi : [Calibre Web Docker : bibliothèque ebooks auto-hébergée](/calibre-web-docker-bibliotheque-ebooks/), dans la même veine que cet article.
+
 ## Conclusion
 
 Grocy Docker te donne un vrai ERP domestique, sans les efforts habituels de déploiement d'un ERP d'entreprise. Un fichier compose, un port, un volume à sauvegarder, et tu passes du frigo mystère à un stock que tu maîtrises vraiment.
