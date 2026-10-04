@@ -62,7 +62,7 @@ Si tu débutes avec Docker et l'auto-hébergement, j'ai publié un [guide comple
 - Un nœud Proxmox VE fonctionnel (version 7.x ou 8.x recommandée)
 - Accès root ou sudo sur le nœud Proxmox (les scripts s'exécutent sur l'hôte, pas dans le conteneur)
 - Une connexion Internet active (les scripts téléchargent les paquets depuis les dépôts Debian/Ubuntu)
-- Comprendre que ces scripts créent des conteneurs LXC **privilégiés** par défaut (tu peux opter pour un conteneur unprivilégié sur certains scripts)
+- Savoir que ces scripts créent des conteneurs LXC **non privilégiés** par défaut, et que certains services en demandent un privilégié (le script te le propose alors)
 
 ## Installation d'un LXC en 1 clic : l'exemple Docker
 
@@ -164,9 +164,9 @@ Le repo community-scripts n'offre pas encore de signatures GPG sur tous les scri
 
 **3. Isoler les conteneurs LXC**
 
-Par défaut, les scripts créent des conteneurs **privilégiés** (l'option `unprivileged=0` dans la configuration LXC). Cela signifie que le conteneur partage le même namespace utilisateur que l'hôte. Si un service compromis échappe du conteneur, il a accès à l'hôte Proxmox.
+Par défaut, les scripts créent des conteneurs **non privilégiés** (`unprivileged=1` dans la configuration LXC) : le root du conteneur est mappé sur un UID sans droits sur l'hôte. Un conteneur **privilégié** (`unprivileged=0`), lui, partage le même namespace utilisateur que l'hôte : si un service compromis s'en échappe, il a accès à l'hôte Proxmox.
 
-Quand c'est possible (certains scripts le proposent), choisis l'option **unprivileged** (`unprivileged=1`). Le conteneur utilise alors des UID/GID mappés, ce qui limite drastiquement l'impact d'une évasion.
+Garde le mode non privilégié sauf si le service l'exige vraiment (accès matériel, montage NFS ou CIFS dans le conteneur). En mode avancé, vérifie ce choix avant de valider.
 
 Pour les services exposés sur Internet (Nextcloud, Vaultwarden...), renforce la sécurité avec un pare-feu bien configuré. Mon article sur [nftables avec Docker](/nftables-docker-pare-feu-linux/) détaille une approche moderne applicable aussi à la protection de ton hôte Proxmox.
 
@@ -223,9 +223,9 @@ Les conteneurs LXC créés par les scripts sont des instances uniques. Si tu veu
 
 Après le fork tteck -> community-scripts, le projet est sain et actif. Mais c'est un projet communautaire sans garantie commerciale. Si un script est abandonné ou contient un bug, la résolution dépend de la réactivité des contributeurs.
 
-### Conteneurs privilégiés par défaut
+### Attention aux conteneurs privilégiés
 
-Comme mentionné plus haut, le choix par défaut de conteneurs privilégiés facilite l'installation mais réduit l'isolation de sécurité. Pour un homelab personnel derrière un firewall, le risque est acceptable. Pour un environnement professionnel ou exposé, privilégie les conteneurs unprivilégiés et adapte les scripts manuellement.
+Le mode par défaut est le bon : non privilégié. Mais quand un service a besoin d'un conteneur privilégié pour fonctionner, l'isolation baisse nettement. Pour un homelab personnel derrière un firewall, le risque reste acceptable. Pour un service exposé sur Internet, cherche une alternative qui tourne en non privilégié, ou passe par une VM.
 
 💡 À lire aussi : [Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)](/installation-snipeit-ubuntu-guide-complet/), dans la même veine que cet article.
 
