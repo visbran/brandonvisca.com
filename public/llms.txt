@@ -377,7 +377,7 @@ Publié: 2026-07-26T08:00:00.000Z
 
 ## Unbound Docker DNS récursif auto-hébergé et performant
 URL: https://brandonvisca.com/unbound-docker-dns-recursif/
-Description: Déployez Unbound Docker DNS récursif et cache open-source pour accélérer vos requêtes, valider DNSSEC et gagner en souveraineté réseau.
+Description: Unbound Docker DNS récursif : déploie un résolveur et cache open source pour accélérer tes requêtes, valider DNSSEC et te passer des DNS publics.
 Tags: reseau, docker, intermediaire, securite
 Publié: 2026-07-25T08:00:00.000Z
 
@@ -413,7 +413,7 @@ Publié: 2026-07-20T08:00:00.000Z
 
 ## Vibe Island : le panneau notch macOS pour surveiller tes agents IA de code
 URL: https://brandonvisca.com/vibe-island-macos-agents-ia-coding/
-Description: Open Island, fork open-source de Vibe Island : un panneau macOS natif dans la notch pour surveiller Claude Code, Codex et Cursor sans quitter ta fenêtre.
+Description: Open Island, alternative open source à Vibe Island : un panneau macOS dans la notch pour surveiller Claude Code, Codex et Cursor sans quitter ta fenêtre.
 Tags: macos, productivite, debutant
 Publié: 2026-07-18T08:00:00.000Z
 
