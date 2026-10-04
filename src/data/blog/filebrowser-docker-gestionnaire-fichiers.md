@@ -18,14 +18,18 @@ faqs:
     answer: "Avec les scopes : chaque utilisateur reçoit un sous-dossier racine, par exemple /srv/photos, et ne voit rien en dehors. Ça se règle dans Paramètres > Gestion des utilisateurs ou avec la commande filebrowser users add et l'option --scope."
   - question: "Pourquoi File Browser ne peut-il pas écrire dans mes dossiers ?"
     answer: "Le conteneur tourne avec l'UID et le GID définis dans user. Si le dossier monté appartient à root, l'écriture échoue : corrige le propriétaire avec chown pour l'aligner sur cet utilisateur."
+  - question: "File Browser est-il encore maintenu ?"
+    answer: "Non. Le projet est archivé depuis le 1er septembre 2026 : plus de nouvelles versions ni de correctifs de sécurité. Il fonctionne toujours, mais ne l'utilise plus que sur ton réseau local ou derrière un VPN."
   - question: "Peut-on exposer File Browser directement sur internet ?"
-    answer: "Non, il ne gère pas le HTTPS lui-même. Place-le derrière un reverse proxy avec TLS, comme Caddy qui obtient automatiquement un certificat Let's Encrypt."
+    answer: "Non. Il ne gère pas le HTTPS lui-même et, depuis son archivage, ne reçoit plus de correctifs de sécurité. Garde-le sur ton réseau local, ou derrière un VPN et un reverse proxy avec authentification."
 ---
 > 💡 **TL;DR**
 > - File Browser est un gestionnaire de fichiers web léger, moderne et open-source
 > - Une image Docker officielle, un volume monté, et tu as un navigateur de fichiers accessible depuis ton navigateur
 > - Parfait alternative à FTP, SMB mal configuré ou Nextcloud quand tu veux juste gérer des fichiers
 > - Docker Compose complet + reverse proxy Caddy inclus ci-dessous
+
+> ⚠️ **Projet archivé depuis le 1er septembre 2026.** Les mainteneurs de File Browser ont publié leur dernière version et annoncent qu'il n'y aura plus aucune mise à jour, ni correctif de sécurité. Deux faiblesses connues restent ouvertes : l'exécution de commandes (à laisser désactivée, c'est le cas par défaut) et des sessions impossibles à révoquer (un jeton reste valide jusqu'à son expiration, même après déconnexion ou changement de mot de passe). Si tu l'utilises encore, garde-le sur ton réseau local ou derrière un VPN, jamais exposé directement sur Internet.
 
 ## Table des matières
 
@@ -37,7 +41,7 @@ Tu as un serveur auto-hébergé. Tu y ranges des backups, des documents, des log
 2. **SMB/NFS** : galère à exposer sur Internet, bourré de failles si mal configuré
 3. **Nextcloud** : overkill quand tu veux juste un navigateur de fichiers. Nextcloud, c'est excellent, mais ça consomme des ressources et ça demande une base de données juste pour lister un dossier
 
-File Browser résout ce problème. C'est un gestionnaire de fichiers web qui tourne dans un conteneur Docker, écrit en Go, qui consomme presque rien et qui te donne une interface moderne pour télécharger, uploader, renommer, prévisualiser et partager tes fichiers. Le projet est maintenu sur GitHub (`filebrowser/filebrowser`) avec plus de 27 000 stars, des mises à jour régulières et une image Docker officielle multi-architecture (amd64, arm64, armv7).
+File Browser résout ce problème. C'est un gestionnaire de fichiers web qui tourne dans un conteneur Docker, écrit en Go, qui consomme presque rien et qui te donne une interface moderne pour télécharger, uploader, renommer, prévisualiser et partager tes fichiers. Le projet vit sur GitHub (`filebrowser/filebrowser`), avec plus de 27 000 stars et une image Docker officielle multi-architecture (amd64, arm64, armv7), mais il est archivé depuis septembre 2026 (voir l'avertissement en tête d'article).
 
 Dans mon [guide auto-hébergement complet](/auto-hebergement-guide-complet-2025/), je parle de services qui remplacent les outils propriétaires. File Browser, c'est ton remplaçant à Google Drive quand tu veux juste gérer des fichiers sur un serveur sans la surcharge d'un cloud complet.
 
@@ -111,7 +115,7 @@ cd /chemin/vers/filebrowser
 docker compose up -d
 ```
 
-Par défaut, File Browser crée un utilisateur `admin` avec le mot de passe `admin`. Change-le immédiatement en te connectant sur `http://IP_DU_SERVEUR:8080`.
+Au premier démarrage, File Browser crée l'utilisateur `admin` avec un mot de passe **aléatoire**, affiché une seule fois dans les logs. Récupère-le avec `docker compose logs filebrowser`, connecte-toi sur `http://IP_DU_SERVEUR:8080` et remplace-le par le tien. Les anciennes versions utilisaient `admin` / `admin`, ce n'est plus le cas.
 
 ## Configuration avancée : multi-dossiers et utilisateurs
 
@@ -156,7 +160,7 @@ File Browser ne supporte pas nativement plusieurs roots. Solution : monter un do
 
 ### 1. Changer le mot de passe admin par défaut
 
-C'est la base. Connecte-toi avec `admin/admin`, va dans `Paramètres > Profil`, change le mot de passe.
+C'est la base. Connecte-toi avec `admin` et le mot de passe affiché dans les logs au premier démarrage, va dans `Paramètres > Profil`, et change-le.
 
 ### 2. Ne jamais exposer le port brut sur Internet
 
@@ -251,7 +255,7 @@ chown -R 1000:1000 /path/to/your/data
 
 **La base de données est verrouillée ou corrompue**
 
-Arrête le conteneur, supprime `./database/filebrowser.db` (tu perdras les utilisateurs), et relance. File Browser recrée la base avec l'utilisateur admin par défaut.
+Arrête le conteneur, supprime `./database/filebrowser.db` (tu perdras les utilisateurs), et relance. File Browser recrée la base avec un utilisateur `admin` et un nouveau mot de passe aléatoire, à récupérer dans les logs.
 
 ```bash
 docker compose down
@@ -265,7 +269,7 @@ Modifie le `filebrowser.json` et redémarre. Mais garde en tête que le port dan
 
 ## Conclusion
 
-File Browser, c'est l'outil qu'il te manquait si tu trouvais Nextcloud trop lourd et FTP trop archaïque. En une dizaine de lignes de Docker Compose, tu as un gestionnaire de fichiers web moderne, sécurisé et accessible de partout.
+File Browser, c'est l'outil qu'il te manquait si tu trouvais Nextcloud trop lourd et FTP trop archaïque. En une dizaine de lignes de Docker Compose, tu as un gestionnaire de fichiers web moderne. Mais le projet étant archivé et sans correctifs de sécurité, réserve-le désormais à ton réseau local ou à un accès par VPN.
 
 Il consomme moins de ressources qu'un onglet Chrome, il demande zéro base de données externe, et il fait exactement ce qu'on lui demande : gérer des fichiers. Pour l'auto-hébergement, c'est exactement ce genre d'outil simple et efficace qui fait la différence entre un homelab qui tourne et un homelab qui encombre.
 

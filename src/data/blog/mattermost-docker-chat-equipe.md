@@ -44,10 +44,10 @@ Voici ce que tu obtiens gratuitement avec la Team Edition :
 - Applications mobiles iOS et Android
 - Intégrations via webhooks, slash commands et bots
 - Appels vocaux et vidéo via plugin (ou intégration Jitsi)
-- SSO via GitLab, Google, Okta (OAuth 2.0/OpenID Connect)
+- SSO via GitLab (OAuth 2.0), le seul fournisseur SSO inclus dans l'édition gratuite
 - Pas de limite d'utilisateurs, pas de tarification par siège
 
-La version Enterprise ajoute l'authentification LDAP/AD, la conformité avancée et le support officiel. Pour un homelab ou une petite équipe, la Team Edition suffit largement.
+Les offres payantes ajoutent le SSO Google, Entra ID, OpenID Connect et SAML (Okta), l'authentification LDAP/AD, la conformité avancée et le support officiel. Pour un homelab ou une petite équipe, la Team Edition suffit largement.
 
 ## Prérequis
 

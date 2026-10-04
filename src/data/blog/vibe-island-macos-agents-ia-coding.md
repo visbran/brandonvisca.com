@@ -1,6 +1,6 @@
 ---
 title: "Vibe Island : le panneau notch macOS pour surveiller tes agents IA de code"
-description: "Open Island, fork open-source de Vibe Island : un panneau macOS natif dans la notch pour surveiller Claude Code, Codex et Cursor sans quitter ta fenêtre."
+description: "Open Island, alternative open source à Vibe Island : un panneau macOS dans la notch pour surveiller Claude Code, Codex et Cursor sans quitter ta fenêtre."
 pubDatetime: "2026-07-18T08:00:00.000Z"
 modDatetime: "2026-07-18T08:00:00.000Z"
 author: Brandon
@@ -23,7 +23,7 @@ faqs:
     answer: "Oui, le panneau s'affiche alors dans la barre de menu classique. L'app est réservée à macOS : pas de version Windows ni Linux."
 ---
 > 💡 **TL;DR**
-> - Open Island est le fork open-source (GPL v3) de Vibe Island, une app macOS qui s'installe dans la notch pour surveiller tes agents IA de code
+> - Open Island est l'alternative open source (GPL v3) à Vibe Island, une app macOS qui s'installe dans la notch pour surveiller tes agents IA de code
 > - Tu vois l'état de Claude Code, Codex, Cursor et autres directement dans la barre de menu, sans quitter ton IDE
 > - Gratuit, local-first, pas de compte, pas de télémetrie : tu télécharges, tu compiles (ou tu prends le .app), ça marche
 > - Parfait complément à ton [terminal Warp avec Agent Mode](/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/) ou ton setup [Raycast macOS](/raycast-macos-outil-productivite-ultime/)
@@ -49,9 +49,9 @@ L'app est payante : **19,99 USD**, vendue sur le site officiel (vibeisland.app).
 
 Et c'est là que les choses deviennent intéressantes.
 
-## Open Island : le fork qui dit "pourquoi payer ?"
+## Open Island : l'alternative qui dit "pourquoi payer ?"
 
-Un développeur sous le pseudo **Octane0411** a sorti **Open Island** sur GitHub. C'est un fork open-source sous licence **GPL v3** de Vibe Island, avec le même objectif : un panneau macOS dans la notch/top bar pour surveiller tes agents IA de code. Mais cette fois, c'est gratuit, local-first, et tu contrôles tout.
+Un développeur sous le pseudo **Octane0411** a sorti **Open Island** sur GitHub. C'est une alternative open source à Vibe Island, sous licence **GPL v3**, écrite de zéro (Vibe Island étant propriétaire, il n'y a pas de code à reprendre), avec le même objectif : un panneau macOS dans la notch/top bar pour surveiller tes agents IA de code. Mais cette fois, c'est gratuit, local-first, et tu contrôles tout.
 
 Le repo compte déjà plus de **1 600 étoiles** à l'heure où j'écris ces lignes, ce qui montre que le besoin était réel. Le slogan du projet résume bien la démarche : *"Why pay for a closed-source app just to monitor your coding agents ?"*
 
@@ -171,6 +171,6 @@ Si tu sais coder en Swift, le repo est accueillant et les issues bien tagguées.
 
 ## Conclusion
 
-Open Island prouve qu'on n'a pas besoin de payer 20 dollars pour obtenir un outil de surveillance d'agents IA sur macOS. Le fork GPL v3 d'Octane0411 offre la même expérience que Vibe Island, avec l'avantage d'être gratuit, inspectable et modifiable. Dans un écosystème où on nous vend de plus en plus des abonnements pour des fonctionnalités système, avoir une alternative open-source qui tourne en local et respecte ta vie privée, c'est une bouffée d'air frais.
+Open Island prouve qu'on n'a pas besoin de payer 20 dollars pour obtenir un outil de surveillance d'agents IA sur macOS. L'alternative GPL v3 d'Octane0411 offre la même expérience que Vibe Island, avec l'avantage d'être gratuit, inspectable et modifiable. Dans un écosystème où on nous vend de plus en plus des abonnements pour des fonctionnalités système, avoir une alternative open-source qui tourne en local et respecte ta vie privée, c'est une bouffée d'air frais.
 
 Si tu codes avec Claude Code, Codex ou Cursor sur Mac, essaie-le. Ça prend cinq minutes à installer, ça ne mange pas de pain, et ça te fera gagner plus de temps que tu ne l'imagines. Parce qu'à la fin, le vrai luxe quand on code avec une IA, ce n'est pas de payer pour une interface jolie : c'est de ne jamais perdre le fil de ce que ton agent est en train de faire.

@@ -13,6 +13,8 @@ draft: false
 focusKeyword: droppy docker
 ogImage: "" 
 faqs:
+  - question: "Droppy est-il encore maintenu ?"
+    answer: "Non. Son auteur a archivé le projet en octobre 2020 : l'image silverwind/droppy ne reçoit plus de mises à jour ni de correctifs de sécurité. Si tu l'utilises, garde-le sur ton réseau local ou derrière un VPN."
   - question: "Droppy a-t-il besoin d'une base de données ?"
     answer: "Non. Les images sont stockées directement sur le disque, dans le volume files, et la configuration dans le volume config. Il n'y a ni MySQL, ni PostgreSQL, ni Redis à gérer."
   - question: "Sur quel port tourne Droppy ?"
@@ -27,6 +29,8 @@ faqs:
 > - Une image Docker, un volume pour les fichiers, et tu as ton propre Imgur privé en 5 minutes
 > - Parfait pour héberger des screenshots, des memes, des photos de documentation sans dépendre d'un service tiers
 > - Docker Compose complet + reverse proxy Caddy inclus ci-dessous
+
+> ⚠️ **Projet archivé depuis octobre 2020.** Son auteur a arrêté le développement de Droppy et le dépôt GitHub est en lecture seule : l'image `silverwind/droppy` ne reçoit plus de mises à jour, ni de correctifs de sécurité. Elle fonctionne encore, mais garde-la sur ton réseau local ou derrière un VPN plutôt que de l'exposer sur Internet.
 
 ## Table des matières
 
@@ -53,7 +57,7 @@ Droppy est un serveur de fichiers web avec une spécialisation pour les images. 
 - Aucune base de données requise : les fichiers sont stockés directement sur le disque
 - Aucune dépendance externe : pas de Redis, pas de PostgreSQL, pas de MariaDB
 
-L'image Docker officielle `silverwind/droppy` est maintenue activement. Elle supporte amd64, arm64 et armv7. La taille de l'image est d'environ 150 Mo, le démarrage est instantané, et la consommation mémoire tourne autour de 60 Mo au repos. C'est l'un des services Docker les plus légers que je connaisse pour le partage de fichiers.
+L'image Docker officielle `silverwind/droppy` n'est plus maintenue depuis l'archivage du projet en 2020 (voir l'avertissement en tête d'article). Elle supporte amd64, arm64 et armv7. La taille de l'image est d'environ 150 Mo, le démarrage est instantané, et la consommation mémoire tourne autour de 60 Mo au repos. C'est l'un des services Docker les plus légers que je connaisse pour le partage de fichiers.
 
 Droppy n'est pas une galerie photo. Ce n'est pas PhotoPrism avec reconnaissance faciale et carte géographique. Ce n'est pas Nextcloud avec sync multi-appareils et partage collaboratif. C'est un outil de partage rapide : tu uploades, tu récupères un lien, tu partages. Si tu cherches une solution complète pour organiser et visualiser ta bibliothèque photo, [PhotoPrism avec Docker](/photoprism-docker-galerie-photo/) reste la référence. Mais si ton besoin est juste de héberger des images rapidement et de générer des liens directs, Droppy est plus léger, plus rapide et plus simple.
 
@@ -264,11 +268,8 @@ Garde `"public": false` sauf si tu veux explicitement un accès anonyme. Même d
 **5. Restreindre l'accès par IP si possible**
 Si Droppy est destiné à un usage interne uniquement, configure ton reverse proxy pour n'accepter que les connexions depuis ton réseau local ou ton VPN.
 
-**6. Mettre à jour régulièrement**
-```bash
-docker compose pull && docker compose up -d
-```
-L'image `silverwind/droppy:latest` est mise à jour régulièrement. Un pull hebdomadaire suffit.
+**6. Ne pas compter sur les mises à jour**
+Le projet étant archivé, un pull ne t'apportera plus de nouvelle version : c'est une raison de plus pour ne pas exposer Droppy directement sur Internet.
 
 ## Dépannage courant
 

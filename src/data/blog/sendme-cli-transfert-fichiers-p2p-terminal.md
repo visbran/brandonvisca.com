@@ -163,56 +163,30 @@ sendme send ~/projets/site-web/
 
 Sendme va :
 
-- Compresser le dossier automatiquement
+- Envoyer tout le contenu du dossier, sous-dossiers compris, sans le compresser
 - Générer un ticket unique
-- Le recevoir décompressera tout proprement
+- Recréer le dossier à l'identique chez le destinataire
 
 ### 2. Envoyer plusieurs fichiers
 
-```bash
-sendme send fichier1.zip fichier2.pdf dossier/
-```
-
-### 3. Automation avec Scripts
-
-**Exemple : Backup automatique vers une machine distante**
+`sendme send` prend **un seul chemin**. Pour envoyer plusieurs fichiers, regroupe-les dans un dossier et envoie le dossier :
 
 ```bash
-#!/bin/bash
-# backup-to-server.sh
-
-TICKET_FILE="/tmp/sendme-ticket.txt"
-
-# Machine A : Créer backup et générer ticket
-sendme send ~/backups/db-$(date +%Y%m%d).tar.gz > "$TICKET_FILE"
-
-# Envoyer ticket à machine B (via SSH, webhook, etc.)
-cat "$TICKET_FILE" | ssh user@machine-b "sendme receive \$(cat)"
+mkdir a-envoyer && cp fichier1.zip fichier2.pdf a-envoyer/
+sendme send a-envoyer/
 ```
 
-### 4. Intégration CI/CD
+### 3. Dans un script : attention, sendme send ne rend pas la main
 
-**Exemple : Transférer artifacts de build**
+`sendme send` reste au premier plan tant que le fichier est servi : les données ne quittent ta machine que pendant que la commande tourne. Il s'arrête avec Ctrl+C. Une ligne comme `sendme send fichier > ticket.txt` suivie d'autres commandes ne passera donc jamais à la suite. Pour un transfert automatisé et planifié, un outil qui rend la main, comme `rsync` sur SSH ou [Restic](/restic-docker-sauvegarde-moderne/) pour les sauvegardes, est plus adapté. Sendme brille pour les transferts ponctuels, quand quelqu'un attend le ticket de l'autre côté.
 
-```yaml
-# .gitlab-ci.yml
-deploy:
-  script:
-    - sendme send dist/ > ticket.txt
-    - curl -X POST https://webhook.example.com/deploy \
-           -d "ticket=$(cat ticket.txt)"
-```
+### 4. Pas de lecture sur l'entrée standard
 
-### 5. Streaming de données en temps réel
-
-Sendme peut streamer des données :
+Sendme envoie un fichier ou un dossier existant : il n'accepte pas `-` pour lire un flux sur l'entrée standard. Pour envoyer une archive générée à la volée, crée-la d'abord :
 
 ```bash
-# Machine A : Stream
-tar czf - ~/gros-dossier/ | sendme send -
-
-# Machine B : Recevoir et décompresser à la volée
-sendme receive blobQmXYZ... | tar xzf -
+tar czf gros-dossier.tar.gz ~/gros-dossier/
+sendme send gros-dossier.tar.gz
 ```
 
 ---
@@ -239,16 +213,17 @@ Oui ! Iroh est open source, tu peux déployer ton propre serveur relay :
 ```bash
 # Installer iroh relay
 cargo install iroh-relay
-
-# Lancer le relay
-iroh-relay --bind-addr 0.0.0.0:3478
 ```
 
-Puis configurer Sendme pour l'utiliser :
+Le lancement et la configuration du relais (certificat, ports) sont décrits dans la documentation d'iroh-relay.
+
+Puis indique son adresse à Sendme, des deux côtés :
 
 ```bash
 sendme send fichier.zip --relay https://mon-relay.example.com
 ```
+
+L'option `--relay` accepte aussi `default` (les relais publics d'Iroh) et `disabled` (connexion directe uniquement).
 
 ---
 
@@ -283,29 +258,14 @@ sendme send fichier.tar.gz
 
 **Solution :**
 
-1. Vérifier que le relay Iroh est accessible :
-    
-    ```bash
-    curl https://relay.iroh.network/health
-    ```
-    
-2. Forcer l'utilisation du relay :
-    
-    ```bash
-    sendme send fichier.zip --force-relay
-    ```
-    
+1. Vérifie que la machine peut sortir en HTTPS (port 443) : c'est par là que passent les relais.
+2. Si ton réseau bloque les relais publics, utilise ton propre relais avec `--relay https://ton-relais` des deux côtés.
 
-### Erreur : "Permission denied"
+Il n'existe pas d'option pour forcer le passage par le relais : Sendme tente la connexion directe et bascule seul sur le relais si elle échoue.
 
-**Cause :** Sendme stocke temporairement les données dans `~/.cache/sendme/`
+### Fichiers temporaires `.sendme-*`
 
-**Solution :**
-
-```bash
-mkdir -p ~/.cache/sendme
-chmod 700 ~/.cache/sendme
-```
+Pendant un transfert, Sendme crée un dossier temporaire `.sendme-send-…` ou `.sendme-recv-…` **dans le dossier courant**, puis le supprime à la fin. Lance donc la commande depuis un dossier où tu as les droits d'écriture et assez d'espace disque.
 
 ### Ticket expiré ou invalide
 
@@ -365,7 +325,7 @@ chmod +x DashBeam_0.7.1_amd64.AppImage
 
 |Situation|Outil recommandé|
 |---|---|
-|Automation, scripts, CI/CD|**Sendme CLI**|
+|Transfert ponctuel depuis un terminal ou par SSH|**Sendme CLI**|
 |Envoyer à un non-technicien|**DashBeam**|
 |Serveur sans interface graphique|**Sendme CLI**|
 |Usage ponctuel sur laptop|**DashBeam**|
@@ -389,24 +349,13 @@ docker save mon-image:latest | gzip > image.tar.gz
 **Solution avec Sendme :**
 
 ```bash
-docker save mon-image:latest | gzip | sendme send -
+docker save mon-image:latest | gzip > image.tar.gz
+sendme send image.tar.gz
 # Copie le ticket, envoie-le sur Slack
 
 # Destinataire :
-sendme receive blobQmXYZ... | gunzip | docker load
-```
-
-### Exemple : Backup homelab
-
-Dans mon homelab, j'utilise exactement ce pattern pour envoyer des archives de config vers un VPS Oracle. Ça tourne dans un [cron Linux](/cron-linux-avance-crontab-guide/), zéro intervention manuelle.
-
-```bash
-#!/bin/bash
-# backup-homelab.sh
-
-tar czf - /opt/docker-configs/ | sendme send - > /tmp/ticket.txt
-curl -X POST https://ntfy.sh/homelab-backup \
-     -d "Backup ready: $(cat /tmp/ticket.txt)"
+sendme receive blobQmXYZ...
+gunzip -c image.tar.gz | docker load
 ```
 
 📌 **Ressource utile :** [Guide Docker Compose production sécurisé](/docker-debutant-services-auto-heberger/) pour structurer ton homelab proprement.
@@ -442,7 +391,7 @@ curl -X POST https://ntfy.sh/homelab-backup \
 Sendme CLI devrait être installé par défaut sur toutes les machines Linux/macOS. C'est tellement plus simple que `scp` pour les transferts ponctuels, et tellement plus rapide que passer par WeTransfer ou un serveur FTP.
 
 **Prochaine étape :**  
-Si tu gères un homelab, intègre Sendme CLI dans tes scripts de backup. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, DashBeam te donne la même puissance avec une interface graphique.
+Si tu gères un homelab, garde Sendme CLI pour les transferts ponctuels entre machines, et un outil comme Restic pour les sauvegardes planifiées. Si tu bosses en équipe, remplace le "on s'envoie ça sur Google Drive" par un simple ticket Sendme. Et si le terminal te fait peur, DashBeam te donne la même puissance avec une interface graphique.
 
 ---
 
