@@ -891,9 +891,9 @@ Description: AltTab macOS remplace ⌘+Tab avec des previews style Windows. Grat
 Tags: macos, productivite, guide, debutant
 Publié: 2025-11-18T18:55:54+01:00
 
-## AppCleaner Mac : l'alternative gratuite à CleanMyMac (2026)
+## AppCleaner Mac : 18 Go libérés, installation et SmartDelete
 URL: https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/
-Description: AppCleaner Mac supprime tes apps avec tous leurs fichiers cachés, gratuitement. L'alternative légère à CleanMyMac (40€/an), testée sur mon propre Mac.
+Description: AppCleaner Mac s'installe en une commande Homebrew et SmartDelete nettoie chaque app que tu jettes. 18 Go récupérés chez moi, gratuit face à CleanMyMac.
 Tags: macos, homebrew, productivite, debutant
 Publié: 2025-11-18T17:39:28+01:00
 
