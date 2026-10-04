@@ -1,0 +1,33 @@
+# Instance jetable : voir filebrowser-quantum-docker-gestionnaire-fichiers.compose.yml
+- output: fbq-fichiers.png
+  url: http://localhost:8090/files/Fichiers/
+  auth: filebrowser-quantum
+  width: 1440
+  height: 900
+  wait: 2500
+  alt: "FileBrowser Quantum affichant les dossiers Documents, Photos, Projets et Sauvegardes de la source Fichiers"
+- output: fbq-photos.png
+  url: http://localhost:8090/files/Fichiers/Photos/Vacances-2026/
+  auth: filebrowser-quantum
+  width: 1440
+  height: 900
+  wait: 3500
+  alt: "Dossier de photos affiché en grille avec les miniatures générées par FileBrowser Quantum"
+- output: fbq-partage.png
+  url: http://localhost:8090/files/Fichiers/Sauvegardes/
+  auth: filebrowser-quantum
+  width: 1440
+  height: 900
+  wait: 2500
+  alt: "Fenêtre de partage de FileBrowser Quantum : durée, mot de passe optionnel, type de partage et droits accordés"
+  javascript: |
+    new Promise(done => {
+      const el = [...document.querySelectorAll('*')].find(e => e.children.length === 0 && e.textContent.trim().startsWith('vaultwarden-2026'));
+      const r = el.getBoundingClientRect();
+      el.dispatchEvent(new MouseEvent('contextmenu', {bubbles: true, clientX: r.x + 20, clientY: r.y + 10}));
+      setTimeout(() => {
+        const share = [...document.querySelectorAll('*')].find(e => e.children.length === 0 && e.textContent.trim() === 'Share');
+        share.click();
+        setTimeout(done, 1500);
+      }, 1000);
+    })
