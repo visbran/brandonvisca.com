@@ -6,6 +6,7 @@ import {
   PUBLIC_TIANJI_WEBSITE_ID,
 } from "astro:env/client";
 import { SITE } from "@/config";
+import { SCHEMA_IDS, organizationSchema } from "@/utils/schema";
 import SearchModal from "@/components/SearchModal.astro";
 import "@/styles/global.css";
 
@@ -39,10 +40,12 @@ const socialImageURL = new URL(ogImage, Astro.url);
 const webSiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": SCHEMA_IDS.website,
   name: SITE.title,
   url: SITE.website,
   description: SITE.desc,
   inLanguage: "fr",
+  publisher: organizationSchema,
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -125,7 +128,7 @@ const THEME_COLOR = THEME_COLORS.dark;
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={socialImageURL} />
 
-    <!-- JSON-LD Structured data (WebSite + SearchAction on every page; Article schema on posts is in PostDetails.astro) -->
+    <!-- JSON-LD Structured data (WebSite + SearchAction + publisher Organization on every page; Article schema on posts is in PostDetails.astro) -->
     <script
       type="application/ld+json"
       is:inline

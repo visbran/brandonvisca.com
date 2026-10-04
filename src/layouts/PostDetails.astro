@@ -12,6 +12,7 @@ import GalleryEmbed from "@/components/GalleryEmbed.astro";
 import { getPath } from "@/utils/getPath";
 import { slugifyStr } from "@/utils/slugify";
 import { SITE } from "@/config";
+import { SCHEMA_IDS, organizationSchema, personSchema } from "@/utils/schema";
 
 type Props = {
   post: CollectionEntry<"blog">;
@@ -99,34 +100,12 @@ const nextPost =
         "@type": "WebPage",
         "@id": canonicalURL || Astro.url.href,
       },
-      "author": {
-        "@type": "Person",
-        "name": author || "Brandon Visca",
-        "url": `${Astro.url.origin}/about/`,
-        "jobTitle": "Administrateur Systèmes & Réseaux",
-        "sameAs": [
-          "https://github.com/visbran",
-        ],
-        "knowsAbout": [
-          "Proxmox VE",
-          "Auto-hébergement",
-          "Linux",
-          "Docker",
-          "Sécurité informatique",
-          "DevOps",
-        ],
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Brandon Visca",
-        "url": `${Astro.url.origin}/`,
-        "logo": {
-          "@type": "ImageObject",
-          "url": new URL(`/${SITE.ogImage}`, Astro.url.origin).href,
-          "width": 1200,
-          "height": 630,
-        },
-      },
+      "isPartOf": { "@id": SCHEMA_IDS.website },
+      "author":
+        !author || author === SITE.author
+          ? personSchema
+          : { "@type": "Person", "name": author },
+      "publisher": organizationSchema,
       "url": canonicalURL || Astro.url.href,
       ...(ogImage
         ? {

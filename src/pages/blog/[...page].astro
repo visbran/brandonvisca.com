@@ -11,6 +11,7 @@ import "@pagefind/default-ui/css/ui.css";
 import type { ContentEntry } from "@/utils/contentEntry";
 import getSortedPosts from "@/utils/getSortedPosts";
 import { SITE } from "@/config";
+import { SCHEMA_IDS } from "@/utils/schema";
 
 export const getStaticPaths = (async ({ paginate }) => {
   const [blogPosts, galleryPosts] = await Promise.all([
@@ -42,6 +43,7 @@ const totalPosts = page.total;
       inLanguage: "fr",
       isPartOf: {
         "@type": "WebSite",
+        "@id": SCHEMA_IDS.website,
         name: SITE.title,
         url: SITE.website,
       },

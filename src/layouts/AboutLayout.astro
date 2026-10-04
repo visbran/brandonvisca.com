@@ -5,6 +5,7 @@ import Footer from "@/components/Footer.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import Layout from "./Layout.astro";
 import { SITE } from "@/config";
+import { SCHEMA_IDS, personSchema } from "@/utils/schema";
 
 type Props = MarkdownLayoutProps<{ title: string }>;
 
@@ -18,18 +19,13 @@ const { frontmatter } = Astro.props;
     is:inline
     set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Person",
-      name: SITE.author,
-      url: SITE.website,
-      sameAs: [
-        "https://github.com/visbran",
-      ],
-      jobTitle: "Administrateur systèmes et réseaux",
-      knowsAbout: ["Homelab", "Auto-hébergement", "Linux", "Proxmox", "Docker", "Réseaux", "Sécurité informatique", "macOS"],
-      worksFor: {
-        "@type": "Organization",
-        name: SITE.title,
-        url: SITE.website,
+      "@type": "ProfilePage",
+      url: `${SITE.website}about/`,
+      inLanguage: "fr",
+      isPartOf: { "@id": SCHEMA_IDS.website },
+      mainEntity: {
+        ...personSchema,
+        worksFor: { "@id": SCHEMA_IDS.organization },
       },
     })}
   />
