@@ -1,6 +1,6 @@
 ---
-title: "AppCleaner Mac : l'alternative gratuite à CleanMyMac (2026)"
-description: "AppCleaner Mac supprime tes apps avec tous leurs fichiers cachés, gratuitement. L'alternative légère à CleanMyMac (40€/an), testée sur mon propre Mac."
+title: "AppCleaner Mac : 18 Go libérés, installation et SmartDelete"
+description: "AppCleaner Mac s'installe en une commande Homebrew et SmartDelete nettoie chaque app que tu jettes. 18 Go récupérés chez moi, gratuit face à CleanMyMac."
 pubDatetime: "2025-11-18T17:39:28+01:00"
 modDatetime: "2026-06-22T00:00:00+01:00"
 author: Brandon Visca
