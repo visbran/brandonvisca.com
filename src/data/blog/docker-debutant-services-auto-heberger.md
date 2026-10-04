@@ -899,7 +899,7 @@ Avec Docker :
 - Wiki et documentation ([Outline](/outline-docker-wiki-auto-heberge/))
 - Ebooks et manga ([Kavita](/kavita-docker-lecteur-ebooks/))
 - Serveur Git ([Forgejo Docker](/forgejo-docker-serveur-git/))
-- Gestionnaire de fichiers ([File Browser](/filebrowser-docker-gestionnaire-fichiers/))
+- Gestionnaire de fichiers ([FileBrowser Quantum](/filebrowser-quantum-docker-gestionnaire-fichiers/))
 - Dashboard ([Homer](/homer-dashboard-docker-homelab/), [Dashy](/dashy-docker-dashboard-homelab/))
 - Lecteur RSS ([Miniflux](/miniflux-docker-lecteur-rss-guide/))
 - Messagerie d'équipe ([Mattermost Docker](/mattermost-docker-chat-equipe/) ou [Rocket.Chat Docker](/rocket-chat-docker-messagerie-auto-hebergee/))

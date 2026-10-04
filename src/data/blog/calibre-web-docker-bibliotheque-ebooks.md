@@ -171,7 +171,7 @@ Première option, l'upload direct : dans l'interface, un utilisateur avec les dr
 
 Deuxième option, pour les ebooks libres de droits ou tes propres publications récupérées en lot : passe par un client torrent dédié comme [Transmission](/transmission-docker-client-torrent/), qui dépose les fichiers dans un dossier surveillé, puis synchronise ce dossier vers `/books`. Reste dans le cadre légal : domaine public, licences libres, ou tes propres fichiers.
 
-Pour organiser les fichiers avant import, qu'il s'agisse de trier des PDF scannés ou de renommer un lot d'EPUB récupérés en vrac, [File Browser](/filebrowser-docker-gestionnaire-fichiers/) fait un bon sas intermédiaire : une interface web simple pour manipuler les fichiers côté serveur avant de les pousser dans ta bibliothèque Calibre.
+Pour organiser les fichiers avant import, qu'il s'agisse de trier des PDF scannés ou de renommer un lot d'EPUB récupérés en vrac, [FileBrowser Quantum](/filebrowser-quantum-docker-gestionnaire-fichiers/) fait un bon sas intermédiaire : une interface web simple pour manipuler les fichiers côté serveur avant de les pousser dans ta bibliothèque Calibre.
 
 ## Sauvegarde et persistance
 

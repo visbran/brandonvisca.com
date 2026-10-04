@@ -157,7 +157,7 @@ Kavita reconnaît les séries et numéros de tome dans les noms de fichiers. Si 
 
 Pour les EPUB, les métadonnées internes (titre, auteur, série, langue) sont lues directement. Pas besoin de renommer parfaitement si l'EPUB est bien fait.
 
-Si tu cherches aussi une solution pour gérer tes fichiers sur le même serveur, j'ai un guide sur [File Browser Docker](/filebrowser-docker-gestionnaire-fichiers/) qui te permettra d'organiser et transférer tes ebooks facilement avant de les scanner avec Kavita.
+Si tu cherches aussi une solution pour gérer tes fichiers sur le même serveur, j'ai un guide sur [FileBrowser Quantum Docker](/filebrowser-quantum-docker-gestionnaire-fichiers/) qui te permettra d'organiser et transférer tes ebooks facilement avant de les scanner avec Kavita.
 
 ## Tableau comparatif : Kavita vs Calibre-Web vs Komga
 
