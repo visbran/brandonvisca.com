@@ -1,0 +1,38 @@
+# Instance jetable : voir copyparty-docker-partage-fichiers.compose.yml
+# Les captures anonymes passent en premier : shot-scraper garde les cookies d'une capture à l'autre.
+- output: cpp-accueil-anonyme.png
+  url: http://localhost:3923/
+  width: 1440
+  height: 700
+  wait: 2000
+  alt: "Page d’accueil de Copyparty pour un visiteur non connecté : seul le dossier depot est proposé à l’envoi"
+- output: cpp-depot.png
+  url: http://localhost:3923/depot/
+  width: 1440
+  height: 700
+  wait: 2000
+  alt: "Dossier de dépôt Copyparty vu par un visiteur anonyme : zone d’envoi de fichiers, sans accès au contenu"
+- output: cpp-racine-admin.png
+  url: http://localhost:3923/?pw=demo-captures-2026
+  width: 1440
+  height: 800
+  wait: 3000
+  alt: "Racine de Copyparty connectée en admin, avec les dossiers depot, documents, musique et photos"
+- output: cpp-photos.png
+  url: http://localhost:3923/photos/vacances-2026/
+  width: 1440
+  height: 800
+  wait: 4000
+  alt: "Vue en grille de Copyparty avec les miniatures générées pour un dossier de photos"
+- output: cpp-partage.png
+  url: http://localhost:3923/photos/vacances-2026/
+  width: 1440
+  height: 420
+  wait: 3000
+  alt: "Fenêtre de création d’un lien de partage Copyparty : nom, mot de passe, durée de validité et permissions"
+  javascript: |
+    new Promise(done => {
+      const el = [...document.querySelectorAll('*')].find(e => e.children.length === 0 && e.textContent.trim() === 'share');
+      el.click();
+      setTimeout(done, 1500);
+    })

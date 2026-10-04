@@ -1,0 +1,41 @@
+# Instance jetable pour les captures de l'article Copyparty.
+# La config est embarquée ici : le runner ne pousse que ce fichier et setup.sh.
+services:
+  copyparty:
+    container_name: copyparty
+    image: copyparty/ac:1.20.24
+    user: "1000:1000"
+    ports: ["3923:3923"]
+    volumes:
+      - ./files:/w
+    environment:
+      PYTHONUNBUFFERED: 1
+    configs:
+      - source: cpp-config
+        target: /cfg/copyparty.conf
+
+configs:
+  cpp-config:
+    content: |
+      [global]
+        e2dsa
+        e2ts
+        shr: /partages
+        name: copyparty
+        grid
+
+      [accounts]
+        admin: demo-captures-2026
+
+      [/]
+        /w
+        accs:
+          A: admin
+
+      [/depot]
+        /w/depot
+        accs:
+          wG: *
+          A: admin
+        flags:
+          fk: 8

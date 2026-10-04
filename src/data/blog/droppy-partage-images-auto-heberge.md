@@ -14,7 +14,7 @@ focusKeyword: droppy docker
 ogImage: "" 
 faqs:
   - question: "Droppy est-il encore maintenu ?"
-    answer: "Non. Son auteur a archivé le projet en octobre 2020 : l'image silverwind/droppy ne reçoit plus de mises à jour ni de correctifs de sécurité. Si tu l'utilises, garde-le sur ton réseau local ou derrière un VPN."
+    answer: "Non. Son auteur a archivé le projet en octobre 2020 : l'image silverwind/droppy ne reçoit plus de mises à jour ni de correctifs de sécurité. Si tu l'utilises, garde-le sur ton réseau local ou derrière un VPN. Copyparty, activement maintenu, couvre le même usage."
   - question: "Droppy a-t-il besoin d'une base de données ?"
     answer: "Non. Les images sont stockées directement sur le disque, dans le volume files, et la configuration dans le volume config. Il n'y a ni MySQL, ni PostgreSQL, ni Redis à gérer."
   - question: "Sur quel port tourne Droppy ?"
@@ -30,7 +30,7 @@ faqs:
 > - Parfait pour héberger des screenshots, des memes, des photos de documentation sans dépendre d'un service tiers
 > - Docker Compose complet + reverse proxy Caddy inclus ci-dessous
 
-> ⚠️ **Projet archivé depuis octobre 2020.** Son auteur a arrêté le développement de Droppy et le dépôt GitHub est en lecture seule : l'image `silverwind/droppy` ne reçoit plus de mises à jour, ni de correctifs de sécurité. Elle fonctionne encore, mais garde-la sur ton réseau local ou derrière un VPN plutôt que de l'exposer sur Internet.
+> ⚠️ **Projet archivé depuis octobre 2020.** Son auteur a arrêté le développement de Droppy et le dépôt GitHub est en lecture seule : l'image `silverwind/droppy` ne reçoit plus de mises à jour, ni de correctifs de sécurité. Elle fonctionne encore, mais garde-la sur ton réseau local ou derrière un VPN plutôt que de l'exposer sur Internet. Pour un remplaçant maintenu, j'ai testé [Copyparty](/copyparty-docker-partage-fichiers/), qui gère aussi le dépôt de fichiers anonyme et les liens de partage à durée limitée.
 
 ## Table des matières
 
