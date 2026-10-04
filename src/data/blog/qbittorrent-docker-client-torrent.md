@@ -2,7 +2,7 @@
 title: "qBittorrent Docker : client torrent avec interface web auto-hébergé"
 description: "qBittorrent Docker : déploie un client torrent auto-hébergé avec interface web et intègre-le à ta stack mediacenter en quelques minutes."
 pubDatetime: "2026-08-30T06:00:00.000Z"
-modDatetime: "2026-08-30T06:00:00.000Z"
+modDatetime: "2026-10-04T00:00:00+02:00"
 author: Brandon Visca
 tags:
   - auto-hebergement
@@ -151,7 +151,7 @@ Dans **Outils > Options > Téléchargements**, configure le dossier de télécha
 /downloads/complete
 ```
 
-Et active l'option "Conserver les fichiers non récupérés en haut" pour que Radarr et Sonarr trouvent plus facilement leurs petits.
+Et coche **Conserver les torrents incomplets dans** avec `/downloads/incomplete` : les fichiers en cours restent à part, et Radarr et Sonarr ne voient arriver dans `/downloads/complete` que des téléchargements terminés.
 
 ### Limites de bande passante
 
@@ -181,11 +181,11 @@ Un client torrent exposé sur internet, c'est une cible. Voici les règles de ba
 
 1. **Ne jamais exposer le port 8080 directement sur internet.** Utilise un reverse proxy (Traefik, Caddy, Nginx Proxy Manager) avec authentification.
 2. **Changer le mot de passe admin immédiatement.** On en a déjà parlé, mais c'est important.
-3. **Utiliser un VPN si nécessaire.** L'image LinuxServer supporte WireGuard et OpenVPN via des variables d'environnement spécifiques si tu veux router tout le trafic du container.
+3. **Utiliser un VPN si nécessaire.** L'image LinuxServer n'embarque aucun client VPN : pour faire sortir le trafic du container par un tunnel, il faut le faire passer par un container VPN dédié (voir plus bas).
 4. **Restreindre l'accès par IP.** Dans les options de l'interface web, tu peux whitelist certaines IP.
 5. **Activer les mises à jour automatiques.** L'image `latest` se met à jour via Watchtower ou un cron Docker.
 
-Pour le VPN, LinuxServer propose des images dérivées comme `qbittorrentvpn` qui intègrent directement le tunnel. Mais si tu as déjà un VPN sur ton serveur (via un container WireGuard ou Tailscale), pas besoin de compliquer.
+Pour le VPN, la méthode propre consiste à lancer un container VPN à côté de qBittorrent et à lui confier le réseau avec `network_mode: "service:<nom-du-vpn>"`. Les ports de qBittorrent se publient alors sur le container VPN, pas sur qBittorrent. Des images tierces (hors LinuxServer) embarquent aussi qBittorrent et le tunnel dans un seul container. Et si tu cherches seulement à accéder à l'interface depuis l'extérieur, un VPN d'accès comme [WireGuard](/wireguard-docker-vpn-homelab/) ou [Tailscale](/tailscale-vpn-mesh-homelab/) suffit, sans toucher au trafic torrent.
 
 ## Intégration avec la stack *arr
 
@@ -235,11 +235,13 @@ Assure-toi que le container est bien démarré :
 docker ps | grep qbittorrent
 ```
 
-Vérifie aussi que le pare-feu de ton serveur laisse passer le port 8080 :
+Vérifie ensuite que le port est bien publié :
 
 ```bash
-sudo ufw allow 8080/tcp
+docker port qbittorrent
 ```
+
+Inutile d'ouvrir 8080 dans UFW : Docker publie ses ports en passant par `iptables`, avant les règles UFW. C'est aussi pour ça qu'un port mappé reste ouvert même quand UFW semble le bloquer ; j'explique comment reprendre la main dans le guide [UFW et Docker](/ufw-docker-pare-feu-linux/).
 
 ### Les torrents ne téléchargent pas
 
@@ -254,28 +256,31 @@ L'interface web de qBittorrent peut ramer avec beaucoup de torrents. Limite le n
 
 ### Mots de passe perdus
 
-Si tu as oublié ton mot de passe admin, tu peux le réinitialiser en supprimant le fichier de configuration Web UI :
+Si tu as oublié ton mot de passe admin, supprime seulement la ligne du mot de passe dans la config, pas le fichier entier (tu perdrais tous tes réglages) :
 
 ```bash
 docker stop qbittorrent
-rm ~/docker/qbittorrent/config/qBittorrent/qBittorrent.conf
+sed -i '/^WebUI\\Password_PBKDF2=/d' ~/docker/qbittorrent/config/qBittorrent/qBittorrent.conf
 docker start qbittorrent
+docker logs qbittorrent | grep password
 ```
 
-Le mot de passe temporaire sera régénéré dans les logs.
+Un nouveau mot de passe temporaire apparaît dans les logs. Change-le tout de suite dans l'interface web : tant que tu ne l'as pas fait, l'image en génère un nouveau à chaque redémarrage.
 
 ## Optimisations avancées
 
 ### Changer le port de l'interface web
 
-Si tu préfères un port moins évident que 8080 (ce que je recommande), modifie ton `docker-compose.yml` :
+Si tu préfères un port moins évident que 8080 (ce que je recommande), change **les deux côtés** du mapping et la variable `WEBUI_PORT` en même temps :
 
 ```yaml
+environment:
+  - WEBUI_PORT=4747
 ports:
-  - "4747:8080"
+  - "4747:4747"
 ```
 
-Et garde `WEBUI_PORT=8080` (le port interne du container ne change pas, seul le mapping externe change).
+C'est la consigne de LinuxServer : avec un mapping asymétrique comme `4747:8080`, la protection CSRF de qBittorrent peut bloquer l'accès à l'interface.
 
 ### Persistance des stats et ratio
 
