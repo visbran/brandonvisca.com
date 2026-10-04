@@ -1,6 +1,6 @@
 ---
 title: "rcmd : Alternative Cmd+Tab réimaginée pour macOS"
-description: "rcmd, l'alternative Cmd+Tab macOS : switche entre apps en 1 touche (Right Cmd + lettre), fuzzy search, Space switching instantané, 16 thèmes. Guide complet 2026."
+description: "rcmd, l'alternative à Cmd+Tab sur Mac : Right Command + la lettre de l'app pour y sauter direct, fuzzy search et Spaces. 15 € pour 5 Macs, essai 14 jours."
 pubDatetime: "2025-11-27T00:00:00+01:00"
 modDatetime: "2026-08-24T00:00:00+01:00"
 author: Brandon Visca

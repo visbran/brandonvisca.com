@@ -13,8 +13,14 @@ featured: false
 draft: false
 focusKeyword: qbittorrent docker
 faqs:
-  - question: ""
-    answer: ""
+  - question: "Quel est le mot de passe par défaut de qBittorrent en Docker ?"
+    answer: "L'utilisateur est admin et le mot de passe est temporaire, généré au démarrage. Récupère-le avec docker logs qbittorrent | grep password, puis change-le aussitôt dans Outils > Options > Interface Web."
+  - question: "Quels ports ouvrir pour qBittorrent en Docker ?"
+    answer: "Le port 8080 sert à l'interface web et le port 6881 aux échanges BitTorrent, en TCP et en UDP. Seul le 6881 a besoin d'être joignable depuis internet ; l'interface web reste sur ton réseau local ou derrière un reverse proxy."
+  - question: "Peut-on exposer l'interface web de qBittorrent sur internet ?"
+    answer: "Pas directement. Passe par un reverse proxy avec authentification (Traefik, Caddy, Nginx Proxy Manager) ou par un VPN comme WireGuard ou Tailscale, et change le mot de passe admin par défaut."
+  - question: "Comment connecter qBittorrent à Radarr et Sonarr ?"
+    answer: "Mets les conteneurs sur le même réseau Docker, puis ajoute qBittorrent comme client de téléchargement avec l'hôte qbittorrent et le port 8080. Donne une catégorie par application (radarr, tv-sonarr) pour séparer les téléchargements."
 ogImage: ""
 ---
 > 💡 **TL;DR**
