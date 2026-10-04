@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-10-04
-# Total articles : 206
+# Total articles : 207
+
+## Copyparty Docker : partage et dépôt de fichiers auto-hébergé
+URL: https://brandonvisca.com/copyparty-docker-partage-fichiers/
+Description: Copyparty Docker remplace Droppy : un serveur de fichiers avec dépôt anonyme, liens de partage à durée limitée et miniatures. Configuration testée.
+Tags: docker, auto-hebergement, stockage, intermediaire
+Publié: 2026-10-04T21:44:00+02:00
 
 ## FileBrowser Quantum Docker : le successeur de File Browser
 URL: https://brandonvisca.com/filebrowser-quantum-docker-gestionnaire-fichiers/
