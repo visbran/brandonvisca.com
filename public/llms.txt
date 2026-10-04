@@ -1,1229 +1,1235 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-10-04
-# Total articles : 204
+# Total articles : 205
 
 ## Suricata Docker : IDS/IPS open-source pour sécuriser ton réseau
 URL: https://brandonvisca.com/suricata-docker-ids-ips-reseau/
 Description: Suricata Docker, c'est un IDS/IPS open-source pour détecter les intrusions sur ton réseau, en écoute ou en blocage, sans y passer ta nuit.
-Tags: 
+Tags: securite, docker, hardening, intermediaire
 Publié: 2026-10-04T11:01:12+02:00
 
 ## Calibre Web Docker : bibliothèque ebooks auto-hébergée
 URL: https://brandonvisca.com/calibre-web-docker-bibliotheque-ebooks/
 Description: Déploie calibre web docker pour lire tes ebooks partout : configuration complète, flux OPDS et sync Kobo, en 10 minutes chrono.
-Tags: 
+Tags: auto-hebergement, stockage, multimedia, intermediaire
 Publié: 2026-10-03T11:02:12+02:00
 
 ## MongoDB Docker : base de données NoSQL pour applications modernes
 URL: https://brandonvisca.com/mongodb-docker-base-donnees-nosql/
 Description: Déploie MongoDB Docker avec docker-compose : image officielle, authentification, sauvegarde et bonnes pratiques pour ta base NoSQL auto-hébergée.
-Tags: 
+Tags: docker, base-de-donnees, sauvegarde, stockage, intermediaire
 Publié: 2026-10-02T11:02:12+02:00
 
 ## Cockpit Docker : interface web d'administration Linux moderne
 URL: https://brandonvisca.com/cockpit-docker-interface-web-administration/
 Description: Cockpit Docker : installe l'interface web native Cockpit, ajoute le plugin cockpit-docker et pilote conteneurs, stockage et pare-feu depuis un navigateur.
-Tags: 
+Tags: linux, dashboard, stockage, intermediaire
 Publié: 2026-10-01T11:01:12+02:00
 
 ## Lynis Docker : audit de sécurité automatisé pour Linux
 URL: https://brandonvisca.com/lynis-docker-audit-securite-linux/
 Description: Audite ton serveur avec Lynis Docker : scan système en conteneur, audit de Dockerfile, hardening index et automatisation, sans rien installer sur l'hôte.
-Tags: 
+Tags: securite, docker, hardening, ssh, intermediaire
 Publié: 2026-09-30T11:02:11+02:00
 
 ## Grocy Docker : ERP domestique auto-hébergé (stocks, courses, tâches)
 URL: https://brandonvisca.com/grocy-docker-erp-domestique-auto-heberge/
 Description: Grocy Docker : installe cet ERP domestique auto-hébergé pour gérer stocks, courses, recettes et tâches ménagères sans dépendre du cloud.
-Tags: 
+Tags: auto-hebergement, docker, stockage, automation, intermediaire
 Publié: 2026-09-29T11:02:12+02:00
 
 ## Redis Docker : déployer une base de données clé-valeur ultra-rapide
 URL: https://brandonvisca.com/redis-docker-base-donnees-cle-valeur/
 Description: Redis Docker en pratique : installation, docker-compose, persistance RDB/AOF, sécurité et cas d'usage cache/session pour ton homelab.
-Tags: 
+Tags: docker, base-de-donnees, intermediaire
 Publié: 2026-09-28T11:02:11+02:00
 
 ## Plex Docker : serveur média auto-hébergé complet
 URL: https://brandonvisca.com/plex-docker-serveur-media-auto-heberge/
 Description: Installe Plex Docker en 10 minutes : docker-compose, PLEX_CLAIM, montage des bibliothèques, transcodage matériel et comparatif Jellyfin.
-Tags: 
+Tags: auto-hebergement, docker, mediacenter, streaming, intermediaire
 Publié: 2026-09-27T11:02:34+02:00
 
 ## Portainer Docker : interface web pour gérer tes conteneurs facilement
 URL: https://brandonvisca.com/portainer-docker-interface-web-conteneurs/
 Description: Guide Portainer Docker complet : installe l'interface web, gère conteneurs, volumes et stacks sans ligne de commande, en dix minutes chrono.
-Tags: 
+Tags: docker, auto-hebergement, dashboard, intermediaire
 Publié: 2026-09-26T11:01:12+02:00
 
 ## SearXNG Docker : méta-moteur de recherche auto-hébergé et personnalisable
 URL: https://brandonvisca.com/searxng-docker-meta-moteur-recherche/
 Description: SearXNG Docker en pratique : installation en 10 minutes, configuration des moteurs, sécurisation, et comparatif honnête face à Whoogle et Google.
-Tags: 
+Tags: auto-hebergement, docker, guide, intermediaire
 Publié: 2026-09-25T11:02:11+02:00
 
 ## Homepage Docker : dashboard homelab personnalisable avec widgets
 URL: https://brandonvisca.com/homepage-docker-dashboard-homelab-widgets/
 Description: Installe Homepage Docker sur ton homelab : dashboard personnalisable, widgets natifs, config YAML claire et intégrations Docker en direct.
-Tags: 
+Tags: docker, homelab, monitoring, guide, intermediaire
 Publié: 2026-09-24T11:00:13+02:00
 
 ## Whoogle Docker : pourquoi le projet est mort et par quoi le remplacer
 URL: https://brandonvisca.com/whoogle-docker-moteur-recherche-auto-heberge/
 Description: Whoogle Docker est abandonné depuis aout 2026, Google bloque ses requetes. Le point complet et la vraie alternative auto-hebergee : SearXNG.
-Tags: 
+Tags: auto-hebergement, docker, guide, intermediaire
 Publié: 2026-09-23T11:01:12+02:00
 
 ## Trivy Docker : scanner de vulnérabilités pour images et conteneurs
 URL: https://brandonvisca.com/trivy-docker-scanner-vulnerabilites/
 Description: Trivy Docker scanne tes images pour CVE, secrets et configs dangereuses, gratuit et open source. Installation, commandes essentielles et CI/CD.
-Tags: 
+Tags: securite, docker, hardening, guide, intermediaire
 Publié: 2026-09-22T11:01:12+02:00
 
 ## PairDrop Docker : AirDrop multiplateforme via le navigateur
 URL: https://brandonvisca.com/pairdrop-docker-airdrop-navigateur/
 Description: PairDrop Docker : héberge ton propre AirDrop multiplateforme dans le navigateur, sans compte ni appli, avec Docker Compose et reverse proxy.
-Tags: 
+Tags: auto-hebergement, docker, guide, intermediaire
 Publié: 2026-09-21T11:02:11+02:00
 
 ## GitLab CE Docker : forge Git complète avec CI/CD intégré
 URL: https://brandonvisca.com/gitlab-ce-docker-forge-cicd-complete/
 Description: Installe GitLab CE Docker chez toi, une forge Git complète avec CI/CD, Container Registry et Runners self-hosted, sans dépendre du cloud.
-Tags: 
+Tags: docker, auto-hebergement, guide, intermediaire
 Publié: 2026-09-20T11:01:11+02:00
 
 ## Rallly Docker : planification de réunions auto-hébergée (alternative Doodle)
 URL: https://brandonvisca.com/rallly-docker-planification-reunions/
 Description: Rallly Docker : héberge ton propre outil de sondage de réunions avec docker-compose, alternative libre à Doodle, HTTPS automatique inclus.
-Tags: 
+Tags: docker, auto-hebergement, guide, intermediaire
 Publié: 2026-09-19T11:02:12+02:00
 
 ## Keka macOS : compresseur avancé gratuit (7z, split, chiffrement AES)
 URL: https://brandonvisca.com/keka-macos-compresseur-avance/
 Description: Keka macOS : l'archiveur gratuit et open source qui gère 7z, zip chiffré AES-256, split de fichiers et plus de 30 formats en glisser-déposer.
-Tags: 
+Tags: macos, homebrew, guide, avance
 Publié: 2026-09-18T11:01:11+02:00
 
 ## Dozzle Docker : visionneuse de logs Docker en temps réel via web
 URL: https://brandonvisca.com/dozzle-docker-visionneuse-logs-web/
 Description: Guide dozzle docker complet : installe cette visionneuse de logs Docker temps réel, léger, sans base de données, avec ou sans authentification.
-Tags: 
+Tags: docker, auto-hebergement, monitoring, intermediaire
 Publié: 2026-09-17T11:01:11+02:00
 
 ## SideNotes macOS : notes rapides qui glissent depuis le bord de l'écran
 URL: https://brandonvisca.com/sidenotes-macos-notes-rapides/
 Description: SideNotes macOS range tes notes sur le bord de l'écran, accessibles en un clic sans quitter ton app active. Installation, prix et astuces.
-Tags: 
+Tags: macos, productivite, homebrew, guide, intermediaire
 Publié: 2026-09-16T11:01:12+02:00
 
 ## Headscale Docker : serveur Tailscale auto-hébergé (open-source)
 URL: https://brandonvisca.com/headscale-docker-tailscale-self-hosted/
 Description: Héberge ton propre control plane Tailscale avec Headscale Docker : Compose complet, comparatif Tailscale et limites à connaître avant de migrer.
-Tags: 
+Tags: reseau, docker, tailscale, intermediaire
 Publié: 2026-09-15T11:01:11+02:00
 
 ## Velja macOS : choisis quel navigateur ouvrir pour chaque lien
 URL: https://brandonvisca.com/velja-macos-choisir-navigateur/
 Description: Velja macOS route chaque lien vers le bon navigateur, par domaine, appli source ou profil, avec nettoyage automatique du tracking.
-Tags: 
+Tags: macos, productivite, intermediaire
 Publié: 2026-09-14T11:01:11+02:00
 
 ## Wazuh Docker : SIEM open source pour surveiller ton homelab
 URL: https://brandonvisca.com/wazuh-docker-siem-securite-homelab/
 Description: Wazuh Docker : installe ce SIEM open source sur ton homelab, détecte les intrusions, centralise les logs et compare-le à Suricata.
-Tags: 
+Tags: securite, docker, hardening, monitoring, guide, intermediaire
 Publié: 2026-09-13T11:01:11+02:00
 
 ## Cheatsheet macOS : CheatSheet est mort, KeyClu prend le relais
 URL: https://brandonvisca.com/cheatsheet-macos-raccourcis-clavier/
 Description: CheatSheet ne fonctionne plus depuis macOS Sonoma. Voici KeyClu, la cheatsheet macOS gratuite qui affiche les raccourcis de l'app active.
-Tags: 
+Tags: macos, productivite, guide, debutant
 Publié: 2026-09-11T11:02:12+02:00
 
 ## Scrutiny Docker : monitoring SMART de tes disques avec alertes
 URL: https://brandonvisca.com/scrutiny-docker-monitoring-smart-disques/
 Description: Scrutiny Docker : surveille la santé SMART de tes disques en temps réel, reçois des alertes avant la panne. Guide déploiement complet homelab 2026.
-Tags: 
+Tags: docker, auto-hebergement, monitoring, intermediaire
 Publié: 2026-09-10T11:02:11+02:00
 
 ## Default Folder X macOS : les boîtes de dialogue Ouvrir/Enregistrer enfin intelligentes
 URL: https://brandonvisca.com/default-folder-x-macos-dialogues-intelligents/
 Description: Default Folder X macOS transforme les boîtes de dialogue Ouvrir et Enregistrer en outils puissants. Favoris, aperçu, historique : guide complet.
-Tags: 
+Tags: debutant, macos, productivite, guide
 Publié: 2026-09-09T11:02:11+02:00
 
 ## Authelia Docker : authentification double facteur centralisée pour ton homelab
 URL: https://brandonvisca.com/authelia-docker-authentification-2fa-homelab/
 Description: Authelia Docker : mets en place l'authentification 2FA centralisée pour tous tes services homelab. Guide complet Docker Compose, TOTP et SSO.
-Tags: 
+Tags: intermediaire, securite, docker, auto-hebergement, hardening
 Publié: 2026-09-08T11:04:38+02:00
 
 ## BetterDisplay macOS hidpi : résolutions custom et contrôle DDC sur écrans externes
 URL: https://brandonvisca.com/betterdisplay-macos-hidpi-ddc/
 Description: BetterDisplay macOS hidpi : comment forcer les résolutions HiDPI et activer le contrôle DDC sur n'importe quel écran externe sans payer un Studio Display.
-Tags: 
+Tags: macos, productivite, debutant
 Publié: 2026-09-07 11:00:00+00:00
 
 ## Numi macOS : calculatrice textuelle qui comprend le langage naturel
 URL: https://brandonvisca.com/numi-macos-calculatrice-textuelle/
 Description: Découvre Numi, la calculatrice macOS qui comprend le langage naturel. Calculs unités, devises, dates et variables en texte brut. Guide complet 2026.
-Tags: 
+Tags: debutant, macos, productivite
 Publié: 2026-09-05T08:00:00.000Z
 
 ## Ntfy Docker : notifications push auto-hébergées pour ton homelab
 URL: https://brandonvisca.com/ntfy-docker-notifications-push-auto-hebergees/
 Description: Guide Ntfy Docker : reçois des notifications push gratuites et auto-hébergées depuis tes services Docker, scripts et monitoring vers ton téléphone.
-Tags: 
+Tags: intermediaire, docker, linux, auto-hebergement, homelab
 Publié: 2026-09-04 11:00:00+01:00
 
 ## Maccy macOS : presse-papiers open-source avec historique et recherche
 URL: https://brandonvisca.com/maccy-macos-presse-papiers-historique/
 Description: Maccy est un gestionnaire de presse-papiers open-source pour macOS. Historique, recherche rapide, raccourcis clavier. Guide installation.
-Tags: 
+Tags: macos, productivite, debutant, guide
 Publié: 2026-09-02T11:00:00.000Z
 
 ## Transmission Docker : client torrent ultra-léger avec interface web
 URL: https://brandonvisca.com/transmission-docker-client-torrent/
 Description: Déploie Transmission avec Docker : client torrent ultra-léger, interface web, et intégration parfaite avec ta stack mediacenter auto-hébergée.
-Tags: 
+Tags: auto-hebergement, docker, debutant
 Publié: 2026-09-01T06:00:00.000Z
 
 ## Bunch macOS : lance des contextes complets en un clic
 URL: https://brandonvisca.com/bunch-macos-lancer-contextes/
 Description: Bunch macOS : lance des contextes complets (apps, fichiers, sites) en un clic. Gratuit, open-source et parfait pour switcher entre projets.
-Tags: 
+Tags: macos, productivite, debutant, automation
 Publié: 2026-08-31 06:00:00+00:00
 
 ## qBittorrent Docker : client torrent avec interface web auto-hébergé
 URL: https://brandonvisca.com/qbittorrent-docker-client-torrent/
 Description: qBittorrent Docker : déploie un client torrent auto-hébergé avec interface web et intègre-le à ta stack mediacenter en quelques minutes.
-Tags: 
+Tags: auto-hebergement, docker, debutant, mediacenter
 Publié: 2026-08-30T06:00:00.000Z
 
 ## Hammerspoon macOS : scripting Lua ultra-puissant pour automatiser tout
 URL: https://brandonvisca.com/hammerspoon-macos-scripting-lua/
 Description: Hammerspoon macOS : automatise ton workflow avec des scripts Lua ultra-puissants. Raccourcis, fenêtres, lancement d'apps, tout devient programmable.
-Tags: 
+Tags: macos, productivite, automation, debutant
 Publié: 2026-08-29T06:00:00.000Z
 
 ## One Switch macOS : panneau de contrôle rapide en un clic
 URL: https://brandonvisca.com/one-switch-macos-panneau-controle/
 Description: One Switch pour macOS : un panneau de contrôle rapide qui active le Dark Mode, le Ne Pas Déranger et plus en un seul clic.
-Tags: 
+Tags: macos, productivite, debutant
 Publié: 2026-08-28T06:00:00.000Z
 
 ## Prowlarr Docker : indexeur de trackers pour Radarr et Sonarr
 URL: https://brandonvisca.com/prowlarr-docker-indexeur-trackers/
 Description: Déploie Prowlarr avec Docker pour centraliser tes indexeurs de trackers et les synchroniser automatiquement avec Radarr et Sonarr.
-Tags: 
+Tags: docker, auto-hebergement, intermediaire, radarr, sonarr, mediacenter
 Publié: 2026-08-28T06:00:00.000Z
 
 ## Sonarr Docker : gestion automatique de séries TV
 URL: https://brandonvisca.com/sonarr-docker-gestion-series/
 Description: Installe Sonarr avec Docker pour automatiser le téléchargement de tes séries. Guide sonarr docker complet avec docker-compose, config et intégration.
-Tags: 
+Tags: docker, auto-hebergement, sonarr, mediacenter, intermediaire
 Publié: 2026-08-27T06:00:00.000Z
 
 ## Dato macOS : un calendrier intelligent qui remplace l'horloge native
 URL: https://brandonvisca.com/dato-macos-calendrier-intelligent/
 Description: Dato macOS remplace l'horloge native par un calendrier intelligent dans la menu bar. 15 $ une fois, et tu gagnes un temps fou chaque jour.
-Tags: 
+Tags: macos, productivite, debutant, calendrier, menu-bar
 Publié: 2026-08-26T06:00:00.000Z
 
 ## Radarr Docker : gestion automatique de films pour ton mediacenter
 URL: https://brandonvisca.com/radarr-docker-gestion-films/
 Description: Déploie Radarr avec Docker pour automatiser la gestion de tes films : téléchargement, renommage, qualité et organisation sans lever le petit doigt.
-Tags: 
+Tags: docker, auto-hebergement, radarr, mediacenter, intermediaire
 Publié: 2026-08-25T06:00:00.000Z
 
 ## Itsycal macOS : mini calendrier gratuit dans ta menu bar
 URL: https://brandonvisca.com/itsycal-macos-calendrier-menu-bar/
 Description: Itsycal macOS : mini calendrier gratuit pour la menu bar. Découvre comment installer, configurer et remplacer l'horloge native en 2 minutes.
-Tags: 
+Tags: macos, productivite, debutant, calendrier, menu-bar
 Publié: 2026-08-24T06:00:00.000Z
 
 ## Jellyseerr Docker : gestion des demandes médias pour Jellyfin/Plex
 URL: https://brandonvisca.com/jellyseerr-docker-gestion-demandes/
 Description: Déploie jellyseerr docker pour gérer les demandes médias sur Jellyfin et Plex. Guide complet avec docker-compose fonctionnel et intégration *arr.
-Tags: 
+Tags: auto-hebergement, docker, mediacenter, debutant
 Publié: 2026-08-22T06:00:00.000Z
 
 ## Yabai macOS : le tiling window manager avancé pour pros (SIP off)
 URL: https://brandonvisca.com/yabai-macos-tiling-avance/
 Description: Yabai macOS : tiling WM avancé avec espaces virtuels dynamiques. Tuto complet : install, config, skhd, et pourquoi désactiver SIP.
-Tags: 
+Tags: intermediaire, macos, productivite, tiling
 Publié: 2026-08-21 06:00:00+00:00
 
 ## HomeTube Docker : téléchargeur YouTube auto-hébergé avec interface web
 URL: https://brandonvisca.com/hometube-docker-telechargeur-youtube/
 Description: HomeTube Docker : installe un téléchargeur YouTube auto-hébergé avec interface web et intégration Plex/Jellyfin en quelques minutes.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, mediacenter
 Publié: 2026-08-20T09:00:00.000Z
 
 ## Swish macOS : gère tes fenêtres avec des gestures trackpad (4 doigts)
 URL: https://brandonvisca.com/swish-macos-gestion-fenetres-gestures/
 Description: Swish macOS : gère tes fenêtres avec des gestes trackpad à 4 doigts. Guide complet d'installation, configuration et avis après test approfondi.
-Tags: 
+Tags: macos, productivite, intermediaire
 Publié: 2026-08-19T06:00:00.000Z
 
 ## Element + Matrix Docker : héberge ta messagerie décentralisée
 URL: https://brandonvisca.com/element-matrix-docker-messagerie/
 Description: Héberge ta propre messagerie Matrix avec Element et Docker. Guide complet pour un serveur Synapse décentralisé, sécurisé et fédéré.
-Tags: 
+Tags: intermediaire, auto-hebergement, messagerie, docker
 Publié: 2026-08-18T06:00:00.000Z
 
 ## Tailscale VPN : mesh zero-config pour ton homelab
 URL: https://brandonvisca.com/tailscale-vpn-mesh-homelab/
 Description: Guide Tailscale VPN mesh : déploie un réseau privé zero-config en 5 minutes. Installation Docker, Linux, macOS, ACLs et use cases homelab inclus.
-Tags: 
+Tags: intermediaire, reseau, tailscale, vpn, auto-hebergement
 Publié: 2026-08-17T08:00:00.000Z
 
 ## Rocket.Chat Docker : messagerie collaborative auto-hébergée
 URL: https://brandonvisca.com/rocket-chat-docker-messagerie-auto-hebergee/
 Description: Guide complet rocket.chat docker pour déployer Rocket.Chat avec Docker Compose. Messagerie collaborative auto-hébergée et sécurisée.
-Tags: 
+Tags: auto-hebergement, intermediaire, docker, linux, homelab, messagerie
 Publié: 2026-08-16T06:00:00.000Z
 
 ## Mattermost Docker : chat d'équipe auto-hébergé (alternative Slack)
 URL: https://brandonvisca.com/mattermost-docker-chat-equipe/
 Description: Guide complet mattermost docker : déploie Mattermost avec Docker. Messagerie d'équipe auto-hébergée, alternative open-source à Slack gratuite.
-Tags: 
+Tags: auto-hebergement, docker, messagerie, intermediaire
 Publié: 2026-08-15T08:00:00.000Z
 
 ## Grafana Prometheus Docker : monitoring pro pour 0€
 URL: https://brandonvisca.com/grafana-prometheus-docker-monitoring-pro/
 Description: Guide complet Grafana Prometheus Docker : déploie une stack monitoring pro gratuite avec Docker Compose, dashboards et alertes.
-Tags: 
+Tags: intermediaire, docker, monitoring, linux
 Publié: 2026-08-14 06:00:00+00:00
 
 ## K3s Docker : Kubernetes léger pour ton homelab
 URL: https://brandonvisca.com/k3s-docker-kubernetes-leger-homelab/
 Description: K3s Docker : déploie Kubernetes léger sur ton homelab en 10 minutes. Installation, kubectl, pods, ingress et migration depuis Docker Compose.
-Tags: 
+Tags: intermediaire, docker, homelab
 Publié: 2026-08-13T08:00:00.000Z
 
 ## Code Server Docker : VS Code dans ton navigateur auto-hébergé
 URL: https://brandonvisca.com/code-server-docker-vscode-web/
 Description: Guide code server docker : déploie VS Code auto-hébergé dans ton navigateur. Docker Compose, sécurité et reverse proxy inclus.
-Tags: 
+Tags: debutant, auto-hebergement, docker, developpement, productivite
 Publié: 2026-08-12T08:00:00.000Z
 
 ## PostgreSQL Docker : la base de données préférée des devs
 URL: https://brandonvisca.com/postgresql-docker-base-de-donnees/
 Description: Déploie PostgreSQL Docker en 10 minutes : stack complète avec persistance, healthcheck, sauvegarde automatisée et optimisation pour ton homelab.
-Tags: 
+Tags: docker, base-de-donnees, intermediaire, auto-hebergement
 Publié: 2026-08-11T08:00:00.000Z
 
 ## Restic Docker : sauvegarde moderne vers S3 et plus
 URL: https://brandonvisca.com/restic-docker-sauvegarde-moderne/
 Description: Guide complet restic docker : sauvegarde tes conteneurs avec déduplication, chiffrement AES-256, stockage S3 et cron automatisé.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, sauvegarde
 Publié: 2026-08-10T08:00:00.000Z
 
 ## Certimate Docker : renouvellement auto des certificats SSL
 URL: https://brandonvisca.com/certimate-docker-renouvellement-ssl/
 Description: Déploie Certimate Docker pour gérer et renouveler automatiquement tes certificats SSL Let's Encrypt. Guide complet avec Docker Compose.
-Tags: 
+Tags: docker, securite, auto-hebergement, intermediaire
 Publié: 2026-08-09T08:00:00.000Z
 
 ## BorgBackup Docker : sauvegarde dédupliquée et chiffrée pour ton homelab
 URL: https://brandonvisca.com/borgbackup-docker-sauvegarde/
 Description: Guide borgbackup docker complet : déploie BorgBackup en conteneur pour des sauvegardes dédupliquées, compressées et chiffrées AES-256.
-Tags: 
+Tags: docker, auto-hebergement, sauvegarde, intermediaire, homelab
 Publié: 2026-08-08T08:00:00.000Z
 
 ## MariaDB Docker : base de données robuste pour tes services
 URL: https://brandonvisca.com/mariadb-docker-base-de-donnees/
 Description: Déploie MariaDB Docker en 10 minutes : stack complète, persistance des données, sauvegarde automatisée et optimisation pour ton homelab.
-Tags: 
+Tags: docker, base-de-donnees, intermediaire, auto-hebergement
 Publié: 2026-08-07T08:00:00.000Z
 
 ## Amethyst macOS : tiling window manager gratuit pour un workflow au clavier
 URL: https://brandonvisca.com/amethyst-macos-tiling-window-manager/
 Description: Amethyst macOS : tiling window manager gratuit et open-source. Organise tes fenêtres au clavier sans lever les mains du clavier.
-Tags: 
+Tags: macos, productivite, debutant, tiling
 Publié: 2026-08-06T00:00:00.000+02:00
 
 ## Pocket-ID Docker SSO : déploiement léger avec OpenID Connect
 URL: https://brandonvisca.com/pocket-id-docker-sso-leger/
 Description: Guide pocket-id docker sso complet : déploie Pocket-ID avec Docker Compose pour un SSO léger et rapide via OpenID Connect dans ton homelab.
-Tags: 
+Tags: docker, securite, auto-hebergement, intermediaire
 Publié: 2026-08-04T06:00:00.000Z
 
 ## Syncthing Docker : synchronise tes fichiers sans le cloud
 URL: https://brandonvisca.com/syncthing-docker-synchronisation-fichiers/
 Description: Syncthing Docker : synchronise tes fichiers entre appareils sans cloud. Tutoriel complet Docker Compose, sécurité et configuration P2P.
-Tags: 
+Tags: debutant, auto-hebergement, docker
 Publié: 2026-08-03T08:00:00.000Z
 
 ## DuckDNS Docker : DDNS gratuit pour ton IP dynamique
 URL: https://brandonvisca.com/duckdns-docker-ddns-gratuit/
 Description: DuckDNS Docker : garde ton nom de domaine à jour avec ton IP dynamique gratuitement. Guide pas à pas avec Docker Compose, variables et astuces homelab.
-Tags: 
+Tags: debutant, reseau, docker, dns, auto-hebergement
 Publié: 2026-07-29T08:00:00.000Z
 
 ## MinIO Docker : stockage objet S3-compatible auto-hébergé
 URL: https://brandonvisca.com/minio-docker-stockage-objet-s3/
 Description: MinIO Docker : déploie ton propre stockage objet S3-compatible en 10 minutes. Alternative auto-hébergée à AWS S3, simple et performante.
-Tags: 
+Tags: auto-hebergement, docker, intermediaire, stockage
 Publié: 2026-07-28T08:00:00.000Z
 
 ## Ansible homelab 101 : automatise ton infrastructure en YAML
 URL: https://brandonvisca.com/ansible-101-homelab-yaml/
 Description: Guide Ansible homelab pour débutants : automatise ton infrastructure en YAML avec playbooks, inventaires, rôles et exemples prêts à copier.
-Tags: 
+Tags: linux, auto-hebergement, automation, intermediaire
 Publié: 2026-07-26T08:00:00.000Z
 
 ## Unbound Docker DNS récursif auto-hébergé et performant
 URL: https://brandonvisca.com/unbound-docker-dns-recursif/
 Description: Déployez Unbound Docker DNS récursif et cache open-source pour accélérer vos requêtes, valider DNSSEC et gagner en souveraineté réseau.
-Tags: 
+Tags: reseau, docker, intermediaire, securite
 Publié: 2026-07-25T08:00:00.000Z
 
 ## Woodpecker CI Docker : CI/CD léger pour ton homelab
 URL: https://brandonvisca.com/woodpecker-ci-docker-homelab/
 Description: Guide woodpecker ci docker : déploie un pipeline CI/CD léger dans ton homelab avec Docker Compose, agents et workflows YAML prêts à l'emploi.
-Tags: 
+Tags: ci-cd, docker, auto-hebergement, intermediaire
 Publié: 2026-07-24T08:00:00.000Z
 
 ## Cloudflare Tunnel Docker : accède à ton homelab sans IP publique
 URL: https://brandonvisca.com/cloudflare-tunnel-docker-homelab/
 Description: Guide complet cloudflare tunnel docker : expose ton homelab sur Internet sans IP fixe ni ouverture de ports. Docker compose fonctionnel inclus.
-Tags: 
+Tags: intermediaire, reseau, docker, homelab
 Publié: 2026-07-23T08:00:00.000Z
 
 ## Gitea Actions Docker : CI/CD self-hosted intégré à Gitea
 URL: https://brandonvisca.com/gitea-actions-docker-ci-cd/
 Description: Déploie Gitea Actions Docker pour un CI/CD self-hosted intégré à Gitea. Guide complet avec act_runner, workflows YAML et Docker Compose pour ton homelab.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, ci-cd, git
 Publié: 2026-07-22T08:00:00.000Z
 
 ## CrowdSec Docker : sécurité collaborative contre les attaques
 URL: https://brandonvisca.com/crowdsec-docker-securite-collaborative/
 Description: Installe CrowdSec en Docker pour protéger ton homelab grâce à une intelligence collective contre les attaques brute-force et les scans malveillants.
-Tags: 
+Tags: intermediaire, securite, docker, homelab
 Publié: 2026-07-21T08:00:00.000Z
 
 ## Forgejo Docker : le fork Gitea 100% libre que tu devrais déjà utiliser
 URL: https://brandonvisca.com/forgejo-docker-serveur-git/
 Description: Forgejo Docker : déploie ce fork open-source de Gitea, libre et communautaire. Guide complet avec Docker Compose, comparaison et astuces.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, git, homelab
 Publié: 2026-07-20T08:00:00.000Z
 
 ## Vibe Island : le panneau notch macOS pour surveiller tes agents IA de code
 URL: https://brandonvisca.com/vibe-island-macos-agents-ia-coding/
 Description: Open Island, fork open-source de Vibe Island : un panneau macOS natif dans la notch pour surveiller Claude Code, Codex et Cursor sans quitter ta fenêtre.
-Tags: 
+Tags: macos, productivite, debutant
 Publié: 2026-07-18T08:00:00.000Z
 
 ## Droppy Docker : partage d'images auto-hébergé léger
 URL: https://brandonvisca.com/droppy-partage-images-auto-heberge/
 Description: Droppy Docker : déploie un partage d'images auto-hébergé léger. Alternative à Imgur, installation en 5 min avec Docker Compose. Guide complet.
-Tags: 
+Tags: docker, auto-hebergement, debutant
 Publié: 2026-07-17T08:00:00.000Z
 
 ## Alcove Docker : navigateur web auto-hébergé pour homelab
 URL: https://brandonvisca.com/alcove-navigateur-auto-heberge/
 Description: Guide Alcove Docker : déploie un navigateur web auto-hébergé pour ton homelab avec Docker Compose. Reverse proxy, sécurité HTTPS et configuration complète.
-Tags: 
+Tags: debutant, auto-hebergement, homelab
 Publié: 2026-07-16T08:00:00.000Z
 
 ## Proxmox VE Helper Scripts : installer des LXC en 1 clic
 URL: https://brandonvisca.com/proxmox-ve-helper-scripts-community/
 Description: Découvrez les Proxmox VE Helper Scripts pour déployer des conteneurs LXC en un clic. Guide pratique, sécurité et commandes copier-coller.
-Tags: 
+Tags: debutant, linux, homelab, sysadmin, auto-hebergement
 Publié: 2026-07-15 08:00:00+00:00
 
 ## Boring notch macOS : transforme la notch de ton MacBook en Dynamic Island
 URL: https://brandonvisca.com/boring-notch-macbook-dynamic-island/
 Description: Boring notch macOS : transforme la notch de ton MacBook en Dynamic Island utile. Notifications, musique et contrôles depuis la barre de menu.
-Tags: 
+Tags: macos, productivite, debutant
 Publié: 2026-07-14T08:00:00.000Z
 
 ## Podman vs Docker : conteneurs rootless sans daemon
 URL: https://brandonvisca.com/podman-vs-docker-rootless/
 Description: Podman vs Docker : découvre pourquoi Podman rootless sans daemon change la donne. Guide pratique avec installation, commandes et migration complète.
-Tags: 
+Tags: docker, linux, intermediaire, securite
 Publié: 2026-07-13T08:00:00.000Z
 
 ## Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé
 URL: https://brandonvisca.com/romm-docker-retro-gaming/
 Description: Guide Romm Docker : déploie un gestionnaire de ROMs rétro-gaming auto-hébergé. Docker Compose complet, scan auto et intégration émulateurs.
-Tags: 
+Tags: auto-hebergement, docker, gaming, debutant
 Publié: 2026-07-12T08:00:00.000Z
 
 ## Firezone Docker : VPN zero-trust basé sur WireGuard
 URL: https://brandonvisca.com/firezone-docker-vpn-zero-trust/
 Description: Guide Firezone Docker : déploie un VPN zero-trust basé sur WireGuard avec Docker Compose. OIDC, policies et split tunneling inclus.
-Tags: 
+Tags: intermediaire, securite, vpn, wireguard, docker
 Publié: 2026-07-11T08:00:00.000Z
 
 ## Dashy Docker : ton dashboard homelab ultra-personnalisable avec widgets
 URL: https://brandonvisca.com/dashy-docker-dashboard-homelab/
 Description: Guide Dashy Docker : crée un dashboard homelab ultra-personnalisable avec widgets, monitoring de services et statuts en temps réel.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, dashboard, homelab
 Publié: 2026-07-10T08:00:00.000Z
 
 ## Tsdproxy Docker : reverse proxy automatique Tailscale pour conteneurs
 URL: https://brandonvisca.com/tsdproxy-docker-tailscale-proxy/
 Description: Tsdproxy Docker expose tes conteneurs via Tailscale sans config manuelle. Reverse proxy auto avec labels Docker. Guide complet.
-Tags: 
+Tags: intermediaire, reseau, docker, tailscale, auto-hebergement
 Publié: 2026-07-09T08:00:00.000Z
 
 ## Changedetection Docker : guide complet pour surveiller n'importe quel site web (alternative Distill.io)
 URL: https://brandonvisca.com/changedetection-docker-surveillance-web/
 Description: Guide changedetection docker : installe Changedetection.io et surveille n'importe quel site web avec alertes prix et disponibilité.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, monitoring
 Publié: 2026-07-08T08:00:00.000Z
 
 ## Netboot Docker avec Netboot.xyz : boot PXE pour installer n'importe quel OS
 URL: https://brandonvisca.com/netboot-xyz-docker-pxe-boot/
 Description: Netboot docker avec Netboot.xyz : boot PXE pour installer Linux, Windows ou BSD via le réseau. Guide Docker Compose complet et testé.
-Tags: 
+Tags: debutant, sysadmin, docker, linux
 Publié: 2026-07-06T08:00:00.000Z
 
 ## Sunshine Docker : ton serveur de streaming de jeux maison avec Moonlight
 URL: https://brandonvisca.com/sunshine-docker-streaming-jeux/
 Description: Déploie Sunshine sous Docker pour streamer tes jeux PC vers n'importe quel écran. Guide complet Moonlight + sunshine docker, réseau et latence.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, gaming, streaming, homelab
 Publié: 2026-07-05T10:00:00.000Z
 
 ## Focalboard Docker : alternative Notion/Trello auto-hébergée
 URL: https://brandonvisca.com/focalboard-docker-alternative-notion/
 Description: Guide focalboard docker : déploie Focalboard avec Docker Compose pour un kanban self-hosted. Alternative Notion/Trello auto-hébergée.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, productivite
 Publié: 2026-07-05T08:00:00.000Z
 
 ## Zoraxy Docker : reverse proxy HTTP/HTTPS en Go (alternative simple à Traefik)
 URL: https://brandonvisca.com/zoraxy-docker-reverse-proxy/
 Description: Zoraxy Docker : déploie un reverse proxy HTTP/HTTPS en Go simple et léger. Alternative à Traefik pour ton homelab avec Docker Compose.
-Tags: 
+Tags: reseau, docker, intermediaire, reverse-proxy, homelab
 Publié: 2026-07-04T09:00:00.000Z
 
 ## Listmonk Docker : newsletters auto-hébergées (alternative Mailchimp)
 URL: https://brandonvisca.com/listmonk-docker-newsletter-auto-hebergee/
 Description: Déploie Listmonk sous Docker : guide listmonk docker complet pour créer une newsletter auto-hébergée et se passer de Mailchimp.
-Tags: 
+Tags: auto-hebergement, docker, intermediaire
 Publié: 2026-07-03T08:00:00.000Z
 
 ## NTP Active Directory : synchroniser tes domaines Windows
 URL: https://brandonvisca.com/ntp-active-directory-synchroniser-domaines/
 Description: Guide ntp active directory : synchronise tes domaines Windows avec NTP, w32time, config PDC Emulator, GPO temps et dépannage Kerberos.
-Tags: 
+Tags: windows, intermediaire, reseau, active-directory, ntp
 Publié: 2026-07-02T08:00:00.000Z
 
 ## Cron Linux avancé : crontab, variables et pièges
 URL: https://brandonvisca.com/cron-linux-avance-crontab-guide/
 Description: Maîtrise cron et crontab sur Linux : syntaxe avancée, variables d'environnement, pièges classiques et cas pratiques pour planifier tes tâches sans souci.
-Tags: 
+Tags: intermediaire, linux, sysadmin
 Publié: 2026-07-01T08:00:00.000Z
 
 ## SNMPd Docker : monitorer ton réseau simplement
 URL: https://brandonvisca.com/snmpd-docker-monitorer-reseau/
 Description: Guide SNMPd Docker complet : déploie un agent SNMP simple dans Docker pour superviser ton réseau, tes switchs et serveurs en quelques minutes.
-Tags: 
+Tags: intermediaire, reseau, monitoring, docker, sysadmin
 Publié: 2026-06-30T08:00:00.000Z
 
 ## Polkit Linux : comprendre et configurer les autorisations
 URL: https://brandonvisca.com/polkit-linux-configurer-autorisations/
 Description: Guide Polkit Linux : comprends les autorisations système, configures pkexec et les règles .rules pour sécuriser ton serveur sans briser sudo.
-Tags: 
+Tags: debutant, linux, securite, sysadmin
 Publié: 2026-06-29T08:00:00.000Z
 
 ## Zabbix Docker : monitoring complet de ton infrastructure
 URL: https://brandonvisca.com/zabbix-docker-monitoring-infrastructure/
 Description: Déploie Zabbix sous Docker pour superviser ton infrastructure complète. Guide Docker Compose zabbix docker, templates intégrés et comparatif vs Prometheus.
-Tags: 
+Tags: securite, docker, linux, monitoring, intermediaire
 Publié: 2026-06-28T08:00:00.000Z
 
 ## GLPI Docker : ITSM complet auto-hébergé
 URL: https://brandonvisca.com/glpi-docker-itsm-auto-heberge/
 Description: Déploie GLPI avec Docker : tutoriel complet pour monter un ITSM auto-hébergé avec inventaire, helpdesk et ticketing en 20 minutes.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, linux, glpi
 Publié: 2026-06-27T08:00:00.000Z
 
 ## nftables Docker : pare-feu nouvelle génération sous Linux
 URL: https://brandonvisca.com/nftables-docker-pare-feu-linux/
 Description: Guide nftables Docker : remplace iptables par un pare-feu moderne pour sécuriser tes conteneurs. Syntaxe claire, règles efficaces et compatibilité assurée.
-Tags: 
+Tags: securite, linux, docker, intermediaire
 Publié: 2026-06-26T08:00:00.000Z
 
 ## GLPI Agent Docker : monitorer tes postes clients
 URL: https://brandonvisca.com/glpi-agent-docker-monitorer-postes/
 Description: Déploie GLPI Agent Docker pour inventorier automatiquement ton parc informatique. Guide complet avec docker-compose et dépannage.
-Tags: 
+Tags: docker, auto-hebergement, intermediaire, glpi, sysadmin
 Publié: 2026-06-25T08:00:00.000Z
 
 ## Chrony Docker : serveur NTP précis pour ton homelab
 URL: https://brandonvisca.com/chrony-docker-serveur-ntp-homelab/
 Description: Déploie un serveur NTP précis avec Chrony sous Docker. Synchronisation temps Linux, config complète et comparatif chrony vs ntpd vs timesyncd.
-Tags: 
+Tags: linux, docker, ntp, intermediaire, reseau
 Publié: 2026-06-24T08:00:00.000Z
 
 ## WireGuard Docker : VPN ultra-simple pour ton homelab
 URL: https://brandonvisca.com/wireguard-docker-vpn-homelab/
 Description: Guide WireGuard Docker : déploie un VPN simple et sécurisé avec Docker Compose. Comparatif, config pas à pas et astuces homelab.
-Tags: 
+Tags: wireguard, docker, securite, vpn, reseau, debutant
 Publié: 2026-06-23T08:00:00.000Z
 
 ## Actual Budget Docker : gestionnaire de budget open-source auto-hébergé
 URL: https://brandonvisca.com/actual-budget-docker-gestion-budget/
 Description: Guide actual budget docker complet : déployez Actual Budget, gestionnaire budget open-source auto-hébergé et alternative à YNAB.
-Tags: 
+Tags: docker, auto-hebergement, debutant
 Publié: 2026-06-22T08:00:00.000Z
 
 ## Homer Dashboard Docker : le tableau de bord ultime pour ton homelab
 URL: https://brandonvisca.com/homer-dashboard-docker-homelab/
 Description: Guide Homer Dashboard Docker : tableau de bord auto-hébergé et statique pour centraliser tous tes services. Docker Compose inclus.
-Tags: 
+Tags: docker, auto-hebergement, homelab, dashboard, debutant, intermediaire
 Publié: 2026-06-21T08:00:00.000Z
 
 ## Mealie Docker : gestionnaire de recettes auto-hébergé
 URL: https://brandonvisca.com/mealie-docker-recettes-auto-heberge/
 Description: Mealie Docker : déploie un gestionnaire de recettes auto-hébergé avec Docker Compose. Guide complet, variables d'environnement et comparatif avec Tandoor.
-Tags: 
+Tags: docker, auto-hebergement, homelab, intermediaire
 Publié: 2026-06-20T08:00:00.000Z
 
 ## Navidrome Docker : ton Spotify auto-hébergé en 5 min
 URL: https://brandonvisca.com/navidrome-docker-serveur-musique/
 Description: Guide Navidrome Docker : déploie un serveur musique auto-hébergé et open-source. Docker Compose complet + comparatif avec Jellyfin et Plex.
-Tags: 
+Tags: docker, auto-hebergement, intermediaire, streaming
 Publié: 2026-06-19T08:00:00.000Z
 
 ## FreshRSS Docker : ton lecteur RSS auto-hébergé (alternative légère à Google Reader)
 URL: https://brandonvisca.com/freshrss-docker-lecteur-rss/
 Description: Guide complet pour installer FreshRSS avec Docker Compose. Lecteur RSS auto-hébergé et open-source. Comparatif freshrss docker, Miniflux et Feedly.
-Tags: 
+Tags: auto-hebergement, docker, intermediaire, guide
 Publié: 2026-06-18T08:00:00.000Z
 
 ## Memos Docker : ton bloc-notes auto-hébergé (alternative à Google Keep)
 URL: https://brandonvisca.com/memos-docker-notes-auto-heberge/
 Description: Guide memos docker complet : installe Memos avec Docker Compose pour des notes rapides auto-hébergées, Markdown natif, et alternative à Google Keep.
-Tags: 
+Tags: docker, auto-hebergement, intermediaire, productivite
 Publié: 2026-06-17T08:00:00.000Z
 
 ## Komga Docker : serveur de BD/manga auto-hébergé
 URL: https://brandonvisca.com/komga-docker-bd-manga-auto-heberge/
 Description: Guide komga docker : déploie Komga, serveur BD/manga auto-hébergé MIT. Docker Compose, config et comparatif inclus.
-Tags: 
+Tags: docker, auto-hebergement, intermediaire, multimedia
 Publié: 2026-06-16T08:00:00.000Z
 
 ## Outline Docker : wiki auto-hébergé
 URL: https://brandonvisca.com/outline-docker-wiki-auto-heberge/
 Description: Déploie Outline Docker : wiki auto-hébergé moderne. Guide complet avec Docker Compose, comparatif Notion et alternatives wiki.
-Tags: 
+Tags: docker, intermediaire, auto-hebergement, wiki
 Publié: 2026-06-15T08:00:00.000Z
 
 ## Kavita Docker : ton lecteur ebooks auto-hébergé (alternative à Calibre)
 URL: https://brandonvisca.com/kavita-docker-lecteur-ebooks/
 Description: Installe Kavita avec Docker : le serveur de ebooks auto-hébergé qui lit EPUB, PDF, CBZ et manga. Guide complet avec Docker Compose, config et astuces.
-Tags: 
+Tags: auto-hebergement, docker, multimedia, intermediaire
 Publié: 2026-06-14T06:00:00.000Z
 
 ## BookStack Docker : wiki pour équipes
 URL: https://brandonvisca.com/bookstack-docker-wiki-equipe/
 Description: Déploie BookStack avec Docker Compose : wiki auto-hébergé, open-source et facile pour équipes. Guide complet, comparaison alternatives, reverse proxy.
-Tags: 
+Tags: docker, auto-hebergement, wiki, intermediaire
 Publié: 2026-06-13T08:00:00.000Z
 
 ## File Browser Docker : ton gestionnaire de fichiers web auto-hébergé
 URL: https://brandonvisca.com/filebrowser-docker-gestionnaire-fichiers/
 Description: Héberge ton propre gestionnaire de fichiers web avec File Browser sous Docker. Installation complète, config sécurisée, reverse proxy Caddy.
-Tags: 
+Tags: auto-hebergement, docker, linux, intermediaire
 Publié: 2026-06-12T08:00:00.000Z
 
 ## Home Assistant Docker : domotique auto-hébergée
 URL: https://brandonvisca.com/home-assistant-docker-domotique-guide/
 Description: Guide complet Home Assistant Docker : déploie ta domotique auto-hébergée avec Docker Compose, Zigbee, MQTT et automatisations. Zéro cloud, 100% contrôle.
-Tags: 
+Tags: docker, auto-hebergement, homelab, debutant
 Publié: 2026-06-11T08:00:00.000Z
 
 ## PhotoPrism Docker : la galerie photo auto-hébergée qui remplace Google Photos
 URL: https://brandonvisca.com/photoprism-docker-galerie-photo/
 Description: Guide PhotoPrism Docker complet. Installe PhotoPrism avec Docker pour une galerie photo auto-hébergée avec reconnaissance IA. Alternative à Google Photos.
-Tags: 
+Tags: auto-hebergement, docker, intermediaire, guide
 Publié: 2026-06-10T08:00:00.000Z
 
 ## Zsh Plugins essentiels : 7 plugins que j'utilise tous les jours
 URL: https://brandonvisca.com/zsh-plugins-essentiels-guide/
 Description: Les 7 zsh plugins essentiels que j'utilise chaque jour : git, autosuggestions, syntax-highlighting, sudo, extract. Guide Oh My Zsh 2026 complet.
-Tags: 
+Tags: linux, productivite, intermediaire, zsh, guide
 Publié: 2026-06-09T06:00:00.000Z
 
 ## Linkding Docker : gestionnaire de bookmarks auto-hébergé
 URL: https://brandonvisca.com/linkding-docker-bookmarks/
 Description: Guide Linkding Docker : déploie ton gestionnaire de bookmarks auto-hébergé en 2 minutes. Alternative open-source légère à Pinboard et Pocket.
-Tags: 
+Tags: docker, auto-hebergement, homelab, debutant, productivite, guide
 Publié: 2026-06-08T08:00:00.000Z
 
 ## Caddy Docker : le reverse proxy HTTPS automatique en 5 minutes
 URL: https://brandonvisca.com/caddy-docker-reverse-proxy-guide/
 Description: Caddy Docker : configure un reverse proxy HTTPS automatique avec Let's Encrypt en 5 minutes. Caddyfile simple, certificats auto-renouvelés, zéro Certbot.
-Tags: 
+Tags: docker, auto-hebergement, reverse-proxy, securite, intermediaire, guide
 Publié: 2026-06-07T08:00:00.000Z
 
 ## Hardening Linux : 10 commandes pour durcir ton serveur
 URL: https://brandonvisca.com/hardening-linux-10-commandes/
 Description: Hardening Linux en 10 commandes : durcissez votre serveur en quelques minutes. SSH, pare-feu, mises à jour auto, audit sécurité. Guide pratique 2026.
-Tags: 
+Tags: linux, securite, intermediaire, hardening, sysadmin
 Publié: 2026-06-06T08:00:00.000Z
 
 ## Miniflux Docker : ton lecteur RSS auto-hébergé en 5 min
 URL: https://brandonvisca.com/miniflux-docker-lecteur-rss-guide/
 Description: Guide complet Miniflux Docker : déploie ton lecteur RSS auto-hébergé avec PostgreSQL en 5 min. Alternative open-source à Feedly.
-Tags: 
+Tags: docker, auto-hebergement, homelab, debutant, guide, linux
 Publié: 2026-06-05T08:00:00.000Z
 
 ## Duplicati Docker : sauvegarde chiffrée auto-hébergée
 URL: https://brandonvisca.com/duplicati-docker-sauvegarde/
 Description: Installe Duplicati via Docker pour sauvegarder et chiffrer tes données localement. Docker Compose complet, protocoles cloud supportés et astuces de config.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, sauvegarde
 Publié: 2026-06-03T08:00:00.000Z
 
 ## UFW Docker : configurer le pare-feu sans casser les conteneurs
 URL: https://brandonvisca.com/ufw-docker-pare-feu-linux/
 Description: Guide UFW Docker : pare-feu Linux simple qui fonctionne avec tes conteneurs. Règles, pièges iptables et solution complète.
-Tags: 
+Tags: linux, docker, securite, debutant
 Publié: 2026-06-03T08:00:00.000Z
 
 ## Fail2Ban Docker : bloquer les attaques brute-force automatiquement
 URL: https://brandonvisca.com/fail2ban-docker-securite-serveur/
 Description: Guide Fail2Ban Docker : protège ton serveur contre les attaques brute-force. Docker Compose, filtres personnalisés et bonnes pratiques.
-Tags: 
+Tags: debutant, securite, docker, linux, auto-hebergement
 Publié: 2026-06-02T08:00:00.000Z
 
 ## Gitea Docker : ton serveur Git auto-hébergé en 5 minutes
 URL: https://brandonvisca.com/gitea-serveur-git-docker-auto-hebergement/
 Description: Installe Gitea avec Docker pour héberger tes repos Git sur ton serveur. Guide complet gitea docker pour remplacer GitHub en auto-hébergement léger.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, git, homelab
 Publié: 2026-06-01T07:00:00.000Z
 
 ## Paperless-ngx : votre bureau numérique auto-hébergé avec OCR
 URL: https://brandonvisca.com/paperless-ngx-docker-guide-auto-hebergement/
 Description: Guide complet pour installer Paperless-ngx avec Docker Compose. Archivez, numérisez et retrouvez facilement vos documents dans votre bureau numérique.
-Tags: 
+Tags: debutant, docker, auto-hebergement, sysadmin, productivite
 Publié: 2026-05-31 06:00:00+00:00
 
 ## NocoDB Docker : alternative auto-hébergée à Airtable
 URL: https://brandonvisca.com/nocodb-docker-airtable-alternative/
 Description: NocoDB Docker : déploie ta base de données type Airtable en auto-hébergement. Guide complet avec PostgreSQL, Docker Compose et import CSV.
-Tags: 
+Tags: debutant, docker, auto-hebergement, productivite, guide
 Publié: 2026-05-30T06:00:00.000Z
 
 ## Stirling-PDF Docker : alternative open-source à SmallPDF
 URL: https://brandonvisca.com/stirling-pdf-docker-guide-auto-hebergement/
 Description: Stirling-PDF Docker : auto-héberge ton éditeur PDF open-source. Fusionne, convertis, signe, sans payer un centime à Adobe ou SmallPDF.
-Tags: 
+Tags: docker, auto-hebergement, productivite, intermediaire
 Publié: 2026-05-29T10:00:00.000Z
 
 ## Beszel Docker monitoring : auto-hébergé ultra-léger pour ton homelab
 URL: https://brandonvisca.com/beszel-monitoring-docker/
 Description: Guide Beszel Docker : monitoring auto-hébergé ultra-léger, agents connectés en WebSocket avec token, et les nouveautés ZFS de la version 0.19.
-Tags: 
+Tags: docker, auto-hebergement, monitoring, intermediaire
 Publié: 2026-05-28 06:00:00+00:00
 
 ## Nginx Proxy Manager : reverse proxy en 5 min avec Docker
 URL: https://brandonvisca.com/nginx-proxy-manager-docker-guide/
 Description: Nginx Proxy Manager Docker : reverse proxy en quelques clics, SSL Let's Encrypt auto, auth basique et bonnes pratiques homelab.
-Tags: 
+Tags: intermediaire, docker, reverse-proxy, securite, nginx, auto-hebergement
 Publié: 2026-05-26T06:00:00Z
 
 ## n8n Docker : remplace Zapier par du self-hosted
 URL: https://brandonvisca.com/n8n-docker-workflow-automation/
 Description: Installe n8n Docker pour automatiser ton homelab sans payer. Workflows visuels, 800+ intégrations, alternative open-source à Zapier.
-Tags: 
+Tags: docker, automation, intermediaire, auto-hebergement, homelab
 Publié: 2026-05-22 12:00:00+02:00
 
 ## Netdata Docker : monitorer ton serveur en temps réel sans te ruiner
 URL: https://brandonvisca.com/netdata-docker/
 Description: Installe Netdata Docker pour monitorer CPU, RAM, disques et réseau en temps réel. Dashboard intégré, alertes natives, guide auto-hébergement 2026.
-Tags: 
+Tags: docker, auto-hebergement, monitoring, intermediaire
 Publié: 2026-05-19 12:00:00+02:00
 
 ## Immich en Docker : ton Google Photos auto-hébergé
 URL: https://brandonvisca.com/immich-docker/
 Description: Installe Immich avec Docker Compose, importe ta photothèque Google Photos et retrouve appli mobile, sauvegarde auto et recherche, chez toi.
-Tags: 
+Tags: auto-hebergement, docker, multimedia, securite, intermediaire, guide
 Publié: 2026-05-15T19:00:00+02:00
 
 ## Installer Tianji : l'analytics auto-hébergé
 URL: https://brandonvisca.com/tianji-self-hosted-analytics/
 Description: Installer Tianji pas à pas : LXC Proxmox ou Docker, script de suivi sur un site statique, et la collecte sans exposer ton instance sur Internet.
-Tags: 
+Tags: intermediaire, auto-hebergement, docker, securite, monitoring, guide
 Publié: 2026-05-12T18:00:00+02:00
 
 ## AdGuard Home remplace Pi-hole ? Guide Docker complet 2026
 URL: https://brandonvisca.com/adguard-home-docker-guide-2026/
 Description: Installe AdGuard Home en Docker pour bloquer pubs et trackers sur tout ton réseau. Guide complet 2026, configuration DNS et comparatif Pi-hole.
-Tags: 
+Tags: debutant, auto-hebergement, docker, dns, securite, homelab
 Publié: 2026-05-08 10:00:00+02:00
 
 ## Proxmox LXC : des conteneurs légères pour ton homelab sans la lourdeur des VM
 URL: https://brandonvisca.com/proxmox-lxc-containers-guide/
 Description: Guide complet Proxmox LXC : créer, configurer et sécuriser des conteneurs Linux. Beaucoup plus légers que des VM, parfaits pour ton homelab débutant.
-Tags: 
+Tags: homelab, linux, auto-hebergement, debutant
 Publié: 2026-05-06 10:00:00+02:00
 
 ## Passkey SSH : remplace tes clés avec SSH ID (2026)
 URL: https://brandonvisca.com/passkey-ssh-sshid/
 Description: Passe au passkey SSH biométrique avec SSH ID de Termius : Face ID, Touch ID, Windows Hello. La clé privée reste sur ton appareil, inextractible.
-Tags: 
+Tags: securite, linux, ssh, hardening, intermediaire, guide
 Publié: 2026-05-06 00:00:00+01:00
 
 ## Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul
 URL: https://brandonvisca.com/traefik-reverse-proxy-docker/
 Description: Installe Traefik v3 comme reverse proxy Docker. Labels auto, HTTPS Let's Encrypt, middlewares, guide complet pour ton homelab en 2026.
-Tags: 
+Tags: docker, securite, auto-hebergement, intermediaire
 Publié: 2026-05-05 10:00:00+02:00
 
 ## Watchtower : mets tes conteneurs Docker à jour sans lever le petit doigt
 URL: https://brandonvisca.com/watchtower-mise-a-jour-docker-auto/
 Description: Configure Watchtower pour mettre à jour automatiquement tes conteneurs Docker. Notifications, exclusions, planning, guide complet homelab.
-Tags: 
+Tags: docker, auto-hebergement, homelab, debutant, guide
 Publié: 2026-05-01 00:00:00+01:00
 
 ## Technitium DNS : l'alternative libre à Pi-hole
 URL: https://brandonvisca.com/technitium-dns-server/
 Description: Technitium DNS Server en Docker : blocage des pubs, DNS récursif, DNSSEC et résolution locale. Comparé à Pi-hole et AdGuard Home, sans langue de bois.
-Tags: 
+Tags: reseau, auto-hebergement, docker, dns, intermediaire, guide
 Publié: 2026-04-29 00:00:00+01:00
 
 ## Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)
 URL: https://brandonvisca.com/partager-mot-de-passe-securise-comparatif/
 Description: Partager un mot de passe sécurisé : j'ai comparé Password.link, OneTimeSecret et PrivateBin. Verdict clair selon ton profil et tes contraintes.
-Tags: 
+Tags: securite, debutant
 Publié: 2026-03-14T00:00:00+01:00
 
 ## Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)
 URL: https://brandonvisca.com/yopass-vs-privatebin-vs-password-pusher/
 Description: Partager un mot de passe sécurisé depuis ton homelab : Yopass, PrivateBin ou Password Pusher ? Comparatif complet pour choisir lequel auto-héberger.
-Tags: 
+Tags: securite, homelab, docker, auto-hebergement, intermediaire
 Publié: 2026-03-14 00:00:00+01:00
 
 ## Hyper-V Gen1 vs Gen2 : laquelle choisir pour ta VM ? (2026)
 URL: https://brandonvisca.com/hyperv-gen1-vs-gen2-quelle-generation-choisir/
 Description: Hyper-V Gen1 vs Gen2 : UEFI, Secure Boot, PXE, performances, le comparatif complet pour choisir la bonne génération selon ton OS et ton contexte.
-Tags: 
+Tags: hyper-v, windows-server, homelab, sysadmin, windows, intermediaire
 Publié: 2026-03-10T00:00:00+01:00
 
 ## VM Hyper-V irrécupérable ? Restaure l'OS sans réinstaller (2026)
 URL: https://brandonvisca.com/restaurer-vm-hyperv-vhdx-os-corrompu-winpe/
 Description: Restaurer une VM Hyper-V avec VHDX OS corrompu : reconstruis l'OS via WinPE + robocopy + bcdboot. Sans réinstaller Windows Server. 45 minutes.
-Tags: 
+Tags: hyper-v, windows-server, windows, sysadmin, avance
 Publié: 2026-03-10T00:00:00+01:00
 
 ## Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)
 URL: https://brandonvisca.com/sendme-cli-transfert-fichiers-p2p-terminal/
 Description: Sendme CLI : transfert P2P sécurisé en 2 commandes. NAT traversal automatique, aucun serveur requis. Alternative moderne à scp. Guide complet 2026.
-Tags: 
+Tags: homelab, linux, guide, intermediaire
 Publié: 2025-12-09T21:14:00+01:00
 
 ## 10 Outils macOS gratuits que j'utilise (2026)
 URL: https://brandonvisca.com/10-outils-low-tech-macos-guide-complet/
 Description: 10 outils macOS que j'utilise quotidiennement : gratuits, légers, efficaces. Brewfile inclus. Économise 453€/an vs alternatives.
-Tags: 
+Tags: macos, productivite, guide, debutant
 Publié: 2025-11-27T00:00:00.000+01:00
 
 ## Cling : Recherche fuzzy fichiers 10x plus rapide
 URL: https://brandonvisca.com/cling-recherche-fuzzy-fichiers-macos/
 Description: Cling : trouve fichiers macOS instantanément avec recherche fuzzy. Même avec fautes frappe. Alternative Spotlight. Gratuit, open source.
-Tags: 
+Tags: macos, productivite, debutant, guide
 Publié: 2025-11-27T00:00:00+01:00
 
 ## Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)
 URL: https://brandonvisca.com/clop-compression-images-videos-macos/
 Description: Découvre Clop, l'outil qui compresse automatiquement tes images et vidéos macOS dès que tu les copies. Zéro effort, fichiers 10× plus légers.
-Tags: 
+Tags: macos, productivite, multimedia, debutant, guide
 Publié: 2025-11-27T00:00:00+01:00
 
 ## Grila vs Fantastical : Comparatif honnête après 6 mois (2025)
 URL: https://brandonvisca.com/grila-vs-fantastical-comparatif-2025/
 Description: Grila vs Fantastical : j'utilise Grila depuis 6 mois (6€ vs 70€/an). Est-ce que ça vaut 64€ de plus ? Comparatif honnête pour t'aider à choisir.
-Tags: 
+Tags: macos, productivite, debutant
 Publié: 2025-11-27T00:00:00+01:00
 
 ## Lunar : Contrôle la luminosité de tes écrans externes sur macOS (enfin !)
 URL: https://brandonvisca.com/lunar-luminosite-ecrans-externes-macos/
 Description: Découvre Lunar, l'app qui résout le problème de luminosité des écrans externes sur macOS. DDC natif, F1/F2 fonctionnent, sync auto. Indispensable Mac Mini.
-Tags: 
+Tags: macos, productivite, debutant, guide
 Publié: 2025-11-27T00:00:00+01:00
 
 ## Raycast vs Alfred : Test après 30 jours (Verdict 2025)
 URL: https://brandonvisca.com/raycast-vs-alfred-spotlight-comparatif-macos/
 Description: Raycast vs Alfred vs Spotlight : 30 jours de tests réels. Tableaux comparatifs, prix détaillés, verdict par profil. Quel launcher macOS choisir ?
-Tags: 
+Tags: macos, raycast, productivite, debutant
 Publié: 2025-11-27T00:00:00+01:00
 
 ## rcmd : Alternative Cmd+Tab réimaginée pour macOS
 URL: https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/
 Description: rcmd, l'alternative Cmd+Tab macOS : switche entre apps en 1 touche (Right Cmd + lettre), fuzzy search, Space switching instantané, 16 thèmes. Guide complet 2026.
-Tags: 
+Tags: macos, productivite, debutant
 Publié: 2025-11-27T00:00:00+01:00
 
 ## Music Decoy macOS : Bloquer Apple Music au Démarrage (Solution Gratuite 2025)
 URL: https://brandonvisca.com/music-decoy-macos-bloquer-apple-music/
 Description: Music Decoy empêche Apple Music de se lancer avec la touche Play sur macOS. Solution minimaliste gratuite pour utilisateurs Spotify ou YouTube Music.
-Tags: 
+Tags: macos, productivite, guide, debutant
 Publié: 2025-11-26T22:15:32+01:00
 
 ## WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2026)
 URL: https://brandonvisca.com/wailbrew-interface-graphique-homebrew/
 Description: WailBrew macOS : interface graphique Homebrew. Installe, mets à jour et gère tes apps sans Terminal. Guide 2026 + comparaison Cork, Cakebrew.
-Tags: 
+Tags: macos, productivite, homebrew, terminal, debutant, guide
 Publié: 2025-11-24T22:03:21+01:00
 
 ## Magnet macOS : Le gestionnaire de fenêtres qui va transformer ton workflow (+ alternatives gratuites)
 URL: https://brandonvisca.com/magnet-macos-gestionnaire-fenetres-guide-complet/
 Description: Découvre Magnet macOS, le gestionnaire de fenêtres n°1. Comparatif complet avec Rectangle, BetterSnapTool, Moom + guide d'installation détaillé.
-Tags: 
+Tags: macos, productivite, debutant, guide
 Publié: 2025-11-19T22:43:10+01:00
 
 ## Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025)
 URL: https://brandonvisca.com/shutter-encoder-mac-alternative-handbrake/
 Description: Shutter Encoder Mac : alternative gratuite à HandBrake pour la compression vidéo avancée, l'édition, les sous-titres et le color grading. Guide complet.
-Tags: 
+Tags: macos, productivite, intermediaire, multimedia, guide
 Publié: 2025-11-19T11:56:47+01:00
 
 ## AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)
 URL: https://brandonvisca.com/alttab-macos-gestion-fenetres-windows/
 Description: AltTab macOS remplace ⌘+Tab avec des previews style Windows. Gratuit, open-source. Guide installation, layouts et configuration avancée.
-Tags: 
+Tags: macos, productivite, guide, debutant
 Publié: 2025-11-18T18:55:54+01:00
 
 ## AppCleaner Mac : l'alternative gratuite à CleanMyMac (2026)
 URL: https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/
 Description: AppCleaner Mac supprime tes apps avec tous leurs fichiers cachés, gratuitement. L'alternative légère à CleanMyMac (40€/an), testée sur mon propre Mac.
-Tags: 
+Tags: macos, homebrew, productivite, debutant
 Publié: 2025-11-18T17:39:28+01:00
 
 ## Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)
 URL: https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/
 Description: Warp Terminal vs iTerm2 en 2025 : test complet sur 3 mois en prod. IA, Agent Mode, Warp Drive : ce qui change vraiment et si ça vaut le switch.
-Tags: 
+Tags: macos, productivite, terminal, linux, intermediaire, guide
 Publié: 2025-11-16 22:52:46+01:00
 
 ## Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle
 URL: https://brandonvisca.com/independance-numerique-2025-guide-complet/
 Description: Guide complet auto-hébergement 2025 : Nextcloud + Jellyfin + Vaultwarden. Remplace Google/Netflix/1Password, économise 534€/an. Installation weekend.
-Tags: 
+Tags: auto-hebergement, docker, homelab, nextcloud, debutant, guide
 Publié: 2025-11-06T10:17:04+01:00
 
 ## Vaultwarden avec Docker : Gestionnaire de Mots de Passe Gratuit (Adieu 1Password !)
 URL: https://brandonvisca.com/vaultwarden-docker-gestionnaire-mots-de-passe/
 Description: Installe Vaultwarden avec Docker en 15 min. Alternative 1Password/Bitwarden gratuite, économise 36€/an. Guide 2026 complet + sécurité maximale.
-Tags: 
+Tags: docker, securite, auto-hebergement, homelab, guide, intermediaire
 Publié: 2025-10-26T22:16:05+01:00
 
 ## Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 396€/an)
 URL: https://brandonvisca.com/jellyfin-docker-alternative-netflix-gratuite/
 Description: Installe Jellyfin avec Docker en 30 min. Alternative Netflix auto-hébergée qui économise 396€/an. Guide 2026, transcoding 4K et thème Netflix.
-Tags: 
+Tags: docker, auto-hebergement, guide, intermediaire
 Publié: 2025-10-26T20:59:01+01:00
 
 ## Nextcloud Docker : ton cloud perso en 1h (adieu Google Drive)
 URL: https://brandonvisca.com/nextcloud-docker-installation-complete-2025/
 Description: Nextcloud Docker en 1h : alternative Google Drive auto-hébergée, HTTPS gratuit, backup et synchro multi-appareils. Guide complet 2026.
-Tags: 
+Tags: docker, auto-hebergement, homelab, linux, guide, intermediaire
 Publié: 2025-10-26T20:58:49+01:00
 
 ## Pourquoi j&rsquo;ai quitté Google (et comment tu peux faire pareil en 2025)
 URL: https://brandonvisca.com/quitter-google-auto-hebergement/
 Description: Découvre pourquoi et comment j'ai remplacé tous mes services Google par des alternatives auto-hébergées. Guide complet, 0€/mois, 100% fonctionnel.
-Tags: 
+Tags: auto-hebergement, homelab, nextcloud, intermediaire, guide
 Publié: 2025-10-26T15:09:10+01:00
 
 ## Nebula-Sync : synchronise tes Pi-hole v6 automatiquement (remplace Gravity Sync)
 URL: https://brandonvisca.com/nebula-sync-pihole-v6-installation-docker-guide/
 Description: Découvrez Nebula-Sync, l'outil gratuit qui remplace Gravity Sync pour synchroniser plusieurs Pi-hole v6. Installation Docker + config complète.
-Tags: 
+Tags: auto-hebergement, reseau, dns, docker, homelab, intermediaire
 Publié: 2025-10-23T20:55:40+02:00
 
 ## Docker pour les débutants : 10 services essentiels à auto-héberger en 2025
 URL: https://brandonvisca.com/docker-debutant-services-auto-heberger/
 Description: Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !
-Tags: 
+Tags: docker, auto-hebergement, homelab, linux, debutant
 Publié: 2025-10-22T16:12:41+02:00
 
 ## Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données
 URL: https://brandonvisca.com/auto-hebergement-guide-complet-2025/
 Description: Découvrez l'auto-hébergement en 2025 : guide complet pour débutants, du choix du matériel aux premiers services. Reprenez le contrôle de vos données !
-Tags: 
+Tags: auto-hebergement, homelab, docker, linux, guide, debutant
 Publié: 2025-10-22T15:44:27+02:00
 
 ## UptimeRobot : surveille ton infrastructure gratuitement (guide 2026)
 URL: https://brandonvisca.com/uptimerobot-guide-complet-monitoring-infrastructure/
 Description: UptimeRobot : surveille ton infrastructure gratuitement avec alertes Slack et pages de statut. Guide 2026, 50 moniteurs gratuits, API incluse.
-Tags: 
+Tags: monitoring, sysadmin, guide, intermediaire
 Publié: 2025-10-22T15:42:22+02:00
 
 ## 10 Extensions Raycast indispensables pour développeurs et sysadmins
 URL: https://brandonvisca.com/10-extensions-raycast-indispensables-pour-developpeurs-et-sysadmins/
 Description: Docker, GitHub, SSH, Brew : 10 extensions Raycast pour transformer ton workflow dev/sysadmin. Guide complet avec installation et config.
-Tags: 
+Tags: raycast, macos, productivite, sysadmin, docker, intermediaire
 Publié: 2025-10-13T17:08:33+02:00
 
 ## Termius 2026 : remplace PuTTY et économise 30 min/jour sur Windows
 URL: https://brandonvisca.com/termius-client-ssh-windows-guide-complet/
 Description: Termius remplace PuTTY sur Windows avec interface moderne, sync cloud et SFTP intégré. Guide complet 2026 pour admins sys et débutants SSH.
-Tags: 
+Tags: windows, sysadmin, intermediaire, ssh, guide, terminal
 Publié: 2025-10-13 17:08:33+02:00
 
 ## Uptime Kuma 2.0 : le monitoring auto-hébergé qui remplace les services payants
 URL: https://brandonvisca.com/uptime-kuma-2-0-monitoring-auto-heberge/
 Description: Uptime Kuma 2.0 : MariaDB, Docker rootless et 90+ intégrations. Installation et migration V1→V2 pour ton homelab auto-hébergé.
-Tags: 
+Tags: homelab, monitoring, docker, guide, debutant
 Publié: 2025-10-13 17:08:33+02:00
 
 ## SnipeAgent : Automatiser l'inventaire Windows sans Excel ni galères
 URL: https://brandonvisca.com/snipeagent-automatiser-inventaire-windows-snipeit/
 Description: Automatise ton inventaire Windows avec SnipeAgent et Snipe-IT. Guide complet : installation, déploiement GPO, automatisation et dépannage. Fini Excel !
-Tags: 
+Tags: snipeit, windows, active-directory, powershell, intermediaire
 Publié: 2025-10-13T16:49:19+02:00
 
 ## Configuration avancée SnipeIT : LDAP, automatisation et notifications (guide 2025)
 URL: https://brandonvisca.com/configuration-avancee-snipeit-ldap-teams-automatisation/
 Description: Configuration avancée SnipeIT : intégration LDAP/Active Directory, scan réseau, notifications Teams et self-service. Guide complet avec exemples concrets.
-Tags: 
+Tags: linux, sysadmin, avance, snipeit, ldap
 Publié: 2025-10-13T16:05:41+02:00
 
 ## Raycast macOS : Guide complet 2026, Extensions, AI et Snippets
 URL: https://brandonvisca.com/raycast-macos-outil-productivite-ultime/
 Description: Découvrez Raycast macOS, le launcher gratuit qui remplace Spotlight. Extensions, AI, snippets : gagnez 2h par jour. Guide complet 2026.
-Tags: 
+Tags: raycast, macos, productivite, guide, debutant
 Publié: 2025-10-13T15:20:28+02:00
 
 ## Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)
 URL: https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/
 Description: Installez SnipeIT sur Ubuntu 22.04/24.04 : guide LAMP, MySQL, Git et permissions. Déployez votre ITSM d'inventaire IT en moins d'une heure, pas à pas.
-Tags: 
+Tags: linux, sysadmin, snipeit, guide, debutant
 Publié: 2025-10-03T12:38:51+02:00
 
 ## SnipeIT vs GLPI : mon comparatif après 3 ans sur les deux outils
 URL: https://brandonvisca.com/snipeit-vs-glpi-comparatif-itsm-inventaire-it/
 Description: SnipeIT vs GLPI 2026 : mon retour d'expérience sur 3 ans. Quel outil ITSM choisir pour ton inventaire IT ? Tableau comparatif inclus.
-Tags: 
+Tags: sysadmin, snipeit, intermediaire
 Publié: 2025-10-03T12:14:07+02:00
 
 ## ITSM : pourquoi votre Excel va finalement vous rendre fou (guide survie)
 URL: https://brandonvisca.com/itsm-snipeit-alternative-excel-inventaire-it/
 Description: Découvrez l''ITSM pour débutants avec SnipeIT, l''alternative gratuite à Excel pour gérer vos actifs IT sans stress. Guide complet inventaire informatique.
-Tags: 
+Tags: linux, sysadmin, debutant, snipeit, guide
 Publié: 2025-09-29T11:20:31+02:00
+
+## Omarchy Linux : test complet de la distro Arch
+URL: https://brandonvisca.com/omarchy-distribution-linux-arch-hyprland/
+Description: Omarchy Linux installé en 20 minutes et testé : ce que la distro Arch clé en main fait bien, et ses trois limites (Hyprland, jeunesse, doc).
+Tags: linux, productivite, intermediaire, guide
+Publié: 2025-09-26T12:28:27+02:00
 
 ## Ice macOS : remplace Bartender gratuitement et organise ta barre de menu
 URL: https://brandonvisca.com/ice-macos-gestionnaire-barre-menu-gratuit-2025/
 Description: Ice macOS remplace Bartender gratuitement. Gère ta barre de menu avec sections, hotkeys et personnalisation visuelle. Guide installation + configuration.
-Tags: 
+Tags: macos, productivite, guide, debutant
 Publié: 2025-09-22T22:25:45+02:00
 
 ## Arc Browser abandonné : 7 alternatives épurées pour retrouver ton workflow de rêve
 URL: https://brandonvisca.com/arc-browser-alternatives-navigateur-epure-2025/
 Description: Arc Browser est abandonné ? Découvre 7 alternatives épurées avec split screen, raccourcis clavier et design minimaliste. SigmaOS, Zen Browser et plus.
-Tags: 
+Tags: macos, windows, guide, debutant
 Publié: 2025-08-09T19:57:34+02:00
 
 ## Masquer des utilisateurs de la GAL Office 365 + Active Directory : Guide complet
 URL: https://brandonvisca.com/masquer-utilisateurs-gal-office365-active-directory/
 Description: Masquez des utilisateurs de la GAL Office 365 synchronisés depuis Active Directory sans les supprimer. Méthode PowerShell et console Exchange Admin Centre.
-Tags: 
+Tags: microsoft-365, sysadmin, avance, active-directory, powershell, guide
 Publié: 2025-08-01T21:17:07+02:00
 
 ## DNS Scavenging Windows Server : automatiser le nettoyage DNS
 URL: https://brandonvisca.com/dns-scavenging-windows-server-guide-complet/
 Description: Configure le DNS Scavenging Windows Server pour nettoyer automatiquement les enregistrements obsolètes. Scripts PowerShell et bonnes pratiques inclus.
-Tags: 
+Tags: sysadmin, windows-server, dns, powershell, guide, intermediaire
 Publié: 2025-07-13T22:45:43+02:00
 
 ## Swap Linux : guide complet pour configurer et optimiser en 2026
 URL: https://brandonvisca.com/guide-swap-linux-configuration-optimisation/
 Description: Guide complet swap Linux 2026 : configurer un fichier swap, ajuster la swappiness, redimensionner et surveiller l'utilisation mémoire.
-Tags: 
+Tags: linux, intermediaire, sysadmin
 Publié: 2025-07-13T22:16:30+02:00
 
 ## Exchange Online : bloquer les transferts email automatiques avec PowerShell (2026)
 URL: https://brandonvisca.com/exchange-online-bloquer-transferts-automatiques-emails/
 Description: Bloquer les transferts automatiques dans Exchange Online avec PowerShell : Transport Rules, audit RBAC et script de monitoring prêts à l'emploi.
-Tags: 
+Tags: microsoft-365, securite, powershell, intermediaire, guide
 Publié: 2025-06-14T20:02:20+02:00
 
 ## Ladybird Browser : Le navigateur web qui refuse de se soumettre à Google (et tant mieux)
 URL: https://brandonvisca.com/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/
 Description: Découvrez Ladybird, le nouveau navigateur open source construit from scratch. Architecture, financement, timeline et pourquoi ça change tout pour le web.
-Tags: 
+Tags: developpement, linux, macos, intermediaire
 Publié: 2025-06-13T18:47:21+02:00
 
 ## Compresser images Mac en WebP : méthode qui économise 70% d'espace
 URL: https://brandonvisca.com/reduire-taille-images-mac-webp/
 Description: Compresser images Mac en WebP avec cwebp et Automator. Méthode gratuite, clic droit dans le Finder, gain 50 à 80% de taille. Tuto étape par étape.
-Tags: 
+Tags: macos, homebrew, guide, debutant
 Publié: 2025-06-12T20:41:20+02:00
 
 ## Vanderplanki : sauvegarde email gratuite et multi-plateforme (guide 2026)
 URL: https://brandonvisca.com/vanderplanki-sauvegarde-emails-gratuit-multiplateforme/
 Description: Sauvegarde tes emails gratuitement avec Vanderplanki, chiffré, multi-plateforme, open source. Par les créateurs de MailStore. Guide 2026.
-Tags: 
+Tags: sauvegarde, linux, debutant
 Publié: 2025-06-12T19:38:49+02:00
 
 ## pfSense 2.8 : télécharger l'ISO, mettre à jour et éviter les pièges (2026)
 URL: https://brandonvisca.com/mise-a-jour-pfsense-2-8-nouveautes-installation/
 Description: Télécharger pfSense 2.8.1, mettre à jour depuis 2.7.x ou installer l'ISO : guide complet avec les pièges FreeBSD 15 à éviter avant de cliquer.
-Tags: 
+Tags: securite, reseau, intermediaire, guide
 Publié: 2025-06-01T19:41:15+02:00
 
 ## Aller plus loin : Permissions-Policy et protection anti-bots sur Nginx
 URL: https://brandonvisca.com/nginx-permissions-policy-anti-bot/
 Description: Renforcez la sécurité de vos apps web avec Permissions-Policy Nginx pour restreindre les API navigateur et bloquer les bots malveillants. Guide complet.
-Tags: 
+Tags: linux, securite, avance, nginx, guide, hardening
 Publié: 2025-04-27T17:12:59+02:00
 
 ## Nginx location : blocs, priorités et pièges de sécurité
 URL: https://brandonvisca.com/nginx-location-bloc-et-securite/
 Description: Nginx location : types de blocs, ordre de priorité, regex et pièges de sécurité. Guide complet avec des exemples de configuration testés.
-Tags: 
+Tags: linux, securite, avance, nginx, guide
 Publié: 2025-04-15T20:25:29+02:00
 
 ## Limiter les risques sur Nginx : fichiers sensibles, uploads, méthodes HTTP
 URL: https://brandonvisca.com/proteger-nginx-fichiers-sensibles-et-uploads/
 Description: Renforcez la sécurité Nginx en bloquant les fichiers sensibles et l'exécution de scripts dans les répertoires d'upload. Configurations prêtes à copier.
-Tags: 
+Tags: linux, securite, avance, nginx, guide
 Publié: 2025-04-15T20:18:39+02:00
 
 ## Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs
 URL: https://brandonvisca.com/content-security-policy-nginx-sans-casser-site/
 Description: Configurez une Content-Security-Policy Nginx pour bloquer les attaques XSS sans casser votre site. Guide complet directive par directive avec exemples.
-Tags: 
+Tags: linux, securite, nginx, avance, guide
 Publié: 2025-04-15T20:03:49+02:00
 
 ## Comment renforcer la sécurité de Nginx avec les headers HTTP essentiels
 URL: https://brandonvisca.com/securiser-nginx-avec-headers-http/
 Description: Sécurisez Nginx avec les headers HTTP OWASP : HSTS, X-Frame-Options, CSP, Referrer-Policy. Guide complet avec configurations testées et explications.
-Tags: 
+Tags: linux, securite, avance, nginx, guide, hardening
 Publié: 2025-04-06T11:33:55+02:00
 
 ## Active Directory : Transfère des rôles FSMO
 URL: https://brandonvisca.com/activedirectory-transfere-des-roles-fsmo/
 Description: Les rôles FSMO sont 5 fonctions importantes dans un réseau Windows. Un seul contrôleur de domaine peut avoir un ou plusieurs de ces rôles.
-Tags: 
+Tags: active-directory, windows-server, guide, sysadmin, avance
 Publié: 2025-03-31T17:34:29+02:00
 
 ## Oh My Zsh et Powerlevel10k : ma config .zshrc
 URL: https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/
 Description: Oh My Zsh et Powerlevel10k installés en 15 minutes : ma config .zshrc à copier, les plugins qui servent vraiment et le dépannage courant.
-Tags: 
+Tags: zsh, macos, productivite, intermediaire
 Publié: 2025-03-31 15:55:32+02:00
 
 ## PATH Windows : maîtrise l'ajout de programmes, dossiers et scripts (2026)
 URL: https://brandonvisca.com/ajouter-un-programme-au-path-windows/
 Description: Ajouter au PATH Windows un programme, dossier ou script : 3 méthodes (GUI, PowerShell, CMD) avec troubleshooting. Guide complet 2026.
-Tags: 
+Tags: windows, developpement, powershell, debutant, guide
 Publié: 2025-03-31T15:50:44+02:00
 
 ## Thème Vim : installer Catppuccin avec vim-plug en 5 minutes
 URL: https://brandonvisca.com/installation-theme-vim-guide/
 Description: Installe le thème Catppuccin dans Vim en 5 minutes : vim-plug, configuration .vimrc et dépannage des couleurs 256. Fonctionne sur macOS et Linux.
-Tags: 
+Tags: vim, linux, guide, debutant
 Publié: 2025-03-31T15:43:24+02:00
 
 ## Homebrew macOS : Guide d'Installation Complet (2026)
 URL: https://brandonvisca.com/installation-homebrew-macos/
 Description: Comment installer Homebrew macOS en 1 commande. Prérequis, installation, commandes essentielles, apps incontournables et dépannage.
-Tags: 
+Tags: macos, developpement, homebrew, terminal, debutant, guide
 Publié: 2025-03-31 15:28:09+02:00
 
 ## iTerm2 macOS 2026 : guide complet (install, config, thèmes)
 URL: https://brandonvisca.com/iterm2-guide-configuration-macos-2025/
 Description: iTerm2 macOS, le guide complet : install, thèmes, raccourcis et Oh My Zsh. Tout ce qu'il faut pour un terminal qui déchire, gratuit et open-source.
-Tags: 
+Tags: macos, productivite, terminal, guide, intermediaire
 Publié: 2025-03-31 15:19:31+02:00
 
 ## Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes
 URL: https://brandonvisca.com/installation-vim-guide-complet/
 Description: Installe Vim sur macOS ou Linux en 30 min : .vimrc de base commenté, vim-plug, NERDTree et FZF. Tout ce qu'il faut pour débuter sérieusement.
-Tags: 
+Tags: vim, linux, macos, terminal, guide, intermediaire
 Publié: 2025-03-31T15:11:44+02:00
 
 ## Dépannage des problèmes de montage de matrices RAID (mdadm) en mode de secours Linux
 URL: https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/
 Description: Guide pratique de dépannage d'un montage RAID en mode secours Linux. Solution à l'erreur \"wrong fs type\" en découvrant que l'array RAID contenait une table de partitions plutôt qu'un système de fichiers.
-Tags: 
+Tags: linux, sysadmin, stockage, avance
 Publié: 2025-03-13T11:37:18+01:00
 
 ## Filtrage utilisateurs LDAP Snipe-IT : Guide pratique Active Directory 2025
 URL: https://brandonvisca.com/ldap-filtrage-utilisateurs-snipeit/
 Description: Guide avancé pour filtrer les utilisateurs LDAP dans Snipe-IT connecté à Active Directory. Filtres sécurisés, exclusions par OU, bonnes pratiques 2025.
-Tags: 
+Tags: sysadmin, linux, avance, ldap, active-directory, snipeit
 Publié: 2025-03-02T21:06:25+01:00
 
 ## LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)
 URL: https://brandonvisca.com/installer-localwp-wordpress-local/
 Description: LocalWP : installez et testez WordPress en local sans serveur ni XAMPP. Guide complet avec installation, multi-site et workflow de déploiement en prod.
-Tags: 
+Tags: developpement, linux, macos, windows, guide, debutant
 Publié: 2025-02-24T19:12:37+01:00
 
 ## Migrer WordPress gratuitement avec All-in-One WP Migration : guide 2026
 URL: https://brandonvisca.com/migration-wordpress-all-in-one-guide-2025/
 Description: Migrez WordPress gratuitement avec All-in-One WP Migration v6.77 (téléchargeable). Guide complet : export, import, contourner la limite PHP.
-Tags: 
+Tags: developpement, wordpress, sysadmin, sauvegarde, intermediaire, guide
 Publié: 2025-02-24T18:51:33+01:00
 
 ## Importer un fichier PST dans Outlook 365 : 2 méthodes qui marchent (2026)
 URL: https://brandonvisca.com/import-pst-outlook-365-guide-complet/
 Description: Importer un fichier PST dans Outlook 365 : 2 méthodes testées + XstReader gratuit pour lire tes archives sans Outlook. Guide pas à pas 2026.
-Tags: 
+Tags: microsoft-365, sysadmin, guide, intermediaire
 Publié: 2025-02-21T10:14:37+01:00
 
 ## S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)
 URL: https://brandonvisca.com/gerer-fichiers-amazon-s3-avec-s3cmd/
 Description: S3cmd : installer, configurer et utiliser ce client CLI pour Amazon S3. Commandes essentielles, sync, backup et chiffrement. Guide complet 2026.
-Tags: 
+Tags: linux, sysadmin, auto-hebergement, sauvegarde, intermediaire, guide
 Publié: 2025-02-17T17:37:40+01:00
 
 ## Android File Transfer Mac : 2 alternatives testées (2025)
 URL: https://brandonvisca.com/android-file-transfer-mac-alternatives-test-2025/
 Description: Android File Transfer Mac alternative : j'ai testé OpenMTP et MacDroid pendant 90 jours. OpenMTP gratuit gagne. Comparatif avec benchmarks réels.
-Tags: 
+Tags: macos, linux, productivite, debutant
 Publié: 2025-02-16T00:00:00+01:00
 
 ## Réparer WordPress : 2 solutions pour une base de données corrompue
 URL: https://brandonvisca.com/wordpress-2-solutions-pour-reparer-une-base-de-donnee-corrompu/
 Description: Réparer WordPress après une corruption de base de données : 2 méthodes éprouvées, testées en prod, pour restaurer votre site en moins de 10 minutes.
-Tags: 
+Tags: developpement, wordpress, base-de-donnees, avance, guide
 Publié: 2024-07-16T19:50:34+02:00
 
 ## Morgen 2026 : découvre le planificateur IA qui unifie tâches et calendrier
 URL: https://brandonvisca.com/calendrier-et-gestion-des-taches-unifies-morgen/
 Description: Morgen unifie calendrier, tâches et planificateur IA dans une seule app. Time-blocking, Frames, Calendar Sets : guide complet 2026 pour macOS.
-Tags: 
+Tags: productivite, macos, debutant, guide
 Publié: 2024-07-16T19:43:31+02:00
 
 ## Exploration de Super.so : un outil de site web personnalisé pour Notion
 URL: https://brandonvisca.com/exploration-de-super-so-un-outil-de-site-web-personnalise-pour-notion/
 Description: Super.so transforme vos pages Notion en site web personnalisé : domaine custom, SEO intégré, thèmes et scripts personnalisés. Guide complet et test.
-Tags: 
+Tags: developpement, productivite, debutant, guide
 Publié: 2024-06-25T21:03:27+02:00
 
 ## Notion Sites: Révolution dans la Création de Sites Web
 URL: https://brandonvisca.com/notion-sites-creation-de-sites-web/
 Description: Notion Sites : créez un site web depuis Notion en quelques minutes. Fonctionnalités CMS, personnalisation, SEO et comparaison avec les alternatives.
-Tags: 
+Tags: developpement, productivite, debutant, guide
 Publié: 2024-06-25T20:59:29+02:00
 
 ## Ubuntu Active Directory SSSD : intègre tes machines Linux en 5 étapes
 URL: https://brandonvisca.com/connecter-les-systemes-ubuntu-a-active-directory-en-utilisant-sssd/
 Description: Ubuntu Active Directory SSSD : installe, configure Kerberos et rejoins ton domaine en quelques commandes. Testé sur Ubuntu 22.04 et 24.04.
-Tags: 
+Tags: linux, sysadmin, avance, active-directory, guide
 Publié: 2024-06-13T11:40:02+02:00
 
 ## Comment définir le fuseau horaire et synchroniser l'heure du serveur sous Linux
 URL: https://brandonvisca.com/comment-modifier-heure-du-serveur-sous-linux/
 Description: Apprenez à changer le fuseau horaire, définir le fuseau horaire et synchroniser l'heure du serveur sous Linux en utilisant timedatectl et NTP.
-Tags: 
+Tags: linux, debutant, sysadmin, ntp
 Publié: 2024-06-13T11:21:00+02:00
 
 ## Hardening serveur Linux : le durcissement complet, étape par étape
 URL: https://brandonvisca.com/securite-de-votre-serveur-linux/
 Description: Hardening serveur Linux : SSH, pare-feu ufw, fail2ban, sysctl, mises à jour automatiques et surveillance des logs. Durcissement testé en prod.
-Tags: 
+Tags: linux, securite, hardening, sysadmin, guide, avance
 Publié: 2024-06-10T19:29:00+02:00
 
