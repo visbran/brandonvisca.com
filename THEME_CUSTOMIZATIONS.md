@@ -320,3 +320,32 @@ vide, 129 n'ont pas le champ. Remplir ce champ remplacerait une image générée
 image figée à maintenir — à réserver à une bannière vraiment travaillée.
 
 **Merge strategy** : sur update upstream, conserver l'espace insécable.
+
+---
+
+### Schema.org : Organization, ProfilePage et graphe relié par `@id` (2026-10-04)
+
+**Reason** : backlog GEO de l'audit du 2026-09-22 (priorité 4). Chaque page redéfinissait sa propre
+personne et sa propre organisation, avec des champs qui divergeaient (`jobTitle`, `knowsAbout`,
+logo = image OG 1200×630). Les entités vivent désormais à un seul endroit et se référencent par `@id`.
+
+**Files & changes** :
+- `src/utils/schema.ts` (nouveau, hors thème) — `SCHEMA_IDS` (`/about/#person`, `/#organization`,
+  `/#website`), `personSchema`, `organizationSchema` (logo carré `apple-touch-icon.png` 180×180,
+  `founder` → la personne).
+- `src/layouts/Layout.astro` — le `WebSite` porte un `@id` et `publisher: organizationSchema` :
+  l'Organization complète est donc présente sur toutes les pages, homepage comprise.
+- `src/layouts/AboutLayout.astro` — le `Person` isolé devient un `ProfilePage` dont il est la
+  `mainEntity`.
+- `src/layouts/PostDetails.astro` — `author` et `publisher` de l'`Article` pris dans le module
+  partagé, plus `isPartOf` → le `WebSite`. Un `author` différent de `SITE.author` reste un `Person`
+  minimal, sans `@id`.
+- `src/pages/blog/[...page].astro` — `@id` ajouté au `WebSite` du `CollectionPage`.
+
+**Volontairement non fait** : `HowTo` (Google a retiré ce résultat enrichi en 2023, et les étapes
+devraient être extraites du corps des articles) ; `SoftwareApplication` + `Review` (il faudrait une
+note réelle par article, que le frontmatter ne porte pas — en inventer une serait du balisage
+trompeur).
+
+**Merge strategy** : sur update upstream, garder les imports de `@/utils/schema` et les références
+`@id` dans les quatre fichiers ci-dessus.
