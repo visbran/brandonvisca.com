@@ -289,7 +289,7 @@ Memos est une webapp responsive. Sur iOS ou Android, ouvre Memos dans Safari/Chr
 Exporte tes notes Google Keep via Google Takeout (format HTML/JSON). Convertis-les en fichiers Markdown avec un script Python ou un outil comme `keep-to-markdown`, puis importe-les dans Memos. Le processus n'est pas natif, mais c'est faisable en une heure de scripting.
 
 **Lier avec un gestionnaire de fichiers**
-Pour les pièces jointes lourdes ou les archives de documents, [File Browser avec Docker](/filebrowser-docker-gestionnaire-fichiers/) s'intègre bien à côté de Memos. Tu stockes les fichiers dans File Browser et tu références les liens dans tes notes Memos.
+Pour les pièces jointes lourdes ou les archives de documents, [FileBrowser Quantum avec Docker](/filebrowser-quantum-docker-gestionnaire-fichiers/) s'intègre bien à côté de Memos. Tu stockes les fichiers dans FileBrowser Quantum et tu références les liens dans tes notes Memos.
 
 **Personnalisation CSS**
 Memos permet d'injecter du CSS personnalisé via les paramètres d'administration. Tu peux ajuster la typographie, les couleurs, ou masquer des éléments que tu ne souhaites pas afficher.

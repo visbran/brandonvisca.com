@@ -262,7 +262,7 @@ BookStack supporte le TOTP (Google Authenticator, Authy, etc.). Active-le pour t
 ## Intégrations et astuces avancées
 
 **Brancher un système de fichiers**
-Si tu veux attacher des fichiers lourds (ISO, archives) sans encombrer la base, monte un volume supplémentaire dans le conteneur et configure BookStack pour l'utiliser comme stockage de fichiers personnalisé. Alternative : utilise [File Browser](/filebrowser-docker-gestionnaire-fichiers/) à côté et linke les fichiers partagés.
+Si tu veux attacher des fichiers lourds (ISO, archives) sans encombrer la base, monte un volume supplémentaire dans le conteneur et configure BookStack pour l'utiliser comme stockage de fichiers personnalisé. Alternative : utilise [FileBrowser Quantum](/filebrowser-quantum-docker-gestionnaire-fichiers/) à côté et linke les fichiers partagés.
 
 **Lier à ta gestion documentaire**
 Pour les PDF scannés et la gestion documentaire, [Paperless-ngx](/paperless-ngx-docker-guide-auto-hebergement/) complète BookStack sur les documents administratifs. Mon workflow : Paperless stocke et OCRise les factures, BookStack documente les procédures métier.

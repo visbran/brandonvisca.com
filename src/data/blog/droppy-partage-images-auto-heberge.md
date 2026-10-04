@@ -70,9 +70,9 @@ Droppy n'est pas une galerie photo. Ce n'est pas PhotoPrism avec reconnaissance 
 | **Chevereto** | Oui | Oui (`chevereto/chevereto`) | ~256 Mo RAM | MySQL | Oui | Oui |
 | **Piwigo** | Oui | Oui (`linuxserver/piwigo`) | ~512 Mo RAM | MySQL | Oui | Oui |
 | **Lutim** | Oui | Oui | ~80 Mo RAM | Non | Oui, avec expiration | Non |
-| **File Browser** | Oui | Oui (`filebrowser/filebrowser`) | ~20 Mo RAM | SQLite | Oui | Limité |
+| **FileBrowser Quantum** | Oui | Oui (`gtstef/filebrowser`) | Léger | SQLite | Oui, avec durée et mot de passe | Oui |
 
-Mon choix pour un usage homelab : **Droppy** quand tu veux un partage d'images instantané sans base de données. Chevereto si tu veux une galerie communautaire complète avec commentaires et albums. File Browser si tu veux un gestionnaire de fichiers généraliste avec upload multi-fichiers. Pour gérer tes fichiers sur le même serveur, [File Browser avec Docker](/filebrowser-docker-gestionnaire-fichiers/) est un excellent complément.
+Mon choix pour un usage homelab : **Droppy** quand tu veux un partage d'images instantané sans base de données. Chevereto si tu veux une galerie communautaire complète avec commentaires et albums. FileBrowser Quantum si tu veux un gestionnaire de fichiers généraliste avec upload multi-fichiers : ses liens de partage, avec durée et mot de passe, couvrent une partie de l'usage de Droppy, et le projet est maintenu. Voir [FileBrowser Quantum avec Docker](/filebrowser-quantum-docker-gestionnaire-fichiers/).
 
 ## Prérequis
 

@@ -314,7 +314,7 @@ L'API REST de Mealie est documentée et accessible directement depuis l'interfac
 Via les variables d'environnement, tu peux changer toute la palette de couleurs de Mealie. Utile pour adapter l'interface à tes goûts ou à la charte graphique de ton homelab.
 
 **Gestionnaire de fichiers en complément**
-Pour stocker les photos de tes plats finis, les scans de vieilles recettes manuscrites ou les PDF de magazines de cuisine, [File Browser avec Docker](/filebrowser-docker-gestionnaire-fichiers/) s'intègre parfaitement à côté de Mealie. Tu stockes les fichiers dans File Browser et tu références les liens dans tes notes de recettes.
+Pour stocker les photos de tes plats finis, les scans de vieilles recettes manuscrites ou les PDF de magazines de cuisine, [FileBrowser Quantum avec Docker](/filebrowser-quantum-docker-gestionnaire-fichiers/) s'intègre parfaitement à côté de Mealie. Tu stockes les fichiers dans FileBrowser Quantum et tu références les liens dans tes notes de recettes.
 
 ## FAQ
 
@@ -334,4 +334,4 @@ Oui, l'image supporte ARM64. Un Raspberry Pi 4 avec 2 Go de RAM suffit pour une 
 Tu peux taguer les recettes avec des tags comme `sans-gluten`, `sans-arachide` ou `sans-lactose`. Mealie ne fait pas d'analyse automatique des allergènes, mais la recherche par tag te permet de filtrer rapidement.
 
 **Puis-je scanner des recettes manuscrites ?**
-Pas directement dans Mealie. Mais tu peux scanner tes recettes manuscrites avec ton téléphone, les stocker dans [File Browser avec Docker](/filebrowser-docker-gestionnaire-fichiers/), et créer une recette dans Mealie avec un lien vers le scan.
+Pas directement dans Mealie. Mais tu peux scanner tes recettes manuscrites avec ton téléphone, les stocker dans [FileBrowser Quantum avec Docker](/filebrowser-quantum-docker-gestionnaire-fichiers/), et créer une recette dans Mealie avec un lien vers le scan.
