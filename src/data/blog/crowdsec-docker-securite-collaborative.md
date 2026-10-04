@@ -333,6 +333,8 @@ Mon verdict personnel : Fail2Ban reste parfait pour un serveur monolithique avec
 
 💡 À lire aussi : [Lynis Docker : audit de sécurité automatisé pour Linux](/lynis-docker-audit-securite-linux/), dans la même veine que cet article.
 
+💡 À lire aussi : [Suricata Docker : IDS/IPS open-source pour sécuriser ton réseau](/suricata-docker-ids-ips-reseau/), dans la même veine que cet article.
+
 ## Conclusion
 
 CrowdSec en Docker, c'est la protection collaborative que ton homelab mérite. Tu installes l'agent, tu branches un bouncer sur ton reverse proxy, et d'un coup ton serveur ne se contente plus de réagir à ses propres logs : il tire parti de l'intelligence de milliers d'administrateurs qui partagent les signatures d'attaques en temps réel.
