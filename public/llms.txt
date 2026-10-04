@@ -605,7 +605,7 @@ Publié: 2026-06-17T08:00:00.000Z
 
 ## Komga Docker : serveur de BD/manga auto-hébergé
 URL: https://brandonvisca.com/komga-docker-bd-manga-auto-heberge/
-Description: Guide komga docker : déploie Komga, serveur BD/manga auto-hébergé MIT. Docker Compose, config et comparatif inclus.
+Description: Komga Docker : ton serveur BD, manga et comics auto-hébergé qui lit CBZ, CBR, PDF et EPUB. Docker Compose prêt, OPDS et comparatif avec Kavita.
 Tags: docker, auto-hebergement, intermediaire, multimedia
 Publié: 2026-06-16T08:00:00.000Z
 
@@ -857,7 +857,7 @@ Publié: 2025-11-27T00:00:00+01:00
 
 ## rcmd : Alternative Cmd+Tab réimaginée pour macOS
 URL: https://brandonvisca.com/rcmd-alternative-cmd-tab-macos/
-Description: rcmd, l'alternative Cmd+Tab macOS : switche entre apps en 1 touche (Right Cmd + lettre), fuzzy search, Space switching instantané, 16 thèmes. Guide complet 2026.
+Description: rcmd, l'alternative à Cmd+Tab sur Mac : Right Command + la lettre de l'app pour y sauter direct, fuzzy search et Spaces. 15 € pour 5 Macs, essai 14 jours.
 Tags: macos, productivite, debutant
 Publié: 2025-11-27T00:00:00+01:00
 
@@ -1151,7 +1151,7 @@ Publié: 2025-03-31T15:11:44+02:00
 
 ## Dépannage des problèmes de montage de matrices RAID (mdadm) en mode de secours Linux
 URL: https://brandonvisca.com/depannage-montage-partition-raid-linux-mode-secours/
-Description: Guide pratique de dépannage d'un montage RAID en mode secours Linux. Solution à l'erreur \"wrong fs type\" en découvrant que l'array RAID contenait une table de partitions plutôt qu'un système de fichiers.
+Description: mount refuse ta matrice RAID mdadm en mode secours avec « wrong fs type » ? Elle contient sans doute une table de partitions : monte md126p1, pas md126.
 Tags: linux, sysadmin, stockage, avance
 Publié: 2025-03-13T11:37:18+01:00
 
