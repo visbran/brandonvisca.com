@@ -20,6 +20,11 @@ export default defineConfig({
     proseImageSizes(),
     mdx({
       extendMarkdownConfig: true,
+      // Astro 6.4 laisse markdown.gfm/smartypants à undefined (options dépréciées) :
+      // le pipeline Markdown applique quand même ses défauts, mais MDX en hérite
+      // comme désactivés. Sans ces deux lignes, les tableaux des .mdx sortent en texte brut.
+      gfm: true,
+      smartypants: true,
     }),
     sitemap({
       // Les routes désactivées restent générées par le build : sans filtre
