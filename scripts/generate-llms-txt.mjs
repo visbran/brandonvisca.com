@@ -16,7 +16,7 @@ function getAllMdFiles(dir) {
     const path = join(dir, entry.name);
     if (entry.isDirectory()) {
       files.push(...getAllMdFiles(path));
-    } else if (entry.name.endsWith(".md")) {
+    } else if (/\.mdx?$/.test(entry.name)) {
       files.push(path);
     }
   }
@@ -28,7 +28,16 @@ function extractFrontmatter(content) {
   if (!match) return null;
   const raw = match[1];
   const fm = {};
+  let lastKey = null;
   for (const line of raw.split("\n")) {
+    // Liste YAML en bloc (`tags:` puis `  - linux`) : rattachée à la clé précédente
+    const item = line.match(/^\s+-\s+(.*)$/);
+    if (item && lastKey) {
+      if (!Array.isArray(fm[lastKey])) fm[lastKey] = [];
+      fm[lastKey].push(item[1].trim().replace(/^["']|["']$/g, ""));
+      continue;
+    }
+    if (/^\s/.test(line)) continue;
     const idx = line.indexOf(":");
     if (idx > 0) {
       const key = line.slice(0, idx).trim();
@@ -41,6 +50,7 @@ function extractFrontmatter(content) {
           .map((v) => v.trim().replace(/^["']|["']$/g, ""));
       }
       fm[key] = val;
+      lastKey = key;
     }
   }
   return fm;
@@ -49,7 +59,7 @@ function extractFrontmatter(content) {
 function slugFromPath(filePath) {
   // src/data/blog/2025-02-16-android-file-transfer-mac-alternatives-test-2025.md
   // or src/data/blog/proxmox/lxc-containers-guide.md
-  const base = filePath.replace(BLOG_DIR + "/", "").replace(/\.md$/, "");
+  const base = filePath.replace(BLOG_DIR + "/", "").replace(/\.mdx?$/, "");
   // Remove date prefix if present (YYYY-MM-DD-)
   return base.replace(/^\d{4}-\d{2}-\d{2}-/, "");
 }

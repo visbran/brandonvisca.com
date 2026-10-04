@@ -81,7 +81,7 @@ def _heading_anchor(text: str) -> str:
 
 
 def get_all_slugs() -> set:
-    return {f.stem for f in BLOG_DIR.glob("*.md")}
+    return {f.stem for f in BLOG_DIR.glob("*.md")} | {f.stem for f in BLOG_DIR.glob("*.mdx")}
 
 
 def has_accent(s: str) -> bool:

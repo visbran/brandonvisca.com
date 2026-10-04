@@ -267,13 +267,28 @@ export const TAG_META: Record<string, TagMeta> = {
     description:
       "Tous les articles sur la synchronisation horaire : Chrony, serveurs NTP et fuseaux horaires Linux.",
   },
+  dashboard: {
+    title: `Dashboards homelab — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur les dashboards du homelab : Homer, Dashy, Portainer et Cockpit déployés avec Docker.",
+  },
+  stockage: {
+    title: `Stockage — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur le stockage : stockage objet S3 avec MinIO, RAID Linux, bases de données et bibliothèques auto-hébergées.",
+  },
+  streaming: {
+    title: `Streaming — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur le streaming auto-hébergé : Plex, Navidrome pour la musique et Sunshine pour les jeux.",
+  },
 };
 
 /**
  * Retourne les meta-données SEO pour un tag donné.
  * Si le tag n'est pas dans le dictionnaire, retourne un fallback générique.
  */
-export function getTagMeta(tag: string, count: number): TagMeta {
+export function getTagMeta(tag: string): TagMeta {
   const meta = TAG_META[tag];
   if (meta) return meta;
 
