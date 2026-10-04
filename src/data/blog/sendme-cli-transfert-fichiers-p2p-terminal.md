@@ -12,6 +12,15 @@ tags:
 featured: true
 draft: false
 focusKeyword: sendme
+faqs:
+  - question: "Comment envoyer un fichier avec Sendme ?"
+    answer: "Lance sendme send suivi du fichier ou du dossier : Sendme affiche un ticket. Le destinataire lance sendme receive avec ce ticket, et le transfert se fait directement entre les deux machines."
+  - question: "Faut-il connaître l'IP du destinataire ?"
+    answer: "Non. Le ticket contient de quoi joindre l'expéditeur, et Sendme traverse le NAT automatiquement. Si la connexion directe échoue, le trafic passe par un relais Iroh, toujours chiffré."
+  - question: "Pourquoi le ticket ne fonctionne-t-il plus ?"
+    answer: "Les données restent sur la machine de l'expéditeur : si sendme send a été arrêté avant la fin de la réception, le ticket ne mène plus à rien. Il faut relancer l'envoi et transmettre le nouveau ticket."
+  - question: "Existe-t-il une version graphique de Sendme ?"
+    answer: "Oui, DashBeam (anciennement Alt-SendMe) repose sur la même technologie Iroh. Les tickets sont compatibles dans les deux sens entre DashBeam et Sendme CLI."
 ---
 > 💡 **TL;DR**
 > - Sendme CLI envoie des fichiers P2P en 2 commandes, sans IP, sans config SSH, sans serveur

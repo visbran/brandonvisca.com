@@ -13,6 +13,15 @@ featured: false
 draft: false
 focusKeyword: postgresql docker
 ogImage: "" 
+faqs:
+  - question: "Faut-il exposer le port 5432 de PostgreSQL ?"
+    answer: "Non si tes applications tournent en Docker sur le même réseau : elles joignent la base par son nom de service. Pour un client comme DBeaver sur ton poste, passe par un tunnel SSH."
+  - question: "Comment sauvegarder PostgreSQL en Docker ?"
+    answer: "Avec pg_dump pour une base, ou pg_dumpall pour toutes les bases du conteneur, lancé par un cron sur l'hôte via docker compose exec -T. Teste la restauration au moins une fois."
+  - question: "Comment régler la mémoire de PostgreSQL ?"
+    answer: "Le principal levier est shared_buffers, à environ 25 % de la RAM du serveur, avec effective_cache_size entre 50 et 75 %. Place ces réglages dans un fichier de configuration monté en lecture seule."
+  - question: "Peut-on passer à une version majeure en changeant juste le tag de l'image ?"
+    answer: "Non. Entre deux versions majeures, par exemple de 16 à 17, le format des fichiers de données change et le nouveau conteneur refuse de démarrer sur l'ancien volume. Il faut un dump complet, puis une restauration dans un volume neuf (ou pg_upgrade)."
 ---
 > 💡 **TL;DR**
 > - PostgreSQL est la base de données relationnelle open-source la plus avancée, avec un moteur ACID strict, le support JSON natif, et une fiabilité légendaire en production.

@@ -12,6 +12,15 @@ tags:
   - auto-hebergement
 featured: false
 draft: false
+faqs:
+  - question: "Faut-il Fail2Ban si j'ai déjà des clés SSH et ufw ?"
+    answer: "Oui. Les clés SSH empêchent le bruteforce de mot de passe, mais pas les floods de connexions. Ufw est un pare-feu statique. Fail2Ban est réactif. C'est complémentaire. Et pour configurer UFW correctement avec Docker sans que tes règles de pare-feu soient contournées, j'ai un guide complet sur UFW avec Docker. Si tu cherches à durcir l'ensemble de ton serveur, j'ai aussi publié un guide sur la sécurité Linux qui couvre SSH, sysctl et pare-feu."
+  - question: "Est-ce compatible avec Docker Swarm ou Kubernetes ?"
+    answer: "crazymax/fail2ban est prévu pour des hôtes uniques. En Swarm ou K8s, le réseau overlay rend iptables plus complexe. CrowdSec Docker ou un WAF cloud deviennent alors plus pertinents."
+  - question: "Et les logs journald sans fichier physique ?"
+    answer: "Le driver journald de Docker n'écrit pas de fichier texte. Deux options : basculer le driver vers json-file ou syslog, ou monter le socket journald dans le container avec un backend systemd compatible. C'est plus avancé."
+  - question: "Que faire si l'IP est derrière un CDN ?"
+    answer: "Fail2Ban lit les logs du reverse proxy. Si tu vois l'IP du CDN au lieu du client, vérifie que ton Traefik ou Nginx configure bien X-Forwarded-For et que tes logs l'exploitent."
 ---
 > 💡 **TL;DR**
 > - Fail2Ban via Docker bannit automatiquement les IP qui s'acharnent sur tes services (SSH, web)

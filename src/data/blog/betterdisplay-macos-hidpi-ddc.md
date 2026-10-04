@@ -11,6 +11,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: betterdisplay macos hidpi
+faqs:
+  - question: "Pourquoi mon écran externe est-il flou sur Mac ?"
+    answer: "macOS n'applique le rendu HiDPI qu'aux écrans qu'il reconnaît. Sur un écran 4K tiers, il propose souvent seulement la résolution native (trop petite) ou du 1920x1080 HiDPI (trop gros). BetterDisplay ajoute les modes intermédiaires, comme 2560x1440 HiDPI."
+  - question: "BetterDisplay est-il gratuit ?"
+    answer: "La version gratuite couvre le HiDPI de base, les résolutions personnalisées et un contrôle DDC limité. La version Pro, autour de 15 €, ajoute le DDC complet, les écrans virtuels illimités et la synchronisation automatique de la luminosité."
+  - question: "Pourquoi le contrôle DDC ne fonctionne-t-il pas sur mon écran ?"
+    answer: "Tous les écrans ne gèrent pas le DDC, surtout les vieux modèles HDMI d'entrée de gamme. Certains hubs USB-C bon marché filtrent aussi le signal : un câble DisplayPort ou USB-C direct règle souvent le problème."
+  - question: "Quelles sont les alternatives à BetterDisplay ?"
+    answer: "SwitchResX, plus ancien et plus technique, payant dès le départ, et DisplayBuddy, plus récent avec moins de fonctions avancées mais une interface soignée."
 ---
 > 💡 **TL;DR**
 > - BetterDisplay macOS hidpi force le rendu HiDPI sur n'importe quel écran externe, même non reconnu par Apple

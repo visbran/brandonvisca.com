@@ -12,6 +12,15 @@ featured: false
 draft: false
 focusKeyword: navidrome docker
 ogImage: "" 
+faqs:
+  - question: "Quelles applications mobiles fonctionnent avec Navidrome ?"
+    answer: "Toutes celles qui parlent l'API Subsonic : Ultrasonic ou DSub sur Android, Substreamer ou play:Sub sur iOS. Elles se connectent avec l'URL du serveur et tes identifiants Navidrome."
+  - question: "Sur quel port tourne Navidrome ?"
+    answer: "Sur le port 4533. Le compte administrateur se crée au premier accès sur http://IP_DU_SERVEUR:4533."
+  - question: "Navidrome ou Jellyfin pour la musique ?"
+    answer: "Navidrome est dédié à la musique et très léger, environ 50 Mo de RAM, avec l'API Subsonic et des apps mobiles gratuites. Jellyfin a du sens si tu veux un seul serveur pour les films, les séries et la musique."
+  - question: "Comment économiser la bande passante en mobilité ?"
+    answer: "Crée un profil de transcodage dans Settings > Transcoding, par exemple MP3 en 192 kbit/s, et active-le pour ton compte mobile. Tes FLAC restent intacts sur le serveur et sont convertis à la volée."
 ---
 > 💡 **TL;DR**
 > - Navidrome est un serveur de musique auto-hébergé, open-source et ultra-léger qui lit MP3, FLAC, OGG et AAC

@@ -13,6 +13,15 @@ featured: false
 draft: false
 focusKeyword: netboot docker
 ogImage: ""
+faqs:
+  - question: "Quels ports Netboot.xyz utilise-t-il ?"
+    answer: "Le port 69 en UDP pour le TFTP, le port 80 pour le HTTP et le port 3000 pour l'interface web. L'interface web n'a pas d'authentification par défaut : ne l'expose pas sur un réseau partagé."
+  - question: "Que configurer dans le DHCP pour booter en PXE ?"
+    answer: "Renseigne le Next Server avec l'IP du serveur Netboot.xyz, et le Boot Filename avec netboot.xyz.kpxe pour un BIOS ou netboot.xyz.efi pour un UEFI."
+  - question: "Pourquoi aucun menu PXE ne s'affiche-t-il ?"
+    answer: "Le plus souvent, le DHCP ne transmet pas le Next Server ou le Boot Filename. Si le TFTP ne répond pas, vérifie que le port UDP 69 est ouvert. Sur un autre VLAN, il faut un relais DHCP vers le serveur."
+  - question: "Faut-il télécharger les ISO à l'avance ?"
+    answer: "Non, Netboot.xyz récupère kernels et initrd à la volée depuis internet. Tu peux toutefois précharger les assets courants dans le volume assets pour accélérer les démarrages ou te passer d'internet."
 ---
 
 > 💡 **TL;DR**

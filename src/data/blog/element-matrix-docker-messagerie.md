@@ -13,6 +13,17 @@ featured: false
 draft: false
 focusKeyword: element matrix docker
 ogImage: ""
+faqs:
+  - question: "Quelle différence entre Matrix, Synapse et Element ?"
+    answer: "Matrix est le protocole de messagerie décentralisé, Synapse le homeserver de référence qui gère comptes, salons et fédération, et Element le client web que les utilisateurs ouvrent dans leur navigateur."
+  - question: "Combien de ressources faut-il pour héberger Synapse ?"
+    answer: "Compte 2 Go de RAM minimum, 4 Go recommandés pour Synapse avec PostgreSQL, et environ 20 Go de disque SSD. SQLite suffit pour tester, PostgreSQL est conseillé en production."
+  - question: "Comment créer le premier compte administrateur ?"
+    answer: "Synapse n'en crée pas par défaut. Lance register_new_matrix_user dans le conteneur synapse avec l'option -a, qui donne les droits d'administration."
+  - question: "Comment fédérer mon serveur avec le réseau Matrix ?"
+    answer: "Expose le port 8448, ou publie un fichier .well-known/matrix/server sur ton domaine principal qui pointe vers ton homeserver sur le port 443. Le Federation Tester officiel permet de vérifier la configuration."
+  - question: "Les messages sont-ils chiffrés de bout en bout ?"
+    answer: "Oui dans les salons privés où le chiffrement est activé : il est géré côté client, Synapse ne stocke que des messages chiffrés. Sauvegarde ta clé de récupération, sans elle tu perds l'historique chiffré en changeant d'appareil."
 ---
 > 💡 **TL;DR**
 >

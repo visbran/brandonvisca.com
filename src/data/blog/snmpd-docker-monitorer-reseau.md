@@ -13,6 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: snmpd docker
+faqs:
+  - question: "Sur quel port écoute un agent SNMP ?"
+    answer: "Sur le port 161 en UDP. Ce port ne doit servir que sur le réseau local : ferme-le sur ton pare-feu externe, SNMP n'est pas fait pour être exposé sur internet."
+  - question: "Pourquoi lancer snmpd en network_mode host ?"
+    answer: "Pour que l'agent voie les vraies interfaces réseau de l'hôte, avec leur état et leurs compteurs. Derrière le bridge Docker, il ne verrait que l'interface du conteneur. Ce mode ne fonctionne que sous Linux."
+  - question: "SNMPv2c ou SNMPv3 ?"
+    answer: "SNMPv2c envoie la community string en clair : acceptable sur un homelab isolé, à condition de la changer et de restreindre l'accès à ton sous-réseau. Dès que les métriques passent sur un réseau partagé ou en Wi-Fi, préfère SNMPv3, avec authentification et chiffrement."
+  - question: "Comment vérifier que l'agent SNMP répond ?"
+    answer: "Depuis une autre machine, lance snmpwalk -v2c -c suivi de ta community, de l'IP du serveur et d'un OID, par exemple 1.3.6.1.2.1.1. Un Timeout signifie souvent un port 161 filtré ou un conteneur arrêté."
 ---
 > 💡 **TL;DR**
 > - SNMPd transforme n'importe quelle machine en agent de monitoring réseau standardisé, exploitable par Zabbix, LibreNMS ou un simple script.

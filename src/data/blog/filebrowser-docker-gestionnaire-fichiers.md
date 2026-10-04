@@ -11,6 +11,15 @@ tags:
 featured: false
 draft: false
 ogImage: "" 
+faqs:
+  - question: "File Browser remplace-t-il Nextcloud ?"
+    answer: "Pour gérer et partager des fichiers, oui, avec environ 20 Mo de RAM et sans base de données externe. Pour la collaboration (édition de documents, calendrier, contacts), Nextcloud reste plus complet."
+  - question: "Comment limiter un utilisateur à un seul dossier ?"
+    answer: "Avec les scopes : chaque utilisateur reçoit un sous-dossier racine, par exemple /srv/photos, et ne voit rien en dehors. Ça se règle dans Paramètres > Gestion des utilisateurs ou avec la commande filebrowser users add et l'option --scope."
+  - question: "Pourquoi File Browser ne peut-il pas écrire dans mes dossiers ?"
+    answer: "Le conteneur tourne avec l'UID et le GID définis dans user. Si le dossier monté appartient à root, l'écriture échoue : corrige le propriétaire avec chown pour l'aligner sur cet utilisateur."
+  - question: "Peut-on exposer File Browser directement sur internet ?"
+    answer: "Non, il ne gère pas le HTTPS lui-même. Place-le derrière un reverse proxy avec TLS, comme Caddy qui obtient automatiquement un certificat Let's Encrypt."
 ---
 > 💡 **TL;DR**
 > - File Browser est un gestionnaire de fichiers web léger, moderne et open-source

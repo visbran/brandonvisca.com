@@ -14,6 +14,15 @@ featured: false
 draft: false
 focusKeyword: glpi agent docker
 ogImage: "" 
+faqs:
+  - question: "GLPI Agent en Docker convient-il aux postes Windows et Mac ?"
+    answer: "Non. Sur Windows et macOS, Docker Desktop fait tourner une VM Linux : le conteneur inventorie cette VM, pas la machine réelle. Pour ces postes, garde l'agent natif (MSI ou pkg) ; Docker est fait pour les serveurs Linux."
+  - question: "Pourquoi le conteneur doit-il être en mode privileged ?"
+    answer: "L'agent lit /proc, /sys et dmidecode pour récupérer le CPU, la RAM ou le numéro de série de la carte mère. Sans privileged: true, l'inventaire matériel remonte vide ou incomplet."
+  - question: "GLPI Agent remplace-t-il FusionInventory Agent ?"
+    answer: "Oui, c'est son successeur, et FusionInventory Agent n'est plus maintenu. GLPI Agent reste compatible avec le protocole FusionInventory, et utilise l'inventaire natif de GLPI 10 sans plugin."
+  - question: "Comment vérifier que l'agent remonte bien dans GLPI ?"
+    answer: "Regarde docker logs glpi-agent pour voir l'envoi de l'inventaire, puis cherche la machine dans Parc > Ordinateurs et vérifie son onglet Composants. Parc > Agents affiche la date du dernier contact."
 ---
 > 💡 **TL;DR**
 > - GLPI Agent scanne et remonte l'inventaire hardware/software de tes postes clients vers ton serveur GLPI

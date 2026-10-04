@@ -14,6 +14,15 @@ featured: false
 draft: false
 focusKeyword: proxmox ve helper scripts
 ogImage: "" 
+faqs:
+  - question: "Qui maintient les Proxmox VE Helper Scripts aujourd'hui ?"
+    answer: "La communauté, sur le dépôt community-scripts/ProxmoxVE, après l'archivage du dépôt d'origine tteck/Proxmox. Les anciennes commandes qui pointent vers tteck ne sont plus à utiliser."
+  - question: "Où faut-il lancer un helper script ?"
+    answer: "Dans le shell du nœud Proxmox, en root. Le script crée lui-même le conteneur LXC, règle CPU, RAM, disque et réseau, puis installe le service."
+  - question: "Est-il risqué d'exécuter ces scripts avec bash -c et wget ?"
+    answer: "Oui si tu le fais à l'aveugle : le script s'exécute en root sur l'hôte. Télécharge-le d'abord, lis-le et vérifie qu'il ne récupère rien en dehors du dépôt officiel."
+  - question: "Comment mettre à jour un service installé par un helper script ?"
+    answer: "Depuis le conteneur, lance la commande update : elle vérifie la dernière version, l'installe et redémarre le service. Fais d'abord une sauvegarde ou un snapshot du conteneur avec vzdump."
 ---
 > 💡 **TL;DR**
 > - Les **Proxmox VE Helper Scripts** (anciennement tteck/Proxmox) permettent de déployer des conteneurs LXC préconfigurés en une seule commande.

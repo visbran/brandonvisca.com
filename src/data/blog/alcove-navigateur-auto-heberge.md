@@ -12,6 +12,15 @@ featured: false
 draft: false
 focusKeyword: alcove docker
 ogImage: ""
+faqs:
+  - question: "Quelle est la différence entre Alcove et un bureau à distance ?"
+    answer: "Alcove se limite à un navigateur web dans un conteneur. Un bureau à distance te donne accès à tout le système. C'est plus léger, plus rapide à démarrer, et ça expose moins de surface d'attaque."
+  - question: "Est-ce que Alcove conserve l'historique de navigation ?"
+    answer: "Oui, si tu montes un volume Docker sur ./config. Sans volume, les données disparaissent à chaque redémarrage du conteneur. Pour une navigation éphémère, ne monte pas de volume persistant."
+  - question: "Peut-on utiliser Alcove sur un Raspberry Pi ?"
+    answer: "L'image linuxserver/chromium supporte les architectures ARM64. Sur un Raspberry Pi 4 ou 5 avec 4 Go de RAM minimum, ça fonctionne. Le Pi 3 manque de RAM pour être confortable."
+  - question: "Alcove est-il sécurisé pour consulter des sites bancaires ?"
+    answer: "Non. Même auto-hébergé, ce n'est pas un environnement certifié pour la bureautique sensible. Utilise-le pour tester, accéder à des ressources internes, ou naviguer de façon isolée, jamais pour des données critiques."
 ---
 > 💡 **TL;DR**
 > - **C'est quoi ?** Un navigateur web qui tourne dans un conteneur Docker et s'affiche dans ton navigateur

@@ -13,6 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: authelia docker
+faqs:
+  - question: "Faut-il modifier mes services pour les protéger avec Authelia ?"
+    answer: "Non. Authelia s'intercale au niveau du reverse proxy : Nginx Proxy Manager lui délègue la décision via auth_request avant de laisser passer la requête. Jellyfin, Gitea ou Nextcloud ne savent même pas qu'Authelia existe."
+  - question: "Quelles méthodes de double authentification Authelia propose-t-il ?"
+    answer: "TOTP (Google Authenticator, Aegis, 2FAS), WebAuthn pour les clés matérielles comme les YubiKey, et les notifications push via Duo Security. Pour un homelab, le TOTP suffit et ne dépend d'aucun service tiers."
+  - question: "Authelia a-t-il besoin d'un serveur SMTP ?"
+    answer: "Pas pour démarrer. Avec le notifier filesystem, Authelia écrit les emails de réinitialisation et d'inscription TOTP dans /config/notification.txt, que tu lis en SSH."
+  - question: "Pourquoi le portail de login Authelia boucle-t-il à l'infini ?"
+    answer: "La règle bypass pour le domaine du portail (auth.mondomaine.fr) manque dans access_control. Sans elle, Authelia exige une authentification pour afficher sa propre page de connexion."
 ---
 > 💡 **TL;DR**
 > - Authelia Docker centralise l'authentification de tous tes services derrière un portail SSO avec 2FA TOTP

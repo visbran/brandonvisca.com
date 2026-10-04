@@ -14,6 +14,23 @@ featured: false
 draft: false
 focusKeyword: code server docker
 ogImage: ""
+faqs:
+  - question: "Code-Server est-il gratuit ?"
+    answer: "Oui. Code-Server est open-source sous licence MIT. L'image Docker est publique et gratuite. Coder vend une version cloud managée (Coder/coder), mais code-server en lui-même est 100 % gratuit."
+  - question: "Puis-je utiliser GitHub Copilot ?"
+    answer: "Oui. Installe l'extension GitHub Copilot depuis le marketplace VS Code dans Code-Server. Connecte-toi avec ton compte GitHub. Ça marche exactement comme en local."
+  - question: "Les extensions payantes fonctionnent-elles ?"
+    answer: "Certaines extensions du marketplace VS Code officiel nécessitent un compte Microsoft et ne fonctionnent pas dans code-server (ex : certaines extensions Azure propriétaires). La majorité des extensions open-source fonctionnent parfaitement."
+  - question: "Code-Server supporte-t-il le debug ?"
+    answer: "Oui. Le debugging fonctionne pour la plupart des langages (Python, Node.js, Go, Rust, C++). Tu configures un launch.json comme en VS Code local."
+  - question: "Puis-je utiliser une base de données dans Code-Server ?"
+    answer: "Code-Server est un éditeur, pas un serveur de BDD. Mais comme tu es dans un conteneur Docker, tu peux lancer un conteneur MariaDB ou PostgreSQL à côté et y accéder depuis le terminal intégré. J'ai publié des guides pour MariaDB Docker et PostgreSQL Docker si tu veux une stack complète."
+  - question: "Le terminal intégré est-il un vrai shell ?"
+    answer: "Oui. C'est un vrai TTY connecté au conteneur. Tu peux lancer htop, docker, git, npm, python, tout ce que tu veux. Si le binaire n'est pas dans l'image, étends-la comme montré plus haut."
+  - question: "Code-Server est-il traduit en français ?"
+    answer: "L'interface est la même que VS Code desktop. Tu changes la langue dans les paramètres (Ctrl+Shift+P > \"Configure Display Language\" > Français)."
+  - question: "Puis-je dupliquer mon setup VS Code local ?"
+    answer: "Oui. Exporte tes paramètres VS Code local (fichier settings.json et dossier extensions), copie-les dans le volume config de Code-Server, et tu retrouves ton environnement exact."
 ---
 > 💡 **TL;DR**
 > - Code-Server projette VS Code dans ton navigateur : mêmes extensions, mêmes raccourcis, zéro installation locale

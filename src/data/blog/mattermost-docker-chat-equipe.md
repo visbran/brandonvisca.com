@@ -12,6 +12,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: mattermost docker
+faqs:
+  - question: "Quelle base de données utiliser avec Mattermost ?"
+    answer: "PostgreSQL, recommandé par les développeurs de Mattermost pour les performances. La stack du guide utilise PostgreSQL 16 dans un conteneur à côté de Mattermost."
+  - question: "Faut-il exposer le port 8065 de Mattermost ?"
+    answer: "Non. Lie-le à 127.0.0.1 et laisse le reverse proxy (Caddy dans le guide) gérer le HTTPS devant. Les applications mobiles exigent de toute façon un certificat valide."
+  - question: "Comment empêcher n'importe qui de créer un compte ?"
+    answer: "Dans System Console > Authentication > Signup, désactive Enable Open Server. Seul un administrateur peut alors inviter de nouveaux utilisateurs."
+  - question: "Comment sauvegarder une instance Mattermost ?"
+    answer: "Il faut deux choses : un dump de la base PostgreSQL avec pg_dump, et une archive des volumes Mattermost (données et configuration). Automatise les deux avec un cron vers un stockage distant."
 ---
 > 💡 **TL;DR**
 >

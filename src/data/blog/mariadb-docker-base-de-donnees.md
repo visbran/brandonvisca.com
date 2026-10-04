@@ -13,6 +13,15 @@ featured: false
 draft: false
 focusKeyword: mariadb docker
 ogImage: "" 
+faqs:
+  - question: "MariaDB peut-il remplacer MySQL sans modification ?"
+    answer: "Dans la grande majorité des cas, oui : MariaDB est un remplacement direct de MySQL. Remplacer l'image mysql par mariadb suffit pour la plupart des applications."
+  - question: "Faut-il exposer le port 3306 de MariaDB ?"
+    answer: "Non si tes applications sont en Docker sur le même réseau : elles joignent la base par son nom de service. Pour un client comme DBeaver sur ton poste, passe par un tunnel SSH plutôt que par un port publié."
+  - question: "Comment sauvegarder MariaDB en Docker ?"
+    answer: "Avec un dump régulier lancé depuis l'hôte par cron, via docker compose exec -T (sans TTY, sinon cron échoue). Teste aussi la restauration au moins une fois."
+  - question: "Comment mettre à jour MariaDB sans risque ?"
+    answer: "Fais un dump complet, lis les notes de version, change le tag de l'image, puis docker compose pull et up -d, et vérifie les logs. Évite les mises à jour automatiques non surveillées sur une base de données."
 ---
 > 💡 **TL;DR**
 > - MariaDB est un fork open-source de MySQL, plus rapide et 100% compatible, idéal pour remplacer MySQL dans tes stacks Docker.

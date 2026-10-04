@@ -13,6 +13,19 @@ featured: false
 draft: false
 focusKeyword: memos docker
 ogImage: "" 
+faqs:
+  - question: "Puis-je utiliser PostgreSQL à la place de SQLite ?"
+    answer: "Non, Memos utilise exclusivement SQLite. C'est un choix architectural délibéré pour maintenir la simplicité et la légèreté. Si tu as besoin d'une base PostgreSQL, regarde du côté de Outline ou Wiki.js."
+  - question: "Est-ce que Memos gère les images et les pièces jointes ?"
+    answer: "Oui. Les fichiers uploadés sont stockés dans le volume /var/opt/memos du conteneur. Tu peux uploader des images, des PDF, des archives directement dans une note."
+  - question: "Peut-on écrire en Markdown étendu ?"
+    answer: "Memos supporte le Markdown standard (CommonMark) avec des extensions pour les tableaux, les blocs de code avec coloration syntaxique, et les tâches checklists. Pas de Mermaid ou de LaTeX natif pour l'instant."
+  - question: "Le service est-il accessible hors ligne ?"
+    answer: "Memos est une webapp. Si tu l'héberges en local sans exposition publique, il est accessible depuis ton réseau local. Pour un accès distant hors ligne, il te faut un VPN (WireGuard) ou une exposition HTTPS publique via reverse proxy."
+  - question: "Puis-je migrer mes notes vers un autre outil ?"
+    answer: "Oui, l'export ZIP de Memos contient tes notes au format Markdown brut. Tu peux les importer dans Joplin, Obsidian, ou tout autre outil compatible Markdown en quelques minutes."
+  - question: "Memos est-il traduit en français ?"
+    answer: "Oui, l'interface est entièrement traduite en français. La langue se change dans les paramètres utilisateur ou globaux."
 ---
 > 💡 **TL;DR**
 > - Memos est un bloc-notes auto-hébergé ultra-léger, open-source et pensé pour les notes rapides

@@ -13,6 +13,17 @@ featured: false
 draft: false
 focusKeyword: crowdsec docker
 ogImage: ""
+faqs:
+  - question: "Quelle est la différence entre CrowdSec et Fail2Ban ?"
+    answer: "Fail2Ban bannit à partir de tes seuls logs, avec des règles statiques. CrowdSec ajoute une base de signatures partagée par la communauté et sépare la détection (agent) du blocage (bouncers). Pour un petit serveur isolé, Fail2Ban suffit."
+  - question: "À quoi sert un bouncer CrowdSec ?"
+    answer: "L'agent détecte, le bouncer bloque. Il lit les décisions de la Local API et les applique : rejet HTTP 403 au niveau de Traefik, ou règles iptables sur l'hôte avec le bouncer firewall."
+  - question: "Combien de ressources demande CrowdSec ?"
+    answer: "Environ 512 Mo de RAM pour la stack, 1 Go pour être à l'aise. Sur un Raspberry Pi avec des logs verbeux, l'analyse peut devenir gourmande en CPU."
+  - question: "Comment débannir une IP bloquée par erreur ?"
+    answer: "Avec docker exec -it crowdsec cscli decisions delete --ip suivi de l'adresse. Pour éviter que ça se reproduise, ajoute l'IP dans whitelists.yaml."
+  - question: "Faut-il exposer la Local API de CrowdSec ?"
+    answer: "Non. Son port 8080 doit rester interne au réseau Docker. Pour utiliser cscli à distance, passe par un tunnel SSH ou un VPN."
 ---
 > 💡 **TL;DR**
 > - CrowdSec analyse tes logs en temps réel, détecte les attaques et bloque les IPs grâce à une base de signatures collaborative

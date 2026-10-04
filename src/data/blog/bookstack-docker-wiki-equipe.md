@@ -11,6 +11,19 @@ tags:
 featured: false
 draft: false
 ogImage: ""
+faqs:
+  - question: "Puis-je utiliser PostgreSQL à la place de MariaDB ?"
+    answer: "Oui, BookStack supporte officiellement MySQL/MariaDB et PostgreSQL. Modifie simplement les variables DB_HOST, DB_PORT, DB_USER, DB_PASS et change l'image du service DB pour postgres:15-alpine."
+  - question: "Est-ce que BookStack gère les images et les pièces jointes ?"
+    answer: "Oui. Les fichiers sont stockés dans le volume /config du conteneur. Tu peux aussi configurer un stockage S3 (MinIO, AWS) si tu préfères externaliser."
+  - question: "Peut-on écrire en Markdown ?"
+    answer: "L'éditeur principal est WYSIWYG, mais BookStack propose un mode Markdown alternatif dans les paramètres d'édition, et il convertit automatiquement le Markdown collé depuis le presse-papiers."
+  - question: "Le service est-il accessible hors ligne ?"
+    answer: "Si tu l'héberges en local sans reverse proxy public, oui, il est accessible depuis ton réseau local. Pour un accès distant, il te faut soit un VPN (WireGuard), soit une exposition HTTPS publique via reverse proxy."
+  - question: "Puis-je dupliquer une page ou un livre entier ?"
+    answer: "Oui, la fonction \"Copier\" existe au niveau de la page, du chapitre et du livre. C'est pratique pour créer des templates de procédures."
+  - question: "BookStack est-il traduit en français ?"
+    answer: "Oui, l'interface est entièrement traduite en français. La langue se change dans les paramètres utilisateur ou globaux."
 ---
 > 💡 **TL;DR**
 > - BookStack est un wiki open-source pensé pour les équipes, avec une organisation en étagères, livres et chapitres
