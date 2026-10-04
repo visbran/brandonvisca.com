@@ -11,6 +11,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: boring notch
+faqs:
+  - question: "Boring.Notch est-il gratuit ?"
+    answer: "Oui, Boring.Notch est gratuit et open-source. Il ne demande ni compte, ni serveur externe, ni droits administrateur particuliers."
+  - question: "Comment installer Boring.Notch ?"
+    answer: "Depuis le dépôt GitHub du projet ou avec Homebrew via son propre tap : brew install --cask theboredteam/boring-notch/boring-notch. Il faut ensuite l'autoriser dans Réglages Système > Confidentialité et sécurité > Accessibilité."
+  - question: "Boring.Notch fonctionne-t-il sur tous les MacBook ?"
+    answer: "Seulement sur les MacBook avec encoche : MacBook Pro 14 et 16 pouces Apple Silicon et MacBook Air M2 et suivants. Sur un MacBook sans notch, l'app n'a pas d'intérêt."
+  - question: "Boring.Notch consomme-t-il beaucoup de ressources ?"
+    answer: "Environ 80 à 120 Mo de RAM et un faible pourcentage de CPU pour les animations. Il ne s'affiche que sur l'écran principal en configuration multi-écrans."
 ---
 > 💡 **TL;DR**
 > - Boring.Notch transforme la notch de ton MacBook en une Dynamic Island fonctionnelle, gratuite et open-source

@@ -12,6 +12,15 @@ featured: false
 draft: false
 focusKeyword: droppy docker
 ogImage: "" 
+faqs:
+  - question: "Droppy a-t-il besoin d'une base de données ?"
+    answer: "Non. Les images sont stockées directement sur le disque, dans le volume files, et la configuration dans le volume config. Il n'y a ni MySQL, ni PostgreSQL, ni Redis à gérer."
+  - question: "Sur quel port tourne Droppy ?"
+    answer: "Sur le port 8989. Une fois le conteneur lancé, l'interface est accessible sur http://IP_DU_SERVEUR:8989. Pour l'exposer sur internet, passe par un reverse proxy HTTPS comme Caddy ou Traefik."
+  - question: "Comment partager une image avec Droppy ?"
+    answer: "Glisse le fichier dans l'interface, puis clic droit et Copy link : tu obtiens un lien direct vers le fichier, sans interface autour. Un dossier entier se partage avec Share, et le partage peut être révoqué."
+  - question: "Comment sauvegarder Droppy ?"
+    answer: "Il suffit d'archiver les dossiers files et config, par exemple avec tar, ou de les ajouter à ton outil de sauvegarde habituel. Il n'y a aucune base à exporter."
 ---
 > 💡 **TL;DR**
 > - Droppy est un serveur de partage d'images auto-hébergé, ultra-léger et open-source

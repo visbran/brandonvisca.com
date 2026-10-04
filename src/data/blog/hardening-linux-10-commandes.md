@@ -12,6 +12,15 @@ tags:
 featured: false
 draft: false
 ogImage: "" 
+faqs:
+  - question: "Quelles sont les premières mesures pour sécuriser un serveur Linux ?"
+    answer: "Mettre à jour le système et activer unattended-upgrades, fermer les ports avec UFW, puis durcir SSH : pas de connexion root, authentification par clé uniquement. Ces trois étapes bloquent l'essentiel des attaques automatisées."
+  - question: "UFW protège-t-il les conteneurs Docker ?"
+    answer: "Pas par défaut : Docker écrit ses propres règles iptables et un port publié peut rester joignable malgré UFW. Il faut une configuration spécifique pour que les règles s'appliquent aussi aux conteneurs."
+  - question: "Comment éviter de se bloquer dehors en modifiant SSH ?"
+    answer: "Garde ta session actuelle ouverte et teste la nouvelle connexion dans un second terminal, avec le nouveau port et ta clé, avant de fermer quoi que ce soit."
+  - question: "Comment mesurer le niveau de durcissement d'un serveur ?"
+    answer: "Lance lynis audit system : Lynis donne un score de durcissement et une liste de recommandations priorisées. Le relancer chaque trimestre permet de suivre les nouvelles alertes."
 ---
 > 💡 **TL;DR**
 > - Durcir un serveur Linux prend dix minutes avec dix commandes, sans être expert en sécurité

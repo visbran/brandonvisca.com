@@ -12,6 +12,15 @@ featured: false
 draft: false
 focusKeyword: vibe island macos
 ogImage: ""
+faqs:
+  - question: "Quelle différence entre Vibe Island et Open Island ?"
+    answer: "Vibe Island est une app propriétaire vendue 19,99 dollars. Open Island est gratuit et open source sous licence GPL v3, avec le même objectif : surveiller tes agents IA de code depuis la notch du Mac."
+  - question: "Quels agents IA Open Island sait-il surveiller ?"
+    answer: "Claude Code, Codex CLI, Cursor en mode agent, Gemini CLI et OpenCode, lancés depuis Terminal.app, iTerm2, Ghostty, Kitty, WezTerm ou une session tmux."
+  - question: "Open Island envoie-t-il des données à un serveur ?"
+    answer: "Non, tout fonctionne en local : pas de serveur, pas de compte et pas de télémétrie. L'app détecte les sessions en lisant les processus et les fichiers de session sur ta machine."
+  - question: "Open Island fonctionne-t-il sur un Mac sans notch ?"
+    answer: "Oui, le panneau s'affiche alors dans la barre de menu classique. L'app est réservée à macOS : pas de version Windows ni Linux."
 ---
 > 💡 **TL;DR**
 > - Open Island est le fork open-source (GPL v3) de Vibe Island, une app macOS qui s'installe dans la notch pour surveiller tes agents IA de code

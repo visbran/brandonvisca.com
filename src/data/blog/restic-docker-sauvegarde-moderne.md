@@ -13,6 +13,17 @@ featured: false
 draft: false
 focusKeyword: restic docker
 ogImage: ""
+faqs:
+  - question: "Restic a-t-il besoin d'un serveur de sauvegarde ?"
+    answer: "Non, Restic est uniquement un client : il écrit directement dans un dépôt sur S3, MinIO, Backblaze B2, Azure, SFTP ou un disque local. BorgBackup, lui, demande un serveur accessible en SSH."
+  - question: "Comment fonctionne la déduplication de Restic ?"
+    answer: "Les fichiers sont découpés en blocs identifiés par leur empreinte. Un bloc déjà présent dans le dépôt n'est pas renvoyé : si tu modifies une petite partie d'un gros fichier, seuls les blocs changés sont stockés."
+  - question: "Comment gérer la rétention des sauvegardes Restic ?"
+    answer: "Avec restic forget, par exemple --keep-daily 7 --keep-weekly 4 --keep-monthly 12, suivi de --prune pour libérer l'espace. L'option --dry-run montre ce qui serait supprimé avant de le faire."
+  - question: "Que se passe-t-il si je perds le mot de passe du dépôt ?"
+    answer: "Les sauvegardes deviennent définitivement illisibles : tout est chiffré localement avec ce mot de passe. Garde-le dans un gestionnaire de mots de passe, avec une copie hors ligne."
+  - question: "Comment vérifier qu'un dépôt Restic est sain ?"
+    answer: "Lance restic check régulièrement, par exemple une fois par mois, et restaure de temps en temps un fichier pour t'assurer que la restauration fonctionne vraiment."
 ---
 > 💡 **TL;DR**
 > - Restic est un client de sauvegarde en Go qui déduplique, chiffre et envoie tes backups vers S3, B2, Azure ou SFTP sans serveur distant

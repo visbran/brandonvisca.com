@@ -11,6 +11,15 @@ tags:
   - debutant
 featured: false
 draft: false
+faqs:
+  - question: "Pourquoi un port bloqué par UFW reste-t-il ouvert avec Docker ?"
+    answer: "Docker écrit ses propres règles iptables pour chaque port publié, et elles passent avant celles d'UFW. ufw status affiche le port fermé, mais il reste joignable depuis l'extérieur."
+  - question: "Comment faire respecter les règles UFW par Docker ?"
+    answer: "Deux approches : désactiver la gestion d'iptables par Docker avec \"iptables\": false dans /etc/docker/daemon.json, ou utiliser le script ufw-docker, qui ajoute des règles dans /etc/ufw/after.rules et s'utilise avec ufw-docker allow."
+  - question: "Pourquoi mes conteneurs n'ont-ils plus internet après iptables false ?"
+    answer: "Docker ne crée plus la règle de masquerade. Ajoute-la à la main pour le sous-réseau de tes conteneurs, par exemple 172.17.0.0/16, et rends-la persistante avec iptables-persistent."
+  - question: "Comment vérifier que le pare-feu filtre vraiment ?"
+    answer: "Ne te fie pas à ufw status : lance nmap depuis une machine externe sur tes ports. Seuls ceux que tu as autorisés doivent apparaître ouverts."
 ---
 > 💡 **TL;DR**
 > - UFW est le pare-feu le plus simple sous Linux, mais Docker contourne ses règles via iptables

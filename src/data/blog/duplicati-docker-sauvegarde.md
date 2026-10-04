@@ -11,6 +11,15 @@ tags:
   - sauvegarde
 featured: false
 draft: false
+faqs:
+  - question: "Sur quel port est l'interface de Duplicati ?"
+    answer: "Sur le port 8200, à l'adresse http://IP_DU_SERVEUR:8200. Définis un mot de passe avec DUPLICATI__WEBSERVICE_PASSWORD : par défaut l'interface n'en demande pas."
+  - question: "Les sauvegardes Duplicati sont-elles chiffrées ?"
+    answer: "Oui. Duplicati chiffre les données en AES-256 localement, avant de les envoyer vers la destination. Si tu perds le mot de passe de chiffrement, les sauvegardes sont irrécupérables."
+  - question: "Vers quelles destinations Duplicati peut-il sauvegarder ?"
+    answer: "Disque local ou USB, NAS en SMB, SFTP, WebDAV, S3 (AWS ou MinIO), Backblaze B2, Wasabi et Google Drive. Combiner une copie locale et une copie distante respecte la règle 3-2-1."
+  - question: "Peut-on sauvegarder une base de données en cours d'utilisation ?"
+    answer: "Il ne faut pas copier les fichiers bruts d'une base PostgreSQL ou MariaDB active. Fais d'abord un dump de la base, puis sauvegarde ce dump avec Duplicati."
 ---
 > 💡 **TL;DR**
 > - Sauvegardes chiffrées AES-256 vers n'importe quel stockage local ou cloud (S3, B2, SFTP, Drive)

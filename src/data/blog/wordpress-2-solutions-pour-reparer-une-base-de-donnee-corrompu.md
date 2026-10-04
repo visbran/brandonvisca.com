@@ -13,6 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: réparer wordpress
+faqs:
+  - question: "Comment activer l'outil de réparation de WordPress ?"
+    answer: "Ajoute define('WP_ALLOW_REPAIR', true); dans wp-config.php, puis ouvre /wp-admin/maint/repair.php et choisis Réparer, ou Réparer et optimiser la base de données."
+  - question: "Faut-il retirer WP_ALLOW_REPAIR après la réparation ?"
+    answer: "Oui, immédiatement. La page de réparation est accessible sans authentification : tant que la ligne reste dans wp-config.php, n'importe qui peut lancer l'opération sur ta base."
+  - question: "Que faire si l'outil de WordPress ne suffit pas ?"
+    answer: "Passe par phpMyAdmin : sélectionne les tables puis Réparer la table, ce qui lance REPAIR TABLE. CHECK TABLE aide à diagnostiquer une table qui reste en erreur. En dernier recours, restaure une sauvegarde."
+  - question: "L'erreur de connexion à la base signifie-t-elle forcément une base corrompue ?"
+    answer: "Non. Vérifie d'abord les identifiants de la base dans wp-config.php : un mauvais mot de passe ou un mauvais hôte produisent exactement le même message."
 ---
 Ton site WordPress affiche "Erreur lors de la connexion à la base de données" au pire moment. Pas de panique. Une base MySQL corrompue, ça arrive : crash serveur, mise à jour ratée, coupure de courant en pleine écriture.
 

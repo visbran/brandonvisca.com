@@ -11,6 +11,17 @@ tags:
 featured: false
 draft: false
 focusKeyword: numi macos calculatrice textuelle
+faqs:
+  - question: "Numi est-il gratuit ?"
+    answer: "Oui, la version de base est gratuite et très complète. La version Pro (~15€) ajoute des thèmes et options avancées."
+  - question: "Numi fonctionne-t-il offline ?"
+    answer: "Les calculs standards oui. Les conversions de devises nécessitent une connexion internet pour les taux à jour."
+  - question: "Peut-on utiliser Numi sur Windows ou Linux ?"
+    answer: "Oui ! Numi est disponible sur macOS, Windows et Linux. L'expérience est quasi identique sur les trois plateformes."
+  - question: "Mes calculs sont-ils privés ?"
+    answer: "Totalement. Tout reste en local sur ta machine. Aucune donnée n'est envoyée vers des serveurs, hormis les requêtes de taux de change pour les devises."
+  - question: "Y a-t-il un équivalent iOS ?"
+    answer: "Pas officiellement, mais la version web et le widget macOS permettent un usage proche sur iPad."
 ---
 
 > 💡 **TL;DR**

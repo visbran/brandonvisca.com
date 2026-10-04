@@ -13,6 +13,15 @@ featured: false
 draft: false
 focusKeyword: nftables docker
 ogImage: ""
+faqs:
+  - question: "Docker fonctionne-t-il avec nftables ?"
+    answer: "Par défaut, Docker écrit ses propres règles iptables. Pour tout gérer dans nftables, il faut désactiver iptables dans /etc/docker/daemon.json, puis recréer dans nftables le NAT, le forwarding et les redirections de ports."
+  - question: "Que se passe-t-il quand on désactive iptables dans Docker ?"
+    answer: "Les conteneurs perdent l'accès à internet et les ports publiés avec -p ne répondent plus. Chaque port doit être redirigé par une règle DNAT dans nftables, et le masquerade configuré pour le trafic sortant."
+  - question: "Comment tester une configuration nftables sans se bloquer dehors ?"
+    answer: "Vérifie d'abord la syntaxe avec nft -c -f /etc/nftables.conf. Sur un serveur distant, programme un retour automatique à l'ancienne configuration après deux minutes, et annule-le si tout fonctionne."
+  - question: "Faut-il choisir nftables ou UFW avec Docker ?"
+    answer: "UFW suffit pour bloquer quelques ports sur un petit serveur. nftables convient quand tu veux un contrôle complet du trafic, des sets d'adresses IP et un seul fichier de règles versionné."
 ---
 > 💡 **TL;DR**
 > - nftables remplace iptables avec une syntaxe lisible, une meilleure perf et une gestion unifiée du filtrage

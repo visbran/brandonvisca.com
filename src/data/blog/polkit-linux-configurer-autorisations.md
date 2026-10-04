@@ -12,6 +12,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: polkit linux
+faqs:
+  - question: "Quelle est la différence entre Polkit et sudo ?"
+    answer: "sudo donne les droits root pour exécuter des commandes. Polkit autorise des actions système précises passant par D-Bus, comme redémarrer un service, selon le groupe, la session ou le contexte. Les deux outils sont complémentaires."
+  - question: "Où placer ses règles Polkit ?"
+    answer: "Dans /etc/polkit-1/rules.d/, sous forme de fichiers .rules écrits en JavaScript. Ne modifie pas /usr/share/polkit-1/rules.d/ : ces fichiers appartiennent aux paquets et sont écrasés à chaque mise à jour."
+  - question: "Comment autoriser un groupe à redémarrer un service sans sudo ?"
+    answer: "Écris une règle polkit.addRule qui vérifie l'action org.freedesktop.systemd1.manage-units, le nom de l'unité et le groupe de l'utilisateur, puis renvoie polkit.Result.YES. Le guide détaille l'exemple pour Nginx."
+  - question: "Pourquoi ma règle Polkit ne s'applique-t-elle pas ?"
+    answer: "Vérifie que le fichier se termine par .rules et ne contient pas d'erreur de syntaxe JavaScript, puis consulte journalctl -u polkit. Les fichiers sont chargés par ordre alphabétique : une règle antérieure peut déjà avoir tranché."
 ---
 > 💡 **TL;DR**
 > - Polkit Linux contrôle quels utilisateurs et programmes peuvent exécuter des actions sensibles sous Linux

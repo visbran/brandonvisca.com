@@ -14,6 +14,17 @@ tags:
 featured: false
 draft: false
 focusKeyword: "nginx proxy manager"
+faqs:
+  - question: "Quels sont les identifiants par défaut de Nginx Proxy Manager ?"
+    answer: "L'interface d'administration est sur le port 81. Les identifiants par défaut sont admin@example.com et changeme : change-les immédiatement dans Settings > Users."
+  - question: "Comment obtenir un certificat SSL avec Nginx Proxy Manager ?"
+    answer: "Dans l'onglet SSL du proxy host, coche Request a new SSL Certificate, Force SSL et l'acceptation des conditions Let's Encrypt. Le certificat se renouvelle ensuite tout seul."
+  - question: "Pourquoi la demande de certificat Let's Encrypt échoue-t-elle ?"
+    answer: "Le plus souvent, le DNS ne pointe pas encore vers ton IP publique ou les ports 80 et 443 ne sont pas joignables depuis internet. Let's Encrypt limite aussi le nombre de certificats identiques par semaine."
+  - question: "Comment résoudre une erreur 502 Bad Gateway ?"
+    answer: "Vérifie que le service cible écoute bien sur le port indiqué et, s'il est sur un réseau Docker personnalisé, que Nginx Proxy Manager est sur le même réseau. Sur un réseau partagé, utilise le nom du conteneur comme hôte."
+  - question: "Faut-il laisser le port 81 ouvert ?"
+    answer: "Non. Bloque-le depuis l'extérieur et accède à l'interface d'administration par un tunnel SSH ou un VPN."
 ---
 > 💡 **TL;DR**
 > - SSL Let's Encrypt auto en quelques clics, renouvellement transparent tous les 90 jours

@@ -14,6 +14,19 @@ featured: false
 draft: false
 focusKeyword: glpi docker
 ogImage: ""
+faqs:
+  - question: "L'installation bloque sur \"Impossible de se connecter à la base de données\" ?"
+    answer: "Vérifie que MariaDB est bien démarrée avec docker compose ps. Le healthcheck doit être passé. Si tu es trop pressé et que tu ouvres GLPI avant que MariaDB soit prête, attends trente secondes et rafraîchis."
+  - question: "Je peux utiliser PostgreSQL au lieu de MariaDB ?"
+    answer: "Techniquement GLPI supporte PostgreSQL. En pratique, 90% des installations documentées utilisent MariaDB/MySQL. Si tu veux t'aventurer sur PostgreSQL, prépare-toi à chercher plus longtemps quand un truc coince."
+  - question: "Comment sauvegarder la base de données régulièrement ?"
+    answer: "Ajoute un conteneur mariadb-dump dans ton compose avec une tâche cron, ou utilise un outil comme Beszel ou un simple script cron sur l'hôte."
+  - question: "GLPI est lent, que faire ?"
+    answer: "Premier réflexe : vérifie les ressources. GLPI + MariaDB sur 1 Go de RAM, ça rampe. Monte à 4 Go. Deuxième réflexe : active le cache dans Configuration > Performances. Troisième réflexe : vérifie que tu n'as pas laissé le mode debug activé."
+  - question: "L'image officielle n'existe plus ou ne marche pas ?"
+    answer: "L'image glpi/glpi est maintenue par le projet. Si jamais elle disparaît, l'image communautaire diouxx/glpi est la référence historique et reste disponible."
+  - question: "Puis-je mettre plusieurs instances GLPI sur la même machine ?"
+    answer: "Oui. Change le port externe dans le compose (par exemple 8081:80 pour la deuxième instance) et utilise des noms de volumes différents."
 ---
 > 💡 **TL;DR**
 > - GLPI est un ITSM open source complet : helpdesk, inventaire, ticketing, gestion des licences

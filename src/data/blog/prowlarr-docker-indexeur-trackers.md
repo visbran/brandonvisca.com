@@ -15,6 +15,17 @@ featured: false
 draft: false
 focusKeyword: prowlarr docker
 ogImage: ""
+faqs:
+  - question: "Prowlarr ne synchronise pas mes indexeurs vers Radarr, pourquoi ?"
+    answer: "Vérifie d'abord l'URL et la clé API de Radarr dans Prowlarr (Settings → Apps). Assure-toi que les deux conteneurs sont sur le même réseau Docker (mediacenter). Teste la connexion avec le bouton Test : si tu as une erreur de timeout, c'est probablement un problème de réseau ou de firewall."
+  - question: "Prowlarr affiche \"Unable to connect to indexer\", que faire ?"
+    answer: "Ce message indique que le tracker ne répond pas ou a changé d'adresse. Vérifie : Si c'est un tracker public, l'URL de base est peut-être bloquée par ton FAI. Utilise un DNS non filtrant comme AdGuard Home ou configure un VPN sur ton routeur. Si c'est un tracker privé, ton compte est peut-être banni ou la méthode d'authentification a changé. Vérifie aussi que le tracker n'est pas en maintenance en consultant leur page officielle ou un forum."
+  - question: "Est-ce que Prowlarr remplace Jackett ?"
+    answer: "Oui et non. Prowlarr est le successeur \"officiel\" dans l'écosystème *Arr et offre une intégration native bien plus propre que Jackett. Cependant, Jackett supporte encore plus de trackers que Prowlarr. Si un tracker très spécifique n'est pas dans Prowlarr, tu peux utiliser Jackett comme intermédiaire et l'ajouter comme indexer custom dans Prowlarr. Mais dans 95% des cas, Prowlarr suffit amplement."
+  - question: "Puis-je utiliser Prowlarr sans Radarr/Sonarr ?"
+    answer: "Techniquement oui, Prowlarr a une fonction de recherche manuelle qui te permet de trouver des releases directement. Cependant, son véritable intérêt réside dans la synchronisation automatique avec les applications *Arr. Sans cela, tu perds l'essentiel de sa valeur."
+  - question: "Prowlarr consomme-t-il beaucoup de ressources ?"
+    answer: "Non. Prowlarr est très léger. En usage normal, il consomme moins de 200 Mo de RAM et une fraction de CPU. Les pics surviennent uniquement pendant les synchros massives ou quand tu lances une recherche manuelle sur plusieurs trackers simultanément."
 ---
 > 💡 **TL;DR**
 > - Prowlarr centralise la gestion de tous tes indexeurs de trackers en un seul point.

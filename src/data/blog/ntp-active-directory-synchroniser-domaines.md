@@ -13,6 +13,17 @@ tags:
 featured: false
 draft: false
 focusKeyword: ntp active directory
+faqs:
+  - question: "Pourquoi l'heure est-elle critique dans Active Directory ?"
+    answer: "Kerberos refuse l'authentification quand le décalage entre un client et le contrôleur de domaine dépasse 5 minutes, avec l'erreur KRB_AP_ERR_SKEW. Une heure cohérente sert aussi à corréler les logs."
+  - question: "Quel serveur doit fournir l'heure au domaine ?"
+    answer: "Le contrôleur de domaine qui détient le rôle PDC Emulator, que tu trouves avec netdom query fsmo. C'est le seul à pointer vers des sources NTP externes ; les autres DC et les postes suivent la hiérarchie du domaine."
+  - question: "Comment configurer le PDC Emulator sur des serveurs NTP publics ?"
+    answer: "Avec w32tm /config /manualpeerlist suivi d'au moins trois serveurs, par exemple ceux de pool.ntp.org, plus /syncfromflags:manual /reliable:yes /update. Redémarre ensuite le service w32time et force une resynchronisation."
+  - question: "Que signifie Stratum 16 dans w32tm /query /status ?"
+    answer: "Le service n'a pas réussi à se synchroniser. Vérifie que le port UDP 123 sortant n'est pas bloqué, que les serveurs configurés répondent et que w32time a bien été redémarré après la configuration."
+  - question: "Comment garder les serveurs Linux joints au domaine à l'heure ?"
+    answer: "Pointe Chrony vers le PDC Emulator ou un contrôleur de domaine local. Sans ça, un décalage de plus de 5 minutes bloque l'authentification Kerberos via SSSD."
 ---
 > 💡 **TL;DR**
 > - Active Directory dépend d'un temps synchrone : Kerberos plante si le décalage dépasse 5 minutes

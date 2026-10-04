@@ -13,6 +13,17 @@ featured: false
 draft: false
 focusKeyword: cloudflare tunnel docker
 ogImage: ""
+faqs:
+  - question: "Cloudflare Tunnel fonctionne-t-il derrière un CGNAT ?"
+    answer: "Oui. C'est ton serveur qui ouvre la connexion sortante vers Cloudflare : il suffit qu'il puisse sortir en HTTPS sur le port 443. Aucune IP publique ni ouverture de port n'est nécessaire, même en 4G ou derrière un CGNAT."
+  - question: "Cloudflare Tunnel est-il gratuit ?"
+    answer: "Oui pour un usage personnel. Il faut seulement un domaine géré par Cloudflare, ou dont les serveurs DNS pointent vers Cloudflare."
+  - question: "Cloudflare Tunnel remplace-t-il un VPN comme WireGuard ou Tailscale ?"
+    answer: "Non, ce sont deux usages différents. Cloudflare Tunnel expose des services web au public. Pour accéder à ton réseau interne en tant que client (partages NAS, bureau à distance), un VPN reste la bonne solution."
+  - question: "Comment protéger un service exposé par le tunnel ?"
+    answer: "Avec une application Cloudflare Access (Zero Trust > Access > Applications) : Cloudflare affiche une page d'authentification, par code envoyé par email, GitHub ou Google, avant de laisser passer le trafic, même si le service n'a aucune authentification."
+  - question: "Que faire en cas d'erreur 502 ou Connection refused ?"
+    answer: "Le service cible n'est pas joignable depuis le conteneur cloudflared : vérifie qu'il est sur le même réseau Docker et qu'il écoute bien sur le port indiqué dans l'ingress. Un wget depuis le conteneur cloudflared permet de le tester."
 ---
 > 💡 **TL;DR**
 >

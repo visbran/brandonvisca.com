@@ -11,6 +11,17 @@ tags:
 featured: false
 draft: false
 focusKeyword: cron linux avance
+faqs:
+  - question: "Pourquoi mon script marche dans le terminal mais pas avec cron ?"
+    answer: "Cron ne charge ni .bashrc ni .profile : son PATH se limite souvent à /usr/bin:/bin. Un binaire placé ailleurs, comme /usr/local/bin/python3, n'est pas trouvé. Déclare PATH en haut du crontab ou utilise des chemins absolus."
+  - question: "Pourquoi le caractère % casse-t-il une ligne crontab ?"
+    answer: "Dans une ligne crontab, % sépare la commande de son entrée standard : tout ce qui suit est envoyé en stdin. Échappe-le avec un backslash (date +\\%Y) ou place la logique dans un script appelé par cron."
+  - question: "Que se passe-t-il si je renseigne le jour du mois et le jour de la semaine ?"
+    answer: "Cron les combine avec un OU, pas un ET. La ligne 0 8 1 * 1 s'exécute le premier jour de chaque mois et aussi chaque lundi."
+  - question: "Comment rattraper un job manqué quand la machine était éteinte ?"
+    answer: "Cron ne rattrape rien. Anacron garde la date de dernière exécution et relance le job au démarrage suivant ; les timers systemd offrent la même chose avec l'option Persistent."
+  - question: "Comment déboguer un cron job qui ne s'exécute pas ?"
+    answer: "Vérifie qu'il est chargé avec crontab -l, consulte journalctl -u cron (ou crond sur RHEL), puis lance le script avec env -i et un PATH minimal pour reproduire l'environnement de cron. Redirige aussi sa sortie vers un fichier log."
 ---
 > 💡 **TL;DR**
 > - Cron est partout mais personne ne le comprend vraiment ; une bonne maîtrise évite des jobs qui tournent à 3h du matin pour rien

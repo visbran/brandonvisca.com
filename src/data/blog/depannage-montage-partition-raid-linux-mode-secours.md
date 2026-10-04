@@ -11,6 +11,13 @@ tags:
 featured: false
 draft: false
 focusKeyword: RAID
+faqs:
+  - question: "Pourquoi mount renvoie-t-il wrong fs type sur une matrice RAID saine ?"
+    answer: "La matrice peut contenir une table de partitions au lieu d'un système de fichiers. mdadm la voit clean, mais il n'y a rien à monter directement sur /dev/md126 : il faut monter une de ses partitions."
+  - question: "Comment savoir ce que contient la matrice RAID ?"
+    answer: "file -s /dev/md126 indique s'il s'agit d'un système de fichiers ou d'une table de partitions, et fdisk -l /dev/md126 liste les partitions présentes."
+  - question: "Comment monter la bonne partition en mode secours ?"
+    answer: "Après fdisk -l, monte la partition qui porte le système de fichiers racine, par exemple mount /dev/md126p1 /mnt/recovery. Tu peux ensuite modifier tes fichiers sous /mnt/recovery."
 ---
 > 💡 **TL;DR**
 > - `mount` refuse la matrice avec "wrong fs type, bad option, bad superblock" alors que `mdadm --detail` la donne « clean »

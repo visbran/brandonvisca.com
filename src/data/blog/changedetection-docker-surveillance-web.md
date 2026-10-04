@@ -13,6 +13,15 @@ tags:
 featured: false
 draft: false
 ogImage: ""
+faqs:
+  - question: "Sur quel port tourne Changedetection.io ?"
+    answer: "Le tableau de bord écoute sur le port 5000 : une fois la stack lancée avec docker compose up -d, il est accessible sur http://IP_DU_SERVEUR:5000, sans login par défaut."
+  - question: "Pourquoi ajouter le conteneur Playwright Chrome ?"
+    answer: "Il fournit un navigateur headless qui exécute le JavaScript avant l'analyse. Sans lui, Changedetection.io ne voit pas le contenu des sites modernes chargés dynamiquement (React, Vue, Amazon)."
+  - question: "Quelle fréquence de vérification choisir ?"
+    answer: "La valeur par défaut, une minute, est agressive. Compte plutôt 15 minutes pour un prix, une heure pour un blog et un jour pour une page qui bouge rarement. Espacer les vérifications limite aussi les blocages anti-robots."
+  - question: "Comment être alerté d'un changement ?"
+    answer: "Dans Settings > Notifications : email, Discord, Slack, Telegram, Matrix, webhook générique ou Apprise. Le bouton Send test notification permet de vérifier le canal avant de compter dessus."
 ---
 > 💡 **TL;DR**
 > - Changedetection.io est un outil open-source qui surveille n'importe quelle page web et t'envoie une alerte dès qu'un élément change

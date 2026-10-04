@@ -15,6 +15,15 @@ featured: false
 draft: false
 focusKeyword: rocket.chat docker
 ogImage: ""
+faqs:
+  - question: "Quelle base de données utilise Rocket.Chat ?"
+    answer: "Uniquement MongoDB, configuré en replica set même avec un seul nœud. Sans rs.initiate() et le paramètre replicaSet dans MONGO_URL, Rocket.Chat refuse de démarrer."
+  - question: "Quelles ressources prévoir pour Rocket.Chat ?"
+    answer: "Compte 2 cœurs, 4 Go de RAM et 20 Go de SSD. Sur un VPS à 2 Go, l'ensemble Rocket.Chat et MongoDB fonctionne mais swappe, et le premier démarrage peut durer plusieurs minutes."
+  - question: "Pourquoi les liens envoyés par Rocket.Chat sont-ils cassés ?"
+    answer: "ROOT_URL ne correspond pas à l'adresse publique réelle. Elle doit contenir l'URL complète en HTTPS, sinon les emails, les notifications et les applications mobiles pointent vers une mauvaise adresse."
+  - question: "Comment sauvegarder Rocket.Chat ?"
+    answer: "Sauvegarde la base MongoDB avec mongodump, et le volume des fichiers uploadés. La restauration se fait avec mongorestore."
 ---
 > 💡 **TL;DR**
 > - Rocket.Chat est une messagerie collaborative open source auto-hébergeable, alternative sérieuse à Slack et Teams

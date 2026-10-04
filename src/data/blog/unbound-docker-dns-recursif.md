@@ -13,6 +13,15 @@ featured: false
 draft: false
 focusKeyword: unbound docker dns récursif
 ogImage: ""
+faqs:
+  - question: "Quelle différence entre Unbound et AdGuard Home ?"
+    answer: "AdGuard Home filtre les requêtes et les relaie vers un serveur DNS en amont. Unbound résout lui-même les noms en interrogeant les serveurs racine, puis ceux des domaines. Les deux se combinent : AdGuard filtre, Unbound résout."
+  - question: "Comment utiliser Unbound comme serveur amont d'AdGuard Home ?"
+    answer: "Mets les deux conteneurs sur le même réseau Docker et indique unbound:53 comme upstream dans AdGuard Home. Les requêtes DNS restent alors internes à ton serveur."
+  - question: "Comment vérifier que DNSSEC fonctionne ?"
+    answer: "Interroge Unbound avec dig, par exemple dig @localhost suivi d'un domaine signé : le flag ad dans la réponse indique que DNSSEC a été validé. Sinon, vérifie la présence du fichier root.key."
+  - question: "Faut-il configurer un forward vers un DNS public ?"
+    answer: "Non. Un forward global sur la zone racine transforme Unbound en simple relais et lui fait perdre l'intérêt de la résolution récursive. Réserve forward-zone à des cas précis, comme des zones internes."
 ---
 > 💡 **TL;DR**
 > - Unbound est un validateur DNS récursif et cache open-source développé par NLnet Labs.

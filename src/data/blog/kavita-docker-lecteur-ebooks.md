@@ -11,6 +11,15 @@ tags:
 featured: false
 draft: false
 ogImage: ""
+faqs:
+  - question: "Quels formats Kavita peut-il lire ?"
+    answer: "EPUB, PDF, CBZ, CBR, les images (PNG, JPG, WebP) et les archives ZIP ou RAR d'images, directement et sans conversion."
+  - question: "Sur quel port tourne Kavita ?"
+    answer: "Sur le port 5000. Au premier accès sur http://IP_DU_SERVEUR:5000, Kavita te demande de créer le compte administrateur."
+  - question: "Kavita ou Komga pour les mangas ?"
+    answer: "Kavita est le plus polyvalent : romans, PDF techniques et mangas, avec lecture de droite à gauche. Si tu lis exclusivement des mangas et des comics, Komga offre la meilleure expérience dédiée."
+  - question: "Que faut-il sauvegarder pour Kavita ?"
+    answer: "Le dossier kavita-data, qui contient la base SQLite, les utilisateurs, les caches et les paramètres. La bibliothèque d'ebooks se sauvegarde à part, comme n'importe quels fichiers."
 ---
 > 💡 **TL;DR**
 > - Kavita est un serveur de lecture ebooks auto-hébergé qui gère EPUB, PDF, CBZ/CBR, images et manga

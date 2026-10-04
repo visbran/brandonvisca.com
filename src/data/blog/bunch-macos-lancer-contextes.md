@@ -13,6 +13,17 @@ featured: false
 draft: false
 focusKeyword: bunch macos
 ogImage: ""
+faqs:
+  - question: "Bunch est-il gratuit ?"
+    answer: "Oui, Bunch est entièrement gratuit et open-source. Tu peux le télécharger sur le Mac App Store ou directement depuis le site officiel bunchapp.co sans payer un centime."
+  - question: "Bunch fonctionne-t-il sur Windows ou Linux ?"
+    answer: "Non, Bunch est exclusivement disponible sur macOS. Si tu cherches un équivalent sur Linux, des solutions comme AutoKey ou des scripts bash peuvent partiellement remplir ce rôle."
+  - question: "Bunch peut-il remplacer Keyboard Maestro ?"
+    answer: "Pour la gestion de contextes simples (ouvrir/fermer des apps), oui. Mais Keyboard Maestro fait bien plus (macros complexes, conditions, interfaces). Bunch est plus léger et spécialisé."
+  - question: "Comment assigner un raccourci clavier à un bunch ?"
+    answer: "Dans les préférences de Bunch, tu peux lier chaque bunch à un raccourci clavier global. L'app demande les permissions d'accessibilité macOS pour que ça fonctionne."
+  - question: "Où sont stockés les fichiers de configuration ?"
+    answer: "Les fichiers .bunch sont stockés dans ~/Bunch par défaut. Tu peux les éditer dans n'importe quel éditeur de texte, les versionner avec Git, ou les synchroniser via iCloud/Dropbox."
 ---
 > 💡 **TL;DR**
 >

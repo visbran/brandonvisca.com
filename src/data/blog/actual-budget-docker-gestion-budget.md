@@ -12,6 +12,23 @@ featured: false
 draft: false
 focusKeyword: actual budget docker
 ogImage: ""
+faqs:
+  - question: "Actual Budget est-il vraiment gratuit ?"
+    answer: "Oui. Actual Budget est open-source sous licence BSD-3-Clause. Tu peux l'installer gratuitement sur ton serveur sans limite d'utilisateurs ni de budgets. Il n'y a aucun abonnement, aucune fonctionnalité payante, aucune publicité."
+  - question: "Puis-je utiliser Actual Budget sans Docker ?"
+    answer: "Oui, tu peux installer Actual Budget directement via Node.js ou le télécharger comme application desktop. Mais Docker reste la méthode la plus simple pour l'auto-hébergement : une commande, un volume, et c'est prêt. Pas besoin de gérer les dépendances Node.js ni les mises à jour manuelles."
+  - question: "Actual Budget fonctionne-t-il avec les banques françaises ?"
+    answer: "Oui, via GoCardless. Les banques suivantes sont compatibles : BNP Paribas, Société Générale, Crédit Mutuel, CIC, Banque Postale, Hello bank!, Boursorama, Fortuneo, Monabanq, ING Direct. Le sync automatique récupère tes transactions sans que tu aies à les saisir à la main."
+  - question: "Quelle est la différence entre Actual Budget et YNAB ?"
+    answer: "Les deux utilisent la méthode des enveloppes. La différence clé : YNAB est propriétaire, cloud-only, payant (14,99 $/mois) et sans sync bancaire français. Actual Budget est open-source, auto-hébergé, gratuit, et compatible GoCardless pour les banques européennes."
+  - question: "Puis-je migrer depuis YNAB 4 ?"
+    answer: "Oui. Actual Budget supporte l'import JSON depuis YNAB 4 (la version desktop). Tes catégories, transactions et soldes sont conservés. Va dans Settings > Import et sélectionne ton fichier JSON exporté."
+  - question: "Combien de RAM consomme Actual Budget avec Docker ?"
+    answer: "Moins de 100 Mo de RAM au repos. L'image Docker fait environ 200 Mo. C'est l'un des gestionnaires de budget les plus légers que tu puisses auto-héberger. Un Raspberry Pi 4 avec 2 Go de RAM suffit largement."
+  - question: "Est-ce que mes données sont vraiment chiffrées ?"
+    answer: "Oui. Actual Budget utilise un chiffrement de bout en bout côté client. Tes données sont chiffrées dans ton navigateur avant d'être envoyées au serveur. Même si quelqu'un accède à la base SQLite sur ton serveur, il ne peut rien lire sans ton mot de passe de chiffrement."
+  - question: "Que faire si je perds mon mot de passe de chiffrement ?"
+    answer: "Tu perds l'accès à tes données. Il n'y a pas de \"mot de passe oublié\" ni de backdoor. C'est le prix du chiffrement E2E. Stocke ton mot de passe dans un gestionnaire de mots de passe comme Vaultwarden."
 ---
 > 💡 **TL;DR**
 > - Actual Budget est un gestionnaire de budget open-source basé sur la méthode des enveloppes, fork spirituel de YNAB 4

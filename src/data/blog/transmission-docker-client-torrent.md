@@ -12,6 +12,17 @@ featured: false
 draft: false
 focusKeyword: transmission docker
 ogImage: ""
+faqs:
+  - question: "Transmission ou qBittorrent en Docker ?"
+    answer: "Transmission est le plus léger, environ 30 à 50 Mo de RAM au repos contre 150 à 250 Mo pour qBittorrent, ce qui compte sur un Raspberry Pi. qBittorrent offre plus de fonctions, comme les catégories ou le moteur de recherche intégré."
+  - question: "Quels ports utilise Transmission ?"
+    answer: "Le port 9091 pour l'interface web et le port 51413 en TCP et UDP pour les échanges BitTorrent. Pour recevoir des connexions de pairs, ce second port doit être redirigé sur ta box."
+  - question: "Comment protéger l'interface web de Transmission ?"
+    answer: "Définis USER et PASS dans le docker-compose.yml : sans eux, l'interface démarre sans authentification. Ne l'expose pas directement sur internet."
+  - question: "Comment connecter Transmission à Sonarr ou Radarr ?"
+    answer: "Mets les conteneurs sur le même réseau Docker, puis ajoute Transmission dans Settings > Download Clients avec l'hôte transmission, le port 9091 et tes identifiants. Utilise le nom du conteneur, pas l'IP du serveur."
+  - question: "À quoi sert le dossier watch ?"
+    answer: "Tout fichier .torrent déposé dans ce dossier est ajouté automatiquement par Transmission en quelques secondes. Pratique pour automatiser des ajouts par script ou par SFTP."
 ---
 > 💡 **TL;DR**
 >
