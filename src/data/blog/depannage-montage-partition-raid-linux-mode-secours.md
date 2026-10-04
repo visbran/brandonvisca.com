@@ -1,6 +1,6 @@
 ---
 title: Dépannage des problèmes de montage de matrices RAID (mdadm) en mode de secours Linux
-description: "Guide pratique de dépannage d'un montage RAID en mode secours Linux. Solution à l'erreur \"wrong fs type\" en découvrant que l'array RAID contenait une table de partitions plutôt qu'un système de fichiers."
+description: "mount refuse ta matrice RAID mdadm en mode secours avec « wrong fs type » ? Elle contient sans doute une table de partitions : monte md126p1, pas md126."
 pubDatetime: "2025-03-13T11:37:18+01:00"
 author: Brandon Visca
 tags:

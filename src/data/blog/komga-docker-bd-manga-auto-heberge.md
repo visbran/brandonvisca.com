@@ -1,6 +1,6 @@
 ---
 title: "Komga Docker : serveur de BD/manga auto-hébergé"
-description: "Guide komga docker : déploie Komga, serveur BD/manga auto-hébergé MIT. Docker Compose, config et comparatif inclus."
+description: "Komga Docker : ton serveur BD, manga et comics auto-hébergé qui lit CBZ, CBR, PDF et EPUB. Docker Compose prêt, OPDS et comparatif avec Kavita."
 pubDatetime: "2026-06-16T08:00:00.000Z"
 modDatetime: "2026-06-16T08:00:00.000Z"
 author: Brandon

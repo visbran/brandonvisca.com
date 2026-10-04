@@ -13,7 +13,15 @@ tags:
 featured: false
 draft: false
 focusKeyword: radarr docker
-faqs: []
+faqs:
+  - question: "Sur quel port tourne Radarr en Docker ?"
+    answer: "Radarr écoute sur le port 7878. Une fois le conteneur lancé avec docker compose up -d, l'interface est accessible sur http://IP_DU_SERVEUR:7878."
+  - question: "Faut-il Prowlarr pour utiliser Radarr ?"
+    answer: "Non, tu peux ajouter tes indexeurs directement dans Settings > Indexers. Prowlarr devient utile dès que tu as aussi Sonarr ou Lidarr : il centralise les indexeurs et les synchronise avec toutes tes applications *arr."
+  - question: "Pourquoi le film reste-t-il dans le dossier de téléchargement ?"
+    answer: "Vérifie que Completed Download Handling est activé dans Settings > Download Clients, et que le conteneur peut lire dans /downloads et écrire dans /movies. Un problème de permissions (PUID/PGID) est la cause la plus fréquente."
+  - question: "Comment empêcher Radarr de télécharger plusieurs versions du même film ?"
+    answer: "Dans ton profil de qualité, règle Upgrade Until sur la qualité visée, par exemple Bluray-1080p. Radarr arrête alors de chercher de meilleures versions une fois ce niveau atteint."
 ---
 > 💡 **TL;DR**
 > - Radarr surveille automatiquement les sorties films et les télécharge selon tes critères de qualité.
