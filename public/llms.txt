@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-10-04
-# Total articles : 205
+# Total articles : 206
+
+## FileBrowser Quantum Docker : le successeur de File Browser
+URL: https://brandonvisca.com/filebrowser-quantum-docker-gestionnaire-fichiers/
+Description: FileBrowser Quantum Docker remplace File Browser, archivé : installation testée, mot de passe admin, sources, partages et migration depuis l'original.
+Tags: docker, auto-hebergement, stockage, intermediaire
+Publié: 2026-10-04T21:10:00+02:00
 
 ## Suricata Docker : IDS/IPS open-source pour sécuriser ton réseau
 URL: https://brandonvisca.com/suricata-docker-ids-ips-reseau/
