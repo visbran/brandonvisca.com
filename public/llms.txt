@@ -1,7 +1,13 @@
 # llms.txt — Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-03
-# Total articles : 203
+# Dernière mise à jour : 2026-10-04
+# Total articles : 204
+
+## Suricata Docker : IDS/IPS open-source pour sécuriser ton réseau
+URL: https://brandonvisca.com/suricata-docker-ids-ips-reseau/
+Description: Suricata Docker, c'est un IDS/IPS open-source pour détecter les intrusions sur ton réseau, en écoute ou en blocage, sans y passer ta nuit.
+Tags: 
+Publié: 2026-10-04T11:01:12+02:00
 
 ## Calibre Web Docker : bibliothèque ebooks auto-hébergée
 URL: https://brandonvisca.com/calibre-web-docker-bibliotheque-ebooks/
