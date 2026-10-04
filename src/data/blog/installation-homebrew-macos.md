@@ -2,7 +2,7 @@
 title: "Homebrew macOS : Guide d'Installation Complet (2026)"
 description: Comment installer Homebrew macOS en 1 commande. Prérequis, installation, commandes essentielles, apps incontournables et dépannage.
 pubDatetime: 2025-03-31 15:28:09+02:00
-modDatetime: "2026-07-06T00:00:00+01:00"
+modDatetime: "2026-10-04T00:00:00+02:00"
 author: Brandon Visca
 tags:
   - macos
@@ -16,7 +16,7 @@ draft: false
 focusKeyword: "homebrew"
 faqs:
   - question: "Homebrew est-il gratuit ?"
-    answer: "Oui, Homebrew est un projet open source entièrement gratuit. Il fonctionne sur n'importe quel Mac sous macOS 11 (Big Sur) ou plus récent."
+    answer: "Oui, Homebrew est un projet open source entièrement gratuit. Il est officiellement supporté sur macOS 14 (Sonoma) et plus récent, et peut encore fonctionner sur les versions antérieures jusqu'à Catalina, sans support."
   - question: "Comment mettre à jour Homebrew ?"
     answer: "Lance brew update pour mettre à jour Homebrew, puis brew upgrade pour mettre à jour tous les paquets installés. Un brew cleanup ensuite supprime les vieilles versions."
   - question: "Homebrew ralentit-il le Mac ?"
@@ -48,11 +48,12 @@ Deux types de packages :
 
 ## Prérequis
 
-- macOS 11 (Big Sur) minimum, Monterey, Ventura, Sequoia : OK
+- macOS 14 (Sonoma) ou plus récent : c'est le minimum officiellement supporté. De Catalina (10.15) à Ventura (13), Homebrew peut encore fonctionner mais sans support ; Mojave et plus ancien ne passent plus
+- Un Mac Apple Silicon ou Intel 64 bits
 - Connexion internet
 - Les Xcode Command Line Tools (Homebrew les installe automatiquement si absents)
 
-> 💡 **Astuce** : Sur Apple Silicon (M1/M2/M3/M4), Homebrew s'installe dans `/opt/homebrew/` au lieu de `/usr/local/`. Le comportement reste identique.
+> 💡 **Astuce** : Sur Apple Silicon (puces M), Homebrew s'installe dans `/opt/homebrew/` au lieu de `/usr/local/`. Le comportement reste identique.
 
 ## Installer Homebrew sur macOS
 
