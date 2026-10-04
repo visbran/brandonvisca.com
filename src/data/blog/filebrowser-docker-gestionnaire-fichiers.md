@@ -19,7 +19,7 @@ faqs:
   - question: "Pourquoi File Browser ne peut-il pas écrire dans mes dossiers ?"
     answer: "Le conteneur tourne avec l'UID et le GID définis dans user. Si le dossier monté appartient à root, l'écriture échoue : corrige le propriétaire avec chown pour l'aligner sur cet utilisateur."
   - question: "File Browser est-il encore maintenu ?"
-    answer: "Non. Le projet est archivé depuis le 1er septembre 2026 : plus de nouvelles versions ni de correctifs de sécurité. Il fonctionne toujours, mais ne l'utilise plus que sur ton réseau local ou derrière un VPN."
+    answer: "Non. Le projet est archivé depuis le 1er septembre 2026 : plus de nouvelles versions ni de correctifs de sécurité. Il fonctionne toujours, mais ne l'utilise plus que sur ton réseau local ou derrière un VPN. FileBrowser Quantum, un fork activement maintenu, prend la relève."
   - question: "Peut-on exposer File Browser directement sur internet ?"
     answer: "Non. Il ne gère pas le HTTPS lui-même et, depuis son archivage, ne reçoit plus de correctifs de sécurité. Garde-le sur ton réseau local, ou derrière un VPN et un reverse proxy avec authentification."
 ---
@@ -29,7 +29,7 @@ faqs:
 > - Parfait alternative à FTP, SMB mal configuré ou Nextcloud quand tu veux juste gérer des fichiers
 > - Docker Compose complet + reverse proxy Caddy inclus ci-dessous
 
-> ⚠️ **Projet archivé depuis le 1er septembre 2026.** Les mainteneurs de File Browser ont publié leur dernière version et annoncent qu'il n'y aura plus aucune mise à jour, ni correctif de sécurité. Deux faiblesses connues restent ouvertes : l'exécution de commandes (à laisser désactivée, c'est le cas par défaut) et des sessions impossibles à révoquer (un jeton reste valide jusqu'à son expiration, même après déconnexion ou changement de mot de passe). Si tu l'utilises encore, garde-le sur ton réseau local ou derrière un VPN, jamais exposé directement sur Internet.
+> ⚠️ **Projet archivé depuis le 1er septembre 2026.** Les mainteneurs de File Browser ont publié leur dernière version et annoncent qu'il n'y aura plus aucune mise à jour, ni correctif de sécurité. Deux faiblesses connues restent ouvertes : l'exécution de commandes (à laisser désactivée, c'est le cas par défaut) et des sessions impossibles à révoquer (un jeton reste valide jusqu'à son expiration, même après déconnexion ou changement de mot de passe). Si tu l'utilises encore, garde-le sur ton réseau local ou derrière un VPN, jamais exposé directement sur Internet. Pour un remplaçant maintenu, j'ai testé [FileBrowser Quantum](/filebrowser-quantum-docker-gestionnaire-fichiers/), un fork actif qui reprend le même usage.
 
 ## Table des matières
 
