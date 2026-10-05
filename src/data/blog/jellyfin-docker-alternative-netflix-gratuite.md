@@ -39,8 +39,6 @@ faqs:
 
 Testé sur **Jellyfin 10.11.11** (sortie le 6 juin 2026), sur un mini PC Intel avec Ubuntu 24.04 LTS.
 
-- - - - - -
-
 ## Table des matières
 
 ## Pourquoi Jellyfin > Netflix (et Plex, et Emby)
@@ -68,8 +66,6 @@ Et ça monte tous les ans. Netflix Standard était à 13,49€ fin 2025, il est 
 
 Et encore, si tu réutilises ton serveur [Nextcloud](/nextcloud-docker-installation-complete-2025/) ou un vieux PC, c'est **quasi gratuit**.
 
-- - - - - -
-
 ### Jellyfin vs Plex vs Emby : le match
 
 ![Bagarre entre George Costanza et un inconnu dans Seinfeld](../../images/jellyfin-docker-alternative-netflix-gratuite/seinfeld-fight-george-costanza-6hfudkwlwcabc.gif)
@@ -92,8 +88,6 @@ Et encore, si tu réutilises ton serveur [Nextcloud](/nextcloud-docker-installat
 
 **Mon avis perso** : Jellyfin fait 95% du job de Plex gratuitement. L'interface est moins léchée par défaut, mais un thème CSS règle ça en deux minutes (voir plus bas). Et surtout, **tes données restent chez toi**.
 
-- - - - - -
-
 ## Jellyfin c'est quoi exactement ?
 
 ![Interface web de Jellyfin affichant la bibliothèque de films](../../images/jellyfin-docker-alternative-netflix-gratuite/Jellyfin12.16.32@2x.webp)
@@ -115,8 +109,6 @@ Et encore, si tu réutilises ton serveur [Nextcloud](/nextcloud-docker-installat
 - Remplacer ta box TV (c'est complémentaire)
 
 Si tu cherches justement à télécharger du contenu YouTube pour l'intégrer proprement dans ta bibliothèque, [HomeTube Docker](/hometube-docker-telechargeur-youtube/) est l'outil complémentaire qu'il te faut.
-
-- - - - - -
 
 ## Avant de commencer : choisir ton matériel
 
@@ -143,8 +135,6 @@ Juridiquement en France :
 | OVH VPS Value | ~6€ HT | 2 vCPU, 4 Go RAM | 720p-1080p OK |
 
 **Astuce transcoding :** le transcoding 4K demande un CPU costaud OU un GPU (pas dispo sur VPS classiques). Solution : **active Direct Play**, le client lit directement sans transcoder.
-
-- - - - - -
 
 ### Option 2 : homelab (le plus économique)
 
@@ -178,8 +168,6 @@ Juridiquement en France :
 
 **Ma recommandation 2026 :** **mini PC Intel N150** (Beelink, GMKtec, Acemagic), le sweet spot performance/prix/conso. Le N100 reste excellent et se trouve d'occasion à 120€.
 
-- - - - - -
-
 ### Option 3 : combo VPS + stockage externe (hybride)
 
 **Pour qui ?** Tu veux l'accessibilité du VPS mais le stockage pas cher.
@@ -191,8 +179,6 @@ Juridiquement en France :
 - **Total : 9€/mois** pour du To accessible partout
 
 **Astuce avancée :** monte le stockage distant avec `rclone` en cache local (`--vfs-cache-mode full`). Tu gagnes en vitesse de seek sans exploser le disque du VPS.
-
-- - - - - -
 
 ## Installation Jellyfin avec Docker : la méthode qui marche
 
@@ -213,8 +199,6 @@ newgrp docker
 # Vérifier
 docker --version
 ```
-
-- - - - - -
 
 ### Étape 2 : créer la structure
 
@@ -238,8 +222,6 @@ jellyfin/
     ├── series/ # Tes séries ici
     └── music/  # Ta musique ici
 ```
-
-- - - - - -
 
 ### Étape 3 : le docker-compose.yml
 
@@ -318,8 +300,6 @@ id
 
 J'épingle volontairement la version (`10.11.11`) plutôt que `latest`. Une mise à jour majeure de Jellyfin casse régulièrement les thèmes CSS et certains plugins, autant décider toi-même du moment.
 
-- - - - - -
-
 ### Étape 4 : activer le transcoding Intel Quick Sync (si mini PC Intel)
 
 Si tu as un mini PC Intel N100/N150/i3/i5/i7, tu peux utiliser **Quick Sync**, du transcoding 4K quasi gratuit en CPU.
@@ -341,8 +321,6 @@ Puis décommente dans `docker-compose.yml` :
       - /dev/dri:/dev/dri
 ```
 
-- - - - - -
-
 ### Étape 5 : lancer Jellyfin
 
 ```bash
@@ -357,8 +335,6 @@ docker compose logs -f jellyfin
 ```
 
 Ouvre `http://IP-DE-TON-SERVEUR:8096`. L'assistant de première configuration t'accueille.
-
-- - - - - -
 
 ### Étape 6 : configuration initiale Jellyfin
 
@@ -392,8 +368,6 @@ Décoche **Autoriser les connexions distantes** si tu comptes passer par un reve
 
 Crée ton compte admin, valide, c'est fini. Jellyfin tourne.
 
-- - - - - -
-
 ## Organiser ta bibliothèque : le naming qui change tout
 
 C'est **la** étape que tout le monde bâcle. Jellyfin identifie tes fichiers par leur nom. Un mauvais nommage = pas de poster, pas de synopsis, et le mauvais film dans la fiche.
@@ -420,8 +394,6 @@ C'est **la** étape que tout le monde bâcle. Jellyfin identifie tes fichiers pa
 - **Nom de fichier** : `Nom du Film (Année).extension`
 - **Année obligatoire** : sinon Jellyfin confond les remakes
 - Évite les caractères spéciaux : `é` OK, mais `? : * < >` → remplace par `-`
-
-- - - - - -
 
 **Séries (structure optimale) :**
 
@@ -464,8 +436,6 @@ Compte environ **1 à 2 minutes pour 100 films** (le temps de récupérer poster
 
 Si un film reste sans poster : clique dessus → **Modifier les métadonnées** → **Identifier** → saisis le titre exact. Jellyfin réinterroge TMDB.
 
-- - - - - -
-
 ## Accès HTTPS avec Nginx Proxy Manager
 
 Jellyfin en `http://192.168.1.x:8096`, ça marche sur ton réseau local. Depuis l'extérieur, il te faut du HTTPS, sinon tes identifiants circulent en clair.
@@ -504,8 +474,6 @@ Pense aussi à renseigner l'URL publique dans **Dashboard** → **Réseau** → 
 
 **Ton Jellyfin est accessible en HTTPS.**
 
-- - - - - -
-
 ## Donner à Jellyfin le look Netflix
 
 L'interface par défaut de Jellyfin est fonctionnelle mais austère. Bonne nouvelle : tout est modifiable en CSS, sans plugin, sans toucher au conteneur.
@@ -532,8 +500,6 @@ Rafraîchis la page (Ctrl+F5) et c'est appliqué. Aucun redémarrage du conteneu
 
 **Le piège :** un thème CSS tiers casse à chaque montée de version majeure de Jellyfin. JellyFlix, longtemps la référence, n'a pas survécu au passage en 10.11. Vérifie la date du dernier commit du dépôt avant d'adopter un thème, et garde le CSS dans un fichier texte pour pouvoir le retirer en un copier-coller.
 
-- - - - - -
-
 ## Apps mobiles et clients
 
 ### Mobile (Android et iOS)
@@ -556,8 +522,6 @@ Rafraîchis la page (Ctrl+F5) et c'est appliqué. Aucun redémarrage du conteneu
 3. Identifiants : ton compte Jellyfin
 4. **Active le téléchargement hors ligne** si tu veux regarder dans le train
 
-- - - - - -
-
 ### TV (Android TV, Fire TV, Apple TV)
 
 **Android TV / Google TV / Fire TV :**
@@ -578,8 +542,6 @@ Rafraîchis la page (Ctrl+F5) et c'est appliqué. Aucun redémarrage du conteneu
 - Pas d'app native
 - Solution : **Chromecast** ou **mini PC Android TV** (30€)
 
-- - - - - -
-
 ### Desktop (Windows, Mac, Linux)
 
 **Option 1 : navigateur** (recommandé)
@@ -592,8 +554,6 @@ Rafraîchis la page (Ctrl+F5) et c'est appliqué. Aucun redémarrage du conteneu
 - L'app s'appelait **Jellyfin Media Player** jusqu'à la version 2.0.0, sortie le 14 décembre 2025. Les tutoriels qui emploient encore l'ancien nom datent d'avant ce renommage.
 - Télécharge : [github.com/jellyfin/jellyfin-desktop/releases](https://github.com/jellyfin/jellyfin-desktop/releases)
 - Interface type Netflix, mode plein écran, lecteur mpv intégré
-
-- - - - - -
 
 ## Optimisations avancées
 
@@ -611,8 +571,6 @@ Si tu as un mini PC Intel avec Quick Sync :
 
 **Test :** lance un film 4K sur mobile en 4G. Il doit transcoder en 720p instantanément, avec le CPU sous les 15% au lieu de 100%.
 
-- - - - - -
-
 ### Sous-titres automatiques
 
 **Plugin OpenSubtitles :**
@@ -625,8 +583,6 @@ Si tu as un mini PC Intel avec Quick Sync :
    - Entre tes identifiants et ta clé API
    - Langue préférée : `Français`
 5. **Utilisation :** clique sur un film → **Sous-titres** → **Rechercher** → Jellyfin télécharge les `.srt` automatiquement
-
-- - - - - -
 
 ### Intro Skip (sauter les génériques)
 
@@ -641,8 +597,6 @@ Si tu as un mini PC Intel avec Quick Sync :
 **Comme Netflix : tu sautes les génériques en un clic.**
 
 Intro Skipper suit les versions de Jellyfin d'assez près. Si tu épingles ta version comme conseillé plus haut, vérifie que le plugin existe pour cette version avant de mettre à jour.
-
-- - - - - -
 
 ## Cas d'usage réels
 
@@ -674,8 +628,6 @@ Intro Skipper suit les versions de Jellyfin d'assez près. Si tu épingles ta ve
 - Enfants : dessins animés (contrôle parental activé)
 - Mamie : regarde depuis son iPad à distance
 
-- - - - - -
-
 ### Scénario 2 : cinéphile hardcore
 
 **Setup :**
@@ -703,8 +655,6 @@ Intro Skipper suit les versions de Jellyfin d'assez près. Si tu épingles ta ve
 - Qualité Blu-ray préservée (pas de compression streaming)
 - Pas de censure ni de disparition de contenu (coucou Netflix qui vire des films)
 
-- - - - - -
-
 ### Scénario 3 : colocation / famille élargie
 
 **Setup :**
@@ -725,8 +675,6 @@ Intro Skipper suit les versions de Jellyfin d'assez près. Si tu épingles ta ve
 
 Pour éviter que les huit te réclament un film par SMS, [Jellyseerr avec Docker](/jellyseerr-docker-gestion-demandes/) leur donne une interface de demandes en libre-service.
 
-- - - - - -
-
 ## Problèmes courants et solutions
 
 ### « Playback Error » / erreur de lecture
@@ -739,8 +687,6 @@ Pour éviter que les huit te réclament un film par SMS, [Jellyseerr avec Docker
    → Solution : réduis la qualité (Dashboard → Lecture → Bitrate max : 8 Mbps)
 3. **Transcoding qui plante (CPU trop faible)**
    → Solution : active Direct Play, dans Paramètres utilisateur → Lecture → Qualité : Maximum
-
-- - - - - -
 
 ### Transcoding ultra-lent (buffering constant)
 
@@ -758,8 +704,6 @@ docker stats jellyfin
 
 Deux issues : activer le transcoding matériel (voir plus haut), ou forcer le Direct Play côté client pour que le serveur se contente d'envoyer le fichier tel quel.
 
-- - - - - -
-
 ### Metadata en anglais au lieu de français
 
 Tu as zappé l'écran « Langue de métadonnées » à l'installation. Ça se rattrape :
@@ -770,8 +714,6 @@ Tu as zappé l'écran « Langue de métadonnées » à l'installation. Ça se ra
 4. Coche **Remplacer toutes les métadonnées**, sinon Jellyfin garde l'existant
 
 Un rafraîchissement complet sur 500 films prend un bon moment et tape sur l'API TMDB. Lance-le le soir.
-
-- - - - - -
 
 ### Jellyfin inaccessible depuis l'extérieur
 
@@ -795,8 +737,6 @@ sudo ufw allow 443
 4. **Les websockets** sont activés dans Nginx Proxy Manager (cause n°1 des lectures qui se coupent)
 5. **Dashboard** → **Réseau** → **Autoriser les connexions distantes** est bien coché
 
-- - - - - -
-
 ## Jellyfin : la pièce maîtresse de ton indépendance numérique
 
 Bravo, tu as maintenant ton propre Netflix. Mais imagine un instant :
@@ -818,8 +758,6 @@ Tu te retrouves avec **une stack d'indépendance numérique complète** qui te c
 **[Consulte le guide complet d'indépendance numérique](/independance-numerique-2025-guide-complet/)** pour voir comment tout interconnecter proprement.
 
 *Bonus : le guide inclut une roadmap progressive pour ne pas te noyer dans la technique.*
-
-- - - - - -
 
 ## Légalité et éthique : ce qu'il faut savoir
 
@@ -853,8 +791,6 @@ Tu te retrouves avec **une stack d'indépendance numérique complète** qui te c
 - Gratuit pour DVD (Windows/Mac/Linux)
 - Licence payante à vie pour le Blu-ray
 - Télécharge : [makemkv.com](https://www.makemkv.com/)
-
-- - - - - -
 
 ## Conclusion : ton Netflix à toi, pour toujours
 
