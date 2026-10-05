@@ -271,6 +271,8 @@ chronyc -h 192.168.1.100 sources
 
 Vérifie les logs avec `docker logs --tail 50 chrony`. Les causes fréquentes : capability SYS_TIME manquante, image incompatible avec l'architecture (ARM vs x86_64), ou erreur de syntaxe dans le docker-compose.yml.
 
+💡 À lire aussi : [OpenWrt firmware : le routeur open-source pour ton homelab](/openwrt-firmware-routeur-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 Un serveur NTP local, c'est un de ces services que tu installes une fois et que tu oublies ensuite. Mais quand il est absent, tu le regrette à chaque fois que tu compares des logs, que tu débugges une réplication, ou que tu remarques que ton NAS a décidé qu'il était 14:47 alors que ton serveur disait 14:45.

@@ -179,6 +179,8 @@ Regarde ta politique ACL. Par défaut, sans fichier de policy explicite, Headsca
 ### MagicDNS ne résout rien côté client
 Vérifie que `magic_dns: true` est bien actif dans `config.yaml` et que le client a `--accept-dns=true` (comportement par défaut sauf changement manuel).
 
+💡 À lire aussi : [OpenWrt firmware : le routeur open-source pour ton homelab](/openwrt-firmware-routeur-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 **Headscale docker** referme la dernière dépendance cloud d'un mesh Tailscale : le plan de contrôle. Pour un homelab qui utilise déjà [Tsdproxy](/tsdproxy-docker-tailscale-proxy/) pour exposer ses conteneurs sur le tailnet, ajouter Headscale en dessous ferme la boucle complète, plus aucune brique réseau critique ne dépend d'un tiers.
