@@ -79,7 +79,7 @@ Ce genre de session passe beaucoup par le terminal. Si le tien est resté brut d
 
 ### Via Homebrew
 
-![](../../images/shutter-encoder-mac-alternative-handbrake/install-shutter-via-brew.webp)
+![Recherche du cask Shutter Encoder dans une interface graphique pour Homebrew](../../images/shutter-encoder-mac-alternative-handbrake/install-shutter-via-brew.webp)
 
 Si t’utilises [Homebrew](/installation-homebrew-macos/), tu peux installer avec :
 

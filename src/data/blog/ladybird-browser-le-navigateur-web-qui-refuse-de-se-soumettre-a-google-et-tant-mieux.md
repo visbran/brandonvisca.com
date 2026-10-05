@@ -28,7 +28,7 @@ faqs:
 
 ## Table des matières
 
-![](../../images/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/baseline_ladybird.webp)
+![Bannière du projet Ladybird : « Welcome to Ladybird, a truly independent web browser »](../../images/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/baseline_ladybird.webp)
 
 Chrome domine à 65%, Firefox peine à maintenir ses 3% de parts de marché. Plusieurs projets osent quand même défier les géants avec des approches radicalement différentes. D’un côté, **[Arc Search révolutionne l’expérience utilisateur](https://brandonvisca.com/arc-search-redefinir-la-navigation-internet-avec-lia)** en intégrant l’IA directement dans la navigation. De l’autre, **Ladybird Browser** prend le chemin inverse : plutôt que d’améliorer l’existant, il repart de zéro.
 

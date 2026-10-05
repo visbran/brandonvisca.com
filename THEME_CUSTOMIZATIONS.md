@@ -349,3 +349,17 @@ trompeur).
 
 **Merge strategy** : sur update upstream, garder les imports de `@/utils/schema` et les références
 `@id` dans les quatre fichiers ci-dessus.
+
+---
+
+### Astro 6.0.3 → 6.4.8 et @astrojs/mdx 5.0.6 : textes alternatifs et tableaux MDX (2026-10-04)
+
+**Reason** : les textes alternatifs des images locales contenant une apostrophe étaient échappés deux fois (`d&amp;#x27;`), lus tels quels par les lecteurs d'écran (5 pages). Astro 6.0.3 ne décodait que `&#x22;` avant de ré-échapper les attributs, dans `updateImageReferencesInBody` (`content/runtime.js`) ; corrigé dans Astro 6.4.x.
+
+**Files & changes** :
+- `package.json` / `pnpm-lock.yaml` — `astro` 6.4.8, `@astrojs/mdx` 5.0.6 (dernières 6.x et 5.x). Astro 6.4 exige Node ≥ 22.12 : le CI tourne déjà en Node 22.
+- `astro.config.ts` — `mdx({ gfm: true, smartypants: true })`. Astro 6.4 laisse `markdown.gfm` et `markdown.smartypants` à `undefined` (options dépréciées) : le pipeline Markdown applique ses défauts, mais MDX en hérite désactivés. Sans ces deux lignes, le tableau de l'article Omarchy (seul `.mdx`) sortait en texte brut.
+
+**Vérification** : build complet avant/après comparé page par page (350 pages) : texte visible et JSON-LD identiques, seuls changent les 5 textes alternatifs corrigés et une image sans `alt` qui reçoit `alt=""`.
+
+**Merge strategy** : sur update upstream, garder les options `gfm`/`smartypants` de `mdx()` tant que l'intégration MDX ne lit pas les défauts du processeur.
