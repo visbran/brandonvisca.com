@@ -257,6 +257,11 @@ export const TAG_META: Record<string, TagMeta> = {
     description:
       "Tous les articles sur les VPN auto-hébergés : WireGuard, Tailscale, Firezone et accès zero trust.",
   },
+  wireguard: {
+    title: `WireGuard — Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur WireGuard : VPN en Docker, accès zero trust avec Firezone et routeur OpenWrt pour le homelab.",
+  },
   "base-de-donnees": {
     title: `Bases de données — Guides et tutoriels | ${SITE.title}`,
     description:
