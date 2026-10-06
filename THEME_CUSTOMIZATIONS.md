@@ -391,7 +391,7 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 
 #### Passe 2 (2026-10-06) : palette, pages annexes, lecture
 
-- Palette **Ardoise & rouille** (`global.css`) : neutres ardoise, accent rouille `#b8461f` / `#e57a50` (accordé au favicon flamme). Fonds repris dans `Layout.astro` (`THEME_COLORS` + script inline : `#f2f3f5` / `#111317`). Les images OG gardent l'ancien cyan (`src/utils/og-templates/`).
+- Palette : « Ardoise & rouille » essayée puis écartée, l'utilisateur garde **Cobalt** (fond `#f1f4f8` / `#10131a`, accent `#1158d1` / `#4a9fe8`). Fonds repris dans `Layout.astro` (`THEME_COLORS` + script inline). Les images OG gardent leur cyan (`src/utils/og-templates/`).
 - `custom.css` : justification + césure rétablies (p et li), jamais de césure dans `code` ni dans les liens, fer à gauche sous 640px.
 - `PostDetails.astro` : temps de lecture (230 mots/min, blocs de code exclus), **rail de sommaire** fixe dans la marge droite à partir de 1400px (h2/h3 via `render().headings`, section active par IntersectionObserver, rail masqué après la fin de l'article). Le sommaire inline de remark-toc est masqué à ces largeurs et reste en dessous. Colonne de lecture inchangée.
 - `typography.css` : tableaux sans grille (filets horizontaux, défilement horizontal sur mobile), rythme des paragraphes et listes, puces neutres.
