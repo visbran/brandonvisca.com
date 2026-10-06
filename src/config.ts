@@ -4,7 +4,9 @@ export const SITE = {
   profile: "https://github.com/visbran",
   desc: "Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique. Des guides concrets pour reprendre le contrôle de tes données.",
   title: "Brandon Visca",
-  ogImage: "og.webp",
+  // Vide = carte générée /og.png (src/utils/og-templates/site.js). L'ancien
+  // og.webp était la bannière promo du thème upstream, pas ce site.
+  ogImage: "",
   lightAndDarkMode: true,
   postPerIndex: 6,
   postPerPage: 12,

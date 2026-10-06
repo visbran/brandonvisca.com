@@ -1,23 +1,33 @@
 import fs from "fs";
 import path from "path";
 
-const WEIGHTS = [400, 600, 700, 900] as const;
+type SatoriFont = {
+  name: string;
+  data: ArrayBuffer;
+  weight: 400 | 500 | 600;
+  style: "normal";
+};
 
-async function loadGoogleFonts(): Promise<
-  Array<{ name: string; data: ArrayBuffer; weight: number; style: string }>
-> {
-  // Satori cannot read woff2 or variable fonts: load one static WOFF per
-  // weight so OG images render real Figtree weights instead of faux bold.
-  return WEIGHTS.map(weight => {
-    const fontPath = path.resolve(
-      `./src/assets/fonts/og/figtree-latin-${weight}-normal.woff`
-    );
-    const file = fs.readFileSync(fontPath);
-    const data = file.buffer.slice(
-      file.byteOffset,
-      file.byteOffset + file.byteLength
+// Satori ne lit ni le woff2 ni les polices variables : une WOFF statique par
+// graisse (sous-ensemble latin, accents français compris), comme sur le site.
+// Les tables GSUB/GPOS/GDEF/kern sont retirées (pyftsubset --layout-features=''
+// --drop-tables+=GSUB,GPOS,GDEF,kern) : avec elles, Satori 0.19 mesure les mots
+// sans crénage mais les dessine crénés, d'où des espaces irréguliers entre mots.
+const FONTS: Array<[name: string, file: string, weight: SatoriFont["weight"]]> = [
+  ["Geist", "geist-latin-400-normal.woff", 400],
+  ["Geist", "geist-latin-500-normal.woff", 500],
+  ["Geist", "geist-latin-600-normal.woff", 600],
+  ["Geist Mono", "geist-mono-latin-400-normal.woff", 400],
+];
+
+async function loadGoogleFonts(_text?: string): Promise<SatoriFont[]> {
+  return FONTS.map(([name, file, weight]) => {
+    const buf = fs.readFileSync(path.resolve(`./src/assets/fonts/og/${file}`));
+    const data = buf.buffer.slice(
+      buf.byteOffset,
+      buf.byteOffset + buf.byteLength
     ) as ArrayBuffer;
-    return { name: "Figtree", data, weight, style: "normal" };
+    return { name, data, weight, style: "normal" };
   });
 }
 
