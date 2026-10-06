@@ -20,7 +20,7 @@ const FONTS: Array<[name: string, file: string, weight: SatoriFont["weight"]]> =
   ["Geist Mono", "geist-mono-latin-400-normal.woff", 400],
 ];
 
-async function loadGoogleFonts(_text?: string): Promise<SatoriFont[]> {
+async function loadGoogleFonts(): Promise<SatoriFont[]> {
   return FONTS.map(([name, file, weight]) => {
     const buf = fs.readFileSync(path.resolve(`./src/assets/fonts/og/${file}`));
     const data = buf.buffer.slice(
