@@ -5,16 +5,26 @@
 
 /* ── Typography ── */
 
-/* Paragraphes justifiés avec césure automatique (lang="fr" défini dans config.ts) */
-.app-prose p {
+/* Paragraphes et listes justifiés avec césure automatique (lang="fr" défini
+ * dans config.ts). Le code inline ne se coupe jamais : une césure dans
+ * `systemd-journald` serait recopiée telle quelle. */
+.app-prose p,
+.app-prose li {
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
+  hyphenate-limit-chars: 7 3 3;
 }
 
-/* Mobile : retour au left pour éviter les rivières sur écrans étroits */
+.app-prose :is(p, li) :is(code, a) {
+  hyphens: manual;
+  -webkit-hyphens: manual;
+}
+
+/* Mobile : retour au fer à gauche pour éviter les rivières sur écrans étroits */
 @media (max-width: 640px) {
-  .app-prose p {
+  .app-prose p,
+  .app-prose li {
     text-align: left;
   }
 }

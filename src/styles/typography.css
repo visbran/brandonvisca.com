@@ -4,8 +4,8 @@
   /* ===== Override default Tailwind Typography styles ===== */
   .app-prose {
     @apply prose;
-    /* Figtree runs small: 17px body from sm up, 16px floor on phones */
-    @apply sm:text-[1.0625rem];
+    /* Geist : 17px dès sm, plancher 16px sur téléphone, interligne de lecture. */
+    @apply leading-[1.75] sm:text-[1.0625rem];
 
     h1,
     h2,
@@ -15,8 +15,16 @@
       @apply mb-3 text-foreground;
     }
 
+    h2 {
+      @apply mt-14 text-[1.5rem] leading-tight font-semibold tracking-[-0.015em] sm:text-[1.75rem];
+    }
+
     h3 {
-      @apply font-sriracha;
+      @apply mt-10 text-[1.2rem] leading-snug font-semibold tracking-[-0.01em];
+    }
+
+    strong {
+      @apply font-semibold;
     }
 
     p,
@@ -31,7 +39,7 @@
 
     a {
       @apply relative font-medium text-foreground no-underline transition-all duration-200 wrap-break-word;
-      background-image: linear-gradient(to right, color-mix(in srgb, var(--accent) 40%, transparent), color-mix(in srgb, var(--accent) 40%, transparent));
+      background-image: linear-gradient(to right, color-mix(in srgb, var(--accent) 55%, transparent), color-mix(in srgb, var(--accent) 55%, transparent));
       background-position: 0 100%;
       background-size: 100% 1px;
       background-repeat: no-repeat;
@@ -49,30 +57,56 @@
     }
 
     li {
-      @apply marker:text-accent;
+      @apply marker:text-soft;
+    }
+
+    ol > li {
+      @apply marker:font-mono marker:text-[0.85em];
     }
 
     hr {
-      @apply border-border;
+      @apply my-12 border-border;
+    }
+
+    p {
+      @apply my-5;
+    }
+
+    ul,
+    ol {
+      @apply my-5 ps-5;
+    }
+
+    li {
+      @apply my-1.5 ps-1;
+    }
+
+    li > ul,
+    li > ol {
+      @apply my-1.5;
+    }
+
+    figure {
+      @apply my-10;
     }
 
     img {
-      @apply mx-auto border border-border rounded-lg;
+      @apply mx-auto rounded-(--radius-box) border border-border;
       max-width: min(100%, 760px);
       max-height: 80vh;
       height: auto;
     }
 
     figcaption {
-      @apply opacity-75;
+      @apply text-center text-sm text-soft;
     }
 
     table {
-      @apply w-full table-auto border-collapse;
+      @apply block w-full table-auto border-collapse overflow-x-auto text-[0.9375rem] sm:table;
 
       th,
       td {
-        @apply border border-border p-2;
+        @apply border-0 border-b border-border px-3 py-2.5 text-left align-top;
         word-wrap: break-word;
         word-break: break-word;
         hyphens: auto;
@@ -80,7 +114,11 @@
       }
 
       th {
-        @apply py-1.5;
+        @apply border-b-2 border-foreground/25 py-2 font-semibold;
+      }
+
+      tbody tr:last-child td {
+        @apply border-b-0;
       }
 
       code {
@@ -89,7 +127,7 @@
     }
 
     code {
-      @apply rounded-md bg-muted/15 px-1.5 py-0.5 wrap-break-word font-cartograph text-sm text-foreground shadow-sm shadow-black/5 before:content-none after:content-none;
+      @apply rounded-(--radius-inline) bg-surface px-1.5 py-0.5 wrap-break-word font-mono text-[0.875em] font-normal text-foreground before:content-none after:content-none;
     }
 
     .astro-code code {
@@ -97,20 +135,26 @@
     }
 
     blockquote {
-      @apply rounded-r-xl border-s-[3px] border-accent/80 bg-accent/5 py-4 pr-5 pl-6 font-sriracha text-[1.05rem] text-foreground/90 opacity-90 shadow-sm shadow-accent/5 wrap-break-word;
+      @apply rounded-e-(--radius-box) border-s-2 border-accent bg-surface py-1 pr-5 pl-5 font-normal text-foreground not-italic wrap-break-word;
+      quotes: none;
+
+      p::before,
+      p::after {
+        content: none;
+      }
     }
 
     /* ===== Table of Contents (clean card, no glassmorphism) ===== */
     details {
-      @apply block w-full cursor-pointer rounded-2xl border border-border/25 bg-transparent text-foreground transition-colors duration-300 ease-in-out select-none hover:border-accent/30 [&_p]:hidden [&_ul]:my-0!;
+      @apply block w-full cursor-pointer rounded-(--radius-box) border border-border bg-transparent text-foreground transition-colors duration-300 ease-in-out select-none hover:border-accent/30 [&_p]:hidden [&_ul]:my-0!;
     }
 
     details[open] {
-      @apply border-accent/25 bg-transparent;
+      @apply border-border bg-surface/60;
     }
 
     summary {
-      @apply flex list-none items-center gap-2 px-4 py-3 font-cartograph text-sm font-medium tracking-wide text-foreground transition-colors duration-200 hover:text-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-accent focus-visible:outline-dashed;
+      @apply flex list-none items-center gap-2 px-4 py-3 text-sm font-medium text-foreground transition-colors duration-200 hover:text-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-accent focus-visible:outline-solid;
     }
 
     summary:hover::before,
@@ -175,7 +219,7 @@
 
     /* TOC inner list container */
     details > ul {
-      @apply relative mx-0 mt-0 mb-0 border-t border-border/15 px-4 pt-2 pb-3;
+      @apply relative mx-0 mt-0 mb-0 border-t border-border px-4 pt-2 pb-3;
     }
 
     details > ul > li {
@@ -187,57 +231,32 @@
     }
 
     details > ul li a {
-      @apply relative inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 font-cartograph text-[0.8125rem] text-foreground/85 no-underline transition-all duration-200 hover:bg-accent/8 hover:text-accent hover:no-underline;
+      @apply relative inline-flex items-center rounded-(--radius-inline) px-2 py-1 text-[0.875rem] font-normal text-foreground/85 no-underline transition-colors duration-200 hover:text-accent hover:no-underline;
       background-image: none !important;
-    }
-
-    details > ul li a::before {
-      content: "";
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      background: color-mix(in srgb, var(--accent) 50%, transparent);
-      transition: all 0.2s;
-    }
-
-    details > ul li a:hover::before {
-      background: var(--accent);
     }
 
     /* Nested list (sub-items) */
     details > ul ul {
-      @apply my-0 ml-3 border-l-2 border-accent/15 pl-2;
+      @apply my-0 ml-3 border-l border-border pl-2;
     }
 
     details > ul ul li a {
       @apply text-xs text-soft;
     }
 
-    details > ul ul li a::before {
-      width: 4px;
-      height: 4px;
-      background: color-mix(in srgb, var(--accent) 35%, transparent);
-    }
-
-    details > ul ul li a:hover::before {
-      background: color-mix(in srgb, var(--accent) 70%, transparent);
-    }
-
     pre {
-      @apply focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-dashed;
+      @apply focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-solid;
     }
   }
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
   .astro-code,
   code {
-    @apply font-cartograph;
+    @apply font-mono;
   }
 
   .astro-code {
-    @apply flex border bg-(--shiki-light-bg) text-(--shiki-light) outline-border [&_span]:text-(--shiki-light);
+    @apply flex rounded-(--radius-box) border bg-(--shiki-light-bg) text-(--shiki-light) outline-border [&_span]:text-(--shiki-light);
   }
 
   html[data-theme="dark"] .astro-code {
@@ -257,7 +276,7 @@
       @apply inline-block w-full bg-slate-400/20;
     }
     .highlighted-word {
-      @apply rounded-sm border border-border px-0.5 py-px;
+      @apply rounded-(--radius-inline) border border-border px-0.5 py-px;
     }
   }
 }

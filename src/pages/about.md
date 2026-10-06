@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "À propos"
+description: "Homelab, auto-hébergement et indépendance numérique : qui écrit ce blog et pourquoi."
 ---
 
 Salut, moi c'est **Brandon Visca**.

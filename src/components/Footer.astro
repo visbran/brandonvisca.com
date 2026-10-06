@@ -23,41 +23,25 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
   role="contentinfo"
   {...attrs}
 >
-  <!-- Top gradient border -->
-  <div
-    class="h-px w-full bg-linear-to-r from-transparent via-border/40 to-transparent"
-  >
-  </div>
-
-  <div class="app-layout py-8 sm:py-10">
-    <!-- Main footer grid -->
-    <div
-      class="flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:justify-between"
-    >
-      <!-- Brand column -->
-      <div class="flex flex-col items-center gap-3 sm:items-start">
+  <div class="app-layout">
+  <div class="border-t border-border py-10 sm:py-12">
+    <div class="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-start">
+      <div>
         <a
           href="/"
-          aria-label={`Go to home of ${SITE.title}`}
-          class="group footer-home-link relative flex items-center gap-2 rounded-md text-lg font-bold tracking-tight"
+          aria-label={`Accueil de ${SITE.title}`}
+          class="footer-home-link text-lg font-semibold tracking-[-0.02em] text-foreground transition-colors hover:text-accent"
         >
-          <span class="footer-logo-text">{SITE.title}</span>
+          {SITE.title}
         </a>
-        <p
-          class="max-w-xs text-center text-sm leading-relaxed text-soft sm:text-start"
-        >
-          {SITE.desc}
+        <p class="mt-2 max-w-sm text-sm leading-relaxed text-soft">
+          Guides concrets sur le homelab, l'auto-hébergement, Linux et macOS.
         </p>
       </div>
 
-      <!-- Social links -->
-      <nav class="flex flex-col items-center gap-3 sm:items-end" aria-labelledby={socialHeadingId}>
-        <p
-          id={socialHeadingId}
-          class="font-cartograph text-xs tracking-wider text-soft uppercase select-none"
-          >Liens</p
-        >
-        <ul class="flex items-center gap-2" role="list">
+      <nav aria-labelledby={socialHeadingId}>
+        <p id={socialHeadingId} class="sr-only">Liens</p>
+        <ul class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm" role="list">
           {
             socialLinks.map(social => (
               <li>
@@ -65,40 +49,33 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
                   href={social.href}
                   target={social.isExternal ? "_blank" : undefined}
                   rel={social.isExternal ? "noopener noreferrer" : undefined}
-                  aria-label={social.linkTitle}
-                  class="footer-social-btn group relative flex size-9 items-center justify-center rounded-xl border border-border/20 bg-muted/20 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
                   title={social.linkTitle}
+                  class="footer-link inline-flex items-center gap-1.5"
                 >
-                  <social.icon class="size-4.5 fill-transparent stroke-foreground/60 stroke-[1.5px] transition-all duration-300 group-hover:stroke-accent" />
-                  <span class="sr-only">{social.linkTitle}</span>
+                  <social.icon class="size-4 fill-transparent stroke-current stroke-[1.75px]" aria-hidden="true" />
+                  {social.name}
+                  <span class="sr-only">: {social.linkTitle}</span>
                 </LinkButton>
               </li>
             ))
           }
+          <li>
+            <a href="/rss.xml" class="footer-link">RSS</a>
+          </li>
         </ul>
       </nav>
     </div>
 
-    <!-- Bottom bar -->
-    <div class="mt-8 flex items-center gap-3" aria-hidden="true">
-      <div
-        class="h-px flex-1 bg-linear-to-r from-transparent via-border/25 to-transparent"
-      >
-      </div>
-    </div>
-
-    <div
-      class="mt-4 flex flex-col items-center justify-between gap-2 sm:flex-row"
-    >
-      <p class="font-cartograph text-xs tracking-wide text-soft">
-        &copy; {currentYear}
-        {SITE.title}. Tous droits réservés. &mdash;
-        <a href="/politique-confidentialite/" class="hover:text-accent transition-colors">Politique de confidentialité</a>
+    <div class="mt-10 flex flex-col gap-2 font-mono text-xs text-soft sm:flex-row sm:justify-between">
+      <p>
+        &copy; {currentYear} {SITE.title}.
+        <a href="/politique-confidentialite/" class="footer-link ml-1">Politique de confidentialité</a>
       </p>
-      <p class="font-cartograph text-xs tracking-wide text-soft">
-        Thème <a href="https://github.com/0xdres/astro-devosfera" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">astro-devosfera</a> par <span class="text-accent/70">0xdres</span>
+      <p>
+        Thème dérivé de <a href="https://github.com/0xdres/astro-devosfera" target="_blank" rel="noopener noreferrer" class="footer-link">astro-devosfera</a> par 0xdres
       </p>
     </div>
+  </div>
   </div>
 </footer>
 
@@ -106,48 +83,14 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
   .footer-wrapper {
     position: relative;
     isolation: isolate;
-    /* Soft gradient descending to bottom */
-    background: linear-gradient(
-      to bottom,
-      color-mix(in srgb, var(--background) 30%, transparent),
-      color-mix(in srgb, var(--background) 80%, transparent) 80%
-    );
   }
 
-  .footer-home-link {
-    outline-offset: 4px;
+  .footer-link {
+    color: var(--text-soft);
+    transition: color 0.2s ease;
   }
 
-  .footer-logo-text {
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: var(--foreground);
-    opacity: 0.8;
-    transition: opacity 0.3s;
-  }
-
-  .group:hover .footer-logo-text {
-    opacity: 1;
-  }
-
-  .footer-social-btn {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    will-change: transform, box-shadow;
-  }
-
-  .footer-social-btn:hover {
-    box-shadow: 0 8px 20px -4px color-mix(in srgb, var(--accent) 30%, transparent);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .footer-social-btn {
-      transition: none !important;
-      will-change: auto;
-    }
-
-    .footer-social-btn:hover {
-      transform: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
+  .footer-link:hover {
+    color: var(--accent);
   }
 </style>

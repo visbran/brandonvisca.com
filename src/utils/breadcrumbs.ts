@@ -22,7 +22,19 @@ const decodeSegment = (value: string) => {
   }
 };
 
+// Libellés des pages fixes : le slug anglais ou abrégé (about, cv) ne doit
+// pas s'afficher tel quel dans le fil d'Ariane.
+const SEGMENT_LABELS: Record<string, string> = {
+  about: "À propos",
+  cv: "CV",
+  blog: "Articles",
+  search: "Recherche",
+  "politique-confidentialite": "Politique de confidentialité",
+};
+
 export const formatPathSegmentLabel = (segment: string, locale?: string) => {
+  if (SEGMENT_LABELS[segment]) return SEGMENT_LABELS[segment];
+
   const readable = decodeSegment(segment)
     .replace(/[-_]+/g, " ")
     .replace(/\s+/g, " ")

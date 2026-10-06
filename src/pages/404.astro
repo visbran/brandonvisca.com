@@ -2,29 +2,48 @@
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import LinkButton from "@/components/LinkButton.astro";
 import { SITE } from "@/config";
 ---
 
 <Layout title={`404 Page introuvable | ${SITE.title}`}>
   <Header />
 
-  <main
-    id="main-content"
-    class="app-layout flex flex-1 items-center justify-center"
-  >
-    <div class="mb-14 flex flex-col items-center justify-center">
-      <h1 class="text-9xl font-bold text-accent">404</h1>
-      <span aria-hidden="true">¯\_(ツ)_/¯</span>
-      <p class="mt-4 text-2xl sm:text-3xl">Page introuvable</p>
-      <LinkButton
-        href="/"
-        class="my-6 text-lg underline decoration-dashed underline-offset-8"
-      >
-        Retour à l'accueil
-      </LinkButton>
+  <main id="main-content" class="app-layout flex flex-1 items-center">
+    <div class="grid w-full gap-10 py-16 sm:py-24 md:grid-cols-[auto_1fr] md:items-center md:gap-16">
+      <p class="font-mono text-7xl font-medium tracking-[-0.04em] text-accent sm:text-8xl" aria-hidden="true">
+        404
+      </p>
+      <div>
+        <h1 class="text-3xl font-semibold tracking-[-0.02em] sm:text-4xl">
+          Cette page n'existe pas ou plus.
+        </h1>
+        <p class="mt-4 max-w-md text-lg leading-relaxed text-soft">
+          Le lien est peut-être ancien. La recherche retrouve la plupart des articles par leur sujet.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+          <a href="/search/" class="notfound-cta">Rechercher un article</a>
+          <a href="/" class="link-arrow">Retour à l'accueil</a>
+        </div>
+      </div>
     </div>
   </main>
 
   <Footer />
 </Layout>
+
+<style>
+  .notfound-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-box);
+    background: var(--accent);
+    color: var(--background);
+    font-weight: 600;
+    transition: transform 0.25s var(--ease-out-soft);
+  }
+
+  .notfound-cta:active {
+    transform: translateY(1px);
+  }
+</style>

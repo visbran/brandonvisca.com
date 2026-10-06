@@ -3,74 +3,90 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+/*
+ * Palette « Cobalt » (2026-10). Une seule famille de gris froids accordée au
+ * fond « papier calque », un seul accent : le bleu de la marque. Les bordures
+ * sont des filets neutres, l'accent reste réservé à l'interaction et aux liens.
+ * Le fond est repris en dur dans Layout.astro (THEME_COLORS + script inline).
+ */
 :root,
 html[data-theme="light"] {
   --background: #f1f4f8;
-  --foreground: #353538;
+  --surface: #e7ecf2;
+  --foreground: #1b2029;
   --accent: #1158d1;
-  --muted: #c3cfdf;
-  --border: #7cadff;
-  /* Texte secondaire. Le fond clair est le plus lumineux du site, donc c'est
-   * lui qui fixe le plancher : 72 % donne 4.88:1, au-dessus du 4.5:1 de
-   * WCAG AA. En dessous de 70 % le ratio tombe sous le seuil (65 % = 4.00:1). */
-  --text-soft: color-mix(in srgb, var(--foreground) 72%, transparent);
+  --muted: #d9e0ea;
+  --border: #c9d2de;
+  /* #5a6372 sur #f1f4f8 : 5.6:1, au-dessus du 4.5:1 de WCAG AA. */
+  --text-soft: #5a6372;
+  --shadow-tint: 214 40% 30%;
 }
 
 html[data-theme="dark"] {
   --background: #10131a;
-  --foreground: #f6f7f8;
-  --accent: #008fec;
-  --muted: #212f3f;
-  --border: #2264e3;
-  --text-soft: color-mix(in srgb, var(--foreground) 65%, transparent);
+  --surface: #161b24;
+  --foreground: #e6e9ee;
+  /* Bleu de marque désaturé pour le sombre : 6.9:1 sur le fond. */
+  --accent: #4a9fe8;
+  --muted: #232b38;
+  --border: #2a3342;
+  /* #98a1af sur #10131a : 7.1:1. */
+  --text-soft: #98a1af;
+  --shadow-tint: 220 50% 2%;
 }
 
 @theme inline {
-  --font-app: var(--font-figtree);
-  --font-sriracha: var(--font-sriracha);
-  --font-cartograph: var(--font-cartograph);
+  --font-app: var(--font-geist);
+  --font-mono: var(--font-geist-mono);
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-soft: var(--text-soft);
-}
-
-.italic,
-.prose em,
-em,
-i {
-  font-family: var(--font-sriracha);
-  /* Sriracha is upright-slanted by design and ships no italic: never synthesize one */
-  font-style: normal;
-}
-
-.spicy {
-  font-family: var(--font-sriracha);
+  /* Échelle de rayons unique : 8px pour les conteneurs, 4px pour l'inline. */
+  --radius-box: 0.5rem;
+  --radius-inline: 0.25rem;
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @layer base {
   * {
-    @apply border-border outline-accent/75;
-    scrollbar-width: auto;
+    @apply border-border outline-accent;
+    scrollbar-width: thin;
     scrollbar-color: var(--color-muted) transparent;
   }
   html {
     @apply overflow-y-scroll scroll-smooth;
-    /* Only real font files render: no faux bold on single-weight faces (Sriracha, Cartograph) */
+    /* Geist a de vraies graisses et un vrai italique : rien à synthétiser. */
     font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
   body {
-    @apply flex min-h-svh flex-col bg-background font-app text-foreground selection:bg-accent/75 selection:text-background;
+    @apply flex min-h-svh flex-col bg-background font-app text-foreground selection:bg-accent selection:text-background;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
   }
   a,
   button {
-    @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+    @apply outline-offset-2 focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-solid;
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
+  }
+  time,
+  .tabular {
+    font-variant-numeric: tabular-nums;
   }
 }
 
@@ -79,49 +95,104 @@ i {
 }
 
 @utility app-layout {
-  @apply mx-auto w-full max-w-app px-4;
+  @apply mx-auto w-full max-w-app px-4 sm:px-6;
+}
+
+/* Petit libellé mono : à n'utiliser qu'avec parcimonie (1 section sur 3). */
+@utility label-mono {
+  @apply font-mono text-xs text-soft;
+  letter-spacing: 0.02em;
+}
+
+/* Lien texte avec flèche, remplace les boutons « ghost » génériques. */
+@utility link-arrow {
+  @apply inline-flex items-center gap-1.5 font-medium text-accent transition-colors duration-200;
+  & svg {
+    transition: transform 0.3s var(--ease-out-soft);
+  }
+  &:hover svg {
+    transform: translateX(3px);
+  }
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 .active-nav {
   @apply text-accent;
 }
 
-/* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */
-/* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5rem;
 }
 
-/* Premium Pagefind Overrides */
+/* Apparition au chargement : hiérarchie de lecture, pas de décor. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: reveal-up 0.7s var(--ease-out-soft) both;
+    animation-delay: calc(var(--i, 0) * 70ms);
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Barre de lecture des articles : animation liée au défilement, sans JS.
+ * Navigateurs sans scroll-timeline : la barre reste masquée. */
+.progress-bar {
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+}
+
+@supports (animation-timeline: scroll()) {
+  .progress-bar {
+    animation: read-progress linear both;
+    animation-timeline: scroll(root block);
+  }
+}
+
+@keyframes read-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ===== Pagefind ===== */
 .premium-search {
   width: 100%;
   --pagefind-ui-font: var(--font-app);
   --pagefind-ui-text: var(--foreground);
   --pagefind-ui-background: transparent;
-  --pagefind-ui-border: color-mix(in srgb, var(--border) 50%, transparent);
+  --pagefind-ui-border: var(--border);
   --pagefind-ui-primary: var(--accent);
   --pagefind-ui-tag: var(--background);
-  --pagefind-ui-border-radius: 0.75rem;
+  --pagefind-ui-border-radius: var(--radius-box);
 }
 
-/* Search input look */
 .premium-search input.pagefind-ui__search-input {
   font-weight: 400;
-  border: 1px solid color-mix(in srgb, var(--border) 40%, transparent);
-  border-radius: 1rem;
-  background: color-mix(in srgb, var(--foreground) 3%, var(--background));
-  padding: 1rem 1rem 1rem 3.5rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px -5px color-mix(in srgb, var(--background) 50%, transparent);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-box);
+  background: var(--surface);
+  padding: 1rem 1rem 1rem 3.25rem;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .premium-search input.pagefind-ui__search-input:focus-visible {
-  outline: none;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
   border-color: var(--accent);
-  box-shadow:
-    0 0 0 3px color-mix(in srgb, var(--accent) 12%, transparent),
-    0 4px 30px color-mix(in srgb, var(--accent) 15%, transparent);
-  background: color-mix(in srgb, var(--accent) 3%, var(--background));
+  background: var(--background);
 }
 
 .premium-search input.pagefind-ui__search-input::placeholder {
@@ -129,23 +200,23 @@ i {
 }
 
 .premium-search form::before {
-  background-color: var(--foreground);
-  opacity: 0.6;
-  width: 20px;
-  height: 20px;
-  left: 20px;
-  top: calc(50% - 10px);
+  background-color: var(--text-soft);
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  left: 18px;
+  top: calc(50% - 9px);
 }
 
 .premium-search .pagefind-ui__search-clear {
-  border-radius: 0.5rem;
-  padding: 0 1rem;
-  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  border-radius: var(--radius-inline);
+  padding: 0 0.75rem;
+  background: transparent;
+  color: var(--text-soft);
   right: 10px;
 }
 
 .premium-search .pagefind-ui__search-clear:hover {
-  background: color-mix(in srgb, var(--accent) 15%, transparent);
   color: var(--accent);
 }
 
@@ -154,25 +225,19 @@ i {
 }
 
 .premium-search .pagefind-ui__results .pagefind-ui__result.pagefind-ui__result {
-  padding: 1.25rem 1.25rem 1.25rem 1.55rem;
-  border: 1px solid color-mix(in srgb, var(--border) 30%, transparent);
-  border-radius: 1rem;
-  background: color-mix(in srgb, var(--foreground) 2%, var(--background));
-  transition: all 0.2s ease;
-  margin-bottom: 1rem;
-}
-
-.premium-search .pagefind-ui__results .pagefind-ui__result.pagefind-ui__result:hover {
-  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
-  background: color-mix(in srgb, var(--accent) 4%, var(--background));
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--accent) 15%, transparent);
+  padding: 1.25rem 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  margin: 0;
 }
 
 .premium-search .pagefind-ui__result-title a {
   color: var(--foreground);
   transition: color 0.2s ease;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .premium-search .pagefind-ui__result:hover .pagefind-ui__result-title a {
@@ -180,32 +245,34 @@ i {
 }
 
 .premium-search .pagefind-ui__result-excerpt {
-  opacity: 0.7;
+  color: var(--text-soft);
   font-size: 0.9rem;
   line-height: 1.6;
   margin-top: 0.5rem;
 }
 
 .premium-search .pagefind-ui__result-excerpt mark {
-  background: color-mix(in srgb, var(--accent) 25%, transparent);
-  color: var(--accent);
-  padding: 0.1em 0.3em;
-  border-radius: 4px;
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  color: var(--foreground);
+  padding: 0 0.15em;
+  border-radius: var(--radius-inline);
   font-weight: 600;
 }
 
 .premium-search .pagefind-ui__button {
-  border-radius: 0.75rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
-  background: color-mix(in srgb, var(--accent) 8%, transparent);
-  color: var(--accent);
-  font-weight: 600;
-  transition: all 0.3s ease;
+  border-radius: var(--radius-box);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--foreground);
+  font-weight: 500;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .premium-search .pagefind-ui__button:hover {
-  background: color-mix(in srgb, var(--accent) 15%, transparent);
-  box-shadow: 0 4px 15px color-mix(in srgb, var(--accent) 15%, transparent);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
-@import './custom.css';
+@import "./custom.css";
