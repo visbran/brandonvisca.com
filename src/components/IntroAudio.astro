@@ -125,11 +125,11 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.45rem 0.9rem;
-    border-radius: 0.5rem;
-    border: 1px solid color-mix(in oklab, var(--border) 40%, transparent);
-    background: color-mix(in oklab, var(--muted) 10%, transparent);
-    font-family: var(--font-cartograph, monospace);
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--radius-box);
+    border: 1px solid var(--border);
+    background: transparent;
+    font-family: var(--font-geist-mono), monospace;
     font-size: 0.75rem;
     color: var(--foreground);
     transition:
@@ -298,14 +298,14 @@ const formattedDuration = `${Math.floor(duration / 60)}:${String(duration % 60).
   }
 
   .intro-live-pill {
-    border-radius: 999px;
-    border: 1px solid color-mix(in oklab, var(--accent) 45%, transparent);
+    border-radius: var(--radius-inline);
+    border: 0;
     background: color-mix(in oklab, var(--accent) 14%, transparent);
     color: var(--accent);
     font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    padding: 0.15rem 0.45rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 0.1rem 0.35rem;
     text-transform: uppercase;
     white-space: nowrap;
   }

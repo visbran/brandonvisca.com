@@ -4,7 +4,8 @@ import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
-import IconHash from "@/assets/icons/IconHash.svg";
+import tagsVocabulary from "@/data/tags.json";
+import { tagLabel } from "@/utils/tagMeta";
 import getUniqueTags from "@/utils/getUniqueTags";
 import getPostsByTag from "@/utils/getPostsByTag";
 import { SITE } from "@/config";
@@ -26,7 +27,10 @@ const tagsWithCount = tags.map(({ tag, tagName }) => ({
 
 const META_TAGS = ["guide", "debutant", "intermediaire", "avance"];
 const displayTags = tagsWithCount.filter(({ tag }) => !META_TAGS.includes(tag));
-const maxCount = Math.max(...displayTags.map(t => t.count));
+const byCount = (a: { count: number }, b: { count: number }) => b.count - a.count;
+const primarySet = new Set<string>(tagsVocabulary.primary);
+const primaryTags = displayTags.filter(t => primarySet.has(t.tag)).sort(byCount);
+const otherTags = displayTags.filter(t => !primarySet.has(t.tag)).sort(byCount);
 ---
 
 <Layout
@@ -34,208 +38,91 @@ const maxCount = Math.max(...displayTags.map(t => t.count));
   description="Explorez tous les sujets du blog Brandon Visca : homelab, auto-hébergement, Linux, macOS, sécurité, Docker et bien plus.">
   <Header />
   <Breadcrumb />
-  <main id="main-content" class="app-layout pb-12">
-    <!-- Hero -->
-    <div class="tags-hero">
-      <div class="relative z-10">
-        <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          <span>Tags</span>
-        </h1>
-        <p class="mt-3 max-w-lg text-soft italic">
-          Explorez tous les sujets du blog. Chaque tag est un univers à part entière.
-        </p>
-        <div class="mt-4 flex items-center gap-2 text-sm text-soft">
-          <span class="hero-badge">
-            {displayTags.length} tags
-          </span>
-          <span class="hero-badge">
-            {posts.length} articles
-          </span>
-        </div>
-      </div>
+  <main id="main-content" class="app-layout pb-16">
+    <div class="pt-6 pb-12">
+      <h1 class="text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">Tags</h1>
+      <p class="mt-4 max-w-xl text-lg leading-relaxed text-soft">
+        Tous les sujets du blog, du plus couvert au plus pointu.
+      </p>
+      <p class="mt-4 font-mono text-xs text-soft tabular">
+        {displayTags.length} tags, {posts.length} articles
+      </p>
     </div>
 
-    <div class="tags-grid">
-      {
-        displayTags.map(({ tag, tagName, count }) => {
-          const intensity = count / maxCount;
-          return (
-            <a
-              href={`/tags/${tag}/`}
-              transition:name={tag}
-              class="tag-card group"
-            >
-              <div class="tag-content">
-                <div class="flex items-center gap-1.5">
-                  <IconHash class="size-5 text-accent" />
-                  <span class="tag-name">{tagName}</span>
-                </div>
-                <div class="tag-count">
-                  <span class="tag-count-number">{count}</span>
-                  <span class="tag-count-label">
-                    {count === 1 ? "article" : "articles"}
-                  </span>
-                </div>
-              </div>
-              <div class="tag-bar">
-                <div
-                  class="tag-bar-fill"
-                  style={`width: ${Math.max(intensity * 100, 8)}%`}
-                />
-              </div>
-            </a>
-          );
-        })
-      }
-    </div>
+    <section aria-labelledby="primary-tags-title" class="mb-16">
+      <h2 id="primary-tags-title" class="mb-6 text-2xl font-semibold tracking-[-0.02em]">
+        Thèmes principaux
+      </h2>
+      <ul class="primary-grid">
+        {
+          primaryTags.map(({ tag, count }) => (
+            <li>
+              <a href={`/tags/${tag}/`} transition:name={tag} class="primary-tag group">
+                <span class="text-xl font-medium tracking-[-0.01em] transition-colors duration-200 group-hover:text-accent">
+                  {tagLabel(tag)}
+                </span>
+                <span class="font-mono text-xs text-soft tabular">
+                  {count} {count === 1 ? "article" : "articles"}
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    {
+      otherTags.length > 0 && (
+        <section aria-labelledby="other-tags-title">
+          <h2 id="other-tags-title" class="mb-6 text-2xl font-semibold tracking-[-0.02em]">
+            Autres sujets
+          </h2>
+          <ul class="flex flex-wrap gap-x-6 gap-y-3">
+            {otherTags.map(({ tag, tagName, count }) => (
+              <li>
+                <a href={`/tags/${tag}/`} transition:name={tag} class="group inline-flex items-baseline gap-1.5">
+                  <span class="text-base transition-colors duration-200 group-hover:text-accent">#{tagName}</span>
+                  <span class="font-mono text-xs text-soft tabular">{count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
   </main>
   <Footer />
 </Layout>
 
 <style>
-  /* ===== Hero ===== */
-  .tags-hero {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1.5rem;
-    padding: 2.5rem 2rem;
-    margin-bottom: 2.5rem;
-    background: color-mix(
-      in srgb,
-      var(--color-foreground) 3%,
-      var(--color-background)
-    );
-    border: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+  .primary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 2rem;
   }
 
   @media (min-width: 640px) {
-    .tags-hero {
-      padding: 3rem 3rem;
+    .primary-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
-
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.3rem 0.85rem;
-    border-radius: 999px;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: var(--color-accent);
-    background: color-mix(in srgb, var(--color-accent) 8%, transparent);
-    border: 1px solid color-mix(in srgb, var(--color-accent) 15%, transparent);
+  @media (min-width: 1024px) {
+    .primary-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
-  /* ===== Tags Grid ===== */
-  .tags-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 1rem;
-  }
-
-  /* ===== Tag Card ===== */
-  .tag-card {
-    position: relative;
+  .primary-tag {
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1.25rem;
-    border-radius: 1rem;
-    background: color-mix(
-      in srgb,
-      var(--color-foreground) 2%,
-      var(--color-background)
-    );
-    border: 1px solid
-      color-mix(in srgb, var(--color-foreground) 6%, transparent);
-    overflow: hidden;
-    transition:
-      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 0.3s ease,
-      box-shadow 0.3s ease;
-    text-decoration: none;
-    color: var(--color-foreground);
-    isolation: isolate;
-  }
-
-  .tag-card:hover {
-    transform: translateY(-3px);
-    border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
-    box-shadow:
-      0 10px 40px -10px color-mix(in srgb, var(--color-accent) 15%, transparent),
-      inset 0 1px 0 color-mix(in srgb, var(--color-accent) 6%, transparent);
-  }
-
-  .tag-content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1rem;
+    border-top: 1px solid var(--border);
   }
 
-  .tag-name {
-    font-weight: 600;
-    font-size: 1rem;
-    transition:
-      color 0.2s ease,
-      text-shadow 0.3s ease;
-  }
-
-  .tag-card:hover .tag-name {
-    color: var(--color-accent);
-  }
-
-  .tag-count {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-
-  .tag-count-number {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1;
-    color: var(--color-accent);
-    transition: text-shadow 0.3s ease;
-  }
-
-
-  .tag-count-label {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-soft);
-  }
-
-  /* Progress bar */
-  .tag-bar {
-    position: relative;
-    z-index: 1;
-    height: 3px;
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--color-foreground) 6%, transparent);
-    overflow: hidden;
-  }
-
-  .tag-bar-fill {
-    height: 100%;
-    border-radius: 999px;
-    background: linear-gradient(
-      90deg,
-      var(--color-accent),
-      var(--color-border)
-    );
-    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-
-  @media (max-width: 480px) {
-    .tags-grid {
-      grid-template-columns: 1fr;
-    }
+  .primary-tag:active {
+    transform: translateY(1px);
   }
 </style>

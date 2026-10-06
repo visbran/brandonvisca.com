@@ -363,3 +363,28 @@ trompeur).
 **Vérification** : build complet avant/après comparé page par page (350 pages) : texte visible et JSON-LD identiques, seuls changent les 5 textes alternatifs corrigés et une image sans `alt` qui reçoit `alt=""`.
 
 **Merge strategy** : sur update upstream, garder les options `gfm`/`smartypants` de `mdx()` tant que l'intégration MDX ne lit pas les défauts du processeur.
+
+---
+
+### Refonte visuelle « taste-skill » (2026-10-06)
+
+Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-skill), qui remplace impeccable (`.impeccable/` et `DESIGN.md` supprimés). Contenu, URLs, labels de nav, JSON-LD et Pagefind inchangés. Dials : VARIANCE 6, MOTION 4, DENSITY 4.
+
+**Système**
+- Polices : Figtree + Sriracha + Cartograph CF → **Geist** (variable, vrai italique) + **Geist Mono**, auto-hébergées (`src/assets/fonts/geist*.woff2`, licence `geist-OFL.txt`). Les images OG gardent Figtree (`src/assets/fonts/og/`, `loadGoogleFont.ts` non touché). Utilitaire `font-cartograph` renommé `font-mono` dans tout `src/`.
+- Couleurs (`global.css`) : une seule famille de gris froids, fond clair `#f1f4f8` conservé, nouveau jeton `--surface`, bordures neutres (plus de bleu), accent sombre désaturé `#4a9fe8`. Classes `.italic`/`.spicy` supprimées.
+- Rayons : `--radius-box` 8px (conteneurs), `--radius-inline` 4px (code, kbd, badges). Plus de pilules. Exception : `BackToTopButton` reste rond (anneau de progression).
+- Grille décorative du fond retirée (`Layout.astro`), grain conservé à 5 %.
+- Plus aucun écouteur `scroll` pour l'animation : header → `IntersectionObserver` sur `#header-sentinel` ; barre de lecture → `animation-timeline: scroll()` (CSS).
+
+**Fichiers core modifiés**
+- `astro.config.ts` : bloc `fonts`.
+- `src/layouts/Layout.astro` : `<Font>` Geist, viewport `initial-scale=1`, `.site-grid` supprimé.
+- `src/layouts/PostDetails.astro` : en-tête aligné à gauche sans boîte (titre, chapô = `description`, méta mono, tags `#tag`), séparateur « end » retiré, nav précédent/suivant sans cartes, bouton Copier restylé, progression en CSS.
+- `src/layouts/Main.astro` : échelle des titres et du chapô.
+- `src/pages/index.astro` : réécrit. Hero split (identité + dernier article), bento « À la une », section « Par thème » (tags primaires), liste « Derniers articles » datée.
+- `src/pages/blog/[...page].astro`, `src/pages/tags/index.astro` (plus de barres de volume), `src/pages/archives/index.astro` : héros sans boîte, badges retirés.
+- `src/components/` : `Header` (filet actif, hauteur fixe 64px), `Footer` (simplifié, plus de `&mdash;`), `Card` (bloc sous filet, plus de boîte), `Datetime` (mono, sans icône), `Breadcrumb` (sans pilule), `IntroAudio`, `ShareLinks`, `MobileMenu`.
+- `src/styles/typography.css` : titres h2/h3 Geist, blockquote sans Sriracha, TOC sans puces décoratives.
+- `src/styles/custom.css` : texte fer à gauche (fin du justifié + césure).
+- `src/utils/tagMeta.ts` : helper `tagLabel()`.

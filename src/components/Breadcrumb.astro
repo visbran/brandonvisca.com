@@ -27,7 +27,7 @@ const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Accueil";
       <a
         id="back-button"
         href="/"
-        class="breadcrumb-bar back-btn group flex-shrink-0 !gap-2 text-soft transition-colors duration-200 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background font-cartograph text-sm"
+        class="breadcrumb-bar back-btn group flex-shrink-0 !gap-2 text-soft transition-colors duration-200 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background font-mono text-sm"
         aria-label={`Revenir à la page précédente. Contexte actuel : ${currentPageLabel}`}
       >
         <IconChevronLeft class="size-4 opacity-70 transition-transform duration-200 group-hover:-translate-x-0.5 rtl:rotate-180 rtl:group-hover:translate-x-0.5" />
@@ -38,7 +38,7 @@ const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Accueil";
 
     <ol
       class:list={[
-        "breadcrumb-bar font-cartograph text-sm",
+        "breadcrumb-bar font-mono text-sm",
         {
           "has-back": withBackButton,
         },
@@ -85,10 +85,10 @@ const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Accueil";
     gap: 0.2rem;
     max-width: 100%;
     overflow-x: auto;
-    padding: 0.4rem 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--border) 30%, transparent);
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--foreground) 3%, var(--background));
+    padding: 0.4rem 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     box-shadow: none;
     scrollbar-width: none;
     animation: breadcrumb-in 0.35s ease-out both;
@@ -141,7 +141,7 @@ const currentPageLabel = breadcrumbs.at(-1)?.label ?? "Accueil";
   .breadcrumb-home:hover,
   .breadcrumb-home:focus-visible {
     color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 9%, transparent);
+    background: transparent;
     transform: translateY(-1px);
   }
 

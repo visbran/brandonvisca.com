@@ -303,3 +303,10 @@ export function getTagMeta(tag: string): TagMeta {
     description: `Tous les articles avec le tag "${tagLabel}" sur ${SITE.title}.`,
   };
 }
+
+/**
+ * Libellé lisible d'un tag, tiré de son title SEO (« Homelab — Guides… » →
+ * « Homelab »). Repli sur le slug quand le tag n'a pas d'entrée.
+ */
+export const tagLabel = (slug: string): string =>
+  TAG_META[slug]?.title.split(/\s[—|-]\s/)[0] ?? slug;

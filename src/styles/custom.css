@@ -5,16 +5,11 @@
 
 /* ── Typography ── */
 
-/* Paragraphes justifiés avec césure automatique (lang="fr" défini dans config.ts) */
+/* Refonte 2026-10 : fer à gauche au lieu de justifié. La justification avec
+ * césure créait des rivières et coupait les termes techniques (« fi-chier »,
+ * « au-thentification »). `text-wrap: pretty` évite les orphelins. */
 .app-prose p {
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
-
-/* Mobile : retour au left pour éviter les rivières sur écrans étroits */
-@media (max-width: 640px) {
-  .app-prose p {
-    text-align: left;
-  }
+  text-align: left;
+  hyphens: manual;
+  text-wrap: pretty;
 }
