@@ -398,3 +398,4 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 - `AboutLayout.astro` : gabarit de page générique (h1 + chapô `description`, `hideTitle` pour le CV) au lieu du hero « Salut, je suis » répété sur CV, contact et politique. JSON-LD `ProfilePage` émis seulement sur /about/.
 - `search.astro`, `404.astro`, `tags/[tag]/[...page].astro`, `Pagination.astro` : alignés sur le système.
 - `src/utils/breadcrumbs.ts` : libellés fixes (`about` → « À propos », `cv` → « CV »…).
+- Essai **mesure 70ch** (branche `design/taste-70ch`) : `PostDetails.astro` enveloppe article + pied d'article dans `.post-column` (max 70ch, calée à gauche sur le logo) et place le rail dans une grille `1fr 13.5rem` en `position: sticky` dès 1280px (plus de `position: fixed` ni d'observer de fin d'article). Sommaire inline masqué à partir de 1280px.

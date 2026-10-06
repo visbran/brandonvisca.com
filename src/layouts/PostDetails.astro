@@ -182,7 +182,7 @@ const nextPost =
     data-pagefind-body
   >
     <!-- Post header : aligné à gauche, sans boîte. Méta en une ligne mono. -->
-    <header class="post-header relative mt-6 mb-12 border-b border-border pb-10 sm:mt-10">
+    <header class="post-header relative mt-6 mb-10 border-b border-border pb-10 sm:mt-10">
       <h1
         class="post-title max-w-[22ch] text-4xl leading-[1.08] font-semibold tracking-[-0.03em] sm:text-5xl lg:text-[3.25rem]"
       >
@@ -224,24 +224,11 @@ const nextPost =
       </div>
     </header>
 
-    {
-      tocItems.length > 2 && (
-        <aside class="toc-rail" aria-labelledby="toc-rail-title" data-pagefind-ignore>
-          <p id="toc-rail-title" class="toc-rail-title">Sommaire</p>
-          <ol class="toc-rail-list">
-            {tocItems.map(h => (
-              <li class:list={["toc-rail-item", { "is-sub": h.depth === 3 }]}>
-                <a href={`#${h.slug}`} data-toc-link={h.slug}>{h.text}</a>
-              </li>
-            ))}
-          </ol>
-        </aside>
-      )
-    }
-
+    <div class="post-body">
+    <div class="post-column">
     <article
       id="article"
-      class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
+      class="app-prose mt-0 w-full prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
     >
       <Content components={{ GalleryEmbed }} />
     </article>
@@ -333,6 +320,22 @@ const nextPost =
           </a>
         )
       }
+    </div>
+    </div>
+    {
+      tocItems.length > 2 && (
+        <aside class="toc-rail" aria-labelledby="toc-rail-title" data-pagefind-ignore>
+          <p id="toc-rail-title" class="toc-rail-title">Sommaire</p>
+          <ol class="toc-rail-list">
+            {tocItems.map(h => (
+              <li class:list={["toc-rail-item", { "is-sub": h.depth === 3 }]}>
+                <a href={`#${h.slug}`} data-toc-link={h.slug}>{h.text}</a>
+              </li>
+            ))}
+          </ol>
+        </aside>
+      )
+    }
     </div>
   </main>
   <BackToTopButton />
@@ -443,7 +446,7 @@ const nextPost =
 
 <script>
   // Sommaire latéral : section courante surlignée (IntersectionObserver, pas
-  // d'écouteur scroll), rail masqué une fois l'article terminé.
+  // d'écouteur scroll). Le rail est sticky : il s'arrête avec la colonne.
   let tocCleanup: (() => void) | null = null;
 
   function setupTocRail() {
@@ -490,16 +493,8 @@ const nextPost =
     );
     headings.forEach(h => headingObserver.observe(h));
 
-    // Rail masqué quand le bas de l'article est passé (footer, nav suivante).
-    const endObserver = new IntersectionObserver(([entry]) => {
-      const pastEnd = !entry.isIntersecting && entry.boundingClientRect.top < 0;
-      rail.classList.toggle("is-hidden", pastEnd);
-    });
-    endObserver.observe(article);
-
     tocCleanup = () => {
       headingObserver.disconnect();
-      endObserver.disconnect();
     };
   }
 
@@ -511,33 +506,43 @@ const nextPost =
     color: var(--foreground);
   }
 
-  /* ── Rail de sommaire ──
-   * Placé dans la marge droite, hors de la colonne de lecture : la largeur et
-   * l'alignement du texte ne bougent pas. Visible seulement quand la marge est
-   * assez large (≥ 1400px) ; en dessous, le sommaire inline du corps reste. */
+  /* ── Colonne de lecture + rail de sommaire ──
+   * La colonne est limitée à ~70 caractères (mesure de lecture) et reste
+   * calée à gauche, sur le bord du logo et du titre. À partir de 1280px le
+   * sommaire occupe l'espace libéré à droite, collant pendant la lecture ;
+   * en dessous, le sommaire inline de remark-toc prend le relais. */
+  .post-column {
+    min-width: 0;
+    max-width: 70ch;
+  }
+
+  .post-column :global(#article) {
+    max-width: none;
+  }
+
   .toc-rail {
     display: none;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1280px) {
+    .post-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 13.5rem;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
     .toc-rail {
-      position: fixed;
-      top: 6.5rem;
-      left: calc(50% + 32rem + 1.5rem);
-      width: min(15rem, calc(50vw - 32rem - 3rem));
-      max-height: calc(100dvh - 9rem);
+      position: sticky;
+      top: 6rem;
+      max-height: calc(100dvh - 8rem);
       overflow-y: auto;
       overscroll-behavior: contain;
       scrollbar-width: none;
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
-      transition: opacity 0.3s ease;
-    }
-
-    .toc-rail.is-hidden {
-      opacity: 0;
-      pointer-events: none;
+      padding-top: 0.25rem;
     }
 
     /* Le rail remplace le sommaire inline : on masque son titre et son bloc. */
