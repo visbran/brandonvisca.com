@@ -221,6 +221,8 @@ Lance `sudo swapon --show` : si la commande retourne une ligne avec ton fichier 
 - [Modifier l'heure de son serveur Linux](https://brandonvisca.com/comment-modifier-heure-du-serveur-sous-linux/)
 - [Doc officielle vm.swappiness (kernel.org)](https://www.kernel.org/doc/html/latest/admin-guide/sysctl/vm.html#swappiness)
 
+💡 À lire aussi : [Journalctl Linux : lire et filtrer les logs systemd comme un pro](/journalctl-guide-logs-systemd-linux/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [Ladybird Browser : Le navigateur web qui refuse de se soumettre à Google (et tant mieux)](/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/)

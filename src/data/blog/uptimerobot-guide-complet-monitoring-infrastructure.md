@@ -449,6 +449,8 @@ UptimeRobot règle ça en 5 minutes. 50 moniteurs gratuits, alertes Discord/Slac
 - [Documentation officielle UptimeRobot](https://uptimerobot.com/help) : référence complète
 - [API UptimeRobot v2](https://uptimerobot.com/api) : endpoints et paramètres
 
+💡 À lire aussi : [Journalctl Linux : lire et filtrer les logs systemd comme un pro](/journalctl-guide-logs-systemd-linux/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
