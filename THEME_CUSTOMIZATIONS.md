@@ -399,3 +399,11 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 - `search.astro`, `404.astro`, `tags/[tag]/[...page].astro`, `Pagination.astro` : alignés sur le système.
 - `src/utils/breadcrumbs.ts` : libellés fixes (`about` → « À propos », `cv` → « CV »…).
 - Essai **mesure 70ch** (branche `design/taste-70ch`) : `PostDetails.astro` enveloppe article + pied d'article dans `.post-column` (max 70ch, calée à gauche sur le logo) et place le rail dans une grille `1fr 13.5rem` en `position: sticky` dès 1280px (plus de `position: fixed` ni d'observer de fin d'article). Sommaire inline masqué à partir de 1280px.
+
+#### Images OG alignées (2026-10-06)
+
+- `src/utils/og-templates/frame.js` (nouveau) : socle commun, thème sombre Cobalt, halo d'accent en haut à droite, invite `~/homelab $` en tête, domaine à droite, pied sous filet.
+- `post.js` : titre Geist 600 (76/66/58px selon la longueur, 3 lignes max), auteur complet, 3 tags thématiques en mono (méta-tags exclus).
+- `site.js` : nom + sous-titre du hero, thèmes principaux en pied.
+- `src/utils/loadGoogleFont.ts` : Geist 400/500/600 + Geist Mono 400 en WOFF statiques (`src/assets/fonts/og/`), tables GSUB/GPOS/GDEF/kern retirées : avec elles Satori 0.19 produit des espaces irréguliers entre les mots.
+- `src/config.ts` : `ogImage: ""` → les pages hors articles utilisent `/og.png` généré. `public/og.webp` supprimé : c'était la bannière promo du thème upstream « Devosfera ».

@@ -1,159 +1,56 @@
 import satori from "satori";
 import { SITE } from "@/config";
 import loadGoogleFonts from "../loadGoogleFont";
+import { C, h, frame, bottomRow } from "./frame";
 
 /**
- * Carte OG d'article — palette du site, pas de décor flottant.
- *
- * rack-night (#10131a) en fond, accent cyan (#008fec), grille fantôme en
- * signature (celle du site, pas un halo), texte plat sans ombre. Les valeurs
- * sont littérales : Satori ne résout ni les tokens CSS ni color-mix().
- * `#a6a7aa` est le `--text-soft` sombre aplati (f6f7f8 à 65 % sur 10131a).
+ * Carte OG d'article : même composition que l'en-tête d'article du site.
+ * Titre Geist 600 serré, auteur en pied, tags thématiques en mono.
  */
+const META_TAGS = new Set(["guide", "debutant", "intermediaire", "avance"]);
+
 export default async post => {
-  return satori(
+  const { title, tags = [] } = post.data;
+  // Certains articles portent « Brandon » seul : la carte affiche le nom complet.
+  const author =
+    !post.data.author || SITE.author.startsWith(post.data.author)
+      ? SITE.author
+      : post.data.author;
+  const topicTags = tags.filter(t => !META_TAGS.has(t)).slice(0, 3);
+  // Titres longs : on réduit le corps plutôt que de tronquer trop tôt.
+  const fontSize = title.length > 70 ? 58 : title.length > 45 ? 66 : 76;
+
+  const middle = h(
+    "div",
     {
-      type: "div",
-      props: {
-        style: {
-          height: "100%",
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "space-between",
-          backgroundColor: "#10131a",
-          color: "#f6f7f8",
-          padding: "72px",
-          // Grille fantôme : la signature du site, pas un halo décoratif.
-          backgroundImage:
-            "linear-gradient(rgba(34, 100, 227, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 100, 227, 0.12) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-        },
-        children: [
-          // 1. En-tête : marqueur accent + nom de domaine
-          {
-            type: "div",
-            props: {
-              style: {
-                display: "flex",
-                alignItems: "center",
-              },
-              children: [
-                {
-                  type: "div",
-                  props: {
-                    style: {
-                      width: "12px",
-                      height: "12px",
-                      borderRadius: "3px",
-                      backgroundColor: "#008fec",
-                      marginRight: "14px",
-                    },
-                  },
-                },
-                {
-                  type: "span",
-                  props: {
-                    style: {
-                      fontSize: 24,
-                      fontWeight: 600,
-                      color: "#a6a7aa",
-                      letterSpacing: "1px",
-                    },
-                    children: SITE.title + ".com",
-                  },
-                },
-              ],
-            },
-          },
-
-          // 2. Titre de l'article
-          {
-            type: "div",
-            props: {
-              style: {
-                display: "flex",
-                flexDirection: "column",
-                width: "100%",
-              },
-              children: {
-                type: "h1",
-                props: {
-                  style: {
-                    fontSize: 76,
-                    fontWeight: 900,
-                    lineHeight: 1.12,
-                    margin: 0,
-                    color: "#f6f7f8",
-                    overflow: "hidden",
-                    display: "-webkit-box",
-                    lineClamp: 3,
-                    boxOrient: "vertical",
-                  },
-                  children: post.data.title,
-                },
-              },
-            },
-          },
-
-          // 3. Signature : filet accent + auteur
-          {
-            type: "div",
-            props: {
-              style: {
-                display: "flex",
-                alignItems: "center",
-                width: "100%",
-              },
-              children: [
-                {
-                  type: "div",
-                  props: {
-                    style: {
-                      width: "56px",
-                      height: "5px",
-                      borderRadius: "3px",
-                      backgroundColor: "#008fec",
-                      marginRight: "24px",
-                    },
-                  },
-                },
-                {
-                  type: "span",
-                  props: {
-                    style: {
-                      fontSize: 30,
-                      color: "#a6a7aa",
-                    },
-                    children: [
-                      "Par\u00a0",
-                      {
-                        type: "span",
-                        props: {
-                          style: {
-                            fontWeight: 700,
-                            color: "#f6f7f8",
-                          },
-                          children: post.data.author,
-                        },
-                      },
-                    ],
-                  },
-                },
-              ],
-            },
-          },
-        ],
-      },
+      display: "block",
+      width: "100%",
+      fontSize,
+      fontWeight: 600,
+      lineHeight: 1.08,
+      letterSpacing: "-0.03em",
+      color: C.foreground,
+      overflow: "hidden",
+      lineClamp: 3,
     },
-    {
-      width: 1200,
-      height: 630,
-      embedFont: true,
-      fonts: await loadGoogleFonts(
-        post.data.title + post.data.author + SITE.title + "Par" + ".com"
-      ),
-    }
+    title
   );
+
+  const bottom = bottomRow(
+    h("span", { fontSize: 28, fontWeight: 500, color: C.foreground }, author),
+    h(
+      "div",
+      { display: "flex", fontFamily: "Geist Mono", fontSize: 22, color: C.soft },
+      topicTags.map((t, i) =>
+        h("span", { marginLeft: i === 0 ? 0 : 20 }, `#${t}`)
+      )
+    )
+  );
+
+  return satori(frame(middle, bottom), {
+    width: 1200,
+    height: 630,
+    embedFont: true,
+    fonts: await loadGoogleFonts(),
+  });
 };
