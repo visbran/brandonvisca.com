@@ -35,7 +35,20 @@ const {
   faqs,
 } = post.data;
 
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
+
+/* ========== Lecture : sommaire latéral + temps de lecture ========== */
+// Le sommaire inline (remark-toc, « Table des matières ») reste dans le corps
+// pour les écrans étroits ; le rail latéral reprend les h2/h3 sans lui.
+const TOC_HEADING = "Table des matières";
+const tocItems = headings.filter(
+  h => (h.depth === 2 || h.depth === 3) && h.text !== TOC_HEADING
+);
+const words = (post.body ?? "")
+  .replace(/```[\s\S]*?```/g, " ")
+  .split(/\s+/)
+  .filter(Boolean).length;
+const readingMinutes = Math.max(1, Math.round(words / 230));
 
 let ogImageUrl: string | undefined;
 
@@ -188,6 +201,7 @@ const nextPost =
           {timezone}
           size="lg"
         />
+        <span class="font-mono text-xs text-soft sm:text-sm">{readingMinutes} min de lecture</span>
         <ul class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs" aria-label="Tags">
           {
             tags.map((tag: string) => (
@@ -209,6 +223,22 @@ const nextPost =
         />
       </div>
     </header>
+
+    {
+      tocItems.length > 2 && (
+        <aside class="toc-rail" aria-labelledby="toc-rail-title" data-pagefind-ignore>
+          <p id="toc-rail-title" class="toc-rail-title">Sommaire</p>
+          <ol class="toc-rail-list">
+            {tocItems.map(h => (
+              <li class:list={["toc-rail-item", { "is-sub": h.depth === 3 }]}>
+                <a href={`#${h.slug}`} data-toc-link={h.slug}>{h.text}</a>
+              </li>
+            ))}
+          </ol>
+          <a href="#main-content" class="toc-rail-top">Haut de page</a>
+        </aside>
+      )
+    }
 
     <article
       id="article"
@@ -412,9 +442,161 @@ const nextPost =
   );
 </script>
 
+<script>
+  // Sommaire latéral : section courante surlignée (IntersectionObserver, pas
+  // d'écouteur scroll), rail masqué une fois l'article terminé.
+  let tocCleanup: (() => void) | null = null;
+
+  function setupTocRail() {
+    tocCleanup?.();
+    const rail = document.querySelector<HTMLElement>(".toc-rail");
+    const article = document.getElementById("article");
+    if (!rail || !article) return;
+
+    const links = new Map<string, HTMLAnchorElement>();
+    rail.querySelectorAll<HTMLAnchorElement>("[data-toc-link]").forEach(a => {
+      links.set(a.dataset.tocLink ?? "", a);
+    });
+    const headings = Array.from(links.keys())
+      .map(id => document.getElementById(id))
+      .filter((h): h is HTMLElement => h !== null);
+
+    const setActive = (id: string) => {
+      links.forEach((a, key) => {
+        const on = key === id;
+        a.classList.toggle("is-active", on);
+        if (on) a.setAttribute("aria-current", "location");
+        else a.removeAttribute("aria-current");
+      });
+    };
+
+    // Bande de lecture : du haut (sous le header) au tiers supérieur.
+    const visible = new Set<string>();
+    const headingObserver = new IntersectionObserver(
+      entries => {
+        for (const e of entries) {
+          if (e.isIntersecting) visible.add(e.target.id);
+          else visible.delete(e.target.id);
+        }
+        const firstVisible = headings.find(h => visible.has(h.id));
+        if (firstVisible) {
+          setActive(firstVisible.id);
+          return;
+        }
+        // Aucun titre dans la bande : le dernier passé au-dessus reste actif.
+        const above = headings.filter(h => h.getBoundingClientRect().top < 0);
+        if (above.length) setActive(above[above.length - 1].id);
+      },
+      { rootMargin: "-80px 0px -66% 0px" }
+    );
+    headings.forEach(h => headingObserver.observe(h));
+
+    // Rail masqué quand le bas de l'article est passé (footer, nav suivante).
+    const endObserver = new IntersectionObserver(([entry]) => {
+      const pastEnd = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+      rail.classList.toggle("is-hidden", pastEnd);
+    });
+    endObserver.observe(article);
+
+    tocCleanup = () => {
+      headingObserver.disconnect();
+      endObserver.disconnect();
+    };
+  }
+
+  document.addEventListener("astro:page-load", setupTocRail);
+</script>
+
 <style>
   .post-title {
     color: var(--foreground);
+  }
+
+  /* ── Rail de sommaire ──
+   * Placé dans la marge droite, hors de la colonne de lecture : la largeur et
+   * l'alignement du texte ne bougent pas. Visible seulement quand la marge est
+   * assez large (≥ 1400px) ; en dessous, le sommaire inline du corps reste. */
+  .toc-rail {
+    display: none;
+  }
+
+  @media (min-width: 1400px) {
+    .toc-rail {
+      position: fixed;
+      top: 6.5rem;
+      left: calc(50% + 32rem + 1.5rem);
+      width: min(15rem, calc(50vw - 32rem - 3rem));
+      max-height: calc(100dvh - 9rem);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      scrollbar-width: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: opacity 0.3s ease;
+    }
+
+    .toc-rail.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Le rail remplace le sommaire inline : on masque son titre et son bloc. */
+    :global(#article h2#table-des-matières),
+    :global(#article h2#table-des-matières + details) {
+      display: none;
+    }
+  }
+
+  .toc-rail-title {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  .toc-rail-list {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--border);
+  }
+
+  .toc-rail-item a {
+    display: block;
+    margin-left: -1px;
+    padding: 0.3rem 0 0.3rem 0.875rem;
+    border-left: 2px solid transparent;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--text-soft);
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .toc-rail-item.is-sub a {
+    padding-left: 1.625rem;
+    font-size: 0.78rem;
+  }
+
+  .toc-rail-item a:hover {
+    color: var(--foreground);
+  }
+
+  .toc-rail-item a.is-active {
+    color: var(--accent);
+    border-left-color: var(--accent);
+    font-weight: 500;
+  }
+
+  .toc-rail-top {
+    font-family: var(--font-geist-mono), monospace;
+    font-size: 0.75rem;
+    color: var(--text-soft);
+    transition: color 0.2s ease;
+  }
+
+  .toc-rail-top:hover {
+    color: var(--accent);
   }
 
   .post-nav-link {

@@ -7,53 +7,63 @@ import Layout from "./Layout.astro";
 import { SITE } from "@/config";
 import { SCHEMA_IDS, personSchema } from "@/utils/schema";
 
-type Props = MarkdownLayoutProps<{ title: string }>;
+type Props = MarkdownLayoutProps<{
+  title: string;
+  description?: string;
+  /** Le markdown porte déjà son propre `# Titre` (ex. CV). */
+  hideTitle?: boolean;
+}>;
 
 const { frontmatter } = Astro.props;
+const { title, description, hideTitle = false } = frontmatter;
+
+// ProfilePage ne décrit que la page À propos : l'émettre sur le CV, le
+// contact ou la politique de confidentialité les faisait passer pour /about/.
+const isProfilePage = Astro.url.pathname.replace(/\/$/, "") === "/about";
 ---
 
-<Layout title={`${frontmatter.title} | ${SITE.title}`}>
-  <script
-    slot="head"
-    type="application/ld+json"
-    is:inline
-    set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "ProfilePage",
-      url: `${SITE.website}about/`,
-      inLanguage: "fr",
-      isPartOf: { "@id": SCHEMA_IDS.website },
-      mainEntity: {
-        ...personSchema,
-        worksFor: { "@id": SCHEMA_IDS.organization },
-      },
-    })}
-  />
+<Layout title={`${title} | ${SITE.title}`} description={description}>
+  {
+    isProfilePage && (
+      <script
+        slot="head"
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          url: `${SITE.website}about/`,
+          inLanguage: "fr",
+          isPartOf: { "@id": SCHEMA_IDS.website },
+          mainEntity: {
+            ...personSchema,
+            worksFor: { "@id": SCHEMA_IDS.organization },
+          },
+        })}
+      />
+    )
+  }
   <Header />
   <Breadcrumb />
-  <main id="main-content" class="app-layout">
-    <div class="about-hero">
-      <div class="hero-content">
-        <div class="avatar-ring">
-          <div class="avatar-inner">
-            <span class="avatar-emoji">👨‍💻</span>
-          </div>
-        </div>
-        <h1 class="hero-title">
-          <span class="greeting">Salut, je suis</span>
-          <span class="name-glow">{SITE.author}</span>
-        </h1>
-        <div class="hero-badges">
-          <span class="badge">🖥️ Homelab</span>
-          <span class="badge">🐧 Linux</span>
-          <span class="badge">☁️ Auto-hébergement</span>
-        </div>
-      </div>
-    </div>
+  <main id="main-content" class="app-layout pb-20">
+    {
+      !hideTitle && (
+        <header class="page-header">
+          <h1 class="text-4xl leading-[1.08] font-semibold tracking-[-0.03em] sm:text-5xl">
+            {title}
+          </h1>
+          {description && (
+            <p class="mt-4 max-w-2xl text-lg leading-relaxed text-soft">
+              {description}
+            </p>
+          )}
+        </header>
+      )
+    }
 
     <section
       id="about"
-      class="about-content app-prose mb-28 max-w-app prose-img:border-0"
+      class:list={["page-content app-prose max-w-app", { "pt-6": hideTitle }]}
     >
       <slot />
     </section>
@@ -62,140 +72,23 @@ const { frontmatter } = Astro.props;
 </Layout>
 
 <style>
-  .about-hero {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1.5rem;
-    padding: 3rem 2rem;
-    margin-bottom: 3rem;
-    background: color-mix(
-      in srgb,
-      var(--color-foreground) 3%,
-      var(--color-background)
-    );
-    border: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+  .page-header {
+    padding-block: 1.5rem 2.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
   }
 
-  .hero-content {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.25rem;
-  }
-
-  /* Avatar */
-  .avatar-ring {
-    position: relative;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    padding: 3px;
-    background: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
-  }
-
-  .avatar-inner {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: var(--color-background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .avatar-emoji {
-    font-size: 2.75rem;
-    line-height: 1;
-  }
-
-  .hero-title {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
-  .greeting {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-foreground);
-    opacity: 0.7;
-  }
-
-  .name-glow {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--color-foreground);
-  }
-
-  @media (min-width: 640px) {
-    .name-glow {
-      font-size: 2.75rem;
-    }
-  }
-
-  /* Badges */
-  .hero-badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .badge {
-    padding: 0.45rem 1.1rem;
-    border-radius: 999px;
-    font-size: 0.8125rem;
+  /* Pages dont le markdown porte son h1 (CV) : même échelle que les autres. */
+  .page-content :global(h1) {
+    font-size: clamp(2.25rem, 5vw, 3rem);
+    line-height: 1.08;
     font-weight: 600;
-    letter-spacing: 0.02em;
-    color: var(--color-foreground);
-    background: color-mix(
-      in srgb,
-      var(--color-foreground) 4%,
-      var(--color-background)
-    );
-    border: 1px solid color-mix(in srgb, var(--color-accent) 15%, transparent);
-    transition:
-      transform 0.25s cubic-bezier(0.25, 1, 0.5, 1),
-      border-color 0.25s ease;
-    cursor: default;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.75rem;
   }
 
-  .badge:hover {
-    transform: translateY(-1px);
-    border-color: color-mix(in srgb, var(--color-accent) 35%, transparent);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .badge {
-      transition: none;
-    }
-
-    .badge:hover {
-      transform: none;
-    }
-  }
-
-  /* Content styling */
-  .about-content {
-    position: relative;
-  }
-
-  .about-content :global(h2) {
-    position: relative;
-    display: inline-block;
-  }
-
-  .about-content :global(h2::after) {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, var(--color-accent), transparent);
-    border-radius: 999px;
+  /* Le premier h2 du corps n'a pas besoin de la grande marge haute. */
+  .page-content > :global(h2:first-child) {
+    margin-top: 0;
   }
 </style>

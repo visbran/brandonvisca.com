@@ -67,9 +67,9 @@ const { page } = Astro.props;
     justify-content: center;
     width: 2.75rem;
     height: 2.75rem;
-    border-radius: 0.75rem;
-    background: color-mix(in srgb, var(--muted) 8%, transparent);
-    border: 1px solid color-mix(in srgb, var(--border) 40%, transparent);
+    border-radius: var(--radius-box);
+    background: transparent;
+    border: 1px solid var(--border);
     color: var(--foreground);
     transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
     box-shadow: none;
@@ -80,12 +80,12 @@ const { page } = Astro.props;
     border-color: color-mix(in srgb, var(--accent) 30%, transparent);
     background: color-mix(in srgb, var(--accent) 8%, transparent);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px -8px color-mix(in srgb, var(--accent) 20%, transparent);
+    box-shadow: none;
   }
 
   .pagination-btn:active:not(.opacity-50) {
     transform: translateY(0) scale(0.96);
-    box-shadow: 0 2px 5px -2px color-mix(in srgb, var(--accent) 30%, transparent);
+    box-shadow: none;
   }
 
   .btn-icon-wrapper {
@@ -98,9 +98,9 @@ const { page } = Astro.props;
     font-family: var(--font-geist-mono), monospace;
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
-    border-radius: 0.75rem;
+    border-radius: var(--radius-box);
     background: color-mix(in srgb, var(--foreground) 3%, transparent);
-    border: 1px dashed color-mix(in srgb, var(--border) 40%, transparent);
+    border: 1px solid var(--border);
     letter-spacing: 0.05em;
   }
 </style>

@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "Contact"
+description: "Email, GitHub et propositions de partenariat."
 ---
 
 ## Me contacter

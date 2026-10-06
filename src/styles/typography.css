@@ -57,11 +57,37 @@
     }
 
     li {
-      @apply marker:text-accent;
+      @apply marker:text-soft;
+    }
+
+    ol > li {
+      @apply marker:font-mono marker:text-[0.85em];
     }
 
     hr {
-      @apply border-border;
+      @apply my-12 border-border;
+    }
+
+    p {
+      @apply my-5;
+    }
+
+    ul,
+    ol {
+      @apply my-5 ps-5;
+    }
+
+    li {
+      @apply my-1.5 ps-1;
+    }
+
+    li > ul,
+    li > ol {
+      @apply my-1.5;
+    }
+
+    figure {
+      @apply my-10;
     }
 
     img {
@@ -76,11 +102,11 @@
     }
 
     table {
-      @apply w-full table-auto border-collapse;
+      @apply block w-full table-auto border-collapse overflow-x-auto text-[0.9375rem] sm:table;
 
       th,
       td {
-        @apply border border-border p-2;
+        @apply border-0 border-b border-border px-3 py-2.5 text-left align-top;
         word-wrap: break-word;
         word-break: break-word;
         hyphens: auto;
@@ -88,7 +114,11 @@
       }
 
       th {
-        @apply py-1.5;
+        @apply border-b-2 border-foreground/25 py-2 font-semibold;
+      }
+
+      tbody tr:last-child td {
+        @apply border-b-0;
       }
 
       code {

@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "CV"
+hideTitle: true
 ---
 
 # BRANDON VISCA

@@ -4,35 +4,33 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 /*
- * Refonte 2026-10 (taste-skill). Une seule famille de gris, froide, accordée
- * au fond « papier calque » ; un seul accent, le bleu de la marque. Les bordures
- * ne sont plus bleues : ce sont des filets neutres, l'accent reste réservé à
- * l'interaction et aux liens.
+ * Palette « Ardoise & rouille » (2026-10). Neutres ardoise froids, un seul
+ * accent rouille chaud : il signale l'interaction et les liens, rien d'autre.
+ * Contrastes mesurés sur le fond : accent 4.8:1 (clair) / 6.3:1 (sombre),
+ * texte secondaire 5.9:1 / 7.0:1, au-dessus du 4.5:1 de WCAG AA.
+ * Le fond est repris en dur dans Layout.astro (THEME_COLORS + script inline).
  */
 :root,
 html[data-theme="light"] {
-  --background: #f1f4f8;
-  --surface: #e7ecf2;
-  --foreground: #1b2029;
-  --accent: #1158d1;
-  --muted: #d9e0ea;
-  --border: #c9d2de;
-  /* #5a6372 sur #f1f4f8 : 5.6:1, au-dessus du 4.5:1 de WCAG AA. */
-  --text-soft: #5a6372;
-  --shadow-tint: 214 40% 30%;
+  --background: #f2f3f5;
+  --surface: #e8eaee;
+  --foreground: #1a1d23;
+  --accent: #b8461f;
+  --muted: #dcdfe5;
+  --border: #cdd1d9;
+  --text-soft: #5b616d;
+  --shadow-tint: 220 20% 25%;
 }
 
 html[data-theme="dark"] {
-  --background: #10131a;
-  --surface: #161b24;
-  --foreground: #e6e9ee;
-  /* Bleu de marque désaturé pour le sombre : 6.9:1 sur le fond. */
-  --accent: #4a9fe8;
-  --muted: #232b38;
-  --border: #2a3342;
-  /* #98a1af sur #10131a : 7.1:1. */
-  --text-soft: #98a1af;
-  --shadow-tint: 220 50% 2%;
+  --background: #111317;
+  --surface: #181b21;
+  --foreground: #e7e8eb;
+  --accent: #e57a50;
+  --muted: #252932;
+  --border: #2c313b;
+  --text-soft: #9a9fa9;
+  --shadow-tint: 220 30% 2%;
 }
 
 @theme inline {
