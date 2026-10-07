@@ -192,7 +192,7 @@ const THEME_COLOR = THEME_COLORS.dark;
         // Doit rester identique à `initialColorScheme` de src/scripts/theme.ts.
         // Vide = thème du système. Les deux scripts n'ont pas à diverger : le
         // module lit `window.theme.themeValue`, donc la valeur peinte ici est
-        // celle qu'il conserve — la figer à "dark" priverait du thème clair les
+        // celle qu'il conserve ; la figer à "dark" priverait du thème clair les
         // visiteurs dont le système est en clair.
         const initialColorScheme = ""; // "light" | "dark" | "" (système)
         const currentTheme = localStorage.getItem("theme");

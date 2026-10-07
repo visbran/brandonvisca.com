@@ -422,7 +422,7 @@ Désactive tout autre gestionnaire de fenêtres. Yabai + skhd remplacent complè
 Je vais pas te mentir : désactiver SIP et laisser un daemon C tourner en arrière-plan avec des privilèges élevés, c'est pas anodin.
 
 - **SIP off** = un malware root peut modifier des fichiers système. Mais macOS a d'autres défenses (Gatekeeper, FileVault, sandbox des apps).
-- **yabai --load-sa** injecte du code dans le Dock. Si Yabai est compromis, théoriquement un attaquant pourrait abuser de ce canal. La solution : compile Yabai toi-même depuis les sources si tu es parano, et audit les releases.
+- **`yabai --load-sa`** injecte du code dans le Dock. Si Yabai est compromis, théoriquement un attaquant pourrait abuser de ce canal. La solution : compile Yabai toi-même depuis les sources si tu es parano, et audit les releases.
 - **Pas d'interface graphique** : si tu coches la config et que rien ne marche, tu es seul avec ton terminal. Pas de panneau "Réinitialiser".
 - **Mise à jour macOS** : chaque mise à jour majeure de macOS peut casser la scripting addition. Il faut parfois attendre un patch du dev ou recompiler.
 

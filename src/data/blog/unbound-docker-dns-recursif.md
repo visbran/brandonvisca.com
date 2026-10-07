@@ -283,7 +283,7 @@ DNS_IP="192.168.1.100"
 
 # Test DNSSEC : un domaine volontairement mal signé doit être rejeté
 if dig @$DNS_IP +dnssec dnssec-failed.org | grep -q "SERVFAIL"; then
-    echo "DNSSEC OK — domaine invalide bien rejeté"
+    echo "DNSSEC OK : domaine invalide bien rejeté"
 else
     echo "ALERTE : DNSSEC non fonctionnel"
 fi

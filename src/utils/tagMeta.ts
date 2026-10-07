@@ -14,84 +14,84 @@ export interface TagMeta {
 export const TAG_META: Record<string, TagMeta> = {
   // Tags primaires
   homelab: {
-    title: `Homelab — Guides et tutoriels | ${SITE.title}`,
+    title: `Homelab : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur l'homelab : serveurs personnels, Proxmox, virtualisation, infrastructure et hardware auto-hébergé.",
     intro:
-      "Construire et gérer son propre datacenter à la maison — de la virtualisation Proxmox au hardware dédié.",
+      "Construire et gérer son propre datacenter à la maison, de la virtualisation Proxmox au hardware dédié.",
   },
   "auto-hebergement": {
-    title: `Auto-hébergement — Guides et tutoriels | ${SITE.title}`,
+    title: `Auto-hébergement : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur l'auto-hébergement : Docker, Nextcloud, Jellyfin, services auto-hébergés et indépendance numérique.",
     intro:
       "Reprendre le contrôle de ses données et services en les hébergeant soi-même.",
   },
   linux: {
-    title: `Linux — Administration et tutoriels | ${SITE.title}`,
+    title: `Linux : Administration et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Linux : administration système, CLI, serveurs, distributions et optimisation.",
     intro:
       "Guides et tutoriels pour administrer Linux au quotidien, du serveur au poste de travail.",
   },
   macos: {
-    title: `macOS — Guides et tutoriels | ${SITE.title}`,
+    title: `macOS : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur macOS : productivité Mac, apps, Homebrew, scripts et automatisation.",
     intro:
       "Optimiser macOS avec des outils et workflows pensés pour la productivité.",
   },
   windows: {
-    title: `Windows — Guides et tutoriels | ${SITE.title}`,
+    title: `Windows : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Windows : administration, Active Directory, PowerShell, outils et astuces.",
     intro:
       "Guides pratiques pour Windows et l'administration système en environnement professionnel.",
   },
   docker: {
-    title: `Docker — Guides et tutoriels | ${SITE.title}`,
+    title: `Docker : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Docker : conteneurs, Docker Compose, Watchtower, déploiement et bonnes pratiques.",
     intro:
       "Maîtriser Docker et la conteneurisation pour déployer des services en toute simplicité.",
   },
   securite: {
-    title: `Sécurité — Guides et tutoriels | ${SITE.title}`,
+    title: `Sécurité : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur la sécurité informatique : durcissement serveur, Nginx, chiffrement, bonnes pratiques.",
     intro:
       "Sécuriser ses serveurs et services avec des méthodes concrètes et éprouvées.",
   },
   reseau: {
-    title: `Réseau — Guides et tutoriels | ${SITE.title}`,
+    title: `Réseau : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le réseau : pfSense, DNS, Pi-hole, configuration et administration.",
     intro:
       "Administrer son réseau local et ses services DNS avec des outils open source.",
   },
   productivite: {
-    title: `Productivité — Guides et tutoriels | ${SITE.title}`,
+    title: `Productivité : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur la productivité : workflows, outils, automatisation et gestion du temps.",
     intro:
       "Améliorer son efficacité au quotidien avec des outils et méthodes testés.",
   },
   sysadmin: {
-    title: `Sysadmin — Guides et tutoriels | ${SITE.title}`,
+    title: `Sysadmin : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur l'administration système : PowerShell, Active Directory, ITSM, scripts.",
     intro:
       "Ressources pour les administrateurs système et les professionnels de l'infrastructure IT.",
   },
   developpement: {
-    title: `Développement — Guides et tutoriels | ${SITE.title}`,
+    title: `Développement : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le développement : dev tools, éditeurs, terminal, scripting et bonnes pratiques.",
     intro:
       "Outils et méthodes pour développer efficacement et maintenir du code propre.",
   },
   "microsoft-365": {
-    title: `Microsoft 365 — Guides et tutoriels | ${SITE.title}`,
+    title: `Microsoft 365 : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Microsoft 365 : Office 365, Exchange, Teams, Outlook et administration cloud.",
     intro:
@@ -100,190 +100,190 @@ export const TAG_META: Record<string, TagMeta> = {
 
   // Tags méta (masqués dans l'index, mais descriptifs quand même)
   guide: {
-    title: `Guides complets — Tous les tutoriels | ${SITE.title}`,
+    title: `Guides complets : Tous les tutoriels | ${SITE.title}`,
     description:
       "Tous les guides complets du blog : tutoriels étape par étape pour apprendre et mettre en pratique.",
   },
   debutant: {
-    title: `Articles pour débutants — Bases et fondamentaux | ${SITE.title}`,
+    title: `Articles pour débutants : Bases et fondamentaux | ${SITE.title}`,
     description:
       "Tous les articles accessibles aux débutants : concepts de base, premiers pas et introductions.",
   },
   intermediaire: {
-    title: `Articles intermédiaires — Aller plus loin | ${SITE.title}`,
+    title: `Articles intermédiaires : Aller plus loin | ${SITE.title}`,
     description:
       "Tous les articles de niveau intermédiaire : approfondissements et configurations avancées.",
   },
   avance: {
-    title: `Articles avancés — Expertise et optimisation | ${SITE.title}`,
+    title: `Articles avancés : Expertise et optimisation | ${SITE.title}`,
     description:
       "Tous les articles avancés : configurations complexes, optimisation et techniques expertes.",
   },
 
   // Tags secondaires
   snipeit: {
-    title: `Snipe-IT — Guides et tutoriels | ${SITE.title}`,
+    title: `Snipe-IT : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Snipe-IT : gestion d'inventaire IT, ITSM et déploiement.",
   },
   nginx: {
-    title: `Nginx — Guides et tutoriels | ${SITE.title}`,
+    title: `Nginx : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Nginx : configuration, reverse proxy, sécurité et optimisation.",
   },
   "active-directory": {
-    title: `Active Directory — Guides et tutoriels | ${SITE.title}`,
+    title: `Active Directory : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Active Directory : administration, GPO, rôles FSMO et bonnes pratiques.",
   },
   powershell: {
-    title: `PowerShell — Scripts et tutoriels | ${SITE.title}`,
+    title: `PowerShell : Scripts et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur PowerShell : scripts, automatisation et administration Windows.",
   },
   terminal: {
-    title: `Terminal — Guides et tutoriels | ${SITE.title}`,
+    title: `Terminal : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le terminal : Zsh, Oh My Zsh, iTerm2, prompts et configuration.",
   },
   "windows-server": {
-    title: `Windows Server — Guides et tutoriels | ${SITE.title}`,
+    title: `Windows Server : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Windows Server : installation, rôles, Hyper-V et administration.",
   },
   dns: {
-    title: `DNS — Guides et tutoriels | ${SITE.title}`,
+    title: `DNS : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le DNS : configuration, Pi-hole, résolution de noms et sécurité.",
   },
   homebrew: {
-    title: `Homebrew — Guides et tutoriels | ${SITE.title}`,
+    title: `Homebrew : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Homebrew : gestion de paquets macOS, taps et automatisation.",
   },
   hardening: {
-    title: `Hardening — Durcissement et sécurité | ${SITE.title}`,
+    title: `Hardening : Durcissement et sécurité | ${SITE.title}`,
     description:
       "Tous les articles sur le durcissement serveur : headers HTTP, chiffrement et bonnes pratiques.",
   },
   multimedia: {
-    title: `Multimédia — Guides et tutoriels | ${SITE.title}`,
+    title: `Multimédia : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le multimédia : FFmpeg, conversion, streaming et gestion de médias.",
   },
   raycast: {
-    title: `Raycast — Guides et tutoriels | ${SITE.title}`,
+    title: `Raycast : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Raycast : productivité macOS, extensions et workflows.",
   },
   monitoring: {
-    title: `Monitoring — Guides et tutoriels | ${SITE.title}`,
+    title: `Monitoring : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le monitoring : Uptime Kuma, UptimeRobot, supervision et alertes.",
   },
   sauvegarde: {
-    title: `Sauvegarde — Guides et tutoriels | ${SITE.title}`,
+    title: `Sauvegarde : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur la sauvegarde : Restic, BorgBackup, Duplicati, stratégies 3-2-1 et restauration.",
     intro:
-      "Sauvegarder pour de vrai — chiffrement, déduplication et restauration testée.",
+      "Sauvegarder pour de vrai : chiffrement, déduplication et restauration testée.",
   },
   nextcloud: {
-    title: `Nextcloud — Guides et tutoriels | ${SITE.title}`,
+    title: `Nextcloud : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Nextcloud : déploiement, configuration et auto-hébergement.",
   },
   wordpress: {
-    title: `WordPress — Guides et tutoriels | ${SITE.title}`,
+    title: `WordPress : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur WordPress : administration, sécurité et optimisation.",
   },
   ldap: {
-    title: `LDAP — Guides et tutoriels | ${SITE.title}`,
+    title: `LDAP : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur LDAP : annuaire, authentification et intégration Active Directory.",
   },
   ssh: {
-    title: `SSH — Guides et tutoriels | ${SITE.title}`,
+    title: `SSH : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur SSH : clés, configuration sécurisée et tunneling.",
   },
   vim: {
-    title: `Vim — Guides et tutoriels | ${SITE.title}`,
+    title: `Vim : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Vim : configuration, plugins et productivité dans l'éditeur.",
   },
   "hyper-v": {
-    title: `Hyper-V — Guides et tutoriels | ${SITE.title}`,
+    title: `Hyper-V : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Hyper-V : virtualisation Windows, VHDX et machines virtuelles.",
   },
   mediacenter: {
-    title: `Mediacenter — Guides et tutoriels | ${SITE.title}`,
+    title: `Mediacenter : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le mediacenter auto-hébergé : Jellyfin, Radarr, Sonarr, Prowlarr et clients torrent.",
     intro:
       "Monter une médiathèque complète et automatisée sur son propre serveur.",
   },
   automation: {
-    title: `Automatisation — Guides et tutoriels | ${SITE.title}`,
+    title: `Automatisation : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur l'automatisation : n8n, Ansible, scripts et workflows pour homelab.",
     intro:
-      "Faire travailler les machines à sa place — workflows, scripts et orchestration.",
+      "Faire travailler les machines à sa place : workflows, scripts et orchestration.",
   },
   "reverse-proxy": {
-    title: `Reverse proxy — Guides et tutoriels | ${SITE.title}`,
+    title: `Reverse proxy : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur les reverse proxies : Caddy, Nginx Proxy Manager, Zoraxy, HTTPS et certificats.",
   },
   messagerie: {
-    title: `Messagerie — Guides et tutoriels | ${SITE.title}`,
+    title: `Messagerie : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur la messagerie auto-hébergée : Matrix, Mattermost et alternatives à Slack.",
   },
   git: {
-    title: `Git — Guides et tutoriels | ${SITE.title}`,
+    title: `Git : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Git auto-hébergé : Gitea, Forgejo, CI/CD et forges open source.",
   },
   tailscale: {
-    title: `Tailscale — Guides et tutoriels | ${SITE.title}`,
+    title: `Tailscale : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur Tailscale : réseau mesh WireGuard, Headscale et accès distant au homelab.",
   },
   vpn: {
-    title: `VPN — Guides et tutoriels | ${SITE.title}`,
+    title: `VPN : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur les VPN auto-hébergés : WireGuard, Tailscale, Firezone et accès zero trust.",
   },
   wireguard: {
-    title: `WireGuard — Guides et tutoriels | ${SITE.title}`,
+    title: `WireGuard : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur WireGuard : VPN en Docker, accès zero trust avec Firezone et routeur OpenWrt pour le homelab.",
   },
   "base-de-donnees": {
-    title: `Bases de données — Guides et tutoriels | ${SITE.title}`,
+    title: `Bases de données : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur les bases de données : PostgreSQL, MariaDB, Docker et sauvegarde des données.",
   },
   ntp: {
-    title: `NTP — Guides et tutoriels | ${SITE.title}`,
+    title: `NTP : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur la synchronisation horaire : Chrony, serveurs NTP et fuseaux horaires Linux.",
   },
   dashboard: {
-    title: `Dashboards homelab — Guides et tutoriels | ${SITE.title}`,
+    title: `Dashboards homelab : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur les dashboards du homelab : Homer, Dashy, Portainer et Cockpit déployés avec Docker.",
   },
   stockage: {
-    title: `Stockage — Guides et tutoriels | ${SITE.title}`,
+    title: `Stockage : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le stockage : stockage objet S3 avec MinIO, RAID Linux, bases de données et bibliothèques auto-hébergées.",
   },
   streaming: {
-    title: `Streaming — Guides et tutoriels | ${SITE.title}`,
+    title: `Streaming : Guides et tutoriels | ${SITE.title}`,
     description:
       "Tous les articles sur le streaming auto-hébergé : Plex, Navidrome pour la musique et Sunshine pour les jeux.",
   },
@@ -299,14 +299,14 @@ export function getTagMeta(tag: string): TagMeta {
 
   const tagLabel = tag.charAt(0).toUpperCase() + tag.slice(1).replace(/-/g, " ");
   return {
-    title: `${tagLabel} — Articles et guides | ${SITE.title}`,
+    title: `${tagLabel} : Articles et guides | ${SITE.title}`,
     description: `Tous les articles avec le tag "${tagLabel}" sur ${SITE.title}.`,
   };
 }
 
 /**
- * Libellé lisible d'un tag, tiré de son title SEO (« Homelab — Guides… » →
+ * Libellé lisible d'un tag, tiré de son title SEO (« Homelab : Guides… » →
  * « Homelab »). Repli sur le slug quand le tag n'a pas d'entrée.
  */
 export const tagLabel = (slug: string): string =>
-  TAG_META[slug]?.title.split(/\s[—|-]\s/)[0] ?? slug;
+  TAG_META[slug]?.title.split(/\s[:|]\s/)[0] ?? slug;
