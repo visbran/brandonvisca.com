@@ -81,7 +81,7 @@ for (const file of getAllMdFiles(BLOG_DIR)) {
 
 articles.sort((a, b) => new Date(b.pubDatetime) - new Date(a.pubDatetime));
 
-let out = `# llms.txt — Brandon Visca\n`;
+let out = `# Brandon Visca\n`;
 out += `# Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.\n`;
 out += `# Dernière mise à jour : ${new Date().toISOString().split("T")[0]}\n`;
 out += `# Total articles : ${articles.length}\n\n`;
