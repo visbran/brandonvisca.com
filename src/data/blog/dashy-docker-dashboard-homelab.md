@@ -407,6 +407,8 @@ Assure-toi que les conteneurs Dashy peuvent joindre les IPs et ports de tes serv
 **La personnalisation CSS ne s'applique pas**
 Le champ `customCss` doit être une chaîne multiligne YAML avec le pipe (`|`). Une simple ligne ne fonctionnera pas.
 
+💡 À lire aussi : [Dockge Docker : gérer tes stacks Compose depuis une interface web](/dockge-docker-gestionnaire-stacks-compose/), dans la même veine que cet article.
+
 ## Conclusion
 
 Dashy transforme ton homelab d'une simple collection de liens en un cockpit de pilotage véritablement utile. Entre les widgets de monitoring, les statuts en temps réel et la personnalisation poussée, c'est l'outil qu'il te faut si tu dépasses le stade du dashboard statique.

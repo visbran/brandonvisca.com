@@ -198,6 +198,8 @@ docker compose up -d
 
 Vérifie que l'agent Portainer tourne bien sur la machine distante et que le port utilisé pour la communication (9001 par défaut pour l'agent) n'est pas bloqué par un firewall entre les deux hôtes.
 
+💡 À lire aussi : [Dockge Docker : gérer tes stacks Compose depuis une interface web](/dockge-docker-gestionnaire-stacks-compose/), dans la même veine que cet article.
+
 ## Conclusion
 
 Portainer Docker ne remplace pas la ligne de commande, il la complète. Tu gardes le contrôle total via SSH quand tu en as besoin, mais pour le quotidien, l'interface web te fait gagner un temps fou : voir l'état de dix conteneurs d'un regard, consulter des logs sans te souvenir du nom exact d'un conteneur, déployer une stack en collant un fichier plutôt qu'en jonglant avec des chemins.
