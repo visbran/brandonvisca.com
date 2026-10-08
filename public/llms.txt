@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-10-08
-# Total articles : 211
+# Total articles : 212
+
+## Dockge Docker : gérer tes stacks Compose depuis une interface web
+URL: https://brandonvisca.com/dockge-docker-gestionnaire-stacks-compose/
+Description: Dockge docker : installe cette interface web pour créer, éditer et mettre à jour tes stacks Compose sans taper une ligne SSH.
+Tags: docker, auto-hebergement, dashboard, intermediaire
+Publié: 2026-10-08T22:29:26+02:00
 
 ## Authentik Docker : SSO et fournisseur d'identité pour ton homelab
 URL: https://brandonvisca.com/authentik-docker-sso-fournisseur-identite/
