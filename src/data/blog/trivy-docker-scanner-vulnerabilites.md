@@ -185,6 +185,8 @@ Trivy Docker n'est pas magique, et il vaut mieux le savoir avant de lui faire un
 
 Un scan propre aujourd'hui n'est jamais une garantie permanente. Rescanner régulièrement les images en cours d'utilisation, pas seulement au moment du build, c'est ce qui rattrape les CVE découvertes après coup sur des dépendances qui n'ont pas bougé depuis des mois.
 
+💡 À lire aussi : [Authentik Docker : SSO et fournisseur d'identité pour ton homelab](/authentik-docker-sso-fournisseur-identite/), dans la même veine que cet article.
+
 ## Conclusion
 
 Trivy Docker fait une chose et la fait bien : te dire ce qui ne va pas dans une image avant qu'elle ne devienne un problème en prod. Gratuit, sans inscription, une commande à taper, et un résultat exploitable immédiatement en local ou en CI.

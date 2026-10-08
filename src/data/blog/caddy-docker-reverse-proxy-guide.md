@@ -373,6 +373,8 @@ Caddy dans Docker, c'est le combo qui fait oublier les nuits à se battre avec C
 
 Si tu veux une interface graphique, je te renvoie vers [Nginx Proxy Manager](/nginx-proxy-manager-docker-guide/). Si tu veux du pur fichier de config minimaliste et maintenable, Caddy est probablement le meilleur choix du moment pour un auto-hébergement Docker.
 
+💡 À lire aussi : [Authentik Docker : SSO et fournisseur d'identité pour ton homelab](/authentik-docker-sso-fournisseur-identite/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Documentation officielle de Caddy](https://caddyserver.com/docs/), référence complète du Caddyfile et des directives
