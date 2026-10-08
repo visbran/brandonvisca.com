@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-07
-# Total articles : 210
+# Dernière mise à jour : 2026-10-08
+# Total articles : 211
+
+## Authentik Docker : SSO et fournisseur d'identité pour ton homelab
+URL: https://brandonvisca.com/authentik-docker-sso-fournisseur-identite/
+Description: Authentik docker : déploie ce fournisseur d'identité self-hosted en Docker Compose, configure le SSO et compare-le à Authelia pour ton homelab.
+Tags: securite, docker, reverse-proxy, ldap, guide, intermediaire
+Publié: 2026-10-08T11:01:11+02:00
 
 ## Audiobookshelf Docker : serveur de livres audio et podcasts auto-hébergé
 URL: https://brandonvisca.com/audiobookshelf-docker-livres-audio-podcasts/
