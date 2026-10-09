@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-08
-# Total articles : 212
+# Dernière mise à jour : 2026-10-09
+# Total articles : 213
+
+## Stats macOS : moniteur système gratuit dans la barre des menus
+URL: https://brandonvisca.com/stats-macos-moniteur-systeme-barre-menus/
+Description: Stats macOS surveille CPU, RAM, disque et réseau dans la barre des menus : gratuit, open source, et alternative crédible à iStat Menus payant.
+Tags: macos, menu-bar, monitoring, homebrew, debutant
+Publié: 2026-10-09T11:03:56+02:00
 
 ## Dockge Docker : gérer tes stacks Compose depuis une interface web
 URL: https://brandonvisca.com/dockge-docker-gestionnaire-stacks-compose/
