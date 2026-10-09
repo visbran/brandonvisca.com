@@ -124,6 +124,8 @@ AppCleaner, c'est l'utilitaire que tu installes une fois et que tu oublies : il 
 
 Si tu équipes un Mac de zéro, enchaîne avec mes [10 extensions Raycast indispensables](https://brandonvisca.com/10-extensions-raycast-indispensables-pour-developpeurs-et-sysadmins/) pour booster ta productivité au clavier.
 
+💡 À lire aussi : [Stats macOS : moniteur système gratuit dans la barre des menus](/stats-macos-moniteur-systeme-barre-menus/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/) : le gestionnaire de paquets pour installer AppCleaner en une commande

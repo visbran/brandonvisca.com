@@ -230,6 +230,8 @@ Dans mon workflow, j'applique ce script sur toutes les captures d'écran avant d
 
 💡 À lire aussi : [Keka macOS : compresseur avancé gratuit (7z, split, chiffrement AES)](/keka-macos-compresseur-avance/), dans la même veine que cet article.
 
+💡 À lire aussi : [Stats macOS : moniteur système gratuit dans la barre des menus](/stats-macos-moniteur-systeme-barre-menus/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)
