@@ -287,6 +287,11 @@ export const TAG_META: Record<string, TagMeta> = {
     description:
       "Tous les articles sur le streaming auto-hébergé : Plex, Navidrome pour la musique et Sunshine pour les jeux.",
   },
+  "menu-bar": {
+    title: `Barre de menus macOS : Apps et utilitaires | ${SITE.title}`,
+    description:
+      "Tous les articles sur la barre de menus macOS : calendriers, moniteurs système et utilitaires pour enrichir la menu bar du Mac.",
+  },
 };
 
 /**
