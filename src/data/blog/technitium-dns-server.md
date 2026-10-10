@@ -230,6 +230,8 @@ La migration depuis Pi-hole est quasi-transparente : importe tes listes, désact
 
 Et si tu veux synchroniser tes blocages DNS sur plusieurs instances (un DNS par VLAN, par exemple), jette un œil à [Nebula-Sync pour Pi-hole v6](https://brandonvisca.com/nebula-sync-pihole-v6-installation-docker-guide/), le concept de synchronisation de listes est transposable.
 
+💡 À lire aussi : [Gluetun Docker : faire passer tes conteneurs par un VPN](/gluetun-docker-vpn-conteneurs/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Nebula-Sync : synchronise tes Pi-hole v6 automatiquement](/nebula-sync-pihole-v6-installation-docker-guide/) : le même principe de synchronisation, côté Pi-hole

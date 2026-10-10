@@ -338,6 +338,8 @@ Un VPN zero-trust ce n'est pas juste du chiffrement, c'est une posture. Quelques
 - Vérifie si le traffic passe par le relay (indicateur dans le client). Si oui, c'est un NAT symétrique. Normal, mais plus lent
 - Place ton serveur dans un datacenter avec un IPv4 public dédié pour minimiser les relais
 
+💡 À lire aussi : [Gluetun Docker : faire passer tes conteneurs par un VPN](/gluetun-docker-vpn-conteneurs/), dans la même veine que cet article.
+
 ## Conclusion
 
 Firezone apporte à WireGuard ce qui lui manquait pour devenir une solution zero-trust complète : gestion des identités, policies d'accès, split tunneling et un portail web utilisable par des humains normaux. Le tout en open-source et auto-hébergé.
