@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-09
-# Total articles : 213
+# Dernière mise à jour : 2026-10-10
+# Total articles : 214
+
+## Gluetun Docker : faire passer tes conteneurs par un VPN
+URL: https://brandonvisca.com/gluetun-docker-vpn-conteneurs/
+Description: Gluetun docker route tes conteneurs derriere un VPN avec kill switch integre. Installation WireGuard, Docker Compose et depannage pas a pas.
+Tags: reseau, docker, vpn, wireguard, guide, intermediaire
+Publié: 2026-10-10T11:02:11+02:00
 
 ## Stats macOS : moniteur système gratuit dans la barre des menus
 URL: https://brandonvisca.com/stats-macos-moniteur-systeme-barre-menus/
