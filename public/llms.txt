@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-10
-# Total articles : 214
+# Dernière mise à jour : 2026-10-11
+# Total articles : 215
+
+## Wallabag Docker : lecture différée auto-hébergée (alternative Pocket)
+URL: https://brandonvisca.com/wallabag-docker-lecture-differee/
+Description: Wallabag docker en auto-hébergement : installation Docker Compose, migration depuis Pocket, extensions et dépannage de ta lecture différée.
+Tags: auto-hebergement, reverse-proxy, sauvegarde, intermediaire
+Publié: 2026-10-11T11:01:11+02:00
 
 ## Gluetun Docker : faire passer tes conteneurs par un VPN
 URL: https://brandonvisca.com/gluetun-docker-vpn-conteneurs/
