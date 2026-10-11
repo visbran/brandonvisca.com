@@ -280,6 +280,8 @@ Cette commande affiche la taille "originale" (données brutes), la taille "compr
 4. **SSD pour le dépôt** : les opérations de déduplication sont I/O intensives. Un dépôt sur SSD (ou NVMe) est nettement plus rapide qu'un dépôt sur disque mécanique, surtout pour les backups incrémentaux.
 5. **Monter avec `noatime`** : si ton dépôt est sur un système de fichiers dédié, monte-le avec `noatime` pour réduire les écritures inutiles.
 
+💡 À lire aussi : [Wallabag Docker : lecture différée auto-hébergée (alternative Pocket)](/wallabag-docker-lecture-differee/), dans la même veine que cet article.
+
 ## Conclusion
 
 BorgBackup est un outil de sauvegarde qui ne fait pas de cadeaux : pas d'interface web, pas de notifications push, pas de boutons glossy. Mais ce qu'il fait, il le fait mieux que quasiment tout le marché. La déduplication bloc à bloc, le chiffrement AES-256-CTR et la compression Zstandard en font le compagnon idéal d'un homelab Dockerisé sérieux.
