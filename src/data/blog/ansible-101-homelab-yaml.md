@@ -360,6 +360,8 @@ C'est idéal quand tu veux juste mettre à jour une stack sans refaire toute la 
 
 Pour un homelab, Ansible est le meilleur compromis. Si un jour tu provisionnes des VMs dans le cloud, couplé avec Terraform il devient redoutable.
 
+💡 À lire aussi : [Systemd timer : l'alternative moderne à cron sous Linux](/systemd-timers-alternative-cron-linux/), dans la même veine que cet article.
+
 ## Conclusion
 
 Ansible transforme ton homelab d'un tas de serveurs gérés à la main en une infrastructure déclarative, reproductible et versionnable. Tu écris ce que tu veux, tu lances une commande, et tes machines se mettent en conformité toutes seules.
