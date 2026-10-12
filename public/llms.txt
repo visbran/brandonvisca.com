@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-11
-# Total articles : 215
+# Dernière mise à jour : 2026-10-12
+# Total articles : 216
+
+## Systemd timer : l'alternative moderne à cron sous Linux
+URL: https://brandonvisca.com/systemd-timers-alternative-cron-linux/
+Description: Systemd timer remplace cron sous Linux : syntaxe OnCalendar, création d'un .timer, Persistent, RandomizedDelaySec et comparatif complet avec crontab.
+Tags: linux, sysadmin, automation, intermediaire
+Publié: 2026-10-12T11:01:12+02:00
 
 ## Wallabag Docker : lecture différée auto-hébergée (alternative Pocket)
 URL: https://brandonvisca.com/wallabag-docker-lecture-differee/
