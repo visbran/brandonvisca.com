@@ -161,6 +161,8 @@ Ces deux techniques permettent de **passer un cap supplémentaire dans la sécur
 
 Intégrées intelligemment dans Nginx, elles renforcent l’**intégrité, la disponibilité et la confidentialité** de vos services web.
 - - - - - -
+💡 À lire aussi : [Step CA Docker : ta propre autorité de certification interne](/step-ca-docker-autorite-certification-interne/), dans la même veine que cet article.
+
 ## Ressources utiles
 
 - [Permissions Policy - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy)

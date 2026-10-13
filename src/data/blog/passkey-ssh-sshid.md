@@ -144,6 +144,8 @@ Mon setup actuel : Termius + SSH ID sur Mac, provisioning `curl` sur mes 6 VMs P
 - [Sécurité de ton serveur Linux : durcir avec les bonnes pratiques](/securite-de-votre-serveur-linux/)
 - [Partager un mot de passe en toute sécurité : comparatif des outils](/partager-mot-de-passe-securise-comparatif/)
 
+💡 À lire aussi : [Step CA Docker : ta propre autorité de certification interne](/step-ca-docker-autorite-certification-interne/), dans la même veine que cet article.
+
 ## Articles connexes
 
 - [Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?](/securite-de-votre-serveur-linux/)
