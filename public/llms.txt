@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-12
-# Total articles : 216
+# Dernière mise à jour : 2026-10-13
+# Total articles : 217
+
+## Step CA Docker : ta propre autorité de certification interne
+URL: https://brandonvisca.com/step-ca-docker-autorite-certification-interne/
+Description: Déploie step ca docker pour une autorité de certification interne : certificats TLS internes, ACME automatique et PKI self-hosted pour ton homelab.
+Tags: securite, hardening, reverse-proxy, ssh, guide, avance
+Publié: 2026-10-13T11:02:11+02:00
 
 ## Systemd timer : l'alternative moderne à cron sous Linux
 URL: https://brandonvisca.com/systemd-timers-alternative-cron-linux/
