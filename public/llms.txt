@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-13
-# Total articles : 217
+# Dernière mise à jour : 2026-10-14
+# Total articles : 218
+
+## Vikunja Docker : gestionnaire de tâches auto-hébergé (alternative Todoist)
+URL: https://brandonvisca.com/vikunja-docker-gestionnaire-taches/
+Description: Vikunja docker : installe ce gestionnaire de tâches open source avec vues liste, Kanban et Gantt, sans dépendre de Todoist.
+Tags: auto-hebergement, docker, intermediaire
+Publié: 2026-10-14T11:02:12+02:00
 
 ## Step CA Docker : ta propre autorité de certification interne
 URL: https://brandonvisca.com/step-ca-docker-autorite-certification-interne/
