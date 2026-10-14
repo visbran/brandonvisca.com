@@ -165,6 +165,8 @@ docker compose pull && docker compose up -d
 
 Le volume `./data` conserve ton compte admin et la configuration de l'interface entre deux mises à jour. Rien à reconfigurer.
 
+💡 À lire aussi : [Vikunja Docker : gestionnaire de tâches auto-hébergé (alternative Todoist)](/vikunja-docker-gestionnaire-taches/), dans la même veine que cet article.
+
 ## Conclusion
 
 Dockge Docker ne révolutionne rien, et c'est exactement pour ça que je l'ai gardé. C'est une interface honnête sur des fichiers Compose honnêtes, sans base de données propriétaire à migrer si un jour tu changes d'outil. Pour qui gère plus de deux ou trois stacks sur un serveur, le gain de confort dépasse largement le temps d'installation.

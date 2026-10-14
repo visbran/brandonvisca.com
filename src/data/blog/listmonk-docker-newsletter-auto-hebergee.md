@@ -274,6 +274,8 @@ Listmonk gagne sur le contrôle et le coût. Il perd sur la simplicité initiale
 
 Dans ma stack d'auto-hébergement, Listmonk s'accompagne d'outils comme [Actual Budget pour la gestion financière](/actual-budget-docker-gestion-budget/) et Vaultwarden pour les mots de passe. Le principe est toujours le même : tes données chez toi, tes règles.
 
+💡 À lire aussi : [Vikunja Docker : gestionnaire de tâches auto-hébergé (alternative Todoist)](/vikunja-docker-gestionnaire-taches/), dans la même veine que cet article.
+
 ## Conclusion
 
 Envoyer des newsletters ne devrait pas coûter une fortune ni exiger de confier tes contacts à un tiers américain. Listmonk prouve qu'un outil open-source, léger et bien conçu peut remplacer Mailchimp pour la majorité des usages.
