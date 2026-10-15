@@ -431,3 +431,4 @@ Le nom reste la marque (header, footer, onglets hors articles, JSON-LD) pour les
 - `src/constants.ts` : titres des liens sociaux neutres (« Profil GitHub », « Me contacter par mail »).
 - `og-templates/site.js` : promesse en grand au lieu du nom.
 - `Footer.astro` : « Copyleft {année} » avec un © retourné en CSS (dédicace à un ami), et « Design made with Claudius ❤️ » avant le crédit du thème.
+- Licence des contenus **CC BY-SA 4.0** : lien dans le footer, `<link rel="license">` dans `Layout.astro`, propriété `license` du JSON-LD `BlogPosting` dans `PostDetails.astro`. Le code du site reste sous `LICENSE` (MIT).
