@@ -285,25 +285,10 @@ const relatedPosts = posts
 
     <div class="mt-16 mb-8 h-px bg-border" aria-hidden="true"></div>
 
-    <!-- Tags & Share row -->
+    <!-- Share row (les tags ne s'affichent qu'en haut de l'article) -->
     <div
       class="mt-6 mb-8 flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:justify-between"
     >
-      <!-- Tags (duplicated from header, aria-hidden to avoid double indexing) -->
-      <div class="flex flex-wrap justify-center gap-x-3 gap-y-1 sm:justify-start" aria-hidden="true">
-        {
-          tags.map((tag: string) => (
-            <a
-              href={`/tags/${slugifyStr(tag)}/`}
-              tabindex="-1"
-              class="font-mono text-xs text-soft transition-colors duration-200 hover:text-accent"
-            >
-              #{tag}
-            </a>
-          ))
-        }
-      </div>
-
       <!-- Share links -->
       <ShareLinks />
     </div>

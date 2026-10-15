@@ -442,3 +442,4 @@ Le nom reste la marque (header, footer, onglets hors articles, JSON-LD) pour les
 
 - `PostDetails.astro` : la navigation chronologique précédent / suivant est remplacée par 2 articles proches, choisis par tags communs (secondaire partagé = 3 points, primaire = 1, méta-tags de niveau ignorés, puis le plus récent). Bloc masqué si aucun article ne partage de tag.
 - Les sections `## Articles connexes` rédigées dans le corps sont retirées (63 articles) : jugées trop lourdes pour le lecteur. `scripts/add-internal-links.py`, qui les générait, est supprimé.
+- `PostDetails.astro` : tags affichés une seule fois, en haut de l'article ; la rangée du bas ne garde que les liens de partage (2026-10-15).
