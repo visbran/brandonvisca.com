@@ -3,7 +3,7 @@ title: "Systemd timer : l'alternative moderne à cron sous Linux"
 description: "Systemd timer remplace cron sous Linux : syntaxe OnCalendar, création d'un .timer, Persistent, RandomizedDelaySec et comparatif complet avec crontab."
 pubDatetime: "2026-10-12T11:01:12+02:00"
 modDatetime: "2026-10-11T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - linux
   - sysadmin

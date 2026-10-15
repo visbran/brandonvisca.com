@@ -3,7 +3,7 @@ title: "Default Folder X macOS : les boîtes de dialogue Ouvrir/Enregistrer enfi
 description: "Default Folder X macOS transforme les boîtes de dialogue Ouvrir et Enregistrer en outils puissants. Favoris, aperçu, historique : guide complet."
 pubDatetime: "2026-09-09T11:02:11+02:00"
 modDatetime: "2026-09-08T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - debutant
   - macos

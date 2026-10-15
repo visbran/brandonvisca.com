@@ -3,7 +3,7 @@ title: "Numi macOS : calculatrice textuelle qui comprend le langage naturel"
 description: Découvre Numi, la calculatrice macOS qui comprend le langage naturel. Calculs unités, devises, dates et variables en texte brut. Guide complet 2026.
 pubDatetime: 2026-09-05T08:00:00.000Z
 modDatetime: 2026-09-05T08:00:00.000Z
-author: Brandon
+author: Brandon Visca
 tags:
   - debutant
   - macos

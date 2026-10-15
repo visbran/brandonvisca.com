@@ -3,7 +3,7 @@ title: "MongoDB Docker : base de données NoSQL pour applications modernes"
 description: "Déploie MongoDB Docker avec docker-compose : image officielle, authentification, sauvegarde et bonnes pratiques pour ta base NoSQL auto-hébergée."
 pubDatetime: "2026-10-02T11:02:12+02:00"
 modDatetime: "2026-10-01T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - base-de-donnees

@@ -3,7 +3,7 @@ title: "HomeTube Docker : téléchargeur YouTube auto-hébergé avec interface w
 description: "HomeTube Docker : installe un téléchargeur YouTube auto-hébergé avec interface web et intégration Plex/Jellyfin en quelques minutes."
 pubDatetime: "2026-08-20T09:00:00.000Z"
 modDatetime: "2026-08-20T09:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - intermediaire
   - auto-hebergement

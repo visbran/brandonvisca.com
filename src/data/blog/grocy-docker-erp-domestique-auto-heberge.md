@@ -3,7 +3,7 @@ title: "Grocy Docker : ERP domestique auto-hébergé (stocks, courses, tâches)"
 description: "Grocy Docker : installe cet ERP domestique auto-hébergé pour gérer stocks, courses, recettes et tâches ménagères sans dépendre du cloud."
 pubDatetime: "2026-09-29T11:02:12+02:00"
 modDatetime: "2026-09-28T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

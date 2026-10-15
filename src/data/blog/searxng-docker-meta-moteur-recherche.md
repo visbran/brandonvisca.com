@@ -3,7 +3,7 @@ title: "SearXNG Docker : méta-moteur de recherche auto-hébergé et personnalis
 description: "SearXNG Docker en pratique : installation en 10 minutes, configuration des moteurs, sécurisation, et comparatif honnête face à Whoogle et Google."
 pubDatetime: "2026-09-25T11:02:11+02:00"
 modDatetime: "2026-09-24T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

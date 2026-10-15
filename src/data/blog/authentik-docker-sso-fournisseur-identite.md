@@ -3,7 +3,7 @@ title: "Authentik Docker : SSO et fournisseur d'identité pour ton homelab"
 description: "Authentik docker : déploie ce fournisseur d'identité self-hosted en Docker Compose, configure le SSO et compare-le à Authelia pour ton homelab."
 pubDatetime: "2026-10-08T11:01:11+02:00"
 modDatetime: "2026-10-07T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - securite
   - docker

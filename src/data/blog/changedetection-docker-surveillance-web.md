@@ -4,7 +4,7 @@ description: "Guide changedetection docker : installe Changedetection.io et surv
 focusKeyword: "changedetection docker"
 pubDatetime: "2026-07-08T08:00:00.000Z"
 modDatetime: "2026-07-08T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - intermediaire
   - auto-hebergement

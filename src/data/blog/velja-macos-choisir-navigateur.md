@@ -3,7 +3,7 @@ title: "Velja macOS : choisis quel navigateur ouvrir pour chaque lien"
 description: Velja macOS route chaque lien vers le bon navigateur, par domaine, appli source ou profil, avec nettoyage automatique du tracking.
 pubDatetime: "2026-09-14T11:01:11+02:00"
 modDatetime: "2026-09-13T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - productivite

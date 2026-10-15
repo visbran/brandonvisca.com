@@ -3,7 +3,7 @@ title: "Mattermost Docker : chat d'équipe auto-hébergé (alternative Slack)"
 description: "Guide complet mattermost docker : déploie Mattermost avec Docker. Messagerie d'équipe auto-hébergée, alternative open-source à Slack gratuite."
 pubDatetime: "2026-08-15T08:00:00.000Z"
 modDatetime: "2026-08-15T08:00:00.000Z"
-author: brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

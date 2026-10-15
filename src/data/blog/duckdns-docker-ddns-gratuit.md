@@ -3,7 +3,7 @@ title: "DuckDNS Docker : DDNS gratuit pour ton IP dynamique"
 description: "DuckDNS Docker : garde ton nom de domaine à jour avec ton IP dynamique gratuitement. Guide pas à pas avec Docker Compose, variables et astuces homelab."
 pubDatetime: "2026-07-29T08:00:00.000Z"
 modDatetime: "2026-07-29T08:00:00.000Z"
-author: brandon
+author: Brandon Visca
 tags:
   - debutant
   - reseau

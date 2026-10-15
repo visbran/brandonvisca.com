@@ -3,7 +3,7 @@ title: "Romm Docker : gestionnaire de ROMs et rétro-gaming auto-hébergé"
 description: "Guide Romm Docker : déploie un gestionnaire de ROMs rétro-gaming auto-hébergé. Docker Compose complet, scan auto et intégration émulateurs."
 pubDatetime: "2026-07-12T08:00:00.000Z"
 modDatetime: "2026-07-12T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

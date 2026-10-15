@@ -3,7 +3,7 @@ title: "Wallabag Docker : lecture différée auto-hébergée (alternative Pocket
 description: "Wallabag docker en auto-hébergement : installation Docker Compose, migration depuis Pocket, extensions et dépannage de ta lecture différée."
 pubDatetime: "2026-10-11T11:01:11+02:00"
 modDatetime: "2026-10-10T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - reverse-proxy

@@ -3,7 +3,7 @@ title: "Dozzle Docker : visionneuse de logs Docker en temps réel via web"
 description: "Guide dozzle docker complet : installe cette visionneuse de logs Docker temps réel, léger, sans base de données, avec ou sans authentification."
 pubDatetime: "2026-09-17T11:01:11+02:00"
 modDatetime: "2026-09-16T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

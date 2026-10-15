@@ -3,7 +3,7 @@ title: "GLPI Agent Docker : monitorer tes postes clients"
 description: "Déploie GLPI Agent Docker pour inventorier automatiquement ton parc informatique. Guide complet avec docker-compose et dépannage."
 pubDatetime: "2026-06-25T08:00:00.000Z"
 modDatetime: "2026-06-25T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

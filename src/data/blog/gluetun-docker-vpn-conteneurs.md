@@ -3,7 +3,7 @@ title: "Gluetun Docker : faire passer tes conteneurs par un VPN"
 description: Gluetun docker route tes conteneurs derriere un VPN avec kill switch integre. Installation WireGuard, Docker Compose et depannage pas a pas.
 pubDatetime: "2026-10-10T11:02:11+02:00"
 modDatetime: "2026-10-09T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - reseau
   - docker

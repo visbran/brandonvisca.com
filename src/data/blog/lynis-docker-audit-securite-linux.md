@@ -3,7 +3,7 @@ title: "Lynis Docker : audit de sécurité automatisé pour Linux"
 description: "Audite ton serveur avec Lynis Docker : scan système en conteneur, audit de Dockerfile, hardening index et automatisation, sans rien installer sur l'hôte."
 pubDatetime: "2026-09-30T11:02:11+02:00"
 modDatetime: "2026-09-29T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - securite
   - docker

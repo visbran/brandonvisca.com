@@ -3,7 +3,7 @@ title: "SideNotes macOS : notes rapides qui glissent depuis le bord de l'écran"
 description: "SideNotes macOS range tes notes sur le bord de l'écran, accessibles en un clic sans quitter ton app active. Installation, prix et astuces."
 pubDatetime: "2026-09-16T11:01:12+02:00"
 modDatetime: "2026-09-15T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - productivite

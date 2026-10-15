@@ -3,7 +3,7 @@ title: "BorgBackup Docker : sauvegarde dédupliquée et chiffrée pour ton homel
 description: "Guide borgbackup docker complet : déploie BorgBackup en conteneur pour des sauvegardes dédupliquées, compressées et chiffrées AES-256."
 pubDatetime: "2026-08-08T08:00:00.000Z"
 modDatetime: "2026-08-08T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

@@ -3,7 +3,7 @@ title: "Bunch macOS : lance des contextes complets en un clic"
 description: "Bunch macOS : lance des contextes complets (apps, fichiers, sites) en un clic. Gratuit, open-source et parfait pour switcher entre projets."
 pubDatetime: 2026-08-31 06:00:00+00:00
 modDatetime: 2026-08-31 06:00:00+00:00
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - productivite

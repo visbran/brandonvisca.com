@@ -3,7 +3,7 @@ title: "Itsycal macOS : mini calendrier gratuit dans ta menu bar"
 description: "Itsycal macOS : mini calendrier gratuit pour la menu bar. Découvre comment installer, configurer et remplacer l'horloge native en 2 minutes."
 pubDatetime: "2026-08-24T06:00:00.000Z"
 modDatetime: "2026-08-24T06:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - productivite

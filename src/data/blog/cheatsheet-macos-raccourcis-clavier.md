@@ -3,7 +3,7 @@ title: "Cheatsheet macOS : CheatSheet est mort, KeyClu prend le relais"
 description: "CheatSheet ne fonctionne plus depuis macOS Sonoma. Voici KeyClu, la cheatsheet macOS gratuite qui affiche les raccourcis de l'app active."
 pubDatetime: "2026-09-11T11:02:12+02:00"
 modDatetime: "2026-09-11T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - productivite

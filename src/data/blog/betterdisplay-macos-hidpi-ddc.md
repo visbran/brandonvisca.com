@@ -3,7 +3,7 @@ title: "BetterDisplay macOS hidpi : résolutions custom et contrôle DDC sur éc
 description: "BetterDisplay macOS hidpi : comment forcer les résolutions HiDPI et activer le contrôle DDC sur n'importe quel écran externe sans payer un Studio Display."
 pubDatetime: 2026-09-07 11:00:00+00:00
 modDatetime: "2026-09-07T11:00:00Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - productivite

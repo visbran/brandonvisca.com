@@ -3,7 +3,7 @@ title: "Iperf3 : mesurer le débit réel de ton réseau homelab"
 description: "Iperf3 teste le débit réel entre deux machines du homelab : installation, mode serveur/client, UDP, Docker et lecture des résultats."
 pubDatetime: "2026-10-15T11:01:11+02:00"
 modDatetime: "2026-10-14T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - reseau
   - vpn

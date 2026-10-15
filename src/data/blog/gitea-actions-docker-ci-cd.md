@@ -3,7 +3,7 @@ title: "Gitea Actions Docker : CI/CD self-hosted intégré à Gitea"
 description: "Déploie Gitea Actions Docker pour un CI/CD self-hosted intégré à Gitea. Guide complet avec act_runner, workflows YAML et Docker Compose pour ton homelab."
 pubDatetime: "2026-07-22T08:00:00.000Z"
 modDatetime: "2026-07-22T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - intermediaire
   - auto-hebergement

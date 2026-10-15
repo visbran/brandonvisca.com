@@ -3,7 +3,7 @@ title: "Dato macOS : un calendrier intelligent qui remplace l'horloge native"
 description: "Dato macOS remplace l'horloge native par un calendrier intelligent dans la menu bar. 15 $ une fois, et tu gagnes un temps fou chaque jour."
 pubDatetime: "2026-08-26T06:00:00.000Z"
 modDatetime: "2026-08-26T06:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - productivite

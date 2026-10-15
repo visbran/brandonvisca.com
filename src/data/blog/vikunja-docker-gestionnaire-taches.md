@@ -3,7 +3,7 @@ title: "Vikunja Docker : gestionnaire de tâches auto-hébergé (alternative Tod
 description: "Vikunja docker : installe ce gestionnaire de tâches open source avec vues liste, Kanban et Gantt, sans dépendre de Todoist."
 pubDatetime: "2026-10-14T11:02:12+02:00"
 modDatetime: "2026-10-13T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

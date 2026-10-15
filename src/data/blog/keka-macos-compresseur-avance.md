@@ -3,7 +3,7 @@ title: "Keka macOS : compresseur avancé gratuit (7z, split, chiffrement AES)"
 description: "Keka macOS : l'archiveur gratuit et open source qui gère 7z, zip chiffré AES-256, split de fichiers et plus de 30 formats en glisser-déposer."
 pubDatetime: "2026-09-18T11:01:11+02:00"
 modDatetime: "2026-09-17T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - homebrew

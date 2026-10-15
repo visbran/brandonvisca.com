@@ -3,7 +3,7 @@ title: "Redis Docker : déployer une base de données clé-valeur ultra-rapide"
 description: "Redis Docker en pratique : installation, docker-compose, persistance RDB/AOF, sécurité et cas d'usage cache/session pour ton homelab."
 pubDatetime: "2026-09-28T11:02:11+02:00"
 modDatetime: "2026-09-27T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - base-de-donnees

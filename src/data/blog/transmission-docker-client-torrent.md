@@ -3,7 +3,7 @@ title: "Transmission Docker : client torrent ultra-léger avec interface web"
 description: "Déploie Transmission avec Docker : client torrent ultra-léger, interface web, et intégration parfaite avec ta stack mediacenter auto-hébergée."
 pubDatetime: "2026-09-01T06:00:00.000Z"
 modDatetime: "2026-09-01T06:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

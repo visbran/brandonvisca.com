@@ -3,7 +3,7 @@ title: "Audiobookshelf Docker : serveur de livres audio et podcasts auto-héberg
 description: "Audiobookshelf Docker : déploie ton serveur de livres audio et podcasts avec Compose, les bons volumes et une mise à jour sans perte de données."
 pubDatetime: "2026-10-07T11:02:11+02:00"
 modDatetime: "2026-10-06T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - mediacenter

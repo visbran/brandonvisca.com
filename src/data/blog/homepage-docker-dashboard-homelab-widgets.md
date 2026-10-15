@@ -3,7 +3,7 @@ title: "Homepage Docker : dashboard homelab personnalisable avec widgets"
 description: "Installe Homepage Docker sur ton homelab : dashboard personnalisable, widgets natifs, config YAML claire et intégrations Docker en direct."
 pubDatetime: "2026-09-24T11:00:13+02:00"
 modDatetime: "2026-09-23T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - homelab

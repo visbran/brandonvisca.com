@@ -3,7 +3,7 @@ title: "Vibe Island : le panneau notch macOS pour surveiller tes agents IA de co
 description: "Open Island, alternative open source à Vibe Island : un panneau macOS dans la notch pour surveiller Claude Code, Codex et Cursor sans quitter ta fenêtre."
 pubDatetime: "2026-07-18T08:00:00.000Z"
 modDatetime: "2026-07-18T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - productivite

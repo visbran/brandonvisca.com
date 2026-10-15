@@ -3,7 +3,7 @@ title: "Wazuh Docker : SIEM open source pour surveiller ton homelab"
 description: "Wazuh Docker : installe ce SIEM open source sur ton homelab, détecte les intrusions, centralise les logs et compare-le à Suricata."
 pubDatetime: "2026-09-13T11:01:11+02:00"
 modDatetime: "2026-09-12T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - securite
   - docker

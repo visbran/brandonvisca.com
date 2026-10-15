@@ -3,7 +3,7 @@ title: "Trivy Docker : scanner de vulnérabilités pour images et conteneurs"
 description: Trivy Docker scanne tes images pour CVE, secrets et configs dangereuses, gratuit et open source. Installation, commandes essentielles et CI/CD.
 pubDatetime: "2026-09-22T11:01:12+02:00"
 modDatetime: "2026-09-21T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - securite
   - docker

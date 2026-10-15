@@ -3,7 +3,7 @@ title: "Homer Dashboard Docker : le tableau de bord ultime pour ton homelab"
 description: "Guide Homer Dashboard Docker : tableau de bord auto-hébergé et statique pour centraliser tous tes services. Docker Compose inclus."
 pubDatetime: "2026-06-21T08:00:00.000Z"
 modDatetime: "2026-06-21T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

@@ -3,7 +3,7 @@ title: "Suricata Docker : IDS/IPS open-source pour sécuriser ton réseau"
 description: "Suricata Docker, c'est un IDS/IPS open-source pour détecter les intrusions sur ton réseau, en écoute ou en blocage, sans y passer ta nuit."
 pubDatetime: "2026-10-04T11:01:12+02:00"
 modDatetime: "2026-10-03T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - securite
   - docker

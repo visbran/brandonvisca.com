@@ -3,7 +3,7 @@ title: "Cockpit Docker : interface web d'administration Linux moderne"
 description: "Cockpit Docker : installe l'interface web native Cockpit, ajoute le plugin cockpit-docker et pilote conteneurs, stockage et pare-feu depuis un navigateur."
 pubDatetime: "2026-10-01T11:01:12+02:00"
 modDatetime: "2026-09-30T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - linux
   - dashboard

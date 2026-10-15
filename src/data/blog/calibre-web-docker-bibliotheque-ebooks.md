@@ -3,7 +3,7 @@ title: "Calibre Web Docker : bibliothèque ebooks auto-hébergée"
 description: "Déploie calibre web docker pour lire tes ebooks partout : configuration complète, flux OPDS et sync Kobo, en 10 minutes chrono."
 pubDatetime: "2026-10-03T11:02:12+02:00"
 modDatetime: "2026-10-02T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - stockage

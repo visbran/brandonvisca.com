@@ -3,7 +3,7 @@ title: "MinIO Docker : stockage objet S3-compatible auto-hébergé"
 description: "MinIO Docker : déploie ton propre stockage objet S3-compatible en 10 minutes. Alternative auto-hébergée à AWS S3, simple et performante."
 pubDatetime: "2026-07-28T08:00:00.000Z"
 modDatetime: "2026-07-28T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

@@ -3,7 +3,7 @@ title: "Prowlarr Docker : indexeur de trackers pour Radarr et Sonarr"
 description: "Déploie Prowlarr avec Docker pour centraliser tes indexeurs de trackers et les synchroniser automatiquement avec Radarr et Sonarr."
 pubDatetime: "2026-08-28T06:00:00.000Z"
 modDatetime: "2026-08-28T06:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

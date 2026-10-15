@@ -3,7 +3,7 @@ title: "PairDrop Docker : AirDrop multiplateforme via le navigateur"
 description: "PairDrop Docker : héberge ton propre AirDrop multiplateforme dans le navigateur, sans compte ni appli, avec Docker Compose et reverse proxy."
 pubDatetime: "2026-09-21T11:02:11+02:00"
 modDatetime: "2026-09-20T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

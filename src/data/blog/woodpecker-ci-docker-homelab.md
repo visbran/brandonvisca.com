@@ -3,7 +3,7 @@ title: "Woodpecker CI Docker : CI/CD léger pour ton homelab"
 description: "Guide woodpecker ci docker : déploie un pipeline CI/CD léger dans ton homelab avec Docker Compose, agents et workflows YAML prêts à l'emploi."
 pubDatetime: "2026-07-24T08:00:00.000Z"
 modDatetime: "2026-07-24T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - ci-cd
   - docker

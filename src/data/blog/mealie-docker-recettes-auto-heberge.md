@@ -3,7 +3,7 @@ title: "Mealie Docker : gestionnaire de recettes auto-hébergé"
 description: "Mealie Docker : déploie un gestionnaire de recettes auto-hébergé avec Docker Compose. Guide complet, variables d'environnement et comparatif avec Tandoor."
 pubDatetime: "2026-06-20T08:00:00.000Z"
 modDatetime: "2026-06-20T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

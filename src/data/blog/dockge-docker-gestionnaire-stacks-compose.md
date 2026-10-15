@@ -3,7 +3,7 @@ title: "Dockge Docker : gérer tes stacks Compose depuis une interface web"
 description: "Dockge docker : installe cette interface web pour créer, éditer et mettre à jour tes stacks Compose sans taper une ligne SSH."
 pubDatetime: "2026-10-08T22:29:26+02:00"
 modDatetime: "2026-10-08T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

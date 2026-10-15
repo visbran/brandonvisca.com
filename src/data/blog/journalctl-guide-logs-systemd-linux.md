@@ -3,7 +3,7 @@ title: "Journalctl Linux : lire et filtrer les logs systemd comme un pro"
 description: "Journalctl Linux sans prise de tête : filtrer les logs systemd par service, priorité, date et boot, rendre le journal persistant et limiter sa taille."
 pubDatetime: "2026-10-06T11:01:11+02:00"
 modDatetime: "2026-10-05T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - linux
   - sysadmin

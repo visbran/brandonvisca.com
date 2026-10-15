@@ -3,7 +3,7 @@ title: "Rallly Docker : planification de réunions auto-hébergée (alternative 
 description: "Rallly Docker : héberge ton propre outil de sondage de réunions avec docker-compose, alternative libre à Doodle, HTTPS automatique inclus."
 pubDatetime: "2026-09-19T11:02:12+02:00"
 modDatetime: "2026-09-18T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

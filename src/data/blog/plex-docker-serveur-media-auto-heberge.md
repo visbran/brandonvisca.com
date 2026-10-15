@@ -3,7 +3,7 @@ title: "Plex Docker : serveur média auto-hébergé complet"
 description: "Installe Plex Docker en 10 minutes : docker-compose, PLEX_CLAIM, montage des bibliothèques, transcodage matériel et comparatif Jellyfin."
 pubDatetime: "2026-09-27T11:02:34+02:00"
 modDatetime: "2026-09-26T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

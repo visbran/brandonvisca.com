@@ -3,7 +3,7 @@ title: "Headscale Docker : serveur Tailscale auto-hébergé (open-source)"
 description: "Héberge ton propre control plane Tailscale avec Headscale Docker : Compose complet, comparatif Tailscale et limites à connaître avant de migrer."
 pubDatetime: "2026-09-15T11:01:11+02:00"
 modDatetime: "2026-09-14T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - reseau
   - docker

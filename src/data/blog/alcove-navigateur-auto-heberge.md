@@ -3,7 +3,7 @@ title: "Alcove Docker : navigateur web auto-hébergé pour homelab"
 description: "Guide Alcove Docker : déploie un navigateur web auto-hébergé pour ton homelab avec Docker Compose. Reverse proxy, sécurité HTTPS et configuration complète."
 pubDatetime: "2026-07-16T08:00:00.000Z"
 modDatetime: "2026-07-16T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - debutant
   - auto-hebergement

@@ -3,7 +3,7 @@ title: "Stats macOS : moniteur système gratuit dans la barre des menus"
 description: "Stats macOS surveille CPU, RAM, disque et réseau dans la barre des menus : gratuit, open source, et alternative crédible à iStat Menus payant."
 pubDatetime: "2026-10-09T11:03:56+02:00"
 modDatetime: "2026-10-09T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - macos
   - menu-bar

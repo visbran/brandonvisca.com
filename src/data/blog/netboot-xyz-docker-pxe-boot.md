@@ -3,7 +3,7 @@ title: "Netboot Docker avec Netboot.xyz : boot PXE pour installer n'importe quel
 description: "Netboot docker avec Netboot.xyz : boot PXE pour installer Linux, Windows ou BSD via le réseau. Guide Docker Compose complet et testé."
 pubDatetime: "2026-07-06T08:00:00.000Z"
 modDatetime: "2026-07-06T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - debutant
   - sysadmin

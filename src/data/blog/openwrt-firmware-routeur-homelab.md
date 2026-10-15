@@ -3,7 +3,7 @@ title: "OpenWrt firmware : le routeur open-source pour ton homelab"
 description: Installer OpenWrt firmware sur ton routeur, passer à apk en 25.12, comparer avec pfSense et éviter les pièges classiques avant de flasher ton homelab.
 pubDatetime: "2026-10-05T11:09:49+02:00"
 modDatetime: "2026-10-04T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - reseau
   - wireguard

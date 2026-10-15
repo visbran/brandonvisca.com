@@ -3,7 +3,7 @@ title: "Scrutiny Docker : monitoring SMART de tes disques avec alertes"
 description: "Scrutiny Docker : surveille la santé SMART de tes disques en temps réel, reçois des alertes avant la panne. Guide déploiement complet homelab 2026."
 pubDatetime: "2026-09-10T11:02:11+02:00"
 modDatetime: "2026-09-09T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

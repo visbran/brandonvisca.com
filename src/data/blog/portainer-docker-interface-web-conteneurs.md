@@ -3,7 +3,7 @@ title: "Portainer Docker : interface web pour gérer tes conteneurs facilement"
 description: "Guide Portainer Docker complet : installe l'interface web, gère conteneurs, volumes et stacks sans ligne de commande, en dix minutes chrono."
 pubDatetime: "2026-09-26T11:01:12+02:00"
 modDatetime: "2026-09-25T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

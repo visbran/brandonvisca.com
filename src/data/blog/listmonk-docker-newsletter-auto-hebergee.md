@@ -3,7 +3,7 @@ title: "Listmonk Docker : newsletters auto-hébergées (alternative Mailchimp)"
 description: "Déploie Listmonk sous Docker : guide listmonk docker complet pour créer une newsletter auto-hébergée et se passer de Mailchimp."
 pubDatetime: "2026-07-03T08:00:00.000Z"
 modDatetime: "2026-07-04T14:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker

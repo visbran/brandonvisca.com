@@ -3,7 +3,7 @@ title: "Pocket-ID Docker SSO : déploiement léger avec OpenID Connect"
 description: "Guide pocket-id docker sso complet : déploie Pocket-ID avec Docker Compose pour un SSO léger et rapide via OpenID Connect dans ton homelab."
 pubDatetime: "2026-08-04T06:00:00.000Z"
 modDatetime: "2026-08-04T06:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - securite

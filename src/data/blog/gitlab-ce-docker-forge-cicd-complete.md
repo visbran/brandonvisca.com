@@ -3,7 +3,7 @@ title: "GitLab CE Docker : forge Git complète avec CI/CD intégré"
 description: Installe GitLab CE Docker chez toi, une forge Git complète avec CI/CD, Container Registry et Runners self-hosted, sans dépendre du cloud.
 pubDatetime: "2026-09-20T11:01:11+02:00"
 modDatetime: "2026-09-19T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - auto-hebergement

@@ -3,7 +3,7 @@ title: "Step CA Docker : ta propre autorité de certification interne"
 description: "Déploie step ca docker pour une autorité de certification interne : certificats TLS internes, ACME automatique et PKI self-hosted pour ton homelab."
 pubDatetime: "2026-10-13T11:02:11+02:00"
 modDatetime: "2026-10-12T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - securite
   - hardening

@@ -3,7 +3,7 @@ title: "MariaDB Docker : base de données robuste pour tes services"
 description: "Déploie MariaDB Docker en 10 minutes : stack complète, persistance des données, sauvegarde automatisée et optimisation pour ton homelab."
 pubDatetime: "2026-08-07T08:00:00.000Z"
 modDatetime: "2026-08-07T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - docker
   - base-de-donnees

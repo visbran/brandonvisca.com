@@ -3,7 +3,7 @@ title: "Whoogle Docker : pourquoi le projet est mort et par quoi le remplacer"
 description: "Whoogle Docker est abandonné depuis aout 2026, Google bloque ses requetes. Le point complet et la vraie alternative auto-hebergee : SearXNG."
 pubDatetime: "2026-09-23T11:01:12+02:00"
 modDatetime: "2026-09-22T08:00:00.000Z"
-author: Brandon
+author: Brandon Visca
 tags:
   - auto-hebergement
   - docker
