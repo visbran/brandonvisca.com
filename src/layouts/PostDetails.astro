@@ -276,7 +276,7 @@ const relatedPosts = posts
           {visibleFaqs.map(faq => (
             <details>
               <summary>{faq.question}</summary>
-              <p set:html={faqAnswerHtml(faq.answer)} />
+              <div class="post-faq-answer" set:html={faqAnswerHtml(faq.answer)} />
             </details>
           ))}
         </section>

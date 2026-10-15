@@ -32,24 +32,34 @@
   }
 }
 
-/* FAQ du frontmatter sous l'article (PostDetails.astro) */
-.post-faq details {
+/* FAQ du frontmatter sous l'article (PostDetails.astro). Le style prose de
+   <details> vise la carte « Table des matières » (bordure, fond, icône de
+   liste, <p> masqués) : on le neutralise ici. */
+.post-faq details,
+.post-faq details[open] {
+  border: 0;
   border-top: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  cursor: auto;
+  user-select: text;
 }
 .post-faq details:last-of-type {
   border-bottom: 1px solid var(--border);
 }
 .post-faq summary {
   cursor: pointer;
-  padding-block: 0.9rem;
+  padding: 0.9rem 0;
+  font-size: inherit;
   font-weight: 600;
   color: var(--foreground);
-  list-style-position: outside;
 }
 .post-faq summary:hover {
   color: var(--accent);
 }
-.post-faq details > p {
-  margin-top: 0;
+.post-faq summary::before {
+  content: none;
+}
+.post-faq-answer {
   padding-bottom: 0.9rem;
 }
