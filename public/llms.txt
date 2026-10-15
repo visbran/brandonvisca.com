@@ -825,9 +825,9 @@ Description: Installe Netdata Docker pour monitorer CPU, RAM, disques et réseau
 Tags: docker, auto-hebergement, monitoring, intermediaire
 Publié: 2026-05-19 12:00:00+02:00
 
-## Immich en Docker : ton Google Photos auto-hébergé
+## Immich Docker Compose : installer ton Google Photos perso
 URL: https://brandonvisca.com/immich-docker/
-Description: Installe Immich avec Docker Compose, importe ta photothèque Google Photos et retrouve appli mobile, sauvegarde auto et recherche, chez toi.
+Description: Installe Immich avec Docker Compose : compose prêt à copier, import Google Photos via Takeout, appli mobile et sauvegarde auto, tout chez toi.
 Tags: auto-hebergement, docker, multimedia, securite, intermediaire, guide
 Publié: 2026-05-15T19:00:00+02:00
 
@@ -867,9 +867,9 @@ Description: Configure Watchtower pour mettre à jour automatiquement tes conten
 Tags: docker, auto-hebergement, homelab, debutant, guide
 Publié: 2026-05-01 00:00:00+01:00
 
-## Technitium DNS : l'alternative libre à Pi-hole
+## Technitium DNS : installation Docker et comparatif Pi-hole
 URL: https://brandonvisca.com/technitium-dns-server/
-Description: Technitium DNS Server en Docker : blocage des pubs, DNS récursif, DNSSEC et résolution locale. Comparé à Pi-hole et AdGuard Home, sans langue de bois.
+Description: Installe Technitium DNS Server en Docker : blocage des pubs, DNS récursif, DNSSEC et noms locaux. Mon comparatif honnête avec Pi-hole et AdGuard Home.
 Tags: reseau, auto-hebergement, docker, dns, intermediaire, guide
 Publié: 2026-04-29 00:00:00+01:00
 
@@ -975,9 +975,9 @@ Description: AltTab macOS remplace ⌘+Tab avec des previews style Windows. Grat
 Tags: macos, productivite, guide, debutant
 Publié: 2025-11-18T18:55:54+01:00
 
-## AppCleaner Mac : 18 Go libérés, installation et SmartDelete
+## AppCleaner Mac : désinstaller une app sans laisser de traces
 URL: https://brandonvisca.com/appcleaner-mac-alternative-gratuite-cleanmymac/
-Description: AppCleaner Mac s'installe en une commande Homebrew et SmartDelete nettoie chaque app que tu jettes. 18 Go récupérés chez moi, gratuit face à CleanMyMac.
+Description: AppCleaner, gratuit sur Mac, supprime une app et tous ses fichiers cachés. Installation Homebrew, SmartDelete et 18 Go récupérés face à CleanMyMac.
 Tags: macos, homebrew, productivite, debutant
 Publié: 2025-11-18T17:39:28+01:00
 
@@ -1095,9 +1095,9 @@ Description: Découvrez l''ITSM pour débutants avec SnipeIT, l''alternative gra
 Tags: linux, sysadmin, debutant, snipeit, guide
 Publié: 2025-09-29T11:20:31+02:00
 
-## Omarchy Linux : test complet de la distro Arch
+## Omarchy : avis et test complet de la distro Arch Hyprland
 URL: https://brandonvisca.com/omarchy-distribution-linux-arch-hyprland/
-Description: Omarchy Linux installé en 20 minutes et testé : ce que la distro Arch clé en main fait bien, et ses trois limites (Hyprland, jeunesse, doc).
+Description: Mon avis sur Omarchy après installation et test : ce que la distro Arch clé en main fait bien, ses trois limites et pour qui elle vaut le coup.
 Tags: linux, productivite, intermediaire, guide
 Publié: 2025-09-26T12:28:27+02:00
 
@@ -1197,9 +1197,9 @@ Description: Les rôles FSMO sont 5 fonctions importantes dans un réseau Window
 Tags: active-directory, windows-server, guide, sysadmin, avance
 Publié: 2025-03-31T17:34:29+02:00
 
-## Oh My Zsh et Powerlevel10k : ma config .zshrc
+## Installer Oh My Zsh et Powerlevel10k : guide et .zshrc
 URL: https://brandonvisca.com/installation-oh-my-zsh-powerlevel10k-guide-complet/
-Description: Oh My Zsh et Powerlevel10k installés en 15 minutes : ma config .zshrc à copier, les plugins qui servent vraiment et le dépannage courant.
+Description: Installer Oh My Zsh et Powerlevel10k sur macOS ou Linux en 15 minutes : ma config .zshrc à copier, les plugins utiles et le dépannage courant.
 Tags: zsh, macos, productivite, intermediaire
 Publié: 2025-03-31 15:55:32+02:00
 
