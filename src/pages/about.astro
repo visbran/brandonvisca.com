@@ -1,0 +1,324 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+import IconGitHub from "@/assets/icons/IconGitHub.svg";
+import IconMail from "@/assets/icons/IconMail.svg";
+import IconRss from "@/assets/icons/IconRss.svg";
+import { SITE } from "@/config";
+import { SCHEMA_IDS, personSchema } from "@/utils/schema";
+import { slugifyStr } from "@/utils/slugify";
+
+const description =
+  "Homelab, auto-hébergement et indépendance numérique : qui écrit ce blog et pourquoi.";
+
+// Nombre d'articles par tag : les thèmes affichés pointent vers de vraies
+// pages de tag, avec leur volume réel.
+const posts = (await getCollection("blog")).filter(p => !p.data.draft);
+const tagCounts = new Map<string, number>();
+for (const p of posts) {
+  for (const t of p.data.tags) {
+    const slug = slugifyStr(t);
+    tagCounts.set(slug, (tagCounts.get(slug) ?? 0) + 1);
+  }
+}
+
+const homelab = [
+  { name: "Lenovo ThinkStation P720", role: "Nœud Proxmox" },
+  { name: "Lenovo ThinkCentre M720q", role: "Nœud Proxmox" },
+  { name: "VM Oracle Cloud", role: "Edge, expose les services publics" },
+  { name: "NAS QNAP", role: "Backups automatiques" },
+];
+const stack = ["VLAN", "Caddy", "Headscale", "Technitium DNS"];
+
+const topics = [
+  {
+    title: "Homelab & Proxmox",
+    body: "Virtualisation, LXC, ZFS, backup.",
+    tag: "homelab",
+  },
+  {
+    title: "Auto-hébergement",
+    body: "Nextcloud, Jellyfin, Vaultwarden, Immich et tout l'écosystème self-hosted.",
+    tag: "auto-hebergement",
+  },
+  {
+    title: "Linux & sécurité",
+    body: "nginx, Caddy, headers HTTP, hardening.",
+    tag: "linux",
+  },
+  {
+    title: "macOS & productivité",
+    body: "Les outils que j'utilise vraiment.",
+    tag: "macos",
+  },
+].map(t => ({ ...t, count: tagCounts.get(t.tag) ?? 0 }));
+---
+
+<Layout title={`À propos | ${SITE.title}`} description={description}>
+  <script
+    slot="head"
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      url: `${SITE.website}about/`,
+      inLanguage: "fr",
+      isPartOf: { "@id": SCHEMA_IDS.website },
+      mainEntity: {
+        ...personSchema,
+        worksFor: { "@id": SCHEMA_IDS.organization },
+      },
+    })}
+  />
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="about app-layout pb-24">
+    <!-- Présentation + en bref -->
+    <section
+      class="grid gap-10 border-b border-border pt-6 pb-14 lg:grid-cols-12 lg:gap-12"
+    >
+      <div class="lg:col-span-7">
+        <h1
+          class="reveal text-4xl leading-[1.08] font-semibold tracking-[-0.03em] sm:text-5xl"
+          style="--i:0"
+        >
+          À propos
+        </h1>
+        <p
+          class="reveal mt-6 text-xl leading-snug font-medium sm:text-2xl"
+          style="--i:1"
+        >
+          Salut, moi c'est Brandon Visca.
+        </p>
+        <p
+          class="reveal mt-4 max-w-[60ch] text-lg leading-relaxed text-soft"
+          style="--i:2"
+        >
+          Je suis passionné d'auto-hébergement, de homelab et d'indépendance
+          numérique. J'ai monté ce blog parce que j'en avais marre de chercher
+          des tutos en français qui soient à la fois techniques et accessibles,
+          sans le ton condescendant des docs officielles, ni le flou des tutos
+          YouTube.
+        </p>
+      </div>
+
+      <aside
+        class="about-card reveal self-end rounded-box border border-border bg-surface p-6 lg:col-span-5"
+        style="--i:3"
+      >
+        <dl class="grid grid-cols-2 gap-6">
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-sm text-soft">articles publiés</dt>
+            <dd class="tabular text-3xl font-semibold tracking-[-0.02em]">
+              {posts.length}
+            </dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-sm text-soft">nœuds Proxmox</dt>
+            <dd class="tabular text-3xl font-semibold tracking-[-0.02em]">2</dd>
+          </div>
+        </dl>
+        <ul class="mt-6 space-y-2.5 border-t border-border pt-5">
+          <li>
+            <a href="/cv/" class="link-arrow">
+              Mon CV
+              <IconArrowRight class="size-4" aria-hidden="true" />
+            </a>
+          </li>
+          <li>
+            <a href="/blog/" class="link-arrow">
+              Tous les articles
+              <IconArrowRight class="size-4" aria-hidden="true" />
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Ce que je fais : le homelab -->
+    <section aria-labelledby="about-lab" class="about-section">
+      <h2 id="about-lab" class="about-h2">Ce que je fais</h2>
+      <div class="grid gap-10 lg:grid-cols-12 lg:gap-12">
+        <div class="space-y-5 text-lg leading-relaxed lg:col-span-7">
+          <p>
+            Je tourne un <strong>homelab sous Proxmox</strong> chez moi, avec une
+            VM Oracle Cloud en edge pour exposer les services publics. Réseau VLAN,
+            reverse proxy Caddy, VPN Headscale, DNS Technitium, backups automatiques
+            sur NAS QNAP. Le setup classique du sysadmin maison un peu trop sérieux.
+          </p>
+          <p>
+            Sur le blog, tu trouveras des <strong>guides testés en prod</strong
+            >, pas de la théorie. Si j'écris un tuto Proxmox c'est parce que
+            j'ai foiré l'install au moins une fois avant toi.
+          </p>
+        </div>
+        <div class="lg:col-span-5">
+          <ul class="divide-y divide-border rounded-box border border-border">
+            {
+              homelab.map(m => (
+                <li class="px-5 py-3.5">
+                  <p class="font-medium">{m.name}</p>
+                  <p class="text-sm text-soft">{m.role}</p>
+                </li>
+              ))
+            }
+          </ul>
+          <ul class="mt-4 flex flex-wrap gap-1.5" aria-label="Services réseau">
+            {stack.map(s => <li class="about-chip">{s}</li>)}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophie : la citation porte la section -->
+    <section aria-labelledby="about-why" class="about-section">
+      <h2 id="about-why" class="about-h2">La philosophie du site</h2>
+      <blockquote class="about-quote">
+        Apprends à auto-héberger tes services comme un pro, sans te ruiner ni te
+        prendre la tête.
+      </blockquote>
+      <p class="mt-6 max-w-[68ch] text-lg leading-relaxed">
+        L'auto-hébergement n'est pas réservé aux ingénieurs système. Avec un
+        mini PC à 150€ et quelques week-ends, tu peux remplacer Google Drive,
+        Netflix, 1Password et ton VPN payant. <strong>brandonvisca.com</strong> est
+        là pour te montrer comment, étape par étape, en français.
+      </p>
+    </section>
+
+    <!-- Thèmes couverts, reliés aux pages de tag -->
+    <section aria-labelledby="about-topics" class="about-section">
+      <h2 id="about-topics" class="about-h2">Ce que je couvre</h2>
+      <ul
+        class="grid gap-px overflow-hidden rounded-box border border-border bg-border sm:grid-cols-2"
+      >
+        {
+          topics.map(t => (
+            <li class="bg-background">
+              <a
+                href={`/tags/${t.tag}/`}
+                class="about-topic group block h-full p-6"
+              >
+                <span class="flex items-baseline justify-between gap-4">
+                  <span class="text-lg font-semibold transition-colors group-hover:text-accent">
+                    {t.title}
+                  </span>
+                  {t.count > 0 && (
+                    <span class="tabular font-mono text-sm text-soft">
+                      {t.count} articles
+                    </span>
+                  )}
+                </span>
+                <span class="mt-2 block text-soft">{t.body}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <!-- En ce moment + contact -->
+    <section class="about-section grid gap-12 lg:grid-cols-2">
+      <div>
+        <h2 class="about-h2">En ce moment</h2>
+        <p class="text-lg leading-relaxed">
+          En dehors du blog, je développe un SaaS dédié à l'enseignement
+          supérieur, et je rédige des articles techniques pour
+          <a href="https://mxtoolbox.eu" class="about-link">mxtoolbox.eu</a> et
+          <a href="https://ippriv.com" class="about-link">ippriv.com</a>.
+        </p>
+      </div>
+      <div>
+        <h2 class="about-h2">Me contacter</h2>
+        <ul class="space-y-3 text-lg">
+          <li>
+            <a href="https://github.com/visbran" class="about-contact">
+              <IconGitHub class="size-5" aria-hidden="true" />
+              github.com/visbran
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contact@brandonvisca.com" class="about-contact">
+              <IconMail class="size-5" aria-hidden="true" />
+              contact@brandonvisca.com
+            </a>
+          </li>
+          <li>
+            <a href="/rss.xml" class="about-contact">
+              <IconRss class="size-5" aria-hidden="true" />
+              Flux RSS
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .about-section {
+    padding-top: 3.5rem;
+  }
+
+  .about-h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-chip {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-inline);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-soft);
+  }
+
+  .about-quote {
+    max-width: 30ch;
+    font-size: clamp(1.6rem, 3.4vw, 2.25rem);
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--accent);
+    text-wrap: balance;
+  }
+
+  .about-topic {
+    transition: background-color 0.2s ease;
+  }
+  .about-topic:hover {
+    background: var(--surface);
+  }
+
+  .about-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .about-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: color 0.2s ease;
+  }
+  .about-contact :global(svg) {
+    color: var(--text-soft);
+    transition: color 0.2s ease;
+  }
+  .about-contact:hover,
+  .about-contact:hover :global(svg) {
+    color: var(--accent);
+  }
+</style>
