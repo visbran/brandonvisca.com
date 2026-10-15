@@ -407,3 +407,11 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 - `site.js` : nom + sous-titre du hero, thèmes principaux en pied.
 - `src/utils/loadGoogleFont.ts` : Geist 400/500/600 + Geist Mono 400 en WOFF statiques (`src/assets/fonts/og/`), tables GSUB/GPOS/GDEF/kern retirées : avec elles Satori 0.19 produit des espaces irréguliers entre les mots.
 - `src/config.ts` : `ogImage: ""` → les pages hors articles utilisent `/og.png` généré. `public/og.webp` supprimé : c'était la bannière promo du thème upstream « Devosfera ».
+
+### Page CV en gabarit dédié (2026-10-15)
+
+- `src/pages/cv.md` → `src/pages/cv.astro` (URL `/cv/` inchangée), contenu déplacé dans `src/data/cv.ts` (chaînes avec `**gras**` et `[lien](url)` uniquement).
+- En-tête : nom, poste, profil, contacts (icônes Tabler du thème) + bouton « Version PDF » (`window.print()`), chiffres clés en grille 2×2 sur `--surface`.
+- Corps 8/4 colonnes : parcours en frise (dates mono à gauche, filet vertical), colonne latérale compétences en étiquettes `--radius-inline`, formation, atouts, projets, centres d'intérêt.
+- `@media print` : A4 clair forcé quel que soit le thème, header/footer/fil d'Ariane/fond grain masqués, dates au-dessus des postes, 2 pages.
+- `AboutLayout.astro` garde l'option `hideTitle` (plus utilisée).

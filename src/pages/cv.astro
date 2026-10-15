@@ -1,0 +1,365 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import IconMail from "@/assets/icons/IconMail.svg";
+import IconGitHub from "@/assets/icons/IconGitHub.svg";
+import { SITE } from "@/config";
+import {
+  identity,
+  keyFigures,
+  jobs,
+  skills,
+  education,
+  softSkills,
+  sideProjects,
+  interests,
+} from "@/data/cv";
+
+// Mini-markdown du fichier de données : **gras** et [lien](url), rien d'autre.
+const escape = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const md = (s: string) =>
+  escape(s)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>');
+
+const description = `CV de ${identity.name} : ${identity.role.toLowerCase()}, ${identity.location}.`;
+---
+
+<Layout title={`CV | ${SITE.title}`} description={description}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="cv app-layout pb-24">
+    <!-- En-tête : identité à gauche, chiffres clés à droite -->
+    <section
+      class="cv-intro grid gap-10 border-b border-border pt-6 pb-12 lg:grid-cols-12 lg:gap-12 lg:pb-14"
+    >
+      <div class="lg:col-span-8">
+        <h1
+          class="reveal text-4xl leading-[1.08] font-semibold tracking-[-0.03em] sm:text-5xl"
+          style="--i:0"
+        >
+          {identity.name}
+        </h1>
+        <p class="reveal mt-3 text-lg font-medium sm:text-xl" style="--i:1">
+          {identity.role}
+          <span class="text-soft">· {identity.subrole}</span>
+        </p>
+        <p
+          class="reveal mt-6 max-w-[62ch] leading-relaxed text-foreground/85"
+          style="--i:2"
+          set:html={md(identity.profile)}
+        />
+        <ul
+          class="cv-contact reveal mt-7 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm"
+          style="--i:3"
+        >
+          <li>
+            <a href={`mailto:${identity.email}`} class="cv-link">
+              <IconMail class="size-4" aria-hidden="true" />
+              {identity.email}
+            </a>
+          </li>
+          <li>
+            <a href={`https://github.com/${identity.github}`} class="cv-link">
+              <IconGitHub class="size-4" aria-hidden="true" />
+              github.com/{identity.github}
+            </a>
+          </li>
+          <li class="text-soft">{identity.location}</li>
+          <li class="cv-print-hide sm:ml-auto">
+            <button type="button" data-cv-print class="cv-print-btn">
+              Version PDF
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <dl
+        class="cv-figures reveal grid grid-cols-2 self-end overflow-hidden rounded-box border border-border lg:col-span-4"
+        style="--i:2"
+      >
+        {
+          keyFigures.map(f => (
+            <div class="flex flex-col-reverse gap-1 p-4 sm:p-5">
+              <dt class="text-sm text-soft">{f.label}</dt>
+              <dd class="tabular text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
+                {f.value}
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
+    </section>
+
+    <div class="cv-body grid gap-14 pt-12 lg:grid-cols-12 lg:gap-12">
+      <!-- Parcours -->
+      <section aria-labelledby="cv-experience" class="lg:col-span-8">
+        <h2 id="cv-experience" class="cv-h2">Expérience</h2>
+        <ol class="mt-8 space-y-12">
+          {
+            jobs.map(job => (
+              <li class="cv-job grid gap-3 sm:grid-cols-[8.5rem_1fr] sm:gap-6">
+                <p class="font-mono text-sm leading-6 text-soft">
+                  {job.period}
+                  {job.duration && <span class="block">{job.duration}</span>}
+                </p>
+                <div class="cv-job-body">
+                  <h3 class="text-lg leading-snug font-semibold">{job.role}</h3>
+                  <p class="mt-1 text-soft">
+                    {job.company}, {job.place}
+                  </p>
+                  <p class="mt-4 leading-relaxed" set:html={md(job.summary)} />
+                  {job.groups.map(g => (
+                    <div class="mt-6">
+                      <h4 class="text-sm font-semibold text-accent">{g.label}</h4>
+                      <ul class="cv-list mt-3 space-y-2.5">
+                        {g.items.map(item => (
+                          <li set:html={md(item)} />
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <!-- Colonne latérale -->
+      <aside class="cv-aside space-y-12 lg:col-span-4">
+        <section aria-labelledby="cv-skills">
+          <h2 id="cv-skills" class="cv-h2">Compétences</h2>
+          <div class="mt-6 space-y-6">
+            {
+              skills.map(group => (
+                <div>
+                  <h3 class="text-sm font-semibold">{group.label}</h3>
+                  <ul class="mt-2.5 flex flex-wrap gap-1.5">
+                    {group.items.map(item => (
+                      <li class="cv-chip">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <section aria-labelledby="cv-education">
+          <h2 id="cv-education" class="cv-h2">Formation</h2>
+          <ol class="mt-6 space-y-4">
+            {
+              education.map(e => (
+                <li class="grid grid-cols-[1fr_auto] gap-x-4">
+                  <span class="font-medium">{e.degree}</span>
+                  <span class="tabular font-mono text-sm leading-6 text-soft">
+                    {e.year}
+                  </span>
+                  <span class="text-sm text-soft">{e.school}</span>
+                </li>
+              ))
+            }
+          </ol>
+        </section>
+
+        <section aria-labelledby="cv-soft">
+          <h2 id="cv-soft" class="cv-h2">Atouts</h2>
+          <ul class="cv-list mt-6 space-y-2">
+            {softSkills.map(s => <li set:html={md(s)} />)}
+          </ul>
+        </section>
+
+        <section aria-labelledby="cv-side">
+          <h2 id="cv-side" class="cv-h2">Projets & veille</h2>
+          <ul class="cv-list mt-6 space-y-2">
+            {sideProjects.map(s => <li set:html={md(s)} />)}
+          </ul>
+        </section>
+
+        <section aria-labelledby="cv-interests">
+          <h2 id="cv-interests" class="cv-h2">Centres d'intérêt</h2>
+          <p class="mt-4">{interests.join(", ")}</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  document
+    .querySelector("[data-cv-print]")
+    ?.addEventListener("click", () => window.print());
+</script>
+
+<style>
+  .cv-h2 {
+    font-size: 1.375rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cv-figures > div:nth-child(odd) {
+    border-right: 1px solid var(--border);
+  }
+  .cv-figures > div:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--border);
+  }
+  .cv-figures > div {
+    background: var(--surface);
+  }
+
+  .cv-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--foreground);
+    transition: color 0.2s ease;
+  }
+  .cv-link:hover {
+    color: var(--accent);
+  }
+  .cv-link :global(svg) {
+    color: var(--text-soft);
+  }
+
+  .cv-print-btn {
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-box);
+    color: var(--foreground);
+    transition:
+      border-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.15s ease;
+  }
+  .cv-print-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .cv-print-btn:active {
+    transform: translateY(1px);
+  }
+
+  /* Filet vertical du parcours : relie les postes sans pastilles décoratives. */
+  @media (min-width: 640px) {
+    .cv-job-body {
+      border-left: 1px solid var(--border);
+      padding-left: 1.5rem;
+    }
+  }
+
+  .cv-list > li {
+    position: relative;
+    padding-left: 1rem;
+    line-height: 1.6;
+  }
+  .cv-list > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.8em;
+    width: 0.4rem;
+    height: 1px;
+    background: var(--text-soft);
+  }
+
+  .cv :global(strong) {
+    font-weight: 600;
+    color: var(--foreground);
+  }
+  .cv :global(.cv-list a),
+  .cv-intro :global(p a) {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .cv-chip {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-inline);
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  /* Impression / « Enregistrer en PDF » : clair, sans chrome du site. */
+  @media print {
+    @page {
+      size: A4;
+      margin: 12mm 14mm;
+    }
+    :global(html),
+    :global(html[data-theme][data-theme]) {
+      --background: #fff;
+      --surface: #f3f5f8;
+      --foreground: #14181f;
+      --text-soft: #4d5562;
+      --border: #d4dae3;
+      --accent: #1158d1;
+      font-size: 13px;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+    :global(#main-header),
+    :global(footer),
+    :global(nav:has(.breadcrumb-item)),
+    :global(#btt-btn-container),
+    :global(.site-backdrop),
+    .cv-print-hide {
+      display: none !important;
+    }
+    :global(body) {
+      min-height: 0;
+    }
+    .cv {
+      max-width: none;
+      padding: 0;
+    }
+    .cv-intro {
+      grid-template-columns: 2fr 1fr;
+      padding-top: 0;
+      padding-bottom: 1.5rem;
+    }
+    .cv-body {
+      grid-template-columns: 1.75fr 1fr;
+      gap: 2rem;
+      padding-top: 1.5rem;
+    }
+    .cv-body > *,
+    .cv-intro > * {
+      grid-column: auto;
+    }
+    /* Dates au-dessus du poste : la colonne de gauche coûte trop en A4. */
+    .cv-job {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+    .cv-job-body {
+      border-left: 0;
+      padding-left: 0;
+    }
+    .cv-list > li,
+    .cv-aside section > div > div,
+    .cv-aside li {
+      break-inside: avoid;
+    }
+    .cv-h2,
+    .cv-job-body h4 {
+      break-after: avoid;
+    }
+    .reveal {
+      animation: none !important;
+    }
+  }
+</style>
