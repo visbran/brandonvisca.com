@@ -1,11 +1,10 @@
 import satori from "satori";
-import { SITE } from "@/config";
 import loadGoogleFonts from "../loadGoogleFont";
 import { C, h, frame, bottomRow } from "./frame";
 
 /**
  * Carte OG du site (home, tags, pages annexes) : reprend le hero de la home,
- * nom en grand et sous-titre, avec les thèmes principaux en pied.
+ * promesse en grand et sous-titre, avec les thèmes principaux en pied.
  */
 const THEMES = ["Homelab", "Auto-hébergement", "Linux", "Docker", "macOS"];
 
@@ -14,13 +13,13 @@ export default async () => {
     h(
       "div",
       {
-        fontSize: 104,
+        fontSize: 80,
         fontWeight: 600,
-        lineHeight: 1,
+        lineHeight: 1.05,
         letterSpacing: "-0.035em",
         color: C.foreground,
       },
-      SITE.title
+      "Reprendre le contrôle de tes données."
     ),
     h(
       "div",
@@ -31,7 +30,7 @@ export default async () => {
         lineHeight: 1.4,
         color: C.soft,
       },
-      "Guides concrets sur le homelab, l'auto-hébergement et Linux, pour reprendre le contrôle de tes données."
+      "Guides concrets sur le homelab, l'auto-hébergement et Linux."
     ),
   ]);
 

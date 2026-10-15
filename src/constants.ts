@@ -19,13 +19,13 @@ export const SOCIALS: Social[] = [
   {
     name: "GitHub",
     href: "https://github.com/visbran",
-    linkTitle: `${SITE.title} sur GitHub`,
+    linkTitle: "Profil GitHub",
     icon: IconGitHub,
   },
   {
     name: "Mail",
     href: "mailto:contact@brandonvisca.com",
-    linkTitle: `Contacter ${SITE.title}`,
+    linkTitle: "Me contacter par mail",
     icon: IconMail,
   },
 ] as const;

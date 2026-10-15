@@ -29,7 +29,7 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
       <div>
         <a
           href="/"
-          aria-label={`Accueil de ${SITE.title}`}
+          aria-label="Accueil"
           class="footer-home-link text-lg font-semibold tracking-[-0.02em] text-foreground transition-colors hover:text-accent"
         >
           {SITE.title}
@@ -68,7 +68,7 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
 
     <div class="mt-10 flex flex-col gap-2 font-mono text-xs text-soft sm:flex-row sm:justify-between">
       <p>
-        &copy; {currentYear} {SITE.title}.
+        &copy; {currentYear}
         <a href="/politique-confidentialite/" class="footer-link ml-1">Politique de confidentialité</a>
       </p>
       <p>

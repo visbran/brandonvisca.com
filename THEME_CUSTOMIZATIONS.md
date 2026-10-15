@@ -420,3 +420,11 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 
 - `src/pages/about.md` → `src/pages/about.astro` (URL `/about/` inchangée, JSON-LD `ProfilePage` repris tel quel). Présentation + carte « en bref » (nombre d'articles calculé depuis la collection, liens CV et articles), homelab en liste de machines + services, citation de la philosophie en grand, thèmes couverts reliés à leurs pages de tag avec le nombre d'articles, « En ce moment » et contact côte à côte.
 - `src/pages/search.astro` : nombre réel de guides dans le chapô, état vide « Parcourir par thème » (tags primaires + volume, masqué dès qu'un message Pagefind apparaît via `:has()`), résultats restylés **dans `.search-page` uniquement** (la modale ⌘K garde ses styles) : titres plus grands, surlignage plus léger, sous-résultats sous filet gauche sans la flèche ↳, bouton « plus de résultats » aligné sur le système.
+
+### Marque « ~/homelab » à la place du nom (2026-10-15)
+
+- `src/config.ts` : `SITE.title` = `~/homelab` (header, footer, onglets hors articles, RSS, JSON-LD `WebSite`/`Organization`). `SITE.author` inchangé : `<meta author>` et JSON-LD `Person` gardent le nom.
+- `PostDetails.astro` : onglet = titre de l'article seul ; byline masquée sauf auteur invité (`author !== SITE.author`).
+- `index.astro` : H1 = « Reprendre le contrôle de tes données. », titre d'onglet explicite.
+- `Header.astro` / `Footer.astro` : `aria-label="Accueil"` (évite « tilde slash homelab » au lecteur d'écran), copyright sans la marque.
+- `og-templates/site.js` : promesse en grand, le cadre affiche déjà `~/homelab $`.

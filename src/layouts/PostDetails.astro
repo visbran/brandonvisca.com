@@ -70,7 +70,7 @@ const ogImage = ogImageUrl
   : undefined;
 
 const layoutProps = {
-  title: `${title} | ${SITE.title}`,
+  title,
   author,
   description,
   pubDatetime,
@@ -194,7 +194,9 @@ const nextPost =
       </p>
 
       <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
-        <span class="text-foreground">{author}</span>
+        {author && author !== SITE.author && (
+          <span class="text-foreground">{author}</span>
+        )}
         <Datetime
           {pubDatetime}
           {modDatetime}
