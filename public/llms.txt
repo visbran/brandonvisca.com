@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-14
-# Total articles : 218
+# Dernière mise à jour : 2026-10-15
+# Total articles : 219
+
+## Iperf3 : mesurer le débit réel de ton réseau homelab
+URL: https://brandonvisca.com/iperf3-tester-debit-reseau-homelab/
+Description: Iperf3 teste le débit réel entre deux machines du homelab : installation, mode serveur/client, UDP, Docker et lecture des résultats.
+Tags: reseau, vpn, tailscale, intermediaire
+Publié: 2026-10-15T11:01:11+02:00
 
 ## Vikunja Docker : gestionnaire de tâches auto-hébergé (alternative Todoist)
 URL: https://brandonvisca.com/vikunja-docker-gestionnaire-taches/
