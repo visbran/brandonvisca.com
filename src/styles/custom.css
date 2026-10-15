@@ -9,14 +9,16 @@
  * dans config.ts). Le code inline ne se coupe jamais : une césure dans
  * `systemd-journald` serait recopiée telle quelle. */
 .app-prose p,
-.app-prose li {
+.app-prose li,
+.about-prose {
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
   hyphenate-limit-chars: 7 3 3;
 }
 
-.app-prose :is(p, li) :is(code, a) {
+.app-prose :is(p, li) :is(code, a),
+.about-prose :is(code, a) {
   hyphens: manual;
   -webkit-hyphens: manual;
 }
@@ -24,7 +26,8 @@
 /* Mobile : retour au fer à gauche pour éviter les rivières sur écrans étroits */
 @media (max-width: 640px) {
   .app-prose p,
-  .app-prose li {
+  .app-prose li,
+  .about-prose {
     text-align: left;
   }
 }
