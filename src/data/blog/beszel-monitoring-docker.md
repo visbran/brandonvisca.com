@@ -333,11 +333,6 @@ Pour compléter ta stack de monitoring et surveiller aussi les changements sur d
 
 💡 À lire aussi : [Scrutiny Docker : monitoring SMART de tes disques avec alertes](/scrutiny-docker-monitoring-smart-disques/), dans la même veine que cet article.
 
-## Articles connexes
 
-- [Netdata Docker : monitorer ton serveur en temps réel sans te ruiner](/netdata-docker/)
-- [Nginx Proxy Manager : reverse proxy en 5 min avec Docker](/nginx-proxy-manager-docker-guide/)
-- [Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul](/traefik-reverse-proxy-docker/)
-- [n8n Docker : remplace Zapier par du self-hosted](/n8n-docker-workflow-automation/)
 
 Beszel ne révolutionnera pas l'industrie du monitoring, mais il remplit **parfaitement** le créneau "je veux voir mes serveurs sans y passer la nuit". Pour un homelab moderne, c'est un excellent compromis entre simplicité et efficacité 🔥

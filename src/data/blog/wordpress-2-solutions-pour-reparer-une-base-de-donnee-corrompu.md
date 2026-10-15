@@ -147,8 +147,3 @@ Et si tu veux tester des manipulations risquées sans toucher la prod, [LocalWP]
 Pour réparer WordPress après une corruption de base, commence toujours par l'outil intégré : rapide, sans risque, ça règle 80% des cas. Si ça bloque, phpMyAdmin te donne un contrôle plus fin table par table.
 
 Dans les deux cas : active le débogage pour comprendre ce qui se passe réellement, et pense à désactiver `WP_ALLOW_REPAIR` dès que c'est réparé. Et si t'as pas de sauvegardes, c'est le bon moment pour mettre UpdraftPlus en place.
-
-## Articles connexes
-
-- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)
-- [Migrer WordPress en 2025 : All-in-One WP Migration guide complet (+ astuces pro)](/migration-wordpress-all-in-one-guide-2025/)

@@ -231,10 +231,3 @@ Dans mon workflow, j'applique ce script sur toutes les captures d'écran avant d
 💡 À lire aussi : [Keka macOS : compresseur avancé gratuit (7z, split, chiffrement AES)](/keka-macos-compresseur-avance/), dans la même veine que cet article.
 
 💡 À lire aussi : [Stats macOS : moniteur système gratuit dans la barre des menus](/stats-macos-moniteur-systeme-barre-menus/), dans la même veine que cet article.
-
-## Articles connexes
-
-- [AppCleaner Mac : Alternative Gratuite à CleanMyMac (Guide Complet 2025)](/appcleaner-mac-alternative-gratuite-cleanmymac/)
-- [Installer Homebrew sur macOS : Guide complet Apple Silicon & Intel](/installation-homebrew-macos/)
-- [WailBrew : Interface Graphique Homebrew pour macOS (Guide Complet 2026)](/wailbrew-interface-graphique-homebrew/)
-- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)

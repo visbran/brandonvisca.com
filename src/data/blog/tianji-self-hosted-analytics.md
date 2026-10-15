@@ -299,10 +299,3 @@ Le reste, c'est du confort : un tableau de bord lisible, aucune bannière de coo
 - [Cloudflare Tunnel avec Docker : exposer un service sans ouvrir de port](/cloudflare-tunnel-docker-homelab/)
 
 💡 À lire aussi : [Wazuh Docker : SIEM open source pour surveiller ton homelab](/wazuh-docker-siem-securite-homelab/), dans la même veine que cet article.
-
-## Articles connexes
-
-- [Immich Docker remplace Google Photos ? Guide complet 2026](/immich-docker/)
-- [Jellyfin avec Docker : Ton Netflix Gratuit en 30 Min (Économise 378€/an)](/jellyfin-docker-alternative-netflix-gratuite/)
-- [Nextcloud avec Docker : Ton Cloud Perso en 1h (Adieu Google Drive !)](/nextcloud-docker-installation-complete-2025/)
-- [Technitium DNS Server : installe ton bloqueur de pubs libre (2026)](/technitium-dns-server/)

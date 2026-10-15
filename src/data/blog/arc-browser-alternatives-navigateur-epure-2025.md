@@ -260,12 +260,3 @@ Oui. Arc exporte en HTML standard (Paramètres > Exporter). Tous les navigateurs
 **Orion Browser est-il vraiment plus rapide que Chrome ?**
 
 Oui sur Mac Apple Silicon. WebKit natif + zéro tracking = 30-40% moins de RAM que Chrome avec 20 onglets. Encore en bêta publique mais très stable au quotidien.
-
----
-
-## Articles connexes
-
-- [LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)](/installer-localwp-wordpress-local/)
-- [AltTab macOS : Gestion Fenêtres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
-- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
-- [Clop : Compresse tes images et vidéos automatiquement sur macOS (gratuit)](/clop-compression-images-videos-macos/)

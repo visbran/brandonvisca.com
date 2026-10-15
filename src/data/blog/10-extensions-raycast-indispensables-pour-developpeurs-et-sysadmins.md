@@ -633,8 +633,3 @@ Si t'es passionné d'outils de productivité comme moi, jette aussi un œil à m
 - [Documentation officielle](https://manual.raycast.com/)
 - [GitHub - Extensions Raycast](https://github.com/raycast/extensions)
 - [API Raycast](https://developers.raycast.com/)
-
-## Articles connexes
-
-- [Shutter Encoder Mac : Alternative Gratuite à HandBrake (Comp](/shutter-encoder-mac-alternative-handbrake/)
-- [Oh My Zsh + Powerlevel10k : Transformez votre terminal en ma](/installation-oh-my-zsh-powerlevel10k-guide-complet/)
