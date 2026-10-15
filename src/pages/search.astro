@@ -4,33 +4,85 @@ import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
+import { getCollection } from "astro:content";
 import { SITE } from "@/config";
+import { slugifyStr } from "@/utils/slugify";
+import { tagLabel } from "@/utils/tagMeta";
+import tagsVocabulary from "@/data/tags.json";
 
 const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
+
+// État vide : les thèmes principaux avec leur volume réel, pour donner une
+// porte d'entrée avant la première frappe.
+const posts = (await getCollection("blog")).filter(p => !p.data.draft);
+const tagCounts = new Map<string, number>();
+for (const p of posts) {
+  for (const t of p.data.tags) {
+    const slug = slugifyStr(t);
+    tagCounts.set(slug, (tagCounts.get(slug) ?? 0) + 1);
+  }
+}
+const themes = tagsVocabulary.primary
+  .map(slug => ({
+    slug,
+    label: tagLabel(slug),
+    count: tagCounts.get(slug) ?? 0,
+  }))
+  .filter(t => t.count > 0)
+  .sort((a, b) => b.count - a.count);
 ---
 
 <Layout title={`Recherche | ${SITE.title}`}>
   <Header />
   <Breadcrumb />
-  <main id="main-content" class="app-layout pb-12">
-    <!-- Hero -->
-    <div class="search-hero" data-search-hero>
-      <div class="relative z-10">
-        <h1 class="text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
-          Recherche
-        </h1>
-        <p class="mt-4 max-w-xl text-lg leading-relaxed text-soft">
-          Retrouve n'importe quel article, tuto ou commande du blog.
-        </p>
-      </div>
+  <main id="main-content" class="search-page app-layout pb-20">
+    <div class="search-hero">
+      <h1 class="text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
+        Recherche
+      </h1>
+      <p class="mt-4 max-w-xl text-lg leading-relaxed text-soft">
+        Retrouve n'importe quel article, tuto ou commande parmi les
+        <span class="tabular font-medium text-foreground">{posts.length}</span>
+        guides du blog.
+      </p>
     </div>
 
-    <!-- Search container -->
-    <div class="search-container" data-search-card>
-      <div class="search-inner">
-        <div id="pagefind-search" class="premium-search" transition:persist data-backurl={backUrl}>
-        </div>
+    <div class="search-container">
+      <div
+        id="pagefind-search"
+        class="premium-search"
+        transition:persist
+        data-backurl={backUrl}
+      >
       </div>
+
+      <!-- Masqué dès que Pagefind affiche un message ou des résultats. -->
+      <section class="search-empty" aria-labelledby="search-themes">
+        <h2 id="search-themes" class="text-lg font-semibold">
+          Parcourir par thème
+        </h2>
+        <ul
+          class="mt-5 grid gap-px overflow-hidden rounded-box border border-border bg-border sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {
+            themes.map(t => (
+              <li class="bg-background">
+                <a
+                  href={`/tags/${t.slug}/`}
+                  class="search-theme group flex items-baseline justify-between gap-4 px-5 py-4"
+                >
+                  <span class="font-medium transition-colors group-hover:text-accent">
+                    {t.label}
+                  </span>
+                  <span class="tabular font-mono text-sm text-soft">
+                    {t.count}
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
     </div>
   </main>
   <Footer />
@@ -109,5 +161,90 @@ const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
   .search-container {
     position: relative;
     min-height: 40vh;
+  }
+
+  .search-empty {
+    margin-top: 3rem;
+  }
+  .search-container:has(.pagefind-ui__message) .search-empty {
+    display: none;
+  }
+
+  .search-theme {
+    transition: background-color 0.2s ease;
+  }
+  .search-theme:hover {
+    background: var(--surface);
+  }
+
+  /* Résultats Pagefind, propres à cette page (la modale ⌘K garde les siens). */
+  .search-page :global(.pagefind-ui__search-input) {
+    height: 3.75rem;
+    font-size: 1.125rem;
+  }
+  .search-page :global(.pagefind-ui__message) {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: var(--text-soft);
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  .search-page :global(.pagefind-ui__result) {
+    padding: 1.5rem 0 !important;
+  }
+  .search-page :global(.pagefind-ui__result-title) {
+    font-size: 1.1875rem;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+  }
+  .search-page :global(.pagefind-ui__result-excerpt) {
+    font-size: 0.9375rem;
+    max-width: 75ch;
+  }
+  .search-page :global(.pagefind-ui__result-excerpt mark) {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    color: var(--accent);
+    font-weight: 500;
+    padding: 0 0.1em;
+  }
+  /* Sous-résultats : filet à gauche plutôt que la flèche ↳ de Pagefind. */
+  .search-page :global(.pagefind-ui__result-nested) {
+    margin-top: 0.75rem;
+    padding: 0.1rem 0 0.1rem 1rem;
+    border-left: 1px solid var(--border);
+  }
+  .search-page
+    :global(.pagefind-ui__result-nested .pagefind-ui__result-link::before) {
+    content: none;
+  }
+  .search-page :global(.pagefind-ui__result-nested .pagefind-ui__result-link) {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--foreground);
+  }
+  .search-page
+    :global(.pagefind-ui__result-nested .pagefind-ui__result-link:hover) {
+    color: var(--accent);
+  }
+  .search-page
+    :global(.pagefind-ui__result-nested .pagefind-ui__result-excerpt) {
+    margin-top: 0.15rem;
+    font-size: 0.875rem;
+  }
+  .search-page :global(.pagefind-ui__button) {
+    margin-top: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-box);
+    background: transparent;
+    color: var(--foreground);
+    font-weight: 500;
+    transition:
+      border-color 0.2s ease,
+      color 0.2s ease;
+  }
+  .search-page :global(.pagefind-ui__button:hover) {
+    border-color: var(--accent);
+    color: var(--accent);
   }
 </style>

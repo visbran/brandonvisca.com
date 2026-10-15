@@ -415,3 +415,8 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 - Corps 8/4 colonnes : parcours en frise (dates mono à gauche, filet vertical), colonne latérale compétences en étiquettes `--radius-inline`, formation, atouts, projets, centres d'intérêt.
 - `@media print` : **une page A4** claire quel que soit le thème (racine 10,1px, `--spacing` resserré), colonne latérale à gauche sur `--surface`, compétences en texte continu, header/footer/fil d'Ariane/fond grain masqués.
 - `AboutLayout.astro` garde l'option `hideTitle` (plus utilisée).
+
+### Pages À propos et Recherche (2026-10-15)
+
+- `src/pages/about.md` → `src/pages/about.astro` (URL `/about/` inchangée, JSON-LD `ProfilePage` repris tel quel). Présentation + carte « en bref » (nombre d'articles calculé depuis la collection, liens CV et articles), homelab en liste de machines + services, citation de la philosophie en grand, thèmes couverts reliés à leurs pages de tag avec le nombre d'articles, « En ce moment » et contact côte à côte.
+- `src/pages/search.astro` : nombre réel de guides dans le chapô, état vide « Parcourir par thème » (tags primaires + volume, masqué dès qu'un message Pagefind apparaît via `:has()`), résultats restylés **dans `.search-page` uniquement** (la modale ⌘K garde ses styles) : titres plus grands, surlignage plus léger, sous-résultats sous filet gauche sans la flèche ↳, bouton « plus de résultats » aligné sur le système.
