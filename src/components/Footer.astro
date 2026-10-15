@@ -68,10 +68,12 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
 
     <div class="mt-10 flex flex-col gap-2 font-mono text-xs text-soft sm:flex-row sm:justify-between">
       <p>
-        &copy; {currentYear}
+        <span class="copyleft" aria-hidden="true">&copy;</span> Copyleft {currentYear}
         <a href="/politique-confidentialite/" class="footer-link ml-1">Politique de confidentialité</a>
       </p>
       <p>
+        Design made with Claudius ❤️
+        <span aria-hidden="true">·</span>
         Thème dérivé de <a href="https://github.com/0xdres/astro-devosfera" target="_blank" rel="noopener noreferrer" class="footer-link">astro-devosfera</a> par 0xdres
       </p>
     </div>
@@ -80,6 +82,13 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
 </footer>
 
 <style>
+  /* « Copyleft » au lieu de « copyright » : dédicace à un ami qui l'écrivait
+     toujours ainsi. Le symbole 🄯 manque dans la plupart des polices. */
+  .copyleft {
+    display: inline-block;
+    transform: scaleX(-1);
+  }
+
   .footer-wrapper {
     position: relative;
     isolation: isolate;

@@ -430,3 +430,4 @@ Le nom reste la marque (header, footer, onglets hors articles, JSON-LD) pour les
 - `Header.astro` / `Footer.astro` : `aria-label="Accueil"`, copyright sans répéter le nom affiché juste au-dessus.
 - `src/constants.ts` : titres des liens sociaux neutres (« Profil GitHub », « Me contacter par mail »).
 - `og-templates/site.js` : promesse en grand au lieu du nom.
+- `Footer.astro` : « Copyleft {année} » avec un © retourné en CSS (dédicace à un ami), et « Design made with Claudius ❤️ » avant le crédit du thème.
