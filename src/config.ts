@@ -3,7 +3,7 @@ export const SITE = {
   author: "Brandon Visca",
   profile: "https://github.com/visbran",
   desc: "Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique. Des guides concrets pour reprendre le contrôle de tes données.",
-  title: "~/homelab",
+  title: "Brandon Visca",
   // Vide = carte générée /og.png (src/utils/og-templates/site.js). L'ancien
   // og.webp était la bannière promo du thème upstream, pas ce site.
   ogImage: "",
