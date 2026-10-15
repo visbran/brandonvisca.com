@@ -37,6 +37,22 @@ const {
 
 const { Content, headings } = await render(post);
 
+// FAQ du frontmatter affichée sous l'article : le JSON-LD FAQPage doit décrire
+// un contenu visible. Les 47 articles qui ont déjà une section FAQ rédigée
+// dans le corps ne l'affichent pas une seconde fois.
+const hasBodyFaq = headings.some(
+  h => h.depth === 2 && /\bfaq\b|questions fréquentes|foire aux questions/i.test(h.text)
+);
+const visibleFaqs = !hasBodyFaq && faqs && faqs.length > 0 ? faqs : [];
+
+// Réponses en texte brut, avec `code` et [lien](url) en ligne comme seul balisage.
+const escapeHtml = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const faqAnswerHtml = (s: string) =>
+  escapeHtml(s)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
+
 // « Brandon », « brandon » et « Brandon Visca » désignent tous l'auteur du site.
 const isSiteAuthor =
   !author || SITE.author.toLowerCase().startsWith(author.toLowerCase());
@@ -238,6 +254,17 @@ const nextPost =
       class="app-prose mt-0 w-full prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
     >
       <Content components={{ GalleryEmbed }} />
+      {visibleFaqs.length > 0 && (
+        <section class="post-faq" aria-labelledby="questions-frequentes">
+          <h2 id="questions-frequentes">Questions fréquentes</h2>
+          {visibleFaqs.map(faq => (
+            <details>
+              <summary>{faq.question}</summary>
+              <p set:html={faqAnswerHtml(faq.answer)} />
+            </details>
+          ))}
+        </section>
+      )}
     </article>
 
     <div class="mt-16 mb-8 h-px bg-border" aria-hidden="true"></div>

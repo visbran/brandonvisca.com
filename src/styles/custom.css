@@ -31,3 +31,25 @@
     text-align: left;
   }
 }
+
+/* FAQ du frontmatter sous l'article (PostDetails.astro) */
+.post-faq details {
+  border-top: 1px solid var(--border);
+}
+.post-faq details:last-of-type {
+  border-bottom: 1px solid var(--border);
+}
+.post-faq summary {
+  cursor: pointer;
+  padding-block: 0.9rem;
+  font-weight: 600;
+  color: var(--foreground);
+  list-style-position: outside;
+}
+.post-faq summary:hover {
+  color: var(--accent);
+}
+.post-faq details > p {
+  margin-top: 0;
+  padding-bottom: 0.9rem;
+}

@@ -1,6 +1,6 @@
 ---
-title: "Technitium DNS : l'alternative libre à Pi-hole"
-description: "Technitium DNS Server en Docker : blocage des pubs, DNS récursif, DNSSEC et résolution locale. Comparé à Pi-hole et AdGuard Home, sans langue de bois."
+title: "Technitium DNS : installation Docker et comparatif Pi-hole"
+description: "Installe Technitium DNS Server en Docker : blocage des pubs, DNS récursif, DNSSEC et noms locaux. Mon comparatif honnête avec Pi-hole et AdGuard Home."
 pubDatetime: 2026-04-29 00:00:00+01:00
 modDatetime: "2026-07-06T00:00:00+01:00"
 author: Brandon Visca

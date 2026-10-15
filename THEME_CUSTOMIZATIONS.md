@@ -432,3 +432,8 @@ Le nom reste la marque (header, footer, onglets hors articles, JSON-LD) pour les
 - `og-templates/site.js` : promesse en grand au lieu du nom.
 - `Footer.astro` : « Copyleft {année} » avec un © retourné en CSS (dédicace à un ami), et « Design made with Claudius ❤️ » avant le crédit du thème.
 - Licence des contenus **CC BY-SA 4.0** : lien dans le footer, `<link rel="license">` dans `Layout.astro`, propriété `license` du JSON-LD `BlogPosting` dans `PostDetails.astro`. Le code du site reste sous `LICENSE` (MIT).
+
+### FAQ visible sous les articles (2026-10-15)
+
+- `PostDetails.astro` : les `faqs` du frontmatter s'affichent sous le corps en `<details>` (« Questions fréquentes »), sauf si le corps a déjà un H2 FAQ (47 articles). Le JSON-LD `FAQPage` décrit désormais un contenu visible, comme l'exigent les consignes Google. Réponses en texte brut avec `code` et liens en ligne.
+- `src/styles/custom.css` : styles `.post-faq`.
