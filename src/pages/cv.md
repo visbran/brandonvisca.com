@@ -6,90 +6,67 @@ hideTitle: true
 
 # BRANDON VISCA
 
-**Responsable Infrastructure & Systèmes IT, Référent Technique**
+**Responsable Infrastructure & Sécurité IT - Référent technique**
 
-📍 Chambéry (73000) | 🐙 [github.com/visbran](https://github.com/visbran) | 🌐 [brandonvisca.com](https://brandonvisca.com)
+📧 [brandonvisca@gmail.com](mailto:brandonvisca@gmail.com) | 📍 Chambéry (73) | 🐙 [github.com/visbran](https://github.com/visbran)
 
 ---
 
 ## Profil
 
-Référent technique unique pendant **6 ans** sur une infrastructure de **1800 utilisateurs** (infra, réseau, virtualisation, maîtrise d'ouvrage). Pilotage de **17+ projets majeurs** générant **90 K€ d'économies** avec une disponibilité maintenue à **99.5%**.
+Responsable Infrastructure & Sécurité IT, **7 ans** comme référent technique unique : école supérieure multi-sites (**1800 utilisateurs**) puis groupe BTP multi-entités. J'administre, sécurise, supervise et documente des SI on-premise et Microsoft 365 de bout en bout, en arbitrant seul les priorités.
 
 | | | | |
 |---|---|---|---|
-| **6 ans** | **17+** | **1800** | **90 K€** |
+| **7 ans** | **17+** | **1800** | **90 K€** |
 | Expérience | Projets pilotés | Utilisateurs | Économies |
 
 ---
 
 ## Compétences techniques
 
-| | |
-|---|---|
-| **Systèmes** | **Virtualisation & Cloud** |
-| Windows Server (2016, 2019) | Hyper-V, VMware |
-| Linux (Debian, Ubuntu, CentOS) | Docker, Containerisation |
-| Active Directory, DNS, DHCP | Infrastructure cloud |
-| **Microsoft 365** | **Sauvegarde & Sécurité** |
-| Exchange Online, SharePoint | Veeam, Synology |
-| OneDrive, Teams | pfSense, pare-feu |
-| 5 ans, 2 tenants gérés | RGPD, cybersécurité |
-| **Réseau** | **Automatisation & Projet** |
-| Unifi (switches, WiFi, routeurs) | PowerShell, Bash scripting |
-| TCP/IP, routage, VLANs | Maîtrise d'ouvrage |
-| Supervision PRTG | Cahiers des charges |
+- **Systèmes & identités** : Windows Server 2016 à 2022, Linux (Debian, Ubuntu), Active Directory (OU, GPO, FSMO), DNS, DHCP, AD CS
+- **Cloud & Microsoft 365** : Entra ID, Exchange Online, SharePoint, Teams, licences, Graph API (5 ans, 2 tenants)
+- **Virtualisation** : Hyper-V, VMware, Proxmox, Docker, Docker Compose
+- **Sécurité, sauvegarde & PRA** : FortiGate, pfSense, VLAN, élévation JIT (EPM), Veeam, Synology, 3-2-1, tests de restauration
+- **Réseau & supervision** : Fortinet, Unifi, Cisco, TCP/IP, VPN site-à-site, Zabbix 7, Grafana, PRTG, Uptime Kuma
+- **Automatisation & pilotage** : PowerShell (PnP), Bash, Batch, Git/GitHub, GLPI, MOA, cahiers des charges, prestataires
 
 ---
 
 ## Expérience professionnelle
 
-### Fondateur & Développeur
-**LMF Solutions (SASU), Chambéry** | Août 2025 - Présent
+### Administrateur Systèmes & Réseaux - Référent IT unique
+**Groupe BTP multi-entités (5 sociétés), Chambéry** | Décembre 2025 - aujourd'hui
 
-Création et développement de plusieurs produits web sous SASU :
+Seul responsable du SI (**~80 utilisateurs**) : infrastructure, sécurité, M365, support et prestataires. Reprise d'un environnement non documenté, structuré et documenté progressivement.
 
-- **SaaS enseignement supérieur** : conception produit, développement full-stack, go-to-market
-- **[mxtoolbox.eu](https://mxtoolbox.eu)** : outil en ligne d'analyse MX et de diagnostic email
-- **[ippriv.com](https://ippriv.com)** : outil en ligne d'analyse IP et de géolocalisation réseau
-- **[javidcoiffure.fr](https://javidcoiffure.fr) + [app.javidcoiffure.fr](https://app.javidcoiffure.fr)** : site vitrine et application web pour salon de coiffure
+- **Infrastructure** : migration vers un nouveau plan d'adressage, transfert des rôles FSMO, restructuration AD (OU, conventions de nommage), PKI AD CS, déploiement MDT/WDS Windows 11
+- **Sécurité** : FortiGate et segmentation VLAN, élévation de privilèges à la demande, audit et gouvernance du tenant SharePoint/Teams
+- **Supervision** : déploiement Zabbix 7 + Grafana
+- **Automatisation** : archivage SharePoint en PowerShell avec restauration, circuit de visa documentaire SharePoint + Power Automate
+- **Projets** : passage à la téléphonie IP avec pilotage de l'intégrateur, accès fichiers web sous Docker
 
 ---
 
-### Responsable Informatique, Référent Technique Unique
+### Responsable Informatique - Référent technique unique
 **Groupe ECORIS, Chambéry** | Août 2019 - Juillet 2025 (6 ans)
 
-Gestion autonome complète de l'infrastructure IT d'une école supérieure de commerce (**1800 utilisateurs** : 1500 étudiants + 300 collaborateurs). Référent technique unique : infrastructure, réseau, sécurité, projets et support. Évolution du poste d'**Administrateur Système** (2019-2021) à **Responsable Informatique** (2021-2025).
+SI complet d'une école de commerce multi-sites (**1500 étudiants + 300 collaborateurs**). Évolution d'**Administrateur Système** (2019-2021) à **Responsable Informatique** (2021-2025).
 
 ### Projets majeurs
 
-**Plateforme Hébergement Éducative (2021-2024)**
-Administration infrastructure multi-tenant sur **5 serveurs dédiés** gérant **~880 sites WordPress/PrestaShop par an**. Provisioning automatisé **30s**, monitoring UptimeKuma, disponibilité **99.9%**, économie **15 K€/an**.
+- **Refonte réseau multi-sites (2020-2022)** : 5 établissements, 10 routeurs pfSense + Unifi, 25 bornes WiFi. Bande passante **x4**, incidents **-80 %**, **30 K€** économisés
+- **Plateforme d'hébergement pédagogique (2021-2024)** : 5 serveurs, **~880 sites/an**, provisioning automatisé en **30 s**, disponibilité **99,9 %**, **15 K€/an** économisés
+- **Refonte ECORIS Notes (2021-2023)** : MOA complète, cahier des charges **100+ pages**, **300 utilisateurs** formés, gain de temps **60 %**
+- **Refonte Ecoris Connect (2023-2024)** : étude de 8 solutions, POC, migration HumHub, adoption **95 % en 2 mois**
 
-**Refonte Réseau Multi-Sites (2020-2022)**
-Conception et déploiement réseau **5 établissements** : 10 routeurs (pfSense + Unifi), 10 switches, 25 bornes WiFi, 500-1000m câbles Cat6A. Bande passante **×4**, incidents **-80%**, économie **30 K€**.
+### Exploitation & sécurité
 
-**Refonte ECORIS Notes (2021-2023)**
-Pilotage refonte logiciel gestion notes. Maîtrise d'ouvrage complète : cahier des charges **100+ pages**, pilotage développement Agile, formation **300 utilisateurs**. Gain temps **60%**, satisfaction **8.5/10**.
-
-**Refonte Ecoris Connect (2023-2024)**
-Modernisation extranet obsolète. Étude marché **8 solutions**, POC 2 finalistes, migration données HumHub, formation **100+ formateurs**. Adoption **95% en 2 mois**, économie **5 K€/an**.
-
-### Infrastructure & Systèmes
-
-- Gestion **110 postes**, **10 serveurs physiques**, **4 serveurs cloud**
-- Administration Windows Server (2003-2019), Linux (CentOS, Debian, Ubuntu)
-- Active Directory, DNS, DHCP, serveurs impression
-- Virtualisation Hyper-V, VMware, Docker
-- **Microsoft 365** : Gestion **2 tenants pendant 5 ans** (Exchange, SharePoint, OneDrive, Teams)
-
-### Réseau, Sécurité & Support
-
-- Équipements Unifi et pfSense (switches, WiFi, routeurs, VPN site-à-site)
-- Stratégies sécurité (pare-feu, RGPD, filtrage DNS, phishing **-82%**)
-- Sauvegardes **Veeam**, Synology (stratégie 3-2-1, **zéro perte 4 ans**)
-- Déploiement **WDS/MDT** : automatisation déploiement postes (gain **50%**)
-- **ITSM** (Snipe-IT, FreeScout) : inventaire **110+ équipements**, **2000+ tickets/an**
+- **110 postes**, **10 serveurs physiques**, **4 serveurs cloud** ; Windows Server, Linux, AD, Hyper-V, VMware
+- **Microsoft 365** : 2 tenants gérés pendant 5 ans
+- Sauvegardes **Veeam** + Synology (3-2-1), **zéro perte de données en 4 ans** ; phishing **-82 %**
+- Déploiement **WDS/MDT** (gain **50 %**), ITSM : **2000+ tickets/an**
 
 ---
 
@@ -97,32 +74,31 @@ Modernisation extranet obsolète. Étude marché **8 solutions**, POC 2 finalist
 
 | Diplôme | École | Date |
 |---|---|---|
-| **Bachelor Cybersécurité (Bac+3)** | ECORIS, Chambéry | Septembre 2022 |
-| **BTS SIO (SISR)** | ECORIS, Chambéry | Juillet 2021 |
-| **Bac STG** | Lycée du Granier | Juillet 2013 |
+| **Bachelor Cybersécurité (Bac+3)** | ECORIS, Chambéry | 2022 |
+| **BTS SIO option SISR** | ECORIS, Chambéry | 2021 |
+| **Bac STG** | Lycée du Granier | 2013 |
 
 ---
 
 ## Soft skills
 
 - **Autonomie totale** (référent unique)
-- **Pilotage de projets** (maîtrise d'ouvrage)
+- **Arbitrage rapide** des priorités
+- **Pilotage** de projets et de prestataires
+- **Documentation** systématique
 - **Résolution de problèmes** complexes
-- **Adaptabilité** & service client
-- **Force de proposition**
 
 ---
 
-## Projets personnels & veille
+## Projets & veille
 
-**Blog technique IT** : [brandonvisca.com](https://brandonvisca.com)
-Blog francophone sur l'auto-hébergement, le homelab et l'indépendance numérique. **80+ articles**, stack Astro + Cloudflare Pages.
-
-**Infrastructure Docker/Proxmox en production**
-Homelab Proxmox multi-nœuds : Nextcloud, Vaultwarden, Jellyfin, backups automatisés, en production personnelle depuis 2020.
-
-**Veille technologique active**
-Automatisation, containerisation, cloud-native, sécurité offensive et défensive.
+- Homelab Proxmox + Unifi, WireGuard, Caddy, CrowdSec
+- Micro-SaaS en production (Astro, Vercel), code sous Git/GitHub
+- Blog technique IT ([ce site](https://brandonvisca.com))
+- Veille active : automatisation, sécurité, conteneurisation
 
 ---
 
+## Centres d'intérêt
+
+Musculation · Vélo en loisir
