@@ -45,11 +45,11 @@ export const jobs: Job[] = [
       {
         label: "Réalisations",
         items: [
-          "**Infrastructure** : migration vers un nouveau plan d'adressage, transfert des rôles FSMO, restructuration AD (OU, conventions de nommage), PKI AD CS, déploiement MDT/WDS Windows 11",
-          "**Sécurité** : FortiGate et segmentation VLAN, élévation de privilèges à la demande, audit et gouvernance du tenant SharePoint/Teams",
-          "**Supervision** : déploiement Zabbix 7 + Grafana",
-          "**Automatisation** : archivage SharePoint en PowerShell avec restauration, circuit de visa documentaire SharePoint + Power Automate",
-          "**Projets** : passage à la téléphonie IP avec pilotage de l'intégrateur, accès fichiers web sous Docker",
+          "**Infrastructure** : migration vers un nouveau plan d'adressage, transfert des rôles FSMO, restructuration AD (OU, conventions groupes et GPO), PKI AD CS (ECDSA P-256), MDT/WDS Windows 11 par entité",
+          "**Sécurité** : FortiGate et segmentation VLAN, élévation de privilèges à la demande (Admin By Request), audit du tenant SharePoint (**104 sites, 2,7 To**) et verrouillage de la création Teams via Graph API",
+          "**Supervision** : déploiement Zabbix 7 + Grafana (serveurs, conteneurs Docker, équipements réseau et impression)",
+          "**Automatisation** : archivage SharePoint en PowerShell (**11 sites**) avec restauration, circuit de visa chantier SharePoint + Power Automate",
+          "**Projets** : passage à la téléphonie IP (Wazo, Yealink) avec pilotage de l'intégrateur, accès fichiers Filestash + Collabora sous Docker",
         ],
       },
     ],
@@ -76,9 +76,9 @@ export const jobs: Job[] = [
         label: "Exploitation & sécurité",
         items: [
           "**110 postes**, **10 serveurs physiques**, **4 serveurs cloud** ; Windows Server, Linux, AD, Hyper-V, VMware",
-          "**Microsoft 365** : 2 tenants gérés pendant 5 ans",
+          "**Microsoft 365** : 2 tenants gérés pendant 5 ans (Exchange, SharePoint, OneDrive, Teams)",
           "Sauvegardes **Veeam** + Synology (3-2-1), **zéro perte de données en 4 ans** ; phishing **-82 %**",
-          "Déploiement **WDS/MDT** (gain **50 %**), ITSM : **2000+ tickets/an**",
+          "Déploiement **WDS/MDT** (gain **50 %**), ITSM Snipe-IT / FreeScout : **2000+ tickets/an**",
         ],
       },
     ],
@@ -179,4 +179,4 @@ export const sideProjects = [
   "Veille active : automatisation, sécurité, conteneurisation",
 ];
 
-export const interests = ["Musculation", "Vélo en loisir"];
+export const interests = ["Musculation (pratique régulière)", "Vélo en loisir"];

@@ -295,21 +295,24 @@ const description = `CV de ${identity.name} : ${identity.role.toLowerCase()}, ${
     border: 1px solid var(--border);
   }
 
-  /* Impression / « Enregistrer en PDF » : clair, sans chrome du site. */
+  /* Impression / « Enregistrer en PDF » : une page A4 claire, colonne
+   * latérale à gauche, sans chrome du site, quel que soit le thème. */
   @media print {
     @page {
       size: A4;
-      margin: 12mm 14mm;
+      margin: 9mm 10mm;
     }
     :global(html),
     :global(html[data-theme][data-theme]) {
       --background: #fff;
-      --surface: #f3f5f8;
+      --surface: #f2f4f7;
       --foreground: #14181f;
       --text-soft: #4d5562;
       --border: #d4dae3;
       --accent: #1158d1;
-      font-size: 13px;
+      /* Toutes les marges Tailwind (mt-6, space-y-12…) se resserrent d'un coup. */
+      --spacing: 0.16rem;
+      font-size: 10.1px;
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
     }
@@ -323,34 +326,90 @@ const description = `CV de ${identity.name} : ${identity.role.toLowerCase()}, ${
     }
     :global(body) {
       min-height: 0;
+      line-height: 1.4;
     }
     .cv {
       max-width: none;
       padding: 0;
     }
+    .reveal {
+      animation: none !important;
+    }
+
     .cv-intro {
-      grid-template-columns: 2fr 1fr;
-      padding-top: 0;
-      padding-bottom: 1.5rem;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 1.5rem;
+      padding: 0 0 0.9rem;
     }
-    .cv-body {
-      grid-template-columns: 1.75fr 1fr;
-      gap: 2rem;
-      padding-top: 1.5rem;
-    }
-    .cv-body > *,
-    .cv-intro > * {
+    .cv-intro > *,
+    .cv-body > * {
       grid-column: auto;
     }
-    /* Dates au-dessus du poste : la colonne de gauche coûte trop en A4. */
+    .cv-intro h1 {
+      font-size: 2.6rem;
+    }
+    .cv-intro p {
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+    .cv-figures {
+      grid-template-columns: repeat(2, 7.6rem);
+    }
+    .cv-figures > div {
+      padding: 0.45rem 0.6rem;
+    }
+    .cv-figures dd {
+      font-size: 1.35rem;
+    }
+
+    /* Colonne latérale à gauche, parcours à droite. */
+    .cv-body {
+      grid-template-columns: 31% 1fr;
+      gap: 1.4rem;
+      padding-top: 0.9rem;
+    }
+    .cv-aside {
+      order: -1;
+      background: var(--surface);
+      border-radius: var(--radius-box);
+      padding: 0.9rem 0.85rem;
+    }
+    .cv-h2 {
+      font-size: 1.15rem;
+      padding-bottom: 0.3rem;
+    }
+    .cv-job h3 {
+      font-size: 1.1rem;
+    }
     .cv-job {
       grid-template-columns: 1fr;
-      gap: 0.25rem;
+      gap: 0.1rem;
     }
     .cv-job-body {
       border-left: 0;
       padding-left: 0;
     }
+    .cv-list > li {
+      line-height: 1.4;
+    }
+
+    /* Étiquettes de compétences : texte continu, plus compact. */
+    .cv-aside ul:has(.cv-chip) {
+      display: block;
+    }
+    .cv-chip {
+      display: inline;
+      padding: 0;
+      border: 0;
+      background: none;
+      font-size: 0.95rem;
+      color: var(--text-soft);
+    }
+    .cv-chip:not(:last-child)::after {
+      content: ", ";
+    }
+
     .cv-list > li,
     .cv-aside section > div > div,
     .cv-aside li {
@@ -359,9 +418,6 @@ const description = `CV de ${identity.name} : ${identity.role.toLowerCase()}, ${
     .cv-h2,
     .cv-job-body h4 {
       break-after: avoid;
-    }
-    .reveal {
-      animation: none !important;
     }
   }
 </style>

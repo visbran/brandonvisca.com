@@ -413,5 +413,5 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 - `src/pages/cv.md` → `src/pages/cv.astro` (URL `/cv/` inchangée), contenu déplacé dans `src/data/cv.ts` (chaînes avec `**gras**` et `[lien](url)` uniquement).
 - En-tête : nom, poste, profil, contacts (icônes Tabler du thème) + bouton « Version PDF » (`window.print()`), chiffres clés en grille 2×2 sur `--surface`.
 - Corps 8/4 colonnes : parcours en frise (dates mono à gauche, filet vertical), colonne latérale compétences en étiquettes `--radius-inline`, formation, atouts, projets, centres d'intérêt.
-- `@media print` : A4 clair forcé quel que soit le thème, header/footer/fil d'Ariane/fond grain masqués, dates au-dessus des postes, 2 pages.
+- `@media print` : **une page A4** claire quel que soit le thème (racine 10,1px, `--spacing` resserré), colonne latérale à gauche sur `--surface`, compétences en texte continu, header/footer/fil d'Ariane/fond grain masqués.
 - `AboutLayout.astro` garde l'option `hideTitle` (plus utilisée).
