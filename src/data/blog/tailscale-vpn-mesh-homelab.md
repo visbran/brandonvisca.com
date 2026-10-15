@@ -251,6 +251,8 @@ Tailscale n'est pas parfait. Voici les points de friction :
 - **Fournisseur d'identité** : tu dépendes d'un tiers (Google, Microsoft, GitHub) pour l'authentification. Si ce compte est compromis, ton tailnet l'est aussi.
 - **IPv6 partiel** : le support IPv6 existe mais est moins mature que l'IPv4. Si tu es en full IPv6, vérifie les limitations actuelles.
 
+💡 À lire aussi : [Iperf3 : mesurer le débit réel de ton réseau homelab](/iperf3-tester-debit-reseau-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 **Tailscale VPN** est l'outil que j'installe systématiquement sur chaque nouvel appareil de mon homelab. Il remplace avantageusement les configurations WireGuard manuelles pour l'accès distant, il évite d'ouvrir des ports sur ma box, et il me permet d'administrer mes machines depuis n'importe où comme si j'étais sur le même switch.
