@@ -302,8 +302,3 @@ Quelques rappels essentiels :
 - Configure un pare-feu en complément, mon guide [UFW avec Docker](/ufw-docker-pare-feu-linux/) explique comment faire sans que Docker contourne tes règles
 - Mets à jour régulièrement : `sudo apt update && sudo apt upgrade`
 - Surveille les logs : `journalctl -u ssh`, `sudo fail2ban-client status sshd`
-
-## Articles connexes
-
-- [Dépannage des problèmes de montage de matrices RAID (mdadm)](/depannage-montage-partition-raid-linux-mode-secours/)
-- [Content-Security-Policy : Protéger votre site sans bloquer vos scripts](/content-security-policy-nginx-sans-casser-site/)

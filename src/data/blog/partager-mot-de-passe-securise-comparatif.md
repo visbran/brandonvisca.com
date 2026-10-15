@@ -259,10 +259,3 @@ Et si tu veux aller plus loin dans la sécurisation de tes mots de passe au quot
 Je prépare une formation "Homelab Weekend" pour monter ton serveur auto-hébergé complet en un week-end, sécurité incluse.
 
 [Rejoins la liste d'attente →](#)
-
----
-
-## Articles connexes
-
-- [Partager un mot de passe en toute sécurité : Password.link v](/partager-mot-de-passe-securise-comparatif/)
-- [Magnet macOS : Le gestionnaire de fenêtres qui va transforme](/magnet-macos-gestionnaire-fenetres-guide-complet/)

@@ -195,9 +195,3 @@ Oui. En activant `SECURITY_ENABLELOGIN=true`, tu crées un compte admin et tu pe
 ### Quelle est la différence avec LibreOffice ?
 
 Stirling-PDF est une interface web dédiée aux manipulations PDF. Il utilise parfois LibreOffice en arrière-plan pour certaines conversions, mais il est beaucoup plus simple et rapide pour les tâches courantes (fusion, split, OCR, signature).
-
-## Articles connexes
-
-- [Traefik v3 : le reverse proxy Docker qui gère le HTTPS tout seul](/traefik-reverse-proxy-docker/)
-- [Nginx Proxy Manager : reverse proxy en 5 min avec Docker](/nginx-proxy-manager-docker-guide/)
-- [Beszel : Monitoring auto-hébergé ultra-léger pour ton homelab](/beszel-monitoring-docker/)

@@ -251,14 +251,3 @@ AdGuard Home n'est pas "le nouveau Pi-hole qui tue l'ancien". C'est un outil dif
 Le container `adguard/adguardhome:latest` fait moins de 30 Mo, démarre en quelques secondes, et une fois ton routeur configuré, **tout ton réseau est nettoyé** : pub, trackers, malware, et même les requêtes teslascopes de tes objets connectés.
 
 Fais-le tourner ce week-end. Ton bandwidth te remerciera, et ta TV Samsung arrêtera d'appeler ses serveurs toutes les 30 secondes.
-
----
-
-## Articles connexes
-
-- [Guide complet pour débuter l'auto-hébergement avec Docker](/docker-debutant-services-auto-heberger/)
-- [Nextcloud en Docker : installation complète 2025](/nextcloud-docker-installation-complete-2025/)
-- [Jellyfin en Docker : alternative Netflix gratuite](/jellyfin-docker-alternative-netflix-gratuite/)
-- [Uptime Kuma 2.0 : monitoring auto-hébergé](/uptime-kuma-2-0-monitoring-auto-heberge/)
-- [Auto-hébergement : le guide complet 2025](/auto-hebergement-guide-complet-2025/)
-- [Technitium DNS Server : l'alternative au-delà de Pi-hole et AdGuard](/technitium-dns-server/)

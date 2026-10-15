@@ -468,16 +468,7 @@ Temps d'adaptation : 2-3 jours pour que tes doigts oublient Cmd+Tab. Apres, ca d
 
 ---
 
-## Articles connexes
 
-- **[Raycast : L'outil qui transforme macOS en machine de productivite](/raycast-macos-outil-productivite-ultime/)** : Complementaire a rcmd pour les commandes et snippets
-- **[Ice : Le gestionnaire de barre de menu gratuit pour macOS](/ice-macos-gestionnaire-barre-menu-gratuit-2025/)** : Garde ta barre de menu propre pendant que rcmd tourne
-- **[iTerm2 : Guide complet configuration macOS](/iterm2-guide-configuration-macos-2025/)** : Optimise ton terminal (que tu vas ouvrir avec Right Command + I)
-- **[Installation Homebrew sur macOS](/installation-homebrew-macos/)** : Indispensable pour installer rcmd et plein d'autres outils
-- [Cling : Recherche fuzzy fichiers 10x plus rapide](/cling-recherche-fuzzy-fichiers-macos/)
-- [Lunar : Controle la luminosite de tes ecrans externes sur macOS (enfin !)](/lunar-luminosite-ecrans-externes-macos/)
-- [Grila vs Fantastical : Comparatif honnete apres 6 mois (2025)](/grila-vs-fantastical-comparatif-2025/)
-- [AltTab macOS : Gestion Fenetres Style Windows (Alternative Gratuite 2026)](/alttab-macos-gestion-fenetres-windows/)
 
 ---
 

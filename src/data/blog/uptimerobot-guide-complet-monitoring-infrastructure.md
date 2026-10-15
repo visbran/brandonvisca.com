@@ -450,10 +450,3 @@ UptimeRobot règle ça en 5 minutes. 50 moniteurs gratuits, alertes Discord/Slac
 - [API UptimeRobot v2](https://uptimerobot.com/api) : endpoints et paramètres
 
 💡 À lire aussi : [Journalctl Linux : lire et filtrer les logs systemd comme un pro](/journalctl-guide-logs-systemd-linux/), dans la même veine que cet article.
-
-## Articles connexes
-
-- [DNS Scavenging Windows Server : automatiser le nettoyage DNS](/dns-scavenging-windows-server-guide-complet/)
-- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)
-- [Termius 2026 : remplace PuTTY et économise 30 min/jour sur Windows](/termius-client-ssh-windows-guide-complet/)
-- [Installer Tianji : l'analytics auto-hébergé qui remplace Google Analytics](/tianji-self-hosted-analytics/)

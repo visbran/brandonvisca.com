@@ -224,10 +224,3 @@ Lance `sudo swapon --show` : si la commande retourne une ligne avec ton fichier 
 💡 À lire aussi : [Journalctl Linux : lire et filtrer les logs systemd comme un pro](/journalctl-guide-logs-systemd-linux/), dans la même veine que cet article.
 
 💡 À lire aussi : [Systemd timer : l'alternative moderne à cron sous Linux](/systemd-timers-alternative-cron-linux/), dans la même veine que cet article.
-
-## Articles connexes
-
-- [Ladybird Browser : Le navigateur web qui refuse de se soumettre à Google (et tant mieux)](/ladybird-browser-le-navigateur-web-qui-refuse-de-se-soumettre-a-google-et-tant-mieux/)
-- [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/)
-- [S3cmd : synchronise et sauvegarde vers Amazon S3 gratuitement (guide 2026)](/gerer-fichiers-amazon-s3-avec-s3cmd/)
-- [Vim sur macOS et Linux : installation, .vimrc et plugins en 30 minutes](/installation-vim-guide-complet/)

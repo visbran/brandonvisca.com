@@ -145,10 +145,3 @@ Mon setup actuel : Termius + SSH ID sur Mac, provisioning `curl` sur mes 6 VMs P
 - [Partager un mot de passe en toute sécurité : comparatif des outils](/partager-mot-de-passe-securise-comparatif/)
 
 💡 À lire aussi : [Step CA Docker : ta propre autorité de certification interne](/step-ca-docker-autorite-certification-interne/), dans la même veine que cet article.
-
-## Articles connexes
-
-- [Sécurité de votre serveur linux : Comment durcir un serveur sous linux ?](/securite-de-votre-serveur-linux/)
-- [Sendme CLI : Transfert Fichiers P2P en 2 Commandes (Alternative scp Moderne)](/sendme-cli-transfert-fichiers-p2p-terminal/)
-- [Content-Security-Policy : Protéger votre site sans bloquer vos utilisateurs](/content-security-policy-nginx-sans-casser-site/)
-- [Exchange Online : bloquer les transferts email automatiques avec PowerShell (2026)](/exchange-online-bloquer-transferts-automatiques-emails/)

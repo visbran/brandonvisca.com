@@ -437,3 +437,8 @@ Le nom reste la marque (header, footer, onglets hors articles, JSON-LD) pour les
 
 - `PostDetails.astro` : les `faqs` du frontmatter s'affichent sous le corps en `<details>` (« Questions fréquentes »), sauf si le corps a déjà un H2 FAQ (47 articles). Le JSON-LD `FAQPage` décrit désormais un contenu visible, comme l'exigent les consignes Google. Réponses en texte brut avec `code` et liens en ligne.
 - `src/styles/custom.css` : styles `.post-faq`.
+
+### « À lire ensuite » à la place de précédent / suivant (2026-10-15)
+
+- `PostDetails.astro` : la navigation chronologique précédent / suivant est remplacée par 2 articles proches, choisis par tags communs (secondaire partagé = 3 points, primaire = 1, méta-tags de niveau ignorés, puis le plus récent). Bloc masqué si aucun article ne partage de tag.
+- Les sections `## Articles connexes` rédigées dans le corps sont retirées (63 articles) : jugées trop lourdes pour le lecteur. `scripts/add-internal-links.py`, qui les générait, est supprimé.
