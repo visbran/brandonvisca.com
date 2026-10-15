@@ -424,7 +424,7 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 ### Marque « ~/homelab » à la place du nom (2026-10-15)
 
 - `src/config.ts` : `SITE.title` = `~/homelab` (header, footer, onglets hors articles, RSS, JSON-LD `WebSite`/`Organization`). `SITE.author` inchangé : `<meta author>` et JSON-LD `Person` gardent le nom.
-- `PostDetails.astro` : onglet = titre de l'article seul ; byline masquée sauf auteur invité (`author !== SITE.author`).
+- `PostDetails.astro` : onglet = titre de l'article seul ; byline masquée sauf auteur invité. `isSiteAuthor` traite `Brandon`/`brandon` (69 articles) comme l'auteur du site : leur JSON-LD pointe désormais vers le `Person` principal au lieu d'un `Person` « Brandon » isolé.
 - `index.astro` : H1 = « Reprendre le contrôle de tes données. », titre d'onglet explicite.
 - `Header.astro` / `Footer.astro` : `aria-label="Accueil"` (évite « tilde slash homelab » au lecteur d'écran), copyright sans la marque.
 - `og-templates/site.js` : promesse en grand, le cadre affiche déjà `~/homelab $`.

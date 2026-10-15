@@ -37,6 +37,10 @@ const {
 
 const { Content, headings } = await render(post);
 
+// « Brandon », « brandon » et « Brandon Visca » désignent tous l'auteur du site.
+const isSiteAuthor =
+  !author || SITE.author.toLowerCase().startsWith(author.toLowerCase());
+
 /* ========== Lecture : sommaire latéral + temps de lecture ========== */
 // Le sommaire inline (remark-toc, « Table des matières ») reste dans le corps
 // pour les écrans étroits ; le rail latéral reprend les h2/h3 sans lui.
@@ -115,7 +119,7 @@ const nextPost =
       },
       "isPartOf": { "@id": SCHEMA_IDS.website },
       "author":
-        !author || author === SITE.author
+        isSiteAuthor
           ? personSchema
           : { "@type": "Person", "name": author },
       "publisher": organizationSchema,
@@ -194,7 +198,7 @@ const nextPost =
       </p>
 
       <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
-        {author && author !== SITE.author && (
+        {!isSiteAuthor && (
           <span class="text-foreground">{author}</span>
         )}
         <Datetime
