@@ -1,5 +1,5 @@
 ---
-title: "LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)"
+title: "LocalWP : ton lab WordPress en 5 min (guide + migration prod)"
 pubDatetime: "2025-02-24T19:12:37+01:00"
 author: Brandon Visca
 description: "LocalWP : installez et testez WordPress en local sans serveur ni XAMPP. Guide complet avec installation, multi-site et workflow de déploiement en prod."

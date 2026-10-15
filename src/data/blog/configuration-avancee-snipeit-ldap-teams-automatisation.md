@@ -1,5 +1,5 @@
 ---
-title: "Configuration avancée SnipeIT : LDAP, automatisation et notifications (guide 2025)"
+title: "Snipe-IT avancé : configuration LDAP, automatisation et Teams"
 pubDatetime: "2025-10-13T16:05:41+02:00"
 author: Brandon Visca
 description: "Configuration avancée SnipeIT : intégration LDAP/Active Directory, scan réseau, notifications Teams et self-service. Guide complet avec exemples concrets."

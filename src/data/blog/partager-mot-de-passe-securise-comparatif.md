@@ -1,5 +1,5 @@
 ---
-title: "Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)"
+title: "Partager un mot de passe sécurisé : 3 outils comparés"
 description: "Partager un mot de passe sécurisé : j'ai comparé Password.link, OneTimeSecret et PrivateBin. Verdict clair selon ton profil et tes contraintes."
 pubDatetime: "2026-03-14T00:00:00+01:00"
 author: Brandon Visca

@@ -1,5 +1,5 @@
 ---
-title: "Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)"
+title: "Yopass vs PrivateBin vs Password Pusher : lequel choisir ?"
 description: "Partager un mot de passe sécurisé depuis ton homelab : Yopass, PrivateBin ou Password Pusher ? Comparatif complet pour choisir lequel auto-héberger."
 pubDatetime: 2026-03-14 00:00:00+01:00
 author: Brandon Visca

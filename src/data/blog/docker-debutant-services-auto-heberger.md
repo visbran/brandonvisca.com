@@ -1,5 +1,5 @@
 ---
-title: "Docker pour les débutants : 10 services essentiels à auto-héberger en 2025"
+title: "Docker pour débutants : 10 services essentiels à auto-héberger"
 description: "Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !"
 pubDatetime: "2025-10-22T16:12:41+02:00"
 modDatetime: "2026-04-29T13:50:00+02:00"

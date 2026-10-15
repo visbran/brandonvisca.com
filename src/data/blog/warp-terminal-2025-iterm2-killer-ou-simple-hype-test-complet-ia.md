@@ -1,6 +1,6 @@
 ---
-title: "Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)"
-description: "Warp Terminal vs iTerm2 en 2025 : test complet sur 3 mois en prod. IA, Agent Mode, Warp Drive : ce qui change vraiment et si ça vaut le switch."
+title: "Warp Terminal : iTerm2 killer ou simple hype ? (test + IA)"
+description: "Warp Terminal vs iTerm2 : test complet sur 3 mois en prod. IA, Agent Mode, Warp Drive : ce qui change vraiment et si ça vaut le switch."
 pubDatetime: 2025-11-16 22:52:46+01:00
 modDatetime: 2026-04-13 00:00:00+01:00
 author: Brandon Visca

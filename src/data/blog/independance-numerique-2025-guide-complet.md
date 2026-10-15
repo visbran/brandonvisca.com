@@ -1,6 +1,6 @@
 ---
-title: "Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle"
-description: "Guide complet auto-hébergement 2025 : Nextcloud + Jellyfin + Vaultwarden. Remplace Google/Netflix/1Password, économise 534€/an. Installation weekend."
+title: "Indépendance numérique : le guide complet pour reprendre le contrôle"
+description: "Indépendance numérique : Nextcloud, Jellyfin et Vaultwarden remplacent Google, Netflix et 1Password. 534 €/an économisés, installé en un weekend."
 pubDatetime: "2025-11-06T10:17:04+01:00"
 author: Brandon Visca
 tags:
@@ -12,7 +12,7 @@ tags:
   - guide
 featured: false
 draft: false
-focusKeyword: Indépendance numérique 2025
+focusKeyword: "indépendance numérique"
 faqs:
   - question: "Quel serveur minimum pour faire tourner Nextcloud + Jellyfin + Vaultwarden ?"
     answer: "Un Raspberry Pi 5 (8 Go RAM) ou un mini PC type Beelink (N100, 16 Go RAM) suffit pour un usage familial. Pour Jellyfin avec transcodage, prévoir un CPU avec Quick Sync ou une GPU dédiée."

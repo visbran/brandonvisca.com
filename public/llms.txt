@@ -873,13 +873,13 @@ Description: Installe Technitium DNS Server en Docker : blocage des pubs, DNS r�
 Tags: reseau, auto-hebergement, docker, dns, intermediaire, guide
 Publié: 2026-04-29 00:00:00+01:00
 
-## Partager un mot de passe en toute sécurité : Password.link vs OneTimeSecret vs PrivateBin (2025)
+## Partager un mot de passe sécurisé : 3 outils comparés
 URL: https://brandonvisca.com/partager-mot-de-passe-securise-comparatif/
 Description: Partager un mot de passe sécurisé : j'ai comparé Password.link, OneTimeSecret et PrivateBin. Verdict clair selon ton profil et tes contraintes.
 Tags: securite, debutant
 Publié: 2026-03-14T00:00:00+01:00
 
-## Yopass vs PrivateBin vs Password Pusher : lequel choisir ? (2025)
+## Yopass vs PrivateBin vs Password Pusher : lequel choisir ?
 URL: https://brandonvisca.com/yopass-vs-privatebin-vs-password-pusher/
 Description: Partager un mot de passe sécurisé depuis ton homelab : Yopass, PrivateBin ou Password Pusher ? Comparatif complet pour choisir lequel auto-héberger.
 Tags: securite, homelab, docker, auto-hebergement, intermediaire
@@ -921,7 +921,7 @@ Description: Découvre Clop, l'outil qui compresse automatiquement tes images et
 Tags: macos, productivite, multimedia, debutant, guide
 Publié: 2025-11-27T00:00:00+01:00
 
-## Grila vs Fantastical : Comparatif honnête après 6 mois (2025)
+## Grila vs Fantastical : comparatif honnête après 6 mois
 URL: https://brandonvisca.com/grila-vs-fantastical-comparatif-2025/
 Description: Grila vs Fantastical : j'utilise Grila depuis 6 mois (6€ vs 70€/an). Est-ce que ça vaut 64€ de plus ? Comparatif honnête pour t'aider à choisir.
 Tags: macos, productivite, debutant
@@ -933,7 +933,7 @@ Description: Découvre Lunar, l'app qui résout le problème de luminosité des 
 Tags: macos, productivite, debutant, guide
 Publié: 2025-11-27T00:00:00+01:00
 
-## Raycast vs Alfred : Test après 30 jours (Verdict 2025)
+## Raycast vs Alfred : mon verdict après 30 jours de test
 URL: https://brandonvisca.com/raycast-vs-alfred-spotlight-comparatif-macos/
 Description: Raycast vs Alfred vs Spotlight : 30 jours de tests réels. Tableaux comparatifs, prix détaillés, verdict par profil. Quel launcher macOS choisir ?
 Tags: macos, raycast, productivite, debutant
@@ -945,7 +945,7 @@ Description: rcmd, l'alternative à Cmd+Tab sur Mac : Right Command + la lettre 
 Tags: macos, productivite, debutant
 Publié: 2025-11-27T00:00:00+01:00
 
-## Music Decoy macOS : Bloquer Apple Music au Démarrage (Solution Gratuite 2025)
+## Music Decoy macOS : bloquer Apple Music au démarrage (gratuit)
 URL: https://brandonvisca.com/music-decoy-macos-bloquer-apple-music/
 Description: Music Decoy empêche Apple Music de se lancer avec la touche Play sur macOS. Solution minimaliste gratuite pour utilisateurs Spotify ou YouTube Music.
 Tags: macos, productivite, guide, debutant
@@ -963,7 +963,7 @@ Description: Découvre Magnet macOS, le gestionnaire de fenêtres n°1. Comparat
 Tags: macos, productivite, debutant, guide
 Publié: 2025-11-19T22:43:10+01:00
 
-## Shutter Encoder Mac : Alternative Gratuite à HandBrake (Compression Vidéo 2025)
+## Shutter Encoder Mac : alternative gratuite à HandBrake
 URL: https://brandonvisca.com/shutter-encoder-mac-alternative-handbrake/
 Description: Shutter Encoder Mac : alternative gratuite à HandBrake pour la compression vidéo avancée, l'édition, les sous-titres et le color grading. Guide complet.
 Tags: macos, productivite, intermediaire, multimedia, guide
@@ -981,15 +981,15 @@ Description: AppCleaner, gratuit sur Mac, supprime une app et tous ses fichiers 
 Tags: macos, homebrew, productivite, debutant
 Publié: 2025-11-18T17:39:28+01:00
 
-## Warp Terminal 2025 : iTerm2 Killer ou Simple Hype ? (Test Complet + IA)
+## Warp Terminal : iTerm2 killer ou simple hype ? (test + IA)
 URL: https://brandonvisca.com/warp-terminal-2025-iterm2-killer-ou-simple-hype-test-complet-ia/
-Description: Warp Terminal vs iTerm2 en 2025 : test complet sur 3 mois en prod. IA, Agent Mode, Warp Drive : ce qui change vraiment et si ça vaut le switch.
+Description: Warp Terminal vs iTerm2 : test complet sur 3 mois en prod. IA, Agent Mode, Warp Drive : ce qui change vraiment et si ça vaut le switch.
 Tags: macos, productivite, terminal, linux, intermediaire, guide
 Publié: 2025-11-16 22:52:46+01:00
 
-## Indépendance Numérique 2025 : Le Guide Complet pour Reprendre le Contrôle
+## Indépendance numérique : le guide complet pour reprendre le contrôle
 URL: https://brandonvisca.com/independance-numerique-2025-guide-complet/
-Description: Guide complet auto-hébergement 2025 : Nextcloud + Jellyfin + Vaultwarden. Remplace Google/Netflix/1Password, économise 534€/an. Installation weekend.
+Description: Indépendance numérique : Nextcloud, Jellyfin et Vaultwarden remplacent Google, Netflix et 1Password. 534 €/an économisés, installé en un weekend.
 Tags: auto-hebergement, docker, homelab, nextcloud, debutant, guide
 Publié: 2025-11-06T10:17:04+01:00
 
@@ -1011,7 +1011,7 @@ Description: Nextcloud Docker en 1h : alternative Google Drive auto-hébergée, 
 Tags: docker, auto-hebergement, homelab, linux, guide, intermediaire
 Publié: 2025-10-26T20:58:49+01:00
 
-## Pourquoi j&rsquo;ai quitté Google (et comment tu peux faire pareil en 2025)
+## Pourquoi j'ai quitté Google (et comment tu peux faire pareil)
 URL: https://brandonvisca.com/quitter-google-auto-hebergement/
 Description: Découvre pourquoi et comment j'ai remplacé tous mes services Google par des alternatives auto-hébergées. Guide complet, 0€/mois, 100% fonctionnel.
 Tags: auto-hebergement, homelab, nextcloud, intermediaire, guide
@@ -1023,15 +1023,15 @@ Description: Découvrez Nebula-Sync, l'outil gratuit qui remplace Gravity Sync p
 Tags: auto-hebergement, reseau, dns, docker, homelab, intermediaire
 Publié: 2025-10-23T20:55:40+02:00
 
-## Docker pour les débutants : 10 services essentiels à auto-héberger en 2025
+## Docker pour débutants : 10 services essentiels à auto-héberger
 URL: https://brandonvisca.com/docker-debutant-services-auto-heberger/
 Description: Docker pour débutants : guide simple avec 10 services prêts à déployer. Exemples docker-compose inclus, zéro prise de tête !
 Tags: docker, auto-hebergement, homelab, linux, debutant
 Publié: 2025-10-22T16:12:41+02:00
 
-## Auto-hébergement : Le guide ultime 2025 pour reprendre contrôle de vos données
+## Auto-hébergement : le guide complet pour débuter
 URL: https://brandonvisca.com/auto-hebergement-guide-complet-2025/
-Description: Découvrez l'auto-hébergement en 2025 : guide complet pour débutants, du choix du matériel aux premiers services. Reprenez le contrôle de vos données !
+Description: Découvrez l'auto-hébergement : guide complet pour débutants, du choix du matériel aux premiers services. Reprenez le contrôle de vos données !
 Tags: auto-hebergement, homelab, docker, linux, guide, debutant
 Publié: 2025-10-22T15:44:27+02:00
 
@@ -1065,7 +1065,7 @@ Description: Automatise ton inventaire Windows avec SnipeAgent et Snipe-IT. Guid
 Tags: snipeit, windows, active-directory, powershell, intermediaire
 Publié: 2025-10-13T16:49:19+02:00
 
-## Configuration avancée SnipeIT : LDAP, automatisation et notifications (guide 2025)
+## Snipe-IT avancé : configuration LDAP, automatisation et Teams
 URL: https://brandonvisca.com/configuration-avancee-snipeit-ldap-teams-automatisation/
 Description: Configuration avancée SnipeIT : intégration LDAP/Active Directory, scan réseau, notifications Teams et self-service. Guide complet avec exemples concrets.
 Tags: linux, sysadmin, avance, snipeit, ldap
@@ -1077,7 +1077,7 @@ Description: Découvrez Raycast macOS, le launcher gratuit qui remplace Spotligh
 Tags: raycast, macos, productivite, guide, debutant
 Publié: 2025-10-13T15:20:28+02:00
 
-## Installation SnipeIT Ubuntu : guide complet pour ne rien casser (tuto 2025)
+## Installation SnipeIT Ubuntu : guide complet pour ne rien casser
 URL: https://brandonvisca.com/installation-snipeit-ubuntu-guide-complet/
 Description: Installez SnipeIT sur Ubuntu 22.04/24.04 : guide LAMP, MySQL, Git et permissions. Déployez votre ITSM d'inventaire IT en moins d'une heure, pas à pas.
 Tags: linux, sysadmin, snipeit, guide, debutant
@@ -1239,13 +1239,13 @@ Description: mount refuse ta matrice RAID mdadm en mode secours avec « wrong fs
 Tags: linux, sysadmin, stockage, avance
 Publié: 2025-03-13T11:37:18+01:00
 
-## Filtrage utilisateurs LDAP Snipe-IT : Guide pratique Active Directory 2025
+## Filtrage utilisateurs LDAP Snipe-IT : guide Active Directory
 URL: https://brandonvisca.com/ldap-filtrage-utilisateurs-snipeit/
-Description: Guide avancé pour filtrer les utilisateurs LDAP dans Snipe-IT connecté à Active Directory. Filtres sécurisés, exclusions par OU, bonnes pratiques 2025.
+Description: Guide avancé pour filtrer les utilisateurs LDAP dans Snipe-IT connecté à Active Directory : filtres sécurisés, exclusions par OU et bonnes pratiques.
 Tags: sysadmin, linux, avance, ldap, active-directory, snipeit
 Publié: 2025-03-02T21:06:25+01:00
 
-## LocalWP : Ton lab WordPress en 5 min (guide complet 2025 + migration prod)
+## LocalWP : ton lab WordPress en 5 min (guide + migration prod)
 URL: https://brandonvisca.com/installer-localwp-wordpress-local/
 Description: LocalWP : installez et testez WordPress en local sans serveur ni XAMPP. Guide complet avec installation, multi-site et workflow de déploiement en prod.
 Tags: developpement, linux, macos, windows, guide, debutant
@@ -1269,7 +1269,7 @@ Description: S3cmd : installer, configurer et utiliser ce client CLI pour Amazon
 Tags: linux, sysadmin, auto-hebergement, sauvegarde, intermediaire, guide
 Publié: 2025-02-17T17:37:40+01:00
 
-## Android File Transfer Mac : 2 alternatives testées (2025)
+## Android File Transfer Mac : 2 alternatives testées
 URL: https://brandonvisca.com/android-file-transfer-mac-alternatives-test-2025/
 Description: Android File Transfer Mac alternative : j'ai testé OpenMTP et MacDroid pendant 90 jours. OpenMTP gratuit gagne. Comparatif avec benchmarks réels.
 Tags: macos, linux, productivite, debutant

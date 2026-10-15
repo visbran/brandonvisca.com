@@ -1,5 +1,5 @@
 ---
-title: "Raycast vs Alfred : Test après 30 jours (Verdict 2025)"
+title: "Raycast vs Alfred : mon verdict après 30 jours de test"
 description: "Raycast vs Alfred vs Spotlight : 30 jours de tests réels. Tableaux comparatifs, prix détaillés, verdict par profil. Quel launcher macOS choisir ?"
 pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca

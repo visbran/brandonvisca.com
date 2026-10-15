@@ -1,5 +1,5 @@
 ---
-title: "Grila vs Fantastical : Comparatif honnête après 6 mois (2025)"
+title: "Grila vs Fantastical : comparatif honnête après 6 mois"
 description: "Grila vs Fantastical : j'utilise Grila depuis 6 mois (6€ vs 70€/an). Est-ce que ça vaut 64€ de plus ? Comparatif honnête pour t'aider à choisir."
 pubDatetime: "2025-11-27T00:00:00+01:00"
 author: Brandon Visca
