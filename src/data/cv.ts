@@ -88,11 +88,25 @@ export const jobs: Job[] = [
 export const skills: Group[] = [
   {
     label: "Systèmes & identités",
-    items: ["Windows Server 2016 à 2022", "Linux (Debian, Ubuntu)", "Active Directory (OU, GPO, FSMO)", "DNS", "DHCP", "AD CS"],
+    items: [
+      "Windows Server 2016 à 2022",
+      "Linux (Debian, Ubuntu)",
+      "Active Directory (OU, GPO, FSMO)",
+      "DNS",
+      "DHCP",
+      "AD CS",
+    ],
   },
   {
     label: "Cloud & Microsoft 365",
-    items: ["Entra ID", "Exchange Online", "SharePoint", "Teams", "Licences", "Graph API (5 ans, 2 tenants)"],
+    items: [
+      "Entra ID",
+      "Exchange Online",
+      "SharePoint",
+      "Teams",
+      "Licences",
+      "Graph API (5 ans, 2 tenants)",
+    ],
   },
   {
     label: "Virtualisation",
@@ -100,20 +114,52 @@ export const skills: Group[] = [
   },
   {
     label: "Sécurité, sauvegarde & PRA",
-    items: ["FortiGate", "pfSense", "VLAN", "Élévation JIT (EPM)", "Veeam", "Synology", "3-2-1", "Tests de restauration"],
+    items: [
+      "FortiGate",
+      "pfSense",
+      "VLAN",
+      "Élévation JIT (EPM)",
+      "Veeam",
+      "Synology",
+      "3-2-1",
+      "Tests de restauration",
+    ],
   },
   {
     label: "Réseau & supervision",
-    items: ["Fortinet", "Unifi", "Cisco", "TCP/IP", "VPN site-à-site", "Zabbix 7", "Grafana", "PRTG", "Uptime Kuma"],
+    items: [
+      "Fortinet",
+      "Unifi",
+      "Cisco",
+      "TCP/IP",
+      "VPN site-à-site",
+      "Zabbix 7",
+      "Grafana",
+      "PRTG",
+      "Uptime Kuma",
+    ],
   },
   {
     label: "Automatisation & pilotage",
-    items: ["PowerShell (PnP)", "Bash", "Batch", "Git/GitHub", "GLPI", "MOA", "Cahiers des charges", "Prestataires"],
+    items: [
+      "PowerShell (PnP)",
+      "Bash",
+      "Batch",
+      "Git/GitHub",
+      "GLPI",
+      "MOA",
+      "Cahiers des charges",
+      "Prestataires",
+    ],
   },
 ];
 
 export const education = [
-  { degree: "Bachelor Cybersécurité (Bac+3)", school: "ECORIS, Chambéry", year: "2022" },
+  {
+    degree: "Bachelor Cybersécurité (Bac+3)",
+    school: "ECORIS, Chambéry",
+    year: "2022",
+  },
   { degree: "BTS SIO option SISR", school: "ECORIS, Chambéry", year: "2021" },
   { degree: "Bac STG", school: "Lycée du Granier", year: "2013" },
 ];
