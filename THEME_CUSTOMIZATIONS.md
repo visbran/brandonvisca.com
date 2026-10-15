@@ -420,3 +420,15 @@ Refonte *overhaul* menée avec le skill `design-taste-frontend` (Leonxlnx/taste-
 
 - `src/pages/about.md` → `src/pages/about.astro` (URL `/about/` inchangée, JSON-LD `ProfilePage` repris tel quel). Présentation + carte « en bref » (nombre d'articles calculé depuis la collection, liens CV et articles), homelab en liste de machines + services, citation de la philosophie en grand, thèmes couverts reliés à leurs pages de tag avec le nombre d'articles, « En ce moment » et contact côte à côte.
 - `src/pages/search.astro` : nombre réel de guides dans le chapô, état vide « Parcourir par thème » (tags primaires + volume, masqué dès qu'un message Pagefind apparaît via `:has()`), résultats restylés **dans `.search-page` uniquement** (la modale ⌘K garde ses styles) : titres plus grands, surlignage plus léger, sous-résultats sous filet gauche sans la flèche ↳, bouton « plus de résultats » aligné sur le système.
+
+### Nom de l'auteur moins répété (2026-10-15)
+
+Le nom reste la marque (header, footer, onglets hors articles, JSON-LD) pour les recherches de recruteurs, mais n'apparaît plus qu'une fois par zone.
+
+- `PostDetails.astro` : onglet = titre de l'article seul ; byline masquée sauf auteur invité. `isSiteAuthor` traite `Brandon`/`brandon` (69 articles) comme l'auteur du site : leur JSON-LD pointe désormais vers le `Person` principal au lieu d'un `Person` « Brandon » isolé.
+- `index.astro` : H1 = « Reprendre le contrôle de tes données. » (le nom est déjà dans le header), titre d'onglet `Brandon Visca : homelab, auto-hébergement et Linux`.
+- `Header.astro` / `Footer.astro` : `aria-label="Accueil"`, copyright sans répéter le nom affiché juste au-dessus.
+- `src/constants.ts` : titres des liens sociaux neutres (« Profil GitHub », « Me contacter par mail »).
+- `og-templates/site.js` : promesse en grand au lieu du nom.
+- `Footer.astro` : « Copyleft {année} » avec un © retourné en CSS (dédicace à un ami), et « Design made with Claudius ❤️ » avant le crédit du thème.
+- Licence des contenus **CC BY-SA 4.0** : lien dans le footer, `<link rel="license">` dans `Layout.astro`, propriété `license` du JSON-LD `BlogPosting` dans `PostDetails.astro`. Le code du site reste sous `LICENSE` (MIT).

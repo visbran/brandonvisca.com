@@ -66,7 +66,7 @@ const themes = tagsVocabulary.primary
 const totalPosts = blogPosts.filter(p => !p.data.draft).length;
 ---
 
-<Layout>
+<Layout title={`${SITE.title} : homelab, auto-hébergement et Linux`}>
   <Header />
 
   <main id="main-content" data-layout="index" class="relative app-layout">
@@ -88,15 +88,14 @@ const totalPosts = blogPosts.filter(p => !p.data.draft).length;
           class="reveal text-5xl leading-[1.02] font-semibold tracking-[-0.035em] sm:text-6xl lg:text-[4.25rem]"
           style="--i:1"
         >
-          {SITE.title}
+          Reprendre le contrôle de tes données.
         </h1>
 
         <p
           class="reveal mt-6 max-w-[34rem] text-lg leading-relaxed text-soft"
           style="--i:2"
         >
-          Guides concrets sur le homelab, l'auto-hébergement et Linux, pour
-          reprendre le contrôle de tes données.
+          Guides concrets sur le homelab, l'auto-hébergement et Linux.
         </p>
 
         <div
