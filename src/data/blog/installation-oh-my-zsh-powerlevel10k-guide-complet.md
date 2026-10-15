@@ -1,6 +1,6 @@
 ---
-title: "Oh My Zsh et Powerlevel10k : ma config .zshrc"
-description: "Oh My Zsh et Powerlevel10k installés en 15 minutes : ma config .zshrc à copier, les plugins qui servent vraiment et le dépannage courant."
+title: "Installer Oh My Zsh et Powerlevel10k : guide et .zshrc"
+description: "Installer Oh My Zsh et Powerlevel10k sur macOS ou Linux en 15 minutes : ma config .zshrc à copier, les plugins utiles et le dépannage courant."
 pubDatetime: 2025-03-31 15:55:32+02:00
 modDatetime: 2026-07-06 00:00:00+01:00
 author: Brandon Visca

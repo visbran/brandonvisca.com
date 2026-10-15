@@ -1,6 +1,6 @@
 ---
-title: "Immich en Docker : ton Google Photos auto-hébergé"
-description: "Installe Immich avec Docker Compose, importe ta photothèque Google Photos et retrouve appli mobile, sauvegarde auto et recherche, chez toi."
+title: "Immich Docker Compose : installer ton Google Photos perso"
+description: "Installe Immich avec Docker Compose : compose prêt à copier, import Google Photos via Takeout, appli mobile et sauvegarde auto, tout chez toi."
 pubDatetime: "2026-05-15T19:00:00+02:00"
 modDatetime: "2026-05-17T00:00:00+02:00"
 author: Brandon Visca

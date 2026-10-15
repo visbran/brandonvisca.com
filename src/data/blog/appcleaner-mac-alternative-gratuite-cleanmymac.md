@@ -1,6 +1,6 @@
 ---
-title: "AppCleaner Mac : 18 Go libérés, installation et SmartDelete"
-description: "AppCleaner Mac s'installe en une commande Homebrew et SmartDelete nettoie chaque app que tu jettes. 18 Go récupérés chez moi, gratuit face à CleanMyMac."
+title: "AppCleaner Mac : désinstaller une app sans laisser de traces"
+description: "AppCleaner, gratuit sur Mac, supprime une app et tous ses fichiers cachés. Installation Homebrew, SmartDelete et 18 Go récupérés face à CleanMyMac."
 pubDatetime: "2025-11-18T17:39:28+01:00"
 modDatetime: "2026-06-22T00:00:00+01:00"
 author: Brandon Visca
