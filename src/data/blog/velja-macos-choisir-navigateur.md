@@ -114,6 +114,8 @@ Quelques réserves avant de foncer :
 
 Rien de rédhibitoire, mais si tu n'ouvres jamais de liens depuis plusieurs profils ou navigateurs, l'app n'apportera pas grand-chose à ton quotidien.
 
+💡 À lire aussi : [Mos macOS defilement souris fluide : lissage et inversion scroll](/mos-macos-defilement-souris-fluide/), dans la même veine que cet article.
+
 ## Conclusion
 
 Velja macOS règle un problème que macOS refuse de résoudre depuis toujours : un seul navigateur par défaut pour des usages qui, eux, sont multiples. Une fois les règles posées, tu ne repenses plus jamais au bon navigateur à ouvrir, ça se fait tout seul.
