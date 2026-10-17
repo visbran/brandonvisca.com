@@ -1,6 +1,6 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-16
+# Dernière mise à jour : 2026-10-17
 # Total articles : 220
 
 ## Mos macOS defilement souris fluide : lissage et inversion scroll
@@ -867,9 +867,9 @@ Description: Installe Traefik v3 comme reverse proxy Docker. Labels auto, HTTPS 
 Tags: docker, securite, auto-hebergement, intermediaire
 Publié: 2026-05-05 10:00:00+02:00
 
-## Watchtower : mets tes conteneurs Docker à jour sans lever le petit doigt
+## Watchtower Docker : containrrr est archivé, le fork qui le remplace en 2026
 URL: https://brandonvisca.com/watchtower-mise-a-jour-docker-auto/
-Description: Configure Watchtower pour mettre à jour automatiquement tes conteneurs Docker. Notifications, exclusions, planning, guide complet homelab.
+Description: Watchtower Docker : containrrr est archivé et casse sous Docker 29. Migre vers le fork maintenu en 2 minutes, labels et notifications inclus.
 Tags: docker, auto-hebergement, homelab, debutant, guide
 Publié: 2026-05-01 00:00:00+01:00
 
