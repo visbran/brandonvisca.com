@@ -203,6 +203,8 @@ docker compose up -d
 
 Le passage à la 2.x, le jour où elle sortira de bêta, mérite en revanche de lire le guide de migration du projet avant de changer le tag : ne laisse pas un outil de mise à jour automatique faire le saut à ta place.
 
+💡 À lire aussi : [Filestash Docker : navigateur de fichiers web universel](/filestash-docker-navigateur-fichiers-web/), dans la même veine que cet article.
+
 ## Conclusion
 
 L'archivage de File Browser oblige à bouger, mais FileBrowser Quantum rend la transition peu douloureuse : même usage, même logique de dossier monté, une installation qui tient en deux fichiers. Tu y gagnes une recherche nettement plus rapide, des partages enfin réglables et une authentification moderne. Et tu perds le terminal intégré, ce qui, pour un outil exposé sur le réseau, n'est pas une mauvaise nouvelle.

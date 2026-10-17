@@ -279,6 +279,8 @@ docker compose pull
 docker compose up -d
 ```
 
+💡 À lire aussi : [Filestash Docker : navigateur de fichiers web universel](/filestash-docker-navigateur-fichiers-web/), dans la même veine que cet article.
+
 ## Conclusion
 
 Copyparty n'a pas la sobriété de Droppy, et son interface demande quelques minutes d'adaptation. Mais là où Droppy se contentait d'héberger des images, Copyparty sait recevoir des fichiers de n'importe qui sans rien exposer d'autre, partager un dossier pour 24 heures avec un mot de passe, et encaisser des envois de plusieurs gigaoctets qui reprennent après une coupure. Le tout dans un seul conteneur, sans base de données à gérer, et avec un projet qui vit.
