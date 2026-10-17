@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-10-17
-# Total articles : 220
+# Total articles : 221
+
+## Filestash Docker : navigateur de fichiers web universel
+URL: https://brandonvisca.com/filestash-docker-navigateur-fichiers-web/
+Description: Filestash Docker : déploie ce navigateur de fichiers universel qui connecte S3, FTP, SFTP, WebDAV et Google Drive depuis une interface unique.
+Tags: docker, auto-hebergement, stockage, intermediaire
+Publié: 2026-10-17T23:48:31+02:00
 
 ## Mos macOS defilement souris fluide : lissage et inversion scroll
 URL: https://brandonvisca.com/mos-macos-defilement-souris-fluide/
