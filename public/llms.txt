@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-17
-# Total articles : 221
+# Dernière mise à jour : 2026-10-18
+# Total articles : 222
+
+## Postfix Docker : serveur mail auto-hébergé complet
+URL: https://brandonvisca.com/postfix-docker-serveur-mail-auto-heberge/
+Description: Déploie un serveur mail complet avec Postfix Docker : SMTP, Dovecot, DKIM et anti-spam, guide pas à pas pour ton homelab en 2026.
+Tags: auto-hebergement, docker, messagerie, dns, intermediaire
+Publié: 2026-10-18T11:06:14+02:00
 
 ## Filestash Docker : navigateur de fichiers web universel
 URL: https://brandonvisca.com/filestash-docker-navigateur-fichiers-web/
