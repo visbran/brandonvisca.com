@@ -39,6 +39,12 @@ Bonnes pratiques :
 **Le compte dédié sur un service de prod ne se justifie que** si l'article montre des données réelles
 accumulées (statistiques Tianji, bibliothèque Immich). Sinon, instance jetable.
 
+## Recettes écrites par le pipeline
+
+Depuis le 2026-10-18, l'étape `SHOTS` du pipeline de publication (`2026-Korbelike-article/pipeline/`)
+fait écrire la recette par un modèle, la met au point sur le runner et l'insère dans le brouillon.
+Elle est committée ici avec l'article : `pnpm shots <slug> --force` la rejoue telle quelle.
+
 ## Écrire une recette
 
 Un fichier par article : `scripts/shots/<slug>.yml`.
@@ -64,6 +70,7 @@ Clés utiles (doc complète : <https://shot-scraper.datasette.io/en/stable/multi
 | `wait`, `wait_for` | attendre un délai ou une condition JS (graphiques, chargement) |
 | `javascript` | exécuter du JS avant la capture (masquage, thème, faux jeu de données) |
 | `alt` | **spécifique à ce dépôt** : le texte alternatif recopié dans le Markdown |
+| `after` | **spécifique à ce dépôt** : titre H2/H3 de l'article sous lequel le pipeline insère l'image |
 
 ## Services authentifiés
 

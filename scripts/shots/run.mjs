@@ -49,7 +49,8 @@ const ssh = (cmd, opts = {}) =>
 const push = (cmd, input) =>
   execFileSync("ssh", [HOST, cmd], { input, stdio: ["pipe", "inherit", "inherit"] });
 
-// alt: and auth: are ours; shot-scraper would reject them.
+// alt:, auth: and after: are ours; shot-scraper would reject them.
+// after: is where the blog pipeline inserts the image (H2/H3 title of the article).
 const source = readFileSync(recipe, "utf8");
 const authName = source.match(/^\s*auth:\s*(\S+)\s*$/m)?.[1];
 const alts = [...source.matchAll(/^\s*(?:-\s*)?output:\s*(\S+)|^\s*alt:\s*["']?(.+?)["']?\s*$/gm)].reduce(
@@ -61,7 +62,7 @@ const alts = [...source.matchAll(/^\s*(?:-\s*)?output:\s*(\S+)|^\s*alt:\s*["']?(
   { map: {}, last: null }
 ).map;
 const shots = [...source.matchAll(/^\s*-?\s*output:\s*(\S+)/gm)].map((m) => m[1]);
-const cleaned = source.replace(/^\s*(alt|auth):.*$/gm, "");
+const cleaned = source.replace(/^\s*(alt|auth|after):.*$/gm, "");
 
 const hasCompose = existsSync(composeFile);
 console.log(`→ ${shots.length} capture(s) pour ${slug}${hasCompose ? " (instance jetable)" : ""}`);
