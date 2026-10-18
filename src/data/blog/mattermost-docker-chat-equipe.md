@@ -303,6 +303,8 @@ Si tu as déjà une stack [Grafana Prometheus Docker](/grafana-prometheus-docker
 
 **Les apps mobiles ne se connectent pas** : ton certificat SSL doit être valide (pas de self-signed). Caddy gère ça, mais vérifie que le DNS pointe bien vers ton serveur.
 
+💡 À lire aussi : [Postfix Docker : serveur mail auto-hébergé complet](/postfix-docker-serveur-mail-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Déployer Mattermost avec Docker, c'est récupérer la maîtrise totale de la messagerie de ton équipe. Pas de factures surprises, pas de clauses de confidentialité opaques, pas de limitation arbitraire sur l'historique. En une quinzaine de minutes, tu montes un Slack-like open-source sur ton propre serveur, avec PostgreSQL pour la base, Caddy pour le HTTPS et Docker pour orchestrer le tout. C'est exactement ce que l'auto-hébergement devrait être : simple, fiable et sous ton contrôle.

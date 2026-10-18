@@ -320,6 +320,8 @@ Matrix n'est pas qu'un chat. Le protocole supporte les appels vidéo via Element
 - **Element X** : client mobile réécrit en Rust, plus rapide
 - **Conduit** : homeserver alternatif en Rust, beaucoup plus léger que Synapse
 
+💡 À lire aussi : [Postfix Docker : serveur mail auto-hébergé complet](/postfix-docker-serveur-mail-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Héberger son homeserver Matrix avec Element et Docker, c'est reprendre le contrôle de sa messagerie. Pas de tiers de confiance, pas de facture mensuelle, pas de surprise dans les conditions d'utilisation. Tu installes Synapse, tu connectes Element, et tu discutes avec le monde entier, ou personne. La décentralisation n'est pas une mode. C'est une assurance contre la fermeture, la censure et la surveillance de masse. Matrix est le seul protocole de messagerie qui te donne vraiment ce choix. Utilise-le.
