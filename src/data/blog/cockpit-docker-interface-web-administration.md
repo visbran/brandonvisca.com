@@ -143,6 +143,8 @@ Cockpit vise un périmètre différent : l'administration du serveur dans son en
 
 Face à Webmin, la différence est plus nette encore. Webmin est plus ancien, avec une interface datée et une architecture à base de modules Perl. Cockpit est plus récent, plus léger visuellement, et son intégration avec systemd le rend plus cohérent sur les distributions modernes. Le module cockpit docker profite directement de cette base, sans les compromis d'un outil pensé pour une autre époque.
 
+💡 À lire aussi : [Samba Docker : partage de fichiers Windows/Linux](/samba-docker-partage-fichiers/), dans la même veine que cet article.
+
 ## Conclusion
 
 Cockpit ne remplace pas ton terminal, et ce n'est pas son objectif. Ce qu'il apporte, c'est une vue d'ensemble de ton serveur, accessible depuis n'importe quel navigateur, sans bricolage supplémentaire. Ajoute cockpit docker par-dessus et tu obtiens un point d'entrée unique pour surveiller autant tes conteneurs que le système qui les héberge.

@@ -176,6 +176,8 @@ docker compose logs -f app
 
 Si tu fais tourner plusieurs conteneurs sur le même serveur et que tu veux une vue d'ensemble sans jongler entre les `docker compose logs` de chaque stack, [Dozzle](/dozzle-docker-visionneuse-logs-web/) te donne cette visibilité centralisée en quelques minutes d'installation.
 
+💡 À lire aussi : [Samba Docker : partage de fichiers Windows/Linux](/samba-docker-partage-fichiers/), dans la même veine que cet article.
+
 ## Conclusion
 
 Filestash Docker ne remplace ni ton NAS, ni ton stockage S3, ni ton serveur FTP. Il se contente de leur donner une seule porte d'entrée commune, propre et moderne, sans dupliquer la moindre donnée. C'est exactement ce qu'il faut quand tes fichiers sont déjà éparpillés sur trois protocoles différents et que tu en as assez de jongler entre les clients.
