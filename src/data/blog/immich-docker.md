@@ -211,6 +211,8 @@ Ouvre ton navigateur sur `http://IP_DU_SERVEUR:2283`. Un assistant te guide :
 
 L'interface ressemble furieusement à Google Photos : une timeline, une vue par album, une carte et une page de recherche.
 
+![Timeline Immich v3 avec les photos de démo regroupées par date, interface proche de Google Photos](immich-docker-1.webp)
+
 ### Reverse proxy
 
 Pour exposer Immich proprement en HTTPS, deux options classiques. Avec [Caddy](/caddy-docker-reverse-proxy-guide/), trois lignes suffisent et le certificat est automatique :
@@ -239,6 +241,8 @@ Dans les deux cas, le reverse proxy doit partager un réseau Docker avec `immich
 ### Depuis Google Photos (Takeout)
 
 Le piège classique de Takeout : Google sépare les dates et la géolocalisation dans des fichiers `.json` à côté de chaque photo. Un upload brut te donne une timeline en vrac. La doc Immich recommande donc [immich-go](https://github.com/simulot/immich-go), un outil communautaire (v0.32.0 au moment où j'écris) qui recolle tout ça.
+
+![Paramètres du compte Immich, section Clés API avec une clé nommée immich-go](immich-docker-2.webp)
 
 1. Demande l'export Google Photos sur [Google Takeout](https://takeout.google.com/), au format `.zip` (le `.tgz` n'est pas supporté).
 2. Dans Immich, crée une clé API : clique sur ton avatar > Paramètres du compte > Clés API.
@@ -283,6 +287,8 @@ Une fois connectée à ton serveur, l'app active la **sauvegarde automatique** e
 ### Ce qu'il faut sauvegarder
 
 Bonne nouvelle : Immich dumpe sa base tout seul. Chaque nuit à 2 h, il écrit un dump PostgreSQL dans `UPLOAD_LOCATION/backups` et garde les 14 derniers (réglable dans Administration > Paramètres).
+
+![Réglages d'administration Immich : sauvegarde automatique de la base, planning et nombre de dumps conservés](immich-docker-3.webp)
 
 Côté fichiers, les dossiers critiques de `UPLOAD_LOCATION` sont `library`, `upload`, `profile` et `backups`. Les dossiers `thumbs` et `encoded-video` se régénèrent. La règle simple : sauvegarde tout `UPLOAD_LOCATION` hors de la machine, par exemple avec [Restic](/restic-docker-sauvegarde-moderne/) vers un stockage distant. Un Immich sans sauvegarde externe, c'est juste Google Photos avec un seul disque dur en guise de datacenter.
 

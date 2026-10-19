@@ -1,0 +1,25 @@
+# Instance jetable + données de démo : voir les fichiers .compose.yml et .setup.sh
+- output: immich-timeline.png
+  url: http://localhost:2283/photos
+  width: 1440
+  height: 900
+  wait: 6000
+  alt: "Timeline Immich v3 avec les photos de démo regroupées par date, interface proche de Google Photos"
+  after: "Premier démarrage et configuration"
+  auth: immich-demo
+- output: immich-cles-api.png
+  url: http://localhost:2283/user-settings?isOpen=api-keys
+  width: 1440
+  height: 900
+  wait: 4000
+  alt: "Paramètres du compte Immich, section Clés API avec une clé nommée immich-go"
+  after: "Depuis Google Photos (Takeout)"
+  auth: immich-demo
+- output: immich-sauvegarde-base.png
+  url: http://localhost:2283/admin/system-settings?isOpen=backup
+  width: 1440
+  height: 900
+  wait: 4000
+  alt: "Réglages d'administration Immich : sauvegarde automatique de la base, planning et nombre de dumps conservés"
+  after: "Ce qu'il faut sauvegarder"
+  auth: immich-demo
