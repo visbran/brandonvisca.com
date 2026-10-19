@@ -1,6 +1,6 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-18
+# Dernière mise à jour : 2026-10-19
 # Total articles : 222
 
 ## Postfix Docker : serveur mail auto-hébergé complet
