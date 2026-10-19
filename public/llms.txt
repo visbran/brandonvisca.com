@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-10-19
-# Total articles : 222
+# Total articles : 223
+
+## Samba Docker : partage de fichiers Windows/Linux
+URL: https://brandonvisca.com/samba-docker-partage-fichiers/
+Description: Monte un serveur Samba Docker avec docker-compose pour partager des fichiers entre Windows, Linux et macOS en quelques minutes, sans prise de tête.
+Tags: linux, docker, stockage, hardening, intermediaire
+Publié: 2026-10-19T11:02:11+02:00
 
 ## Postfix Docker : serveur mail auto-hébergé complet
 URL: https://brandonvisca.com/postfix-docker-serveur-mail-auto-heberge/
