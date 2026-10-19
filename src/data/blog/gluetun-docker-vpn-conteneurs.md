@@ -2,7 +2,7 @@
 title: "Gluetun Docker : faire passer tes conteneurs par un VPN"
 description: Gluetun docker route tes conteneurs derriere un VPN avec kill switch integre. Installation WireGuard, Docker Compose et depannage pas a pas.
 pubDatetime: "2026-10-10T11:02:11+02:00"
-modDatetime: "2026-10-09T08:00:00.000Z"
+modDatetime: "2026-10-19T08:00:00.000Z"
 author: Brandon Visca
 tags:
   - reseau
@@ -31,7 +31,7 @@ faqs:
 
 Tu veux que ton client torrent ou ton gestionnaire de séries passe par un VPN, mais pas forcément tout ton homelab. Installer un VPN système sur l'hôte, c'est du tout ou rien : chaque conteneur en profite, ou aucun. Chez moi, je ne veux pas que mon Jellyfin ou mon Nextcloud passent par un tunnel chiffré pour rien, juste parce qu'un conteneur voisin télécharge.
 
-C'est exactement le problème que règle **gluetun**, un conteneur Go développé par qdm12, disponible sur [github.com/qdm12/gluetun](https://github.com/qdm12/gluetun) sous licence MIT. Il fait une seule chose : porter une connexion VPN, OpenVPN ou WireGuard, et laisser d'autres conteneurs partager sa pile réseau. Rien d'autre tourne dedans, pas de service annexe, juste le tunnel et un pare-feu qui verrouille tout le reste.
+C'est exactement le problème que règle **gluetun**, un conteneur Go développé par qdm12, disponible sur [github.com/passteque/gluetun](https://github.com/passteque/gluetun) sous licence MIT (le dépôt a quitté le compte perso de qdm12 pour son organisation Passteque en 2026, les noms d'image n'ont pas bougé). Il fait une seule chose : porter une connexion VPN, OpenVPN ou WireGuard, et laisser d'autres conteneurs partager sa pile réseau. Rien d'autre tourne dedans, pas de service annexe, juste le tunnel et un pare-feu qui verrouille tout le reste.
 
 ## Table des matières
 
@@ -122,7 +122,7 @@ Pour surveiller que ton kill switch tient dans le temps et détecter une coupure
 
 **Impossible d'atteindre l'interface web depuis ton LAN.** Le port doit être publié sur le service gluetun, et `FIREWALL_OUTBOUND_SUBNETS` doit inclure ton sous-réseau. Sans ça, le pare-feu interne bloque aussi les retours vers ton réseau local, pas seulement vers internet.
 
-**Le port forwarding ne marche pas.** Certains fournisseurs comme Mullvad attribuent un port dynamique qu'il faut déclarer dans `FIREWALL_VPN_INPUT_PORTS`. Sans cette variable, gluetun bloque le trafic entrant même si ton fournisseur l'a bien ouvert côté serveur.
+**Le port forwarding ne marche pas.** Commence par vérifier que ton fournisseur le propose encore : Mullvad l'a supprimé en juillet 2023, inutile de chercher. Avec Private Internet Access ou ProtonVPN, gluetun gère le port dynamique tout seul, il suffit d'ajouter `VPN_PORT_FORWARDING=on`. Si ton fournisseur t'attribue un port fixe depuis son tableau de bord, déclare-le dans `FIREWALL_VPN_INPUT_PORTS`. Sans l'une ou l'autre, gluetun bloque le trafic entrant même si le port est bien ouvert côté serveur.
 
 **Tout casse après une mise à jour.** Les conteneurs attachés à gluetun docker ne survivent pas à son redémarrage. Relance-les dans l'ordre : gluetun d'abord, les conteneurs dépendants ensuite, avec un petit délai pour laisser le tunnel se rétablir.
 
