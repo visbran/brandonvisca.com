@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-19
-# Total articles : 223
+# Dernière mise à jour : 2026-10-20
+# Total articles : 224
+
+## Asterisk Docker : serveur VoIP open-source complet
+URL: https://brandonvisca.com/asterisk-docker-serveur-voip-open-source/
+Description: Asterisk Docker : build de l'image, trunk SIP, gestion du NAT et du RTP, sécurité contre le toll fraud pour un PBX VoIP auto-hébergé complet.
+Tags: auto-hebergement, hardening, reverse-proxy, monitoring, avance
+Publié: 2026-10-20T11:02:11+02:00
 
 ## Samba Docker : partage de fichiers Windows/Linux
 URL: https://brandonvisca.com/samba-docker-partage-fichiers/
