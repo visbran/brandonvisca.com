@@ -187,6 +187,8 @@ Une fois Dozzle en place, tu as une vue claire sur ce qui tourne, mais pas encor
 
 Si ton homelab manque encore d'un DNS récursif propre pour résoudre tes noms internes sans dépendre d'un service externe, [Unbound Docker](/unbound-docker-dns-recursif/) complète bien la partie infrastructure. Et pour un espace de partage de fichiers léger à côté de tes outils de monitoring, [Droppy](/droppy-partage-images-auto-heberge/) reste une option simple à déployer.
 
+💡 À lire aussi : [Asterisk Docker : serveur VoIP open-source complet](/asterisk-docker-serveur-voip-open-source/), dans la même veine que cet article.
+
 ## Conclusion
 
 Dozzle Docker règle un problème précis : voir les logs de plusieurs conteneurs Docker sans multiplier les terminaux SSH. Pas de base de données, une image minuscule, une authentification suffisante pour un usage interne. C'est le genre d'outil qu'on installe en cinq minutes et qu'on oublie ensuite, jusqu'au jour où un conteneur plante à 3h du matin et que tu es content de pouvoir checker ça depuis ton téléphone sans ouvrir de terminal.

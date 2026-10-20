@@ -154,6 +154,8 @@ Si ton homelab tourne déjà sous [K3s](/k3s-docker-kubernetes-leger-homelab/), 
 
 Autre limite documentée par l'éditeur : une seule CA intermédiaire émettrice à la fois, pas de support SCEP dynamique, et des options de révocation active (CRL, OCSP) plus limitées que sur une PKI d'entreprise classique. Pour un homelab ou une petite infra pro, ça ne pèse pas lourd face au gain. Pour une PKI de production à grande échelle avec des contraintes de conformité strictes, regarde aussi l'offre hébergée de Smallstep avant de tout faire reposer sur un conteneur self-hosted.
 
+💡 À lire aussi : [Asterisk Docker : serveur VoIP open-source complet](/asterisk-docker-serveur-voip-open-source/), dans la même veine que cet article.
+
 ## Conclusion
 
 step ca docker, c'est la brique qui manque à beaucoup de homelabs : plus de certificats auto-signés qui font flipper le navigateur, plus de "accepter le risque et continuer" cliqué sans réfléchir dix fois par jour. Une CA interne propre, un provisioner ACME pour l'automatisation, et un reverse proxy qui gère ses certificats seul.
