@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-20
-# Total articles : 224
+# Dernière mise à jour : 2026-10-21
+# Total articles : 225
+
+## Netplan Linux : configurer le réseau en YAML simplement
+URL: https://brandonvisca.com/netplan-linux-configurer-reseau-yaml/
+Description: Netplan Linux : configure les interfaces réseau Ubuntu et Debian en YAML, IP statique, DHCP, nameservers et routes, avec apply et try en sécurité.
+Tags: linux, reseau, dns, intermediaire
+Publié: 2026-10-21T11:02:11+02:00
 
 ## Asterisk Docker : serveur VoIP open-source complet
 URL: https://brandonvisca.com/asterisk-docker-serveur-voip-open-source/
