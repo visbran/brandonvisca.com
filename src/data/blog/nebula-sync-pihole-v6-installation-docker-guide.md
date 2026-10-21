@@ -441,6 +441,8 @@ La prochaine étape logique : combine Nebula-Sync avec une config Pi-hole solide
 
 Et si tu parts de zéro ou envisages une migration, [Technitium DNS Server](/technitium-dns-server/) propose blocage de pubs + DNS récursif natif + DNSSEC dans un seul conteneur, sans dépendance à dnsmasq ni à Unbound.
 
+💡 À lire aussi : [Netplan Linux : configurer le réseau en YAML simplement](/netplan-linux-configurer-reseau-yaml/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/)

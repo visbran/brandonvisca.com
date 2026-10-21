@@ -273,6 +273,8 @@ Vérifie les logs avec `docker logs --tail 50 chrony`. Les causes fréquentes : 
 
 💡 À lire aussi : [OpenWrt firmware : le routeur open-source pour ton homelab](/openwrt-firmware-routeur-homelab/), dans la même veine que cet article.
 
+💡 À lire aussi : [Netplan Linux : configurer le réseau en YAML simplement](/netplan-linux-configurer-reseau-yaml/), dans la même veine que cet article.
+
 ## Conclusion
 
 Un serveur NTP local, c'est un de ces services que tu installes une fois et que tu oublies ensuite. Mais quand il est absent, tu le regrette à chaque fois que tu compares des logs, que tu débugges une réplication, ou que tu remarques que ton NAS a décidé qu'il était 14:47 alors que ton serveur disait 14:45.
