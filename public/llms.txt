@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-21
-# Total articles : 225
+# Dernière mise à jour : 2026-10-22
+# Total articles : 226
+
+## Glance Docker : dashboard homelab moderne et léger
+URL: https://brandonvisca.com/glance-docker-dashboard-homelab/
+Description: Glance Docker : installe ce dashboard homelab ultra léger, configure les widgets et affiche le statut de tes conteneurs en quelques minutes.
+Tags: docker, dashboard, monitoring, intermediaire
+Publié: 2026-10-22T11:02:12+02:00
 
 ## Netplan Linux : configurer le réseau en YAML simplement
 URL: https://brandonvisca.com/netplan-linux-configurer-reseau-yaml/
