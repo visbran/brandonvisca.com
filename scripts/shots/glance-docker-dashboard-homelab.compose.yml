@@ -1,0 +1,67 @@
+services:
+  glance:
+    container_name: glance
+    image: glanceapp/glance:v0.8.7
+    ports: ["8080:8080"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    configs:
+      - source: glance-config
+        target: /app/config/glance.yml
+    environment:
+      - TZ=Europe/Paris
+  # Conteneurs de démo, pour que les widgets Docker et monitor ne soient pas vides
+  web-frontend:
+    image: nginx:1.29-alpine
+    container_name: web-frontend
+    labels:
+      glance.name: Frontend web
+      glance.url: http://web-frontend:80
+      glance.description: Site vitrine
+  api-backend:
+    image: nginx:1.29-alpine
+    container_name: api-backend
+    labels:
+      glance.name: API backend
+      glance.url: http://api-backend:80
+      glance.description: API interne
+  cache-redis:
+    image: redis:8-alpine
+    container_name: cache-redis
+    labels:
+      glance.name: Cache Redis
+      glance.description: Cache applicatif
+
+configs:
+  glance-config:
+    content: |
+      pages:
+        - name: Accueil
+          columns:
+            - size: small
+              widgets:
+                - type: bookmarks
+                  groups:
+                    - title: Admin
+                      links:
+                        - title: Portainer
+                          url: http://demo.local:9000
+                        - title: Dockge
+                          url: http://demo.local:5001
+            - size: full
+              widgets:
+                - type: docker-containers
+                  hide-by-default: false
+                  format-container-names: true
+                - type: monitor
+                  cache: 1m
+                  title: Services
+                  sites:
+                    - title: Frontend web
+                      url: http://web-frontend:80
+                    - title: API backend
+                      url: http://api-backend:80
+      theme:
+        light: false
+        background-color: 240 8 9
+        primary-color: 43 50 70

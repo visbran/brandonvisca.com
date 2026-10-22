@@ -189,6 +189,8 @@ Si ton homelab manque encore d'un DNS récursif propre pour résoudre tes noms i
 
 💡 À lire aussi : [Asterisk Docker : serveur VoIP open-source complet](/asterisk-docker-serveur-voip-open-source/), dans la même veine que cet article.
 
+💡 À lire aussi : [Glance Docker : dashboard homelab moderne et léger](/glance-docker-dashboard-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 Dozzle Docker règle un problème précis : voir les logs de plusieurs conteneurs Docker sans multiplier les terminaux SSH. Pas de base de données, une image minuscule, une authentification suffisante pour un usage interne. C'est le genre d'outil qu'on installe en cinq minutes et qu'on oublie ensuite, jusqu'au jour où un conteneur plante à 3h du matin et que tu es content de pouvoir checker ça depuis ton téléphone sans ouvrir de terminal.

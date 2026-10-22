@@ -1,0 +1,26 @@
+# Instance jetable : voir glance-docker-dashboard-homelab.compose.yml
+- output: glance-accueil.png
+  url: http://localhost:8080/
+  width: 1440
+  wait: 5000
+  alt: "Tableau de bord Glance avec une colonne de favoris et une colonne listant les conteneurs Docker et le statut des services"
+  after: "Configuration du fichier glance.yml"
+- output: glance-docker-widget.png
+  url: http://localhost:8080/
+  width: 1440
+  wait_for: "document.body.textContent.includes('Cache Redis')"
+  padding: 20
+  selector: "[data-shot-target='1']"
+  javascript: |
+    new Promise(done => {
+      const heading = [...document.querySelectorAll('*')].find(e => e.children.length === 0 && e.textContent.trim().toLowerCase() === 'docker containers');
+      const hw = heading.getBoundingClientRect().width;
+      let el = heading;
+      while (el.parentElement && (el.getBoundingClientRect().width < hw * 3 || el.getBoundingClientRect().height < 150)) {
+        el = el.parentElement;
+      }
+      el.setAttribute('data-shot-target', '1');
+      setTimeout(done, 300);
+    })
+  alt: "Widget Docker de Glance listant les conteneurs en cours d'exécution avec leur nom et leur état"
+  after: "Widgets Docker, monitor et server-stats : surveiller ton homelab"
