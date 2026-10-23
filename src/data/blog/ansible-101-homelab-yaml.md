@@ -362,6 +362,8 @@ Pour un homelab, Ansible est le meilleur compromis. Si un jour tu provisionnes d
 
 💡 À lire aussi : [Systemd timer : l'alternative moderne à cron sous Linux](/systemd-timers-alternative-cron-linux/), dans la même veine que cet article.
 
+💡 À lire aussi : [Wake-on-LAN Linux : allumer tes machines à distance](/wake-on-lan-linux-allumer-pc-distance/), dans la même veine que cet article.
+
 ## Conclusion
 
 Ansible transforme ton homelab d'un tas de serveurs gérés à la main en une infrastructure déclarative, reproductible et versionnable. Tu écris ce que tu veux, tu lances une commande, et tes machines se mettent en conformité toutes seules.

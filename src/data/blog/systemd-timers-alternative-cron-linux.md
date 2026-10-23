@@ -210,6 +210,8 @@ journalctl -u export-emails.service --since "1 day ago"
 
 Si tu veux une vue graphique plutôt que du texte dans un terminal SSH, [Cockpit donne une interface web pour surveiller les services systemd](/cockpit-docker-interface-web-administration/) sans retenir toutes ces commandes par cœur.
 
+💡 À lire aussi : [Wake-on-LAN Linux : allumer tes machines à distance](/wake-on-lan-linux-allumer-pc-distance/), dans la même veine que cet article.
+
 ## Conclusion
 
 Le systemd timer n'est pas un gadget de puriste systemd : c'est la version de cron qui aurait dû exister depuis le début, avec rattrapage des exécutions manquées, logs centralisés et dépendances explicites. Pour une tâche ponctuelle sur un vieux serveur, cron reste suffisant et plus rapide à écrire. Pour tout ce qui compte vraiment dans ton homelab (sauvegardes, renouvellements, exports automatiques), les deux fichiers `.timer` et `.service` sont un investissement de cinq minutes qui t'évite une mauvaise surprise le jour où le serveur redémarre sans prévenir.
