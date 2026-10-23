@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-22
-# Total articles : 226
+# Dernière mise à jour : 2026-10-23
+# Total articles : 227
+
+## Wake-on-LAN Linux : allumer tes machines à distance
+URL: https://brandonvisca.com/wake-on-lan-linux-allumer-pc-distance/
+Description: Configure le Wake-on-LAN Linux avec ethtool, systemd et NetworkManager pour allumer un PC ou un serveur sans bouger du canapé.
+Tags: linux, ssh, automation, intermediaire
+Publié: 2026-10-23T11:02:11+02:00
 
 ## Glance Docker : dashboard homelab moderne et léger
 URL: https://brandonvisca.com/glance-docker-dashboard-homelab/
