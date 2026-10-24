@@ -251,6 +251,8 @@ Les trois dashboards répondent à des besoins différents :
 
 Si tu veux juste une page de liens qui ne bouge jamais, [Homer](/homer-dashboard-docker-homelab/) fait très bien le travail. Si tu veux pousser la personnalisation visuelle au maximum avec des dizaines de widgets, [Dashy](/dashy-docker-dashboard-homelab/) reste la référence. Glance Docker se positionne entre les deux : des widgets réellement utiles au quotidien, sans la lourdeur d'un frontend complet à maintenir.
 
+💡 À lire aussi : [Dokploy Docker : ton PaaS auto-hébergé (alternative Vercel)](/dokploy-paas-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Glance Docker coche les cases que je cherchais depuis longtemps : léger, rapide, configurable en texte brut, et avec un widget Docker qui me donne enfin une vue d'ensemble sans ouvrir Portainer à chaque fois. Si ton homelab tourne déjà sous Docker Compose, l'installation prend moins de temps que cet article à lire.
