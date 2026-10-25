@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-24
-# Total articles : 228
+# Dernière mise à jour : 2026-10-25
+# Total articles : 229
+
+## NetworkManager CLI : configurer le réseau comme un pro
+URL: https://brandonvisca.com/networkmanager-cli-configurer-reseau/
+Description: Maîtrise NetworkManager CLI (nmcli) pour configurer ton réseau Linux : connexions, Wi-Fi, bonding, DNS, sans passer par une interface graphique.
+Tags: linux, dns, terminal, intermediaire
+Publié: 2026-10-25T11:02:12+01:00
 
 ## Dokploy Docker : ton PaaS auto-hébergé (alternative Vercel)
 URL: https://brandonvisca.com/dokploy-paas-auto-heberge/
