@@ -164,6 +164,8 @@ Côté sécurité, trois points à vérifier une fois ta configuration en place 
 - Si tu administres plusieurs machines à distance, privilégie un accès par VPN plutôt que d'exposer SSH ou les interfaces d'administration directement sur internet. J'utilise [Headscale en auto-hébergé](/headscale-docker-tailscale-self-hosted/) pour ça sur mon propre réseau, en remplacement d'un Tailscale géré par un tiers.
 - Si ton réseau passe par un routeur dédié plutôt que directement par ton serveur Linux, la configuration côté routeur suit une logique différente mais complémentaire, que j'ai couverte dans mon article sur [OpenWrt comme firmware de routeur homelab](/openwrt-firmware-routeur-homelab/).
 
+💡 À lire aussi : [NetworkManager CLI : configurer le réseau comme un pro](/networkmanager-cli-configurer-reseau/), dans la même veine que cet article.
+
 ## Conclusion
 
 Netplan Linux ne révolutionne pas la mise en réseau sous Linux, il la rend juste lisible et reproductible. Un fichier YAML versionnable dans `git`, une syntaxe commune entre DHCP et IP statique, et deux commandes, `try` puis `apply`, qui te protègent du scénario classique où tu te coupes toi-même l'accès à ton propre serveur.

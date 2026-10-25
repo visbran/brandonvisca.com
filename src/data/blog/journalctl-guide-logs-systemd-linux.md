@@ -165,6 +165,8 @@ Si les entrées du journal ne se suivent pas, ou si une alerte semble venir du f
 
 Si tu préfères une interface web, Cockpit affiche les mêmes données que journalctl Linux dans sa section dédiée aux logs. Ça ne remplace pas le terminal pour les filtres fins, mais c'est pratique pour un coup d'œil rapide, comme le montre [l'article sur Cockpit pour l'administration Docker](/cockpit-docker-interface-web-administration/).
 
+💡 À lire aussi : [NetworkManager CLI : configurer le réseau comme un pro](/networkmanager-cli-configurer-reseau/), dans la même veine que cet article.
+
 ## Conclusion
 
 Trois réflexes suffisent pour 90 % des cas avec journalctl Linux. Filtre par unité avec `-u`, par priorité avec `-p` et par heure avec `--since`. Pour le passé, pense aux boots avec `-b -1` et `--list-boots`. Et règle le journal dès le début : dossier `/var/log/journal` pour la persistance, `SystemMaxUse` pour la taille.
