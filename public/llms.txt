@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-25
-# Total articles : 229
+# Dernière mise à jour : 2026-10-26
+# Total articles : 230
+
+## Karakeep Docker : bookmarks avec tagging IA auto-hébergé
+URL: https://brandonvisca.com/karakeep-bookmarks-ia-auto-heberge/
+Description: Déploie Karakeep Docker, le gestionnaire de bookmarks open source avec tagging IA automatique : guide complet d'installation et de sécurisation.
+Tags: auto-hebergement, automation, sauvegarde, reverse-proxy, intermediaire
+Publié: 2026-10-26T11:02:11+01:00
 
 ## NetworkManager CLI : configurer le réseau comme un pro
 URL: https://brandonvisca.com/networkmanager-cli-configurer-reseau/
