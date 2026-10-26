@@ -129,6 +129,8 @@ Si ton besoin dépasse la simple lecture différée et touche à l'archivage de 
 
 **Les images des articles disparaissent après une mise à jour.** C'est que le volume `images` n'était pas monté correctement dans le compose. Vérifie que le chemin déclaré dans `volumes` existe bien sur l'hôte et appartient à l'utilisateur qui fait tourner Docker, sinon il écrit dans le vide à chaque sauvegarde.
 
+💡 À lire aussi : [Karakeep Docker : bookmarks avec tagging IA auto-hébergé](/karakeep-bookmarks-ia-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Wallabag docker coche toutes les cases qui manquaient à Pocket au moment où le service a fermé : tu possèdes tes données, tu décides de la durée de vie de ton instance, et tu n'as de compte à rendre à personne sur ce que tu lis. L'installation via Docker Compose prend dix minutes, la vraie valeur se construit après, au fil des articles que tu sauvegardes.
