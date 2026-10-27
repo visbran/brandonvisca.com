@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-26
-# Total articles : 230
+# Dernière mise à jour : 2026-10-27
+# Total articles : 231
+
+## Pangolin Docker : VPN + reverse proxy identity-aware
+URL: https://brandonvisca.com/pangolin-vpn-reverse-proxy-homelab/
+Description: Pangolin Docker : déploie un reverse proxy identity-aware qui tunnelise tes services homelab en WireGuard, sans ouvrir un port entrant chez toi.
+Tags: securite, docker, vpn, reverse-proxy, wireguard, intermediaire
+Publié: 2026-10-27T11:01:11+01:00
 
 ## Karakeep Docker : bookmarks avec tagging IA auto-hébergé
 URL: https://brandonvisca.com/karakeep-bookmarks-ia-auto-heberge/
