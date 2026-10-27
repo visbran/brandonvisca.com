@@ -149,6 +149,8 @@ Si ton reverse proxy protège déjà plusieurs services avec des règles commune
 
 **Audit des connexions.** L'interface admin liste chaque authentification, échec compris. Pratique pour repérer une tentative de brute-force avant qu'elle n'aboutisse.
 
+💡 À lire aussi : [Pangolin Docker : VPN + reverse proxy identity-aware](/pangolin-vpn-reverse-proxy-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 Authentik docker demande un peu plus d'efforts qu'Authelia pour démarrer, mais le retour sur investissement arrive vite dès que tu dépasses cinq ou six services self-hébergés. Un seul login, une seule politique de sécurité, une seule porte à auditer.

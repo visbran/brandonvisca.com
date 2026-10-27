@@ -340,6 +340,8 @@ Un VPN zero-trust ce n'est pas juste du chiffrement, c'est une posture. Quelques
 
 💡 À lire aussi : [Gluetun Docker : faire passer tes conteneurs par un VPN](/gluetun-docker-vpn-conteneurs/), dans la même veine que cet article.
 
+💡 À lire aussi : [Pangolin Docker : VPN + reverse proxy identity-aware](/pangolin-vpn-reverse-proxy-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 Firezone apporte à WireGuard ce qui lui manquait pour devenir une solution zero-trust complète : gestion des identités, policies d'accès, split tunneling et un portail web utilisable par des humains normaux. Le tout en open-source et auto-hébergé.
