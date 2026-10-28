@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-27
-# Total articles : 231
+# Dernière mise à jour : 2026-10-28
+# Total articles : 232
+
+## Wallos Docker : tracker d'abonnements auto-hébergé
+URL: https://brandonvisca.com/wallos-tracker-abonnements-auto-heberge/
+Description: Guide Wallos Docker complet : déploie ce tracker d'abonnements open-source et auto-hébergé, avec notifications et support multi-devises intégré.
+Tags: docker, auto-hebergement, dashboard, sauvegarde, debutant
+Publié: 2026-10-28T11:01:12+01:00
 
 ## Pangolin Docker : VPN + reverse proxy identity-aware
 URL: https://brandonvisca.com/pangolin-vpn-reverse-proxy-homelab/
