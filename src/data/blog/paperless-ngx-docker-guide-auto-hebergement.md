@@ -277,6 +277,8 @@ Ce n'est pas un outil pour les entreprises de 500 salariés (il existe des solut
 
 Penses-y la prochaine fois que tu ouvriras un tiroir en disant "il est où ce putain de contrat ?". La réponse sera dans Paperless, trouvée en 0,3 seconde.
 
+💡 À lire aussi : [Wallos Docker : tracker d'abonnements auto-hébergé](/wallos-tracker-abonnements-auto-heberge/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Docker pour débutants : les services essentiels à auto-héberger](/docker-debutant-services-auto-heberger/)

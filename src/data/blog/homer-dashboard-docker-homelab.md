@@ -339,6 +339,8 @@ Avant d'exposer quoi que ce soit sur Internet, vérifie ces points :
 
 Homer étant statique, il n'y a pas de surface d'attaque serveur (pas de SQL injection, pas de RCE via un backend). Mais si tu exposes les URLs de tes services, un attaquant saura où taper. Garde tes services internes derrière un VPN quand c'est possible.
 
+💡 À lire aussi : [Wallos Docker : tracker d'abonnements auto-hébergé](/wallos-tracker-abonnements-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Homer Dashboard est probablement le tableau de bord le plus sobre et efficace pour un homelab. Pas de base de données, pas de dependencies lourdes, juste un fichier YAML qui décrit tes services et une page web qui charge en un clin d'oeil.
