@@ -253,6 +253,8 @@ Si tu veux juste une page de liens qui ne bouge jamais, [Homer](/homer-dashboard
 
 💡 À lire aussi : [Dokploy Docker : ton PaaS auto-hébergé (alternative Vercel)](/dokploy-paas-auto-heberge/), dans la même veine que cet article.
 
+💡 À lire aussi : [Pulse Docker : monitoring Proxmox, Docker et Kubernetes avec IA](/pulse-monitoring-proxmox-docker/), dans la même veine que cet article.
+
 ## Conclusion
 
 Glance Docker coche les cases que je cherchais depuis longtemps : léger, rapide, configurable en texte brut, et avec un widget Docker qui me donne enfin une vue d'ensemble sans ouvrir Portainer à chaque fois. Si ton homelab tourne déjà sous Docker Compose, l'installation prend moins de temps que cet article à lire.

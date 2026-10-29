@@ -144,6 +144,8 @@ Si ton homelab tient sur une ou deux machines avec peu de surface d'attaque, com
 
 💡 À lire aussi : [Trivy Docker : scanner de vulnérabilités pour images et conteneurs](/trivy-docker-scanner-vulnerabilites/), dans la même veine que cet article.
 
+💡 À lire aussi : [Pulse Docker : monitoring Proxmox, Docker et Kubernetes avec IA](/pulse-monitoring-proxmox-docker/), dans la même veine que cet article.
+
 ## Conclusion
 
 Wazuh Docker n'est pas le premier outil de sécurité à installer sur un homelab, mais c'est probablement le plus formateur. Une fois que tu vois défiler dans le dashboard les tentatives de brute-force, les changements de fichiers et les CVE de tes propres machines, tu comprends des choses sur ton infra que tu ignorais totalement avant.
