@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-28
-# Total articles : 232
+# Dernière mise à jour : 2026-10-29
+# Total articles : 233
+
+## Pulse Docker : monitoring Proxmox, Docker et Kubernetes avec IA
+URL: https://brandonvisca.com/pulse-monitoring-proxmox-docker/
+Description: Installe Pulse Docker pour monitorer Proxmox, Docker et Kubernetes en temps réel, avec alertes IA Patrol et dashboard unique. Guide complet 2026.
+Tags: securite, docker, monitoring, dashboard, automation, intermediaire
+Publié: 2026-10-29T11:01:11+01:00
 
 ## Wallos Docker : tracker d'abonnements auto-hébergé
 URL: https://brandonvisca.com/wallos-tracker-abonnements-auto-heberge/
