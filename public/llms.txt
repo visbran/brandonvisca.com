@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-29
-# Total articles : 233
+# Dernière mise à jour : 2026-10-30
+# Total articles : 234
+
+## ConvertX Docker : convertisseur de fichiers auto-hébergé (1000+ formats)
+URL: https://brandonvisca.com/convertx-convertisseur-fichiers-auto-heberge/
+Description: ConvertX Docker : convertisseur de fichiers auto-hébergé pour plus de 1000 formats, alternative gratuite et open source à CloudConvert.
+Tags: auto-hebergement, docker, multimedia, reverse-proxy, intermediaire
+Publié: 2026-10-30T11:01:11+01:00
 
 ## Pulse Docker : monitoring Proxmox, Docker et Kubernetes avec IA
 URL: https://brandonvisca.com/pulse-monitoring-proxmox-docker/
