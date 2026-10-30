@@ -247,6 +247,11 @@ export const TAG_META: Record<string, TagMeta> = {
     description:
       "Tous les articles sur Git auto-hébergé : Gitea, Forgejo, CI/CD et forges open source.",
   },
+  "ci-cd": {
+    title: `CI/CD : Guides et tutoriels | ${SITE.title}`,
+    description:
+      "Tous les articles sur la CI/CD auto-hébergée : Gitea Actions, Woodpecker CI et déploiement continu avec Dokploy dans le homelab.",
+  },
   tailscale: {
     title: `Tailscale : Guides et tutoriels | ${SITE.title}`,
     description:
