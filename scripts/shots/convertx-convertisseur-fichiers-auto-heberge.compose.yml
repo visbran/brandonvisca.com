@@ -1,0 +1,11 @@
+services:
+  convertx:
+    container_name: convertx
+    image: ghcr.io/c4illin/convertx:v0.20.0
+    ports: ["8099:3000"]
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - JWT_SECRET=demo-captures-jwt-secret-2026
+    volumes:
+      - ./data:/app/data

@@ -294,6 +294,8 @@ L'interface web de Komga est parfaitement utilisable sur mobile, mais pour une e
 - Restreins les bibliothèques sensibles par utilisateur dans `Administration` → `Users`
 - Si tu cherches à durcir la sécurité de ton serveur, mes commandes de [hardening Linux](/hardening-linux-10-commandes/) restent pertinentes
 
+💡 À lire aussi : [ConvertX Docker : convertisseur de fichiers auto-hébergé (1000+ formats)](/convertx-convertisseur-fichiers-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Komga est le serveur de BD et manga auto-hébergé que la communauté attendait depuis des années. Léger, rapide, conçu par un utilisateur de manga pour des utilisateurs de manga, il gère parfaitement les collections en CBZ/CBR avec une interface moderne et un support OPDS / Kobo Sync que personne d'autre ne propose gratuitement. À côté de ton [Jellyfin pour les films](/jellyfin-docker-alternative-netflix-gratuite/) et de ton [Kavita pour les ebooks](/kavita-docker-lecteur-ebooks/), il complète l'écosystème média de ton homelab sans friction.

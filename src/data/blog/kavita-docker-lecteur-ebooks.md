@@ -269,6 +269,8 @@ docker logs --tail 50 kavita
 
 💡 À lire aussi : [Audiobookshelf Docker : serveur de livres audio et podcasts auto-hébergé](/audiobookshelf-docker-livres-audio-podcasts/), dans la même veine que cet article.
 
+💡 À lire aussi : [ConvertX Docker : convertisseur de fichiers auto-hébergé (1000+ formats)](/convertx-convertisseur-fichiers-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Kavita est l'un de ces outils qui rendent l'auto-hébergement si satisfaisant. En une dizaine de minutes, tu passes d'une collection d'ebooks éparpillée et mal organisée à un serveur de lecture propre, rapide et accessible de partout. L'interface est moderne, la lecture est fluide, et la gestion multi-utilisateurs te permet de partager ta bibliothèque sans compromis.

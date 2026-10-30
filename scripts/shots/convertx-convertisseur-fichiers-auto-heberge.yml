@@ -1,0 +1,42 @@
+# Instance jetable : voir convertx-convertisseur-fichiers-auto-heberge.compose.yml
+- output: convertx-interface.png
+  url: http://localhost:8099/
+  auth: convertx-convertisseur-fichiers-auto-heberge
+  width: 1440
+  height: 900
+  wait: 1500
+  alt: "Interface principale de ConvertX Docker juste après connexion, avec la zone de dépôt de fichiers"
+  after: "ConvertX Docker : installation via Docker Compose"
+
+- output: convertx-formats.png
+  url: http://localhost:8099/
+  auth: convertx-convertisseur-fichiers-auto-heberge
+  width: 1440
+  height: 900
+  wait_for: document.querySelectorAll('.convert_to_popup.flex .convert_to_target').length > 0
+  alt: "Popup de ConvertX Docker listant les formats de sortie disponibles, regroupés par outil de conversion"
+  after: "Les formats supportés : la vraie force de l'outil"
+  javascript: |
+    new Promise((resolve) => {
+      const blob = new Blob([new Uint8Array(245760)], { type: "image/png" });
+      const file = new File([blob], "photo-vacances.png", { type: "image/png" });
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      const input = document.querySelector("input[name='file']");
+      input.files = dt.files;
+      input.dispatchEvent(new Event("change", { bubbles: true }));
+      setTimeout(() => {
+        const search = document.querySelector("input[name='convert_to_search']");
+        search.focus();
+        setTimeout(resolve, 800);
+      }, 1500);
+    })
+
+- output: convertx-historique.png
+  url: http://localhost:8099/history
+  auth: convertx-convertisseur-fichiers-auto-heberge
+  width: 1440
+  height: 900
+  wait_for: document.querySelector('table')?.textContent.includes('completed')
+  alt: "Page d'historique de ConvertX Docker montrant une conversion de fichier terminée avec succès"
+  after: "Cas d'usage concrets pour ton homelab"
