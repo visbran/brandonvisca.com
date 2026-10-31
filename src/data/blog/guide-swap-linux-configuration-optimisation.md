@@ -215,6 +215,8 @@ Le fichier swap se crée et se redimensionne à chaud, sans toucher au partition
 **Comment vérifier que le swap est actif sous Linux ?**  
 Lance `sudo swapon --show` : si la commande retourne une ligne avec ton fichier swap et sa taille, c'est actif. `free -h` affiche aussi l'utilisation en temps réel dans la colonne "Swap".
 
+💡 À lire aussi : [Hyprland configuration : bureau tiling Wayland sous Linux, étape par étape](/hyprland-configuration-tiling-wayland-linux/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Sécuriser son serveur Linux : les bases](https://brandonvisca.com/securite-de-votre-serveur-linux/)

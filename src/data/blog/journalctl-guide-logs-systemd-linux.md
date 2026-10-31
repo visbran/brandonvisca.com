@@ -167,6 +167,8 @@ Si tu préfères une interface web, Cockpit affiche les mêmes données que jour
 
 💡 À lire aussi : [NetworkManager CLI : configurer le réseau comme un pro](/networkmanager-cli-configurer-reseau/), dans la même veine que cet article.
 
+💡 À lire aussi : [Hyprland configuration : bureau tiling Wayland sous Linux, étape par étape](/hyprland-configuration-tiling-wayland-linux/), dans la même veine que cet article.
+
 ## Conclusion
 
 Trois réflexes suffisent pour 90 % des cas avec journalctl Linux. Filtre par unité avec `-u`, par priorité avec `-p` et par heure avec `--since`. Pour le passé, pense aux boots avec `-b -1` et `--list-boots`. Et règle le journal dès le début : dossier `/var/log/journal` pour la persistance, `SystemMaxUse` pour la taille.
