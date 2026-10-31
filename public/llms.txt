@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-30
-# Total articles : 234
+# Dernière mise à jour : 2026-10-31
+# Total articles : 235
+
+## Hyprland configuration : bureau tiling Wayland sous Linux, étape par étape
+URL: https://brandonvisca.com/hyprland-configuration-tiling-wayland-linux/
+Description: Hyprland configuration : installe ce compositeur Wayland tiling, règle gaps, animations, binds et règles de fenêtre, et le vrai statut face à Lua.
+Tags: linux, sysadmin, tiling, terminal, intermediaire
+Publié: 2026-10-31T11:01:11+01:00
 
 ## ConvertX Docker : convertisseur de fichiers auto-hébergé (1000+ formats)
 URL: https://brandonvisca.com/convertx-convertisseur-fichiers-auto-heberge/
