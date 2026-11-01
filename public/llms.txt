@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-10-31
-# Total articles : 235
+# Dernière mise à jour : 2026-11-01
+# Total articles : 236
+
+## Dawarich Docker : remplace Google Timeline auto-hébergé
+URL: https://brandonvisca.com/dawarich-google-timeline-auto-heberge/
+Description: Dawarich Docker : ton alternative auto-hébergée à Google Timeline pour visualiser et importer tout ton historique de localisation.
+Tags: auto-hebergement, base-de-donnees, reverse-proxy, tailscale, intermediaire
+Publié: 2026-11-01T11:02:11+01:00
 
 ## Hyprland configuration : bureau tiling Wayland sous Linux, étape par étape
 URL: https://brandonvisca.com/hyprland-configuration-tiling-wayland-linux/
