@@ -140,6 +140,8 @@ En contrepartie, c'est toi qui maintiens le conteneur à jour, qui surveilles l'
 
 Pour diagnostiquer n'importe lequel de ces cas sur ConvertX Docker, le réflexe le plus rapide reste de regarder les logs du conteneur en direct. Si tu n'as pas encore d'outil pour ça, [Dozzle](/dozzle-docker-visionneuse-logs-web/) te les affiche dans le navigateur sans taper une seule commande `docker logs`.
 
+💡 À lire aussi : [Dawarich Docker : remplace Google Timeline auto-hébergé](/dawarich-google-timeline-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 ConvertX Docker coche les cases qui comptent pour un outil homelab : installation en un fichier, gratuit, open source, et surtout utile tous les jours sans qu'on y pense. Ce n'est pas l'outil le plus spectaculaire de la liste, mais c'est exactement le genre de brique qui t'évite de rouvrir vingt onglets de convertisseurs en ligne douteux dès qu'un format ne correspond pas.

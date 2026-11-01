@@ -131,6 +131,8 @@ Si ton besoin dépasse la simple lecture différée et touche à l'archivage de 
 
 💡 À lire aussi : [Karakeep Docker : bookmarks avec tagging IA auto-hébergé](/karakeep-bookmarks-ia-auto-heberge/), dans la même veine que cet article.
 
+💡 À lire aussi : [Dawarich Docker : remplace Google Timeline auto-hébergé](/dawarich-google-timeline-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion
 
 Wallabag docker coche toutes les cases qui manquaient à Pocket au moment où le service a fermé : tu possèdes tes données, tu décides de la durée de vie de ton instance, et tu n'as de compte à rendre à personne sur ce que tu lis. L'installation via Docker Compose prend dix minutes, la vraie valeur se construit après, au fil des articles que tu sauvegardes.
