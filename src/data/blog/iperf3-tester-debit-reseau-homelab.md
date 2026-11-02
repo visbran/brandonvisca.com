@@ -160,6 +160,8 @@ En UDP, cherche en plus la ligne "Jitter" et le pourcentage de perte : au-delà 
 
 **Le résultat en UDP affiche 0 % de perte mais un débit ridicule.** Le `-b` est probablement réglé trop bas. En UDP, iperf3 n'essaie jamais de dépasser le débit cible que tu lui donnes : relance avec une valeur plus proche du débit réel attendu sur ce lien.
 
+💡 À lire aussi : [OPNsense vs pfSense : quel pare-feu pour ton homelab en 2026](/opnsense-vs-pfsense-pare-feu-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 iperf3 règle en deux commandes une question qui prend souvent des heures à trancher à tâtons : le réseau est-il vraiment le problème. Mode serveur d'un côté, mode client de l'autre, et un chiffre fiable en quelques secondes, sans dépendre d'un service en ligne ni d'un transfert de fichier pollué par le disque.

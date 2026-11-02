@@ -126,6 +126,8 @@ Pour surveiller que ton kill switch tient dans le temps et détecter une coupure
 
 **Tout casse après une mise à jour.** Les conteneurs attachés à gluetun docker ne survivent pas à son redémarrage. Relance-les dans l'ordre : gluetun d'abord, les conteneurs dépendants ensuite, avec un petit délai pour laisser le tunnel se rétablir.
 
+💡 À lire aussi : [OPNsense vs pfSense : quel pare-feu pour ton homelab en 2026](/opnsense-vs-pfsense-pare-feu-homelab/), dans la même veine que cet article.
+
 ## Conclusion
 
 Gluetun docker fait une chose, et il la fait bien : isoler un tunnel VPN dans un conteneur jetable, avec un kill switch qui ne laisse rien fuiter quand ça tombe. T'évites le VPN système qui englobe toute ta machine, tu gardes un découpage net entre ce qui doit sortir masqué et ce qui n'en a pas besoin.
