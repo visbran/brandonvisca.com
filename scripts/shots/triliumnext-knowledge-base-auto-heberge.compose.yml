@@ -1,0 +1,11 @@
+# Instance jetable pour les captures de l'article TriliumNext Docker.
+services:
+  triliumnext:
+    image: triliumnext/trilium:v0.106.1
+    container_name: triliumnext
+    ports:
+      - "8097:8080"
+    volumes:
+      - ./trilium-data:/home/node/trilium-data
+    environment:
+      - TZ=Europe/Paris

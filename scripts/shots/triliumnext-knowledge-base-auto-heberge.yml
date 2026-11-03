@@ -1,0 +1,27 @@
+# Instance jetable : voir triliumnext-knowledge-base-auto-heberge.compose.yml
+- output: trilium-accueil.png
+  url: http://localhost:8097/
+  auth: triliumnext-knowledge-base-auto-heberge
+  width: 1440
+  height: 900
+  wait_for: "[...document.querySelectorAll('*')].some(e => e.children.length === 0 && e.textContent.trim() === 'Homelab')"
+  alt: "Interface principale de TriliumNext avec l'arborescence de notes repliee sur les racines Homelab, Dev, Admin perso et Veille"
+  after: "Ce que fait une instance TriliumNext Docker concrètement"
+
+- output: trilium-note-docker.png
+  url: "http://localhost:8097/#__DOCKER_URL__"
+  auth: triliumnext-knowledge-base-auto-heberge
+  width: 1440
+  height: 900
+  wait: 2000
+  alt: "Note Stack Docker ouverte, avec l'arborescence depliee sous Homelab dans le panneau de gauche"
+  after: "Configuration initiale de TriliumNext Docker : structurer ton arbre de notes"
+
+- output: trilium-runbook.png
+  url: "http://localhost:8097/#__RUNBOOK_URL__"
+  auth: triliumnext-knowledge-base-auto-heberge
+  width: 1440
+  height: 900
+  wait: 2000
+  alt: "Note runbook disque plein avec les sections Symptome, Cause, Solution et Verification"
+  after: "Cas d'usage concrets pour un homelab"

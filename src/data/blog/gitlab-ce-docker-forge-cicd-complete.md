@@ -182,6 +182,8 @@ Si ta machine a moins de 2 Go de RAM disponibles, Gitea reste le choix raisonnab
 
 💡 À lire aussi : [SearXNG Docker : méta-moteur de recherche auto-hébergé et personnalisable](/searxng-docker-meta-moteur-recherche/), dans la même veine que cet article.
 
+💡 À lire aussi : [TriliumNext Docker : knowledge base personnelle auto-hébergée](/triliumnext-knowledge-base-auto-heberge/), dans la même veine que cet article.
+
 ## Sauvegardes, mises à jour et conclusion
 
 GitLab embarque son propre outil de sauvegarde, à lancer directement dans le conteneur :

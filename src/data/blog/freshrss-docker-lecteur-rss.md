@@ -213,6 +213,8 @@ Pour restaurer, inverse simplement ces opérations. Tu peux aussi configurer un 
 
 💡 À lire aussi : [SearXNG Docker : méta-moteur de recherche auto-hébergé et personnalisable](/searxng-docker-meta-moteur-recherche/), dans la même veine que cet article.
 
+💡 À lire aussi : [TriliumNext Docker : knowledge base personnelle auto-hébergée](/triliumnext-knowledge-base-auto-heberge/), dans la même veine que cet article.
+
 ## Conclusion : FreshRSS, l'agrégateur RSS qui a tout bon
 
 FreshRSS est sans doute le meilleur compromis entre légèreté, richesse fonctionnelle et facilité de déploiement dans le monde des lecteurs RSS auto-hébergés. Son interface familière rappelle les meilleures heures de Google Reader, tandis que son support Docker et son API mobile en font une solution moderne et pratique au quotidien.
