@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-02
-# Total articles : 237
+# Dernière mise à jour : 2026-11-03
+# Total articles : 238
+
+## TriliumNext Docker : knowledge base personnelle auto-hébergée
+URL: https://brandonvisca.com/triliumnext-knowledge-base-auto-heberge/
+Description: Guide triliumnext docker complet : déploie ta base de connaissances perso en Compose, chiffrement par note et synchronisation multi-appareils.
+Tags: auto-hebergement, docker, wiki, guide, intermediaire
+Publié: 2026-11-03T11:01:35+01:00
 
 ## OPNsense vs pfSense : quel pare-feu pour ton homelab en 2026
 URL: https://brandonvisca.com/opnsense-vs-pfsense-pare-feu-homelab/
