@@ -129,6 +129,8 @@ Parfois l'app tourne mais le lissage ne se voit pas. Trois causes fréquentes, d
 
 Si rien de tout ça ne marche, quitte complètement Mos (pas juste fermer la fenêtre, quitter depuis la barre de menus), puis relance-le. Ça suffit dans l'immense majorité des cas que j'ai croisés.
 
+💡 À lire aussi : [Ghostty macOS : le terminal GPU qui fait de l'ombre à iTerm2](/ghostty-terminal-macos-configuration/), dans la même veine que cet article.
+
 ## Conclusion
 
 Mos résout un problème précis et irritant : le défilement saccadé d'une souris classique sur macOS. Installation en une commande, configuration fine par axe et par app, remapping de boutons en bonus, le tout en open source et sans service en arrière-plan intrusif.

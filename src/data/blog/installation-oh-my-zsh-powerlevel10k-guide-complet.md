@@ -533,6 +533,8 @@ Oh My Zsh + Powerlevel10k, c'est le combo que tu installes une fois et que tu ga
 
 Si tu pars de zéro sur macOS, enchaîne avec iTerm2 : j'ai tout détaillé dans le [guide iTerm2 macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/), configuration Hotkey Window, profils SSH et thèmes inclus.
 
+💡 À lire aussi : [Ghostty macOS : le terminal GPU qui fait de l'ombre à iTerm2](/ghostty-terminal-macos-configuration/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Guide iTerm2 macOS complet](https://brandonvisca.com/iterm2-guide-configuration-macos-2025/) : le terminal qui sublimera ce setup
