@@ -227,6 +227,8 @@ Le plus souvent, c'est un problème de permissions sur `/config` qui empêche l'
 
 💡 À lire aussi : [Audiobookshelf Docker : serveur de livres audio et podcasts auto-hébergé](/audiobookshelf-docker-livres-audio-podcasts/), dans la même veine que cet article.
 
+💡 À lire aussi : [Immich-go : migrer Google Photos vers Immich sans rien perdre](/immich-go-migrer-google-photos/), dans la même veine que cet article.
+
 ## Conclusion
 
 Calibre web docker fait une chose, et la fait bien : transformer une bibliothèque Calibre statique en service accessible depuis n'importe quel appareil de la maison, sans dépendre d'un cloud tiers ni d'un format propriétaire. Une image Docker, deux volumes, et ta collection d'ebooks devient consultable depuis ta liseuse, ta tablette ou le navigateur de ton salon.

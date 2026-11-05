@@ -131,6 +131,8 @@ Plex est pensé autour de la vidéo et de la musique. Tu peux détourner une bib
 
 Si tu as déjà Plex pour tes films, garde-le et installe Audiobookshelf à côté. Les deux serveurs n'ont aucune raison de se marcher dessus, et chacun fait ce pour quoi il a été conçu.
 
+💡 À lire aussi : [Immich-go : migrer Google Photos vers Immich sans rien perdre](/immich-go-migrer-google-photos/), dans la même veine que cet article.
+
 ## Conclusion
 
 Un audiobookshelf docker piloté par un fichier Compose, quatre dossiers bien séparés et une mise à jour en trois commandes suffisent pour avoir ta bibliothèque audio chez toi. Le reste, c'est de l'organisation : une arborescence propre, un fuseau horaire correct et une copie de `/config` de temps en temps.
