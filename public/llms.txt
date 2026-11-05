@@ -1,7 +1,19 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-03
-# Total articles : 238
+# Dernière mise à jour : 2026-11-05
+# Total articles : 240
+
+## Immich-go : migrer Google Photos vers Immich sans rien perdre
+URL: https://brandonvisca.com/immich-go-migrer-google-photos/
+Description: Migre tes photos Google Photos vers Immich avec immich-go, l'outil en ligne de commande qui garde albums et métadonnées intacts.
+Tags: auto-hebergement, multimedia, stockage, sauvegarde, intermediaire
+Publié: 2026-11-05T11:01:44+01:00
+
+## Ghostty macOS : le terminal GPU qui fait de l'ombre à iTerm2
+URL: https://brandonvisca.com/ghostty-terminal-macos-configuration/
+Description: Ghostty macOS : terminal GPU gratuit et open source. Installation Homebrew, configuration complète et comparatif face à iTerm2 et Warp.
+Tags: macos, terminal, homebrew, zsh, intermediaire
+Publié: 2026-11-04T11:03:02+01:00
 
 ## TriliumNext Docker : knowledge base personnelle auto-hébergée
 URL: https://brandonvisca.com/triliumnext-knowledge-base-auto-heberge/
