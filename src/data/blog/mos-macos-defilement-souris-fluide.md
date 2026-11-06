@@ -131,6 +131,8 @@ Si rien de tout ça ne marche, quitte complètement Mos (pas juste fermer la fen
 
 💡 À lire aussi : [Ghostty macOS : le terminal GPU qui fait de l'ombre à iTerm2](/ghostty-terminal-macos-configuration/), dans la même veine que cet article.
 
+💡 À lire aussi : [TwinDesk : un clavier et une souris pour ton Mac, ton PC et ton Android](/twindesk-clavier-souris-partages-multi-plateformes/), dans la même veine que cet article.
+
 ## Conclusion
 
 Mos résout un problème précis et irritant : le défilement saccadé d'une souris classique sur macOS. Installation en une commande, configuration fine par axe et par app, remapping de boutons en bonus, le tout en open source et sans service en arrière-plan intrusif.

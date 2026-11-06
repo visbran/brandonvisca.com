@@ -107,6 +107,8 @@ Rien de rédhibitoire, mais autant le savoir avant de sortir la carte bleue plut
 
 💡 À lire aussi : [Mos macOS defilement souris fluide : lissage et inversion scroll](/mos-macos-defilement-souris-fluide/), dans la même veine que cet article.
 
+💡 À lire aussi : [TwinDesk : un clavier et une souris pour ton Mac, ton PC et ton Android](/twindesk-clavier-souris-partages-multi-plateformes/), dans la même veine que cet article.
+
 ## Conclusion
 
 SideNotes macOS n'invente rien de révolutionnaire, il exécute une idée simple avec un soin réel : des notes toujours à portée de main, jamais dans tes pattes. Si tu captures des idées en continu pendant que tu bosses et que basculer entre fenêtres te sort du rythme, les 19,99 dollars se rentabilisent vite.
