@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-05
-# Total articles : 240
+# Dernière mise à jour : 2026-11-06
+# Total articles : 241
+
+## TwinDesk : un clavier et une souris pour ton Mac, ton PC et ton Android
+URL: https://brandonvisca.com/twindesk-clavier-souris-partages-multi-plateformes/
+Description: TwinDesk partage clavier, souris, presse-papiers et fichiers entre Mac, Windows, Linux et Android, sans câble ni compte cloud à créer.
+Tags: macos, productivite, homebrew, intermediaire
+Publié: 2026-11-06T11:00:40+01:00
 
 ## Immich-go : migrer Google Photos vers Immich sans rien perdre
 URL: https://brandonvisca.com/immich-go-migrer-google-photos/
