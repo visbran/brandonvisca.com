@@ -282,6 +282,8 @@ Cette commande affiche la taille "originale" (données brutes), la taille "compr
 
 💡 À lire aussi : [Wallabag Docker : lecture différée auto-hébergée (alternative Pocket)](/wallabag-docker-lecture-differee/), dans la même veine que cet article.
 
+💡 À lire aussi : [Proxmox Backup Server : sauvegardes dédupliquées de tes VM et LXC](/proxmox-backup-server-sauvegarde-vm-lxc/), dans la même veine que cet article.
+
 ## Conclusion
 
 BorgBackup est un outil de sauvegarde qui ne fait pas de cadeaux : pas d'interface web, pas de notifications push, pas de boutons glossy. Mais ce qu'il fait, il le fait mieux que quasiment tout le marché. La déduplication bloc à bloc, le chiffrement AES-256-CTR et la compression Zstandard en font le compagnon idéal d'un homelab Dockerisé sérieux.
