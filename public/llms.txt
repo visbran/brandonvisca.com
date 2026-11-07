@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-06
-# Total articles : 241
+# Dernière mise à jour : 2026-11-07
+# Total articles : 242
+
+## Proxmox Backup Server : sauvegardes dédupliquées de tes VM et LXC
+URL: https://brandonvisca.com/proxmox-backup-server-sauvegarde-vm-lxc/
+Description: Proxmox Backup Server déduplique et chiffre tes sauvegardes de VM et LXC. Installation, datastore, planification et restauration, guide complet.
+Tags: homelab, sauvegarde, stockage, intermediaire
+Publié: 2026-11-07T11:01:44+01:00
 
 ## TwinDesk : un clavier et une souris pour ton Mac, ton PC et ton Android
 URL: https://brandonvisca.com/twindesk-clavier-souris-partages-multi-plateformes/
