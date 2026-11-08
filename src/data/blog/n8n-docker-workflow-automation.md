@@ -276,6 +276,8 @@ Tu as maintenant un n8n fonctionnel, sécurisé, et trois workflows pour automat
 
 Si tu veux aller plus loin, [Watchtower](/watchtower-mise-a-jour-docker-auto/) maintient n8n à jour automatiquement sans intervention manuelle.
 
+💡 À lire aussi : [Paperless-AI : classement automatique de tes documents par IA](/paperless-ai-classement-documents-ia/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Traefik avec Docker : reverse proxy HTTPS auto](/traefik-reverse-proxy-docker/)

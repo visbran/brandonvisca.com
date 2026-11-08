@@ -125,6 +125,8 @@ Enfin, l'app mobile facilite la saisie en magasin mais elle n'est pas aussi poli
 
 💡 À lire aussi : [Calibre Web Docker : bibliothèque ebooks auto-hébergée](/calibre-web-docker-bibliotheque-ebooks/), dans la même veine que cet article.
 
+💡 À lire aussi : [Paperless-AI : classement automatique de tes documents par IA](/paperless-ai-classement-documents-ia/), dans la même veine que cet article.
+
 ## Conclusion
 
 Grocy Docker te donne un vrai ERP domestique, sans les efforts habituels de déploiement d'un ERP d'entreprise. Un fichier compose, un port, un volume à sauvegarder, et tu passes du frigo mystère à un stock que tu maîtrises vraiment.
