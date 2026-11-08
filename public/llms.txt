@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-07
-# Total articles : 242
+# Dernière mise à jour : 2026-11-08
+# Total articles : 243
+
+## Paperless-AI : classement automatique de tes documents par IA
+URL: https://brandonvisca.com/paperless-ai-classement-documents-ia/
+Description: Paperless-AI classe automatiquement tes documents Paperless-ngx via Ollama ou OpenAI, mais le projet tourne en maintenance minimale en 2026.
+Tags: auto-hebergement, docker, automation, intermediaire
+Publié: 2026-11-08T11:01:03+01:00
 
 ## Proxmox Backup Server : sauvegardes dédupliquées de tes VM et LXC
 URL: https://brandonvisca.com/proxmox-backup-server-sauvegarde-vm-lxc/
