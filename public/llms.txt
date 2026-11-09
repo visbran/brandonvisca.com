@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-08
-# Total articles : 243
+# Dernière mise à jour : 2026-11-09
+# Total articles : 244
+
+## Ollama + Open WebUI Docker : ton ChatGPT 100 % local
+URL: https://brandonvisca.com/ollama-open-webui-docker-ia-locale/
+Description: Ollama et Open WebUI Docker : installe ton ChatGPT privé en local, configure le GPU, sécurise l'accès et choisis tes modèles sans dépendre du cloud.
+Tags: docker, intermediaire
+Publié: 2026-11-09T11:00:35+01:00
 
 ## Paperless-AI : classement automatique de tes documents par IA
 URL: https://brandonvisca.com/paperless-ai-classement-documents-ia/
