@@ -276,6 +276,8 @@ Dans ma stack d'auto-hébergement, Listmonk s'accompagne d'outils comme [Actual 
 
 💡 À lire aussi : [Vikunja Docker : gestionnaire de tâches auto-hébergé (alternative Todoist)](/vikunja-docker-gestionnaire-taches/), dans la même veine que cet article.
 
+💡 À lire aussi : [Ollama + Open WebUI Docker : ton ChatGPT 100 % local](/ollama-open-webui-docker-ia-locale/), dans la même veine que cet article.
+
 ## Conclusion
 
 Envoyer des newsletters ne devrait pas coûter une fortune ni exiger de confier tes contacts à un tiers américain. Listmonk prouve qu'un outil open-source, léger et bien conçu peut remplacer Mailchimp pour la majorité des usages.

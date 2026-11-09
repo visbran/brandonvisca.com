@@ -155,6 +155,8 @@ Le stockage en mémoire a un coût, ta base de données ne peut pas dépasser la
 
 Enfin, sans persistance activée, un crash ou une mise à jour d'image te fait perdre le contenu en mémoire. Ce n'est pas un défaut, c'est un choix de conception assumé par Redis, mais il faut le connaître avant de s'en servir pour autre chose que du cache jetable.
 
+💡 À lire aussi : [Ollama + Open WebUI Docker : ton ChatGPT 100 % local](/ollama-open-webui-docker-ia-locale/), dans la même veine que cet article.
+
 ## Conclusion
 
 Redis Docker coche toutes les cases pour qui veut une base clé-valeur rapide sans usine à gaz : une image officielle bien maintenue, une config qui tient en un fichier compose, et des cas d'usage concrets dès le premier déploiement. Mot de passe, volume persistant, réseau interne, ces trois réflexes suffisent à passer d'un test jetable à un service fiable dans ta stack.
