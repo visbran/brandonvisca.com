@@ -222,6 +222,8 @@ Dans mon workflow, j'applique ce script sur toutes les captures d'écran avant d
 
 ---
 
+💡 À lire aussi : [Pearcleaner macOS : le désinstalleur open source qui chasse les fichiers orphelins](/pearcleaner-macos-desinstalleur-open-source/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Installer Homebrew sur macOS](https://brandonvisca.com/installation-homebrew-macos/), prérequis de ce tuto
