@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-09
-# Total articles : 244
+# Dernière mise à jour : 2026-11-10
+# Total articles : 245
+
+## Pearcleaner macOS : le désinstalleur open source qui chasse les fichiers orphelins
+URL: https://brandonvisca.com/pearcleaner-macos-desinstalleur-open-source/
+Description: Pearcleaner macOS : désinstalleur gratuit et open source qui traque les fichiers orphelins après suppression d'une app, alternative à CleanMyMac.
+Tags: macos, homebrew, stockage, debutant
+Publié: 2026-11-10T11:01:44+01:00
 
 ## Ollama + Open WebUI Docker : ton ChatGPT 100 % local
 URL: https://brandonvisca.com/ollama-open-webui-docker-ia-locale/
