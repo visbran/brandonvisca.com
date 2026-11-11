@@ -443,6 +443,8 @@ Et si tu parts de zéro ou envisages une migration, [Technitium DNS Server](/tec
 
 💡 À lire aussi : [Netplan Linux : configurer le réseau en YAML simplement](/netplan-linux-configurer-reseau-yaml/), dans la même veine que cet article.
 
+💡 À lire aussi : [Pi-hole v6 Docker : bloqueur de pubs pour tout ton réseau](/pihole-v6-docker-bloqueur-pubs-reseau/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Docker pour débutants : les services à auto-héberger absolument](/docker-debutant-services-auto-heberger/)

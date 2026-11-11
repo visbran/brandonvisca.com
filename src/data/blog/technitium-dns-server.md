@@ -232,6 +232,8 @@ Et si tu veux synchroniser tes blocages DNS sur plusieurs instances (un DNS par 
 
 💡 À lire aussi : [Gluetun Docker : faire passer tes conteneurs par un VPN](/gluetun-docker-vpn-conteneurs/), dans la même veine que cet article.
 
+💡 À lire aussi : [Pi-hole v6 Docker : bloqueur de pubs pour tout ton réseau](/pihole-v6-docker-bloqueur-pubs-reseau/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Nebula-Sync : synchronise tes Pi-hole v6 automatiquement](/nebula-sync-pihole-v6-installation-docker-guide/) : le même principe de synchronisation, côté Pi-hole
