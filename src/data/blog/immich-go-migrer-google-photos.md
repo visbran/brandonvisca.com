@@ -109,6 +109,8 @@ La détection de doublons repose sur une somme de contrôle calculée sur chaque
 
 💡 À lire aussi : [Proxmox Backup Server : sauvegardes dédupliquées de tes VM et LXC](/proxmox-backup-server-sauvegarde-vm-lxc/), dans la même veine que cet article.
 
+💡 À lire aussi : [Kopia Docker : sauvegardes chiffrées et dédupliquées avec interface web](/kopia-docker-sauvegarde-chiffree/), dans la même veine que cet article.
+
 ## Conclusion
 
 Immich-go ne fait qu'une chose, mais il la fait bien : transformer un export Takeout illisible en une bibliothèque Immich propre, albums et métadonnées intacts. Pas de tri manuel, pas de perte de qualité, pas de dépendance à un service cloud intermédiaire. Juste un binaire, une clé API, et de la patience pendant que tout remonte.

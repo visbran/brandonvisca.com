@@ -168,6 +168,8 @@ PBS n'est pas magique sur tous les plans :
 - **Dépendant du guest agent pour le mode snapshot propre** : sans QEMU guest agent installé dans la VM, le snapshot à chaud peut geler brièvement les IO, ce qui reste généralement sans conséquence mais vaut d'être su.
 - **Un seul serveur = un seul point de défaillance** : déjà évoqué plus haut, mais ça vaut la répétition. Prévois une réplication dès le départ, pas après l'incident.
 
+💡 À lire aussi : [Kopia Docker : sauvegardes chiffrées et dédupliquées avec interface web](/kopia-docker-sauvegarde-chiffree/), dans la même veine que cet article.
+
 ## Conclusion
 
 Proxmox Backup Server transforme la sauvegarde de ton cluster d'une tâche redoutée en une routine presque invisible. La déduplication fait fondre l'espace disque utilisé, le chiffrement client-side rassure même sur une cible distante, et le File Restore évite de restaurer une VM complète pour un fichier oublié. Si ton homelab Proxmox VE tourne encore avec des dumps bruts sur un NFS, c'est probablement le prochain morceau d'infra à migrer. L'installation prend moins de temps que la lecture de cet article, et la tranquillité d'esprit qui suit vaut largement l'effort.
