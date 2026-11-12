@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-11
-# Total articles : 246
+# Dernière mise à jour : 2026-11-12
+# Total articles : 247
+
+## Kopia Docker : sauvegardes chiffrées et dédupliquées avec interface web
+URL: https://brandonvisca.com/kopia-docker-sauvegarde-chiffree/
+Description: Déploie Kopia Docker pour des sauvegardes chiffrées et dédupliquées, avec interface web KopiaUI, politiques de rétention automatiques.
+Tags: securite, sauvegarde, stockage, intermediaire
+Publié: 2026-11-12T11:00:44+01:00
 
 ## Pi-hole v6 Docker : bloqueur de pubs pour tout ton réseau
 URL: https://brandonvisca.com/pihole-v6-docker-bloqueur-pubs-reseau/
