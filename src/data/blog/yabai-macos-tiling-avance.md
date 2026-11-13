@@ -428,6 +428,8 @@ Je vais pas te mentir : désactiver SIP et laisser un daemon C tourner en arriè
 
 Mon conseil : teste Yabai sur un Mac secondaire d'abord, ou sur une partition dédiée. Quand tu es convaincu (et tu le seras), bascule sur ta machine principale. Garde toujours un backup de ta config (`~/.config/yabai/yabairc` + `~/.config/skhd/skhdrc`) sur GitHub ou dans un repo privé.
 
+💡 À lire aussi : [AeroSpace macOS : le tiling façon i3 sans désactiver SIP](/aerospace-macos-tiling-sans-sip/), dans la même veine que cet article.
+
 ## Conclusion
 
 Yabai n'est pas pour tout le monde. Si tu cherches juste à organiser deux-trois fenêtres sans prise de tête, [Amethyst](/amethyst-macos-tiling-window-manager/) reste le choix malin. Mais si tu passes ta journée entre un terminal, un IDE, un navigateur, Slack et un serveur local, et que tu en as marre de jouer à Tetris avec ta souris, Yabai est une révélation.
