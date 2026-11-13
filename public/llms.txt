@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-12
-# Total articles : 247
+# Dernière mise à jour : 2026-11-13
+# Total articles : 248
+
+## AeroSpace macOS : le tiling façon i3 sans désactiver SIP
+URL: https://brandonvisca.com/aerospace-macos-tiling-sans-sip/
+Description: AeroSpace macOS : installe ce tiling window manager type i3, gratuit et open-source, sans toucher à SIP. Config aerospace.toml et raccourcis inclus.
+Tags: macos, tiling, intermediaire
+Publié: 2026-11-13T11:01:50+01:00
 
 ## Kopia Docker : sauvegardes chiffrées et dédupliquées avec interface web
 URL: https://brandonvisca.com/kopia-docker-sauvegarde-chiffree/
