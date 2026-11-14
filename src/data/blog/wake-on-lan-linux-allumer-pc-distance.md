@@ -157,6 +157,8 @@ Dans l'ordre, les causes les plus fréquentes de panne du Wake-on-LAN Linux :
 
 Si rien de tout ça ne débloque la situation et que la machine héberge un volume RAID critique, pense à avoir sous la main de quoi [dépanner un montage RAID en mode secours](/depannage-montage-partition-raid-linux-mode-secours/) le jour où elle refuse carrément de démarrer, WoL ou pas.
 
+💡 À lire aussi : [Tmux : le multiplexeur de terminal qui survit à tes déconnexions SSH](/tmux-guide-multiplexeur-terminal/), dans la même veine que cet article.
+
 ## Conclusion
 
 Le Wake-on-LAN Linux n'a rien de magique une fois qu'on a compris les trois étages : le BIOS qui doit laisser passer l'alimentation, `ethtool` qui active le mode `g` sur la carte, et un outil comme `wakeonlan` ou `etherwake` qui envoie le paquet au bon moment. Le vrai piège, c'est l'oubli du reboot : sans service systemd ou réglage NetworkManager permanent, le réglage saute et tu te retrouves à tout réexpliquer à ta carte réseau depuis le début.

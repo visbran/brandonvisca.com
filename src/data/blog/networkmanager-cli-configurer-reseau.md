@@ -164,6 +164,8 @@ Autre cas fréquent : une VM avec deux interfaces, une pour le trafic normal et 
 
 Dernier conseil pratique : documente tes profils `nmcli` quelque part en dehors de la machine. `nmcli connection show` te dira ce qui existe, mais pas pourquoi tu l'as configuré ainsi. Un simple fichier texte avec la commande exacte utilisée pour chaque serveur t'évite de redevenir archéologue le jour où tu dois reconstruire une VM à l'identique.
 
+💡 À lire aussi : [Tmux : le multiplexeur de terminal qui survit à tes déconnexions SSH](/tmux-guide-multiplexeur-terminal/), dans la même veine que cet article.
+
 ## Conclusion
 
 NetworkManager CLI n'est pas plus compliqué que l'interface graphique, juste plus direct. Une fois que tu as intégré la logique objet-puis-action (`device`, `connection`, `general`), la plupart des tâches réseau se résument à deux ou trois commandes copiables d'un serveur à l'autre. Teste les commandes de ce guide sur une VM avant de les rejouer en prod, garde toujours un accès console de secours quand tu touches une interface à distance, et vérifie qui gère réellement l'interface avant de la modifier si Netplan est dans la boucle. Le reste, c'est de la pratique.
