@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-13
-# Total articles : 248
+# Dernière mise à jour : 2026-11-14
+# Total articles : 249
+
+## Tmux : le multiplexeur de terminal qui survit à tes déconnexions SSH
+URL: https://brandonvisca.com/tmux-guide-multiplexeur-terminal/
+Description: Tmux expliqué simplement : installation, raccourcis essentiels et fichier .tmux.conf pour garder tes sessions SSH actives après une coupure réseau.
+Tags: linux, terminal, ssh, intermediaire
+Publié: 2026-11-14T11:00:45+01:00
 
 ## AeroSpace macOS : le tiling façon i3 sans désactiver SIP
 URL: https://brandonvisca.com/aerospace-macos-tiling-sans-sip/
