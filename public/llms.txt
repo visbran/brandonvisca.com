@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-14
-# Total articles : 249
+# Dernière mise à jour : 2026-11-15
+# Total articles : 250
+
+## Komodo Docker : piloter tes conteneurs sur plusieurs serveurs depuis une seule interface
+URL: https://brandonvisca.com/komodo-docker-gestion-multi-serveurs/
+Description: Komodo Docker : une alternative open source à Portainer pour piloter conteneurs et stacks sur plusieurs serveurs depuis un seul tableau de bord.
+Tags: docker, monitoring, automation, dashboard, intermediaire
+Publié: 2026-11-15T11:01:44+01:00
 
 ## Tmux : le multiplexeur de terminal qui survit à tes déconnexions SSH
 URL: https://brandonvisca.com/tmux-guide-multiplexeur-terminal/
