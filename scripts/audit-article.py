@@ -505,8 +505,9 @@ def audit_links(body: str, issues: list, all_slugs: set | None = None):
     if all_slugs is None:
         all_slugs = get_all_slugs()
 
-    # Obsidian wiki-links
-    wiki = re.findall(r"\[\[[^\]]+\]\]", body)
+    # Obsidian wiki-links, hors code : `[[rules.allowlists]]` est une table TOML
+    body_no_code = re.sub(r"```[\s\S]*?```|`[^`\n]*`", "", body)
+    wiki = re.findall(r"\[\[[^\]]+\]\]", body_no_code)
     if wiki:
         issues.append({
             "type": "error", "cat": "links",

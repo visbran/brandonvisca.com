@@ -275,7 +275,8 @@ def validate(fm: dict, slug: str, body: str = "") -> list[dict]:
             issues.append({"type": "error",
                            "msg": "Section éditoriale détectée (Rank Math / Maillage interne) — supprimer avant publication"})
 
-        wiki_links = WIKI_LINK_RE.findall(body)
+        # Hors code : `[[rules.allowlists]]` est une table TOML, pas un wiki-link
+        wiki_links = WIKI_LINK_RE.findall(re.sub(r"```[\s\S]*?```|`[^`\n]*`", "", body))
         if wiki_links:
             issues.append({"type": "error",
                            "msg": f"{len(wiki_links)} wiki-link(s) [[...]] non convertis — liens cassés en production"})
