@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-15
-# Total articles : 250
+# Dernière mise à jour : 2026-11-17
+# Total articles : 251
+
+## Gitleaks : scanner les secrets oubliés dans tes dépôts Git
+URL: https://brandonvisca.com/gitleaks-scanner-secrets-git/
+Description: Gitleaks scanne l'historique de tes dépôts Git pour détecter les secrets oubliés : clés API, tokens et mots de passe, avant qu'une fuite n'arrive.
+Tags: securite, git, ci-cd, intermediaire
+Publié: 2026-11-17T11:01:54+01:00
 
 ## Komodo Docker : piloter tes conteneurs sur plusieurs serveurs depuis une seule interface
 URL: https://brandonvisca.com/komodo-docker-gestion-multi-serveurs/
