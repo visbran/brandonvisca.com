@@ -379,6 +379,8 @@ Lancer du code arbitraire dans un runner Docker, c'est pratique mais dangereux. 
 
 Pour un homelab ou une petite équipe qui veut rester maître de sa chaîne de déploiement, Gitea Actions Docker est le meilleur compromis. Pas aussi riche que GitHub Actions, mais totalement suffisant pour builder, tester et déployer sans dépendre d'un tiers.
 
+💡 À lire aussi : [Gitleaks : scanner les secrets oubliés dans tes dépôts Git](/gitleaks-scanner-secrets-git/), dans la même veine que cet article.
+
 ## Conclusion
 
 Gitea Actions transforme ton serveur Git en plateforme CI/CD complète sans ajouter de complexité inutile. Avec un runner Docker et quelques fichiers YAML, tu automatises tes builds, tes tests et tes déploiements sans jamais sortir de ton infrastructure.

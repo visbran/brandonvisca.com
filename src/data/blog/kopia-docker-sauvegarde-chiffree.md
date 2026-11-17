@@ -186,6 +186,8 @@ Mon avis après avoir fait tourner les quatre en parallèle un moment : si tu ve
 
 La vraie question c'est : tu veux scripter en cron sans jamais ouvrir de navigateur, ou tu veux pouvoir vérifier l'état de tes backups d'un coup d'œil sans taper une seule commande. Kopia est le seul des quatre qui ne t'oblige pas à trancher.
 
+💡 À lire aussi : [Gitleaks : scanner les secrets oubliés dans tes dépôts Git](/gitleaks-scanner-secrets-git/), dans la même veine que cet article.
+
 ## Conclusion
 
 Kopia docker coche les cases qui comptent pour un homelab sérieux : chiffrement côté client sans option à activer séparément, déduplication qui tient réellement tes volumes de stockage à distance raisonnable, et une interface web qu'on n'a pas besoin de bricoler soi-même. Le fait qu'il reste piloté par des policies déclaratives plutôt que des scripts maison en fait aussi un outil qui vieillit bien quand tu ajoutes des machines à sauvegarder.
