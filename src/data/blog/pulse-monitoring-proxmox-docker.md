@@ -129,6 +129,8 @@ Pulse Docker te dit si un service est en panne ou si un disque déborde. Il ne r
 
 💡 À lire aussi : [Komodo Docker : piloter tes conteneurs sur plusieurs serveurs depuis une seule interface](/komodo-docker-gestion-multi-serveurs/), dans la même veine que cet article.
 
+💡 À lire aussi : [DIUN Docker : être alerté quand une image change sur le registre](/diun-docker-notification-image-registry/), dans la même veine que cet article.
+
 ## Conclusion
 
 Pulse Docker ne cherche pas à remplacer une stack d'observabilité d'entreprise, et c'est précisément pour ça qu'il marche dans un homelab : zéro agent pour Proxmox, un seul agent léger pour Docker et Kubernetes, un dashboard unique sur le port 7655, et une couche d'alertes qui va jusqu'à l'analyse IA si tu le souhaites. L'édition Community reste gratuite et open source, largement suffisante pour surveiller un ou deux hôtes. La bascule vers Pro ne vaut le coup que si tu veux vraiment que Patrol enquête et propose des correctifs à ta place.

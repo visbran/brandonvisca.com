@@ -168,6 +168,8 @@ sudo systemctl status periphery
 
 Sauvegarde le volume `mongo-data` avec la même rigueur que n'importe quelle base critique : toute la configuration de tes serveurs, stacks et utilisateurs y vit. Une stack [Listmonk Docker : newsletters auto-hébergées (alternative Mailchimp)](/listmonk-docker-newsletter-auto-hebergee/) perdue se recrée en dix minutes, un Komodo Core perdu sans sauvegarde te fait retaper la configuration de chaque serveur à la main.
 
+💡 À lire aussi : [DIUN Docker : être alerté quand une image change sur le registre](/diun-docker-notification-image-registry/), dans la même veine que cet article.
+
 ## Conclusion
 
 Komodo Docker ne réinvente pas la gestion de conteneurs, il répare le vrai problème : celui d'avoir trois, quatre, dix serveurs Docker et aucune vue d'ensemble cohérente. L'architecture Core/Periphery est simple à comprendre, l'installation tient en deux commandes par serveur, et le fait que tout soit gratuit et open source sous GPL-3.0 enlève une friction que Portainer impose dès que tu veux du contrôle d'accès avancé.
