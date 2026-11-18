@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-17
-# Total articles : 251
+# Dernière mise à jour : 2026-11-18
+# Total articles : 252
+
+## DIUN Docker : être alerté quand une image change sur le registre
+URL: https://brandonvisca.com/diun-docker-notification-image-registry/
+Description: DIUN Docker surveille tes images et alerte dès qu'une nouvelle version sort sur le registre, sans mise à jour auto. L'alternative à Watchtower, archivé.
+Tags: docker, monitoring, automation, intermediaire
+Publié: 2026-11-18T11:01:54+01:00
 
 ## Gitleaks : scanner les secrets oubliés dans tes dépôts Git
 URL: https://brandonvisca.com/gitleaks-scanner-secrets-git/
