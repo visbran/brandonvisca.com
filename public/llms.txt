@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-18
-# Total articles : 252
+# Dernière mise à jour : 2026-11-19
+# Total articles : 253
+
+## Zammad Docker : helpdesk multi-canal auto-hébergé
+URL: https://brandonvisca.com/zammad-docker-helpdesk-multicanal/
+Description: Déploie Zammad Docker : helpdesk open source multicanal auto-hébergé avec email, chat et réseaux sociaux. Guide Compose complet et comparatif GLPI.
+Tags: sysadmin, auto-hebergement, glpi, intermediaire
+Publié: 2026-11-19T11:00:54+01:00
 
 ## DIUN Docker : être alerté quand une image change sur le registre
 URL: https://brandonvisca.com/diun-docker-notification-image-registry/
