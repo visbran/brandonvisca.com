@@ -273,6 +273,8 @@ Si tu gères plusieurs serveurs, la [gestion de sauvegardes multi-plateformes av
 
 S3cmd fait le boulot sans fioriture : upload, sync, backup automatisé, chiffrement. C'est l'outil parfait pour intégrer S3 dans tes scripts cron ou tes pipelines de déploiement. Si tu bosses avec MinIO en self-hosted ou Backblaze B2 pour les coûts, ça marche pareil, change juste l'endpoint dans `~/.s3cfg`. La référence complète des commandes est dans la [documentation officielle S3cmd](https://s3tools.org/usage).
 
+💡 À lire aussi : [Zammad Docker : helpdesk multi-canal auto-hébergé](/zammad-docker-helpdesk-multicanal/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [Sécuriser son serveur Linux](https://brandonvisca.com/securite-de-votre-serveur-linux/)

@@ -198,6 +198,8 @@ Ou utilise la variable `GLPI_HOSTNAME` si l'image la supporte (vérifie la doc d
 
 L'image `glpi/agent:latest` est conçue pour scanner une fois et s'arrêter par defaut si tu la lances sans mode daemon. Assure-toi d'utiliser `GLPI_MODE=server` avec un intervalle défini, ou de lancer le conteneur avec une commande qui boucle. Le docker-compose fourni plus haut est correct pour un fonctionnement continu.
 
+💡 À lire aussi : [Zammad Docker : helpdesk multi-canal auto-hébergé](/zammad-docker-helpdesk-multicanal/), dans la même veine que cet article.
+
 ## Conclusion
 
 GLPI Agent en Docker, c'est la solution la plus propre pour inventorier tes serveurs Linux sans pourrir ton système avec des paquets natifs. Un fichier docker-compose, deux variables d'environnement, et ton parc remonte automatiquement dans GLPI toutes les 24 heures.
