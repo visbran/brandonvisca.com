@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
 # Dernière mise à jour : 2026-11-19
-# Total articles : 253
+# Total articles : 254
+
+## Tiny11 Builder : fabriquer une image Windows 11 allégée depuis un ISO officiel
+URL: https://brandonvisca.com/tiny11-builder-windows-11-slim-image/
+Description: Tiny11 Builder : l'app WinUI qui fabrique une image Windows 11 allégée depuis ton ISO officiel, avec les modes Tiny11, Custom et Core.
+Tags: windows, windows-server, hyper-v, powershell, intermediaire
+Publié: 2026-11-19T16:04:04+01:00
 
 ## Zammad Docker : helpdesk multi-canal auto-hébergé
 URL: https://brandonvisca.com/zammad-docker-helpdesk-multicanal/
