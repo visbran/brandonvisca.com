@@ -219,6 +219,8 @@ Aucune annonce officielle de Microsoft, mais la tendance est clairement vers Gen
 
 ---
 
+💡 À lire aussi : [Tiny11 Builder : fabriquer une image Windows 11 allégée depuis un ISO officiel](/tiny11-builder-windows-11-slim-image/), dans la même veine que cet article.
+
 ## 🎬 Conclusion
 
 **Gen2 est le choix par défaut** pour toute VM tournant sur un OS moderne. Plus rapide au boot, Secure Boot intégré, disques SCSI plus performants et support du vTPM : il n'y a aucune raison de rester sur Gen1 si ton OS le supporte.

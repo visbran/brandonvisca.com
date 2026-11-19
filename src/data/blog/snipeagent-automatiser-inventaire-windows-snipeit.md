@@ -201,6 +201,8 @@ Spoiler : c'est satisfaisant de voir son inventaire se remplir tout seul.
 
 ---
 
+💡 À lire aussi : [Tiny11 Builder : fabriquer une image Windows 11 allégée depuis un ISO officiel](/tiny11-builder-windows-11-slim-image/), dans la même veine que cet article.
+
 ## Pour aller plus loin
 
 - [SnipeAgent sur GitHub](https://github.com/ReticentRobot/SnipeAgent), Le repo officiel avec releases et doc
