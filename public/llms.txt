@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-19
-# Total articles : 254
+# Dernière mise à jour : 2026-11-20
+# Total articles : 255
+
+## Karabiner-Elements : remapper ton clavier macOS en profondeur
+URL: https://brandonvisca.com/karabiner-elements-remapper-clavier-macos/
+Description: Karabiner-Elements transforme ton clavier macOS : remapping, complex modifications et couches clavier. Installation, configuration et pièges à éviter.
+Tags: macos, productivite, automation, homebrew, intermediaire
+Publié: 2026-11-20T11:00:55+01:00
 
 ## Tiny11 Builder : fabriquer une image Windows 11 allégée depuis un ISO officiel
 URL: https://brandonvisca.com/tiny11-builder-windows-11-slim-image/
