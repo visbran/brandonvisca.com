@@ -154,6 +154,8 @@ TwinDesk n'est pas exempt de défauts, et autant les connaître avant de l'adopt
 
 Rien de rédhibitoire, mais ce sont exactement les points que je vérifierais avant de baser un poste de travail professionnel entier dessus plutôt que de le garder en complément.
 
+💡 À lire aussi : [Karabiner-Elements : remapper ton clavier macOS en profondeur](/karabiner-elements-remapper-clavier-macos/), dans la même veine que cet article.
+
 ## Conclusion
 
 TwinDesk fait ce que son nom promet : transformer deux ou trois appareils disparates en un seul poste de travail, sans jongler entre claviers. Le fait qu'il couvre Android comme un vrai pair, et pas comme un gadget annexe, le distingue clairement de Deskflow et consorts.
