@@ -195,6 +195,8 @@ labels:
 
 Le fichier `diun.db` dans `/data` garde l'historique de tous les manifestes analysés. Sur plusieurs années et des dizaines d'images en `watch_repo`, ça peut prendre quelques dizaines de Mo, rarement plus. Si tu veux repartir propre, arrête le conteneur, supprime le fichier, relance : DIUN reconstruit sa base au premier cycle, au prix d'un batch de notifications « new » sur tout ce qu'il redécouvre.
 
+💡 À lire aussi : [NetBox Docker : la source de vérité de ton réseau (IPAM/DCIM)](/netbox-docker-ipam-documentation-reseau/), dans la même veine que cet article.
+
 ## Conclusion
 
 DIUN Docker fait une seule chose, et il la fait bien : te dire quand une image bouge, sans jamais décider à ta place de l'appliquer. Dans un contexte où l'alternative historique vient de fermer boutique, ce n'est plus juste une question de préférence personnelle, c'est devenu le choix par défaut pour qui garde un minimum de contrôle sur sa prod.
