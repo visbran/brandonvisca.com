@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-20
-# Total articles : 255
+# Dernière mise à jour : 2026-11-21
+# Total articles : 256
+
+## NetBox Docker : la source de vérité de ton réseau (IPAM/DCIM)
+URL: https://brandonvisca.com/netbox-docker-ipam-documentation-reseau/
+Description: NetBox Docker : installe l'IPAM/DCIM open source avec Docker Compose et fais-en la source de vérité unique de ton réseau et ton inventaire.
+Tags: reseau, docker, automation, intermediaire
+Publié: 2026-11-21T11:00:55+01:00
 
 ## Karabiner-Elements : remapper ton clavier macOS en profondeur
 URL: https://brandonvisca.com/karabiner-elements-remapper-clavier-macos/
