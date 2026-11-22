@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-21
-# Total articles : 256
+# Dernière mise à jour : 2026-11-22
+# Total articles : 257
+
+## DocuSeal Docker : signature électronique auto-hébergée
+URL: https://brandonvisca.com/docuseal-docker-signature-electronique/
+Description: Déploie DocuSeal Docker avec Docker Compose : installation, sécurisation et alternative gratuite à DocuSign pour signer tes PDF.
+Tags: auto-hebergement, reverse-proxy, base-de-donnees, sauvegarde, intermediaire
+Publié: 2026-11-22T11:01:54+01:00
 
 ## NetBox Docker : la source de vérité de ton réseau (IPAM/DCIM)
 URL: https://brandonvisca.com/netbox-docker-ipam-documentation-reseau/
