@@ -205,6 +205,8 @@ Vérifie que l'option « JSON payload » est bien désactivée côté app. Dawar
 **Tu veux garder une copie de tes trajets ailleurs que dans Dawarich Docker**
 Exporte régulièrement en GeoJSON ou GPX depuis l'interface, et range ces fichiers quelque part où tu peux les consulter facilement. [Filestash](/filestash-docker-navigateur-fichiers-web/) fait un bon visualiseur pour naviguer dans ces exports si tu les stockes sur un partage réseau.
 
+💡 À lire aussi : [DocuSeal Docker : signature électronique auto-hébergée](/docuseal-docker-signature-electronique/), dans la même veine que cet article.
+
 ## Conclusion
 
 Dawarich Docker coche une case précise : récupérer un historique de localisation que Google construit depuis des années, et continuer à l'alimenter sans dépendre d'un compte externe. L'installation tient en trois conteneurs, l'import de ton export Google se fait depuis une interface simple, et le suivi en temps réel passe par des protocoles ouverts comme OwnTracks plutôt que par une app propriétaire.
