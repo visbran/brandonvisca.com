@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-22
-# Total articles : 257
+# Dernière mise à jour : 2026-11-23
+# Total articles : 258
+
+## Dive Docker : inspecter les couches d'une image
+URL: https://brandonvisca.com/dive-docker-inspecter-couches-image/
+Description: Dive Docker analyse chaque couche d'une image, calcule son score d'efficacité et traque le gaspillage. Installation, usage CLI et intégration CI.
+Tags: docker, ci-cd, guide, intermediaire
+Publié: 2026-11-23T11:00:54+01:00
 
 ## DocuSeal Docker : signature électronique auto-hébergée
 URL: https://brandonvisca.com/docuseal-docker-signature-electronique/
