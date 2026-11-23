@@ -184,6 +184,8 @@ Si ta machine a moins de 2 Go de RAM disponibles, Gitea reste le choix raisonnab
 
 💡 À lire aussi : [TriliumNext Docker : knowledge base personnelle auto-hébergée](/triliumnext-knowledge-base-auto-heberge/), dans la même veine que cet article.
 
+💡 À lire aussi : [Dive Docker : inspecter les couches d'une image](/dive-docker-inspecter-couches-image/), dans la même veine que cet article.
+
 ## Sauvegardes, mises à jour et conclusion
 
 GitLab embarque son propre outil de sauvegarde, à lancer directement dans le conteneur :
