@@ -813,6 +813,8 @@ with open('new-assets.csv', 'r') as f:
 ```
 
 
+💡 À lire aussi : [Snapper Btrfs : snapshots et rollback Linux sans réinstaller](/snapper-btrfs-snapshots-rollback-linux/), dans la même veine que cet article.
+
 ## Conclusion : configuration avancée SnipeIT maîtrisée
 
 Voilà, tu as maintenant une **configuration SnipeIT avancée** de niveau professionnel. Plus besoin de saisir les utilisateurs à la main, plus besoin de scanner manuellement le réseau, et toute ton équipe est notifiée en temps réel via Teams.

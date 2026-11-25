@@ -53,6 +53,8 @@ La matrice RAID n’était pas formatée directement comme un système de fichie
 
 💡 À lire aussi : [Cockpit Docker : interface web d'administration Linux moderne](/cockpit-docker-interface-web-administration/), dans la même veine que cet article.
 
+💡 À lire aussi : [Snapper Btrfs : snapshots et rollback Linux sans réinstaller](/snapper-btrfs-snapshots-rollback-linux/), dans la même veine que cet article.
+
 ## La solution
 
 La solution consistait à lister les partitions sur la matrice RAID :
