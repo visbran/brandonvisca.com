@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-23
-# Total articles : 258
+# Dernière mise à jour : 2026-11-25
+# Total articles : 259
+
+## Snapper Btrfs : snapshots et rollback Linux sans réinstaller
+URL: https://brandonvisca.com/snapper-btrfs-snapshots-rollback-linux/
+Description: Snapper Btrfs : crée des snapshots automatiques, compare les changements et reviens en arrière en une commande, sans réinstaller ton système Linux.
+Tags: linux, sysadmin, stockage, sauvegarde, avance
+Publié: 2026-11-25T11:02:24+01:00
 
 ## Dive Docker : inspecter les couches d'une image
 URL: https://brandonvisca.com/dive-docker-inspecter-couches-image/
