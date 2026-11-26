@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-25
-# Total articles : 259
+# Dernière mise à jour : 2026-11-26
+# Total articles : 260
+
+## 2FAuth Docker : tes codes 2FA hors du téléphone
+URL: https://brandonvisca.com/2fauth-docker-codes-2fa-auto-heberges/
+Description: 2FAuth Docker : déploie ce gestionnaire 2FA auto-hébergé, migre tes comptes TOTP et reprends le contrôle de tes codes sans Google Authenticator.
+Tags: securite, docker, hardening, intermediaire
+Publié: 2026-11-26T11:00:22+01:00
 
 ## Snapper Btrfs : snapshots et rollback Linux sans réinstaller
 URL: https://brandonvisca.com/snapper-btrfs-snapshots-rollback-linux/
