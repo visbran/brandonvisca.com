@@ -190,6 +190,8 @@ Les deux sont complémentaires dans un pipeline sérieux : Trivy sur chaque imag
 
 **Le hardening index ne bouge pas après des corrections** : relis le rapport précédent avant de corriger, certaines suggestions demandent un redémarrage de service (`sshd`, `auditd`) pour être prises en compte au scan suivant.
 
+💡 À lire aussi : [2FAuth Docker : tes codes 2FA hors du téléphone](/2fauth-docker-codes-2fa-auto-heberges/), dans la même veine que cet article.
+
 ## Conclusion
 
 Lynis Docker, c'est un scan jetable qui ne laisse rien derrière lui sur ton hôte, plus un audit de Dockerfile qui rattrape les erreurs avant le build. Ni l'un ni l'autre ne remplace un vrai audit de sécurité mené par un humain qui connaît ton infra, mais les deux attrapent la majorité des erreurs de configuration évidentes en quelques minutes, gratuitement.

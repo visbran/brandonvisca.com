@@ -121,6 +121,8 @@ La première commande télécharge les règles, la seconde demande à Suricata d
 - **Logs qui gonflent.** `eve.json` grossit vite si tu actives tous les types d'événements. Limite les sorties dans `suricata.yaml` et mets en place une rotation avec logrotate.
 - **Attente d'une protection automatique.** Suricata détecte, il ne bannit pas. Pour réagir automatiquement aux IP qui scannent, regarde plutôt du côté de [Fail2Ban](/fail2ban-docker-securite-serveur/) ou de [CrowdSec](/crowdsec-docker-securite-collaborative/), qui agissent sur les logs ou les connexions.
 
+💡 À lire aussi : [2FAuth Docker : tes codes 2FA hors du téléphone](/2fauth-docker-codes-2fa-auto-heberges/), dans la même veine que cet article.
+
 ## Conclusion
 
 Suricata Docker est le moyen le plus simple de voir ce qui se passe sur ton réseau sans rien casser le premier jour. Commence en IDS, lis tes alertes pendant une semaine, règle les faux positifs, et ne bloque qu'ensuite.
