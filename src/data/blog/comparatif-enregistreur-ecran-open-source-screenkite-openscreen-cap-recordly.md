@@ -46,7 +46,7 @@ J'ai été voir l'organisation GitHub de ScreenKite pour être sûr. Deux dépô
 
 ## OpenScreen : le MIT qui a repris le flambeau du projet archivé
 
-OpenScreen est publié sous licence MIT. Le dépôt d'origine, créé par Siddharth Vaddem, est archivé depuis l'automne 2026 avec près de 40 000 étoiles ; la suite vit dans l'organisation getopenscreen, dont le site officiel se présente comme la continuation maintenue du projet. Le projet n'est donc pas orphelin : Etienne Lescot en est le mainteneur et le responsable du traitement des données, joignable à privacy@getopenscreen.com. La licence reste MIT et le site annonce toujours « no paywalls, no premium tier, no usage caps ».
+OpenScreen est publié sous licence MIT. Le dépôt d'origine, créé par Siddharth Vaddem, a été archivé après la v1.5.0 avec près de 40 000 étoiles ; la suite vit dans l'organisation getopenscreen, dont le site officiel se présente comme la continuation maintenue du projet. Le projet n'est donc pas orphelin : la page de confidentialité désigne Etienne Lescot comme mainteneur et responsable du traitement des données, joignable à privacy@getopenscreen.com. La licence reste MIT et le site annonce toujours « no paywalls, no premium tier, no usage caps ».
 
 Techniquement, c'est une app Electron en TypeScript et Rust qui tourne sur macOS, Windows et Linux. Elle enregistre une fenêtre ou l'écran entier, capture le micro et l'audio système, superpose une webcam en picture-in-picture, et traite tout en local : zooms automatiques, effets de curseur, sous-titres, flou pour masquer les zones sensibles. Rien n'est envoyé ailleurs sauf si tu choisis d'exporter et de partager toi-même.
 
