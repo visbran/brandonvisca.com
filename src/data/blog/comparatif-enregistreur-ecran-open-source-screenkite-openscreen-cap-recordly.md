@@ -19,12 +19,12 @@ faqs:
   - question: "Cap fonctionne-t-il sans payer et sans compte cloud ?"
     answer: "Oui. Le plan gratuit enregistre et monte en local sans limite, en Studio Mode complet. Seul le partage de lien cloud est plafonné à 25 liens par mois de 5 minutes."
   - question: "Recordly et OpenScreen, c'est le même projet ?"
-    answer: "Non, mais ils partagent une origine. Recordly a démarré comme fork d'OpenScreen avant de diverger sur plus de 80% du code, notamment pour son moteur d'auto-zoom."
+    answer: "Non, mais ils partagent une origine. Recordly a démarré comme fork d'OpenScreen avant de développer son propre moteur d'auto-zoom."
 ---
 > 💡 **TL;DR**
 > - ScreenKite n'est pas open source : c'est un outil propriétaire payant au-delà du filigrane, malgré son nom qui traîne dans toutes les listes « enregistreur d'écran open source »
 > - OpenScreen (MIT) et Cap (AGPLv3) sont les deux vrais enregistreurs d'écran open source multiplateformes, avec self-hosting disponible côté Cap
-> - Recordly (AGPL) mise tout sur l'auto-zoom automatique, au prix d'un code qui a diverge de plus de 80% depuis son fork d'OpenScreen
+> - Recordly (AGPL) mise tout sur l'auto-zoom automatique, avec son propre moteur développé depuis son fork d'OpenScreen
 
 ## Enregistreur d'écran open source : le tri avant le comparatif
 
@@ -96,7 +96,7 @@ Recordly (recordly.dev) cible une niche précise : l'alternative gratuite à Scr
 
 Le cœur du produit, c'est l'auto-zoom : le logiciel analyse l'activité du curseur et propose lui-même des zones de zoom là où se passe réellement l'action, façon animation Apple de keynote plutôt que capture brute. S'ajoutent un curseur animé avec flou de mouvement, une bulle webcam qui suit le zoom, des cadres et arrière-plans stylisés, et un éditeur de timeline pour les coupes, les changements de vitesse et les annotations.
 
-Côté moteur, Recordly s'appuie sur ScreenCaptureKit sur macOS, sur Windows Graphics Capture (WGC) sur Windows, et sur Electron pour la version Linux. Fait amusant : le projet est né comme fork d'OpenScreen, avant que les mainteneurs ne divergent sur plus de 80% du code pour construire leur propre moteur d'auto-zoom. Les deux projets partagent une filiation, plus grand-chose en commun dans le détail d'implémentation.
+Côté moteur, Recordly s'appuie sur ScreenCaptureKit sur macOS, sur Windows Graphics Capture (WGC) sur Windows, et sur Electron pour la version Linux. Fait amusant : le projet est né comme fork d'OpenScreen, avant de développer son propre moteur d'auto-zoom.
 
 Si ta capture tourne autour d'un déplacement de souris saccadé, l'auto-zoom de Recordly va l'exagérer au pire moment. J'utilise [Mos macOS defilement souris fluide : lissage et inversion scroll](/mos-macos-defilement-souris-fluide/) avant chaque session d'enregistrement de démo, histoire que le zoom automatique ne vienne pas souligner un geste de souris qui saute d'un bord d'écran à l'autre.
 
