@@ -127,6 +127,8 @@ Une fois que ton clavier ne ressemble plus à celui d'origine, retenir tous tes 
 
 Pour une vue d'ensemble des outils macOS gratuits qui méritent une place sur ton Mac, j'ai rassemblé une liste plus large dans [10 Outils macOS gratuits que j'utilise (2026)](/10-outils-low-tech-macos-guide-complet/), Karabiner-Elements y figure en bonne place.
 
+💡 À lire aussi : [Enregistreur d'écran open source : ScreenKite, OpenScreen, Cap et Recordly comparés (tous multiplateformes)](/comparatif-enregistreur-ecran-open-source-screenkite-openscreen-cap-recordly/), dans la même veine que cet article.
+
 ## Conclusion
 
 Karabiner-Elements demande un peu de patience au départ : des permissions à accorder, un driver à approuver, un format JSON à apprivoiser pour les règles complexes. Mais une fois la base posée, ton clavier macOS cesse d'être une contrainte figée par Apple et devient un outil que tu façonnes à ta main.

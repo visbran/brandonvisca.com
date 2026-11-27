@@ -156,6 +156,8 @@ Rien de rédhibitoire, mais ce sont exactement les points que je vérifierais av
 
 💡 À lire aussi : [Karabiner-Elements : remapper ton clavier macOS en profondeur](/karabiner-elements-remapper-clavier-macos/), dans la même veine que cet article.
 
+💡 À lire aussi : [Enregistreur d'écran open source : ScreenKite, OpenScreen, Cap et Recordly comparés (tous multiplateformes)](/comparatif-enregistreur-ecran-open-source-screenkite-openscreen-cap-recordly/), dans la même veine que cet article.
+
 ## Conclusion
 
 TwinDesk fait ce que son nom promet : transformer deux ou trois appareils disparates en un seul poste de travail, sans jongler entre claviers. Le fait qu'il couvre Android comme un vrai pair, et pas comme un gadget annexe, le distingue clairement de Deskflow et consorts.
