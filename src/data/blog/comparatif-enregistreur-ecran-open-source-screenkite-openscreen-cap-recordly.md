@@ -2,7 +2,7 @@
 title: "Enregistreur d'écran open source : ScreenKite, OpenScreen, Cap et Recordly comparés (tous multiplateformes)"
 description: "Comparatif ScreenKite, OpenScreen, Cap et Recordly : enregistreur d'écran open source, licence, prix et installation sur Mac, Windows et Linux."
 pubDatetime: "2026-11-27T11:01:24+01:00"
-modDatetime: "2026-11-26T08:00:00.000Z"
+modDatetime: "2026-11-27T12:53:04.000Z"
 author: Brandon
 tags:
   - macos
@@ -46,7 +46,7 @@ J'ai été voir l'organisation GitHub de ScreenKite pour être sûr. Deux dépô
 
 ## OpenScreen : le MIT qui a repris le flambeau du projet archivé
 
-OpenScreen est un projet communautaire sous licence MIT. Le site officiel le présente explicitement comme la continuation maintenue du projet original créé par Siddharth Vaddem, dont le dépôt d'origine est aujourd'hui archivé. Pas de société éditrice derrière, pas de paywall, pas de palier premium : « no paywalls, no premium tier, no usage caps » selon la page officielle.
+OpenScreen est publié sous licence MIT. Le dépôt d'origine, créé par Siddharth Vaddem, est archivé depuis l'automne 2026 avec près de 40 000 étoiles ; la suite vit dans l'organisation getopenscreen, dont le site officiel se présente comme la continuation maintenue du projet. Le projet n'est donc pas orphelin : Etienne Lescot en est le mainteneur et le responsable du traitement des données, joignable à privacy@getopenscreen.com. La licence reste MIT et le site annonce toujours « no paywalls, no premium tier, no usage caps ».
 
 Techniquement, c'est une app Electron en TypeScript et Rust qui tourne sur macOS, Windows et Linux. Elle enregistre une fenêtre ou l'écran entier, capture le micro et l'audio système, superpose une webcam en picture-in-picture, et traite tout en local : zooms automatiques, effets de curseur, sous-titres, flou pour masquer les zones sensibles. Rien n'est envoyé ailleurs sauf si tu choisis d'exporter et de partager toi-même.
 
