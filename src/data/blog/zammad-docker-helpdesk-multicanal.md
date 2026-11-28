@@ -134,6 +134,8 @@ La documentation officielle recommande au moins 4 Go de RAM pour les conteneurs.
 **Zammad peut-il remplacer GLPI pour gérer mon parc informatique ?**
 Non, pas directement. Zammad est un helpdesk multicanal centré sur le ticketing et la relation client, sans module d'inventaire matériel. GLPI reste la référence si tu dois suivre ton parc en plus du support.
 
+💡 À lire aussi : [iTop Docker : CMDB et gestion de parc ITSM](/itop-docker-cmdb-gestion-parc/), dans la même veine que cet article.
+
 ## Conclusion
 
 Zammad Docker résout un problème précis : arrêter de jongler entre cinq boîtes mail et un chat pour retrouver une conversation client. Deux commandes officielles suffisent pour avoir la stack complète qui tourne, et le logiciel reste gratuit tant que tu restes en auto-hébergement.

@@ -1,0 +1,38 @@
+# Instance jetable : voir itop-docker-cmdb-gestion-parc.compose.yml
+# Les URL de liste (filter=...) sont celles générées par iTop lui-même en cliquant sur une
+# tuile du tableau de bord (capturées une fois via Playwright), pas construites à la main.
+- output: itop-dashboard.png
+  url: http://localhost:8080/pages/UI.php
+  auth: itop-docker-cmdb-gestion-parc
+  width: 1440
+  height: 900
+  wait: 3000
+  alt: "Tableau de bord iTop après connexion, avec le menu CMDB et ITSM et les widgets de synthèse du parc"
+  after: "## Premier lancement, assistant d'installation et sécurisation"
+  javascript: |
+    const btn = document.querySelector('.ui-dialog-titlebar-close');
+    if (btn) btn.click();
+
+- output: itop-cmdb-serveurs.png
+  url: "http://localhost:8080/pages/UI.php?operation=search&filter=%255B%2522SELECT%2B%2560Server%2560%2BFROM%2BServer%2BAS%2B%2560Server%2560%2BWHERE%2B1%2522%252C%255B%255D%252C%255B%255D%255D"
+  auth: itop-docker-cmdb-gestion-parc
+  width: 1440
+  height: 900
+  wait: 3000
+  alt: "Liste des serveurs de la CMDB iTop générée par les données de démonstration, avec leurs statuts et caractéristiques"
+  after: "## Pourquoi choisir iTop plutôt qu'un autre ITSM"
+  javascript: |
+    const btn = document.querySelector('.ui-dialog-titlebar-close');
+    if (btn) btn.click();
+
+- output: itop-utilisateurs.png
+  url: "http://localhost:8080/pages/UI.php?operation=search&filter=%255B%2522SELECT%2B%2560User%2560%2BFROM%2BUser%2BAS%2B%2560User%2560%2BWHERE%2B1%2522%252C%255B%255D%252C%255B%255D%255D"
+  auth: itop-docker-cmdb-gestion-parc
+  width: 1440
+  height: 900
+  wait: 3000
+  alt: "Liste des comptes utilisateurs dans le module Administration d'iTop, utile pour repérer un compte de démonstration resté actif"
+  after: "## Premier lancement, assistant d'installation et sécurisation"
+  javascript: |
+    const btn = document.querySelector('.ui-dialog-titlebar-close');
+    if (btn) btn.click();

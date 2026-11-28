@@ -1,0 +1,39 @@
+# Instance jetable pour les captures de l'article iTop Docker.
+# Même image que l'article (supervisions/itop), tag épinglé en version patch précise.
+services:
+  db:
+    container_name: itop-shots-db
+    image: mariadb:11.8
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: itop
+      MARIADB_USER: itop
+      MARIADB_PASSWORD: changeme_itop
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: "yes"
+    volumes:
+      - itop-db-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  itop:
+    container_name: itop-shots
+    image: supervisions/itop:3.3.0
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+    volumes:
+      - itop-conf:/var/www/html/conf
+      - itop-data:/var/www/html/data
+      - itop-env:/var/www/html/env-production
+
+volumes:
+  itop-db-data:
+  itop-conf:
+  itop-data:
+  itop-env:

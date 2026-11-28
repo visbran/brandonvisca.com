@@ -200,6 +200,8 @@ L'image `glpi/agent:latest` est conçue pour scanner une fois et s'arrêter par 
 
 💡 À lire aussi : [Zammad Docker : helpdesk multi-canal auto-hébergé](/zammad-docker-helpdesk-multicanal/), dans la même veine que cet article.
 
+💡 À lire aussi : [iTop Docker : CMDB et gestion de parc ITSM](/itop-docker-cmdb-gestion-parc/), dans la même veine que cet article.
+
 ## Conclusion
 
 GLPI Agent en Docker, c'est la solution la plus propre pour inventorier tes serveurs Linux sans pourrir ton système avec des paquets natifs. Un fichier docker-compose, deux variables d'environnement, et ton parc remonte automatiquement dans GLPI toutes les 24 heures.
