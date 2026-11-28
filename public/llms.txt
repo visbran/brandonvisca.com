@@ -1,7 +1,13 @@
 # Brandon Visca
 # Blog tech francophone : homelab, auto-hébergement, Linux, macOS et indépendance numérique.
-# Dernière mise à jour : 2026-11-27
-# Total articles : 261
+# Dernière mise à jour : 2026-11-28
+# Total articles : 262
+
+## iTop Docker : CMDB et gestion de parc ITSM
+URL: https://brandonvisca.com/itop-docker-cmdb-gestion-parc/
+Description: Déploie iTop Docker pour une CMDB open source et la gestion de parc ITSM complète, avec comparatif GLPI et configuration pas à pas.
+Tags: sysadmin, auto-hebergement, glpi, snipeit, intermediaire
+Publié: 2026-11-28T11:02:23+01:00
 
 ## Enregistreur d'écran open source : ScreenKite, OpenScreen, Cap et Recordly comparés (tous multiplateformes)
 URL: https://brandonvisca.com/comparatif-enregistreur-ecran-open-source-screenkite-openscreen-cap-recordly/
